@@ -188,5 +188,27 @@
   "tov": 2,
   "pf": 4,
   "eff": ""
+ },
+ {
+  "line_id": "g10-gaddefors",
+  "game_id": "g10",
+  "player": "Viktor Gaddefors",
+  "min": 20,
+  "pts": 9,
+  "reb": 5,
+  "ast": 0,
+  "fg": "3/11",
+  "three": "0/3",
+  "ft": "3/5",
+  "pm": 14,
+  "source": "FIBA LiveStats",
+  "note": "live",
+  "oreb": 1,
+  "dreb": 4,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
  }
 ]
