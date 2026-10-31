@@ -1,0 +1,44 @@
+[
+ {
+  "highlight_id": "placeholder",
+  "date": "",
+  "player": "",
+  "game_id": "",
+  "headline": "",
+  "detail": "",
+  "tag": ""
+ },
+ {
+  "highlight_id": "g00b-larsson",
+  "date": "2026-10-28",
+  "player": "Pelle Larsson",
+  "game_id": "g00b",
+  "headline": "Season highs in points (17), assists (8) and threes as Miami gets its first win",
+  "detail": "Larsson had 17 points (6/12 FG, 2/3 3P, 3/4 FT), 6 rebounds, 8 assists and a +12 in 31 minutes off the bench in the Heat's 129-117 win at Atlanta. Season highs in points (prev. 15), assists (prev. 4), field goals made (prev. 5) and threes made (prev. 1), in Miami's first win after an 0-4 start. Source: NBA.com box score.",
+  "tag": "NBA",
+  "headline_sv": "Säsongsbästa i poäng (17), assist (8) och treor när Miami tar sin första seger",
+  "detail_sv": "Larsson gjorde 17 poäng (6/12 FG, 2/3 3P, 3/4 FT), 6 returer, 8 assist och +12 på 31 minuter från bänken i Heats seger 129-117 borta mot Atlanta. Säsongsbästa i poäng (tidigare 15), assist (tidigare 4), satta skott (tidigare 5) och satta treor (tidigare 1), i Miamis första seger efter 0-4 i starten. Källa: NBA.com box score."
+ },
+ {
+  "highlight_id": "g20261029kr-ramstedt",
+  "date": "2026-10-29",
+  "player": "Adam Ramstedt",
+  "game_id": "g20261029kr",
+  "headline": "Double-double and 3 blocks as KR edge Sindri",
+  "detail": "Ramstedt had 14 points (5/10 FG, 4/6 FT), 12 rebounds (3 offensive), 3 blocks, a steal, no turnovers and a +6 in 31 minutes as KR beat Sindri 107-102 at home, despite 47 points from Sindri's Kaleb Lamar H. Source: FIBA LiveStats box score.",
+  "tag": "Icelandic Premier League",
+  "headline_sv": "Dubbel-dubbel och 3 blockar när KR knappt slår Sindri",
+  "detail_sv": "Ramstedt gjorde 14 poäng (5/10 FG, 4/6 FT), 12 returer (3 offensiva), 3 blockar, en bollvinst, inga bollförluster och +6 på 31 minuter när KR slog Sindri 107-102 hemma, trots 47 poäng av Sindris Kaleb Lamar H. Källa: FIBA LiveStats."
+ },
+ {
+  "highlight_id": "g03-larsson",
+  "date": "2026-10-31",
+  "player": "Pelle Larsson",
+  "game_id": "g03",
+  "headline": "Perfect night: 18 points on 5-of-5 shooting, and his 100th NBA three",
+  "detail": "Larsson didn't miss from the field (5/5, 1/1 from three) and went 7/8 from the line for 18 points, plus 3 rebounds and 3 assists, as Miami routed Indiana 145-125 for a second straight win. The three was the 100th of his NBA career. Giannis Antetokounmpo had a 31-18-10 triple-double.",
+  "tag": "Season high",
+  "headline_sv": "Perfekt kväll: 18 poäng på 5 av 5 skott, och hans 100:e NBA-trea",
+  "detail_sv": "Larsson missade inte från fältet (5/5, 1/1 från tre) och satte 7/8 straffar för 18 poäng, plus 3 returer och 3 assist, när Miami körde över Indiana med 145-125 för andra raka segern. Trean var hans 100:e i NBA-karriären. Giannis Antetokounmpo gjorde en trippel-dubbel med 31-18-10."
+ }
+]

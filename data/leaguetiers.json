@@ -1,0 +1,122 @@
+[
+ {
+  "competition": "NBA",
+  "tier": 1,
+  "score": 100,
+  "label": "NBA"
+ },
+ {
+  "competition": "EuroLeague",
+  "tier": 2,
+  "score": 88,
+  "label": "Top European club competition"
+ },
+ {
+  "competition": "Liga ACB",
+  "tier": 2,
+  "score": 84,
+  "label": "Top domestic league in Europe"
+ },
+ {
+  "competition": "NCAA",
+  "tier": 3,
+  "score": 72,
+  "label": "US college (Division I)"
+ },
+ {
+  "competition": "Champions League (BCL)",
+  "tier": 3,
+  "score": 74,
+  "label": "FIBA's top European cup"
+ },
+ {
+  "competition": "Champions League qualifiers",
+  "tier": 3,
+  "score": 70,
+  "label": "BCL qualifying rounds"
+ },
+ {
+  "competition": "LBA (Italy)",
+  "tier": 3,
+  "score": 76,
+  "label": "Italy, top flight"
+ },
+ {
+  "competition": "BBL",
+  "tier": 3,
+  "score": 75,
+  "label": "Germany, top flight"
+ },
+ {
+  "competition": "ABA League",
+  "tier": 3,
+  "score": 73,
+  "label": "Adriatic league"
+ },
+ {
+  "competition": "LKL",
+  "tier": 4,
+  "score": 66,
+  "label": "Lithuania, top flight"
+ },
+ {
+  "competition": "FIBA Europe Cup",
+  "tier": 4,
+  "score": 64,
+  "label": "FIBA's second European cup"
+ },
+ {
+  "competition": "Orlen Basket Liga",
+  "tier": 4,
+  "score": 62,
+  "label": "Poland, top flight"
+ },
+ {
+  "competition": "BBL Pokal (cup)",
+  "tier": 3,
+  "score": 75,
+  "label": "German cup"
+ },
+ {
+  "competition": "Primera FEB",
+  "tier": 4,
+  "score": 58,
+  "label": "Spain, second division"
+ },
+ {
+  "competition": "Austrian Superliga",
+  "tier": 5,
+  "score": 48,
+  "label": "Austria, top flight"
+ },
+ {
+  "competition": "Croatian Premier League",
+  "tier": 5,
+  "score": 50,
+  "label": "Croatia, top flight"
+ },
+ {
+  "competition": "Icelandic Premier League",
+  "tier": 5,
+  "score": 42,
+  "label": "Iceland, top flight"
+ },
+ {
+  "competition": "BLNO (Norway)",
+  "tier": 6,
+  "score": 34,
+  "label": "Norway, top flight"
+ },
+ {
+  "competition": "ProB (Germany)",
+  "tier": 6,
+  "score": 36,
+  "label": "Germany, third division"
+ },
+ {
+  "competition": "Segunda FEB",
+  "tier": 6,
+  "score": 38,
+  "label": "Spain, third division"
+ }
+]

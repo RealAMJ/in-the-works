@@ -1,0 +1,77 @@
+/* Design tokens the site's stylesheets use (light and dark). */
+:root {
+  color-scheme: light dark;
+  --font-anthropic-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-anthropic-serif: var(--font-anthropic-sans);
+
+  --color-bg: #f5f6f8;
+  --color-panel: #ffffff;
+  --color-fg: #14171c;
+  --color-fg-muted: #5b6472;
+  --color-border-line: #e1e4e9;
+  --color-ok: #2e9d5b;
+  --color-bad: #d6453d;
+  --color-warn: #c98a0b;
+
+  --cds-border: var(--color-border-line);
+  --cds-text-secondary: var(--color-fg-muted);
+  --cds-chart-muted: #b9c0ca;
+  --cds-surface-popover: var(--color-panel);
+  --cds-shadow-popover: 0 10px 30px rgba(15, 20, 30, .14), 0 2px 6px rgba(15, 20, 30, .08);
+
+  --cds-gap-xs: 4px;
+  --cds-gap-sm: 8px;
+  --cds-gap-md: 12px;
+  --cds-gap-lg: 20px;
+  --cds-pad-xs: 4px;
+  --cds-pad-sm: 8px;
+  --cds-pad-md: 12px;
+  --cds-pad-lg: 18px;
+  --cds-radius: 10px;
+
+  --cds-font-size-caption: 12.5px;
+  --cds-font-size-body: 14.5px;
+  --cds-font-size-heading: 18px;
+  --cds-font-size-title: 28px;
+  --cds-font-weight-medium: 600;
+
+  --cds-dur-slow: 320ms;
+  --cds-ease-out: cubic-bezier(.2, .8, .2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #0f1216;
+    --color-panel: #171b21;
+    --color-fg: #eef1f5;
+    --color-fg-muted: #9aa3af;
+    --color-border-line: #2a3039;
+    --cds-chart-muted: #4a525e;
+    --cds-shadow-popover: 0 10px 30px rgba(0, 0, 0, .5);
+  }
+}
+:root[data-theme="dark"] {
+  --color-bg: #0f1216;
+  --color-panel: #171b21;
+  --color-fg: #eef1f5;
+  --color-fg-muted: #9aa3af;
+  --color-border-line: #2a3039;
+  --cds-chart-muted: #4a525e;
+  --cds-shadow-popover: 0 10px 30px rgba(0, 0, 0, .5);
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  padding: clamp(10px, 2.5vw, 28px);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--cds-font-size-body);
+  line-height: 1.45;
+}
+*, *::before, *::after { box-sizing: border-box; }
+button, input, select { font: inherit; color: inherit; }
+
+/* The scoreboard bar is always dark: keep the Swedes' team name light in both themes */
+.strip .st-team.swe { color: #fff; }

@@ -1,0 +1,34 @@
+[
+ {
+  "row_id": "placeholder",
+  "date": "",
+  "player": "",
+  "league": "",
+  "type": "",
+  "title": "",
+  "detail": "",
+  "source": ""
+ },
+ {
+  "row_id": "cadeau-2026-10-21-ap-preseason",
+  "date": "2026-10-21",
+  "player": "Elliot Cadeau",
+  "team": "Michigan",
+  "league": "NCAA",
+  "type": "Award",
+  "title": "AP preseason All-America: received votes",
+  "detail": "Got 3 votes in the AP preseason All-America voting (first team: Fears Jr., Haugh, Tanner, Mirkovic, Krivas). Source: AP via La Nación, Oct 21.",
+  "source": "AP"
+ },
+ {
+  "row_id": "cadeau-2026-10-05-preseason-allbig10",
+  "date": "2026-10-05",
+  "player": "Elliot Cadeau",
+  "team": "Michigan",
+  "league": "NCAA (Big Ten)",
+  "type": "Award",
+  "title": "Preseason All-Big Ten Team",
+  "detail": "Named to the 11-man Preseason All-Big Ten team (a tie in voting) alongside Michigan teammate Trey McKenney; Michigan State’s Jeremy Fears Jr. is Preseason Player of the Year. Source: Big Ten / mgoblue.com, Oct 5.",
+  "source": "Big Ten"
+ }
+]

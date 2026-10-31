@@ -1,0 +1,50 @@
+[
+ {
+  "game_id": "nt-2026-08-27",
+  "date": "2026-08-27",
+  "time": "17:30",
+  "opponent": "Finland",
+  "venue": "Away",
+  "city": "Helsinki",
+  "competition": "World Cup 2027 Qualifiers",
+  "status": "final",
+  "score": "W 86-81",
+  "note": "Pelle Larsson 31 pts; Lauri Markkanen held to 11"
+ },
+ {
+  "game_id": "nt-2026-08-30",
+  "date": "2026-08-30",
+  "time": "17:30",
+  "opponent": "France",
+  "venue": "Home",
+  "city": "Stockholm (Avicii Arena)",
+  "competition": "World Cup 2027 Qualifiers",
+  "status": "final",
+  "score": "L 69-84",
+  "note": "Tied 38-38 at half; Wembanyama 18 for France"
+ },
+ {
+  "game_id": "nt-2026-11-27",
+  "date": "2026-11-27",
+  "time": "TBC",
+  "opponent": "Hungary",
+  "venue": "Home",
+  "city": "Sweden",
+  "competition": "World Cup 2027 Qualifiers",
+  "status": "upcoming",
+  "score": "",
+  "note": "Top three in the six-team group qualify for the 2027 World Cup"
+ },
+ {
+  "game_id": "nt-2026-11-30",
+  "date": "2026-11-30",
+  "time": "TBC",
+  "opponent": "France",
+  "venue": "Away",
+  "city": "France",
+  "competition": "World Cup 2027 Qualifiers",
+  "status": "upcoming",
+  "score": "",
+  "note": ""
+ }
+]

@@ -1,0 +1,330 @@
+[
+ {
+  "player": "Pelle Larsson",
+  "club": "Miami Heat",
+  "country": "USA",
+  "level": "NBA",
+  "competitions": "NBA (incl. NBA Cup)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Bobi Klintman",
+  "club": "Virtus Bologna",
+  "country": "Italy",
+  "level": "Europe",
+  "competitions": "LBA · EuroLeague",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Melwin Pantzar",
+  "club": "Unicaja",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Liga ACB · Champions League (BCL)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Ludvig Håkanson",
+  "club": "Joventut Badalona",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Liga ACB · Champions League (BCL)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Simon Birgander",
+  "club": "Joventut Badalona",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Liga ACB · Champions League (BCL)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Wilhelm Falk",
+  "club": "UCAM Murcia",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Liga ACB · Champions League (BCL)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Kenny Pohto",
+  "club": "Juventus Utena",
+  "country": "Lithuania",
+  "level": "Europe",
+  "competitions": "LKL · Champions League (BCL)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Barra Njie",
+  "club": "BC Vienna",
+  "country": "Austria",
+  "level": "Europe",
+  "competitions": "Austrian Superliga · ABA League · FIBA Europe Cup",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Zaba Bangala",
+  "club": "Löwen Braunschweig",
+  "country": "Germany",
+  "level": "Europe",
+  "competitions": "BBL",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Viktor Gaddefors",
+  "club": "Twarde Pierniki Toruń",
+  "country": "Poland",
+  "level": "Europe",
+  "competitions": "Orlen Basket Liga",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Tobias Borg",
+  "club": "Palencia",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Primera FEB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Oskar Palmquist",
+  "club": "CB Zamora",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Primera FEB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Chris Czerapowicz",
+  "club": "Grupo Ureta Tizona Burgos",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Primera FEB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Felix Terins",
+  "club": "Oviedo",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Primera FEB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Elliot Cadeau",
+  "club": "Michigan",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (Big Ten)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Julius Price",
+  "club": "Stanford",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (ACC)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Will Berg",
+  "club": "Wichita State",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (American)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Tunde Fasasi",
+  "club": "New Mexico",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (Mountain West)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Nathan Amoran",
+  "club": "Idaho State",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Alliou Fall",
+  "club": "Iona",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I",
+  "status": "Confirmed"
+ },
+ {
+  "player": "William Holmstrom",
+  "club": "Youngstown State",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Samuel Obenjo",
+  "club": "Robert Morris",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Oskar Stumer",
+  "club": "Denver",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Denzel Andersson",
+  "club": "Astoria Bydgoszcz",
+  "country": "Poland",
+  "level": "Europe",
+  "competitions": "Orlen Basket Liga",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Adam Ramstedt",
+  "club": "KR Basket",
+  "country": "Iceland",
+  "level": "Europe",
+  "competitions": "Icelandic Premier League",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Olle Lundqvist",
+  "club": "Monbus Obradoiro",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Liga ACB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Luka Babic",
+  "club": "KK Zabok",
+  "country": "Croatia",
+  "level": "Europe",
+  "competitions": "Croatian Premier League",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Kasper Hagberg",
+  "club": "Froya Basket Laksevåg",
+  "country": "Norway",
+  "level": "Europe",
+  "competitions": "BLNO (Norway)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Anton Lindqvist",
+  "club": "Class Sant Antoni",
+  "country": "Spain",
+  "level": "Europe",
+  "competitions": "Segunda FEB",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Jacob Hadi",
+  "club": "Basketball Löwen Erfurt",
+  "country": "Germany",
+  "level": "Europe",
+  "competitions": "ProB (Germany)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Nils Cooper",
+  "club": "UC Irvine",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (Big West)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Villiam Garcia Adsten",
+  "club": "Maine",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (America East)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Isak Homelius",
+  "club": "Eastern Washington",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (Big Sky)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Rodrigas Jucevicius",
+  "club": "VMI",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (SoCon)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Zion Vaamonde",
+  "club": "VMI",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (SoCon)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "William Kermoury",
+  "club": "UNC Wilmington",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (CAA)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Casper Pohto",
+  "club": "St. John's",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (Big East)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Ademar Santos",
+  "club": "Delaware State",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (MEAC)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Hugo Tidare",
+  "club": "Lipscomb",
+  "country": "USA",
+  "level": "NCAA",
+  "competitions": "NCAA D-I (ASUN)",
+  "status": "Confirmed"
+ },
+ {
+  "player": "Elijah Clarance",
+  "club": "Saint-Quentin (last club, 2025-26)",
+  "country": "France",
+  "level": "Pro",
+  "competitions": "2026-27 club not confirmed",
+  "status": "Unconfirmed"
+ },
+ {
+  "player": "Mikai Klintman",
+  "club": "Culture City Weimar",
+  "country": "Germany",
+  "level": "Pro",
+  "competitions": "ProB (Germany)",
+  "status": "Confirmed"
+ }
+]

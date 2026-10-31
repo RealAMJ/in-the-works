@@ -1,0 +1,302 @@
+[
+ {
+  "team": "placeholder",
+  "record": "",
+  "notes": "",
+  "updated": ""
+ },
+ {
+  "team": "Miami Heat",
+  "record": "1-4 (NBA)",
+  "notes": "Got off the mark at the fifth try, 129-117 at Atlanta, with Giannis Antetokounmpo (24 pts, 18 reb) and Bam Adebayo (24 pts, +22) leading and 36 assists on 51 baskets. Still allowing over 120 points a game across the first five.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Atlanta Hawks",
+  "record": "2-3 (NBA)",
+  "notes": "Opened 2-0 (including a 128-81 rout of Charlotte) but have now lost three straight: twice to Houston, then 117-129 at home to Miami.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Indiana Pacers",
+  "record": "2-3 (NBA)",
+  "notes": "W, L, W, L, L start. Without Haliburton (hamstring), they blew a fourth-quarter lead in a 109-114 home loss to Philadelphia on Oct 28; Siakam 26/11, Nembhard 18 pts and 14 ast.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "UCAM Murcia",
+  "record": "2-3 ACB · 2-1 BCL",
+  "notes": "Beat Barcelona 100-94 in round 2. Uneven since: 2-3 over the last five, with home losses to Tenerife and Peristeri.",
+  "updated": "2026-10-28"
+ },
+ {
+  "team": "HLA Alicante",
+  "record": "6-0 Primera FEB",
+  "notes": "Unbeaten through five league games, the latest a 106-66 home rout of Gipuzkoa on Oct 25. Every win but one by 10+ points.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Grupo Ureta Tizona Burgos",
+  "record": "1-5 Primera FEB",
+  "notes": "Lost the first four, two of them by three points or fewer and one in overtime (100-101 vs Oviedo), before a first win, 95-94 at Palmer Basket on Oct 25.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Besiktas Istanbul",
+  "record": "4-5 EuroLeague",
+  "notes": "Lost three of the last four (two EuroLeague, one BSL), most recently 73-81 at home to Olympiacos after an 11-0 closing run; Jaylen Nowell led with 15. Last win: 95-87 over Bayern in Round 6.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Virtus Bologna",
+  "record": "5-0 LBA · 4-5 EuroLeague",
+  "notes": "Unbeaten at the top of Serie A, including a 108-83 rout of Scafati with 17 threes (Klintman a club-record 6/6) and an overtime win at Milano after trailing by 19. In the EuroLeague they have dropped the last two, to Hapoel (blew a 13-point lead) and 74-91 at home to Zalgiris.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Bosna BH Telecom",
+  "record": "3-2 ABA (3rd, Group B)",
+  "notes": "Won 88-81 at BC Vienna on Oct 30 with four players in double figures (PJ Pipes Jr. 15). Earlier home ABA losses to Partizan (84-89) and Dubai (83-93).",
+  "updated": "2026-10-31"
+ },
+ {
+  "team": "Juventus Utena",
+  "record": "",
+  "notes": "Mixed start: a 76-75 BCL road win at Reggiana and 100-90 over Gargzdai, but heavy home losses to Unicaja (66-105) and Rytas (76-94).",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Jonava (Hipocredit)",
+  "record": "",
+  "notes": "Won one of the last five: 71-65 at Lietkabelis. Lost 83-84 at home to Neptunas and 63-86 at Zalgiris on Oct 25.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Löwen Braunschweig",
+  "record": "",
+  "notes": "Three straight losses after a 2-0 BBL start: 98-107 in overtime vs Ludwigsburg, out of the cup 75-102 vs Chemnitz, then 73-88 at Hagen.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Palencia",
+  "record": "4-1 Primera FEB",
+  "notes": "Only league loss so far was 77-86 at Estudiantes; opened with a 95-69 win at Albacete. Out of the Copa España after a 78-89 loss in Cantabria.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Grupo Alega Cantabria",
+  "record": "4-1 Primera FEB",
+  "notes": "Won the first four league games and knocked Palencia out of the Copa España (89-78) before the streak ended 81-82 at Albacete.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "CB Zamora",
+  "record": "1-4 Primera FEB",
+  "notes": "Only win is 89-81 at home over Granada. Palmer Basket beat them twice in ten days, 84-69 in the league and 101-77 in the Copa España.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Albacete Basket",
+  "record": "3-2 Primera FEB",
+  "notes": "Handed Cantabria its first league loss, 82-81. Lost twice to Gran Canaria within four days (by 22 and 23).",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Würzburg Baskets",
+  "record": "2-2 FIBA Europe Cup · 1-0 BBL Pokal",
+  "notes": "Four straight wins in all competitions, five home wins in a row; the Pokal win over MBC sent them to the cup quarterfinals for the first time in five years.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "iLERNA Lleida",
+  "record": "1-4 ACB",
+  "notes": "Opened with a 105-100 upset at Valencia, then lost four straight; Real Madrid set an ACB record with 24 threes against them.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Zastal Zielona Góra",
+  "record": "3-1 Orlen Basket Liga · 2-2 FIBA Europe Cup",
+  "notes": "Back-to-back narrow home wins over Anwil (78-77) and Oostende (80-77) after a 109-68 rout at Girona. Lost the Polish Super Cup final to Legia.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Twarde Pierniki Toruń",
+  "record": "1-3 PLK",
+  "notes": "Only win so far is the 110-96 derby against Astoria; scored just 7 points in the second quarter of the 69-90 loss at Gliwice.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "KR Basket",
+  "record": "4-0 Bónus deild (2nd)",
+  "notes": "Won their last two league games, 108-74 over Ármann and 107-102 over Sindri. Against Sindri, six KR players scored in double figures and Þórir Guðmundur had 16 assists.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Sindri",
+  "record": "",
+  "notes": "Kaleb Lamar H. scored 47 points with 10 threes and 13 assists at KR on Oct 29, in a 102-107 loss.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Álftanes",
+  "record": "4-0 Bónus deild (1st)",
+  "notes": "Unbeaten league leaders; scored 130 against Keflavík and won 108-105 at Tindastóll. They host KR (also 4-0) on Nov 5.",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "Energa Trefl Sopot",
+  "record": "0-4 PLK",
+  "notes": "Still winless in the Orlen Basket Liga (0-4) and lost the Super Cup semi-final to Legia; opened with a 39-point home loss to Dziki Warszawa (63-102).",
+  "updated": "2026-10-29"
+ },
+ {
+  "team": "CSM Oradea",
+  "record": "3-1 Liga Națională · 3-1 FIBA Europe Cup",
+  "notes": "Won their last three, including 99-83 at Neftchi in the Europe Cup (D. Nichols 23 pts). Went out in Champions League qualifying (98-96 loss to Salon Vilpas).",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Anwil Włocławek",
+  "record": "3-2 Orlen Basket Liga · 1-1 ENBL",
+  "notes": "Ended a run of three straight one-point losses by edging Ostrów 83-82 — its last six games have all been decided by a single point. Samuel Hines Jr led with 23.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Class Sant Antoni",
+  "record": "2-1 Segunda FEB · 2-0 Copa España",
+  "notes": "Won four of five, latest 85-67 at Castelló. Only loss: 72-77 at home to Lliria.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Basketball Löwen Erfurt",
+  "record": "1-5 ProB Süd (13th)",
+  "notes": "Only win so far is 76-74 over Ludwigsburg; lost the last three by 8, 23 and 17.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Mississippi State",
+  "record": "0-0 (opens Nov 2 vs Tennessee Tech)",
+  "notes": "Ended last season losing six of their last seven.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Culture City Weimar",
+  "record": "1-4 ProB Süd (11th)",
+  "notes": "Won the opener 81-77 over SKYLINERS Juniors (Mikai Klintman 20 pts), then four straight losses, including 66-68 to Leverkusen.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Ostrów Wielkopolski",
+  "record": "2-3 PLK",
+  "notes": "Lost 82-83 at Anwil (Tajion Jones 21) after alternating wins and losses through four league games; blew an 11-point halftime lead in a 65-81 loss to Wałbrzych.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Astoria Bydgoszcz",
+  "record": "1-3 PLK",
+  "notes": "Three straight league losses since an opening win over Zielona Góra; the first of them by one point (74-75 vs GTK Gliwice).",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "KK Zabok",
+  "record": "1-4 Premijer liga",
+  "notes": "Has played four of five league games away; its only win came in its only home game (79-72 vs Samobor).",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "KK DepoLink Škrljevo",
+  "record": "3-2 Premijer liga",
+  "notes": "Perfect 3-0 on the road but 0-2 at home.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "BC Vienna",
+  "record": "1-4 ABA · 1-3 FIBA Europe Cup · 0-6 Superliga",
+  "notes": "Six straight losses in all competitions, the latest 81-88 at home to Bosna BH Telecom in the ABA League (Langović 17). Fields a separate very young roster in the Austrian Superliga.",
+  "updated": "2026-10-31"
+ },
+ {
+  "team": "Rapid București",
+  "record": "1-3 Liga Națională",
+  "notes": "Lost a 123-127 overtime shootout to Sibiu on Oct 19, then won 88-72 at Petrolul for its first win.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Reinas Proteínas Clavijo",
+  "record": "1-3 Segunda FEB",
+  "notes": "Got its first league win on the road at Llíria (65-59) after three losses.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Joventut Badalona",
+  "record": "2-3 ACB · 2-0 BCL",
+  "notes": "Unbeaten in the BCL (86-75 vs Bnei Herzliya, 76-74 vs Bonn) and 2-0 at home in the ACB, including a 113-89 rout of Barça, but 0-3 on the road in the league. Álex Reyes led them with 21 in the 101-87 loss at Girona; Laprovittola and Sulejmanovic have led the BCL wins.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Surne Bilbao",
+  "record": "3-2 ACB · 2-1 BCL",
+  "notes": "3-0 at home in the ACB but 0-2 away, including a 119-84 loss at Real Madrid. In the BCL they lost 103-100 at ALBA Berlin after leading by 13, with Darrun Hilliard scoring 21.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Unicaja",
+  "record": "3-2 ACB · 2-0 BCL",
+  "notes": "Five straight wins in all competitions after an 0-2 league start, and top of their BCL group at 2-0 (105-69 at Juventus Utena). Kendrick Perry scored 24 in the 103-90 win at Breogán.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Barça",
+  "record": "3-2 ACB · 5-3 EuroLeague",
+  "notes": "Three straight wins through the 88-84 EuroLeague win at Bayern on Oct 27, led by Kevin Punter's 23. Still winless on the road in the ACB (losses at Murcia and Joventut). The Oct 30 EuroLeague home game vs Valencia had not finished at time of writing.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Monbus Obradoiro",
+  "record": "3-2 ACB",
+  "notes": "No European competition this season. They won three of their first four, including narrow wins at Andorra (90-85) and against Lleida (91-89), then lost 106-76 at La Laguna Tenerife.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Río Breogán",
+  "record": "3-2 ACB",
+  "notes": "Scored 100+ in each of their first four ACB games and average 103.6 points, second in the league behind Real Madrid. They have lost two straight, and were knocked out of BCL qualifying 113-110 by Dziki Warszawa on Sep 19.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Swans Gmunden",
+  "record": "6-0 Austrian Superliga",
+  "notes": "Still perfect (like Traiskirchen, per ORF); won three games by 2 points or fewer and beat champion Kapfenberg 86-72. Captain Daniel Friedrich has led scoring repeatedly (25, 20, 22 pts), Corey Wells had 26 & 10 at Eisenstadt.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Oviedo",
+  "record": "3-2 Primera FEB; 0-1 Copa España FEB",
+  "notes": "Started 0-2, then three straight league wins incl. a 101-100 OT win at Tizona Burgos where PJay Smith scored 36. Smith (28 vs Zamora) is the go-to scorer; next up away at Palmer on Nov 1.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Palmer Basket Mallorca",
+  "record": "3-2 Primera FEB; 1-0 Copa España FEB",
+  "notes": "Opened with a 95-94 buzzer-beater derby win over Fibwi; reached Copa round of 16 with 101-77 rout of Zamora. D'Moi Hodge leads (28 in 94-95 home loss to Tizona Burgos); hosts Oviedo Nov 1.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Froya Basket Laksevåg",
+  "record": "3-2 BLNO (games listed since Sep 26)",
+  "notes": "Big home wins over TNT Towers (121-60) and Bærum (106-75), but lost last two: 65-95 at unbeaten Gimle and 87-95 at home to Ammerud. Hosts Bærum Nov 1.",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "Bærum Basket",
+  "record": "3-4 BLNO (games listed since Sep 26)",
+  "notes": "Lost three straight early Oct by 31+ points each (Tromsø, Frøya, Gimle) before back-to-back home wins over Centrum Tigers and TNT Towers (109-89).",
+  "updated": "2026-10-30"
+ },
+ {
+  "team": "TSV Oberhaching Tropics",
+  "record": "4-2 ProB Süd",
+  "notes": "Won three straight (Coburg, Bayern II derby 93-84, Dresden 102-92) before a 72-102 loss at Skyliners Juniors on Oct 25.",
+  "updated": "2026-10-30"
+ }
+]

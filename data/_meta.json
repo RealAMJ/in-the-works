@@ -1,0 +1,86 @@
+{
+ "awards": {
+  "title": "Records and awards",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "bios": {
+  "title": "Player bios",
+  "updated": "2026-10-31T12:25:00+01:00"
+ },
+ "boxscores": {
+  "title": "Per-game player lines",
+  "updated": "2026-10-31T12:46:00+01:00"
+ },
+ "career": {
+  "title": "Career by season",
+  "updated": "2026-10-31T02:00:00+01:00"
+ },
+ "coaches": {
+  "title": "Swedish coaches abroad",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "coachgames": {
+  "title": "Coaches' schedule",
+  "updated": "2026-10-31T12:28:00+01:00"
+ },
+ "fullbox": {
+  "title": "Full box scores",
+  "updated": "2026-10-31T12:46:00+01:00"
+ },
+ "gamelogs": {
+  "title": "Player game logs",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "highlights": {
+  "title": "Standout games",
+  "updated": "2026-10-31T12:25:00+01:00"
+ },
+ "leaguetiers": {
+  "title": "Sample league strength tiers",
+  "updated": "2026-10-31T01:20:00+01:00"
+ },
+ "ntgames": {
+  "title": "Sweden qualifier games",
+  "updated": "2026-10-31T01:20:00+01:00"
+ },
+ "ntroster": {
+  "title": "Sweden national team roster",
+  "updated": "2026-10-31T01:20:00+01:00"
+ },
+ "photos": {
+  "title": "Player photos",
+  "updated": "2026-10-31T02:30:00+01:00"
+ },
+ "players": {
+  "title": "Players and competitions",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "previews": {
+  "title": "Game previews",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "sbl": {
+  "title": "SBL standouts",
+  "updated": "2026-10-31T00:40:00+01:00"
+ },
+ "schedule": {
+  "title": "Games and results",
+  "updated": "2026-10-31T12:46:00+01:00"
+ },
+ "stats": {
+  "title": "Season stats per player",
+  "updated": "2026-10-31T11:37:00+01:00"
+ },
+ "teamform": {
+  "title": "Team form",
+  "updated": "2026-10-31T12:08:00+01:00"
+ },
+ "teams": {
+  "title": "Team notes",
+  "updated": "2026-10-31T11:37:00+01:00"
+ },
+ "thisweek": {
+  "title": "This week stories",
+  "updated": "2026-10-31T12:25:00+01:00"
+ }
+}
