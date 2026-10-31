@@ -18,12 +18,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="theme.css?v=43">
-<script src="dash-shim.js?v=43"></script>
+<link rel="stylesheet" href="theme.css?v=45">
+<script src="dash-shim.js?v=45"></script>
 </head>
 <body>
-<link rel="stylesheet" href="site.css?v=43">
-<link rel="stylesheet" href="site2.css?v=43">
+<link rel="stylesheet" href="site.css?v=45">
+<link rel="stylesheet" href="site2.css?v=45">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -267,25 +267,41 @@
   </div>
 
   <div class="pg" data-page="sbl" id="pg-sbl" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>SBL</b></button><h1>SBL · Swedish Basketball League</h1><p>The best single-game performances at home in Basketligan this season.</p></header>
-  <section class="sw-card" id="sbl">
-    <h2>SBL · Swedish Basketball League</h2>
-    <p class="note">Standout performances in the Swedish top league this season: 30-point games, 15-rebound games, 11+ assists, triple- and double-doubles, 6+ steals, 5+ blocks and 7+ threes. Newest first. Source: RealGM box scores.</p>
-    <h3 class="sbl-sub">Best single-game marks this season</h3>
-    <div class="sbl-bests" data-draw="sblbests" data-source="sbl"></div>
-    <h3 class="sbl-sub">Standout games</h3>
-    <div class="sw-chips sbl-chips" data-draw="sblchips" data-source="sbl" aria-label="Filter SBL standouts"></div>
-    <div class="sw-hl sbl-hl" data-draw="sblhl" data-source="sbl"></div>
-  </section>
+    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>SBL</b></button></header>
+    <section class="lx-hero sbl-hero" id="sbl">
+      <div class="lx-kicker">Basketligan · 2026-27</div>
+      <h1>SBL standouts</h1>
+      <p>The biggest single-game performances in the Swedish top league this season: 30-point nights, 15 rebounds, 11 assists, double- and triple-doubles, 6 steals, 5 blocks and 7 threes.</p>
+      <div class="lx-nums" data-draw="sblnums" data-source="sbl"></div>
+    </section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Season bests</h2><span class="lx-note">Best single game in each category</span></div>
+      <div class="sbx-bests" data-draw="sblbests" data-source="sbl"></div>
+    </section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Most standout games</h2><span class="lx-note">Players with the most big nights</span></div>
+      <div class="sbx-leaders" data-draw="sbllead" data-source="sbl"></div>
+    </section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Standout games</h2><span class="lx-note">Newest first · Source: box scores</span></div>
+      <div class="sw-chips lx-chips" data-draw="sblchips" data-source="sbl" aria-label="Filter SBL standouts"></div>
+      <div class="sbx-list" data-draw="sblhl" data-source="sbl"></div>
+    </section>
   </div>
 
   <div class="pg" data-page="awards" id="pg-awards" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Awards</b></button><h1>Records &amp; awards</h1><p>Awards, broken records and championships for Swedish players this season.</p></header>
-  <section class="sw-card" id="awards">
-    <h2>Records &amp; awards</h2>
-    <p class="note">League records broken, awards (player of the week or month, MVP, all-league teams) and championships won by the Swedes we follow abroad and by players in the SBL. Most awards and titles come at the end of the season.</p>
-    <div class="aw-list" data-draw="awards" data-source="awards players"></div>
-  </section>
+    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Awards</b></button></header>
+    <section class="lx-hero aw-hero" id="awards">
+      <div class="lx-kicker">Honours · 2026-27</div>
+      <h1>Records &amp; awards</h1>
+      <p>Player of the week and month, all-league teams, MVPs, broken records and titles for the Swedes we follow abroad and for players in the SBL.</p>
+      <div class="lx-nums" data-draw="awnums" data-source="awards"></div>
+    </section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Honours list</h2><span class="lx-note">Newest first · checked at the start and end of every week</span></div>
+      <div class="sw-chips lx-chips" data-draw="awchips" data-source="awards" aria-label="Filter awards"></div>
+      <div class="awx-list" data-draw="awards" data-source="awards players"></div>
+    </section>
   </div>
 
   <div class="pg" data-page="week" id="week" hidden>
@@ -349,7 +365,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=43"></script>
+<script src="i18n.js?v=45"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -1313,35 +1329,76 @@
     x.focus({ preventScroll: true });
   });
 
-  // ---- SBL standouts
+  // ---- SBL standouts (v2 look)
+  const SV = () => LANG === 'sv';
+  const L = (en, sv) => (SV() ? sv : en);
   let sblCat = 'all', sblMore = false;
-  const SBL_CATS = [['all', 'All'], ['pts', 'Scoring'], ['reb', 'Rebounding'], ['ast', 'Playmaking'], ['dd', 'Double-doubles'], ['def', 'Steals & blocks'], ['3pm', 'Threes']];
+  const SBL_CATS = [['all', 'All', 'Alla'], ['pts', 'Scoring', 'Poäng'], ['reb', 'Rebounding', 'Returer'], ['ast', 'Playmaking', 'Assist'], ['dd', 'Double-doubles', 'Dubbel-dubblar'], ['def', 'Steals & blocks', 'Steals & block'], ['3pm', 'Threes', 'Treor']];
   const sblTags = (r) => String(r.tags || '');
   const sblIn = (r, c) => c === 'all' || (c === 'pts' && / PTS/.test(sblTags(r))) || (c === 'reb' && / REB/.test(sblTags(r))) || (c === 'ast' && / AST/.test(sblTags(r))) || (c === 'dd' && /double/i.test(sblTags(r))) || (c === 'def' && / (STL|BLK)/.test(sblTags(r))) || (c === '3pm' && /3PM/.test(sblTags(r)));
   const sblRows = () => { const d = dash.data('sbl'); return d.status === 'ok' ? d.data.filter((r) => r.row_id !== 'placeholder' && r.player) : null; };
+  const threes = (r) => Number(String(r.three || '').split('/')[0]) || 0;
+  const tagSv = (t) => SV() ? t.replace(/^(\d+) PTS$/, '$1 poäng').replace(/^(\d+) REB$/, '$1 returer').replace(/^(\d+) AST$/, '$1 assist').replace(/^(\d+) STL$/, '$1 steals').replace(/^(\d+) BLK$/, '$1 block').replace(/^(\d+) 3PM$/, '$1 treor').replace('Triple-double', 'Trippel-dubbel').replace('Double-double', 'Dubbel-dubbel') : t;
+  const bigStat = (r) => {
+    const t = sblTags(r);
+    if (/Triple-double/i.test(t)) return [String(r.pts), L('PTS', 'PTS'), L('Triple-double', 'Trippel-dubbel')];
+    const order = [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast], ['3PM', threes(r)], ['STL', r.stl], ['BLK', r.blk]];
+    const hit = order.find(([k]) => new RegExp('\\d+ ' + k).test(t));
+    if (hit) return [String(hit[1]), hit[0] === '3PM' ? '3PM' : hit[0], /Double-double/i.test(t) ? L('Double-double', 'Dubbel-dubbel') : ''];
+    return [String(r.pts), 'PTS', /Double-double/i.test(t) ? L('Double-double', 'Dubbel-dubbel') : ''];
+  };
+  dash.draw('sblnums', (el) => {
+    el.replaceChildren();
+    const rows = sblRows(); if (!rows) return;
+    const n = (lab, v) => { const d = mk('div', 'lx-num'); d.append(mk('b', '', String(v)), mk('span', '', lab)); el.append(d); };
+    n(L('Standout games', 'Toppmatcher'), rows.length);
+    n(L('30-point games', '30-poängsmatcher'), rows.filter((r) => Number(r.pts) >= 30).length);
+    n(L('Double-doubles', 'Dubbel-dubblar'), rows.filter((r) => /double/i.test(sblTags(r))).length);
+    n(L('Players', 'Spelare'), new Set(rows.map((r) => r.player)).size);
+  });
   dash.draw('sblbests', (el) => {
     el.replaceChildren();
     const rows = sblRows(); if (!rows) { el.textContent = '—'; return; }
-    if (!rows.length) { el.append(mk('p', 'empty', 'No games played yet.')); return; }
-    const three = (r) => Number(String(r.three || '').split('/')[0]) || 0;
-    [['Points', (r) => Number(r.pts)], ['Rebounds', (r) => Number(r.reb)], ['Assists', (r) => Number(r.ast)], ['Steals', (r) => Number(r.stl)], ['Blocks', (r) => Number(r.blk)], ['Threes', three]].forEach(([lab, f]) => {
-      const top = Math.max(...rows.map(f).filter((n) => !isNaN(n)));
+    if (!rows.length) { el.append(mk('p', 'empty', L('No games played yet.', 'Inga matcher spelade än.'))); return; }
+    [[L('Points', 'Poäng'), (r) => Number(r.pts)], [L('Rebounds', 'Returer'), (r) => Number(r.reb)], [L('Assists', 'Assist'), (r) => Number(r.ast)], [L('Threes', 'Treor'), threes], [L('Steals', 'Steals'), (r) => Number(r.stl)], [L('Blocks', 'Block'), (r) => Number(r.blk)]].forEach(([lab, f]) => {
+      const top = Math.max(...rows.map(f).filter((x) => !isNaN(x)));
       if (!(top > 0)) return;
       const who = rows.filter((r) => f(r) === top);
-      const t = mk('div', 'sbl-best');
-      t.append(mk('span', 'k', lab), mk('span', 'v', String(top)));
-      who.slice(0, 2).forEach((r) => t.append(mk('span', 'who', `${r.player} · ${r.team}`), mk('span', 'when', `${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent} · ${dayFmt(r.date)}`)));
-      if (who.length > 2) t.append(mk('span', 'when', `+${who.length - 2} more`));
+      const t = mk('div', 'sbx-best');
+      const hd = mk('div', 'sbx-best-h'); hd.append(mk('span', 'k', lab), mk('span', 'v', String(top)));
+      t.append(hd);
+      who.slice(0, 2).forEach((r) => {
+        const w = mk('div', 'sbx-who'); w.append(crest(r.team, 'sm'));
+        const tx2 = mk('div', ''); tx2.append(mk('div', 'n', r.player), mk('div', 'm', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
+        w.append(tx2); t.append(w);
+      });
+      if (who.length > 2) t.append(mk('div', 'sbx-more', L(`+${who.length - 2} more`, `+${who.length - 2} till`)));
       el.append(t);
+    });
+  });
+  dash.draw('sbllead', (el) => {
+    el.replaceChildren();
+    const rows = sblRows(); if (!rows || !rows.length) return;
+    const by = new Map();
+    rows.forEach((r) => { const k = r.player; const o = by.get(k) || { player: k, team: r.team, n: 0, best: 0 }; o.n++; o.best = Math.max(o.best, Number(r.pts) || 0); by.set(k, o); });
+    const list = [...by.values()].sort((a, b) => b.n - a.n || b.best - a.best).slice(0, 8);
+    list.forEach((o, i) => {
+      const r = mk('div', 'sbx-lead');
+      r.append(mk('span', 'rk', String(i + 1)), crest(o.team, 'sm'));
+      const nm = mk('div', 'nm'); nm.append(mk('div', 'n', o.player), mk('div', 'm', o.team));
+      const c = mk('div', 'ct'); c.append(mk('b', '', String(o.n)), mk('span', '', o.n === 1 ? L('game', 'match') : L('games', 'matcher')));
+      const bp = mk('div', 'ct'); bp.append(mk('b', '', String(o.best)), mk('span', '', L('best pts', 'bästa p')));
+      r.append(nm, c, bp); el.append(r);
     });
   });
   dash.draw('sblchips', (el) => {
     el.replaceChildren();
     const rows = sblRows(); if (!rows || !rows.length) return;
-    SBL_CATS.forEach(([c, lab]) => {
+    SBL_CATS.forEach(([c, en, sv]) => {
       const n = rows.filter((r) => sblIn(r, c)).length;
       if (c !== 'all' && !n) return;
-      const b = mk('button', 'chip' + (sblCat === c ? ' on' : ''), `${lab} ${n}`); b.type = 'button';
+      const b = mk('button', 'chip' + (sblCat === c ? ' on' : '')); b.type = 'button';
+      b.append(mk('span', '', L(en, sv)), mk('span', 'cn', String(n)));
       b.setAttribute('aria-pressed', sblCat === c ? 'true' : 'false');
       b.onclick = () => { sblCat = c; sblMore = false; dash.draw('sblchips'); dash.draw('sblhl'); };
       el.append(b);
@@ -1350,48 +1407,90 @@
   dash.draw('sblhl', (el) => {
     el.replaceChildren();
     const rows = sblRows(); if (!rows) { el.textContent = '—'; return; }
-    const list = rows.filter((r) => sblIn(r, sblCat)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    if (!list.length) { el.append(mk('p', 'empty', 'Nothing has stood out yet this season.')); return; }
-    const LIMIT = 9;
+    const list = rows.filter((r) => sblIn(r, sblCat)).sort((a, b) => String(b.date).localeCompare(String(a.date)) || (Number(b.pts) - Number(a.pts)));
+    if (!list.length) { el.append(mk('p', 'empty', L('Nothing has stood out yet this season.', 'Inget har stuckit ut än den här säsongen.'))); return; }
+    const LIMIT = 10;
     (sblMore ? list : list.slice(0, LIMIT)).forEach((r) => {
       const res = String(r.result || '');
-      const c = mk('div', 'hl sbl-card ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''));
-      const top = mk('div', 'hl-top');
-      top.append(mk('span', '', `${dayFmt(r.date)} · ${r.team} ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`), mk('span', 'gres ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res));
-      c.append(top, mk('div', 'sbl-player', r.player), mk('div', 'hl-head', tx(r, 'headline') || ''));
-      if (r.tags) { const tg = mk('div', 'sbl-tags'); String(r.tags).split(/\s*,\s*/).filter(Boolean).forEach((t) => tg.append(mk('span', 'sbl-tag', t))); c.append(tg); }
-      const line = mk('div', 'sbl-line');
+      const wl = res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '';
+      const c = mk('article', 'sbx-card ' + wl);
+      const [num, unit, sub] = bigStat(r);
+      const big = mk('div', 'sbx-big'); big.append(mk('b', '', num), mk('span', '', unit)); if (sub) big.append(mk('em', '', sub));
+      const body = mk('div', 'sbx-body');
+      const top = mk('div', 'sbx-top');
+      top.append(mk('span', 'd', dayFmt(r.date)));
+      const rp = mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res); top.append(rp);
+      const who = mk('div', 'sbx-name'); who.append(crest(r.team, 'sm'), mk('span', '', r.player));
+      const ctx = mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'hemma mot')} ${r.opponent}`);
+      body.append(top, who, ctx);
+      if (tx(r, 'headline')) body.append(mk('div', 'sbx-head', tx(r, 'headline')));
+      if (r.tags) { const tg = mk('div', 'sbx-tags'); sblTags(r).split(/\s*,\s*/).filter(Boolean).forEach((t) => tg.append(mk('span', 'sbx-tag', tagSv(t)))); body.append(tg); }
+      const line = mk('div', 'sbx-line');
       [['MIN', r.min], ['PTS', r.pts], ['REB', r.reb], ['AST', r.ast], ['STL', r.stl], ['BLK', r.blk], ['FG', r.fg], ['3P', r.three], ['FT', r.ft]].filter(([, v]) => v !== '' && v != null).forEach(([k, v]) => { const sp = mk('span', 'st'); sp.append(mk('span', 'k', k), mk('span', 'v', String(v))); line.append(sp); });
-      c.append(line);
+      body.append(line);
+      c.append(big, body);
       el.append(c);
     });
-    if (list.length > LIMIT) { const b = mk('button', 'tm sbl-more', sblMore ? 'Show fewer' : `Show all ${list.length} standout games ›`); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; const p = mk('p', 'sbl-more-wrap'); p.append(b); el.append(p); }
+    if (list.length > LIMIT) { const b = mk('button', 'lx-more', sblMore ? L('Show fewer', 'Visa färre') : L(`Show all ${list.length} standout games`, `Visa alla ${list.length} toppmatcher`)); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; el.append(b); }
   });
 
-  // ---- Records & awards
+  // ---- Records & awards (v2 look)
+  let awCat = 'all';
+  const AW_KINDS = [['Championship', 'champ', '🏆', 'Championship', 'Mästerskap'], ['Record', 'record', '📈', 'Record', 'Rekord'], ['Award', 'award', '★', 'Award', 'Utmärkelse']];
+  const awKind = (r) => AW_KINDS.find(([t]) => new RegExp(t, 'i').test(r.type || '')) || AW_KINDS[2];
+  const awRows = () => { const d = dash.data('awards'); return d.status === 'ok' ? d.data.filter((r) => r.row_id !== 'placeholder' && r.title).sort((a, b) => String(b.date).localeCompare(String(a.date))) : null; };
+  dash.draw('awnums', (el) => {
+    el.replaceChildren();
+    const rows = awRows(); if (!rows) return;
+    const n = (lab, v) => { const d = mk('div', 'lx-num'); d.append(mk('b', '', String(v)), mk('span', '', lab)); el.append(d); };
+    n(L('Awards', 'Utmärkelser'), rows.filter((r) => awKind(r)[1] === 'award').length);
+    n(L('Records', 'Rekord'), rows.filter((r) => awKind(r)[1] === 'record').length);
+    n(L('Titles', 'Titlar'), rows.filter((r) => awKind(r)[1] === 'champ').length);
+    n(L('Players honoured', 'Spelare'), new Set(rows.map((r) => r.player)).size);
+  });
+  dash.draw('awchips', (el) => {
+    el.replaceChildren();
+    const rows = awRows(); if (!rows || !rows.length) return;
+    [['all', 'All', 'Alla']].concat(AW_KINDS.map((k) => [k[1], k[3] + 's', k[4]])).forEach(([c, en, sv]) => {
+      const n = c === 'all' ? rows.length : rows.filter((r) => awKind(r)[1] === c).length;
+      if (c !== 'all' && !n) return;
+      const b = mk('button', 'chip' + (awCat === c ? ' on' : '')); b.type = 'button';
+      b.append(mk('span', '', L(en, sv)), mk('span', 'cn', String(n)));
+      b.setAttribute('aria-pressed', awCat === c ? 'true' : 'false');
+      b.onclick = () => { awCat = c; dash.draw('awchips'); dash.draw('awards'); };
+      el.append(b);
+    });
+  });
   dash.draw('awards', (el) => {
     el.replaceChildren();
-    const d = dash.data('awards'); if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const rows0 = awRows(); if (!rows0) { el.textContent = '—'; return; }
     const pl = dash.data('players');
     const tracked = (n) => pl.status === 'ok' && pl.data.some((p) => norm(p.player) === norm(n));
-    const rows = d.data.filter((r) => r.row_id !== 'placeholder' && r.title).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const rows = rows0.filter((r) => awCat === 'all' || awKind(r)[1] === awCat);
     if (!rows.length) {
       const e = mk('div', 'aw-empty');
-      e.append(mk('div', 'aw-empty-icon', '🏆'), mk('p', '', 'Nothing yet this season.'), mk('p', 'note', 'Weekly and monthly awards and broken records show up here as they happen; MVPs, all-league teams and championships arrive when the season ends in spring.'));
+      e.append(mk('div', 'aw-empty-icon', '🏆'), mk('p', '', L('Nothing yet this season.', 'Inget än den här säsongen.')), mk('p', 'note', L('Weekly and monthly awards and broken records show up here as they happen; MVPs, all-league teams and championships arrive when the season ends in spring.', 'Veckans och månadens utmärkelser och slagna rekord dyker upp här direkt; MVP, all-league-lag och titlar kommer när säsongen tar slut i vår.')));
       el.append(e); return;
     }
-    const kinds = [['Championship', 'champ'], ['Award', 'award'], ['Record', 'record']];
+    let month = '';
     rows.forEach((r) => {
-      const k = (kinds.find(([t]) => new RegExp(t, 'i').test(r.type || '')) || ['', 'award'])[1];
-      const c = mk('div', 'aw ' + k);
-      const head = mk('div', 'aw-top');
-      head.append(mk('span', 'aw-type', r.type || 'Award'), mk('span', 'aw-date', [r.date ? dayFmt(r.date) : '', r.league].filter(Boolean).join(' · ')));
-      const who = mk('div', 'aw-who');
+      const m = r.date ? new Date(r.date + 'T12:00:00Z').toLocaleDateString(LOC(), { month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
+      if (m !== month) { month = m; el.append(mk('div', 'awx-month', m)); }
+      const k = awKind(r);
+      const c = mk('article', 'awx ' + k[1]);
+      c.append(mk('div', 'awx-ic', k[2]));
+      const b = mk('div', 'awx-body');
+      const top = mk('div', 'awx-top');
+      top.append(mk('span', 'awx-type', L(k[3], k[4])));
+      if (r.league) top.append(mk('span', 'awx-lg', r.league));
+      top.append(mk('span', 'awx-date', r.date ? dayFmt(r.date) : ''));
+      const who = mk('div', 'awx-who');
+      if (r.team) who.append(crest(r.team, 'sm'));
       who.append(tracked(r.player) ? names(r.player) : mk('span', '', r.player));
       if (r.team) who.append(mk('span', 'muted', ' · ' + r.team));
-      c.append(head, mk('div', 'aw-title', r.title), who);
-      if (tx(r, 'detail')) c.append(mk('p', 'aw-detail', tx(r, 'detail')));
-      el.append(c);
+      b.append(top, mk('h3', 'awx-title', tx(r, 'title') || r.title), who);
+      if (tx(r, 'detail')) b.append(mk('p', 'awx-detail', tx(r, 'detail')));
+      c.append(b); el.append(c);
     });
   });
 
