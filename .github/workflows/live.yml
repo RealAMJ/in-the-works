@@ -34,6 +34,9 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      - name: Find live-stats ids for today's games
+        run: python3 scripts/discover.py || true
+
       - name: Check live games (1)
         id: r1
         run: |

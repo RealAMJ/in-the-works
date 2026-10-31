@@ -329,13 +329,14 @@ def main(argv):
     only = argv[argv.index('--game') + 1] if '--game' in argv else None
     every = '--all' in argv
     sched = load('schedule')
+    coach = load('coachgames')
     fullbox = load('fullbox')
     boxscores = load('boxscores')
     players = load('players')
     swedes_all = [p['player'] for p in players if p.get('player')]
     t = now()
     touched = False
-    for row in sched:
+    for row in sched + coach:
         if only and row.get('game_id') != only:
             continue
         if not only and row.get('live_done'):
@@ -353,13 +354,14 @@ def main(argv):
         if not feed.get('teams') or len(feed['teams']) != 2:
             continue
         touched |= apply(row, feed, src, swedes_all, None, fullbox, boxscores)
-    soon = [tip_time(r) for r in sched if r.get('status') != 'final' and tip_time(r)]
+    soon = [tip_time(r) for r in sched + coach if r.get('status') != 'final' and tip_time(r)]
     soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=3)]
     if soon and not only:
         print('KEEP_GOING')
     changed = False
     if touched:
         changed |= save('schedule', sched)
+        changed |= save('coachgames', coach)
         changed |= save('fullbox', fullbox)
         changed |= save('boxscores', boxscores)
     changed |= write_version(changed)
