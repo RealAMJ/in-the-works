@@ -171,14 +171,14 @@
   "line_id": "g20261031ast-andersson",
   "game_id": "g20261031ast",
   "player": "Denzel Andersson",
-  "min": 36,
+  "min": 37,
   "pts": 10,
   "reb": 5,
-  "ast": 2,
+  "ast": 3,
   "fg": "4/7",
   "three": "2/3",
   "ft": "0/2",
-  "pm": -6,
+  "pm": -4,
   "source": "FIBA LiveStats",
   "note": "live",
   "oreb": 1,
@@ -186,7 +186,7 @@
   "stl": 1,
   "blk": 4,
   "tov": 1,
-  "pf": 3,
+  "pf": 4,
   "eff": ""
  }
 ]
