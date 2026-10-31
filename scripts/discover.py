@@ -57,14 +57,17 @@ def main():
     if not todo:
         print('nothing to look up'); return
     found = 0
+    log = []
     by_comp = {}
     for r in todo:
         by_comp.setdefault(r['competition'], []).append(r)
     for comp, rows in by_comp.items():
         seed = int(seeds[comp])
-        ids = [seed + k for k in range(1, SPAN)] + [seed - k for k in range(1, SPAN // 4)]
+        ids = [seed + k for k in range(-SPAN, SPAN) if k]
         with cf.ThreadPoolExecutor(24) as ex:
             res = {fid: n for fid, n in ex.map(fetch, ids) if n}
+        log.append({'competition': comp, 'seed': seed, 'scanned': len(ids), 'answered': len(res),
+                    'sample': sorted(((fid, n) for fid, n in res.items()), key=lambda x: abs(x[0] - seed))[:12]})
         for r in rows:
             hit = [fid for fid, n in res.items() if match(n, r)]
             if hit:
@@ -80,6 +83,7 @@ def main():
         U.save('coachgames', coach)
         json.dump(seeds, open(SEEDS, 'w'), indent=1)
         U.write_version(True)
+    json.dump({'at': U.now().isoformat(timespec='seconds'), 'found': found, 'log': log}, open(os.path.join(U.DATA, '_discover.json'), 'w'), ensure_ascii=False, indent=1)
     print('found', found)
 
 
