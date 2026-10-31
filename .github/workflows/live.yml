@@ -2,7 +2,7 @@ name: Live scores and site
 
 on:
   schedule:
-    - cron: "*/5 * * * *"     # every 5 minutes (GitHub may start runs a few minutes late)
+    - cron: "*/5 * * * *"     # starts every 5 minutes (GitHub may start runs a few minutes late)
   push:
     branches: [main]
   workflow_dispatch:
@@ -16,10 +16,14 @@ concurrency:
   group: live
   cancel-in-progress: false
 
+# Each run checks the live feeds up to 5 times, about once a minute, and publishes
+# every change straight away. When no game is on, it stops after the first check.
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 9
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v4
 
@@ -27,10 +31,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update live games
-        id: live
+      - uses: actions/configure-pages@v5
+
+      - name: Check live games (1)
+        id: r1
         run: |
-          python3 scripts/update.py
+          python3 scripts/update.py | tee /tmp/out.txt
+          if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
           if git diff --quiet -- data; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -38,17 +45,133 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase && git push -q
+            git pull -q --rebase origin main && git push -q origin HEAD:main
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/configure-pages@v5
-        if: steps.live.outputs.changed == 'true' || github.event_name != 'schedule'
-
       - uses: actions/upload-pages-artifact@v3
-        if: steps.live.outputs.changed == 'true' || github.event_name != 'schedule'
+        if: steps.r1.outputs.changed == 'true' || github.event_name != 'schedule'
         with:
           path: .
+          name: site-1
 
       - uses: actions/deploy-pages@v4
-        if: steps.live.outputs.changed == 'true' || github.event_name != 'schedule'
+        if: steps.r1.outputs.changed == 'true' || github.event_name != 'schedule'
+        with:
+          artifact_name: site-1
+
+      - name: Check live games (2)
+        id: r2
+        if: steps.r1.outputs.active == 'true'
+        run: |
+          sleep 40
+          python3 scripts/update.py | tee /tmp/out.txt
+          if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase origin main && git push -q origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.r2.outputs.changed == 'true'
+        with:
+          path: .
+          name: site-2
+
+      - uses: actions/deploy-pages@v4
+        if: steps.r2.outputs.changed == 'true'
+        with:
+          artifact_name: site-2
+
+      - name: Check live games (3)
+        id: r3
+        if: steps.r1.outputs.active == 'true'
+        run: |
+          sleep 40
+          python3 scripts/update.py | tee /tmp/out.txt
+          if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase origin main && git push -q origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.r3.outputs.changed == 'true'
+        with:
+          path: .
+          name: site-3
+
+      - uses: actions/deploy-pages@v4
+        if: steps.r3.outputs.changed == 'true'
+        with:
+          artifact_name: site-3
+
+      - name: Check live games (4)
+        id: r4
+        if: steps.r1.outputs.active == 'true'
+        run: |
+          sleep 40
+          python3 scripts/update.py | tee /tmp/out.txt
+          if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase origin main && git push -q origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.r4.outputs.changed == 'true'
+        with:
+          path: .
+          name: site-4
+
+      - uses: actions/deploy-pages@v4
+        if: steps.r4.outputs.changed == 'true'
+        with:
+          artifact_name: site-4
+
+      - name: Check live games (5)
+        id: r5
+        if: steps.r1.outputs.active == 'true'
+        run: |
+          sleep 40
+          python3 scripts/update.py | tee /tmp/out.txt
+          if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
+          if git diff --quiet -- data; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            git pull -q --rebase origin main && git push -q origin HEAD:main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.r5.outputs.changed == 'true'
+        with:
+          path: .
+          name: site-5
+
+      - uses: actions/deploy-pages@v4
+        if: steps.r5.outputs.changed == 'true'
+        with:
+          artifact_name: site-5

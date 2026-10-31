@@ -11,7 +11,7 @@
 (function () {
   'use strict';
   var DATA = 'data/';
-  var POLL_MS = 30000;
+  var POLL_MS = 20000;
   var IDS = ['awards', 'bios', 'boxscores', 'career', 'coaches', 'coachgames', 'fullbox', 'gamelogs', 'highlights',
     'leaguetiers', 'ntgames', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'schedule', 'stats', 'teamform',
     'teams', 'thisweek'];

@@ -3,8 +3,8 @@
 Swedish men's basketball players and coaches abroad: games, live scores, box scores and stats.
 
 The site is plain files hosted free on GitHub Pages. A free GitHub Actions job checks the live feeds
-every 5 minutes and saves new scores and box scores into `data/`. Pages that are already open pick up
-the new numbers on their own (they check every 30 seconds). None of this uses Claude.
+every minute during games and saves new scores and box scores into `data/`. Pages that are already open pick up
+the new numbers on their own (they check every 20 seconds). None of this uses Claude.
 
 ## Set it up (about 10 minutes, all on github.com)
 
@@ -23,8 +23,9 @@ the new numbers on their own (they check every 30 seconds). None of this uses Cl
 6. **Start it.** *Actions* tab → *Live scores and site* → *Run workflow*. When it turns green the
    site is at `https://<your-username>.github.io/swedes-abroad/`.
 
-After that it runs by itself every 5 minutes. GitHub sometimes starts scheduled runs a few minutes
-late, so live scores move every 5 to 10 minutes.
+After that it runs by itself. A run starts every 5 minutes and, while a game is on, checks the feeds
+about once a minute and publishes each change, so live scores move roughly every 1 to 2 minutes.
+GitHub sometimes starts scheduled runs late, which can leave the odd longer gap.
 
 ## Which games update live
 
@@ -65,7 +66,7 @@ the JSON. Each file is one list of rows; keep the same field names as the rows a
 | `data/*.json` | All data: games, box scores, players, stats, stories, bios… |
 | `data/_version.json` | Fingerprints of the data files; the page polls this to know what changed |
 | `scripts/update.py` | The live updater (Python 3, no extra packages) |
-| `.github/workflows/live.yml` | Runs the updater every 5 minutes and publishes the site |
+| `.github/workflows/live.yml` | Runs the updater (about once a minute during games) and publishes the site |
 
 ## Try it on your computer
 
