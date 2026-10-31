@@ -42,7 +42,7 @@ jobs:
         run: |
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
@@ -71,7 +71,7 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
@@ -100,7 +100,7 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
@@ -129,7 +129,7 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
@@ -158,7 +158,7 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
