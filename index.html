@@ -18,12 +18,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="theme.css?v=45">
-<script src="dash-shim.js?v=45"></script>
+<link rel="stylesheet" href="theme.css?v=46">
+<script src="dash-shim.js?v=46"></script>
 </head>
 <body>
-<link rel="stylesheet" href="site.css?v=45">
-<link rel="stylesheet" href="site2.css?v=45">
+<link rel="stylesheet" href="site.css?v=46">
+<link rel="stylesheet" href="site2.css?v=46">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -271,7 +271,7 @@
     <section class="lx-hero sbl-hero" id="sbl">
       <div class="lx-kicker">Basketligan · 2026-27</div>
       <h1>SBL standouts</h1>
-      <p>The biggest single-game performances in the Swedish top league this season: 30-point nights, 15 rebounds, 11 assists, double- and triple-doubles, 6 steals, 5 blocks and 7 threes.</p>
+      <p>The biggest single games in Basketligan this season.</p>
       <div class="lx-nums" data-draw="sblnums" data-source="sbl"></div>
     </section>
     <section class="lx-sec">
@@ -283,7 +283,7 @@
       <div class="sbx-leaders" data-draw="sbllead" data-source="sbl"></div>
     </section>
     <section class="lx-sec">
-      <div class="lx-head"><h2>Standout games</h2><span class="lx-note">Newest first · Source: box scores</span></div>
+      <div class="lx-head"><h2>Standout games</h2><span class="lx-note">30+ pts, 15+ reb, 11+ ast, 7+ threes, 6+ stl, 5+ blk or a big double-double</span></div>
       <div class="sw-chips lx-chips" data-draw="sblchips" data-source="sbl" aria-label="Filter SBL standouts"></div>
       <div class="sbx-list" data-draw="sblhl" data-source="sbl"></div>
     </section>
@@ -365,7 +365,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=45"></script>
+<script src="i18n.js?v=46"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -1367,12 +1367,8 @@
       const t = mk('div', 'sbx-best');
       const hd = mk('div', 'sbx-best-h'); hd.append(mk('span', 'k', lab), mk('span', 'v', String(top)));
       t.append(hd);
-      who.slice(0, 2).forEach((r) => {
-        const w = mk('div', 'sbx-who'); w.append(crest(r.team, 'sm'));
-        const tx2 = mk('div', ''); tx2.append(mk('div', 'n', r.player), mk('div', 'm', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
-        w.append(tx2); t.append(w);
-      });
-      if (who.length > 2) t.append(mk('div', 'sbx-more', L(`+${who.length - 2} more`, `+${who.length - 2} till`)));
+      const w = mk('div', 'sbx-who'); w.append(mk('div', 'n', who[0].player + (who.length > 1 ? L(` +${who.length - 1}`, ` +${who.length - 1}`) : '')), mk('div', 'm', `${who[0].team} · ${dayFmt(who[0].date)}`));
+      t.append(w);
       el.append(t);
     });
   });
@@ -1381,14 +1377,13 @@
     const rows = sblRows(); if (!rows || !rows.length) return;
     const by = new Map();
     rows.forEach((r) => { const k = r.player; const o = by.get(k) || { player: k, team: r.team, n: 0, best: 0 }; o.n++; o.best = Math.max(o.best, Number(r.pts) || 0); by.set(k, o); });
-    const list = [...by.values()].sort((a, b) => b.n - a.n || b.best - a.best).slice(0, 8);
+    const list = [...by.values()].sort((a, b) => b.n - a.n || b.best - a.best).slice(0, 5);
     list.forEach((o, i) => {
       const r = mk('div', 'sbx-lead');
-      r.append(mk('span', 'rk', String(i + 1)), crest(o.team, 'sm'));
+      r.append(mk('span', 'rk', String(i + 1)));
       const nm = mk('div', 'nm'); nm.append(mk('div', 'n', o.player), mk('div', 'm', o.team));
       const c = mk('div', 'ct'); c.append(mk('b', '', String(o.n)), mk('span', '', o.n === 1 ? L('game', 'match') : L('games', 'matcher')));
-      const bp = mk('div', 'ct'); bp.append(mk('b', '', String(o.best)), mk('span', '', L('best pts', 'bästa p')));
-      r.append(nm, c, bp); el.append(r);
+      r.append(nm, c); el.append(r);
     });
   });
   dash.draw('sblchips', (el) => {
@@ -1413,22 +1408,17 @@
     (sblMore ? list : list.slice(0, LIMIT)).forEach((r) => {
       const res = String(r.result || '');
       const wl = res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '';
-      const c = mk('article', 'sbx-card ' + wl);
+      const c = mk('article', 'sbx-row ' + wl);
       const [num, unit, sub] = bigStat(r);
-      const big = mk('div', 'sbx-big'); big.append(mk('b', '', num), mk('span', '', unit)); if (sub) big.append(mk('em', '', sub));
-      const body = mk('div', 'sbx-body');
-      const top = mk('div', 'sbx-top');
-      top.append(mk('span', 'd', dayFmt(r.date)));
-      const rp = mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res); top.append(rp);
-      const who = mk('div', 'sbx-name'); who.append(crest(r.team, 'sm'), mk('span', '', r.player));
-      const ctx = mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'hemma mot')} ${r.opponent}`);
-      body.append(top, who, ctx);
-      if (tx(r, 'headline')) body.append(mk('div', 'sbx-head', tx(r, 'headline')));
-      if (r.tags) { const tg = mk('div', 'sbx-tags'); sblTags(r).split(/\s*,\s*/).filter(Boolean).forEach((t) => tg.append(mk('span', 'sbx-tag', tagSv(t)))); body.append(tg); }
-      const line = mk('div', 'sbx-line');
-      [['MIN', r.min], ['PTS', r.pts], ['REB', r.reb], ['AST', r.ast], ['STL', r.stl], ['BLK', r.blk], ['FG', r.fg], ['3P', r.three], ['FT', r.ft]].filter(([, v]) => v !== '' && v != null).forEach(([k, v]) => { const sp = mk('span', 'st'); sp.append(mk('span', 'k', k), mk('span', 'v', String(v))); line.append(sp); });
-      body.append(line);
-      c.append(big, body);
+      const big = mk('div', 'sbx-num'); big.append(mk('b', '', num), mk('span', '', sub ? (SV() ? 'DD' : 'DD') : unit));
+      if (sub) big.title = sub;
+      const mid = mk('div', 'sbx-mid');
+      mid.append(mk('div', 'sbx-name', r.player), mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
+      const bits = [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].map(([v, k]) => `${v} ${k}`);
+      if (Number(r.stl) >= 3) bits.push(`${r.stl} STL`); if (Number(r.blk) >= 3) bits.push(`${r.blk} BLK`);
+      if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
+      mid.append(mk('div', 'sbx-stats', bits.join(' · ')));
+      c.append(big, mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res));
       el.append(c);
     });
     if (list.length > LIMIT) { const b = mk('button', 'lx-more', sblMore ? L('Show fewer', 'Visa färre') : L(`Show all ${list.length} standout games`, `Visa alla ${list.length} toppmatcher`)); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; el.append(b); }

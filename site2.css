@@ -1053,3 +1053,42 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .sbx-bests { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 900px) { .sbx-bests { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .sbx-bests { grid-template-columns: minmax(0, 1fr); } }
+
+/* v46: calmer SBL page */
+.sbl-hero .lx-nums { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 40rem; }
+.sbl-hero .lx-num:nth-child(4) { display: none; }
+.sbx-best { gap: 6px; border-top-width: 3px; padding: 12px 14px; }
+.sbx-best-h .v { font-size: 2.1rem; }
+.sbx-who { display: grid; gap: 1px; }
+.sbx-leaders { grid-template-columns: minmax(0, 1fr); max-width: 34rem; padding: 2px 14px; }
+.sbx-lead { grid-template-columns: 1.6rem minmax(0, 1fr) auto; padding: 9px 0; }
+.sbx-lead:last-child { border-bottom: 0; }
+.sbx-list { grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); gap: 0 24px; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: calc(var(--cds-radius) * 1.4); padding: 4px 16px; }
+.sbx-row { display: grid; grid-template-columns: 3.6rem minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--color-border-line); }
+.sbx-num { display: grid; justify-items: center; line-height: 1; }
+.sbx-num b { font-size: 1.7rem; font-weight: 900; color: var(--se-blue); }
+.sbx-num span { font-size: 10px; font-weight: 800; letter-spacing: .08em; color: var(--color-fg-muted); margin-top: 3px; }
+.sbx-mid { display: grid; gap: 2px; min-width: 0; }
+.sbx-row .sbx-name { font-size: 1rem; font-weight: 800; }
+.sbx-row .sbx-ctx { font-size: 12.5px; }
+.sbx-stats { font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.sbx-row .sbx-res { font-size: 12px; white-space: nowrap; }
+.sbx-list .lx-more { margin: 10px 0 8px; }
+@media (max-width: 640px) {
+  .sbl-hero .lx-nums { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sbl-hero .lx-num { padding: 10px; }
+  .sbl-hero .lx-num span { font-size: 9.5px; }
+  .sbx-row { grid-template-columns: 3rem minmax(0, 1fr) auto; gap: 10px; }
+  .sbx-list { padding: 2px 12px; }
+}
+@media (max-width: 640px) {
+  .sbx-bests { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .sbx-best { padding: 10px 12px; gap: 4px; }
+  .sbx-best-h { display: grid; gap: 2px; }
+  .sbx-best-h .v { font-size: 1.7rem; }
+  .sbx-who .n { font-size: 13px; }
+  .sbx-who .m { font-size: 11px; }
+  .lx-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -4px; padding: 2px 4px; }
+  .lx-chips::-webkit-scrollbar { display: none; }
+  .lx-chips .chip { flex: none; }
+}

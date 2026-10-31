@@ -7,6 +7,8 @@ Object.assign(window.SA_I18N.D, {
   "Most standout games": "Flest toppmatcher",
   "Players with the most big nights": "Spelarna med flest stora kvällar",
   "Standout games": "Toppmatcher",
+  "The biggest single games in Basketligan this season.": "Säsongens största enskilda matcher i Basketligan.",
+  "30+ pts, 15+ reb, 11+ ast, 7+ threes, 6+ stl, 5+ blk or a big double-double": "30+ poäng, 15+ returer, 11+ assist, 7+ treor, 6+ steals, 5+ block eller en stor dubbel-dubbel",
   "Newest first · Source: box scores": "Nyast först · Källa: matchprotokoll",
   "Honours · 2026-27": "Utmärkelser · 2026-27",
   "Records & awards": "Rekord & utmärkelser",
