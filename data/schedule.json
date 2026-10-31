@@ -115,14 +115,13 @@
   "venue": "Away",
   "competition": "Orlen Basket Liga",
   "note": "On TV: Polsat Sport Extra 4",
-  "status": "live",
-  "score": "W 84-79",
+  "status": "final",
+  "score": "W 90-87",
   "box_url": "https://www.tntsports.co.uk/basketball/orlen-basket-liga/2026-2027/energa-trefl-sopot-enea-abramczyk-astoria-bydgoszcz_mtc21921560/live.shtml",
   "watch_url": "https://www.mecze24.pl/koszykowka/trefl-sopot-astoria-bydgoszcz",
   "watch_label": "Polsat Sport Extra 4 / Polsat Box Go",
-  "clock": "Q1 02:05",
-  "live_updated": "2026-10-31T14:32:18+01:00",
-  "live_feed": "fiba:2949100"
+  "live_feed": "fiba:2949100",
+  "live_done": true
  },
  {
   "game_id": "g05",
