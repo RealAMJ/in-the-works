@@ -11,6 +11,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: live
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 9
+    timeout-minutes: 12
     environment:
       name: github-pages
     steps:
@@ -175,3 +176,16 @@ jobs:
         if: steps.r5.outputs.changed == 'true'
         with:
           artifact_name: site-5
+
+      # GitHub's 5-minute timer is often late or skipped. While a game is on (or starts
+      # within 3 hours) each run starts the next one itself, so the checks never stop.
+      - name: Keep going while games are on
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q KEEP_GOING /tmp/out.txt 2>/dev/null; then
+            # nothing live yet (game still to start): wait a few minutes before the next run
+            if ! grep -q "^  [gc]" /tmp/out.txt; then sleep 240; fi
+            gh workflow run live.yml --ref main && echo "next run started"
+          fi

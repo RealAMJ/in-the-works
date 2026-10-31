@@ -113,6 +113,9 @@ def read_fiba(fid):
                 starter=bool(p.get('starter'))))
         teams.append(dict(name=t.get('name') or t.get('nameInternational') or '', score=int(t.get('score') or 0), pl=pl))
     period = int(d.get('period') or 0)
+    # FIBA counts overtime periods from 1 again with periodType OVERTIME
+    if str(d.get('periodType') or '').upper().startswith('OVERTIME') or d.get('inOT') in (1, True, '1'):
+        period = 4 + max(period, 1)
     clock = d.get('clock') or ''
     status = str(d.get('periodStatus') or d.get('status') or '').lower()
     at_zero = clock in ('00:00', '0:00', '00:00:00')
@@ -196,6 +199,8 @@ def read_euroleague(season, code):
 
 def feed_for(row):
     f = (row.get('live_feed') or '').strip()
+    if f == 'none':
+        f = ''
     if f.startswith('fiba:'):
         return 'FIBA LiveStats', lambda: read_fiba(f.split(':', 1)[1])
     if f.startswith('euroleague:'):
@@ -348,6 +353,10 @@ def main(argv):
         if not feed.get('teams') or len(feed['teams']) != 2:
             continue
         touched |= apply(row, feed, src, swedes_all, None, fullbox, boxscores)
+    soon = [tip_time(r) for r in sched if r.get('status') != 'final' and tip_time(r)]
+    soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=3)]
+    if soon and not only:
+        print('KEEP_GOING')
     changed = False
     if touched:
         changed |= save('schedule', sched)
