@@ -866,19 +866,19 @@
   "team": "Twarde Pierniki Toruń",
   "player": "Bennett Vander Plas",
   "pos": "",
-  "min": 27,
-  "pts": 5,
-  "reb": 8,
+  "min": 28,
+  "pts": 7,
+  "reb": 9,
   "ast": 2,
   "stl": 2,
   "blk": 0,
   "tov": 1,
-  "fg": "2/9",
+  "fg": "3/10",
   "three": "1/6",
   "ft": "0/0",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -899,7 +899,7 @@
   "ft": "0/0",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -920,7 +920,7 @@
   "ft": "4/5",
   "pm": 21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -936,12 +936,12 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "1/2",
-  "three": "0/0",
+  "fg": "1/3",
+  "three": "0/1",
   "ft": "0/0",
   "pm": 7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -962,7 +962,7 @@
   "ft": "0/0",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -971,7 +971,7 @@
   "team": "Twarde Pierniki Toruń",
   "player": "Hubert Lipiński",
   "pos": "",
-  "min": 3,
+  "min": 4,
   "pts": 2,
   "reb": 1,
   "ast": 0,
@@ -983,7 +983,7 @@
   "ft": "2/2",
   "pm": -9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1004,7 +1004,7 @@
   "ft": "5/7",
   "pm": 21,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1013,7 +1013,7 @@
   "team": "Twarde Pierniki Toruń",
   "player": "Kristaps Kilps",
   "pos": "",
-  "min": 24,
+  "min": 25,
   "pts": 12,
   "reb": 3,
   "ast": 3,
@@ -1025,7 +1025,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1046,7 +1046,7 @@
   "ft": "6/7",
   "pm": 23,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1067,7 +1067,7 @@
   "ft": "0/2",
   "pm": -26,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1088,7 +1088,7 @@
   "ft": "2/2",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1109,7 +1109,7 @@
   "ft": "0/0",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1118,7 +1118,7 @@
   "team": "Zastal Zielona Góra",
   "player": "Filip Matczak",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 8,
   "reb": 2,
   "ast": 3,
@@ -1130,7 +1130,7 @@
   "ft": "2/3",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1151,7 +1151,7 @@
   "ft": "1/2",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1160,7 +1160,7 @@
   "team": "Zastal Zielona Góra",
   "player": "Trazarien White",
   "pos": "",
-  "min": 26,
+  "min": 27,
   "pts": 23,
   "reb": 9,
   "ast": 4,
@@ -1172,7 +1172,7 @@
   "ft": "6/6",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1193,7 +1193,7 @@
   "ft": "2/4",
   "pm": -20,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1214,7 +1214,7 @@
   "ft": "2/2",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -1224,18 +1224,18 @@
   "player": "Jan Wójcik",
   "pos": "",
   "min": 16,
-  "pts": 2,
+  "pts": 4,
   "reb": 5,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "1/6",
+  "fg": "2/7",
   "three": "0/2",
   "ft": "0/0",
   "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  }
 ]

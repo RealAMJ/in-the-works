@@ -224,11 +224,10 @@
   "venue": "Home",
   "competition": "Orlen Basket Liga",
   "note": "",
-  "status": "live",
-  "score": "W 85-69",
+  "status": "final",
+  "score": "W 87-71",
   "live_feed": "fiba:2949097",
-  "clock": "Q4 00:28",
-  "live_updated": "2026-10-31T21:41:30+01:00"
+  "live_done": true
  },
  {
   "game_id": "g11",
