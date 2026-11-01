@@ -248,10 +248,10 @@
   "competition": "Liga ACB",
   "note": "",
   "status": "live",
-  "score": "L 68-73",
+  "score": "L 68-75",
   "live_feed": "acb:105423",
-  "clock": "Q4 04:56",
-  "live_updated": "2026-11-01T13:43:18+01:00"
+  "clock": "Q4 04:51",
+  "live_updated": "2026-11-01T13:43:44+01:00"
  },
  {
   "game_id": "g27",
@@ -267,7 +267,7 @@
   "score": "L 74-95",
   "live_feed": "acb:105424",
   "clock": "Q4 04:28",
-  "live_updated": "2026-11-01T13:43:19+01:00"
+  "live_updated": "2026-11-01T13:43:45+01:00"
  },
  {
   "game_id": "g20261101wei",
