@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:27:36+01:00",
+ "at": "2026-11-01T12:28:00+01:00",
  "log": [
   {
    "game": "g11",
@@ -9,17 +9,17 @@
    "game": "g11",
    "src": "ACB Live",
    "period": 2,
-   "clock": "09:01",
+   "clock": "08:40",
    "done": false,
    "teams": [
     [
      "Asisa Joventut",
-     25,
+     27,
      12
     ],
     [
      "Surne Bilbao",
-     29,
+     31,
      12
     ]
    ]
