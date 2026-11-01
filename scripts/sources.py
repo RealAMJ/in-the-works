@@ -47,9 +47,9 @@ def mins(s):
 def read_acb(mid):
     h = page(f'https://live.acb.com/es/partidos/x-{mid}/estadisticas')
     t = text(h)
-    names = re.findall(r"(?:4C|Todos 1C 2C 3C 4C|\d+ \d+) ([^\d][^|]{1,40}?) Filtrar Jugador", t)
-    if len(names) < 2:
-        names = re.findall(r"([A-ZÀ-ÿa-z][\wÀ-ÿ .'-]{2,40}?) Filtrar Jugador", t)
+    title = re.search(r'<title>(.*?)</title>', h, re.S)
+    tm = re.match(r'\s*(.+?) vs (.+?) \d+ \w+ \d{4}', H.unescape(title.group(1))) if title else None
+    names = [tm.group(1), tm.group(2)] if tm else []
     sm = re.search(r'Loading\.\.\. (\d+) (.{1,24}?) (\d+) ', t)
     status = sm.group(2) if sm else ''
     tables = [x for x in re.split(r'<table', h) if 'playerRow' in x]
@@ -80,7 +80,7 @@ def read_feb(pid, row=None):
     h = page(f'https://baloncestoenvivo.feb.es/partido/{pid}')
     t = text(h)
     sm = re.search(r'Estad[ií]sticas (.+?) (\d+) p (\d+) (.+?) \d', t)
-    names = re.findall(r'% (.+?) Rebotes Tapones', t)
+    names = re.findall(r"([A-ZÀ-ÝÑÇ][A-ZÀ-ÝÑÇ0-9 .'&-]{2,60}?) Rebotes Tapones", t)
     tables = [x for x in re.split(r'<table', h) if 'Jugador' in x]
     teams = []
     for ti, tb in enumerate(tables[:2]):
