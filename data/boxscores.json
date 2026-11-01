@@ -325,14 +325,14 @@
   "line_id": "g14-pantzar",
   "game_id": "g14",
   "player": "Melwin Pantzar",
-  "min": 7,
-  "pts": 2,
+  "min": 8,
+  "pts": 4,
   "reb": 0,
   "ast": 1,
-  "fg": "0/1",
+  "fg": "1/2",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 3,
   "source": "ACB Live",
   "note": "live",
   "oreb": 0,
@@ -340,7 +340,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
