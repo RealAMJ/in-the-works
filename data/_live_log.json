@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T13:16:18+01:00",
+ "at": "2026-11-01T13:17:08+01:00",
  "log": [
   {
    "game": "g11",
@@ -9,7 +9,7 @@
    "game": "g11",
    "src": "ACB Live",
    "period": 3,
-   "clock": "04:33",
+   "clock": "03:50",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Surne Bilbao",
-     53,
+     55,
      12
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g27",
    "src": "ACB Live",
    "period": 3,
-   "clock": "03:57",
+   "clock": "03:28",
    "done": false,
    "teams": [
     [
      "Monbus Obradoiro",
-     49,
+     53,
      12
     ],
     [
