@@ -206,6 +206,71 @@ def read_euroleague(season, code):
     return dict(period=period, clock=clock, done=bool(done), teams=teams)
 
 
+
+def _espn_split(v):
+    try:
+        a, b = str(v).split('-')
+        return int(a), int(b)
+    except Exception:
+        return 0, 0
+
+
+def read_espn(sport, row):
+    """NBA / NCAA through ESPN's public scoreboard + game summary (works from GitHub, unlike nba.com)."""
+    base = f'https://site.api.espn.com/apis/site/v2/sports/basketball/{sport}'
+    eid = row.get('espn_id')
+    if not eid:
+        day = row['date'].replace('-', '')
+        prev = (dt.date.fromisoformat(row['date']) - dt.timedelta(days=1)).isoformat().replace('-', '')
+        want = {norm(row.get('team')), norm(row.get('opponent'))}
+        for d in (prev, day):
+            sb = get(f'{base}/scoreboard?dates={d}&limit=400' + ('&groups=50' if sport != 'nba' else ''))
+            for ev in sb.get('events', []):
+                names = {norm(c['team'].get('displayName')) for c in ev['competitions'][0]['competitors']}
+                if names == want or all(any(w in n or n in w for n in names) for w in want):
+                    eid = ev['id']
+                    break
+            if eid:
+                break
+        if not eid:
+            raise LookupError('game not found on ESPN scoreboard')
+        row['espn_id'] = eid
+    s = get(f'{base}/summary?event={eid}')
+    comp = s['header']['competitions'][0]
+    st = comp['status']
+    scores = {c['team']['id']: int(c.get('score') or 0) for c in comp['competitors']}
+    teams = []
+    for tb in s.get('boxscore', {}).get('players', []):
+        stat = (tb.get('statistics') or [{}])[0]
+        keys = [k.lower() for k in (stat.get('keys') or stat.get('labels') or [])]
+        pl = []
+        for a in stat.get('athletes', []):
+            v = dict(zip(keys, a.get('stats') or []))
+            g = lambda *ks: next((v[k] for k in ks if k in v), '')
+            fgm, fga = _espn_split(g('fieldgoalsmade-fieldgoalsattempted', 'fg'))
+            tpm, tpa = _espn_split(g('threepointfieldgoalsmade-threepointfieldgoalsattempted', '3pt'))
+            ftm, fta = _espn_split(g('freethrowsmade-freethrowsattempted', 'ft'))
+            num = lambda x: int(x) if str(x).lstrip('+-').isdigit() else 0
+            pl.append(dict(name=a['athlete'].get('displayName', ''), min=num(g('minutes', 'min')),
+                           pts=num(g('points', 'pts')), reb=num(g('rebounds', 'reb')), ast=num(g('assists', 'ast')),
+                           stl=num(g('steals', 'stl')), blk=num(g('blocks', 'blk')), tov=num(g('turnovers', 'to')),
+                           fgm=fgm, fga=fga, tpm=tpm, tpa=tpa, ftm=ftm, fta=fta,
+                           pm=g('plusminus', '+/-'), pf=num(g('fouls', 'pf')),
+                           oreb=num(g('offensiverebounds', 'oreb')), dreb=num(g('defensiverebounds', 'dreb')),
+                           starter=bool(a.get('starter'))))
+        teams.append(dict(name=tb['team'].get('displayName', ''), score=scores.get(tb['team']['id'], 0), pl=pl))
+    if len(teams) != 2:  # before tip-off ESPN has no box score yet
+        teams = [dict(name=c['team'].get('displayName', ''), score=int(c.get('score') or 0), pl=[]) for c in comp['competitors']]
+    state = st['type'].get('state')
+    clock = st.get('displayClock') or '0:00'
+    if ':' in clock:
+        m, sec = clock.split(':')[:2]
+        clock = f"{int(float(m)):02d}:{int(float(sec)):02d}"
+    else:
+        clock = f"00:{int(float(clock)):02d}"
+    return dict(period=int(st.get('period') or 0), clock=clock, done=state == 'post', notstarted=state == 'pre', teams=teams)
+
+
 def feed_for(row):
     f = (row.get('live_feed') or '').strip()
     if f == 'none':
@@ -215,6 +280,10 @@ def feed_for(row):
     if f.startswith('euroleague:'):
         _, season, code = f.split(':')
         return 'EuroLeague live', lambda: read_euroleague(season, code)
+    if row.get('competition') == 'NBA':
+        return 'ESPN', lambda: read_espn('nba', row)
+    if row.get('competition') == 'NCAA':
+        return 'ESPN', lambda: read_espn('mens-college-basketball', row)
     nid = row.get('nba_id')
     if not nid:
         m = re.search(r'(00\d{8})', row.get('box_url') or '')
