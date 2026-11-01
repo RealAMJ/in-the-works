@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T13:59:35+01:00",
+ "at": "2026-11-01T14:00:25+01:00",
  "log": [
   {
    "game": "g11",
@@ -20,29 +20,6 @@
     [
      "Surne Bilbao",
      80,
-     12
-    ]
-   ]
-  },
-  {
-   "game": "g27",
-   "checking": "ACB Live"
-  },
-  {
-   "game": "g27",
-   "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Monbus Obradoiro",
-     90,
-     12
-    ],
-    [
-     "R\u00edo Breog\u00e1n",
-     110,
      12
     ]
    ]
