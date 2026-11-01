@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T03:35:44+01:00",
+ "at": "2026-11-01T03:36:34+01:00",
  "log": [
   {
    "game": "gtestnba",
@@ -9,7 +9,7 @@
    "game": "gtestnba",
    "src": "ESPN",
    "period": 4,
-   "clock": "04:40",
+   "clock": "04:02",
    "done": false,
    "teams": [
     [
