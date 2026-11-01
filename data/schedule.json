@@ -162,7 +162,7 @@
   "status": "final",
   "score": "W 85-73",
   "live_feed": "feb:2535777",
-  "backfill": true
+  "live_done": true
  },
  {
   "game_id": "g20261031zab",
@@ -192,7 +192,7 @@
   "status": "final",
   "score": "W 125-98",
   "live_feed": "acb:105421",
-  "backfill": true
+  "live_done": true
  },
  {
   "game_id": "g09",
@@ -207,7 +207,7 @@
   "status": "final",
   "score": "W 90-89",
   "live_feed": "feb:2535778",
-  "backfill": true
+  "live_done": true
  },
  {
   "game_id": "g20261031sant",
@@ -249,7 +249,8 @@
   "competition": "Liga ACB",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "acb:105423"
  },
  {
   "game_id": "g27",
@@ -262,7 +263,8 @@
   "competition": "Liga ACB",
   "note": "Galician derby",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "acb:105424"
  },
  {
   "game_id": "g20261101wei",
@@ -314,7 +316,8 @@
   "competition": "Primera FEB",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "feb:2535771"
  },
  {
   "game_id": "g14",
@@ -327,7 +330,8 @@
   "competition": "Liga ACB",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "acb:105428"
  },
  {
   "game_id": "g15",
