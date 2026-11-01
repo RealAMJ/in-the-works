@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T12:19:45+01:00",
+ "at": "2026-11-01T12:20:12+01:00",
  "log": [
   {
    "game": "g11",
@@ -9,7 +9,7 @@
    "game": "g11",
    "src": "ACB Live",
    "period": 1,
-   "clock": "02:42",
+   "clock": "02:11",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g27",
    "src": "ACB Live",
    "period": 1,
-   "clock": "00:43",
+   "clock": "00:35",
    "done": false,
    "teams": [
     [
