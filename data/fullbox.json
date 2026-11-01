@@ -4364,7 +4364,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4385,7 +4385,7 @@
   "ft": "1/2",
   "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4406,7 +4406,7 @@
   "ft": "0/0",
   "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4427,7 +4427,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4448,7 +4448,7 @@
   "ft": "0/2",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4469,7 +4469,7 @@
   "ft": "8/8",
   "pm": 6,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4490,7 +4490,7 @@
   "ft": "2/2",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4511,7 +4511,7 @@
   "ft": "5/10",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4532,7 +4532,7 @@
   "ft": "0/0",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4548,12 +4548,12 @@
   "stl": 1,
   "blk": 0,
   "tov": 2,
-  "fg": "5/11",
-  "three": "3/7",
+  "fg": "5/12",
+  "three": "3/8",
   "ft": "2/2",
   "pm": -9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4574,7 +4574,7 @@
   "ft": "5/6",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4595,7 +4595,7 @@
   "ft": "4/4",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4616,7 +4616,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4637,7 +4637,7 @@
   "ft": "0/0",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4658,7 +4658,7 @@
   "ft": "0/0",
   "pm": 11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4679,7 +4679,7 @@
   "ft": "0/0",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4700,7 +4700,7 @@
   "ft": "2/2",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4721,7 +4721,7 @@
   "ft": "0/1",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4742,7 +4742,7 @@
   "ft": "0/0",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4763,7 +4763,7 @@
   "ft": "1/2",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -4784,7 +4784,7 @@
   "ft": "0/0",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  }
 ]
