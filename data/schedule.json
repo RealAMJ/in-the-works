@@ -248,10 +248,10 @@
   "competition": "Liga ACB",
   "note": "",
   "status": "live",
-  "score": "W 49-40",
+  "score": "W 51-42",
   "live_feed": "acb:105423",
-  "clock": "Q3 08:36",
-  "live_updated": "2026-11-01T13:06:59+01:00"
+  "clock": "Q3 07:40",
+  "live_updated": "2026-11-01T13:07:50+01:00"
  },
  {
   "game_id": "g27",
@@ -264,10 +264,10 @@
   "competition": "Liga ACB",
   "note": "Galician derby",
   "status": "live",
-  "score": "L 43-55",
+  "score": "L 45-55",
   "live_feed": "acb:105424",
-  "clock": "Q3 09:14",
-  "live_updated": "2026-11-01T13:07:00+01:00"
+  "clock": "Q3 08:35",
+  "live_updated": "2026-11-01T13:07:51+01:00"
  },
  {
   "game_id": "g20261101wei",
