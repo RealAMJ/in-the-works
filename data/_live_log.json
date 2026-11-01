@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T18:38:05+01:00",
+ "at": "2026-11-01T18:42:31+01:00",
  "log": [
   {
    "game": "g13",
@@ -12,6 +12,29 @@
    "clock": "00:00",
    "done": true,
    "teams": []
+  },
+  {
+   "game": "g14",
+   "checking": "ACB Live"
+  },
+  {
+   "game": "g14",
+   "src": "ACB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Unicaja",
+     0,
+     12
+    ],
+    [
+     "Bar\u00e7a",
+     0,
+     12
+    ]
+   ]
   }
  ]
 }
