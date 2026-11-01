@@ -57,8 +57,17 @@ def save(name, rows):
     return False
 
 
+BROWSER = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36',
+           'Accept': 'application/json, text/plain, */*', 'Accept-Language': 'en-US,en;q=0.9'}
+
+
 def get(url):
-    req = urllib.request.Request(url, headers=UA)
+    h = dict(UA)
+    if 'nba.com' in url:
+        h = dict(BROWSER, Referer='https://www.nba.com/', Origin='https://www.nba.com')
+    elif 'euroleague' in url:
+        h = dict(BROWSER, Referer='https://www.euroleaguebasketball.net/')
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.loads(r.read().decode('utf-8'))
 

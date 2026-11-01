@@ -1,9 +1,0 @@
-{
- "at": "2026-11-01T03:23:40+01:00",
- "errors": [
-  {
-   "game": "gtestnba",
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  }
- ]
-}
