@@ -3480,7 +3480,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "3/7",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3522,7 +3522,7 @@
   "fg": "7/16",
   "three": "3/10",
   "ft": "5/5",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3543,7 +3543,7 @@
   "fg": "2/6",
   "three": "1/5",
   "ft": "1/2",
-  "pm": 4,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3606,7 +3606,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3690,7 +3690,7 @@
   "fg": "4/13",
   "three": "3/9",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3711,7 +3711,7 @@
   "fg": "2/10",
   "three": "2/8",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3732,7 +3732,7 @@
   "fg": "2/9",
   "three": "1/7",
   "ft": "2/3",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3795,7 +3795,7 @@
   "fg": "6/10",
   "three": "3/7",
   "ft": "2/4",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3807,7 +3807,7 @@
   "player": "L. Petrasek",
   "pos": "",
   "min": 25,
-  "pts": 11,
+  "pts": 12,
   "reb": 2,
   "ast": 0,
   "stl": 1,
@@ -3815,8 +3815,8 @@
   "tov": 2,
   "fg": "3/5",
   "three": "2/3",
-  "ft": "3/3",
-  "pm": 3,
+  "ft": "4/5",
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3879,7 +3879,7 @@
   "fg": "4/5",
   "three": "0/0",
   "ft": "5/7",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
