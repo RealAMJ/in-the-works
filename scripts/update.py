@@ -439,12 +439,15 @@ def main(argv):
         src, reader = feed_for(row)
         if not reader:
             continue
+        LOG.append({'game': row.get('game_id'), 'checking': src})
         try:
             feed = reader()
         except Exception as e:  # feed not up yet, network blip, format change: keep what we have
             print(f"  {row.get('game_id')}: feed error {e.__class__.__name__}: {e}")
             LOG.append({'game': row.get('game_id'), 'error': f"{e.__class__.__name__}: {e}"[:300]})
             continue
+        LOG.append({'game': row.get('game_id'), 'src': src, 'period': feed.get('period'), 'clock': feed.get('clock'), 'done': feed.get('done'),
+                    'teams': [(x.get('name'), x.get('score'), len(x.get('pl') or [])) for x in feed.get('teams') or []]})
         if not feed.get('teams') or len(feed['teams']) != 2:
             continue
         if apply(row, feed, src, swedes_all, None, fullbox, boxscores):
@@ -461,7 +464,7 @@ def main(argv):
         changed |= save('fullbox', fullbox)
         changed |= save('boxscores', boxscores)
     if LOG:
-        json.dump({'at': now().isoformat(timespec='seconds'), 'errors': LOG}, open(os.path.join(DATA, '_live_log.json'), 'w'), indent=1)
+        json.dump({'at': now().isoformat(timespec='seconds'), 'log': LOG}, open(os.path.join(DATA, '_live_log.json'), 'w'), indent=1)
     changed |= write_version(changed)
     print('changed' if changed else 'no changes')
     return 0
