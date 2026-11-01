@@ -1,188 +1,508 @@
 {
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/1/2026": {
-  "n_games": 18,
+ "https://baloncestoenvivo.feb.es/resultados.aspx?g=2&t=2026&nm=segundafeb": {
+  "final_url": "https://baloncestoenvivo.feb.es/resultados/segundafeb/2/2026",
+  "selects": {
+   "_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList": [
+    [
+     "2026",
+     "2026/2027"
+    ],
+    [
+     "2025",
+     "2025/2026"
+    ],
+    [
+     "2024",
+     "2024/2025"
+    ],
+    [
+     "2023",
+     "2023/2024"
+    ],
+    [
+     "2022",
+     "2022/2023"
+    ],
+    [
+     "2021",
+     "2021/2022"
+    ],
+    [
+     "2020",
+     "2020/2021"
+    ],
+    [
+     "2019",
+     "2019/2020"
+    ],
+    [
+     "2018",
+     "2018/2019"
+    ],
+    [
+     "2017",
+     "2017/2018"
+    ],
+    [
+     "2016",
+     "2016/2017"
+    ],
+    [
+     "2015",
+     "2015/2016"
+    ],
+    [
+     "2014",
+     "2014/2015"
+    ],
+    [
+     "2013",
+     "2013/2014"
+    ],
+    [
+     "2012",
+     "2012/2013"
+    ],
+    [
+     "2011",
+     "2011/2012"
+    ],
+    [
+     "2010",
+     "2010/2011"
+    ],
+    [
+     "2009",
+     "2009/2010"
+    ],
+    [
+     "2008",
+     "2008/2009"
+    ],
+    [
+     "2007",
+     "2007/2008"
+    ],
+    [
+     "2006",
+     "2006/2007"
+    ],
+    [
+     "2005",
+     "2005/2006"
+    ],
+    [
+     "2004",
+     "2004/2005"
+    ],
+    [
+     "2003",
+     "2003/2004"
+    ],
+    [
+     "2002",
+     "2002/2003"
+    ],
+    [
+     "2001",
+     "2001/2002"
+    ],
+    [
+     "2000",
+     "2000/2001"
+    ]
+   ],
+   "_ctl0:MainContentPlaceHolderMaster:gruposDropDownList": [
+    [
+     "89999",
+     "Liga Regular &quot;A&quot;"
+    ],
+    [
+     "90000",
+     "Liga Regular &quot;B&quot;"
+    ]
+   ],
+   "_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList": [
+    [
+     "672495",
+     "Jornada 1(03/10/2026)"
+    ],
+    [
+     "672496",
+     "Jornada 2(10/10/2026)"
+    ],
+    [
+     "672497",
+     "Jornada 3(17/10/2026)"
+    ],
+    [
+     "672498",
+     "Jornada 4(24/10/2026)"
+    ],
+    [
+     "672499",
+     "Jornada 5(31/10/2026)"
+    ],
+    [
+     "672500",
+     "Jornada 6(07/11/2026)"
+    ],
+    [
+     "672501",
+     "Jornada 7(14/11/2026)"
+    ],
+    [
+     "672502",
+     "Jornada 8(21/11/2026)"
+    ],
+    [
+     "672503",
+     "Jornada 9(28/11/2026)"
+    ],
+    [
+     "672504",
+     "Jornada 10(05/12/2026)"
+    ],
+    [
+     "672505",
+     "Jornada 11(12/12/2026)"
+    ],
+    [
+     "672506",
+     "Jornada 12(19/12/2026)"
+    ],
+    [
+     "672507",
+     "Jornada 13(03/01/2027)"
+    ],
+    [
+     "672508",
+     "Jornada 14(09/01/2027)"
+    ],
+    [
+     "672509",
+     "Jornada 15(16/01/2027)"
+    ],
+    [
+     "672510",
+     "Jornada 16(30/01/2027)"
+    ],
+    [
+     "672511",
+     "Jornada 17(06/02/2027)"
+    ],
+    [
+     "672512",
+     "Jornada 18(13/02/2027)"
+    ],
+    [
+     "672513",
+     "Jornada 19(20/02/2027)"
+    ],
+    [
+     "672514",
+     "Jornada 20(27/02/2027)"
+    ],
+    [
+     "672515",
+     "Jornada 21(06/03/2027)"
+    ],
+    [
+     "672516",
+     "Jornada 22(13/03/2027)"
+    ],
+    [
+     "672517",
+     "Jornada 23(20/03/2027)"
+    ],
+    [
+     "672518",
+     "Jornada 24(27/03/2027)"
+    ],
+    [
+     "672519",
+     "Jornada 25(03/04/2027)"
+    ],
+    [
+     "672520",
+     "Jornada 26(10/04/2027)"
+    ]
+   ]
+  },
   "sant": false,
-  "oct31": 5
+  "games": 14,
+  "teams_sample": [
+   "C.B. STARLABS MORÓN",
+   "SPANISH BASKETBALL ACADEMY",
+   "UEMC BALONCESTO VALLADOLID",
+   "CB ALGECIRAS",
+   "CLÍNICA PONFERRADA SDP",
+   "CACERES PATRIMONIO DE LA HUMANIDAD"
+  ]
  },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/2/2026": {
-  "n_games": 14,
+ "https://baloncestoenvivo.feb.es/resultados.aspx?g=1&t=2026": {
+  "final_url": "https://baloncestoenvivo.feb.es/resultados/1/2026",
+  "selects": {
+   "_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList": [
+    [
+     "2026",
+     "2026/2027"
+    ],
+    [
+     "2025",
+     "2025/2026"
+    ],
+    [
+     "2024",
+     "2024/2025"
+    ],
+    [
+     "2023",
+     "2023/2024"
+    ],
+    [
+     "2022",
+     "2022/2023"
+    ],
+    [
+     "2021",
+     "2021/2022"
+    ],
+    [
+     "2020",
+     "2020/2021"
+    ],
+    [
+     "2019",
+     "2019/2020"
+    ],
+    [
+     "2018",
+     "2018/2019"
+    ],
+    [
+     "2017",
+     "2017/2018"
+    ],
+    [
+     "2016",
+     "2016/2017"
+    ],
+    [
+     "2015",
+     "2015/2016"
+    ],
+    [
+     "2014",
+     "2014/2015"
+    ],
+    [
+     "2013",
+     "2013/2014"
+    ],
+    [
+     "2012",
+     "2012/2013"
+    ],
+    [
+     "2011",
+     "2011/2012"
+    ],
+    [
+     "2010",
+     "2010/2011"
+    ],
+    [
+     "2009",
+     "2009/2010"
+    ],
+    [
+     "2008",
+     "2008/2009"
+    ],
+    [
+     "2007",
+     "2007/2008"
+    ],
+    [
+     "2006",
+     "2006/2007"
+    ],
+    [
+     "2005",
+     "2005/2006"
+    ],
+    [
+     "2004",
+     "2004/2005"
+    ],
+    [
+     "2003",
+     "2003/2004"
+    ],
+    [
+     "2002",
+     "2002/2003"
+    ],
+    [
+     "2001",
+     "2001/2002"
+    ],
+    [
+     "2000",
+     "2000/2001"
+    ],
+    [
+     "1999",
+     "1999/2000"
+    ],
+    [
+     "1998",
+     "1998/1999"
+    ],
+    [
+     "1997",
+     "1997/1998"
+    ]
+   ],
+   "_ctl0:MainContentPlaceHolderMaster:gruposDropDownList": [
+    [
+     "89991",
+     "Liga Regular &#218;nico"
+    ]
+   ],
+   "_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList": [
+    [
+     "672419",
+     "Jornada 1(25/09/2026)"
+    ],
+    [
+     "672420",
+     "Jornada 2(02/10/2026)"
+    ],
+    [
+     "672421",
+     "Jornada 3(09/10/2026)"
+    ],
+    [
+     "672422",
+     "Jornada 4(16/10/2026)"
+    ],
+    [
+     "672423",
+     "Jornada 5(23/10/2026)"
+    ],
+    [
+     "672424",
+     "Jornada 6(30/10/2026)"
+    ],
+    [
+     "672425",
+     "Jornada 7(06/11/2026)"
+    ],
+    [
+     "672426",
+     "Jornada 8(13/11/2026)"
+    ],
+    [
+     "672427",
+     "Jornada 9(20/11/2026)"
+    ],
+    [
+     "672428",
+     "Jornada 10(04/12/2026)"
+    ],
+    [
+     "672429",
+     "Jornada 11(11/12/2026)"
+    ],
+    [
+     "672430",
+     "Jornada 12(18/12/2026)"
+    ],
+    [
+     "672431",
+     "Jornada 13(27/12/2026)"
+    ],
+    [
+     "672432",
+     "Jornada 14(03/01/2027)"
+    ],
+    [
+     "672433",
+     "Jornada 15(08/01/2027)"
+    ],
+    [
+     "672434",
+     "Jornada 16(12/01/2027)"
+    ],
+    [
+     "672435",
+     "Jornada 17(17/01/2027)"
+    ],
+    [
+     "672436",
+     "Jornada 18(29/01/2027)"
+    ],
+    [
+     "672437",
+     "Jornada 19(05/02/2027)"
+    ],
+    [
+     "672438",
+     "Jornada 20(09/02/2027)"
+    ],
+    [
+     "672439",
+     "Jornada 21(14/02/2027)"
+    ],
+    [
+     "672440",
+     "Jornada 22(19/02/2027)"
+    ],
+    [
+     "672441",
+     "Jornada 23(05/03/2027)"
+    ],
+    [
+     "672442",
+     "Jornada 24(09/03/2027)"
+    ],
+    [
+     "672443",
+     "Jornada 25(14/03/2027)"
+    ],
+    [
+     "672444",
+     "Jornada 26(19/03/2027)"
+    ],
+    [
+     "672445",
+     "Jornada 27(26/03/2027)"
+    ],
+    [
+     "672446",
+     "Jornada 28(02/04/2027)"
+    ],
+    [
+     "672447",
+     "Jornada 29(09/04/2027)"
+    ],
+    [
+     "672448",
+     "Jornada 30(16/04/2027)"
+    ]
+   ]
+  },
   "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/3/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/4/2026": {
-  "n_games": 16,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/5/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/6/2026": {
-  "n_games": 0,
-  "sant": false,
-  "oct31": 0
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/7/2026": {
-  "n_games": 12,
-  "sant": false,
-  "oct31": 3
- },
- "https://baloncestoenvivo.feb.es/resultados/segundafeb/8/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/1/2026": {
-  "n_games": 18,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/2/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/3/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/4/2026": {
-  "n_games": 16,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/5/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/6/2026": {
-  "n_games": 0,
-  "sant": false,
-  "oct31": 0
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/7/2026": {
-  "n_games": 12,
-  "sant": false,
-  "oct31": 3
- },
- "https://baloncestoenvivo.feb.es/resultados/segunda/8/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/1/2026": {
-  "n_games": 18,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/2/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/3/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/4/2026": {
-  "n_games": 16,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/5/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/6/2026": {
-  "n_games": 0,
-  "sant": false,
-  "oct31": 0
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/7/2026": {
-  "n_games": 12,
-  "sant": false,
-  "oct31": 3
- },
- "https://baloncestoenvivo.feb.es/resultados/ligaebaplata/8/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/1/2026": {
-  "n_games": 18,
-  "sant": false,
-  "oct31": 5
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/2/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/3/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/4/2026": {
-  "n_games": 16,
-  "sant": false,
-  "oct31": 7
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/5/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 6
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/6/2026": {
-  "n_games": 0,
-  "sant": false,
-  "oct31": 0
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/7/2026": {
-  "n_games": 12,
-  "sant": false,
-  "oct31": 3
- },
- "https://baloncestoenvivo.feb.es/resultados/lebplata/8/2026": {
-  "n_games": 14,
-  "sant": false,
-  "oct31": 5
- },
- "links": [
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=1&amp;t=2026&amp;nm=primerafeb",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=19&amp;t=2025&amp;nm=cessaaminimas",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=2&amp;t=2026&amp;nm=segundafeb",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=20&amp;t=2025&amp;nm=cessaaminifem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=21&amp;t=2025&amp;nm=cespclubesjrmasc",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=22&amp;t=2025&amp;nm=cespclubesjrfem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=25&amp;t=2025&amp;nm=cessaainfantilmas",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=26&amp;t=2025&amp;nm=cessaainfantilfem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=3&amp;t=2026&amp;nm=tercerafeb",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=35&amp;t=2025&amp;nm=cespclubescadmasc",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=36&amp;t=2025&amp;nm=cespclubescadfem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=37&amp;t=2025&amp;nm=cespclubesinfmasc",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=38&amp;t=2025&amp;nm=cespclubesinffem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=4&amp;t=2026&amp;nm=lfendesa",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=40&amp;t=2025&amp;nm=cessaacadetemas",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=41&amp;t=2025&amp;nm=cessaacadetefem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=44&amp;t=2025&amp;nm=fasefinal1divisinfemenin",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=55&amp;t=2025&amp;nm=minicopalfendesa",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=67&amp;t=2026&amp;nm=lfchallenge",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=71&amp;t=2025&amp;nm=cespclubesminimasc",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=72&amp;t=2025&amp;nm=cespclubesminifem",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=73&amp;t=2026&amp;nm=copaespaa",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=74&amp;t=2026&amp;nm=ligau",
-  "https://baloncestoenvivo.feb.es/resultados.aspx?g=9&amp;t=2026&amp;nm=lf2"
- ]
+  "games": 18,
+  "teams_sample": [
+   "GRUPO URETA TIZONA BURGOS",
+   "HLA ALICANTE",
+   "COVIRAN GRANADA",
+   "PARTIZÁN DE FUENLABRADA",
+   "CLUB OURENSE BALONCESTO",
+   "FIBWI MALLORCA BASQUET PALMA"
+  ]
+ }
 }
