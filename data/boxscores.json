@@ -232,5 +232,27 @@
   "tov": 0,
   "pf": "",
   "eff": ""
+ },
+ {
+  "line_id": "g20261031zab-babic",
+  "game_id": "g20261031zab",
+  "player": "Luka Babic",
+  "min": 25,
+  "pts": 6,
+  "reb": 6,
+  "ast": 1,
+  "fg": "2/4",
+  "three": "0/1",
+  "ft": "2/2",
+  "pm": 16,
+  "source": "FIBA LiveStats",
+  "note": "",
+  "oreb": 2,
+  "dreb": 4,
+  "stl": 0,
+  "blk": 0,
+  "tov": 2,
+  "pf": 3,
+  "eff": ""
  }
 ]
