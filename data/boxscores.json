@@ -310,7 +310,7 @@
   "fg": "3/4",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -3,
   "source": "ACB Live",
   "note": "live",
   "oreb": 2,
@@ -318,7 +318,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
