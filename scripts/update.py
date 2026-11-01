@@ -255,7 +255,7 @@ def read_espn(sport, row):
                            pts=num(g('points', 'pts')), reb=num(g('rebounds', 'reb')), ast=num(g('assists', 'ast')),
                            stl=num(g('steals', 'stl')), blk=num(g('blocks', 'blk')), tov=num(g('turnovers', 'to')),
                            fgm=fgm, fga=fga, tpm=tpm, tpa=tpa, ftm=ftm, fta=fta,
-                           pm=g('plusminus', '+/-'), pf=num(g('fouls', 'pf')),
+                           pm=num(g('plusminus', '+/-')), pf=num(g('fouls', 'pf')),
                            oreb=num(g('offensiverebounds', 'oreb')), dreb=num(g('defensiverebounds', 'dreb')),
                            starter=bool(a.get('starter'))))
         teams.append(dict(name=tb['team'].get('displayName', ''), score=scores.get(tb['team']['id'], 0), pl=pl))
@@ -381,7 +381,7 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
             r = dict(row_id=f'{gid}-{ti}-{i}', game_id=gid, team=site_names[ti], player=name, pos='', min=as_min(p['min']),
                      pts=p['pts'] or 0, reb=p['reb'] or 0, ast=p['ast'] or 0, stl=p['stl'] or 0, blk=p['blk'] or 0, tov=p['tov'] or 0,
                      fg=f"{p['fgm'] or 0}/{p['fga'] or 0}", three=f"{p['tpm'] or 0}/{p['tpa'] or 0}", ft=f"{p['ftm'] or 0}/{p['fta'] or 0}",
-                     pm=p['pm'] if p['pm'] not in (None,) else '', swede=sw, state='final' if done else 'live', source=src)
+                     pm=(int(str(p['pm']).replace('+', '')) if str(p['pm']).lstrip('+-').isdigit() else ''), swede=sw, state='final' if done else 'live', source=src)
             if r['min'] or r['pts'] or r['reb'] or r['ast']:
                 fullbox.append(r)
             if sw:
