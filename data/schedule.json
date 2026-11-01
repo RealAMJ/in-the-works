@@ -133,8 +133,8 @@
   "venue": "Away",
   "competition": "LKL",
   "note": "19:00 local",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "L 82-94"
  },
  {
   "game_id": "g06",
@@ -146,8 +146,8 @@
   "venue": "Home",
   "competition": "BBL",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "L 72-96"
  },
  {
   "game_id": "g07",
@@ -159,8 +159,8 @@
   "venue": "Away",
   "competition": "Primera FEB",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 85-73"
  },
  {
   "game_id": "g20261031zab",
@@ -172,8 +172,8 @@
   "venue": "Home",
   "competition": "Croatian Premier League",
   "note": "Round 6",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 84-68"
  },
  {
   "game_id": "g08",
@@ -185,8 +185,8 @@
   "venue": "Home",
   "competition": "Liga ACB",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 125-98"
  },
  {
   "game_id": "g09",
@@ -198,8 +198,8 @@
   "venue": "Home",
   "competition": "Primera FEB",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 90-89"
  },
  {
   "game_id": "g20261031sant",
@@ -211,8 +211,8 @@
   "venue": "Home",
   "competition": "Segunda FEB",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 71-61"
  },
  {
   "game_id": "g10",

@@ -35,8 +35,8 @@
   "venue": "Away",
   "competition": "Liga Națională",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "L 79-96"
  },
  {
   "game_id": "c20261031san",
@@ -48,8 +48,8 @@
   "venue": "Home",
   "competition": "Segunda FEB",
   "note": "Anton Lindqvist's club",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 71-61"
  },
  {
   "game_id": "c20261103msu",

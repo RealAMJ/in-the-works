@@ -210,5 +210,27 @@
   "tov": 2,
   "pf": 2,
   "eff": ""
+ },
+ {
+  "line_id": "g08-falk",
+  "game_id": "g08",
+  "player": "Wilhelm Falk",
+  "min": 15,
+  "pts": 2,
+  "reb": 5,
+  "ast": 2,
+  "fg": "1/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 24,
+  "source": "live.acb.com",
+  "note": "",
+  "oreb": "",
+  "dreb": "",
+  "stl": 2,
+  "blk": 0,
+  "tov": 0,
+  "pf": "",
+  "eff": ""
  }
 ]
