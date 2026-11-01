@@ -4355,14 +4355,14 @@
   "min": 16,
   "pts": 3,
   "reb": 1,
-  "ast": 2,
+  "ast": 3,
   "stl": 2,
   "blk": 0,
   "tov": 0,
   "fg": "1/4",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4383,7 +4383,7 @@
   "fg": "2/4",
   "three": "1/2",
   "ft": "1/2",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4404,7 +4404,7 @@
   "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4467,7 +4467,7 @@
   "fg": "2/3",
   "three": "0/0",
   "ft": "8/8",
-  "pm": 3,
+  "pm": 5,
   "swede": true,
   "state": "live",
   "source": "ACB Live"
@@ -4500,7 +4500,7 @@
   "player": "W. Hernangómez",
   "pos": "",
   "min": 17,
-  "pts": 9,
+  "pts": 11,
   "reb": 4,
   "ast": 1,
   "stl": 0,
@@ -4508,8 +4508,8 @@
   "tov": 1,
   "fg": "3/8",
   "three": "0/1",
-  "ft": "3/8",
-  "pm": -9,
+  "ft": "5/10",
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4572,7 +4572,7 @@
   "fg": "3/5",
   "three": "2/4",
   "ft": "1/2",
-  "pm": 5,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4593,7 +4593,7 @@
   "fg": "3/8",
   "three": "1/4",
   "ft": "4/4",
-  "pm": -2,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4635,7 +4635,7 @@
   "fg": "3/8",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4719,7 +4719,7 @@
   "fg": "4/5",
   "three": "0/0",
   "ft": "0/1",
-  "pm": -1,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4761,7 +4761,7 @@
   "fg": "2/6",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
