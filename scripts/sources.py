@@ -124,26 +124,42 @@ def same_game(a1, a2, row):
     return bool((t & w1 and o & w2) or (t & w2 and o & w1))
 
 
-FEB_COMP = {'Primera FEB': 'primerafeb', 'Segunda FEB': 'segundafeb'}
+FEB_COMP = {'Primera FEB': 1, 'Segunda FEB': 2}
+
+
+def feb_teams(pid):
+    t = text(page(f'https://baloncestoenvivo.feb.es/partido/{pid}'))
+    m = re.search(r'Estad[ií]sticas (.+?) \d+ p \d+ (.+?) \d', t) or re.search(r'Estad[ií]sticas (.+?) p (.+?) \d', t)
+    d = re.search(r'Fecha (\d{2}/\d{2}/\d{4})', t)
+    return (m.group(1), m.group(2), d.group(1) if d else '') if m else None
 
 
 def find_feb(row):
-    comp = FEB_COMP.get(row.get('competition'))
-    if not comp:
+    g = FEB_COMP.get(row.get('competition'))
+    if not g:
         return None
     day = dt.date.fromisoformat(row['date']).strftime('%d/%m/%Y')
-    for g in range(1, 7):
+    h = page(f'https://baloncestoenvivo.feb.es/resultados.aspx?g={g}&t=2026')
+    ids = []
+    for tr in re.findall(r'<tr>(.*?)</tr>', h, re.S):
+        pid = re.search(r'Partido\.aspx\?p=(\d+)', tr)
+        if not pid:
+            continue
+        ids.append(int(pid.group(1)))
+        teams = [clean(x) for x in re.findall(r'Equipo\.aspx\?i=\d+">(.*?)</a>', tr)]
+        if day in tr and len(teams) == 2 and same_game(teams[0], teams[1], row):
+            return f'feb:{pid.group(1)}'
+    # other groups (e.g. Segunda FEB "B") are not on the default page: their games have ids close to these
+    if not ids:
+        return None
+    lo, hi = min(ids), max(ids)
+    for pid in list(range(hi + 1, hi + 60)) + list(range(lo - 40, lo)):
         try:
-            h = page(f'https://baloncestoenvivo.feb.es/resultados/{comp}/{g}/2026')
+            tm = feb_teams(pid)
         except Exception:
             continue
-        for tr in re.findall(r'<tr>(.*?)</tr>', h, re.S):
-            if day not in tr:
-                continue
-            teams = [clean(x) for x in re.findall(r'Equipo\.aspx\?i=\d+">(.*?)</a>', tr)]
-            pid = re.search(r'Partido\.aspx\?p=(\d+)', tr)
-            if len(teams) == 2 and pid and same_game(teams[0], teams[1], row):
-                return f'feb:{pid.group(1)}'
+        if tm and tm[2] == day and same_game(tm[0], tm[1], row):
+            return f'feb:{pid}'
     return None
 
 
