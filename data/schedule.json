@@ -1355,6 +1355,8 @@
   "competition": "NBA",
   "note": "Test game (live check), will be removed",
   "status": "live",
-  "score": ""
+  "score": "",
+  "nba_id": "0022600153",
+  "box_url": "https://www.nba.com/game/okc-vs-hou-0022600153/box-score"
  }
 ]
