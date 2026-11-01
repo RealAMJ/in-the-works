@@ -336,6 +336,9 @@ def write_version(changed_any):
     return True
 
 
+LOG = []
+
+
 def main(argv):
     only = argv[argv.index('--game') + 1] if '--game' in argv else None
     every = '--all' in argv
@@ -362,6 +365,7 @@ def main(argv):
             feed = reader()
         except Exception as e:  # feed not up yet, network blip, format change: keep what we have
             print(f"  {row.get('game_id')}: feed error {e.__class__.__name__}: {e}")
+            LOG.append({'game': row.get('game_id'), 'error': f"{e.__class__.__name__}: {e}"[:300]})
             continue
         if not feed.get('teams') or len(feed['teams']) != 2:
             continue
@@ -378,6 +382,8 @@ def main(argv):
         changed |= save('coachgames', coach)
         changed |= save('fullbox', fullbox)
         changed |= save('boxscores', boxscores)
+    if LOG:
+        json.dump({'at': now().isoformat(timespec='seconds'), 'errors': LOG}, open(os.path.join(DATA, '_live_log.json'), 'w'), indent=1)
     changed |= write_version(changed)
     print('changed' if changed else 'no changes')
     return 0
