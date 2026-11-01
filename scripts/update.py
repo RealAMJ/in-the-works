@@ -339,9 +339,10 @@ def main(argv):
     for row in sched + coach:
         if only and row.get('game_id') != only:
             continue
-        if not only and row.get('live_done'):
+        back = bool(row.get('backfill'))  # finished game whose full box score should be fetched once
+        if not only and row.get('live_done') and not back:
             continue
-        if not only and not every and not in_window(row, t):
+        if not only and not every and not back and not in_window(row, t):
             continue
         src, reader = feed_for(row)
         if not reader:
@@ -353,7 +354,9 @@ def main(argv):
             continue
         if not feed.get('teams') or len(feed['teams']) != 2:
             continue
-        touched |= apply(row, feed, src, swedes_all, None, fullbox, boxscores)
+        if apply(row, feed, src, swedes_all, None, fullbox, boxscores):
+            touched = True
+            row.pop('backfill', None)
     soon = [tip_time(r) for r in sched + coach if r.get('status') != 'final' and tip_time(r)]
     soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=3)]
     if soon and not only:

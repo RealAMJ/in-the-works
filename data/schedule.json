@@ -173,7 +173,9 @@
   "competition": "Croatian Premier League",
   "note": "Round 6",
   "status": "final",
-  "score": "W 84-68"
+  "score": "W 84-68",
+  "live_feed": "fiba:2893787",
+  "backfill": true
  },
  {
   "game_id": "g08",

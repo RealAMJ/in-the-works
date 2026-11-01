@@ -50,6 +50,13 @@ team, add the line after `"game_id": "...",` and commit. Example:
 A game is checked from 20 minutes before tip-off until 4 hours after. When the feed says it has ended,
 the result is saved as final and the game is no longer checked.
 
+## Finding live-stats ids automatically
+
+`data/feed_seeds.json` lists one known FIBA LiveStats game id per competition. Games of the same
+league get ids close to each other, so `scripts/discover.py` scans around that id and adds
+`live_feed` to new games of that league by itself. Add one id for a new league and it is covered.
+To fetch a finished game's box score once, add `"live_feed": "fiba:<id>"` and `"backfill": true` to its row.
+
 ## What stays manual
 
 The updater handles scores and box scores. New fixtures, season averages, stories on *This week*,
