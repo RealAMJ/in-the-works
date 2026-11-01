@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T13:07:51+01:00",
+ "at": "2026-11-01T13:08:41+01:00",
  "log": [
   {
    "game": "g11",
@@ -9,12 +9,12 @@
    "game": "g11",
    "src": "ACB Live",
    "period": 3,
-   "clock": "07:40",
+   "clock": "07:35",
    "done": false,
    "teams": [
     [
      "Asisa Joventut",
-     51,
+     53,
      12
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g27",
    "src": "ACB Live",
    "period": 3,
-   "clock": "08:35",
+   "clock": "08:14",
    "done": false,
    "teams": [
     [
      "Monbus Obradoiro",
-     45,
+     47,
      12
     ],
     [
      "R\u00edo Breog\u00e1n",
-     55,
+     58,
      12
     ]
    ]
