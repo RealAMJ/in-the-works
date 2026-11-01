@@ -322,6 +322,28 @@
   "eff": ""
  },
  {
+  "line_id": "g13-terins",
+  "game_id": "g13",
+  "player": "Felix Terins",
+  "min": 17,
+  "pts": 13,
+  "reb": 4,
+  "ast": 1,
+  "fg": "5/9",
+  "three": "1/3",
+  "ft": "2/2",
+  "pm": 10,
+  "source": "FEB Live",
+  "note": "",
+  "oreb": 3,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 3,
+  "pf": 2,
+  "eff": ""
+ },
+ {
   "line_id": "g14-pantzar",
   "game_id": "g14",
   "player": "Melwin Pantzar",

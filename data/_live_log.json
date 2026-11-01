@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:16:26+01:00",
+ "at": "2026-11-01T20:17:16+01:00",
  "log": [
   {
    "game": "g13",
@@ -8,10 +8,21 @@
   {
    "game": "g13",
    "src": "FEB Live",
-   "period": 1,
+   "period": 4,
    "clock": "00:00",
    "done": true,
-   "teams": []
+   "teams": [
+    [
+     "PALMER BASKET MALLORCA PALMA",
+     80,
+     11
+    ],
+    [
+     "ALIMERKA OVIEDO BALONCESTO",
+     79,
+     10
+    ]
+   ]
   },
   {
    "game": "g14",
@@ -21,7 +32,7 @@
    "game": "g14",
    "src": "ACB Live",
    "period": 3,
-   "clock": "01:02",
+   "clock": "00:10",
    "done": false,
    "teams": [
     [

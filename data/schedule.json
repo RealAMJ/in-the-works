@@ -316,9 +316,10 @@
   "venue": "Away",
   "competition": "Primera FEB",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "feb:2535771"
+  "status": "final",
+  "score": "L 79-80",
+  "live_feed": "feb:2535771",
+  "live_done": true
  },
  {
   "game_id": "g14",
@@ -333,8 +334,8 @@
   "status": "live",
   "score": "W 72-72",
   "live_feed": "acb:105428",
-  "clock": "Q3 01:02",
-  "live_updated": "2026-11-01T20:16:26+01:00"
+  "clock": "Q3 00:10",
+  "live_updated": "2026-11-01T20:17:16+01:00"
  },
  {
   "game_id": "g15",
