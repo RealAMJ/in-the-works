@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T13:38:00+01:00",
+ "at": "2026-11-01T13:38:51+01:00",
  "log": [
   {
    "game": "g11",
@@ -9,7 +9,7 @@
    "game": "g11",
    "src": "ACB Live",
    "period": 4,
-   "clock": "06:31",
+   "clock": "05:59",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g27",
    "src": "ACB Live",
    "period": 4,
-   "clock": "06:36",
+   "clock": "06:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "R\u00edo Breog\u00e1n",
-     87,
+     88,
      12
     ]
    ]
