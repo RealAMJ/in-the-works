@@ -1343,5 +1343,18 @@
   "score": "",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV"
+ },
+ {
+  "game_id": "gtestnba",
+  "date": "2026-11-01",
+  "time": "01:30",
+  "players": "",
+  "team": "Houston Rockets",
+  "opponent": "Oklahoma City Thunder",
+  "venue": "Home",
+  "competition": "NBA",
+  "note": "Test game (live check), will be removed",
+  "status": "live",
+  "score": ""
  }
 ]

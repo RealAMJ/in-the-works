@@ -214,6 +214,17 @@ def feed_for(row):
         nid = f.split(':', 1)[1]
     if nid:
         return 'NBA.com', lambda: read_nba(nid)
+    if row.get('competition') == 'NBA':
+        def find_and_read():
+            sb = get('https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json')['scoreboard']['games']
+            want = {norm(row.get('team')), norm(row.get('opponent'))}
+            for g in sb:
+                names = {norm(f"{g[s]['teamCity']} {g[s]['teamName']}") for s in ('homeTeam', 'awayTeam')}
+                if names == want:
+                    row['nba_id'] = g['gameId']
+                    return read_nba(g['gameId'])
+            raise LookupError('game not on today\'s NBA scoreboard')
+        return 'NBA.com', find_and_read
     return None, None
 
 
