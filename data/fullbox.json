@@ -3942,7 +3942,7 @@
   "fg": "2/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -3963,7 +3963,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4047,7 +4047,7 @@
   "fg": "3/4",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 6,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4068,7 +4068,7 @@
   "fg": "3/6",
   "three": "0/0",
   "ft": "3/6",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4110,7 +4110,7 @@
   "fg": "3/4",
   "three": "2/3",
   "ft": "2/2",
-  "pm": 5,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4143,7 +4143,7 @@
   "player": "T. Martin",
   "pos": "",
   "min": 8,
-  "pts": 2,
+  "pts": 4,
   "reb": 1,
   "ast": 0,
   "stl": 0,
@@ -4151,8 +4151,8 @@
   "tov": 0,
   "fg": "0/3",
   "three": "0/1",
-  "ft": "2/2",
-  "pm": -11,
+  "ft": "4/4",
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4194,7 +4194,7 @@
   "fg": "1/5",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4236,7 +4236,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4257,7 +4257,7 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4278,7 +4278,7 @@
   "fg": "4/5",
   "three": "0/0",
   "ft": "0/1",
-  "pm": -1,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
