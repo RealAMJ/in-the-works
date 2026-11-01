@@ -280,6 +280,12 @@ def feed_for(row):
     if f.startswith('euroleague:'):
         _, season, code = f.split(':')
         return 'EuroLeague live', lambda: read_euroleague(season, code)
+    if f.startswith('acb:'):
+        import sources
+        return 'ACB Live', lambda: sources.read_acb(f.split(':', 1)[1])
+    if f.startswith('feb:'):
+        import sources
+        return 'FEB Live', lambda: sources.read_feb(f.split(':', 1)[1], row)
     if row.get('competition') == 'NBA':
         return 'ESPN', lambda: read_espn('nba', row)
     if row.get('competition') == 'NCAA':

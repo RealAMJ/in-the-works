@@ -49,7 +49,8 @@
   "competition": "Segunda FEB",
   "note": "Anton Lindqvist's club",
   "status": "final",
-  "score": "W 71-61"
+  "score": "W 71-61",
+  "backfill": true
  },
  {
   "game_id": "c20261103msu",

@@ -54,6 +54,39 @@ def main():
             tip = U.tip_time(r)
             if tip and now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30) and r.get('competition') in seeds:
                 todo.append(r)
+    # Spanish leagues and the EuroLeague have their own free live pages
+    import sources
+    other = False
+    for name, rows in (('schedule', sched), ('coachgames', coach)):
+        for r in rows:
+            if r.get('live_feed') or r.get('status') == 'final' and not r.get('backfill'):
+                continue
+            tip = U.tip_time(r)
+            if not tip or not (now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30)) and not r.get('backfill'):
+                continue
+            comp = r.get('competition')
+            try:
+                f = None
+                if comp in sources.FEB_COMP:
+                    f = sources.find_feb(r)
+                elif comp == 'Liga ACB' and seeds.get('Liga ACB'):
+                    f = sources.find_acb(r, int(seeds['Liga ACB']))
+                    if f:
+                        seeds['Liga ACB'] = max(int(seeds['Liga ACB']), int(f.split(':')[1]))
+                elif comp == 'EuroLeague':
+                    f = sources.find_euroleague(r)
+                if f:
+                    r['live_feed'] = f
+                    other = True
+                    print(f"  {r['game_id']}: {comp} -> {f}")
+            except Exception as e:
+                print(f"  {r['game_id']}: lookup error {e}")
+    if other:
+        U.save('schedule', sched)
+        U.save('coachgames', coach)
+        json.dump(seeds, open(SEEDS, 'w'), indent=1)
+        U.write_version(True)
+    todo = [r for r in todo if not r.get('live_feed')]
     if not todo:
         print('nothing to look up'); return
     found = 0

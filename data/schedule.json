@@ -160,7 +160,9 @@
   "competition": "Primera FEB",
   "note": "",
   "status": "final",
-  "score": "W 85-73"
+  "score": "W 85-73",
+  "live_feed": "feb:2535777",
+  "backfill": true
  },
  {
   "game_id": "g20261031zab",
@@ -188,7 +190,9 @@
   "competition": "Liga ACB",
   "note": "",
   "status": "final",
-  "score": "W 125-98"
+  "score": "W 125-98",
+  "live_feed": "acb:105421",
+  "backfill": true
  },
  {
   "game_id": "g09",
@@ -201,7 +205,9 @@
   "competition": "Primera FEB",
   "note": "",
   "status": "final",
-  "score": "W 90-89"
+  "score": "W 90-89",
+  "live_feed": "feb:2535778",
+  "backfill": true
  },
  {
   "game_id": "g20261031sant",
@@ -214,7 +220,8 @@
   "competition": "Segunda FEB",
   "note": "",
   "status": "final",
-  "score": "W 71-61"
+  "score": "W 71-61",
+  "backfill": true
  },
  {
   "game_id": "g10",
