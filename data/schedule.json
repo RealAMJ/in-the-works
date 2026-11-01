@@ -1355,8 +1355,11 @@
   "competition": "NBA",
   "note": "Test game (live check), will be removed",
   "status": "live",
-  "score": "",
+  "score": "W 110-86",
   "nba_id": "0022600153",
-  "box_url": "https://www.nba.com/game/okc-vs-hou-0022600153/box-score"
+  "box_url": "https://www.nba.com/game/okc-vs-hou-0022600153/box-score",
+  "espn_id": "401909902",
+  "clock": "Q4 05:14",
+  "live_updated": "2026-11-01T03:34:54+01:00"
  }
 ]
