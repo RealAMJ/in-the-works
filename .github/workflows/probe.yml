@@ -1,0 +1,16 @@
+name: Probe sources
+on:
+  push:
+    paths: ['tools/probe.py']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/probe.py
+      - run: |
+          git config user.name "swedes-abroad-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/_probe.json && git commit -q -m "Source check" && git pull -q --rebase origin main && git push -q
