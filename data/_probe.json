@@ -1,0 +1,101 @@
+{
+ "sofascore_day": {
+  "error": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "sofascore_www": {
+  "error": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "acb_live_page": {
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "len": 399386,
+  "head": "<!DOCTYPE html><html lang=\"es\"><head><meta charSet=\"utf-8\"/><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/chunks/05s5q_e8humkd.css\" data-prece",
+  "has_fibalivestats": false,
+  "ms": 1074
+ },
+ "acb_api_guess": {
+  "error": "HTTPError: HTTP Error 401: Unauthorized"
+ },
+ "feb_partido": {
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "len": 98689,
+  "head": "\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>\r\n\tCompeticiones FEB\r\n</title><meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\r\n    <script src=\"https://baloncestoenvivo.feb.es/scripts/jquery-1.11.0.js\"></script>\r\n    <",
+  "has_fibalivestats": false,
+  "ms": 1581
+ },
+ "feb_envivo": {
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "len": 85425,
+  "head": "\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>\r\n\tCompeticiones FEB\r\n</title><meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\r\n    <script src=\"https://baloncestoenvivo.feb.es/scripts/jquery-1.11.0.js\"></script>\r\n    <",
+  "has_fibalivestats": false,
+  "ms": 1538
+ },
+ "espn_league_list": {
+  "error": "HTTPError: HTTP Error 404: Not Found"
+ },
+ "espn_fiba": {
+  "status": 200,
+  "type": "application/json;charset=UTF-8",
+  "len": 14834,
+  "head": "{\"leagues\":[{\"id\":\"53\",\"uid\":\"s:40~l:53\",\"name\":\"FIBA World Cup\",\"abbreviation\":\"FIBA\",\"slug\":\"fiba\",\"season\":{\"year\":2026,\"startDate\":\"2026-09-04T07:00Z\",\"endDate\":\"2026-09-14T06:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\"href\":\"htt",
+  "has_fibalivestats": false,
+  "ms": 130
+ },
+ "espn_spain": {
+  "error": "HTTPError: HTTP Error 400: Bad Request"
+ },
+ "bbl_site": {
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "len": 399888,
+  "head": "<!DOCTYPE html><html lang=\"de-DE\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><script id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"67df5aa5-a7ff-4760-8916-e749b06aa2a0\" type=\"text/javascript\" data-blockin",
+  "has_fibalivestats": false,
+  "ms": 2211
+ },
+ "bbl_api_guess": {
+  "error": "URLError: <urlopen error timed out>"
+ },
+ "euroleague_header": {
+  "status": 200,
+  "type": "application/json; charset=utf-8",
+  "len": 933,
+  "head": "{\"Live\":false,\"Round\":\"1\",\"Date\":\"24/09/2026\",\"Hour\":\"20:00 \",\"Stadium\":\"BELGRADE ARENA\",\"Capacity\":\"16420\",\"TeamA\":\"CRVENA ZVEZDA MERIDIANBET BELGRADE\",\"TeamB\":\"ZALGIRIS KAUNAS\",\"CodeTeamA\":\"RED\",\"TVCodeA\":\"CZV\",\"CodeTeamB\":\"ZAL\",\"TVCodeB\":\"ZAL\",\"imA\":\"RED       \",\"imB\":\"ZAL       \",\"ScoreA\":\"77\",\"",
+  "has_fibalivestats": false,
+  "ms": 288
+ },
+ "euroleague_v2": {
+  "status": 200,
+  "type": "application/json; charset=utf-8",
+  "len": 72750,
+  "head": "{\"data\":[{\"id\":\"148608ec-4577-4080-80ef-1edbb4548aea\",\"identifier\":\"E2026_377\",\"gameCode\":377,\"season\":{\"name\":\"EuroLeague 2026-27\",\"code\":\"E2026\",\"alias\":\"2026-27\",\"competitionCode\":\"E\",\"year\":2026,\"startDate\":\"2026-07-01T00:00:00\"},\"group\":{\"id\":\"c3243224-039c-4e93-9e16-12a7f4b2d383\",\"order\":1,\"na",
+  "has_fibalivestats": false,
+  "ms": 329
+ },
+ "flashscore": {
+  "status": 200,
+  "type": "text/html; charset=UTF-8",
+  "len": 399685,
+  "head": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>ACB 2026/2027 Results - Basketball/Spain  </title>\n        <script defer src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\"\n            type=\"text/javascript\"\n            charset=\"UTF-8\"\n            d",
+  "has_fibalivestats": false,
+  "ms": 1696
+ },
+ "realgm": {
+  "error": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "proballers": {
+  "error": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "lkl": {
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "len": 125605,
+  "head": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title>LKL - LKL.LT</title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"format-detection\" content=\"telephone=no\">\n        <!-- CSRF Token -->\n  ",
+  "has_fibalivestats": false,
+  "ms": 1439
+ },
+ "basketligan": {
+  "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+ }
+}
