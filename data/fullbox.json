@@ -4362,7 +4362,7 @@
   "fg": "1/4",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4446,7 +4446,7 @@
   "fg": "2/5",
   "three": "1/4",
   "ft": "0/2",
-  "pm": -2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4488,7 +4488,7 @@
   "fg": "6/11",
   "three": "2/3",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4521,16 +4521,16 @@
   "player": "D. Kravish",
   "pos": "",
   "min": 21,
-  "pts": 13,
+  "pts": 15,
   "reb": 8,
   "ast": 3,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "6/6",
+  "fg": "7/7",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4551,7 +4551,7 @@
   "fg": "5/10",
   "three": "3/6",
   "ft": "2/2",
-  "pm": -6,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4572,7 +4572,7 @@
   "fg": "3/5",
   "three": "2/4",
   "ft": "3/4",
-  "pm": 2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4593,7 +4593,7 @@
   "fg": "3/9",
   "three": "1/5",
   "ft": "4/4",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4656,7 +4656,7 @@
   "fg": "3/6",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4761,7 +4761,7 @@
   "fg": "2/7",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -4,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -4782,7 +4782,7 @@
   "fg": "7/8",
   "three": "3/4",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
