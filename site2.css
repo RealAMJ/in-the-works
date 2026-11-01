@@ -1099,3 +1099,15 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .sbx-lead:nth-last-child(-n+3) { border-bottom: 0; }
 @media (max-width: 900px) { .sbx-leaders { grid-template-columns: repeat(2, minmax(0, 1fr)); } .sbx-lead:nth-last-child(3) { border-bottom: 1px solid var(--color-border-line); } }
 @media (max-width: 560px) { .sbx-leaders { grid-template-columns: minmax(0, 1fr); } .sbx-lead:nth-last-child(-n+3) { border-bottom: 1px solid var(--color-border-line); } .sbx-lead:last-child { border-bottom: 0; } }
+
+/* v48: Swede-vs-Swede rows in the games table keep the table layout (the .h2h card style is for the separate schedule cards) */
+.sw table tr.h2h { color: var(--color-fg); border: 0; overflow: visible; background: transparent; }
+.sw table tr.h2h a, .sw table tr.h2h .tm { color: inherit; }
+.sw table tr.h2h > td:first-child { box-shadow: inset 4px 0 0 var(--se-yellow); }
+@media (min-width: 641px) {
+  .sw table tr.h2h { display: table-row; grid-template-columns: none; border-radius: 0; }
+}
+@media (max-width: 640px) {
+  .sw table.cards tr.h2h { background: rgba(255, 204, 0, .28); border: 2px solid var(--se-yellow); border-radius: var(--cds-radius); }
+  .sw table.cards tr.h2h > td:first-child { box-shadow: none; }
+}
