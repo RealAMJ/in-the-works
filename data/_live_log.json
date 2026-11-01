@@ -1,72 +1,49 @@
 {
- "at": "2026-11-01T03:49:07+01:00",
+ "at": "2026-11-01T11:41:30+01:00",
  "log": [
   {
-   "game": "g07",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "g07",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "GRUPO ALEGA CANTABRIA",
-     73,
-     10
-    ],
-    [
-     "2/7 28,6% 5/13 38,5% 3/3 100% 0 1 1 1 0 1 0 1 0 2 1 7 -11 * 2 WINTERING, ALEC MARTIN 27:20 12 5/11 45,5% 0/0 0% 5/11 45,5% 2/2 100% 1 3 4 5 1 1 0 0 0 4 4 15 8 * 5 MURPHY, ALEX JAMES 21:13 9 3/3 100% 1/3 33,3% 4/6 66,7% 0/1 0% 0 3 3 1 2 3 0 0 0 1 1 9 2 7 MARTINEZ DIAZ, GERMAN 15:36 5 1/1 100% 0/1 0% 1/2 50% 3/4 75% 1 1 2 2 2 0 1 0 0 2 2 10 -19 8 RODR\u00cdGUEZ RAMOS, SAMUEL 18:47 4 0/0 0% 0/1 0% 0/1 0% 4/5 80% 1 5 6 1 1 1 0 0 0 1 4 12 -14 * 11 SEOANE RODICIO, RODRIGO 21:06 7 1/2 50% 1/1 100% 2/3 66,7% 2/2 100% 0 2 2 0 0 0 0 0 0 1 1 8 -1 12 ALDERETE DIAZ, DIEGO 02:42 1 0/0 0% 0/0 0% 0/0 0% 1/2 50% 0 1 1 0 0 0 0 0 0 0 1 2 -5 21 OSTOJIC, DANILO 14:51 1 0/1 0% 0/1 0% 0/2 0% 1/2 50% 0 2 2 0 0 0 0 0 0 1 1 0 -20 * 24 NWOGBO, LOTANNA AFAM 25:09 11 5/7 71,4% 0/0 0% 5/7 71,4% 1/2 50% 2 5 7 1 2 5 2 0 0 3 3 15 8 31 LAPORNIK, MIHA 26:50 8 0/3 0% 1/7 14,3% 1/10 10% 5/6 83,3% 0 1 1 1 0 2 0 0 0 2 6 2 -8 200:00 73 18/34 52,9% 5/21 23,8% 23/55 41,8% 22/29 75,9% 5 24 29 12 8 13 3 1 0 17 24 80 IBEROLEA PALENCIA",
-     85,
-     12
-    ]
-   ]
-  },
-  {
-   "game": "g08",
+   "game": "g11",
    "checking": "ACB Live"
   },
   {
-   "game": "g08",
+   "game": "g11",
    "src": "ACB Live",
-   "period": 4,
+   "period": 1,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "as Avanzado Todos 1C 2C 3C 4C UCAM Murcia",
-     125,
+     "Asisa Joventut",
+     0,
      12
     ],
     [
-     "Dimitrios Tsesmetzis iLERNA Lleida",
-     98,
-     11
+     "Surne Bilbao",
+     0,
+     12
     ]
    ]
   },
   {
-   "game": "g09",
-   "checking": "FEB Live"
+   "game": "g27",
+   "checking": "ACB Live"
   },
   {
-   "game": "g09",
-   "src": "FEB Live",
-   "period": 4,
+   "game": "g27",
+   "src": "ACB Live",
+   "period": 1,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "CAJA RURAL CB ZAMORA",
-     90,
-     11
+     "Monbus Obradoiro",
+     0,
+     12
     ],
     [
-     "0/0 0% 4/5 80% 0/0 0% 2 4 6 0 1 0 0 0 1 2 1 13 6 * 2 RIVERA CARROLL, ISAIAH STONE 26:45 10 4/4 100% 0/4 0% 4/8 50% 2/2 100% 1 3 4 2 2 2 1 0 0 2 2 13 8 * 3 ROBERTS, TYRELL PAUL 25:11 19 4/10 40% 2/5 40% 6/15 40% 5/6 83,3% 2 3 5 8 0 3 0 1 0 4 3 18 16 9 PALMQUIST, OSKAR JOHAN ARVID 22:43 11 2/2 100% 1/1 100% 3/3 100% 4/4 100% 1 0 1 0 1 0 0 0 0 2 5 16 -4 10 ISERN MAZA, PAU 20:42 10 3/5 60% 0/1 0% 3/6 50% 4/4 100% 1 1 2 0 0 2 0 0 0 1 4 10 -15 * 12 CARRALERO MARTIN, JESUS 25:16 7 3/4 75% 0/2 0% 3/6 50% 1/1 100% 1 4 5 0 2 3 3 0 0 1 1 11 12 * 13 BLACKSHEAR, KENAN DEANGELO 10:30 10 5/6 83,3% 0/0 0% 5/6 83,3% 0/0 0% 1 4 5 0 1 0 1 0 0 2 2 16 20 14 KRISTENSEN, DAVID 10:53 6 2/2 100% 0/0 0% 2/2 100% 2/2 100% 2 0 2 2 0 1 0 0 0 5 1 5 -7 21 TAMBA VILLEN, ISMAEL 23:36 5 2/5 40% 0/2 0% 2/7 28,6% 1/2 50% 1 6 7 3 1 7 0 0 1 3 1 1 -3 25 JORDA RODRIGUEZ, ALEJANDRO 13:40 2 1/1 100% 0/2 0% 1/3 33,3% 0/0 0% 0 0 0 0 1 2 0 0 0 1 0 -2 -14 30 BAEZ PIERSON, BRYCE ADEN 05:30 2 1/1 100% 0/0 0% 1/1 100% 0/0 0% 0 0 0 0 0 2 0 0 0 3 0 -3 -14 200:00 90 31/45 68,9% 3/17 17,6% 34/62 54,8% 19/21 90,5% 12 25 37 15 9 22 5 1 2 26 20 98 BUENO ARENAS ALBACETE BASKET",
-     89,
-     11
+     "R\u00edo Breog\u00e1n",
+     0,
+     12
     ]
    ]
   }

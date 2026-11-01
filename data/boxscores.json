@@ -298,5 +298,27 @@
   "tov": 0,
   "pf": 2,
   "eff": ""
+ },
+ {
+  "line_id": "g11-birgander",
+  "game_id": "g11",
+  "player": "Simon Birgander",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "source": "ACB Live",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
  }
 ]
