@@ -40,5 +40,49 @@
   "tag": "Season high",
   "headline_sv": "Perfekt kväll: 18 poäng på 5 av 5 skott, och hans 100:e NBA-trea",
   "detail_sv": "Larsson missade inte från fältet (5/5, 1/1 från tre) och satte 7/8 straffar för 18 poäng, plus 3 returer och 3 assist, när Miami körde över Indiana med 145-125 för andra raka segern. Trean var hans 100:e i NBA-karriären. Giannis Antetokounmpo gjorde en trippel-dubbel med 31-18-10."
+ },
+ {
+  "highlight_id": "g09-palmquist",
+  "date": "2026-10-31",
+  "player": "Oskar Palmquist",
+  "game_id": "g09",
+  "headline": "Perfect shooting: 11 points on 3/3 from the field and 4/4 at the line",
+  "detail": "Palmquist did not miss a shot (3/3, 1/1 from three, 4/4 free throws) in 22 minutes, matching his season high of 11 points, as Zamora edged Albacete 90-89 at home.",
+  "tag": "Perfect shooting",
+  "headline_sv": "Perfekt skytte: 11 poäng på 3/3 från fältet och 4/4 på straffar",
+  "detail_sv": "Palmquist missade inte ett enda skott (3/3, 1/1 från tre, 4/4 på straffar) på 22 minuter och tangerade sitt säsongsbästa på 11 poäng när Zamora vann med 90-89 hemma mot Albacete."
+ },
+ {
+  "highlight_id": "g10-gaddefors",
+  "date": "2026-10-31",
+  "player": "Viktor Gaddefors",
+  "game_id": "g10",
+  "headline": "Season-high 18 points and 8 rebounds in Toruń win",
+  "detail": "Gaddefors scored a season-high 18 points (6/14, 5/7 FT) with 8 rebounds in 36 minutes and was +21 as Toruń beat Zastal Zielona Góra 87-71.",
+  "tag": "Season high",
+  "headline_sv": "Säsongsbästa 18 poäng och 8 returer när Toruń vann",
+  "detail_sv": "Gaddefors gjorde säsongsbästa 18 poäng (6/14, 5/7 på straffar) och tog 8 returer på 36 minuter, och var +21 när Toruń slog Zastal Zielona Góra med 87-71."
+ },
+ {
+  "highlight_id": "g07-borg",
+  "date": "2026-10-31",
+  "player": "Tobias Borg",
+  "game_id": "g07",
+  "headline": "Season-high 13 points with three threes off the bench",
+  "detail": "Borg hit 3 of 5 from deep for a season-high 13 points, plus 3 assists, in 17 minutes (+14) as Palencia won 85-73 at Cantabria.",
+  "tag": "Season high",
+  "headline_sv": "Säsongsbästa 13 poäng med tre treor",
+  "detail_sv": "Borg satte 3 av 5 från distans och gjorde säsongsbästa 13 poäng plus 3 assist på 17 minuter (+14) när Palencia vann med 85-73 borta mot Cantabria."
+ },
+ {
+  "highlight_id": "g13-terins",
+  "date": "2026-11-01",
+  "player": "Felix Terins",
+  "game_id": "g13",
+  "headline": "Season-high 13 points in 17 minutes",
+  "detail": "Terins scored a season-high 13 points (5/9) with 4 rebounds in 17 minutes and was +10, but Oviedo lost 80-79 at Palmer Basket Mallorca.",
+  "tag": "Season high",
+  "headline_sv": "Säsongsbästa 13 poäng på 17 minuter",
+  "detail_sv": "Terins gjorde säsongsbästa 13 poäng (5/9) och tog 4 returer på 17 minuter och var +10, men Oviedo förlorade med 79-80 borta mot Palmer Basket Mallorca."
  }
 ]

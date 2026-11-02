@@ -59,7 +59,9 @@
   "score": "L 101-103",
   "box_url": "https://www.euroleaguebasketball.net/en/euroleague/game-center/2026-27/virtus-bologna-besiktas-istanbul/E2026/89/#boxscore",
   "watch_url": "https://euroleague.tv/home",
-  "watch_label": "EuroLeague TV"
+  "watch_label": "EuroLeague TV",
+  "live_feed": "euroleague:E2026:89",
+  "live_done": true
  },
  {
   "game_id": "g04",
@@ -87,7 +89,9 @@
   "note": "",
   "status": "final",
   "score": "L 79-89",
-  "box_url": "https://www.feb.es/competiciones/partido/2535772"
+  "box_url": "https://www.feb.es/competiciones/partido/2535772",
+  "live_feed": "feb:2535772",
+  "live_done": true
  },
  {
   "game_id": "g03",
@@ -220,7 +224,9 @@
   "competition": "Segunda FEB",
   "note": "",
   "status": "final",
-  "score": "W 71-61"
+  "score": "W 71-61",
+  "live_feed": "feb:2536325",
+  "live_done": true
  },
  {
   "game_id": "g10",
@@ -347,7 +353,8 @@
   "competition": "LBA (Italy)",
   "note": "Round 6",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "none"
  },
  {
   "game_id": "g16",
@@ -1204,13 +1211,13 @@
  {
   "game_id": "g20261109wsu",
   "date": "2026-11-09",
-  "time": "04:30",
+  "time": "05:00",
   "players": "Will Berg",
   "team": "Wichita State",
   "opponent": "USC",
   "venue": "Neutral",
   "competition": "NCAA",
-  "note": "Lake Tahoe Classic, Stateline NV; time not confirmed",
+  "note": "Lake Tahoe Classic, Stateline NV",
   "status": "upcoming",
   "score": ""
  },
@@ -1224,6 +1231,32 @@
   "venue": "Home",
   "competition": "LBA (Italy)",
   "note": "Round 7",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261110ewu",
+  "date": "2026-11-10",
+  "time": "03:30",
+  "players": "Isak Homelius",
+  "team": "Eastern Washington",
+  "opponent": "Oregon State",
+  "venue": "Away",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261110stan",
+  "date": "2026-11-10",
+  "time": "04:00",
+  "players": "Julius Price",
+  "team": "Stanford",
+  "opponent": "Rice",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
   "status": "upcoming",
   "score": ""
  },
