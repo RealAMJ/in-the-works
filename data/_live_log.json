@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:38:57+01:00",
+ "at": "2026-11-03T00:39:49+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:31",
+   "clock": "04:09",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:38",
+   "clock": "16:51",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     9,
+     11,
      16
     ]
    ]
