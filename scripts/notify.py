@@ -15,7 +15,7 @@ Channels (GitHub repository secrets, Settings → Secrets and variables → Acti
   NTFY_TOPIC                           ntfy.sh push (optional extra / fallback)
 With no channel set it does nothing.
 
-Run: python3 scripts/notify.py           (python3 scripts/notify.py --dry-run prints without sending)
+Run: python3 scripts/notify.py           (--dry-run prints without sending, --test sends a test message)
 """
 import datetime as dt
 import os
@@ -98,6 +98,10 @@ def send(text):
 
 def main(argv):
     dry = '--dry-run' in argv
+    if '--test' in argv:
+        ok = send('Final:\nTest from Swedes Abroad: alerts from GitHub are working.')
+        print('test', 'sent' if ok else 'NOT sent (no channel worked)')
+        return 0 if ok else 1
     if not dry and not ((os.environ.get('CALLMEBOT_PHONE') and os.environ.get('CALLMEBOT_APIKEY')) or os.environ.get('NTFY_TOPIC')
                         or (os.environ.get('TELEGRAM_BOT_TOKEN') and os.environ.get('TELEGRAM_CHAT_ID'))):
         return 0
