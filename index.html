@@ -1998,6 +1998,9 @@
     const t = ds('leaguetiers'); if (!t || !comp) return null;
     return t.find((r) => r.competition === comp) || t.find((r) => norm(comp).startsWith(norm(r.competition)) || norm(r.competition).startsWith(norm(comp))) || null;
   }
+  // Leagues followed only through the player profiles (updated weekly): kept out of the top bar and game lists
+  const PROFILE_ONLY = ['ProB (Germany)', 'BLNO (Norway)'];
+  const profileOnly = (r) => PROFILE_ONLY.includes(String(r.competition || ''));
   // Every game: the schedule (from Oct 28) plus earlier games rebuilt from the game logs
   function allGames() {
     const sc = ds('schedule'); if (!sc) return null;
@@ -2035,7 +2038,7 @@
       });
       out.push(...grp.values());
     }
-    return out.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+    return out.filter((r) => !profileOnly(r)).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
   }
   function playerGames(name) {
     const gl = ds('gamelogs'), bx = ds('boxscores'), sc = ds('schedule');

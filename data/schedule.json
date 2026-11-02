@@ -286,36 +286,6 @@
   "notified": true
  },
  {
-  "game_id": "g20261101wei",
-  "date": "2026-11-01",
-  "time": "16:00",
-  "players": "Mikai Klintman",
-  "team": "Culture City Weimar",
-  "opponent": "TSV Oberhaching Tropics",
-  "venue": "Away",
-  "competition": "ProB (Germany)",
-  "note": "Weimar lost 94-88 at Oberhaching; Biel 23 pts, May 32 pts for Oberhaching.",
-  "status": "final",
-  "score": "L 88-94",
-  "live_feed": "none",
-  "notified": true
- },
- {
-  "game_id": "g20261101fro",
-  "date": "2026-11-01",
-  "time": "17:00",
-  "players": "Kasper Hagberg",
-  "team": "Froya Basket Laksevåg",
-  "opponent": "Bærum Basket",
-  "venue": "Home",
-  "competition": "BLNO (Norway)",
-  "note": "",
-  "status": "final",
-  "score": "W 95-83",
-  "live_feed": "none",
-  "notified": true
- },
- {
   "game_id": "g12",
   "date": "2026-11-01",
   "time": "18:00",
@@ -1098,19 +1068,6 @@
   "live_feed": "lkl:11619"
  },
  {
-  "game_id": "g20261108erf",
-  "date": "2026-11-08",
-  "time": "17:00",
-  "players": "Jacob Hadi, Mikai Klintman",
-  "team": "Basketball Löwen Erfurt",
-  "opponent": "Culture City Weimar",
-  "venue": "Home",
-  "competition": "ProB (Germany)",
-  "note": "Swedish matchup: Mikai Klintman plays for Weimar",
-  "status": "upcoming",
-  "score": ""
- },
- {
   "game_id": "g20261108uni",
   "date": "2026-11-08",
   "time": "17:00",
@@ -1120,19 +1077,6 @@
   "venue": "Away",
   "competition": "Liga ACB",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": ""
- },
- {
-  "game_id": "g20261108fro",
-  "date": "2026-11-08",
-  "time": "17:00",
-  "players": "Kasper Hagberg",
-  "team": "Froya Basket Laksevåg",
-  "opponent": "Kongsberg Miners",
-  "venue": "Home",
-  "competition": "BLNO (Norway)",
-  "note": "",
   "status": "upcoming",
   "score": ""
  },
@@ -1308,19 +1252,6 @@
   "score": "",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV"
- },
- {
-  "game_id": "g20261113wei",
-  "date": "2026-11-13",
-  "time": "19:00",
-  "players": "Mikai Klintman",
-  "team": "Culture City Weimar",
-  "opponent": "Dragons Rhöndorf",
-  "venue": "Home",
-  "competition": "ProB (Germany)",
-  "note": "",
-  "status": "upcoming",
-  "score": ""
  },
  {
   "game_id": "g20261117vir",
