@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:09:35+01:00",
+ "at": "2026-11-03T00:10:27+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:59",
+   "clock": "15:48",
    "done": false,
    "teams": [
     [
@@ -31,6 +31,29 @@
   {
    "game": "g20261103vmi",
    "error": "LookupError: game not found on ESPN scoreboard"
+  },
+  {
+   "game": "g20261103sju",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261103sju",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "St. John's Red Storm",
+     0,
+     0
+    ],
+    [
+     "Monmouth Hawks",
+     0,
+     0
+    ]
+   ]
   }
  ]
 }
