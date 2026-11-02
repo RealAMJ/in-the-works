@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:37:16+01:00",
+ "at": "2026-11-03T00:38:07+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:44",
+   "clock": "05:17",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     30,
+     32,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:46",
+   "clock": "18:27",
    "done": false,
    "teams": [
     [
