@@ -11,6 +11,7 @@ so a failed send is retried on the next run.
 
 Channels (GitHub repository secrets, Settings → Secrets and variables → Actions):
   CALLMEBOT_PHONE + CALLMEBOT_APIKEY   WhatsApp through CallMeBot (free, own number only)
+  TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID  Telegram bot message (free, recommended)
   NTFY_TOPIC                           ntfy.sh push (optional extra / fallback)
 With no channel set it does nothing.
 
@@ -74,6 +75,16 @@ def send(text):
             sent |= ok
         except Exception as e:
             print('  whatsapp: failed', e)
+    tok, chat = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip(), os.environ.get('TELEGRAM_CHAT_ID', '').strip()
+    if tok and chat:
+        try:
+            data = urllib.parse.urlencode({'chat_id': chat, 'text': text}).encode('utf-8')
+            with urllib.request.urlopen(urllib.request.Request(f'https://api.telegram.org/bot{tok}/sendMessage', data=data), timeout=30) as r:
+                ok = r.status == 200 and '"ok":true' in r.read().decode('utf-8', 'replace')
+            print('  telegram:', 'sent' if ok else 'failed')
+            sent |= ok
+        except Exception as e:
+            print('  telegram: failed', str(e).replace(tok, '***'))
     topic = os.environ.get('NTFY_TOPIC', '').strip()
     if topic:
         try:
@@ -87,7 +98,8 @@ def send(text):
 
 def main(argv):
     dry = '--dry-run' in argv
-    if not dry and not ((os.environ.get('CALLMEBOT_PHONE') and os.environ.get('CALLMEBOT_APIKEY')) or os.environ.get('NTFY_TOPIC')):
+    if not dry and not ((os.environ.get('CALLMEBOT_PHONE') and os.environ.get('CALLMEBOT_APIKEY')) or os.environ.get('NTFY_TOPIC')
+                        or (os.environ.get('TELEGRAM_BOT_TOKEN') and os.environ.get('TELEGRAM_CHAT_ID'))):
         return 0
     sched, bx, hl = U.load('schedule'), U.load('boxscores'), U.load('highlights')
     since = (U.now() - dt.timedelta(days=2)).date().isoformat()
