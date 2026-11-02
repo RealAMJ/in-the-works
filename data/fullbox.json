@@ -7892,7 +7892,7 @@
   "ft": "1/2",
   "pm": -13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -7901,7 +7901,7 @@
   "team": "Virtus Bologna",
   "player": "Marcus Carr",
   "pos": "",
-  "min": 26,
+  "min": 27,
   "pts": 12,
   "reb": 3,
   "ast": 5,
@@ -7913,7 +7913,7 @@
   "ft": "0/2",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -7922,7 +7922,7 @@
   "team": "Virtus Bologna",
   "player": "Kevin Kokila",
   "pos": "",
-  "min": 24,
+  "min": 23,
   "pts": 8,
   "reb": 8,
   "ast": 3,
@@ -7934,7 +7934,7 @@
   "ft": "2/2",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -7955,7 +7955,7 @@
   "ft": "0/0",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -7971,12 +7971,12 @@
   "stl": 0,
   "blk": 1,
   "tov": 3,
-  "fg": "5/11",
-  "three": "0/2",
+  "fg": "5/12",
+  "three": "0/3",
   "ft": "0/0",
   "pm": -21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -7997,7 +7997,7 @@
   "ft": "0/0",
   "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8018,7 +8018,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8039,7 +8039,7 @@
   "ft": "7/7",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8055,12 +8055,12 @@
   "stl": 2,
   "blk": 0,
   "tov": 0,
-  "fg": "2/3",
-  "three": "0/1",
+  "fg": "2/4",
+  "three": "0/2",
   "ft": "0/0",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8081,7 +8081,7 @@
   "ft": "0/0",
   "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8102,7 +8102,7 @@
   "ft": "2/2",
   "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8123,7 +8123,7 @@
   "ft": "6/8",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8144,7 +8144,7 @@
   "ft": "0/0",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8165,7 +8165,7 @@
   "ft": "0/0",
   "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8176,17 +8176,17 @@
   "pos": "",
   "min": 32,
   "pts": 24,
-  "reb": 4,
+  "reb": 5,
   "ast": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "7/12",
   "three": "3/6",
   "ft": "7/8",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8207,7 +8207,7 @@
   "ft": "0/0",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8228,7 +8228,7 @@
   "ft": "2/2",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8249,7 +8249,7 @@
   "ft": "2/2",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8270,7 +8270,7 @@
   "ft": "4/5",
   "pm": 20,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  },
  {
@@ -8291,7 +8291,7 @@
   "ft": "3/4",
   "pm": 10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "LBA (legabasket.it)"
  }
 ]
