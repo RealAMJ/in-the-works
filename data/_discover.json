@@ -1,0 +1,98 @@
+{
+ "at": "2026-11-02T18:51:47+01:00",
+ "found": 0,
+ "log": [
+  {
+   "competition": "FIBA Europe Cup",
+   "seed": 2888339,
+   "scanned": 799,
+   "answered": 267,
+   "sample": [
+    [
+     2888338,
+     [
+      "Lokomotiv Plovdiv ",
+      "Fribourg Olympic Basket "
+     ]
+    ],
+    [
+     2888337,
+     [
+      "Neftchi SC ",
+      "CSM CSU Raiffeisen Oradea "
+     ]
+    ],
+    [
+     2888336,
+     [
+      "Mykonos Betsson BC ",
+      "Lokomotiv Plovdiv "
+     ]
+    ],
+    [
+     2888335,
+     [
+      "CSM CSU Raiffeisen Oradea ",
+      "VEF Riga "
+     ]
+    ],
+    [
+     2888334,
+     [
+      "Fribourg Olympic Basket ",
+      "Neftchi SC "
+     ]
+    ],
+    [
+     2888333,
+     [
+      "Lokomotiv Plovdiv ",
+      "CSM CSU Raiffeisen Oradea "
+     ]
+    ],
+    [
+     2888332,
+     [
+      "Fribourg Olympic Basket ",
+      "Mykonos Betsson BC "
+     ]
+    ],
+    [
+     2888331,
+     [
+      "Neftchi SC ",
+      "VEF Riga "
+     ]
+    ],
+    [
+     2888330,
+     [
+      "CSM CSU Raiffeisen Oradea ",
+      "Fribourg Olympic Basket "
+     ]
+    ],
+    [
+     2888329,
+     [
+      "VEF Riga ",
+      "Lokomotiv Plovdiv "
+     ]
+    ],
+    [
+     2888328,
+     [
+      "Mykonos Betsson BC ",
+      "Neftchi SC "
+     ]
+    ],
+    [
+     2888359,
+     [
+      "Kibirkstis-TOKS ",
+      "ENEA AZS Politechnika Poznan "
+     ]
+    ]
+   ]
+  }
+ ]
+}
