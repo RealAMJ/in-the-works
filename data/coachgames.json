@@ -82,13 +82,13 @@
  {
   "game_id": "c20261104anw",
   "date": "2026-11-04",
-  "time": "16:15",
+  "time": "17:15",
   "coach": "Vedran Bosnić",
   "team": "Anwil Włocławek",
   "opponent": "Zrinjski Mostar",
   "venue": "Away",
   "competition": "ENBL",
-  "note": "",
+  "note": "Time per club news post Oct 31 (club schedule page still says 16:15)",
   "status": "upcoming",
   "score": ""
  },
@@ -101,19 +101,6 @@
   "opponent": "Northwestern State",
   "venue": "Home",
   "competition": "NCAA",
-  "note": "",
-  "status": "upcoming",
-  "score": ""
- },
- {
-  "game_id": "c20261107ora",
-  "date": "2026-11-07",
-  "time": "17:00",
-  "coach": "Mikko Riipinen",
-  "team": "CSM Oradea",
-  "opponent": "SCM Craiova",
-  "venue": "Away",
-  "competition": "Liga Națională",
   "note": "",
   "status": "upcoming",
   "score": ""

@@ -107,7 +107,8 @@
   "score": "W 145-125",
   "box_url": "https://www.nba.com/game/ind-vs-mia-0022600020/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
-  "watch_label": "NBA League Pass"
+  "watch_label": "NBA League Pass",
+  "notified": true
  },
  {
   "game_id": "g20261031ast",
@@ -125,7 +126,8 @@
   "watch_url": "https://www.mecze24.pl/koszykowka/trefl-sopot-astoria-bydgoszcz",
   "watch_label": "Polsat Sport Extra 4 / Polsat Box Go",
   "live_feed": "fiba:2949100",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g05",
@@ -138,7 +140,8 @@
   "competition": "LKL",
   "note": "19:00 local",
   "status": "final",
-  "score": "L 82-94"
+  "score": "L 82-94",
+  "notified": true
  },
  {
   "game_id": "g06",
@@ -151,7 +154,8 @@
   "competition": "BBL",
   "note": "",
   "status": "final",
-  "score": "L 72-96"
+  "score": "L 72-96",
+  "notified": true
  },
  {
   "game_id": "g07",
@@ -166,7 +170,8 @@
   "status": "final",
   "score": "W 85-73",
   "live_feed": "feb:2535777",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261031zab",
@@ -181,7 +186,8 @@
   "status": "final",
   "score": "W 84-68",
   "live_feed": "fiba:2893787",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g08",
@@ -196,7 +202,8 @@
   "status": "final",
   "score": "W 125-98",
   "live_feed": "acb:105421",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g09",
@@ -211,7 +218,8 @@
   "status": "final",
   "score": "W 90-89",
   "live_feed": "feb:2535778",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261031sant",
@@ -226,7 +234,8 @@
   "status": "final",
   "score": "W 71-61",
   "live_feed": "feb:2536325",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g10",
@@ -241,7 +250,8 @@
   "status": "final",
   "score": "W 87-71",
   "live_feed": "fiba:2949097",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g11",
@@ -256,7 +266,8 @@
   "status": "final",
   "score": "L 78-81",
   "live_feed": "acb:105423",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g27",
@@ -271,7 +282,8 @@
   "status": "final",
   "score": "L 90-110",
   "live_feed": "acb:105424",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261101wei",
@@ -282,9 +294,11 @@
   "opponent": "TSV Oberhaching Tropics",
   "venue": "Away",
   "competition": "ProB (Germany)",
-  "note": "",
-  "status": "upcoming",
-  "score": ""
+  "note": "Weimar lost 94-88 at Oberhaching; Biel 23 pts, May 32 pts for Oberhaching.",
+  "status": "final",
+  "score": "L 88-94",
+  "live_feed": "none",
+  "notified": true
  },
  {
   "game_id": "g20261101fro",
@@ -296,8 +310,10 @@
   "venue": "Home",
   "competition": "BLNO (Norway)",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 95-83",
+  "live_feed": "none",
+  "notified": true
  },
  {
   "game_id": "g12",
@@ -308,9 +324,11 @@
   "opponent": "Swans Gmunden",
   "venue": "Home",
   "competition": "Austrian Superliga",
-  "note": "",
-  "status": "upcoming",
-  "score": ""
+  "note": "Njie was not on the Superliga game roster (he has played only ABA League and European games for Vienna).",
+  "status": "final",
+  "score": "L 72-86",
+  "live_feed": "none",
+  "notified": true
  },
  {
   "game_id": "g13",
@@ -325,7 +343,8 @@
   "status": "final",
   "score": "L 79-80",
   "live_feed": "feb:2535771",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g14",
@@ -340,7 +359,8 @@
   "status": "final",
   "score": "L 89-92",
   "live_feed": "acb:105428",
-  "live_done": true
+  "live_done": true,
+  "notified": true
  },
  {
   "game_id": "g15",
@@ -557,13 +577,13 @@
  {
   "game_id": "g20",
   "date": "2026-11-03",
-  "time": "18:00",
+  "time": "18:45",
   "players": "Kenny Pohto",
   "team": "Juventus Utena",
   "opponent": "BK KVIS Pardubice",
   "venue": "Home",
   "competition": "Champions League (BCL)",
-  "note": "At Arena Vilnius; tip time unverified",
+  "note": "At Arena Vilnius (19:45 local)",
   "status": "upcoming",
   "score": "",
   "watch_url": "https://www.courtside1891.basketball/",
@@ -606,7 +626,7 @@
   "opponent": "FC Porto",
   "venue": "Away",
   "competition": "Champions League (BCL)",
-  "note": "19:30 local time in Porto",
+  "note": "At Centro de Desportos e Congressos de Matosinhos",
   "status": "upcoming",
   "score": "",
   "watch_url": "https://www.courtside1891.basketball/",
@@ -641,13 +661,13 @@
  {
   "game_id": "g23",
   "date": "2026-11-04",
-  "time": "TBC",
+  "time": "18:00",
   "players": "Barra Njie",
   "team": "BC Vienna",
-  "opponent": "BC Pärnu",
-  "venue": "Home",
+  "opponent": "Nitra Blue Wings",
+  "venue": "Away",
   "competition": "FIBA Europe Cup",
-  "note": "Tip time not confirmed",
+  "note": "At Nitra City Sports Hall",
   "status": "upcoming",
   "score": "",
   "watch_url": "https://www.courtside1891.basketball/",
@@ -1142,6 +1162,19 @@
   "score": ""
  },
  {
+  "game_id": "g20261108sant",
+  "date": "2026-11-08",
+  "time": "18:00",
+  "players": "Anton Lindqvist",
+  "team": "Class Sant Antoni",
+  "opponent": "Iraurgi SB",
+  "venue": "Away",
+  "competition": "Segunda FEB",
+  "note": "Likely 18:00, not confirmed",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "g20261108maine",
   "date": "2026-11-08",
   "time": "19:00",
@@ -1177,19 +1210,6 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": ""
- },
- {
-  "game_id": "g20261108sant",
-  "date": "2026-11-08",
-  "time": "TBC",
-  "players": "Anton Lindqvist",
-  "team": "Class Sant Antoni",
-  "opponent": "Iraurgi SB",
-  "venue": "Away",
-  "competition": "Segunda FEB",
-  "note": "Likely 18:00, not confirmed",
   "status": "upcoming",
   "score": ""
  },
