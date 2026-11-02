@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T20:26:48+01:00",
+ "at": "2026-11-02T20:27:50+01:00",
  "log": [
   {
    "game": "g15",
@@ -8,13 +8,13 @@
   {
    "game": "g15",
    "src": "LBA (legabasket.it)",
-   "period": 1,
+   "period": 2,
    "clock": "",
    "done": false,
    "teams": [
     [
      "Virtus Costa Bologna",
-     24,
+     26,
      12
     ],
     [
