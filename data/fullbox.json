@@ -7911,7 +7911,7 @@
   "fg": "5/9",
   "three": "2/4",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7953,7 +7953,7 @@
   "fg": "2/3",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 15,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7974,7 +7974,7 @@
   "fg": "2/4",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7995,7 +7995,7 @@
   "fg": "5/6",
   "three": "2/3",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8100,7 +8100,7 @@
   "fg": "1/4",
   "three": "0/0",
   "ft": "2/2",
-  "pm": -6,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8163,7 +8163,7 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -13,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8175,7 +8175,7 @@
   "player": "Langston Galloway",
   "pos": "",
   "min": 25,
-  "pts": 13,
+  "pts": 14,
   "reb": 2,
   "ast": 2,
   "stl": 0,
@@ -8183,8 +8183,8 @@
   "tov": 0,
   "fg": "4/8",
   "three": "2/5",
-  "ft": "3/4",
-  "pm": -2,
+  "ft": "4/5",
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8205,7 +8205,7 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8226,7 +8226,7 @@
   "fg": "1/4",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8268,7 +8268,7 @@
   "fg": "8/15",
   "three": "1/6",
   "ft": "4/5",
-  "pm": 10,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
