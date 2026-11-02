@@ -13,7 +13,8 @@
   "score": "L 74-91",
   "box_url": "https://www.euroleaguebasketball.net/en/euroleague/game-center/2026-27/virtus-bologna-zalgiris-kaunas/E2026/80/#boxscore",
   "watch_url": "https://euroleague.tv/home",
-  "watch_label": "EuroLeague TV"
+  "watch_label": "EuroLeague TV",
+  "post_done": true
  },
  {
   "game_id": "g00b",
@@ -29,7 +30,8 @@
   "score": "W 129-117",
   "box_url": "https://www.nba.com/game/mia-vs-atl-0022600132/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
-  "watch_label": "NBA League Pass"
+  "watch_label": "NBA League Pass",
+  "post_done": true
  },
  {
   "game_id": "g20261029kr",
@@ -43,7 +45,8 @@
   "note": "Round 4",
   "status": "final",
   "score": "W 107-102",
-  "box_url": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856123/bs.html"
+  "box_url": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856123/bs.html",
+  "post_done": true
  },
  {
   "game_id": "g01",
@@ -61,7 +64,8 @@
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:89",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g04",
@@ -75,7 +79,8 @@
   "note": "ABA League round 6. Vienna came back from 10 down after Q1 but lost; Langović 17 pts.",
   "status": "final",
   "score": "L 81-88",
-  "box_url": "https://www.aba-liga.com/match/59/26/1/Overview/q1/1/home/bc-vienna-bosna-bh-telecom/"
+  "box_url": "https://www.aba-liga.com/match/59/26/1/Overview/q1/1/home/bc-vienna-bosna-bh-telecom/",
+  "post_done": true
  },
  {
   "game_id": "g02",
@@ -91,7 +96,8 @@
   "score": "L 79-89",
   "box_url": "https://www.feb.es/competiciones/partido/2535772",
   "live_feed": "feb:2535772",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g03",
@@ -108,7 +114,8 @@
   "box_url": "https://www.nba.com/game/ind-vs-mia-0022600020/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g20261031ast",
@@ -127,7 +134,8 @@
   "watch_label": "Polsat Sport Extra 4 / Polsat Box Go",
   "live_feed": "fiba:2949100",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g05",
@@ -141,7 +149,8 @@
   "note": "19:00 local",
   "status": "final",
   "score": "L 82-94",
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g06",
@@ -155,7 +164,8 @@
   "note": "",
   "status": "final",
   "score": "L 72-96",
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g07",
@@ -171,7 +181,8 @@
   "score": "W 85-73",
   "live_feed": "feb:2535777",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g20261031zab",
@@ -187,7 +198,8 @@
   "score": "W 84-68",
   "live_feed": "fiba:2893787",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g08",
@@ -203,7 +215,8 @@
   "score": "W 125-98",
   "live_feed": "acb:105421",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g09",
@@ -219,7 +232,8 @@
   "score": "W 90-89",
   "live_feed": "feb:2535778",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g20261031sant",
@@ -235,7 +249,8 @@
   "score": "W 71-61",
   "live_feed": "feb:2536325",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g10",
@@ -251,7 +266,8 @@
   "score": "W 87-71",
   "live_feed": "fiba:2949097",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g11",
@@ -267,7 +283,8 @@
   "score": "L 78-81",
   "live_feed": "acb:105423",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g27",
@@ -283,7 +300,8 @@
   "score": "L 90-110",
   "live_feed": "acb:105424",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g12",
@@ -298,7 +316,8 @@
   "status": "final",
   "score": "L 72-86",
   "live_feed": "none",
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g13",
@@ -314,7 +333,8 @@
   "score": "L 79-80",
   "live_feed": "feb:2535771",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g14",
@@ -330,7 +350,8 @@
   "score": "L 89-92",
   "live_feed": "acb:105428",
   "live_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g15",

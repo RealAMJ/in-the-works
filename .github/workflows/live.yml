@@ -40,6 +40,12 @@ jobs:
       - name: SBL standouts (top of the hour only)
         run: python3 scripts/sbl.py || true
 
+      - name: After-game paperwork (team form, records, averages, highlights)
+        run: python3 scripts/postgame.py || true
+
+      - name: NBA/NCAA schedule check (07:00 only)
+        run: python3 scripts/schedule_us.py || true
+
       - name: Check live games (1)
         id: r1
         run: |

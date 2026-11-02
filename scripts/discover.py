@@ -36,9 +36,14 @@ def words(s):
     return {w for w in U.norm(s).split() if len(w) > 2 and w not in {'basket', 'basketball', 'club', 'team', 'sport', 'enea', 'energa'}}
 
 
+def words_or_short(s):
+    # names like "KR Basket" have no long word left: fall back to the short ones ("kr")
+    return words(s) or {w for w in U.norm(s).split() if w not in {'basket', 'basketball', 'club', 'team'}}
+
+
 def match(names, row):
-    a, b = words(row.get('team', '')), words(row.get('opponent', ''))
-    n1, n2 = words(names[0]), words(names[1])
+    a, b = words_or_short(row.get('team', '')), words_or_short(row.get('opponent', ''))
+    n1, n2 = words_or_short(names[0]), words_or_short(names[1])
     return (a & n1 and b & n2) or (a & n2 and b & n1)
 
 

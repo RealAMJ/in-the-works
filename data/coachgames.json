@@ -10,7 +10,8 @@
   "competition": "FIBA Europe Cup",
   "note": "Group H, gameday 4; tip time not found",
   "status": "final",
-  "score": "W 99-83"
+  "score": "W 99-83",
+  "post_done": true
  },
  {
   "game_id": "c20261030anw",
@@ -23,7 +24,8 @@
   "competition": "Orlen Basket Liga",
   "note": "",
   "status": "final",
-  "score": "W 83-82"
+  "score": "W 83-82",
+  "post_done": true
  },
  {
   "game_id": "c20261031ora",
@@ -36,7 +38,8 @@
   "competition": "Liga Națională",
   "note": "",
   "status": "final",
-  "score": "L 79-96"
+  "score": "L 79-96",
+  "post_done": true
  },
  {
   "game_id": "c20261031san",
@@ -51,7 +54,8 @@
   "status": "final",
   "score": "W 71-61",
   "live_feed": "feb:2536325",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261103msu",
