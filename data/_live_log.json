@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:41:20+01:00",
+ "at": "2026-11-03T00:42:10+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:16",
+   "clock": "02:32",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     31,
+     34,
      15
     ],
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     14,
+     16,
      16
     ]
    ]
