@@ -7890,7 +7890,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7932,7 +7932,7 @@
   "fg": "2/4",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 15,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7953,7 +7953,7 @@
   "fg": "2/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 17,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7974,7 +7974,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7995,7 +7995,7 @@
   "fg": "4/5",
   "three": "2/3",
   "ft": "0/0",
-  "pm": 17,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8037,7 +8037,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 15,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8058,7 +8058,7 @@
   "fg": "2/4",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8079,7 +8079,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8100,7 +8100,7 @@
   "fg": "2/5",
   "three": "2/3",
   "ft": "0/0",
-  "pm": -2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8163,7 +8163,7 @@
   "fg": "1/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8226,7 +8226,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8238,16 +8238,16 @@
   "player": "Lajae Jones",
   "pos": "",
   "min": 8,
-  "pts": 5,
+  "pts": 8,
   "reb": 2,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "2/3",
+  "fg": "3/4",
   "three": "0/1",
-  "ft": "1/1",
-  "pm": 4,
+  "ft": "2/2",
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8268,7 +8268,7 @@
   "fg": "5/5",
   "three": "2/2",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
