@@ -80,6 +80,8 @@ def main():
                         seeds['Liga ACB'] = max(int(seeds['Liga ACB']), int(f.split(':')[1]))
                 elif comp == 'EuroLeague':
                     f = sources.find_euroleague(r)
+                elif comp == 'LBA (Italy)':
+                    f = sources.find_lba(r)
                 if f:
                     r['live_feed'] = f
                     other = True

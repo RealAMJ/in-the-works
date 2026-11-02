@@ -2,6 +2,7 @@
 More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and EuroLeague are in update.py):
   ACB (Liga Endesa)          live_feed "acb:<match id>"   page live.acb.com/es/partidos/x-<id>/estadisticas
   FEB (Primera / Segunda)    live_feed "feb:<match id>"   page baloncestoenvivo.feb.es/partido/<id>
+  LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
   LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
 Each reader returns the same shape as the other feeds: {period, clock, done, teams: [{name, score, pl: [...]}]}.
 """
@@ -74,6 +75,60 @@ def read_acb(mid):
     return dict(period=int(q.group(1)) if q else (4 if 'Final' in status else 1),
                 clock=f'{int(clk.group(1)):02d}:{clk.group(2)}' if clk else '00:00',
                 done='Final' in status, teams=teams)
+
+
+# ------------------------------------------------------------------ LBA
+def _lba_game(gid):
+    import json
+    h = page(f'https://www.legabasket.it/game/{gid}/x')
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+    return json.loads(m.group(1))['props']['pageProps']['game']
+
+
+def read_lba(gid, row=None):
+    g = _lba_game(gid)
+    m = g['match']
+    teams = []
+    for side, name, final in (('ht', m.get('h_team_name'), m.get('home_final_score')), ('vt', m.get('v_team_name'), m.get('visitor_final_score'))):
+        sc = (g.get('scores') or {}).get(side) or {}
+        pl = []
+        for p in sc.get('rows') or []:
+            first = str(p.get('player_name') or '').strip()
+            last = str(p.get('player_surname') or '').strip().title()
+            pl.append(dict(name=f'{first} {last}'.strip(), min=int(p.get('min') or 0), pts=p.get('pun') or 0,
+                           reb=p.get('rimbalzi_t') or 0, ast=p.get('ass') or 0, stl=p.get('palle_r') or 0,
+                           blk=p.get('stoppate_dat') or 0, tov=p.get('palle_p') or 0,
+                           fgm=(p.get('t2_r') or 0) + (p.get('t3_r') or 0), fga=(p.get('t2_t') or 0) + (p.get('t3_t') or 0),
+                           tpm=p.get('t3_r') or 0, tpa=p.get('t3_t') or 0, ftm=p.get('tl_r') or 0, fta=p.get('tl_t') or 0,
+                           pm=p.get('plus_minus') if p.get('plus_minus') is not None else '', pf=p.get('falli_c') or 0,
+                           oreb=p.get('rimbalzi_o') or 0, dreb=p.get('rimbalzi_d') or 0, starter=False))
+        total = ((sc.get('totals') or {}).get('pun')) or 0
+        teams.append(dict(name=name or '', score=max(int(final or 0), int(total or 0)), pl=pl))
+    status = str(m.get('game_status') or '0')
+    q = str(m.get('quarter') or (g.get('scores') or {}).get('quarter') or '')
+    qn = re.search(r'(\d)', q)
+    per = int(qn.group(1)) if qn else 1
+    if re.search(r'OT|SUPP', q, re.I):
+        per = 4 + max(per, 1)
+    done = status == '2'
+    started = done or status == '1' or any(t['score'] for t in teams)
+    return dict(period=4 if done else per, clock='00:00' if done else '', done=done, notstarted=not started, teams=teams)
+
+
+def find_lba(row):
+    """The league's front page lists the current round's games as /game/<id>/<home-slug>-<away-slug>."""
+    h = page('https://www.legabasket.it/')
+    for gid, sl in set(re.findall(r'/game/(\d+)/([a-z0-9-]+)', h)):
+        if same_game(sl.replace('-', ' '), '', row) or (words(row.get('team', '')) & set(sl.split('-')) and words(row.get('opponent', '')) & set(sl.split('-'))):
+            try:
+                m = _lba_game(gid)['match']
+            except Exception:
+                continue
+            if str(m.get('match_datetime', ''))[:10] in (row.get('date'),) or abs((dt.date.fromisoformat(str(m['match_datetime'])[:10]) - dt.date.fromisoformat(row['date'])).days) <= 1:
+                names = f"{m.get('h_team_name')} {m.get('v_team_name')}"
+                if words(row.get('team', '')) & words(names) and words(row.get('opponent', '')) & words(names):
+                    return f'lba:{gid}'
+    return None
 
 
 # ------------------------------------------------------------------ LKL

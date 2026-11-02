@@ -286,6 +286,9 @@ def feed_for(row):
     if f.startswith('feb:'):
         import sources
         return 'FEB Live', lambda: sources.read_feb(f.split(':', 1)[1], row)
+    if f.startswith('lba:'):
+        import sources
+        return 'LBA (legabasket.it)', lambda: sources.read_lba(f.split(':', 1)[1], row)
     if f.startswith('lkl:'):
         import sources
         return 'LKL Live', lambda: sources.read_lkl(f.split(':', 1)[1], row)
