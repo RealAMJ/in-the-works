@@ -8293,5 +8293,26 @@
   "swede": false,
   "state": "final",
   "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "g16-1-4",
+  "game_id": "g16",
+  "team": "Michigan",
+  "player": "Elliot Cadeau",
+  "pos": "",
+  "min": 0,
+  "pts": 1,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "1/1",
+  "pm": 0,
+  "swede": true,
+  "state": "live",
+  "source": "ESPN"
  }
 ]
