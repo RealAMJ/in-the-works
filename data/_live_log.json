@@ -1,26 +1,26 @@
 {
- "at": "2026-11-01T20:52:42+01:00",
+ "at": "2026-11-02T19:43:43+01:00",
  "log": [
   {
-   "game": "g14",
-   "checking": "ACB Live"
+   "game": "g15",
+   "checking": "LBA (legabasket.it)"
   },
   {
-   "game": "g14",
-   "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
+   "game": "g15",
+   "src": "LBA (legabasket.it)",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "Unicaja",
-     89,
-     12
+     "Virtus Costa Bologna",
+     0,
+     72
     ],
     [
-     "Bar\u00e7a",
-     92,
-     12
+     "Pallacanestro Trieste",
+     0,
+     69
     ]
    ]
   }
