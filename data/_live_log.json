@@ -1,28 +1,36 @@
 {
- "at": "2026-11-02T22:01:07+01:00",
+ "at": "2026-11-02T23:44:06+01:00",
  "log": [
   {
-   "game": "g15",
-   "checking": "LBA (legabasket.it)"
+   "game": "g16",
+   "checking": "ESPN"
   },
   {
-   "game": "g15",
-   "src": "LBA (legabasket.it)",
-   "period": 4,
+   "game": "g16",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Virtus Costa Bologna",
-     93,
-     12
+     "Michigan Wolverines",
+     0,
+     0
     ],
     [
-     "Pallacanestro Trieste",
-     100,
-     11
+     "Oakland Golden Grizzlies",
+     0,
+     0
     ]
    ]
+  },
+  {
+   "game": "g20261103vmi",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261103vmi",
+   "error": "LookupError: game not found on ESPN scoreboard"
   }
  ]
 }
