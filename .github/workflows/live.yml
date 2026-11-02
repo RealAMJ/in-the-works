@@ -37,6 +37,9 @@ jobs:
       - name: Find live-stats ids for today's games
         run: python3 scripts/discover.py || true
 
+      - name: SBL standouts (top of the hour only)
+        run: python3 scripts/sbl.py || true
+
       - name: Check live games (1)
         id: r1
         run: |
