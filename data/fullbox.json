@@ -7890,7 +7890,7 @@
   "fg": "2/6",
   "three": "0/2",
   "ft": "1/2",
-  "pm": -6,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -7911,7 +7911,7 @@
   "fg": "5/11",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -8090,7 +8090,7 @@
   "team": "Virtus Bologna",
   "player": "Mouhamet Rassoul Diouf",
   "pos": "",
-  "min": 14,
+  "min": 13,
   "pts": 4,
   "reb": 2,
   "ast": 3,
