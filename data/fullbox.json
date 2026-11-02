@@ -8904,6 +8904,27 @@
   "source": "ESPN"
  },
  {
+  "row_id": "g20261103sju-1-6",
+  "game_id": "g20261103sju",
+  "team": "St. John's",
+  "player": "Reed Bailey",
+  "pos": "",
+  "min": 0,
+  "pts": 0,
+  "reb": 1,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
   "row_id": "g20261103sju-1-12",
   "game_id": "g20261103sju",
   "team": "St. John's",
