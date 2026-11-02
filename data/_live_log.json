@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:39:49+01:00",
+ "at": "2026-11-03T00:40:48+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,17 +9,17 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:09",
+   "clock": "03:53",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     27,
+     29,
      15
     ],
     [
      "Michigan Wolverines",
-     34,
+     36,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:51",
+   "clock": "16:33",
    "done": false,
    "teams": [
     [
@@ -54,6 +54,106 @@
      16
     ]
    ]
+  },
+  {
+   "game": "g29",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g29",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Iona Gaels",
+     0,
+     0
+    ],
+    [
+     "Vermont Catamounts",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g30",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g30",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "St. Bonaventure Bonnies",
+     0,
+     0
+    ],
+    [
+     "Youngstown State Penguins",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261103maine",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261103maine",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Providence Friars",
+     0,
+     0
+    ],
+    [
+     "Maine Black Bears",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261103uncw",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261103uncw",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UNC Wilmington Seahawks",
+     0,
+     0
+    ],
+    [
+     "Mount Olive Trojans",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261103dsu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261103dsu",
+   "error": "LookupError: game not found on ESPN scoreboard"
   }
  ]
 }
