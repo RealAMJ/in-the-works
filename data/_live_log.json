@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:58:50+01:00",
+ "at": "2026-11-02T20:03:39+01:00",
  "log": [
   {
    "game": "g15",
@@ -8,7 +8,7 @@
   {
    "game": "g15",
    "src": "LBA (legabasket.it)",
-   "period": 0,
+   "period": 1,
    "clock": "",
    "done": false,
    "teams": [
@@ -19,7 +19,7 @@
     ],
     [
      "Pallacanestro Trieste",
-     0,
+     5,
      11
     ]
    ]

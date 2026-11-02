@@ -363,9 +363,11 @@
   "venue": "Home",
   "competition": "LBA (Italy)",
   "note": "Round 6",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "lba:25400"
+  "status": "live",
+  "score": "L 0-5",
+  "live_feed": "lba:25400",
+  "clock": "Q1 ",
+  "live_updated": "2026-11-02T20:03:39+01:00"
  },
  {
   "game_id": "g16",
