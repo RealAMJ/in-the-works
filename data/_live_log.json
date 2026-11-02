@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:12:44+01:00",
+ "at": "2026-11-03T00:13:35+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:20",
+   "clock": "13:32",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     8,
+     11,
      15
     ],
     [
