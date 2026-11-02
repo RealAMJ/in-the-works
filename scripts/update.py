@@ -286,6 +286,9 @@ def feed_for(row):
     if f.startswith('feb:'):
         import sources
         return 'FEB Live', lambda: sources.read_feb(f.split(':', 1)[1], row)
+    if f.startswith('lkl:'):
+        import sources
+        return 'LKL Live', lambda: sources.read_lkl(f.split(':', 1)[1], row)
     if row.get('competition') == 'NBA':
         return 'ESPN', lambda: read_espn('nba', row)
     if row.get('competition') == 'NCAA':
@@ -378,6 +381,7 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
     fullbox[:] = [r for r in fullbox if r.get('game_id') != gid]
     boxscores[:] = [r for r in boxscores if r.get('game_id') != gid]
     sw_last = {last(n): n for n in swedes_all}
+    sw_last.update({last(n): n for n in swedes})  # same surname (Pohto, Klintman): the Swedes named on this game win
     for ti, t in enumerate(feed['teams']):
         for i, p in enumerate(t['pl']):
             hit = sw_last.get(last(p['name']))

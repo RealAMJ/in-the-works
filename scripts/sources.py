@@ -2,6 +2,7 @@
 More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and EuroLeague are in update.py):
   ACB (Liga Endesa)          live_feed "acb:<match id>"   page live.acb.com/es/partidos/x-<id>/estadisticas
   FEB (Primera / Segunda)    live_feed "feb:<match id>"   page baloncestoenvivo.feb.es/partido/<id>
+  LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
 Each reader returns the same shape as the other feeds: {period, clock, done, teams: [{name, score, pl: [...]}]}.
 """
 import datetime as dt
@@ -73,6 +74,38 @@ def read_acb(mid):
     return dict(period=int(q.group(1)) if q else (4 if 'Final' in status else 1),
                 clock=f'{int(clk.group(1)):02d}:{clk.group(2)}' if clk else '00:00',
                 done='Final' in status, teams=teams)
+
+
+# ------------------------------------------------------------------ LKL
+def read_lkl(gid, row=None):
+    """LKL's own live JSON. It has no team names, so home/away comes from the schedule row."""
+    b = U.get(f'https://lkl.lt/api/livestream/boxscore/{gid}')['boxscore']
+    sc = U.get(f'https://lkl.lt/api/livestream/game-score/{gid}')
+    row = row or {}
+    home_is_us = (row.get('venue') or 'Home') != 'Away'
+    names = {'home': row.get('team', '') if home_is_us else row.get('opponent', ''),
+             'away': row.get('opponent', '') if home_is_us else row.get('team', '')}
+    v = lambda p, k: (p.get(k) or {}).get('value')
+    teams = []
+    for side in ('home', 'away'):
+        pl = []
+        for p in (b.get(side) or {}).get('players') or []:
+            fgm, fga = ma(v(p, 'fg')); tpm, tpa = ma(v(p, 'fg3')); ftm, fta = ma(v(p, 'ft'))
+            pl.append(dict(name=v(p, 'name') or '', min=mins(v(p, 'time')), pts=v(p, 'points') or 0, reb=v(p, 'total_rebounds') or 0,
+                           ast=v(p, 'assists') or 0, stl=v(p, 'steals') or 0, blk=v(p, 'blocks') or 0, tov=v(p, 'turnovers') or 0,
+                           fgm=fgm, fga=fga, tpm=tpm, tpa=tpa, ftm=ftm, fta=fta, pm=v(p, 'plus_minus') if v(p, 'plus_minus') is not None else '',
+                           pf=v(p, 'fouls') or 0, oreb=v(p, 'offensive_rebounds') or 0, dreb=v(p, 'defensive_rebounds') or 0,
+                           starter=bool(p.get('is_starter'))))
+        teams.append(dict(name=names[side], score=int(sc.get(side) or 0), pl=pl))
+    clock = str(sc.get('clock') or '')
+    q = re.match(r'\s*(\d+)', clock)
+    per = int(q.group(1)) if q else 0
+    if re.search(r'pratęs|OT', clock, re.I):
+        per = max(per, 1) + 4
+    t = re.search(r'(\d{1,2}):(\d{2})\s*$', clock)
+    clk = f'{int(t.group(1)):02d}:{t.group(2)}' if t else ''
+    done = per >= 4 and clk == '00:00' and teams[0]['score'] != teams[1]['score']
+    return dict(period=per or 1, clock=clk, done=done, notstarted=not clock and not any(x['score'] for x in teams), teams=teams)
 
 
 # ------------------------------------------------------------------ FEB
