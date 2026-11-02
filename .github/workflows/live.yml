@@ -46,6 +46,13 @@ jobs:
       - name: NBA/NCAA schedule check (07:00 only)
         run: python3 scripts/schedule_us.py || true
 
+      - name: Phone alerts for finished games (WhatsApp / ntfy)
+        run: python3 scripts/notify.py || true
+        env:
+          CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
+          CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
       - name: Check live games (1)
         id: r1
         run: |
