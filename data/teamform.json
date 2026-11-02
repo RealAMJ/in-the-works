@@ -3806,5 +3806,33 @@
   "note": "",
   "leaders": "Young|13|2|1;Wells|13|3|0;Paar|13|9|2",
   "source": "Austrian Superliga (basketballaustria.at)"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-02",
+  "team": "Virtus Bologna",
+  "date": "2026-11-02",
+  "competition": "LBA (Italy)",
+  "opponent": "Pallacanestro Trieste",
+  "venue": "Home",
+  "score": "93-100",
+  "result": "L",
+  "top": "Alston 16 pts, 2 reb",
+  "note": "",
+  "leaders": "Alston|16|2|1;Edwards|15|4|0;Ferrari|13|7|1",
+  "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "pallacanestro-trieste-2026-11-02",
+  "team": "Pallacanestro Trieste",
+  "date": "2026-11-02",
+  "competition": "LBA (Italy)",
+  "opponent": "Virtus Bologna",
+  "venue": "Away",
+  "score": "100-93",
+  "result": "W",
+  "top": "Galloway 24 pts, 5 reb",
+  "note": "",
+  "leaders": "Galloway|24|5|2;Mcdermott|23|8|1;Jones|21|9|2",
+  "source": "LBA (legabasket.it)"
  }
 ]
