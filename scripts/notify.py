@@ -77,7 +77,7 @@ def send(text):
     topic = os.environ.get('NTFY_TOPIC', '').strip()
     if topic:
         try:
-            req = urllib.request.Request(f'https://ntfy.sh/{topic}', data=text.encode('utf-8'), headers={'Title': 'Final'})
+            req = urllib.request.Request(f'https://ntfy.sh/{topic}', data=text.encode('utf-8'), headers={'Title': 'Final', 'Priority': 'high', 'Tags': 'basketball'})
             with urllib.request.urlopen(req, timeout=30) as r:
                 print('  ntfy: sent'); sent |= r.status == 200
         except Exception as e:
