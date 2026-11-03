@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:45:17+01:00",
+ "at": "2026-11-03T04:46:10+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:55",
+   "clock": "05:10",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:48",
+   "clock": "02:26",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:06",
+   "clock": "10:21",
    "done": false,
    "teams": [
     [
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:12",
+   "clock": "05:11",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     26,
+     27,
      14
     ]
    ]
