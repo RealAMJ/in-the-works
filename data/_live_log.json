@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:42:03+01:00",
+ "at": "2026-11-03T03:42:52+01:00",
  "log": [
   {
    "game": "g18",
@@ -32,12 +32,12 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:37",
+   "clock": "13:58",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     8,
+     10,
      16
     ],
     [
@@ -124,17 +124,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:27",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     86,
+     88,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     104,
+     106,
      16
     ]
    ]
