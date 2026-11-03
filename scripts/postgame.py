@@ -36,9 +36,12 @@ MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'No
 MAN = ['jan', 'feb', 'mar', 'apr', 'maj', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec']
 
 
+SUFFIX = {'jr', 'jr.', 'sr', 'sr.', 'ii', 'iii', 'iv', 'v'}
+
+
 def surname(n):
-    p = str(n).split()
-    return p[-1] if len(p) > 1 else str(n)
+    p = [w for w in str(n).split() if w.lower() not in SUFFIX] or str(n).split()
+    return p[-1] if len(p) > 1 else (p[0] if p else str(n))
 
 
 def slug(s):
@@ -151,18 +154,31 @@ def main():
         if not g['game_id'].startswith('c'):
             for b in [x for x in bx if x.get('game_id') == g['game_id'] and x.get('note') != 'DNP' and x.get('note') != 'live']:
                 p, comp = b['player'], g['competition']
+                # a Swede on the other team (Swede-vs-Swede game): his own side of the result
+                own = next((x.get('team') for x in rows if U.norm(x.get('player')) == U.norm(p)), g['team'])
+                v = g
+                if own and own != g['team']:
+                    sc2 = g['score'].split()[1].split('-')
+                    them_won = g['score'].startswith('L')
+                    v = dict(g, team=own, opponent=g['team'], venue={'Home': 'Away', 'Away': 'Home'}.get(g.get('venue'), g.get('venue')),
+                             score=f"{'W' if them_won else 'L'} {sc2[1]}-{sc2[0]}")
                 before = [x for x in gl if x.get('player') == p and x.get('competition') == comp and x.get('date', '') < g['date']]
                 if not any(x.get('player') == p and x.get('date') == g['date'] and x.get('competition') == comp for x in gl):
                     rid = f"{surname(p).lower()}-{g['date']}"
                     if any(x.get('row_id') == rid for x in gl):
                         rid = f"{p.split()[0][0].lower()}{rid}"
-                    gl.append(dict(row_id=rid, player=p, date=g['date'], competition=comp, team=g['team'], opponent=g['opponent'],
-                                   venue=g.get('venue', ''), result=g['score'], min=b.get('min', ''), pts=b['pts'], reb=b['reb'], ast=b['ast'],
+                    gl.append(dict(row_id=rid, player=p, date=g['date'], competition=comp, team=v['team'], opponent=v['opponent'],
+                                   venue=v.get('venue', ''), result=v['score'], min=b.get('min', ''), pts=b['pts'], reb=b['reb'], ast=b['ast'],
                                    source=b.get('source', ''), fg=b.get('fg', ''), three=b.get('three', ''), ft=b.get('ft', ''),
                                    oreb=b.get('oreb', ''), dreb=b.get('dreb', ''), stl=b.get('stl', ''), blk=b.get('blk', ''),
                                    tov=b.get('tov', ''), pf=b.get('pf', ''), pm=b.get('pm', ''), eff=b.get('eff', '')))
                     logs = [x for x in gl if x.get('player') == p and x.get('competition') == comp]
                     srow = next((x for x in st if x.get('player') == p and x.get('competition') == comp), None)
+                    if srow is None and comp == 'NCAA':
+                        # college season started this week: the game log is the whole season, so start his row from it
+                        srow = dict(row_id=f"{surname(p).lower()}-ncaa", player=p, competition=comp, season='2026-27', gp=len(logs) - 1,
+                                    min=0, pts=0, reb=0, ast=0, note='')
+                        st.append(srow)
                     if srow is not None and srow.get('gp') == len(logs) - 1:
                         n = len(logs)
                         avg = lambda k: round(sum(float(x.get(k) or 0) for x in logs) / n, 1)
@@ -170,7 +186,7 @@ def main():
                                     note=f"Averages from game log ({n} games, through {g['date']})")
                     else:
                         print(f"  {g['game_id']}: {p} {comp} averages don't line up (stats gp {srow and srow.get('gp')}, log {len(logs)}), left for review")
-                h = highlight(b, g, before)
+                h = highlight(b, v, before)
                 if h and h['highlight_id'] not in have_hl:
                     hl.append(h)
                     have_hl.add(h['highlight_id'])

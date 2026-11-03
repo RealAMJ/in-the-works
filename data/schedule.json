@@ -585,11 +585,11 @@
   "competition": "NCAA",
   "note": "Swedish matchup: Homelius plays for Eastern Washington",
   "status": "final",
-  "score": "L 65-74",
+  "score": "W 74-65",
   "espn_id": "401920716",
   "live_done": true,
-  "post_done": true,
-  "notified": true
+  "notified": true,
+  "post_done": true
  },
  {
   "game_id": "g19",

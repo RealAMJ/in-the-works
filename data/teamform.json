@@ -3844,9 +3844,9 @@
   "venue": "Home",
   "score": "84-68",
   "result": "W",
-  "top": "Jr. 17 pts, 3 reb",
+  "top": "Gayle 17 pts, 3 reb",
   "note": "",
-  "leaders": "Jr.|17|3|2;McKenney|17|4|2;Estrella|15|12|1",
+  "leaders": "Gayle|17|3|2;McKenney|17|4|2;Estrella|15|12|1",
   "source": "ESPN"
  },
  {
@@ -3858,9 +3858,9 @@
   "venue": "Away",
   "score": "68-84",
   "result": "L",
-  "top": "Jr. 18 pts, 10 reb",
+  "top": "Fields 18 pts, 10 reb",
   "note": "",
-  "leaders": "Jr.|18|10|1;Mashhour|16|4|1;Bradley|12|6|1",
+  "leaders": "Fields|18|10|1;Mashhour|16|4|1;Bradley|12|6|1",
   "source": "ESPN"
  },
  {
@@ -4040,9 +4040,9 @@
   "venue": "Home",
   "score": "101-65",
   "result": "W",
-  "top": "II 21 pts, 1 reb",
+  "top": "Luster 21 pts, 1 reb",
   "note": "",
-  "leaders": "II|21|1|1;Wessler|14|12|1;Lamothe|12|7|2",
+  "leaders": "Luster|21|1|1;Wessler|14|12|1;Lamothe|12|7|2",
   "source": "ESPN"
  },
  {
@@ -4112,7 +4112,7 @@
   "result": "W",
   "top": "Cooper 14 pts, 6 reb",
   "note": "",
-  "leaders": "Cooper|14|6|3;Jr.|13|4|4;Farmer|13|5|2",
+  "leaders": "Cooper|14|6|3;Williams|13|4|4;Farmer|13|5|2",
   "source": "ESPN"
  },
  {
@@ -4168,7 +4168,7 @@
   "result": "L",
   "top": "Gibson 23 pts, 0 reb",
   "note": "",
-  "leaders": "Gibson|23|0|3;Jr.|12|1|3;Potter|8|12|3;Mackay|8|2|0",
+  "leaders": "Gibson|23|0|3;Brown|12|1|3;Potter|8|12|3;Mackay|8|2|0",
   "source": "ESPN"
  },
  {
@@ -4200,34 +4200,6 @@
   "source": "ESPN"
  },
  {
-  "row_id": "stanford-2026-11-03",
-  "team": "Stanford",
-  "date": "2026-11-03",
-  "competition": "NCAA",
-  "opponent": "Eastern Washington",
-  "venue": "Home",
-  "score": "65-74",
-  "result": "L",
-  "top": "IV 20 pts, 9 reb",
-  "note": "",
-  "leaders": "IV|20|9|1;Scherer|11|2|2;Miller|9|6|0;Griffith|9|4|3",
-  "source": "ESPN"
- },
- {
-  "row_id": "eastern-washington-2026-11-03",
-  "team": "Eastern Washington",
-  "date": "2026-11-03",
-  "competition": "NCAA",
-  "opponent": "Stanford",
-  "venue": "Away",
-  "score": "74-65",
-  "result": "W",
-  "top": "Price 17 pts, 2 reb",
-  "note": "",
-  "leaders": "Price|17|2|4;Cammann|13|4|0;Townsend|12|6|5;Olajuwon|12|4|0",
-  "source": "ESPN"
- },
- {
   "row_id": "robert-morris-2026-11-03",
   "team": "Robert Morris",
   "date": "2026-11-03",
@@ -4236,9 +4208,9 @@
   "venue": "Away",
   "score": "49-86",
   "result": "L",
-  "top": "Jr. 16 pts, 7 reb",
+  "top": "Garris 16 pts, 7 reb",
   "note": "",
-  "leaders": "Jr.|16|7|0;Smith|9|2|0;Dunkley|8|2|0",
+  "leaders": "Garris|16|7|0;Smith|9|2|0;Dunkley|8|2|0",
   "source": "ESPN"
  },
  {
@@ -4281,6 +4253,34 @@
   "top": "Doncic 42 pts, 7 reb",
   "note": "",
   "leaders": "Doncic|42|7|13;Reaves|27|2|5;Kessler|15|15|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-03",
+  "team": "Stanford",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Home",
+  "score": "74-65",
+  "result": "W",
+  "top": "Price 17 pts, 2 reb",
+  "note": "",
+  "leaders": "Price|17|2|4;Cammann|13|4|0;Townsend|12|6|5;Olajuwon|12|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-03",
+  "team": "Eastern Washington",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "65-74",
+  "result": "L",
+  "top": "Hamilton 20 pts, 9 reb",
+  "note": "",
+  "leaders": "Hamilton|20|9|1;Scherer|11|2|2;Miller|9|6|0;Griffith|9|4|3",
   "source": "ESPN"
  }
 ]

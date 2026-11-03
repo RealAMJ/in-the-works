@@ -341,19 +341,20 @@ def feed_for(row):
 # ---------------------------------------------------------------- applying a feed
 
 def which_team(feed, row, swedes):
-    """Index (0/1) of the team the Swedes play for, by names first, then by club name."""
+    """Index (0/1) of the row's own team. The team name decides when it clearly points at one side
+    (Swede-vs-Swede games have Swedes on both teams); otherwise the side with the row's Swedes."""
+    club, opp = set(norm(row.get('team')).split()), set(norm(row.get('opponent')).split())
+    sc = []
+    for t in feed['teams']:
+        w = set(norm(t['name']).split())
+        sc.append(len(w & club) - len(w & opp))
+    if len(sc) == 2 and sc[0] != sc[1]:
+        return 0 if sc[0] > sc[1] else 1
     names = {last(n) for n in swedes}
     for i, t in enumerate(feed['teams']):
         if any(last(p['name']) in names for p in t['pl']):
             return i
-    club = norm(row.get('team'))
-    best, score = 0, -1
-    for i, t in enumerate(feed['teams']):
-        words = set(norm(t['name']).split())
-        s = len(words & set(club.split()))
-        if s > score:
-            best, score = i, s
-    return best
+    return 0
 
 
 def clock_label(feed):
