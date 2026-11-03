@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:47:01+01:00",
+ "at": "2026-11-03T04:47:36+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,12 +9,12 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:51",
+   "clock": "04:33",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     53,
+     56,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:09",
+   "clock": "15:53",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:01",
+   "clock": "01:41",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     29,
+     31,
      16
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:57",
+   "clock": "09:54",
    "done": false,
    "teams": [
     [
