@@ -542,6 +542,28 @@
   "eff": ""
  },
  {
+  "line_id": "g29-fall",
+  "game_id": "g29",
+  "player": "Alliou Fall",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
+ },
+ {
   "line_id": "g20261103maine-adsten",
   "game_id": "g20261103maine",
   "player": "Villiam Garcia Adsten",

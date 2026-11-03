@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:03:02+01:00",
+ "at": "2026-11-03T01:03:53+01:00",
  "log": [
   {
    "game": "g16",
@@ -40,12 +40,12 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:17",
+   "clock": "08:03",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     16,
+     19,
      17
     ],
     [
@@ -62,19 +62,19 @@
   {
    "game": "g29",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:59",
    "done": false,
    "teams": [
     [
-     "Iona Gaels",
-     0,
-     0
-    ],
-    [
      "Vermont Catamounts",
      0,
-     0
+     15
+    ],
+    [
+     "Iona Gaels",
+     0,
+     17
     ]
    ]
   },
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:26",
    "done": false,
    "teams": [
     [
