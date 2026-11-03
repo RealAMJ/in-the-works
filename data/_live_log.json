@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:38:02+01:00",
+ "at": "2026-11-03T04:38:52+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,17 +9,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:43",
+   "clock": "08:18",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     46,
+     48,
      15
     ],
     [
      "New Mexico Lobos",
-     76,
+     80,
      13
     ]
    ]
@@ -31,13 +31,13 @@
   {
    "game": "g28",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:28",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     29,
+     31,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:43",
+   "clock": "03:56",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     19,
+     22,
      16
     ]
    ]
@@ -88,7 +88,7 @@
     ],
     [
      "Los Angeles Lakers",
-     33,
+     35,
      15
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:43",
+   "clock": "07:41",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     17,
+     18,
      15
     ],
     [
