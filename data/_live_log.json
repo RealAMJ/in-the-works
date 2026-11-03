@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:05:11+01:00",
+ "at": "2026-11-03T05:06:02+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,7 +9,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:51",
+   "clock": "09:17",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Utah State Aggies",
-     68,
+     70,
      15
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:46",
+   "clock": "03:55",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     51,
+     56,
      14
     ],
     [
      "Los Angeles Lakers",
-     56,
+     58,
      15
     ]
    ]
