@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:34:06+01:00",
+ "at": "2026-11-03T04:34:57+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:14",
+   "clock": "10:05",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     71,
+     72,
      13
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g19",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:00",
+   "clock": "02:26",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     22,
+     25,
      14
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:56",
+   "clock": "08:13",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     17,
+     19,
      14
     ]
    ]
