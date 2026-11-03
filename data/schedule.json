@@ -584,11 +584,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Swedish matchup: Homelius plays for Eastern Washington",
-  "status": "live",
+  "status": "final",
   "score": "L 65-74",
   "espn_id": "401920716",
-  "clock": "Halftime",
-  "live_updated": "2026-11-03T06:11:13+01:00"
+  "live_done": true
  },
  {
   "game_id": "g19",
@@ -601,13 +600,13 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "L 101-119",
+  "score": "L 104-119",
   "box_url": "https://www.nba.com/game/mia-vs-lal-0022600172/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "clock": "Q4 08:06",
-  "live_updated": "2026-11-03T06:11:13+01:00"
+  "clock": "Q4 07:33",
+  "live_updated": "2026-11-03T06:12:03+01:00"
  },
  {
   "game_id": "g32",
