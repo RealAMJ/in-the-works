@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:13:27+01:00",
+ "at": "2026-11-03T01:14:19+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:11",
+   "clock": "16:40",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:40",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     38,
+     41,
      16
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:33",
+   "clock": "13:45",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:31",
+   "clock": "14:27",
    "done": false,
    "teams": [
     [
@@ -109,12 +109,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:02",
+   "clock": "14:55",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     6,
+     7,
      15
     ],
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:20",
+   "clock": "18:12",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     3,
+     4,
      15
     ]
    ]
