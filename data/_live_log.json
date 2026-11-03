@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:40:30+01:00",
+ "at": "2026-11-03T01:41:21+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:50",
+   "clock": "08:19",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     53,
+     55,
      15
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:51",
+   "clock": "00:41",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:56",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     27,
+     29,
      16
     ]
    ]
@@ -109,12 +109,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:28",
+   "clock": "03:13",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     18,
+     21,
      15
     ],
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:00",
+   "clock": "07:31",
    "done": false,
    "teams": [
     [
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:48",
+   "clock": "16:20",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     4,
+     5,
      16
     ],
     [
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:13",
+   "clock": "15:58",
    "done": false,
    "teams": [
     [
