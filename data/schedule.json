@@ -516,11 +516,10 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "live",
+  "status": "final",
   "score": "L 68-75",
   "espn_id": "401920893",
-  "clock": "Q2 00:05",
-  "live_updated": "2026-11-03T03:24:47+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261103lip",
@@ -533,10 +532,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 75-81",
+  "score": "L 76-81",
   "espn_id": "401920701",
-  "clock": "Q2 00:59",
-  "live_updated": "2026-11-03T03:24:47+01:00"
+  "clock": "Q2 01:03",
+  "live_updated": "2026-11-03T03:25:37+01:00"
  },
  {
   "game_id": "g18",
@@ -552,7 +551,7 @@
   "score": "W 21-16",
   "espn_id": "401924894",
   "clock": "Q1 10:14",
-  "live_updated": "2026-11-03T03:24:47+01:00"
+  "live_updated": "2026-11-03T03:25:37+01:00"
  },
  {
   "game_id": "g28",
