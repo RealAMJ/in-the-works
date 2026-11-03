@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:55:19+01:00",
+ "at": "2026-11-03T05:56:10+01:00",
  "log": [
   {
    "game": "g17",
@@ -9,12 +9,12 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:30",
+   "clock": "03:13",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     60,
+     62,
      15
     ],
     [
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Miami Heat",
-     95,
+     93,
      14
     ],
     [
