@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:09:07+01:00",
+ "at": "2026-11-03T02:09:39+01:00",
  "log": [
   {
    "game": "g16",
@@ -8,9 +8,9 @@
   {
    "game": "g16",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Oakland Golden Grizzlies",
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:32",
+   "clock": "08:15",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     59,
+     61,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:34",
+   "clock": "17:28",
    "done": false,
    "teams": [
     [
@@ -219,7 +219,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     28,
+     31,
      16
     ]
    ]
