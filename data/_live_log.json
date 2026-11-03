@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:47:50+01:00",
+ "at": "2026-11-03T01:48:49+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:05",
+   "clock": "06:27",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:35",
+   "clock": "15:57",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:17",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     33,
+     36,
      16
     ]
    ]
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     26,
+     28,
      15
     ]
    ]
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:28",
+   "clock": "13:20",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     7,
+     10,
      16
     ],
     [
@@ -209,12 +209,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:16",
+   "clock": "13:40",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     9,
+     11,
      15
     ],
     [
