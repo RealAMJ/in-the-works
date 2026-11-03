@@ -15314,7 +15314,7 @@
   "team": "Miami Heat",
   "player": "Andrew Wiggins",
   "pos": "",
-  "min": 22,
+  "min": 24,
   "pts": 7,
   "reb": 0,
   "ast": 2,
@@ -15356,7 +15356,7 @@
   "team": "Miami Heat",
   "player": "Klay Thompson",
   "pos": "",
-  "min": 25,
+  "min": 27,
   "pts": 19,
   "reb": 1,
   "ast": 1,
@@ -15366,7 +15366,7 @@
   "fg": "7/11",
   "three": "4/7",
   "ft": "1/1",
-  "pm": -23,
+  "pm": -22,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -15377,7 +15377,7 @@
   "team": "Miami Heat",
   "player": "Davion Mitchell",
   "pos": "",
-  "min": 28,
+  "min": 29,
   "pts": 15,
   "reb": 0,
   "ast": 7,
@@ -15387,7 +15387,7 @@
   "fg": "5/5",
   "three": "4/4",
   "ft": "1/2",
-  "pm": -14,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -15414,7 +15414,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-0-6",
+  "row_id": "g19-0-7",
   "game_id": "g19",
   "team": "Miami Heat",
   "player": "Nikola Jovic",
@@ -15435,7 +15435,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-0-7",
+  "row_id": "g19-0-9",
   "game_id": "g19",
   "team": "Miami Heat",
   "player": "Tim Hardaway Jr.",
@@ -15456,7 +15456,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-0-8",
+  "row_id": "g19-0-10",
   "game_id": "g19",
   "team": "Miami Heat",
   "player": "Dru Smith",
@@ -15477,12 +15477,12 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-0-9",
+  "row_id": "g19-0-11",
   "game_id": "g19",
   "team": "Miami Heat",
   "player": "Pelle Larsson",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 9,
   "reb": 3,
   "ast": 2,
@@ -15498,7 +15498,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-0-10",
+  "row_id": "g19-0-12",
   "game_id": "g19",
   "team": "Miami Heat",
   "player": "Ryan Conwell",
@@ -15687,7 +15687,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-1-8",
+  "row_id": "g19-1-9",
   "game_id": "g19",
   "team": "Los Angeles Lakers",
   "player": "Collin Sexton",
@@ -15708,12 +15708,12 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g19-1-9",
+  "row_id": "g19-1-10",
   "game_id": "g19",
   "team": "Los Angeles Lakers",
   "player": "Quentin Grimes",
   "pos": "",
-  "min": 21,
+  "min": 22,
   "pts": 7,
   "reb": 4,
   "ast": 4,
