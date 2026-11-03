@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:14:19+01:00",
+ "at": "2026-11-03T01:15:11+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:40",
+   "clock": "16:14",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:10",
+   "clock": "03:41",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:45",
+   "clock": "13:25",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:27",
+   "clock": "13:55",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     8,
+     11,
      16
     ]
    ]
@@ -109,17 +109,17 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:55",
+   "clock": "14:17",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     7,
+     10,
      15
     ],
     [
      "Providence Friars",
-     10,
+     13,
      14
     ]
    ]
@@ -132,17 +132,17 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:12",
+   "clock": "17:37",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     0,
+     2,
      16
     ],
     [
      "UNC Wilmington Seahawks",
-     4,
+     5,
      15
     ]
    ]
