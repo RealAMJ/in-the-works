@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:40:42+01:00",
+ "at": "2026-11-03T05:41:33+01:00",
  "log": [
   {
    "game": "g17",
@@ -55,17 +55,17 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:26",
+   "clock": "09:48",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     36,
+     37,
      15
     ],
     [
      "Nevada Wolf Pack",
-     67,
+     70,
      14
     ]
    ]
