@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:57:39+01:00",
+ "at": "2026-11-03T05:58:30+01:00",
  "log": [
   {
    "game": "g17",
@@ -9,17 +9,17 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:04",
+   "clock": "02:20",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     63,
+     65,
      15
     ],
     [
      "Stanford Cardinal",
-     64,
+     66,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:55",
+   "clock": "03:45",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     80,
+     81,
      14
     ]
    ]
