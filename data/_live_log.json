@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:06:29+01:00",
+ "at": "2026-11-03T01:07:20+01:00",
  "log": [
   {
    "game": "g16",
@@ -8,8 +8,8 @@
   {
    "game": "g16",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:28",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     33,
+     34,
      16
     ]
    ]
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:57",
+   "clock": "17:06",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     0,
+     2,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:29",
+   "clock": "18:13",
    "done": false,
    "teams": [
     [
@@ -109,17 +109,17 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:42",
+   "clock": "17:05",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     3,
+     6,
      15
     ],
     [
      "Providence Friars",
-     2,
+     5,
      14
     ]
    ]
