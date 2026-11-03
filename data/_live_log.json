@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:58:33+01:00",
+ "at": "2026-11-03T04:59:23+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,7 +9,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:14",
+   "clock": "11:55",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Utah State Aggies",
-     56,
+     58,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:57",
+   "clock": "06:34",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Los Angeles Lakers",
-     48,
+     50,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:56",
+   "clock": "00:18",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     35,
+     38,
      14
     ]
    ]
