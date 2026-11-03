@@ -570,8 +570,8 @@
   "status": "live",
   "score": "L 45-70",
   "espn_id": "401922020",
-  "clock": "Q2 09:17",
-  "live_updated": "2026-11-03T05:06:50+01:00"
+  "clock": "Q2 09:04",
+  "live_updated": "2026-11-03T05:07:40+01:00"
  },
  {
   "game_id": "g17",
@@ -584,10 +584,10 @@
   "competition": "NCAA",
   "note": "Swedish matchup: Homelius plays for Eastern Washington",
   "status": "live",
-  "score": "L 30-34",
+  "score": "L 30-37",
   "espn_id": "401920716",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-03T05:06:50+01:00"
+  "clock": "Q2 19:30",
+  "live_updated": "2026-11-03T05:07:40+01:00"
  },
  {
   "game_id": "g19",
@@ -600,13 +600,13 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "L 58-63",
+  "score": "L 58-65",
   "box_url": "https://www.nba.com/game/mia-vs-lal-0022600172/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "clock": "Q2 03:13",
-  "live_updated": "2026-11-03T05:06:50+01:00"
+  "clock": "Q2 02:31",
+  "live_updated": "2026-11-03T05:07:40+01:00"
  },
  {
   "game_id": "g32",
@@ -622,7 +622,7 @@
   "score": "L 24-41",
   "espn_id": "401911452",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T05:06:50+01:00"
+  "live_updated": "2026-11-03T05:07:40+01:00"
  },
  {
   "game_id": "g20",

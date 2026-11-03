@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:06:50+01:00",
+ "at": "2026-11-03T05:07:40+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,7 +9,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:17",
+   "clock": "09:04",
    "done": false,
    "teams": [
     [
@@ -31,8 +31,8 @@
   {
    "game": "g17",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:30",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Stanford Cardinal",
-     34,
+     37,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:13",
+   "clock": "02:31",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Los Angeles Lakers",
-     63,
+     65,
      15
     ]
    ]
