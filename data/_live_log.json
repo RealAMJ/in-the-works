@@ -1,14 +1,6 @@
 {
- "at": "2026-11-03T03:11:50+01:00",
+ "at": "2026-11-03T03:15:48+01:00",
  "log": [
-  {
-   "game": "g20261103vmi",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261103vmi",
-   "error": "LookupError: game not found on ESPN scoreboard"
-  },
   {
    "game": "g20261103maine",
    "checking": "ESPN"
@@ -16,9 +8,9 @@
   {
    "game": "g20261103maine",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Maine Black Bears",
@@ -40,28 +32,20 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:14",
+   "clock": "01:13",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     58,
+     62,
      16
     ],
     [
      "UNC Wilmington Seahawks",
-     91,
+     96,
      15
     ]
    ]
-  },
-  {
-   "game": "g20261103dsu",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261103dsu",
-   "error": "LookupError: game not found on ESPN scoreboard"
   },
   {
    "game": "g31",
@@ -71,7 +55,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:56",
+   "clock": "03:53",
    "done": false,
    "teams": [
     [
@@ -94,12 +78,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:20",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     69,
+     72,
      16
     ],
     [
@@ -117,7 +101,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:55",
+   "clock": "15:14",
    "done": false,
    "teams": [
     [
@@ -127,7 +111,7 @@
     ],
     [
      "New Mexico Lobos",
-     9,
+     11,
      13
     ]
    ]
@@ -163,7 +147,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:19",
+   "clock": "08:50",
    "done": false,
    "teams": [
     [
@@ -173,7 +157,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     80,
+     83,
      16
     ]
    ]

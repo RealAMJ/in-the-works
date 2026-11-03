@@ -3946,5 +3946,61 @@
   "note": "",
   "leaders": "Yalden|17|5|3;Nkugwa|12|5|0;Davies|10|3|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "vmi-2026-11-03",
+  "team": "VMI",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Virginia-Lynchburg",
+  "venue": "Home",
+  "score": "115-83",
+  "result": "W",
+  "top": "Johnson 17 pts, 2 reb",
+  "note": "",
+  "leaders": "Johnson|17|2|1;Daushvili|15|7|0;Zilys|14|3|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "virginialynchburg-2026-11-03",
+  "team": "Virginia-Lynchburg",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "VMI",
+  "venue": "Away",
+  "score": "83-115",
+  "result": "L",
+  "top": "Peterson 17 pts, 9 reb",
+  "note": "",
+  "leaders": "Peterson|17|9|3;Dennis|15|2|2;Newman|15|0|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "delaware-state-2026-11-03",
+  "team": "Delaware State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "St. Vincent",
+  "venue": "Home",
+  "score": "86-52",
+  "result": "W",
+  "top": "Reedus 19 pts, 5 reb",
+  "note": "",
+  "leaders": "Reedus|19|5|1;Muhammad|18|5|3;Sullivan|16|5|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "st-vincent-2026-11-03",
+  "team": "St. Vincent",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Delaware State",
+  "venue": "Away",
+  "score": "52-86",
+  "result": "L",
+  "top": "Crosby 11 pts, 0 reb",
+  "note": "",
+  "leaders": "Crosby|11|0|1;Cherry|8|1|0;Spalding|7|3|0",
+  "source": "ESPN"
  }
 ]
