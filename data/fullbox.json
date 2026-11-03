@@ -15303,7 +15303,7 @@
   "fg": "10/17",
   "three": "0/3",
   "ft": "10/15",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -15651,7 +15651,7 @@
   "player": "Sandro Mamukelashvili",
   "pos": "",
   "min": 25,
-  "pts": 12,
+  "pts": 13,
   "reb": 2,
   "ast": 4,
   "stl": 2,
@@ -15659,8 +15659,8 @@
   "tov": 2,
   "fg": "5/10",
   "three": "2/5",
-  "ft": "0/0",
-  "pm": 11,
+  "ft": "1/2",
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "ESPN"
