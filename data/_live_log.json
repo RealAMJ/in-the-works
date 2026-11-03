@@ -1,29 +1,6 @@
 {
- "at": "2026-11-03T06:12:03+01:00",
+ "at": "2026-11-03T06:12:31+01:00",
  "log": [
-  {
-   "game": "g17",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g17",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Eastern Washington Eagles",
-     65,
-     15
-    ],
-    [
-     "Stanford Cardinal",
-     74,
-     16
-    ]
-   ]
-  },
   {
    "game": "g19",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 4,
-   "clock": "07:33",
+   "clock": "07:09",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "Los Angeles Lakers",
-     119,
+     122,
      15
     ]
    ]

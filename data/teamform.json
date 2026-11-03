@@ -4198,5 +4198,61 @@
   "note": "",
   "leaders": "Tosi|26|5|1;Hornseth|16|6|2;Callaghan|14|5|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-03",
+  "team": "Stanford",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Home",
+  "score": "65-74",
+  "result": "L",
+  "top": "IV 20 pts, 9 reb",
+  "note": "",
+  "leaders": "IV|20|9|1;Scherer|11|2|2;Miller|9|6|0;Griffith|9|4|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-03",
+  "team": "Eastern Washington",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "74-65",
+  "result": "W",
+  "top": "Price 17 pts, 2 reb",
+  "note": "",
+  "leaders": "Price|17|2|4;Cammann|13|4|0;Townsend|12|6|5;Olajuwon|12|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "robert-morris-2026-11-03",
+  "team": "Robert Morris",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Nevada",
+  "venue": "Away",
+  "score": "49-86",
+  "result": "L",
+  "top": "Jr. 16 pts, 7 reb",
+  "note": "",
+  "leaders": "Jr.|16|7|0;Smith|9|2|0;Dunkley|8|2|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "nevada-2026-11-03",
+  "team": "Nevada",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Robert Morris",
+  "venue": "Home",
+  "score": "86-49",
+  "result": "W",
+  "top": "Price 19 pts, 7 reb",
+  "note": "",
+  "leaders": "Price|19|7|1;Coulter|14|7|1;Weems|13|4|3;Phipps|13|8|5",
+  "source": "ESPN"
  }
 ]
