@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:27:02+01:00",
+ "at": "2026-11-03T04:27:58+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:52",
+   "clock": "11:39",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:42",
+   "clock": "09:21",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     18,
+     19,
      15
     ],
     [
@@ -101,12 +101,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:31",
+   "clock": "11:14",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     12,
+     14,
      15
     ],
     [
