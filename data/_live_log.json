@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:35:54+01:00",
+ "at": "2026-11-03T02:36:45+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,17 +17,17 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:01",
+   "clock": "00:18",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     59,
+     63,
      17
     ],
     [
      "St. John's Red Storm",
-     74,
+     78,
      16
     ]
    ]
@@ -45,7 +45,7 @@
    "teams": [
     [
      "Vermont Catamounts",
-     45,
+     47,
      15
     ],
     [
@@ -63,17 +63,17 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:38",
+   "clock": "06:04",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     58,
+     60,
      14
     ],
     [
      "St. Bonaventure Bonnies",
-     54,
+     56,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:01",
+   "clock": "09:26",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     59,
+     62,
      14
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:36",
+   "clock": "15:07",
    "done": false,
    "teams": [
     [
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:08",
+   "clock": "17:50",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Wisconsin Badgers",
-     44,
+     46,
      15
     ]
    ]
