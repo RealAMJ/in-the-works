@@ -534,10 +534,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 77-86",
+  "score": "L 79-86",
   "espn_id": "401920701",
-  "clock": "Q2 00:17",
-  "live_updated": "2026-11-03T03:30:21+01:00"
+  "clock": "Halftime",
+  "live_updated": "2026-11-03T03:31:11+01:00"
  },
  {
   "game_id": "g18",
@@ -550,10 +550,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 21-17",
+  "score": "W 23-17",
   "espn_id": "401924894",
-  "clock": "Q1 09:09",
-  "live_updated": "2026-11-03T03:30:21+01:00"
+  "clock": "Q1 08:16",
+  "live_updated": "2026-11-03T03:31:11+01:00"
  },
  {
   "game_id": "g28",
