@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:52:25+01:00",
+ "at": "2026-11-03T02:53:18+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:54",
+   "clock": "00:42",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     68,
+     70,
      16
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:31",
+   "clock": "04:07",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Providence Friars",
-     77,
+     79,
      14
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:16",
+   "clock": "09:10",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:56",
+   "clock": "11:48",
    "done": false,
    "teams": [
     [
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:26",
+   "clock": "16:07",
    "done": false,
    "teams": [
     [
