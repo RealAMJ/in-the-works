@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:55:45+01:00",
+ "at": "2026-11-03T01:56:20+01:00",
  "log": [
   {
    "game": "g16",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     58,
+     59,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:38",
+   "clock": "13:27",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     19,
+     21,
      17
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:43",
+   "clock": "01:26",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:33",
+   "clock": "08:25",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     22,
+     24,
      15
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:18",
+   "clock": "10:52",
    "done": false,
    "teams": [
     [
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:10",
+   "clock": "11:06",
    "done": false,
    "teams": [
     [
