@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:49:12+01:00",
+ "at": "2026-11-03T02:50:04+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:06",
+   "clock": "02:00",
    "done": false,
    "teams": [
     [
@@ -63,12 +63,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:36",
+   "clock": "06:20",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     44,
+     46,
      15
     ],
     [
@@ -86,12 +86,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:52",
+   "clock": "10:20",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     37,
+     39,
      16
     ],
     [
@@ -117,12 +117,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:45",
+   "clock": "12:19",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     40,
+     42,
      14
     ],
     [
@@ -140,17 +140,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:09",
+   "clock": "13:40",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     54,
+     56,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     49,
+     51,
      13
     ]
    ]
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:56",
+   "clock": "17:31",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     39,
+     41,
      15
     ],
     [
