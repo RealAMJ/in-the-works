@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:55:36+01:00",
+ "at": "2026-11-03T02:56:28+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:17",
+   "clock": "00:18",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:18",
+   "clock": "00:14",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     70,
+     71,
      16
     ]
    ]
@@ -68,7 +68,7 @@
    "teams": [
     [
      "Maine Black Bears",
-     46,
+     48,
      15
     ],
     [
@@ -91,7 +91,7 @@
    "teams": [
     [
      "Mount Olive Trojans",
-     45,
+     47,
      16
     ],
     [
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:23",
+   "clock": "10:04",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "Wisconsin Badgers",
-     55,
+     56,
      15
     ]
    ]
@@ -140,17 +140,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:02",
+   "clock": "10:46",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     56,
+     59,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     60,
+     63,
      13
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:47",
+   "clock": "15:42",
    "done": false,
    "teams": [
     [
