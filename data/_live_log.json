@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:03:50+01:00",
+ "at": "2026-11-03T03:04:42+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -10,29 +10,6 @@
    "error": "LookupError: game not found on ESPN scoreboard"
   },
   {
-   "game": "g29",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g29",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Vermont Catamounts",
-     55,
-     15
-    ],
-    [
-     "Iona Gaels",
-     56,
-     17
-    ]
-   ]
-  },
-  {
    "game": "g20261103maine",
    "checking": "ESPN"
   },
@@ -40,7 +17,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:49",
+   "clock": "01:27",
    "done": false,
    "teams": [
     [
@@ -50,7 +27,7 @@
     ],
     [
      "Providence Friars",
-     79,
+     81,
      14
     ]
    ]
@@ -63,7 +40,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:09",
+   "clock": "05:29",
    "done": false,
    "teams": [
     [
@@ -73,7 +50,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     84,
+     87,
      15
     ]
    ]
@@ -117,12 +94,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:12",
+   "clock": "07:53",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     63,
+     66,
      16
     ],
     [
@@ -163,17 +140,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:30",
+   "clock": "11:26",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     57,
+     59,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     69,
+     74,
      16
     ]
    ]
