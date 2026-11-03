@@ -3554,5 +3554,31 @@
   "pf": 2,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "fall-2026-11-03",
+  "player": "Alliou Fall",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "Iona",
+  "opponent": "Vermont",
+  "venue": "Home",
+  "result": "W 56-55",
+  "min": 18,
+  "pts": 0,
+  "reb": 5,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "0/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 3,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 1,
+  "pm": 0,
+  "eff": ""
  }
 ]

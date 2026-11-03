@@ -3918,5 +3918,33 @@
   "note": "",
   "leaders": "Philipkoski|28|3|4;Bill|15|9|2;Au-Duke|12|4|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "iona-2026-11-03",
+  "team": "Iona",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Vermont",
+  "venue": "Home",
+  "score": "56-55",
+  "result": "W",
+  "top": "Vanderhorst 27 pts, 6 reb",
+  "note": "",
+  "leaders": "Vanderhorst|27|6|1;Akametu|18|3|3;Sassella|6|1|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "vermont-2026-11-03",
+  "team": "Vermont",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Away",
+  "score": "55-56",
+  "result": "L",
+  "top": "Yalden 17 pts, 5 reb",
+  "note": "",
+  "leaders": "Yalden|17|5|3;Nkugwa|12|5|0;Davies|10|3|4",
+  "source": "ESPN"
  }
 ]

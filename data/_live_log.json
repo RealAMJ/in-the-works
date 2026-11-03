@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:07:24+01:00",
+ "at": "2026-11-03T03:07:56+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,12 +40,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:14",
+   "clock": "03:42",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     52,
+     55,
      16
     ],
     [
@@ -71,7 +71,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:19",
+   "clock": "05:34",
    "done": false,
    "teams": [
     [
@@ -81,7 +81,7 @@
     ],
     [
      "Wisconsin Badgers",
-     63,
+     65,
      15
     ]
    ]
@@ -94,7 +94,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:52",
+   "clock": "07:25",
    "done": false,
    "teams": [
     [
@@ -104,7 +104,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     71,
+     75,
      13
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:46",
+   "clock": "18:31",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "New Mexico Lobos",
-     2,
+     4,
      13
     ]
    ]
@@ -150,7 +150,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     74,
+     76,
      16
     ]
    ]
