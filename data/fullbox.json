@@ -15727,5 +15727,26 @@
   "swede": false,
   "state": "live",
   "source": "ESPN"
+ },
+ {
+  "row_id": "g19-1-12",
+  "game_id": "g19",
+  "team": "Los Angeles Lakers",
+  "player": "Jaden Hardy",
+  "pos": "",
+  "min": 0,
+  "pts": 1,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "1/1",
+  "pm": 1,
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
  }
 ]
