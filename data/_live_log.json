@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:47:17+01:00",
+ "at": "2026-11-03T01:47:50+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:22",
+   "clock": "07:05",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     67,
+     69,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:36",
+   "clock": "16:35",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     52,
+     55,
      16
     ]
    ]
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     21,
+     19,
      17
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:46",
+   "clock": "00:36",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     32,
+     34,
      14
     ]
    ]
@@ -132,12 +132,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:33",
+   "clock": "04:13",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     18,
+     20,
      16
     ],
     [
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:18",
+   "clock": "13:28",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     9,
+     12,
      13
     ]
    ]
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:26",
+   "clock": "14:16",
    "done": false,
    "teams": [
     [
