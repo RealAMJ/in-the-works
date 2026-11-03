@@ -4086,5 +4086,33 @@
   "note": "",
   "leaders": "Elmer|18|5|3;Carrington|15|4|4;Foxwell|14|1|7",
   "source": "ESPN"
+ },
+ {
+  "row_id": "lipscomb-2026-11-03",
+  "team": "Lipscomb",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Southeast Missouri State",
+  "venue": "Away",
+  "score": "79-86",
+  "result": "L",
+  "top": "Simpkins 22 pts, 4 reb",
+  "note": "",
+  "leaders": "Simpkins|22|4|1;Martin|13|11|1;Sargiunas|12|2|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "southeast-missouri-state-2026-11-03",
+  "team": "Southeast Missouri State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Home",
+  "score": "86-79",
+  "result": "W",
+  "top": "Cooper 14 pts, 6 reb",
+  "note": "",
+  "leaders": "Cooper|14|6|3;Jr.|13|4|4;Farmer|13|5|2",
+  "source": "ESPN"
  }
 ]

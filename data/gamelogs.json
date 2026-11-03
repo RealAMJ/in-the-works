@@ -3684,5 +3684,31 @@
   "pf": 3,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "tidare-2026-11-03",
+  "player": "Hugo Tidare",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "Lipscomb",
+  "opponent": "Southeast Missouri State",
+  "venue": "Away",
+  "result": "L 79-86",
+  "min": 20,
+  "pts": 6,
+  "reb": 1,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/3",
+  "three": "2/3",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 2,
+  "pm": 0,
+  "eff": ""
  }
 ]
