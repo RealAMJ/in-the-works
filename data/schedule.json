@@ -568,10 +568,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 54-92",
+  "score": "L 55-92",
   "espn_id": "401922020",
   "clock": "Q2 01:09",
-  "live_updated": "2026-11-03T05:28:27+01:00"
+  "live_updated": "2026-11-03T05:29:17+01:00"
  },
  {
   "game_id": "g17",
@@ -587,7 +587,7 @@
   "score": "L 50-53",
   "espn_id": "401920716",
   "clock": "Q2 10:56",
-  "live_updated": "2026-11-03T05:28:27+01:00"
+  "live_updated": "2026-11-03T05:29:17+01:00"
  },
  {
   "game_id": "g19",
@@ -606,7 +606,7 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
   "clock": "Halftime",
-  "live_updated": "2026-11-03T05:28:28+01:00"
+  "live_updated": "2026-11-03T05:29:17+01:00"
  },
  {
   "game_id": "g32",
@@ -622,7 +622,7 @@
   "score": "L 26-55",
   "espn_id": "401911452",
   "clock": "Q2 14:20",
-  "live_updated": "2026-11-03T05:28:28+01:00"
+  "live_updated": "2026-11-03T05:29:17+01:00"
  },
  {
   "game_id": "g20",
