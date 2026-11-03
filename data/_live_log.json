@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T06:00:11+01:00",
+ "at": "2026-11-03T06:00:43+01:00",
  "log": [
   {
    "game": "g17",
@@ -31,8 +31,8 @@
   {
    "game": "g19",
    "src": "ESPN",
-   "period": 3,
-   "clock": "00:00",
+   "period": 4,
+   "clock": "11:53",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:10",
+   "clock": "02:40",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     81,
+     83,
      14
     ]
    ]
