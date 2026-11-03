@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:30:46+01:00",
+ "at": "2026-11-03T02:31:45+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:42",
+   "clock": "02:25",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:52",
+   "clock": "07:58",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     49,
+     51,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:56",
+   "clock": "11:18",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     55,
+     57,
      14
     ]
    ]
@@ -109,12 +109,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:02",
+   "clock": "16:51",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     30,
+     31,
      16
     ],
     [
