@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:12:09+01:00",
+ "at": "2026-11-03T05:12:59+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,7 +9,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:45",
+   "clock": "07:19",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Utah State Aggies",
-     74,
+     76,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:32",
+   "clock": "17:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Stanford Cardinal",
-     39,
+     40,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:55",
+   "clock": "00:49",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     67,
+     69,
      14
     ],
     [
