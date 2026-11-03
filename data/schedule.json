@@ -587,8 +587,8 @@
   "status": "live",
   "score": "L 63-64",
   "espn_id": "401920716",
-  "clock": "Q2 03:13",
-  "live_updated": "2026-11-03T05:56:43+01:00"
+  "clock": "Q2 03:04",
+  "live_updated": "2026-11-03T05:57:39+01:00"
  },
  {
   "game_id": "g19",
@@ -606,8 +606,8 @@
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "clock": "Q3 00:15",
-  "live_updated": "2026-11-03T05:56:43+01:00"
+  "clock": "End of Q3",
+  "live_updated": "2026-11-03T05:57:39+01:00"
  },
  {
   "game_id": "g32",
@@ -623,7 +623,7 @@
   "score": "L 43-80",
   "espn_id": "401911452",
   "clock": "Q2 03:55",
-  "live_updated": "2026-11-03T05:56:43+01:00"
+  "live_updated": "2026-11-03T05:57:39+01:00"
  },
  {
   "game_id": "g20",
