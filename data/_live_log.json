@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:12:04+01:00",
+ "at": "2026-11-03T01:12:54+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:49",
+   "clock": "17:36",
    "done": false,
    "teams": [
     [
@@ -40,12 +40,12 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:38",
+   "clock": "04:40",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     24,
+     26,
      17
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:21",
+   "clock": "14:44",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:43",
+   "clock": "15:13",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:22",
+   "clock": "18:34",
    "done": false,
    "teams": [
     [
