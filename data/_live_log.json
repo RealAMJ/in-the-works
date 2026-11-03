@@ -1,26 +1,26 @@
 {
- "at": "2026-11-03T06:33:52+01:00",
+ "at": "2026-11-03T19:24:45+01:00",
  "log": [
   {
-   "game": "g19",
-   "checking": "ESPN"
+   "game": "c20261103ora",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g19",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "c20261103ora",
+   "src": "FIBA LiveStats",
+   "period": 3,
+   "clock": "02:25",
+   "done": false,
    "teams": [
     [
-     "Miami Heat",
-     117,
-     14
+     "Mykonos Betsson BC",
+     51,
+     12
     ],
     [
-     "Los Angeles Lakers",
-     138,
-     15
+     "CSM CSU Raiffeisen Oradea",
+     50,
+     11
     ]
    ]
   }

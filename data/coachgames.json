@@ -83,8 +83,11 @@
   "venue": "Away",
   "competition": "FIBA Europe Cup",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "live",
+  "score": "L 50-51",
+  "live_feed": "fiba:2888341",
+  "clock": "Q3 02:25",
+  "live_updated": "2026-11-03T19:24:45+01:00"
  },
  {
   "game_id": "c20261104anw",
