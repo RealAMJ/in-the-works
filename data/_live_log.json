@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:18:49+01:00",
+ "at": "2026-11-03T02:20:00+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:08",
+   "clock": "05:48",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:34",
+   "clock": "11:35",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "Iona Gaels",
-     31,
+     33,
      17
     ]
    ]
@@ -63,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:47",
+   "clock": "12:25",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     46,
+     47,
      14
     ],
     [
@@ -86,12 +86,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:42",
+   "clock": "14:57",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     29,
+     31,
      15
     ],
     [
@@ -108,8 +108,8 @@
   {
    "game": "g20261103uncw",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:37",
    "done": false,
    "teams": [
     [
@@ -130,7 +130,7 @@
   },
   {
    "game": "g20261103dsu",
-   "error": "LookupError: game not found on ESPN scoreboard"
+   "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
   },
   {
    "game": "g31",
@@ -163,7 +163,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:44",
+   "clock": "00:10",
    "done": false,
    "teams": [
     [
@@ -186,17 +186,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:15",
+   "clock": "02:59",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     31,
+     33,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     40,
+     43,
      16
     ]
    ]
