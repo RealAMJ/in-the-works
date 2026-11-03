@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:53:38+01:00",
+ "at": "2026-11-03T04:54:28+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:04",
+   "clock": "01:30",
    "done": false,
    "teams": [
     [
@@ -101,12 +101,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:50",
+   "clock": "03:14",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     23,
+     24,
      15
     ],
     [
