@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:42:12+01:00",
+ "at": "2026-11-03T01:43:04+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:18",
+   "clock": "08:14",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     62,
+     65,
      17
     ]
    ]
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:07",
+   "clock": "00:06",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     28,
+     29,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:22",
+   "clock": "01:50",
    "done": false,
    "teams": [
     [
@@ -109,12 +109,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:35",
+   "clock": "02:13",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     21,
+     23,
      15
     ],
     [
@@ -137,7 +137,7 @@
    "teams": [
     [
      "Mount Olive Trojans",
-     12,
+     13,
      16
     ],
     [
@@ -163,12 +163,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:26",
+   "clock": "14:16",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     7,
+     8,
      14
     ],
     [
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:05",
+   "clock": "15:20",
    "done": false,
    "teams": [
     [
