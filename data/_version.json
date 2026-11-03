@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-03T05:31:26+01:00",
+ "updated": "2026-11-03T05:31:55+01:00",
  "files": {
   "awards": "8c4e6828bce4",
   "bios": "7b6cd7ee3f8c",
-  "boxscores": "f3d0f0c061ec",
+  "boxscores": "c9a0a4345c49",
   "career": "4d71859a21b0",
   "coaches": "efb2086390f9",
   "coachgames": "c79883c14f23",
   "feed_seeds": "746ec0be4bc3",
-  "fullbox": "3b806ff03a25",
-  "gamelogs": "9ae10f644855",
+  "fullbox": "7352ed027603",
+  "gamelogs": "47b8997ae320",
   "highlights": "3cd934184b47",
   "leaguetiers": "b21664fef607",
   "ntgames": "f4758e4d6507",
@@ -18,9 +18,9 @@
   "players": "404f019ae421",
   "previews": "732a8684f330",
   "sbl": "43048af64160",
-  "schedule": "18e7d04525e5",
+  "schedule": "9d411e1f995b",
   "stats": "66ac02dc8620",
-  "teamform": "f3a49d859da0",
+  "teamform": "39d2d14ac80b",
   "teams": "1b834bb372ff",
   "thisweek": "1477c1321f4e"
  }

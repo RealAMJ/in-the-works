@@ -4170,5 +4170,33 @@
   "note": "",
   "leaders": "Gibson|23|0|3;Jr.|12|1|3;Potter|8|12|3;Mackay|8|2|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "idaho-state-2026-11-03",
+  "team": "Idaho State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Utah State",
+  "venue": "Away",
+  "score": "58-94",
+  "result": "L",
+  "top": "Morris 15 pts, 1 reb",
+  "note": "",
+  "leaders": "Morris|15|1|5;DeMuynck|14|3|1;Palmer|10|2|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "utah-state-2026-11-03",
+  "team": "Utah State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Idaho State",
+  "venue": "Home",
+  "score": "94-58",
+  "result": "W",
+  "top": "Tosi 26 pts, 5 reb",
+  "note": "",
+  "leaders": "Tosi|26|5|1;Hornseth|16|6|2;Callaghan|14|5|3",
+  "source": "ESPN"
  }
 ]

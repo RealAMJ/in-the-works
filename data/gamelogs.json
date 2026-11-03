@@ -3736,5 +3736,31 @@
   "pf": 2,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "amoran-2026-11-03",
+  "player": "Nathan Amoran",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "Idaho State",
+  "opponent": "Utah State",
+  "venue": "Away",
+  "result": "L 58-94",
+  "min": 22,
+  "pts": 4,
+  "reb": 4,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "2/3",
+  "three": "0/0",
+  "ft": "0/1",
+  "oreb": 2,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 1,
+  "pm": 0,
+  "eff": ""
  }
 ]
