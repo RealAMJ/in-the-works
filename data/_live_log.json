@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:05:38+01:00",
+ "at": "2026-11-03T01:06:29+01:00",
  "log": [
   {
    "game": "g16",
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:33",
+   "clock": "17:57",
    "done": false,
    "teams": [
     [
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:10",
+   "clock": "18:29",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     0,
+     3,
      14
     ],
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:06",
+   "clock": "17:42",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     0,
+     2,
      14
     ]
    ]
