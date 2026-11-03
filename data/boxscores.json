@@ -633,7 +633,7 @@
   "line_id": "g31-stumer",
   "game_id": "g31",
   "player": "Oskar Stumer",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -655,7 +655,7 @@
   "line_id": "g20261103lip-tidare",
   "game_id": "g20261103lip",
   "player": "Hugo Tidare",
-  "min": 0,
+  "min": 1,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -669,7 +669,7 @@
   "dreb": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 0,
   "eff": ""
  }
