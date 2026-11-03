@@ -567,7 +567,7 @@
   "line_id": "g30-holmstrom",
   "game_id": "g30",
   "player": "William Holmstrom",
-  "min": 27,
+  "min": 28,
   "pts": 16,
   "reb": 7,
   "ast": 1,
@@ -648,7 +648,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {
