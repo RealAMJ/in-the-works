@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T06:05:28+01:00",
+ "at": "2026-11-03T06:06:28+01:00",
  "log": [
   {
    "game": "g17",
@@ -9,7 +9,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:37",
+   "clock": "00:15",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Stanford Cardinal",
-     70,
+     72,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 4,
-   "clock": "09:21",
+   "clock": "09:14",
    "done": false,
    "teams": [
     [
