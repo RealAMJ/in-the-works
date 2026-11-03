@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:48:03+01:00",
+ "at": "2026-11-03T04:48:54+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:33",
+   "clock": "04:12",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     87,
+     89,
      13
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:06",
+   "clock": "00:51",
    "done": false,
    "teams": [
     [
