@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:32:10+01:00",
+ "at": "2026-11-03T03:33:27+01:00",
  "log": [
   {
    "game": "g20261103lip",
@@ -8,9 +8,9 @@
   {
    "game": "g20261103lip",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Lipscomb Bisons",
@@ -54,19 +54,19 @@
   {
    "game": "g28",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:08",
    "done": false,
    "teams": [
     [
-     "Utah State Aggies",
-     0,
-     0
-    ],
-    [
      "Idaho State Bengals",
      0,
-     0
+     16
+    ],
+    [
+     "Utah State Aggies",
+     2,
+     15
     ]
    ]
   },
@@ -78,17 +78,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:14",
+   "clock": "03:52",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     76,
+     78,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     92,
+     94,
      16
     ]
    ]
