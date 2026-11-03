@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:26:40+01:00",
+ "at": "2026-11-03T02:27:31+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,17 +40,17 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:50",
+   "clock": "09:27",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     40,
+     41,
      15
     ],
     [
      "Iona Gaels",
-     35,
+     38,
      17
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:59",
+   "clock": "12:49",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     51,
+     53,
      14
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:24",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     51,
+     53,
      16
     ]
    ]
