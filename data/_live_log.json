@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:50:05+01:00",
+ "at": "2026-11-03T03:50:55+01:00",
  "log": [
   {
    "game": "g18",
@@ -32,17 +32,17 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:03",
+   "clock": "10:33",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     12,
+     14,
      16
     ],
     [
      "Utah State Aggies",
-     12,
+     14,
      15
     ]
    ]
