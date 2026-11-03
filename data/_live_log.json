@@ -1,29 +1,6 @@
 {
- "at": "2026-11-03T03:33:27+01:00",
+ "at": "2026-11-03T03:34:18+01:00",
  "log": [
-  {
-   "game": "g20261103lip",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261103lip",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Lipscomb Bisons",
-     79,
-     16
-    ],
-    [
-     "Southeast Missouri State Redhawks",
-     86,
-     13
-    ]
-   ]
-  },
   {
    "game": "g18",
    "checking": "ESPN"
@@ -55,17 +32,17 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:08",
+   "clock": "18:21",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     0,
+     3,
      16
     ],
     [
      "Utah State Aggies",
-     2,
+     4,
      15
     ]
    ]
@@ -83,7 +60,7 @@
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     78,
+     79,
      15
     ],
     [
