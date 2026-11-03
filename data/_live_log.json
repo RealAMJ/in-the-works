@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:05:00+01:00",
+ "at": "2026-11-03T02:05:36+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:04",
+   "clock": "01:45",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:23",
+   "clock": "09:36",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:01",
+   "clock": "17:42",
    "done": false,
    "teams": [
     [
@@ -85,8 +85,8 @@
   {
    "game": "g30",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:17",
    "done": false,
    "teams": [
     [
@@ -163,17 +163,17 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:57",
+   "clock": "05:40",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     25,
+     26,
      14
     ],
     [
      "Wisconsin Badgers",
-     29,
+     31,
      15
     ]
    ]
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:06",
+   "clock": "05:28",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     29,
+     32,
      16
     ],
     [
