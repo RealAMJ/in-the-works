@@ -553,7 +553,9 @@
   "status": "final",
   "score": "W 100-60",
   "espn_id": "401924894",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g28",
@@ -569,7 +571,7 @@
   "score": "L 39-58",
   "espn_id": "401922020",
   "clock": "Q2 11:55",
-  "live_updated": "2026-11-03T04:59:23+01:00"
+  "live_updated": "2026-11-03T04:59:56+01:00"
  },
  {
   "game_id": "g17",
@@ -585,7 +587,7 @@
   "score": "L 30-34",
   "espn_id": "401920716",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T04:59:23+01:00"
+  "live_updated": "2026-11-03T04:59:57+01:00"
  },
  {
   "game_id": "g19",
@@ -604,7 +606,7 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
   "clock": "Q2 06:34",
-  "live_updated": "2026-11-03T04:59:23+01:00"
+  "live_updated": "2026-11-03T04:59:57+01:00"
  },
  {
   "game_id": "g32",
@@ -619,8 +621,8 @@
   "status": "live",
   "score": "L 24-38",
   "espn_id": "401911452",
-  "clock": "Q1 00:18",
-  "live_updated": "2026-11-03T04:59:23+01:00"
+  "clock": "Q1 00:17",
+  "live_updated": "2026-11-03T04:59:57+01:00"
  },
  {
   "game_id": "g20",

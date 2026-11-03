@@ -3710,5 +3710,31 @@
   "pf": 2,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "fasasi-2026-11-03",
+  "player": "Tunde Fasasi",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "New Mexico",
+  "opponent": "Utah Tech",
+  "venue": "Home",
+  "result": "W 100-60",
+  "min": 32,
+  "pts": 17,
+  "reb": 3,
+  "ast": 3,
+  "source": "ESPN",
+  "fg": "6/11",
+  "three": "4/8",
+  "ft": "1/1",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": 0,
+  "eff": ""
  }
 ]

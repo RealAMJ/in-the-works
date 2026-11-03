@@ -4142,5 +4142,33 @@
   "note": "",
   "leaders": "Sanders|28|5|3;Green|12|4|0;Newton|9|3|2;Mosquera|9|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "new-mexico-2026-11-03",
+  "team": "New Mexico",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Utah Tech",
+  "venue": "Home",
+  "score": "100-60",
+  "result": "W",
+  "top": "Hall 30 pts, 3 reb",
+  "note": "",
+  "leaders": "Hall|30|3|1;Tenette|19|3|2;Fasasi|17|3|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "utah-tech-2026-11-03",
+  "team": "Utah Tech",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "New Mexico",
+  "venue": "Away",
+  "score": "60-100",
+  "result": "L",
+  "top": "Gibson 23 pts, 0 reb",
+  "note": "",
+  "leaders": "Gibson|23|0|3;Jr.|12|1|3;Potter|8|12|3;Mackay|8|2|0",
+  "source": "ESPN"
  }
 ]
