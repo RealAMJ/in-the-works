@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:57:29+01:00",
+ "at": "2026-11-03T02:58:21+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,12 +17,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:18",
+   "clock": "00:06",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     53,
+     55,
      15
     ],
     [
@@ -40,12 +40,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:13",
+   "clock": "00:05",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     76,
+     78,
      14
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:04",
+   "clock": "03:22",
    "done": false,
    "teams": [
     [
@@ -140,12 +140,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:47",
+   "clock": "09:43",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     59,
+     61,
      16
     ],
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     60,
+     62,
      16
     ]
    ]
