@@ -15294,7 +15294,7 @@
   "player": "Giannis Antetokounmpo",
   "pos": "",
   "min": 33,
-  "pts": 29,
+  "pts": 30,
   "reb": 12,
   "ast": 7,
   "stl": 1,
@@ -15302,8 +15302,8 @@
   "tov": 7,
   "fg": "10/17",
   "three": "0/3",
-  "ft": "9/13",
-  "pm": -7,
+  "ft": "10/15",
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -15450,7 +15450,7 @@
   "fg": "3/7",
   "three": "3/7",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
