@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:43:04+01:00",
+ "at": "2026-11-03T01:43:40+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:14",
+   "clock": "07:51",
    "done": false,
    "teams": [
     [
@@ -39,8 +39,8 @@
   {
    "game": "g20261103sju",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:48",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:06",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     19,
+     21,
      17
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:13",
+   "clock": "01:53",
    "done": false,
    "teams": [
     [
@@ -132,12 +132,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:08",
+   "clock": "06:45",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     13,
+     15,
      16
     ],
     [
@@ -163,12 +163,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:16",
+   "clock": "14:00",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     8,
+     10,
      14
     ],
     [
