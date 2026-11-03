@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:18:28+01:00",
+ "at": "2026-11-03T03:19:19+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -19,7 +19,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     99,
+     100,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:54",
+   "clock": "02:14",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     60,
+     64,
      14
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:45",
+   "clock": "13:14",
    "done": false,
    "teams": [
     [
