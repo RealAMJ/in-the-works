@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:28:30+01:00",
+ "at": "2026-11-03T01:29:25+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,17 +9,17 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:04",
+   "clock": "11:44",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     46,
+     47,
      15
     ],
     [
      "Michigan Wolverines",
-     59,
+     62,
      17
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:53",
+   "clock": "06:29",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:42",
+   "clock": "07:41",
    "done": false,
    "teams": [
     [
