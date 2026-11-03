@@ -589,7 +589,7 @@
   "line_id": "g20261103maine-adsten",
   "game_id": "g20261103maine",
   "player": "Villiam Garcia Adsten",
-  "min": 16,
+  "min": 17,
   "pts": 5,
   "reb": 0,
   "ast": 0,
@@ -604,7 +604,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 3,
+  "pf": 4,
   "eff": ""
  },
  {
@@ -669,7 +669,7 @@
   "dreb": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 1,
   "eff": ""
  }
