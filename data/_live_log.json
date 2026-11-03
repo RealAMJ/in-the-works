@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:54:10+01:00",
+ "at": "2026-11-03T02:55:03+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:36",
+   "clock": "00:17",
    "done": false,
    "teams": [
     [
@@ -27,7 +27,7 @@
     ],
     [
      "Iona Gaels",
-     52,
+     54,
      17
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:58",
+   "clock": "08:48",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     74,
+     76,
      15
     ]
    ]
@@ -117,12 +117,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:25",
+   "clock": "10:44",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     44,
+     46,
      14
     ],
     [
