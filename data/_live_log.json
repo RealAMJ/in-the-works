@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:20:41+01:00",
+ "at": "2026-11-03T05:21:32+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,17 +9,17 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:29",
+   "clock": "03:38",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     52,
+     54,
      16
     ],
     [
      "Utah State Aggies",
-     80,
+     83,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:49",
+   "clock": "13:37",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     43,
+     45,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:33",
+   "clock": "16:45",
    "done": false,
    "teams": [
     [
