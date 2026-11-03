@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:39:55+01:00",
+ "at": "2026-11-03T03:40:23+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,12 +9,12 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:26",
+   "clock": "04:02",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     28,
+     30,
      15
     ],
     [
@@ -42,8 +42,77 @@
     ],
     [
      "Utah State Aggies",
-     6,
+     7,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g17",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g17",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Stanford Cardinal",
+     0,
+     0
+    ],
+    [
+     "Eastern Washington Eagles",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g19",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g19",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Los Angeles Lakers",
+     0,
+     0
+    ],
+    [
+     "Miami Heat",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g32",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g32",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Nevada Wolf Pack",
+     0,
+     0
+    ],
+    [
+     "Robert Morris Colonials",
+     0,
+     0
     ]
    ]
   },
@@ -55,7 +124,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:38",
+   "clock": "01:15",
    "done": false,
    "teams": [
     [
