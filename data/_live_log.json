@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:19:49+01:00",
+ "at": "2026-11-03T03:20:10+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -9,7 +9,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:05",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     79,
+     80,
      13
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:08",
+   "clock": "12:55",
    "done": false,
    "teams": [
     [
