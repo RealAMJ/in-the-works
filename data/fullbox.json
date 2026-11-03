@@ -15870,7 +15870,7 @@
   "fg": "3/6",
   "three": "0/2",
   "ft": "4/4",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -15891,7 +15891,7 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 14,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -15996,7 +15996,7 @@
   "fg": "2/4",
   "three": "1/1",
   "ft": "3/4",
-  "pm": 6,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16059,7 +16059,7 @@
   "fg": "3/5",
   "three": "2/3",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16079,8 +16079,8 @@
   "tov": 0,
   "fg": "6/8",
   "three": "2/4",
-  "ft": "4/5",
-  "pm": 12,
+  "ft": "4/6",
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16122,7 +16122,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16164,7 +16164,7 @@
   "fg": "2/7",
   "three": "0/3",
   "ft": "2/2",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16185,7 +16185,7 @@
   "fg": "5/16",
   "three": "1/6",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16227,7 +16227,7 @@
   "fg": "5/8",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16281,7 +16281,7 @@
   "player": "Dan Akin",
   "pos": "",
   "min": 27,
-  "pts": 7,
+  "pts": 8,
   "reb": 6,
   "ast": 2,
   "stl": 1,
@@ -16289,8 +16289,8 @@
   "tov": 1,
   "fg": "2/6",
   "three": "0/0",
-  "ft": "3/5",
-  "pm": -4,
+  "ft": "4/6",
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
