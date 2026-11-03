@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:43:23+01:00",
+ "at": "2026-11-03T05:44:14+01:00",
  "log": [
   {
    "game": "g17",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Eastern Washington Eagles",
-     54,
+     55,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 3,
-   "clock": "07:34",
+   "clock": "06:52",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     74,
+     76,
      14
     ],
     [
      "Los Angeles Lakers",
-     93,
+     95,
      15
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:58",
+   "clock": "08:41",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     37,
+     38,
      15
     ],
     [
