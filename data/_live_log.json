@@ -1,29 +1,6 @@
 {
- "at": "2026-11-03T02:09:39+01:00",
+ "at": "2026-11-03T02:10:31+01:00",
  "log": [
-  {
-   "game": "g16",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g16",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Oakland Golden Grizzlies",
-     68,
-     15
-    ],
-    [
-     "Michigan Wolverines",
-     84,
-     17
-    ]
-   ]
-  },
   {
    "game": "g20261103vmi",
    "checking": "ESPN"
@@ -40,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:15",
+   "clock": "08:07",
    "done": false,
    "teams": [
     [
@@ -86,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:28",
+   "clock": "17:07",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     39,
+     41,
      14
     ],
     [
