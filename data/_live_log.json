@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T19:26:49+01:00",
+ "at": "2026-11-03T19:27:58+01:00",
  "log": [
   {
    "game": "c20261103ora",
@@ -9,7 +9,7 @@
    "game": "c20261103ora",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "01:52",
+   "clock": "01:44",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "CSM CSU Raiffeisen Oradea",
-     51,
+     53,
      11
     ]
    ]
