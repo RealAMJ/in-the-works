@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:11:14+01:00",
+ "at": "2026-11-03T01:12:04+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:08",
+   "clock": "17:49",
    "done": false,
    "teams": [
     [
@@ -40,17 +40,17 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:01",
+   "clock": "05:38",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     22,
+     24,
      17
     ],
     [
      "St. John's Red Storm",
-     35,
+     37,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:00",
+   "clock": "14:31",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     6,
+     8,
      16
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:31",
+   "clock": "19:22",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     0,
+     3,
      15
     ]
    ]
