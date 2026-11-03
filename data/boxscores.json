@@ -853,14 +853,14 @@
   "line_id": "g19-larsson",
   "game_id": "g19",
   "player": "Pelle Larsson",
-  "min": 17,
-  "pts": 4,
+  "min": 18,
+  "pts": 7,
   "reb": 3,
   "ast": 2,
-  "fg": "1/4",
-  "three": "0/1",
+  "fg": "2/5",
+  "three": "1/2",
   "ft": "2/2",
-  "pm": -1,
+  "pm": 4,
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
@@ -890,7 +890,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "pf": 2,
+  "pf": 3,
   "eff": ""
  }
 ]
