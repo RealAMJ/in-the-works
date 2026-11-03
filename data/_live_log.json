@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:15:29+01:00",
+ "at": "2026-11-03T02:16:22+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,17 +17,17 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:58",
+   "clock": "06:06",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     48,
+     50,
      17
     ],
     [
      "St. John's Red Storm",
-     64,
+     67,
      16
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:42",
+   "clock": "14:23",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:25",
+   "clock": "17:09",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     43,
+     45,
      14
     ]
    ]
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:38",
+   "clock": "00:21",
    "done": false,
    "teams": [
     [
@@ -163,17 +163,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:19",
+   "clock": "01:43",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     38,
+     40,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     36,
+     38,
      13
     ]
    ]
