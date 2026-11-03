@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:03:14+01:00",
+ "at": "2026-11-03T03:03:50+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -16,9 +16,9 @@
   {
    "game": "g29",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Vermont Catamounts",
@@ -63,7 +63,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:11",
+   "clock": "06:09",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     82,
+     84,
      15
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:42",
+   "clock": "08:12",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     69,
+     71,
      13
     ]
    ]
@@ -168,7 +168,7 @@
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     56,
+     57,
      15
     ],
     [
