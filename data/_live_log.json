@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:10:27+01:00",
+ "at": "2026-11-03T03:11:18+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:42",
+   "clock": "03:18",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     89,
+     91,
      15
     ]
    ]
@@ -71,17 +71,17 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:04",
+   "clock": "04:17",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     56,
+     58,
      14
     ],
     [
      "Wisconsin Badgers",
-     65,
+     71,
      15
     ]
    ]
@@ -94,7 +94,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:08",
+   "clock": "05:20",
    "done": false,
    "teams": [
     [
@@ -104,7 +104,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     75,
+     77,
      13
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:52",
+   "clock": "15:55",
    "done": false,
    "teams": [
     [
