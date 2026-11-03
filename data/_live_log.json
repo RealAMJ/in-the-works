@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:21:00+01:00",
+ "at": "2026-11-03T03:21:50+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -32,12 +32,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:14",
+   "clock": "00:50",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     64,
+     66,
      14
     ],
     [
@@ -78,12 +78,12 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:42",
+   "clock": "12:21",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     9,
+     12,
      15
     ],
     [
