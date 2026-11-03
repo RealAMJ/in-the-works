@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:16:45+01:00",
+ "at": "2026-11-03T03:17:36+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -9,7 +9,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:11",
+   "clock": "00:39",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:25",
+   "clock": "03:16",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     59,
+     60,
      14
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:19",
+   "clock": "02:57",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:34",
+   "clock": "14:11",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     7,
+     9,
      15
     ],
     [
      "New Mexico Lobos",
-     13,
+     14,
      13
     ]
    ]
@@ -124,7 +124,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:29",
+   "clock": "07:56",
    "done": false,
    "teams": [
     [
