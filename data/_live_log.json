@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:26:11+01:00",
+ "at": "2026-11-03T01:26:45+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:32",
+   "clock": "12:20",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:14",
+   "clock": "08:31",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     20,
+     22,
      14
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:31",
+   "clock": "12:19",
    "done": false,
    "teams": [
     [
