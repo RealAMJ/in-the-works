@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:18:55+01:00",
+ "at": "2026-11-03T04:19:45+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:31",
+   "clock": "14:40",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     53,
+     57,
      13
     ]
    ]
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Idaho State Bengals",
-     26,
+     27,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:57",
+   "clock": "12:15",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Los Angeles Lakers",
-     5,
+     7,
      15
     ]
    ]
@@ -111,7 +111,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     11,
+     13,
      14
     ]
    ]
