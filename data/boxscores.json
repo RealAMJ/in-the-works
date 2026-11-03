@@ -774,7 +774,7 @@
   "ft": "1/1",
   "pm": 0,
   "source": "ESPN",
-  "note": "live",
+  "note": "",
   "oreb": 0,
   "dreb": 3,
   "stl": 1,
@@ -868,7 +868,7 @@
   "stl": 1,
   "blk": 0,
   "tov": 2,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {

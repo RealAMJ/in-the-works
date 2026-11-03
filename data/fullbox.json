@@ -13457,7 +13457,7 @@
   "ft": "4/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13478,7 +13478,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13487,19 +13487,19 @@
   "team": "Utah Tech",
   "player": "Mark Brown Jr.",
   "pos": "",
-  "min": 30,
+  "min": 31,
   "pts": 12,
   "reb": 1,
   "ast": 3,
   "stl": 3,
   "blk": 0,
   "tov": 3,
-  "fg": "5/15",
+  "fg": "5/16",
   "three": "2/7",
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13520,7 +13520,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13541,16 +13541,16 @@
   "ft": "0/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-0-6",
+  "row_id": "g18-0-5",
   "game_id": "g18",
   "team": "Utah Tech",
   "player": "Dallin Grant",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -13562,11 +13562,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-0-7",
+  "row_id": "g18-0-6",
   "game_id": "g18",
   "team": "Utah Tech",
   "player": "Samuel Ariyibi",
@@ -13583,16 +13583,16 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-0-9",
+  "row_id": "g18-0-7",
   "game_id": "g18",
   "team": "Utah Tech",
   "player": "Aris Rodriguez",
   "pos": "",
-  "min": 27,
+  "min": 28,
   "pts": 2,
   "reb": 4,
   "ast": 0,
@@ -13604,11 +13604,11 @@
   "ft": "2/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-0-11",
+  "row_id": "g18-0-8",
   "game_id": "g18",
   "team": "Utah Tech",
   "player": "Boston Harker",
@@ -13625,11 +13625,11 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-0-14",
+  "row_id": "g18-0-9",
   "game_id": "g18",
   "team": "Utah Tech",
   "player": "Aaron Bliss",
@@ -13646,7 +13646,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13667,7 +13667,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13688,7 +13688,7 @@
   "ft": "1/1",
   "pm": 0,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13709,7 +13709,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13718,8 +13718,8 @@
   "team": "New Mexico",
   "player": "Uriah Tenette",
   "pos": "",
-  "min": 29,
-  "pts": 17,
+  "min": 30,
+  "pts": 19,
   "reb": 3,
   "ast": 2,
   "stl": 0,
@@ -13727,10 +13727,10 @@
   "tov": 2,
   "fg": "7/12",
   "three": "2/4",
-  "ft": "1/1",
+  "ft": "3/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13751,7 +13751,7 @@
   "ft": "9/11",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13772,7 +13772,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13783,7 +13783,7 @@
   "pos": "",
   "min": 20,
   "pts": 3,
-  "reb": 8,
+  "reb": 9,
   "ast": 2,
   "stl": 1,
   "blk": 2,
@@ -13793,11 +13793,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-1-10",
+  "row_id": "g18-1-7",
   "game_id": "g18",
   "team": "New Mexico",
   "player": "Dax Hall",
@@ -13814,11 +13814,11 @@
   "ft": "2/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g18-1-11",
+  "row_id": "g18-1-8",
   "game_id": "g18",
   "team": "New Mexico",
   "player": "Chris Howell",
@@ -13835,7 +13835,7 @@
   "ft": "2/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -13886,7 +13886,7 @@
   "team": "Idaho State",
   "player": "MaCarhy Morris",
   "pos": "",
-  "min": 24,
+  "min": 25,
   "pts": 6,
   "reb": 1,
   "ast": 5,
@@ -13949,8 +13949,8 @@
   "team": "Idaho State",
   "player": "Ike Palmer",
   "pos": "",
-  "min": 6,
-  "pts": 4,
+  "min": 7,
+  "pts": 6,
   "reb": 1,
   "ast": 1,
   "stl": 0,
@@ -13958,7 +13958,7 @@
   "tov": 0,
   "fg": "2/2",
   "three": "0/0",
-  "ft": "0/0",
+  "ft": "2/2",
   "pm": 0,
   "swede": false,
   "state": "live",
@@ -14033,7 +14033,7 @@
   "team": "Idaho State",
   "player": "Eli Garner",
   "pos": "",
-  "min": 12,
+  "min": 13,
   "pts": 1,
   "reb": 2,
   "ast": 0,
@@ -14075,14 +14075,14 @@
   "team": "Utah State",
   "player": "Will Hornseth",
   "pos": "",
-  "min": 20,
-  "pts": 8,
+  "min": 21,
+  "pts": 10,
   "reb": 6,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "4/8",
+  "fg": "5/9",
   "three": "0/0",
   "ft": "0/0",
   "pm": 0,
@@ -14117,7 +14117,7 @@
   "team": "Utah State",
   "player": "Solomon Callaghan",
   "pos": "",
-  "min": 20,
+  "min": 21,
   "pts": 6,
   "reb": 2,
   "ast": 3,
@@ -14180,7 +14180,7 @@
   "team": "Utah State",
   "player": "Kingston Tosi",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 13,
   "reb": 3,
   "ast": 1,
@@ -14925,7 +14925,7 @@
   "fg": "3/4",
   "three": "0/0",
   "ft": "0/1",
-  "pm": 9,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -14946,7 +14946,7 @@
   "fg": "2/3",
   "three": "2/3",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -14978,7 +14978,7 @@
   "team": "Los Angeles Lakers",
   "player": "Austin Reaves",
   "pos": "",
-  "min": 13,
+  "min": 14,
   "pts": 6,
   "reb": 2,
   "ast": 4,
@@ -14988,7 +14988,7 @@
   "fg": "2/3",
   "three": "1/1",
   "ft": "1/2",
-  "pm": 10,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -15062,7 +15062,7 @@
   "team": "Los Angeles Lakers",
   "player": "Collin Sexton",
   "pos": "",
-  "min": 4,
+  "min": 5,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -15072,7 +15072,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ESPN"
