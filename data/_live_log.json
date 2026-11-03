@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:39:12+01:00",
+ "at": "2026-11-03T05:40:11+01:00",
  "log": [
   {
    "game": "g17",
@@ -7,7 +7,22 @@
   },
   {
    "game": "g17",
-   "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+   "src": "ESPN",
+   "period": 2,
+   "clock": "07:56",
+   "done": false,
+   "teams": [
+    [
+     "Eastern Washington Eagles",
+     51,
+     15
+    ],
+    [
+     "Stanford Cardinal",
+     56,
+     16
+    ]
+   ]
   },
   {
    "game": "g19",
@@ -17,7 +32,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 3,
-   "clock": "08:38",
+   "clock": "07:51",
    "done": false,
    "teams": [
     [
