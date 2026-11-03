@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:21:22+01:00",
+ "at": "2026-11-03T01:22:06+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:36",
+   "clock": "13:59",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     49,
+     52,
      17
     ]
    ]
@@ -40,12 +40,12 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:21",
+   "clock": "01:43",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     26,
+     28,
      17
     ],
     [
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:34",
+   "clock": "09:52",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     7,
+     10,
      15
     ],
     [
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:56",
+   "clock": "10:11",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     13,
+     15,
      14
     ],
     [
@@ -109,17 +109,17 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:44",
+   "clock": "09:45",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     13,
+     15,
      15
     ],
     [
      "Providence Friars",
-     18,
+     20,
      14
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:53",
+   "clock": "15:13",
    "done": false,
    "teams": [
     [
