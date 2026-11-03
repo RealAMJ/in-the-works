@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:43:42+01:00",
+ "at": "2026-11-03T03:44:16+01:00",
  "log": [
   {
    "game": "g18",
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:15",
+   "clock": "12:47",
    "done": false,
    "teams": [
     [
@@ -113,29 +113,6 @@
      "Robert Morris Colonials",
      0,
      0
-    ]
-   ]
-  },
-  {
-   "game": "c20261103msu",
-   "checking": "ESPN"
-  },
-  {
-   "game": "c20261103msu",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Tennessee Tech Golden Eagles",
-     88,
-     15
-    ],
-    [
-     "Mississippi State Bulldogs",
-     106,
-     16
     ]
    ]
   }

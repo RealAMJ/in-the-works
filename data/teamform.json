@@ -4114,5 +4114,33 @@
   "note": "",
   "leaders": "Cooper|14|6|3;Jr.|13|4|4;Farmer|13|5|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-03",
+  "team": "Mississippi State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Tennessee Tech",
+  "venue": "Home",
+  "score": "106-88",
+  "result": "W",
+  "top": "Hubbard 25 pts, 0 reb",
+  "note": "",
+  "leaders": "Hubbard|25|0|9;Grace|23|8|4;Simpkins|15|5|5",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "tennessee-tech-2026-11-03",
+  "team": "Tennessee Tech",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Away",
+  "score": "88-106",
+  "result": "L",
+  "top": "Sanders 28 pts, 5 reb",
+  "note": "",
+  "leaders": "Sanders|28|5|3;Green|12|4|0;Newton|9|3|2;Mosquera|9|1|0",
+  "source": "ESPN"
  }
 ]
