@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T19:25:38+01:00",
+ "at": "2026-11-03T19:26:49+01:00",
  "log": [
   {
    "game": "c20261103ora",
@@ -9,12 +9,12 @@
    "game": "c20261103ora",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "02:09",
+   "clock": "01:52",
    "done": false,
    "teams": [
     [
      "Mykonos Betsson BC",
-     51,
+     52,
      12
     ],
     [
