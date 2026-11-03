@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:25:08+01:00",
+ "at": "2026-11-03T02:26:00+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:30",
+   "clock": "03:38",
    "done": false,
    "teams": [
     [
@@ -27,7 +27,7 @@
     ],
     [
      "St. John's Red Storm",
-     67,
+     69,
      16
     ]
    ]
@@ -45,7 +45,7 @@
    "teams": [
     [
      "Vermont Catamounts",
-     39,
+     40,
      15
     ],
     [
@@ -86,12 +86,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:55",
+   "clock": "13:21",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     31,
+     33,
      15
     ],
     [
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:25",
+   "clock": "00:59",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     35,
+     37,
      15
     ],
     [
