@@ -382,8 +382,8 @@
   "status": "live",
   "score": "W 62-55",
   "espn_id": "401925733",
-  "clock": "Q2 08:19",
-  "live_updated": "2026-11-03T01:41:20+01:00"
+  "clock": "Q2 08:18",
+  "live_updated": "2026-11-03T01:42:11+01:00"
  },
  {
   "game_id": "g20261103vmi",
@@ -412,7 +412,7 @@
   "score": "W 45-29",
   "espn_id": "401920679",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "live_updated": "2026-11-03T01:42:11+01:00"
  },
  {
   "game_id": "g29",
@@ -427,8 +427,8 @@
   "status": "live",
   "score": "L 19-28",
   "espn_id": "401920690",
-  "clock": "Q1 00:41",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 00:07",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g30",
@@ -441,10 +441,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 25-29",
+  "score": "L 26-29",
   "espn_id": "401911261",
-  "clock": "Q1 02:41",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 02:22",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -459,8 +459,8 @@
   "status": "live",
   "score": "L 21-31",
   "espn_id": "401909531",
-  "clock": "Q1 03:13",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 02:35",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -475,8 +475,8 @@
   "status": "live",
   "score": "W 22-12",
   "espn_id": "401926862",
-  "clock": "Q1 07:31",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 07:08",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g20261103dsu",
@@ -504,8 +504,8 @@
   "status": "live",
   "score": "L 7-12",
   "espn_id": "401920893",
-  "clock": "Q1 14:35",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 14:26",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g20261103lip",
@@ -518,10 +518,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 5-2",
+  "score": "W 5-4",
   "espn_id": "401920701",
-  "clock": "Q1 16:20",
-  "live_updated": "2026-11-03T01:41:21+01:00"
+  "clock": "Q1 16:05",
+  "live_updated": "2026-11-03T01:42:12+01:00"
  },
  {
   "game_id": "g18",

@@ -655,7 +655,7 @@
   "line_id": "g20261103lip-tidare",
   "game_id": "g20261103lip",
   "player": "Hugo Tidare",
-  "min": 3,
+  "min": 4,
   "pts": 0,
   "reb": 0,
   "ast": 1,
@@ -670,7 +670,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
