@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:32:24+01:00",
+ "at": "2026-11-03T04:33:15+01:00",
  "log": [
   {
    "game": "g18",
@@ -78,7 +78,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:16",
+   "clock": "03:12",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Los Angeles Lakers",
-     28,
+     29,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:17",
+   "clock": "09:30",
    "done": false,
    "teams": [
     [
