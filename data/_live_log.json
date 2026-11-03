@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:10:25+01:00",
+ "at": "2026-11-03T01:11:14+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:11",
+   "clock": "18:08",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:33",
+   "clock": "06:01",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:58",
+   "clock": "15:00",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     4,
+     6,
      16
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:31",
    "done": false,
    "teams": [
     [
