@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:48:19+01:00",
+ "at": "2026-11-03T02:49:12+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,17 +40,17 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:12",
+   "clock": "01:34",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     68,
+     70,
      14
     ],
     [
      "St. Bonaventure Bonnies",
-     66,
+     68,
      16
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:23",
+   "clock": "06:36",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:21",
+   "clock": "10:52",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     66,
+     68,
      15
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:01",
+   "clock": "12:45",
    "done": false,
    "teams": [
     [
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:05",
+   "clock": "17:56",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     58,
+     59,
      16
     ]
    ]
