@@ -382,8 +382,8 @@
   "status": "live",
   "score": "W 62-47",
   "espn_id": "401925733",
-  "clock": "Q2 11:44",
-  "live_updated": "2026-11-03T01:29:23+01:00"
+  "clock": "Q2 11:21",
+  "live_updated": "2026-11-03T01:30:15+01:00"
  },
  {
   "game_id": "g20261103vmi",
@@ -412,7 +412,7 @@
   "score": "W 45-29",
   "espn_id": "401920679",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T01:29:24+01:00"
+  "live_updated": "2026-11-03T01:30:16+01:00"
  },
  {
   "game_id": "g29",
@@ -427,8 +427,8 @@
   "status": "live",
   "score": "L 12-15",
   "espn_id": "401920690",
-  "clock": "Q1 06:29",
-  "live_updated": "2026-11-03T01:29:24+01:00"
+  "clock": "Q1 05:44",
+  "live_updated": "2026-11-03T01:30:16+01:00"
  },
  {
   "game_id": "g30",
@@ -443,8 +443,8 @@
   "status": "live",
   "score": "W 20-17",
   "espn_id": "401911261",
-  "clock": "Q1 07:41",
-  "live_updated": "2026-11-03T01:29:24+01:00"
+  "clock": "Q1 07:40",
+  "live_updated": "2026-11-03T01:30:16+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -460,7 +460,7 @@
   "score": "L 18-24",
   "espn_id": "401909531",
   "clock": "Q1 07:41",
-  "live_updated": "2026-11-03T01:29:24+01:00"
+  "live_updated": "2026-11-03T01:30:17+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -475,8 +475,8 @@
   "status": "live",
   "score": "W 15-4",
   "espn_id": "401926862",
-  "clock": "Q1 11:39",
-  "live_updated": "2026-11-03T01:29:24+01:00"
+  "clock": "Q1 11:21",
+  "live_updated": "2026-11-03T01:30:17+01:00"
  },
  {
   "game_id": "g20261103dsu",

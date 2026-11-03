@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:29:25+01:00",
+ "at": "2026-11-03T01:30:18+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:44",
+   "clock": "11:21",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:29",
+   "clock": "05:44",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:41",
+   "clock": "07:40",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:39",
+   "clock": "11:21",
    "done": false,
    "teams": [
     [
