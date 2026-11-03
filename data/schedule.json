@@ -571,7 +571,7 @@
   "score": "L 52-77",
   "espn_id": "401922020",
   "clock": "Q2 05:34",
-  "live_updated": "2026-11-03T05:16:46+01:00"
+  "live_updated": "2026-11-03T05:17:36+01:00"
  },
  {
   "game_id": "g17",
@@ -587,7 +587,7 @@
   "score": "L 42-48",
   "espn_id": "401920716",
   "clock": "Q2 14:49",
-  "live_updated": "2026-11-03T05:16:46+01:00"
+  "live_updated": "2026-11-03T05:17:36+01:00"
  },
  {
   "game_id": "g19",
@@ -606,7 +606,7 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
   "clock": "Halftime",
-  "live_updated": "2026-11-03T05:16:46+01:00"
+  "live_updated": "2026-11-03T05:17:36+01:00"
  },
  {
   "game_id": "g32",
@@ -621,8 +621,8 @@
   "status": "live",
   "score": "L 24-41",
   "espn_id": "401911452",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-03T05:16:46+01:00"
+  "clock": "Q2 19:49",
+  "live_updated": "2026-11-03T05:17:36+01:00"
  },
  {
   "game_id": "g20",
