@@ -3632,5 +3632,31 @@
   "pf": 1,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "adsten-2026-11-03",
+  "player": "Villiam Garcia Adsten",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "Maine",
+  "opponent": "Providence",
+  "venue": "Away",
+  "result": "L 56-83",
+  "min": 20,
+  "pts": 7,
+  "reb": 1,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/5",
+  "three": "1/2",
+  "ft": "2/2",
+  "oreb": 1,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 4,
+  "pm": 0,
+  "eff": ""
  }
 ]

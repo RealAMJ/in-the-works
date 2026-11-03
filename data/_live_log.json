@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:19:19+01:00",
+ "at": "2026-11-03T03:19:49+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -9,17 +9,17 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:19",
+   "clock": "00:05",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     62,
+     65,
      16
     ],
     [
      "UNC Wilmington Seahawks",
-     100,
+     101,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:14",
+   "clock": "01:39",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wisconsin Badgers",
-     71,
+     73,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:14",
+   "clock": "13:08",
    "done": false,
    "teams": [
     [

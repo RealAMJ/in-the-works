@@ -4002,5 +4002,33 @@
   "note": "",
   "leaders": "Crosby|11|0|1;Cherry|8|1|0;Spalding|7|3|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "maine-2026-11-03",
+  "team": "Maine",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Providence",
+  "venue": "Away",
+  "score": "56-83",
+  "result": "L",
+  "top": "Franz 13 pts, 3 reb",
+  "note": "",
+  "leaders": "Franz|13|3|1;Evans|11|0|1;Gribben|10|4|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "providence-2026-11-03",
+  "team": "Providence",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Home",
+  "score": "83-56",
+  "result": "W",
+  "top": "Bannarbie 14 pts, 10 reb",
+  "note": "",
+  "leaders": "Bannarbie|14|10|1;Mela|13|6|2;Mack|12|5|2;Bardwell|12|3|0",
+  "source": "ESPN"
  }
 ]
