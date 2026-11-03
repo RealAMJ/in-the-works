@@ -3834,5 +3834,33 @@
   "note": "",
   "leaders": "Galloway|24|5|2;Mcdermott|23|8|1;Jones|21|9|2",
   "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "michigan-2026-11-03",
+  "team": "Michigan",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Oakland",
+  "venue": "Home",
+  "score": "84-68",
+  "result": "W",
+  "top": "Jr. 17 pts, 3 reb",
+  "note": "",
+  "leaders": "Jr.|17|3|2;McKenney|17|4|2;Estrella|15|12|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "oakland-2026-11-03",
+  "team": "Oakland",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Michigan",
+  "venue": "Away",
+  "score": "68-84",
+  "result": "L",
+  "top": "Jr. 18 pts, 10 reb",
+  "note": "",
+  "leaders": "Jr.|18|10|1;Mashhour|16|4|1;Bradley|12|6|1",
+  "source": "ESPN"
  }
 ]

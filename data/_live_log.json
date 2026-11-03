@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:13:06+01:00",
+ "at": "2026-11-03T02:13:45+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:21",
+   "clock": "15:08",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:51",
+   "clock": "14:14",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     43,
+     45,
      16
     ]
    ]
@@ -150,7 +150,7 @@
     ],
     [
      "Wisconsin Badgers",
-     39,
+     40,
      15
     ]
    ]
@@ -163,12 +163,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:52",
+   "clock": "02:39",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     35,
+     36,
      16
     ],
     [
@@ -186,17 +186,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:26",
+   "clock": "04:56",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     30,
+     31,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     31,
+     34,
      16
     ]
    ]

@@ -382,7 +382,9 @@
   "status": "final",
   "score": "W 84-68",
   "espn_id": "401925733",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261103vmi",
@@ -411,7 +413,7 @@
   "score": "W 61-47",
   "espn_id": "401920679",
   "clock": "Q2 07:52",
-  "live_updated": "2026-11-03T02:13:05+01:00"
+  "live_updated": "2026-11-03T02:13:43+01:00"
  },
  {
   "game_id": "g29",
@@ -426,8 +428,8 @@
   "status": "live",
   "score": "L 28-31",
   "espn_id": "401920690",
-  "clock": "Q2 15:21",
-  "live_updated": "2026-11-03T02:13:05+01:00"
+  "clock": "Q2 15:08",
+  "live_updated": "2026-11-03T02:13:44+01:00"
  },
  {
   "game_id": "g30",
@@ -440,10 +442,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 43-43",
+  "score": "L 43-45",
   "espn_id": "401911261",
-  "clock": "Q2 14:51",
-  "live_updated": "2026-11-03T02:13:05+01:00"
+  "clock": "Q2 14:14",
+  "live_updated": "2026-11-03T02:13:44+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -459,7 +461,7 @@
   "score": "L 29-43",
   "espn_id": "401909531",
   "clock": "Q2 17:35",
-  "live_updated": "2026-11-03T02:13:05+01:00"
+  "live_updated": "2026-11-03T02:13:44+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -475,7 +477,7 @@
   "score": "W 36-27",
   "espn_id": "401926862",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T02:13:06+01:00"
+  "live_updated": "2026-11-03T02:13:44+01:00"
  },
  {
   "game_id": "g20261103dsu",
@@ -501,10 +503,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 28-39",
+  "score": "L 28-40",
   "espn_id": "401920893",
   "clock": "Q1 02:01",
-  "live_updated": "2026-11-03T02:13:06+01:00"
+  "live_updated": "2026-11-03T02:13:44+01:00"
  },
  {
   "game_id": "g20261103lip",
@@ -517,10 +519,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 35-36",
+  "score": "W 36-36",
   "espn_id": "401920701",
-  "clock": "Q1 02:52",
-  "live_updated": "2026-11-03T02:13:06+01:00"
+  "clock": "Q1 02:39",
+  "live_updated": "2026-11-03T02:13:45+01:00"
  },
  {
   "game_id": "g18",
