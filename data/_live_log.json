@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:04:42+01:00",
+ "at": "2026-11-03T03:05:36+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,12 +17,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:27",
+   "clock": "01:08",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     53,
+     55,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:29",
+   "clock": "05:00",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     87,
+     89,
      15
     ]
    ]
@@ -71,7 +71,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:56",
+   "clock": "07:27",
    "done": false,
    "teams": [
     [
@@ -94,7 +94,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:53",
+   "clock": "07:52",
    "done": false,
    "teams": [
     [
@@ -116,19 +116,19 @@
   {
    "game": "g18",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "20:00",
    "done": false,
    "teams": [
     [
-     "New Mexico Lobos",
-     0,
-     0
-    ],
-    [
      "Utah Tech Trailblazers",
      0,
-     0
+     15
+    ],
+    [
+     "New Mexico Lobos",
+     0,
+     13
     ]
    ]
   },
@@ -140,7 +140,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:26",
+   "clock": "11:18",
    "done": false,
    "teams": [
     [
