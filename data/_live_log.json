@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:08:35+01:00",
+ "at": "2026-11-03T04:09:24+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,17 +9,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "20:00",
+   "clock": "18:11",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     33,
+     35,
      15
     ],
     [
      "New Mexico Lobos",
-     38,
+     43,
      13
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:05",
+   "clock": "03:17",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Utah State Aggies",
-     26,
+     28,
      15
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:34",
+   "clock": "16:29",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     4,
+     6,
      15
     ],
     [
@@ -101,17 +101,17 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:57",
+   "clock": "19:13",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     0,
+     3,
      15
     ],
     [
      "Nevada Wolf Pack",
-     0,
+     2,
      14
     ]
    ]
