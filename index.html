@@ -18,12 +18,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="theme.css?v=48">
-<script src="dash-shim.js?v=48"></script>
+<link rel="stylesheet" href="theme.css?v=49">
+<script src="dash-shim.js?v=49"></script>
 </head>
 <body>
-<link rel="stylesheet" href="site.css?v=48">
-<link rel="stylesheet" href="site2.css?v=48">
+<link rel="stylesheet" href="site.css?v=49">
+<link rel="stylesheet" href="site2.css?v=49">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -365,7 +365,8 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=48"></script>
+<div class="sa-island" data-draw="island" data-source="schedule coachgames" hidden></div>
+<script src="i18n.js?v=49"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2101,6 +2102,31 @@
     stripUser = true;
     document.querySelectorAll('.st-row').forEach((row) => row.scrollBy({ left: Number(b.dataset.dir) * row.clientWidth * 0.8, behavior: 'smooth' }));
   }));
+
+
+  // ---- Phone "island": floating live-game pill (test)
+  let islIdx = 0, islTimer = null;
+  dash.draw('island', (el) => {
+    const g = (allGames() || []).filter((r) => r.status === 'live');
+    clearInterval(islTimer);
+    if (!g.length) { el.hidden = true; el.replaceChildren(); return; }
+    el.hidden = false;
+    const show = () => {
+      const r = g[islIdx % g.length]; const ha = homeAway(r);
+      el.replaceChildren();
+      const b = mk('button', 'isl-in'); b.type = 'button'; b.onclick = () => showCard(r.game_id);
+      const side = (t, cls) => { const d = mk('div', 'isl-t ' + cls + (t.swe ? ' swe' : '')); d.append(crest(t.name), mk('span', 'isl-c', teamAbbr(t.name))); return d; };
+      const mid = mk('div', 'isl-m');
+      const sc = mk('div', 'isl-sc'); sc.append(mk('b', '', ha.home.score == null ? '0' : String(ha.home.score)), mk('i', '', '–'), mk('b', '', ha.away.score == null ? '0' : String(ha.away.score)));
+      mid.append(sc, mk('span', 'isl-clk', '● ' + (r.clock && !r.autoLive ? r.clock : 'Live')));
+      const pn = String(r.players || r.coach || '').split(/\s*,\s*/).filter(Boolean).map((n) => n.split(' ').slice(-1)[0]).join(' · ');
+      b.append(side(ha.home, 'h'), mid, side(ha.away, 'a'));
+      if (pn) b.append(mk('div', 'isl-swe', '🇸🇪 ' + pn + (g.length > 1 ? `  ·  ${islIdx % g.length + 1}/${g.length}` : '')));
+      el.append(b);
+    };
+    show();
+    if (g.length > 1) islTimer = setInterval(() => { islIdx++; show(); }, 6000);
+  });
 
   // ---- Player page (EuroLeague style)
   let ppPlayer = null, ppTab = 'overview', ppLogComp = 'all';
