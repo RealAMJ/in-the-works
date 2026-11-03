@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:10:44+01:00",
+ "at": "2026-11-03T04:11:34+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,12 +9,12 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:05",
+   "clock": "17:49",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     35,
+     37,
      15
     ],
     [
@@ -77,19 +77,19 @@
   {
    "game": "g19",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "11:37",
    "done": false,
    "teams": [
     [
-     "Los Angeles Lakers",
-     0,
-     0
-    ],
-    [
      "Miami Heat",
      0,
-     0
+     14
+    ],
+    [
+     "Los Angeles Lakers",
+     0,
+     15
     ]
    ]
   },
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:07",
+   "clock": "17:18",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     5,
+     7,
      14
     ]
    ]
