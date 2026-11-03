@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:32:15+01:00",
+ "at": "2026-11-03T01:33:09+01:00",
  "log": [
   {
    "game": "g16",
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:11",
+   "clock": "04:13",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     15,
+     17,
      15
     ],
     [
@@ -86,17 +86,17 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:31",
+   "clock": "05:26",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     23,
+     25,
      14
     ],
     [
      "St. Bonaventure Bonnies",
-     20,
+     22,
      16
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:43",
+   "clock": "06:33",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     24,
+     25,
      14
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:17",
+   "clock": "09:59",
    "done": false,
    "teams": [
     [
@@ -162,18 +162,18 @@
   {
    "game": "g31",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "18:56",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     0,
+     2,
      14
     ],
     [
      "Wisconsin Badgers",
-     0,
+     2,
      15
     ]
    ]
@@ -209,17 +209,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "18:53",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     0,
+     2,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     0,
+     5,
      16
     ]
    ]

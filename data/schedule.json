@@ -383,7 +383,7 @@
   "score": "W 62-47",
   "espn_id": "401925733",
   "clock": "Q2 11:21",
-  "live_updated": "2026-11-03T01:32:13+01:00"
+  "live_updated": "2026-11-03T01:33:06+01:00"
  },
  {
   "game_id": "g20261103vmi",
@@ -412,7 +412,7 @@
   "score": "W 45-29",
   "espn_id": "401920679",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T01:32:14+01:00"
+  "live_updated": "2026-11-03T01:33:07+01:00"
  },
  {
   "game_id": "g29",
@@ -425,10 +425,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 15-15",
+  "score": "L 15-17",
   "espn_id": "401920690",
-  "clock": "Q1 05:11",
-  "live_updated": "2026-11-03T01:32:14+01:00"
+  "clock": "Q1 04:13",
+  "live_updated": "2026-11-03T01:33:07+01:00"
  },
  {
   "game_id": "g30",
@@ -441,10 +441,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 23-20",
+  "score": "W 25-22",
   "espn_id": "401911261",
-  "clock": "Q1 06:31",
-  "live_updated": "2026-11-03T01:32:14+01:00"
+  "clock": "Q1 05:26",
+  "live_updated": "2026-11-03T01:33:07+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -457,10 +457,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 18-24",
+  "score": "L 18-25",
   "espn_id": "401909531",
-  "clock": "Q1 06:43",
-  "live_updated": "2026-11-03T01:32:14+01:00"
+  "clock": "Q1 06:33",
+  "live_updated": "2026-11-03T01:33:07+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -475,8 +475,8 @@
   "status": "live",
   "score": "W 17-10",
   "espn_id": "401926862",
-  "clock": "Q1 10:17",
-  "live_updated": "2026-11-03T01:32:14+01:00"
+  "clock": "Q1 09:59",
+  "live_updated": "2026-11-03T01:33:07+01:00"
  },
  {
   "game_id": "g20261103dsu",
@@ -501,9 +501,11 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "upcoming",
-  "score": "",
-  "espn_id": "401920893"
+  "status": "live",
+  "score": "W 2-2",
+  "espn_id": "401920893",
+  "clock": "Q1 18:56",
+  "live_updated": "2026-11-03T01:33:08+01:00"
  },
  {
   "game_id": "g20261103lip",
