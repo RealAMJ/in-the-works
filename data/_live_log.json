@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:17:35+01:00",
+ "at": "2026-11-03T01:18:48+01:00",
  "log": [
   {
    "game": "g16",
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:41",
+   "clock": "03:31",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     41,
+     43,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:51",
+   "clock": "11:36",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:06",
+   "clock": "12:41",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:48",
+   "clock": "15:53",
    "done": false,
    "teams": [
     [
