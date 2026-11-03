@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:22:40+01:00",
+ "at": "2026-11-03T03:23:29+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -8,9 +8,9 @@
   {
    "game": "g20261103uncw",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Mount Olive Trojans",
@@ -55,7 +55,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:05",
+   "clock": "01:34",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:21",
+   "clock": "10:22",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     12,
+     16,
      15
     ],
     [
      "New Mexico Lobos",
-     18,
+     21,
      13
     ]
    ]

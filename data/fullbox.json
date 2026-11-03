@@ -11462,7 +11462,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11483,7 +11483,7 @@
   "ft": "2/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11504,7 +11504,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11525,7 +11525,7 @@
   "ft": "4/5",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11546,7 +11546,7 @@
   "ft": "3/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11567,7 +11567,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11588,7 +11588,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11609,7 +11609,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11630,7 +11630,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11651,7 +11651,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11672,7 +11672,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11693,7 +11693,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11714,7 +11714,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11735,7 +11735,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11756,7 +11756,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11777,7 +11777,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11798,7 +11798,7 @@
   "ft": "6/6",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11819,7 +11819,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11840,7 +11840,7 @@
   "ft": "2/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11861,7 +11861,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11882,7 +11882,7 @@
   "ft": "2/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11903,7 +11903,7 @@
   "ft": "0/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11924,7 +11924,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11945,7 +11945,7 @@
   "ft": "3/5",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -11966,11 +11966,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261103uncw-1-10",
+  "row_id": "g20261103uncw-1-9",
   "game_id": "g20261103uncw",
   "team": "UNC Wilmington",
   "player": "Tahlan Pettway",
@@ -11987,11 +11987,11 @@
   "ft": "3/5",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261103uncw-1-11",
+  "row_id": "g20261103uncw-1-10",
   "game_id": "g20261103uncw",
   "team": "UNC Wilmington",
   "player": "CJ Luster II",
@@ -12008,11 +12008,11 @@
   "ft": "1/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261103uncw-1-13",
+  "row_id": "g20261103uncw-1-11",
   "game_id": "g20261103uncw",
   "team": "UNC Wilmington",
   "player": "Treyvon Maddox",
@@ -12029,11 +12029,11 @@
   "ft": "3/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261103uncw-1-14",
+  "row_id": "g20261103uncw-1-12",
   "game_id": "g20261103uncw",
   "team": "UNC Wilmington",
   "player": "Jahnathan Lamothe",
@@ -12050,7 +12050,7 @@
   "ft": "4/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -12523,7 +12523,7 @@
   "pos": "",
   "min": 15,
   "pts": 12,
-  "reb": 9,
+  "reb": 10,
   "ast": 1,
   "stl": 0,
   "blk": 0,
@@ -12542,7 +12542,7 @@
   "team": "Lipscomb",
   "player": "Titas Sargiunas",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 12,
   "reb": 2,
   "ast": 2,
@@ -12584,7 +12584,7 @@
   "team": "Lipscomb",
   "player": "Takai Simpkins",
   "pos": "",
-  "min": 32,
+  "min": 33,
   "pts": 18,
   "reb": 3,
   "ast": 1,
@@ -12689,7 +12689,7 @@
   "team": "Lipscomb",
   "player": "Kennedy Okpara",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 10,
   "reb": 3,
   "ast": 0,
@@ -12815,7 +12815,7 @@
   "team": "Southeast Missouri State",
   "player": "Fontaine Williams Jr.",
   "pos": "",
-  "min": 23,
+  "min": 24,
   "pts": 13,
   "reb": 4,
   "ast": 3,
@@ -12857,7 +12857,7 @@
   "team": "Southeast Missouri State",
   "player": "Marqueas Bell",
   "pos": "",
-  "min": 23,
+  "min": 24,
   "pts": 10,
   "reb": 4,
   "ast": 2,
@@ -12878,7 +12878,7 @@
   "team": "Southeast Missouri State",
   "player": "Drew Cooper",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 9,
   "reb": 4,
   "ast": 3,
@@ -12983,14 +12983,14 @@
   "team": "Southeast Missouri State",
   "player": "PJ Farmer",
   "pos": "",
-  "min": 17,
+  "min": 18,
   "pts": 13,
   "reb": 5,
   "ast": 2,
   "stl": 2,
   "blk": 0,
   "tov": 0,
-  "fg": "5/8",
+  "fg": "5/9",
   "three": "3/4",
   "ft": "0/0",
   "pm": 0,
@@ -13026,13 +13026,13 @@
   "player": "Owen Mackay",
   "pos": "",
   "min": 6,
-  "pts": 3,
+  "pts": 5,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "1/1",
+  "fg": "2/2",
   "three": "1/1",
   "ft": "0/0",
   "pm": 0,
@@ -13070,7 +13070,7 @@
   "min": 6,
   "pts": 0,
   "reb": 0,
-  "ast": 0,
+  "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
@@ -13151,7 +13151,7 @@
   "team": "Utah Tech",
   "player": "Aaron Bliss",
   "pos": "",
-  "min": 3,
+  "min": 4,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -13214,7 +13214,7 @@
   "team": "New Mexico",
   "player": "Hudson Mayes",
   "pos": "",
-  "min": 6,
+  "min": 7,
   "pts": 4,
   "reb": 0,
   "ast": 1,
@@ -13236,14 +13236,14 @@
   "player": "Uriah Tenette",
   "pos": "",
   "min": 9,
-  "pts": 2,
+  "pts": 5,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "1/2",
-  "three": "0/1",
+  "fg": "2/3",
+  "three": "1/2",
   "ft": "0/0",
   "pm": 0,
   "swede": false,
@@ -13277,7 +13277,7 @@
   "team": "New Mexico",
   "player": "Fynn Lastring",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -13319,7 +13319,7 @@
   "team": "New Mexico",
   "player": "Dax Hall",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 2,
   "reb": 0,
   "ast": 1,

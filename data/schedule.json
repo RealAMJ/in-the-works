@@ -482,11 +482,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "live",
+  "status": "final",
   "score": "W 101-65",
   "espn_id": "401926862",
-  "clock": "Halftime",
-  "live_updated": "2026-11-03T03:22:39+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261103dsu",
@@ -519,7 +518,7 @@
   "score": "L 66-75",
   "espn_id": "401920893",
   "clock": "Q2 00:50",
-  "live_updated": "2026-11-03T03:22:39+01:00"
+  "live_updated": "2026-11-03T03:23:29+01:00"
  },
  {
   "game_id": "g20261103lip",
@@ -534,8 +533,8 @@
   "status": "live",
   "score": "L 74-81",
   "espn_id": "401920701",
-  "clock": "Q2 02:05",
-  "live_updated": "2026-11-03T03:22:39+01:00"
+  "clock": "Q2 01:34",
+  "live_updated": "2026-11-03T03:23:29+01:00"
  },
  {
   "game_id": "g18",
@@ -548,10 +547,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 18-12",
+  "score": "W 21-16",
   "espn_id": "401924894",
-  "clock": "Q1 11:21",
-  "live_updated": "2026-11-03T03:22:39+01:00"
+  "clock": "Q1 10:22",
+  "live_updated": "2026-11-03T03:23:29+01:00"
  },
  {
   "game_id": "g28",
