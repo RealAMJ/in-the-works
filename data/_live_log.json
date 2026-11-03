@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:46:50+01:00",
+ "at": "2026-11-03T03:47:43+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,17 +9,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:00",
+   "clock": "01:30",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     31,
+     33,
      15
     ],
     [
      "New Mexico Lobos",
-     31,
+     33,
      13
     ]
    ]
