@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:16:22+01:00",
+ "at": "2026-11-03T02:17:13+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:06",
+   "clock": "06:08",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:23",
+   "clock": "13:33",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:56",
+   "clock": "13:26",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     45,
+     47,
      16
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:09",
+   "clock": "16:50",
    "done": false,
    "teams": [
     [
@@ -140,12 +140,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:21",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     28,
+     30,
      14
     ],
     [
@@ -163,7 +163,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:43",
+   "clock": "01:21",
    "done": false,
    "teams": [
     [
