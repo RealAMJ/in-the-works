@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:12:25+01:00",
+ "at": "2026-11-03T04:13:15+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,17 +9,17 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:15",
+   "clock": "16:19",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     37,
+     40,
      15
     ],
     [
      "New Mexico Lobos",
-     50,
+     53,
      13
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:17",
+   "clock": "02:46",
    "done": false,
    "teams": [
     [
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:06",
+   "clock": "16:49",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     7,
+     9,
      14
     ]
    ]
