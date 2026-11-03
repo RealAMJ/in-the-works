@@ -3862,5 +3862,33 @@
   "note": "",
   "leaders": "Jr.|18|10|1;Mashhour|16|4|1;Bradley|12|6|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "st-johns-2026-11-03",
+  "team": "St. John's",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Monmouth",
+  "venue": "Home",
+  "score": "78-63",
+  "result": "W",
+  "top": "Hall 26 pts, 9 reb",
+  "note": "",
+  "leaders": "Hall|26|9|2;Jackson|15|2|0;Yessoufou|12|5|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "monmouth-2026-11-03",
+  "team": "Monmouth",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "St. John's",
+  "venue": "Away",
+  "score": "63-78",
+  "result": "L",
+  "top": "Sanders 17 pts, 5 reb",
+  "note": "",
+  "leaders": "Sanders|17|5|2;Durr|15|1|2;Walker|11|3|2",
+  "source": "ESPN"
  }
 ]

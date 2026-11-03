@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:42:19+01:00",
+ "at": "2026-11-03T02:42:52+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -22,7 +22,7 @@
    "teams": [
     [
      "Vermont Catamounts",
-     48,
+     45,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:26",
+   "clock": "03:13",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:45",
+   "clock": "12:05",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     62,
+     64,
      15
     ]
    ]
