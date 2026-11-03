@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:39:48+01:00",
+ "at": "2026-11-03T02:40:38+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -10,29 +10,6 @@
    "error": "LookupError: game not found on ESPN scoreboard"
   },
   {
-   "game": "g20261103sju",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261103sju",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Monmouth Hawks",
-     63,
-     17
-    ],
-    [
-     "St. John's Red Storm",
-     78,
-     16
-    ]
-   ]
-  },
-  {
    "game": "g29",
    "checking": "ESPN"
   },
@@ -40,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:03",
+   "clock": "04:45",
    "done": false,
    "teams": [
     [
@@ -63,12 +40,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:25",
+   "clock": "04:51",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     60,
+     63,
      14
     ],
     [
@@ -86,7 +63,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:14",
+   "clock": "08:58",
    "done": false,
    "teams": [
     [
@@ -109,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:32",
+   "clock": "13:12",
    "done": false,
    "teams": [
     [
@@ -119,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     60,
+     62,
      15
     ]
    ]
@@ -145,7 +122,7 @@
    "teams": [
     [
      "Denver Pioneers",
-     34,
+     35,
      14
     ],
     [
@@ -163,18 +140,41 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:34",
+   "clock": "16:42",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     46,
+     51,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
      42,
      13
+    ]
+   ]
+  },
+  {
+   "game": "g18",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g18",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "New Mexico Lobos",
+     0,
+     0
+    ],
+    [
+     "Utah Tech Trailblazers",
+     0,
+     0
     ]
    ]
   },
