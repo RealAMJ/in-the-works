@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:44:45+01:00",
+ "at": "2026-11-03T02:45:38+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:46",
+   "clock": "03:29",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:58",
+   "clock": "14:42",
    "done": false,
    "teams": [
     [
@@ -140,7 +140,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:13",
+   "clock": "15:16",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     42,
+     47,
      13
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:16",
+   "clock": "18:54",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     56,
+     58,
      16
     ]
    ]
