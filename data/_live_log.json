@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:44:16+01:00",
+ "at": "2026-11-03T03:45:07+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,12 +9,12 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:07",
+   "clock": "03:05",
    "done": false,
    "teams": [
     [
      "Utah Tech Trailblazers",
-     30,
+     31,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:47",
+   "clock": "12:30",
    "done": false,
    "teams": [
     [
