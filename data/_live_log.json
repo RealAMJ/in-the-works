@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:26:45+01:00",
+ "at": "2026-11-03T01:27:38+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:20",
+   "clock": "12:13",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     43,
+     45,
      15
     ],
     [
@@ -109,17 +109,17 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:31",
+   "clock": "07:41",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     15,
+     18,
      15
     ],
     [
      "Providence Friars",
-     22,
+     24,
      14
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:19",
+   "clock": "11:39",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     13,
+     15,
      15
     ]
    ]
