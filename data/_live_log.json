@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:33:31+01:00",
+ "at": "2026-11-03T02:34:23+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:22",
+   "clock": "01:09",
    "done": false,
    "teams": [
     [
@@ -40,12 +40,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:52",
+   "clock": "07:48",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     43,
+     45,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:55",
+   "clock": "10:13",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     57,
+     59,
      14
     ]
    ]
