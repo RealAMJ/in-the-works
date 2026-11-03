@@ -568,10 +568,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 54-87",
+  "score": "L 54-89",
   "espn_id": "401922020",
-  "clock": "Q2 02:42",
-  "live_updated": "2026-11-03T05:26:18+01:00"
+  "clock": "Q2 01:37",
+  "live_updated": "2026-11-03T05:27:09+01:00"
  },
  {
   "game_id": "g17",
@@ -584,10 +584,10 @@
   "competition": "NCAA",
   "note": "Swedish matchup: Homelius plays for Eastern Washington",
   "status": "live",
-  "score": "L 48-51",
+  "score": "L 50-51",
   "espn_id": "401920716",
-  "clock": "Q2 12:27",
-  "live_updated": "2026-11-03T05:26:18+01:00"
+  "clock": "Q2 11:47",
+  "live_updated": "2026-11-03T05:27:09+01:00"
  },
  {
   "game_id": "g19",
@@ -606,7 +606,7 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
   "clock": "Halftime",
-  "live_updated": "2026-11-03T05:26:19+01:00"
+  "live_updated": "2026-11-03T05:27:10+01:00"
  },
  {
   "game_id": "g32",
@@ -619,10 +619,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 24-53",
+  "score": "L 26-55",
   "espn_id": "401911452",
-  "clock": "Q2 15:26",
-  "live_updated": "2026-11-03T05:26:19+01:00"
+  "clock": "Q2 14:47",
+  "live_updated": "2026-11-03T05:27:10+01:00"
  },
  {
   "game_id": "g20",
