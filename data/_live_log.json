@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:46:25+01:00",
+ "at": "2026-11-03T01:47:17+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:51",
+   "clock": "07:22",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     65,
+     67,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:13",
+   "clock": "16:36",
    "done": false,
    "teams": [
     [
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:44",
+   "clock": "00:17",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     29,
+     32,
      14
     ],
     [
@@ -114,7 +114,7 @@
    "teams": [
     [
      "Maine Black Bears",
-     23,
+     25,
      15
     ],
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:53",
+   "clock": "04:33",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:49",
+   "clock": "11:16",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     16,
+     18,
      15
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:52",
+   "clock": "14:18",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     6,
+     9,
      13
     ]
    ]
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:38",
+   "clock": "14:26",
    "done": false,
    "teams": [
     [
@@ -219,7 +219,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     14,
+     15,
      16
     ]
    ]
