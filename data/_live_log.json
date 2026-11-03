@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:58:21+01:00",
+ "at": "2026-11-03T02:59:13+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -39,13 +39,13 @@
   {
    "game": "g30",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:05",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Youngstown State Penguins",
-     78,
+     79,
      14
     ],
     [
@@ -68,7 +68,7 @@
    "teams": [
     [
      "Maine Black Bears",
-     49,
+     51,
      15
     ],
     [
@@ -140,17 +140,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:43",
+   "clock": "09:05",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     61,
+     63,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     65,
+     67,
      13
     ]
    ]
@@ -186,17 +186,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:36",
+   "clock": "14:02",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     46,
+     48,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     62,
+     65,
      16
     ]
    ]
