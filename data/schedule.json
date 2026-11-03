@@ -413,7 +413,7 @@
   "score": "W 78-63",
   "espn_id": "401920679",
   "clock": "Halftime",
-  "live_updated": "2026-11-03T02:38:25+01:00"
+  "live_updated": "2026-11-03T02:38:56+01:00"
  },
  {
   "game_id": "g29",
@@ -426,10 +426,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 46-45",
+  "score": "W 48-45",
   "espn_id": "401920690",
-  "clock": "Q2 06:03",
-  "live_updated": "2026-11-03T02:38:25+01:00"
+  "clock": "Q2 05:21",
+  "live_updated": "2026-11-03T02:38:56+01:00"
  },
  {
   "game_id": "g30",
@@ -444,8 +444,8 @@
   "status": "live",
   "score": "W 60-60",
   "espn_id": "401911261",
-  "clock": "Q2 05:28",
-  "live_updated": "2026-11-03T02:38:25+01:00"
+  "clock": "Q2 05:27",
+  "live_updated": "2026-11-03T02:38:56+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -461,7 +461,7 @@
   "score": "L 39-64",
   "espn_id": "401909531",
   "clock": "Q2 09:14",
-  "live_updated": "2026-11-03T02:38:25+01:00"
+  "live_updated": "2026-11-03T02:38:57+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -476,8 +476,8 @@
   "status": "live",
   "score": "W 60-33",
   "espn_id": "401926862",
-  "clock": "Q2 14:16",
-  "live_updated": "2026-11-03T02:38:25+01:00"
+  "clock": "Q2 13:46",
+  "live_updated": "2026-11-03T02:38:57+01:00"
  },
  {
   "game_id": "g20261103dsu",
@@ -505,8 +505,8 @@
   "status": "live",
   "score": "L 34-51",
   "espn_id": "401920893",
-  "clock": "Q2 17:00",
-  "live_updated": "2026-11-03T02:38:26+01:00"
+  "clock": "Q2 16:48",
+  "live_updated": "2026-11-03T02:38:57+01:00"
  },
  {
   "game_id": "g20261103lip",
@@ -521,8 +521,8 @@
   "status": "live",
   "score": "W 44-40",
   "espn_id": "401920701",
-  "clock": "Q2 18:50",
-  "live_updated": "2026-11-03T02:38:26+01:00"
+  "clock": "Q2 18:29",
+  "live_updated": "2026-11-03T02:38:57+01:00"
  },
  {
   "game_id": "g18",

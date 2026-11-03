@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:38:26+01:00",
+ "at": "2026-11-03T02:38:57+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:03",
+   "clock": "05:21",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "Iona Gaels",
-     46,
+     48,
      17
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:28",
+   "clock": "05:27",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:16",
+   "clock": "13:46",
    "done": false,
    "teams": [
     [
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:00",
+   "clock": "16:48",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:50",
+   "clock": "18:29",
    "done": false,
    "teams": [
     [
