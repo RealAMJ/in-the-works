@@ -67,9 +67,11 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "upcoming",
-  "score": "",
-  "espn_id": "401906791"
+  "status": "live",
+  "score": "W 0-0",
+  "espn_id": "401906791",
+  "clock": "Q1 19:58",
+  "live_updated": "2026-11-03T01:32:15+01:00"
  },
  {
   "game_id": "c20261103ora",

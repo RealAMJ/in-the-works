@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:31:01+01:00",
+ "at": "2026-11-03T01:32:15+01:00",
  "log": [
   {
    "game": "g16",
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:31",
+   "clock": "05:11",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     12,
+     15,
      17
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:11",
+   "clock": "06:31",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     17,
+     20,
      16
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:26",
+   "clock": "06:43",
    "done": false,
    "teams": [
     [
@@ -132,17 +132,17 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:07",
+   "clock": "10:17",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     4,
+     10,
      16
     ],
     [
      "UNC Wilmington Seahawks",
-     15,
+     17,
      15
     ]
    ]
@@ -167,14 +167,14 @@
    "done": false,
    "teams": [
     [
-     "Wisconsin Badgers",
-     0,
-     0
-    ],
-    [
      "Denver Pioneers",
      0,
-     0
+     14
+    ],
+    [
+     "Wisconsin Badgers",
+     0,
+     15
     ]
    ]
   },
@@ -208,19 +208,19 @@
   {
    "game": "c20261103msu",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:58",
    "done": false,
    "teams": [
     [
-     "Mississippi State Bulldogs",
-     0,
-     0
-    ],
-    [
      "Tennessee Tech Golden Eagles",
      0,
-     0
+     15
+    ],
+    [
+     "Mississippi State Bulldogs",
+     0,
+     16
     ]
    ]
   }
