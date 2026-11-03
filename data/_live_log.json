@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:11:22+01:00",
+ "at": "2026-11-03T02:12:14+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:53",
+   "clock": "15:23",
    "done": false,
    "teams": [
     [
@@ -63,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:39",
+   "clock": "15:56",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     41,
+     43,
      14
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:31",
+   "clock": "18:12",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     41,
+     43,
      14
     ]
    ]
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:34",
+   "clock": "02:53",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:20",
+   "clock": "02:52",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     34,
+     36,
      13
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:38",
+   "clock": "05:26",
    "done": false,
    "teams": [
     [
