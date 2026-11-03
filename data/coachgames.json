@@ -67,11 +67,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "live",
+  "status": "final",
   "score": "W 106-88",
   "espn_id": "401906791",
-  "clock": "Halftime",
-  "live_updated": "2026-11-03T03:42:52+01:00"
+  "live_done": true
  },
  {
   "game_id": "c20261103ora",
