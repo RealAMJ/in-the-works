@@ -652,7 +652,8 @@
   "competition": "BBL",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "none"
  },
  {
   "game_id": "g21",
