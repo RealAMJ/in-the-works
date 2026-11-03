@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:06:29+01:00",
+ "at": "2026-11-03T02:07:22+01:00",
  "log": [
   {
    "game": "g16",
@@ -40,12 +40,12 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:33",
+   "clock": "09:05",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     45,
+     47,
      17
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:41",
+   "clock": "17:18",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     25,
+     27,
      17
     ]
    ]
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:16",
+   "clock": "18:28",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     33,
+     34,
      14
     ],
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:46",
+   "clock": "04:07",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     33,
+     37,
      15
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:47",
+   "clock": "04:06",
    "done": false,
    "teams": [
     [
@@ -219,7 +219,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     26,
+     28,
      16
     ]
    ]

@@ -383,7 +383,7 @@
   "score": "W 81-66",
   "espn_id": "401925733",
   "clock": "Q2 00:31",
-  "live_updated": "2026-11-03T02:06:26+01:00"
+  "live_updated": "2026-11-03T02:07:19+01:00"
  },
  {
   "game_id": "g20261103vmi",
@@ -409,10 +409,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 59-45",
+  "score": "W 59-47",
   "espn_id": "401920679",
-  "clock": "Q2 09:33",
-  "live_updated": "2026-11-03T02:06:27+01:00"
+  "clock": "Q2 09:05",
+  "live_updated": "2026-11-03T02:07:20+01:00"
  },
  {
   "game_id": "g29",
@@ -425,10 +425,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 25-29",
+  "score": "L 27-29",
   "espn_id": "401920690",
-  "clock": "Q2 17:41",
-  "live_updated": "2026-11-03T02:06:27+01:00"
+  "clock": "Q2 17:18",
+  "live_updated": "2026-11-03T02:07:20+01:00"
  },
  {
   "game_id": "g30",
@@ -441,10 +441,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 33-36",
+  "score": "L 34-36",
   "espn_id": "401911261",
-  "clock": "Q2 19:16",
-  "live_updated": "2026-11-03T02:06:27+01:00"
+  "clock": "Q2 18:28",
+  "live_updated": "2026-11-03T02:07:20+01:00"
  },
  {
   "game_id": "g20261103maine",
@@ -460,7 +460,7 @@
   "score": "L 26-34",
   "espn_id": "401909531",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T02:06:27+01:00"
+  "live_updated": "2026-11-03T02:07:20+01:00"
  },
  {
   "game_id": "g20261103uncw",
@@ -476,7 +476,7 @@
   "score": "W 36-27",
   "espn_id": "401926862",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T02:06:28+01:00"
+  "live_updated": "2026-11-03T02:07:21+01:00"
  },
  {
   "game_id": "g20261103dsu",
@@ -502,10 +502,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 28-33",
+  "score": "L 28-37",
   "espn_id": "401920893",
-  "clock": "Q1 04:46",
-  "live_updated": "2026-11-03T02:06:28+01:00"
+  "clock": "Q1 04:07",
+  "live_updated": "2026-11-03T02:07:21+01:00"
  },
  {
   "game_id": "g20261103lip",
@@ -520,8 +520,8 @@
   "status": "live",
   "score": "W 34-31",
   "espn_id": "401920701",
-  "clock": "Q1 04:47",
-  "live_updated": "2026-11-03T02:06:28+01:00"
+  "clock": "Q1 04:06",
+  "live_updated": "2026-11-03T02:07:22+01:00"
  },
  {
   "game_id": "g18",
