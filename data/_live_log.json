@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:23:58+01:00",
+ "at": "2026-11-03T03:24:48+01:00",
  "log": [
   {
    "game": "g31",
@@ -9,12 +9,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:18",
+   "clock": "00:05",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     66,
+     68,
      14
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:34",
+   "clock": "00:59",
    "done": false,
    "teams": [
     [
@@ -101,7 +101,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:08",
+   "clock": "07:01",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     83,
+     85,
      16
     ]
    ]
