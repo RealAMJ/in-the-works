@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:15:11+01:00",
+ "at": "2026-11-03T01:16:04+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:14",
+   "clock": "15:52",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     41,
+     43,
      15
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:25",
+   "clock": "12:38",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     0,
+     2,
      17
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:55",
+   "clock": "12:46",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:17",
+   "clock": "13:42",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     13,
+     16,
      14
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:37",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     5,
+     8,
      15
     ]
    ]
