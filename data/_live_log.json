@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:04:09+01:00",
+ "at": "2026-11-03T02:05:00+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:15",
+   "clock": "02:04",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     77,
+     79,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:28",
+   "clock": "10:23",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:50",
+   "clock": "18:01",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     19,
+     24,
      17
     ]
    ]
@@ -163,12 +163,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:08",
+   "clock": "05:57",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     23,
+     25,
      14
     ],
     [
@@ -186,17 +186,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:22",
+   "clock": "06:06",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     26,
+     29,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     23,
+     26,
      13
     ]
    ]
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:40",
+   "clock": "07:13",
    "done": false,
    "teams": [
     [
