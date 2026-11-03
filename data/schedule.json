@@ -554,7 +554,7 @@
   "score": "W 61-44",
   "espn_id": "401924894",
   "clock": "Q2 13:18",
-  "live_updated": "2026-11-03T04:24:36+01:00"
+  "live_updated": "2026-11-03T04:25:26+01:00"
  },
  {
   "game_id": "g28",
@@ -570,7 +570,7 @@
   "score": "L 29-37",
   "espn_id": "401922020",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T04:24:36+01:00"
+  "live_updated": "2026-11-03T04:25:26+01:00"
  },
  {
   "game_id": "g17",
@@ -585,8 +585,8 @@
   "status": "live",
   "score": "W 15-11",
   "espn_id": "401920716",
-  "clock": "Q1 11:17",
-  "live_updated": "2026-11-03T04:24:36+01:00"
+  "clock": "Q1 10:17",
+  "live_updated": "2026-11-03T04:25:26+01:00"
  },
  {
   "game_id": "g19",
@@ -604,8 +604,8 @@
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "clock": "Q1 06:16",
-  "live_updated": "2026-11-03T04:24:36+01:00"
+  "clock": "Q1 05:59",
+  "live_updated": "2026-11-03T04:25:26+01:00"
  },
  {
   "game_id": "g32",
@@ -618,10 +618,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 12-13",
+  "score": "L 12-15",
   "espn_id": "401911452",
-  "clock": "Q1 13:39",
-  "live_updated": "2026-11-03T04:24:36+01:00"
+  "clock": "Q1 12:46",
+  "live_updated": "2026-11-03T04:25:27+01:00"
  },
  {
   "game_id": "g20",
