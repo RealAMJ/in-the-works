@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:02:22+01:00",
+ "at": "2026-11-03T03:03:14+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -63,12 +63,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:40",
+   "clock": "06:11",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     49,
+     50,
      16
     ],
     [
@@ -163,12 +163,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:35",
+   "clock": "12:30",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     54,
+     56,
      15
     ],
     [
