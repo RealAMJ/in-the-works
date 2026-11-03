@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:08:11+01:00",
+ "at": "2026-11-03T01:09:02+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:09",
+   "clock": "18:54",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     36,
+     38,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:30",
+   "clock": "06:58",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:41",
+   "clock": "16:04",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:11",
+   "clock": "16:52",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:11",
+   "clock": "15:59",
    "done": false,
    "teams": [
     [
