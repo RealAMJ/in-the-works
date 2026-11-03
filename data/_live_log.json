@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:40:25+01:00",
+ "at": "2026-11-03T04:41:17+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:38",
+   "clock": "06:30",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:18",
+   "clock": "17:37",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Utah State Aggies",
-     39,
+     43,
      15
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g19",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:07",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     28,
+     30,
      14
     ],
     [
@@ -101,12 +101,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:08",
+   "clock": "07:02",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     18,
+     19,
      15
     ],
     [

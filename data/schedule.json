@@ -553,8 +553,8 @@
   "status": "live",
   "score": "W 83-51",
   "espn_id": "401924894",
-  "clock": "Q2 06:38",
-  "live_updated": "2026-11-03T04:40:25+01:00"
+  "clock": "Q2 06:30",
+  "live_updated": "2026-11-03T04:41:16+01:00"
  },
  {
   "game_id": "g28",
@@ -567,10 +567,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 31-39",
+  "score": "L 31-43",
   "espn_id": "401922020",
-  "clock": "Q2 18:18",
-  "live_updated": "2026-11-03T04:40:25+01:00"
+  "clock": "Q2 17:37",
+  "live_updated": "2026-11-03T04:41:16+01:00"
  },
  {
   "game_id": "g17",
@@ -586,7 +586,7 @@
   "score": "W 28-22",
   "espn_id": "401920716",
   "clock": "Q1 03:51",
-  "live_updated": "2026-11-03T04:40:25+01:00"
+  "live_updated": "2026-11-03T04:41:16+01:00"
  },
  {
   "game_id": "g19",
@@ -599,13 +599,13 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "L 28-35",
+  "score": "L 30-35",
   "box_url": "https://www.nba.com/game/mia-vs-lal-0022600172/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "clock": "Q1 00:07",
-  "live_updated": "2026-11-03T04:40:25+01:00"
+  "clock": "End of Q1",
+  "live_updated": "2026-11-03T04:41:16+01:00"
  },
  {
   "game_id": "g32",
@@ -618,10 +618,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 18-22",
+  "score": "L 19-22",
   "espn_id": "401911452",
-  "clock": "Q1 07:08",
-  "live_updated": "2026-11-03T04:40:25+01:00"
+  "clock": "Q1 07:02",
+  "live_updated": "2026-11-03T04:41:17+01:00"
  },
  {
   "game_id": "g20",
