@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:06:02+01:00",
+ "at": "2026-11-03T05:06:50+01:00",
  "log": [
   {
    "game": "g28",
@@ -55,17 +55,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:55",
+   "clock": "03:13",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     56,
+     58,
      14
     ],
     [
      "Los Angeles Lakers",
-     58,
+     63,
      15
     ]
    ]
