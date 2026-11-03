@@ -362,7 +362,7 @@
   "opponent": "Pallacanestro Trieste",
   "venue": "Home",
   "competition": "LBA (Italy)",
-  "note": "Round 6",
+  "note": "Round 6 Klintman was not on the game roster.",
   "status": "final",
   "score": "L 93-100",
   "live_feed": "lba:25400",
@@ -396,8 +396,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 115-83",
+  "espn_id": "401926200",
+  "live_done": true
  },
  {
   "game_id": "g20261103sju",
@@ -492,8 +494,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 86-52",
+  "espn_id": "401927341",
+  "live_done": true
  },
  {
   "game_id": "g31",

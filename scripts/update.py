@@ -223,13 +223,33 @@ def read_espn(sport, row):
         day = row['date'].replace('-', '')
         prev = (dt.date.fromisoformat(row['date']) - dt.timedelta(days=1)).isoformat().replace('-', '')
         want = {norm(row.get('team')), norm(row.get('opponent'))}
+
+        def toks(x):  # 'Virginia-Lynchburg' / 'St. Vincent' -> ['virginia', 'lynchburg'] / ['saint', 'vincent']
+            return {'saint' if w == 'st' else w for w in re.sub(r'[^a-z0-9]+', ' ', norm(re.sub(r'[-./]', ' ', str(x or '')))).split()}
+
+        def loose(a, b):
+            ta, tb = toks(a), toks(b)
+            return bool(ta) and (ta <= tb or tb <= ta or bool({w for w in ta & tb if len(w) >= 4 and w not in ('state', 'university', 'college')}))
+
         for d in (prev, day):
             sb = get(f'{base}/scoreboard?dates={d}&limit=400' + ('&groups=50' if sport != 'nba' else ''))
-            for ev in sb.get('events', []):
+            evs = sb.get('events', [])
+            for ev in evs:
                 names = {norm(c['team'].get('displayName')) for c in ev['competitions'][0]['competitors']}
                 if names == want or all(any(w in n or n in w for n in names) for w in want):
                     eid = ev['id']
                     break
+            if not eid:
+                # looser: our club exactly, the opponent by its words (hyphens, 'St.' vs 'Saint', nicknames)
+                for ev in evs:
+                    cs = ev['competitions'][0]['competitors']
+                    for c in cs:
+                        o = [x for x in cs if x is not c][0]
+                        mine = {norm(c['team'].get('displayName')), norm(c['team'].get('location')), norm(c['team'].get('shortDisplayName'))}
+                        if norm(row.get('team')) in mine and loose(row.get('opponent'), o['team'].get('displayName')):
+                            eid = ev['id']
+                    if eid:
+                        break
             if eid:
                 break
         if not eid:
@@ -400,7 +420,7 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
             if sw:
                 boxscores.append(dict(line_id=f"{gid}-{last(name)}", game_id=gid, player=name, min=r['min'], pts=r['pts'], reb=r['reb'],
                                       ast=r['ast'], fg=r['fg'], three=r['three'], ft=r['ft'], pm=r['pm'], source=src,
-                                      note='' if done else 'live', oreb=p['oreb'] or 0, dreb=p['dreb'] or 0, stl=r['stl'], blk=r['blk'],
+                                      note=('DNP' if not (r['min'] or r['pts'] or r['reb'] or r['ast']) else '') if done else 'live', oreb=p['oreb'] or 0, dreb=p['dreb'] or 0, stl=r['stl'], blk=r['blk'],
                                       tov=r['tov'], pf=p['pf'] or 0, eff=''))
     print(f"  {gid}: {row['status']} {row['score']} {row.get('clock', '')}")
     return True
