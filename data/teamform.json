@@ -3890,5 +3890,33 @@
   "note": "",
   "leaders": "Sanders|17|5|2;Durr|15|1|2;Walker|11|3|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "youngstown-state-2026-11-03",
+  "team": "Youngstown State",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "St. Bonaventure",
+  "venue": "Away",
+  "score": "79-71",
+  "result": "W",
+  "top": "Holmstrom 26 pts, 8 reb",
+  "note": "",
+  "leaders": "Holmstrom|26|8|2;Amoako|14|10|0;Nwankwo|11|8|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "st-bonaventure-2026-11-03",
+  "team": "St. Bonaventure",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Youngstown State",
+  "venue": "Home",
+  "score": "71-79",
+  "result": "L",
+  "top": "Philipkoski 28 pts, 3 reb",
+  "note": "",
+  "leaders": "Philipkoski|28|3|4;Bill|15|9|2;Au-Duke|12|4|2",
+  "source": "ESPN"
  }
 ]

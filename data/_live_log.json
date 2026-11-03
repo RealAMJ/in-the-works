@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:59:13+01:00",
+ "at": "2026-11-03T02:59:46+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:06",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -33,29 +33,6 @@
    ]
   },
   {
-   "game": "g30",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g30",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Youngstown State Penguins",
-     79,
-     14
-    ],
-    [
-     "St. Bonaventure Bonnies",
-     71,
-     16
-    ]
-   ]
-  },
-  {
    "game": "g20261103maine",
    "checking": "ESPN"
   },
@@ -63,7 +40,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:22",
+   "clock": "02:36",
    "done": false,
    "teams": [
     [
@@ -140,7 +117,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:05",
+   "clock": "08:42",
    "done": false,
    "teams": [
     [
@@ -150,7 +127,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     67,
+     69,
      13
     ]
    ]
@@ -186,7 +163,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:02",
+   "clock": "13:41",
    "done": false,
    "teams": [
     [

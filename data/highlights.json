@@ -95,5 +95,16 @@
   "tag": "Double-double",
   "headline_sv": "Dubbel-dubbel: 15 poäng och 12 assist när Frøya slog Bærum",
   "detail_sv": "Hagberg spelade nästan 38 minuter och noterades för 15 poäng (6/15, 3/10 från tre), 12 assist, 4 returer och inga bollförluster när Frøya slog Bærum med 95-83 hemma."
+ },
+ {
+  "highlight_id": "g30-holmstrom",
+  "date": "2026-11-03",
+  "player": "William Holmstrom",
+  "game_id": "g30",
+  "headline": "26 points",
+  "detail": "Holmstrom had 26 points (8/16 FG, 6/13 3PT, 4/4 FT), 8 rebounds and 2 assists in 34 minutes as Youngstown State won 79-71 at St. Bonaventure.",
+  "tag": "20+ points",
+  "headline_sv": "26 poäng",
+  "detail_sv": "Holmstrom gjorde 26 poäng (8/16 från fältet, 6/13 från tre, 4/4 på straffar), 8 returer och 2 assist på 34 minuter när Youngstown State vann med 79-71 borta mot St. Bonaventure."
  }
 ]
