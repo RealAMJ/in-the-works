@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:07:22+01:00",
+ "at": "2026-11-03T02:08:14+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,17 +9,17 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:31",
+   "clock": "00:15",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     66,
+     68,
      15
     ],
     [
      "Michigan Wolverines",
-     81,
+     84,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:05",
+   "clock": "08:51",
    "done": false,
    "teams": [
     [
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:18",
+   "clock": "16:27",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     29,
+     31,
      15
     ],
     [
@@ -86,17 +86,17 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:28",
+   "clock": "17:38",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     34,
+     37,
      14
     ],
     [
      "St. Bonaventure Bonnies",
-     36,
+     39,
      16
     ]
    ]
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:13",
+   "clock": "07:12",
    "done": false,
    "teams": [
     [
