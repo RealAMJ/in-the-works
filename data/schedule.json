@@ -383,7 +383,7 @@
   "score": "W 47-36",
   "espn_id": "401925733",
   "clock": "End of Q1",
-  "live_updated": "2026-11-03T01:02:08+01:00"
+  "live_updated": "2026-11-03T01:03:00+01:00"
  },
  {
   "game_id": "g20261103vmi",
@@ -409,10 +409,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 31-16",
+  "score": "W 33-16",
   "espn_id": "401920679",
-  "clock": "Q1 08:20",
-  "live_updated": "2026-11-03T01:02:09+01:00"
+  "clock": "Q1 08:17",
+  "live_updated": "2026-11-03T01:03:00+01:00"
  },
  {
   "game_id": "g29",
@@ -452,9 +452,11 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "upcoming",
-  "score": "",
-  "espn_id": "401909531"
+  "status": "live",
+  "score": "W 0-0",
+  "espn_id": "401909531",
+  "clock": "Q1 19:58",
+  "live_updated": "2026-11-03T01:03:01+01:00"
  },
  {
   "game_id": "g20261103uncw",

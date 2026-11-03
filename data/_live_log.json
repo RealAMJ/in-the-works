@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:02:10+01:00",
+ "at": "2026-11-03T01:03:02+01:00",
  "log": [
   {
    "game": "g16",
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:20",
+   "clock": "08:17",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     31,
+     33,
      16
     ]
    ]
@@ -108,19 +108,19 @@
   {
    "game": "g20261103maine",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:58",
    "done": false,
    "teams": [
     [
-     "Providence Friars",
-     0,
-     0
-    ],
-    [
      "Maine Black Bears",
      0,
-     0
+     15
+    ],
+    [
+     "Providence Friars",
+     0,
+     14
     ]
    ]
   },
