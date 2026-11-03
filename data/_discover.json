@@ -1,13 +1,20 @@
 {
- "at": "2026-11-03T19:24:44+01:00",
- "found": 1,
+ "at": "2026-11-03T19:30:12+01:00",
+ "found": 0,
  "log": [
   {
    "competition": "FIBA Europe Cup",
-   "seed": 2888339,
+   "seed": 2888341,
    "scanned": 799,
-   "answered": 272,
+   "answered": 273,
    "sample": [
+    [
+     2888339,
+     [
+      "VEF Riga ",
+      "Mykonos Betsson BC "
+     ]
+    ],
     [
      2888338,
      [
@@ -19,13 +26,6 @@
      2888337,
      [
       "Neftchi SC ",
-      "CSM CSU Raiffeisen Oradea "
-     ]
-    ],
-    [
-     2888341,
-     [
-      "Mykonos Betsson BC ",
       "CSM CSU Raiffeisen Oradea "
      ]
     ],
