@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:50:04+01:00",
+ "at": "2026-11-03T02:50:56+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:00",
+   "clock": "01:57",
    "done": false,
    "teams": [
     [
@@ -27,7 +27,7 @@
     ],
     [
      "Iona Gaels",
-     48,
+     49,
      17
     ]
    ]
@@ -40,12 +40,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:34",
+   "clock": "01:16",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     70,
+     72,
      14
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:20",
+   "clock": "05:38",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Providence Friars",
-     69,
+     72,
      14
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:20",
+   "clock": "10:04",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     68,
+     70,
      15
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:19",
+   "clock": "11:56",
    "done": false,
    "teams": [
     [
@@ -140,7 +140,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:40",
+   "clock": "12:52",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     51,
+     54,
      13
     ]
    ]
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:31",
+   "clock": "16:52",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     41,
+     43,
      15
     ],
     [
