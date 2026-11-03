@@ -551,10 +551,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 46-35",
+  "score": "W 47-35",
   "espn_id": "401924894",
   "clock": "Q2 18:05",
-  "live_updated": "2026-11-03T04:10:13+01:00"
+  "live_updated": "2026-11-03T04:10:43+01:00"
  },
  {
   "game_id": "g28",
@@ -570,7 +570,7 @@
   "score": "L 22-28",
   "espn_id": "401922020",
   "clock": "Q1 03:17",
-  "live_updated": "2026-11-03T04:10:13+01:00"
+  "live_updated": "2026-11-03T04:10:43+01:00"
  },
  {
   "game_id": "g17",
@@ -585,8 +585,8 @@
   "status": "live",
   "score": "L 6-7",
   "espn_id": "401920716",
-  "clock": "Q1 16:09",
-  "live_updated": "2026-11-03T04:10:13+01:00"
+  "clock": "Q1 15:55",
+  "live_updated": "2026-11-03T04:10:43+01:00"
  },
  {
   "game_id": "g19",
@@ -616,10 +616,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "W 3-2",
+  "score": "W 5-5",
   "espn_id": "401911452",
-  "clock": "Q1 18:41",
-  "live_updated": "2026-11-03T04:10:13+01:00"
+  "clock": "Q1 18:07",
+  "live_updated": "2026-11-03T04:10:44+01:00"
  },
  {
   "game_id": "g20",

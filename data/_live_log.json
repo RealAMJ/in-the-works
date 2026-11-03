@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:10:14+01:00",
+ "at": "2026-11-03T04:10:44+01:00",
  "log": [
   {
    "game": "g18",
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     46,
+     47,
      13
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:09",
+   "clock": "15:55",
    "done": false,
    "teams": [
     [
@@ -101,17 +101,17 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:41",
+   "clock": "18:07",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     3,
+     5,
      15
     ],
     [
      "Nevada Wolf Pack",
-     2,
+     5,
      14
     ]
    ]
