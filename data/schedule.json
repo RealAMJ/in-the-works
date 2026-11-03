@@ -607,7 +607,9 @@
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909921",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g32",

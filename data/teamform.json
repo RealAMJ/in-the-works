@@ -4254,5 +4254,33 @@
   "note": "",
   "leaders": "Price|19|7|1;Coulter|14|7|1;Weems|13|4|3;Phipps|13|8|5",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-03",
+  "team": "Miami Heat",
+  "date": "2026-11-03",
+  "competition": "NBA",
+  "opponent": "Los Angeles Lakers",
+  "venue": "Away",
+  "score": "117-138",
+  "result": "L",
+  "top": "Antetokounmpo 30 pts, 12 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|30|12|7;Thompson|19|1|1;Adebayo|16|9|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "los-angeles-lakers-2026-11-03",
+  "team": "Los Angeles Lakers",
+  "date": "2026-11-03",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Home",
+  "score": "138-117",
+  "result": "W",
+  "top": "Doncic 42 pts, 7 reb",
+  "note": "",
+  "leaders": "Doncic|42|7|13;Reaves|27|2|5;Kessler|15|15|2",
+  "source": "ESPN"
  }
 ]
