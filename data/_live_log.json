@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:05:36+01:00",
+ "at": "2026-11-03T02:06:29+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,17 +9,17 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:45",
+   "clock": "00:31",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     64,
+     66,
      15
     ],
     [
      "Michigan Wolverines",
-     79,
+     81,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:36",
+   "clock": "09:33",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     58,
+     59,
      16
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:42",
+   "clock": "17:41",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     24,
+     25,
      17
     ]
    ]
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:17",
+   "clock": "19:16",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     32,
+     33,
      14
     ],
     [
@@ -163,17 +163,17 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:40",
+   "clock": "04:46",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     26,
+     28,
      14
     ],
     [
      "Wisconsin Badgers",
-     31,
+     33,
      15
     ]
    ]
@@ -186,17 +186,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:28",
+   "clock": "04:47",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     32,
+     34,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     26,
+     31,
      13
     ]
    ]
