@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:56:28+01:00",
+ "at": "2026-11-03T02:57:29+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,12 +40,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:14",
+   "clock": "00:13",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     75,
+     76,
      14
     ],
     [
@@ -63,12 +63,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:07",
+   "clock": "04:04",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     48,
+     49,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:23",
+   "clock": "07:28",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     76,
+     79,
      15
     ]
    ]
@@ -117,12 +117,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:04",
+   "clock": "09:34",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     48,
+     50,
      14
     ],
     [
@@ -140,7 +140,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:46",
+   "clock": "09:47",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     63,
+     65,
      13
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:42",
+   "clock": "14:36",
    "done": false,
    "teams": [
     [
