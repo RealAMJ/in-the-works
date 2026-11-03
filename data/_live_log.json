@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:21:32+01:00",
+ "at": "2026-11-03T05:22:23+01:00",
  "log": [
   {
    "game": "g28",
@@ -32,12 +32,12 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:37",
+   "clock": "13:21",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     45,
+     48,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:45",
+   "clock": "16:14",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Nevada Wolf Pack",
-     47,
+     49,
      14
     ]
    ]
