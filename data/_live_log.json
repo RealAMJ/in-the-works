@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:30:18+01:00",
+ "at": "2026-11-03T01:31:01+01:00",
  "log": [
   {
    "game": "g16",
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:44",
+   "clock": "05:31",
    "done": false,
    "teams": [
     [
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:40",
+   "clock": "07:11",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     20,
+     23,
      14
     ],
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:41",
+   "clock": "07:26",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:21",
+   "clock": "11:07",
    "done": false,
    "teams": [
     [
