@@ -86,7 +86,8 @@
   "status": "final",
   "score": "L 79-89",
   "live_feed": "fiba:2888341",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261104anw",

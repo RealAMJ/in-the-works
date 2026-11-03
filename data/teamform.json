@@ -4282,5 +4282,33 @@
   "note": "",
   "leaders": "Hamilton|20|9|1;Scherer|11|2|2;Miller|9|6|0;Griffith|9|4|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "csm-oradea-2026-11-03",
+  "team": "CSM Oradea",
+  "date": "2026-11-03",
+  "competition": "FIBA Europe Cup",
+  "opponent": "Mykonos",
+  "venue": "Away",
+  "score": "79-89",
+  "result": "L",
+  "top": "Jefferson 16 pts, 2 reb",
+  "note": "",
+  "leaders": "Jefferson|16|2|10;Akin|13|7|2;Hume|12|6|1",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "mykonos-2026-11-03",
+  "team": "Mykonos",
+  "date": "2026-11-03",
+  "competition": "FIBA Europe Cup",
+  "opponent": "CSM Oradea",
+  "venue": "Home",
+  "score": "89-79",
+  "result": "W",
+  "top": "Cannady 21 pts, 4 reb",
+  "note": "",
+  "leaders": "Cannady|21|4|1;Love|17|2|4;Harrell|17|4|3",
+  "source": "FIBA LiveStats"
  }
 ]
