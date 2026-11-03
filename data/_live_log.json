@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:38:52+01:00",
+ "at": "2026-11-03T04:39:34+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:18",
+   "clock": "07:42",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     80,
+     83,
      13
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:28",
+   "clock": "18:56",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:56",
+   "clock": "03:51",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:03",
+   "clock": "00:16",
    "done": false,
    "teams": [
     [
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:41",
+   "clock": "07:20",
    "done": false,
    "teams": [
     [
