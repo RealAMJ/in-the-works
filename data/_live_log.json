@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:12:59+01:00",
+ "at": "2026-11-03T05:13:48+01:00",
  "log": [
   {
    "game": "g28",
@@ -9,12 +9,12 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:19",
+   "clock": "06:50",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     48,
+     50,
      16
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:23",
+   "clock": "16:49",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     35,
+     37,
      15
     ],
     [
      "Stanford Cardinal",
-     40,
+     41,
      16
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:49",
+   "clock": "00:17",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     69,
+     72,
      14
     ],
     [
      "Los Angeles Lakers",
-     75,
+     77,
      15
     ]
    ]
