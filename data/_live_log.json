@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:14:37+01:00",
+ "at": "2026-11-03T02:15:29+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:47",
+   "clock": "06:58",
    "done": false,
    "teams": [
     [
@@ -27,7 +27,7 @@
     ],
     [
      "St. John's Red Storm",
-     61,
+     64,
      16
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:50",
+   "clock": "14:42",
    "done": false,
    "teams": [
     [
@@ -86,12 +86,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:35",
+   "clock": "17:25",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     29,
+     26,
      15
     ],
     [
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:33",
+   "clock": "00:38",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Wisconsin Badgers",
-     41,
+     44,
      15
     ]
    ]
@@ -163,12 +163,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:30",
+   "clock": "02:19",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     36,
+     38,
      16
     ],
     [
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:20",
+   "clock": "03:34",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     37,
+     39,
      16
     ]
    ]
