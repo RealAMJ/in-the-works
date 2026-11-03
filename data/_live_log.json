@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:05:36+01:00",
+ "at": "2026-11-03T03:06:31+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,12 +17,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:08",
+   "clock": "01:04",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     55,
+     56,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:00",
+   "clock": "04:36",
    "done": false,
    "teams": [
     [
@@ -71,7 +71,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:27",
+   "clock": "06:56",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "20:00",
+   "clock": "19:50",
    "done": false,
    "teams": [
     [
