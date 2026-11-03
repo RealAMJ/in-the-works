@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:18:48+01:00",
+ "at": "2026-11-03T01:19:40+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:35",
+   "clock": "15:14",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:31",
+   "clock": "03:20",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:44",
+   "clock": "11:43",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:41",
+   "clock": "12:01",
    "done": false,
    "teams": [
     [
