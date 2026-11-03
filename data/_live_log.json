@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:23:17+01:00",
+ "at": "2026-11-03T02:24:15+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:37",
+   "clock": "04:30",
    "done": false,
    "teams": [
     [
@@ -40,17 +40,17 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:09",
+   "clock": "10:39",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     36,
+     39,
      15
     ],
     [
      "Iona Gaels",
-     33,
+     35,
      17
     ]
    ]
@@ -63,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:42",
+   "clock": "10:54",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     47,
+     50,
      14
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:37",
+   "clock": "14:21",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "Providence Friars",
-     49,
+     51,
      14
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:41",
+   "clock": "18:23",
    "done": false,
    "teams": [
     [
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:02",
+   "clock": "01:23",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     48,
+     51,
      16
     ]
    ]
