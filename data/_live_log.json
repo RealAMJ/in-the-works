@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:16:56+01:00",
+ "at": "2026-11-03T01:17:35+01:00",
  "log": [
   {
    "game": "g16",
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:22",
+   "clock": "11:51",
    "done": false,
    "teams": [
     [
@@ -96,7 +96,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     11,
+     13,
      16
     ]
    ]
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:05",
+   "clock": "13:06",
    "done": false,
    "teams": [
     [
