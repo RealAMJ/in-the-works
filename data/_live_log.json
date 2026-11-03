@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:56:20+01:00",
+ "at": "2026-11-03T01:56:46+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:50",
+   "clock": "04:39",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     59,
+     60,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:27",
+   "clock": "13:10",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "St. John's Red Storm",
-     55,
+     57,
      16
     ]
    ]
@@ -73,7 +73,7 @@
     ],
     [
      "Iona Gaels",
-     21,
+     19,
      17
     ]
    ]
@@ -137,7 +137,7 @@
    "teams": [
     [
      "Mount Olive Trojans",
-     24,
+     25,
      16
     ],
     [
@@ -163,12 +163,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:25",
+   "clock": "08:07",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     20,
+     23,
      14
     ],
     [
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:52",
+   "clock": "10:40",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     17,
+     19,
      16
     ],
     [
