@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:08:14+01:00",
+ "at": "2026-11-03T02:09:07+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:15",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:51",
+   "clock": "08:32",
    "done": false,
    "teams": [
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:27",
+   "clock": "15:53",
    "done": false,
    "teams": [
     [
@@ -86,12 +86,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:38",
+   "clock": "17:34",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     37,
+     39,
      14
     ],
     [
@@ -108,8 +108,8 @@
   {
    "game": "g20261103maine",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "18:31",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "Providence Friars",
-     34,
+     41,
      14
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:06",
+   "clock": "03:20",
    "done": false,
    "teams": [
     [
@@ -196,7 +196,7 @@
     ],
     [
      "Southeast Missouri State Redhawks",
-     31,
+     34,
      13
     ]
    ]
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:12",
+   "clock": "06:34",
    "done": false,
    "teams": [
     [
