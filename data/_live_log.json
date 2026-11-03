@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:47:10+01:00",
+ "at": "2026-11-03T02:48:19+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:18",
+   "clock": "02:12",
    "done": false,
    "teams": [
     [
@@ -63,12 +63,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:42",
+   "clock": "07:23",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     41,
+     44,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:50",
+   "clock": "11:21",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:55",
+   "clock": "13:01",
    "done": false,
    "teams": [
     [
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:15",
+   "clock": "18:05",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     38,
+     39,
      15
     ],
     [
