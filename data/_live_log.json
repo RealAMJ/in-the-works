@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:20:53+01:00",
+ "at": "2026-11-03T02:21:45+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -22,7 +22,7 @@
    "teams": [
     [
      "Monmouth Hawks",
-     50,
+     51,
      17
     ],
     [
@@ -163,7 +163,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:06",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:45",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     34,
+     35,
      15
     ],
     [
