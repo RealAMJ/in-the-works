@@ -4,12 +4,12 @@
   "player": "Pelle Larsson",
   "competition": "NBA",
   "season": "2026-27",
-  "gp": 6,
+  "gp": 7,
   "min": 29.7,
-  "pts": 11.8,
-  "reb": 3.5,
-  "ast": 4.0,
-  "note": "NBA.com (6 GP; MPG calculated from NBA.com game log, through Oct 30 US)"
+  "pts": 11.4,
+  "reb": 3.4,
+  "ast": 3.7,
+  "note": "ESPN game log (7 GP, through Nov 3 Swedish time)"
  },
  {
   "row_id": "klintman-el",
