@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:56:46+01:00",
+ "at": "2026-11-03T01:57:54+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:39",
+   "clock": "04:37",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     74,
+     75,
      17
     ]
    ]
@@ -40,17 +40,17 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:10",
+   "clock": "13:04",
    "done": false,
    "teams": [
     [
      "Monmouth Hawks",
-     40,
+     42,
      17
     ],
     [
      "St. John's Red Storm",
-     57,
+     58,
      16
     ]
    ]
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:26",
+   "clock": "01:08",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     33,
+     34,
      15
     ]
    ]
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:07",
+   "clock": "07:50",
    "done": false,
    "teams": [
     [
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:40",
+   "clock": "09:52",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     19,
+     21,
      16
     ],
     [
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:06",
+   "clock": "10:40",
    "done": false,
    "teams": [
     [
