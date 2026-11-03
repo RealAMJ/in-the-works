@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:58:30+01:00",
+ "at": "2026-11-03T05:59:20+01:00",
  "log": [
   {
    "game": "g17",
@@ -9,7 +9,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:20",
+   "clock": "01:51",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Stanford Cardinal",
-     66,
+     68,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:45",
+   "clock": "03:24",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     43,
+     45,
      15
     ],
     [
