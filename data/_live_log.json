@@ -1,29 +1,6 @@
 {
- "at": "2026-11-03T03:23:29+01:00",
+ "at": "2026-11-03T03:23:58+01:00",
  "log": [
-  {
-   "game": "g20261103uncw",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261103uncw",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Mount Olive Trojans",
-     65,
-     16
-    ],
-    [
-     "UNC Wilmington Seahawks",
-     101,
-     15
-    ]
-   ]
-  },
   {
    "game": "g31",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:50",
+   "clock": "00:18",
    "done": false,
    "teams": [
     [
@@ -60,7 +37,7 @@
    "teams": [
     [
      "Lipscomb Bisons",
-     74,
+     75,
      16
     ],
     [
@@ -78,7 +55,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:22",
+   "clock": "10:14",
    "done": false,
    "teams": [
     [
@@ -124,7 +101,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:25",
+   "clock": "07:08",
    "done": false,
    "teams": [
     [

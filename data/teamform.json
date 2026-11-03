@@ -4030,5 +4030,33 @@
   "note": "",
   "leaders": "Bannarbie|14|10|1;Mela|13|6|2;Mack|12|5|2;Bardwell|12|3|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "unc-wilmington-2026-11-03",
+  "team": "UNC Wilmington",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Mount Olive",
+  "venue": "Home",
+  "score": "101-65",
+  "result": "W",
+  "top": "II 21 pts, 1 reb",
+  "note": "",
+  "leaders": "II|21|1|1;Wessler|14|12|1;Lamothe|12|7|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "mount-olive-2026-11-03",
+  "team": "Mount Olive",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "UNC Wilmington",
+  "venue": "Away",
+  "score": "65-101",
+  "result": "L",
+  "top": "Ananaba 15 pts, 5 reb",
+  "note": "",
+  "leaders": "Ananaba|15|5|0;Smith|13|0|1;Williams|7|6|0;Cole|7|1|0",
+  "source": "ESPN"
  }
 ]
