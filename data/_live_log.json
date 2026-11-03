@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:52:14+01:00",
+ "at": "2026-11-03T01:53:11+01:00",
  "log": [
   {
    "game": "g16",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     55,
+     56,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:56",
+   "clock": "15:23",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:55",
+   "clock": "02:42",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:39",
+   "clock": "10:04",
    "done": false,
    "teams": [
     [
@@ -186,12 +186,12 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:01",
+   "clock": "11:30",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     12,
+     17,
      16
     ],
     [
@@ -209,12 +209,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:10",
+   "clock": "11:10",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     13,
+     16,
      15
     ],
     [
