@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T19:50:18+01:00",
+ "at": "2026-11-03T19:51:29+01:00",
  "log": [
   {
    "game": "c20261103ora",
@@ -9,17 +9,17 @@
    "game": "c20261103ora",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "06:06",
+   "clock": "05:19",
    "done": false,
    "teams": [
     [
      "Mykonos Betsson BC",
-     68,
+     71,
      12
     ],
     [
      "CSM CSU Raiffeisen Oradea",
-     64,
+     67,
      11
     ]
    ]
