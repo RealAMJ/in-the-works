@@ -15870,7 +15870,7 @@
   "fg": "3/4",
   "three": "0/1",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -15881,7 +15881,7 @@
   "team": "Mykonos",
   "player": "Elijah Childs",
   "pos": "",
-  "min": 21,
+  "min": 22,
   "pts": 7,
   "reb": 3,
   "ast": 0,
@@ -15891,7 +15891,7 @@
   "fg": "3/3",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -15912,7 +15912,7 @@
   "fg": "1/4",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -15996,7 +15996,7 @@
   "fg": "1/3",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16070,7 +16070,7 @@
   "team": "Mykonos",
   "player": "Devin Cannady",
   "pos": "",
-  "min": 23,
+  "min": 24,
   "pts": 14,
   "reb": 2,
   "ast": 1,
@@ -16080,7 +16080,7 @@
   "fg": "4/6",
   "three": "1/3",
   "ft": "5/6",
-  "pm": -1,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16101,7 +16101,7 @@
   "fg": "3/10",
   "three": "1/6",
   "ft": "2/2",
-  "pm": 4,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16122,7 +16122,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16143,7 +16143,7 @@
   "fg": "2/3",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -3,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16269,7 +16269,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -16290,7 +16290,7 @@
   "fg": "2/6",
   "three": "0/0",
   "ft": "2/3",
-  "pm": 2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
