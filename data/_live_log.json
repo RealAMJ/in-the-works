@@ -1,29 +1,6 @@
 {
- "at": "2026-11-03T04:57:42+01:00",
+ "at": "2026-11-03T04:58:33+01:00",
  "log": [
-  {
-   "game": "g18",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g18",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Utah Tech Trailblazers",
-     60,
-     15
-    ],
-    [
-     "New Mexico Lobos",
-     100,
-     13
-    ]
-   ]
-  },
   {
    "game": "g28",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:57",
+   "clock": "12:14",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "Utah State Aggies",
-     54,
+     56,
      15
     ]
    ]
@@ -78,17 +55,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:16",
+   "clock": "06:57",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     43,
+     46,
      14
     ],
     [
      "Los Angeles Lakers",
-     46,
+     48,
      15
     ]
    ]
@@ -101,7 +78,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:56",
+   "clock": "00:56",
    "done": false,
    "teams": [
     [
