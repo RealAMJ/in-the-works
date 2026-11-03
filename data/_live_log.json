@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:24:15+01:00",
+ "at": "2026-11-03T02:25:08+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -22,7 +22,7 @@
    "teams": [
     [
      "Monmouth Hawks",
-     51,
+     52,
      17
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:39",
+   "clock": "10:19",
    "done": false,
    "teams": [
     [
@@ -63,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:54",
+   "clock": "10:13",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     50,
+     53,
      14
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:21",
+   "clock": "13:55",
    "done": false,
    "teams": [
     [
@@ -109,12 +109,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:23",
+   "clock": "18:05",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     27,
+     29,
      16
     ],
     [
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:23",
+   "clock": "01:25",
    "done": false,
    "teams": [
     [
