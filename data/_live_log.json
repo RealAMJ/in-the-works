@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:06:31+01:00",
+ "at": "2026-11-03T03:07:24+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:04",
+   "clock": "00:24",
    "done": false,
    "teams": [
     [
@@ -27,7 +27,7 @@
     ],
     [
      "Providence Friars",
-     81,
+     83,
      14
     ]
    ]
@@ -40,12 +40,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:36",
+   "clock": "04:14",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     50,
+     52,
      16
     ],
     [
@@ -71,7 +71,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:56",
+   "clock": "06:19",
    "done": false,
    "teams": [
     [
@@ -81,7 +81,7 @@
     ],
     [
      "Wisconsin Badgers",
-     61,
+     63,
      15
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:50",
+   "clock": "18:46",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "New Mexico Lobos",
-     0,
+     2,
      13
     ]
    ]
