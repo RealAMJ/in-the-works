@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:33:09+01:00",
+ "at": "2026-11-03T01:34:01+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,7 +9,7 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:21",
+   "clock": "10:48",
    "done": false,
    "teams": [
     [
@@ -63,17 +63,17 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:13",
+   "clock": "03:39",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     17,
+     20,
      15
     ],
     [
      "Iona Gaels",
-     15,
+     17,
      17
     ]
    ]
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:26",
+   "clock": "05:01",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:33",
+   "clock": "06:03",
    "done": false,
    "teams": [
     [
@@ -132,7 +132,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:59",
+   "clock": "10:01",
    "done": false,
    "teams": [
     [
@@ -142,7 +142,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     17,
+     18,
      15
     ]
    ]
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:56",
+   "clock": "18:09",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     2,
+     4,
      15
     ]
    ]
@@ -209,12 +209,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:53",
+   "clock": "18:45",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     2,
+     5,
      15
     ],
     [
