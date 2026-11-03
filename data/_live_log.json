@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:12:14+01:00",
+ "at": "2026-11-03T02:13:06+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:23",
+   "clock": "15:21",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "Iona Gaels",
-     27,
+     28,
      17
     ]
    ]
@@ -63,7 +63,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:56",
+   "clock": "14:51",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "St. Bonaventure Bonnies",
-     41,
+     43,
      16
     ]
    ]
@@ -86,12 +86,12 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:12",
+   "clock": "17:35",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     26,
+     29,
      15
     ],
     [
@@ -140,7 +140,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:53",
+   "clock": "02:01",
    "done": false,
    "teams": [
     [
@@ -150,7 +150,7 @@
     ],
     [
      "Wisconsin Badgers",
-     37,
+     39,
      15
     ]
    ]
@@ -168,7 +168,7 @@
    "teams": [
     [
      "Lipscomb Bisons",
-     34,
+     35,
      16
     ],
     [
