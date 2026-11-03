@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:38:15+01:00",
+ "at": "2026-11-03T01:39:29+01:00",
  "log": [
   {
    "game": "g16",
@@ -9,12 +9,12 @@
    "game": "g16",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:28",
+   "clock": "09:00",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     48,
+     52,
      15
     ],
     [
@@ -63,7 +63,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:36",
+   "clock": "01:07",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:56",
+   "clock": "03:42",
    "done": false,
    "teams": [
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:25",
+   "clock": "14:35",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     10,
+     12,
      15
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:05",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
@@ -209,17 +209,17 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:06",
+   "clock": "17:01",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     5,
+     6,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     11,
+     12,
      16
     ]
    ]
