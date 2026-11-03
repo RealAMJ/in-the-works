@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:46:30+01:00",
+ "at": "2026-11-03T02:47:10+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:51",
+   "clock": "02:06",
    "done": false,
    "teams": [
     [
@@ -40,12 +40,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:58",
+   "clock": "02:18",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     66,
+     68,
      14
     ],
     [
@@ -96,7 +96,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     64,
+     66,
      15
     ]
    ]
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:01",
+   "clock": "13:55",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "Wisconsin Badgers",
-     53,
+     55,
      15
     ]
    ]
@@ -186,12 +186,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:23",
+   "clock": "18:15",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     37,
+     38,
      15
     ],
     [
