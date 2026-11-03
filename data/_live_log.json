@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T05:30:56+01:00",
+ "at": "2026-11-03T05:31:26+01:00",
  "log": [
   {
    "game": "g28",
@@ -8,9 +8,9 @@
   {
    "game": "g28",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Idaho State Bengals",
@@ -55,7 +55,7 @@
    "game": "g19",
    "src": "ESPN",
    "period": 3,
-   "clock": "11:46",
+   "clock": "11:36",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:04",
+   "clock": "13:56",
    "done": false,
    "teams": [
     [
