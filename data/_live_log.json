@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:45:38+01:00",
+ "at": "2026-11-03T02:46:30+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,12 +17,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:29",
+   "clock": "02:51",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     50,
+     53,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:13",
+   "clock": "02:58",
    "done": false,
    "teams": [
     [
@@ -86,7 +86,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:57",
+   "clock": "11:50",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:42",
+   "clock": "14:01",
    "done": false,
    "teams": [
     [
@@ -140,17 +140,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:16",
+   "clock": "14:09",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     51,
+     54,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     47,
+     49,
      13
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:54",
+   "clock": "18:23",
    "done": false,
    "teams": [
     [
