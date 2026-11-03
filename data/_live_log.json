@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:09:24+01:00",
+ "at": "2026-11-03T04:10:14+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:11",
+   "clock": "18:05",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     43,
+     46,
      13
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:29",
+   "clock": "16:09",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     5,
+     7,
      16
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:13",
+   "clock": "18:41",
    "done": false,
    "teams": [
     [
