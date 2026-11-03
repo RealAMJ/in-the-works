@@ -809,7 +809,7 @@
   "line_id": "g17-homelius",
   "game_id": "g17",
   "player": "Isak Homelius",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -824,7 +824,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  },
  {
