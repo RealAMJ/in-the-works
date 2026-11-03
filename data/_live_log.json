@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:07:56+01:00",
+ "at": "2026-11-03T03:08:47+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:24",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -94,7 +94,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:25",
+   "clock": "07:05",
    "done": false,
    "teams": [
     [
@@ -117,7 +117,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:31",
+   "clock": "17:30",
    "done": false,
    "teams": [
     [
@@ -127,7 +127,7 @@
     ],
     [
      "New Mexico Lobos",
-     4,
+     7,
      13
     ]
    ]
@@ -140,12 +140,12 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:18",
+   "clock": "10:55",
    "done": false,
    "teams": [
     [
      "Tennessee Tech Golden Eagles",
-     59,
+     61,
      15
     ],
     [
