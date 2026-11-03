@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:22:18+01:00",
+ "at": "2026-11-03T04:22:55+01:00",
  "log": [
   {
    "game": "g18",
@@ -9,7 +9,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:49",
+   "clock": "13:18",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "New Mexico Lobos",
-     59,
+     61,
      13
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g19",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:46",
+   "clock": "07:04",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     8,
+     11,
      14
     ],
     [
      "Los Angeles Lakers",
-     15,
+     18,
      15
     ]
    ]
@@ -106,7 +106,7 @@
    "teams": [
     [
      "Robert Morris Colonials",
-     10,
+     12,
      15
     ],
     [
