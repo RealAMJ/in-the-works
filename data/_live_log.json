@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:07:35+01:00",
+ "at": "2026-11-03T04:08:35+01:00",
  "log": [
   {
    "game": "g18",
@@ -8,8 +8,8 @@
   {
    "game": "g18",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "20:00",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g28",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:26",
+   "clock": "04:05",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:54",
+   "clock": "16:34",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     2,
+     5,
      16
     ]
    ]
@@ -100,19 +100,19 @@
   {
    "game": "g32",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:57",
    "done": false,
    "teams": [
     [
-     "Nevada Wolf Pack",
-     0,
-     0
-    ],
-    [
      "Robert Morris Colonials",
      0,
-     0
+     15
+    ],
+    [
+     "Nevada Wolf Pack",
+     0,
+     14
     ]
    ]
   }
