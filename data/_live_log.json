@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:28:25+01:00",
+ "at": "2026-11-03T02:29:17+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,7 +17,7 @@
    "game": "g20261103sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:38",
+   "clock": "03:28",
    "done": false,
    "teams": [
     [
@@ -40,7 +40,7 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:27",
+   "clock": "08:36",
    "done": false,
    "teams": [
     [
@@ -50,7 +50,7 @@
     ],
     [
      "Iona Gaels",
-     38,
+     41,
      17
     ]
    ]
@@ -63,12 +63,12 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:56",
+   "clock": "09:37",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     53,
+     54,
      14
     ],
     [
@@ -109,7 +109,7 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:01",
+   "clock": "17:31",
    "done": false,
    "teams": [
     [
@@ -119,7 +119,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     43,
+     45,
      15
     ]
    ]
