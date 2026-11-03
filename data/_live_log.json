@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T04:43:32+01:00",
+ "at": "2026-11-03T04:44:24+01:00",
  "log": [
   {
    "game": "g18",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Utah Tech Trailblazers",
-     51,
+     53,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g28",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:36",
+   "clock": "16:12",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     35,
+     37,
      16
     ],
     [
      "Utah State Aggies",
-     45,
+     46,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g17",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:34",
+   "clock": "03:11",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     24,
+     26,
      16
     ]
    ]
@@ -77,8 +77,8 @@
   {
    "game": "g19",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "11:55",
    "done": false,
    "teams": [
     [
@@ -101,12 +101,12 @@
    "game": "g32",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:23",
+   "clock": "05:49",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     20,
+     22,
      15
     ],
     [
