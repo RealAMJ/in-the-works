@@ -3658,5 +3658,31 @@
   "pf": 4,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "stumer-2026-11-03",
+  "player": "Oskar Stumer",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "team": "Denver",
+  "opponent": "Wisconsin",
+  "venue": "Away",
+  "result": "L 68-75",
+  "min": 21,
+  "pts": 2,
+  "reb": 3,
+  "ast": 2,
+  "source": "ESPN",
+  "fg": "0/2",
+  "three": "0/0",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 3,
+  "pm": 0,
+  "eff": ""
  }
 ]

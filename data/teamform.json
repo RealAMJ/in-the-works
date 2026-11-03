@@ -4058,5 +4058,33 @@
   "note": "",
   "leaders": "Ananaba|15|5|0;Smith|13|0|1;Williams|7|6|0;Cole|7|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "denver-2026-11-03",
+  "team": "Denver",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Wisconsin",
+  "venue": "Away",
+  "score": "68-75",
+  "result": "L",
+  "top": "Johnson 27 pts, 2 reb",
+  "note": "",
+  "leaders": "Johnson|27|2|2;Martin|9|6|0;Rogers|9|2|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "wisconsin-2026-11-03",
+  "team": "Wisconsin",
+  "date": "2026-11-03",
+  "competition": "NCAA",
+  "opponent": "Denver",
+  "venue": "Home",
+  "score": "75-68",
+  "result": "W",
+  "top": "Elmer 18 pts, 5 reb",
+  "note": "",
+  "leaders": "Elmer|18|5|3;Carrington|15|4|4;Foxwell|14|1|7",
+  "source": "ESPN"
  }
 ]
