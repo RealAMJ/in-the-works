@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:35:24+01:00",
+ "at": "2026-11-03T01:36:35+01:00",
  "log": [
   {
    "game": "g16",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     47,
+     48,
      15
     ],
     [
@@ -63,12 +63,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:18",
+   "clock": "01:36",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     22,
+     26,
      15
     ],
     [
@@ -86,7 +86,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:11",
+   "clock": "03:56",
    "done": false,
    "teams": [
     [
@@ -109,7 +109,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:03",
+   "clock": "04:12",
    "done": false,
    "teams": [
     [
@@ -132,12 +132,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:13",
+   "clock": "08:31",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     10,
+     12,
      16
     ],
     [
@@ -163,7 +163,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:05",
+   "clock": "16:38",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Wisconsin Badgers",
-     6,
+     8,
      15
     ]
    ]
@@ -186,7 +186,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:21",
+   "clock": "18:50",
    "done": false,
    "teams": [
     [
@@ -209,7 +209,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:44",
+   "clock": "17:15",
    "done": false,
    "teams": [
     [
@@ -219,7 +219,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     7,
+     10,
      16
     ]
    ]
