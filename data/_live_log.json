@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:41:28+01:00",
+ "at": "2026-11-03T02:42:19+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -40,17 +40,17 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:09",
+   "clock": "03:26",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     63,
+     66,
      14
     ],
     [
      "St. Bonaventure Bonnies",
-     63,
+     66,
      16
     ]
    ]
@@ -63,17 +63,17 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:58",
+   "clock": "08:10",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     39,
+     41,
      15
     ],
     [
      "Providence Friars",
-     66,
+     69,
      14
     ]
    ]
@@ -86,12 +86,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:11",
+   "clock": "12:45",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     34,
+     37,
      16
     ],
     [
@@ -117,17 +117,17 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:44",
+   "clock": "14:58",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     37,
+     40,
      14
     ],
     [
      "Wisconsin Badgers",
-     51,
+     53,
      15
     ]
    ]
