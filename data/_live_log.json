@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:59:46+01:00",
+ "at": "2026-11-03T03:00:38+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -27,7 +27,7 @@
     ],
     [
      "Iona Gaels",
-     54,
+     56,
      17
     ]
    ]
@@ -40,7 +40,7 @@
    "game": "g20261103maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:36",
+   "clock": "02:18",
    "done": false,
    "teams": [
     [
@@ -94,12 +94,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:34",
+   "clock": "09:02",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     50,
+     52,
      14
     ],
     [
@@ -163,7 +163,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:41",
+   "clock": "13:39",
    "done": false,
    "teams": [
     [
@@ -173,7 +173,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     65,
+     67,
      16
     ]
    ]
