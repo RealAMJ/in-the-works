@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:20:10+01:00",
+ "at": "2026-11-03T03:21:00+01:00",
  "log": [
   {
    "game": "g20261103uncw",
@@ -32,7 +32,7 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:39",
+   "clock": "01:14",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wisconsin Badgers",
-     73,
+     75,
      15
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:57",
+   "clock": "02:37",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     72,
+     74,
      16
     ],
     [
      "Southeast Missouri State Redhawks",
-     80,
+     81,
      13
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g18",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:55",
+   "clock": "12:42",
    "done": false,
    "teams": [
     [
@@ -124,7 +124,7 @@
    "game": "c20261103msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:49",
+   "clock": "07:25",
    "done": false,
    "teams": [
     [
