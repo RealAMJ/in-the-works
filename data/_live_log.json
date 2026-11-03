@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:40:38+01:00",
+ "at": "2026-11-03T02:41:28+01:00",
  "log": [
   {
    "game": "g20261103vmi",
@@ -17,12 +17,12 @@
    "game": "g29",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:45",
+   "clock": "03:57",
    "done": false,
    "teams": [
     [
      "Vermont Catamounts",
-     45,
+     48,
      15
     ],
     [
@@ -40,7 +40,7 @@
    "game": "g30",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:51",
+   "clock": "04:09",
    "done": false,
    "teams": [
     [
@@ -73,7 +73,7 @@
     ],
     [
      "Providence Friars",
-     64,
+     66,
      14
     ]
    ]
@@ -86,12 +86,12 @@
    "game": "g20261103uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:12",
+   "clock": "13:11",
    "done": false,
    "teams": [
     [
      "Mount Olive Trojans",
-     33,
+     34,
      16
     ],
     [
@@ -117,12 +117,12 @@
    "game": "g31",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:30",
+   "clock": "15:44",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     35,
+     37,
      14
     ],
     [
@@ -140,7 +140,7 @@
    "game": "g20261103lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:42",
+   "clock": "16:39",
    "done": false,
    "teams": [
     [
