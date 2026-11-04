@@ -700,7 +700,9 @@
   "status": "final",
   "score": "L 54-76",
   "espn_id": "401920702",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261104uci",
@@ -713,10 +715,10 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "live",
-  "score": "L 7-9",
+  "score": "L 7-12",
   "espn_id": "401929624",
-  "clock": "Q1 14:46",
-  "live_updated": "2026-11-04T04:11:39+01:00"
+  "clock": "Q1 14:33",
+  "live_updated": "2026-11-04T04:12:08+01:00"
  },
  {
   "game_id": "g23",

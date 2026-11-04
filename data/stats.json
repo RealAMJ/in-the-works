@@ -520,11 +520,11 @@
   "player": "Hugo Tidare",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 20.0,
+  "gp": 2,
+  "min": 18.0,
   "pts": 6.0,
-  "reb": 1.0,
-  "ast": 1.0,
-  "note": "Averages from game log (1 games, through 2026-11-03)"
+  "reb": 0.5,
+  "ast": 0.5,
+  "note": "Averages from game log (2 games, through 2026-11-04)"
  }
 ]

@@ -4310,5 +4310,33 @@
   "note": "",
   "leaders": "Cannady|21|4|1;Love|17|2|4;Harrell|17|4|3",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "lipscomb-2026-11-04",
+  "team": "Lipscomb",
+  "date": "2026-11-04",
+  "competition": "NCAA",
+  "opponent": "Iowa",
+  "venue": "Away",
+  "score": "54-76",
+  "result": "L",
+  "top": "Simpkins 18 pts, 3 reb",
+  "note": "",
+  "leaders": "Simpkins|18|3|0;Martin|11|7|0;Sargiunas|6|3|0;Tidare|6|0|0;Okpara|6|3|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "iowa-2026-11-04",
+  "team": "Iowa",
+  "date": "2026-11-04",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Home",
+  "score": "76-54",
+  "result": "W",
+  "top": "Coon 12 pts, 6 reb",
+  "note": "",
+  "leaders": "Coon|12|6|1;Coleman|10|6|4;Koch|9|4|2;Sage|9|2|0",
+  "source": "ESPN"
  }
 ]
