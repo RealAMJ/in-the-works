@@ -1,29 +1,6 @@
 {
- "at": "2026-11-04T04:09:09+01:00",
+ "at": "2026-11-04T04:09:59+01:00",
  "log": [
-  {
-   "game": "g20261104lip",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261104lip",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Lipscomb Bisons",
-     54,
-     16
-    ],
-    [
-     "Iowa Hawkeyes",
-     76,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261104uci",
    "checking": "ESPN"
