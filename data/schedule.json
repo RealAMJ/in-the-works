@@ -643,7 +643,8 @@
   "watch_url": "https://www.courtside1891.basketball/",
   "watch_label": "Courtside 1891",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g22",
@@ -659,7 +660,8 @@
   "score": "L 66-108",
   "live_feed": "bbl:2007035",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g21",
@@ -676,7 +678,8 @@
   "watch_url": "https://www.courtside1891.basketball/",
   "watch_label": "Courtside 1891",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g24",
@@ -693,7 +696,8 @@
   "watch_url": "https://www.courtside1891.basketball/",
   "watch_label": "Courtside 1891",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261104lip",
@@ -726,7 +730,7 @@
   "score": "W 54-41",
   "espn_id": "401929624",
   "clock": "Q2 11:49",
-  "live_updated": "2026-11-04T05:30:36+01:00"
+  "live_updated": "2026-11-04T05:31:09+01:00"
  },
  {
   "game_id": "g23",

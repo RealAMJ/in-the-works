@@ -916,28 +916,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261104uci-cooper",
-  "game_id": "g20261104uci",
-  "player": "Nils Cooper",
-  "min": 19,
-  "pts": 6,
-  "reb": 6,
-  "ast": 3,
-  "fg": "3/5",
-  "three": "0/0",
-  "ft": "0/2",
-  "pm": 0,
-  "source": "ESPN",
-  "note": "live",
-  "oreb": 1,
-  "dreb": 5,
-  "stl": 0,
-  "blk": 0,
-  "tov": 1,
-  "pf": 1,
-  "eff": ""
- },
- {
   "line_id": "g20-pohto",
   "game_id": "g20",
   "player": "Kenny Pohto",
@@ -1045,6 +1023,28 @@
   "blk": 0,
   "tov": 2,
   "pf": 2,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261104uci-cooper",
+  "game_id": "g20261104uci",
+  "player": "Nils Cooper",
+  "min": 19,
+  "pts": 6,
+  "reb": 6,
+  "ast": 3,
+  "fg": "3/5",
+  "three": "0/0",
+  "ft": "0/2",
+  "pm": 0,
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 1,
+  "dreb": 5,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 1,
   "eff": ""
  }
 ]
