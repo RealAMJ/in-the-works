@@ -19146,7 +19146,7 @@
   "fg": "6/8",
   "three": "1/2",
   "ft": "5/6",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19167,7 +19167,7 @@
   "fg": "4/10",
   "three": "2/5",
   "ft": "3/4",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19188,7 +19188,7 @@
   "fg": "8/18",
   "three": "6/10",
   "ft": "1/2",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19230,7 +19230,7 @@
   "fg": "3/6",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19335,7 +19335,7 @@
   "fg": "3/5",
   "three": "1/2",
   "ft": "1/1",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19377,7 +19377,7 @@
   "fg": "3/5",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19419,7 +19419,7 @@
   "fg": "3/5",
   "three": "1/1",
   "ft": "1/4",
-  "pm": -3,
+  "pm": -2,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19440,7 +19440,7 @@
   "fg": "6/13",
   "three": "2/3",
   "ft": "4/7",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19473,7 +19473,7 @@
   "player": "R.j. Gunn",
   "pos": "",
   "min": 29,
-  "pts": 4,
+  "pts": 5,
   "reb": 4,
   "ast": 2,
   "stl": 1,
@@ -19481,8 +19481,8 @@
   "tov": 3,
   "fg": "1/7",
   "three": "0/3",
-  "ft": "2/2",
-  "pm": 2,
+  "ft": "3/3",
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -19503,7 +19503,7 @@
   "fg": "3/4",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 4,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
