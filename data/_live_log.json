@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T20:00:26+01:00",
+ "at": "2026-11-04T20:00:57+01:00",
  "log": [
   {
    "game": "g23",
@@ -9,12 +9,12 @@
    "game": "g23",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "00:02",
+   "clock": "00:01",
    "done": false,
    "teams": [
     [
      "Nitra Blue Wings",
-     79,
+     80,
      11
     ],
     [
