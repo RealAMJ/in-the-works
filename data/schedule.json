@@ -631,17 +631,19 @@
  {
   "game_id": "g20",
   "date": "2026-11-03",
-  "time": "18:45",
+  "time": "19:00",
   "players": "Kenny Pohto",
   "team": "Juventus Utena",
   "opponent": "BK KVIS Pardubice",
   "venue": "Home",
   "competition": "Champions League (BCL)",
-  "note": "At Arena Vilnius (19:45 local)",
-  "status": "upcoming",
-  "score": "",
+  "note": "At Arena Vilnius · won in overtime",
+  "status": "final",
+  "score": "W 98-95",
   "watch_url": "https://www.courtside1891.basketball/",
-  "watch_label": "Courtside 1891"
+  "watch_label": "Courtside 1891",
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g22",
@@ -653,9 +655,11 @@
   "venue": "Away",
   "competition": "BBL",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "none"
+  "status": "final",
+  "score": "L 66-108",
+  "live_feed": "bbl:2007035",
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g21",
@@ -667,10 +671,12 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "final",
+  "score": "W 99-94",
   "watch_url": "https://www.courtside1891.basketball/",
-  "watch_label": "Courtside 1891"
+  "watch_label": "Courtside 1891",
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g24",
@@ -682,10 +688,12 @@
   "venue": "Away",
   "competition": "Champions League (BCL)",
   "note": "At Centro de Desportos e Congressos de Matosinhos",
-  "status": "upcoming",
-  "score": "",
+  "status": "final",
+  "score": "W 81-64",
   "watch_url": "https://www.courtside1891.basketball/",
-  "watch_label": "Courtside 1891"
+  "watch_label": "Courtside 1891",
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g20261104lip",
@@ -1039,7 +1047,8 @@
   "competition": "BBL",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "bbl:2006859"
  },
  {
   "game_id": "g20261107ovi",

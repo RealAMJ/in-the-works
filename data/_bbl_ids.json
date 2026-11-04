@@ -1,0 +1,2288 @@
+{
+"2006750": {
+"home": "NINERS Chemnitz",
+"guest": "ratiopharm ulm",
+"time": "2027-02-13T17:30:00Z",
+"comp": "BBL"
+},
+"2006751": {
+"home": "Phoenix Hagen",
+"guest": "SYNTAINICS MBC",
+"time": "2027-02-13T17:30:00Z",
+"comp": "BBL"
+},
+"2006752": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-02-14T14:00:00Z",
+"comp": "BBL"
+},
+"2006753": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-02-14T14:00:00Z",
+"comp": "BBL"
+},
+"2006754": {
+"home": "Veolia Towers Hamburg",
+"guest": "RASTA Vechta",
+"time": "2027-02-14T15:30:00Z",
+"comp": "BBL"
+},
+"2006755": {
+"home": "SKYLINERS",
+"guest": "ALBA BERLIN",
+"time": "2027-02-14T14:00:00Z",
+"comp": "BBL"
+},
+"2006756": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "FC Bayern München Basketball",
+"time": "2027-02-14T17:00:00Z",
+"comp": "BBL"
+},
+"2006757": {
+"home": "RASTA Vechta",
+"guest": "SKYLINERS",
+"time": "2027-02-05T19:00:00Z",
+"comp": "BBL"
+},
+"2006758": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-02-06T19:00:00Z",
+"comp": "BBL"
+},
+"2006759": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-02-06T17:30:00Z",
+"comp": "BBL"
+},
+"2006760": {
+"home": "Telekom Baskets Bonn",
+"guest": "NINERS Chemnitz",
+"time": "2027-02-06T19:00:00Z",
+"comp": "BBL"
+},
+"2006761": {
+"home": "ratiopharm ulm",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-02-06T17:30:00Z",
+"comp": "BBL"
+},
+"2006762": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "Science City Jena",
+"time": "2027-02-07T14:00:00Z",
+"comp": "BBL"
+},
+"2006763": {
+"home": "SYNTAINICS MBC",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-02-07T15:30:00Z",
+"comp": "BBL"
+},
+"2006764": {
+"home": "ALBA BERLIN",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-02-07T17:00:00Z",
+"comp": "BBL"
+},
+"2006765": {
+"home": "FC Bayern München Basketball",
+"guest": "Phoenix Hagen",
+"time": "2027-02-08T19:00:00Z",
+"comp": "BBL"
+},
+"2006766": {
+"home": "SYNTAINICS MBC",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-01-29T19:00:00Z",
+"comp": "BBL"
+},
+"2006767": {
+"home": "Telekom Baskets Bonn",
+"guest": "RASTA Vechta",
+"time": "2027-01-30T19:00:00Z",
+"comp": "BBL"
+},
+"2006768": {
+"home": "SKYLINERS",
+"guest": "NINERS Chemnitz",
+"time": "2027-01-30T17:30:00Z",
+"comp": "BBL"
+},
+"2006769": {
+"home": "Science City Jena",
+"guest": "ratiopharm ulm",
+"time": "2027-01-30T19:00:00Z",
+"comp": "BBL"
+},
+"2006770": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "ALBA BERLIN",
+"time": "2027-01-30T17:30:00Z",
+"comp": "BBL"
+},
+"2006771": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-01-30T17:30:00Z",
+"comp": "BBL"
+},
+"2006772": {
+"home": "Veolia Towers Hamburg",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-01-31T14:00:00Z",
+"comp": "BBL"
+},
+"2006773": {
+"home": "Phoenix Hagen",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-01-31T15:30:00Z",
+"comp": "BBL"
+},
+"2006774": {
+"home": "FC Bayern München Basketball",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-01-31T17:00:00Z",
+"comp": "BBL"
+},
+"2006775": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-01-22T17:30:00Z",
+"comp": "BBL"
+},
+"2006776": {
+"home": "EWE Baskets Oldenburg",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-01-23T19:00:00Z",
+"comp": "BBL"
+},
+"2006777": {
+"home": "RASTA Vechta",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-01-23T19:00:00Z",
+"comp": "BBL"
+},
+"2006778": {
+"home": "ratiopharm ulm",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-01-23T17:30:00Z",
+"comp": "BBL"
+},
+"2006779": {
+"home": "ALBA BERLIN",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-01-23T17:30:00Z",
+"comp": "BBL"
+},
+"2006780": {
+"home": "SKYLINERS",
+"guest": "SYNTAINICS MBC",
+"time": "2027-01-24T14:00:00Z",
+"comp": "BBL"
+},
+"2006781": {
+"home": "Science City Jena",
+"guest": "Phoenix Hagen",
+"time": "2027-01-24T14:00:00Z",
+"comp": "BBL"
+},
+"2006782": {
+"home": "NINERS Chemnitz",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-01-24T17:00:00Z",
+"comp": "BBL"
+},
+"2006783": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "FC Bayern München Basketball",
+"time": "2027-01-24T15:30:00Z",
+"comp": "BBL"
+},
+"2006784": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Science City Jena",
+"time": "2027-01-16T19:00:00Z",
+"comp": "BBL"
+},
+"2006785": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "SKYLINERS",
+"time": "2027-01-16T17:30:00Z",
+"comp": "BBL"
+},
+"2006786": {
+"home": "FC Bayern München Basketball",
+"guest": "RASTA Vechta",
+"time": "2027-01-17T14:00:00Z",
+"comp": "BBL"
+},
+"2006787": {
+"home": "NINERS Chemnitz",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-01-17T15:30:00Z",
+"comp": "BBL"
+},
+"2006788": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-01-17T14:00:00Z",
+"comp": "BBL"
+},
+"2006789": {
+"home": "Phoenix Hagen",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-01-17T17:00:00Z",
+"comp": "BBL"
+},
+"2006790": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "ALBA BERLIN",
+"time": "2027-01-18T17:30:00Z",
+"comp": "BBL"
+},
+"2006791": {
+"home": "Veolia Towers Hamburg",
+"guest": "ratiopharm ulm",
+"time": "2027-01-18T19:00:00Z",
+"comp": "BBL"
+},
+"2006792": {
+"home": "SYNTAINICS MBC",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-01-18T19:00:00Z",
+"comp": "BBL"
+},
+"2006793": {
+"home": "RASTA Vechta",
+"guest": "SYNTAINICS MBC",
+"time": "2027-01-08T19:00:00Z",
+"comp": "BBL"
+},
+"2006794": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-01-09T17:30:00Z",
+"comp": "BBL"
+},
+"2006795": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-01-09T17:30:00Z",
+"comp": "BBL"
+},
+"2006796": {
+"home": "Telekom Baskets Bonn",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-01-09T19:00:00Z",
+"comp": "BBL"
+},
+"2006797": {
+"home": "ratiopharm ulm",
+"guest": "NINERS Chemnitz",
+"time": "2027-01-10T15:30:00Z",
+"comp": "BBL"
+},
+"2006798": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "Science City Jena",
+"time": "2027-01-10T14:00:00Z",
+"comp": "BBL"
+},
+"2006799": {
+"home": "ALBA BERLIN",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-01-10T14:00:00Z",
+"comp": "BBL"
+},
+"2006800": {
+"home": "SKYLINERS",
+"guest": "FC Bayern München Basketball",
+"time": "2027-01-10T17:00:00Z",
+"comp": "BBL"
+},
+"2006801": {
+"home": "Phoenix Hagen",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-01-15T19:00:00Z",
+"comp": "BBL"
+},
+"2006802": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-01-02T17:30:00Z",
+"comp": "BBL"
+},
+"2006803": {
+"home": "NINERS Chemnitz",
+"guest": "SKYLINERS",
+"time": "2027-01-02T19:00:00Z",
+"comp": "BBL"
+},
+"2006804": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "RASTA Vechta",
+"time": "2027-01-02T17:30:00Z",
+"comp": "BBL"
+},
+"2006805": {
+"home": "Veolia Towers Hamburg",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-01-02T17:30:00Z",
+"comp": "BBL"
+},
+"2006806": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-01-02T19:00:00Z",
+"comp": "BBL"
+},
+"2006807": {
+"home": "SYNTAINICS MBC",
+"guest": "Phoenix Hagen",
+"time": "2027-01-03T14:00:00Z",
+"comp": "BBL"
+},
+"2006808": {
+"home": "FC Bayern München Basketball",
+"guest": "ratiopharm ulm",
+"time": "2027-01-02T14:00:00Z",
+"comp": "BBL"
+},
+"2006809": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-01-03T15:30:00Z",
+"comp": "BBL"
+},
+"2006810": {
+"home": "Science City Jena",
+"guest": "ALBA BERLIN",
+"time": "2027-01-03T17:00:00Z",
+"comp": "BBL"
+},
+"2006811": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "SKYLINERS",
+"time": "2026-12-26T17:30:00Z",
+"comp": "BBL"
+},
+"2006812": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-12-26T14:00:00Z",
+"comp": "BBL"
+},
+"2006813": {
+"home": "SYNTAINICS MBC",
+"guest": "NINERS Chemnitz",
+"time": "2026-12-26T19:00:00Z",
+"comp": "BBL"
+},
+"2006814": {
+"home": "RASTA Vechta",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-12-26T19:00:00Z",
+"comp": "BBL"
+},
+"2006815": {
+"home": "ratiopharm ulm",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-12-26T15:30:00Z",
+"comp": "BBL"
+},
+"2006816": {
+"home": "Phoenix Hagen",
+"guest": "FC Bayern München Basketball",
+"time": "2026-12-26T14:00:00Z",
+"comp": "BBL"
+},
+"2006817": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-12-27T17:00:00Z",
+"comp": "BBL"
+},
+"2006818": {
+"home": "Science City Jena",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-12-27T15:30:00Z",
+"comp": "BBL"
+},
+"2006819": {
+"home": "Veolia Towers Hamburg",
+"guest": "ALBA BERLIN",
+"time": "2026-12-27T14:00:00Z",
+"comp": "BBL"
+},
+"2006820": {
+"home": "Veolia Towers Hamburg",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-12-18T19:00:00Z",
+"comp": "BBL"
+},
+"2006821": {
+"home": "NINERS Chemnitz",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-12-19T17:30:00Z",
+"comp": "BBL"
+},
+"2006822": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Phoenix Hagen",
+"time": "2026-12-19T17:30:00Z",
+"comp": "BBL"
+},
+"2006823": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "SYNTAINICS MBC",
+"time": "2026-12-19T19:00:00Z",
+"comp": "BBL"
+},
+"2006824": {
+"home": "ALBA BERLIN",
+"guest": "RASTA Vechta",
+"time": "2026-12-20T15:30:00Z",
+"comp": "BBL"
+},
+"2006825": {
+"home": "Telekom Baskets Bonn",
+"guest": "SKYLINERS",
+"time": "2026-12-20T14:00:00Z",
+"comp": "BBL"
+},
+"2006826": {
+"home": "Science City Jena",
+"guest": "FC Bayern München Basketball",
+"time": "2026-12-20T14:00:00Z",
+"comp": "BBL"
+},
+"2006827": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "ratiopharm ulm",
+"time": "2026-12-20T17:00:00Z",
+"comp": "BBL"
+},
+"2006828": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-12-20T14:00:00Z",
+"comp": "BBL"
+},
+"2006829": {
+"home": "RASTA Vechta",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-12-05T19:00:00Z",
+"comp": "BBL"
+},
+"2006830": {
+"home": "NINERS Chemnitz",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-12-05T15:00:00Z",
+"comp": "BBL"
+},
+"2006831": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-12-05T17:30:00Z",
+"comp": "BBL"
+},
+"2006832": {
+"home": "SYNTAINICS MBC",
+"guest": "ALBA BERLIN",
+"time": "2026-12-06T14:00:00Z",
+"comp": "BBL"
+},
+"2006833": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "SKYLINERS",
+"time": "2026-12-06T15:30:00Z",
+"comp": "BBL"
+},
+"2006834": {
+"home": "FC Bayern München Basketball",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-12-06T17:00:00Z",
+"comp": "BBL"
+},
+"2006835": {
+"home": "EWE Baskets Oldenburg",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-12-06T14:00:00Z",
+"comp": "BBL"
+},
+"2006836": {
+"home": "Phoenix Hagen",
+"guest": "Science City Jena",
+"time": "2026-12-06T14:00:00Z",
+"comp": "BBL"
+},
+"2006837": {
+"home": "ratiopharm ulm",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-12-07T19:00:00Z",
+"comp": "BBL"
+},
+"2006838": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "RASTA Vechta",
+"time": "2026-11-20T19:00:00Z",
+"comp": "BBL"
+},
+"2006839": {
+"home": "Science City Jena",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-11-21T15:00:00Z",
+"comp": "BBL"
+},
+"2006840": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "NINERS Chemnitz",
+"time": "2026-11-21T19:00:00Z",
+"comp": "BBL"
+},
+"2006841": {
+"home": "EWE Baskets Oldenburg",
+"guest": "SKYLINERS",
+"time": "2026-11-21T19:00:00Z",
+"comp": "BBL"
+},
+"2006842": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-11-21T17:30:00Z",
+"comp": "BBL"
+},
+"2006843": {
+"home": "Telekom Baskets Bonn",
+"guest": "ratiopharm ulm",
+"time": "2026-11-22T14:00:00Z",
+"comp": "BBL"
+},
+"2006844": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "SYNTAINICS MBC",
+"time": "2026-11-22T15:30:00Z",
+"comp": "BBL"
+},
+"2006845": {
+"home": "ALBA BERLIN",
+"guest": "FC Bayern München Basketball",
+"time": "2026-11-22T17:00:00Z",
+"comp": "BBL"
+},
+"2006846": {
+"home": "Veolia Towers Hamburg",
+"guest": "Phoenix Hagen",
+"time": "2026-11-22T15:30:00Z",
+"comp": "BBL"
+},
+"2006847": {
+"home": "Phoenix Hagen",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-11-13T19:00:00Z",
+"comp": "BBL"
+},
+"2006848": {
+"home": "EWE Baskets Oldenburg",
+"guest": "ALBA BERLIN",
+"time": "2026-11-14T19:00:00Z",
+"comp": "BBL"
+},
+"2006849": {
+"home": "Veolia Towers Hamburg",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-11-14T19:00:00Z",
+"comp": "BBL"
+},
+"2006850": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-11-14T17:30:00Z",
+"comp": "BBL"
+},
+"2006851": {
+"home": "ratiopharm ulm",
+"guest": "Science City Jena",
+"time": "2026-11-14T17:30:00Z",
+"comp": "BBL"
+},
+"2006852": {
+"home": "SKYLINERS",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-11-15T14:00:00Z",
+"comp": "BBL"
+},
+"2006853": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "RASTA Vechta",
+"time": "2026-11-15T14:00:00Z",
+"comp": "BBL"
+},
+"2006854": {
+"home": "FC Bayern München Basketball",
+"guest": "SYNTAINICS MBC",
+"time": "2026-11-15T15:30:00Z",
+"comp": "BBL"
+},
+"2006855": {
+"home": "NINERS Chemnitz",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-11-15T17:00:00Z",
+"comp": "BBL"
+},
+"2006856": {
+"home": "RASTA Vechta",
+"guest": "NINERS Chemnitz",
+"time": "2026-11-07T19:00:00Z",
+"comp": "BBL"
+},
+"2006857": {
+"home": "ALBA BERLIN",
+"guest": "Phoenix Hagen",
+"time": "2026-11-06T19:00:00Z",
+"comp": "BBL"
+},
+"2006858": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "ratiopharm ulm",
+"time": "2026-11-07T17:30:00Z",
+"comp": "BBL"
+},
+"2006859": {
+"home": "Telekom Baskets Bonn",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-11-07T19:00:00Z",
+"comp": "BBL"
+},
+"2006860": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-11-07T17:30:00Z",
+"comp": "BBL"
+},
+"2006861": {
+"home": "SYNTAINICS MBC",
+"guest": "SKYLINERS",
+"time": "2026-11-08T14:00:00Z",
+"comp": "BBL"
+},
+"2006862": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "FC Bayern München Basketball",
+"time": "2026-11-08T17:00:00Z",
+"comp": "BBL"
+},
+"2006863": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-11-08T15:30:00Z",
+"comp": "BBL"
+},
+"2006864": {
+"home": "Science City Jena",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-11-09T19:00:00Z",
+"comp": "BBL"
+},
+"2006865": {
+"home": "EWE Baskets Oldenburg",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-10-23T18:00:00Z",
+"comp": "BBL"
+},
+"2006866": {
+"home": "SYNTAINICS MBC",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-10-24T16:30:00Z",
+"comp": "BBL"
+},
+"2006867": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-10-24T18:00:00Z",
+"comp": "BBL"
+},
+"2006868": {
+"home": "RASTA Vechta",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-10-24T18:00:00Z",
+"comp": "BBL"
+},
+"2006869": {
+"home": "Science City Jena",
+"guest": "SKYLINERS",
+"time": "2026-10-30T17:30:00Z",
+"comp": "BBL"
+},
+"2006870": {
+"home": "Phoenix Hagen",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-10-25T14:00:00Z",
+"comp": "BBL"
+},
+"2006872": {
+"home": "ALBA BERLIN",
+"guest": "ratiopharm ulm",
+"time": "2026-10-25T17:00:00Z",
+"comp": "BBL"
+},
+"2006873": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "NINERS Chemnitz",
+"time": "2026-10-26T19:00:00Z",
+"comp": "BBL"
+},
+"2006874": {
+"home": "Telekom Baskets Bonn",
+"guest": "Science City Jena",
+"time": "2026-10-09T18:00:01Z",
+"comp": "BBL"
+},
+"2006875": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "SYNTAINICS MBC",
+"time": "2026-10-10T16:30:00Z",
+"comp": "BBL"
+},
+"2006876": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "ALBA BERLIN",
+"time": "2026-10-10T18:00:00Z",
+"comp": "BBL"
+},
+"2006877": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Phoenix Hagen",
+"time": "2026-10-10T18:00:00Z",
+"comp": "BBL"
+},
+"2006878": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-10-10T16:30:00Z",
+"comp": "BBL"
+},
+"2006879": {
+"home": "RASTA Vechta",
+"guest": "ratiopharm ulm",
+"time": "2026-10-10T18:00:00Z",
+"comp": "BBL"
+},
+"2006880": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-10-11T13:00:00Z",
+"comp": "BBL"
+},
+"2006881": {
+"home": "SKYLINERS",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-10-11T14:30:00Z",
+"comp": "BBL"
+},
+"2006882": {
+"home": "NINERS Chemnitz",
+"guest": "FC Bayern München Basketball",
+"time": "2026-10-10T14:00:00Z",
+"comp": "BBL"
+},
+"2006883": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-10-02T18:00:00Z",
+"comp": "BBL"
+},
+"2006884": {
+"home": "ALBA BERLIN",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-10-03T16:30:00Z",
+"comp": "BBL"
+},
+"2006885": {
+"home": "SYNTAINICS MBC",
+"guest": "ratiopharm ulm",
+"time": "2026-10-03T18:00:00Z",
+"comp": "BBL"
+},
+"2006886": {
+"home": "Veolia Towers Hamburg",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-10-03T14:30:00Z",
+"comp": "BBL"
+},
+"2006887": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-10-04T16:00:00Z",
+"comp": "BBL"
+},
+"2006888": {
+"home": "FC Bayern München Basketball",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-10-04T13:00:00Z",
+"comp": "BBL"
+},
+"2006889": {
+"home": "Phoenix Hagen",
+"guest": "SKYLINERS",
+"time": "2026-10-04T13:00:00Z",
+"comp": "BBL"
+},
+"2006890": {
+"home": "Science City Jena",
+"guest": "NINERS Chemnitz",
+"time": "2026-10-04T14:30:00Z",
+"comp": "BBL"
+},
+"2006891": {
+"home": "RASTA Vechta",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-10-05T18:00:00Z",
+"comp": "BBL"
+},
+"2006892": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "FC Bayern München Basketball",
+"time": "2027-01-04T19:00:00Z",
+"comp": "BBL"
+},
+"2006893": {
+"home": "Phoenix Hagen",
+"guest": "RASTA Vechta",
+"time": "2026-10-30T19:00:00Z",
+"comp": "BBL"
+},
+"2006894": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-10-31T17:30:00Z",
+"comp": "BBL"
+},
+"2006895": {
+"home": "NINERS Chemnitz",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-10-31T19:00:00Z",
+"comp": "BBL"
+},
+"2006896": {
+"home": "ratiopharm ulm",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-10-31T17:30:00Z",
+"comp": "BBL"
+},
+"2006897": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Science City Jena",
+"time": "2026-11-01T14:00:00Z",
+"comp": "BBL"
+},
+"2006898": {
+"home": "Veolia Towers Hamburg",
+"guest": "SYNTAINICS MBC",
+"time": "2026-11-01T15:30:00Z",
+"comp": "BBL"
+},
+"2006899": {
+"home": "Telekom Baskets Bonn",
+"guest": "ALBA BERLIN",
+"time": "2026-11-01T17:00:00Z",
+"comp": "BBL"
+},
+"2006900": {
+"home": "SKYLINERS",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-01-20T19:00:00Z",
+"comp": "BBL"
+},
+"2006901": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-09-26T18:00:00Z",
+"comp": "BBL"
+},
+"2006902": {
+"home": "SKYLINERS",
+"guest": "RASTA Vechta",
+"time": "2026-09-26T16:30:00Z",
+"comp": "BBL"
+},
+"2006903": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Science City Jena",
+"time": "2026-09-27T13:00:00Z",
+"comp": "BBL"
+},
+"2006904": {
+"home": "Telekom Baskets Bonn",
+"guest": "SYNTAINICS MBC",
+"time": "2026-09-27T13:00:00Z",
+"comp": "BBL"
+},
+"2006905": {
+"home": "NINERS Chemnitz",
+"guest": "Phoenix Hagen",
+"time": "2026-09-27T14:30:00Z",
+"comp": "BBL"
+},
+"2006906": {
+"home": "ratiopharm ulm",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-09-27T16:00:00Z",
+"comp": "BBL"
+},
+"2006907": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-09-27T14:30:00Z",
+"comp": "BBL"
+},
+"2006908": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "FC Bayern München Basketball",
+"time": "2026-11-01T14:00:00Z",
+"comp": "BBL"
+},
+"2006909": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "ALBA BERLIN",
+"time": "2026-12-16T19:00:00Z",
+"comp": "BBL"
+},
+"2006910": {
+"home": "FC Bayern München Basketball",
+"guest": "ALBA BERLIN",
+"time": "2026-09-26T13:40:00Z",
+"comp": "BBL"
+},
+"2006911": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-03-04T19:00:00Z",
+"comp": "BBL"
+},
+"2006912": {
+"home": "ratiopharm ulm",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-03-04T17:30:00Z",
+"comp": "BBL"
+},
+"2006913": {
+"home": "Telekom Baskets Bonn",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-03-04T19:00:00Z",
+"comp": "BBL"
+},
+"2006914": {
+"home": "NINERS Chemnitz",
+"guest": "Science City Jena",
+"time": "2027-03-04T17:30:00Z",
+"comp": "BBL"
+},
+"2006915": {
+"home": "SYNTAINICS MBC",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-03-05T19:00:00Z",
+"comp": "BBL"
+},
+"2006916": {
+"home": "Phoenix Hagen",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-03-05T17:30:00Z",
+"comp": "BBL"
+},
+"2006917": {
+"home": "RASTA Vechta",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-03-08T19:00:00Z",
+"comp": "BBL"
+},
+"2006918": {
+"home": "SKYLINERS",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-03-29T13:00:00Z",
+"comp": "BBL"
+},
+"2006919": {
+"home": "SKYLINERS",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2026-12-03T17:30:00Z",
+"comp": "BBL"
+},
+"2006920": {
+"home": "ALBA BERLIN",
+"guest": "NINERS Chemnitz",
+"time": "2026-09-18T18:00:00Z",
+"comp": "BBL"
+},
+"2006921": {
+"home": "Telekom Baskets Bonn",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-09-19T18:00:00Z",
+"comp": "BBL"
+},
+"2006922": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "Phoenix Hagen",
+"time": "2026-09-19T16:30:00Z",
+"comp": "BBL"
+},
+"2006923": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-09-19T16:30:00Z",
+"comp": "BBL"
+},
+"2006924": {
+"home": "EWE Baskets Oldenburg",
+"guest": "SYNTAINICS MBC",
+"time": "2026-09-20T13:00:00Z",
+"comp": "BBL"
+},
+"2006925": {
+"home": "ratiopharm ulm",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-09-20T14:30:00Z",
+"comp": "BBL"
+},
+"2006926": {
+"home": "FC Bayern München Basketball",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-09-20T16:00:00Z",
+"comp": "BBL"
+},
+"2006927": {
+"home": "Science City Jena",
+"guest": "RASTA Vechta",
+"time": "2026-10-01T18:00:00Z",
+"comp": "BBL"
+},
+"2006928": {
+"home": "FC Bayern München Basketball",
+"guest": "SKYLINERS",
+"time": null,
+"comp": "BBL"
+},
+"2006929": {
+"home": "Science City Jena",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-04-16T18:00:00Z",
+"comp": "BBL"
+},
+"2006930": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "ratiopharm ulm",
+"time": "2027-04-17T18:00:00Z",
+"comp": "BBL"
+},
+"2006931": {
+"home": "Phoenix Hagen",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-04-17T16:30:00Z",
+"comp": "BBL"
+},
+"2006932": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-04-17T16:30:00Z",
+"comp": "BBL"
+},
+"2006933": {
+"home": "NINERS Chemnitz",
+"guest": "ALBA BERLIN",
+"time": "2027-04-18T13:00:00Z",
+"comp": "BBL"
+},
+"2006934": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-04-18T13:00:00Z",
+"comp": "BBL"
+},
+"2006935": {
+"home": "SYNTAINICS MBC",
+"guest": "RASTA Vechta",
+"time": "2027-04-18T13:00:00Z",
+"comp": "BBL"
+},
+"2006936": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-04-19T18:00:00Z",
+"comp": "BBL"
+},
+"2006937": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Phoenix Hagen",
+"time": "2027-04-09T18:00:00Z",
+"comp": "BBL"
+},
+"2006938": {
+"home": "ratiopharm ulm",
+"guest": "SKYLINERS",
+"time": "2027-04-10T16:30:00Z",
+"comp": "BBL"
+},
+"2006939": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-04-10T16:30:00Z",
+"comp": "BBL"
+},
+"2006940": {
+"home": "SYNTAINICS MBC",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-04-10T18:00:00Z",
+"comp": "BBL"
+},
+"2006941": {
+"home": "RASTA Vechta",
+"guest": "Science City Jena",
+"time": "2027-04-10T18:00:00Z",
+"comp": "BBL"
+},
+"2006942": {
+"home": "Veolia Towers Hamburg",
+"guest": "FC Bayern München Basketball",
+"time": "2027-04-11T16:00:00Z",
+"comp": "BBL"
+},
+"2006943": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "NINERS Chemnitz",
+"time": "2027-04-11T13:00:00Z",
+"comp": "BBL"
+},
+"2006944": {
+"home": "ALBA BERLIN",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-04-11T13:00:00Z",
+"comp": "BBL"
+},
+"2006945": {
+"home": "Telekom Baskets Bonn",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-04-12T18:00:00Z",
+"comp": "BBL"
+},
+"2006946": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-04-02T18:00:00Z",
+"comp": "BBL"
+},
+"2006947": {
+"home": "EWE Baskets Oldenburg",
+"guest": "ratiopharm ulm",
+"time": "2027-04-03T18:00:00Z",
+"comp": "BBL"
+},
+"2006948": {
+"home": "Science City Jena",
+"guest": "SYNTAINICS MBC",
+"time": "2027-04-03T16:30:00Z",
+"comp": "BBL"
+},
+"2006949": {
+"home": "SKYLINERS",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-04-03T16:30:00Z",
+"comp": "BBL"
+},
+"2006950": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-04-03T18:00:00Z",
+"comp": "BBL"
+},
+"2006951": {
+"home": "Phoenix Hagen",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-04-04T13:00:00Z",
+"comp": "BBL"
+},
+"2006952": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "ALBA BERLIN",
+"time": "2027-04-04T13:00:00Z",
+"comp": "BBL"
+},
+"2006953": {
+"home": "NINERS Chemnitz",
+"guest": "RASTA Vechta",
+"time": "2027-04-05T18:00:00Z",
+"comp": "BBL"
+},
+"2006954": {
+"home": "FC Bayern München Basketball",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-04-13T18:00:00Z",
+"comp": "BBL"
+},
+"2006955": {
+"home": "FC Bayern München Basketball",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2026-12-28T19:00:00Z",
+"comp": "BBL"
+},
+"2006956": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "SYNTAINICS MBC",
+"time": "2026-12-29T17:30:00Z",
+"comp": "BBL"
+},
+"2006957": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "Science City Jena",
+"time": "2026-12-29T19:00:00Z",
+"comp": "BBL"
+},
+"2006958": {
+"home": "Telekom Baskets Bonn",
+"guest": "Phoenix Hagen",
+"time": "2026-12-30T19:00:00Z",
+"comp": "BBL"
+},
+"2006959": {
+"home": "RASTA Vechta",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-12-30T19:00:00Z",
+"comp": "BBL"
+},
+"2006960": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "Veolia Towers Hamburg",
+"time": "2026-12-30T17:30:00Z",
+"comp": "BBL"
+},
+"2006961": {
+"home": "ALBA BERLIN",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-12-31T13:00:00Z",
+"comp": "BBL"
+},
+"2006962": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "NINERS Chemnitz",
+"time": "2027-01-22T19:00:00Z",
+"comp": "BBL"
+},
+"2006963": {
+"home": "SKYLINERS",
+"guest": "ratiopharm ulm",
+"time": "2027-01-27T19:00:00Z",
+"comp": "BBL"
+},
+"2006964": {
+"home": "FC Bayern München Basketball",
+"guest": "NINERS Chemnitz",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006965": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "RASTA Vechta",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006966": {
+"home": "Phoenix Hagen",
+"guest": "ALBA BERLIN",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006967": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "ratiopharm ulm",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006968": {
+"home": "SYNTAINICS MBC",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006969": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "SKYLINERS",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006970": {
+"home": "Veolia Towers Hamburg",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006971": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006972": {
+"home": "Science City Jena",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-05-09T13:00:00Z",
+"comp": "BBL"
+},
+"2006973": {
+"home": "NINERS Chemnitz",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-05-05T16:30:00Z",
+"comp": "BBL"
+},
+"2006974": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Science City Jena",
+"time": "2027-05-05T18:00:00Z",
+"comp": "BBL"
+},
+"2006975": {
+"home": "RASTA Vechta",
+"guest": "FC Bayern München Basketball",
+"time": "2027-05-05T18:00:00Z",
+"comp": "BBL"
+},
+"2006976": {
+"home": "Telekom Baskets Bonn",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-05-05T18:00:00Z",
+"comp": "BBL"
+},
+"2006977": {
+"home": "ratiopharm ulm",
+"guest": "SYNTAINICS MBC",
+"time": "2027-05-05T16:30:00Z",
+"comp": "BBL"
+},
+"2006978": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Phoenix Hagen",
+"time": "2027-05-06T13:00:00Z",
+"comp": "BBL"
+},
+"2006979": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-05-06T16:00:00Z",
+"comp": "BBL"
+},
+"2006980": {
+"home": "ALBA BERLIN",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-05-06T14:30:00Z",
+"comp": "BBL"
+},
+"2006981": {
+"home": "SKYLINERS",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-05-06T13:00:00Z",
+"comp": "BBL"
+},
+"2006982": {
+"home": "ratiopharm ulm",
+"guest": "FC Bayern München Basketball",
+"time": "2027-04-30T18:00:00Z",
+"comp": "BBL"
+},
+"2006983": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-05-01T16:30:00Z",
+"comp": "BBL"
+},
+"2006984": {
+"home": "SYNTAINICS MBC",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-05-01T18:00:00Z",
+"comp": "BBL"
+},
+"2006985": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-05-01T18:00:00Z",
+"comp": "BBL"
+},
+"2006986": {
+"home": "Science City Jena",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-05-01T16:30:00Z",
+"comp": "BBL"
+},
+"2006987": {
+"home": "Phoenix Hagen",
+"guest": "NINERS Chemnitz",
+"time": "2027-05-02T13:00:00Z",
+"comp": "BBL"
+},
+"2006988": {
+"home": "EWE Baskets Oldenburg",
+"guest": "RASTA Vechta",
+"time": "2027-05-02T13:00:00Z",
+"comp": "BBL"
+},
+"2006989": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "ALBA BERLIN",
+"time": "2027-05-02T13:00:00Z",
+"comp": "BBL"
+},
+"2006990": {
+"home": "Veolia Towers Hamburg",
+"guest": "SKYLINERS",
+"time": "2027-05-02T13:00:00Z",
+"comp": "BBL"
+},
+"2006991": {
+"home": "ALBA BERLIN",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-04-23T18:00:00Z",
+"comp": "BBL"
+},
+"2006992": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-04-24T16:30:00Z",
+"comp": "BBL"
+},
+"2006993": {
+"home": "RASTA Vechta",
+"guest": "Phoenix Hagen",
+"time": "2027-04-24T18:00:00Z",
+"comp": "BBL"
+},
+"2006994": {
+"home": "ratiopharm ulm",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2027-04-24T16:30:00Z",
+"comp": "BBL"
+},
+"2006995": {
+"home": "Telekom Baskets Bonn",
+"guest": "FC Bayern München Basketball",
+"time": "2027-04-25T13:00:00Z",
+"comp": "BBL"
+},
+"2006996": {
+"home": "SKYLINERS",
+"guest": "Science City Jena",
+"time": "2027-04-25T13:00:00Z",
+"comp": "BBL"
+},
+"2006997": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-04-25T13:00:00Z",
+"comp": "BBL"
+},
+"2006998": {
+"home": "NINERS Chemnitz",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-04-25T13:00:00Z",
+"comp": "BBL"
+},
+"2006999": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "SYNTAINICS MBC",
+"time": "2027-04-26T18:00:00Z",
+"comp": "BBL"
+},
+"2007000": {
+"home": "RASTA Vechta",
+"guest": "Fitness First Würzburg Baskets",
+"time": "2027-03-12T19:00:00Z",
+"comp": "BBL"
+},
+"2007001": {
+"home": "ratiopharm ulm",
+"guest": "ALBA BERLIN",
+"time": "2027-03-13T17:30:00Z",
+"comp": "BBL"
+},
+"2007002": {
+"home": "Science City Jena",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2027-03-13T17:30:00Z",
+"comp": "BBL"
+},
+"2007003": {
+"home": "SYNTAINICS MBC",
+"guest": "Veolia Towers Hamburg",
+"time": "2027-03-13T19:00:00Z",
+"comp": "BBL"
+},
+"2007004": {
+"home": "Telekom Baskets Bonn",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2027-03-13T19:00:00Z",
+"comp": "BBL"
+},
+"2007005": {
+"home": "FC Bayern München Basketball",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-03-14T14:00:00Z",
+"comp": "BBL"
+},
+"2007006": {
+"home": "EWE Baskets Oldenburg",
+"guest": "NINERS Chemnitz",
+"time": "2027-03-14T14:00:00Z",
+"comp": "BBL"
+},
+"2007007": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "MHP RIESEN Ludwigsburg",
+"time": "2027-03-14T14:00:00Z",
+"comp": "BBL"
+},
+"2007008": {
+"home": "SKYLINERS",
+"guest": "Phoenix Hagen",
+"time": "2027-03-14T14:00:00Z",
+"comp": "BBL"
+},
+"2007009": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-09-27T13:00:00Z",
+"comp": "BBL"
+},
+"2007010": {
+"home": "ALBA BERLIN",
+"guest": "Science City Jena",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007011": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "RASTA Vechta",
+"time": "2027-03-06T17:30:00Z",
+"comp": "BBL"
+},
+"2007012": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "ratiopharm ulm",
+"time": "2027-03-06T17:30:00Z",
+"comp": "BBL"
+},
+"2007013": {
+"home": "NINERS Chemnitz",
+"guest": "SYNTAINICS MBC",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007014": {
+"home": "EWE Baskets Oldenburg",
+"guest": "FC Bayern München Basketball",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007015": {
+"home": "Veolia Towers Hamburg",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007016": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "Phoenix Hagen",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007017": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "SKYLINERS",
+"time": "2027-03-07T14:00:00Z",
+"comp": "BBL"
+},
+"2007018": {
+"home": "ratiopharm ulm",
+"guest": "RASTA Vechta",
+"time": "2027-02-17T17:30:00Z",
+"comp": "BBL"
+},
+"2007019": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "Phoenix Hagen",
+"time": "2027-02-17T17:30:00Z",
+"comp": "BBL"
+},
+"2007020": {
+"home": "Veolia Towers Hamburg",
+"guest": "EWE Baskets Oldenburg",
+"time": "2027-02-17T19:00:00Z",
+"comp": "BBL"
+},
+"2007021": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "NINERS Chemnitz",
+"time": "2027-02-17T19:00:00Z",
+"comp": "BBL"
+},
+"2007022": {
+"home": "ALBA BERLIN",
+"guest": "Telekom Baskets Bonn",
+"time": "2027-02-17T19:00:00Z",
+"comp": "BBL"
+},
+"2007023": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "SKYLINERS",
+"time": "2027-02-17T19:00:00Z",
+"comp": "BBL"
+},
+"2007024": {
+"home": "ROSTOCK SEAWOLVES",
+"guest": "SYNTAINICS MBC",
+"time": "2027-02-17T17:30:00Z",
+"comp": "BBL"
+},
+"2007025": {
+"home": "BMA365 Bamberg Baskets",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2027-02-17T17:30:00Z",
+"comp": "BBL"
+},
+"2007026": {
+"home": "FC Bayern München Basketball",
+"guest": "Science City Jena",
+"time": "2027-02-17T19:00:00Z",
+"comp": "BBL"
+},
+"2007027": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "ROSTOCK SEAWOLVES",
+"time": "2026-09-24T16:30:00Z",
+"comp": "BBL"
+},
+"2007028": {
+"home": "RASTA Vechta",
+"guest": "BMA365 Bamberg Baskets",
+"time": "2026-09-24T18:00:00Z",
+"comp": "BBL"
+},
+"2007029": {
+"home": "ALBA BERLIN",
+"guest": "SKYLINERS",
+"time": "2026-09-24T16:30:00Z",
+"comp": "BBL"
+},
+"2007030": {
+"home": "Phoenix Hagen",
+"guest": "ratiopharm ulm",
+"time": "2026-09-25T16:30:00Z",
+"comp": "BBL"
+},
+"2007031": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "EWE Baskets Oldenburg",
+"time": "2026-09-25T18:00:00Z",
+"comp": "BBL"
+},
+"2007032": {
+"home": "SYNTAINICS MBC",
+"guest": "Science City Jena",
+"time": "2026-09-25T18:00:00Z",
+"comp": "BBL"
+},
+"2007033": {
+"home": "Veolia Towers Hamburg",
+"guest": "NINERS Chemnitz",
+"time": "2026-09-25T18:00:00Z",
+"comp": "BBL"
+},
+"2007034": {
+"home": "VET-CONCEPT Gladiators Trier",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-09-25T16:30:00Z",
+"comp": "BBL"
+},
+"2007035": {
+"home": "FC Bayern München Basketball",
+"guest": "Basketball Löwen Braunschweig",
+"time": "2026-11-03T19:00:00Z",
+"comp": "BBL"
+},
+"2007036": {
+"home": "Fitness First Würzburg Baskets",
+"guest": "SYNTAINICS MBC",
+"time": "2026-10-18T13:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007037": {
+"home": "SKYLINERS",
+"guest": "VET-CONCEPT Gladiators Trier",
+"time": "2026-10-18T14:30:00Z",
+"comp": "BBL_CUP"
+},
+"2007038": {
+"home": "ratiopharm ulm",
+"guest": "Phoenix Hagen",
+"time": "2026-10-17T18:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007039": {
+"home": "MHP RIESEN Ludwigsburg",
+"guest": "RASTA Vechta",
+"time": "2026-10-18T14:30:00Z",
+"comp": "BBL_CUP"
+},
+"2007040": {
+"home": "EWE Baskets Oldenburg",
+"guest": "Telekom Baskets Bonn",
+"time": "2026-10-16T18:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007042": {
+"home": "Basketball Löwen Braunschweig",
+"guest": "NINERS Chemnitz",
+"time": "2026-10-18T13:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007060": {
+"home": null,
+"guest": "Oldenburger TB",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007061": {
+"home": "Neuköllner SF",
+"guest": "SSV Hagen",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007062": {
+"home": null,
+"guest": "MTV Wolfenbüttel",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007063": {
+"home": null,
+"guest": null,
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007064": {
+"home": "TV Grafenberg",
+"guest": "ATV Düsseldorf",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007065": {
+"home": null,
+"guest": "TuSa Düsseldorf",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007066": {
+"home": null,
+"guest": null,
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007067": {
+"home": null,
+"guest": "VfL Osnabrück",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007068": {
+"home": "Post Koblenz",
+"guest": "SpVgg 07 Ludwigsburg",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007069": {
+"home": null,
+"guest": "Eintracht Frankfurt",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007070": {
+"home": "Heidelberger TV",
+"guest": "USC Heidelberg",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007071": {
+"home": "Schwaben Augsburg",
+"guest": "BC Darmstadt",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007072": {
+"home": null,
+"guest": null,
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007073": {
+"home": "USC München",
+"guest": "Bayern München",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007074": {
+"home": "USC Mainz",
+"guest": "1860 München",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007075": {
+"home": "Grün-Weiß Frankfurt",
+"guest": "MTV Gießen",
+"time": "1968-05-04T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007076": {
+"home": null,
+"guest": "ATV Düsseldorf",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007077": {
+"home": "SSV Hagen",
+"guest": "TuSa Düsseldorf",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007078": {
+"home": null,
+"guest": "MTV Wolfenbüttel",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007079": {
+"home": null,
+"guest": "VfL Osnabrück",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007080": {
+"home": "Post Koblenz",
+"guest": "Eintracht Frankfurt",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007081": {
+"home": "USC Heidelberg",
+"guest": "BC Darmstadt",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007082": {
+"home": null,
+"guest": "Bayern München",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007083": {
+"home": "USC Mainz",
+"guest": "Grün-Weiß Frankfurt",
+"time": "1968-05-11T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007084": {
+"home": "TuS 04 Leverkusen",
+"guest": "Oldenburger TB",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007085": {
+"home": null,
+"guest": "TV Grafenberg",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007086": {
+"home": null,
+"guest": "ATV Düsseldorf",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007087": {
+"home": null,
+"guest": "MTV Wolfenbüttel",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007088": {
+"home": null,
+"guest": "St. Georg Hamburg",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007089": {
+"home": null,
+"guest": "TuSA Düsseldorf",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007090": {
+"home": null,
+"guest": "VfL Osnabrück",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007091": {
+"home": "SSV Hagen",
+"guest": "NSF Berlin",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007092": {
+"home": "VfH München/Pasing Süd",
+"guest": "TG Würzburg",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007093": {
+"home": "USC Mainz",
+"guest": "USC Heidelberg",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007094": {
+"home": null,
+"guest": "BC Darmstadt",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007095": {
+"home": "CVJM Ludwigshafen",
+"guest": "USC München",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007096": {
+"home": null,
+"guest": "Heidelberger TV",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007097": {
+"home": "Bayern München",
+"guest": "Grün-Weiß Frankfurt",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007098": {
+"home": null,
+"guest": "Eintracht Frankfurt",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007099": {
+"home": null,
+"guest": "MTV Gießen",
+"time": "1969-04-26T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007100": {
+"home": "SSV Hagen",
+"guest": "MTV Wolfenbüttel",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007101": {
+"home": null,
+"guest": "ATV Düsseldorf",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007102": {
+"home": "TV Grafenberg",
+"guest": "TuS 04 Leverkusen",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007103": {
+"home": null,
+"guest": "VfL Osnabrück",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007104": {
+"home": null,
+"guest": "USC München",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007105": {
+"home": "Heidelberger TV",
+"guest": "Bayern München",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007106": {
+"home": "VfH München/Pasing Süd",
+"guest": "USC Mainz",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007107": {
+"home": "BC Darmstadt",
+"guest": "MTV Gießen",
+"time": "1969-05-03T00:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007108": {
+"home": "ATV Düsseldorf",
+"guest": "USC Münster",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007109": {
+"home": null,
+"guest": "ASV Köln",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007110": {
+"home": "ASC Gelsenkirchen",
+"guest": "TuS 04 Leverkusen",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007111": {
+"home": "Oldenburger TB",
+"guest": "MTV Wolfenbüttel",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007112": {
+"home": null,
+"guest": "VfL Osnabrück",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007113": {
+"home": "BSV 92 Berlin",
+"guest": "St. Georg Hamburg",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007114": {
+"home": "VfB Koblenz-Lützel",
+"guest": "Kirchheimbolanden",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007115": {
+"home": "USC Mainz",
+"guest": null,
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007116": {
+"home": "Heidelberger TV",
+"guest": "USC Heidelberg",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007117": {
+"home": null,
+"guest": "MTV Gießen",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007118": {
+"home": "Heidelberger TV",
+"guest": "Grün-Weiß Frankfurt",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007119": {
+"home": null,
+"guest": "USC München",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007120": {
+"home": null,
+"guest": "TSV München 1860",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007121": {
+"home": null,
+"guest": "FC Bayern München",
+"time": "1970-04-21T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007122": {
+"home": "SSV Hagen",
+"guest": null,
+"time": "1970-04-22T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007123": {
+"home": "MTV Gießen",
+"guest": "USC München",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007124": {
+"home": "TuS 04 Leverkusen",
+"guest": "Oldenburger TB",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007125": {
+"home": "ASV Köln",
+"guest": "VfL Osnabrück",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007126": {
+"home": "SSV Hagen",
+"guest": "BSV 92 Berlin",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007127": {
+"home": "PSV Berlin",
+"guest": "ATV Düsseldorf",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007128": {
+"home": null,
+"guest": "Kirchheimbolanden",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007129": {
+"home": "USC Heidelberg",
+"guest": "USC Mainz",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007130": {
+"home": "Grün-Weiß Frankfurt",
+"guest": "TSV München 1860",
+"time": "1970-05-09T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007131": {
+"home": "TuS Hilden",
+"guest": "St. Georg Hamburg",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007132": {
+"home": null,
+"guest": "ASV Köln",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007133": {
+"home": "TSV Hagen 1860",
+"guest": "BSV 92 Berlin",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007134": {
+"home": "TG Dortmund",
+"guest": "Bremer BC",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007135": {
+"home": null,
+"guest": "SSC Göttingen",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007136": {
+"home": "LBV Phönix Lübeck",
+"guest": "TV Grafenberg",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007137": {
+"home": null,
+"guest": "TB Oldenburg",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007138": {
+"home": null,
+"guest": "Eurovia Buer",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007139": {
+"home": "CVJM Worms",
+"guest": "SG Böwe Augsburg",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007140": {
+"home": null,
+"guest": null,
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007141": {
+"home": "VSC Donauwörth",
+"guest": null,
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007142": {
+"home": "TV Eppelheim",
+"guest": "1860 München",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007143": {
+"home": null,
+"guest": "OSC Höchst",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007144": {
+"home": "1. FC Bamberg",
+"guest": "Grün-Weiß Frankfurt",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007145": {
+"home": "SV Degerloch",
+"guest": "USC Mainz",
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007146": {
+"home": null,
+"guest": null,
+"time": "1971-04-02T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007147": {
+"home": "Bremer BC",
+"guest": null,
+"time": "1971-04-16T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007148": {
+"home": "TuS Hilden",
+"guest": "TV Grafenberg",
+"time": "1971-04-16T23:00:00Z",
+"comp": "BBL_CUP"
+},
+"2007149": {
+"home": null,
+"guest": null,
+"time": "1971-04-16T23:00:00Z",
+"comp": "BBL_CUP"
+}
+}

@@ -306,6 +306,12 @@ def feed_for(row):
     if f.startswith('feb:'):
         import sources
         return 'FEB Live', lambda: sources.read_feb(f.split(':', 1)[1], row)
+    if f.startswith('bbl:'):
+        import sources
+        return 'easyCredit BBL', lambda: sources.read_bbl(f.split(':', 1)[1], row)
+    if f.startswith('bcl:'):
+        import sources
+        return 'FIBA (championsleague.basketball)', lambda: sources.read_bcl(f.split(':', 1)[1], row)
     if f.startswith('lba:'):
         import sources
         return 'LBA (legabasket.it)', lambda: sources.read_lba(f.split(':', 1)[1], row)

@@ -2,6 +2,8 @@
 More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and EuroLeague are in update.py):
   ACB (Liga Endesa)          live_feed "acb:<match id>"   page live.acb.com/es/partidos/x-<id>/estadisticas
   FEB (Primera / Segunda)    live_feed "feb:<match id>"   page baloncestoenvivo.feb.es/partido/<id>
+  BBL (Germany)              live_feed "bbl:<game id>"    page easycredit-bbl.de/spiele/<id> (its embedded game JSON)
+  BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
   LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
   LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
 Each reader returns the same shape as the other feeds: {period, clock, done, teams: [{name, score, pl: [...]}]}.
@@ -75,6 +77,124 @@ def read_acb(mid):
     return dict(period=int(q.group(1)) if q else (4 if 'Final' in status else 1),
                 clock=f'{int(clk.group(1)):02d}:{clk.group(2)}' if clk else '00:00',
                 done='Final' in status, teams=teams)
+
+
+# ------------------------------------------------------------------ BBL
+def _bbl_page(gid):
+    import json
+    t = page(f'https://www.easycredit-bbl.de/spiele/{gid}').replace('\\"', '"').replace('\\\\', '\\')
+    dec = json.JSONDecoder()
+    i = t.find('"initialGameData":')
+    if i < 0:
+        raise LookupError('no game data on the BBL page')
+    head, _ = dec.raw_decode(t[i + len('"initialGameData":'):])
+    sides = {}
+    for side in ('homeTeam', 'guestTeam'):
+        m = re.search(r'"' + side + r'":\{"id":"\d+","headCoachName"', t)
+        sides[side] = dec.raw_decode(t[m.start() + len(side) + 3:])[0] if m else {}
+    return head, sides
+
+
+def read_bbl(gid, row=None):
+    head, sides = _bbl_page(gid)
+    res = head.get('result') or {}
+    teams = []
+    for side, key in (('homeTeam', 'homeTeamFinalScore'), ('guestTeam', 'guestTeamFinalScore')):
+        pl = []
+        for p in (sides.get(side) or {}).get('playerStats') or []:
+            sp = p.get('seasonPlayer') or {}
+            g = lambda k: p.get(k) or 0
+            pl.append(dict(name=' '.join(f"{sp.get('firstName', '')} {sp.get('lastName', '')}".split()), min=int(g('secondsPlayed')) // 60,
+                           pts=g('points'), reb=g('totalRebounds'), ast=g('assists'), stl=g('steals'), blk=g('blocks'), tov=g('turnovers'),
+                           fgm=g('fieldGoalsMade'), fga=g('fieldGoalsAttempted'), tpm=g('threePointShotsMade'), tpa=g('threePointShotsAttempted'),
+                           ftm=g('freeThrowsMade'), fta=g('freeThrowsAttempted'), pm=p.get('plusMinus') if p.get('plusMinus') is not None else '',
+                           pf=g('foulsCommitted'), oreb=g('offensiveRebounds'), dreb=g('defensiveRebounds'), starter=bool(p.get('isStartingFive'))))
+        teams.append(dict(name=(head.get(side) or {}).get('name', ''), score=int(res.get(key) or 0), pl=pl))
+    status = str(head.get('status') or '').upper()
+    prog = str(head.get('gameProgress') or '')
+    per = str(res.get('latestPeriod') or 'Q1')
+    pn = int(re.sub(r'\D', '', per) or 1) + (4 if per.startswith('OT') else 0)
+    done = status in ('OFFICIAL', 'ENDED', 'FINISHED') or prog == 'E'
+    started = done or status in ('LIVE', 'RUNNING', 'STARTED') or any(t['score'] for t in teams)
+    clk = str(head.get('gameTime') or '')
+    m = re.search(r'(\d{1,2}):(\d{2})(?::(\d{2}))?$', clk)
+    clock = '00:00' if done else (f'{int(m.group(2)) if m.group(3) else int(m.group(1)):02d}:{m.group(3) or m.group(2)}' if m else '')
+    return dict(period=4 if done and pn < 4 else pn, clock=clock, done=done, notstarted=not started, teams=teams)
+
+
+def find_bbl(row, seed=None):
+    """BBL game ids are not in date order (the whole season is created at once), so use the id table in
+    data/_bbl_ids.json ({id: {home, guest, time}}, built once from the league's game pages) and check the page itself."""
+    import json
+    import os
+    path = os.path.join(U.DATA, '_bbl_ids.json')
+    table = json.load(open(path, encoding='utf-8')) if os.path.exists(path) else {}
+    day = dt.date.fromisoformat(row['date'])
+    for gid, g in sorted(table.items()):
+        names = f"{g.get('home') or ''} {g.get('guest') or ''}"
+        when = str(g.get('time') or '')[:10]
+        if not when or not (words(row.get('team', '')) & words(names) and words(row.get('opponent', '')) & words(names)):
+            continue
+        if abs((dt.date.fromisoformat(when) - day).days) <= 1:
+            try:
+                head, _ = _bbl_page(gid)
+            except Exception:
+                continue
+            n2 = f"{(head.get('homeTeam') or {}).get('name', '')} {(head.get('guestTeam') or {}).get('name', '')}"
+            if words(row.get('team', '')) & words(n2) and words(row.get('opponent', '')) & words(n2):
+                return f'bbl:{gid}'
+    return None
+
+
+# ------------------------------------------------------------------ BCL
+def _bcl_parse(h):
+    t = h.replace('\\"', '"')
+    names = {m.group(1): f"{m.group(2)} {m.group(3)}" for m in re.finditer(r'"personId":(\d+),"firstName":"([^"]*)","lastName":"([^"]*)"', t)}
+    starts = list(re.finditer(r'\{"Id":"T_(\d+)","Score":(\d+)', t))[:2]
+    teams = []
+    for i, m in enumerate(starts):
+        seg = t[m.start(): starts[i + 1].start() if i + 1 < len(starts) else m.start() + 80000]
+        pl = []
+        for p in re.finditer(r'\{"Id":"P_(\d+)","Stats":\{([^{}]*)\}', seg):
+            st = dict((k, v.strip('"')) for k, v in re.findall(r'"(\w+)":("?[^,"]*"?)', p.group(2)))
+            nn = lambda k: int(float(st.get(k) or 0))
+            mn = st.get('TP') or ''
+            pl.append(dict(name=names.get(p.group(1), p.group(1)), min=int(mn.split(':')[0]) if mn[:1].isdigit() else 0, pts=nn('PTS'),
+                           reb=nn('REB'), ast=nn('AS'), stl=nn('ST'), blk=nn('BS'), tov=nn('TO'), fgm=nn('FGM'), fga=nn('FGA'),
+                           tpm=nn('FG3M'), tpa=nn('FG3A'), ftm=nn('FTM'), fta=nn('FTA'), pm=nn('PM') if st.get('PM') not in (None, '') else '',
+                           pf=nn('PF'), oreb=nn('OR'), dreb=nn('DR'), starter=st.get('Starter') == 'true'))
+        teams.append(dict(name='', score=int(m.group(2)), pl=pl))
+    return t, teams
+
+
+def read_bcl(gid, row=None):
+    t, teams = _bcl_parse(page(f'https://www.championsleague.basketball/en/games/{gid}'))
+    gm = re.search(r'"gameId":' + str(gid) + r',.*?"teamA":\{[^{}]*"officialName":"([^"]*)"[^{}]*\},"teamB":\{[^{}]*"officialName":"([^"]*)"[^{}]*\},"teamAScore":(\w+),"teamBScore":(\w+),"isLive":(\w+),"currentPeriod":"?(\w*)"?,"chrono":"?([^",]*)"?,"liveGameStatus":(\w+),"currentPeriodStatus":"?(\w*)', t, re.S)
+    if not gm:
+        raise LookupError('game header not found on the BCL page')
+    a, b, sa, sb, live, per, chrono, lgs, pst = gm.groups()
+    score = [int(sa) if sa.isdigit() else 0, int(sb) if sb.isdigit() else 0]
+    if len(teams) != 2:
+        teams = [dict(name='', score=0, pl=[]), dict(name='', score=0, pl=[])]
+    for k, nm in enumerate((a, b)):
+        teams[k]['name'] = nm
+        teams[k]['score'] = max(teams[k]['score'], score[k])
+    done = lgs == '999' or (live == 'false' and pst == 'E' and any(score))
+    pn = int(re.sub(r'\D', '', per) or 1) + (4 if per.startswith('OT') else 0)
+    clock = '00:00' if done else (chrono[:5] if re.match(r'\d{2}:\d{2}', chrono) else '')
+    return dict(period=pn if pn else 1, clock=clock, done=done, notstarted=not done and live != 'true' and not any(score), teams=teams)
+
+
+def find_bcl(row):
+    h = page('https://www.championsleague.basketball/en/games').replace('\\"', '"')
+    for m in re.finditer(r'\{"gameId":(\d+),"gameName":"[^"]*","gameNumber":"[^"]*","statusCode":"[^"]*","teamA":\{[^{}]*"officialName":"([^"]*)","shortName":"([^"]*)"\},"teamB":\{[^{}]*"officialName":"([^"]*)","shortName":"([^"]*)"\}.*?"gameDateTime":"([^"]*)"', h):
+        gid, a1, a2, b1, b2, when = m.groups()
+        names = f'{a1} {a2} {b1} {b2}'
+        if words(row.get('team', '')) & words(names) and words(row.get('opponent', '')) & words(names):
+            d = when[:10]
+            if abs((dt.date.fromisoformat(d) - dt.date.fromisoformat(row['date'])).days) <= 1:
+                return f'bcl:{gid}'
+    return None
 
 
 # ------------------------------------------------------------------ LBA

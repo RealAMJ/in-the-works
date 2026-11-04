@@ -82,6 +82,10 @@ def main():
                     f = sources.find_euroleague(r)
                 elif comp == 'LBA (Italy)':
                     f = sources.find_lba(r)
+                elif comp == 'BBL':
+                    f = sources.find_bbl(r)
+                elif comp == 'Champions League (BCL)':
+                    f = sources.find_bcl(r)
                 if f:
                     r['live_feed'] = f
                     other = True

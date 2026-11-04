@@ -52,12 +52,12 @@
   "player": "Melwin Pantzar",
   "competition": "Champions League (BCL)",
   "season": "2026-27",
-  "gp": 2,
-  "min": 17.5,
-  "pts": 8.0,
-  "reb": 6.0,
-  "ast": 5.5,
-  "note": "Flashscore"
+  "gp": 3,
+  "min": 16.3,
+  "pts": 6.0,
+  "reb": 4.0,
+  "ast": 4.7,
+  "note": "Averages from game log (3 games, through 2026-11-03)"
  },
  {
   "row_id": "hakanson-acb",
@@ -100,12 +100,12 @@
   "player": "Simon Birgander",
   "competition": "Champions League (BCL)",
   "season": "2026-27",
-  "gp": 2,
-  "min": 18.5,
-  "pts": 9.0,
-  "reb": 5.0,
-  "ast": 2.5,
-  "note": "Flashscore"
+  "gp": 3,
+  "min": 17.7,
+  "pts": 8.0,
+  "reb": 5.3,
+  "ast": 2.0,
+  "note": "Averages from game log (3 games, through 2026-11-03)"
  },
  {
   "row_id": "falk-acb",
@@ -148,12 +148,12 @@
   "player": "Kenny Pohto",
   "competition": "Champions League (BCL)",
   "season": "2026-27",
-  "gp": 2,
-  "min": 11.5,
-  "pts": 2.0,
-  "reb": 2.0,
-  "ast": 1.0,
-  "note": "Flashscore"
+  "gp": 3,
+  "min": 15.7,
+  "pts": 3.3,
+  "reb": 4.0,
+  "ast": 0.7,
+  "note": "Averages from game log (3 games, through 2026-11-03)"
  },
  {
   "row_id": "gaddefors-plk",
@@ -172,12 +172,12 @@
   "player": "Zaba Bangala",
   "competition": "BBL",
   "season": "2026-27",
-  "gp": 6,
-  "min": 19.2,
-  "pts": 8.3,
-  "reb": 4.5,
-  "ast": 1.3,
-  "note": "Averages from game log (6 games, through 2026-10-31; latest game easyCredit BBL)"
+  "gp": 7,
+  "min": 20.0,
+  "pts": 9.1,
+  "reb": 4.9,
+  "ast": 1.4,
+  "note": "Averages from game log (7 games, through 2026-11-03)"
  },
  {
   "row_id": "bangala-cup",
