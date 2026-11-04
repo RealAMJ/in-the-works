@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T04:04:21+01:00",
+ "at": "2026-11-04T04:05:12+01:00",
  "log": [
   {
    "game": "g20261104lip",
@@ -9,17 +9,17 @@
    "game": "g20261104lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:56",
+   "clock": "01:09",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     47,
+     52,
      16
     ],
     [
      "Iowa Hawkeyes",
-     74,
+     76,
      14
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261104uci",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:06",
+   "clock": "17:03",
    "done": false,
    "teams": [
     [
      "Chapman Panthers",
-     2,
+     5,
      15
     ],
     [
      "UC Irvine Anteaters",
-     5,
+     7,
      18
     ]
    ]
