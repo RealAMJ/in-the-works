@@ -698,10 +698,10 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 35-51",
+  "score": "L 35-54",
   "espn_id": "401920702",
-  "clock": "Q2 10:44",
-  "live_updated": "2026-11-04T03:39:32+01:00"
+  "clock": "Q2 10:01",
+  "live_updated": "2026-11-04T03:40:20+01:00"
  },
  {
   "game_id": "g20261104uci",
@@ -714,7 +714,8 @@
   "competition": "NCAA",
   "note": "Season opener",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401929624"
  },
  {
   "game_id": "g23",
