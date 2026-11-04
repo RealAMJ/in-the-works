@@ -748,7 +748,9 @@
   "watch_url": "https://www.courtside1891.basketball/",
   "watch_label": "Courtside 1891",
   "live_feed": "fiba:2888218",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g25",

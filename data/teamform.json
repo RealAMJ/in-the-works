@@ -4478,5 +4478,33 @@
   "note": "",
   "leaders": "Keegan|20|4|1;Benson|11|0|0;Cojocaru|9|4|7;Tittelfitz|9|2|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "bc-vienna-2026-11-04",
+  "team": "BC Vienna",
+  "date": "2026-11-04",
+  "competition": "FIBA Europe Cup",
+  "opponent": "Nitra Blue Wings",
+  "venue": "Away",
+  "score": "84-80",
+  "result": "W",
+  "top": "Radovcic 20 pts, 2 reb",
+  "note": "",
+  "leaders": "Radovcic|20|2|4;Novakovic|18|7|3;Jovanovic|17|1|1",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "nitra-blue-wings-2026-11-04",
+  "team": "Nitra Blue Wings",
+  "date": "2026-11-04",
+  "competition": "FIBA Europe Cup",
+  "opponent": "BC Vienna",
+  "venue": "Home",
+  "score": "80-84",
+  "result": "L",
+  "top": "Adley 23 pts, 5 reb",
+  "note": "",
+  "leaders": "Adley|23|5|1;Ikpe|18|4|1;Bonner|13|3|7",
+  "source": "FIBA LiveStats"
  }
 ]

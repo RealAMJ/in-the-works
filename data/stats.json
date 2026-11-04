@@ -208,12 +208,12 @@
   "player": "Barra Njie",
   "competition": "FIBA Europe Cup",
   "season": "2026-27",
-  "gp": 2,
-  "min": 28,
-  "pts": 3.0,
-  "reb": 4.0,
-  "ast": 11.0,
-  "note": "Flashscore"
+  "gp": 3,
+  "min": 27.0,
+  "pts": 4.7,
+  "reb": 3.7,
+  "ast": 9.0,
+  "note": "Averages from game log (3 games, through 2026-11-04)"
  },
  {
   "row_id": "borg-feb",
