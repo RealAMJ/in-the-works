@@ -726,11 +726,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "Season opener",
-  "status": "live",
-  "score": "W 87-60",
+  "status": "final",
+  "score": "W 92-66",
   "espn_id": "401929624",
-  "clock": "Q2 01:29",
-  "live_updated": "2026-11-04T06:01:43+01:00"
+  "live_done": true
  },
  {
   "game_id": "g23",

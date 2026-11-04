@@ -18581,7 +18581,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18602,7 +18602,7 @@
   "ft": "0/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18623,7 +18623,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18644,7 +18644,7 @@
   "ft": "1/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18665,16 +18665,16 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-6",
+  "row_id": "g20261104uci-0-5",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Jake Sprangers",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -18686,32 +18686,32 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-7",
+  "row_id": "g20261104uci-0-6",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "TJ Tittelfitz",
   "pos": "",
-  "min": 14,
-  "pts": 3,
+  "min": 15,
+  "pts": 9,
   "reb": 2,
   "ast": 2,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "1/3",
-  "three": "1/3",
-  "ft": "0/0",
+  "fg": "3/6",
+  "three": "2/5",
+  "ft": "1/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-8",
+  "row_id": "g20261104uci-0-7",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Kevin Benson",
@@ -18728,19 +18728,19 @@
   "ft": "3/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-11",
+  "row_id": "g20261104uci-0-8",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Ren Marchetti",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
-  "ast": 0,
+  "ast": 2,
   "stl": 0,
   "blk": 0,
   "tov": 1,
@@ -18749,16 +18749,16 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-12",
+  "row_id": "g20261104uci-0-9",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Tysen Burton",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -18770,16 +18770,16 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-13",
+  "row_id": "g20261104uci-0-10",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Nick Sanford",
   "pos": "",
-  "min": 17,
+  "min": 19,
   "pts": 3,
   "reb": 4,
   "ast": 0,
@@ -18788,14 +18788,14 @@
   "tov": 0,
   "fg": "1/8",
   "three": "1/5",
-  "ft": "0/2",
+  "ft": "0/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-0-14",
+  "row_id": "g20261104uci-0-11",
   "game_id": "g20261104uci",
   "team": "Chapman",
   "player": "Dylan Mansour",
@@ -18812,7 +18812,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18833,7 +18833,7 @@
   "ft": "1/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18854,7 +18854,7 @@
   "ft": "3/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18875,7 +18875,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18896,7 +18896,7 @@
   "ft": "2/4",
   "pm": 0,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18917,7 +18917,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18926,7 +18926,7 @@
   "team": "UC Irvine",
   "player": "Dom Bentho",
   "pos": "",
-  "min": 3,
+  "min": 5,
   "pts": 3,
   "reb": 0,
   "ast": 0,
@@ -18938,7 +18938,7 @@
   "ft": "1/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18959,7 +18959,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -18968,9 +18968,9 @@
   "team": "UC Irvine",
   "player": "Mason Hodges",
   "pos": "",
-  "min": 5,
+  "min": 7,
   "pts": 0,
-  "reb": 2,
+  "reb": 4,
   "ast": 0,
   "stl": 0,
   "blk": 0,
@@ -18980,11 +18980,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-10",
+  "row_id": "g20261104uci-1-8",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Nes Emeneke",
@@ -19001,11 +19001,11 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-11",
+  "row_id": "g20261104uci-1-9",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Luke Isaak",
@@ -19022,16 +19022,16 @@
   "ft": "4/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-12",
+  "row_id": "g20261104uci-1-10",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Josh Palmer",
   "pos": "",
-  "min": 6,
+  "min": 7,
   "pts": 2,
   "reb": 1,
   "ast": 1,
@@ -19043,32 +19043,32 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-13",
+  "row_id": "g20261104uci-1-11",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Josiah Johnson",
   "pos": "",
-  "min": 20,
-  "pts": 10,
+  "min": 21,
+  "pts": 12,
   "reb": 4,
-  "ast": 1,
+  "ast": 2,
   "stl": 0,
   "blk": 1,
-  "tov": 4,
-  "fg": "3/7",
+  "tov": 5,
+  "fg": "4/8",
   "three": "0/1",
   "ft": "4/6",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-14",
+  "row_id": "g20261104uci-1-12",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Bryce Goldman",
@@ -19085,11 +19085,32 @@
   "ft": "1/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104uci-1-16",
+  "row_id": "g20261104uci-1-13",
+  "game_id": "g20261104uci",
+  "team": "UC Irvine",
+  "player": "Tishan Ahir",
+  "pos": "",
+  "min": 1,
+  "pts": 3,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "1/2",
+  "three": "1/2",
+  "ft": "0/0",
+  "pm": 0,
+  "swede": false,
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261104uci-1-14",
   "game_id": "g20261104uci",
   "team": "UC Irvine",
   "player": "Torian Lee",
@@ -19106,7 +19127,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
