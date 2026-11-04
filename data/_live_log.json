@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T02:51:33+01:00",
+ "at": "2026-11-04T02:52:24+01:00",
  "log": [
   {
    "game": "g20261104lip",
@@ -9,17 +9,17 @@
    "game": "g20261104lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:22",
+   "clock": "00:34",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     27,
+     29,
      16
     ],
     [
      "Iowa Hawkeyes",
-     33,
+     35,
      14
     ]
    ]
