@@ -729,7 +729,9 @@
   "status": "final",
   "score": "W 92-66",
   "espn_id": "401929624",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g23",

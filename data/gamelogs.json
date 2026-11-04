@@ -3996,5 +3996,31 @@
   "pf": 3,
   "pm": 5,
   "eff": 9
+ },
+ {
+  "row_id": "cooper-2026-11-04",
+  "player": "Nils Cooper",
+  "date": "2026-11-04",
+  "competition": "NCAA",
+  "team": "UC Irvine",
+  "opponent": "Chapman",
+  "venue": "Home",
+  "result": "W 92-66",
+  "min": 26,
+  "pts": 10,
+  "reb": 7,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "4/6",
+  "three": "0/0",
+  "ft": "2/4",
+  "oreb": 1,
+  "dreb": 6,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 2,
+  "pm": 0,
+  "eff": ""
  }
 ]

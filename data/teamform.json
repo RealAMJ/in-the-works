@@ -4450,5 +4450,33 @@
   "note": "",
   "leaders": "Dundao|11|1|5;Williams|10|3|1;Bropleh|9|3|0;Delgado|9|5|0",
   "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "uc-irvine-2026-11-04",
+  "team": "UC Irvine",
+  "date": "2026-11-04",
+  "competition": "NCAA",
+  "opponent": "Chapman",
+  "venue": "Home",
+  "score": "92-66",
+  "result": "W",
+  "top": "Isaak 16 pts, 3 reb",
+  "note": "",
+  "leaders": "Isaak|16|3|2;Rioux|13|12|0;Isaac|12|5|5;Johnson|12|4|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "chapman-2026-11-04",
+  "team": "Chapman",
+  "date": "2026-11-04",
+  "competition": "NCAA",
+  "opponent": "UC Irvine",
+  "venue": "Away",
+  "score": "66-92",
+  "result": "L",
+  "top": "Keegan 20 pts, 4 reb",
+  "note": "",
+  "leaders": "Keegan|20|4|1;Benson|11|0|0;Cojocaru|9|4|7;Tittelfitz|9|2|2",
+  "source": "ESPN"
  }
 ]
