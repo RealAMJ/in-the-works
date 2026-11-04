@@ -892,5 +892,27 @@
   "tov": 1,
   "pf": 3,
   "eff": ""
+ },
+ {
+  "line_id": "g20261104lip-tidare",
+  "game_id": "g20261104lip",
+  "player": "Hugo Tidare",
+  "min": 2,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "eff": ""
  }
 ]
