@@ -1,26 +1,26 @@
 {
- "at": "2026-11-03T20:14:28+01:00",
+ "at": "2026-11-04T01:44:15+01:00",
  "log": [
   {
-   "game": "c20261103ora",
-   "checking": "FIBA LiveStats"
+   "game": "g20261104lip",
+   "checking": "ESPN"
   },
   {
-   "game": "c20261103ora",
-   "src": "FIBA LiveStats",
-   "period": 4,
+   "game": "g20261104lip",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Mykonos Betsson BC",
-     89,
-     12
+     "Iowa Hawkeyes",
+     0,
+     0
     ],
     [
-     "CSM CSU Raiffeisen Oradea",
-     79,
-     11
+     "Lipscomb Bisons",
+     0,
+     0
     ]
    ]
   }
