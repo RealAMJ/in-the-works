@@ -697,11 +697,10 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "L 54-76",
   "espn_id": "401920702",
-  "clock": "Halftime",
-  "live_updated": "2026-11-04T04:08:18+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261104uci",
@@ -717,7 +716,7 @@
   "score": "W 7-7",
   "espn_id": "401929624",
   "clock": "Q1 15:41",
-  "live_updated": "2026-11-04T04:08:19+01:00"
+  "live_updated": "2026-11-04T04:09:09+01:00"
  },
  {
   "game_id": "g23",

@@ -16313,7 +16313,7 @@
   "ft": "1/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16334,7 +16334,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16355,7 +16355,7 @@
   "ft": "3/4",
   "pm": 0,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16376,7 +16376,7 @@
   "ft": "6/8",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16397,11 +16397,11 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-6",
+  "row_id": "g20261104lip-0-5",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Sawyer Dotson",
@@ -16418,11 +16418,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-7",
+  "row_id": "g20261104lip-0-6",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Hendrix Loughridge",
@@ -16439,11 +16439,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-8",
+  "row_id": "g20261104lip-0-7",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Josh Scott",
@@ -16460,11 +16460,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-10",
+  "row_id": "g20261104lip-0-8",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Kennedy Okpara",
@@ -16481,11 +16481,11 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-11",
+  "row_id": "g20261104lip-0-9",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Luke Jack",
@@ -16502,11 +16502,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-12",
+  "row_id": "g20261104lip-0-10",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Truman Byrne",
@@ -16523,11 +16523,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-14",
+  "row_id": "g20261104lip-0-11",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Vuk Visnjic",
@@ -16544,11 +16544,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-0-15",
+  "row_id": "g20261104lip-0-12",
   "game_id": "g20261104lip",
   "team": "Lipscomb",
   "player": "Zion Wells",
@@ -16565,7 +16565,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16586,7 +16586,7 @@
   "ft": "1/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16607,7 +16607,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16628,7 +16628,7 @@
   "ft": "3/5",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16649,7 +16649,7 @@
   "ft": "0/1",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16670,7 +16670,7 @@
   "ft": "3/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16691,7 +16691,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16712,7 +16712,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -16733,11 +16733,11 @@
   "ft": "1/3",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-1-9",
+  "row_id": "g20261104lip-1-8",
   "game_id": "g20261104lip",
   "team": "Iowa",
   "player": "Jaidyn Coon",
@@ -16754,11 +16754,11 @@
   "ft": "2/4",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-1-10",
+  "row_id": "g20261104lip-1-9",
   "game_id": "g20261104lip",
   "team": "Iowa",
   "player": "Ty'Reek Coleman",
@@ -16775,11 +16775,11 @@
   "ft": "4/9",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-1-11",
+  "row_id": "g20261104lip-1-10",
   "game_id": "g20261104lip",
   "team": "Iowa",
   "player": "Peyton McCollum",
@@ -16796,11 +16796,11 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261104lip-1-12",
+  "row_id": "g20261104lip-1-11",
   "game_id": "g20261104lip",
   "team": "Iowa",
   "player": "Ethan Harris",
@@ -16817,7 +16817,7 @@
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
