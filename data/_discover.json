@@ -1,13 +1,20 @@
 {
- "at": "2026-11-04T11:55:38+01:00",
- "found": 0,
+ "at": "2026-11-04T19:29:02+01:00",
+ "found": 1,
  "log": [
   {
    "competition": "FIBA Europe Cup",
    "seed": 2888341,
    "scanned": 799,
-   "answered": 275,
+   "answered": 295,
    "sample": [
+    [
+     2888340,
+     [
+      "Lokomotiv Plovdiv ",
+      "Neftchi SC "
+     ]
+    ],
     [
      2888339,
      [
@@ -84,12 +91,97 @@
       "VEF Riga ",
       "Lokomotiv Plovdiv "
      ]
+    ]
+   ]
+  },
+  {
+   "competition": "Icelandic Premier League",
+   "seed": 2856123,
+   "scanned": 799,
+   "answered": 457,
+   "sample": [
+    [
+     2856122,
+     [
+      "KR KR",
+      "Njarðvík Njardvik"
+     ]
     ],
     [
-     2888328,
+     2856124,
      [
-      "Mykonos Betsson BC ",
-      "Neftchi SC "
+      "Valur Valur",
+      "Grindavík Grindavik"
+     ]
+    ],
+    [
+     2856121,
+     [
+      "Tindastóll Tindastoll",
+      "Ármann Armann"
+     ]
+    ],
+    [
+     2856125,
+     [
+      "Valur Valur",
+      "Ármann Armann"
+     ]
+    ],
+    [
+     2856120,
+     [
+      "Keflavík Keflavik",
+      "Sindri Sindri"
+     ]
+    ],
+    [
+     2856126,
+     [
+      "Stjarnan Stjarnan",
+      "Höttur Hottur"
+     ]
+    ],
+    [
+     2856119,
+     [
+      "ÍR IR",
+      "Álftanes Alftanes"
+     ]
+    ],
+    [
+     2856127,
+     [
+      "Grindavík Grindavik",
+      "Njarðvík Njardvik"
+     ]
+    ],
+    [
+     2856118,
+     [
+      "Valur Valur",
+      "Stjarnan Stjarnan"
+     ]
+    ],
+    [
+     2856128,
+     [
+      "Njarðvík Njardvik",
+      "Valur Valur"
+     ]
+    ],
+    [
+     2856117,
+     [
+      "Álftanes Alftanes",
+      "Höttur Hottur"
+     ]
+    ],
+    [
+     2856129,
+     [
+      "Stjarnan Stjarnan",
+      "ÍR IR"
      ]
     ]
    ]

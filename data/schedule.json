@@ -743,10 +743,13 @@
   "venue": "Away",
   "competition": "FIBA Europe Cup",
   "note": "At Nitra City Sports Hall",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "L 57-59",
   "watch_url": "https://www.courtside1891.basketball/",
-  "watch_label": "Courtside 1891"
+  "watch_label": "Courtside 1891",
+  "live_feed": "fiba:2888218",
+  "clock": "Q3 00:34",
+  "live_updated": "2026-11-04T19:29:03+01:00"
  },
  {
   "game_id": "g25",

@@ -1,26 +1,26 @@
 {
- "at": "2026-11-04T06:12:44+01:00",
+ "at": "2026-11-04T19:29:03+01:00",
  "log": [
   {
-   "game": "g20261104uci",
-   "checking": "ESPN"
+   "game": "g23",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261104uci",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g23",
+   "src": "FIBA LiveStats",
+   "period": 3,
+   "clock": "00:34",
+   "done": false,
    "teams": [
     [
-     "Chapman Panthers",
-     66,
-     15
+     "Nitra Blue Wings",
+     59,
+     11
     ],
     [
-     "UC Irvine Anteaters",
-     92,
-     18
+     "BC Vienna",
+     57,
+     12
     ]
    ]
   }
