@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T04:40:51+01:00",
+ "at": "2026-11-04T04:41:40+01:00",
  "log": [
   {
    "game": "g20261104uci",
@@ -9,17 +9,17 @@
    "game": "g20261104uci",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:10",
+   "clock": "04:34",
    "done": false,
    "teams": [
     [
      "Chapman Panthers",
-     18,
+     20,
      15
     ],
     [
      "UC Irvine Anteaters",
-     28,
+     31,
      18
     ]
    ]
