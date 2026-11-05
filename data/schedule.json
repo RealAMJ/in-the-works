@@ -762,11 +762,10 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "W 79-67",
   "espn_id": "401919028",
-  "clock": "Halftime",
-  "live_updated": "2026-11-05T03:34:10+01:00"
+  "live_done": true
  },
  {
   "game_id": "g26",
