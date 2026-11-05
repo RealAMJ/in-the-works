@@ -1,26 +1,26 @@
 {
- "at": "2026-11-04T20:02:18+01:00",
+ "at": "2026-11-05T01:12:14+01:00",
  "log": [
   {
-   "game": "g23",
-   "checking": "FIBA LiveStats"
+   "game": "g25",
+   "checking": "ESPN"
   },
   {
-   "game": "g23",
-   "src": "FIBA LiveStats",
-   "period": 4,
+   "game": "g25",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Nitra Blue Wings",
-     80,
-     11
+     "Wichita State Shockers",
+     0,
+     0
     ],
     [
-     "BC Vienna",
-     84,
-     12
+     "Cal State Northridge Matadors",
+     0,
+     0
     ]
    ]
   }
