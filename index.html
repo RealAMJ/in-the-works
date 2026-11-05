@@ -376,7 +376,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=bd498046"></script>
+<script src="i18n.js?v=cf965379"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -748,37 +748,43 @@
   // Share window: previews of every card style, each with Share (phone share sheet) and Download
   async function openShare(r) {
     document.querySelector('.share-ov')?.remove();
-    const ov = mk('div', 'share-ov'); ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Share card');
-    const box = mk('div', 'share-box');
-    // essential layout inline, so the window works even if an older stylesheet is still cached
-    Object.assign(ov.style, { position: 'fixed', inset: '0', zIndex: '1000', background: 'rgba(0,0,0,.6)', display: 'grid', placeItems: 'center', padding: '16px' });
-    Object.assign(box.style, { background: 'var(--color-panel, #fff)', color: 'var(--color-fg, #111)', borderRadius: '14px', width: 'min(720px, 100%)', maxHeight: 'calc(100vh - 32px)', overflow: 'auto', padding: '16px' });
-    const head = mk('div', 'share-head'); head.append(mk('b', '', 'Share card'));
-    const x = mk('button', 'share-x', '✕'); x.type = 'button'; x.setAttribute('aria-label', 'Close'); head.append(x);
-    const grid = mk('div', 'share-grid');
-    Object.assign(grid.style, { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' });
-    Object.assign(head.style, { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' });
+    const st = (el, o) => { Object.assign(el.style, o); return el; };
+    // compact dark pop-up in the middle of the screen; every size follows the screen, so nothing scrolls
+    const ov = st(mk('div', 'share-ov'), { position: 'fixed', inset: '0', zIndex: '1000', display: 'grid', placeItems: 'center', padding: '16px',
+      background: 'rgba(0,0,0,.55)', backdropFilter: 'blur(6px)', webkitBackdropFilter: 'blur(6px)', overflow: 'hidden', opacity: '0', transition: 'opacity .15s ease' });
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Share card');
+    const box = st(mk('div', 'share-box'), { background: '#121418', color: '#fff', borderRadius: '18px', border: '1px solid rgba(255,255,255,.08)',
+      boxShadow: '0 24px 70px rgba(0,0,0,.55)', padding: '14px 14px 16px', width: 'max-content', maxWidth: '100%', transform: 'scale(.97)', transition: 'transform .15s ease' });
+    const head = st(mk('div', 'share-head'), { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', margin: '0 2px 12px' });
+    const ttl = st(mk('div', '', 'Share card'), { fontWeight: '800', fontSize: '15px', letterSpacing: '.02em' });
+    const x = st(mk('button', 'share-x', '✕'), { border: '0', background: 'rgba(255,255,255,.08)', color: '#fff', width: '30px', height: '30px', borderRadius: '50%', cursor: 'pointer', fontSize: '13px', lineHeight: '30px', padding: '0' });
+    x.type = 'button'; x.setAttribute('aria-label', 'Close'); head.append(ttl, x);
+    const grid = st(mk('div', 'share-grid'), { display: 'flex', gap: '12px', justifyContent: 'center' });
     box.append(head, grid); ov.append(box); document.body.append(ov);
+    requestAnimationFrame(() => { ov.style.opacity = '1'; box.style.transform = 'scale(1)'; });
     const close = () => { ov.remove(); document.removeEventListener('keydown', esc); };
     const esc = (e) => { if (e.key === 'Escape') close(); };
     x.onclick = close; ov.onclick = (e) => { if (e.target === ov) close(); }; document.addEventListener('keydown', esc);
     try { x.focus({ preventScroll: true }); } catch (e) { /* old browser */ }
-    const name = (st) => `${calSlug(r.player)}-${r.date || 'game'}-${st}.png`;
-    for (const [st, lab] of CARD_STYLES) {
-      const col = mk('div', 'share-opt'); col.append(mk('div', 'share-lab', lab));
-      const ph = mk('div', 'share-prev', '…'); col.append(ph);
-      Object.assign(ph.style, { aspectRatio: '4 / 5', background: '#000', borderRadius: '8px', overflow: 'hidden' });
-      const acts = mk('div', 'share-acts');
-      const sb = mk('button', 'pp-btn dark', 'Share'); sb.type = 'button';
-      const db = mk('button', 'pp-btn', 'Download'); db.type = 'button';
-      acts.append(sb, db); col.append(acts); grid.append(col);
-      drawCard(r, st).then((c) => new Promise((res) => c.toBlob((bl) => res([c, bl]), 'image/png'))).then(([c, blob]) => {
-        const img = new Image(); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); img.style.width = '100%'; img.style.display = 'block'; ph.replaceChildren(img);
-        const file = new File([blob], name(st), { type: 'image/png' });
-        const canShare = !!(navigator.canShare && navigator.canShare({ files: [file] }));
-        if (!canShare) { sb.hidden = true; db.className = 'pp-btn dark'; }
+    // thumbnail height: at most half the screen, and narrow enough that two fit side by side
+    const thumbH = `min(46vh, 330px, calc((100vw - 76px) / 2 * 1.25))`;
+    const name = (k) => `${calSlug(r.player)}-${r.date || 'game'}-${k}.png`;
+    const pill = (txt, solid) => st(mk('button', '', txt), { flex: '1', font: 'inherit', fontSize: '13px', fontWeight: '700', padding: '7px 10px', borderRadius: '999px', cursor: 'pointer',
+      border: '1px solid rgba(255,255,255,.35)', background: solid ? '#fff' : 'transparent', color: solid ? '#111' : '#fff', whiteSpace: 'nowrap' });
+    for (const [k, lab] of CARD_STYLES) {
+      const col = st(mk('div', 'share-opt'), { display: 'grid', gap: '8px', justifyItems: 'stretch' });
+      const ph = st(mk('div', 'share-prev'), { height: thumbH, aspectRatio: '4 / 5', background: '#000', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 6px 18px rgba(0,0,0,.45)' });
+      const lb = st(mk('div', '', lab), { fontSize: '11px', fontWeight: '700', letterSpacing: '.08em', textTransform: 'uppercase', color: 'rgba(255,255,255,.6)', textAlign: 'center' });
+      const acts = st(mk('div', 'share-acts'), { display: 'flex', gap: '6px' });
+      const sb = pill('Share', true); sb.type = 'button';
+      const db = pill('Save', false); db.type = 'button';
+      acts.append(sb, db); col.append(ph, lb, acts); grid.append(col);
+      drawCard(r, k).then((c) => new Promise((res) => c.toBlob((bl) => res(bl), 'image/png'))).then((blob) => {
+        const img = st(new Image(), { width: '100%', height: '100%', objectFit: 'cover', display: 'block' }); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); ph.replaceChildren(img);
+        const file = new File([blob], name(k), { type: 'image/png' });
+        if (!(navigator.canShare && navigator.canShare({ files: [file] }))) { sb.remove(); st(db, { background: '#fff', color: '#111' }); }
         sb.onclick = async () => { try { await navigator.share({ files: [file], title: tx(r, 'headline') }); } catch (e) { /* cancelled */ } };
-        db.onclick = () => { const a = document.createElement('a'); a.href = img.src; a.download = name(st); document.body.append(a); a.click(); a.remove(); };
+        db.onclick = () => { const a = document.createElement('a'); a.href = img.src; a.download = name(k); document.body.append(a); a.click(); a.remove(); };
       });
     }
   }
