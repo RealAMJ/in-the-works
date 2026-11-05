@@ -1117,7 +1117,7 @@
   "line_id": "g20261105kr-ramstedt",
   "game_id": "g20261105kr",
   "player": "Adam Ramstedt",
-  "min": 10,
+  "min": 11,
   "pts": 5,
   "reb": 4,
   "ast": 1,
@@ -1131,7 +1131,7 @@
   "dreb": 2,
   "stl": 0,
   "blk": 2,
-  "tov": 0,
+  "tov": 1,
   "pf": 0,
   "eff": ""
  }
