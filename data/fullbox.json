@@ -19986,7 +19986,7 @@
   "fg": "4/5",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -20082,7 +20082,7 @@
   "player": "Pelle Larsson",
   "pos": "",
   "min": 2,
-  "pts": 0,
+  "pts": 1,
   "reb": 0,
   "ast": 0,
   "stl": 0,
@@ -20090,7 +20090,7 @@
   "tov": 0,
   "fg": "0/0",
   "three": "0/0",
-  "ft": "0/0",
+  "ft": "1/2",
   "pm": 2,
   "swede": true,
   "state": "live",
@@ -20307,7 +20307,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g26-1-9",
+  "row_id": "g26-1-10",
   "game_id": "g26",
   "team": "LA Clippers",
   "player": "Keaton Wagler",
