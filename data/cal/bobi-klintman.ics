@@ -1,0 +1,130 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Bobi Klintman
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g00a@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261028T193000Z
+DTEND:20261028T213000Z
+SUMMARY:Klintman: Virtus Bologna vs Zalgiris Kaunas (L 74-91)
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g01@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261030T193000Z
+DTEND:20261030T213000Z
+SUMMARY:Klintman: Virtus Bologna vs Besiktas Istanbul (L 101-103)
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g15@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261102T190000Z
+DTEND:20261102T210000Z
+SUMMARY:Klintman: Virtus Bologna vs Pallacanestro Trieste (L 93-100)
+DESCRIPTION:LBA (Italy). Players: Bobi Klintman. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:LBA (Italy)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261106vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261106T193000Z
+DTEND:20261106T213000Z
+SUMMARY:Klintman: Virtus Bologna vs Dubai Basketball
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261109vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261109T190000Z
+DTEND:20261109T210000Z
+SUMMARY:Klintman: Virtus Bologna vs Tezenis Verona
+DESCRIPTION:LBA (Italy). Players: Bobi Klintman. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:LBA (Italy)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261113vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T173000Z
+DTEND:20261113T193000Z
+SUMMARY:Klintman: Virtus Bologna at Anadolu Efes Istanbul
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261117vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T200000Z
+DTEND:20261117T220000Z
+SUMMARY:Klintman: Virtus Bologna vs Panathinaikos Athens
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T200000Z
+DTEND:20261119T220000Z
+SUMMARY:Klintman: Virtus Bologna at Valencia Basket
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261124vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261124T180000Z
+DTEND:20261124T200000Z
+SUMMARY:Klintman: Virtus Bologna at Crvena Zvezda Belgrade
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261204vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261204T193000Z
+DTEND:20261204T213000Z
+SUMMARY:Klintman: Virtus Bologna vs Partizan Belgrade
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261211vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261211T193000Z
+DTEND:20261211T213000Z
+SUMMARY:Klintman: Virtus Bologna vs Maccabi Tel Aviv
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261215vir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261215T193000Z
+DTEND:20261215T213000Z
+SUMMARY:Klintman: Virtus Bologna vs LDLC ASVEL Villeurbanne
+DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:EuroLeague
+END:VEVENT
+END:VCALENDAR

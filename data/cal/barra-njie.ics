@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Barra Njie
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g04@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261030T193000Z
+DTEND:20261030T213000Z
+SUMMARY:Njie: BC Vienna vs Bosna BH Telecom (L 81-88)
+DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:ABA League
+END:VEVENT
+BEGIN:VEVENT
+UID:g12@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261101T170000Z
+DTEND:20261101T190000Z
+SUMMARY:Njie: BC Vienna vs Swans Gmunden (L 72-86)
+DESCRIPTION:Austrian Superliga. Players: Barra Njie. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:Austrian Superliga
+END:VEVENT
+BEGIN:VEVENT
+UID:g23@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261104T170000Z
+DTEND:20261104T190000Z
+SUMMARY:Njie: BC Vienna at Nitra Blue Wings (W 84-80)
+DESCRIPTION:FIBA Europe Cup. Players: Barra Njie. https://realamj.github.io
+ /in-the-works/
+CATEGORIES:FIBA Europe Cup
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261107vie@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261107T180000Z
+DTEND:20261107T200000Z
+SUMMARY:Njie: BC Vienna at Perspektiva Ilirija
+DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:ABA League
+END:VEVENT
+END:VCALENDAR

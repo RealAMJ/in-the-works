@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Viktor Gaddefors
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g10@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261031T190000Z
+DTEND:20261031T210000Z
+SUMMARY:Gaddefors: Twarde Pierniki Toruń vs Zastal Zielona Góra (W 87-71)
+DESCRIPTION:Orlen Basket Liga. Players: Viktor Gaddefors. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261107tor@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261107T183000Z
+DTEND:20261107T203000Z
+SUMMARY:Gaddefors: Twarde Pierniki Toruń at Śląsk Wrocław
+DESCRIPTION:Orlen Basket Liga. Players: Viktor Gaddefors. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+END:VCALENDAR

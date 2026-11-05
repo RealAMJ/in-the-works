@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Adam Ramstedt
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g20261029kr@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261029T191500Z
+DTEND:20261029T211500Z
+SUMMARY:Ramstedt: KR Basket vs Sindri (W 107-102)
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261105kr@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261105T191500Z
+DTEND:20261105T211500Z
+SUMMARY:Ramstedt: KR Basket at Álftanes
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
+END:VEVENT
+END:VCALENDAR

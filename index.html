@@ -140,6 +140,7 @@
 
   <section class="sw-card" id="schedule">
     <h2>Games and results</h2>
+    <p class="note"><a class="pp-btn" id="cal-all" href="data/cal/all.ics">📅 Add every game to your calendar</a> New games, times and results show up in your calendar on their own.</p>
     <p class="note">Blue tags are NBA games, orange Liga ACB, red NCAA, filled green EuroLeague, filled purple Champions League, filled teal FIBA Europe Cup, green outline for the ABA League; every other league has its own colour. Tap the buttons to show only those competitions. Rows in yellow are Swede-vs-Swede games. Times marked TBC weren't published yet. Tap a result to see each Swede's line from that game, a player to open their stats and games, or a team to see its last five games.</p>
     <div class="sw-controls">
       <input class="sw-search" type="search" placeholder="Search player, team, league…" aria-label="Search games" data-filter="sched">
@@ -1989,6 +1990,15 @@
   function clubOf(n, fallback) { const p = (ds('players') || []).find((x) => isSame(x.player, n)); return (p && p.club) || fallback || ''; }
   function swedesSide(g, team) { return String(g.players || '').split(/\s*,\s*/).filter(Boolean).filter((n) => sameTeam(clubOf(n, g.team), team)); }
   function ds(id) { const d = dash.data(id); return d.status === 'ok' ? d.data : null; }
+  // Calendar subscriptions (data/cal/*.ics, made by scripts/calendar_feeds.py); webcal:// makes calendar apps subscribe, not import once
+  function calSlug(n) {
+    const m = { 'å': 'a', 'ä': 'a', 'ö': 'o', 'é': 'e', 'ø': 'o', 'ü': 'u', 'ł': 'l', 'ć': 'c', 'č': 'c', 'š': 's', 'ž': 'z' };
+    return String(n || '').toLowerCase().replace(/[åäöéøüłćčšž]/g, (c) => m[c]).replace(/[^a-z ]/g, '').trim().split(/\s+/).join('-');
+  }
+  function calUrl(player) {
+    const u = new URL('data/cal/' + (player ? calSlug(player) : 'all') + '.ics', location.href);
+    return u.protocol === 'https:' ? 'webcal://' + u.host + u.pathname : u.href;
+  }
   const isSame = (a, b) => norm(a) === norm(b);
   function initials(n) { const w = String(n || '').split(/\s+/).filter(Boolean); return ((w[0] || '?')[0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase(); }
   function shortComp(c) {
@@ -2172,6 +2182,7 @@
     if (p && p.level) tags.append(mk('span', 'pp-tag', p.level));
     if (nt) tags.append(mk('span', 'pp-tag', 'National team'));
     const acts = mk('div', 'pp-actions'); const cb = mk('button', 'pp-btn', '⇄ Compare'); cb.type = 'button'; cb.onclick = () => openCompare(name); acts.append(cb);
+    { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
     id.append(meta, tags, acts);
     hero.append(pic, id);
     el.append(hero);
@@ -2398,6 +2409,7 @@
     const up = (r) => /coming up/i.test(r.kind || '');
     return d.map((r, i) => [r, i]).sort((a, b) => (up(a[0]) - up(b[0])) || String(b[0].date || '').localeCompare(String(a[0].date || '')) || (a[1] - b[1])).map((x) => x[0]);
   }
+  { const a = document.getElementById('cal-all'); if (a) a.href = calUrl(''); }
   dash.draw('wk-label', (el) => { const d = ds('thisweek'); el.textContent = d && d[0] ? 'Week of ' + String(d[0].week || '').replace(/2026-(\d\d)-(\d\d)/g, (m, mo, da) => dayFmt(`2026-${mo}-${da}`)) : '—'; });
   dash.draw('wk', (el) => {
     el.replaceChildren();

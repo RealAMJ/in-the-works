@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Ludvig Håkanson
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g11@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261101T110000Z
+DTEND:20261101T130000Z
+SUMMARY:Håkanson: Joventut Badalona vs Surne Bilbao (L 78-81)
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
+UID:g24@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261103T193000Z
+DTEND:20261103T213000Z
+SUMMARY:Håkanson: Joventut Badalona at FC Porto (W 81-64)
+DESCRIPTION:Champions League (BCL). Players: Ludvig Håkanson\, Simon Birga
+ nder. https://realamj.github.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261108jov@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T120000Z
+DTEND:20261108T140000Z
+SUMMARY:Håkanson: Joventut Badalona at La Laguna Tenerife
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+END:VCALENDAR

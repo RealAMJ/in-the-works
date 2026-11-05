@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Anton Lindqvist
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g20261031sant@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261031T183000Z
+DTEND:20261031T203000Z
+SUMMARY:Lindqvist: Class Sant Antoni vs Reinas Proteínas Clavijo (W 71-61)
+DESCRIPTION:Segunda FEB. Players: Anton Lindqvist. https://realamj.github.i
+ o/in-the-works/
+CATEGORIES:Segunda FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261108sant@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T170000Z
+DTEND:20261108T190000Z
+SUMMARY:Lindqvist: Class Sant Antoni at Iraurgi SB
+DESCRIPTION:Segunda FEB. Players: Anton Lindqvist. https://realamj.github.i
+ o/in-the-works/
+CATEGORIES:Segunda FEB
+END:VEVENT
+END:VCALENDAR

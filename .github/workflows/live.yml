@@ -49,6 +49,9 @@ jobs:
       - name: European schedule check (07:00 only)
         run: python3 scripts/schedule_eu.py || true
 
+      - name: Calendar feeds (only rewritten when something changed)
+        run: python3 scripts/calendar_feeds.py || true
+
       - name: Phone alerts for finished games (Telegram / WhatsApp / ntfy)
         run: python3 scripts/notify.py || true
         env:

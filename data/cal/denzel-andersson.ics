@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Denzel Andersson
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g20261031ast@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261031T113000Z
+DTEND:20261031T133000Z
+SUMMARY:Andersson: Astoria Bydgoszcz at Energa Trefl Sopot (W 90-87)
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261106ast@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261106T191500Z
+DTEND:20261106T211500Z
+SUMMARY:Andersson: Astoria Bydgoszcz vs PGE Start Lublin
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+END:VCALENDAR

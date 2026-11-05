@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Swedes Abroad//Games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Swedes Abroad: Chris Czerapowicz
+X-WR-TIMEZONE:Europe/Stockholm
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g02@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261030T194500Z
+DTEND:20261030T214500Z
+SUMMARY:Czerapowicz: Grupo Ureta Tizona Burgos vs HLA Alicante (L 79-89)
+DESCRIPTION:Primera FEB. Players: Chris Czerapowicz. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261108bur@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T113000Z
+DTEND:20261108T133000Z
+SUMMARY:Czerapowicz: Grupo Ureta Tizona Burgos at Caja 87 Sevilla
+DESCRIPTION:Primera FEB. Players: Chris Czerapowicz. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+END:VCALENDAR
