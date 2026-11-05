@@ -22065,7 +22065,7 @@
   "fg": "2/6",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22149,7 +22149,7 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "1/2",
-  "pm": -6,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22191,7 +22191,7 @@
   "fg": "0/4",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22212,7 +22212,7 @@
   "fg": "3/5",
   "three": "1/1",
   "ft": "2/2",
-  "pm": -2,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22233,7 +22233,7 @@
   "fg": "7/9",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22254,7 +22254,7 @@
   "fg": "2/3",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 12,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22275,7 +22275,7 @@
   "fg": "4/9",
   "three": "0/3",
   "ft": "0/1",
-  "pm": 6,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22296,7 +22296,7 @@
   "fg": "3/8",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22359,7 +22359,7 @@
   "fg": "5/10",
   "three": "0/1",
   "ft": "5/6",
-  "pm": 8,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22392,16 +22392,16 @@
   "player": "Þorvaldur Orri Árnason",
   "pos": "",
   "min": 15,
-  "pts": 7,
+  "pts": 10,
   "reb": 3,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "3/5",
-  "three": "1/2",
+  "fg": "4/6",
+  "three": "2/3",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
