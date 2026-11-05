@@ -104,6 +104,16 @@ def checks(now):
             issues.append(f"Public site is {int((mine - live).total_seconds() // 60)} min behind the data (publishing may be stuck)")
     except Exception as e:
         issues.append(f"Could not read the public site: {e.__class__.__name__}")
+    # do the published data files actually load? (a broken file empties whole parts of the site)
+    for n in ('schedule', 'boxscores', 'players', 'stats', 'thisweek', 'highlights', 'coachgames', 'teamform', 'gamelogs'):
+        try:
+            req = urllib.request.Request(f"{SITE}data/{n}.json?x={int(now.timestamp())}", headers=U.UA)
+            with urllib.request.urlopen(req, timeout=20) as r:
+                json.loads(r.read().decode('utf-8'))
+        except ValueError:
+            issues.append(f"Published data/{n}.json is broken (the site can't load it)")
+        except Exception:
+            pass
     return issues
 
 
