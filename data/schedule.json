@@ -86,7 +86,9 @@
   "status": "final",
   "score": "L 81-88",
   "box_url": "https://www.aba-liga.com/match/59/26/1/Overview/q1/1/home/bc-vienna-bosna-bh-telecom/",
-  "post_done": true
+  "post_done": true,
+  "live_feed": "aba:59/26/1",
+  "live_done": true
  },
  {
   "game_id": "g02",
@@ -1053,7 +1055,8 @@
   "competition": "ABA League",
   "note": "In Ljubljana",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "aba:70/26/1"
  },
  {
   "game_id": "g20261107tor",

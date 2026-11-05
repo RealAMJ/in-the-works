@@ -2,6 +2,7 @@
 More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and EuroLeague are in update.py):
   ACB (Liga Endesa)          live_feed "acb:<match id>"   page live.acb.com/es/partidos/x-<id>/estadisticas
   FEB (Primera / Segunda)    live_feed "feb:<match id>"   page baloncestoenvivo.feb.es/partido/<id>
+  ABA League                 live_feed "aba:<match>/<season>/1" page aba-liga.com/match/<match>/<season>/1/Overview/... (box score tab)
   BBL (Germany)              live_feed "bbl:<game id>"    page easycredit-bbl.de/spiele/<id> (its embedded game JSON)
   BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
   LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
@@ -77,6 +78,54 @@ def read_acb(mid):
     return dict(period=int(q.group(1)) if q else (4 if 'Final' in status else 1),
                 clock=f'{int(clk.group(1)):02d}:{clk.group(2)}' if clk else '00:00',
                 done='Final' in status, teams=teams)
+
+
+# ------------------------------------------------------------------ ABA
+def read_aba(path, row=None):
+    h = page(f'https://www.aba-liga.com/match/{path}/Overview/q1/1/home/x/')
+    i = h.find('id="Boxscore"')
+    if i < 0:
+        raise LookupError('no box score tab on the ABA page')
+    teams, pos = [], i
+    while len(teams) < 2:
+        a = h.find('<table', pos)
+        if a < 0:
+            break
+        b = h.find('</table>', a)
+        pl = []
+        for r in re.findall(r'<tr.*?</tr>', h[a:b], re.S):
+            c = [clean(x) for x in CELL.findall(r)]
+            if len(c) >= 28 and re.match(r'\d+:\d+', c[2] or ''):
+                n = lambda k: int(c[k]) if re.fullmatch(r'-?\d+', c[k] or '') else 0
+                nm = re.sub(r'\s*\*$', '', c[1]).split()
+                if len(nm) > 1 and re.fullmatch(r'\w{1,2}\.', nm[-1]):  # ABA writes "Njie A." -> "A. Njie"
+                    nm = [nm[-1]] + nm[:-1]
+                pl.append(dict(name=' '.join(nm), min=mins(c[2]), pts=n(3), fgm=n(5) + n(8), fga=n(6) + n(9), tpm=n(8), tpa=n(9),
+                               ftm=n(11), fta=n(12), dreb=n(14), oreb=n(15), reb=n(16), ast=n(17), stl=n(18), tov=n(19), blk=n(20),
+                               pf=n(22), pm=n(27) if re.fullmatch(r'-?\d+', c[27] or '') else '', starter=c[1].endswith('*')))
+        if len(pl) >= 5:  # a team's box score (skips the "Team Compare" totals table)
+            before = clean(h[pos:a].split('>', 1)[-1] if pos == i else h[pos:a]).replace('Boxscore', ' ')
+            name = re.sub(r'^.*[\d%]\s*', '', before).strip() or before[-40:].strip()
+            teams.append(dict(name=name, score=sum(p['pts'] for p in pl), pl=pl))
+        pos = b
+    txt = clean(h)
+    done = 'game finished' in txt
+    qs = [int(x) for x in re.findall(r'end of (\d)\. quarter', txt)]
+    per = 4 if done else (max(qs) + 1 if qs else 1)
+    started = done or any(t['score'] for t in teams)
+    return dict(period=per, clock='00:00' if done else '', done=done, notstarted=not started, teams=teams)
+
+
+def find_aba(row):
+    h = page('https://www.aba-liga.com/calendar/')
+    day = dt.date.fromisoformat(row['date']).strftime('%d.%m.%Y')
+    for m in re.finditer(r'/match/(\d+)/(\d+)/(\d+)/Overview/[^"]*?/([a-z0-9-]+)/"', h):
+        a = h.rfind('<tr', 0, m.start()); b = h.find('</tr>', m.start())
+        cell = clean(h[a:b])
+        sl = set(m.group(4).split('-'))
+        if day in cell and words(row.get('team', '')) & (sl | words(cell)) and words(row.get('opponent', '')) & (sl | words(cell)):
+            return f'aba:{m.group(1)}/{m.group(2)}/{m.group(3)}'
+    return None
 
 
 # ------------------------------------------------------------------ BBL

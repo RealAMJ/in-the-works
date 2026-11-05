@@ -36,28 +36,6 @@
   "eff": 25
  },
  {
-  "line_id": "g04-njie",
-  "game_id": "g04",
-  "player": "Barra Njie",
-  "min": 19,
-  "pts": 2,
-  "reb": 4,
-  "ast": 3,
-  "fg": "1/4",
-  "three": "0/2",
-  "ft": "0/0",
-  "pm": -11,
-  "source": "ABA League (aba-liga.com)",
-  "note": "19:15 played",
-  "oreb": 1,
-  "dreb": 3,
-  "stl": 2,
-  "blk": 0,
-  "tov": 1,
-  "pf": 3,
-  "eff": 4
- },
- {
   "line_id": "g20261031ast-andersson",
   "game_id": "g20261031ast",
   "player": "Denzel Andersson",
@@ -1134,5 +1112,27 @@
   "tov": 0,
   "pf": 0,
   "eff": ""
+ },
+ {
+  "line_id": "g04-njie",
+  "game_id": "g04",
+  "player": "Barra Njie",
+  "min": 19,
+  "pts": 2,
+  "reb": 4,
+  "ast": 3,
+  "fg": "1/4",
+  "three": "0/2",
+  "ft": "0/0",
+  "pm": -11,
+  "source": "ABA League (aba-liga.com)",
+  "note": "19:15 played",
+  "oreb": 1,
+  "dreb": 3,
+  "stl": 2,
+  "blk": 0,
+  "tov": 1,
+  "pf": 3,
+  "eff": 4
  }
 ]

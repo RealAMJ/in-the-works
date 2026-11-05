@@ -308,6 +308,9 @@ def feed_for(row):
     if f.startswith('feb:'):
         import sources
         return 'FEB Live', lambda: sources.read_feb(f.split(':', 1)[1], row)
+    if f.startswith('aba:'):
+        import sources
+        return 'ABA League (aba-liga.com)', lambda: sources.read_aba(f.split(':', 1)[1], row)
     if f.startswith('bbl:'):
         import sources
         return 'easyCredit BBL', lambda: sources.read_bbl(f.split(':', 1)[1], row)
