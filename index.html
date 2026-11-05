@@ -2736,7 +2736,23 @@
         if (/DNP/i.test(r.note || '')) { c.append(mk('p', 'empty', 'Did not play.')); grid.append(c); return; }
         const nums = mk('div', 'lg-nums'); [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', v === '' || v == null ? '—' : String(v)), mk('span', '', k)); nums.append(d); });
         c.append(nums, mk('div', 'pp-sub', `FG ${r.fg || '—'} · 3P ${r.three || '—'} · FT ${r.ft || '—'}`));
-        const fl = lineFlags(r); if (fl.length) { const t = mk('div', 'pp-tags'); fl.forEach((x) => t.append(mk('span', 'pp-tag y', x))); c.append(t); }
+        const fl = lineFlags(r);
+        if (fl.length || final) {
+          const t = mk('div', 'pp-tags'); fl.forEach((x) => t.append(mk('span', 'pp-tag y', x)));
+          if (final) {
+            // share this Swede's line as an image card: the written highlight if there is one, otherwise a headline from his numbers
+            const hl = realHl().find((h) => h.game_id === g.game_id && norm(h.player) === norm(r.player)) || {
+              player: r.player, game_id: g.game_id, date: g.date, tag: fl[0] || '',
+              headline: `${r.pts} points, ${r.reb} rebounds and ${r.ast} assists`, headline_sv: `${r.pts} poäng, ${r.reb} returer och ${r.ast} assist` };
+            const sr = mk('div', 'gc-shares'); sr.append(mk('span', 'gc-sl', '⤴ Share card:'));
+            CARD_STYLES.forEach(([k, lab]) => { const b = mk('button', 'pp-btn gc-share', lab); b.type = 'button'; b.title = 'Share this performance as an image';
+              b.onclick = (e) => { e.stopPropagation(); shareCard(hl, b, k); }; sr.append(b); });
+            if (t.childNodes.length) c.append(t);
+            c.append(sr);
+            return grid.append(c);
+          }
+          c.append(t);
+        }
         grid.append(c);
       });
       sw.append(grid); el.append(sw);
