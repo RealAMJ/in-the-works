@@ -1162,6 +1162,23 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .hl-shares { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
 .hl-sl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
 .hl-shares .hl-share { margin-top: 0; }
-.gc-shares { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--color-border-line); }
-.gc-sl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
-.gc-shares .gc-share { padding: 3px 12px; font-size: .8rem; }
+
+
+/* One Share pill beside the tags, and the share window with both card styles */
+.share-pill { cursor: pointer; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); font: inherit; }
+.share-pill:hover { background: var(--color-bg); }
+.hl .share-pill { margin-top: 8px; justify-self: start; }
+.share-ov { position: fixed; inset: 0; z-index: 1000; background: rgba(0, 0, 0, .6); display: grid; place-items: center; padding: 16px; }
+.share-box { background: var(--color-panel); color: var(--color-fg); border-radius: 14px; width: min(720px, 100%); max-height: calc(100vh - 32px); overflow: auto; padding: 16px; box-shadow: 0 20px 60px rgba(0, 0, 0, .4); }
+.share-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 1.05rem; }
+.share-x { border: 0; background: transparent; color: var(--color-fg-muted); font-size: 1.2rem; cursor: pointer; padding: 4px 8px; }
+.share-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.share-opt { display: grid; gap: 8px; }
+.share-lab { font-size: var(--cds-font-size-caption); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--color-fg-muted); }
+.share-prev { aspect-ratio: 4 / 5; background: #000; border-radius: 8px; overflow: hidden; display: grid; place-items: center; color: #888; }
+.share-prev img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.share-acts { display: flex; flex-wrap: wrap; gap: 6px; }
+.share-acts .pp-btn { flex: 1 1 80px; justify-content: center; text-align: center; padding-inline: 8px; }
+.share-acts button { font: inherit; font-size: .9rem; font-weight: 700; border-radius: 999px; padding: 8px 10px; cursor: pointer; border: 1px solid var(--color-fg); background: var(--color-panel); color: var(--color-fg); }
+.share-acts button.dark { background: var(--color-fg); color: var(--color-panel); }
+.share-acts button[hidden] { display: none; }

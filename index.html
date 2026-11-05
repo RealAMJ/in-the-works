@@ -745,6 +745,37 @@
     if (black) chevrons(x, W / 2, H - 70); else { x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16); }
     return c;
   }
+  // Share window: previews of every card style, each with Share (phone share sheet) and Download
+  async function openShare(r) {
+    document.querySelector('.share-ov')?.remove();
+    const ov = mk('div', 'share-ov'); ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Share card');
+    const box = mk('div', 'share-box');
+    const head = mk('div', 'share-head'); head.append(mk('b', '', 'Share card'));
+    const x = mk('button', 'share-x', '✕'); x.type = 'button'; x.setAttribute('aria-label', 'Close'); head.append(x);
+    const grid = mk('div', 'share-grid');
+    box.append(head, grid); ov.append(box); document.body.append(ov);
+    const close = () => { ov.remove(); document.removeEventListener('keydown', esc); };
+    const esc = (e) => { if (e.key === 'Escape') close(); };
+    x.onclick = close; ov.onclick = (e) => { if (e.target === ov) close(); }; document.addEventListener('keydown', esc);
+    x.focus();
+    const name = (st) => `${calSlug(r.player)}-${r.date || 'game'}-${st}.png`;
+    for (const [st, lab] of CARD_STYLES) {
+      const col = mk('div', 'share-opt'); col.append(mk('div', 'share-lab', lab));
+      const ph = mk('div', 'share-prev', '…'); col.append(ph);
+      const acts = mk('div', 'share-acts');
+      const sb = mk('button', 'pp-btn dark', 'Share'); sb.type = 'button';
+      const db = mk('button', 'pp-btn', 'Download'); db.type = 'button';
+      acts.append(sb, db); col.append(acts); grid.append(col);
+      drawCard(r, st).then((c) => new Promise((res) => c.toBlob((bl) => res([c, bl]), 'image/png'))).then(([c, blob]) => {
+        const img = new Image(); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); ph.replaceChildren(img);
+        const file = new File([blob], name(st), { type: 'image/png' });
+        const canShare = !!(navigator.canShare && navigator.canShare({ files: [file] }));
+        if (!canShare) { sb.hidden = true; db.className = 'pp-btn dark'; }
+        sb.onclick = async () => { try { await navigator.share({ files: [file], title: tx(r, 'headline') }); } catch (e) { /* cancelled */ } };
+        db.onclick = () => { const a = document.createElement('a'); a.href = img.src; a.download = name(st); document.body.append(a); a.click(); a.remove(); };
+      });
+    }
+  }
   async function shareCard(r, btn, style) {
     const old = btn.textContent; btn.textContent = '…';
     try {
@@ -776,10 +807,9 @@
       top.append(who, when);
       const head = document.createElement('div'); head.className = 'hl-head'; head.textContent = tx(r, 'headline');
       const det = document.createElement('p'); det.className = 'hl-detail muted'; det.textContent = tx(r, 'detail');
-      const shr = mk('div', 'hl-shares'); shr.append(mk('span', 'hl-sl', '⤴ Share card:'));
-      CARD_STYLES.forEach(([k, lab]) => { const sh = mk('button', 'pp-btn hl-share', lab); sh.type = 'button'; sh.title = 'Make an image of this performance for social media';
-        sh.onclick = (e) => { e.stopPropagation(); shareCard(r, sh, k); }; shr.append(sh); });
-      card.append(top, head, det, shr);
+      const sh = mk('button', 'pp-tag share-pill hl-share', '⤴ Share'); sh.type = 'button'; sh.title = 'Make an image of this performance for social media';
+      sh.onclick = (e) => { e.stopPropagation(); openShare(r); };
+      card.append(top, head, det, sh);
       box.append(card);
     });
   });
@@ -2744,12 +2774,8 @@
             const hl = realHl().find((h) => h.game_id === g.game_id && norm(h.player) === norm(r.player)) || {
               player: r.player, game_id: g.game_id, date: g.date, tag: fl[0] || '',
               headline: `${r.pts} points, ${r.reb} rebounds and ${r.ast} assists`, headline_sv: `${r.pts} poäng, ${r.reb} returer och ${r.ast} assist` };
-            const sr = mk('div', 'gc-shares'); sr.append(mk('span', 'gc-sl', '⤴ Share card:'));
-            CARD_STYLES.forEach(([k, lab]) => { const b = mk('button', 'pp-btn gc-share', lab); b.type = 'button'; b.title = 'Share this performance as an image';
-              b.onclick = (e) => { e.stopPropagation(); shareCard(hl, b, k); }; sr.append(b); });
-            if (t.childNodes.length) c.append(t);
-            c.append(sr);
-            return grid.append(c);
+            const b = mk('button', 'pp-tag share-pill', '⤴ Share'); b.type = 'button'; b.title = 'Share this performance as an image';
+            b.onclick = (e) => { e.stopPropagation(); openShare(hl); }; t.append(b);
           }
           c.append(t);
         }
