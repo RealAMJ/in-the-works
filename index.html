@@ -623,6 +623,68 @@
     labels(tb);
   });
 
+  // ---- Shareable image card for a standout game (drawn in the browser, 1080x1350 for social media)
+  function wrapLines(ctx, text, maxW) {
+    const out = []; let line = '';
+    String(text || '').split(/\s+/).forEach((w) => { const t = line ? line + ' ' + w : w; if (ctx.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; });
+    if (line) out.push(line); return out;
+  }
+  async function drawCard(r) {
+    try { await document.fonts.load('900 64px Inter'); await document.fonts.load('600 32px Inter'); } catch (e) { /* system font */ }
+    const W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
+    const x = c.getContext('2d'), F = (w, s) => `${w} ${s}px Inter, system-ui, sans-serif`;
+    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id);
+    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player));
+    const bg = x.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#0b4f8a'); bg.addColorStop(.55, '#0b2f52'); bg.addColorStop(1, '#081f38');
+    x.fillStyle = bg; x.fillRect(0, 0, W, H);
+    x.strokeStyle = 'rgba(254,204,2,.13)'; x.lineWidth = 60; x.beginPath(); x.arc(W - 40, 120, 300, 0, Math.PI * 2); x.stroke();
+    x.fillStyle = '#fecc02'; x.fillRect(0, 0, W, 16);
+    // flag + brand
+    x.fillStyle = '#006aa7'; x.fillRect(80, 86, 66, 44); x.fillStyle = '#fecc02'; x.fillRect(100, 86, 12, 44); x.fillRect(80, 102, 66, 12);
+    x.fillStyle = '#fff'; x.font = F(800, 34); x.textBaseline = 'middle'; x.fillText('SWEDES ABROAD', 166, 109);
+    x.textBaseline = 'alphabetic';
+    let y = 300;
+    x.fillStyle = '#fecc02'; x.font = F(800, 34); x.fillText(String(r.tag || 'Standout game').toUpperCase(), 80, y);
+    y += 30; x.fillStyle = '#fff'; x.font = F(900, 108);
+    wrapLines(x, String(r.player || '').toUpperCase(), W - 160).slice(0, 2).forEach((l) => { y += 104; x.fillText(l, 80, y); });
+    if (g) { y += 62; x.fillStyle = 'rgba(255,255,255,.75)'; x.font = F(600, 34); x.fillText(`${g.team} · ${g.competition}`, 80, y); }
+    if (b && b.note !== 'DNP') {
+      y += 70;
+      // points and rebounds, then the most telling extra (no "0 AST" box when he had blocks or steals), then shooting
+      const extra = [['AST', b.ast], ['BLK', b.blk], ['STL', b.stl]].filter(([, v]) => Number(v) > 0).sort((p, q) => Number(q[1]) - Number(p[1]));
+      const cells = [['PTS', b.pts], ['REB', b.reb], Number(b.ast) > 0 ? ['AST', b.ast] : (extra[0] || ['AST', b.ast])];
+      if ((b.stl || 0) >= 3 && cells[2][0] !== 'STL') cells.push(['STL', b.stl]); else if ((b.blk || 0) >= 3 && cells[2][0] !== 'BLK') cells.push(['BLK', b.blk]); else if (b.fg) cells.push(['FG', b.fg]);
+      const cw = (W - 160) / cells.length;
+      cells.forEach(([k, v], i) => {
+        const cx = 80 + cw * i;
+        x.fillStyle = 'rgba(255,255,255,.08)'; x.fillRect(cx, y, cw - 18, 200);
+        x.fillStyle = '#fff'; x.font = F(900, String(v).length > 4 ? 64 : 96); x.fillText(String(v), cx + 26, y + 118);
+        x.fillStyle = '#fecc02'; x.font = F(800, 30); x.fillText(k, cx + 26, y + 168);
+      });
+      y += 200;
+    }
+    y += 90; x.fillStyle = '#fff'; x.font = F(700, 46);
+    wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 58; });
+    if (g) {
+      const res = `${g.score || ''} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`.trim();
+      x.fillStyle = 'rgba(255,255,255,.8)'; x.font = F(600, 34); x.fillText(res, 80, H - 150);
+      x.fillStyle = 'rgba(255,255,255,.55)'; x.font = F(500, 30); x.fillText(r.date ? dayFmt(r.date) : '', 80, H - 100);
+    }
+    x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16);
+    return c;
+  }
+  async function shareCard(r, btn) {
+    const old = btn.textContent; btn.textContent = '…';
+    try {
+      const c = await drawCard(r);
+      const blob = await new Promise((res) => c.toBlob(res, 'image/png'));
+      const name = `${calSlug(r.player)}-${r.date || 'game'}.png`;
+      const file = new File([blob], name, { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: tx(r, 'headline') }); }
+      else { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); }
+    } catch (e) { if (e && e.name !== 'AbortError') console.error('[sa] card', e); }
+    btn.textContent = old;
+  }
   const realHl = () => { const d = dash.data('highlights'); return d.status === 'ok' ? d.data.filter((r) => r.highlight_id !== 'placeholder') : []; };
   dash.draw('hl', (box) => {
     box.replaceChildren();
@@ -642,7 +704,9 @@
       top.append(who, when);
       const head = document.createElement('div'); head.className = 'hl-head'; head.textContent = tx(r, 'headline');
       const det = document.createElement('p'); det.className = 'hl-detail muted'; det.textContent = tx(r, 'detail');
-      card.append(top, head, det);
+      const sh = mk('button', 'pp-btn hl-share', '⤴ Share card'); sh.type = 'button'; sh.title = 'Make an image of this performance for social media';
+      sh.onclick = (e) => { e.stopPropagation(); shareCard(r, sh); };
+      card.append(top, head, det, sh);
       box.append(card);
     });
   });
