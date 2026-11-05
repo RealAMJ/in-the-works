@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="0" fill="#0b2f52"/>
+  <g transform="translate(256 256)">
+    <circle r="168" fill="#fecc02"/>
+    <g fill="none" stroke="#0b2f52" stroke-width="14" stroke-linecap="round">
+      <path d="M-168 0H168"/>
+      <path d="M0 -168V168"/>
+      <path d="M-118 -120C-62 -64 -62 64 -118 120"/>
+      <path d="M118 -120C62 -64 62 64 118 120"/>
+    </g>
+  </g>
+</svg>
