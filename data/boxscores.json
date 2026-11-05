@@ -1073,7 +1073,7 @@
   "line_id": "g25-berg",
   "game_id": "g25",
   "player": "Will Berg",
-  "min": 10,
+  "min": 11,
   "pts": 6,
   "reb": 5,
   "ast": 0,
@@ -1086,7 +1086,7 @@
   "oreb": 3,
   "dreb": 2,
   "stl": 0,
-  "blk": 1,
+  "blk": 2,
   "tov": 0,
   "pf": 0,
   "eff": ""
