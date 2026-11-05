@@ -682,7 +682,7 @@
     const resLine = g ? `${g.score || ''} ${g.venue === 'Away' ? (sv ? 'borta mot' : 'at') : (sv ? 'mot' : 'vs')} ${g.opponent}`.trim() : '';
     if (style === 'v3') {
       // OCD-style: label box, big headline in capitals, stat sentence, chevrons
-      const label = String(r.tag || (sv ? 'Veckans match' : 'Standout game')).toUpperCase() + ':';
+      const label = String(r.tag || (r.recap ? (sv ? 'Slutresultat' : 'Final') : (sv ? 'Veckans match' : 'Standout game'))).toUpperCase() + ':';
       // headline without a repeated tag ("Double-double: 26 points..." -> "26 points..."), led by the player's name
       let hd = String(tx(r, 'headline') || '');
       const tagWords = [r.tag, 'Double-double', 'Dubbel-dubbel', 'Triple-double', 'Trippel-dubbel', 'Perfect shooting', 'Perfekt skytte'].filter(Boolean);
@@ -690,10 +690,11 @@
       const big = `${r.player}: ${hd}`.toUpperCase();
       x.font = F(900, 88); const lines = wrapLines(x, big, W - 160).slice(0, 5);
       const statBits = [];
+      if (b && b.note !== 'DNP' && r.recap) statBits.push(sv ? `${b.pts} P` : `${b.pts} PTS`, sv ? `${b.reb} RET` : `${b.reb} REB`, sv ? `${b.ast} ASS` : `${b.ast} AST`);
       if (b && b.note !== 'DNP') {
         if (b.min !== '' && b.min != null) statBits.push(`${b.min} MIN`);
         if (b.fg) statBits.push(`${b.fg} FG`);
-        cellsFor().slice(2).forEach(([k, v]) => { if (k !== 'FG' && !new RegExp('\\b' + v + ' (' + (sv ? 'POÄNG|RETURER|ASSIST' : 'POINTS|REBOUNDS|ASSISTS') + ')').test(big)) statBits.push(`${v} ${k}`); });
+        cellsFor().slice(2).forEach(([k, v]) => { if (k !== 'FG' && !(r.recap && ['AST', 'REB', 'PTS'].includes(k)) && !new RegExp('\\b' + v + ' (' + (sv ? 'POÄNG|RETURER|ASSIST' : 'POINTS|REBOUNDS|ASSISTS') + ')').test(big)) statBits.push(`${v} ${k}`); });
       }
       const stat = statBits.join(' · ');
       const blockH = 92 + 30 + lines.length * 100 + (stat ? 64 : 0) + (resLine ? 52 : 0);
@@ -717,7 +718,7 @@
     const accent = black ? '#fff' : '#fecc02', sub = black ? 'rgba(255,255,255,.7)' : 'rgba(255,255,255,.75)';
     let y = black ? 470 : 300;
     if (black) {  // tag in a white label box
-      x.font = F(800, 34); const t = String(r.tag || 'Standout game').toUpperCase(), tw = x.measureText(t).width;
+      x.font = F(800, 34); const t = String(r.tag || (r.recap ? (sv ? 'Slutresultat' : 'Final') : 'Standout game')).toUpperCase(), tw = x.measureText(t).width;
       x.fillStyle = '#fff'; x.fillRect(74, y - 40, tw + 24, 54); x.fillStyle = '#000'; x.fillText(t, 86, y);
     } else { x.fillStyle = accent; x.font = F(800, 34); x.fillText(String(r.tag || 'Standout game').toUpperCase(), 80, y); }
     y += 30; x.fillStyle = '#fff'; x.font = F(900, 108);
@@ -738,14 +739,22 @@
     y += 90; x.fillStyle = '#fff'; x.font = F(700, 46);
     wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 58; });
     if (g) {
-      const ry = black ? Math.min(Math.max(y + 30, 0), H - 200) : H - 150;  // black: follows the headline, never over the chevrons
-      x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry);
+      let ry = black ? Math.min(Math.max(y + 30, 0), H - 200) : H - 150;  // black: follows the headline, never over the chevrons
+      if (!r.recap) { x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry); } else ry -= 48;
       x.fillStyle = 'rgba(255,255,255,.5)'; x.font = F(500, 30); x.fillText(r.date ? dayFmt(r.date) : '', 80, ry + 48);
     }
     if (black) chevrons(x, W / 2, H - 70); else { x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16); }
     return c;
   }
   // Share window: previews of every card style, each with Share (phone share sheet) and Download
+  // A card for a game that wasn't a standout: label FINAL / SLUTRESULTAT (or the line's own tag), headline = the result
+  function recapCard(g, r, flags) {
+    const sc = String(g.score || '').split(' ').pop(), won = String(g.score || '').startsWith('W');
+    const away = g.venue === 'Away';
+    return { player: r.player, game_id: g.game_id, date: g.date, tag: (flags && flags[0]) || '', recap: true,
+      headline: `${g.team} ${won ? 'win' : 'lose'} ${sc} ${away ? 'at' : 'vs'} ${g.opponent}`,
+      headline_sv: `${g.team} ${won ? 'vinner' : 'förlorar'} med ${sc} ${away ? 'borta mot' : 'hemma mot'} ${g.opponent}` };
+  }
   async function openShare(r) {
     document.querySelector('.share-ov')?.remove();
     const st = (el, o) => { Object.assign(el.style, o); return el; };
@@ -2790,9 +2799,7 @@
           const t = mk('div', 'pp-tags'); fl.forEach((x) => t.append(mk('span', 'pp-tag y', x)));
           if (final) {
             // share this Swede's line as an image card: the written highlight if there is one, otherwise a headline from his numbers
-            const hl = realHl().find((h) => h.game_id === g.game_id && norm(h.player) === norm(r.player)) || {
-              player: r.player, game_id: g.game_id, date: g.date, tag: fl[0] || '',
-              headline: `${r.pts} points, ${r.reb} rebounds and ${r.ast} assists`, headline_sv: `${r.pts} poäng, ${r.reb} returer och ${r.ast} assist` };
+            const hl = realHl().find((h) => h.game_id === g.game_id && norm(h.player) === norm(r.player)) || recapCard(g, r, fl);
             const b = mk('button', 'pp-tag share-pill', '⤴ Share'); b.type = 'button'; b.title = 'Share this performance as an image';
             b.onclick = (e) => { e.stopPropagation(); openShare(hl); }; t.append(b);
           }
