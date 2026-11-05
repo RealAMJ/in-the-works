@@ -182,6 +182,19 @@
   "score": ""
  },
  {
+  "game_id": "c20261114msu",
+  "date": "2026-11-14",
+  "time": "03:00",
+  "coach": "Erik Johansson",
+  "team": "Mississippi State",
+  "opponent": "Xavier",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "c20261114ora",
   "date": "2026-11-14",
   "time": "17:00",
@@ -203,19 +216,6 @@
   "opponent": "Molina Basket",
   "venue": "Home",
   "competition": "Segunda FEB",
-  "note": "",
-  "status": "upcoming",
-  "score": ""
- },
- {
-  "game_id": "c20261114msu",
-  "date": "2026-11-14",
-  "time": "03:00",
-  "coach": "Erik Johansson",
-  "team": "Mississippi State",
-  "opponent": "Xavier",
-  "venue": "Home",
-  "competition": "NCAA",
   "note": "",
   "status": "upcoming",
   "score": ""
