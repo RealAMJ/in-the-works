@@ -1769,6 +1769,7 @@
     navNote(name);
     document.querySelectorAll('.tb-cmp').forEach((b) => b.classList.toggle('on', name === 'compare'));
     document.querySelectorAll('.pg[data-page]').forEach((p) => { p.hidden = p.dataset.page !== name; });
+    if (dash.flush) dash.flush();  // draw the parts of this page that were skipped while it was hidden
     document.querySelectorAll('.tb-nav [data-page-go]').forEach((b) => {
       const on = b.dataset.pageGo === name;
       b.classList.toggle('on', on);

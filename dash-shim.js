@@ -37,12 +37,26 @@
     return loaded ? { status: 'error', data: null } : { status: 'loading', data: null };
   }
 
+  // Parts of the page inside a hidden page (.pg[hidden]) are not drawn until that page is shown:
+  // they are marked stale and drawn by dash.flush() when it opens (keeps phones fast).
+  function hiddenPage(el) { return !!(el.closest && el.closest('.pg[hidden]')); }
   function run(name) {
     var f = fns[name];
     if (!f) return;
     var els = document.querySelectorAll('[data-draw="' + name + '"]');
     for (var i = 0; i < els.length; i++) {
+      if (hiddenPage(els[i])) { els[i].setAttribute('data-stale', '1'); continue; }
+      els[i].removeAttribute('data-stale');
       try { f(els[i]); } catch (e) { console.error('[sa] draw ' + name, e); }
+    }
+  }
+  function flush() {
+    var els = document.querySelectorAll('[data-stale]');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i], f = fns[el.getAttribute('data-draw')];
+      if (!f || hiddenPage(el)) continue;
+      el.removeAttribute('data-stale');
+      try { f(el); } catch (e) { console.error('[sa] draw ' + el.getAttribute('data-draw'), e); }
     }
   }
 
@@ -124,7 +138,7 @@
     try { history.replaceState(null, '', name && name !== 'home' ? '#' + encodeURIComponent(name) : location.pathname + location.search); } catch (e) { /* ignore */ }
   }
 
-  window.dash = { data: data, draw: draw, onData: onData, params: params, setParams: setParams, setLink: setLink };
+  window.dash = { data: data, draw: draw, flush: flush, onData: onData, params: params, setParams: setParams, setLink: setLink };
 
   function start() {
     var first = getJSON(DATA + '_version.json', Date.now()).then(function (v) {
