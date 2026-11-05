@@ -76,8 +76,22 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase origin main && git push -q origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            # save: on a clash with another update, back out cleanly and don't publish this round
+            # (publishing a half-merged copy once broke the site); the next round picks the change up again
+            ok=false
+            for i in 1 2 3; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then ok=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$ok" = true ] && python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "save or data check failed: not publishing this round"
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin main && git reset -q --hard origin/main
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3
@@ -108,8 +122,22 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase origin main && git push -q origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            # save: on a clash with another update, back out cleanly and don't publish this round
+            # (publishing a half-merged copy once broke the site); the next round picks the change up again
+            ok=false
+            for i in 1 2 3; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then ok=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$ok" = true ] && python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "save or data check failed: not publishing this round"
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin main && git reset -q --hard origin/main
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3
@@ -140,8 +168,22 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase origin main && git push -q origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            # save: on a clash with another update, back out cleanly and don't publish this round
+            # (publishing a half-merged copy once broke the site); the next round picks the change up again
+            ok=false
+            for i in 1 2 3; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then ok=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$ok" = true ] && python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "save or data check failed: not publishing this round"
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin main && git reset -q --hard origin/main
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3
@@ -172,8 +214,22 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase origin main && git push -q origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            # save: on a clash with another update, back out cleanly and don't publish this round
+            # (publishing a half-merged copy once broke the site); the next round picks the change up again
+            ok=false
+            for i in 1 2 3; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then ok=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$ok" = true ] && python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "save or data check failed: not publishing this round"
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin main && git reset -q --hard origin/main
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3
@@ -204,8 +260,22 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
-            git pull -q --rebase origin main && git push -q origin HEAD:main
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            # save: on a clash with another update, back out cleanly and don't publish this round
+            # (publishing a half-merged copy once broke the site); the next round picks the change up again
+            ok=false
+            for i in 1 2 3; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then ok=true; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 3
+            done
+            if [ "$ok" = true ] && python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "save or data check failed: not publishing this round"
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin main && git reset -q --hard origin/main
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - uses: actions/upload-pages-artifact@v3
