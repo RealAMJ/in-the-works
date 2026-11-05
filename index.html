@@ -2390,10 +2390,16 @@
   function wkKindCls(k) { return 'wk-kind k-' + String(k || '').toLowerCase().replace(/[^a-z]+/g, '-'); }
   function wkPlayers(text) { const s = mk('span', 'wk-pl'); s.append(names(text)); return s; }
   function openStory(id) { wkSel = id; showPage('week'); dash.draw('wk'); scrollTopSw(); }
+  // This week's stories, newest first ("Coming up" always last)
+  function wkStories() {
+    const d = ds('thisweek'); if (!d) return null;
+    const up = (r) => /coming up/i.test(r.kind || '');
+    return d.map((r, i) => [r, i]).sort((a, b) => (up(a[0]) - up(b[0])) || String(b[0].date || '').localeCompare(String(a[0].date || '')) || (a[1] - b[1])).map((x) => x[0]);
+  }
   dash.draw('wk-label', (el) => { const d = ds('thisweek'); el.textContent = d && d[0] ? 'Week of ' + String(d[0].week || '').replace(/2026-(\d\d)-(\d\d)/g, (m, mo, da) => dayFmt(`2026-${mo}-${da}`)) : '—'; });
   dash.draw('wk', (el) => {
     el.replaceChildren();
-    const d = ds('thisweek'); if (!d) { el.textContent = '—'; return; }
+    const d = wkStories(); if (!d) { el.textContent = '—'; return; }
     if (!d.length) { el.append(mk('p', 'hc-note', 'This week\'s stories are on their way.')); return; }
     const story = d.find((r) => r.story_id === wkSel) || d.find((r) => /lead/i.test(r.kind)) || d[0];
     const main = mk('article', 'wk-main'); main.dataset.key = story.story_id;
@@ -2424,7 +2430,7 @@
   });
   dash.draw('h-wk', (el) => {
     el.replaceChildren();
-    const d = ds('thisweek'); if (!d) { el.textContent = '—'; return; }
+    const d = wkStories(); if (!d) { el.textContent = '—'; return; }
     d.slice(0, 4).forEach((r) => {
       const b = mk('button', 'hw-item'); b.type = 'button'; b.dataset.key = r.story_id;
       b.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'hw-h', tx(r, 'headline')));

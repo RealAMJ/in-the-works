@@ -14,6 +14,34 @@
   "stats_sv": "26 P · 16 RET · 11/16 FG · 4/4 STR · 2 BLOCK"
  },
  {
+  "story_id": "w45-tough",
+  "date": "2026-11-05",
+  "kind": "Roundup",
+  "players": "Pelle Larsson",
+  "game_id": "g26",
+  "headline": "Heat split in Los Angeles: routed by the Lakers, then a one-point win over the Clippers",
+  "body": "Miami's West Coast trip started with a 138-117 loss to the Lakers, where Luka Dončić had 42 points, 7 rebounds and 13 assists. Pelle Larsson scored 9 points in 30 minutes (2 of 6, 4 of 4 free throws) with 3 rebounds and 2 assists.\n\nTwo nights later the Heat won 117-116 at the Clippers. Larsson played 35 minutes and had 7 points, 3 rebounds and 4 assists; Bam Adebayo scored 35 with 10 rebounds, Klay Thompson added 30 and Giannis Antetokounmpo had 27 points and 14 rebounds.\n\nMiami are 3-5, and Larsson is averaging 10.9 points and 3.8 assists over eight games. The trip continues at Golden State on Friday (04:00 Swedish time) and Sacramento on Monday (03:00).",
+  "stats": "Larsson 9 PTS at LAL · 7 PTS, 4 AST at LAC · Heat 3-5",
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "Heat delar i Los Angeles: utklassade av Lakers, sedan enpoängsseger mot Clippers",
+  "body_sv": "Miamis västkustturné började med en förlust med 117-138 mot Lakers, där Luka Dončić gjorde 42 poäng, 7 returer och 13 assist. Pelle Larsson gjorde 9 poäng på 30 minuter (2 av 6, 4 av 4 straffar) och hade 3 returer och 2 assist.\n\nTvå nätter senare vann Heat med 117-116 borta mot Clippers. Larsson spelade 35 minuter och hade 7 poäng, 3 returer och 4 assist; Bam Adebayo gjorde 35 poäng och 10 returer, Klay Thompson 30 och Giannis Antetokounmpo 27 poäng och 14 returer.\n\nMiami står på 3-5, och Larsson snittar 10,9 poäng och 3,8 assist på åtta matcher. Turnén fortsätter mot Golden State natten mot fredag (kl. 04.00 svensk tid) och Sacramento natten mot måndag (kl. 03.00).",
+  "stats_sv": "Larsson 9 P mot LAL · 7 P, 4 ASS mot LAC · Heat 3-5"
+ },
+ {
+  "story_id": "w45-europe",
+  "date": "2026-11-04",
+  "kind": "Roundup",
+  "players": "Kenny Pohto, Melwin Pantzar, Simon Birgander, Ludvig Håkanson, Barra Njie, Zaba Bangala, Bobi Klintman",
+  "game_id": "g20",
+  "headline": "Europe midweek: Utena win in overtime, Spanish sides stay perfect in the Champions League",
+  "body": "Kenny Pohto's Utena beat Pardubice 98-95 in overtime in the Champions League. Pohto started and had 6 points, 8 rebounds (6 offensive), 2 steals and a block in 25 minutes, and was +15. Tevian Jones led Utena with 24.\n\nMelwin Pantzar had 2 points and 3 assists in 15 minutes as Unicaja beat Reggiana 99-94, and Joventut won 81-64 at Porto, with Simon Birgander adding 6 points and 6 rebounds; Ludvig Håkanson did not play. Both Spanish clubs are 3-0 in their groups.\n\nIn the FIBA Europe Cup, Barra Njie had 8 points, 5 assists and 3 rebounds as BC Vienna won 84-80 at Nitra. In the BBL, Zaba Bangala scored a season-high 14 points with 7 rebounds, but Braunschweig were routed 108-66 at Bayern Munich. Earlier in the week, Bobi Klintman was not on Virtus Bologna's game roster as Trieste handed Virtus their first Serie A loss, 100-93.",
+  "stats": "Pohto 6 PTS, 8 REB, +15 · Njie 8 PTS, 5 AST · Bangala 14 PTS (season high)",
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "Europa mitt i veckan: Utena vinner efter förlängning, spanska lagen fortsatt felfria i Champions League",
+  "body_sv": "Kenny Pohtos Utena slog Pardubice med 98-95 efter förlängning i Champions League. Pohto startade och hade 6 poäng, 8 returer (6 offensiva), 2 steals och ett block på 25 minuter, och var +15. Tevian Jones var bäst i Utena med 24 poäng.\n\nMelwin Pantzar hade 2 poäng och 3 assist på 15 minuter när Unicaja slog Reggiana med 99-94, och Joventut vann med 81-64 borta mot Porto, där Simon Birgander bidrog med 6 poäng och 6 returer; Ludvig Håkanson spelade inte. Båda de spanska klubbarna står på 3-0 i sina grupper.\n\nI FIBA Europe Cup hade Barra Njie 8 poäng, 5 assist och 3 returer när BC Vienna vann med 84-80 borta mot Nitra. I BBL gjorde Zaba Bangala säsongsbästa 14 poäng och tog 7 returer, men Braunschweig blev överkörda med 66-108 borta mot Bayern München. Tidigare i veckan fanns Bobi Klintman inte med i Virtus Bolognas trupp när Trieste gav Virtus säsongens första förlust i Serie A, 93-100.",
+  "stats_sv": "Pohto 6 P, 8 RET, +15 · Njie 8 P, 5 ASS · Bangala 14 P (säsongsbästa)"
+ },
+ {
   "story_id": "w45-holmstrom",
   "date": "2026-11-03",
   "kind": "Big night",
@@ -42,48 +70,6 @@
   "week": "2026-11-01 – 2026-11-07"
  },
  {
-  "story_id": "w45-europe",
-  "date": "2026-11-04",
-  "kind": "Roundup",
-  "players": "Kenny Pohto, Melwin Pantzar, Simon Birgander, Ludvig Håkanson, Barra Njie, Zaba Bangala, Bobi Klintman",
-  "game_id": "g20",
-  "headline": "Europe midweek: Utena win in overtime, Spanish sides stay perfect in the Champions League",
-  "body": "Kenny Pohto's Utena beat Pardubice 98-95 in overtime in the Champions League. Pohto started and had 6 points, 8 rebounds (6 offensive), 2 steals and a block in 25 minutes, and was +15. Tevian Jones led Utena with 24.\n\nMelwin Pantzar had 2 points and 3 assists in 15 minutes as Unicaja beat Reggiana 99-94, and Joventut won 81-64 at Porto, with Simon Birgander adding 6 points and 6 rebounds; Ludvig Håkanson did not play. Both Spanish clubs are 3-0 in their groups.\n\nIn the FIBA Europe Cup, Barra Njie had 8 points, 5 assists and 3 rebounds as BC Vienna won 84-80 at Nitra. In the BBL, Zaba Bangala scored a season-high 14 points with 7 rebounds, but Braunschweig were routed 108-66 at Bayern Munich. Earlier in the week, Bobi Klintman was not on Virtus Bologna's game roster as Trieste handed Virtus their first Serie A loss, 100-93.",
-  "stats": "Pohto 6 PTS, 8 REB, +15 · Njie 8 PTS, 5 AST · Bangala 14 PTS (season high)",
-  "week": "2026-11-01 – 2026-11-07",
-  "headline_sv": "Europa mitt i veckan: Utena vinner efter förlängning, spanska lagen fortsatt felfria i Champions League",
-  "body_sv": "Kenny Pohtos Utena slog Pardubice med 98-95 efter förlängning i Champions League. Pohto startade och hade 6 poäng, 8 returer (6 offensiva), 2 steals och ett block på 25 minuter, och var +15. Tevian Jones var bäst i Utena med 24 poäng.\n\nMelwin Pantzar hade 2 poäng och 3 assist på 15 minuter när Unicaja slog Reggiana med 99-94, och Joventut vann med 81-64 borta mot Porto, där Simon Birgander bidrog med 6 poäng och 6 returer; Ludvig Håkanson spelade inte. Båda de spanska klubbarna står på 3-0 i sina grupper.\n\nI FIBA Europe Cup hade Barra Njie 8 poäng, 5 assist och 3 returer när BC Vienna vann med 84-80 borta mot Nitra. I BBL gjorde Zaba Bangala säsongsbästa 14 poäng och tog 7 returer, men Braunschweig blev överkörda med 66-108 borta mot Bayern München. Tidigare i veckan fanns Bobi Klintman inte med i Virtus Bolognas trupp när Trieste gav Virtus säsongens första förlust i Serie A, 93-100.",
-  "stats_sv": "Pohto 6 P, 8 RET, +15 · Njie 8 P, 5 ASS · Bangala 14 P (säsongsbästa)"
- },
- {
-  "story_id": "w45-tough",
-  "date": "2026-11-05",
-  "kind": "Roundup",
-  "players": "Pelle Larsson",
-  "game_id": "g26",
-  "headline": "Heat split in Los Angeles: routed by the Lakers, then a one-point win over the Clippers",
-  "body": "Miami's West Coast trip started with a 138-117 loss to the Lakers, where Luka Dončić had 42 points, 7 rebounds and 13 assists. Pelle Larsson scored 9 points in 30 minutes (2 of 6, 4 of 4 free throws) with 3 rebounds and 2 assists.\n\nTwo nights later the Heat won 117-116 at the Clippers. Larsson played 35 minutes and had 7 points, 3 rebounds and 4 assists; Bam Adebayo scored 35 with 10 rebounds, Klay Thompson added 30 and Giannis Antetokounmpo had 27 points and 14 rebounds.\n\nMiami are 3-5, and Larsson is averaging 10.9 points and 3.8 assists over eight games. The trip continues at Golden State on Friday (04:00 Swedish time) and Sacramento on Monday (03:00).",
-  "stats": "Larsson 9 PTS at LAL · 7 PTS, 4 AST at LAC · Heat 3-5",
-  "week": "2026-11-01 – 2026-11-07",
-  "headline_sv": "Heat delar i Los Angeles: utklassade av Lakers, sedan enpoängsseger mot Clippers",
-  "body_sv": "Miamis västkustturné började med en förlust med 117-138 mot Lakers, där Luka Dončić gjorde 42 poäng, 7 returer och 13 assist. Pelle Larsson gjorde 9 poäng på 30 minuter (2 av 6, 4 av 4 straffar) och hade 3 returer och 2 assist.\n\nTvå nätter senare vann Heat med 117-116 borta mot Clippers. Larsson spelade 35 minuter och hade 7 poäng, 3 returer och 4 assist; Bam Adebayo gjorde 35 poäng och 10 returer, Klay Thompson 30 och Giannis Antetokounmpo 27 poäng och 14 returer.\n\nMiami står på 3-5, och Larsson snittar 10,9 poäng och 3,8 assist på åtta matcher. Turnén fortsätter mot Golden State natten mot fredag (kl. 04.00 svensk tid) och Sacramento natten mot måndag (kl. 03.00).",
-  "stats_sv": "Larsson 9 P mot LAL · 7 P, 4 ASS mot LAC · Heat 3-5"
- },
- {
-  "story_id": "w45-hagberg",
-  "date": "2026-11-01",
-  "kind": "Double-double",
-  "players": "Kasper Hagberg, Mikai Klintman",
-  "game_id": "",
-  "headline": "Hagberg runs the show with 15 points and 12 assists",
-  "body": "Kasper Hagberg had a double-double and didn't turn the ball over once as Frøya beat Bærum 95-83 at home in Norway's BLNO. He scored 15 points (6 of 15, 3 of 10 from three), handed out 12 assists and grabbed 4 rebounds in almost 38 minutes.\n\nHagberg is now averaging 15.1 points and 7.1 assists over seven games.\n\nIn Germany's ProB the same day, Mikai Klintman had 12 points on 5-of-11 shooting and 6 rebounds in Weimar's 94-88 loss at Oberhaching.",
-  "stats": "15 PTS · 12 AST · 4 REB · 0 TOV",
-  "headline_sv": "Hagberg styr spelet med 15 poäng och 12 assist",
-  "body_sv": "Kasper Hagberg gjorde en dubbel-dubbel utan en enda bollförlust när Frøya slog Bærum med 95-83 hemma i norska BLNO. Han gjorde 15 poäng (6 av 15, 3 av 10 från tre), delade ut 12 assist och tog 4 returer på nästan 38 minuter.\n\nHagberg snittar nu 15,1 poäng och 7,1 assist på sju matcher.\n\nI tyska ProB samma dag gjorde Mikai Klintman 12 poäng på 5 av 11 skott och tog 6 returer när Weimar förlorade med 88-94 borta mot Oberhaching.",
-  "stats_sv": "15 P · 12 ASS · 4 RET · 0 BOLLF",
-  "week": "2026-11-01 – 2026-11-07"
- },
- {
   "story_id": "w45-fasasi",
   "date": "2026-11-03",
   "kind": "Big night",
@@ -109,6 +95,20 @@
   "headline_sv": "Premiärkväll i college: segrar för Michigan, St. John's, Iona och VMI",
   "body_sv": "Elliot Cadeau och Michigan inledde med 84-68 mot Oakland. Cadeau hade svårt med skottet (1 av 5, 0 av 4 från tre) men styrde anfallet med 6 assist, satte 5 av 6 straffar och hade 4 steals på 34 minuter för 7 poäng.\n\nCasper Pohto gjorde 2 poäng på sitt enda skott under två minuter när St. John's slog Monmouth med 78-63, och Alliou Fall tog 5 returer i Ionas rysare mot Vermont, 56-55. VMI vann med 115-83 mot Virginia-Lynchburg, där Zion Vaamonde gjorde 7 poäng (2 av 6 från tre) och Rodrigas Jucevicius bidrog med 2 poäng, 3 returer och 2 assist.\n\nPå bortaplan var det tyngre: Hugo Tidare satte 2 av 3 treor för 6 poäng när Lipscomb förlorade med 79-86 mot Southeast Missouri State, Villiam Garcia Adsten gjorde 7 poäng när Maine föll med 56-83 mot Providence, och Oskar Stumer hade 2 poäng och 3 returer när Denver förlorade med 68-75 mot Wisconsin. Nathan Amoran (4 poäng, 4 returer) och Idaho State förlorade med 58-94 mot Utah State, och Samuel Obenjo tog 6 returer när Robert Morris föll med 49-86 mot Nevada. William Kermoury (UNC Wilmington) och Ademar Santos (Delaware State) spelade inte i lagens storsegrar.",
   "stats_sv": "Cadeau 7 P, 6 ASS, 4 STEALS · Vaamonde 7 P · Garcia Adsten 7 P",
+  "week": "2026-11-01 – 2026-11-07"
+ },
+ {
+  "story_id": "w45-hagberg",
+  "date": "2026-11-01",
+  "kind": "Double-double",
+  "players": "Kasper Hagberg, Mikai Klintman",
+  "game_id": "",
+  "headline": "Hagberg runs the show with 15 points and 12 assists",
+  "body": "Kasper Hagberg had a double-double and didn't turn the ball over once as Frøya beat Bærum 95-83 at home in Norway's BLNO. He scored 15 points (6 of 15, 3 of 10 from three), handed out 12 assists and grabbed 4 rebounds in almost 38 minutes.\n\nHagberg is now averaging 15.1 points and 7.1 assists over seven games.\n\nIn Germany's ProB the same day, Mikai Klintman had 12 points on 5-of-11 shooting and 6 rebounds in Weimar's 94-88 loss at Oberhaching.",
+  "stats": "15 PTS · 12 AST · 4 REB · 0 TOV",
+  "headline_sv": "Hagberg styr spelet med 15 poäng och 12 assist",
+  "body_sv": "Kasper Hagberg gjorde en dubbel-dubbel utan en enda bollförlust när Frøya slog Bærum med 95-83 hemma i norska BLNO. Han gjorde 15 poäng (6 av 15, 3 av 10 från tre), delade ut 12 assist och tog 4 returer på nästan 38 minuter.\n\nHagberg snittar nu 15,1 poäng och 7,1 assist på sju matcher.\n\nI tyska ProB samma dag gjorde Mikai Klintman 12 poäng på 5 av 11 skott och tog 6 returer när Weimar förlorade med 88-94 borta mot Oberhaching.",
+  "stats_sv": "15 P · 12 ASS · 4 RET · 0 BOLLF",
   "week": "2026-11-01 – 2026-11-07"
  },
  {
