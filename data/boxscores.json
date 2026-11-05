@@ -1117,14 +1117,14 @@
   "line_id": "g20261105kr-ramstedt",
   "game_id": "g20261105kr",
   "player": "Adam Ramstedt",
-  "min": 14,
+  "min": 15,
   "pts": 5,
   "reb": 4,
   "ast": 1,
   "fg": "2/3",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 4,
   "source": "FIBA LiveStats",
   "note": "live",
   "oreb": 2,
@@ -1132,7 +1132,7 @@
   "stl": 0,
   "blk": 2,
   "tov": 1,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
