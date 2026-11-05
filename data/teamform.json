@@ -4534,5 +4534,33 @@
   "note": "",
   "leaders": "Ballew|17|5|0;Davis|15|3|6;Ekissi|11|5|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-05",
+  "team": "Miami Heat",
+  "date": "2026-11-05",
+  "competition": "NBA",
+  "opponent": "LA Clippers",
+  "venue": "Away",
+  "score": "117-116",
+  "result": "W",
+  "top": "Adebayo 35 pts, 10 reb",
+  "note": "",
+  "leaders": "Adebayo|35|10|4;Thompson|30|5|3;Antetokounmpo|27|14|6",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "la-clippers-2026-11-05",
+  "team": "LA Clippers",
+  "date": "2026-11-05",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Home",
+  "score": "116-117",
+  "result": "L",
+  "top": "Garland 26 pts, 1 reb",
+  "note": "",
+  "leaders": "Garland|26|1|7;Hachimura|21|9|7;Lopez|20|8|1",
+  "source": "ESPN"
  }
 ]

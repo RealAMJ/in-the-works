@@ -1,12 +1,12 @@
 {
- "at": "2026-11-05T07:20:20+01:00",
+ "at": "2026-11-05T13:40:43+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Icelandic Premier League",
    "seed": 2856123,
    "scanned": 799,
-   "answered": 457,
+   "answered": 456,
    "sample": [
     [
      2856122,
@@ -90,6 +90,98 @@
      [
       "Stjarnan Stjarnan",
       "ÍR IR"
+     ]
+    ]
+   ]
+  },
+  {
+   "competition": "Croatian Premier League",
+   "seed": 2893787,
+   "scanned": 799,
+   "answered": 89,
+   "sample": [
+    [
+     2893786,
+     [
+      "KK DepoLink Škrljevo KK DepoLink Škrljevo",
+      "KK Cibona KK Cibona"
+     ]
+    ],
+    [
+     2893788,
+     [
+      "KK Virtus Zagreb KK Virtus Zagreb",
+      "KK Alkar KK Alkar"
+     ]
+    ],
+    [
+     2893785,
+     [
+      "KK Samobor KK Samobor",
+      "KK DepoLink Škrljevo KK DepoLink Škrljevo"
+     ]
+    ],
+    [
+     2893789,
+     [
+      "KK Virtus Zagreb KK Virtus Zagreb",
+      "KK Samobor KK Samobor"
+     ]
+    ],
+    [
+     2893784,
+     [
+      "KK Zabok KK Zabok",
+      "KK Samobor KK Samobor"
+     ]
+    ],
+    [
+     2893790,
+     [
+      "KK Split KK Split",
+      "KK Zadar KK Zadar"
+     ]
+    ],
+    [
+     2893783,
+     [
+      "KK Cibona KK Cibona",
+      "KK Virtus Zagreb KK Virtus Zagreb"
+     ]
+    ],
+    [
+     2893791,
+     [
+      "KK Dinamo Zagreb KK Dinamo Zagreb",
+      "KK Dubrava KK Dubrava"
+     ]
+    ],
+    [
+     2893782,
+     [
+      "KK Samobor KK Samobor",
+      "KK Cibona KK Cibona"
+     ]
+    ],
+    [
+     2893792,
+     [
+      "KK Split KK Split",
+      "KK Cibona KK Cibona"
+     ]
+    ],
+    [
+     2893781,
+     [
+      "KK Alkar KK Alkar",
+      "KK Split KK Split"
+     ]
+    ],
+    [
+     2893793,
+     [
+      "KK Dinamo Zagreb KK Dinamo Zagreb",
+      "KK Alkar KK Alkar"
      ]
     ]
    ]

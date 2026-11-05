@@ -4074,5 +4074,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "larsson-2026-11-05",
+  "player": "Pelle Larsson",
+  "date": "2026-11-05",
+  "competition": "NBA",
+  "team": "Miami Heat",
+  "opponent": "LA Clippers",
+  "venue": "Away",
+  "result": "W 117-116",
+  "min": 35,
+  "pts": 7,
+  "reb": 3,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "2/7",
+  "three": "0/2",
+  "ft": "3/4",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 0,
+  "pm": -6,
+  "eff": ""
  }
 ]
