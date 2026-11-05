@@ -78,9 +78,12 @@ jobs:
           name: site-1
 
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 3
+        continue-on-error: true
         if: steps.r1.outputs.changed == 'true' || github.event_name != 'schedule'
         with:
           artifact_name: site-1
+          timeout: 150000
 
       - name: Check live games (2)
         id: r2
@@ -107,9 +110,12 @@ jobs:
           name: site-2
 
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 3
+        continue-on-error: true
         if: steps.r2.outputs.changed == 'true'
         with:
           artifact_name: site-2
+          timeout: 150000
 
       - name: Check live games (3)
         id: r3
@@ -136,9 +142,12 @@ jobs:
           name: site-3
 
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 3
+        continue-on-error: true
         if: steps.r3.outputs.changed == 'true'
         with:
           artifact_name: site-3
+          timeout: 150000
 
       - name: Check live games (4)
         id: r4
@@ -165,9 +174,12 @@ jobs:
           name: site-4
 
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 3
+        continue-on-error: true
         if: steps.r4.outputs.changed == 'true'
         with:
           artifact_name: site-4
+          timeout: 150000
 
       - name: Check live games (5)
         id: r5
@@ -194,9 +206,12 @@ jobs:
           name: site-5
 
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 3
+        continue-on-error: true
         if: steps.r5.outputs.changed == 'true'
         with:
           artifact_name: site-5
+          timeout: 150000
 
       # GitHub's 5-minute timer is often late or skipped. While a game is on (or starts
       # within 3 hours) each run starts the next one itself, so the checks never stop.
