@@ -117,5 +117,16 @@
   "tag": "Season high",
   "headline_sv": "Säsongsbästa 14 poäng",
   "detail_sv": "Bangala gjorde 14 poäng (6/16 från fältet, 0/1 från tre, 2/3 på straffar), 7 returer och 2 assist på 25 minuter när Löwen Braunschweig förlorade med 66-108 borta mot Bayern Munich."
+ },
+ {
+  "highlight_id": "g25-berg",
+  "date": "2026-11-05",
+  "player": "Will Berg",
+  "game_id": "g25",
+  "headline": "Double-double: 26 points and 16 rebounds",
+  "detail": "Berg had 26 points (11/16 FG, 0/0 3PT, 4/4 FT), 16 rebounds and 0 assists in 28 minutes as Wichita State won 79-67 at home to Cal State Northridge.",
+  "tag": "Double-double",
+  "headline_sv": "Dubbel-dubbel: 26 poäng och 16 returer",
+  "detail_sv": "Berg gjorde 26 poäng (11/16 från fältet, 0/0 från tre, 4/4 på straffar), 16 returer och 0 assist på 28 minuter när Wichita State vann med 79-67 hemma mot Cal State Northridge."
  }
 ]

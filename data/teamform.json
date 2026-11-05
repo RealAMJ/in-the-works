@@ -4506,5 +4506,33 @@
   "note": "",
   "leaders": "Adley|23|5|1;Ikpe|18|4|1;Bonner|13|3|7",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "wichita-state-2026-11-05",
+  "team": "Wichita State",
+  "date": "2026-11-05",
+  "competition": "NCAA",
+  "opponent": "Cal State Northridge",
+  "venue": "Home",
+  "score": "79-67",
+  "result": "W",
+  "top": "Berg 26 pts, 16 reb",
+  "note": "",
+  "leaders": "Berg|26|16|0;Giles|21|1|8;Long|12|5|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "cal-state-northridge-2026-11-05",
+  "team": "Cal State Northridge",
+  "date": "2026-11-05",
+  "competition": "NCAA",
+  "opponent": "Wichita State",
+  "venue": "Away",
+  "score": "67-79",
+  "result": "L",
+  "top": "Ballew 17 pts, 5 reb",
+  "note": "",
+  "leaders": "Ballew|17|5|0;Davis|15|3|6;Ekissi|11|5|0",
+  "source": "ESPN"
  }
 ]

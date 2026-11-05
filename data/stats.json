@@ -538,5 +538,17 @@
   "reb": 7.0,
   "ast": 4.0,
   "note": "Averages from game log (1 games, through 2026-11-04)"
+ },
+ {
+  "row_id": "berg-ncaa",
+  "player": "Will Berg",
+  "competition": "NCAA",
+  "season": "2026-27",
+  "gp": 1,
+  "min": 28.0,
+  "pts": 26.0,
+  "reb": 16.0,
+  "ast": 0.0,
+  "note": "Averages from game log (1 games, through 2026-11-05)"
  }
 ]
