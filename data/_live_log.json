@@ -1,26 +1,72 @@
 {
- "at": "2026-11-05T22:03:20+01:00",
+ "at": "2026-11-06T00:43:17+01:00",
  "log": [
   {
-   "game": "g20261105kr",
-   "checking": "FIBA LiveStats"
+   "game": "g20261106maine",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261105kr",
-   "src": "FIBA LiveStats",
-   "period": 4,
+   "game": "g20261106maine",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "\u00c1lftanes",
-     94,
-     12
+     "Sacred Heart Pioneers",
+     0,
+     0
     ],
     [
-     "KR",
-     102,
-     11
+     "Maine Black Bears",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261106dsu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261106dsu",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Navy Midshipmen",
+     0,
+     0
+    ],
+    [
+     "Delaware State Hornets",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261106iona",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261106iona",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Iona Gaels",
+     0,
+     0
+    ],
+    [
+     "NJIT Highlanders",
+     0,
+     0
     ]
    ]
   }
