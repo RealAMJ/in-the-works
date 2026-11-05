@@ -14,7 +14,9 @@
   "box_url": "https://www.euroleaguebasketball.net/en/euroleague/game-center/2026-27/virtus-bologna-zalgiris-kaunas/E2026/80/#boxscore",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
-  "post_done": true
+  "post_done": true,
+  "live_feed": "euroleague:E2026:80",
+  "live_done": true
  },
  {
   "game_id": "g00b",
@@ -31,7 +33,9 @@
   "box_url": "https://www.nba.com/game/mia-vs-atl-0022600132/box-score",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
-  "post_done": true
+  "post_done": true,
+  "espn_id": "401909881",
+  "live_done": true
  },
  {
   "game_id": "g20261029kr",
@@ -46,7 +50,9 @@
   "status": "final",
   "score": "W 107-102",
   "box_url": "https://fibalivestats.dcd.shared.geniussports.com/u/KKI/2856123/bs.html",
-  "post_done": true
+  "post_done": true,
+  "live_feed": "fiba:2856123",
+  "live_done": true
  },
  {
   "game_id": "g01",
@@ -817,7 +823,8 @@
   "competition": "Icelandic Premier League",
   "note": "Round 5: top-of-the-table clash, both 4-0",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2856135"
  },
  {
   "game_id": "g20261106maine",

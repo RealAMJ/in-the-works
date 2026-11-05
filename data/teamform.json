@@ -1554,20 +1554,6 @@
   "source": "Betexplorer"
  },
  {
-  "row_id": "csm-oradea-2026-10-28",
-  "team": "CSM Oradea",
-  "date": "2026-10-28",
-  "competition": "FIBA Europe Cup",
-  "opponent": "Neftchi IK",
-  "venue": "Away",
-  "score": "99-83",
-  "result": "W",
-  "top": "Q. Guerrier 13 pts, 12 reb",
-  "note": "",
-  "leaders": "D. Nichols|23|3|1;M. Osborne|15|4|1;B. Hume|15|2|3",
-  "source": "Flashscore"
- },
- {
   "row_id": "csm-oradea-2026-10-24",
   "team": "CSM Oradea",
   "date": "2026-10-24",
@@ -4562,5 +4548,33 @@
   "note": "",
   "leaders": "Garland|26|1|7;Hachimura|21|9|7;Lopez|20|8|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "anwil-włocławek-2026-11-04",
+  "team": "Anwil Włocławek",
+  "date": "2026-11-04",
+  "competition": "ENBL",
+  "opponent": "Zrinjski Mostar",
+  "venue": "Away",
+  "score": "84-78",
+  "result": "W",
+  "top": "Hines 29 pts, 7 reb",
+  "note": "Closed the game on an 8-0 run",
+  "leaders": "Hines|29|7|2;Edwin|14||",
+  "source": "kkwloclawek.pl (club schedule and match report)"
+ },
+ {
+  "row_id": "zrinjski-mostar-2026-11-04",
+  "team": "Zrinjski Mostar",
+  "date": "2026-11-04",
+  "competition": "ENBL",
+  "opponent": "Anwil Włocławek",
+  "venue": "Home",
+  "score": "78-84",
+  "result": "L",
+  "top": "Anderson 30 pts",
+  "note": "",
+  "leaders": "Anderson|30||",
+  "source": "kkwloclawek.pl (club schedule and match report)"
  }
 ]

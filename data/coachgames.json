@@ -99,9 +99,11 @@
   "opponent": "Zrinjski Mostar",
   "venue": "Away",
   "competition": "ENBL",
-  "note": "Time per club news post Oct 31 (club schedule page still says 16:15)",
-  "status": "upcoming",
-  "score": ""
+  "note": "",
+  "status": "final",
+  "score": "W 84-78",
+  "post_done": true,
+  "live_feed": "none"
  },
  {
   "game_id": "c20261106msu",

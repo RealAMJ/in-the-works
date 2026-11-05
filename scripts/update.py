@@ -496,7 +496,8 @@ def main(argv):
             touched = True
             row.pop('backfill', None)
     soon = [tip_time(r) for r in sched + coach if r.get('status') != 'final' and tip_time(r)]
-    soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=3)]
+    # keep the run chain going while any game is due in the next 12 hours (GitHub's own timer can skip runs for hours)
+    soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=12)]
     if soon and not only:
         print('KEEP_GOING')
     changed = False
