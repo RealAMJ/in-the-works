@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T02:37:07+01:00",
+ "at": "2026-11-05T02:37:58+01:00",
  "log": [
   {
    "game": "g25",
@@ -9,17 +9,17 @@
    "game": "g25",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:51",
+   "clock": "18:58",
    "done": false,
    "teams": [
     [
      "Cal State Northridge Matadors",
-     40,
+     42,
      16
     ],
     [
      "Wichita State Shockers",
-     47,
+     49,
      17
     ]
    ]
