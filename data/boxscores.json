@@ -1124,7 +1124,7 @@
   "fg": "4/6",
   "three": "2/2",
   "ft": "2/2",
-  "pm": 2,
+  "pm": 1,
   "source": "FIBA LiveStats",
   "note": "live",
   "oreb": 2,
@@ -1132,7 +1132,7 @@
   "stl": 1,
   "blk": 3,
   "tov": 2,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  }
 ]
