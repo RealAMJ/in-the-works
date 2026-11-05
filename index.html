@@ -757,30 +757,37 @@
       boxShadow: '0 24px 70px rgba(0,0,0,.55)', padding: '14px 14px 16px', width: 'max-content', maxWidth: '100%', transform: 'scale(.97)', transition: 'transform .15s ease' });
     const head = st(mk('div', 'share-head'), { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', margin: '0 2px 12px' });
     const ttl = st(mk('div', '', 'Share card'), { fontWeight: '800', fontSize: '15px', letterSpacing: '.02em' });
-    const x = st(mk('button', 'share-x', '✕'), { border: '0', background: 'rgba(255,255,255,.08)', color: '#fff', width: '30px', height: '30px', borderRadius: '50%', cursor: 'pointer', fontSize: '13px', lineHeight: '30px', padding: '0' });
+    const x = st(mk('button', 'share-x', '✕'), { border: '0', background: 'rgba(255,255,255,.08)', color: '#fff', width: '30px', height: '30px', borderRadius: '50%', cursor: 'pointer', fontSize: '13px', lineHeight: '30px', padding: '0', outline: 'none' });
     x.type = 'button'; x.setAttribute('aria-label', 'Close'); head.append(ttl, x);
     const grid = st(mk('div', 'share-grid'), { display: 'flex', gap: '12px', justifyContent: 'center' });
     box.append(head, grid); ov.append(box); document.body.append(ov);
     requestAnimationFrame(() => { ov.style.opacity = '1'; box.style.transform = 'scale(1)'; });
-    const close = () => { ov.remove(); document.removeEventListener('keydown', esc); };
+    const close = () => { ov.remove(); document.removeEventListener('keydown', esc); window.removeEventListener('resize', sizeThumbs); };
     const esc = (e) => { if (e.key === 'Escape') close(); };
     x.onclick = close; ov.onclick = (e) => { if (e.target === ov) close(); }; document.addEventListener('keydown', esc);
     try { x.focus({ preventScroll: true }); } catch (e) { /* old browser */ }
-    // thumbnail height: at most half the screen, and narrow enough that two fit side by side
-    const thumbH = `min(46vh, 330px, calc((100vw - 76px) / 2 * 1.25))`;
+    // thumbnail size in pixels from the screen: two side by side, at most ~half the screen tall (cards are 4:5)
+    const thumbSize = () => {
+      const vw = Math.min(window.innerWidth, document.documentElement.clientWidth || window.innerWidth);
+      const vh = window.innerHeight;
+      const w = Math.floor(Math.max(110, Math.min((vw - 32 - 28 - 12) / 2, (vh * 0.48) / 1.25, 264)));
+      return [w, Math.round(w * 1.25)];
+    };
+    const sizeThumbs = () => { const [w, h] = thumbSize(); box.querySelectorAll('.share-prev').forEach((el) => { el.style.width = w + 'px'; el.style.height = h + 'px'; }); box.querySelectorAll('.share-opt').forEach((el) => { el.style.width = w + 'px'; }); };
+    window.addEventListener('resize', sizeThumbs);
     const name = (k) => `${calSlug(r.player)}-${r.date || 'game'}-${k}.png`;
     const pill = (txt, solid) => st(mk('button', '', txt), { flex: '1', font: 'inherit', fontSize: '13px', fontWeight: '700', padding: '7px 10px', borderRadius: '999px', cursor: 'pointer',
-      border: '1px solid rgba(255,255,255,.35)', background: solid ? '#fff' : 'transparent', color: solid ? '#111' : '#fff', whiteSpace: 'nowrap' });
+      border: '1px solid rgba(255,255,255,.35)', background: solid ? '#fff' : 'transparent', color: solid ? '#111' : '#fff', whiteSpace: 'nowrap', minWidth: '0' });
     for (const [k, lab] of CARD_STYLES) {
       const col = st(mk('div', 'share-opt'), { display: 'grid', gap: '8px', justifyItems: 'stretch' });
-      const ph = st(mk('div', 'share-prev'), { height: thumbH, aspectRatio: '4 / 5', background: '#000', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 6px 18px rgba(0,0,0,.45)' });
+      const ph = st(mk('div', 'share-prev'), { background: '#000', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 6px 18px rgba(0,0,0,.45)', flex: 'none' });
       const lb = st(mk('div', '', lab), { fontSize: '11px', fontWeight: '700', letterSpacing: '.08em', textTransform: 'uppercase', color: 'rgba(255,255,255,.6)', textAlign: 'center' });
-      const acts = st(mk('div', 'share-acts'), { display: 'flex', gap: '6px' });
+      const acts = st(mk('div', 'share-acts'), { display: 'flex', gap: '6px', width: '100%' });
       const sb = pill('Share', true); sb.type = 'button';
       const db = pill('Save', false); db.type = 'button';
-      acts.append(sb, db); col.append(ph, lb, acts); grid.append(col);
+      acts.append(sb, db); col.append(ph, lb, acts); grid.append(col); sizeThumbs();
       drawCard(r, k).then((c) => new Promise((res) => c.toBlob((bl) => res(bl), 'image/png'))).then((blob) => {
-        const img = st(new Image(), { width: '100%', height: '100%', objectFit: 'cover', display: 'block' }); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); ph.replaceChildren(img);
+        const img = st(new Image(), { width: '100%', height: '100%', objectFit: 'contain', display: 'block' }); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); ph.replaceChildren(img);
         const file = new File([blob], name(k), { type: 'image/png' });
         if (!(navigator.canShare && navigator.canShare({ files: [file] }))) { sb.remove(); st(db, { background: '#fff', color: '#111' }); }
         sb.onclick = async () => { try { await navigator.share({ files: [file], title: tx(r, 'headline') }); } catch (e) { /* cancelled */ } };
