@@ -418,13 +418,19 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
     site_names = {si: row.get('team', us['name']), 1 - si: row.get('opponent', them['name'])}
     fullbox[:] = [r for r in fullbox if r.get('game_id') != gid]
     boxscores[:] = [r for r in boxscores if r.get('game_id') != gid]
-    sw_last = {last(n): n for n in swedes_all}
-    sw_last.update({last(n): n for n in swedes})  # same surname (Pohto, Klintman): the Swedes named on this game win
+    # Only the Swedes listed for this game count (a Norwegian called Borg must not become Tobias Borg).
+    # A Swede matches when his surname is any word of the feed's name: "K. Pohto", "PANTZAR M.", "Simon Birgander Pérez".
+    cands = swedes or swedes_all
+    def swede_for(feed_name):
+        words = set(norm(feed_name).split())
+        return next((n for n in cands if last(n) and last(n) in words), None)
+    seen = set()
     for ti, t in enumerate(feed['teams']):
         for i, p in enumerate(t['pl']):
-            hit = sw_last.get(last(p['name']))
+            hit = swede_for(p['name'])
             # a Swede on either team counts (Swede vs Swede games)
-            sw = bool(hit) and (ti == si or norm(hit) == norm(p['name']))
+            # a listed Swede counts on either team; with the all-Swedes fallback only on our side or by full name
+            sw = bool(hit) and (bool(swedes) or ti == si or norm(hit) == norm(p['name']))
             name = hit if sw else p['name']
             r = dict(row_id=f'{gid}-{ti}-{i}', game_id=gid, team=site_names[ti], player=name, pos='', min=as_min(p['min']),
                      pts=p['pts'] or 0, reb=p['reb'] or 0, ast=p['ast'] or 0, stl=p['stl'] or 0, blk=p['blk'] or 0, tov=p['tov'] or 0,
@@ -433,10 +439,18 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
             if r['min'] or r['pts'] or r['reb'] or r['ast']:
                 fullbox.append(r)
             if sw:
+                seen.add(norm(hit))
                 boxscores.append(dict(line_id=f"{gid}-{last(name)}", game_id=gid, player=name, min=r['min'], pts=r['pts'], reb=r['reb'],
                                       ast=r['ast'], fg=r['fg'], three=r['three'], ft=r['ft'], pm=r['pm'], source=src,
                                       note=('DNP' if not (r['min'] or r['pts'] or r['reb'] or r['ast']) else '') if done else 'live', oreb=p['oreb'] or 0, dreb=p['dreb'] or 0, stl=r['stl'], blk=r['blk'],
                                       tov=r['tov'], pf=p['pf'] or 0, eff=''))
+    if done:
+        # a listed Swede who is not in the box score at all (not on the game roster) did not play
+        for n in swedes:
+            if norm(n) not in seen and not any(b.get('game_id') == gid and norm(b.get('player')) == norm(n) for b in boxscores):
+                boxscores.append(dict(line_id=f"{gid}-{last(n)}", game_id=gid, player=n, min=0, pts=0, reb=0, ast=0, fg='0/0', three='0/0',
+                                      ft='0/0', pm='', source=src + ' (not in the box score)', note='DNP', oreb=0, dreb=0, stl=0, blk=0,
+                                      tov=0, pf=0, eff=''))
     print(f"  {gid}: {row['status']} {row['score']} {row.get('clock', '')}")
     return True
 
@@ -482,7 +496,10 @@ def main(argv):
         back = bool(row.get('backfill'))  # finished game whose full box score should be fetched once
         if not only and row.get('live_done') and not back:
             continue
-        if not only and not every and not back and not in_window(row, t):
+        tip = tip_time(row)
+        # a game that isn't final yet keeps being checked for 36 h (late feeds, club sites that post the score later)
+        late = tip is not None and row.get('status') != 'final' and tip <= t <= tip + dt.timedelta(hours=36)
+        if not only and not every and not back and not in_window(row, t) and not late:
             continue
         src, reader = feed_for(row)
         if not reader:

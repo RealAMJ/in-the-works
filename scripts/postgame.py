@@ -124,7 +124,7 @@ def main():
             continue
         a, b = map(int, g['score'].split()[1].split('-'))
         d = dt.date.fromisoformat(g['date'])
-        when, when_sv = f'{MON[d.month - 1]} {d.day}', f'{d.day} {MAN[d.month - 1]}'
+        when = f'{MON[d.month - 1]} {d.day}'
         src = rows[0].get('source', '') if rows else ''
         for team, opp, us, them, ven in ((g['team'], g['opponent'], a, b, g.get('venue')),
                                         (g['opponent'], g['team'], b, a, {'Home': 'Away', 'Away': 'Home'}.get(g.get('venue'), g.get('venue')))):
