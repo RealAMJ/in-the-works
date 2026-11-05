@@ -629,54 +629,124 @@
     String(text || '').split(/\s+/).forEach((w) => { const t = line ? line + ' ' + w : w; if (ctx.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; });
     if (line) out.push(line); return out;
   }
-  async function drawCard(r) {
+  // A player's card photo: data/photos.json row {player, src, credit}; src is an image in this repo
+  // (e.g. "photos/will-berg.jpg") or a data: URI. Only photos we have the right to use go there.
+  function cardPhoto(name) {
+    const ph = ds('photos') || [];
+    const r = ph.find((x) => x.player !== 'placeholder' && isSame(x.player, name) && x.src && !/^https?:/i.test(String(x.src)));
+    if (!r) return Promise.resolve(null);
+    return new Promise((res) => { const im = new Image(); im.onload = () => res({ img: im, credit: r.credit || '' }); im.onerror = () => res(null); im.src = r.src; });
+  }
+  function cover(x, im, W, H) {
+    const s = Math.max(W / im.naturalWidth, H / im.naturalHeight), w = im.naturalWidth * s, h = im.naturalHeight * s;
+    x.drawImage(im, (W - w) / 2, Math.min(0, (H - h) * 0.25), w, h);
+  }
+  function chevrons(x, cx, cy) {
+    x.strokeStyle = '#fff'; x.lineWidth = 7; x.lineCap = 'round'; x.lineJoin = 'round';
+    [-26, 0, 26].forEach((d) => { x.beginPath(); x.moveTo(cx + d - 10, cy - 18); x.lineTo(cx + d + 8, cy); x.lineTo(cx + d - 10, cy + 18); x.stroke(); });
+  }
+  const CARD_STYLES = [['v1', 'Blue'], ['v2', 'Black'], ['v3', 'Black headline']];
+  async function drawCard(r, style) {
+    style = style || 'v1';
     try { await document.fonts.load('900 64px Inter'); await document.fonts.load('600 32px Inter'); } catch (e) { /* system font */ }
     const W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
     const x = c.getContext('2d'), F = (w, s) => `${w} ${s}px Inter, system-ui, sans-serif`;
     const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id);
     const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player));
-    const bg = x.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#0b4f8a'); bg.addColorStop(.55, '#0b2f52'); bg.addColorStop(1, '#081f38');
-    x.fillStyle = bg; x.fillRect(0, 0, W, H);
-    x.strokeStyle = 'rgba(254,204,2,.13)'; x.lineWidth = 60; x.beginPath(); x.arc(W - 40, 120, 300, 0, Math.PI * 2); x.stroke();
-    x.fillStyle = '#fecc02'; x.fillRect(0, 0, W, 16);
-    // flag + brand
-    x.fillStyle = '#006aa7'; x.fillRect(80, 86, 66, 44); x.fillStyle = '#fecc02'; x.fillRect(100, 86, 12, 44); x.fillRect(80, 102, 66, 12);
-    x.fillStyle = '#fff'; x.font = F(800, 34); x.textBaseline = 'middle'; x.fillText('SWEDES ABROAD', 166, 109);
-    x.textBaseline = 'alphabetic';
-    let y = 300;
-    x.fillStyle = '#fecc02'; x.font = F(800, 34); x.fillText(String(r.tag || 'Standout game').toUpperCase(), 80, y);
-    y += 30; x.fillStyle = '#fff'; x.font = F(900, 108);
-    wrapLines(x, String(r.player || '').toUpperCase(), W - 160).slice(0, 2).forEach((l) => { y += 104; x.fillText(l, 80, y); });
-    if (g) { y += 62; x.fillStyle = 'rgba(255,255,255,.75)'; x.font = F(600, 34); x.fillText(`${g.team} · ${g.competition}`, 80, y); }
-    if (b && b.note !== 'DNP') {
-      y += 70;
-      // points and rebounds, then the most telling extra (no "0 AST" box when he had blocks or steals), then shooting
+    const sv = LOC().startsWith('sv');
+    const black = style !== 'v1';
+    const ph = black ? await cardPhoto(r.player) : null;
+    if (black) {
+      x.fillStyle = '#000'; x.fillRect(0, 0, W, H);
+      if (ph) {
+        cover(x, ph.img, W, H);
+        x.fillStyle = `rgba(0,0,0,${style === 'v3' ? .5 : .6})`; x.fillRect(0, 0, W, H);
+        const gr = x.createLinearGradient(0, H * 0.35, 0, H); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,.92)');
+        x.fillStyle = gr; x.fillRect(0, 0, W, H);
+      } else {
+        const gr = x.createRadialGradient(W * 0.75, H * 0.2, 40, W * 0.75, H * 0.2, W);
+        gr.addColorStop(0, '#2a2d33'); gr.addColorStop(1, '#000'); x.fillStyle = gr; x.fillRect(0, 0, W, H);
+      }
+      x.fillStyle = '#fff'; x.font = F(800, 46); x.textBaseline = 'alphabetic'; x.fillText('SWEDES ABROAD', 80, 140);
+      if (ph && ph.credit) { x.fillStyle = 'rgba(255,255,255,.55)'; x.font = F(500, 24); x.textAlign = 'right'; x.fillText(ph.credit, W - 60, H - 40); x.textAlign = 'left'; }
+    }
+    // the cells under the name: points and rebounds, the most telling extra, then shooting
+    const cellsFor = () => {
       const extra = [['AST', b.ast], ['BLK', b.blk], ['STL', b.stl]].filter(([, v]) => Number(v) > 0).sort((p, q) => Number(q[1]) - Number(p[1]));
       const cells = [['PTS', b.pts], ['REB', b.reb], Number(b.ast) > 0 ? ['AST', b.ast] : (extra[0] || ['AST', b.ast])];
       if ((b.stl || 0) >= 3 && cells[2][0] !== 'STL') cells.push(['STL', b.stl]); else if ((b.blk || 0) >= 3 && cells[2][0] !== 'BLK') cells.push(['BLK', b.blk]); else if (b.fg) cells.push(['FG', b.fg]);
-      const cw = (W - 160) / cells.length;
+      return cells;
+    };
+    const resLine = g ? `${g.score || ''} ${g.venue === 'Away' ? (sv ? 'borta mot' : 'at') : (sv ? 'mot' : 'vs')} ${g.opponent}`.trim() : '';
+    if (style === 'v3') {
+      // OCD-style: label box, big headline in capitals, stat sentence, chevrons
+      const label = String(r.tag || (sv ? 'Veckans match' : 'Standout game')).toUpperCase() + ':';
+      // headline without a repeated tag ("Double-double: 26 points..." -> "26 points..."), led by the player's name
+      let hd = String(tx(r, 'headline') || '');
+      const tagWords = [r.tag, 'Double-double', 'Dubbel-dubbel', 'Triple-double', 'Trippel-dubbel', 'Perfect shooting', 'Perfekt skytte'].filter(Boolean);
+      tagWords.forEach((t) => { if (hd.toLowerCase().startsWith(String(t).toLowerCase() + ':')) hd = hd.slice(String(t).length + 1).trim(); });
+      const big = `${r.player}: ${hd}`.toUpperCase();
+      x.font = F(900, 88); const lines = wrapLines(x, big, W - 160).slice(0, 5);
+      const statBits = [];
+      if (b && b.note !== 'DNP') {
+        if (b.min !== '' && b.min != null) statBits.push(`${b.min} MIN`);
+        if (b.fg) statBits.push(`${b.fg} FG`);
+        cellsFor().slice(2).forEach(([k, v]) => { if (k !== 'FG' && !new RegExp('\\b' + v + ' (' + (sv ? 'POÄNG|RETURER|ASSIST' : 'POINTS|REBOUNDS|ASSISTS') + ')').test(big)) statBits.push(`${v} ${k}`); });
+      }
+      const stat = statBits.join(' · ');
+      const blockH = 92 + 30 + lines.length * 100 + (stat ? 64 : 0) + (resLine ? 52 : 0);
+      let y = H - 190 - blockH + 66;
+      x.font = F(900, 66); const lw = x.measureText(label).width;
+      x.fillStyle = '#000'; x.fillRect(70, y - 62, lw + 30, 86); x.fillStyle = '#fff'; x.fillText(label, 85, y);
+      y += 112; x.font = F(900, 88); lines.forEach((l) => { x.fillText(l, 80, y); y += 100; });
+      if (stat) { y += 4; x.font = F(800, 40); x.fillStyle = 'rgba(255,255,255,.92)'; x.fillText(stat, 80, y); y += 52; }
+      if (resLine) { x.fillStyle = 'rgba(255,255,255,.7)'; x.font = F(700, 34); x.fillText(`${resLine}${r.date ? ' · ' + dayFmt(r.date) : ''}`.toUpperCase(), 80, y); }
+      chevrons(x, W / 2, H - 110);
+      return c;
+    }
+    if (!black) {
+      const bg = x.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#0b4f8a'); bg.addColorStop(.55, '#0b2f52'); bg.addColorStop(1, '#081f38');
+      x.fillStyle = bg; x.fillRect(0, 0, W, H);
+      x.strokeStyle = 'rgba(254,204,2,.13)'; x.lineWidth = 60; x.beginPath(); x.arc(W - 40, 120, 300, 0, Math.PI * 2); x.stroke();
+      x.fillStyle = '#fecc02'; x.fillRect(0, 0, W, 16);
+      x.fillStyle = '#006aa7'; x.fillRect(80, 86, 66, 44); x.fillStyle = '#fecc02'; x.fillRect(100, 86, 12, 44); x.fillRect(80, 102, 66, 12);
+      x.fillStyle = '#fff'; x.font = F(800, 34); x.textBaseline = 'middle'; x.fillText('SWEDES ABROAD', 166, 109); x.textBaseline = 'alphabetic';
+    }
+    const accent = black ? '#fff' : '#fecc02', sub = black ? 'rgba(255,255,255,.7)' : 'rgba(255,255,255,.75)';
+    let y = black ? 470 : 300;
+    if (black) {  // tag in a white label box
+      x.font = F(800, 34); const t = String(r.tag || 'Standout game').toUpperCase(), tw = x.measureText(t).width;
+      x.fillStyle = '#fff'; x.fillRect(74, y - 40, tw + 24, 54); x.fillStyle = '#000'; x.fillText(t, 86, y);
+    } else { x.fillStyle = accent; x.font = F(800, 34); x.fillText(String(r.tag || 'Standout game').toUpperCase(), 80, y); }
+    y += 30; x.fillStyle = '#fff'; x.font = F(900, 108);
+    wrapLines(x, String(r.player || '').toUpperCase(), W - 160).slice(0, 2).forEach((l) => { y += 104; x.fillText(l, 80, y); });
+    if (g) { y += 62; x.fillStyle = sub; x.font = F(600, 34); x.fillText(`${g.team} · ${g.competition}`, 80, y); }
+    if (b && b.note !== 'DNP') {
+      y += 70;
+      const cells = cellsFor(), cw = (W - 160) / cells.length;
       cells.forEach(([k, v], i) => {
         const cx = 80 + cw * i;
-        x.fillStyle = 'rgba(255,255,255,.08)'; x.fillRect(cx, y, cw - 18, 200);
+        x.fillStyle = black ? 'rgba(255,255,255,.1)' : 'rgba(255,255,255,.08)'; x.fillRect(cx, y, cw - 18, 200);
+        if (black) { x.fillStyle = 'rgba(255,255,255,.9)'; x.fillRect(cx, y, cw - 18, 4); }
         x.fillStyle = '#fff'; x.font = F(900, String(v).length > 4 ? 64 : 96); x.fillText(String(v), cx + 26, y + 118);
-        x.fillStyle = '#fecc02'; x.font = F(800, 30); x.fillText(k, cx + 26, y + 168);
+        x.fillStyle = black ? 'rgba(255,255,255,.65)' : accent; x.font = F(800, 30); x.fillText(k, cx + 26, y + 168);
       });
       y += 200;
     }
     y += 90; x.fillStyle = '#fff'; x.font = F(700, 46);
     wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 58; });
     if (g) {
-      const res = `${g.score || ''} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`.trim();
-      x.fillStyle = 'rgba(255,255,255,.8)'; x.font = F(600, 34); x.fillText(res, 80, H - 150);
-      x.fillStyle = 'rgba(255,255,255,.55)'; x.font = F(500, 30); x.fillText(r.date ? dayFmt(r.date) : '', 80, H - 100);
+      const ry = black ? Math.min(Math.max(y + 30, 0), H - 200) : H - 150;  // black: follows the headline, never over the chevrons
+      x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry);
+      x.fillStyle = 'rgba(255,255,255,.5)'; x.font = F(500, 30); x.fillText(r.date ? dayFmt(r.date) : '', 80, ry + 48);
     }
-    x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16);
+    if (black) chevrons(x, W / 2, H - 70); else { x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16); }
     return c;
   }
-  async function shareCard(r, btn) {
+  async function shareCard(r, btn, style) {
     const old = btn.textContent; btn.textContent = '…';
     try {
-      const c = await drawCard(r);
+      const c = await drawCard(r, style);
       const blob = await new Promise((res) => c.toBlob(res, 'image/png'));
       const name = `${calSlug(r.player)}-${r.date || 'game'}.png`;
       const file = new File([blob], name, { type: 'image/png' });
@@ -704,9 +774,10 @@
       top.append(who, when);
       const head = document.createElement('div'); head.className = 'hl-head'; head.textContent = tx(r, 'headline');
       const det = document.createElement('p'); det.className = 'hl-detail muted'; det.textContent = tx(r, 'detail');
-      const sh = mk('button', 'pp-btn hl-share', '⤴ Share card'); sh.type = 'button'; sh.title = 'Make an image of this performance for social media';
-      sh.onclick = (e) => { e.stopPropagation(); shareCard(r, sh); };
-      card.append(top, head, det, sh);
+      const shr = mk('div', 'hl-shares'); shr.append(mk('span', 'hl-sl', '⤴ Share card:'));
+      CARD_STYLES.forEach(([k, lab]) => { const sh = mk('button', 'pp-btn hl-share', lab); sh.type = 'button'; sh.title = 'Make an image of this performance for social media';
+        sh.onclick = (e) => { e.stopPropagation(); shareCard(r, sh, k); }; shr.append(sh); });
+      card.append(top, head, det, shr);
       box.append(card);
     });
   });

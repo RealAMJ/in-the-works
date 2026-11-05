@@ -1159,3 +1159,6 @@ button.tp-r:hover { border-color: var(--se-blue); }
   .hero-stat .k { font-size: .7rem; }
   .gr .pill { font-size: 11px; }
 }
+.hl-shares { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+.hl-sl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.hl-shares .hl-share { margin-top: 0; }
