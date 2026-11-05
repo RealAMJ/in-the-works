@@ -20055,7 +20055,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g26-0-6",
+  "row_id": "g26-0-7",
   "game_id": "g26",
   "team": "Miami Heat",
   "player": "Tim Hardaway Jr.",
@@ -20076,7 +20076,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g26-0-7",
+  "row_id": "g26-0-8",
   "game_id": "g26",
   "team": "Miami Heat",
   "player": "Pelle Larsson",
@@ -20097,7 +20097,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g26-0-8",
+  "row_id": "g26-0-9",
   "game_id": "g26",
   "team": "Miami Heat",
   "player": "Ryan Conwell",
@@ -20270,7 +20270,7 @@
   "team": "LA Clippers",
   "player": "Max Strus",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 3,
   "reb": 3,
   "ast": 3,
@@ -20291,7 +20291,7 @@
   "team": "LA Clippers",
   "player": "Kobe Sanders",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 0,
   "reb": 1,
   "ast": 1,
