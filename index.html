@@ -645,7 +645,9 @@
     x.strokeStyle = '#fff'; x.lineWidth = 7; x.lineCap = 'round'; x.lineJoin = 'round';
     [-26, 0, 26].forEach((d) => { x.beginPath(); x.moveTo(cx + d - 10, cy - 18); x.lineTo(cx + d + 8, cy); x.lineTo(cx + d - 10, cy + 18); x.stroke(); });
   }
-  const CARD_STYLES = [['v1', 'Blue'], ['v2', 'Black'], ['v3', 'Black headline']];
+  // Styles offered to viewers (v1, the blue card, is kept in the code but no longer offered)
+  const CARD_STYLES = [['v2', 'Stats'], ['v3', 'Headline']];
+  const CARD_BRAND = 'OCD HQ';  // name at the top of the black cards
   async function drawCard(r, style) {
     style = style || 'v1';
     try { await document.fonts.load('900 64px Inter'); await document.fonts.load('600 32px Inter'); } catch (e) { /* system font */ }
@@ -667,7 +669,7 @@
         const gr = x.createRadialGradient(W * 0.75, H * 0.2, 40, W * 0.75, H * 0.2, W);
         gr.addColorStop(0, '#2a2d33'); gr.addColorStop(1, '#000'); x.fillStyle = gr; x.fillRect(0, 0, W, H);
       }
-      x.fillStyle = '#fff'; x.font = F(800, 46); x.textBaseline = 'alphabetic'; x.fillText('SWEDES ABROAD', 80, 140);
+      x.fillStyle = '#fff'; x.font = F(800, 46); x.textBaseline = 'alphabetic'; x.fillText(CARD_BRAND, 80, 140);
       if (ph && ph.credit) { x.fillStyle = 'rgba(255,255,255,.55)'; x.font = F(500, 24); x.textAlign = 'right'; x.fillText(ph.credit, W - 60, H - 40); x.textAlign = 'left'; }
     }
     // the cells under the name: points and rebounds, the most telling extra, then shooting
