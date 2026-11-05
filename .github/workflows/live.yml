@@ -46,6 +46,9 @@ jobs:
       - name: NBA/NCAA schedule check (07:00 only)
         run: python3 scripts/schedule_us.py || true
 
+      - name: European schedule check (07:00 only)
+        run: python3 scripts/schedule_eu.py || true
+
       - name: Phone alerts for finished games (Telegram / WhatsApp / ntfy)
         run: python3 scripts/notify.py || true
         env:
