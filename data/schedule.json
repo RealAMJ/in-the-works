@@ -932,7 +932,8 @@
   "status": "upcoming",
   "score": "",
   "watch_url": "https://euroleague.tv/home",
-  "watch_label": "EuroLeague TV"
+  "watch_label": "EuroLeague TV",
+  "live_feed": "euroleague:E2026:98"
  },
  {
   "game_id": "g20261106pal",
@@ -945,7 +946,8 @@
   "competition": "Primera FEB",
   "note": "Round 7",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "feb:2535784"
  },
  {
   "game_id": "g20261107ewu",

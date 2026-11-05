@@ -1,104 +1,12 @@
 {
- "at": "2026-11-05T13:40:43+01:00",
+ "at": "2026-11-05T20:12:51+01:00",
  "found": 0,
  "log": [
-  {
-   "competition": "Icelandic Premier League",
-   "seed": 2856123,
-   "scanned": 799,
-   "answered": 456,
-   "sample": [
-    [
-     2856122,
-     [
-      "KR KR",
-      "Njarðvík Njardvik"
-     ]
-    ],
-    [
-     2856124,
-     [
-      "Valur Valur",
-      "Grindavík Grindavik"
-     ]
-    ],
-    [
-     2856121,
-     [
-      "Tindastóll Tindastoll",
-      "Ármann Armann"
-     ]
-    ],
-    [
-     2856125,
-     [
-      "Valur Valur",
-      "Ármann Armann"
-     ]
-    ],
-    [
-     2856120,
-     [
-      "Keflavík Keflavik",
-      "Sindri Sindri"
-     ]
-    ],
-    [
-     2856126,
-     [
-      "Stjarnan Stjarnan",
-      "Höttur Hottur"
-     ]
-    ],
-    [
-     2856119,
-     [
-      "ÍR IR",
-      "Álftanes Alftanes"
-     ]
-    ],
-    [
-     2856127,
-     [
-      "Grindavík Grindavik",
-      "Njarðvík Njardvik"
-     ]
-    ],
-    [
-     2856118,
-     [
-      "Valur Valur",
-      "Stjarnan Stjarnan"
-     ]
-    ],
-    [
-     2856128,
-     [
-      "Njarðvík Njardvik",
-      "Valur Valur"
-     ]
-    ],
-    [
-     2856117,
-     [
-      "Álftanes Alftanes",
-      "Höttur Hottur"
-     ]
-    ],
-    [
-     2856129,
-     [
-      "Stjarnan Stjarnan",
-      "ÍR IR"
-     ]
-    ]
-   ]
-  },
   {
    "competition": "Croatian Premier League",
    "seed": 2893787,
    "scanned": 799,
-   "answered": 89,
+   "answered": 90,
    "sample": [
     [
      2893786,
@@ -182,6 +90,98 @@
      [
       "KK Dinamo Zagreb KK Dinamo Zagreb",
       "KK Alkar KK Alkar"
+     ]
+    ]
+   ]
+  },
+  {
+   "competition": "Orlen Basket Liga",
+   "seed": 2949100,
+   "scanned": 799,
+   "answered": 320,
+   "sample": [
+    [
+     2949101,
+     [
+      "Energa Czarni Słupsk ",
+      "AMW Arka Gdynia "
+     ]
+    ],
+    [
+     2949102,
+     [
+      "Legia Warszawa WAR",
+      "Dziki Warszawa "
+     ]
+    ],
+    [
+     2949097,
+     [
+      "Arriva Lotto Twarde Pierniki Toruń ",
+      "Zastal Zielona Góra "
+     ]
+    ],
+    [
+     2949096,
+     [
+      "N.C. Central ",
+      "Johnson C. Smith "
+     ]
+    ],
+    [
+     2949113,
+     [
+      "PGE Wisła Kraków  ",
+      "Lotto MKS Pruszków "
+     ]
+    ],
+    [
+     2949116,
+     [
+      "MB Zagłębie Sosnowiec ",
+      "Widzew Łódź "
+     ]
+    ],
+    [
+     2949117,
+     [
+      "Lotto AZS UMCS Lublin ",
+      "SKK Polonia Warszawa "
+     ]
+    ],
+    [
+     2949118,
+     [
+      "Isands JTEC Wichoś Jelenia Góra ",
+      "Pro-Network Enea AJP Gorzów Wlkp. "
+     ]
+    ],
+    [
+     2949120,
+     [
+      "Energa Toruń ",
+      "1KS Ślęza Wrocław "
+     ]
+    ],
+    [
+     2949121,
+     [
+      "KKS Polonia Warszawa ",
+      "Decka Pelplin "
+     ]
+    ],
+    [
+     2949122,
+     [
+      "SKS Fulimpex Starogard Gdański ",
+      "OPTeam Resovia Rzeszów "
+     ]
+    ],
+    [
+     2949123,
+     [
+      "GKS Tychy ",
+      "WKK Active Hotel Wrocław "
      ]
     ]
    ]

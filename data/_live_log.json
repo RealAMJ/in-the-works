@@ -1,26 +1,26 @@
 {
- "at": "2026-11-05T07:23:40+01:00",
+ "at": "2026-11-05T20:12:51+01:00",
  "log": [
   {
-   "game": "g26",
-   "checking": "ESPN"
+   "game": "g20261105kr",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g26",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261105kr",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "Miami Heat",
-     117,
-     14
+     "\u00c1lftanes",
+     0,
+     12
     ],
     [
-     "LA Clippers",
-     116,
-     15
+     "KR",
+     0,
+     11
     ]
    ]
   }
