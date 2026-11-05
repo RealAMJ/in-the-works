@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T07:22:50+01:00",
+ "at": "2026-11-05T07:23:40+01:00",
  "log": [
   {
    "game": "g26",
@@ -8,9 +8,9 @@
   {
    "game": "g26",
    "src": "ESPN",
-   "period": 5,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Miami Heat",

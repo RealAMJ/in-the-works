@@ -19946,7 +19946,7 @@
   "ft": "11/13",
   "pm": 11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -19967,7 +19967,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -19988,7 +19988,7 @@
   "ft": "6/8",
   "pm": 12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20009,7 +20009,7 @@
   "ft": "0/0",
   "pm": 21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20030,7 +20030,7 @@
   "ft": "1/1",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20051,7 +20051,7 @@
   "ft": "0/0",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20072,7 +20072,7 @@
   "ft": "0/0",
   "pm": -19,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20093,7 +20093,7 @@
   "ft": "0/0",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20114,7 +20114,7 @@
   "ft": "3/4",
   "pm": -6,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20135,7 +20135,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20156,7 +20156,7 @@
   "ft": "0/0",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20177,7 +20177,7 @@
   "ft": "6/7",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20198,7 +20198,7 @@
   "ft": "2/5",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20219,7 +20219,7 @@
   "ft": "0/0",
   "pm": 12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20240,7 +20240,7 @@
   "ft": "2/2",
   "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20261,7 +20261,7 @@
   "ft": "0/2",
   "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20282,7 +20282,7 @@
   "ft": "0/0",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20303,7 +20303,7 @@
   "ft": "0/0",
   "pm": -19,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20324,7 +20324,7 @@
   "ft": "2/2",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20345,7 +20345,7 @@
   "ft": "0/0",
   "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -20366,7 +20366,7 @@
   "ft": "2/2",
   "pm": 15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
