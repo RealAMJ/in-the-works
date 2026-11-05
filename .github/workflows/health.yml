@@ -1,0 +1,43 @@
+name: Site health check
+
+on:
+  schedule:
+    - cron: "23 * * * *"     # every hour (separate from the live job, so it also notices when that one stops)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: health
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the site and send an alert only if something is wrong
+        run: python3 scripts/health.py
+        env:
+          CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
+          CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Remember what was reported
+        run: |
+          if [ -n "$(git status --porcelain -- data/_health.json)" ]; then
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/_health.json
+            git commit -q -m "Health check $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          fi
