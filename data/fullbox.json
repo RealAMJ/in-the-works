@@ -19943,7 +19943,7 @@
   "tov": 2,
   "fg": "8/13",
   "three": "0/0",
-  "ft": "5/5",
+  "ft": "5/6",
   "pm": 2,
   "swede": false,
   "state": "live",
@@ -20049,7 +20049,7 @@
   "fg": "1/4",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -20301,7 +20301,7 @@
   "fg": "3/8",
   "three": "3/7",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
