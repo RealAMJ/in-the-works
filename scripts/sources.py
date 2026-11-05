@@ -2,6 +2,7 @@
 More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and EuroLeague are in update.py):
   ACB (Liga Endesa)          live_feed "acb:<match id>"   page live.acb.com/es/partidos/x-<id>/estadisticas
   FEB (Primera / Segunda)    live_feed "feb:<match id>"   page baloncestoenvivo.feb.es/partido/<id>
+  Anwil Włocławek (coach)    live_feed "club:anwil"        final score only, from the club's fixture list kkwloclawek.pl/terminarz
   ABA League                 live_feed "aba:<match>/<season>/1" page aba-liga.com/match/<match>/<season>/1/Overview/... (box score tab)
   BBL (Germany)              live_feed "bbl:<game id>"    page easycredit-bbl.de/spiele/<id> (its embedded game JSON)
   BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
@@ -78,6 +79,22 @@ def read_acb(mid):
     return dict(period=int(q.group(1)) if q else (4 if 'Final' in status else 1),
                 clock=f'{int(clk.group(1)):02d}:{clk.group(2)}' if clk else '00:00',
                 done='Final' in status, teams=teams)
+
+
+# ------------------------------------------------------------------ club sites (final score only, no box score)
+def read_club(club, row):
+    """Final score from a club's own fixture list. Only used for coach games we don't follow live."""
+    if club != 'anwil':
+        raise LookupError(f'no club reader for {club}')
+    txt = clean(page('https://kkwloclawek.pl/terminarz'))
+    day = dt.date.fromisoformat(row['date']).strftime('%d-%m-%Y')
+    m = re.search(re.escape(day) + r',\s*\d{1,2}:\d{2}\s+(.{0,40}?)\s+([^-]{3,60}?)\s+-\s+(.{3,60}?)\s+([WP])?\s*(\d+):(\d+)', txt)
+    if not m:
+        raise LookupError('game not on the club fixture list')
+    tidy = lambda x: re.sub(r'^(Runda zasadnicza|zasadnicza|European North BL|North BL|BL|Puchar Polski|Play-off)\s+', '', x.strip())
+    home, away, s1, s2 = tidy(m.group(2)), tidy(m.group(3)), int(m.group(5)), int(m.group(6))
+    done = bool(m.group(4)) and (s1 or s2)
+    return dict(period=4, clock='00:00', done=bool(done), notstarted=not done, teams=[dict(name=home, score=s1, pl=[]), dict(name=away, score=s2, pl=[])])
 
 
 # ------------------------------------------------------------------ ABA

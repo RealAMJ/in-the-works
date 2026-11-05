@@ -119,27 +119,31 @@ def main():
         if g.get('status') != 'final' or g.get('post_done') or not re.match(r'[WL] \d+-\d+', str(g.get('score') or '')):
             continue
         rows = [r for r in fb if r.get('game_id') == g['game_id']]
-        if not rows:
+        score_only = str(g.get('live_feed') or '').startswith('club:')  # final score only, no box score
+        if not rows and not score_only:
             continue
         a, b = map(int, g['score'].split()[1].split('-'))
         d = dt.date.fromisoformat(g['date'])
         when, when_sv = f'{MON[d.month - 1]} {d.day}', f'{d.day} {MAN[d.month - 1]}'
-        src = rows[0].get('source', '')
+        src = rows[0].get('source', '') if rows else ''
         for team, opp, us, them, ven in ((g['team'], g['opponent'], a, b, g.get('venue')),
                                         (g['opponent'], g['team'], b, a, {'Home': 'Away', 'Away': 'Home'}.get(g.get('venue'), g.get('venue')))):
             if (team, g['date']) in have_tf:
                 continue
             tr = sorted([r for r in rows if r.get('team') == team], key=lambda r: -(r.get('pts') or 0))
-            if not tr:
+            if not tr and not score_only:
                 print(f"  {g['game_id']}: no box rows for {team}, left for review")
                 continue
-            cut = tr[min(2, len(tr) - 1)]['pts']
-            lead = [r for r in tr if r['pts'] >= cut]
-            top = tr[0]
+            if tr:
+                cut = tr[min(2, len(tr) - 1)]['pts']
+                lead = [r for r in tr if r['pts'] >= cut]
+                top_txt = f"{surname(tr[0]['player'])} {tr[0]['pts']} pts, {tr[0]['reb']} reb"
+                lead_txt = ';'.join(f"{surname(r['player'])}|{r['pts']}|{r['reb']}|{r['ast']}" for r in lead)
+            else:
+                top_txt = lead_txt = ''
             tf.append(dict(row_id=f"{slug(team)}-{g['date']}", team=team, date=g['date'], competition=g['competition'], opponent=opp,
                            venue=ven, score=f'{us}-{them}', result='W' if us > them else 'L',
-                           top=f"{surname(top['player'])} {top['pts']} pts, {top['reb']} reb", note='',
-                           leaders=';'.join(f"{surname(r['player'])}|{r['pts']}|{r['reb']}|{r['ast']}" for r in lead), source=src))
+                           top=top_txt, note='', leaders=lead_txt, source=src or 'club site (final score only)'))
             have_tf.add((team, g['date']))
             t = teams.get(team)
             if t is not None:
