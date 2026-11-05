@@ -460,19 +460,47 @@ def in_window(row, t):
     return tip is not None and tip - BEFORE <= t <= tip + AFTER
 
 
+def stamp_assets():
+    """Put each stylesheet/script's content hash in index.html ("site2.css?v=1a2b3c4d"), so browsers never
+    combine a new page with an old cached stylesheet or script."""
+    idx = os.path.join(ROOT, 'index.html')
+    if not os.path.exists(idx):
+        return False
+    html = open(idx, encoding='utf-8').read()
+    new = html
+    for fn in ('theme.css', 'site.css', 'site2.css', 'dash-shim.js', 'i18n.js'):
+        fp = os.path.join(ROOT, fn)
+        if os.path.exists(fp):
+            v = hashlib.sha1(open(fp, 'rb').read()).hexdigest()[:8]
+            new = re.sub(r'(["\'])' + re.escape(fn) + r'(\?v=[0-9a-f]+)?\1', lambda m: m.group(1) + fn + '?v=' + v + m.group(1), new)
+    if new != html:
+        open(idx, 'w', encoding='utf-8').write(new)
+        return True
+    return False
+
+
 def write_version(changed_any):
     files = {}
     for fn in sorted(os.listdir(DATA)):
         if fn.endswith('.json') and not fn.startswith('_'):
             files[fn[:-5]] = hashlib.sha1(open(os.path.join(DATA, fn), 'rb').read()).hexdigest()[:12]
+    stamp_assets()
+    # fingerprint of the site's own files: open pages reload themselves when it changes
+    app = hashlib.sha1()
+    for fn in ('index.html', 'dash-shim.js', 'i18n.js', 'site.css', 'site2.css', 'theme.css'):
+        fp = os.path.join(ROOT, fn)
+        if os.path.exists(fp):
+            app.update(open(fp, 'rb').read())
+    files['__app__'] = app.hexdigest()[:12]
     path = os.path.join(DATA, '_version.json')
     try:
         old = json.load(open(path))
     except Exception:
         old = {}
-    if old.get('files') == files and not changed_any:
+    appv = files.pop('__app__')
+    if old.get('files') == files and old.get('app') == appv and not changed_any:
         return False
-    json.dump({'updated': now().isoformat(timespec='seconds'), 'files': files}, open(path, 'w'), indent=1)
+    json.dump({'updated': now().isoformat(timespec='seconds'), 'app': appv, 'files': files}, open(path, 'w'), indent=1)
     return True
 
 

@@ -28,12 +28,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="theme.css?v=50">
-<script src="dash-shim.js?v=50"></script>
+<link rel="stylesheet" href="theme.css?v=50523d4c">
+<script src="dash-shim.js?v=cc537896"></script>
 </head>
 <body>
-<link rel="stylesheet" href="site.css?v=50">
-<link rel="stylesheet" href="site2.css?v=50">
+<link rel="stylesheet" href="site.css?v=7b0d4f0d">
+<link rel="stylesheet" href="site2.css?v=5602b44a">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -376,7 +376,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=50"></script>
+<script src="i18n.js?v=bd498046"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -493,7 +493,7 @@
   };
   // Team names open the team panel (last five games)
   let openTeam = null;
-  const showTeam = (t) => { if (typeof openToday !== 'undefined' && openToday) { openToday = false; dash.draw('today'); } tpTeam = t; showPage('team'); dash.draw('tp'); scrollTopSw(); };
+  const showTeam = (t) => { if (typeof openToday !== 'undefined' && openToday) { openToday = false; dash.draw('today'); } tpTeam = t; showPage('team', true); dash.setLink('team=' + t); dash.draw('tp'); scrollTopSw(); };
   const teamBtn = (t) => {
     if (!t || t === 'TBC') return document.createTextNode(t || '—');
     const b = document.createElement('button');
@@ -506,7 +506,7 @@
   const tdNames = (text, cls, pick) => { const c = document.createElement('td'); if (cls) c.className = cls; c.append(names(text, pick)); return c; };
   // Player game log panel (opened from Season stats)
   let openPlayer = null;
-  const showLog = (n) => { if (typeof openToday !== 'undefined' && openToday) { openToday = false; dash.draw('today'); } openTeam = null; dash.draw('team'); ppPlayer = n; showPage('player'); dash.draw('pp'); scrollTopSw(); };
+  const showLog = (n) => { if (typeof openToday !== 'undefined' && openToday) { openToday = false; dash.draw('today'); } openTeam = null; dash.draw('team'); ppPlayer = n; showPage('player', true); dash.setLink('player=' + n); dash.draw('pp'); scrollTopSw(); };
   // Open one game's stats, from a result, a tile or a standout card
   const openGame = (id, toggle) => {
     picked = toggle && picked === id ? null : id;
@@ -750,24 +750,30 @@
     document.querySelector('.share-ov')?.remove();
     const ov = mk('div', 'share-ov'); ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Share card');
     const box = mk('div', 'share-box');
+    // essential layout inline, so the window works even if an older stylesheet is still cached
+    Object.assign(ov.style, { position: 'fixed', inset: '0', zIndex: '1000', background: 'rgba(0,0,0,.6)', display: 'grid', placeItems: 'center', padding: '16px' });
+    Object.assign(box.style, { background: 'var(--color-panel, #fff)', color: 'var(--color-fg, #111)', borderRadius: '14px', width: 'min(720px, 100%)', maxHeight: 'calc(100vh - 32px)', overflow: 'auto', padding: '16px' });
     const head = mk('div', 'share-head'); head.append(mk('b', '', 'Share card'));
     const x = mk('button', 'share-x', '✕'); x.type = 'button'; x.setAttribute('aria-label', 'Close'); head.append(x);
     const grid = mk('div', 'share-grid');
+    Object.assign(grid.style, { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' });
+    Object.assign(head.style, { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' });
     box.append(head, grid); ov.append(box); document.body.append(ov);
     const close = () => { ov.remove(); document.removeEventListener('keydown', esc); };
     const esc = (e) => { if (e.key === 'Escape') close(); };
     x.onclick = close; ov.onclick = (e) => { if (e.target === ov) close(); }; document.addEventListener('keydown', esc);
-    x.focus();
+    try { x.focus({ preventScroll: true }); } catch (e) { /* old browser */ }
     const name = (st) => `${calSlug(r.player)}-${r.date || 'game'}-${st}.png`;
     for (const [st, lab] of CARD_STYLES) {
       const col = mk('div', 'share-opt'); col.append(mk('div', 'share-lab', lab));
       const ph = mk('div', 'share-prev', '…'); col.append(ph);
+      Object.assign(ph.style, { aspectRatio: '4 / 5', background: '#000', borderRadius: '8px', overflow: 'hidden' });
       const acts = mk('div', 'share-acts');
       const sb = mk('button', 'pp-btn dark', 'Share'); sb.type = 'button';
       const db = mk('button', 'pp-btn', 'Download'); db.type = 'button';
       acts.append(sb, db); col.append(acts); grid.append(col);
       drawCard(r, st).then((c) => new Promise((res) => c.toBlob((bl) => res([c, bl]), 'image/png'))).then(([c, blob]) => {
-        const img = new Image(); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); ph.replaceChildren(img);
+        const img = new Image(); img.alt = `${lab} card`; img.src = URL.createObjectURL(blob); img.style.width = '100%'; img.style.display = 'block'; ph.replaceChildren(img);
         const file = new File([blob], name(st), { type: 'image/png' });
         const canShare = !!(navigator.canShare && navigator.canShare({ files: [file] }));
         if (!canShare) { sb.hidden = true; db.className = 'pp-btn dark'; }
@@ -876,7 +882,7 @@
   const closeLog = () => { openPlayer = null; dash.draw('plog'); };
   const pcComp = {}, pcLog = {};
   let openCard = null;
-  const showCard = (id) => { if (openToday) { openToday = false; dash.draw('today'); } openTeam = null; openPlayer = null; dash.draw('team'); dash.draw('plog'); openCard = id; showPage('game'); dash.draw('gc'); scrollTopSw(); };
+  const showCard = (id) => { if (openToday) { openToday = false; dash.draw('today'); } openTeam = null; openPlayer = null; dash.draw('team'); dash.draw('plog'); openCard = id; showPage('game', true); dash.setLink('game=' + id); dash.draw('gc'); scrollTopSw(); };
   const closeCard = () => goBack();
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && openCard) closeCard(); });
   let openToday = false;
@@ -3745,7 +3751,13 @@
 
   // ---- Open the page a link names
   (function openFromLink() {
-    const h = decodeURIComponent(location.hash.slice(1));
+    const h = decodeURIComponent(location.hash.slice(1).replace(/\+/g, ' '));
+    // a specific game, player or team: reopen it (also makes links to one game shareable)
+    const m = /^(game|player|team)=(.+)$/.exec(h);
+    if (m) {
+      if (m[1] === 'game') showCard(m[2]); else if (m[1] === 'player') showLog(m[2]); else showTeam(m[2]);
+      return;
+    }
     const el = h && document.getElementById(h);
     if (!el || /^(player|game)$/.test(h)) { showPage('home', true); return; }
     const pg = el.matches('.pg[data-page]') ? el : el.closest('.pg[data-page]');

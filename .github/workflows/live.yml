@@ -69,12 +69,12 @@ jobs:
         run: |
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -z "$(git status --porcelain -- data)" ]; then
+          if [ -z "$(git status --porcelain -- data index.html)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
+            git add data index.html
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
             # save: on a clash with another update, back out cleanly and don't publish this round
             # (publishing a half-merged copy once broke the site); the next round picks the change up again
@@ -115,12 +115,12 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -z "$(git status --porcelain -- data)" ]; then
+          if [ -z "$(git status --porcelain -- data index.html)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
+            git add data index.html
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
             # save: on a clash with another update, back out cleanly and don't publish this round
             # (publishing a half-merged copy once broke the site); the next round picks the change up again
@@ -161,12 +161,12 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -z "$(git status --porcelain -- data)" ]; then
+          if [ -z "$(git status --porcelain -- data index.html)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
+            git add data index.html
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
             # save: on a clash with another update, back out cleanly and don't publish this round
             # (publishing a half-merged copy once broke the site); the next round picks the change up again
@@ -207,12 +207,12 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -z "$(git status --porcelain -- data)" ]; then
+          if [ -z "$(git status --porcelain -- data index.html)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
+            git add data index.html
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
             # save: on a clash with another update, back out cleanly and don't publish this round
             # (publishing a half-merged copy once broke the site); the next round picks the change up again
@@ -253,12 +253,12 @@ jobs:
           sleep 40
           python3 scripts/update.py | tee /tmp/out.txt
           if grep -q "^  [gc]" /tmp/out.txt; then echo "active=true" >> "$GITHUB_OUTPUT"; else echo "active=false" >> "$GITHUB_OUTPUT"; fi
-          if [ -z "$(git status --porcelain -- data)" ]; then
+          if [ -z "$(git status --porcelain -- data index.html)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "swedes-abroad-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
+            git add data index.html
             git commit -q -m "Live update $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
             # save: on a clash with another update, back out cleanly and don't publish this round
             # (publishing a half-merged copy once broke the site); the next round picks the change up again

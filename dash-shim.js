@@ -24,6 +24,7 @@
   var order = [];
   var loaded = false;
   var versions = {};
+  var appVersion = null;  // fingerprint of the site's own files; a new one means a new version of the site
 
   function data(id) {
     if (store[id]) return store[id];
@@ -106,6 +107,8 @@
 
   function poll() {
     getJSON(DATA + '_version.json', Date.now()).then(function (v) {
+      if (v.app && appVersion && v.app !== appVersion && !document.querySelector('.share-ov')) { location.reload(); return; }
+      if (v.app && !appVersion) appVersion = v.app;
       var changed = Object.keys(v.files || {}).filter(function (id) {
         // a lazy file nobody has opened yet is not fetched just because it changed
         return versions[id] !== v.files[id] && (LAZY.indexOf(id) < 0 || store[id]);
@@ -135,7 +138,7 @@
     try { localStorage.setItem(P_KEY, JSON.stringify(p)); } catch (e) { /* storage blocked */ }
   }
   function setLink(name) {
-    try { history.replaceState(null, '', name && name !== 'home' ? '#' + encodeURIComponent(name) : location.pathname + location.search); } catch (e) { /* ignore */ }
+    try { history.replaceState(null, '', name && name !== 'home' ? '#' + encodeURIComponent(name).replace(/%3D/g, '=').replace(/%20/g, '+') : location.pathname + location.search); } catch (e) { /* ignore */ }
   }
 
   window.dash = { data: data, draw: draw, flush: flush, onData: onData, params: params, setParams: setParams, setLink: setLink };
@@ -143,6 +146,7 @@
   function start() {
     var first = getJSON(DATA + '_version.json', Date.now()).then(function (v) {
       versions = Object.assign({}, v.files || {});
+      appVersion = v.app || null;
       stamp(v.updated);
       return Date.now();
     }, function () { return Date.now(); });
