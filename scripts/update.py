@@ -255,6 +255,8 @@ def read_espn(sport, row):
         if not eid:
             raise LookupError('game not found on ESPN scoreboard')
         row['espn_id'] = eid
+    if not row.get('box_url'):
+        row['box_url'] = f"https://www.espn.com/{'nba' if sport == 'nba' else 'mens-college-basketball'}/game/_/gameId/{eid}"
     s = get(f'{base}/summary?event={eid}')
     comp = s['header']['competitions'][0]
     st = comp['status']
@@ -275,7 +277,7 @@ def read_espn(sport, row):
                            pts=num(g('points', 'pts')), reb=num(g('rebounds', 'reb')), ast=num(g('assists', 'ast')),
                            stl=num(g('steals', 'stl')), blk=num(g('blocks', 'blk')), tov=num(g('turnovers', 'to')),
                            fgm=fgm, fga=fga, tpm=tpm, tpa=tpa, ftm=ftm, fta=fta,
-                           pm=num(g('plusminus', '+/-')), pf=num(g('fouls', 'pf')),
+                           pm=num(g('plusminus', '+/-')) if g('plusminus', '+/-') != '' else '', pf=num(g('fouls', 'pf')),
                            oreb=num(g('offensiverebounds', 'oreb')), dreb=num(g('defensiverebounds', 'dreb')),
                            starter=bool(a.get('starter'))))
         teams.append(dict(name=tb['team'].get('displayName', ''), score=scores.get(tb['team']['id'], 0), pl=pl))
