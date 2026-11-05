@@ -1,8 +1,22 @@
 [
  {
+  "story_id": "w45-berg",
+  "date": "2026-11-05",
+  "kind": "Lead story",
+  "players": "Will Berg, Nils Cooper, Hugo Tidare",
+  "game_id": "g25",
+  "headline": "Berg opens with 26 points and 16 rebounds as Wichita State win",
+  "body": "Will Berg started his second season at Wichita State in style. The 7-foot-2 centre scored 26 points on 11-of-16 shooting, made all four of his free throws and pulled down 16 rebounds, five of them offensive, with 2 blocks and no turnovers in 28 minutes as the Shockers beat Cal State Northridge 79-67 at home.\n\nIt is a big step up from last season, when he averaged 8.8 points and 8.1 rebounds after two years at Purdue. Kenyon Giles added 21 points and 8 assists.\n\nTwo more Swedes played midweek: Nils Cooper had 10 points, 7 rebounds and 4 assists in UC Irvine's 92-66 opener against Chapman, and Hugo Tidare didn't miss from the field in 16 minutes (1 of 1, a three) and made 3 of 4 free throws for 6 points in Lipscomb's 76-54 loss at Iowa.\n\nWichita State face USC next, on Monday at 05:00 Swedish time.",
+  "stats": "26 PTS · 16 REB · 11/16 FG · 4/4 FT · 2 BLK",
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "Berg inleder med 26 poäng och 16 returer när Wichita State vinner",
+  "body_sv": "Will Berg fick en flygande start på sin andra säsong i Wichita State. Den 218 centimeter långa centern gjorde 26 poäng på 11 av 16 skott, satte alla fyra straffar och tog 16 returer, varav fem offensiva, plus 2 block och inga bollförluster på 28 minuter när Shockers slog Cal State Northridge med 79-67 hemma.\n\nDet är ett stort kliv jämfört med förra säsongen, då han snittade 8,8 poäng och 8,1 returer efter två år i Purdue. Kenyon Giles bidrog med 21 poäng och 8 assist.\n\nTvå svenskar till spelade i veckan: Nils Cooper hade 10 poäng, 7 returer och 4 assist i UC Irvines premiärseger mot Chapman, 92-66, och Hugo Tidare missade inte från fältet på 16 minuter (1 av 1, en trea) och satte 3 av 4 straffar för 6 poäng när Lipscomb förlorade med 54-76 mot Iowa.\n\nHärnäst möter Wichita State USC, natten mot måndag kl. 05.00 svensk tid.",
+  "stats_sv": "26 P · 16 RET · 11/16 FG · 4/4 STR · 2 BLOCK"
+ },
+ {
   "story_id": "w45-holmstrom",
   "date": "2026-11-03",
-  "kind": "Lead story",
+  "kind": "Big night",
   "players": "William Holmstrom",
   "game_id": "g30",
   "headline": "Holmström opens with 26 and six threes as Youngstown State win at St. Bonaventure",
@@ -26,6 +40,34 @@
   "body_sv": "Collegesäsongens första svenska möte gick till Julius Price. Han gjorde 17 poäng på 7 av 12 skott, med 4 assist, 2 returer och ett block på 34 minuter, när Stanford slog Eastern Washington med 74-65 hemma i säsongspremiären.\n\nIsak Homelius kom in från bänken för Eagles och gjorde 7 poäng på 15 minuter, med 2 av 4 från tre och sin enda straff. Alton Hamilton IV var bäst i Eastern Washington med 20 poäng och 9 returer.\n\nStanford tar emot Oakland natten mot lördag (kl. 04.00 svensk tid), medan Eastern Washington gästar Oregon (kl. 00.00 natten mot lördag).",
   "stats_sv": "Price 17 P, 7/12 FG, 4 ASS · Homelius 7 P, 2/4 3P",
   "week": "2026-11-01 – 2026-11-07"
+ },
+ {
+  "story_id": "w45-europe",
+  "date": "2026-11-04",
+  "kind": "Roundup",
+  "players": "Kenny Pohto, Melwin Pantzar, Simon Birgander, Ludvig Håkanson, Barra Njie, Zaba Bangala, Bobi Klintman",
+  "game_id": "g20",
+  "headline": "Europe midweek: Utena win in overtime, Spanish sides stay perfect in the Champions League",
+  "body": "Kenny Pohto's Utena beat Pardubice 98-95 in overtime in the Champions League. Pohto started and had 6 points, 8 rebounds (6 offensive), 2 steals and a block in 25 minutes, and was +15. Tevian Jones led Utena with 24.\n\nMelwin Pantzar had 2 points and 3 assists in 15 minutes as Unicaja beat Reggiana 99-94, and Joventut won 81-64 at Porto, with Simon Birgander adding 6 points and 6 rebounds; Ludvig Håkanson did not play. Both Spanish clubs are 3-0 in their groups.\n\nIn the FIBA Europe Cup, Barra Njie had 8 points, 5 assists and 3 rebounds as BC Vienna won 84-80 at Nitra. In the BBL, Zaba Bangala scored a season-high 14 points with 7 rebounds, but Braunschweig were routed 108-66 at Bayern Munich. Earlier in the week, Bobi Klintman was not on Virtus Bologna's game roster as Trieste handed Virtus their first Serie A loss, 100-93.",
+  "stats": "Pohto 6 PTS, 8 REB, +15 · Njie 8 PTS, 5 AST · Bangala 14 PTS (season high)",
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "Europa mitt i veckan: Utena vinner efter förlängning, spanska lagen fortsatt felfria i Champions League",
+  "body_sv": "Kenny Pohtos Utena slog Pardubice med 98-95 efter förlängning i Champions League. Pohto startade och hade 6 poäng, 8 returer (6 offensiva), 2 steals och ett block på 25 minuter, och var +15. Tevian Jones var bäst i Utena med 24 poäng.\n\nMelwin Pantzar hade 2 poäng och 3 assist på 15 minuter när Unicaja slog Reggiana med 99-94, och Joventut vann med 81-64 borta mot Porto, där Simon Birgander bidrog med 6 poäng och 6 returer; Ludvig Håkanson spelade inte. Båda de spanska klubbarna står på 3-0 i sina grupper.\n\nI FIBA Europe Cup hade Barra Njie 8 poäng, 5 assist och 3 returer när BC Vienna vann med 84-80 borta mot Nitra. I BBL gjorde Zaba Bangala säsongsbästa 14 poäng och tog 7 returer, men Braunschweig blev överkörda med 66-108 borta mot Bayern München. Tidigare i veckan fanns Bobi Klintman inte med i Virtus Bolognas trupp när Trieste gav Virtus säsongens första förlust i Serie A, 93-100.",
+  "stats_sv": "Pohto 6 P, 8 RET, +15 · Njie 8 P, 5 ASS · Bangala 14 P (säsongsbästa)"
+ },
+ {
+  "story_id": "w45-tough",
+  "date": "2026-11-05",
+  "kind": "Roundup",
+  "players": "Pelle Larsson",
+  "game_id": "g26",
+  "headline": "Heat split in Los Angeles: routed by the Lakers, then a one-point win over the Clippers",
+  "body": "Miami's West Coast trip started with a 138-117 loss to the Lakers, where Luka Dončić had 42 points, 7 rebounds and 13 assists. Pelle Larsson scored 9 points in 30 minutes (2 of 6, 4 of 4 free throws) with 3 rebounds and 2 assists.\n\nTwo nights later the Heat won 117-116 at the Clippers. Larsson played 35 minutes and had 7 points, 3 rebounds and 4 assists; Bam Adebayo scored 35 with 10 rebounds, Klay Thompson added 30 and Giannis Antetokounmpo had 27 points and 14 rebounds.\n\nMiami are 3-5, and Larsson is averaging 10.9 points and 3.8 assists over eight games. The trip continues at Golden State on Friday (04:00 Swedish time) and Sacramento on Monday (03:00).",
+  "stats": "Larsson 9 PTS at LAL · 7 PTS, 4 AST at LAC · Heat 3-5",
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "Heat delar i Los Angeles: utklassade av Lakers, sedan enpoängsseger mot Clippers",
+  "body_sv": "Miamis västkustturné började med en förlust med 117-138 mot Lakers, där Luka Dončić gjorde 42 poäng, 7 returer och 13 assist. Pelle Larsson gjorde 9 poäng på 30 minuter (2 av 6, 4 av 4 straffar) och hade 3 returer och 2 assist.\n\nTvå nätter senare vann Heat med 117-116 borta mot Clippers. Larsson spelade 35 minuter och hade 7 poäng, 3 returer och 4 assist; Bam Adebayo gjorde 35 poäng och 10 returer, Klay Thompson 30 och Giannis Antetokounmpo 27 poäng och 14 returer.\n\nMiami står på 3-5, och Larsson snittar 10,9 poäng och 3,8 assist på åtta matcher. Turnén fortsätter mot Golden State natten mot fredag (kl. 04.00 svensk tid) och Sacramento natten mot måndag (kl. 03.00).",
+  "stats_sv": "Larsson 9 P mot LAL · 7 P, 4 ASS mot LAC · Heat 3-5"
  },
  {
   "story_id": "w45-hagberg",
@@ -84,31 +126,17 @@
   "week": "2026-11-01 – 2026-11-07"
  },
  {
-  "story_id": "w45-tough",
-  "date": "2026-11-03",
-  "kind": "Tough week",
-  "players": "Pelle Larsson, Bobi Klintman",
-  "game_id": "g19",
-  "headline": "Heat outgunned by Dončić in L.A., Virtus lose without Klintman",
-  "body": "Pelle Larsson scored 9 points in 30 minutes (2 of 6, 1 of 3 from three, 4 of 4 free throws) with 3 rebounds and 2 assists, but Miami were blown out 138-117 by the Lakers to open their West Coast trip. Luka Dončić had 42 points, 7 rebounds and 13 assists; Giannis Antetokounmpo answered with 30 points and 12 rebounds. The Heat are 2-5, and Larsson is averaging 11.4 points and 3.7 assists over seven games.\n\nIn Italy, Bobi Klintman was not on Virtus Bologna's game roster as Trieste handed Virtus their first Serie A loss, 100-93. Langston Galloway scored 24 for Trieste.\n\nThe Heat continue at the Clippers on Thursday (04:30 Swedish time) and the Warriors on Friday (04:00).",
-  "stats": "Larsson 9 PTS, 4/4 FT · Heat 2-5 · Virtus 5-1 in Serie A",
-  "headline_sv": "Heat får se sig överkörda av Dončić i L.A., Virtus förlorar utan Klintman",
-  "body_sv": "Pelle Larsson gjorde 9 poäng på 30 minuter (2 av 6, 1 av 3 från tre, 4 av 4 straffar) och hade 3 returer och 2 assist, men Miami blev utklassade med 117-138 av Lakers i första matchen på västkustturnén. Luka Dončić gjorde 42 poäng, 7 returer och 13 assist; Giannis Antetokounmpo svarade med 30 poäng och 12 returer. Heat står på 2-5, och Larsson snittar 11,4 poäng och 3,7 assist på sju matcher.\n\nI Italien fanns Bobi Klintman inte med i Virtus Bolognas trupp när Trieste gav Virtus säsongens första förlust i Serie A, 93-100. Langston Galloway gjorde 24 poäng för Trieste.\n\nHeat fortsätter mot Clippers natten mot torsdag (kl. 04.30 svensk tid) och Warriors natten mot fredag (kl. 04.00).",
-  "stats_sv": "Larsson 9 P, 4/4 STR · Heat 2-5 · Virtus 5-1 i Serie A",
-  "week": "2026-11-01 – 2026-11-07"
- },
- {
   "story_id": "w45-ahead",
-  "date": "2026-11-03",
+  "date": "2026-11-05",
   "kind": "Coming up",
-  "players": "Kenny Pohto, Melwin Pantzar, Ludvig Håkanson, Simon Birgander, Casper Pohto, Alliou Fall, Elliot Cadeau, Bobi Klintman, Jacob Hadi, Mikai Klintman",
+  "players": "Pelle Larsson, Bobi Klintman, Elliot Cadeau, William Holmstrom, Julius Price, Zaba Bangala, Barra Njie, Casper Pohto, Alliou Fall, Jacob Hadi, Mikai Klintman, Will Berg",
   "game_id": "",
-  "headline": "Coming up: Champions League night, Michigan at UConn and a Swedish matchup in New York",
-  "body": "Tuesday is Champions League night: Kenny Pohto's Utena host Pardubice at 18:45, Melwin Pantzar's Unicaja face Reggiana at 20:30, and Ludvig Håkanson and Simon Birgander's Joventut visit Porto at 20:30.\n\nOn Friday, Bobi Klintman's Virtus host Dubai in the EuroLeague (20:30). Overnight into Saturday, Elliot Cadeau's Michigan visit UConn (02:00).\n\nOn Sunday there are two Swedish matchups: Casper Pohto's St. John's host Alliou Fall's Iona at 18:00, and in Germany's ProB, Jacob Hadi's Erfurt host Mikai Klintman's Weimar at 17:00.",
+  "headline": "Coming up: Virtus host Dubai, Michigan visit UConn and two Swedish matchups on Sunday",
+  "body": "Pelle Larsson's Heat visit Golden State overnight into Friday (04:00), and on Friday evening Bobi Klintman's Virtus host Dubai in the EuroLeague (20:30).\n\nOvernight into Saturday it's a big college night: William Holmström's Youngstown State visit Ohio State (00:30), Elliot Cadeau's Michigan visit UConn (02:00) and Julius Price's Stanford host Oakland (04:00). On Saturday, Barra Njie's Vienna visit Ilirija in the ABA League (19:00) and Zaba Bangala's Braunschweig play at Bonn (20:00).\n\nOn Sunday there are two Swedish matchups: Casper Pohto's St. John's host Alliou Fall's Iona at 18:00, and in Germany's ProB, Jacob Hadi's Erfurt host Mikai Klintman's Weimar at 17:00. Early on Monday, Will Berg's Wichita State face USC (05:00).",
   "stats": "2 Swedish matchups",
-  "headline_sv": "På gång: Champions League-kväll, Michigan mot UConn och svenskt möte i New York",
-  "body_sv": "Tisdag är Champions League-kväll: Kenny Pohtos Utena tar emot Pardubice kl. 18.45, Melwin Pantzars Unicaja möter Reggiana kl. 20.30 och Ludvig Håkansons och Simon Birganders Joventut gästar Porto kl. 20.30.\n\nPå fredag tar Bobi Klintmans Virtus emot Dubai i EuroLeague (kl. 20.30). Natten mot lördag gästar Elliot Cadeaus Michigan UConn (kl. 02.00).\n\nPå söndag blir det två svenska möten: Casper Pohtos St. John's tar emot Alliou Falls Iona kl. 18.00, och i tyska ProB tar Jacob Hadis Erfurt emot Mikai Klintmans Weimar kl. 17.00.",
-  "stats_sv": "2 svenska möten",
-  "week": "2026-11-01 – 2026-11-07"
+  "week": "2026-11-01 – 2026-11-07",
+  "headline_sv": "På gång: Virtus tar emot Dubai, Michigan gästar UConn och två svenska möten på söndag",
+  "body_sv": "Pelle Larssons Heat gästar Golden State natten mot fredag (kl. 04.00), och på fredagskvällen tar Bobi Klintmans Virtus emot Dubai i EuroLeague (kl. 20.30).\n\nNatten mot lördag blir en stor collegenatt: William Holmströms Youngstown State gästar Ohio State (kl. 00.30), Elliot Cadeaus Michigan gästar UConn (kl. 02.00) och Julius Prices Stanford tar emot Oakland (kl. 04.00). På lördag gästar Barra Njies Vienna Ilirija i ABA-ligan (kl. 19.00) och Zaba Bangalas Braunschweig spelar borta mot Bonn (kl. 20.00).\n\nPå söndag blir det två svenska möten: Casper Pohtos St. John's tar emot Alliou Falls Iona kl. 18.00, och i tyska ProB tar Jacob Hadis Erfurt emot Mikai Klintmans Weimar kl. 17.00. Natten mot måndag möter Will Bergs Wichita State USC (kl. 05.00).",
+  "stats_sv": "2 svenska möten"
  }
 ]
