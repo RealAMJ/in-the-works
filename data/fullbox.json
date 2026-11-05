@@ -22065,7 +22065,7 @@
   "fg": "4/9",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 11,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22086,7 +22086,7 @@
   "fg": "2/4",
   "three": "2/3",
   "ft": "2/2",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22107,7 +22107,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22170,7 +22170,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22191,7 +22191,7 @@
   "fg": "3/7",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22245,7 +22245,7 @@
   "player": "Adam Ramstedt",
   "pos": "",
   "min": 19,
-  "pts": 5,
+  "pts": 6,
   "reb": 5,
   "ast": 1,
   "stl": 0,
@@ -22253,8 +22253,8 @@
   "tov": 2,
   "fg": "2/4",
   "three": "1/1",
-  "ft": "0/0",
-  "pm": -4,
+  "ft": "1/1",
+  "pm": -3,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22275,7 +22275,7 @@
   "fg": "5/13",
   "three": "0/4",
   "ft": "1/2",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22296,7 +22296,7 @@
   "fg": "3/9",
   "three": "0/3",
   "ft": "1/2",
-  "pm": -4,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22338,7 +22338,7 @@
   "fg": "3/5",
   "three": "2/4",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -22359,7 +22359,7 @@
   "fg": "7/14",
   "three": "0/2",
   "ft": "6/8",
-  "pm": -5,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
