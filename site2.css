@@ -1111,3 +1111,16 @@ button.tp-r:hover { border-color: var(--se-blue); }
   .sw table.cards tr.h2h { background: rgba(255, 204, 0, .28); border: 2px solid var(--se-yellow); border-radius: var(--cds-radius); }
   .sw table.cards tr.h2h > td:first-child { box-shadow: none; }
 }
+
+/* Phones: a compact front-page header, so today's games and the latest results are on the first screen */
+@media (max-width: 640px) {
+  .hero { padding: 1rem 1rem 1.1rem; gap: .6rem; }
+  .hero::before { width: 160px; height: 160px; border-width: 14px; right: -50px; top: -50px; }
+  .hero-eyebrow { font-size: .68rem; }
+  .hero h1 { font-size: 1.45rem; line-height: 1.05; }
+  .hero p, .hero-try { display: none; }
+  .hero .srch input { font-size: 1rem; padding: 10px 14px 10px 40px; }
+  .hero-stats { grid-template-columns: repeat(4, 1fr); gap: .4rem; margin-top: .2rem; padding-top: .6rem; }
+  .hero-stat .v { font-size: 1.3rem; }
+  .hero-stat .k { font-size: .62rem; line-height: 1.15; display: block; }
+}
