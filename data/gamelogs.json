@@ -4100,5 +4100,31 @@
   "pf": 0,
   "pm": -6,
   "eff": ""
+ },
+ {
+  "row_id": "ramstedt-2026-11-05",
+  "player": "Adam Ramstedt",
+  "date": "2026-11-05",
+  "competition": "Icelandic Premier League",
+  "team": "KR Basket",
+  "opponent": "Álftanes",
+  "venue": "Away",
+  "result": "W 102-94",
+  "min": 30,
+  "pts": 12,
+  "reb": 6,
+  "ast": 2,
+  "source": "FIBA LiveStats",
+  "fg": "4/6",
+  "three": "2/2",
+  "ft": "2/2",
+  "oreb": 2,
+  "dreb": 4,
+  "stl": 2,
+  "blk": 3,
+  "tov": 2,
+  "pf": 2,
+  "pm": 9,
+  "eff": ""
  }
 ]

@@ -4576,5 +4576,33 @@
   "note": "",
   "leaders": "Anderson|30||",
   "source": "kkwloclawek.pl (club schedule and match report)"
+ },
+ {
+  "row_id": "kr-basket-2026-11-05",
+  "team": "KR Basket",
+  "date": "2026-11-05",
+  "competition": "Icelandic Premier League",
+  "opponent": "Álftanes",
+  "venue": "Away",
+  "score": "102-94",
+  "result": "W",
+  "top": "Jaunzems 26 pts, 9 reb",
+  "note": "",
+  "leaders": "Jaunzems|26|9|3;Þorbjarnarson|15|3|10;Lanaras|15|6|4",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "lftanes-2026-11-05",
+  "team": "Álftanes",
+  "date": "2026-11-05",
+  "competition": "Icelandic Premier League",
+  "opponent": "KR Basket",
+  "venue": "Home",
+  "score": "94-102",
+  "result": "L",
+  "top": "Semple 26 pts, 7 reb",
+  "note": "",
+  "leaders": "Semple|26|7|5;Laksa|13|4|2;Basile|11|1|10;Gasic|11|3|2;Pétursson|11|4|4",
+  "source": "FIBA LiveStats"
  }
 ]

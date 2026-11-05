@@ -827,7 +827,9 @@
   "status": "final",
   "score": "W 102-94",
   "live_feed": "fiba:2856135",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261106maine",
