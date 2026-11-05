@@ -12,9 +12,12 @@
   'use strict';
   var DATA = 'data/';
   var POLL_MS = 20000;
-  var IDS = ['awards', 'bios', 'boxscores', 'career', 'coaches', 'coachgames', 'fullbox', 'gamelogs', 'highlights',
+  var IDS = ['awards', 'bios', 'boxscores', 'career', 'coaches', 'coachgames', 'gamelogs', 'highlights',
     'leaguetiers', 'ntgames', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'schedule', 'stats', 'teamform',
     'teams', 'thisweek'];
+  // Big files only some pages need: fetched the first time a page asks for them (full box scores grow all season)
+  var LAZY = ['fullbox'];
+  var asked = {};
 
   var store = {};
   var fns = {};
@@ -24,6 +27,13 @@
 
   function data(id) {
     if (store[id]) return store[id];
+    if (LAZY.indexOf(id) >= 0) {
+      if (!asked[id]) {
+        asked[id] = true;
+        loadIds([id], versions[id] || Date.now()).then(function () { redrawFor([id]); });
+      }
+      return { status: 'loading', data: null };
+    }
     return loaded ? { status: 'error', data: null } : { status: 'loading', data: null };
   }
 
@@ -82,7 +92,10 @@
 
   function poll() {
     getJSON(DATA + '_version.json', Date.now()).then(function (v) {
-      var changed = Object.keys(v.files || {}).filter(function (id) { return versions[id] !== v.files[id]; });
+      var changed = Object.keys(v.files || {}).filter(function (id) {
+        // a lazy file nobody has opened yet is not fetched just because it changed
+        return versions[id] !== v.files[id] && (LAZY.indexOf(id) < 0 || store[id]);
+      });
       if (!changed.length) return;
       return loadIds(changed, Date.now()).then(function () {
         changed.forEach(function (id) { versions[id] = v.files[id]; });
