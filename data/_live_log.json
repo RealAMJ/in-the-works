@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:54:47+01:00",
+ "at": "2026-11-06T02:55:36+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:05",
+   "clock": "01:42",
    "done": false,
    "teams": [
     [
@@ -44,29 +44,6 @@
      "Navy Midshipmen",
      60,
      25
-    ]
-   ]
-  },
-  {
-   "game": "g20261106iona",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261106iona",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "NJIT Highlanders",
-     49,
-     13
-    ],
-    [
-     "Iona Gaels",
-     72,
-     17
     ]
    ]
   },
@@ -101,7 +78,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:55",
+   "clock": "15:18",
    "done": false,
    "teams": [
     [
@@ -111,7 +88,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     56,
+     58,
      16
     ]
    ]
