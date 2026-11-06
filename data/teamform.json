@@ -4688,5 +4688,33 @@
   "note": "",
   "leaders": "Pennick|24|4|1;Burnett|14|12|1;Ashley|12|3|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-06",
+  "team": "Mississippi State",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Northwestern State",
+  "venue": "Home",
+  "score": "82-44",
+  "result": "W",
+  "top": "Hubbard 15 pts, 2 reb",
+  "note": "",
+  "leaders": "Hubbard|15|2|3;Grace|12|1|0;Hamilton|10|7|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "northwestern-state-2026-11-06",
+  "team": "Northwestern State",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Away",
+  "score": "44-82",
+  "result": "L",
+  "top": "Simpson 13 pts, 6 reb",
+  "note": "",
+  "leaders": "Simpson|13|6|2;Thomas|7|6|0;Turner|6|6|1",
+  "source": "ESPN"
  }
 ]
