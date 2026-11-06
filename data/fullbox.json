@@ -24839,7 +24839,7 @@
   "ft": "5/7",
   "pm": -22,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24860,7 +24860,7 @@
   "ft": "0/0",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24881,7 +24881,7 @@
   "ft": "4/7",
   "pm": -9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24902,7 +24902,7 @@
   "ft": "3/3",
   "pm": -9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24923,7 +24923,7 @@
   "ft": "0/0",
   "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24944,7 +24944,28 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-0-6",
+  "game_id": "g20261106mia",
+  "team": "Miami Heat",
+  "player": "Myron Gardner",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": -2,
+  "swede": false,
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24965,7 +24986,28 @@
   "ft": "1/2",
   "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-0-8",
+  "game_id": "g20261106mia",
+  "team": "Miami Heat",
+  "player": "Nick Richards",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": -2,
+  "swede": false,
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24986,7 +25028,28 @@
   "ft": "0/0",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-0-10",
+  "game_id": "g20261106mia",
+  "team": "Miami Heat",
+  "player": "Dru Smith",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/1",
+  "three": "0/1",
+  "ft": "0/0",
+  "pm": -2,
+  "swede": false,
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25007,7 +25070,7 @@
   "ft": "2/2",
   "pm": -15,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25016,7 +25079,7 @@
   "team": "Miami Heat",
   "player": "Ryan Conwell",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 13,
   "reb": 1,
   "ast": 2,
@@ -25028,7 +25091,7 @@
   "ft": "2/2",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25049,7 +25112,7 @@
   "ft": "0/0",
   "pm": 13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25070,7 +25133,7 @@
   "ft": "4/6",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25091,7 +25154,7 @@
   "ft": "5/5",
   "pm": 17,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25112,7 +25175,7 @@
   "ft": "1/2",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25133,7 +25196,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25154,7 +25217,49 @@
   "ft": "1/2",
   "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-1-6",
+  "game_id": "g20261106mia",
+  "team": "Golden State Warriors",
+  "player": "Graham Ike",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 1,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 2,
+  "swede": false,
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-1-7",
+  "game_id": "g20261106mia",
+  "team": "Golden State Warriors",
+  "player": "Malevy Leons",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 2,
+  "swede": false,
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25175,7 +25280,7 @@
   "ft": "0/0",
   "pm": 21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25196,7 +25301,7 @@
   "ft": "2/2",
   "pm": 7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25217,7 +25322,7 @@
   "ft": "2/2",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25238,7 +25343,7 @@
   "ft": "3/4",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -25247,7 +25352,7 @@
   "team": "Golden State Warriors",
   "player": "Brandon Williams",
   "pos": "",
-  "min": 20,
+  "min": 21,
   "pts": 10,
   "reb": 1,
   "ast": 4,
@@ -25259,7 +25364,28 @@
   "ft": "2/2",
   "pm": 7,
   "swede": false,
-  "state": "live",
+  "state": "final",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261106mia-1-13",
+  "game_id": "g20261106mia",
+  "team": "Golden State Warriors",
+  "player": "LJ Cryer",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 2,
+  "swede": false,
+  "state": "final",
   "source": "ESPN"
  }
 ]
