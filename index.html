@@ -2396,7 +2396,7 @@
   function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); return r && r.home_club ? r.home_club.replace(/\s*\(.*\)\s*$/, '') : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
-  function photoFor(name) { const ph = ds('photos'); return ph ? ph.find((r) => isSame(r.player, name) && /^data:image\//.test(String(r.src || ''))) : null; }
+  function photoFor(name) { const ph = ds('photos'); return ph ? ph.find((r) => isSame(r.player, name) && /^(data:image\/|photos\/)/.test(String(r.src || ''))) : null; }
   function tabBar(tabs, cur, onPick, cls) {
     const bar = mk('div', 'subnav' + (cls ? ' ' + cls : '')); bar.setAttribute('role', 'tablist');
     tabs.forEach(([k, lab]) => { const b = mk('button', k === cur ? 'on' : '', lab); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', k === cur ? 'true' : 'false'); b.onclick = () => onPick(k); bar.append(b); });
@@ -3553,7 +3553,7 @@
       c.onclick = () => showLog(p.player);
       const band = mk('div', 'plc-band');
       const photo = photoFor(p.player);
-      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = ''; av.append(img); } else av.textContent = initials(p.player);
+      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; av.append(img); } else av.textContent = initials(p.player);
       const tags = mk('div', 'plc-tags'); if (p.level) tags.append(mk('span', 'plc-tag', p.level)); if (nt.some((x) => isSame(x.player, p.player))) tags.append(mk('span', 'plc-tag y', 'National team'));
       band.append(av, tags);
       const parts = p.player.split(' ');
