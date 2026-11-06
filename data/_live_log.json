@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T01:07:36+01:00",
+ "at": "2026-11-06T01:08:26+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,7 +9,7 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:12",
+   "clock": "16:35",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:15",
+   "clock": "17:09",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:12",
+   "clock": "16:24",
    "done": false,
    "teams": [
     [
      "NJIT Highlanders",
-     0,
+     3,
      13
     ],
     [
