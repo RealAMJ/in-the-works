@@ -626,6 +626,7 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .plc:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, .18); border-color: var(--se-yellow); }
 .plc-band { position: relative; height: 5.5rem; background: linear-gradient(120deg, var(--tc) -10%, color-mix(in srgb, var(--tc) 40%, #0d0f14) 45%, #0d0f14 100%); display: flex; align-items: flex-end; justify-content: space-between; padding: 0 12px; }
 .plc-av { width: 4.4rem; height: 4.4rem; margin-bottom: -1.6rem; border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 1.4rem; color: var(--se-navy); background: linear-gradient(160deg, var(--se-yellow), #f2b600); border: 3px solid var(--color-bg); overflow: hidden; flex: 0 0 auto; }
+.plc-av { position: relative; overflow: hidden; }
 .plc-av img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .plc-tags { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; align-self: flex-start; margin-top: 10px; }
 .plc-tag { font-size: 9.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; background: rgba(255, 255, 255, .15); color: #fff; border: 1px solid rgba(255, 255, 255, .25); }
@@ -1187,14 +1188,15 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .lg-card[hidden] { display: none; }
 /* computer: the photo keeps its own shape (nothing cut off at the sides), as tall as the header */
 .pp-hero.has-photo .pp-pic { display: flex; align-items: flex-end; justify-content: center; width: auto; height: clamp(11.25rem, 30vw, 18.75rem); aspect-ratio: auto; max-width: 48vw; }
-.pp-hero.has-photo .pp-pic img { display: block; width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: center bottom; }
-/* phone, player with a photo: the whole photo (shoulders included) above the name, never under the text */
+.pp-hero.has-photo .pp-pic img { display: block; width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: center bottom;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%); }
+/* phone, player with a photo: a big photo like on the computer, his face in the space left of the text
+   (shoulders may be cut), fading to black where it reaches the text */
 @media (max-width: 640px) {
-  .pp-hero.has-photo { grid-template-columns: 1fr; gap: 0; min-height: 0; }
-  .pp-hero.has-photo .pp-pic { display: flex; justify-content: center; align-items: flex-end; position: relative; width: 100%; height: 15rem; max-width: none; aspect-ratio: auto; z-index: 0; margin-top: 12px; }
-  .pp-hero.has-photo .pp-pic img { display: block; width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: center bottom; border-radius: 0;
-    -webkit-mask-image: linear-gradient(180deg, #000 82%, transparent 100%); mask-image: linear-gradient(180deg, #000 82%, transparent 100%); }
-  .pp-hero.has-photo .pp-id { grid-column: 1; padding-top: 10px; }
-}
+  .pp-hero.has-photo { grid-template-columns: 38% minmax(0, 1fr); min-height: 17rem; }
+  .pp-hero.has-photo .pp-pic { display: block; position: absolute; left: 0; bottom: 0; top: 0; width: 46%; height: 100%; max-width: none; aspect-ratio: auto; z-index: 0; }
+  .pp-hero.has-photo .pp-pic img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center top; border-radius: 0;
+    -webkit-mask-image: linear-gradient(90deg, #000 62%, rgba(0, 0, 0, .35) 82%, transparent 100%); mask-image: linear-gradient(90deg, #000 62%, rgba(0, 0, 0, .35) 82%, transparent 100%); }
+  .pp-hero.has-photo .pp-id { grid-column: 2; }
 }
 @media (max-width: 640px) { .pp-hero.has-photo .pp-last { font-size: min(2rem, 7vw); } }

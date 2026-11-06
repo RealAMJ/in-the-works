@@ -678,7 +678,7 @@
         // smaller so the face lands in the same place; the bottom edge of the photo fades to black
         { const f = Array.isArray(ph.face) ? ph.face : null;
           const ih = f ? 238 / (f[1] - f[0]) : 720, y0 = f ? 222 - f[0] * ih : 150, iw = ph.img.naturalWidth * ih / ph.img.naturalHeight;
-          x.drawImage(ph.img, (W - iw) / 2, y0, iw, ih);
+          x.drawImage(ph.img, W / 2 - iw * (f && f[2] != null ? f[2] : 0.5), y0, iw, ih);
           const fb = x.createLinearGradient(0, y0 + ih - 160, 0, y0 + ih); fb.addColorStop(0, 'rgba(0,0,0,0)'); fb.addColorStop(1, 'rgba(0,0,0,1)');
           x.fillStyle = fb; x.fillRect(0, y0 + ih - 160, W, 161); }
         x.fillStyle = 'rgba(0,0,0,.25)'; x.fillRect(0, 0, W, H);
@@ -2396,6 +2396,13 @@
   function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); return r && r.home_club ? r.home_club.replace(/\s*\(.*\)\s*$/, '') : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
+  // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face
+  // has the same size and place in the circle, whatever the photo looks like
+  function faceFit(img, photo) {
+    const f = Array.isArray(photo.face) ? photo.face : [0.08, 0.42];
+    const k = 0.6 / Math.max(0.05, f[1] - f[0]);  // face = 60% of the circle's height
+    Object.assign(img.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(f[2] != null ? f[2] : 0.5) * 100}%)`, top: ((0.2 - f[0] * k) * 100) + '%', objectFit: 'fill' });
+  }
   function photoFor(name) { const ph = ds('photos'); return ph ? ph.find((r) => isSame(r.player, name) && /^(data:image\/|photos\/)/.test(String(r.src || ''))) : null; }
   function tabBar(tabs, cur, onPick, cls) {
     const bar = mk('div', 'subnav' + (cls ? ' ' + cls : '')); bar.setAttribute('role', 'tablist');
@@ -3553,7 +3560,7 @@
       c.onclick = () => showLog(p.player);
       const band = mk('div', 'plc-band');
       const photo = photoFor(p.player);
-      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; av.append(img); } else av.textContent = initials(p.player);
+      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; faceFit(img, photo); av.append(img); } else av.textContent = initials(p.player);
       const tags = mk('div', 'plc-tags'); if (p.level) tags.append(mk('span', 'plc-tag', p.level)); if (nt.some((x) => isSame(x.player, p.player))) tags.append(mk('span', 'plc-tag y', 'National team'));
       band.append(av, tags);
       const parts = p.player.split(' ');
