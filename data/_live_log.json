@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:41:23+01:00",
+ "at": "2026-11-06T03:42:12+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -9,7 +9,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:44",
+   "clock": "09:36",
    "done": false,
    "teams": [
     [
@@ -44,29 +44,6 @@
      "Miami Heat",
      0,
      0
-    ]
-   ]
-  },
-  {
-   "game": "c20261106msu",
-   "checking": "ESPN"
-  },
-  {
-   "game": "c20261106msu",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Northwestern State Demons",
-     44,
-     14
-    ],
-    [
-     "Mississippi State Bulldogs",
-     82,
-     16
     ]
    ]
   }
