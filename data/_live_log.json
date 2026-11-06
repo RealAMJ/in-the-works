@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T01:02:51+01:00",
+ "at": "2026-11-06T01:07:36+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -8,19 +8,19 @@
   {
    "game": "g20261106maine",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:12",
    "done": false,
    "teams": [
-    [
-     "Sacred Heart Pioneers",
-     0,
-     0
-    ],
     [
      "Maine Black Bears",
-     0,
-     0
+     4,
+     15
+    ],
+    [
+     "Sacred Heart Pioneers",
+     2,
+     14
     ]
    ]
   },
@@ -31,19 +31,19 @@
   {
    "game": "g20261106dsu",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:15",
    "done": false,
    "teams": [
-    [
-     "Navy Midshipmen",
-     0,
-     0
-    ],
     [
      "Delaware State Hornets",
-     0,
-     0
+     4,
+     15
+    ],
+    [
+     "Navy Midshipmen",
+     5,
+     25
     ]
    ]
   },
@@ -54,19 +54,19 @@
   {
    "game": "g20261106iona",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:12",
    "done": false,
    "teams": [
-    [
-     "Iona Gaels",
-     0,
-     0
-    ],
     [
      "NJIT Highlanders",
      0,
-     0
+     13
+    ],
+    [
+     "Iona Gaels",
+     1,
+     17
     ]
    ]
   }
