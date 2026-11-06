@@ -4632,5 +4632,33 @@
   "note": "",
   "leaders": "Vanderstraeten|14|7|0;Bolden|8|4|5;Stores|7|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "maine-2026-11-06",
+  "team": "Maine",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Sacred Heart",
+  "venue": "Away",
+  "score": "74-72",
+  "result": "W",
+  "top": "Williams 16 pts, 3 reb",
+  "note": "",
+  "leaders": "Williams|16|3|1;Flagg|14|10|1;Bamba|11|6|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "sacred-heart-2026-11-06",
+  "team": "Sacred Heart",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Home",
+  "score": "72-74",
+  "result": "L",
+  "top": "Reilly 18 pts, 1 reb",
+  "note": "",
+  "leaders": "Reilly|18|1|0;Robinson|15|9|0;Slaughter|15|6|4",
+  "source": "ESPN"
  }
 ]

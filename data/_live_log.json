@@ -1,29 +1,6 @@
 {
- "at": "2026-11-06T03:05:53+01:00",
+ "at": "2026-11-06T03:06:32+01:00",
  "log": [
-  {
-   "game": "g20261106maine",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261106maine",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Maine Black Bears",
-     74,
-     15
-    ],
-    [
-     "Sacred Heart Pioneers",
-     72,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261106dsu",
    "checking": "ESPN"

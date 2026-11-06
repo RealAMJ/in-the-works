@@ -4152,5 +4152,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "adsten-2026-11-06",
+  "player": "Villiam Garcia Adsten",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "team": "Maine",
+  "opponent": "Sacred Heart",
+  "venue": "Away",
+  "result": "W 74-72",
+  "min": 18,
+  "pts": 9,
+  "reb": 3,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "4/9",
+  "three": "1/4",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 1,
+  "tov": 2,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
