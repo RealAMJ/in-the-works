@@ -385,7 +385,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=1f9ae9e5"></script>
+<script src="i18n.js?v=7319e93d"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2073,7 +2073,7 @@
     const best = new Map();
     d.data.forEach((r) => {
       const v = Number(r[leadStat]);
-      if (!r.player || !(Number(r.gp) >= 2) || r[leadStat] === '' || r[leadStat] == null || isNaN(v) || (r.season && r.season !== '2026-27')) return;
+      if (!r.player || !(Number(r.gp) >= 2) || norm(r.competition) === 'basketligan' || r[leadStat] === '' || r[leadStat] == null || isNaN(v) || (r.season && r.season !== '2026-27')) return;
       const cur = best.get(r.player);
       if (!cur || v > Number(cur[leadStat])) best.set(r.player, r);
     });
@@ -2381,6 +2381,9 @@
   const f1x = (v) => (v == null || v === '' || isNaN(Number(v)) ? '—' : Number(v).toFixed(1));
   function heightTxt(cm) { if (!cm) return ''; const inch = Math.round(Number(cm) / 2.54); return `${cm} cm (${Math.floor(inch / 12)}'${inch % 12}")`; }
   function ageTxt(born) { if (!born) return ''; const b = new Date(born + 'T12:00:00Z'), n = new Date(); let a = n.getUTCFullYear() - b.getUTCFullYear(); if (n.getUTCMonth() < b.getUTCMonth() || (n.getUTCMonth() === b.getUTCMonth() && n.getUTCDate() < b.getUTCDate())) a--; return a; }
+  function bornTxt(b) { if (!b) return ''; return /^\d{4}$/.test(String(b)) ? String(b) : `${longDate(b)} (${ageTxt(b)})`; }
+  // national team players who play at home: club from the roster, e.g. "Jämtland Basket (Basketligan, Sweden)"
+  function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); return r && r.home_club ? r.home_club.replace(/\s*\(.*\)\s*$/, '') : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   function photoFor(name) { const ph = ds('photos'); return ph ? ph.find((r) => isSame(r.player, name) && /^data:image\//.test(String(r.src || ''))) : null; }
@@ -2434,13 +2437,13 @@
     const pic = mk('div', 'pp-pic');
     if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); } else pic.append(mk('span', 'pp-ini', initials(name)));
     const id = mk('div', 'pp-id');
-    const club = mk('div', 'pp-club'); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); }
+    const club = mk('div', 'pp-club'); const hc = p ? '' : homeClubOf(name); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) club.append(crest(hc, 'sm'), mk('span', '', hc));
     const parts = name.split(' ');
     id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]));
     const meta = mk('div', 'pp-meta');
     [bio && bio.number ? '#' + bio.number : '', bio && bio.position].filter(Boolean).forEach((t) => meta.append(mk('span', '', t)));
     const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag y', '🇸🇪 Sweden'));
-    if (p && p.level) tags.append(mk('span', 'pp-tag', p.level));
+    if (p && p.level) tags.append(mk('span', 'pp-tag', p.level)); else if (hc) tags.append(mk('span', 'pp-tag', 'SBL'));
     if (nt) tags.append(mk('span', 'pp-tag', 'National team'));
     const acts = mk('div', 'pp-actions'); const cb = mk('button', 'pp-btn', '⇄ Compare'); cb.type = 'button'; cb.onclick = () => openCompare(name); acts.append(cb);
     { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
@@ -2450,7 +2453,7 @@
     const facts = mk('dl', 'pp-facts');
     const fact = (k, v) => { const d = mk('div'); d.append(mk('dt', '', k), mk('dd', '', v == null || v === '' ? '—' : String(v))); facts.append(d); };
     fact('Nationality', 'Sweden'); fact('Position', bio && bio.position); fact('Height', bio && heightTxt(bio.height_cm));
-    fact('Born', bio && bio.born ? `${longDate(bio.born)} (${ageTxt(bio.born)})` : ''); fact('Birthplace', bio && tx(bio, 'birthplace')); fact('Club', p && p.club);
+    fact('Born', bio && bornTxt(bio.born)); fact('Birthplace', bio && tx(bio, 'birthplace')); fact('Club', (p && p.club) || hc);
     el.append(facts);
     el.append(tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); }));
     const cur = rows.find((r) => r.competition === ppComp[key]) || rows[0];
@@ -2542,7 +2545,7 @@
           el.append(st2);
         }
         const grid = mk('div', 'bio-grid');
-        [['Hometown', bio.hometown || tx(bio, 'birthplace')], ['Born', bio.born ? `${longDate(bio.born)} (${ageTxt(bio.born)})` : ''], ['Position', bio.position], ['Height', heightTxt(bio.height_cm)], ['High school', bio.high_school], ['Youth & early career', tx(bio, 'youth')], ['College', tx(bio, 'college')], ['Draft', tx(bio, 'draft')], ['Family', tx(bio, 'family')], ['National team', tx(bio, 'national_team')], ['Club now', p && p.club ? `${p.club} · ${p.competitions || ''}` : '']].forEach(([k, v]) => {
+        [['Hometown', bio.hometown || tx(bio, 'birthplace')], ['Born', bornTxt(bio.born)], ['Position', bio.position], ['Height', heightTxt(bio.height_cm)], ['High school', bio.high_school], ['Youth & early career', tx(bio, 'youth')], ['College', tx(bio, 'college')], ['Draft', tx(bio, 'draft')], ['Family', tx(bio, 'family')], ['National team', tx(bio, 'national_team')], ['Club now', p && p.club ? `${p.club} · ${p.competitions || ''}` : (homeClubOf(name) ? homeClubOf(name) + ' · Basketligan' : '')]].forEach(([k, v]) => {
           if (!v) return; const c = mk('div', 'bio-card'); c.append(mk('span', 'k', k), mk('span', 'v', String(v))); grid.append(c);
         });
         const facts = ppSection('Bio facts'); facts.append(grid); el.append(facts);
@@ -2944,9 +2947,9 @@
     d.forEach((r) => {
       const p = pl.find((x) => isSame(x.player, r.player));
       const best = st.filter((x) => isSame(x.player, r.player) && Number(x.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp))[0];
-      const tr = mk('tr', p ? 'go' : ''); tr.dataset.key = r.player;
-      if (p) { tr.tabIndex = 0; tr.onclick = () => showLog(r.player); tr.onkeydown = (e) => { if (e.key === 'Enter') showLog(r.player); }; }
-      const nm = mk('td'); nm.append(p ? names(r.player) : r.player);
+      const tr = mk('tr', 'go'); tr.dataset.key = r.player;
+      { tr.tabIndex = 0; tr.onclick = () => showLog(r.player); tr.onkeydown = (e) => { if (e.key === 'Enter') showLog(r.player); }; }
+      const nm = mk('td'); nm.append(names(r.player));
       const now = mk('td'); now.append(p ? p.club : (r.home_club || '—'));
       if (p && p.club && r.club_at_callup && !sameT(p.club, r.club_at_callup)) now.append(mk('span', 'nt-moved', 'New club'));
       tr.append(nm, mk('td', '', r.position || '—'), mk('td', '', r.club_at_callup || '—'), now, mk('td', '', p ? p.competitions : (r.home_club ? 'Basketligan' : '—')), mk('td', 'n', best ? `${f1x(best.pts)} / ${f1x(best.reb)} / ${f1x(best.ast)}` : '—'), mk('td', '', r.note || ''));
@@ -3426,7 +3429,7 @@
   const sxSort = { key: 'pts', dir: -1 };
   const SX_LEVELS = [['all', 'All'], ['NBA', 'NBA'], ['Europe', 'Europe'], ['NCAA', 'NCAA'], ['Pro', 'Other pro']];
   function sxLevelOf(name) { const p = (ds('players') || []).find((x) => isSame(x.player, name)); return p ? p.level : ''; }
-  function sxRowOk(r) { return sxLevel === 'all' || sxLevelOf(r.player) === sxLevel; }
+  function sxRowOk(r) { if (norm(r.competition) === 'basketligan') return false; return sxLevel === 'all' || sxLevelOf(r.player) === sxLevel; }
   function sxSorter(a, b) {
     const k = sxSort.key; const va = a[k], vb = b[k];
     const na = Number(va), nb = Number(vb);

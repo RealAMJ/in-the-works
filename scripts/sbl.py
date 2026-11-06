@@ -26,8 +26,8 @@ SCHEDULE = f'https://hosted.dcd.shared.geniussports.com/SBF/en/competition/{COMP
 
 # League names -> the spellings the site uses (checked in this order, so Sloga comes before Uppsala Basket)
 TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'Borås Basket'), ('nassjo', 'KFUM Nässjö'),
-         ('hogsbo', 'Högsbo'), ('sodertalje', 'Södertälje Kings'), ('jamtland', 'Jämtland Basket'), ('koping', 'Köping Stars'),
-         ('umea', 'Umeå BSKT'), ('norrkoping', 'Norrköping Dolphins'), ('lulea', 'BC Luleå')]
+         ('hogsbo', 'Högsbo'), ('sodertalje', 'Södertälje Kings'), ('jamtland', 'Jämtland Basket'), ('norrkoping', 'Norrköping Dolphins'), ('koping', 'Köping Stars'),
+         ('umea', 'Umeå BSKT'), ('lulea', 'BC Luleå')]
 
 
 def team_name(s):
@@ -96,6 +96,56 @@ def headlines(p):
     return f"{join(en, 'and')} ({fg} FG)", f"{join(sv, 'och')} ({fg} från fältet)"
 
 
+def home_nt():
+    """National team players who play in the SBL (data/ntroster.json rows with a home_club): (roster name, surname, club)."""
+    out = []
+    for r in U.load('ntroster'):
+        if r.get('home_club'):
+            out.append((r['player'], U.norm(r['player']).split()[-1], team_name(r['home_club'])))
+    return out
+
+
+def add_home_lines(feed, gid, day, home, gl):
+    """Game-log rows for the national team players in this SBL game. Returns the players that got a new row."""
+    got = set()
+    for ti, t in enumerate(feed['teams']):
+        o = feed['teams'][1 - ti]
+        club = team_name(t['name'])
+        for p in t['pl']:
+            nm = U.norm(p.get('name') or '').split()
+            for full, sur, hc in home:
+                # the league sometimes misspells first names (Micheal Odinks), so surname + club decide
+                if not nm or nm[-1] != sur or club != hc or any(x.get('player') == full and x.get('date') == day for x in gl):
+                    continue
+                if not p.get('min') or U.as_min(p.get('min')) == 0:
+                    continue
+                v = lambda k: p.get(k) or 0
+                gl.append(dict(row_id=f"{sur}-{day}", player=full, date=day, competition='Basketligan', team=club, opponent=team_name(o['name']),
+                               venue='Home' if ti == 0 else 'Away', result=f"{'W' if t['score'] > o['score'] else 'L'} {t['score']}-{o['score']}",
+                               min=U.as_min(p['min']), pts=v('pts'), reb=v('reb'), ast=v('ast'),
+                               source=f'FIBA LiveStats (Basketligan, game {gid})', fg=f"{v('fgm')}/{v('fga')}", three=f"{v('tpm')}/{v('tpa')}",
+                               ft=f"{v('ftm')}/{v('fta')}", oreb=v('oreb'), dreb=v('dreb'), stl=v('stl'), blk=v('blk'), tov=v('tov'),
+                               pf=v('pf'), pm=p.get('pm', ''), eff=''))
+                got.add(full)
+    return got
+
+
+def home_averages(players, gl, st):
+    """Season averages in data/stats.json from the game log (every SBL game is read, so the log is the whole season)."""
+    for full in players:
+        logs = [x for x in gl if x.get('player') == full and x.get('competition') == 'Basketligan']
+        if not logs:
+            continue
+        n = len(logs)
+        avg = lambda k: round(sum(float(x.get(k) or 0) for x in logs) / n, 1)
+        row = next((x for x in st if x.get('player') == full and x.get('competition') == 'Basketligan'), None)
+        if row is None:
+            row = dict(row_id=U.norm(full).split()[-1] + '-sbl', player=full, competition='Basketligan', season='2026-27')
+            st.append(row)
+        row.update(gp=n, min=avg('min'), pts=avg('pts'), reb=avg('reb'), ast=avg('ast'),
+                   note=f"Averages from game log ({n} games, through {max(x['date'] for x in logs)})")
+
+
 def main(argv):
     if '--force' not in argv and U.now().minute >= 6:
         return 0
@@ -105,6 +155,7 @@ def main(argv):
     # the same game may already be there under another spelling of the name (RealGM vs the league)
     seen = {(r.get('date'), r.get('team'), r.get('pts'), r.get('reb'), r.get('ast')) for r in rows}
     added = 0
+    home, gl, st, new_lines = home_nt(), U.load('gamelogs'), U.load('stats'), set()
     for gid, day in finished_games(days):
         try:
             feed = U.read_fiba(gid)
@@ -113,6 +164,8 @@ def main(argv):
             continue
         if not feed.get('done') or len(feed.get('teams') or []) != 2:
             continue
+        if home:
+            new_lines |= add_home_lines(feed, gid, day, home, gl)
         for ti, t in enumerate(feed['teams']):
             o = feed['teams'][1 - ti]
             for p in t['pl']:
@@ -135,10 +188,16 @@ def main(argv):
                 seen.add((day, team_name(t['name']), p['pts'], p['reb'], p['ast']))
                 added += 1
                 print(f'  sbl: {rid} {", ".join(tags)}')
+    if new_lines:
+        home_averages(new_lines, gl, st)
+        U.save('gamelogs', gl)
+        U.save('stats', st)
+        print(f"sbl: game log updated for {', '.join(sorted(new_lines))}")
+    if added or new_lines:
+        U.write_version(True)
     if added:
         rows.sort(key=lambda r: r.get('date') or '', reverse=True)
         U.save('sbl', rows)
-        U.write_version(True)
     print(f'sbl: {added} new')
     return 0
 

@@ -29,3 +29,7 @@ Object.assign(window.SA_I18N.D, {
  "In: Tobias Borg is back after missing August injured, Wilhelm Falk returns after playing the November 2025 and February 2026 windows, and 18-year-old Michael Odinks of Norrköping Dolphins gets his first senior call-up after a strong debut season in the SBL. Gustav Hansson of Jämtland Basket is also in.": "Tillbaka och nya: Tobias Borg är tillbaka efter att ha missat augusti med skada, Wilhelm Falk återvänder efter att ha spelat fönstren i november 2025 och februari 2026, och 18-årige Michael Odinks i Norrköping Dolphins får sin första A-landslagskallelse efter en stark debutsäsong i SBL. Gustav Hansson i Jämtland Basket är också med.",
  "The squad meets in Stockholm on 22 November and trains there until the Hungary game, then travels to France. More than 8,500 tickets have been sold for Sweden–Hungary.": "Truppen samlas i Stockholm den 22 november och tränar där fram till Ungernmatchen, och reser sedan till Frankrike. Över 8 500 biljetter är sålda till Sverige–Ungern."
 });
+Object.assign(window.SA_I18N.D, {
+ "SBL": "SBL",
+ "Basketligan": "Basketligan"
+});

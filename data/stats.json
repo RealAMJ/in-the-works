@@ -550,5 +550,29 @@
   "reb": 16.0,
   "ast": 0.0,
   "note": "Averages from game log (1 games, through 2026-11-05)"
+ },
+ {
+  "row_id": "hansson-sbl",
+  "player": "Gustav Hansson",
+  "competition": "Basketligan",
+  "season": "2026-27",
+  "gp": 9,
+  "min": 30.9,
+  "pts": 19.1,
+  "reb": 3.3,
+  "ast": 6.2,
+  "note": "Averages from game log (9 games, through 2026-10-30)"
+ },
+ {
+  "row_id": "odinks-sbl",
+  "player": "Michael Odinks",
+  "competition": "Basketligan",
+  "season": "2026-27",
+  "gp": 8,
+  "min": 24.2,
+  "pts": 12.0,
+  "reb": 2.5,
+  "ast": 1.0,
+  "note": "Averages from game log (8 games, through 2026-10-30)"
  }
 ]
