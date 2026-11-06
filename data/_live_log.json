@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:18:09+01:00",
+ "at": "2026-11-06T02:19:10+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,7 +9,7 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:32",
+   "clock": "15:08",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:19",
+   "clock": "14:32",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Navy Midshipmen",
-     36,
+     38,
      25
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:16",
+   "clock": "13:45",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:47",
+   "clock": "11:47",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     12,
+     10,
      17
     ],
     [
