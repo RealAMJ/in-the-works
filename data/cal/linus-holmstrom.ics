@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Swedes Abroad//Games//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Swedes Abroad: William Holmstrom
+X-WR-CALNAME:Swedes Abroad: Linus Holmström
 X-WR-TIMEZONE:Europe/Stockholm
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
@@ -12,9 +12,9 @@ UID:g30@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261103T000000Z
 DTEND:20261103T020000Z
-SUMMARY:Holmstrom: Youngstown State at St. Bonaventure (W 79-71)
-DESCRIPTION:NCAA. Players: William Holmstrom. https://realamj.github.io/in-
- the-works/
+SUMMARY:Holmström: Youngstown State at St. Bonaventure (W 79-71)
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
@@ -22,9 +22,9 @@ UID:g20261107ysu@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261106T233000Z
 DTEND:20261107T013000Z
-SUMMARY:Holmstrom: Youngstown State at Ohio State
-DESCRIPTION:NCAA. Players: William Holmstrom. https://realamj.github.io/in-
- the-works/
+SUMMARY:Holmström: Youngstown State at Ohio State
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
@@ -32,9 +32,9 @@ UID:g20261111youn@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261111T000000Z
 DTEND:20261111T020000Z
-SUMMARY:Holmstrom: Youngstown State at Central Michigan
-DESCRIPTION:NCAA. Players: William Holmstrom. https://realamj.github.io/in-
- the-works/
+SUMMARY:Holmström: Youngstown State at Central Michigan
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
 CATEGORIES:NCAA
 END:VEVENT
 END:VCALENDAR
