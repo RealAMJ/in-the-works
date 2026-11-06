@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:19:11+01:00",
+ "at": "2026-11-06T03:20:00+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -9,7 +9,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:24",
+   "clock": "16:01",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "SMU Mustangs",
-     57,
+     58,
      15
     ]
    ]
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Northwestern State Demons",
-     39,
+     41,
      14
     ],
     [
      "Mississippi State Bulldogs",
-     68,
+     69,
      16
     ]
    ]
