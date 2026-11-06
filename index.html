@@ -2407,6 +2407,14 @@
     });
     t.append(tb); wrap.append(t); return wrap;
   }
+  // Last games: as many of the newest games as fill one row (three rows of two on a phone), nothing left half empty
+  function fitLastGames(strip) {
+    const cards = [...strip.children]; if (!cards.length || !strip.offsetParent) return;
+    cards.forEach((c) => { c.hidden = false; });
+    const top = cards[0].offsetTop, cols = cards.filter((c) => c.offsetTop === top).length;
+    const show = cols <= 2 ? cols * 3 : cols;
+    cards.forEach((c, i) => { c.hidden = i >= show; });
+  }
   function lastGameCard(g, avg) {
     const res = String(g.result || '');
     const c = mk('button', 'lg-card ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '')); c.type = 'button'; c.dataset.key = g.game_id;
@@ -2484,8 +2492,10 @@
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
         const strip = mk('div', 'lg-row');
-        games.slice(-5).reverse().forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null)); });
+        games.slice(-12).reverse().forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null)); });
         lg.append(strip);
+        requestAnimationFrame(() => fitLastGames(strip));
+        if (window.ResizeObserver) { let w0 = 0; new ResizeObserver((e) => { const w = Math.round(e[0].contentRect.width); if (w && w !== w0) { w0 = w; fitLastGames(strip); } }).observe(strip); }
         const more = mk('button', 'hc-more', 'Full game log →'); more.type = 'button'; more.onclick = () => { ppTab = 'log'; dash.draw('pp'); }; lg.append(more);
       }
       el.append(lg);
