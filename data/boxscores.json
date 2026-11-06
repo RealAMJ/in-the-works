@@ -1256,7 +1256,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": "",
+  "pm": 0,
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
