@@ -1185,12 +1185,15 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .nt-news p:not(.pp-sub) { margin: 0 0 .7em; max-width: 46rem; line-height: 1.5; }
 .nt-news a { color: inherit; }
 .lg-card[hidden] { display: none; }
+/* computer: the photo keeps its own shape (nothing cut off at the sides), as tall as the header */
+.pp-hero.has-photo .pp-pic { display: flex; align-items: flex-end; justify-content: center; width: auto; height: clamp(11.25rem, 30vw, 18.75rem); aspect-ratio: auto; max-width: 48vw; }
+.pp-hero.has-photo .pp-pic img { display: block; width: auto; height: 100%; max-width: 100%; object-fit: contain; object-position: center bottom; }
 /* phone, player with a photo: a big photo like on the computer, his face in the space left of the text
    (shoulders may be cut), fading to black where it reaches the text */
 @media (max-width: 640px) {
   .pp-hero.has-photo { grid-template-columns: 38% minmax(0, 1fr); min-height: 17rem; }
-  .pp-hero.has-photo .pp-pic { position: absolute; left: 0; bottom: 0; top: 0; width: 46%; height: 100%; aspect-ratio: auto; z-index: 0; }
-  .pp-hero.has-photo .pp-pic img { object-fit: cover; object-position: center top; border-radius: 0;
+  .pp-hero.has-photo .pp-pic { display: block; position: absolute; left: 0; bottom: 0; top: 0; width: 46%; height: 100%; max-width: none; aspect-ratio: auto; z-index: 0; }
+  .pp-hero.has-photo .pp-pic img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center top; border-radius: 0;
     -webkit-mask-image: linear-gradient(90deg, #000 62%, rgba(0, 0, 0, .35) 82%, transparent 100%); mask-image: linear-gradient(90deg, #000 62%, rgba(0, 0, 0, .35) 82%, transparent 100%); }
   .pp-hero.has-photo .pp-id { grid-column: 2; }
 }
