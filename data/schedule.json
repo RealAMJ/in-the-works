@@ -895,12 +895,11 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
-  "score": "L 70-94",
+  "status": "final",
+  "score": "L 70-95",
   "espn_id": "401918968",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401918968",
-  "clock": "Q2 00:01",
-  "live_updated": "2026-11-06T04:12:59+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261106mia",
@@ -918,8 +917,8 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909937",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909937",
-  "clock": "Q1 10:32",
-  "live_updated": "2026-11-06T04:12:59+01:00"
+  "clock": "Q1 10:03",
+  "live_updated": "2026-11-06T04:14:05+01:00"
  },
  {
   "game_id": "g20261106zab",
