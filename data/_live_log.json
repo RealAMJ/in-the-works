@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T01:28:22+01:00",
+ "at": "2026-11-06T01:29:11+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,7 +9,7 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:50",
+   "clock": "07:28",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Sacred Heart Pioneers",
-     16,
+     18,
      14
     ]
    ]
