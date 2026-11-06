@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:42:25+01:00",
+ "at": "2026-11-06T02:54:47+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,17 +9,17 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:37",
+   "clock": "01:03",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     57,
+     70,
      15
     ],
     [
      "Sacred Heart Pioneers",
-     58,
+     69,
      14
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:39",
+   "clock": "02:05",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     50,
+     52,
      15
     ],
     [
      "Navy Midshipmen",
-     53,
+     60,
      25
     ]
    ]
@@ -54,18 +54,18 @@
   {
    "game": "g20261106iona",
    "src": "ESPN",
-   "period": 2,
-   "clock": "03:53",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "NJIT Highlanders",
-     47,
+     49,
      13
     ],
     [
      "Iona Gaels",
-     65,
+     72,
      17
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:23",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     19,
+     28,
      17
     ],
     [
      "SMU Mustangs",
-     36,
+     47,
      15
     ]
    ]
@@ -100,18 +100,18 @@
   {
    "game": "c20261106msu",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "15:55",
    "done": false,
    "teams": [
     [
      "Northwestern State Demons",
-     27,
+     29,
      14
     ],
     [
      "Mississippi State Bulldogs",
-     49,
+     56,
      16
     ]
    ]
