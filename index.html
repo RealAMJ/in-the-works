@@ -673,9 +673,10 @@
     if (black) {
       x.fillStyle = '#000'; x.fillRect(0, 0, W, H);
       if (ph) {
-        cover(x, ph.img, W, H);
-        x.fillStyle = `rgba(0,0,0,${style === 'v3' ? .5 : .6})`; x.fillRect(0, 0, W, H);
-        const gr = x.createLinearGradient(0, H * 0.35, 0, H); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,.92)');
+        // portrait at the top: the face sits between the name at the top and the text block, never under text
+        { const ih = 720, iw = ph.img.naturalWidth * ih / ph.img.naturalHeight; x.drawImage(ph.img, (W - iw) / 2, 150, iw, ih); }
+        x.fillStyle = 'rgba(0,0,0,.25)'; x.fillRect(0, 0, W, H);
+        const gr = x.createLinearGradient(0, 470, 0, 760); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,.96)');
         x.fillStyle = gr; x.fillRect(0, 0, W, H);
       } else {
         const gr = x.createRadialGradient(W * 0.75, H * 0.2, 40, W * 0.75, H * 0.2, W);
