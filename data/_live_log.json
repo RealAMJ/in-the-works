@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T01:19:20+01:00",
+ "at": "2026-11-06T01:20:08+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:19",
+   "clock": "12:01",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Navy Midshipmen",
-     12,
+     15,
      25
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:52",
+   "clock": "11:50",
    "done": false,
    "teams": [
     [
