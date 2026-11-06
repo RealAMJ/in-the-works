@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:28:23+01:00",
+ "at": "2026-11-06T02:29:12+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -55,12 +55,12 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:39",
+   "clock": "09:11",
    "done": false,
    "teams": [
     [
      "NJIT Highlanders",
-     35,
+     37,
      13
     ],
     [
@@ -78,12 +78,12 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:13",
+   "clock": "08:00",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     17,
+     19,
      17
     ],
     [
