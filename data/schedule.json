@@ -996,11 +996,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 27-27",
+  "score": "L 27-29",
   "espn_id": "401920717",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920717",
-  "clock": "Q1 08:08",
-  "live_updated": "2026-11-07T00:33:10+01:00"
+  "clock": "Q1 07:52",
+  "live_updated": "2026-11-07T00:33:59+01:00"
  },
  {
   "game_id": "g20261107ysu",
@@ -1016,8 +1016,8 @@
   "score": "L 0-2",
   "espn_id": "401916314",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401916314",
-  "clock": "Q1 19:07",
-  "live_updated": "2026-11-07T00:33:10+01:00"
+  "clock": "Q1 18:45",
+  "live_updated": "2026-11-07T00:33:59+01:00"
  },
  {
   "game_id": "g20261107mich",
