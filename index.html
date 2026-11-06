@@ -2447,7 +2447,7 @@
     const hero = mk('section', 'pp-hero'); hero.style.setProperty('--tc', teamColor(p ? p.club : (hc || name)));
     if (bio && bio.number) hero.append(mk('span', 'pp-bignum', bio.number));
     const pic = mk('div', 'pp-pic');
-    if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); } else pic.append(mk('span', 'pp-ini', initials(name)));
+    if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); hero.classList.add('has-photo'); } else pic.append(mk('span', 'pp-ini', initials(name)));
     const id = mk('div', 'pp-id');
     const club = mk('div', 'pp-club'); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) { const s = mk('button', 'tm', hc); s.type = 'button'; s.tabIndex = -1; s.style.cursor = 'default'; club.append(crest(hc, 'sm'), s); }
     const parts = name.split(' ');
