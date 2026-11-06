@@ -1,12 +1,5 @@
 [
  {
-  "player": "Pelle Larsson",
-  "position": "Guard",
-  "club_at_callup": "Miami Heat",
-  "home_club": "",
-  "note": "Expected to miss the November window because of NBA commitments"
- },
- {
   "player": "Melwin Pantzar",
   "position": "Guard",
   "club_at_callup": "Unicaja",
@@ -14,53 +7,39 @@
   "note": ""
  },
  {
-  "player": "Ludvig Håkanson",
+  "player": "Barra Njie",
   "position": "Guard",
-  "club_at_callup": "Joventut",
+  "club_at_callup": "BC Vienna",
   "home_club": "",
   "note": ""
  },
  {
-  "player": "Barra Njie",
-  "position": "Guard",
-  "club_at_callup": "Löwen Braunschweig",
-  "home_club": "",
-  "note": "Moved to BC Vienna since the call-up"
- },
- {
   "player": "Felix Terins",
-  "position": "",
+  "position": "Guard",
   "club_at_callup": "Oviedo",
   "home_club": "",
   "note": ""
  },
  {
-  "player": "Julius Price",
-  "position": "",
-  "club_at_callup": "Stanford",
+  "player": "Tobias Borg",
+  "position": "Guard",
+  "club_at_callup": "Palencia",
   "home_club": "",
-  "note": ""
+  "note": "Back after missing the August window injured"
  },
  {
-  "player": "Zaba Bangala",
-  "position": "",
-  "club_at_callup": "Löwen Braunschweig",
-  "home_club": "",
-  "note": ""
+  "player": "Gustav Hansson",
+  "position": "Guard",
+  "club_at_callup": "Jämtland Basket",
+  "home_club": "Jämtland Basket (Basketligan, Sweden)",
+  "note": "Plays at home in the SBL"
  },
  {
-  "player": "Denzel Andersson",
-  "position": "",
-  "club_at_callup": "Bydgoszcz",
-  "home_club": "",
-  "note": ""
- },
- {
-  "player": "Viktor Gaddefors",
-  "position": "",
-  "club_at_callup": "Twarde Pierniki",
-  "home_club": "",
-  "note": ""
+  "player": "Michael Odinks",
+  "position": "Guard",
+  "club_at_callup": "Norrköping Dolphins",
+  "home_club": "Norrköping Dolphins (Basketligan, Sweden)",
+  "note": "First senior call-up, 18 years old"
  },
  {
   "player": "Bobi Klintman",
@@ -70,8 +49,36 @@
   "note": ""
  },
  {
+  "player": "Denzel Andersson",
+  "position": "Forward",
+  "club_at_callup": "Astoria Bydgoszcz",
+  "home_club": "",
+  "note": ""
+ },
+ {
+  "player": "Zaba Bangala",
+  "position": "Forward",
+  "club_at_callup": "Löwen Braunschweig",
+  "home_club": "",
+  "note": ""
+ },
+ {
+  "player": "Viktor Gaddefors",
+  "position": "Forward",
+  "club_at_callup": "Twarde Pierniki Toruń",
+  "home_club": "",
+  "note": ""
+ },
+ {
+  "player": "Wilhelm Falk",
+  "position": "Forward",
+  "club_at_callup": "UCAM Murcia",
+  "home_club": "",
+  "note": "Back in the squad after the November 2025 and February 2026 windows"
+ },
+ {
   "player": "Oskar Palmquist",
-  "position": "",
+  "position": "Forward",
   "club_at_callup": "CB Zamora",
   "home_club": "",
   "note": ""
@@ -79,7 +86,7 @@
  {
   "player": "Simon Birgander",
   "position": "Center",
-  "club_at_callup": "Joventut",
+  "club_at_callup": "Joventut Badalona",
   "home_club": "",
   "note": ""
  },
@@ -89,12 +96,5 @@
   "club_at_callup": "Juventus Utena",
   "home_club": "",
   "note": ""
- },
- {
-  "player": "Pierre Hampton",
-  "position": "",
-  "club_at_callup": "Norrköping",
-  "home_club": "Norrköping Dolphins (Basketligan, Sweden)",
-  "note": "Plays at home in the SBL"
  }
 ]

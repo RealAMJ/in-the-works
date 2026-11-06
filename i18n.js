@@ -16,3 +16,16 @@ Object.assign(window.SA_I18N.D, {
   "Honours list": "Utmärkelser",
   "Newest first · checked at the start and end of every week": "Nyast först · kollas i början och slutet av varje vecka"
 });
+
+Object.assign(window.SA_I18N.D, {
+ "Mikko Riipinen's squad for the November 2026 World Cup qualifiers and where every player is playing right now.": "Mikko Riipinens trupp till VM-kvalet i november 2026 och var varje spelare spelar just nu.",
+ "Squad news: November window": "Truppnytt: novemberfönstret",
+ "Announced 3 November 2026 by the Swedish Basketball Federation.": "Presenterad 3 november 2026 av Svenska Basketbollförbundet.",
+ "Back after missing the August window injured": "Tillbaka efter att ha missat augustifönstret med skada",
+ "First senior call-up, 18 years old": "Första A-landslagskallelsen, 18 år",
+ "Back in the squad after the November 2025 and February 2026 windows": "Tillbaka i truppen efter fönstren i november 2025 och februari 2026",
+ "Fourteen players are called up for the second round of World Cup qualifying: Hungary at home in Avicii Arena on Friday 27 November (19:00) and France away in Dijon on Monday 30 November (20:30). Twelve of the fourteen will play in each game.": "Fjorton spelare är uttagna till VM-kvalets andra omgång: Ungern hemma i Avicii Arena fredag 27 november (19:00) och Frankrike borta i Dijon måndag 30 november (20:30). Tolv av de fjorton spelar i varje match.",
+ "Out: Pelle Larsson, the top scorer in the European qualifiers so far with 26.0 points a game, is with the Miami Heat, and the NBA does not stop for international windows. Ludvig Håkanson (19.7 points and 6.2 assists a game in the qualifiers) has withdrawn injured. Julius Price and Pierre Hampton from the August squad are not in this group.": "Borta: Pelle Larsson, hittills skytteligaledare i det europeiska kvalet med 26,0 poäng per match, är med Miami Heat, och NBA gör inget uppehåll för landslagsfönster. Ludvig Håkanson (19,7 poäng och 6,2 assist per match i kvalet) har lämnat återbud på grund av skada. Julius Price och Pierre Hampton från augustitruppen är inte med den här gången.",
+ "In: Tobias Borg is back after missing August injured, Wilhelm Falk returns after playing the November 2025 and February 2026 windows, and 18-year-old Michael Odinks of Norrköping Dolphins gets his first senior call-up after a strong debut season in the SBL. Gustav Hansson of Jämtland Basket is also in.": "Tillbaka och nya: Tobias Borg är tillbaka efter att ha missat augusti med skada, Wilhelm Falk återvänder efter att ha spelat fönstren i november 2025 och februari 2026, och 18-årige Michael Odinks i Norrköping Dolphins får sin första A-landslagskallelse efter en stark debutsäsong i SBL. Gustav Hansson i Jämtland Basket är också med.",
+ "The squad meets in Stockholm on 22 November and trains there until the Hungary game, then travels to France. More than 8,500 tickets have been sold for Sweden–Hungary.": "Truppen samlas i Stockholm den 22 november och tränar där fram till Ungernmatchen, och reser sedan till Frankrike. Över 8 500 biljetter är sålda till Sverige–Ungern."
+});

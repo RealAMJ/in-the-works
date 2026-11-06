@@ -1182,3 +1182,5 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .share-acts button { font: inherit; font-size: .9rem; font-weight: 700; border-radius: 999px; padding: 8px 10px; cursor: pointer; border: 1px solid var(--color-fg); background: var(--color-panel); color: var(--color-fg); }
 .share-acts button.dark { background: var(--color-fg); color: var(--color-panel); }
 .share-acts button[hidden] { display: none; }
+.nt-news p:not(.pp-sub) { margin: 0 0 .7em; max-width: 46rem; line-height: 1.5; }
+.nt-news a { color: inherit; }
