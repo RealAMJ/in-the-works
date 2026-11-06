@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T20:36:44+01:00",
+ "at": "2026-11-06T20:37:20+01:00",
  "log": [
   {
    "game": "g20261106vir",
@@ -9,7 +9,7 @@
    "game": "g20261106vir",
    "src": "EuroLeague live",
    "period": 1,
-   "clock": "07:50",
+   "clock": "06:41",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "DUBAI BASKETBALL",
-     5,
+     9,
      12
     ]
    ]
