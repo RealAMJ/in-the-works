@@ -4660,5 +4660,33 @@
   "note": "",
   "leaders": "Reilly|18|1|0;Robinson|15|9|0;Slaughter|15|6|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "delaware-state-2026-11-06",
+  "team": "Delaware State",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Navy",
+  "venue": "Away",
+  "score": "60-66",
+  "result": "L",
+  "top": "Reedus 17 pts, 7 reb",
+  "note": "",
+  "leaders": "Reedus|17|7|2;Muhammad|16|4|6;Obiora|9|5|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "navy-2026-11-06",
+  "team": "Navy",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Delaware State",
+  "venue": "Home",
+  "score": "66-60",
+  "result": "W",
+  "top": "Pennick 24 pts, 4 reb",
+  "note": "",
+  "leaders": "Pennick|24|4|1;Burnett|14|12|1;Ashley|12|3|0",
+  "source": "ESPN"
  }
 ]
