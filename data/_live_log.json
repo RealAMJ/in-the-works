@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T00:09:30+01:00",
+ "at": "2026-11-07T00:10:38+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -9,7 +9,7 @@
    "game": "g20261107ewu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:03",
+   "clock": "16:27",
    "done": false,
    "teams": [
     [
@@ -19,8 +19,31 @@
     ],
     [
      "Oregon Ducks",
-     7,
+     10,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261107ysu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107ysu",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Ohio State Buckeyes",
+     0,
+     0
+    ],
+    [
+     "Youngstown State Penguins",
+     0,
+     0
     ]
    ]
   }
