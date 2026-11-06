@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T21:22:45+01:00",
+ "at": "2026-11-06T21:26:46+01:00",
  "found": 0,
  "log": [
   {
@@ -96,64 +96,36 @@
   },
   {
    "competition": "Orlen Basket Liga",
-   "seed": 2949120,
+   "seed": 2949100,
    "scanned": 799,
-   "answered": 323,
+   "answered": 333,
    "sample": [
     [
-     2949121,
+     2949101,
      [
-      "KKS Polonia Warszawa ",
-      "Decka Pelplin "
+      "Energa Czarni Słupsk ",
+      "AMW Arka Gdynia "
      ]
     ],
     [
-     2949118,
+     2949102,
      [
-      "Isands JTEC Wichoś Jelenia Góra ",
-      "Pro-Network Enea AJP Gorzów Wlkp. "
+      "Legia Warszawa WAR",
+      "Dziki Warszawa "
      ]
     ],
     [
-     2949122,
+     2949097,
      [
-      "SKS Fulimpex Starogard Gdański ",
-      "OPTeam Resovia Rzeszów "
+      "Arriva Lotto Twarde Pierniki Toruń ",
+      "Zastal Zielona Góra "
      ]
     ],
     [
-     2949117,
+     2949096,
      [
-      "Lotto AZS UMCS Lublin ",
-      "SKK Polonia Warszawa "
-     ]
-    ],
-    [
-     2949123,
-     [
-      "GKS Tychy ",
-      "WKK Active Hotel Wrocław "
-     ]
-    ],
-    [
-     2949116,
-     [
-      "MB Zagłębie Sosnowiec ",
-      "Widzew Łódź "
-     ]
-    ],
-    [
-     2949125,
-     [
-      "BS Polonia Bytom ",
-      "Zdrovo Polonia 1912 Leszno "
-     ]
-    ],
-    [
-     2949126,
-     [
-      "Enea Basket Poznań ",
-      "KSK Qemetica Noteć Inowrocław "
+      "N.C. Central ",
+      "Johnson C. Smith "
      ]
     ],
     [
@@ -164,24 +136,52 @@
      ]
     ],
     [
-     2949127,
+     2949116,
      [
-      "Weegree AZS Politechnika Opolska ",
-      "Datzzy Kotwica Port Kołobrzeg "
+      "MB Zagłębie Sosnowiec ",
+      "Widzew Łódź "
      ]
     ],
     [
-     2949128,
+     2949117,
      [
-      "Miasto Szkła Krosno ",
-      "Solvera Sokół Łańcut "
+      "Lotto AZS UMCS Lublin ",
+      "SKK Polonia Warszawa "
      ]
     ],
     [
-     2949130,
+     2949118,
      [
-      "PGE Spójnia Stargard ",
-      "ŁKS Coolpack Łódź "
+      "Isands JTEC Wichoś Jelenia Góra ",
+      "Pro-Network Enea AJP Gorzów Wlkp. "
+     ]
+    ],
+    [
+     2949120,
+     [
+      "Energa Toruń ",
+      "1KS Ślęza Wrocław "
+     ]
+    ],
+    [
+     2949121,
+     [
+      "KKS Polonia Warszawa ",
+      "Decka Pelplin "
+     ]
+    ],
+    [
+     2949122,
+     [
+      "SKS Fulimpex Starogard Gdański ",
+      "OPTeam Resovia Rzeszów "
+     ]
+    ],
+    [
+     2949123,
+     [
+      "GKS Tychy ",
+      "WKK Active Hotel Wrocław "
      ]
     ]
    ]
