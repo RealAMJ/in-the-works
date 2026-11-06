@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:23:58+01:00",
+ "at": "2026-11-06T03:24:49+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "VMI Keydets",
-     36,
+     38,
      17
     ],
     [
@@ -32,17 +32,17 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:47",
+   "clock": "05:24",
    "done": false,
    "teams": [
     [
      "Northwestern State Demons",
-     41,
+     43,
      14
     ],
     [
      "Mississippi State Bulldogs",
-     69,
+     71,
      16
     ]
    ]
