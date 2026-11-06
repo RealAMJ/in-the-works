@@ -1249,7 +1249,7 @@
   "line_id": "g20261106mia-larsson",
   "game_id": "g20261106mia",
   "player": "Pelle Larsson",
-  "min": 26,
+  "min": 27,
   "pts": 13,
   "reb": 1,
   "ast": 4,
@@ -1263,7 +1263,7 @@
   "dreb": 1,
   "stl": 3,
   "blk": 0,
-  "tov": 4,
+  "tov": 5,
   "pf": 4,
   "eff": ""
  }
