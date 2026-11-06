@@ -1,7 +1,8 @@
 {
- "sig": "8452e247b5ec",
- "sent_at": "2026-11-06T09:04:09+01:00",
+ "sig": "24030a5dbe06",
+ "sent_at": "2026-11-06T17:02:39+01:00",
  "issues": [
+  "Live job has not run for 626 min while 1 game(s) are on or about to start",
   "Averages out of step: Pelle Larsson NBA shows 8 games, logs have 9",
   "Averages out of step: Adam Ramstedt Icelandic Premier League shows 4 games, logs have 5"
  ]
