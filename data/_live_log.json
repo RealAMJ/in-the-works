@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:39:44+01:00",
+ "at": "2026-11-06T03:40:33+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -9,18 +9,41 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:19",
+   "clock": "10:06",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     46,
+     49,
      17
     ],
     [
      "SMU Mustangs",
      66,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261106mia",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261106mia",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Golden State Warriors",
+     0,
+     0
+    ],
+    [
+     "Miami Heat",
+     0,
+     0
     ]
    ]
   },
