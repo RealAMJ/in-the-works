@@ -111,6 +111,7 @@ def main():
     sched, coach = U.load('schedule'), U.load('coachgames')
     fb, bx, tf, tm = U.load('fullbox'), U.load('boxscores'), U.load('teamform'), U.load('teams')
     gl, st, hl = U.load('gamelogs'), U.load('stats'), U.load('highlights')
+    games = {g['game_id']: g for g in sched}
     have_tf = {(r.get('team'), r.get('date')) for r in tf}
     have_hl = {r.get('highlight_id') for r in hl}
     teams = {r.get('team'): r for r in tm}
@@ -176,7 +177,15 @@ def main():
                                    source=b.get('source', ''), fg=b.get('fg', ''), three=b.get('three', ''), ft=b.get('ft', ''),
                                    oreb=b.get('oreb', ''), dreb=b.get('dreb', ''), stl=b.get('stl', ''), blk=b.get('blk', ''),
                                    tov=b.get('tov', ''), pf=b.get('pf', ''), pm=b.get('pm', ''), eff=b.get('eff', '')))
-                    logs = [x for x in gl if x.get('player') == p and x.get('competition') == comp]
+                    # every game he played in this competition: game-log rows plus box-score lines of finished games
+                    # (games from before the game log was kept up only exist as box-score lines), one per date
+                    by_date = {x['date']: x for x in gl if x.get('player') == p and x.get('competition') == comp and x.get('date')}
+                    for y in bx:
+                        gg = games.get(y.get('game_id'))
+                        if gg and gg.get('status') == 'final' and gg.get('competition') == comp and y.get('player') == p \
+                                and y.get('note') != 'DNP' and gg.get('date') not in by_date:
+                            by_date[gg['date']] = y
+                    logs = list(by_date.values())
                     srow = next((x for x in st if x.get('player') == p and x.get('competition') == comp), None)
                     if srow is None and comp == 'NCAA':
                         # college season started this week: the game log is the whole season, so start his row from it

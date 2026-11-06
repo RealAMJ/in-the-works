@@ -302,5 +302,10 @@ jobs:
           if grep -q KEEP_GOING /tmp/out.txt 2>/dev/null; then
             # nothing live yet (game still to start): wait a few minutes before the next run
             if ! grep -q "^  [gc]" /tmp/out.txt; then sleep 240; fi
-            gh workflow run live.yml --ref main && echo "next run started"
+            # start the next run; GitHub's API sometimes answers with an error, so retry before giving up
+            for i in 1 2 3 4 5 6; do
+              if gh workflow run live.yml --ref main; then echo "next run started"; exit 0; fi
+              echo "could not start the next run (try $i), retrying"; sleep $((i * 10))
+            done
+            echo "::warning::could not start the next run; the 5-minute timer and the health check will pick it up"
           fi

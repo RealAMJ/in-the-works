@@ -30,6 +30,39 @@ SITE = 'https://realamj.github.io/in-the-works/'
 STATE = os.path.join(U.DATA, '_health.json')
 REPEAT = dt.timedelta(hours=6)
 
+REPO_API = 'https://api.github.com/repos/RealAMJ/in-the-works/actions/workflows/live.yml'
+
+
+def _gh(url, data=None):
+    tok = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
+    if not tok:
+        return None
+    req = urllib.request.Request(url, data=data, method='POST' if data is not None else 'GET',
+                                 headers={'Authorization': f'Bearer {tok}', 'Accept': 'application/vnd.github+json', 'User-Agent': 'swedes-abroad-health'})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        body = r.read().decode('utf-8')
+        return json.loads(body) if body else {}
+
+
+def latest_live_run():
+    """(time of the live job's latest run, whether one is running or queued right now) from GitHub, or (None, False)."""
+    try:
+        j = _gh(REPO_API + '/runs?per_page=5')
+        runs = (j or {}).get('workflow_runs') or []
+        active = any(r.get('status') in ('queued', 'in_progress', 'pending', 'waiting') for r in runs)
+        t = max((dt.datetime.fromisoformat(r['created_at'].replace('Z', '+00:00')) for r in runs), default=None)
+        return (t.astimezone(U.STHLM) if t else None), active
+    except Exception:
+        return None, False
+
+
+def restart_live():
+    try:
+        _gh(REPO_API + '/dispatches', data=json.dumps({'ref': 'main'}).encode())
+        return True
+    except Exception:
+        return False
+
 
 def parse(ts):
     try:
@@ -65,17 +98,21 @@ def checks(now):
                     issues.append(f"Missing line for {', '.join(missing)}: {what}")
                 if r.get('post_done') and not r.get('notified') and not missing and now - tip > dt.timedelta(hours=5):
                     issues.append(f"Alert not sent: {what}")
-    # the live job: has it run lately while games are on?
-    try:
-        log = json.load(open(os.path.join(U.DATA, '_live_log.json')))
-        last = parse(log.get('at'))
-    except Exception:
-        last = None
+    # the live job: has it run lately while games are on? Ask GitHub for its latest run (the live log is only
+    # rewritten when a game is checked, so before tip-off it looks old even when the job runs fine)
     busy = [r for r in sched + coach if U.tip_time(r) and r.get('status') != 'final'
             and U.tip_time(r) - dt.timedelta(hours=1) <= now <= U.tip_time(r) + dt.timedelta(hours=3)]
-    if busy and (last is None or now - last > dt.timedelta(minutes=30)):
-        ago = f"{int((now - last).total_seconds() // 60)} min" if last else 'a long time'
-        issues.append(f"Live job has not run for {ago} while {len(busy)} game(s) are on or about to start")
+    if busy:
+        last, active = latest_live_run()
+        if last is None:
+            try:
+                last = parse(json.load(open(os.path.join(U.DATA, '_live_log.json'))).get('at'))
+            except Exception:
+                last = None
+        if not active and (last is None or now - last > dt.timedelta(minutes=25)):
+            ago = f"{int((now - last).total_seconds() // 60)} min" if last else 'a long time'
+            note = ' - restarted it' if restart_live() else ''
+            issues.append(f"Live job had not run for {ago} while {len(busy)} game(s) are on or about to start{note}")
     # duplicates
     for n, key in (('schedule', 'game_id'), ('coachgames', 'game_id'), ('boxscores', 'line_id'), ('gamelogs', 'row_id'),
                    ('stats', 'row_id'), ('highlights', 'highlight_id'), ('teamform', 'row_id'), ('thisweek', 'story_id')):

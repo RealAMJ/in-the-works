@@ -4,12 +4,12 @@
   "player": "Pelle Larsson",
   "competition": "NBA",
   "season": "2026-27",
-  "gp": 8,
-  "min": 30.4,
-  "pts": 10.9,
-  "reb": 3.4,
+  "gp": 9,
+  "min": 30.2,
+  "pts": 11.1,
+  "reb": 3.1,
   "ast": 3.8,
-  "note": "ESPN game log (8 GP, through Nov 5 Swedish time)"
+  "note": "ESPN game log (9 GP, through Nov 6 Swedish time)"
  },
  {
   "row_id": "klintman-el",
@@ -280,12 +280,12 @@
   "player": "Adam Ramstedt",
   "competition": "Icelandic Premier League",
   "season": "2026-27",
-  "gp": 4,
-  "min": 29,
-  "pts": 13.5,
-  "reb": 12.5,
-  "ast": 3.5,
-  "note": "Flashscore, through 4 games (Oct 29)"
+  "gp": 5,
+  "min": 29.0,
+  "pts": 13.2,
+  "reb": 11.2,
+  "ast": 3.2,
+  "note": "Averages from game log and box scores (5 games, through 2026-11-05)"
  },
  {
   "row_id": "mklintman-prob",
