@@ -25406,7 +25406,7 @@
   "ft": "2/2",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25427,7 +25427,7 @@
   "ft": "1/1",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25448,7 +25448,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25469,7 +25469,7 @@
   "ft": "1/2",
   "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25490,7 +25490,7 @@
   "ft": "3/3",
   "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25511,7 +25511,7 @@
   "ft": "0/1",
   "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25532,7 +25532,7 @@
   "ft": "0/0",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25553,7 +25553,7 @@
   "ft": "0/0",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25574,7 +25574,7 @@
   "ft": "0/0",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25595,7 +25595,7 @@
   "ft": "5/6",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25616,7 +25616,7 @@
   "ft": "0/0",
   "pm": -3,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25637,7 +25637,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25658,7 +25658,7 @@
   "ft": "2/2",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25679,7 +25679,7 @@
   "ft": "0/0",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25700,7 +25700,7 @@
   "ft": "1/2",
   "pm": 14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25721,7 +25721,7 @@
   "ft": "2/2",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25742,7 +25742,7 @@
   "ft": "0/0",
   "pm": 14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25763,7 +25763,7 @@
   "ft": "2/2",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25784,7 +25784,7 @@
   "ft": "5/7",
   "pm": 22,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25805,7 +25805,7 @@
   "ft": "0/0",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25826,7 +25826,7 @@
   "ft": "1/1",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25847,7 +25847,7 @@
   "ft": "3/3",
   "pm": 14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  },
  {
@@ -25868,7 +25868,7 @@
   "ft": "1/2",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "EuroLeague live"
  }
 ]
