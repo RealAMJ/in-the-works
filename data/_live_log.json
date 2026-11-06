@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T00:38:29+01:00",
+ "at": "2026-11-07T00:39:19+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -9,7 +9,7 @@
    "game": "g20261107ewu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:10",
+   "clock": "06:45",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Oregon Ducks",
-     29,
+     30,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261107ysu",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:15",
+   "clock": "15:15",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     4,
+     10,
      14
     ],
     [
