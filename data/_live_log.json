@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:12:13+01:00",
+ "at": "2026-11-06T03:13:03+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -9,7 +9,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:56",
+   "clock": "18:17",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "SMU Mustangs",
-     49,
+     51,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:26",
+   "clock": "08:48",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     64,
+     67,
      16
     ]
    ]
