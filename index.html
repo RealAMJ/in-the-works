@@ -662,8 +662,11 @@
     try { await document.fonts.load('900 64px Inter'); await document.fonts.load('600 32px Inter'); } catch (e) { /* system font */ }
     const W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
     const x = c.getContext('2d'), F = (w, s) => `${w} ${s}px Inter, system-ui, sans-serif`;
-    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id);
-    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player));
+    // games only in the game logs (e.g. the SBL national team players' league games) have no schedule row or box score line:
+    // their game and line come from the game log instead
+    const gid = gameById(r.game_id) || { g: null, lines: [] };
+    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (r.pts != null && r.pts !== '' ? r : null);
     const sv = LOC().startsWith('sv');
     const black = style !== 'v1';
     const ph = black ? await cardPhoto(r.player) : null;
@@ -740,7 +743,7 @@
         const cx = 80 + cw * i;
         x.fillStyle = black ? 'rgba(255,255,255,.1)' : 'rgba(255,255,255,.08)'; x.fillRect(cx, y, cw - 18, 200);
         if (black) { x.fillStyle = 'rgba(255,255,255,.9)'; x.fillRect(cx, y, cw - 18, 4); }
-        x.fillStyle = '#fff'; x.font = F(900, String(v).length > 4 ? 64 : 96); x.fillText(String(v), cx + 26, y + 118);
+        x.fillStyle = '#fff'; x.font = F(900, String(v).length > 4 ? 64 : String(v).length > 3 ? 80 : 96); x.fillText(String(v), cx + 26, y + 118);
         x.fillStyle = black ? 'rgba(255,255,255,.65)' : accent; x.font = F(800, 30); x.fillText(k, cx + 26, y + 168);
       });
       y += 200;
@@ -749,7 +752,7 @@
     wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 58; });
     if (g) {
       let ry = black ? Math.min(Math.max(y + 30, 0), H - 200) : H - 150;  // black: follows the headline, never over the chevrons
-      if (!r.recap) { x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry); } else ry -= 48;
+      if (!r.recap) { x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry); } else ry = black ? Math.min(y - 10, H - 160) : ry - 48;
       x.fillStyle = 'rgba(255,255,255,.5)'; x.font = F(500, 30); x.fillText(r.date ? dayFmt(r.date) : '', 80, ry + 48);
     }
     if (black) chevrons(x, W / 2, H - 70); else { x.fillStyle = '#fecc02'; x.fillRect(0, H - 16, W, 16); }
