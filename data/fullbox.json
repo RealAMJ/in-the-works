@@ -24837,7 +24837,7 @@
   "fg": "7/12",
   "three": "1/5",
   "ft": "4/5",
-  "pm": -15,
+  "pm": -17,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -24953,7 +24953,7 @@
   "team": "Miami Heat",
   "player": "Nikola Jovic",
   "pos": "",
-  "min": 6,
+  "min": 7,
   "pts": 1,
   "reb": 0,
   "ast": 1,
@@ -24963,7 +24963,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 3,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -24995,7 +24995,7 @@
   "team": "Miami Heat",
   "player": "Pelle Larsson",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 11,
   "reb": 0,
   "ast": 2,
@@ -25005,7 +25005,7 @@
   "fg": "4/8",
   "three": "3/5",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -12,
   "swede": true,
   "state": "live",
   "source": "ESPN"
@@ -25110,7 +25110,7 @@
   "fg": "2/8",
   "three": "2/7",
   "ft": "1/2",
-  "pm": 4,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
