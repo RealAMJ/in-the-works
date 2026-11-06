@@ -1,29 +1,6 @@
 {
- "at": "2026-11-06T22:27:40+01:00",
+ "at": "2026-11-06T22:28:31+01:00",
  "log": [
-  {
-   "game": "g20261106vir",
-   "checking": "EuroLeague live"
-  },
-  {
-   "game": "g20261106vir",
-   "src": "EuroLeague live",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "VIRTUS BOLOGNA",
-     75,
-     12
-    ],
-    [
-     "DUBAI BASKETBALL",
-     93,
-     12
-    ]
-   ]
-  },
   {
    "game": "g20261106pal",
    "checking": "FEB Live"
