@@ -4716,5 +4716,33 @@
   "note": "",
   "leaders": "Simpson|13|6|2;Thomas|7|6|0;Turner|6|6|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "vmi-2026-11-06",
+  "team": "VMI",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "SMU",
+  "venue": "Away",
+  "score": "70-95",
+  "result": "L",
+  "top": "Johnson 19 pts, 5 reb",
+  "note": "",
+  "leaders": "Johnson|19|5|0;Bradley|13|5|0;Clark|11|0|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "smu-2026-11-06",
+  "team": "SMU",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "VMI",
+  "venue": "Home",
+  "score": "95-70",
+  "result": "W",
+  "top": "Sellers 21 pts, 2 reb",
+  "note": "",
+  "leaders": "Sellers|21|2|0;Patrick|15|3|0;O'Neal|14|5|2",
+  "source": "ESPN"
  }
 ]
