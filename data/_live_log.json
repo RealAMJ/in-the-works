@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T04:12:23+01:00",
+ "at": "2026-11-06T04:12:59+01:00",
  "log": [
   {
    "game": "g20261106vmi",
@@ -9,7 +9,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:11",
+   "clock": "00:01",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "SMU Mustangs",
-     93,
+     94,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261106mia",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:24",
+   "clock": "10:32",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     2,
+     4,
      14
     ],
     [
