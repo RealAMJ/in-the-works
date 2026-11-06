@@ -25394,7 +25394,7 @@
   "team": "Virtus Bologna",
   "player": "Rasheed Bello",
   "pos": "",
-  "min": 14,
+  "min": 13,
   "pts": 2,
   "reb": 3,
   "ast": 4,
@@ -25404,7 +25404,7 @@
   "fg": "0/2",
   "three": "0/0",
   "ft": "2/2",
-  "pm": -3,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25425,7 +25425,7 @@
   "fg": "4/8",
   "three": "3/7",
   "ft": "1/1",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25436,7 +25436,7 @@
   "team": "Virtus Bologna",
   "player": "Marcus Carr",
   "pos": "",
-  "min": 19,
+  "min": 20,
   "pts": 4,
   "reb": 1,
   "ast": 3,
@@ -25488,7 +25488,7 @@
   "fg": "5/15",
   "three": "2/6",
   "ft": "3/3",
-  "pm": -12,
+  "pm": -11,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25509,7 +25509,7 @@
   "fg": "2/4",
   "three": "0/1",
   "ft": "0/1",
-  "pm": -14,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25584,7 +25584,7 @@
   "player": "Aliou Diarra",
   "pos": "",
   "min": 18,
-  "pts": 17,
+  "pts": 19,
   "reb": 7,
   "ast": 3,
   "stl": 1,
@@ -25592,8 +25592,8 @@
   "tov": 0,
   "fg": "7/10",
   "three": "0/0",
-  "ft": "3/4",
-  "pm": 7,
+  "ft": "5/6",
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25656,7 +25656,7 @@
   "fg": "2/4",
   "three": "2/2",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25698,7 +25698,7 @@
   "fg": "6/12",
   "three": "0/4",
   "ft": "1/2",
-  "pm": 10,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25782,7 +25782,7 @@
   "fg": "4/8",
   "three": "1/2",
   "ft": "3/5",
-  "pm": 18,
+  "pm": 17,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25824,7 +25824,7 @@
   "fg": "6/7",
   "three": "1/1",
   "ft": "1/1",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25845,7 +25845,7 @@
   "fg": "6/10",
   "three": "1/2",
   "ft": "3/3",
-  "pm": 14,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
