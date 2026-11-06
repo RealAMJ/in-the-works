@@ -1,26 +1,26 @@
 {
- "at": "2026-11-06T23:27:02+01:00",
+ "at": "2026-11-06T23:44:19+01:00",
  "log": [
   {
-   "game": "g20261106pal",
-   "checking": "FEB Live"
+   "game": "g20261107ewu",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261106pal",
-   "src": "FEB Live",
-   "period": 4,
+   "game": "g20261107ewu",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "IBEROLEA PALENCIA",
-     72,
-     11
+     "Oregon Ducks",
+     0,
+     0
     ],
     [
-     "COVIRAN GRANADA",
-     56,
-     12
+     "Eastern Washington Eagles",
+     0,
+     0
     ]
    ]
   }
