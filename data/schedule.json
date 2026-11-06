@@ -1068,7 +1068,8 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "acb:105429"
  },
  {
   "game_id": "g20261107vie",
