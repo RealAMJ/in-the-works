@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:07:34+01:00",
+ "at": "2026-11-06T03:08:24+01:00",
  "log": [
   {
    "game": "g20261106dsu",
@@ -9,7 +9,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:25",
+   "clock": "00:06",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:29",
+   "clock": "10:50",
    "done": false,
    "teams": [
     [
