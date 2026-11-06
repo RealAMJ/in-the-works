@@ -16,12 +16,12 @@
   "player": "Bobi Klintman",
   "competition": "EuroLeague",
   "season": "2026-27",
-  "gp": 9,
-  "min": 18.4,
-  "pts": 5.8,
-  "reb": 3.6,
+  "gp": 10,
+  "min": 18.0,
+  "pts": 5.9,
+  "reb": 3.5,
   "ast": 1.4,
-  "note": "EuroLeague game center (9 games, through Oct 30)"
+  "note": "Averages from game log (10 games, through 2026-11-06)"
  },
  {
   "row_id": "klintman-lba",

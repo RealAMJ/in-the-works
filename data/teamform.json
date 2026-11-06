@@ -4772,5 +4772,33 @@
   "note": "",
   "leaders": "Curry|29|1|4;Lendeborg|17|8|6;Niang|13|4|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-06",
+  "team": "Virtus Bologna",
+  "date": "2026-11-06",
+  "competition": "EuroLeague",
+  "opponent": "Dubai Basketball",
+  "venue": "Home",
+  "score": "75-93",
+  "result": "L",
+  "top": "Diarra 19 pts, 7 reb",
+  "note": "",
+  "leaders": "Diarra|19|7|3;Moore|15|5|1;Frazier|12|2|3",
+  "source": "EuroLeague live"
+ },
+ {
+  "row_id": "dubai-basketball-2026-11-06",
+  "team": "Dubai Basketball",
+  "date": "2026-11-06",
+  "competition": "EuroLeague",
+  "opponent": "Virtus Bologna",
+  "venue": "Away",
+  "score": "93-75",
+  "result": "W",
+  "top": "Kabengele 16 pts, 9 reb",
+  "note": "",
+  "leaders": "Kabengele|16|9|0;Wright|16|2|2;Shengelia|14|3|4",
+  "source": "EuroLeague live"
  }
 ]
