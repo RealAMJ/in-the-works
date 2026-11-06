@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:34:48+01:00",
+ "at": "2026-11-06T02:35:38+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,7 +9,7 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:18",
+   "clock": "09:07",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:37",
+   "clock": "08:09",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     43,
+     45,
      15
     ],
     [
      "Navy Midshipmen",
-     51,
+     53,
      25
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:01",
+   "clock": "06:50",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:38",
+   "clock": "05:52",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "SMU Mustangs",
-     28,
+     30,
      15
     ]
    ]
