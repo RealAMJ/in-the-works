@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:14:58+01:00",
+ "at": "2026-11-06T02:15:48+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,12 +9,12 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:11",
+   "clock": "15:32",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     32,
+     34,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:55",
+   "clock": "15:20",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Iona Gaels",
-     45,
+     47,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:19",
+   "clock": "13:47",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "SMU Mustangs",
-     15,
+     18,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:53",
+   "clock": "04:32",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     36,
+     39,
      16
     ]
    ]
