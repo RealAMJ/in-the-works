@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
  lamj.github.io/in-the-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261113vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T170000Z
+DTEND:20261113T190000Z
+SUMMARY:Jucevicius: VMI vs Mary Baldwin
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

@@ -1038,6 +1038,16 @@ DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261113vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T170000Z
+DTEND:20261113T190000Z
+SUMMARY:Jucevicius\, Vaamonde: VMI vs Mary Baldwin
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261113vir@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261113T173000Z
@@ -1046,6 +1056,46 @@ SUMMARY:Klintman: Virtus Bologna at Anadolu Efes Istanbul
 DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
  n-the-works/
 CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T000000Z
+DTEND:20261114T020000Z
+SUMMARY:Fall: Iona at Hofstra
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114miam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T010000Z
+DTEND:20261114T030000Z
+SUMMARY:Larsson: Miami Heat vs Cleveland Cavaliers
+DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NBA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T020000Z
+DTEND:20261114T040000Z
+SUMMARY:Price: Stanford at UNLV
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114east@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T020000Z
+DTEND:20261114T040000Z
+SUMMARY:Homelius: Eastern Washington vs Corban
+DESCRIPTION:NCAA. Players: Isak Homelius. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261117vir@swedes-abroad

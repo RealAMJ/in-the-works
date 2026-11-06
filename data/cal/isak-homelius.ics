@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Isak Homelius. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114east@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T020000Z
+DTEND:20261114T040000Z
+SUMMARY:Homelius: Eastern Washington vs Corban
+DESCRIPTION:NCAA. Players: Isak Homelius. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T020000Z
+DTEND:20261114T040000Z
+SUMMARY:Price: Stanford at UNLV
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

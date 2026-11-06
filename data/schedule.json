@@ -1596,6 +1596,19 @@
   "score": ""
  },
  {
+  "game_id": "g20261113vmi",
+  "date": "2026-11-13",
+  "time": "18:00",
+  "players": "Rodrigas Jucevicius, Zion Vaamonde",
+  "team": "VMI",
+  "opponent": "Mary Baldwin",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "g20261113vir",
   "date": "2026-11-13",
   "time": "18:30",
@@ -1609,6 +1622,58 @@
   "score": "",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV"
+ },
+ {
+  "game_id": "g20261114iona",
+  "date": "2026-11-14",
+  "time": "01:00",
+  "players": "Alliou Fall",
+  "team": "Iona",
+  "opponent": "Hofstra",
+  "venue": "Away",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261114miam",
+  "date": "2026-11-14",
+  "time": "02:00",
+  "players": "Pelle Larsson",
+  "team": "Miami Heat",
+  "opponent": "Cleveland Cavaliers",
+  "venue": "Home",
+  "competition": "NBA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261114stan",
+  "date": "2026-11-14",
+  "time": "03:00",
+  "players": "Julius Price",
+  "team": "Stanford",
+  "opponent": "UNLV",
+  "venue": "Away",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261114east",
+  "date": "2026-11-14",
+  "time": "03:00",
+  "players": "Isak Homelius",
+  "team": "Eastern Washington",
+  "opponent": "Corban",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
  },
  {
   "game_id": "g20261117vir",

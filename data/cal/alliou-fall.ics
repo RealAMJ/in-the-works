@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T000000Z
+DTEND:20261114T020000Z
+SUMMARY:Fall: Iona at Hofstra
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
