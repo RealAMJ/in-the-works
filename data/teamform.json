@@ -4744,5 +4744,33 @@
   "note": "",
   "leaders": "Sellers|21|2|0;Patrick|15|3|0;O'Neal|14|5|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-06",
+  "team": "Miami Heat",
+  "date": "2026-11-06",
+  "competition": "NBA",
+  "opponent": "Golden State Warriors",
+  "venue": "Away",
+  "score": "100-120",
+  "result": "L",
+  "top": "Mitchell 22 pts, 2 reb",
+  "note": "",
+  "leaders": "Mitchell|22|2|8;Antetokounmpo|20|14|4;Adebayo|18|10|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "golden-state-warriors-2026-11-06",
+  "team": "Golden State Warriors",
+  "date": "2026-11-06",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Home",
+  "score": "120-100",
+  "result": "W",
+  "top": "Curry 29 pts, 1 reb",
+  "note": "",
+  "leaders": "Curry|29|1|4;Lendeborg|17|8|6;Niang|13|4|3",
+  "source": "ESPN"
  }
 ]

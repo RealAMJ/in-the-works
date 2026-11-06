@@ -919,7 +919,9 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909937",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909937",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261106zab",

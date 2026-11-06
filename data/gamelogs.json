@@ -4230,5 +4230,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "larsson-2026-11-06",
+  "player": "Pelle Larsson",
+  "date": "2026-11-06",
+  "competition": "NBA",
+  "team": "Miami Heat",
+  "opponent": "Golden State Warriors",
+  "venue": "Away",
+  "result": "L 100-120",
+  "min": 29,
+  "pts": 13,
+  "reb": 1,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "4/9",
+  "three": "3/5",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 3,
+  "blk": 0,
+  "tov": 5,
+  "pf": 4,
+  "pm": -15,
+  "eff": ""
  }
 ]
