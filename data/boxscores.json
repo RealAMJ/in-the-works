@@ -1271,7 +1271,7 @@
   "line_id": "g20261106vir-klintman",
   "game_id": "g20261106vir",
   "player": "Bobi Klintman",
-  "min": 14,
+  "min": 15,
   "pts": 7,
   "reb": 3,
   "ast": 1,
@@ -1285,8 +1285,8 @@
   "dreb": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
-  "pf": 4,
+  "tov": 2,
+  "pf": 5,
   "eff": ""
  }
 ]
