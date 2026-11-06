@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:15:48+01:00",
+ "at": "2026-11-06T02:16:38+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:53",
+   "clock": "15:35",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:20",
+   "clock": "14:40",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Iona Gaels",
-     47,
+     49,
      17
     ]
    ]
@@ -83,7 +83,7 @@
    "teams": [
     [
      "VMI Keydets",
-     7,
+     10,
      17
     ],
     [
@@ -101,12 +101,12 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:32",
+   "clock": "03:24",
    "done": false,
    "teams": [
     [
      "Northwestern State Demons",
-     17,
+     22,
      14
     ],
     [
