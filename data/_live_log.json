@@ -1,28 +1,13 @@
 {
- "at": "2026-11-06T06:36:31+01:00",
+ "at": "2026-11-06T20:12:33+01:00",
  "log": [
   {
-   "game": "g20261106mia",
-   "checking": "ESPN"
+   "game": "g20261106vir",
+   "checking": "EuroLeague live"
   },
   {
-   "game": "g20261106mia",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Miami Heat",
-     100,
-     14
-    ],
-    [
-     "Golden State Warriors",
-     120,
-     14
-    ]
-   ]
+   "game": "g20261106vir",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   }
  ]
 }
