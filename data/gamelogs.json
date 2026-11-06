@@ -4698,5 +4698,31 @@
   "pf": 3,
   "pm": 21,
   "eff": ""
+ },
+ {
+  "row_id": "odinks-2026-11-06",
+  "player": "Michael Odinks",
+  "date": "2026-11-06",
+  "competition": "Basketligan",
+  "team": "Norrköping Dolphins",
+  "opponent": "Högsbo",
+  "venue": "Away",
+  "result": "W 84-69",
+  "min": 24,
+  "pts": 5,
+  "reb": 5,
+  "ast": 2,
+  "source": "FIBA LiveStats (Basketligan, game 2851788)",
+  "fg": "0/2",
+  "three": "0/1",
+  "ft": "5/6",
+  "oreb": 1,
+  "dreb": 4,
+  "stl": 1,
+  "blk": 1,
+  "tov": 3,
+  "pf": 3,
+  "pm": 3,
+  "eff": ""
  }
 ]

@@ -25425,7 +25425,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25446,7 +25446,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25488,7 +25488,7 @@
   "fg": "1/5",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25509,7 +25509,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25593,7 +25593,7 @@
   "fg": "4/7",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25677,7 +25677,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25719,7 +25719,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25740,7 +25740,7 @@
   "fg": "2/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25824,7 +25824,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25836,7 +25836,7 @@
   "player": "Filip Petrusev",
   "pos": "",
   "min": 6,
-  "pts": 0,
+  "pts": 1,
   "reb": 1,
   "ast": 0,
   "stl": 0,
@@ -25844,8 +25844,8 @@
   "tov": 0,
   "fg": "0/1",
   "three": "0/0",
-  "ft": "0/1",
-  "pm": -1,
+  "ft": "1/2",
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
