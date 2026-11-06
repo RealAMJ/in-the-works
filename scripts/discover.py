@@ -19,6 +19,7 @@ import update as U  # noqa: E402
 
 SEEDS = os.path.join(U.DATA, 'feed_seeds.json')
 SPAN = 400
+ROSTERS = {}  # feed id -> family names on its rosters (empty until the teams are entered)
 
 
 def fetch(fid):
@@ -27,7 +28,10 @@ def fetch(fid):
         with urllib.request.urlopen(req, timeout=8) as r:
             d = json.loads(r.read().decode('utf-8'))
         tm = d.get('tm') or {}
-        return fid, [str((tm.get(k) or {}).get('name') or '') + ' ' + str((tm.get(k) or {}).get('nameInternational') or '') for k in ('1', '2')]
+        names = [str((tm.get(k) or {}).get('name') or '') + ' ' + str((tm.get(k) or {}).get('nameInternational') or '') for k in ('1', '2')]
+        roster = {U.norm(str(p.get('familyName') or p.get('name') or '')) for k in ('1', '2') for p in ((tm.get(k) or {}).get('pl') or {}).values()}
+        ROSTERS[fid] = {x for x in roster if x}
+        return fid, names
     except Exception:
         return fid, None
 
@@ -118,6 +122,11 @@ def main():
                     'sample': sorted(((fid, n) for fid, n in res.items()), key=lambda x: abs(x[0] - seed))[:12]})
         for r in rows:
             hit = [fid for fid, n in res.items() if match(n, r)]
+            # two teams from the same cities can be another league's game (a women's game in Toruń vs Wrocław matched
+            # Twarde Pierniki - Śląsk): once the rosters are in the feed, the game's Swede has to be on one of them
+            swedes = [U.norm(x).split()[-1] for x in str(r.get('players') or '').split(',') if x.strip()]
+            if swedes:
+                hit = [fid for fid in hit if not ROSTERS.get(fid) or any(any(sw in fam or fam in sw for fam in ROSTERS[fid] if len(fam) > 2) for sw in swedes)]
             if hit:
                 fid = min(hit, key=lambda x: abs(x - seed))
                 r['live_feed'] = f'fiba:{fid}'
