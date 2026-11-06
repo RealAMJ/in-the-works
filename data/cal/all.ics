@@ -528,16 +528,6 @@ DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
 CATEGORIES:NBA
 END:VEVENT
 BEGIN:VEVENT
-UID:g20261106zab@swedes-abroad
-DTSTAMP:20260101T000000Z
-DTSTART:20261106T160000Z
-DTEND:20261106T180000Z
-SUMMARY:Babic: KK Zabok at KK Dubrava
-DESCRIPTION:Croatian Premier League. Players: Luka Babic. https://realamj.g
- ithub.io/in-the-works/
-CATEGORIES:Croatian Premier League
-END:VEVENT
-BEGIN:VEVENT
 UID:g20261106ast@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261106T191500Z
@@ -626,6 +616,16 @@ SUMMARY:Price: Stanford vs Oakland
 DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261106zab@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261107T170000Z
+DTEND:20261107T190000Z
+SUMMARY:Babic: KK Zabok at KK Dubrava
+DESCRIPTION:Croatian Premier League. Players: Luka Babic. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Croatian Premier League
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261107obr@swedes-abroad
