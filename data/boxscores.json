@@ -1278,7 +1278,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 1,
+  "pm": -1,
   "source": "EuroLeague live",
   "note": "live",
   "oreb": 0,
@@ -1286,7 +1286,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
