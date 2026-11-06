@@ -1220,14 +1220,14 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  },
  {
   "line_id": "g20261106vmi-jucevicius",
   "game_id": "g20261106vmi",
   "player": "Rodrigas Jucevicius",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
