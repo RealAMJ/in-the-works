@@ -644,7 +644,7 @@
     const ph = ds('photos') || [];
     const r = ph.find((x) => x.player !== 'placeholder' && isSame(x.player, name) && x.src && !/^https?:/i.test(String(x.src)));
     if (!r) return Promise.resolve(null);
-    return new Promise((res) => { const im = new Image(); im.onload = () => res({ img: im, credit: r.credit || '' }); im.onerror = () => res(null); im.src = r.src; });
+    return new Promise((res) => { const im = new Image(); im.onload = () => res({ img: im, credit: r.credit || '', face: r.face }); im.onerror = () => res(null); im.src = r.src; });
   }
   function cover(x, im, W, H) {
     const s = Math.max(W / im.naturalWidth, H / im.naturalHeight), w = im.naturalWidth * s, h = im.naturalHeight * s;
@@ -674,7 +674,13 @@
       x.fillStyle = '#000'; x.fillRect(0, 0, W, H);
       if (ph) {
         // portrait at the top: the face sits between the name at the top and the text block, never under text
-        { const ih = 720, iw = ph.img.naturalWidth * ih / ph.img.naturalHeight; x.drawImage(ph.img, (W - iw) / 2, 150, iw, ih); }
+        // photos.json may say where the face is ([top, bottom] as parts of the height): close-up headshots are then drawn
+        // smaller so the face lands in the same place; the bottom edge of the photo fades to black
+        { const f = Array.isArray(ph.face) ? ph.face : null;
+          const ih = f ? 238 / (f[1] - f[0]) : 720, y0 = f ? 222 - f[0] * ih : 150, iw = ph.img.naturalWidth * ih / ph.img.naturalHeight;
+          x.drawImage(ph.img, (W - iw) / 2, y0, iw, ih);
+          const fb = x.createLinearGradient(0, y0 + ih - 160, 0, y0 + ih); fb.addColorStop(0, 'rgba(0,0,0,0)'); fb.addColorStop(1, 'rgba(0,0,0,1)');
+          x.fillStyle = fb; x.fillRect(0, y0 + ih - 160, W, 161); }
         x.fillStyle = 'rgba(0,0,0,.25)'; x.fillRect(0, 0, W, H);
         const gr = x.createLinearGradient(0, 470, 0, 760); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,.96)');
         x.fillStyle = gr; x.fillRect(0, 0, W, H);
