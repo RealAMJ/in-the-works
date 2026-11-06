@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T00:36:13+01:00",
+ "at": "2026-11-07T00:36:57+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -9,7 +9,7 @@
    "game": "g20261107ewu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:52",
+   "clock": "07:29",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107ysu",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:39",
+   "clock": "16:37",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Ohio State Buckeyes",
-     6,
+     8,
      15
     ]
    ]
