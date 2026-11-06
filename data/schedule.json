@@ -981,7 +981,9 @@
   "status": "final",
   "score": "W 72-56",
   "live_feed": "feb:2535784",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261107ewu",

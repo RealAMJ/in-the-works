@@ -4750,5 +4750,31 @@
   "pf": 5,
   "pm": -3,
   "eff": ""
+ },
+ {
+  "row_id": "borg-2026-11-06",
+  "player": "Tobias Borg",
+  "date": "2026-11-06",
+  "competition": "Primera FEB",
+  "team": "Palencia",
+  "opponent": "Granada",
+  "venue": "Home",
+  "result": "W 72-56",
+  "min": 14,
+  "pts": 4,
+  "reb": 1,
+  "ast": 3,
+  "source": "FEB Live",
+  "fg": "1/2",
+  "three": "0/1",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 4,
+  "pm": 5,
+  "eff": ""
  }
 ]

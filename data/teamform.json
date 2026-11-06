@@ -4800,5 +4800,33 @@
   "note": "",
   "leaders": "Kabengele|16|9|0;Wright|16|2|2;Shengelia|14|3|4",
   "source": "EuroLeague live"
+ },
+ {
+  "row_id": "palencia-2026-11-06",
+  "team": "Palencia",
+  "date": "2026-11-06",
+  "competition": "Primera FEB",
+  "opponent": "Granada",
+  "venue": "Home",
+  "score": "72-56",
+  "result": "W",
+  "top": "Littleson 15 pts, 3 reb",
+  "note": "",
+  "leaders": "Littleson|15|3|0;Vucetic|13|6|1;Ngom|12|6|0;Jakovics|12|5|1",
+  "source": "FEB Live"
+ },
+ {
+  "row_id": "granada-2026-11-06",
+  "team": "Granada",
+  "date": "2026-11-06",
+  "competition": "Primera FEB",
+  "opponent": "Palencia",
+  "venue": "Away",
+  "score": "56-72",
+  "result": "L",
+  "top": "Kljajic 14 pts, 1 reb",
+  "note": "",
+  "leaders": "Kljajic|14|1|1;Barro|10|14|0;Parham|9|1|0",
+  "source": "FEB Live"
  }
 ]
