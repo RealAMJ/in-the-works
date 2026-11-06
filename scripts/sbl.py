@@ -38,10 +38,49 @@ def team_name(s):
     return s
 
 
+_PAGE = {}
+
+
+def schedule_page():
+    if 'h' not in _PAGE:
+        req = urllib.request.Request(SCHEDULE, headers=dict(U.BROWSER, Accept='text/html,*/*'))
+        with urllib.request.urlopen(req, timeout=60) as r:
+            _PAGE['h'] = r.read().decode('utf-8', 'replace')
+    return _PAGE['h']
+
+
+def coming_games(clubs, per_club=3):
+    """The next league games of the given clubs (site spellings), from the same schedule page. The league lists
+    tip-off times in Swedish time."""
+    out = []
+    for m in re.finditer(r'match-wrap (STATUS_\w+)"\s*id\s*=\s*"extfix_(\d+)"(.*?)(?=match-wrap STATUS_|\Z)', schedule_page(), re.S):
+        status, gid, block = m.groups()
+        if status != 'STATUS_SCHEDULED':
+            continue
+        d = re.search(r'match-time.*?<span>([A-Z][a-z]{2} \d{1,2}, \d{4}),?\s*(\d{1,2}:\d{2}\s*[AP]M)?', block, re.S)
+        names = re.findall(r'team-name-full">([^<]+)<', block)
+        if not d or len(names) < 2:
+            continue
+        day = dt.datetime.strptime(d.group(1), '%b %d, %Y').date()
+        tm = dt.datetime.strptime(d.group(2).replace(' ', ''), '%I:%M%p').strftime('%H:%M') if d.group(2) else 'TBC'
+        home, away = team_name(names[0].strip()), team_name(names[1].strip())
+        for club, players in clubs.items():
+            if club in (home, away):
+                out.append(dict(game_id=f'sbl-{gid}', date=day.isoformat(), time=tm, team=club, opponent=away if club == home else home,
+                                venue='Home' if club == home else 'Away', competition='Basketligan', players=', '.join(players),
+                                status='upcoming', score='', sbl=True,
+                                url=f'https://hosted.dcd.shared.geniussports.com/SBF/en/competition/{COMP}/match/{gid}/summary'))
+    out.sort(key=lambda r: (r['date'], r['time']))
+    keep, n = [], {}
+    for r in out:
+        if U.now().date().isoformat() <= r['date'] and n.get(r['team'], 0) < per_club:
+            keep.append(r)
+            n[r['team']] = n.get(r['team'], 0) + 1
+    return keep
+
+
 def finished_games(days):
-    req = urllib.request.Request(SCHEDULE, headers=dict(U.BROWSER, Accept='text/html,*/*'))
-    with urllib.request.urlopen(req, timeout=60) as r:
-        h = r.read().decode('utf-8', 'replace')
+    h = schedule_page()
     since = U.now().date() - dt.timedelta(days=days)
     out = []
     for m in re.finditer(r'match-wrap (STATUS_\w+)"\s*id\s*=\s*"extfix_(\d+)"(.*?)(?=match-wrap STATUS_|\Z)', h, re.S):
@@ -188,12 +227,27 @@ def main(argv):
                 seen.add((day, team_name(t['name']), p['pts'], p['reb'], p['ast']))
                 added += 1
                 print(f'  sbl: {rid} {", ".join(tags)}')
+    # the next games of the national team players who play at home, for their profiles
+    clubs, coming_changed = {}, False
+    for full, _, club in home:
+        clubs.setdefault(club, []).append(full)
+    try:
+        nxt = coming_games(clubs) if clubs else []
+        try:
+            old = U.load('sblgames')
+        except Exception:
+            old = None
+        if nxt != old:
+            U.save('sblgames', nxt)
+            coming_changed = True
+    except Exception as e:
+        print(f'  sbl: coming games not read ({e.__class__.__name__})')
     if new_lines:
         home_averages(new_lines, gl, st)
         U.save('gamelogs', gl)
         U.save('stats', st)
         print(f"sbl: game log updated for {', '.join(sorted(new_lines))}")
-    if added or new_lines:
+    if added or new_lines or coming_changed:
         U.write_version(True)
     if added:
         rows.sort(key=lambda r: r.get('date') or '', reverse=True)

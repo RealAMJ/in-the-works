@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="theme.css?v=50523d4c">
-<script src="dash-shim.js?v=cc537896"></script>
+<script src="dash-shim.js?v=cd3e7b22"></script>
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
@@ -385,7 +385,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=7319e93d"></script>
+<script src="i18n.js?v=3148f55c"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2432,12 +2432,13 @@
     const rows = st.filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp));
     const car = (ds('career') || []).filter((r) => isSame(r.player, name));
     // Hero
-    const hero = mk('section', 'pp-hero'); hero.style.setProperty('--tc', teamColor(p ? p.club : name));
+    const hc = p ? '' : homeClubOf(name);
+    const hero = mk('section', 'pp-hero'); hero.style.setProperty('--tc', teamColor(p ? p.club : (hc || name)));
     if (bio && bio.number) hero.append(mk('span', 'pp-bignum', bio.number));
     const pic = mk('div', 'pp-pic');
     if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); } else pic.append(mk('span', 'pp-ini', initials(name)));
     const id = mk('div', 'pp-id');
-    const club = mk('div', 'pp-club'); const hc = p ? '' : homeClubOf(name); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) club.append(crest(hc, 'sm'), mk('span', '', hc));
+    const club = mk('div', 'pp-club'); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) { const s = mk('button', 'tm', hc); s.type = 'button'; s.tabIndex = -1; s.style.cursor = 'default'; club.append(crest(hc, 'sm'), s); }
     const parts = name.split(' ');
     id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]));
     const meta = mk('div', 'pp-meta');
@@ -2473,7 +2474,6 @@
         [['FG%', 'fg'], ['3P%', 'three'], ['FT%', 'ft']].forEach(([k, f]) => { const s = fracPct(cg, f); tile(k, s ? s.p.toFixed(1) : '—', s ? `${s.m}/${s.a}` : ''); });
         const tr = tierFor(cur.competition); if (tr) tile('League level', String(tr.score), `tier ${tr.tier}`);
         sec.append(tiles);
-        { const ch = ptsChart(cg, cur); if (ch) sec.append(ch); }
         if (cur.note) sec.append(mk('p', 'pp-sub', 'Source: ' + cur.note));
       }
       el.append(sec);
@@ -2494,14 +2494,14 @@
       }
       const two = mk('div', 'pp-two');
       const so = ppSection('Standout games');
-      const sl = realHl().filter((r) => isSame(r.player, name)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      const sl = realHl().filter((r) => isSame(r.player, name)).concat((ds('sbl') || []).filter((r) => isSame(r.player, name) && !realHl().some((x) => isSame(x.player, name) && x.date === r.date))).sort((a, b) => String(b.date).localeCompare(String(a.date)));
       if (sl.length) sl.forEach((r) => { const c = mk('article', 'hh' + (r.game_id ? ' go' : '')); if (r.game_id) c.onclick = () => showCard(r.game_id); c.append(mk('div', 'hh-top', r.date ? dayFmt(r.date) : ''), mk('div', 'hh-head', tx(r, 'headline'))); so.append(c); });
       else so.append(mk('p', 'empty', 'No standout games yet.'));
       const hon = ppSection('Honours');
       const hl = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
       if (hl.length) { const ul = mk('ul', 'pp-list'); hl.forEach((h) => ul.append(mk('li', '', h))); hon.append(ul); } else hon.append(mk('p', 'empty', 'None listed yet.'));
       two.append(so, hon); el.append(two);
-      const ups = upcomingSection((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', `${parts[parts.length - 1]}'s next games. Tap for the preview.`);
+      const ups = upcomingSection((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null);
       if (ups) el.append(ups);
     }
 
@@ -2989,8 +2989,9 @@
     if (r.note) tags.append(mk('span', 'tdg-note', r.note));
     if (tags.childNodes.length) body.append(tags);
     const acts = mk('div', 'tdg-acts');
-    const b = mk('button', 'pp-btn dark', final ? 'Game center →' : 'Preview →'); b.type = 'button'; b.onclick = () => showCard(r.game_id); acts.append(b);
-    const lk = gameLinks(r); if (lk) acts.append(lk);
+    if (r.sbl) { const a = document.createElement('a'); a.className = 'pp-btn dark'; a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Game page ↗'; acts.append(a); }
+    else { const b = mk('button', 'pp-btn dark', final ? 'Game center →' : 'Preview →'); b.type = 'button'; b.onclick = () => showCard(r.game_id); acts.append(b);
+    const lk = gameLinks(r); if (lk) acts.append(lk); }
     body.append(acts);
     c.append(body);
     return c;
@@ -3418,8 +3419,8 @@
   document.querySelectorAll('[data-nav-back]').forEach((b) => b.addEventListener('click', goBack));
 
   // Upcoming games section (Today-style cards) for a player, or for the teams in a game
-  function upcomingSection(filter, title, sub, max) {
-    const up = (allGames() || []).filter((x) => x.status !== 'final' && filter(x)).slice(0, max || 6);
+  function upcomingSection(filter, title, sub, max, extra) {
+    const up = (allGames() || []).concat(extra || []).filter((x) => x.status !== 'final' && filter(x)).slice(0, max || 6);
     if (!up.length) return null;
     const sec = ppSection(title || 'Upcoming games', sub); const grid = mk('div', 'td-grid'); up.forEach((r) => grid.append(todayCard(r))); sec.append(grid); return sec;
   }

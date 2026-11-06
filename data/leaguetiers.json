@@ -118,5 +118,11 @@
   "tier": 6,
   "score": 38,
   "label": "Spain, third division"
+ },
+ {
+  "competition": "Basketligan",
+  "tier": 5,
+  "score": 44,
+  "label": "Sweden, top flight"
  }
 ]

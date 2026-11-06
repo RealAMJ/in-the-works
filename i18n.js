@@ -33,3 +33,5 @@ Object.assign(window.SA_I18N.D, {
  "SBL": "SBL",
  "Basketligan": "Basketligan"
 });
+Object.assign(window.SA_I18N.D, { "Game page ↗": "Matchsida ↗" });
+window.SA_I18N.RULES.push(["^(.+)'s next games\\.$", "$1s nästa matcher."]);
