@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T02:26:34+01:00",
+ "at": "2026-11-06T02:27:34+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:05",
+   "clock": "10:25",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "g20261106vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:21",
+   "clock": "08:45",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     15,
+     17,
      17
     ],
     [
@@ -101,7 +101,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:12",
+   "clock": "00:03",
    "done": false,
    "teams": [
     [
