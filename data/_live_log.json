@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T23:22:20+01:00",
+ "at": "2026-11-06T23:27:02+01:00",
  "log": [
   {
    "game": "g20261106pal",
@@ -8,10 +8,21 @@
   {
    "game": "g20261106pal",
    "src": "FEB Live",
-   "period": 1,
+   "period": 4,
    "clock": "00:00",
    "done": true,
-   "teams": []
+   "teams": [
+    [
+     "IBEROLEA PALENCIA",
+     72,
+     11
+    ],
+    [
+     "COVIRAN GRANADA",
+     56,
+     12
+    ]
+   ]
   }
  ]
 }

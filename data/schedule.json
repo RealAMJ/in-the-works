@@ -978,9 +978,10 @@
   "venue": "Home",
   "competition": "Primera FEB",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "feb:2535784"
+  "status": "final",
+  "score": "W 72-56",
+  "live_feed": "feb:2535784",
+  "live_done": true
  },
  {
   "game_id": "g20261107ewu",
