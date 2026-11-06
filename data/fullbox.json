@@ -23306,7 +23306,7 @@
   "ft": "3/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23327,7 +23327,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23348,7 +23348,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23369,7 +23369,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23390,7 +23390,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23411,7 +23411,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23432,11 +23432,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-0-10",
+  "row_id": "g20261106dsu-0-7",
   "game_id": "g20261106dsu",
   "team": "Delaware State",
   "player": "Isaiah Sullivan",
@@ -23453,11 +23453,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-0-12",
+  "row_id": "g20261106dsu-0-8",
   "game_id": "g20261106dsu",
   "team": "Delaware State",
   "player": "Jalen St Clair",
@@ -23474,11 +23474,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-0-13",
+  "row_id": "g20261106dsu-0-9",
   "game_id": "g20261106dsu",
   "team": "Delaware State",
   "player": "Dean Shepherd",
@@ -23495,7 +23495,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23516,7 +23516,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23537,7 +23537,7 @@
   "ft": "4/12",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23558,7 +23558,7 @@
   "ft": "11/14",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23579,7 +23579,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -23600,11 +23600,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-8",
+  "row_id": "g20261106dsu-1-5",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Drew Timmons",
@@ -23621,11 +23621,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-10",
+  "row_id": "g20261106dsu-1-6",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Sean Griffin",
@@ -23642,11 +23642,11 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-13",
+  "row_id": "g20261106dsu-1-7",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Cooper Jackson",
@@ -23663,11 +23663,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-16",
+  "row_id": "g20261106dsu-1-8",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Luke Mayberry",
@@ -23684,11 +23684,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-18",
+  "row_id": "g20261106dsu-1-9",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Justin Nordin",
@@ -23705,11 +23705,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261106dsu-1-20",
+  "row_id": "g20261106dsu-1-10",
   "game_id": "g20261106dsu",
   "team": "Navy",
   "player": "Akim Iscandari",
@@ -23726,7 +23726,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -24325,7 +24325,7 @@
   "pos": "",
   "min": 12,
   "pts": 3,
-  "reb": 1,
+  "reb": 2,
   "ast": 0,
   "stl": 0,
   "blk": 1,
@@ -24626,7 +24626,7 @@
   "tov": 0,
   "fg": "2/2",
   "three": "1/1",
-  "ft": "1/2",
+  "ft": "1/4",
   "pm": "",
   "swede": false,
   "state": "live",
