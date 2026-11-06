@@ -412,12 +412,12 @@
   "player": "Alliou Fall",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
+  "gp": 2,
   "min": 18.0,
-  "pts": 0.0,
-  "reb": 5.0,
+  "pts": 4.0,
+  "reb": 4.5,
   "ast": 1.0,
-  "note": "Averages from game log (1 games, through 2026-11-03)"
+  "note": "Averages from game log (2 games, through 2026-11-06)"
  },
  {
   "row_id": "holmstrom-ncaa",

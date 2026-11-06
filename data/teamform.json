@@ -4604,5 +4604,33 @@
   "note": "",
   "leaders": "Semple|26|7|5;Laksa|13|4|2;Basile|11|1|10;Gasic|11|3|2;Pétursson|11|4|4",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "iona-2026-11-06",
+  "team": "Iona",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "NJIT",
+  "venue": "Home",
+  "score": "72-49",
+  "result": "W",
+  "top": "Kheil 12 pts, 5 reb",
+  "note": "",
+  "leaders": "Kheil|12|5|0;Ayo|10|5|0;Vanderhorst|10|7|8",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "njit-2026-11-06",
+  "team": "NJIT",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Away",
+  "score": "49-72",
+  "result": "L",
+  "top": "Vanderstraeten 14 pts, 7 reb",
+  "note": "",
+  "leaders": "Vanderstraeten|14|7|0;Bolden|8|4|5;Stores|7|1|0",
+  "source": "ESPN"
  }
 ]

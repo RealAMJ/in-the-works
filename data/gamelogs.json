@@ -4126,5 +4126,31 @@
   "pf": 2,
   "pm": 9,
   "eff": ""
+ },
+ {
+  "row_id": "fall-2026-11-06",
+  "player": "Alliou Fall",
+  "date": "2026-11-06",
+  "competition": "NCAA",
+  "team": "Iona",
+  "opponent": "NJIT",
+  "venue": "Home",
+  "result": "W 72-49",
+  "min": 18,
+  "pts": 8,
+  "reb": 4,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "3/4",
+  "three": "0/0",
+  "ft": "2/2",
+  "oreb": 2,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 1,
+  "tov": 2,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
