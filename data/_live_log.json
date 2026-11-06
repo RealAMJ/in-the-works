@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T01:34:04+01:00",
+ "at": "2026-11-06T01:34:56+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,7 +9,7 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:51",
+   "clock": "05:49",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Sacred Heart Pioneers",
-     21,
+     23,
      14
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261106iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:11",
+   "clock": "03:59",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Iona Gaels",
-     29,
+     32,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261106msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:12",
+   "clock": "17:53",
    "done": false,
    "teams": [
     [
