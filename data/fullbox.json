@@ -25404,7 +25404,7 @@
   "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25425,7 +25425,7 @@
   "fg": "2/5",
   "three": "2/5",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25467,7 +25467,7 @@
   "fg": "1/3",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -14,
+  "pm": -16,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25551,7 +25551,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25610,11 +25610,11 @@
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "3/6",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -6,
   "swede": true,
   "state": "live",
   "source": "EuroLeague live"
@@ -25656,7 +25656,7 @@
   "fg": "1/3",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 5,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25698,7 +25698,7 @@
   "fg": "5/9",
   "three": "0/3",
   "ft": "1/2",
-  "pm": 9,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25719,7 +25719,7 @@
   "fg": "2/3",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 12,
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25740,7 +25740,7 @@
   "fg": "2/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 14,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25824,7 +25824,7 @@
   "fg": "5/6",
   "three": "0/0",
   "ft": "1/1",
-  "pm": 6,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"

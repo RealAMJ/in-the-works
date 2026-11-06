@@ -1278,15 +1278,15 @@
   "fg": "3/6",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -6,
   "source": "EuroLeague live",
   "note": "live",
   "oreb": 1,
   "dreb": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
-  "pf": 3,
+  "tov": 1,
+  "pf": 4,
   "eff": ""
  }
 ]
