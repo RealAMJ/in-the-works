@@ -960,12 +960,12 @@
   "competition": "EuroLeague",
   "note": "Round 10",
   "status": "live",
-  "score": "L 53-76",
+  "score": "L 56-76",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:98",
-  "clock": "End of Q0",
-  "live_updated": "2026-11-06T21:57:53+01:00"
+  "clock": "Q4 09:49",
+  "live_updated": "2026-11-06T21:58:44+01:00"
  },
  {
   "game_id": "g20261106pal",
