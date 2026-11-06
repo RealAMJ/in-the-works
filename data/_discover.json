@@ -1,6 +1,6 @@
 {
- "at": "2026-11-06T13:30:35+01:00",
- "found": 1,
+ "at": "2026-11-06T13:35:17+01:00",
+ "found": 0,
  "log": [
   {
    "competition": "Croatian Premier League",
@@ -96,57 +96,15 @@
   },
   {
    "competition": "Orlen Basket Liga",
-   "seed": 2949100,
+   "seed": 2949120,
    "scanned": 799,
-   "answered": 329,
+   "answered": 319,
    "sample": [
     [
-     2949101,
+     2949121,
      [
-      "Energa Czarni Słupsk ",
-      "AMW Arka Gdynia "
-     ]
-    ],
-    [
-     2949102,
-     [
-      "Legia Warszawa WAR",
-      "Dziki Warszawa "
-     ]
-    ],
-    [
-     2949097,
-     [
-      "Arriva Lotto Twarde Pierniki Toruń ",
-      "Zastal Zielona Góra "
-     ]
-    ],
-    [
-     2949096,
-     [
-      "N.C. Central ",
-      "Johnson C. Smith "
-     ]
-    ],
-    [
-     2949113,
-     [
-      "PGE Wisła Kraków  ",
-      "Lotto MKS Pruszków "
-     ]
-    ],
-    [
-     2949116,
-     [
-      "MB Zagłębie Sosnowiec ",
-      "Widzew Łódź "
-     ]
-    ],
-    [
-     2949117,
-     [
-      "Lotto AZS UMCS Lublin ",
-      "SKK Polonia Warszawa "
+      "KKS Polonia Warszawa ",
+      "Decka Pelplin "
      ]
     ],
     [
@@ -157,20 +115,6 @@
      ]
     ],
     [
-     2949120,
-     [
-      "Energa Toruń ",
-      "1KS Ślęza Wrocław "
-     ]
-    ],
-    [
-     2949121,
-     [
-      "KKS Polonia Warszawa ",
-      "Decka Pelplin "
-     ]
-    ],
-    [
      2949122,
      [
       "SKS Fulimpex Starogard Gdański ",
@@ -178,10 +122,66 @@
      ]
     ],
     [
+     2949117,
+     [
+      "Lotto AZS UMCS Lublin ",
+      "SKK Polonia Warszawa "
+     ]
+    ],
+    [
      2949123,
      [
       "GKS Tychy ",
       "WKK Active Hotel Wrocław "
+     ]
+    ],
+    [
+     2949116,
+     [
+      "MB Zagłębie Sosnowiec ",
+      "Widzew Łódź "
+     ]
+    ],
+    [
+     2949125,
+     [
+      "BS Polonia Bytom ",
+      "Zdrovo Polonia 1912 Leszno "
+     ]
+    ],
+    [
+     2949126,
+     [
+      "Enea Basket Poznań ",
+      "KSK Qemetica Noteć Inowrocław "
+     ]
+    ],
+    [
+     2949113,
+     [
+      "PGE Wisła Kraków  ",
+      "Lotto MKS Pruszków "
+     ]
+    ],
+    [
+     2949127,
+     [
+      "Weegree AZS Politechnika Opolska ",
+      "Datzzy Kotwica Port Kołobrzeg "
+     ]
+    ],
+    [
+     2949128,
+     [
+      "Miasto Szkła Krosno ",
+      "Solvera Sokół Łańcut "
+     ]
+    ],
+    [
+     2949130,
+     [
+      "PGE Spójnia Stargard ",
+      "ŁKS Coolpack Łódź "
      ]
     ]
    ]
