@@ -25425,7 +25425,7 @@
   "fg": "4/8",
   "three": "3/7",
   "ft": "1/1",
-  "pm": 2,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25446,7 +25446,7 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25488,7 +25488,7 @@
   "fg": "5/14",
   "three": "2/5",
   "ft": "3/3",
-  "pm": -12,
+  "pm": -15,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25509,7 +25509,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -13,
+  "pm": -16,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25593,7 +25593,7 @@
   "fg": "6/9",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25656,7 +25656,7 @@
   "fg": "1/3",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 0,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25677,7 +25677,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25719,7 +25719,7 @@
   "fg": "3/5",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 7,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25782,7 +25782,7 @@
   "fg": "4/7",
   "three": "1/2",
   "ft": "3/5",
-  "pm": 17,
+  "pm": 20,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -25836,7 +25836,7 @@
   "player": "Mckinley Wright Iv",
   "pos": "",
   "min": 23,
-  "pts": 13,
+  "pts": 16,
   "reb": 2,
   "ast": 2,
   "stl": 0,
@@ -25844,8 +25844,8 @@
   "tov": 1,
   "fg": "6/10",
   "three": "1/2",
-  "ft": "0/0",
-  "pm": 13,
+  "ft": "3/3",
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
