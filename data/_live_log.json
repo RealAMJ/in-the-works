@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T03:00:14+01:00",
+ "at": "2026-11-06T03:01:04+01:00",
  "log": [
   {
    "game": "g20261106maine",
@@ -9,17 +9,17 @@
    "game": "g20261106maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:13",
+   "clock": "00:05",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     72,
+     73,
      15
     ],
     [
      "Sacred Heart Pioneers",
-     69,
+     72,
      14
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261106dsu",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:47",
+   "clock": "00:42",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Navy Midshipmen",
-     63,
+     65,
      25
     ]
    ]
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Northwestern State Demons",
-     33,
+     34,
      14
     ],
     [
