@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T18:13:28+01:00",
+ "at": "2026-11-07T18:19:49+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 359,
+   "answered": 361,
    "sample": [
     [
      2949101,
@@ -34,6 +34,13 @@
      [
       "N.C. Central ",
       "Johnson C. Smith "
+     ]
+    ],
+    [
+     2949107,
+     [
+      "Racing Luxembourg Racing Luxembourg",
+      "T71 Dudelange T71 Dudelange"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "KKS Polonia Warszawa ",
       "Decka Pelplin "
-     ]
-    ],
-    [
-     2949122,
-     [
-      "SKS Fulimpex Starogard Gdański ",
-      "OPTeam Resovia Rzeszów "
      ]
     ]
    ]

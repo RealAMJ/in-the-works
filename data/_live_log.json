@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:16:55+01:00",
+ "at": "2026-11-07T18:19:50+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -8,8 +8,8 @@
   {
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
-   "period": 1,
-   "clock": "00:40",
+   "period": 2,
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "03:44",
+   "clock": "03:35",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Monbus Obradoiro",
-     10,
+     12,
      12
     ]
    ]

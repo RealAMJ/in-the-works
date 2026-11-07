@@ -1093,8 +1093,8 @@
   "status": "live",
   "score": "W 21-13",
   "live_feed": "fiba:2893799",
-  "clock": "Q1 00:40",
-  "live_updated": "2026-11-07T18:16:54+01:00"
+  "clock": "Q2 10:00",
+  "live_updated": "2026-11-07T18:19:50+01:00"
  },
  {
   "game_id": "g20261107obr",
@@ -1107,10 +1107,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "L 10-13",
+  "score": "L 12-13",
   "live_feed": "acb:105429",
-  "clock": "Q1 03:44",
-  "live_updated": "2026-11-07T18:16:55+01:00"
+  "clock": "Q1 03:35",
+  "live_updated": "2026-11-07T18:19:50+01:00"
  },
  {
   "game_id": "g20261107vie",
