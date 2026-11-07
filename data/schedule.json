@@ -1091,10 +1091,10 @@
   "competition": "Croatian Premier League",
   "note": "Round 7, at SD Dubrava in Zagreb (date and time from the HKS round 7 schedule)",
   "status": "live",
-  "score": "W 32-19",
+  "score": "W 32-20",
   "live_feed": "fiba:2893799",
-  "clock": "Q2 06:31",
-  "live_updated": "2026-11-07T18:27:46+01:00"
+  "clock": "Q2 06:30",
+  "live_updated": "2026-11-07T18:28:35+01:00"
  },
  {
   "game_id": "g20261107obr",
@@ -1107,10 +1107,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "W 19-16",
+  "score": "W 19-19",
   "live_feed": "acb:105429",
-  "clock": "Q1 00:13",
-  "live_updated": "2026-11-07T18:27:46+01:00"
+  "clock": "Q2 10:00",
+  "live_updated": "2026-11-07T18:28:36+01:00"
  },
  {
   "game_id": "g20261107vie",
