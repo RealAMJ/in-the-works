@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:01:12+01:00",
+ "at": "2026-11-07T03:02:03+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "UConn Huskies",
-     36,
+     37,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "20:00",
+   "clock": "19:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "UIC Flames",
-     30,
+     33,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:26",
+   "clock": "07:59",
    "done": false,
    "teams": [
     [
