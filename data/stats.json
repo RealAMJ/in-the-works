@@ -268,12 +268,12 @@
   "player": "Elliot Cadeau",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 34.0,
-  "pts": 7.0,
-  "reb": 0.0,
-  "ast": 6.0,
-  "note": "Averages from game log (1 games, through 2026-11-03)"
+  "gp": 2,
+  "min": 31.0,
+  "pts": 7.5,
+  "reb": 1.5,
+  "ast": 4.5,
+  "note": "Averages from game log (2 games, through 2026-11-07)"
  },
  {
   "row_id": "ramstedt-isl",

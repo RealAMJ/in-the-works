@@ -4912,5 +4912,33 @@
   "note": "",
   "leaders": "Washington|19|12|1;Henderson|16|0|1;Gealer|11|0|6",
   "source": "ESPN"
+ },
+ {
+  "row_id": "michigan-2026-11-07",
+  "team": "Michigan",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "UConn",
+  "venue": "Neutral",
+  "score": "77-85",
+  "result": "L",
+  "top": "McKenney 22 pts, 3 reb",
+  "note": "",
+  "leaders": "McKenney|22|3|1;Estrella|19|9|3;Gayle|18|1|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "uconn-2026-11-07",
+  "team": "UConn",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Michigan",
+  "venue": "Neutral",
+  "score": "85-77",
+  "result": "W",
+  "top": "Mullins 23 pts, 4 reb",
+  "note": "",
+  "leaders": "Mullins|23|4|0;Demary|21|7|4;Landrew|14|8|2",
+  "source": "ESPN"
  }
 ]
