@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T00:29:02+01:00",
+ "at": "2026-11-08T00:31:27+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,17 +9,17 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:30",
+   "clock": "10:49",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     44,
+     46,
      17
     ],
     [
      "UTSA Roadrunners",
-     45,
+     48,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:32",
+   "clock": "09:20",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Lipscomb Bisons",
-     56,
+     58,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261108unm",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:56",
+   "clock": "08:58",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "New Mexico Lobos",
-     21,
+     23,
      13
     ]
    ]
