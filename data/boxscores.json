@@ -1535,7 +1535,7 @@
   "line_id": "g20261107bra-bangala",
   "game_id": "g20261107bra",
   "player": "Zaba Bangala",
-  "min": 10,
+  "min": 11,
   "pts": 2,
   "reb": 2,
   "ast": 1,
@@ -1549,7 +1549,7 @@
   "dreb": 2,
   "stl": 2,
   "blk": 0,
-  "tov": 1,
+  "tov": 0,
   "pf": 1,
   "eff": ""
  }
