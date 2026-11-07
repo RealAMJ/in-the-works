@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T22:26:01+01:00",
+ "at": "2026-11-07T22:29:32+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -9,12 +9,12 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:07",
+   "clock": "01:19",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     70,
+     73,
      15
     ],
     [
@@ -31,10 +31,21 @@
   {
    "game": "g20261107ovi",
    "src": "FEB Live",
-   "period": 1,
+   "period": 4,
    "clock": "00:00",
    "done": true,
-   "teams": []
+   "teams": [
+    [
+     "ALIMERKA OVIEDO BALONCESTO",
+     70,
+     10
+    ],
+    [
+     "CAJASOL COTO C\u00d3RDOBA",
+     63,
+     10
+    ]
+   ]
   }
  ]
 }

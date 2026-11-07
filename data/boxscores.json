@@ -1552,5 +1552,27 @@
   "tov": 0,
   "pf": 0,
   "eff": ""
+ },
+ {
+  "line_id": "g20261107ovi-terins",
+  "game_id": "g20261107ovi",
+  "player": "Felix Terins",
+  "min": 21,
+  "pts": 10,
+  "reb": 3,
+  "ast": 1,
+  "fg": "3/8",
+  "three": "1/5",
+  "ft": "3/3",
+  "pm": 10,
+  "source": "FEB Live",
+  "note": "",
+  "oreb": 1,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "eff": ""
  }
 ]
