@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:46:58+01:00",
+ "at": "2026-11-07T20:47:52+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,7 +9,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "03:40",
+   "clock": "03:21",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:15",
+   "clock": "03:54",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "01:07",
+   "clock": "00:08",
    "done": false,
    "teams": [
     [
      "Telekom Baskets Bonn",
-     44,
+     46,
      11
     ],
     [
