@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T02:03:16+01:00",
+ "at": "2026-11-07T02:04:06+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -9,7 +9,7 @@
    "game": "g20261107ewu",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:32",
+   "clock": "00:14",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Oregon Ducks",
-     96,
+     98,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107ysu",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:32",
+   "clock": "10:20",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Ohio State Buckeyes",
-     53,
+     54,
      15
     ]
    ]
@@ -77,19 +77,19 @@
   {
    "game": "g20261107rmu",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:20",
    "done": false,
    "teams": [
     [
-     "UIC Flames",
-     0,
-     0
+     "Robert Morris Colonials",
+     2,
+     15
     ],
     [
-     "Robert Morris Colonials",
+     "UIC Flames",
      0,
-     0
+     16
     ]
    ]
   }
