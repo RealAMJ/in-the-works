@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T18:26:05+01:00",
+ "at": "2026-11-07T18:32:17+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 361,
+   "answered": 362,
    "sample": [
     [
      2949101,
@@ -41,6 +41,13 @@
      [
       "Racing Luxembourg Racing Luxembourg",
       "T71 Dudelange T71 Dudelange"
+     ]
+    ],
+    [
+     2949109,
+     [
+      "Bascharage Hedgehogs Bascharage Hedgehogs",
+      "Mambra Mamer Mambra Mamer"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "Energa Toruń ",
       "1KS Ślęza Wrocław "
-     ]
-    ],
-    [
-     2949121,
-     [
-      "KKS Polonia Warszawa ",
-      "Decka Pelplin "
      ]
     ]
    ]
