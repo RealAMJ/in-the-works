@@ -1425,7 +1425,7 @@
   "line_id": "g20261107stan-price",
   "game_id": "g20261107stan",
   "player": "Julius Price",
-  "min": 3,
+  "min": 4,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -1439,7 +1439,7 @@
   "dreb": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 0,
   "eff": ""
  }
