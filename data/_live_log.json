@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:35:40+01:00",
+ "at": "2026-11-07T19:36:30+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,7 +9,7 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:58",
+   "clock": "02:17",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "KK Zabok",
-     70,
+     73,
      11
     ]
    ]
@@ -31,8 +31,8 @@
   {
    "game": "g20261107obr",
    "src": "ACB Live",
-   "period": 3,
-   "clock": "00:02",
+   "period": 4,
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     52,
+     54,
      13
     ],
     [
