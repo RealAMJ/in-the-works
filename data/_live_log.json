@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:04:47+01:00",
+ "at": "2026-11-07T20:05:44+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     62,
+     66,
      13
     ],
     [
      "",
-     90,
+     94,
      11
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:49",
+   "clock": "18:13",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Telekom Baskets Bonn",
-     4,
+     2,
      11
     ],
     [
