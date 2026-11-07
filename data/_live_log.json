@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:08:16+01:00",
+ "at": "2026-11-07T19:12:17+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,17 +9,17 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "06:09",
+   "clock": "04:18",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     41,
+     46,
      12
     ],
     [
      "KK Zabok",
-     44,
+     50,
      11
     ]
    ]
@@ -31,13 +31,13 @@
   {
    "game": "g20261107obr",
    "src": "ACB Live",
-   "period": 1,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "08:07",
    "done": false,
    "teams": [
     [
      "Kids&Us Manresa",
-     35,
+     38,
      12
     ],
     [
@@ -60,12 +60,12 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     16,
+     20,
      13
     ],
     [
      "",
-     22,
+     32,
      11
     ]
    ]
