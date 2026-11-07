@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:26:56+01:00",
+ "at": "2026-11-07T18:27:47+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -32,17 +32,17 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "00:52",
+   "clock": "00:13",
    "done": false,
    "teams": [
     [
      "Kids&Us Manresa",
-     14,
+     16,
      12
     ],
     [
      "Monbus Obradoiro",
-     16,
+     19,
      12
     ]
    ]
