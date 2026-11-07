@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T22:01:31+01:00",
+ "at": "2026-11-07T22:02:24+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -21,29 +21,6 @@
      "East Carolina Pirates",
      57,
      14
-    ]
-   ]
-  },
-  {
-   "game": "g20261107bra",
-   "checking": "easyCredit BBL"
-  },
-  {
-   "game": "g20261107bra",
-   "src": "easyCredit BBL",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Telekom Baskets Bonn",
-     97,
-     11
-    ],
-    [
-     "Basketball L\u00f6wen Braunschweig",
-     87,
-     11
     ]
    ]
   },
