@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T22:29:32+01:00",
+ "at": "2026-11-07T22:30:21+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -9,7 +9,7 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:19",
+   "clock": "01:09",
    "done": false,
    "teams": [
     [
@@ -21,29 +21,6 @@
      "East Carolina Pirates",
      71,
      14
-    ]
-   ]
-  },
-  {
-   "game": "g20261107ovi",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "g20261107ovi",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "ALIMERKA OVIEDO BALONCESTO",
-     70,
-     10
-    ],
-    [
-     "CAJASOL COTO C\u00d3RDOBA",
-     63,
-     10
     ]
    ]
   }
