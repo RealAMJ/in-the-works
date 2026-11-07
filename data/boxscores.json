@@ -1488,6 +1488,28 @@
   "eff": ""
  },
  {
+  "line_id": "g20261107obr-lundqvist",
+  "game_id": "g20261107obr",
+  "player": "Olle Lundqvist",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ACB Live (not in the box score)",
+  "note": "DNP",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
+ },
+ {
   "line_id": "g20261107uncw-kermoury",
   "game_id": "g20261107uncw",
   "player": "William Kermoury",

@@ -30089,7 +30089,7 @@
   "ft": "0/0",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30110,7 +30110,7 @@
   "ft": "2/2",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30131,7 +30131,7 @@
   "ft": "1/2",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30152,7 +30152,7 @@
   "ft": "0/0",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30173,7 +30173,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30184,17 +30184,17 @@
   "pos": "",
   "min": 25,
   "pts": 21,
-  "reb": 4,
+  "reb": 5,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "fg": "6/13",
+  "fg": "6/14",
   "three": "5/11",
   "ft": "4/6",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30215,7 +30215,7 @@
   "ft": "0/0",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30236,7 +30236,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30257,7 +30257,7 @@
   "ft": "7/9",
   "pm": 15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30278,7 +30278,7 @@
   "ft": "3/7",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30299,7 +30299,7 @@
   "ft": "8/10",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30320,7 +30320,7 @@
   "ft": "1/2",
   "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30341,7 +30341,7 @@
   "ft": "10/10",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30362,7 +30362,7 @@
   "ft": "0/0",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30383,7 +30383,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30404,7 +30404,7 @@
   "ft": "0/0",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30413,7 +30413,7 @@
   "team": "Monbus Obradoiro",
   "player": "L. Meindl",
   "pos": "",
-  "min": 28,
+  "min": 29,
   "pts": 15,
   "reb": 9,
   "ast": 4,
@@ -30425,7 +30425,7 @@
   "ft": "4/5",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30446,7 +30446,7 @@
   "ft": "8/9",
   "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30467,7 +30467,7 @@
   "ft": "8/8",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30488,7 +30488,7 @@
   "ft": "0/0",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30509,7 +30509,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30518,7 +30518,7 @@
   "team": "Monbus Obradoiro",
   "player": "A. Barcello",
   "pos": "",
-  "min": 32,
+  "min": 33,
   "pts": 12,
   "reb": 5,
   "ast": 0,
@@ -30530,7 +30530,7 @@
   "ft": "0/0",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30551,7 +30551,7 @@
   "ft": "2/2",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -30567,7 +30567,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "1/3",
+  "fg": "1/4",
   "three": "0/1",
   "ft": "1/2",
   "pm": "",
@@ -30602,7 +30602,7 @@
   "team": "UNC Wilmington",
   "player": "Patrick Wessler",
   "pos": "",
-  "min": 14,
+  "min": 15,
   "pts": 8,
   "reb": 13,
   "ast": 2,
@@ -30644,7 +30644,7 @@
   "team": "UNC Wilmington",
   "player": "Xavier Brown",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 1,
   "reb": 0,
   "ast": 2,
@@ -30686,7 +30686,7 @@
   "team": "UNC Wilmington",
   "player": "Tahlan Pettway",
   "pos": "",
-  "min": 12,
+  "min": 13,
   "pts": 5,
   "reb": 0,
   "ast": 1,
@@ -30791,9 +30791,9 @@
   "team": "East Carolina",
   "player": "Maxim Klitschko",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 2,
-  "reb": 1,
+  "reb": 2,
   "ast": 0,
   "stl": 0,
   "blk": 0,
@@ -30833,7 +30833,7 @@
   "team": "East Carolina",
   "player": "Cian Medley",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 9,
   "reb": 1,
   "ast": 4,
@@ -30854,12 +30854,12 @@
   "team": "East Carolina",
   "player": "Brycen Blaine",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 3,
   "reb": 4,
   "ast": 1,
   "stl": 2,
-  "blk": 1,
+  "blk": 2,
   "tov": 1,
   "fg": "1/8",
   "three": "1/7",
