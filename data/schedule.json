@@ -1093,8 +1093,8 @@
   "status": "live",
   "score": "W 56-53",
   "live_feed": "fiba:2893799",
-  "clock": "Q3 00:03",
-  "live_updated": "2026-11-07T19:19:41+01:00"
+  "clock": "End of Q3",
+  "live_updated": "2026-11-07T19:20:32+01:00"
  },
  {
   "game_id": "g20261107obr",
@@ -1109,8 +1109,8 @@
   "status": "live",
   "score": "L 38-46",
   "live_feed": "acb:105429",
-  "clock": "Q3 06:00",
-  "live_updated": "2026-11-07T19:19:42+01:00"
+  "clock": "Q3 05:50",
+  "live_updated": "2026-11-07T19:20:33+01:00"
  },
  {
   "game_id": "g20261107vie",
@@ -1126,7 +1126,7 @@
   "score": "W 42-26",
   "live_feed": "aba:70/26/1",
   "clock": "Q2 ",
-  "live_updated": "2026-11-07T19:19:43+01:00"
+  "live_updated": "2026-11-07T19:20:34+01:00"
  },
  {
   "game_id": "g20261107tor",
