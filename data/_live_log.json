@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T04:39:16+01:00",
+ "at": "2026-11-07T04:40:07+01:00",
  "log": [
   {
    "game": "g20261107isu",
@@ -8,13 +8,13 @@
   {
    "game": "g20261107isu",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:19",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Idaho State Bengals",
-     59,
+     62,
      16
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261107stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:32",
+   "clock": "03:25",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     25,
+     26,
      15
     ],
     [
