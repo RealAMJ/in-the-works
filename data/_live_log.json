@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:47:45+01:00",
+ "at": "2026-11-07T03:48:36+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -32,7 +32,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:07",
+   "clock": "02:46",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "UIC Flames",
-     74,
+     75,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:25",
+   "clock": "18:15",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Wyoming Cowboys",
-     51,
+     53,
      15
     ]
    ]
