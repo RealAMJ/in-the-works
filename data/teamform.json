@@ -5052,5 +5052,33 @@
   "note": "",
   "leaders": "Murić|13|6|2;Hrabar|11|2|0;Dean|10|9|1",
   "source": "ABA League (aba-liga.com)"
+ },
+ {
+  "row_id": "monbus-obradoiro-2026-11-07",
+  "team": "Monbus Obradoiro",
+  "date": "2026-11-07",
+  "competition": "Liga ACB",
+  "opponent": "Kids&Us Manresa",
+  "venue": "Away",
+  "score": "99-100",
+  "result": "L",
+  "top": "Soriano 30 pts, 7 reb",
+  "note": "",
+  "leaders": "Soriano|30|7|1;Childress|23|3|3;Meindl|15|9|4",
+  "source": "ACB Live"
+ },
+ {
+  "row_id": "kidsus-manresa-2026-11-07",
+  "team": "Kids&Us Manresa",
+  "date": "2026-11-07",
+  "competition": "Liga ACB",
+  "opponent": "Monbus Obradoiro",
+  "venue": "Home",
+  "score": "100-99",
+  "result": "W",
+  "top": "Notae 33 pts, 8 reb",
+  "note": "",
+  "leaders": "Notae|33|8|0;Bassas|21|5|1;Oriola|17|9|1",
+  "source": "ACB Live"
  }
 ]

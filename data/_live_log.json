@@ -1,29 +1,6 @@
 {
- "at": "2026-11-07T20:56:01+01:00",
+ "at": "2026-11-07T20:59:59+01:00",
  "log": [
-  {
-   "game": "g20261107obr",
-   "checking": "ACB Live"
-  },
-  {
-   "game": "g20261107obr",
-   "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Kids&Us Manresa",
-     100,
-     12
-    ],
-    [
-     "Monbus Obradoiro",
-     99,
-     12
-    ]
-   ]
-  },
   {
    "game": "g20261107uncw",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:22",
+   "clock": "00:40",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "East Carolina Pirates",
-     29,
+     31,
      14
     ]
    ]
