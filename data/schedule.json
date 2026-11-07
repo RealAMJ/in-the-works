@@ -1158,8 +1158,8 @@
   "score": "L 31-33",
   "espn_id": "401918977",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401918977",
-  "clock": "Q1 00:01",
-  "live_updated": "2026-11-07T21:02:34+01:00"
+  "clock": "End of Q1",
+  "live_updated": "2026-11-07T21:03:27+01:00"
  },
  {
   "game_id": "g20261107bra",
@@ -1175,7 +1175,7 @@
   "score": "W 52-48",
   "live_feed": "bbl:2006859",
   "clock": "Halftime",
-  "live_updated": "2026-11-07T21:02:35+01:00"
+  "live_updated": "2026-11-07T21:03:28+01:00"
  },
  {
   "game_id": "g20261107ovi",
