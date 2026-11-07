@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T05:39:01+01:00",
+ "at": "2026-11-07T05:39:51+01:00",
  "log": [
   {
    "game": "g20261107stan",
@@ -9,12 +9,12 @@
    "game": "g20261107stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:41",
+   "clock": "06:26",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     53,
+     54,
      15
     ],
     [
