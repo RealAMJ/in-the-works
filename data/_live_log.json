@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:20:34+01:00",
+ "at": "2026-11-07T19:21:25+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -8,8 +8,8 @@
   {
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
-   "period": 3,
-   "clock": "00:00",
+   "period": 4,
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Kids&Us Manresa",
-     46,
+     48,
      12
     ],
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     26,
+     32,
      13
     ],
     [
