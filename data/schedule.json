@@ -1104,9 +1104,11 @@
   "venue": "Away",
   "competition": "Liga ACB",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "acb:105429"
+  "status": "live",
+  "score": "W 0-0",
+  "live_feed": "acb:105429",
+  "clock": "End of Q1",
+  "live_updated": "2026-11-07T17:44:39+01:00"
  },
  {
   "game_id": "g20261107vie",

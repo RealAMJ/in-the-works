@@ -1,26 +1,49 @@
 {
- "at": "2026-11-07T06:00:08+01:00",
+ "at": "2026-11-07T17:44:39+01:00",
  "log": [
   {
-   "game": "g20261107stan",
-   "checking": "ESPN"
+   "game": "g20261106zab",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261107stan",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261106zab",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "Oakland Golden Grizzlies",
-     63,
-     15
+     "KK Dubrava",
+     0,
+     12
     ],
     [
-     "Stanford Cardinal",
-     81,
-     16
+     "KK Zabok",
+     0,
+     11
+    ]
+   ]
+  },
+  {
+   "game": "g20261107obr",
+   "checking": "ACB Live"
+  },
+  {
+   "game": "g20261107obr",
+   "src": "ACB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Kids&Us Manresa",
+     0,
+     12
+    ],
+    [
+     "Monbus Obradoiro",
+     0,
+     12
     ]
    ]
   }
