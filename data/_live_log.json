@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:39:42+01:00",
+ "at": "2026-11-07T23:40:31+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,7 +9,7 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:22",
+   "clock": "05:07",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "UTSA Roadrunners",
-     26,
+     27,
      15
     ]
    ]
@@ -44,6 +44,29 @@
      "Lipscomb Bisons",
      42,
      16
+    ]
+   ]
+  },
+  {
+   "game": "g20261108unm",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261108unm",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "New Mexico Lobos",
+     0,
+     0
+    ],
+    [
+     "Northern Arizona Lumberjacks",
+     0,
+     0
     ]
    ]
   }
