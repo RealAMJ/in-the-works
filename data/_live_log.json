@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:25:46+01:00",
+ "at": "2026-11-07T03:26:31+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -9,7 +9,7 @@
    "game": "g20261107mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:35",
+   "clock": "16:53",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:30",
+   "clock": "09:44",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:32",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     18,
+     20,
      16
     ],
     [
