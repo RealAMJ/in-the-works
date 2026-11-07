@@ -4906,5 +4906,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "price-2026-11-07",
+  "player": "Julius Price",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "team": "Stanford",
+  "opponent": "Oakland",
+  "venue": "Home",
+  "result": "W 81-63",
+  "min": 34,
+  "pts": 8,
+  "reb": 5,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "4/12",
+  "three": "0/6",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 5,
+  "stl": 0,
+  "blk": 0,
+  "tov": 4,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]

@@ -4968,5 +4968,33 @@
   "note": "",
   "leaders": "Meyer|18|9|2;Sondors|14|5|0;Bennett|13|6|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-07",
+  "team": "Stanford",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Oakland",
+  "venue": "Home",
+  "score": "81-63",
+  "result": "W",
+  "top": "Townsend 25 pts, 8 reb",
+  "note": "",
+  "leaders": "Townsend|25|8|4;Bliss|17|8|1;Cammann|13|2|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "oakland-2026-11-07",
+  "team": "Oakland",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "63-81",
+  "result": "L",
+  "top": "Fields 23 pts, 6 reb",
+  "note": "",
+  "leaders": "Fields|23|6|0;Kassi|11|6|0;Mashhour|9|2|1",
+  "source": "ESPN"
  }
 ]
