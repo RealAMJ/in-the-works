@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:12:17+01:00",
+ "at": "2026-11-07T19:13:11+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,7 +9,7 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "04:18",
+   "clock": "03:41",
    "done": false,
    "teams": [
     [
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Kids&Us Manresa",
-     38,
+     40,
      12
     ],
     [
