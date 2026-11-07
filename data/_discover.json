@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T17:58:40+01:00",
+ "at": "2026-11-07T18:06:09+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 358,
+   "answered": 359,
    "sample": [
     [
      2949101,
@@ -34,6 +34,13 @@
      [
       "N.C. Central ",
       "Johnson C. Smith "
+     ]
+    ],
+    [
+     2949111,
+     [
+      "North Fox North Fox",
+      "US Heffingen US Heffingen"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "SKS Fulimpex Starogard Gdański ",
       "OPTeam Resovia Rzeszów "
-     ]
-    ],
-    [
-     2949123,
-     [
-      "GKS Tychy ",
-      "WKK Active Hotel Wrocław "
      ]
     ]
    ]
