@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:28:36+01:00",
+ "at": "2026-11-07T18:29:25+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,12 +9,12 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "06:30",
+   "clock": "06:17",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     20,
+     21,
      12
     ],
     [
