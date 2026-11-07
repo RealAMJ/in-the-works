@@ -4932,5 +4932,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "babic-2026-11-07",
+  "player": "Luka Babic",
+  "date": "2026-11-07",
+  "competition": "Croatian Premier League",
+  "team": "KK Zabok",
+  "opponent": "KK Dubrava",
+  "venue": "Away",
+  "result": "L 75-81",
+  "min": 35,
+  "pts": 18,
+  "reb": 6,
+  "ast": 8,
+  "source": "FIBA LiveStats",
+  "fg": "7/15",
+  "three": "0/3",
+  "ft": "4/7",
+  "oreb": 2,
+  "dreb": 4,
+  "stl": 2,
+  "blk": 0,
+  "tov": 1,
+  "pf": 3,
+  "pm": -5,
+  "eff": ""
  }
 ]

@@ -4996,5 +4996,33 @@
   "note": "",
   "leaders": "Fields|23|6|0;Kassi|11|6|0;Mashhour|9|2|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "kk-zabok-2026-11-07",
+  "team": "KK Zabok",
+  "date": "2026-11-07",
+  "competition": "Croatian Premier League",
+  "opponent": "KK Dubrava",
+  "venue": "Away",
+  "score": "75-81",
+  "result": "L",
+  "top": "Šabić 19 pts, 3 reb",
+  "note": "",
+  "leaders": "Šabić|19|3|2;Babic|18|6|8;Ogrizović|8|3|3;Lisica|8|1|0;Cinac|8|4|1;Črnjević|8|3|4",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "kk-dubrava-2026-11-07",
+  "team": "KK Dubrava",
+  "date": "2026-11-07",
+  "competition": "Croatian Premier League",
+  "opponent": "KK Zabok",
+  "venue": "Home",
+  "score": "81-75",
+  "result": "W",
+  "top": "Uljarević 23 pts, 4 reb",
+  "note": "",
+  "leaders": "Uljarević|23|4|5;Paić|19|3|3;Klepo|19|7|7",
+  "source": "FIBA LiveStats"
  }
 ]

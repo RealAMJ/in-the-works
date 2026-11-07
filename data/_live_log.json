@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:51:05+01:00",
+ "at": "2026-11-07T19:54:10+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,17 +9,17 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 4,
-   "clock": "05:56",
+   "clock": "04:31",
    "done": false,
    "teams": [
     [
      "Kids&Us Manresa",
-     61,
+     63,
      12
     ],
     [
      "Monbus Obradoiro",
-     52,
+     57,
      12
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "00:00",
+   "clock": "09:18",
    "done": false,
    "teams": [
     [
