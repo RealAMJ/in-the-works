@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T21:57:07+01:00",
+ "at": "2026-11-07T22:01:31+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -9,17 +9,17 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:00",
+   "clock": "08:24",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     50,
+     52,
      15
     ],
     [
      "East Carolina Pirates",
-     50,
+     57,
      14
     ]
    ]
@@ -32,8 +32,8 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "00:15",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Telekom Baskets Bonn",
