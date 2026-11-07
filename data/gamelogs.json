@@ -4958,5 +4958,31 @@
   "pf": 3,
   "pm": -5,
   "eff": ""
+ },
+ {
+  "row_id": "njie-2026-11-07",
+  "player": "Barra Njie",
+  "date": "2026-11-07",
+  "competition": "ABA League",
+  "team": "BC Vienna",
+  "opponent": "Perspektiva Ilirija",
+  "venue": "Away",
+  "result": "W 74-60",
+  "min": 27,
+  "pts": 8,
+  "reb": 1,
+  "ast": 6,
+  "source": "ABA League (aba-liga.com)",
+  "fg": "4/9",
+  "three": "0/1",
+  "ft": "0/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 1,
+  "tov": 1,
+  "pf": 3,
+  "pm": 5,
+  "eff": ""
  }
 ]

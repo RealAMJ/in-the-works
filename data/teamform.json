@@ -5024,5 +5024,33 @@
   "note": "",
   "leaders": "Uljarević|23|4|5;Paić|19|3|3;Klepo|19|7|7",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "bc-vienna-2026-11-07",
+  "team": "BC Vienna",
+  "date": "2026-11-07",
+  "competition": "ABA League",
+  "opponent": "Perspektiva Ilirija",
+  "venue": "Away",
+  "score": "74-60",
+  "result": "W",
+  "top": "Sherfield 20 pts, 2 reb",
+  "note": "",
+  "leaders": "Sherfield|20|2|8;Jovanović|17|14|1;Langović|8|1|0;Njie|8|1|6;Novaković|8|7|3",
+  "source": "ABA League (aba-liga.com)"
+ },
+ {
+  "row_id": "perspektiva-ilirija-2026-11-07",
+  "team": "Perspektiva Ilirija",
+  "date": "2026-11-07",
+  "competition": "ABA League",
+  "opponent": "BC Vienna",
+  "venue": "Home",
+  "score": "60-74",
+  "result": "L",
+  "top": "Murić 13 pts, 6 reb",
+  "note": "",
+  "leaders": "Murić|13|6|2;Hrabar|11|2|0;Dean|10|9|1",
+  "source": "ABA League (aba-liga.com)"
  }
 ]
