@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:18:17+01:00",
+ "at": "2026-11-07T23:19:07+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,7 +9,7 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:38",
+   "clock": "14:30",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:10",
+   "clock": "12:28",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Lipscomb Bisons",
-     20,
+     22,
      16
     ]
    ]
