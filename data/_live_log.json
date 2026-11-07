@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:39:44+01:00",
+ "at": "2026-11-07T03:40:33+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -9,7 +9,7 @@
    "game": "g20261107mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:35",
+   "clock": "12:42",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:16",
+   "clock": "04:54",
    "done": false,
    "teams": [
     [
@@ -67,6 +67,29 @@
      "Wyoming Cowboys",
      44,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261107stan",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107stan",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Stanford Cardinal",
+     0,
+     0
+    ],
+    [
+     "Oakland Golden Grizzlies",
+     0,
+     0
     ]
    ]
   }
