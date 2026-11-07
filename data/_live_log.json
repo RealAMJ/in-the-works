@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:20:13+01:00",
+ "at": "2026-11-07T03:21:05+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -32,17 +32,17 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:29",
+   "clock": "11:56",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     36,
+     39,
      15
     ],
     [
      "UIC Flames",
-     50,
+     52,
      16
     ]
    ]
