@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:19:58+01:00",
+ "at": "2026-11-07T20:23:03+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -8,13 +8,13 @@
   {
    "game": "g20261107obr",
    "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "04:35",
    "done": false,
    "teams": [
     [
      "Kids&Us Manresa",
-     73,
+     75,
      12
     ],
     [
@@ -31,13 +31,13 @@
   {
    "game": "g20261107vie",
    "src": "ABA League (aba-liga.com)",
-   "period": 3,
+   "period": 4,
    "clock": "",
    "done": false,
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     86,
+     90,
      13
     ],
     [
@@ -55,17 +55,17 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:07",
+   "clock": "11:21",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     19,
+     21,
      15
     ],
     [
      "East Carolina Pirates",
-     10,
+     12,
      14
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "02:06",
+   "clock": "00:02",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     29,
+     35,
      11
     ]
    ]

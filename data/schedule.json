@@ -1108,10 +1108,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "W 73-73",
+  "score": "L 73-75",
   "live_feed": "acb:105429",
-  "clock": "End of Q4",
-  "live_updated": "2026-11-07T20:19:54+01:00"
+  "clock": "Q1 04:35",
+  "live_updated": "2026-11-07T20:22:58+01:00"
  },
  {
   "game_id": "g20261107vie",
@@ -1124,10 +1124,10 @@
   "competition": "ABA League",
   "note": "In Ljubljana",
   "status": "live",
-  "score": "W 118-86",
+  "score": "W 118-90",
   "live_feed": "aba:70/26/1",
-  "clock": "Q3 ",
-  "live_updated": "2026-11-07T20:19:56+01:00"
+  "clock": "Q4 ",
+  "live_updated": "2026-11-07T20:23:00+01:00"
  },
  {
   "game_id": "g20261107tor",
@@ -1153,11 +1153,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 19-10",
+  "score": "W 21-12",
   "espn_id": "401918977",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401918977",
-  "clock": "Q1 12:07",
-  "live_updated": "2026-11-07T20:19:56+01:00"
+  "clock": "Q1 11:21",
+  "live_updated": "2026-11-07T20:23:00+01:00"
  },
  {
   "game_id": "g20261107bra",
@@ -1170,10 +1170,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "W 29-22",
+  "score": "W 35-22",
   "live_feed": "bbl:2006859",
-  "clock": "Q1 02:06",
-  "live_updated": "2026-11-07T20:19:57+01:00"
+  "clock": "Q1 00:02",
+  "live_updated": "2026-11-07T20:23:02+01:00"
  },
  {
   "game_id": "g20261107ovi",
