@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T04:02:00+01:00",
+ "at": "2026-11-07T04:02:42+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "UConn Huskies",
-     69,
+     71,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:10",
+   "clock": "12:53",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wyoming Cowboys",
-     62,
+     64,
      15
     ]
    ]
@@ -54,19 +54,19 @@
   {
    "game": "g20261107stan",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:43",
    "done": false,
    "teams": [
     [
-     "Stanford Cardinal",
-     0,
-     0
-    ],
-    [
      "Oakland Golden Grizzlies",
      0,
-     0
+     15
+    ],
+    [
+     "Stanford Cardinal",
+     0,
+     16
     ]
    ]
   }
