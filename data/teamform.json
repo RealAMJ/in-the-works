@@ -4856,5 +4856,33 @@
   "note": "",
   "leaders": "Lin|20|0|4;Payne|16|1|2;Compton|13|4|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "youngstown-state-2026-11-07",
+  "team": "Youngstown State",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Ohio State",
+  "venue": "Away",
+  "score": "65-89",
+  "result": "L",
+  "top": "Moupadele 16 pts, 3 reb",
+  "note": "",
+  "leaders": "Moupadele|16|3|0;Aekins|13|5|5;Holmström|12|2|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "ohio-state-2026-11-07",
+  "team": "Ohio State",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Youngstown State",
+  "venue": "Home",
+  "score": "89-65",
+  "result": "W",
+  "top": "Mobley 25 pts, 3 reb",
+  "note": "",
+  "leaders": "Mobley|25|3|4;Jelavic|21|9|1;Bynum|15|8|1",
+  "source": "ESPN"
  }
 ]

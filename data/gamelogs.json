@@ -4802,5 +4802,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "holmström-2026-11-07",
+  "player": "Linus Holmström",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "team": "Youngstown State",
+  "opponent": "Ohio State",
+  "venue": "Away",
+  "result": "L 65-89",
+  "min": 29,
+  "pts": 12,
+  "reb": 2,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "4/10",
+  "three": "4/10",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
