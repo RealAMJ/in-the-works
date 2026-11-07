@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:38:53+01:00",
+ "at": "2026-11-07T23:39:42+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,7 +9,7 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:07",
+   "clock": "05:22",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "UTSA Roadrunners",
-     24,
+     26,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:18",
+   "clock": "03:43",
    "done": false,
    "teams": [
     [
