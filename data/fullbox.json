@@ -27767,7 +27767,7 @@
   "team": "Robert Morris",
   "player": "KC Ugwuakazi",
   "pos": "",
-  "min": 26,
+  "min": 27,
   "pts": 10,
   "reb": 4,
   "ast": 2,
@@ -27779,7 +27779,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27800,7 +27800,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27821,7 +27821,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27842,7 +27842,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27863,11 +27863,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-0-7",
+  "row_id": "g20261107rmu-0-5",
   "game_id": "g20261107rmu",
   "team": "Robert Morris",
   "player": "Samuel Obenjo",
@@ -27884,11 +27884,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-0-12",
+  "row_id": "g20261107rmu-0-6",
   "game_id": "g20261107rmu",
   "team": "Robert Morris",
   "player": "Will Occomy",
@@ -27905,11 +27905,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-0-14",
+  "row_id": "g20261107rmu-0-8",
   "game_id": "g20261107rmu",
   "team": "Robert Morris",
   "player": "Darius Livingston",
@@ -27926,7 +27926,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27947,7 +27947,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27968,7 +27968,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27989,7 +27989,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28010,7 +28010,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28031,7 +28031,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28052,16 +28052,16 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-1-7",
+  "row_id": "g20261107rmu-1-6",
   "game_id": "g20261107rmu",
   "team": "UIC",
   "player": "Nano Barrantes",
   "pos": "",
-  "min": 3,
+  "min": 4,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -28073,11 +28073,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-1-8",
+  "row_id": "g20261107rmu-1-7",
   "game_id": "g20261107rmu",
   "team": "UIC",
   "player": "Lucas Scroggins",
@@ -28094,11 +28094,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-1-10",
+  "row_id": "g20261107rmu-1-8",
   "game_id": "g20261107rmu",
   "team": "UIC",
   "player": "Mario Wooden Jr.",
@@ -28115,16 +28115,16 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-1-11",
+  "row_id": "g20261107rmu-1-9",
   "game_id": "g20261107rmu",
   "team": "UIC",
   "player": "Elijah Garrett",
   "pos": "",
-  "min": 15,
+  "min": 16,
   "pts": 4,
   "reb": 2,
   "ast": 1,
@@ -28136,11 +28136,11 @@
   "ft": "2/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107rmu-1-14",
+  "row_id": "g20261107rmu-1-10",
   "game_id": "g20261107rmu",
   "team": "UIC",
   "player": "Benny Gealer",
@@ -28157,7 +28157,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
