@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T00:28:12+01:00",
+ "at": "2026-11-08T00:29:02+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -32,12 +32,12 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:12",
+   "clock": "10:32",
    "done": false,
    "teams": [
     [
      "SIU Edwardsville Cougars",
-     54,
+     56,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261108unm",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:20",
+   "clock": "09:56",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "New Mexico Lobos",
-     19,
+     21,
      13
     ]
    ]
