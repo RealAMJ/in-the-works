@@ -4984,5 +4984,31 @@
   "pf": 3,
   "pm": 5,
   "eff": ""
+ },
+ {
+  "row_id": "bangala-2026-11-07",
+  "player": "Zaba Bangala",
+  "date": "2026-11-07",
+  "competition": "BBL",
+  "team": "Löwen Braunschweig",
+  "opponent": "Telekom Baskets Bonn",
+  "venue": "Away",
+  "result": "L 87-97",
+  "min": 22,
+  "pts": 3,
+  "reb": 3,
+  "ast": 1,
+  "source": "easyCredit BBL",
+  "fg": "1/2",
+  "three": "0/0",
+  "ft": "1/2",
+  "oreb": 1,
+  "dreb": 2,
+  "stl": 2,
+  "blk": 0,
+  "tov": 2,
+  "pf": 3,
+  "pm": -4,
+  "eff": ""
  }
 ]

@@ -5080,5 +5080,33 @@
   "note": "",
   "leaders": "Notae|33|8|0;Bassas|21|5|1;Oriola|17|9|1",
   "source": "ACB Live"
+ },
+ {
+  "row_id": "lowen-braunschweig-2026-11-07",
+  "team": "Löwen Braunschweig",
+  "date": "2026-11-07",
+  "competition": "BBL",
+  "opponent": "Telekom Baskets Bonn",
+  "venue": "Away",
+  "score": "87-97",
+  "result": "L",
+  "top": "Askew 20 pts, 1 reb",
+  "note": "",
+  "leaders": "Askew|20|1|2;Zylka|15|3|1;Edwards|15|1|1",
+  "source": "easyCredit BBL"
+ },
+ {
+  "row_id": "telekom-baskets-bonn-2026-11-07",
+  "team": "Telekom Baskets Bonn",
+  "date": "2026-11-07",
+  "competition": "BBL",
+  "opponent": "Löwen Braunschweig",
+  "venue": "Home",
+  "score": "97-87",
+  "result": "W",
+  "top": "Foster 26 pts, 3 reb",
+  "note": "",
+  "leaders": "Foster|26|3|0;Kessens|15|5|0;Comithier|14|1|1",
+  "source": "easyCredit BBL"
  }
 ]
