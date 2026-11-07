@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:01:10+01:00",
+ "at": "2026-11-07T18:01:59+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,17 +9,17 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "09:42",
+   "clock": "09:30",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     0,
+     2,
      12
     ],
     [
      "KK Zabok",
-     0,
+     1,
      11
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "00:00",
+   "clock": "09:58",
    "done": false,
    "teams": [
     [
