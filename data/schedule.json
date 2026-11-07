@@ -1032,11 +1032,11 @@
   "competition": "NCAA",
   "note": "At TD Garden, Boston (Naismith HOF Series)",
   "status": "live",
-  "score": "L 64-76",
+  "score": "L 64-78",
   "espn_id": "401920685",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920685",
   "clock": "Q2 04:08",
-  "live_updated": "2026-11-07T04:13:26+01:00"
+  "live_updated": "2026-11-07T04:14:17+01:00"
  },
  {
   "game_id": "g20261107rmu",
@@ -1067,11 +1067,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 37-73",
+  "score": "L 40-73",
   "espn_id": "401922021",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922021",
-  "clock": "Q2 09:37",
-  "live_updated": "2026-11-07T04:13:26+01:00"
+  "clock": "Q2 08:58",
+  "live_updated": "2026-11-07T04:14:17+01:00"
  },
  {
   "game_id": "g20261107stan",
@@ -1084,11 +1084,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 7-11",
+  "score": "L 9-11",
   "espn_id": "401921727",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921727",
-  "clock": "Q1 13:50",
-  "live_updated": "2026-11-07T04:13:26+01:00"
+  "clock": "Q1 13:02",
+  "live_updated": "2026-11-07T04:14:17+01:00"
  },
  {
   "game_id": "g20261107obr",

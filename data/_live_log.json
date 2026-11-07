@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T04:13:26+01:00",
+ "at": "2026-11-07T04:14:17+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "UConn Huskies",
-     76,
+     78,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:37",
+   "clock": "08:58",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     37,
+     40,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261107stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:50",
+   "clock": "13:02",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Stanford Cardinal",
-     7,
+     9,
      16
     ]
    ]
