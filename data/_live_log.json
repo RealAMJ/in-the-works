@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:07:53+01:00",
+ "at": "2026-11-07T03:08:45+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -32,7 +32,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:35",
+   "clock": "15:21",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:07",
+   "clock": "04:55",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Wyoming Cowboys",
-     23,
+     25,
      15
     ]
    ]
