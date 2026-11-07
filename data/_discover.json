@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T19:40:02+01:00",
+ "at": "2026-11-07T19:47:22+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 363,
+   "answered": 364,
    "sample": [
     [
      2949101,
@@ -58,6 +58,13 @@
      ]
     ],
     [
+     2949110,
+     [
+      "AB Contern AB Contern",
+      "BC Mess BC Mess"
+     ]
+    ],
+    [
      2949111,
      [
       "North Fox North Fox",
@@ -83,13 +90,6 @@
      [
       "Lotto AZS UMCS Lublin ",
       "SKK Polonia Warszawa "
-     ]
-    ],
-    [
-     2949118,
-     [
-      "Isands JTEC Wichoś Jelenia Góra ",
-      "Pro-Network Enea AJP Gorzów Wlkp. "
      ]
     ]
    ]
