@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:46:35+01:00",
+ "at": "2026-11-07T23:47:24+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -32,12 +32,12 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:37",
+   "clock": "01:28",
    "done": false,
    "teams": [
     [
      "SIU Edwardsville Cougars",
-     31,
+     33,
      15
     ],
     [
