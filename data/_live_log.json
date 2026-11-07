@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T04:08:15+01:00",
+ "at": "2026-11-07T04:09:05+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -9,17 +9,17 @@
    "game": "g20261107mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:48",
+   "clock": "05:26",
    "done": false,
    "teams": [
     [
      "UConn Huskies",
-     73,
+     75,
      15
     ],
     [
      "Michigan Wolverines",
-     59,
+     61,
      17
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:41",
+   "clock": "11:37",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261107stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:20",
+   "clock": "14:26",
    "done": false,
    "teams": [
     [
      "Oakland Golden Grizzlies",
-     8,
+     10,
      15
     ],
     [
