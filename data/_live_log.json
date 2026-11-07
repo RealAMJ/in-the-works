@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:40:54+01:00",
+ "at": "2026-11-07T20:45:09+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,7 +9,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "00:18",
+   "clock": "04:50",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Monbus Obradoiro",
-     86,
+     88,
      12
     ]
    ]
@@ -32,18 +32,18 @@
    "game": "g20261107vie",
    "src": "ABA League (aba-liga.com)",
    "period": 4,
-   "clock": "",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
-     "Perspektiva Ilirija BC Vienna",
-     116,
-     13
+     "Perspektiva Ilirija",
+     60,
+     11
     ],
     [
-     "",
-     142,
-     11
+     "BC Vienna",
+     74,
+     10
     ]
    ]
   },
@@ -55,12 +55,12 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:54",
+   "clock": "05:12",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     26,
+     30,
      15
     ],
     [
@@ -78,17 +78,17 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "03:46",
+   "clock": "02:14",
    "done": false,
    "teams": [
     [
      "Telekom Baskets Bonn",
-     40,
+     42,
      11
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     48,
+     52,
      11
     ]
    ]
