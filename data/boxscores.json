@@ -1337,7 +1337,7 @@
   "line_id": "g20261107ysu-holmstrom",
   "game_id": "g20261107ysu",
   "player": "Linus Holmström",
-  "min": 21,
+  "min": 22,
   "pts": 9,
   "reb": 1,
   "ast": 3,
@@ -1373,7 +1373,7 @@
   "dreb": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 0,
   "eff": ""
  },
