@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:36:30+01:00",
+ "at": "2026-11-07T19:40:09+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,17 +9,17 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:17",
+   "clock": "01:05",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     67,
+     70,
      12
     ],
     [
      "KK Zabok",
-     73,
+     75,
      11
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 4,
-   "clock": "10:00",
+   "clock": "09:42",
    "done": false,
    "teams": [
     [
@@ -60,12 +60,58 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     54,
+     56,
      13
     ],
     [
      "",
-     58,
+     64,
+     11
+    ]
+   ]
+  },
+  {
+   "game": "g20261107uncw",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107uncw",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "East Carolina Pirates",
+     0,
+     0
+    ],
+    [
+     "UNC Wilmington Seahawks",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261107bra",
+   "checking": "easyCredit BBL"
+  },
+  {
+   "game": "g20261107bra",
+   "src": "easyCredit BBL",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Telekom Baskets Bonn",
+     0,
+     11
+    ],
+    [
+     "Basketball L\u00f6wen Braunschweig",
+     0,
      11
     ]
    ]
