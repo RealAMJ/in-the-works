@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T03:55:22+01:00",
+ "at": "2026-11-07T03:56:13+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -25,29 +25,6 @@
    ]
   },
   {
-   "game": "g20261107rmu",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261107rmu",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Robert Morris Colonials",
-     56,
-     15
-    ],
-    [
-     "UIC Flames",
-     79,
-     16
-    ]
-   ]
-  },
-  {
    "game": "g20261107isu",
    "checking": "ESPN"
   },
@@ -55,17 +32,17 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:56",
+   "clock": "15:20",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     24,
+     26,
      16
     ],
     [
      "Wyoming Cowboys",
-     55,
+     57,
      15
     ]
    ]
