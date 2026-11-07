@@ -1466,28 +1466,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261107vie-njie",
-  "game_id": "g20261107vie",
-  "player": "Barra Njie",
-  "min": 14,
-  "pts": 2,
-  "reb": 1,
-  "ast": 5,
-  "fg": "1/4",
-  "three": "0/1",
-  "ft": "0/2",
-  "pm": -1,
-  "source": "ABA League (aba-liga.com)",
-  "note": "live",
-  "oreb": 0,
-  "dreb": 1,
-  "stl": 0,
-  "blk": 1,
-  "tov": 1,
-  "pf": 1,
-  "eff": ""
- },
- {
   "line_id": "g20261107bra-bangala",
   "game_id": "g20261107bra",
   "player": "Zaba Bangala",
@@ -1507,6 +1485,28 @@
   "blk": 0,
   "tov": 0,
   "pf": 0,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261107vie-njie",
+  "game_id": "g20261107vie",
+  "player": "Barra Njie",
+  "min": 14,
+  "pts": 2,
+  "reb": 1,
+  "ast": 5,
+  "fg": "1/4",
+  "three": "0/1",
+  "ft": "0/2",
+  "pm": -1,
+  "source": "ABA League (aba-liga.com)",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 1,
+  "tov": 1,
+  "pf": 1,
   "eff": ""
  }
 ]

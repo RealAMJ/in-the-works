@@ -29667,7 +29667,7 @@
   "fg": "1/3",
   "three": "1/2",
   "ft": "2/2",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29730,7 +29730,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29751,7 +29751,7 @@
   "fg": "3/8",
   "three": "2/6",
   "ft": "1/2",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29826,7 +29826,7 @@
   "player": "N. Ongenda",
   "pos": "",
   "min": 14,
-  "pts": 4,
+  "pts": 5,
   "reb": 4,
   "ast": 1,
   "stl": 0,
@@ -29834,8 +29834,8 @@
   "tov": 1,
   "fg": "1/1",
   "three": "0/0",
-  "ft": "2/6",
-  "pm": -3,
+  "ft": "3/7",
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29877,7 +29877,7 @@
   "fg": "1/6",
   "three": "0/4",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29888,7 +29888,7 @@
   "team": "Monbus Obradoiro",
   "player": "B. Childress",
   "pos": "",
-  "min": 24,
+  "min": 25,
   "pts": 12,
   "reb": 1,
   "ast": 1,
@@ -29898,7 +29898,7 @@
   "fg": "3/10",
   "three": "2/7",
   "ft": "4/4",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29919,7 +29919,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29940,7 +29940,7 @@
   "fg": "1/8",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29982,7 +29982,7 @@
   "fg": "4/8",
   "three": "1/3",
   "ft": "2/3",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -30003,7 +30003,7 @@
   "fg": "6/8",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
