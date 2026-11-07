@@ -29730,7 +29730,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29751,7 +29751,7 @@
   "fg": "3/6",
   "three": "2/4",
   "ft": "1/2",
-  "pm": 4,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29805,7 +29805,7 @@
   "player": "JD Notae",
   "pos": "",
   "min": 22,
-  "pts": 17,
+  "pts": 18,
   "reb": 5,
   "ast": 0,
   "stl": 2,
@@ -29813,8 +29813,8 @@
   "tov": 4,
   "fg": "5/13",
   "three": "4/9",
-  "ft": "3/5",
-  "pm": 12,
+  "ft": "4/6",
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29835,7 +29835,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "2/5",
-  "pm": -2,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29877,7 +29877,7 @@
   "fg": "1/6",
   "three": "0/4",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29898,7 +29898,7 @@
   "fg": "2/9",
   "three": "1/6",
   "ft": "4/4",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29940,7 +29940,7 @@
   "fg": "1/8",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -29982,7 +29982,7 @@
   "fg": "4/8",
   "three": "1/3",
   "ft": "2/3",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -30003,7 +30003,7 @@
   "fg": "5/7",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -30108,7 +30108,7 @@
   "fg": "1/4",
   "three": "0/1",
   "ft": "2/2",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
