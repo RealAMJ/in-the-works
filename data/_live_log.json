@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:23:03+01:00",
+ "at": "2026-11-07T20:23:56+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,7 +9,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "04:35",
+   "clock": "03:59",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Monbus Obradoiro",
-     73,
+     75,
      12
     ]
    ]
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Perspektiva Ilirija BC Vienna",
-     90,
+     94,
      13
     ],
     [
      "",
-     118,
+     120,
      11
     ]
    ]
