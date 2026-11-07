@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:38:04+01:00",
+ "at": "2026-11-07T23:38:53+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,12 +9,12 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:40",
+   "clock": "06:07",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     25,
+     28,
      17
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:44",
+   "clock": "04:18",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Lipscomb Bisons",
-     39,
+     42,
      16
     ]
    ]
