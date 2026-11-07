@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T22:32:51+01:00",
+ "at": "2026-11-07T22:37:04+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -9,17 +9,17 @@
    "game": "g20261107uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:38",
+   "clock": "00:11",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     76,
+     78,
      15
     ],
     [
      "East Carolina Pirates",
-     73,
+     75,
      14
     ]
    ]

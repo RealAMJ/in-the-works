@@ -5108,5 +5108,33 @@
   "note": "",
   "leaders": "Foster|26|3|0;Kessens|15|5|0;Comithier|14|1|1",
   "source": "easyCredit BBL"
+ },
+ {
+  "row_id": "oviedo-2026-11-07",
+  "team": "Oviedo",
+  "date": "2026-11-07",
+  "competition": "Primera FEB",
+  "opponent": "Córdoba",
+  "venue": "Home",
+  "score": "70-63",
+  "result": "W",
+  "top": "Nwaokorie 13 pts, 2 reb",
+  "note": "",
+  "leaders": "Nwaokorie|13|2|0;Hollanders|11|1|1;Brnovic|11|5|0",
+  "source": "FEB Live"
+ },
+ {
+  "row_id": "crdoba-2026-11-07",
+  "team": "Córdoba",
+  "date": "2026-11-07",
+  "competition": "Primera FEB",
+  "opponent": "Oviedo",
+  "venue": "Away",
+  "score": "63-70",
+  "result": "L",
+  "top": "Nugu 13 pts, 1 reb",
+  "note": "",
+  "leaders": "Nugu|13|1|0;Quintillá|11|2|0;Pompido|10|8|0",
+  "source": "FEB Live"
  }
 ]

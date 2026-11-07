@@ -5010,5 +5010,31 @@
   "pf": 3,
   "pm": -4,
   "eff": ""
+ },
+ {
+  "row_id": "terins-2026-11-07",
+  "player": "Felix Terins",
+  "date": "2026-11-07",
+  "competition": "Primera FEB",
+  "team": "Oviedo",
+  "opponent": "Córdoba",
+  "venue": "Home",
+  "result": "W 70-63",
+  "min": 21,
+  "pts": 10,
+  "reb": 3,
+  "ast": 1,
+  "source": "FEB Live",
+  "fg": "3/8",
+  "three": "1/5",
+  "ft": "3/3",
+  "oreb": 1,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "pm": 10,
+  "eff": ""
  }
 ]
