@@ -1359,7 +1359,7 @@
   "line_id": "g20261107mich-cadeau",
   "game_id": "g20261107mich",
   "player": "Elliot Cadeau",
-  "min": 13,
+  "min": 14,
   "pts": 7,
   "reb": 3,
   "ast": 0,
@@ -1407,7 +1407,7 @@
   "pts": 0,
   "reb": 0,
   "ast": 0,
-  "fg": "0/1",
+  "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -1418,7 +1418,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  }
 ]
