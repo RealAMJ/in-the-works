@@ -472,12 +472,12 @@
   "player": "Isak Homelius",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 15.0,
-  "pts": 7.0,
-  "reb": 0.0,
+  "gp": 2,
+  "min": 16.0,
+  "pts": 4.5,
+  "reb": 0.5,
   "ast": 0.0,
-  "note": "Averages from game log (1 games, through 2026-11-03)"
+  "note": "Averages from game log (2 games, through 2026-11-07)"
  },
  {
   "row_id": "jucevicius-ncaa",

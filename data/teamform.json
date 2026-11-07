@@ -4828,5 +4828,33 @@
   "note": "",
   "leaders": "Kljajic|14|1|1;Barro|10|14|0;Parham|9|1|0",
   "source": "FEB Live"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-07",
+  "team": "Eastern Washington",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Oregon",
+  "venue": "Away",
+  "score": "71-98",
+  "result": "L",
+  "top": "Richmond 14 pts, 2 reb",
+  "note": "",
+  "leaders": "Richmond|14|2|2;Miller|13|2|0;Hamilton|10|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "oregon-2026-11-07",
+  "team": "Oregon",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Home",
+  "score": "98-71",
+  "result": "W",
+  "top": "Lin 20 pts, 0 reb",
+  "note": "",
+  "leaders": "Lin|20|0|4;Payne|16|1|2;Compton|13|4|0",
+  "source": "ESPN"
  }
 ]
