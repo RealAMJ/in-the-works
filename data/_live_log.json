@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:23:56+01:00",
+ "at": "2026-11-07T20:24:51+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,7 +9,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "03:59",
+   "clock": "03:09",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "00:02",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
