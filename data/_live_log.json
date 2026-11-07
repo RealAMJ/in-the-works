@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T00:20:05+01:00",
+ "at": "2026-11-08T00:20:55+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -32,7 +32,7 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:53",
+   "clock": "13:02",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Lipscomb Bisons",
-     54,
+     56,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261108unm",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:18",
+   "clock": "12:57",
    "done": false,
    "teams": [
     [
      "Northern Arizona Lumberjacks",
-     7,
+     10,
      15
     ],
     [
