@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T04:01:09+01:00",
+ "at": "2026-11-07T04:02:00+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -32,12 +32,12 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:31",
+   "clock": "13:10",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     30,
+     32,
      16
     ],
     [
