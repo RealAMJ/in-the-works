@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:25:31+01:00",
+ "at": "2026-11-07T23:26:22+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "VMI Keydets",
-     15,
+     16,
      17
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:01",
+   "clock": "10:02",
    "done": false,
    "teams": [
     [
      "SIU Edwardsville Cougars",
-     19,
+     21,
      15
     ],
     [
      "Lipscomb Bisons",
-     26,
+     29,
      16
     ]
    ]
