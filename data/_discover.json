@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T18:46:36+01:00",
+ "at": "2026-11-07T18:53:33+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 362,
+   "answered": 363,
    "sample": [
     [
      2949101,
@@ -34,6 +34,13 @@
      [
       "N.C. Central ",
       "Johnson C. Smith "
+     ]
+    ],
+    [
+     2949105,
+     [
+      "Kordall Steelers Kordall Steelers",
+      "Musel Pikes Musel Pikes"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "Isands JTEC Wichoś Jelenia Góra ",
       "Pro-Network Enea AJP Gorzów Wlkp. "
-     ]
-    ],
-    [
-     2949120,
-     [
-      "Energa Toruń ",
-      "1KS Ślęza Wrocław "
      ]
     ]
    ]
