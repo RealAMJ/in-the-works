@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T01:04:14+01:00",
+ "at": "2026-11-07T01:05:04+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -32,12 +32,12 @@
    "game": "g20261107ysu",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:07",
+   "clock": "06:43",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     19,
+     21,
      14
     ],
     [
