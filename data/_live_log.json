@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T02:24:30+01:00",
+ "at": "2026-11-07T02:25:21+01:00",
  "log": [
   {
    "game": "g20261107ysu",
@@ -32,12 +32,12 @@
    "game": "g20261107mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:17",
+   "clock": "11:07",
    "done": false,
    "teams": [
     [
      "UConn Huskies",
-     15,
+     18,
      15
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:50",
+   "clock": "08:06",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     18,
+     20,
      15
     ],
     [
