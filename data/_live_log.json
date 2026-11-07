@@ -1,29 +1,6 @@
 {
- "at": "2026-11-07T22:44:38+01:00",
+ "at": "2026-11-07T22:45:29+01:00",
  "log": [
-  {
-   "game": "g20261107uncw",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261107uncw",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "UNC Wilmington Seahawks",
-     78,
-     15
-    ],
-    [
-     "East Carolina Pirates",
-     75,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261107vmi",
    "checking": "ESPN"
