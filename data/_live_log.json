@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T23:20:48+01:00",
+ "at": "2026-11-07T23:24:41+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,17 +9,17 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:33",
+   "clock": "11:26",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     11,
+     15,
      17
     ],
     [
      "UTSA Roadrunners",
-     9,
+     14,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261107lip",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:49",
+   "clock": "11:01",
    "done": false,
    "teams": [
     [
      "SIU Edwardsville Cougars",
-     15,
+     19,
      15
     ],
     [
