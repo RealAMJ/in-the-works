@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:58:53+01:00",
+ "at": "2026-11-07T19:03:17+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -8,18 +8,18 @@
   {
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "08:19",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     31,
+     37,
      12
     ],
     [
      "KK Zabok",
-     41,
+     44,
      11
     ]
    ]
@@ -53,11 +53,7 @@
   },
   {
    "game": "g20261107vie",
-   "src": "ABA League (aba-liga.com)",
-   "period": 1,
-   "clock": "",
-   "done": false,
-   "teams": []
+   "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
   }
  ]
 }
