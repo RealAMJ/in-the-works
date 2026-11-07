@@ -5136,5 +5136,33 @@
   "note": "",
   "leaders": "Nugu|13|1|0;Quintillá|11|2|0;Pompido|10|8|0",
   "source": "FEB Live"
+ },
+ {
+  "row_id": "unc-wilmington-2026-11-07",
+  "team": "UNC Wilmington",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "East Carolina",
+  "venue": "Away",
+  "score": "78-75",
+  "result": "W",
+  "top": "Wessler 24 pts, 18 reb",
+  "note": "",
+  "leaders": "Wessler|24|18|3;Luster|21|5|3;Pettway|15|1|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "east-carolina-2026-11-07",
+  "team": "East Carolina",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "UNC Wilmington",
+  "venue": "Home",
+  "score": "75-78",
+  "result": "L",
+  "top": "Medley 23 pts, 2 reb",
+  "note": "",
+  "leaders": "Medley|23|2|12;Best|22|3|0;Watson|11|4|1",
+  "source": "ESPN"
  }
 ]
