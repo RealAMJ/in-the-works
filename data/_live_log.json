@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T02:45:29+01:00",
+ "at": "2026-11-07T02:46:21+01:00",
  "log": [
   {
    "game": "g20261107mich",
@@ -14,12 +14,12 @@
    "teams": [
     [
      "UConn Huskies",
-     29,
+     30,
      15
     ],
     [
      "Michigan Wolverines",
-     25,
+     27,
      17
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261107isu",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:54",
+   "clock": "15:17",
    "done": false,
    "teams": [
     [
