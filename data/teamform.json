@@ -4884,5 +4884,33 @@
   "note": "",
   "leaders": "Mobley|25|3|4;Jelavic|21|9|1;Bynum|15|8|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "robert-morris-2026-11-07",
+  "team": "Robert Morris",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "UIC",
+  "venue": "Away",
+  "score": "56-79",
+  "result": "L",
+  "top": "Ugwuakazi 10 pts, 4 reb",
+  "note": "",
+  "leaders": "Ugwuakazi|10|4|2;Garris|9|1|1;Livingston|9|1|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "uic-2026-11-07",
+  "team": "UIC",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Robert Morris",
+  "venue": "Home",
+  "score": "79-56",
+  "result": "W",
+  "top": "Washington 19 pts, 12 reb",
+  "note": "",
+  "leaders": "Washington|19|12|1;Henderson|16|0|1;Gealer|11|0|6",
+  "source": "ESPN"
  }
 ]
