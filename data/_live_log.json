@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T19:07:11+01:00",
+ "at": "2026-11-07T19:08:16+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -53,7 +53,22 @@
   },
   {
    "game": "g20261107vie",
-   "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
+   "src": "ABA League (aba-liga.com)",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Perspektiva Ilirija BC Vienna",
+     16,
+     13
+    ],
+    [
+     "",
+     22,
+     11
+    ]
+   ]
   }
  ]
 }

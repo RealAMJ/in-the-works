@@ -1094,7 +1094,7 @@
   "score": "W 44-41",
   "live_feed": "fiba:2893799",
   "clock": "Q3 06:09",
-  "live_updated": "2026-11-07T19:06:44+01:00"
+  "live_updated": "2026-11-07T19:08:03+01:00"
  },
  {
   "game_id": "g20261107obr",
@@ -1110,7 +1110,7 @@
   "score": "W 36-35",
   "live_feed": "acb:105429",
   "clock": "End of Q1",
-  "live_updated": "2026-11-07T19:06:45+01:00"
+  "live_updated": "2026-11-07T19:08:04+01:00"
  },
  {
   "game_id": "g20261107vie",
@@ -1122,9 +1122,11 @@
   "venue": "Away",
   "competition": "ABA League",
   "note": "In Ljubljana",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "aba:70/26/1"
+  "status": "live",
+  "score": "W 22-16",
+  "live_feed": "aba:70/26/1",
+  "clock": "Q1 ",
+  "live_updated": "2026-11-07T19:08:16+01:00"
  },
  {
   "game_id": "g20261107tor",
