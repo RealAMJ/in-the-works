@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T20:01:50+01:00",
+ "at": "2026-11-07T20:08:41+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 365,
+   "answered": 366,
    "sample": [
     [
      2949101,
@@ -79,17 +79,17 @@
      ]
     ],
     [
+     2949112,
+     [
+      "Black Frogs Schieren Black Frogs Schieren",
+      "Nitia Bettembourg Nitia Bettembourg"
+     ]
+    ],
+    [
      2949113,
      [
       "PGE Wisła Kraków  ",
       "Lotto MKS Pruszków "
-     ]
-    ],
-    [
-     2949116,
-     [
-      "MB Zagłębie Sosnowiec ",
-      "Widzew Łódź "
      ]
     ]
    ]
