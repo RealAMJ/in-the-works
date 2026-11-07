@@ -4940,5 +4940,33 @@
   "note": "",
   "leaders": "Mullins|23|4|0;Demary|21|7|4;Landrew|14|8|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "idaho-state-2026-11-07",
+  "team": "Idaho State",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Wyoming",
+  "venue": "Away",
+  "score": "62-93",
+  "result": "L",
+  "top": "Morris 17 pts, 1 reb",
+  "note": "",
+  "leaders": "Morris|17|1|2;Dulay|16|0|0;Johnson|7|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "wyoming-2026-11-07",
+  "team": "Wyoming",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "Idaho State",
+  "venue": "Home",
+  "score": "93-62",
+  "result": "W",
+  "top": "Meyer 18 pts, 9 reb",
+  "note": "",
+  "leaders": "Meyer|18|9|2;Sondors|14|5|0;Bennett|13|6|0",
+  "source": "ESPN"
  }
 ]

@@ -4880,5 +4880,31 @@
   "pf": 5,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "amoran-2026-11-07",
+  "player": "Nathan Amoran",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "team": "Idaho State",
+  "opponent": "Wyoming",
+  "venue": "Away",
+  "result": "L 62-93",
+  "min": 18,
+  "pts": 0,
+  "reb": 3,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "0/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 1,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
