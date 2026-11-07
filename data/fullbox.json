@@ -28766,7 +28766,7 @@
   "ft": "5/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28787,7 +28787,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28808,7 +28808,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28829,7 +28829,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28850,7 +28850,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28871,7 +28871,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28892,7 +28892,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -28913,11 +28913,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-0-9",
+  "row_id": "g20261107stan-0-8",
   "game_id": "g20261107stan",
   "team": "Oakland",
   "player": "Deuce Hamilton",
@@ -28934,11 +28934,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-0-11",
+  "row_id": "g20261107stan-0-9",
   "game_id": "g20261107stan",
   "team": "Oakland",
   "player": "Ryder Bradley",
@@ -28955,11 +28955,11 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-0-12",
+  "row_id": "g20261107stan-0-10",
   "game_id": "g20261107stan",
   "team": "Oakland",
   "player": "Brady Swartz",
@@ -28976,11 +28976,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-0-13",
+  "row_id": "g20261107stan-0-11",
   "game_id": "g20261107stan",
   "team": "Oakland",
   "player": "William Kassi",
@@ -28997,11 +28997,11 @@
   "ft": "5/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-0-14",
+  "row_id": "g20261107stan-0-12",
   "game_id": "g20261107stan",
   "team": "Oakland",
   "player": "Hamoudy Mashhour",
@@ -29018,7 +29018,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -29039,7 +29039,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -29060,7 +29060,7 @@
   "ft": "8/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -29081,7 +29081,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -29102,7 +29102,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -29123,11 +29123,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-1-8",
+  "row_id": "g20261107stan-1-5",
   "game_id": "g20261107stan",
   "team": "Stanford",
   "player": "Evan Stinson",
@@ -29144,11 +29144,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-1-10",
+  "row_id": "g20261107stan-1-6",
   "game_id": "g20261107stan",
   "team": "Stanford",
   "player": "Austin Maurer",
@@ -29165,11 +29165,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-1-14",
+  "row_id": "g20261107stan-1-7",
   "game_id": "g20261107stan",
   "team": "Stanford",
   "player": "Anthony Batson Jr.",
@@ -29186,11 +29186,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107stan-1-15",
+  "row_id": "g20261107stan-1-8",
   "game_id": "g20261107stan",
   "team": "Stanford",
   "player": "Christian Bliss",
@@ -29207,7 +29207,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
