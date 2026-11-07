@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T01:20:17+01:00",
+ "at": "2026-11-07T01:21:07+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Eastern Washington Eagles",
-     43,
+     44,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261107ysu",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:36",
+   "clock": "01:06",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     31,
+     33,
      14
     ],
     [
