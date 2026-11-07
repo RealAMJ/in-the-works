@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:30:52+01:00",
+ "at": "2026-11-07T20:31:45+01:00",
  "log": [
   {
    "game": "g20261107obr",
@@ -9,7 +9,7 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 1,
-   "clock": "01:41",
+   "clock": "01:30",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Monbus Obradoiro",
-     77,
+     80,
      12
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261107bra",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "07:36",
+   "clock": "07:16",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     39,
+     41,
      11
     ]
    ]
