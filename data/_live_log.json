@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T18:32:18+01:00",
+ "at": "2026-11-07T18:33:08+01:00",
  "log": [
   {
    "game": "g20261106zab",
@@ -9,12 +9,12 @@
    "game": "g20261106zab",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "05:45",
+   "clock": "05:15",
    "done": false,
    "teams": [
     [
      "KK Dubrava",
-     21,
+     24,
      12
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261107obr",
    "src": "ACB Live",
    "period": 2,
-   "clock": "09:07",
+   "clock": "08:40",
    "done": false,
    "teams": [
     [
      "Kids&Us Manresa",
-     22,
+     25,
      12
     ],
     [
