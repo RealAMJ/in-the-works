@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115youn@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T230000Z
+DTEND:20261115T010000Z
+SUMMARY:Holmström: Youngstown State vs Marshall
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

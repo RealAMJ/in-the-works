@@ -27,4 +27,14 @@ DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114denv@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T210000Z
+DTEND:20261114T230000Z
+SUMMARY:Stumer: Denver vs Wyoming
+DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

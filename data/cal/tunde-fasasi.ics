@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Tunde Fasasi. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115newm@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T030000Z
+DTEND:20261115T050000Z
+SUMMARY:Fasasi: New Mexico at Santa Clara
+DESCRIPTION:NCAA. Players: Tunde Fasasi. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

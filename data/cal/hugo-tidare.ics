@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T000000Z
+DTEND:20261115T020000Z
+SUMMARY:Tidare: Lipscomb at Western Carolina
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

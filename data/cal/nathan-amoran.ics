@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115idah@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T030000Z
+DTEND:20261115T050000Z
+SUMMARY:Amoran: Idaho State at Seattle U
+DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

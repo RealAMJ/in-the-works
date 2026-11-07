@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T000000Z
+DTEND:20261115T020000Z
+SUMMARY:Kermoury: UNC Wilmington vs Louisiana
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
