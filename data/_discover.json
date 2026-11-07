@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T19:54:04+01:00",
+ "at": "2026-11-07T20:01:50+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 364,
+   "answered": 365,
    "sample": [
     [
      2949101,
@@ -41,6 +41,13 @@
      [
       "Kordall Steelers Kordall Steelers",
       "Musel Pikes Musel Pikes"
+     ]
+    ],
+    [
+     2949106,
+     [
+      "Basket Esch Basket Esch",
+      "Arantia Larochette Arantia Larochette"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "MB Zagłębie Sosnowiec ",
       "Widzew Łódź "
-     ]
-    ],
-    [
-     2949117,
-     [
-      "Lotto AZS UMCS Lublin ",
-      "SKK Polonia Warszawa "
      ]
     ]
    ]

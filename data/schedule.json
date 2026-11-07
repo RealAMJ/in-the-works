@@ -1108,10 +1108,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "L 59-64",
+  "score": "L 63-64",
   "live_feed": "acb:105429",
-  "clock": "Q4 03:25",
-  "live_updated": "2026-11-07T19:57:38+01:00"
+  "clock": "Q4 02:08",
+  "live_updated": "2026-11-07T20:01:55+01:00"
  },
  {
   "game_id": "g20261107vie",
@@ -1124,10 +1124,10 @@
   "competition": "ABA League",
   "note": "In Ljubljana",
   "status": "live",
-  "score": "W 74-62",
+  "score": "W 82-62",
   "live_feed": "aba:70/26/1",
   "clock": "Q3 ",
-  "live_updated": "2026-11-07T19:57:40+01:00"
+  "live_updated": "2026-11-07T20:01:57+01:00"
  },
  {
   "game_id": "g20261107tor",
@@ -1171,7 +1171,7 @@
   "score": "W 0-0",
   "live_feed": "bbl:2006859",
   "clock": "Q1 09:18",
-  "live_updated": "2026-11-07T19:57:41+01:00"
+  "live_updated": "2026-11-07T20:01:59+01:00"
  },
  {
   "game_id": "g20261107ovi",
