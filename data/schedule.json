@@ -1091,7 +1091,8 @@
   "competition": "Croatian Premier League",
   "note": "Round 7, at SD Dubrava in Zagreb (date and time from the HKS round 7 schedule)",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2893799"
  },
  {
   "game_id": "g20261107obr",

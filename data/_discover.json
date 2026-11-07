@@ -1,12 +1,12 @@
 {
- "at": "2026-11-07T17:29:45+01:00",
- "found": 0,
+ "at": "2026-11-07T17:37:42+01:00",
+ "found": 1,
  "log": [
   {
    "competition": "Croatian Premier League",
    "seed": 2893787,
    "scanned": 799,
-   "answered": 94,
+   "answered": 95,
    "sample": [
     [
      2893786,
@@ -98,7 +98,7 @@
    "competition": "Orlen Basket Liga",
    "seed": 2949100,
    "scanned": 799,
-   "answered": 357,
+   "answered": 358,
    "sample": [
     [
      2949101,
