@@ -1159,7 +1159,7 @@
   "espn_id": "401918977",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401918977",
   "clock": "End of Q1",
-  "live_updated": "2026-11-07T21:11:21+01:00"
+  "live_updated": "2026-11-07T21:15:19+01:00"
  },
  {
   "game_id": "g20261107bra",
@@ -1172,10 +1172,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "W 58-55",
+  "score": "W 60-57",
   "live_feed": "bbl:2006859",
-  "clock": "Q3 07:16",
-  "live_updated": "2026-11-07T21:11:23+01:00"
+  "clock": "Q3 06:30",
+  "live_updated": "2026-11-07T21:15:21+01:00"
  },
  {
   "game_id": "g20261107ovi",
