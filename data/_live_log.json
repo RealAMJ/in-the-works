@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T22:39:36+01:00",
+ "at": "2026-11-07T22:40:27+01:00",
  "log": [
   {
    "game": "g20261107uncw",
@@ -21,6 +21,52 @@
      "East Carolina Pirates",
      75,
      14
+    ]
+   ]
+  },
+  {
+   "game": "g20261107vmi",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107vmi",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UTSA Roadrunners",
+     0,
+     0
+    ],
+    [
+     "VMI Keydets",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261107lip",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107lip",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Lipscomb Bisons",
+     0,
+     0
+    ],
+    [
+     "SIU Edwardsville Cougars",
+     0,
+     0
     ]
    ]
   }
