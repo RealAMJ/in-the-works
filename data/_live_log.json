@@ -1,29 +1,6 @@
 {
- "at": "2026-11-07T02:07:16+01:00",
+ "at": "2026-11-07T02:08:03+01:00",
  "log": [
-  {
-   "game": "g20261107ewu",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261107ewu",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Eastern Washington Eagles",
-     71,
-     15
-    ],
-    [
-     "Oregon Ducks",
-     98,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261107ysu",
    "checking": "ESPN"
@@ -55,7 +32,7 @@
    "game": "g20261107mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:39",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
@@ -78,7 +55,7 @@
    "game": "g20261107rmu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:00",
+   "clock": "16:38",
    "done": false,
    "teams": [
     [
@@ -88,7 +65,7 @@
     ],
     [
      "UIC Flames",
-     6,
+     8,
      16
     ]
    ]
