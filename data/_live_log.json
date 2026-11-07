@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T01:39:33+01:00",
+ "at": "2026-11-07T01:40:25+01:00",
  "log": [
   {
    "game": "g20261107ewu",
@@ -44,6 +44,52 @@
      "Ohio State Buckeyes",
      38,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261107mich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107mich",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Michigan Wolverines",
+     0,
+     0
+    ],
+    [
+     "UConn Huskies",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261107rmu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261107rmu",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UIC Flames",
+     0,
+     0
+    ],
+    [
+     "Robert Morris Colonials",
+     0,
+     0
     ]
    ]
   }
