@@ -26372,7 +26372,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26393,7 +26393,7 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26414,7 +26414,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26435,7 +26435,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26456,7 +26456,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26477,7 +26477,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26498,7 +26498,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26519,7 +26519,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26540,7 +26540,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26561,7 +26561,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26582,7 +26582,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26603,11 +26603,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-0-13",
+  "row_id": "g20261107ewu-0-12",
   "game_id": "g20261107ewu",
   "team": "Eastern Washington",
   "player": "Maddox Monson",
@@ -26624,7 +26624,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26645,7 +26645,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26666,7 +26666,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26687,7 +26687,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26708,7 +26708,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -26729,11 +26729,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-6",
+  "row_id": "g20261107ewu-1-5",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Dwayne Aristode",
@@ -26750,11 +26750,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-7",
+  "row_id": "g20261107ewu-1-6",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Seven Spurlock",
@@ -26771,11 +26771,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-8",
+  "row_id": "g20261107ewu-1-7",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Tajh Ariza",
@@ -26792,11 +26792,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-9",
+  "row_id": "g20261107ewu-1-8",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Pharaoh Compton",
@@ -26813,11 +26813,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-10",
+  "row_id": "g20261107ewu-1-9",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Sean Stewart",
@@ -26834,11 +26834,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-11",
+  "row_id": "g20261107ewu-1-10",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Wei Lin",
@@ -26855,11 +26855,11 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107ewu-1-13",
+  "row_id": "g20261107ewu-1-11",
   "game_id": "g20261107ewu",
   "team": "Oregon",
   "player": "Jerry Easter II",
@@ -26876,7 +26876,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -27368,13 +27368,13 @@
   "team": "UConn",
   "player": "Na'jai Hines",
   "pos": "",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
