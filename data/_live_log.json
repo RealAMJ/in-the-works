@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T05:28:04+01:00",
+ "at": "2026-11-08T05:28:53+01:00",
  "log": [
   {
    "game": "g20261108uci",
@@ -9,12 +9,12 @@
    "game": "g20261108uci",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:43",
+   "clock": "10:21",
    "done": false,
    "teams": [
     [
      "San Jos\u00e9 State Spartans",
-     50,
+     52,
      14
     ],
     [
