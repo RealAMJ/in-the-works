@@ -33932,7 +33932,7 @@
   "ft": "2/2",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -33953,7 +33953,7 @@
   "ft": "4/5",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -33974,7 +33974,7 @@
   "ft": "1/1",
   "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -33995,7 +33995,7 @@
   "ft": "0/0",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34016,7 +34016,7 @@
   "ft": "4/6",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34037,7 +34037,7 @@
   "ft": "4/6",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34058,7 +34058,7 @@
   "ft": "1/2",
   "pm": 10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34079,7 +34079,7 @@
   "ft": "2/8",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34100,7 +34100,7 @@
   "ft": "0/0",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34121,7 +34121,7 @@
   "ft": "1/2",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34142,7 +34142,7 @@
   "ft": "0/0",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34163,7 +34163,7 @@
   "ft": "3/4",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34184,7 +34184,7 @@
   "ft": "0/0",
   "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34200,12 +34200,12 @@
   "stl": 0,
   "blk": 1,
   "tov": 1,
-  "fg": "3/8",
-  "three": "3/6",
+  "fg": "3/9",
+  "three": "3/7",
   "ft": "0/0",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34216,7 +34216,7 @@
   "pos": "",
   "min": 21,
   "pts": 2,
-  "reb": 4,
+  "reb": 5,
   "ast": 4,
   "stl": 0,
   "blk": 0,
@@ -34226,7 +34226,7 @@
   "ft": "2/2",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34235,19 +34235,19 @@
   "team": "Joventut Badalona",
   "player": "N. Laprovittola",
   "pos": "",
-  "min": 28,
+  "min": 29,
   "pts": 23,
   "reb": 5,
   "ast": 6,
   "stl": 1,
   "blk": 0,
   "tov": 5,
-  "fg": "8/13",
-  "three": "3/7",
+  "fg": "8/14",
+  "three": "3/8",
   "ft": "4/5",
   "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34258,7 +34258,7 @@
   "pos": "",
   "min": 16,
   "pts": 5,
-  "reb": 5,
+  "reb": 6,
   "ast": 0,
   "stl": 2,
   "blk": 1,
@@ -34268,7 +34268,7 @@
   "ft": "1/2",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34289,7 +34289,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34310,7 +34310,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34331,7 +34331,7 @@
   "ft": "4/4",
   "pm": 4,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  },
  {
@@ -34352,7 +34352,7 @@
   "ft": "0/0",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ACB Live"
  }
 ]

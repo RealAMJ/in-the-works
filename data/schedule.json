@@ -1309,11 +1309,10 @@
   "venue": "Away",
   "competition": "Liga ACB",
   "note": "Round 7; 12:00 local (Canary time)",
-  "status": "live",
+  "status": "final",
   "score": "L 74-80",
   "live_feed": "acb:105434",
-  "clock": "Q4 00:14",
-  "live_updated": "2026-11-08T15:17:40+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261108jut",
