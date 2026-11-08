@@ -1344,10 +1344,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "L 87-92",
+  "score": "L 89-92",
   "live_feed": "acb:105435",
-  "clock": "Q4 01:02",
-  "live_updated": "2026-11-08T18:44:50+01:00"
+  "clock": "Q4 00:45",
+  "live_updated": "2026-11-08T18:45:41+01:00"
  },
  {
   "game_id": "g20261108sju",
@@ -1363,8 +1363,8 @@
   "score": "W 42-19",
   "espn_id": "401924646",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924646",
-  "clock": "Q1 04:41",
-  "live_updated": "2026-11-08T18:44:50+01:00"
+  "clock": "Q1 04:23",
+  "live_updated": "2026-11-08T18:45:41+01:00"
  },
  {
   "game_id": "g20261108zam",
@@ -1422,7 +1422,7 @@
   "score": "W 0-0",
   "live_feed": "acb:105437",
   "clock": "End of Q1",
-  "live_updated": "2026-11-08T18:44:51+01:00"
+  "live_updated": "2026-11-08T18:45:42+01:00"
  },
  {
   "game_id": "g20261108isu",
