@@ -1312,7 +1312,9 @@
   "status": "final",
   "score": "L 74-80",
   "live_feed": "acb:105434",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108jut",

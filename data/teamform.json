@@ -5304,5 +5304,33 @@
   "note": "",
   "leaders": "Chammaa|16|5|2;Cook|16|1|1;Martin|14|2|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "joventut-badalona-2026-11-08",
+  "team": "Joventut Badalona",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "La Laguna Tenerife",
+  "venue": "Away",
+  "score": "74-80",
+  "result": "L",
+  "top": "Laprovittola 23 pts, 5 reb",
+  "note": "",
+  "leaders": "Laprovittola|23|5|6;Kraag|9|4|0;Ndiaye|9|6|0",
+  "source": "ACB Live"
+ },
+ {
+  "row_id": "la-laguna-tenerife-2026-11-08",
+  "team": "La Laguna Tenerife",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "Joventut Badalona",
+  "venue": "Home",
+  "score": "80-74",
+  "result": "W",
+  "top": "Huertas 19 pts, 3 reb",
+  "note": "",
+  "leaders": "Huertas|19|3|4;Beck|13|3|0;Shermadini|12|5|1",
+  "source": "ACB Live"
  }
 ]

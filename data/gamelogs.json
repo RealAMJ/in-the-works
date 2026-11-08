@@ -5166,5 +5166,31 @@
   "pf": 4,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "birgander-2026-11-08",
+  "player": "Simon Birgander",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "team": "Joventut Badalona",
+  "opponent": "La Laguna Tenerife",
+  "venue": "Away",
+  "result": "L 74-80",
+  "min": 23,
+  "pts": 6,
+  "reb": 4,
+  "ast": 3,
+  "source": "ACB Live",
+  "fg": "1/5",
+  "three": "0/0",
+  "ft": "4/4",
+  "oreb": 1,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 1,
+  "tov": 0,
+  "pf": 3,
+  "pm": 4,
+  "eff": ""
  }
 ]
