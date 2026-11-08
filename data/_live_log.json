@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:00:46+01:00",
+ "at": "2026-11-08T18:04:13+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,12 +9,12 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 3,
-   "clock": "07:48",
+   "clock": "07:03",
    "done": false,
    "teams": [
     [
      "Casademont Zaragoza",
-     43,
+     45,
      12
     ],
     [
@@ -31,19 +31,19 @@
   {
    "game": "g20261108sju",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:26",
    "done": false,
    "teams": [
     [
-     "St. John's Red Storm",
-     0,
-     0
-    ],
-    [
      "Iona Gaels",
      0,
-     0
+     17
+    ],
+    [
+     "St. John's Red Storm",
+     3,
+     16
     ]
    ]
   },

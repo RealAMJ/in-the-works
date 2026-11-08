@@ -1344,10 +1344,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "W 49-43",
+  "score": "W 49-45",
   "live_feed": "acb:105435",
-  "clock": "Q3 07:48",
-  "live_updated": "2026-11-08T18:00:46+01:00"
+  "clock": "Q3 07:03",
+  "live_updated": "2026-11-08T18:04:12+01:00"
  },
  {
   "game_id": "g20261108sju",
@@ -1359,10 +1359,12 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "At Madison Square Garden. Swedish matchup: Fall plays for Iona",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 3-0",
   "espn_id": "401924646",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924646"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924646",
+  "clock": "Q1 19:26",
+  "live_updated": "2026-11-08T18:04:12+01:00"
  },
  {
   "game_id": "g20261108zam",
