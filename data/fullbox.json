@@ -36704,7 +36704,7 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36725,7 +36725,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36734,8 +36734,8 @@
   "team": "Manhattan",
   "player": "Ben Pearce",
   "pos": "",
-  "min": 35,
-  "pts": 17,
+  "min": 36,
+  "pts": 18,
   "reb": 5,
   "ast": 3,
   "stl": 4,
@@ -36743,10 +36743,10 @@
   "tov": 0,
   "fg": "5/13",
   "three": "1/4",
-  "ft": "6/9",
+  "ft": "7/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36767,7 +36767,7 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36788,11 +36788,11 @@
   "ft": "9/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-0-6",
+  "row_id": "g20261108maine-0-5",
   "game_id": "g20261108maine",
   "team": "Manhattan",
   "player": "Dusan Eric",
@@ -36809,11 +36809,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-0-7",
+  "row_id": "g20261108maine-0-6",
   "game_id": "g20261108maine",
   "team": "Manhattan",
   "player": "Kevin Kearney",
@@ -36830,11 +36830,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-0-8",
+  "row_id": "g20261108maine-0-7",
   "game_id": "g20261108maine",
   "team": "Manhattan",
   "player": "Liam McChesney",
@@ -36851,11 +36851,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-0-12",
+  "row_id": "g20261108maine-0-8",
   "game_id": "g20261108maine",
   "team": "Manhattan",
   "player": "Asier Miguel",
@@ -36872,11 +36872,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-0-15",
+  "row_id": "g20261108maine-0-9",
   "game_id": "g20261108maine",
   "team": "Manhattan",
   "player": "Quron Elliott",
@@ -36893,7 +36893,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36914,7 +36914,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36935,7 +36935,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36951,12 +36951,12 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "2/6",
-  "three": "1/3",
+  "fg": "2/7",
+  "three": "1/4",
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36977,7 +36977,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36988,7 +36988,7 @@
   "pos": "",
   "min": 31,
   "pts": 8,
-  "reb": 5,
+  "reb": 6,
   "ast": 4,
   "stl": 0,
   "blk": 0,
@@ -36998,7 +36998,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37019,7 +37019,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37040,11 +37040,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-1-10",
+  "row_id": "g20261108maine-1-7",
   "game_id": "g20261108maine",
   "team": "Maine",
   "player": "Yanis Bamba",
@@ -37061,11 +37061,11 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-1-11",
+  "row_id": "g20261108maine-1-8",
   "game_id": "g20261108maine",
   "team": "Maine",
   "player": "Ayden Evans",
@@ -37082,11 +37082,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-1-12",
+  "row_id": "g20261108maine-1-9",
   "game_id": "g20261108maine",
   "team": "Maine",
   "player": "Hudson Franz",
@@ -37103,11 +37103,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108maine-1-14",
+  "row_id": "g20261108maine-1-10",
   "game_id": "g20261108maine",
   "team": "Maine",
   "player": "Caleb Crawford",
@@ -37124,7 +37124,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37133,7 +37133,7 @@
   "team": "Idaho State",
   "player": "Malachi Johnson",
   "pos": "",
-  "min": 2,
+  "min": 4,
   "pts": 6,
   "reb": 1,
   "ast": 0,
@@ -37217,15 +37217,36 @@
   "team": "Idaho State",
   "player": "Ty Virgil",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/1",
-  "three": "0/1",
+  "fg": "0/2",
+  "three": "0/2",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261108isu-0-7",
+  "game_id": "g20261108isu",
+  "team": "Idaho State",
+  "player": "Malik Johnson",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
   "ft": "0/0",
   "pm": "",
   "swede": false,
@@ -37259,14 +37280,14 @@
   "team": "Air Force",
   "player": "Caleb Walker",
   "pos": "",
-  "min": 2,
+  "min": 4,
   "pts": 2,
-  "reb": 1,
+  "reb": 2,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "1/3",
+  "fg": "1/4",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -37280,7 +37301,7 @@
   "team": "Air Force",
   "player": "Grant Best",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 4,
   "reb": 0,
   "ast": 1,
@@ -37301,7 +37322,7 @@
   "team": "Air Force",
   "player": "Justin Hinds",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 2,
   "reb": 1,
   "ast": 0,
@@ -37322,13 +37343,13 @@
   "team": "Air Force",
   "player": "Kam Sanders",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
