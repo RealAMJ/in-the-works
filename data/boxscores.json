@@ -1689,7 +1689,7 @@
   "line_id": "g20261108uci-cooper",
   "game_id": "g20261108uci",
   "player": "Nils Cooper",
-  "min": 27,
+  "min": 28,
   "pts": 15,
   "reb": 4,
   "ast": 1,
@@ -1703,8 +1703,8 @@
   "dreb": 3,
   "stl": 2,
   "blk": 0,
-  "tov": 1,
-  "pf": 3,
+  "tov": 2,
+  "pf": 4,
   "eff": ""
  }
 ]
