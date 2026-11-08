@@ -32672,7 +32672,7 @@
   "ft": "4/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32693,7 +32693,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32708,13 +32708,13 @@
   "ast": 6,
   "stl": 0,
   "blk": 1,
-  "tov": 3,
+  "tov": 4,
   "fg": "7/14",
   "three": "2/6",
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32735,7 +32735,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32756,7 +32756,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32777,7 +32777,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32798,7 +32798,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32819,11 +32819,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108unm-0-13",
+  "row_id": "g20261108unm-0-9",
   "game_id": "g20261108unm",
   "team": "Northern Arizona",
   "player": "Mason Dorsey",
@@ -32840,11 +32840,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108unm-0-14",
+  "row_id": "g20261108unm-0-10",
   "game_id": "g20261108unm",
   "team": "Northern Arizona",
   "player": "Cade Bennett",
@@ -32861,7 +32861,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32882,7 +32882,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32903,7 +32903,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32924,7 +32924,7 @@
   "ft": "0/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32945,7 +32945,7 @@
   "ft": "7/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32966,7 +32966,7 @@
   "ft": "9/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32987,7 +32987,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33008,11 +33008,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108unm-1-8",
+  "row_id": "g20261108unm-1-7",
   "game_id": "g20261108unm",
   "team": "New Mexico",
   "player": "Imran Suljanovic",
@@ -33029,20 +33029,20 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108unm-1-10",
+  "row_id": "g20261108unm-1-8",
   "game_id": "g20261108unm",
   "team": "New Mexico",
   "player": "Dax Hall",
   "pos": "",
-  "min": 26,
+  "min": 27,
   "pts": 6,
   "reb": 4,
   "ast": 3,
-  "stl": 3,
+  "stl": 4,
   "blk": 0,
   "tov": 1,
   "fg": "3/5",
@@ -33050,11 +33050,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108unm-1-11",
+  "row_id": "g20261108unm-1-9",
   "game_id": "g20261108unm",
   "team": "New Mexico",
   "player": "Chris Howell",
@@ -33071,7 +33071,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
