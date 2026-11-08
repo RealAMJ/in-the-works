@@ -1412,8 +1412,8 @@
   "score": "L 58-62",
   "espn_id": "401921684",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921684",
-  "clock": "Q2 02:07",
-  "live_updated": "2026-11-08T20:58:55+01:00"
+  "clock": "Q2 01:18",
+  "live_updated": "2026-11-08T21:00:59+01:00"
  },
  {
   "game_id": "g20261108ucam",
@@ -1428,7 +1428,9 @@
   "status": "final",
   "score": "L 71-90",
   "live_feed": "acb:105437",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108isu",

@@ -5444,5 +5444,33 @@
   "note": "",
   "leaders": "Martorell|28|1|1;Simeunovic|14|8|5;Kieli|10|7|0",
   "source": "FEB Live"
+ },
+ {
+  "row_id": "ucam-murcia-2026-11-08",
+  "team": "UCAM Murcia",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "Real Madrid",
+  "venue": "Away",
+  "score": "71-90",
+  "result": "L",
+  "top": "Ennis 15 pts, 1 reb",
+  "note": "",
+  "leaders": "Ennis|15|1|1;Pansa|11|3|0;Sant-Roos|10|7|0",
+  "source": "ACB Live"
+ },
+ {
+  "row_id": "real-madrid-2026-11-08",
+  "team": "Real Madrid",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "UCAM Murcia",
+  "venue": "Home",
+  "score": "90-71",
+  "result": "W",
+  "top": "Pradilla 15 pts, 7 reb",
+  "note": "",
+  "leaders": "Pradilla|15|7|0;Jones|13|5|0;Abalde|12|3|2",
+  "source": "ACB Live"
  }
 ]

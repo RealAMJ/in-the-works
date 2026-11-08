@@ -5322,5 +5322,31 @@
   "pf": 3,
   "pm": -5,
   "eff": ""
+ },
+ {
+  "row_id": "falk-2026-11-08",
+  "player": "Wilhelm Falk",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "team": "UCAM Murcia",
+  "opponent": "Real Madrid",
+  "venue": "Away",
+  "result": "L 71-90",
+  "min": 6,
+  "pts": 2,
+  "reb": 2,
+  "ast": 0,
+  "source": "ACB Live",
+  "fg": "0/2",
+  "three": "0/1",
+  "ft": "2/2",
+  "oreb": 2,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": -15,
+  "eff": ""
  }
 ]
