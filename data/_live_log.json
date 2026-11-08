@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T01:50:53+01:00",
+ "at": "2026-11-08T01:53:36+01:00",
  "log": [
   {
    "game": "g20261108unm",
@@ -9,17 +9,17 @@
    "game": "g20261108unm",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:52",
+   "clock": "02:46",
    "done": false,
    "teams": [
     [
      "Northern Arizona Lumberjacks",
-     54,
+     61,
      15
     ],
     [
      "New Mexico Lobos",
-     80,
+     84,
      13
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261108den",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:35",
+   "clock": "10:20",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     12,
+     15,
      14
     ],
     [
