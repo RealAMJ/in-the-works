@@ -412,12 +412,12 @@
   "player": "Alliou Fall",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 2,
-  "min": 18.0,
+  "gp": 3,
+  "min": 17.3,
   "pts": 4.0,
-  "reb": 4.5,
-  "ast": 1.0,
-  "note": "Averages from game log (2 games, through 2026-11-06)"
+  "reb": 3.7,
+  "ast": 0.7,
+  "note": "Averages from game log (3 games, through 2026-11-08)"
  },
  {
   "row_id": "holmstrom-ncaa",
@@ -508,12 +508,12 @@
   "player": "Casper Pohto",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 2.0,
+  "gp": 2,
+  "min": 1.5,
   "pts": 2.0,
   "reb": 0.0,
   "ast": 0.0,
-  "note": "Averages from game log (1 games, through 2026-11-03)"
+  "note": "Averages from game log (2 games, through 2026-11-08)"
  },
  {
   "row_id": "tidare-ncaa",

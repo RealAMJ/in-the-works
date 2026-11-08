@@ -1364,7 +1364,9 @@
   "score": "W 104-65",
   "espn_id": "401924646",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924646",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108zam",
@@ -1408,7 +1410,7 @@
   "espn_id": "401921684",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921684",
   "clock": "End of Q1",
-  "live_updated": "2026-11-08T20:04:44+01:00"
+  "live_updated": "2026-11-08T20:07:25+01:00"
  },
  {
   "game_id": "g20261108ucam",
@@ -1423,8 +1425,8 @@
   "status": "live",
   "score": "L 39-47",
   "live_feed": "acb:105437",
-  "clock": "Q3 09:05",
-  "live_updated": "2026-11-08T20:04:45+01:00"
+  "clock": "Q3 08:08",
+  "live_updated": "2026-11-08T20:07:26+01:00"
  },
  {
   "game_id": "g20261108isu",

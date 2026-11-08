@@ -5388,5 +5388,33 @@
   "note": "",
   "leaders": "Brussino|25|8|1;Birutis|21|8|3;Olaseni|12|3|0",
   "source": "ACB Live"
+ },
+ {
+  "row_id": "st-johns-2026-11-08",
+  "team": "St. John's",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Home",
+  "score": "104-65",
+  "result": "W",
+  "top": "Yessoufou 23 pts, 7 reb",
+  "note": "",
+  "leaders": "Yessoufou|23|7|1;Jackson|17|3|0;Hall|13|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "iona-2026-11-08",
+  "team": "Iona",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "St. John's",
+  "venue": "Away",
+  "score": "65-104",
+  "result": "L",
+  "top": "Odutayo 12 pts, 4 reb",
+  "note": "",
+  "leaders": "Odutayo|12|4|1;Ayo|11|2|2;Mitchell|8|5|2;Jungers|8|3|0",
+  "source": "ESPN"
  }
 ]
