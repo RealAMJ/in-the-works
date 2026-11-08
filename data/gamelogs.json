@@ -5374,5 +5374,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "amoran-2026-11-08",
+  "player": "Nathan Amoran",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "team": "Idaho State",
+  "opponent": "Air Force",
+  "venue": "Away",
+  "result": "L 82-89",
+  "min": 18,
+  "pts": 7,
+  "reb": 2,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "3/7",
+  "three": "1/4",
+  "ft": "0/0",
+  "oreb": 1,
+  "dreb": 1,
+  "stl": 2,
+  "blk": 0,
+  "tov": 4,
+  "pf": 5,
+  "pm": "",
+  "eff": ""
  }
 ]

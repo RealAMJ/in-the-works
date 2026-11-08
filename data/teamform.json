@@ -5500,5 +5500,33 @@
   "note": "",
   "leaders": "Sabino|19|9|0;Pearce|18|5|3;Tweedy|7|3|3;Kearney|7|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "idaho-state-2026-11-08",
+  "team": "Idaho State",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Air Force",
+  "venue": "Away",
+  "score": "82-89",
+  "result": "L",
+  "top": "Morris 22 pts, 2 reb",
+  "note": "",
+  "leaders": "Morris|22|2|3;Johnson|21|12|2;Palmer|14|7|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "air-force-2026-11-08",
+  "team": "Air Force",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Idaho State",
+  "venue": "Home",
+  "score": "89-82",
+  "result": "W",
+  "top": "Best 25 pts, 5 reb",
+  "note": "",
+  "leaders": "Best|25|5|3;Sanders|18|3|3;Hobin|16|6|0",
+  "source": "ESPN"
  }
 ]
