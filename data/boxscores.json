@@ -1667,9 +1667,9 @@
   "line_id": "g20261108den-stumer",
   "game_id": "g20261108den",
   "player": "Oskar Stumer",
-  "min": 5,
+  "min": 6,
   "pts": 0,
-  "reb": 0,
+  "reb": 1,
   "ast": 1,
   "fg": "0/0",
   "three": "0/0",
@@ -1678,11 +1678,11 @@
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
-  "dreb": 0,
+  "dreb": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
-  "pf": 0,
+  "tov": 1,
+  "pf": 1,
   "eff": ""
  }
 ]
