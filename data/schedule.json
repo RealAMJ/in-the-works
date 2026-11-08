@@ -1326,9 +1326,11 @@
   "venue": "Home",
   "competition": "LKL",
   "note": "16:30 local",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "lkl:11619"
+  "status": "live",
+  "score": "L 0-4",
+  "live_feed": "lkl:11619",
+  "clock": "Q1 07:37",
+  "live_updated": "2026-11-08T15:54:12+01:00"
  },
  {
   "game_id": "g20261108uni",
