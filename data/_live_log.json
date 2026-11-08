@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T03:13:14+01:00",
+ "at": "2026-11-08T03:14:04+01:00",
  "log": [
   {
    "game": "g20261108den",
@@ -9,17 +9,17 @@
    "game": "g20261108den",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:26",
+   "clock": "04:02",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     48,
+     50,
      14
     ],
     [
      "UC Riverside Highlanders",
-     52,
+     55,
      15
     ]
    ]
