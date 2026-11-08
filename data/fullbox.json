@@ -33921,7 +33921,7 @@
   "player": "K. Guy",
   "pos": "",
   "min": 17,
-  "pts": 2,
+  "pts": 4,
   "reb": 2,
   "ast": 4,
   "stl": 0,
@@ -33929,8 +33929,8 @@
   "tov": 2,
   "fg": "1/4",
   "three": "0/3",
-  "ft": "0/0",
-  "pm": -1,
+  "ft": "2/2",
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -33972,7 +33972,7 @@
   "fg": "4/6",
   "three": "4/6",
   "ft": "1/1",
-  "pm": 14,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -33993,7 +33993,7 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34056,7 +34056,7 @@
   "fg": "0/3",
   "three": "0/3",
   "ft": "1/2",
-  "pm": 8,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34119,7 +34119,7 @@
   "fg": "2/9",
   "three": "2/7",
   "ft": "1/2",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34161,7 +34161,7 @@
   "fg": "3/8",
   "three": "0/3",
   "ft": "3/4",
-  "pm": 0,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34203,7 +34203,7 @@
   "fg": "3/8",
   "three": "3/6",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34224,7 +34224,7 @@
   "fg": "0/7",
   "three": "0/2",
   "ft": "2/2",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34245,7 +34245,7 @@
   "fg": "8/13",
   "three": "3/7",
   "ft": "4/5",
-  "pm": 1,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34266,7 +34266,7 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "1/2",
-  "pm": -8,
+  "pm": -10,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
