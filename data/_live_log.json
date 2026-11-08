@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T20:56:26+01:00",
+ "at": "2026-11-08T20:57:16+01:00",
  "log": [
   {
    "game": "g20261108maine",
@@ -9,17 +9,17 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:05",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     59,
+     60,
      18
     ],
     [
      "Maine Black Bears",
-     56,
+     58,
      15
     ]
    ]
