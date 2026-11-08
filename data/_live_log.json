@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:19:36+01:00",
+ "at": "2026-11-08T17:20:29+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -9,7 +9,7 @@
    "game": "g20261108jut",
    "src": "LKL Live",
    "period": 3,
-   "clock": "00:38",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 2,
-   "clock": "09:16",
+   "clock": "09:00",
    "done": false,
    "teams": [
     [
