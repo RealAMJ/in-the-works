@@ -34371,7 +34371,7 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34413,7 +34413,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34434,7 +34434,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/1",
-  "pm": -13,
+  "pm": -14,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34476,7 +34476,7 @@
   "fg": "0/2",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -14,
+  "pm": -15,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34518,7 +34518,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/2",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34629,6 +34629,27 @@
   "source": "LKL Live"
  },
  {
+  "row_id": "g20261108jut-1-7",
+  "game_id": "g20261108jut",
+  "team": "Žalgiris Kaunas",
+  "player": "D. Giedraitis",
+  "pos": "",
+  "min": 0,
+  "pts": 1,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "1/2",
+  "pm": 1,
+  "swede": false,
+  "state": "live",
+  "source": "LKL Live"
+ },
+ {
   "row_id": "g20261108jut-1-9",
   "game_id": "g20261108jut",
   "team": "Žalgiris Kaunas",
@@ -34665,7 +34686,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34686,7 +34707,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34707,7 +34728,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34749,7 +34770,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
