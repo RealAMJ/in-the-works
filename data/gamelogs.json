@@ -5296,5 +5296,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "palmquist-2026-11-08",
+  "player": "Oskar Palmquist",
+  "date": "2026-11-08",
+  "competition": "Primera FEB",
+  "team": "CB Zamora",
+  "opponent": "Fibwi Palma",
+  "venue": "Away",
+  "result": "W 92-79",
+  "min": 23,
+  "pts": 7,
+  "reb": 3,
+  "ast": 1,
+  "source": "FEB Live",
+  "fg": "3/5",
+  "three": "1/3",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 3,
+  "pf": 3,
+  "pm": -5,
+  "eff": ""
  }
 ]

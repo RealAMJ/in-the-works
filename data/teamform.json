@@ -5416,5 +5416,33 @@
   "note": "",
   "leaders": "Odutayo|12|4|1;Ayo|11|2|2;Mitchell|8|5|2;Jungers|8|3|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "cb-zamora-2026-11-08",
+  "team": "CB Zamora",
+  "date": "2026-11-08",
+  "competition": "Primera FEB",
+  "opponent": "Fibwi Palma",
+  "venue": "Away",
+  "score": "92-79",
+  "result": "W",
+  "top": "Roberts 16 pts, 5 reb",
+  "note": "",
+  "leaders": "Roberts|16|5|3;Blackshear|15|4|0;Carroll|10|1|1;Martin|10|7|0",
+  "source": "FEB Live"
+ },
+ {
+  "row_id": "fibwi-palma-2026-11-08",
+  "team": "Fibwi Palma",
+  "date": "2026-11-08",
+  "competition": "Primera FEB",
+  "opponent": "CB Zamora",
+  "venue": "Home",
+  "score": "79-92",
+  "result": "L",
+  "top": "Martorell 28 pts, 1 reb",
+  "note": "",
+  "leaders": "Martorell|28|1|1;Simeunovic|14|8|5;Kieli|10|7|0",
+  "source": "FEB Live"
  }
 ]
