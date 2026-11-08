@@ -5248,5 +5248,33 @@
   "note": "",
   "leaders": "Komin|21|6|6;Abelman|12|3|0;Toukam|10|7|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "denver-2026-11-08",
+  "team": "Denver",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "UC Riverside",
+  "venue": "Away",
+  "score": "60-64",
+  "result": "L",
+  "top": "Martin 14 pts, 6 reb",
+  "note": "",
+  "leaders": "Martin|14|6|1;Wysocki|13|9|1;Johnson|11|1|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "uc-riverside-2026-11-08",
+  "team": "UC Riverside",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Denver",
+  "venue": "Home",
+  "score": "64-60",
+  "result": "W",
+  "top": "Parrish-Tillman 30 pts, 10 reb",
+  "note": "",
+  "leaders": "Parrish-Tillman|30|10|2;Malcolm|9|7|0;Reagan|8|3|2",
+  "source": "ESPN"
  }
 ]

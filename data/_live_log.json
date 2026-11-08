@@ -1,26 +1,26 @@
 {
- "at": "2026-11-08T03:33:09+01:00",
+ "at": "2026-11-08T03:43:51+01:00",
  "log": [
   {
-   "game": "g20261108den",
+   "game": "g20261108uci",
    "checking": "ESPN"
   },
   {
-   "game": "g20261108den",
+   "game": "g20261108uci",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Denver Pioneers",
-     60,
-     14
+     "UC Irvine Anteaters",
+     0,
+     0
     ],
     [
-     "UC Riverside Highlanders",
-     64,
-     15
+     "San Jos\u00e9 State Spartans",
+     0,
+     0
     ]
    ]
   }
