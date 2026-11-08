@@ -1,29 +1,6 @@
 {
- "at": "2026-11-08T02:01:21+01:00",
+ "at": "2026-11-08T02:02:11+01:00",
  "log": [
-  {
-   "game": "g20261108unm",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261108unm",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Northern Arizona Lumberjacks",
-     65,
-     15
-    ],
-    [
-     "New Mexico Lobos",
-     94,
-     13
-    ]
-   ]
-  },
   {
    "game": "g20261108den",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261108den",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:42",
+   "clock": "07:08",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "UC Riverside Highlanders",
-     11,
+     14,
      15
     ]
    ]
