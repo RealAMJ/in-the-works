@@ -33972,7 +33972,7 @@
   "fg": "4/6",
   "three": "4/6",
   "ft": "1/1",
-  "pm": 15,
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -33993,7 +33993,7 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34014,7 +34014,7 @@
   "fg": "7/10",
   "three": "1/1",
   "ft": "4/6",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34035,7 +34035,7 @@
   "fg": "4/7",
   "three": "0/0",
   "ft": "4/6",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34119,7 +34119,7 @@
   "fg": "2/9",
   "three": "2/7",
   "ft": "1/2",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34161,7 +34161,7 @@
   "fg": "3/8",
   "three": "0/3",
   "ft": "3/4",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34203,7 +34203,7 @@
   "fg": "3/8",
   "three": "3/6",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34224,7 +34224,7 @@
   "fg": "0/7",
   "three": "0/2",
   "ft": "2/2",
-  "pm": -6,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34245,7 +34245,7 @@
   "fg": "8/13",
   "three": "3/7",
   "ft": "4/5",
-  "pm": 0,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34257,7 +34257,7 @@
   "player": "E. Sulejmanovic",
   "pos": "",
   "min": 16,
-  "pts": 4,
+  "pts": 5,
   "reb": 5,
   "ast": 0,
   "stl": 2,
@@ -34265,8 +34265,8 @@
   "tov": 1,
   "fg": "2/5",
   "three": "0/2",
-  "ft": "0/0",
-  "pm": -9,
+  "ft": "1/2",
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
