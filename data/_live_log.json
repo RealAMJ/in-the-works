@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T19:45:22+01:00",
+ "at": "2026-11-08T19:46:14+01:00",
  "log": [
   {
    "game": "g20261108sju",
@@ -9,12 +9,12 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:54",
+   "clock": "05:30",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     49,
+     52,
      17
     ],
     [
@@ -44,7 +44,7 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:21",
+   "clock": "03:04",
    "done": false,
    "teams": [
     [
@@ -66,13 +66,13 @@
   {
    "game": "g20261108ucam",
    "src": "ACB Live",
-   "period": 2,
-   "clock": "00:18",
+   "period": 1,
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Real Madrid",
-     45,
+     47,
      12
     ],
     [
