@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:39:29+01:00",
+ "at": "2026-11-08T18:40:20+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,7 +9,7 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 4,
-   "clock": "03:25",
+   "clock": "03:14",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Unicaja",
-     85,
+     86,
      12
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:26",
+   "clock": "06:21",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     33,
+     35,
      16
     ]
    ]
@@ -58,6 +58,52 @@
    "clock": "00:00",
    "done": true,
    "teams": []
+  },
+  {
+   "game": "g20261108maine",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261108maine",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Maine Black Bears",
+     0,
+     0
+    ],
+    [
+     "Manhattan Jaspers",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261108ucam",
+   "checking": "ACB Live"
+  },
+  {
+   "game": "g20261108ucam",
+   "src": "ACB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Real Madrid",
+     0,
+     12
+    ],
+    [
+     "UCAM Murcia",
+     0,
+     12
+    ]
+   ]
   }
  ]
 }
