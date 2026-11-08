@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:29:20+01:00",
+ "at": "2026-11-08T17:30:11+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Juventus Utena",
-     69,
+     70,
      11
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 2,
-   "clock": "04:28",
+   "clock": "03:50",
    "done": false,
    "teams": [
     [
      "Casademont Zaragoza",
-     34,
+     36,
      12
     ],
     [
