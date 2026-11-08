@@ -1762,7 +1762,7 @@
   "fg": "3/3",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 6,
   "source": "LKL Live",
   "note": "live",
   "oreb": 2,
@@ -1771,6 +1771,28 @@
   "blk": 0,
   "tov": 1,
   "pf": 2,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261108uni-pantzar",
+  "game_id": "g20261108uni",
+  "player": "Melwin Pantzar",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "source": "ACB Live",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
   "eff": ""
  }
 ]

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T16:37:19+01:00",
+ "at": "2026-11-08T16:40:46+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -9,7 +9,7 @@
    "game": "g20261108jut",
    "src": "LKL Live",
    "period": 2,
-   "clock": "01:34",
+   "clock": "00:02",
    "done": false,
    "teams": [
     [
@@ -19,8 +19,31 @@
     ],
     [
      "\u017dalgiris Kaunas",
-     43,
+     48,
      16
+    ]
+   ]
+  },
+  {
+   "game": "g20261108uni",
+   "checking": "ACB Live"
+  },
+  {
+   "game": "g20261108uni",
+   "src": "ACB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Casademont Zaragoza",
+     0,
+     12
+    ],
+    [
+     "Unicaja",
+     0,
+     12
     ]
    ]
   }

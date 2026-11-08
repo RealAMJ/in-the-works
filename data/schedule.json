@@ -1327,10 +1327,10 @@
   "competition": "LKL",
   "note": "16:30 local",
   "status": "live",
-  "score": "L 40-43",
+  "score": "L 40-48",
   "live_feed": "lkl:11619",
-  "clock": "Q2 01:34",
-  "live_updated": "2026-11-08T16:37:19+01:00"
+  "clock": "Q2 00:02",
+  "live_updated": "2026-11-08T16:40:45+01:00"
  },
  {
   "game_id": "g20261108uni",
@@ -1342,9 +1342,11 @@
   "venue": "Away",
   "competition": "Liga ACB",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "acb:105435"
+  "status": "live",
+  "score": "W 0-0",
+  "live_feed": "acb:105435",
+  "clock": "End of Q1",
+  "live_updated": "2026-11-08T16:40:46+01:00"
  },
  {
   "game_id": "g20261108sju",
