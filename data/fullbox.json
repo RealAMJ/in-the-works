@@ -37139,13 +37139,13 @@
   "ast": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 2,
+  "tov": 3,
   "fg": "7/13",
   "three": "1/2",
   "ft": "6/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37166,7 +37166,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37187,7 +37187,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37208,7 +37208,7 @@
   "ft": "8/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37229,7 +37229,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37250,11 +37250,11 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-7",
+  "row_id": "g20261108isu-0-6",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Malik Johnson",
@@ -37271,11 +37271,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-8",
+  "row_id": "g20261108isu-0-7",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Quin Patterson",
@@ -37292,11 +37292,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-10",
+  "row_id": "g20261108isu-0-8",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Eli Garner",
@@ -37313,11 +37313,11 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-11",
+  "row_id": "g20261108isu-0-9",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Joven Dulay",
@@ -37334,11 +37334,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-13",
+  "row_id": "g20261108isu-0-10",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Eyal Harel",
@@ -37355,11 +37355,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-0-15",
+  "row_id": "g20261108isu-0-11",
   "game_id": "g20261108isu",
   "team": "Idaho State",
   "player": "Aden Goffe",
@@ -37376,7 +37376,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37397,7 +37397,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37410,7 +37410,7 @@
   "pts": 10,
   "reb": 11,
   "ast": 0,
-  "stl": 1,
+  "stl": 2,
   "blk": 0,
   "tov": 1,
   "fg": "3/9",
@@ -37418,7 +37418,7 @@
   "ft": "4/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37439,7 +37439,7 @@
   "ft": "16/16",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37460,7 +37460,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -37481,11 +37481,11 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-1-7",
+  "row_id": "g20261108isu-1-5",
   "game_id": "g20261108isu",
   "team": "Air Force",
   "player": "Brendan Martin",
@@ -37502,11 +37502,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-1-10",
+  "row_id": "g20261108isu-1-6",
   "game_id": "g20261108isu",
   "team": "Air Force",
   "player": "Eli Robinson",
@@ -37523,11 +37523,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-1-12",
+  "row_id": "g20261108isu-1-7",
   "game_id": "g20261108isu",
   "team": "Air Force",
   "player": "Josh Gatete",
@@ -37544,11 +37544,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-1-17",
+  "row_id": "g20261108isu-1-8",
   "game_id": "g20261108isu",
   "team": "Air Force",
   "player": "Ethan Greenberg",
@@ -37565,11 +37565,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108isu-1-19",
+  "row_id": "g20261108isu-1-9",
   "game_id": "g20261108isu",
   "team": "Air Force",
   "player": "A.J. Patterson",
@@ -37586,7 +37586,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
