@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T16:26:51+01:00",
+ "at": "2026-11-08T16:27:42+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -9,17 +9,17 @@
    "game": "g20261108jut",
    "src": "LKL Live",
    "period": 2,
-   "clock": "05:22",
+   "clock": "04:40",
    "done": false,
    "teams": [
     [
      "Juventus Utena",
-     27,
+     29,
      11
     ],
     [
      "\u017dalgiris Kaunas",
-     36,
+     39,
      16
     ]
    ]
