@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:04:13+01:00",
+ "at": "2026-11-08T18:05:05+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,7 +9,7 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 3,
-   "clock": "07:03",
+   "clock": "06:25",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Unicaja",
-     49,
+     51,
      12
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:26",
+   "clock": "19:22",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     0,
+     3,
      17
     ],
     [
