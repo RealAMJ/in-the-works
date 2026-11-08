@@ -1667,7 +1667,7 @@
   "line_id": "g20261108den-stumer",
   "game_id": "g20261108den",
   "player": "Oskar Stumer",
-  "min": 15,
+  "min": 17,
   "pts": 0,
   "reb": 3,
   "ast": 1,
@@ -1681,7 +1681,7 @@
   "dreb": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 2,
   "eff": ""
  }
