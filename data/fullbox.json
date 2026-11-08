@@ -32252,7 +32252,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32273,7 +32273,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32294,7 +32294,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32315,7 +32315,7 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32336,11 +32336,11 @@
   "ft": "4/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-0-6",
+  "row_id": "g20261107vmi-0-5",
   "game_id": "g20261107vmi",
   "team": "VMI",
   "player": "Zion Vaamonde",
@@ -32357,11 +32357,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-0-7",
+  "row_id": "g20261107vmi-0-6",
   "game_id": "g20261107vmi",
   "team": "VMI",
   "player": "Joao Panzo",
@@ -32378,11 +32378,11 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-0-8",
+  "row_id": "g20261107vmi-0-7",
   "game_id": "g20261107vmi",
   "team": "VMI",
   "player": "Cal Liston",
@@ -32399,11 +32399,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-0-11",
+  "row_id": "g20261107vmi-0-8",
   "game_id": "g20261107vmi",
   "team": "VMI",
   "player": "Rokas Zilys",
@@ -32420,7 +32420,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32441,7 +32441,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32462,7 +32462,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32483,7 +32483,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32504,7 +32504,7 @@
   "ft": "5/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32525,11 +32525,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-6",
+  "row_id": "g20261107vmi-1-5",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Jayson Peterson",
@@ -32546,11 +32546,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-7",
+  "row_id": "g20261107vmi-1-6",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Mike Broxton Jr.",
@@ -32567,11 +32567,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-10",
+  "row_id": "g20261107vmi-1-7",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Josiah LeGree",
@@ -32588,11 +32588,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-12",
+  "row_id": "g20261107vmi-1-8",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Shey Eberwein",
@@ -32609,11 +32609,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-13",
+  "row_id": "g20261107vmi-1-9",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Isaiah Coleman",
@@ -32630,11 +32630,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107vmi-1-14",
+  "row_id": "g20261107vmi-1-10",
   "game_id": "g20261107vmi",
   "team": "UTSA",
   "player": "Demari Williams",
@@ -32651,7 +32651,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
