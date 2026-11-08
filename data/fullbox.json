@@ -32231,7 +32231,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32252,7 +32252,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32273,7 +32273,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32294,7 +32294,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32315,7 +32315,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32336,7 +32336,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32357,11 +32357,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-0-8",
+  "row_id": "g20261107lip-0-7",
   "game_id": "g20261107lip",
   "team": "SIU Edwardsville",
   "player": "Gestin Liberis",
@@ -32378,11 +32378,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-0-10",
+  "row_id": "g20261107lip-0-8",
   "game_id": "g20261107lip",
   "team": "SIU Edwardsville",
   "player": "Jayden Riley",
@@ -32399,11 +32399,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-0-12",
+  "row_id": "g20261107lip-0-9",
   "game_id": "g20261107lip",
   "team": "SIU Edwardsville",
   "player": "Corentin Efono",
@@ -32420,11 +32420,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-0-14",
+  "row_id": "g20261107lip-0-10",
   "game_id": "g20261107lip",
   "team": "SIU Edwardsville",
   "player": "Harrison Alexander",
@@ -32441,7 +32441,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32462,7 +32462,7 @@
   "ft": "7/11",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32483,7 +32483,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32504,7 +32504,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32525,7 +32525,7 @@
   "ft": "8/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -32546,11 +32546,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-1-8",
+  "row_id": "g20261107lip-1-5",
   "game_id": "g20261107lip",
   "team": "Lipscomb",
   "player": "Josh Scott",
@@ -32567,11 +32567,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-1-10",
+  "row_id": "g20261107lip-1-6",
   "game_id": "g20261107lip",
   "team": "Lipscomb",
   "player": "Kennedy Okpara",
@@ -32588,11 +32588,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-1-11",
+  "row_id": "g20261107lip-1-7",
   "game_id": "g20261107lip",
   "team": "Lipscomb",
   "player": "Luke Jack",
@@ -32609,11 +32609,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-1-12",
+  "row_id": "g20261107lip-1-8",
   "game_id": "g20261107lip",
   "team": "Lipscomb",
   "player": "Truman Byrne",
@@ -32630,11 +32630,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261107lip-1-14",
+  "row_id": "g20261107lip-1-9",
   "game_id": "g20261107lip",
   "team": "Lipscomb",
   "player": "Vuk Visnjic",
@@ -32651,7 +32651,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
