@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:37:49+01:00",
+ "at": "2026-11-08T18:38:39+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,7 +9,7 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 4,
-   "clock": "04:17",
+   "clock": "04:02",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:29",
+   "clock": "06:58",
    "done": false,
    "teams": [
     [
