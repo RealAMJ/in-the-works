@@ -1,29 +1,6 @@
 {
- "at": "2026-11-08T15:21:53+01:00",
+ "at": "2026-11-08T15:22:45+01:00",
  "log": [
-  {
-   "game": "g20261108jov",
-   "checking": "ACB Live"
-  },
-  {
-   "game": "g20261108jov",
-   "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "La Laguna Tenerife",
-     80,
-     12
-    ],
-    [
-     "Asisa Joventut",
-     74,
-     12
-    ]
-   ]
-  },
   {
    "game": "g20261108jut",
    "checking": "LKL Live"
