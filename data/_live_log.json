@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:07:39+01:00",
+ "at": "2026-11-08T18:11:02+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,17 +9,17 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 3,
-   "clock": "05:30",
+   "clock": "03:59",
    "done": false,
    "teams": [
     [
      "Casademont Zaragoza",
-     49,
+     53,
      12
     ],
     [
      "Unicaja",
-     52,
+     54,
      12
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:01",
+   "clock": "16:15",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     6,
+     12,
      16
     ]
    ]
