@@ -1247,7 +1247,7 @@
   "espn_id": "401924895",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924895",
   "clock": "Q2 09:59",
-  "live_updated": "2026-11-08T01:32:24+01:00"
+  "live_updated": "2026-11-08T01:33:13+01:00"
  },
  {
   "game_id": "g20261108den",
@@ -1259,10 +1259,12 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 0-0",
   "espn_id": "401926227",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926227"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926227",
+  "clock": "Q1 19:30",
+  "live_updated": "2026-11-08T01:33:13+01:00"
  },
  {
   "game_id": "g20261108uci",
