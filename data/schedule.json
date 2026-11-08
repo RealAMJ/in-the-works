@@ -1327,10 +1327,10 @@
   "competition": "LKL",
   "note": "16:30 local",
   "status": "live",
-  "score": "L 74-78",
+  "score": "L 76-78",
   "live_feed": "lkl:11619",
   "clock": "Q4 03:49",
-  "live_updated": "2026-11-08T17:38:39+01:00"
+  "live_updated": "2026-11-08T17:39:31+01:00"
  },
  {
   "game_id": "g20261108uni",
@@ -1345,8 +1345,8 @@
   "status": "live",
   "score": "L 38-43",
   "live_feed": "acb:105435",
-  "clock": "Q2 00:07",
-  "live_updated": "2026-11-08T17:38:40+01:00"
+  "clock": "End of Q1",
+  "live_updated": "2026-11-08T17:39:31+01:00"
  },
  {
   "game_id": "g20261108sju",
