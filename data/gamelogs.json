@@ -5062,5 +5062,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "vaamonde-2026-11-07",
+  "player": "Zion Vaamonde",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "team": "VMI",
+  "opponent": "UTSA",
+  "venue": "Away",
+  "result": "L 68-70",
+  "min": 11,
+  "pts": 2,
+  "reb": 0,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "0/1",
+  "three": "0/1",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]

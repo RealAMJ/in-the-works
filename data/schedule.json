@@ -1210,7 +1210,9 @@
   "score": "L 68-70",
   "espn_id": "401926201",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926201",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261107lip",
@@ -1245,7 +1247,7 @@
   "espn_id": "401924895",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924895",
   "clock": "End of Q1",
-  "live_updated": "2026-11-08T01:09:01+01:00"
+  "live_updated": "2026-11-08T01:12:34+01:00"
  },
  {
   "game_id": "g20261108den",
@@ -1258,7 +1260,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401926227",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926227"
  },
  {
   "game_id": "g20261108uci",

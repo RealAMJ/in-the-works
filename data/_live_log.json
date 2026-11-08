@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T01:09:01+01:00",
+ "at": "2026-11-08T01:12:35+01:00",
  "log": [
   {
    "game": "g20261108unm",
@@ -21,6 +21,29 @@
      "New Mexico Lobos",
      46,
      13
+    ]
+   ]
+  },
+  {
+   "game": "g20261108den",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261108den",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UC Riverside Highlanders",
+     0,
+     0
+    ],
+    [
+     "Denver Pioneers",
+     0,
+     0
     ]
    ]
   }

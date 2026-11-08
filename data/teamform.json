@@ -5192,5 +5192,33 @@
   "note": "",
   "leaders": "Cobb|20|1|3;Wilson|15|5|0;Pickett|12|0|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "vmi-2026-11-07",
+  "team": "VMI",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "UTSA",
+  "venue": "Away",
+  "score": "68-70",
+  "result": "L",
+  "top": "Johnson 17 pts, 4 reb",
+  "note": "",
+  "leaders": "Johnson|17|4|0;Bradley|16|10|3;Zilys|11|2|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "utsa-2026-11-07",
+  "team": "UTSA",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "opponent": "VMI",
+  "venue": "Home",
+  "score": "70-68",
+  "result": "W",
+  "top": "Tenner 14 pts, 2 reb",
+  "note": "",
+  "leaders": "Tenner|14|2|3;LeGree|14|4|4;Williams|14|0|2",
+  "source": "ESPN"
  }
 ]
