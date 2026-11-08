@@ -1360,12 +1360,11 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "At Madison Square Garden. Swedish matchup: Fall plays for Iona",
-  "status": "live",
+  "status": "final",
   "score": "W 104-65",
   "espn_id": "401924646",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924646",
-  "clock": "Q2 00:25",
-  "live_updated": "2026-11-08T19:58:43+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261108zam",
@@ -1409,7 +1408,7 @@
   "espn_id": "401921684",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921684",
   "clock": "End of Q1",
-  "live_updated": "2026-11-08T19:58:44+01:00"
+  "live_updated": "2026-11-08T20:01:19+01:00"
  },
  {
   "game_id": "g20261108ucam",
@@ -1424,8 +1423,8 @@
   "status": "live",
   "score": "L 39-47",
   "live_feed": "acb:105437",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-08T19:58:45+01:00"
+  "clock": "Q3 10:00",
+  "live_updated": "2026-11-08T20:01:20+01:00"
  },
  {
   "game_id": "g20261108isu",

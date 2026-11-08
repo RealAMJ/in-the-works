@@ -35234,7 +35234,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35255,7 +35255,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35276,7 +35276,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35297,7 +35297,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35318,7 +35318,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35327,7 +35327,7 @@
   "team": "Iona",
   "player": "Alliou Fall",
   "pos": "",
-  "min": 15,
+  "min": 16,
   "pts": 4,
   "reb": 2,
   "ast": 0,
@@ -35339,7 +35339,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35360,7 +35360,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35381,7 +35381,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35402,7 +35402,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35423,7 +35423,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35432,23 +35432,23 @@
   "team": "Iona",
   "player": "Oliver Sassella",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 7,
   "reb": 2,
   "ast": 4,
   "stl": 0,
   "blk": 0,
   "tov": 4,
-  "fg": "1/4",
-  "three": "1/3",
+  "fg": "1/5",
+  "three": "1/4",
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-0-14",
+  "row_id": "g20261108sju-0-11",
   "game_id": "g20261108sju",
   "team": "Iona",
   "player": "Panagiotis Lefas",
@@ -35465,11 +35465,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-0-15",
+  "row_id": "g20261108sju-0-12",
   "game_id": "g20261108sju",
   "team": "Iona",
   "player": "Martin Kheil",
@@ -35486,7 +35486,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35507,7 +35507,7 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35528,7 +35528,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35549,7 +35549,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35570,7 +35570,7 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -35591,19 +35591,19 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-6",
+  "row_id": "g20261108sju-1-5",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Reed Bailey",
   "pos": "",
-  "min": 15,
+  "min": 16,
   "pts": 4,
-  "reb": 2,
-  "ast": 2,
+  "reb": 3,
+  "ast": 3,
   "stl": 0,
   "blk": 0,
   "tov": 0,
@@ -35612,19 +35612,19 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-7",
+  "row_id": "g20261108sju-1-6",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Zsombor Maronka",
   "pos": "",
-  "min": 17,
+  "min": 18,
   "pts": 12,
   "reb": 0,
-  "ast": 2,
+  "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
@@ -35633,11 +35633,11 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-9",
+  "row_id": "g20261108sju-1-7",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Lazar Stojkovic",
@@ -35654,11 +35654,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-10",
+  "row_id": "g20261108sju-1-8",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Theo Edema",
@@ -35675,11 +35675,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-11",
+  "row_id": "g20261108sju-1-9",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Fotis Konstantinidis",
@@ -35696,11 +35696,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-12",
+  "row_id": "g20261108sju-1-10",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Casper Pohto",
@@ -35717,11 +35717,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-13",
+  "row_id": "g20261108sju-1-11",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Lefteris Liotopoulos",
@@ -35738,11 +35738,11 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-14",
+  "row_id": "g20261108sju-1-12",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Avery Brown",
@@ -35759,11 +35759,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108sju-1-15",
+  "row_id": "g20261108sju-1-13",
   "game_id": "g20261108sju",
   "team": "St. John's",
   "player": "Kyle Cuffe Jr.",
@@ -35780,7 +35780,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -36104,8 +36104,8 @@
   "team": "Maine",
   "player": "Wyatt Triestman",
   "pos": "",
-  "min": 9,
-  "pts": 9,
+  "min": 10,
+  "pts": 11,
   "reb": 0,
   "ast": 0,
   "stl": 0,
@@ -36113,7 +36113,7 @@
   "tov": 1,
   "fg": "3/4",
   "three": "3/4",
-  "ft": "0/0",
+  "ft": "2/2",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -36168,7 +36168,7 @@
   "player": "Ayden Evans",
   "pos": "",
   "min": 13,
-  "pts": 5,
+  "pts": 3,
   "reb": 2,
   "ast": 0,
   "stl": 0,
@@ -36176,7 +36176,7 @@
   "tov": 2,
   "fg": "1/2",
   "three": "1/1",
-  "ft": "2/3",
+  "ft": "0/1",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -36404,7 +36404,7 @@
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 0,
   "fg": "4/5",
   "three": "3/3",
   "ft": "0/0",
