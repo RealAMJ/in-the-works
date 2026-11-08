@@ -5036,5 +5036,31 @@
   "pf": 1,
   "pm": 10,
   "eff": ""
+ },
+ {
+  "row_id": "tidare-2026-11-07",
+  "player": "Hugo Tidare",
+  "date": "2026-11-07",
+  "competition": "NCAA",
+  "team": "Lipscomb",
+  "opponent": "SIU Edwardsville",
+  "venue": "Home",
+  "result": "W 78-77",
+  "min": 13,
+  "pts": 6,
+  "reb": 1,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/4",
+  "three": "0/2",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

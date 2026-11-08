@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T01:02:07+01:00",
+ "at": "2026-11-08T01:05:42+01:00",
  "log": [
   {
    "game": "g20261107vmi",
@@ -9,7 +9,7 @@
    "game": "g20261107vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:01",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -21,29 +21,6 @@
      "UTSA Roadrunners",
      70,
      15
-    ]
-   ]
-  },
-  {
-   "game": "g20261107lip",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261107lip",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "SIU Edwardsville Cougars",
-     77,
-     15
-    ],
-    [
-     "Lipscomb Bisons",
-     78,
-     16
     ]
    ]
   },
