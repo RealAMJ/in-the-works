@@ -33942,7 +33942,7 @@
   "player": "J. Fernández",
   "pos": "",
   "min": 11,
-  "pts": 4,
+  "pts": 5,
   "reb": 1,
   "ast": 1,
   "stl": 1,
@@ -33950,8 +33950,8 @@
   "tov": 0,
   "fg": "1/4",
   "three": "1/2",
-  "ft": "1/2",
-  "pm": 2,
+  "ft": "2/3",
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34014,7 +34014,7 @@
   "fg": "6/8",
   "three": "1/1",
   "ft": "0/2",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34056,7 +34056,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34119,7 +34119,7 @@
   "fg": "2/9",
   "three": "2/7",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34140,7 +34140,7 @@
   "fg": "0/2",
   "three": "0/2",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34161,7 +34161,7 @@
   "fg": "1/4",
   "three": "0/2",
   "ft": "3/4",
-  "pm": 4,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34203,7 +34203,7 @@
   "fg": "3/6",
   "three": "3/4",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34224,7 +34224,7 @@
   "fg": "0/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34245,7 +34245,7 @@
   "fg": "6/10",
   "three": "3/7",
   "ft": "0/1",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34329,7 +34329,7 @@
   "fg": "0/2",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 7,
+  "pm": 6,
   "swede": true,
   "state": "live",
   "source": "ACB Live"
