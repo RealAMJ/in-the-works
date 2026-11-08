@@ -5472,5 +5472,33 @@
   "note": "",
   "leaders": "Pradilla|15|7|0;Jones|13|5|0;Abalde|12|3|2",
   "source": "ACB Live"
+ },
+ {
+  "row_id": "maine-2026-11-08",
+  "team": "Maine",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Manhattan",
+  "venue": "Home",
+  "score": "62-68",
+  "result": "L",
+  "top": "Adsten 16 pts, 10 reb",
+  "note": "",
+  "leaders": "Adsten|16|10|4;Triestman|11|0|0;Williams|8|6|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "manhattan-2026-11-08",
+  "team": "Manhattan",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Away",
+  "score": "68-62",
+  "result": "W",
+  "top": "Sabino 19 pts, 9 reb",
+  "note": "",
+  "leaders": "Sabino|19|9|0;Pearce|18|5|3;Tweedy|7|3|3;Kearney|7|1|0",
+  "source": "ESPN"
  }
 ]

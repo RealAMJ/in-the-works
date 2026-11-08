@@ -5348,5 +5348,31 @@
   "pf": 2,
   "pm": -15,
   "eff": ""
+ },
+ {
+  "row_id": "adsten-2026-11-08",
+  "player": "Villiam Garcia Adsten",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "team": "Maine",
+  "opponent": "Manhattan",
+  "venue": "Home",
+  "result": "L 62-68",
+  "min": 33,
+  "pts": 16,
+  "reb": 10,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "7/11",
+  "three": "0/2",
+  "ft": "2/3",
+  "oreb": 1,
+  "dreb": 9,
+  "stl": 1,
+  "blk": 1,
+  "tov": 6,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]
