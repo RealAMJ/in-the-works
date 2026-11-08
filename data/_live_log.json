@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T21:07:46+01:00",
+ "at": "2026-11-08T21:08:36+01:00",
  "log": [
   {
    "game": "g20261108maine",
@@ -9,7 +9,7 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:11",
+   "clock": "00:06",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Maine Black Bears",
-     60,
+     62,
      15
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261108isu",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:55",
+   "clock": "18:23",
    "done": false,
    "teams": [
     [
      "Idaho State Bengals",
-     3,
+     5,
      16
     ],
     [
      "Air Force Falcons",
-     2,
+     4,
      20
     ]
    ]
