@@ -33512,7 +33512,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33533,7 +33533,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33554,7 +33554,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33572,10 +33572,10 @@
   "tov": 1,
   "fg": "3/8",
   "three": "1/5",
-  "ft": "4/6",
+  "ft": "4/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33596,7 +33596,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33605,7 +33605,7 @@
   "team": "San Jose State",
   "player": "KJ Martin Jr.",
   "pos": "",
-  "min": 19,
+  "min": 20,
   "pts": 14,
   "reb": 2,
   "ast": 2,
@@ -33617,7 +33617,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33626,7 +33626,7 @@
   "team": "San Jose State",
   "player": "Mookie Cook",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 16,
   "reb": 1,
   "ast": 1,
@@ -33638,11 +33638,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-0-9",
+  "row_id": "g20261108uci-0-7",
   "game_id": "g20261108uci",
   "team": "San Jose State",
   "player": "Oliver Kullamae",
@@ -33659,11 +33659,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-0-12",
+  "row_id": "g20261108uci-0-8",
   "game_id": "g20261108uci",
   "team": "San Jose State",
   "player": "Rokiem Green",
@@ -33680,7 +33680,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33701,7 +33701,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33722,7 +33722,7 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33733,7 +33733,7 @@
   "pos": "",
   "min": 30,
   "pts": 24,
-  "reb": 7,
+  "reb": 8,
   "ast": 3,
   "stl": 1,
   "blk": 1,
@@ -33743,7 +33743,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33764,7 +33764,7 @@
   "ft": "5/7",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33785,11 +33785,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-6",
+  "row_id": "g20261108uci-1-5",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Parker Spees",
@@ -33806,11 +33806,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-10",
+  "row_id": "g20261108uci-1-6",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Nes Emeneke",
@@ -33827,11 +33827,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-11",
+  "row_id": "g20261108uci-1-7",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Luke Isaak",
@@ -33848,16 +33848,16 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-13",
+  "row_id": "g20261108uci-1-8",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Josiah Johnson",
   "pos": "",
-  "min": 25,
+  "min": 26,
   "pts": 13,
   "reb": 2,
   "ast": 3,
@@ -33869,11 +33869,11 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-14",
+  "row_id": "g20261108uci-1-9",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Bryce Goldman",
@@ -33890,11 +33890,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108uci-1-16",
+  "row_id": "g20261108uci-1-10",
   "game_id": "g20261108uci",
   "team": "UC Irvine",
   "player": "Torian Lee",
@@ -33911,7 +33911,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
