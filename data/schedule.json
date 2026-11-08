@@ -1894,6 +1894,58 @@
   "score": ""
  },
  {
+  "game_id": "g20261115lowe",
+  "date": "2026-11-15",
+  "time": "18:00",
+  "players": "Zaba Bangala",
+  "team": "Löwen Braunschweig",
+  "opponent": "NINERS Chemnitz",
+  "venue": "Away",
+  "competition": "BBL",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261115mich",
+  "date": "2026-11-15",
+  "time": "20:00",
+  "players": "Elliot Cadeau",
+  "team": "Michigan",
+  "opponent": "William & Mary",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261115robe",
+  "date": "2026-11-15",
+  "time": "20:00",
+  "players": "Samuel Obenjo",
+  "team": "Robert Morris",
+  "opponent": "Capital",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261116stjo",
+  "date": "2026-11-16",
+  "time": "01:00",
+  "players": "Casper Pohto",
+  "team": "St. John's",
+  "opponent": "Syracuse",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "g20261117vir",
   "date": "2026-11-17",
   "time": "21:00",

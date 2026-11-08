@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Casper Pohto. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261116stjo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261116T000000Z
+DTEND:20261116T020000Z
+SUMMARY:Pohto: St. John's vs Syracuse
+DESCRIPTION:NCAA. Players: Casper Pohto. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

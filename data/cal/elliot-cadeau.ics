@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115mich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T190000Z
+DTEND:20261115T210000Z
+SUMMARY:Cadeau: Michigan vs William & Mary
+DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
