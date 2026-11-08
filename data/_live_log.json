@@ -1,29 +1,6 @@
 {
- "at": "2026-11-08T18:57:43+01:00",
+ "at": "2026-11-08T19:00:39+01:00",
  "log": [
-  {
-   "game": "g20261108uni",
-   "checking": "ACB Live"
-  },
-  {
-   "game": "g20261108uni",
-   "src": "ACB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Casademont Zaragoza",
-     96,
-     12
-    ],
-    [
-     "Unicaja",
-     91,
-     12
-    ]
-   ]
-  },
   {
    "game": "g20261108sju",
    "checking": "ESPN"

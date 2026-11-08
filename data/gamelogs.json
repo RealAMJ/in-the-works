@@ -5218,5 +5218,31 @@
   "pf": 4,
   "pm": 6,
   "eff": ""
+ },
+ {
+  "row_id": "pantzar-2026-11-08",
+  "player": "Melwin Pantzar",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "team": "Unicaja",
+  "opponent": "Casademont Zaragoza",
+  "venue": "Away",
+  "result": "L 91-96",
+  "min": 14,
+  "pts": 5,
+  "reb": 3,
+  "ast": 1,
+  "source": "ACB Live",
+  "fg": "1/6",
+  "three": "0/3",
+  "ft": "3/4",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "pm": -5,
+  "eff": ""
  }
 ]

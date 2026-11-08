@@ -5360,5 +5360,33 @@
   "note": "",
   "leaders": "Ulanovas|23|3|1;Sleva|16|2|3;Blaževič|13|10|2",
   "source": "LKL Live"
+ },
+ {
+  "row_id": "unicaja-2026-11-08",
+  "team": "Unicaja",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "Casademont Zaragoza",
+  "venue": "Away",
+  "score": "91-96",
+  "result": "L",
+  "top": "Perry 20 pts, 1 reb",
+  "note": "",
+  "leaders": "Perry|20|1|3;Knox|17|4|2;Noua|17|4|0",
+  "source": "ACB Live"
+ },
+ {
+  "row_id": "casademont-zaragoza-2026-11-08",
+  "team": "Casademont Zaragoza",
+  "date": "2026-11-08",
+  "competition": "Liga ACB",
+  "opponent": "Unicaja",
+  "venue": "Home",
+  "score": "96-91",
+  "result": "W",
+  "top": "Brussino 25 pts, 8 reb",
+  "note": "",
+  "leaders": "Brussino|25|8|1;Birutis|21|8|3;Olaseni|12|3|0",
+  "source": "ACB Live"
  }
 ]
