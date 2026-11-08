@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T19:39:31+01:00",
+ "at": "2026-11-08T19:40:22+01:00",
  "log": [
   {
    "game": "g20261108sju",
@@ -9,7 +9,7 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:47",
+   "clock": "07:06",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "St. John's Red Storm",
-     85,
+     87,
      16
     ]
    ]
@@ -44,12 +44,12 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:06",
+   "clock": "05:19",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     14,
+     16,
      18
     ],
     [
@@ -72,7 +72,7 @@
    "teams": [
     [
      "Real Madrid",
-     37,
+     38,
      12
     ],
     [
