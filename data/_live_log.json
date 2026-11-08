@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:39:32+01:00",
+ "at": "2026-11-08T17:44:55+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -9,17 +9,17 @@
    "game": "g20261108jut",
    "src": "LKL Live",
    "period": 4,
-   "clock": "03:49",
+   "clock": "01:47",
    "done": false,
    "teams": [
     [
      "Juventus Utena",
-     76,
+     81,
      11
     ],
     [
      "\u017dalgiris Kaunas",
-     78,
+     85,
      16
     ]
    ]
@@ -46,6 +46,41 @@
      12
     ]
    ]
+  },
+  {
+   "game": "g20261108sju",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261108sju",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "St. John's Red Storm",
+     0,
+     0
+    ],
+    [
+     "Iona Gaels",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261108zam",
+   "checking": "FEB Live"
+  },
+  {
+   "game": "g20261108zam",
+   "src": "FEB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": true,
+   "teams": []
   }
  ]
 }
