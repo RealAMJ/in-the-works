@@ -34833,7 +34833,7 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "2/2",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34854,7 +34854,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34896,7 +34896,7 @@
   "fg": "2/3",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34959,7 +34959,7 @@
   "fg": "6/6",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 12,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34980,7 +34980,7 @@
   "fg": "1/3",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35043,7 +35043,7 @@
   "fg": "1/4",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35064,7 +35064,7 @@
   "fg": "2/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35148,7 +35148,7 @@
   "fg": "4/6",
   "three": "0/2",
   "ft": "3/3",
-  "pm": -2,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35160,7 +35160,7 @@
   "player": "W. Hernangómez",
   "pos": "",
   "min": 12,
-  "pts": 2,
+  "pts": 3,
   "reb": 3,
   "ast": 0,
   "stl": 0,
@@ -35168,8 +35168,8 @@
   "tov": 1,
   "fg": "1/2",
   "three": "0/0",
-  "ft": "0/0",
-  "pm": 5,
+  "ft": "1/2",
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35211,7 +35211,7 @@
   "fg": "3/5",
   "three": "3/4",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
