@@ -5192,5 +5192,31 @@
   "pf": 3,
   "pm": 4,
   "eff": ""
+ },
+ {
+  "row_id": "pohto-2026-11-08",
+  "player": "Kenny Pohto",
+  "date": "2026-11-08",
+  "competition": "LKL",
+  "team": "Juventus Utena",
+  "opponent": "Žalgiris Kaunas",
+  "venue": "Home",
+  "result": "L 85-94",
+  "min": 14,
+  "pts": 9,
+  "reb": 2,
+  "ast": 1,
+  "source": "LKL Live",
+  "fg": "4/4",
+  "three": "1/1",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 0,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 4,
+  "pm": 6,
+  "eff": ""
  }
 ]

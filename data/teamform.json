@@ -5332,5 +5332,33 @@
   "note": "",
   "leaders": "Huertas|19|3|4;Beck|13|3|0;Shermadini|12|5|1",
   "source": "ACB Live"
+ },
+ {
+  "row_id": "juventus-utena-2026-11-08",
+  "team": "Juventus Utena",
+  "date": "2026-11-08",
+  "competition": "LKL",
+  "opponent": "Žalgiris Kaunas",
+  "venue": "Home",
+  "score": "85-94",
+  "result": "L",
+  "top": "Beliauskas 21 pts, 1 reb",
+  "note": "",
+  "leaders": "Beliauskas|21|1|4;Hunter|19|6|4;Beniušis|10|4|1",
+  "source": "LKL Live"
+ },
+ {
+  "row_id": "zalgiris-kaunas-2026-11-08",
+  "team": "Žalgiris Kaunas",
+  "date": "2026-11-08",
+  "competition": "LKL",
+  "opponent": "Juventus Utena",
+  "venue": "Away",
+  "score": "94-85",
+  "result": "W",
+  "top": "Ulanovas 23 pts, 3 reb",
+  "note": "",
+  "leaders": "Ulanovas|23|3|1;Sleva|16|2|3;Blaževič|13|10|2",
+  "source": "LKL Live"
  }
 ]

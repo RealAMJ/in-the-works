@@ -1329,7 +1329,9 @@
   "status": "final",
   "score": "L 85-94",
   "live_feed": "lkl:11619",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108uni",
@@ -1342,10 +1344,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "L 38-43",
+  "score": "W 43-43",
   "live_feed": "acb:105435",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-08T17:54:38+01:00"
+  "clock": "Q3 08:47",
+  "live_updated": "2026-11-08T17:57:26+01:00"
  },
  {
   "game_id": "g20261108sju",

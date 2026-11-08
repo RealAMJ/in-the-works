@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T17:54:39+01:00",
+ "updated": "2026-11-08T17:57:27+01:00",
  "app": "58c0ffd24dc8",
  "files": {
   "awards": "8c4e6828bce4",
@@ -9,9 +9,9 @@
   "coaches": "efb2086390f9",
   "coachgames": "da2774b50e8e",
   "feed_seeds": "eb42ce2f6012",
-  "fullbox": "4855806b8dba",
-  "gamelogs": "560e9141d8fa",
-  "highlights": "7f1af27accb4",
+  "fullbox": "9610cdc68830",
+  "gamelogs": "423112715a34",
+  "highlights": "2866c7e7d6bb",
   "leaguetiers": "8eff8731a606",
   "ntgames": "b7f550506848",
   "ntroster": "e0ee329f554a",
@@ -20,9 +20,9 @@
   "previews": "732a8684f330",
   "sbl": "501fa08ac170",
   "sblgames": "854e2718ad41",
-  "schedule": "ea5d42a74e76",
-  "stats": "e002e2d28bec",
-  "teamform": "3dfb11afd19f",
+  "schedule": "c6f584cc4cbf",
+  "stats": "5a11622aa03a",
+  "teamform": "dc8e4442c8fe",
   "teams": "f98fc2f0468c",
   "thisweek": "fd5a4ef3b76e"
  }
