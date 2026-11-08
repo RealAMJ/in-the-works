@@ -1327,10 +1327,10 @@
   "competition": "LKL",
   "note": "16:30 local",
   "status": "live",
-  "score": "L 47-48",
+  "score": "L 51-52",
   "live_feed": "lkl:11619",
-  "clock": "Q3 07:35",
-  "live_updated": "2026-11-08T17:05:37+01:00"
+  "clock": "Q3 05:06",
+  "live_updated": "2026-11-08T17:09:43+01:00"
  },
  {
   "game_id": "g20261108uni",
@@ -1343,10 +1343,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "W 10-5",
+  "score": "W 16-13",
   "live_feed": "acb:105435",
-  "clock": "Q1 07:35",
-  "live_updated": "2026-11-08T17:05:38+01:00"
+  "clock": "Q1 05:16",
+  "live_updated": "2026-11-08T17:09:44+01:00"
  },
  {
   "game_id": "g20261108sju",
