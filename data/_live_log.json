@@ -1,29 +1,6 @@
 {
- "at": "2026-11-08T20:39:11+01:00",
+ "at": "2026-11-08T20:40:01+01:00",
  "log": [
-  {
-   "game": "g20261108zam",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "g20261108zam",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "FIBWI MALLORCA BASQUET PALMA",
-     79,
-     10
-    ],
-    [
-     "CAJA RURAL CB ZAMORA",
-     92,
-     11
-    ]
-   ]
-  },
   {
    "game": "g20261108maine",
    "checking": "ESPN"
@@ -67,6 +44,29 @@
      "UCAM Murcia",
      55,
      12
+    ]
+   ]
+  },
+  {
+   "game": "g20261108isu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261108isu",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Air Force Falcons",
+     0,
+     0
+    ],
+    [
+     "Idaho State Bengals",
+     0,
+     0
     ]
    ]
   }
