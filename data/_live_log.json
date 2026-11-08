@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T13:37:18+01:00",
+ "at": "2026-11-08T13:41:26+01:00",
  "log": [
   {
    "game": "g20261108jov",
@@ -9,12 +9,12 @@
    "game": "g20261108jov",
    "src": "ACB Live",
    "period": 2,
-   "clock": "10:00",
+   "clock": "09:02",
    "done": false,
    "teams": [
     [
      "La Laguna Tenerife",
-     25,
+     26,
      12
     ],
     [
