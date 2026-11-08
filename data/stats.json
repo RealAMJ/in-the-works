@@ -532,12 +532,12 @@
   "player": "Nils Cooper",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 26.0,
-  "pts": 10.0,
-  "reb": 7.0,
-  "ast": 4.0,
-  "note": "Averages from game log (1 games, through 2026-11-04)"
+  "gp": 2,
+  "min": 27.0,
+  "pts": 12.5,
+  "reb": 5.5,
+  "ast": 2.5,
+  "note": "Averages from game log (2 games, through 2026-11-08)"
  },
  {
   "row_id": "berg-ncaa",

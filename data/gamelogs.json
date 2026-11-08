@@ -5140,5 +5140,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "cooper-2026-11-08",
+  "player": "Nils Cooper",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "team": "UC Irvine",
+  "opponent": "San Jose State",
+  "venue": "Home",
+  "result": "W 91-79",
+  "min": 28,
+  "pts": 15,
+  "reb": 4,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "5/8",
+  "three": "0/2",
+  "ft": "5/7",
+  "oreb": 1,
+  "dreb": 3,
+  "stl": 2,
+  "blk": 1,
+  "tov": 2,
+  "pf": 4,
+  "pm": "",
+  "eff": ""
  }
 ]

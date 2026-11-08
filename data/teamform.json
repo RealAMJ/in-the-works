@@ -5276,5 +5276,33 @@
   "note": "",
   "leaders": "Parrish-Tillman|30|10|2;Malcolm|9|7|0;Reagan|8|3|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "uc-irvine-2026-11-08",
+  "team": "UC Irvine",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "San Jose State",
+  "venue": "Home",
+  "score": "91-79",
+  "result": "W",
+  "top": "Jester 24 pts, 8 reb",
+  "note": "",
+  "leaders": "Jester|24|8|3;Cooper|15|4|1;Isaac|14|5|8",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "san-jose-state-2026-11-08",
+  "team": "San Jose State",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "UC Irvine",
+  "venue": "Away",
+  "score": "79-91",
+  "result": "L",
+  "top": "Chammaa 16 pts, 5 reb",
+  "note": "",
+  "leaders": "Chammaa|16|5|2;Cook|16|1|1;Martin|14|2|2",
+  "source": "ESPN"
  }
 ]
