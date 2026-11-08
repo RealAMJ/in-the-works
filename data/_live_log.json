@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:11:53+01:00",
+ "at": "2026-11-08T18:12:45+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,12 +9,12 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 3,
-   "clock": "03:50",
+   "clock": "03:33",
    "done": false,
    "teams": [
     [
      "Casademont Zaragoza",
-     53,
+     55,
      12
     ],
     [
