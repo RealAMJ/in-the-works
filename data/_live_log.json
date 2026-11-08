@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T20:46:43+01:00",
+ "at": "2026-11-08T20:49:38+01:00",
  "log": [
   {
    "game": "g20261108maine",
@@ -9,17 +9,17 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:38",
+   "clock": "05:15",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     53,
+     55,
      18
     ],
     [
      "Maine Black Bears",
-     55,
+     56,
      15
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261108ucam",
    "src": "ACB Live",
    "period": 4,
-   "clock": "03:41",
+   "clock": "02:39",
    "done": false,
    "teams": [
     [
      "Real Madrid",
-     80,
+     82,
      12
     ],
     [
      "UCAM Murcia",
-     57,
+     61,
      12
     ]
    ]
