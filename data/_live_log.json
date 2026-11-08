@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T15:09:13+01:00",
+ "at": "2026-11-08T15:10:05+01:00",
  "log": [
   {
    "game": "g20261108jov",
@@ -9,7 +9,7 @@
    "game": "g20261108jov",
    "src": "ACB Live",
    "period": 4,
-   "clock": "01:34",
+   "clock": "01:02",
    "done": false,
    "teams": [
     [
@@ -21,6 +21,29 @@
      "Asisa Joventut",
      73,
      12
+    ]
+   ]
+  },
+  {
+   "game": "g20261108jut",
+   "checking": "LKL Live"
+  },
+  {
+   "game": "g20261108jut",
+   "src": "LKL Live",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
+   "teams": [
+    [
+     "Juventus Utena",
+     0,
+     0
+    ],
+    [
+     "\u017dalgiris Kaunas",
+     0,
+     15
     ]
    ]
   }
