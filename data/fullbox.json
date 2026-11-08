@@ -34896,7 +34896,7 @@
   "fg": "2/3",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34917,7 +34917,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34959,7 +34959,7 @@
   "fg": "7/7",
   "three": "0/0",
   "ft": "2/3",
-  "pm": 13,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -34980,7 +34980,7 @@
   "fg": "1/4",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35001,7 +35001,7 @@
   "fg": "2/5",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35043,7 +35043,7 @@
   "fg": "1/5",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35064,7 +35064,7 @@
   "fg": "2/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35118,7 +35118,7 @@
   "player": "Melwin Pantzar",
   "pos": "",
   "min": 10,
-  "pts": 2,
+  "pts": 3,
   "reb": 2,
   "ast": 0,
   "stl": 1,
@@ -35126,8 +35126,8 @@
   "tov": 0,
   "fg": "1/4",
   "three": "0/2",
-  "ft": "0/0",
-  "pm": -1,
+  "ft": "1/2",
+  "pm": 0,
   "swede": true,
   "state": "live",
   "source": "ACB Live"
@@ -35148,7 +35148,7 @@
   "fg": "4/6",
   "three": "0/2",
   "ft": "3/3",
-  "pm": -3,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35190,7 +35190,7 @@
   "fg": "0/4",
   "three": "0/3",
   "ft": "2/2",
-  "pm": -5,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -35313,7 +35313,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "0/0",
+  "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -35329,7 +35329,7 @@
   "pos": "",
   "min": 4,
   "pts": 0,
-  "reb": 0,
+  "reb": 1,
   "ast": 0,
   "stl": 0,
   "blk": 0,
