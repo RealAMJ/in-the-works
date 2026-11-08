@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T01:26:18+01:00",
+ "at": "2026-11-08T01:27:08+01:00",
  "log": [
   {
    "game": "g20261108unm",
@@ -9,12 +9,12 @@
    "game": "g20261108unm",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:30",
+   "clock": "13:12",
    "done": false,
    "teams": [
     [
      "Northern Arizona Lumberjacks",
-     38,
+     39,
      15
     ],
     [
