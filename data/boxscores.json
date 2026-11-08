@@ -1921,10 +1921,10 @@
   "note": "live",
   "oreb": 0,
   "dreb": 0,
-  "stl": 1,
+  "stl": 2,
   "blk": 0,
-  "tov": 2,
-  "pf": 2,
+  "tov": 4,
+  "pf": 3,
   "eff": ""
  }
 ]
