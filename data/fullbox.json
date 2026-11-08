@@ -34362,7 +34362,7 @@
   "player": "C. Hunter",
   "pos": "",
   "min": 9,
-  "pts": 7,
+  "pts": 9,
   "reb": 4,
   "ast": 1,
   "stl": 0,
@@ -34370,8 +34370,8 @@
   "tov": 2,
   "fg": "3/4",
   "three": "1/1",
-  "ft": "0/0",
-  "pm": 12,
+  "ft": "2/2",
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34413,7 +34413,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34476,7 +34476,7 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34497,7 +34497,7 @@
   "fg": "3/3",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 9,
   "swede": true,
   "state": "live",
   "source": "LKL Live"
@@ -34518,7 +34518,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/2",
-  "pm": 5,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34560,7 +34560,7 @@
   "fg": "3/5",
   "three": "2/4",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34602,7 +34602,7 @@
   "fg": "2/5",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34623,7 +34623,7 @@
   "fg": "3/4",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 18,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34707,7 +34707,7 @@
   "fg": "1/4",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
@@ -34770,7 +34770,7 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "LKL Live"
