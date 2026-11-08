@@ -1313,7 +1313,7 @@
   "score": "W 45-39",
   "live_feed": "acb:105434",
   "clock": "End of Q1",
-  "live_updated": "2026-11-08T14:06:03+01:00"
+  "live_updated": "2026-11-08T14:10:14+01:00"
  },
  {
   "game_id": "g20261108jut",
@@ -1462,7 +1462,8 @@
   "competition": "LBA (Italy)",
   "note": "Round 7",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "lba:25408"
  },
  {
   "game_id": "g20261110ewu",
