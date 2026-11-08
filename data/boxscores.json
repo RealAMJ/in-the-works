@@ -1684,5 +1684,27 @@
   "tov": 3,
   "pf": 3,
   "eff": ""
+ },
+ {
+  "line_id": "g20261108uci-cooper",
+  "game_id": "g20261108uci",
+  "player": "Nils Cooper",
+  "min": 4,
+  "pts": 1,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "1/2",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "eff": ""
  }
 ]
