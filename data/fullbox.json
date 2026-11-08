@@ -33080,19 +33080,19 @@
   "team": "Denver",
   "player": "Oskar Stumer",
   "pos": "",
-  "min": 31,
+  "min": 32,
   "pts": 2,
   "reb": 8,
   "ast": 1,
   "stl": 0,
   "blk": 1,
   "tov": 3,
-  "fg": "0/4",
-  "three": "0/2",
+  "fg": "0/5",
+  "three": "0/3",
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33113,7 +33113,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33123,18 +33123,18 @@
   "player": "Shaun Wysocki",
   "pos": "",
   "min": 35,
-  "pts": 11,
-  "reb": 8,
+  "pts": 13,
+  "reb": 9,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "fg": "4/8",
+  "fg": "5/9",
   "three": "0/3",
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33155,7 +33155,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33176,7 +33176,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33197,7 +33197,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33218,7 +33218,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33239,11 +33239,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-0-12",
+  "row_id": "g20261108den-0-8",
   "game_id": "g20261108den",
   "team": "Denver",
   "player": "CJ Hyland",
@@ -33260,16 +33260,16 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-0-13",
+  "row_id": "g20261108den-0-9",
   "game_id": "g20261108den",
   "team": "Denver",
   "player": "Logan Threatt",
   "pos": "",
-  "min": 19,
+  "min": 20,
   "pts": 3,
   "reb": 2,
   "ast": 2,
@@ -33281,7 +33281,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33302,7 +33302,7 @@
   "ft": "1/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33323,7 +33323,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33344,7 +33344,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33365,7 +33365,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -33386,11 +33386,11 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-1-7",
+  "row_id": "g20261108den-1-5",
   "game_id": "g20261108den",
   "team": "UC Riverside",
   "player": "Dallas Washington",
@@ -33407,17 +33407,17 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-1-9",
+  "row_id": "g20261108den-1-6",
   "game_id": "g20261108den",
   "team": "UC Riverside",
   "player": "Aidan Rice",
   "pos": "",
   "min": 20,
-  "pts": 2,
+  "pts": 4,
   "reb": 3,
   "ast": 5,
   "stl": 0,
@@ -33425,14 +33425,14 @@
   "tov": 0,
   "fg": "1/4",
   "three": "0/1",
-  "ft": "0/1",
+  "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-1-12",
+  "row_id": "g20261108den-1-7",
   "game_id": "g20261108den",
   "team": "UC Riverside",
   "player": "Ben Waller",
@@ -33449,11 +33449,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-1-13",
+  "row_id": "g20261108den-1-8",
   "game_id": "g20261108den",
   "team": "UC Riverside",
   "player": "Easton Reagan",
@@ -33470,11 +33470,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261108den-1-14",
+  "row_id": "g20261108den-1-9",
   "game_id": "g20261108den",
   "team": "UC Riverside",
   "player": "Parker Strauss",
@@ -33491,7 +33491,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
