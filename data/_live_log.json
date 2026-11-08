@@ -1,29 +1,6 @@
 {
- "at": "2026-11-08T01:06:31+01:00",
+ "at": "2026-11-08T01:07:21+01:00",
  "log": [
-  {
-   "game": "g20261107vmi",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261107vmi",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "VMI Keydets",
-     68,
-     17
-    ],
-    [
-     "UTSA Roadrunners",
-     70,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261108unm",
    "checking": "ESPN"
