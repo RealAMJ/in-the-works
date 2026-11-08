@@ -1840,6 +1840,28 @@
   "eff": ""
  },
  {
+  "line_id": "g20261108zam-palmquist",
+  "game_id": "g20261108zam",
+  "player": "Oskar Palmquist",
+  "min": 23,
+  "pts": 7,
+  "reb": 3,
+  "ast": 1,
+  "fg": "3/5",
+  "three": "1/3",
+  "ft": "0/0",
+  "pm": -5,
+  "source": "FEB Live",
+  "note": "",
+  "oreb": 2,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 3,
+  "pf": 3,
+  "eff": ""
+ },
+ {
   "line_id": "g20261108maine-adsten",
   "game_id": "g20261108maine",
   "player": "Villiam Garcia Adsten",

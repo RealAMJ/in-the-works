@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T20:38:21+01:00",
+ "at": "2026-11-08T20:39:11+01:00",
  "log": [
   {
    "game": "g20261108zam",
@@ -8,10 +8,21 @@
   {
    "game": "g20261108zam",
    "src": "FEB Live",
-   "period": 1,
+   "period": 4,
    "clock": "00:00",
    "done": true,
-   "teams": []
+   "teams": [
+    [
+     "FIBWI MALLORCA BASQUET PALMA",
+     79,
+     10
+    ],
+    [
+     "CAJA RURAL CB ZAMORA",
+     92,
+     11
+    ]
+   ]
   },
   {
    "game": "g20261108maine",
