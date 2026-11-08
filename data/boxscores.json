@@ -1902,7 +1902,29 @@
   "stl": 1,
   "blk": 1,
   "tov": 6,
-  "pf": 2,
+  "pf": 3,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261108isu-amoran",
+  "game_id": "g20261108isu",
+  "player": "Nathan Amoran",
+  "min": 0,
+  "pts": 3,
+  "reb": 0,
+  "ast": 0,
+  "fg": "1/1",
+  "three": "1/1",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
   "eff": ""
  }
 ]

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T21:04:17+01:00",
+ "at": "2026-11-08T21:06:55+01:00",
  "log": [
   {
    "game": "g20261108maine",
@@ -9,12 +9,12 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:22",
+   "clock": "00:11",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     62,
+     66,
      18
     ],
     [
@@ -31,19 +31,19 @@
   {
    "game": "g20261108isu",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:10",
    "done": false,
    "teams": [
     [
-     "Air Force Falcons",
-     0,
-     0
+     "Idaho State Bengals",
+     3,
+     16
     ],
     [
-     "Idaho State Bengals",
+     "Air Force Falcons",
      0,
-     0
+     20
     ]
    ]
   }
