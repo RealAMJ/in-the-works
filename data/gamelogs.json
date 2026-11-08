@@ -5088,5 +5088,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "fasasi-2026-11-08",
+  "player": "Tunde Fasasi",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "team": "New Mexico",
+  "opponent": "Northern Arizona",
+  "venue": "Home",
+  "result": "W 94-65",
+  "min": 25,
+  "pts": 8,
+  "reb": 1,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "3/8",
+  "three": "2/7",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

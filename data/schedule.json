@@ -1246,7 +1246,9 @@
   "score": "W 94-65",
   "espn_id": "401924895",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924895",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108den",
@@ -1259,11 +1261,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 17-14",
+  "score": "W 18-14",
   "espn_id": "401926227",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926227",
-  "clock": "Q1 06:51",
-  "live_updated": "2026-11-08T02:03:00+01:00"
+  "clock": "Q1 05:55",
+  "live_updated": "2026-11-08T02:05:46+01:00"
  },
  {
   "game_id": "g20261108uci",

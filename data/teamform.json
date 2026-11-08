@@ -5220,5 +5220,33 @@
   "note": "",
   "leaders": "Tenner|14|2|3;LeGree|14|4|4;Williams|14|0|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "new-mexico-2026-11-08",
+  "team": "New Mexico",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "Northern Arizona",
+  "venue": "Home",
+  "score": "94-65",
+  "result": "W",
+  "top": "Hall 23 pts, 6 reb",
+  "note": "",
+  "leaders": "Hall|23|6|1;Tenette|18|0|0;Mayes|16|7|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "northern-arizona-2026-11-08",
+  "team": "Northern Arizona",
+  "date": "2026-11-08",
+  "competition": "NCAA",
+  "opponent": "New Mexico",
+  "venue": "Away",
+  "score": "65-94",
+  "result": "L",
+  "top": "Komin 21 pts, 6 reb",
+  "note": "",
+  "leaders": "Komin|21|6|6;Abelman|12|3|0;Toukam|10|7|2",
+  "source": "ESPN"
  }
 ]
