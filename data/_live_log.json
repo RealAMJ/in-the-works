@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T19:48:53+01:00",
+ "at": "2026-11-08T19:49:45+01:00",
  "log": [
   {
    "game": "g20261108sju",
@@ -9,17 +9,17 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:36",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     56,
+     57,
      17
     ],
     [
      "St. John's Red Storm",
-     90,
+     93,
      16
     ]
    ]
@@ -44,17 +44,17 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:16",
+   "clock": "00:38",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     25,
+     27,
      18
     ],
     [
      "Maine Black Bears",
-     27,
+     29,
      15
     ]
    ]
