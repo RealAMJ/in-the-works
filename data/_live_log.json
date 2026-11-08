@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:43:10+01:00",
+ "at": "2026-11-08T18:44:00+01:00",
  "log": [
   {
    "game": "g20261108uni",
@@ -9,7 +9,7 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 4,
-   "clock": "01:52",
+   "clock": "01:36",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:22",
+   "clock": "05:05",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     39,
+     41,
      16
     ]
    ]
