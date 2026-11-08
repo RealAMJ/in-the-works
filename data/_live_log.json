@@ -1,26 +1,26 @@
 {
- "at": "2026-11-08T06:02:54+01:00",
+ "at": "2026-11-08T12:47:45+01:00",
  "log": [
   {
-   "game": "g20261108uci",
-   "checking": "ESPN"
+   "game": "g20261108jov",
+   "checking": "ACB Live"
   },
   {
-   "game": "g20261108uci",
-   "src": "ESPN",
-   "period": 0,
+   "game": "g20261108jov",
+   "src": "ACB Live",
+   "period": 1,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "San Jos\u00e9 State Spartans",
-     79,
-     14
+     "La Laguna Tenerife",
+     0,
+     12
     ],
     [
-     "UC Irvine Anteaters",
-     91,
-     18
+     "Asisa Joventut",
+     0,
+     12
     ]
    ]
   }
