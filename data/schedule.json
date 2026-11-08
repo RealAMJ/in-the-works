@@ -1406,11 +1406,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 39-36",
+  "score": "W 39-37",
   "espn_id": "401921684",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921684",
-  "clock": "Q2 14:50",
-  "live_updated": "2026-11-08T20:16:13+01:00"
+  "clock": "Q2 14:32",
+  "live_updated": "2026-11-08T20:17:05+01:00"
  },
  {
   "game_id": "g20261108ucam",
@@ -1423,10 +1423,10 @@
   "competition": "Liga ACB",
   "note": "Round 7",
   "status": "live",
-  "score": "L 42-55",
+  "score": "L 44-55",
   "live_feed": "acb:105437",
-  "clock": "Q3 05:10",
-  "live_updated": "2026-11-08T20:16:14+01:00"
+  "clock": "Q3 04:42",
+  "live_updated": "2026-11-08T20:17:06+01:00"
  },
  {
   "game_id": "g20261108isu",
