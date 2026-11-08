@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T19:40:22+01:00",
+ "at": "2026-11-08T19:42:48+01:00",
  "log": [
   {
    "game": "g20261108sju",
@@ -9,17 +9,17 @@
    "game": "g20261108sju",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:06",
+   "clock": "06:19",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     46,
+     49,
      17
     ],
     [
      "St. John's Red Storm",
-     87,
+     90,
      16
     ]
    ]
@@ -44,17 +44,17 @@
    "game": "g20261108maine",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:19",
+   "clock": "04:12",
    "done": false,
    "teams": [
     [
      "Manhattan Jaspers",
-     16,
+     20,
      18
     ],
     [
      "Maine Black Bears",
-     19,
+     22,
      15
     ]
    ]
@@ -67,17 +67,17 @@
    "game": "g20261108ucam",
    "src": "ACB Live",
    "period": 2,
-   "clock": "02:25",
+   "clock": "00:52",
    "done": false,
    "teams": [
     [
      "Real Madrid",
-     38,
+     42,
      12
     ],
     [
      "UCAM Murcia",
-     32,
+     37,
      12
     ]
    ]
