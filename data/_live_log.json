@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:18:45+01:00",
+ "at": "2026-11-08T17:19:36+01:00",
  "log": [
   {
    "game": "g20261108jut",
@@ -9,7 +9,7 @@
    "game": "g20261108jut",
    "src": "LKL Live",
    "period": 3,
-   "clock": "00:52",
+   "clock": "00:38",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261108uni",
    "src": "ACB Live",
    "period": 2,
-   "clock": "10:00",
+   "clock": "09:16",
    "done": false,
    "teams": [
     [
      "Casademont Zaragoza",
-     17,
+     19,
      12
     ],
     [
      "Unicaja",
-     20,
+     23,
      12
     ]
    ]
