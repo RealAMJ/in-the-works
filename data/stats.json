@@ -574,5 +574,17 @@
   "reb": 2.8,
   "ast": 1.1,
   "note": "Averages from game log (9 games, through 2026-11-06)"
+ },
+ {
+  "row_id": "arvidsson-sbl",
+  "player": "Jonatan Arvidsson",
+  "competition": "Basketligan",
+  "season": "2026-27",
+  "gp": 10,
+  "min": 26.9,
+  "pts": 19.7,
+  "reb": 2.8,
+  "ast": 3.6,
+  "note": "Averages from game log (10 games, through 2026-11-06)"
  }
 ]

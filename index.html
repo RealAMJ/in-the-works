@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="theme.css?v=50523d4c">
-<script src="dash-shim.js?v=cd3e7b22"></script>
+<script src="dash-shim.js?v=095507e5"></script>
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
@@ -1644,7 +1644,8 @@
       const big = mk('div', 'sbx-num'); big.append(mk('b', '', num), mk('span', '', sub ? (/Quad|Fyr/i.test(sub) ? 'QD' : /Trip/i.test(sub) ? 'TD' : 'DD') : unit));
       if (sub) big.title = sub;
       const mid = mk('div', 'sbx-mid');
-      mid.append(mk('div', 'sbx-name', r.player), mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
+      const nmEl = mk('div', 'sbx-name'); nmEl.append(homeClubOf(r.player) ? names(r.player) : r.player);
+      mid.append(nmEl, mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
       const bits = [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].map(([v, k]) => `${v} ${k}`);
       if (Number(r.stl) >= 3) bits.push(`${r.stl} STL`); if (Number(r.blk) >= 3) bits.push(`${r.blk} BLK`);
       if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
@@ -1687,7 +1688,7 @@
     el.replaceChildren();
     const rows0 = awRows(); if (!rows0) { el.textContent = '—'; return; }
     const pl = dash.data('players');
-    const tracked = (n) => pl.status === 'ok' && pl.data.some((p) => norm(p.player) === norm(n));
+    const tracked = (n) => (pl.status === 'ok' && pl.data.some((p) => norm(p.player) === norm(n))) || !!homeClubOf(n);
     const rows = rows0.filter((r) => awCat === 'all' || awKind(r)[1] === awCat);
     if (!rows.length) {
       const e = mk('div', 'aw-empty');
@@ -2400,7 +2401,7 @@
   function ageTxt(born) { if (!born) return ''; const b = new Date(born + 'T12:00:00Z'), n = new Date(); let a = n.getUTCFullYear() - b.getUTCFullYear(); if (n.getUTCMonth() < b.getUTCMonth() || (n.getUTCMonth() === b.getUTCMonth() && n.getUTCDate() < b.getUTCDate())) a--; return a; }
   function bornTxt(b) { if (!b) return ''; return /^\d{4}$/.test(String(b)) ? String(b) : `${longDate(b)} (${ageTxt(b)})`; }
   // national team players who play at home: club from the roster, e.g. "Jämtland Basket (Basketligan, Sweden)"
-  function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); return r && r.home_club ? r.home_club.replace(/\s*\(.*\)\s*$/, '') : ''; }
+  function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); if (r && r.home_club) return r.home_club.replace(/\s*\(.*\)\s*$/, ''); const s = (ds('sblplayers') || []).find((x) => isSame(x.player, name)); return s ? s.club : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face

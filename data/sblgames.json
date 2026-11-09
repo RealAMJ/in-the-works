@@ -28,6 +28,20 @@
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851702/summary"
  },
  {
+  "game_id": "sbl-2851793",
+  "date": "2026-11-13",
+  "time": "19:04",
+  "team": "BC Luleå",
+  "opponent": "Södertälje Kings",
+  "venue": "Home",
+  "competition": "Basketligan",
+  "players": "Jonatan Arvidsson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851793/summary"
+ },
+ {
   "game_id": "sbl-2851795",
   "date": "2026-11-13",
   "time": "19:04",
@@ -82,5 +96,33 @@
   "score": "",
   "sbl": true,
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851708/summary"
+ },
+ {
+  "game_id": "sbl-2851708",
+  "date": "2026-11-17",
+  "time": "19:04",
+  "team": "BC Luleå",
+  "opponent": "Jämtland Basket",
+  "venue": "Away",
+  "competition": "Basketligan",
+  "players": "Jonatan Arvidsson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851708/summary"
+ },
+ {
+  "game_id": "sbl-2851798",
+  "date": "2026-11-22",
+  "time": "18:04",
+  "team": "BC Luleå",
+  "opponent": "Borås Basket",
+  "venue": "Home",
+  "competition": "Basketligan",
+  "players": "Jonatan Arvidsson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851798/summary"
  }
 ]

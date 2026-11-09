@@ -148,11 +148,20 @@ def headlines(p):
 
 
 def home_nt():
-    """National team players who play in the SBL (data/ntroster.json rows with a home_club): (roster name, surname, club)."""
+    """SBL players with a profile: national team players at home (ntroster rows with a home_club) and data/sblplayers.json.
+    Returns (name, surname, club)."""
     out = []
     for r in U.load('ntroster'):
         if r.get('home_club'):
             out.append((r['player'], U.norm(r['player']).split()[-1], team_name(r['home_club'])))
+    # other SBL players with a profile on the site (data/sblplayers.json), e.g. a Player of the Month
+    try:
+        extra = U.load('sblplayers')
+    except Exception:
+        extra = []
+    for r in extra:
+        if r.get('player') and r.get('club') and not any(o[0] == r['player'] for o in out):
+            out.append((r['player'], U.norm(r['player']).split()[-1], team_name(r['club'])))
     return out
 
 
