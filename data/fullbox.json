@@ -39873,7 +39873,7 @@
   "fg": "9/14",
   "three": "0/0",
   "ft": "0/3",
-  "pm": 13,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39894,7 +39894,7 @@
   "fg": "6/9",
   "three": "1/3",
   "ft": "3/3",
-  "pm": 8,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39915,7 +39915,7 @@
   "fg": "3/5",
   "three": "3/5",
   "ft": "0/0",
-  "pm": 12,
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39936,7 +39936,7 @@
   "fg": "4/7",
   "three": "2/5",
   "ft": "1/2",
-  "pm": 7,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39957,7 +39957,7 @@
   "fg": "2/3",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 6,
   "swede": true,
   "state": "live",
   "source": "ESPN"
@@ -40062,7 +40062,7 @@
   "fg": "2/6",
   "three": "1/3",
   "ft": "2/2",
-  "pm": -13,
+  "pm": -15,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40073,17 +40073,17 @@
   "team": "Sacramento Kings",
   "player": "Precious Achiuwa",
   "pos": "",
-  "min": 17,
+  "min": 18,
   "pts": 6,
-  "reb": 7,
+  "reb": 8,
   "ast": 0,
   "stl": 0,
   "blk": 1,
   "tov": 2,
-  "fg": "3/3",
+  "fg": "3/4",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40104,7 +40104,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40125,7 +40125,7 @@
   "fg": "4/7",
   "three": "0/3",
   "ft": "2/2",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40146,7 +40146,7 @@
   "fg": "6/11",
   "three": "2/5",
   "ft": "1/1",
-  "pm": -12,
+  "pm": -14,
   "swede": false,
   "state": "live",
   "source": "ESPN"
