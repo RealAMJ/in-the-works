@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T05:26:06+01:00",
+ "at": "2026-11-09T05:26:56+01:00",
  "log": [
   {
    "game": "g20261109mia",
@@ -9,17 +9,17 @@
    "game": "g20261109mia",
    "src": "ESPN",
    "period": 4,
-   "clock": "01:51",
+   "clock": "01:14",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     108,
+     110,
      14
     ],
     [
      "Sacramento Kings",
-     103,
+     105,
      12
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261109wsu",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:23",
+   "clock": "12:14",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     16,
+     17,
      17
     ],
     [
