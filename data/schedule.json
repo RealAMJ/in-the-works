@@ -1141,9 +1141,10 @@
   "venue": "Away",
   "competition": "Orlen Basket Liga",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "fiba:2951826"
+  "status": "final",
+  "score": "L 76-81",
+  "live_feed": "fiba:2951826",
+  "live_done": true
  },
  {
   "game_id": "g20261107uncw",
@@ -1297,9 +1298,10 @@
   "venue": "Away",
   "competition": "Primera FEB",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "feb:2535787"
+  "status": "final",
+  "score": "W 75-73",
+  "live_feed": "feb:2535787",
+  "live_done": true
  },
  {
   "game_id": "g20261108jov",
@@ -1397,9 +1399,10 @@
   "venue": "Away",
   "competition": "Segunda FEB",
   "note": "Likely 18:00, not confirmed",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "feb:2536332"
+  "status": "final",
+  "score": "W 74-66",
+  "live_feed": "feb:2536332",
+  "live_done": true
  },
  {
   "game_id": "g20261108maine",
@@ -1464,10 +1467,14 @@
   "venue": "Away",
   "competition": "NBA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 3-2",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
-  "watch_label": "NBA League Pass"
+  "watch_label": "NBA League Pass",
+  "espn_id": "401909951",
+  "box_url": "https://www.espn.com/nba/game/_/gameId/401909951",
+  "clock": "Q1 09:49",
+  "live_updated": "2026-11-09T03:14:20+01:00"
  },
  {
   "game_id": "g20261109wsu",
