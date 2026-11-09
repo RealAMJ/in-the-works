@@ -97,22 +97,32 @@ def finished_games(days):
 
 
 def qualifies(p):
+    """Tags for a standout line, or None. Rules (Andres, 9 Nov): 30+ pts, 15+ reb, 10+ ast, 5+ stl, 5+ blk, 6+ threes,
+    every double-double and triple-double, 10+ pts on perfect shooting from the field, and a few extras:
+    perfect from three (4+ made), perfect free throws (10+ made) and a 5x5."""
     cats = sum(x >= 10 for x in (p['pts'], p['reb'], p['ast'], p['stl'], p['blk']))
     tags = []
     if p['pts'] >= 30: tags.append(f"{p['pts']} PTS")
     if p['reb'] >= 15: tags.append(f"{p['reb']} REB")
-    if p['ast'] >= 11: tags.append(f"{p['ast']} AST")
-    if p['stl'] >= 6: tags.append(f"{p['stl']} STL")
+    if p['ast'] >= 10: tags.append(f"{p['ast']} AST")
+    if p['stl'] >= 5: tags.append(f"{p['stl']} STL")
     if p['blk'] >= 5: tags.append(f"{p['blk']} BLK")
-    if p['tpm'] >= 7: tags.append(f"{p['tpm']} 3PM")
-    if cats >= 3:
+    if p['tpm'] >= 6: tags.append(f"{p['tpm']} 3PM")
+    if cats >= 4:
+        tags.append('Quadruple-double')
+    elif cats == 3:
         tags.append('Triple-double')
     elif cats == 2:
         tags.append('Double-double')
-    special = [t for t in tags if t not in ('Double-double',)]
-    if special or ('Double-double' in tags and p['pts'] >= 20):
-        return tags
-    return None
+    if p['pts'] >= 10 and p['fga'] >= 3 and p['fgm'] == p['fga']:
+        tags.append(f"Perfect FG ({p['fgm']}/{p['fga']})")
+    if p['tpm'] >= 4 and p['tpm'] == p['tpa']:
+        tags.append(f"Perfect from three ({p['tpm']}/{p['tpa']})")
+    if p['ftm'] >= 10 and p['ftm'] == p['fta']:
+        tags.append(f"Perfect FT ({p['ftm']}/{p['fta']})")
+    if all(x >= 5 for x in (p['pts'], p['reb'], p['ast'], p['stl'], p['blk'])):
+        tags.append('5x5')
+    return tags or None
 
 
 EN = {'pts': ('points', 'poäng'), 'reb': ('rebounds', 'returer'), 'ast': ('assists', 'assist'),
@@ -123,15 +133,17 @@ def headlines(p):
     # points first, then every other number that qualified or is in double figures
     parts = [('pts', p['pts'])]
     for k in ('reb', 'ast', 'stl', 'blk'):
-        lim = {'reb': 10, 'ast': 10, 'stl': 6, 'blk': 5}[k]
+        lim = {'reb': 10, 'ast': 10, 'stl': 5, 'blk': 5}[k]
         if p[k] >= lim:
             parts.append((k, p[k]))
-    if p['tpm'] >= 7:
+    if p['tpm'] >= 6:
         parts.append(('tpm', p['tpm']))
     en = [f'{v} {EN[k][0]}' for k, v in parts]
     sv = [f'{v} {EN[k][1]}' for k, v in parts]
     join = lambda xs, a: xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + f' {a} ' + xs[-1]
     fg = f"{p['fgm']}/{p['fga']}"
+    if p['fga'] and p['fgm'] == p['fga']:
+        return f"{join(en, 'and')} on perfect {fg} shooting", f"{join(sv, 'och')} med perfekta {fg} från fältet"
     return f"{join(en, 'and')} ({fg} FG)", f"{join(sv, 'och')} ({fg} från fältet)"
 
 
@@ -216,7 +228,9 @@ def main(argv):
                 if rid in have or (day, team_name(t['name']), p['pts'], p['reb'], p['ast']) in seen:
                     continue
                 en, sv = headlines(p)
-                rows.append(dict(row_id=rid, date=day, player=p['name'], team=team_name(t['name']), opponent=team_name(o['name']),
+                # national team players at home: our spelling (the league has "Micheal Odinks")
+                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), p['name'])
+                rows.append(dict(row_id=rid, date=day, player=name, team=team_name(t['name']), opponent=team_name(o['name']),
                                  venue='Home' if ti == 0 else 'Away',
                                  result=f"{'W' if t['score'] > o['score'] else 'L'} {t['score']}-{o['score']}",
                                  min=U.as_min(p['min']), pts=p['pts'], reb=p['reb'], ast=p['ast'], stl=p['stl'], blk=p['blk'],

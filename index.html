@@ -294,7 +294,7 @@
       <div class="sbx-leaders" data-draw="sbllead" data-source="sbl"></div>
     </section>
     <section class="lx-sec">
-      <div class="lx-head"><h2>Standout games</h2><span class="lx-note">30+ pts, 15+ reb, 11+ ast, 7+ threes, 6+ stl, 5+ blk or a big double-double</span></div>
+      <div class="lx-head"><h2>Standout games</h2><span class="lx-note">30+ pts, 15+ reb, 10+ ast, 6+ threes, 5+ stl, 5+ blk, every double-double, perfect shooting nights and more</span></div>
       <div class="sw-chips lx-chips" data-draw="sblchips" data-source="sbl" aria-label="Filter SBL standouts"></div>
       <div class="sbx-list" data-draw="sblhl" data-source="sbl"></div>
     </section>
@@ -385,7 +385,7 @@
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
 </div>
-<script src="i18n.js?v=3148f55c"></script>
+<script src="i18n.js?v=08cfd5eb"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -1563,14 +1563,15 @@
   const SV = () => LANG === 'sv';
   const L = (en, sv) => (SV() ? sv : en);
   let sblCat = 'all', sblMore = false;
-  const SBL_CATS = [['all', 'All', 'Alla'], ['pts', 'Scoring', 'Poäng'], ['reb', 'Rebounding', 'Returer'], ['ast', 'Playmaking', 'Assist'], ['dd', 'Double-doubles', 'Dubbel-dubblar'], ['def', 'Steals & blocks', 'Steals & block'], ['3pm', 'Threes', 'Treor']];
+  const SBL_CATS = [['all', 'All', 'Alla'], ['pts', 'Scoring', 'Poäng'], ['reb', 'Rebounding', 'Returer'], ['ast', 'Playmaking', 'Assist'], ['dd', 'Double-doubles', 'Dubbel-dubblar'], ['def', 'Steals & blocks', 'Steals & block'], ['3pm', 'Threes', 'Treor'], ['eff', 'Efficiency', 'Effektivitet']];
   const sblTags = (r) => String(r.tags || '');
-  const sblIn = (r, c) => c === 'all' || (c === 'pts' && / PTS/.test(sblTags(r))) || (c === 'reb' && / REB/.test(sblTags(r))) || (c === 'ast' && / AST/.test(sblTags(r))) || (c === 'dd' && /double/i.test(sblTags(r))) || (c === 'def' && / (STL|BLK)/.test(sblTags(r))) || (c === '3pm' && /3PM/.test(sblTags(r)));
+  const sblIn = (r, c) => c === 'all' || (c === 'pts' && / PTS/.test(sblTags(r))) || (c === 'reb' && / REB/.test(sblTags(r))) || (c === 'ast' && / AST/.test(sblTags(r))) || (c === 'dd' && /double/i.test(sblTags(r))) || (c === 'def' && / (STL|BLK)/.test(sblTags(r))) || (c === '3pm' && /3PM|from three/.test(sblTags(r))) || (c === 'eff' && /Perfect|5x5/.test(sblTags(r)));
   const sblRows = () => { const d = dash.data('sbl'); return d.status === 'ok' ? d.data.filter((r) => r.row_id !== 'placeholder' && r.player) : null; };
   const threes = (r) => Number(String(r.three || '').split('/')[0]) || 0;
   const tagSv = (t) => SV() ? t.replace(/^(\d+) PTS$/, '$1 poäng').replace(/^(\d+) REB$/, '$1 returer').replace(/^(\d+) AST$/, '$1 assist').replace(/^(\d+) STL$/, '$1 steals').replace(/^(\d+) BLK$/, '$1 block').replace(/^(\d+) 3PM$/, '$1 treor').replace('Triple-double', 'Trippel-dubbel').replace('Double-double', 'Dubbel-dubbel') : t;
   const bigStat = (r) => {
     const t = sblTags(r);
+    if (/Quadruple-double/i.test(t)) return [String(r.pts), L('PTS', 'PTS'), L('Quadruple-double', 'Fyrdubbel-dubbel')];
     if (/Triple-double/i.test(t)) return [String(r.pts), L('PTS', 'PTS'), L('Triple-double', 'Trippel-dubbel')];
     const order = [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast], ['3PM', threes(r)], ['STL', r.stl], ['BLK', r.blk]];
     const hit = order.find(([k]) => new RegExp('\\d+ ' + k).test(t));
@@ -1640,13 +1641,14 @@
       const wl = res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '';
       const c = mk('article', 'sbx-row ' + wl);
       const [num, unit, sub] = bigStat(r);
-      const big = mk('div', 'sbx-num'); big.append(mk('b', '', num), mk('span', '', sub ? (SV() ? 'DD' : 'DD') : unit));
+      const big = mk('div', 'sbx-num'); big.append(mk('b', '', num), mk('span', '', sub ? (/Quad|Fyr/i.test(sub) ? 'QD' : /Trip/i.test(sub) ? 'TD' : 'DD') : unit));
       if (sub) big.title = sub;
       const mid = mk('div', 'sbx-mid');
       mid.append(mk('div', 'sbx-name', r.player), mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
       const bits = [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].map(([v, k]) => `${v} ${k}`);
       if (Number(r.stl) >= 3) bits.push(`${r.stl} STL`); if (Number(r.blk) >= 3) bits.push(`${r.blk} BLK`);
       if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
+      sblTags(r).split(/,\s*(?![^()]*\))/).filter((x) => /Perfect|5x5/.test(x)).forEach((x) => bits.push(x));
       mid.append(mk('div', 'sbx-stats', bits.join(' · ')));
       c.append(big, mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res));
       el.append(c);

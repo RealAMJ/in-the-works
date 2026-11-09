@@ -35,3 +35,8 @@ Object.assign(window.SA_I18N.D, {
 });
 Object.assign(window.SA_I18N.D, { "Game page ↗": "Matchsida ↗" });
 window.SA_I18N.RULES.push(["^(.+)'s next games\\.$", "$1s nästa matcher."]);
+Object.assign(window.SA_I18N.D, {
+ "30+ pts, 15+ reb, 10+ ast, 6+ threes, 5+ stl, 5+ blk, every double-double, perfect shooting nights and more": "30+ poäng, 15+ returer, 10+ assist, 6+ treor, 5+ steals, 5+ block, alla dubbel-dubblar, perfekta skyttekvällar och mer",
+ "5x5": "5x5"
+});
+window.SA_I18N.RULES.push(["^Perfect FG \\((\\d+/\\d+)\\)$", "Perfekt från fältet ($1)"], ["^Perfect from three \\((\\d+/\\d+)\\)$", "Perfekt från trepoäng ($1)"], ["^Perfect FT \\((\\d+/\\d+)\\)$", "Perfekt från straffs ($1)"], ["^\\+(\\d+) on the floor$", "+$1 på planen"]);
