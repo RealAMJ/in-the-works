@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T05:12:44+01:00",
+ "at": "2026-11-09T05:13:34+01:00",
  "log": [
   {
    "game": "g20261109mia",
@@ -9,7 +9,7 @@
    "game": "g20261109mia",
    "src": "ESPN",
    "period": 4,
-   "clock": "06:52",
+   "clock": "06:36",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261109wsu",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:59",
+   "clock": "16:57",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "USC Trojans",
-     7,
+     9,
      14
     ]
    ]
