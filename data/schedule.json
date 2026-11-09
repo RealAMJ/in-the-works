@@ -1474,13 +1474,13 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "W 91-88",
+  "score": "W 91-90",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909951",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909951",
-  "clock": "Q4 09:29",
-  "live_updated": "2026-11-09T05:08:55+01:00"
+  "clock": "Q4 08:58",
+  "live_updated": "2026-11-09T05:09:45+01:00"
  },
  {
   "game_id": "g20261109wsu",
@@ -1493,11 +1493,11 @@
   "competition": "NCAA",
   "note": "Lake Tahoe Classic, Stateline NV",
   "status": "live",
-  "score": "W 0-0",
+  "score": "L 0-2",
   "espn_id": "401919029",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919029",
-  "clock": "Q1 19:58",
-  "live_updated": "2026-11-09T05:08:55+01:00"
+  "clock": "Q1 19:22",
+  "live_updated": "2026-11-09T05:09:46+01:00"
  },
  {
   "game_id": "g20261109vir",
