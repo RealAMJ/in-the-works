@@ -12,7 +12,7 @@
   'use strict';
   var DATA = 'data/';
   var POLL_MS = 20000;
-  var IDS = ['awards', 'bios', 'boxscores', 'career', 'coaches', 'coachgames', 'gamelogs', 'highlights',
+  var IDS = ['awards', 'bios', 'boxscores', 'career', 'coachcareer', 'coaches', 'coachgames', 'gamelogs', 'highlights',
     'leaguetiers', 'ntgames', 'ntlines', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'sblgames', 'sblplayers', 'schedule', 'stats', 'teamform',
     'teams', 'thisweek'];
   // Big files only some pages need: fetched the first time a page asks for them (full box scores grow all season)

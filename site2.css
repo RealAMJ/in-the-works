@@ -1591,3 +1591,45 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .cox-row .cp { font-size: 12px; color: var(--nz-sky); font-weight: 600; }
 @media (max-width: 1100px) { .cox-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cox-two { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .cox-cards { display: flex; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; } .cox-c { flex: 0 0 80%; scroll-snap-align: start; } }
+/* ---- Coach profile */
+.cox-nm { display: block; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; text-align: left; }
+.cox-nm:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.cox-prof { justify-self: start; padding: 0; border: 0; background: none; font: inherit; font-size: 13px; font-weight: 700; color: var(--nz-sky); cursor: pointer; }
+.cpx { margin-bottom: 18px; }
+.cpx-hero { position: relative; overflow: hidden; background: linear-gradient(120deg, color-mix(in srgb, var(--tc) 55%, var(--nz-night)) 0%, var(--nz-deep) 55%, var(--nz-night) 100%); border-bottom: 1px solid var(--nz-line); }
+.cpx-in { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 24px; padding-top: 30px; }
+.cpx-id { padding-bottom: 30px; display: grid; gap: 8px; align-content: end; }
+.cpx-fn { font-size: 18px; color: #c9d6ea; margin-top: 10px; }
+.cpx-id h1 { font-size: clamp(56px, 9vw, 120px); margin: 0; }
+.cpx-sub { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; color: var(--nz-mut); }
+.cpx-sub .cox-club { font-size: 18px; }
+.cpx-facts { display: flex; flex-wrap: wrap; gap: 1px; margin-top: 10px; border: 1px solid var(--nz-line); border-radius: 12px; overflow: hidden; background: var(--nz-line); width: max-content; max-width: 100%; }
+.cpx-facts div { display: grid; padding: 8px 14px; background: rgba(3, 10, 23, .6); }
+.cpx-facts span { font-size: 11px; color: var(--nz-mut); }
+.cpx-facts b { font-weight: 700; }
+.cpx-pic { height: 300px; display: flex; align-items: flex-end; }
+.cpx-pic img { height: 100%; width: auto; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent); mask-image: linear-gradient(180deg, #000 80%, transparent); }
+.cpx-ini { display: grid; place-items: center; width: 200px; height: 240px; border-radius: 50% 50% 0 0; background: linear-gradient(180deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, .03)); font: 400 72px Anton, sans-serif; color: var(--nz-y); }
+.cpx-now { display: grid; grid-template-columns: 16rem 1fr; gap: 24px; align-items: start; margin-top: 16px; }
+.cpx-rec { display: grid; gap: 8px; padding: 16px; border-radius: 14px; background: var(--nz-deep); border: 1px solid var(--nz-line); }
+.cpx-rec b { font: 400 54px/1 Anton, sans-serif; }
+.cpx-rec span { color: var(--nz-mut); font-size: 13px; }
+.cpx-form { display: flex; flex-wrap: wrap; gap: 3px; }
+.cpx-form i { min-width: 18px; height: 18px; border-radius: 4px; display: grid; place-items: center; font: 700 10px Archivo, sans-serif; font-style: normal; }
+.cpx-form .fw { background: var(--nz-g); color: #03140a; } .cpx-form .fl { background: var(--nz-r); color: #2a0705; }
+.cpx-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cpx-lists h3, .cpx-h3 { margin: 0 0 6px; font: 400 20px Anton, sans-serif; text-transform: uppercase; }
+.cpx-h3 { margin-top: 24px; }
+.cpx-titles { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 10px; margin-top: 14px; }
+.cpx-t { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; align-items: center; padding: 14px; border-radius: 14px; background: linear-gradient(140deg, rgba(254, 204, 2, .16), var(--nz-deep) 70%); border: 1px solid rgba(254, 204, 2, .35); }
+.cpx-t .ic { grid-row: span 2; font-size: 28px; }
+.cpx-t b { font-weight: 800; } .cpx-t span:last-child { font-size: 13px; color: var(--nz-mut); }
+.cpx-hon { margin: 12px 0 0; padding-left: 18px; color: #c9d6ea; display: grid; gap: 4px; }
+.cpx-t.none { display: none; }
+.cpx-t + .cpx-t {}
+.stx-t.cpx-tab tbody tr.won td { color: var(--nz-y); font-weight: 700; }
+.stx-t.cpx-tab td, .stx-t.cpx-tab th { white-space: normal; }
+.cpx-note { margin-top: 18px !important; }
+@media (max-width: 760px) { .cpx-in { grid-template-columns: 1fr; } .cpx-pic { order: -1; height: 200px; justify-content: center; } .cpx-id { padding-bottom: 22px; } .cpx-now, .cpx-lists { grid-template-columns: 1fr; } }
+.cpx-lists .cox-list { align-content: start; }
+.stx-t.cpx-tab td.l { text-align: left; }

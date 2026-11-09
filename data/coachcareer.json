@@ -1,0 +1,460 @@
+[
+ {
+  "coach": "Mikko Riipinen",
+  "born": "18 Aug 1987, Drammen (Norway)",
+  "nationality": "Finnish and Swedish",
+  "since": "2015",
+  "playing": "Point guard for his hometown club Norrköping Dolphins, 2003–2012.",
+  "seasons": [
+   {
+    "season": "2015–2019",
+    "team": "Norrköping Dolphins (B team)",
+    "league": "",
+    "country": "Sweden",
+    "role": "Coach",
+    "finish": ""
+   },
+   {
+    "season": "2017–2019",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Assistant coach",
+    "finish": ""
+   },
+   {
+    "season": "2019–20",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2020–21",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions (2021)"
+   },
+   {
+    "season": "2021–22",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions (2022)"
+   },
+   {
+    "season": "2022–23",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions and cup winners (2023)"
+   },
+   {
+    "season": "2023–24",
+    "team": "Norrköping Dolphins",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions and cup winners (2024)"
+   },
+   {
+    "season": "2024–25",
+    "team": "Norrköping Dolphins, then BG Göttingen (from 15 Jan 2025)",
+    "league": "Basketligan / Basketball Bundesliga",
+    "country": "Sweden / Germany",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2025–26",
+    "team": "Riesen Ludwigsburg",
+    "league": "Basketball Bundesliga",
+    "country": "Germany",
+    "role": "Head coach",
+    "record": "18 wins in 37 games",
+    "finish": ""
+   },
+   {
+    "season": "2026–27",
+    "team": "CSM Oradea",
+    "league": "Liga Națională",
+    "country": "Romania",
+    "role": "Head coach",
+    "finish": "In progress"
+   }
+  ],
+  "national_teams": [
+   {
+    "years": "2021–",
+    "team": "Sweden",
+    "role": "Head coach",
+    "result": "Took Sweden to EuroBasket 2025, the first finals in 12 years, and the round of 16"
+   }
+  ],
+  "titles": [
+   {
+    "season": "2020–21",
+    "title": "Swedish champions",
+    "team": "Norrköping Dolphins"
+   },
+   {
+    "season": "2021–22",
+    "title": "Swedish champions",
+    "team": "Norrköping Dolphins"
+   },
+   {
+    "season": "2022–23",
+    "title": "Swedish champions",
+    "team": "Norrköping Dolphins"
+   },
+   {
+    "season": "2022–23",
+    "title": "Swedish Cup",
+    "team": "Norrköping Dolphins"
+   },
+   {
+    "season": "2023–24",
+    "title": "Swedish champions",
+    "team": "Norrköping Dolphins"
+   },
+   {
+    "season": "2023–24",
+    "title": "Swedish Cup",
+    "team": "Norrköping Dolphins"
+   }
+  ],
+  "honours": [],
+  "sources": [
+   "en.wikipedia.org/wiki/Mikko_Riipinen",
+   "sv.wikipedia.org/wiki/Mikko_Riipinen"
+  ]
+ },
+ {
+  "coach": "Vedran Bosnić",
+  "born": "4 Jun 1976, Sarajevo",
+  "nationality": "Bosnian",
+  "since": "2008",
+  "playing": "Point guard, 1994–2008, for clubs in Croatia, Bosnia, Poland, Hungary, Lithuania, Portugal and Sweden; his last two seasons were with Uppsala Basket and Södertälje Kings.",
+  "seasons": [
+   {
+    "season": "2008–2010",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Assistant coach",
+    "finish": ""
+   },
+   {
+    "season": "2010–11",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Coach of the Year"
+   },
+   {
+    "season": "2011–12",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Final (silver)"
+   },
+   {
+    "season": "2012–13",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions"
+   },
+   {
+    "season": "2013–14",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions"
+   },
+   {
+    "season": "2014–15",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions"
+   },
+   {
+    "season": "2015–16",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Swedish champions"
+   },
+   {
+    "season": "2016–17",
+    "team": "Södertälje Kings",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2017–2019",
+    "team": "Lions de Genève",
+    "league": "Swiss league",
+    "country": "Switzerland",
+    "role": "Head coach",
+    "finish": "Swiss Supercup 2017 and 2018, Swiss League Cup 2018"
+   },
+   {
+    "season": "2019–2025",
+    "team": "Union Mons-Hainaut",
+    "league": "Belgian league",
+    "country": "Belgium",
+    "role": "Head coach",
+    "finish": "FIBA Europe Cup quarterfinal (2021)"
+   },
+   {
+    "season": "2025–26",
+    "team": "Szolnoki Olajbányász",
+    "league": "Hungarian league",
+    "country": "Hungary",
+    "role": "Head coach",
+    "finish": "Hungarian Cup winners"
+   },
+   {
+    "season": "2026–27",
+    "team": "Anwil Włocławek",
+    "league": "Orlen Basket Liga",
+    "country": "Poland",
+    "role": "Head coach",
+    "finish": "In progress"
+   }
+  ],
+  "national_teams": [
+   {
+    "years": "2014–2018",
+    "team": "Sweden",
+    "role": "Head coach"
+   },
+   {
+    "years": "2018–2022",
+    "team": "Bosnia and Herzegovina",
+    "role": "Head coach",
+    "result": "5-1 in EuroBasket 2022 qualifying"
+   }
+  ],
+  "titles": [
+   {
+    "season": "2012–13",
+    "title": "Swedish champions",
+    "team": "Södertälje Kings"
+   },
+   {
+    "season": "2013–14",
+    "title": "Swedish champions",
+    "team": "Södertälje Kings"
+   },
+   {
+    "season": "2014–15",
+    "title": "Swedish champions",
+    "team": "Södertälje Kings"
+   },
+   {
+    "season": "2015–16",
+    "title": "Swedish champions",
+    "team": "Södertälje Kings"
+   },
+   {
+    "season": "2017",
+    "title": "Swiss Supercup",
+    "team": "Lions de Genève"
+   },
+   {
+    "season": "2018",
+    "title": "Swiss Supercup",
+    "team": "Lions de Genève"
+   },
+   {
+    "season": "2018",
+    "title": "Swiss League Cup",
+    "team": "Lions de Genève"
+   },
+   {
+    "season": "2025–26",
+    "title": "Hungarian Cup",
+    "team": "Szolnoki Olajbányász"
+   }
+  ],
+  "honours": [
+   "Basketligan Coach of the Year five times (2011–2015)",
+   "Pro Basketball League Coach of the Year (2021, with Mons-Hainaut)"
+  ],
+  "sources": [
+   "en.wikipedia.org/wiki/Vedran_Bosnić",
+   "sv.wikipedia.org/wiki/Vedran_Bosnić",
+   "kkwloclawek.pl/sklad"
+  ]
+ },
+ {
+  "coach": "Boris Balibrea",
+  "born": "16 Apr 1988, Barcelona",
+  "nationality": "Spanish",
+  "since": "2007",
+  "seasons": [
+   {
+    "season": "2007–08",
+    "team": "CB Tíjola",
+    "league": "LEB Bronce",
+    "country": "Spain",
+    "role": "Assistant coach",
+    "finish": ""
+   },
+   {
+    "season": "2011–12",
+    "team": "CB L'Hospitalet",
+    "league": "Liga EBA",
+    "country": "Spain",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2013–2015",
+    "team": "CB Villarrobledo",
+    "league": "Liga EBA",
+    "country": "Spain",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2015–16",
+    "team": "CB Castelldefels",
+    "league": "Liga EBA",
+    "country": "Spain",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2016–17",
+    "team": "CB Santfeliuenc",
+    "league": "Liga EBA",
+    "country": "Spain",
+    "role": "Head coach",
+    "finish": ""
+   },
+   {
+    "season": "2017–2020",
+    "team": "Wetterbygden Stars",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Coach of the Year 2018–19"
+   },
+   {
+    "season": "2020–2023",
+    "team": "Umeå BSKT",
+    "league": "Basketligan",
+    "country": "Sweden",
+    "role": "Head coach",
+    "finish": "Coach of the Year 2022–23"
+   },
+   {
+    "season": "2023–",
+    "team": "MKS Dąbrowa Górnicza",
+    "league": "Orlen Basket Liga",
+    "country": "Poland",
+    "role": "Head coach",
+    "finish": "End date not confirmed"
+   },
+   {
+    "season": "2026–27",
+    "team": "Class Sant Antoni",
+    "league": "Segunda FEB",
+    "country": "Spain",
+    "role": "Head coach",
+    "finish": "In progress"
+   }
+  ],
+  "national_teams": [
+   {
+    "years": "2020–",
+    "team": "Sweden",
+    "role": "Staff"
+   }
+  ],
+  "titles": [],
+  "honours": [
+   "Swedish Coach of the Year 2018–19 (Wetterbygden Stars)",
+   "Swedish Coach of the Year 2022–23 (Umeå BSKT)"
+  ],
+  "sources": [
+   "es.wikipedia.org/wiki/Boris_Balibrea"
+  ]
+ },
+ {
+  "coach": "Erik Johansson",
+  "born": "Stockholm",
+  "nationality": "Swedish",
+  "since": "2020",
+  "playing": "Played for Södertälje Kings in Basketligan (66 games, three Swedish championships), then four seasons at Loyola Marymount, 2016–2020 (senior year: 32 games, 6.2 points, a team-high 45 threes). Swedish youth national teams and the senior team at the 2015 and 2016 FIBA Europe Cup.",
+  "seasons": [
+   {
+    "season": "2020–2022",
+    "team": "Loyola Marymount",
+    "league": "NCAA (WCC)",
+    "country": "USA",
+    "role": "Graduate assistant",
+    "finish": ""
+   },
+   {
+    "season": "2022–2024",
+    "team": "Loyola Marymount",
+    "league": "NCAA (WCC)",
+    "country": "USA",
+    "role": "Video coordinator",
+    "finish": "Jamaica Classic winners (Nov 2022)"
+   },
+   {
+    "season": "2025–",
+    "team": "Mississippi State",
+    "league": "NCAA (SEC)",
+    "country": "USA",
+    "role": "Director of scouting & analytics",
+    "finish": "In progress"
+   }
+  ],
+  "national_teams": [],
+  "titles": [],
+  "honours": [
+   "Three Swedish championships as a player with Södertälje Kings",
+   "WCC All-Academic Team (2019, 2020) and NABC Honors Court as a player"
+  ],
+  "sources": [
+   "lmulions.com (coach bio)"
+  ]
+ },
+ {
+  "coach": "Leif Ibrahim",
+  "seasons": [
+   {
+    "season": "2026–27",
+    "team": "Basketball Löwen Erfurt",
+    "league": "ProB",
+    "country": "Germany",
+    "role": "Head coach",
+    "finish": "In progress"
+   }
+  ],
+  "titles": [],
+  "honours": [],
+  "note_missing": true,
+  "sources": []
+ }
+]
