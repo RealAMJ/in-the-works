@@ -4,97 +4,114 @@
   "position": "Guard",
   "club_at_callup": "Unicaja",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Sigtuna BBK",
+  "hero": true
  },
  {
   "player": "Barra Njie",
   "position": "Guard",
   "club_at_callup": "BC Vienna",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Fryshuset Basket"
  },
  {
   "player": "Felix Terins",
   "position": "Guard",
   "club_at_callup": "Oviedo",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Norrköping Dolphins"
  },
  {
   "player": "Tobias Borg",
   "position": "Guard",
   "club_at_callup": "Palencia",
   "home_club": "",
-  "note": "Back after missing the August window injured"
+  "note": "Back after missing the August window injured",
+  "youth_club": "Södertälje BBK"
  },
  {
   "player": "Gustav Hansson",
   "position": "Guard",
   "club_at_callup": "Jämtland Basket",
   "home_club": "Jämtland Basket (Basketligan, Sweden)",
-  "note": "Plays at home in the SBL"
+  "note": "Plays at home in the SBL",
+  "youth_club": "Täby Basket",
+  "hero": true
  },
  {
   "player": "Michael Odinks",
   "position": "Guard",
   "club_at_callup": "Norrköping Dolphins",
   "home_club": "Norrköping Dolphins (Basketligan, Sweden)",
-  "note": "First senior call-up, 18 years old"
+  "note": "First senior call-up, 18 years old",
+  "youth_club": "Fryshuset Basket"
  },
  {
   "player": "Bobi Klintman",
   "position": "Forward",
   "club_at_callup": "Virtus Bologna",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Trelleborg Basket",
+  "hero": true
  },
  {
   "player": "Denzel Andersson",
   "position": "Forward",
   "club_at_callup": "Astoria Bydgoszcz",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "KFUM Hudiksvall"
  },
  {
   "player": "Zaba Bangala",
   "position": "Forward",
   "club_at_callup": "Löwen Braunschweig",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Fryshuset Basket"
  },
  {
   "player": "Viktor Gaddefors",
   "position": "Forward",
   "club_at_callup": "Twarde Pierniki Toruń",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Uppsala Basket"
  },
  {
   "player": "Wilhelm Falk",
   "position": "Forward",
   "club_at_callup": "UCAM Murcia",
   "home_club": "",
-  "note": "Back in the squad after the November 2025 and February 2026 windows"
+  "note": "Back in the squad after the November 2025 and February 2026 windows",
+  "youth_club": "Lidbas"
  },
  {
   "player": "Oskar Palmquist",
   "position": "Forward",
   "club_at_callup": "CB Zamora",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "BK Marbo"
  },
  {
   "player": "Simon Birgander",
   "position": "Center",
   "club_at_callup": "Joventut Badalona",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Helsingborg BBK"
  },
  {
   "player": "Kenny Pohto",
   "position": "Center",
   "club_at_callup": "Juventus Utena",
   "home_club": "",
-  "note": ""
+  "note": "",
+  "youth_club": "Hammarby Basket"
  }
 ]

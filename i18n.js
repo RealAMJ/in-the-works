@@ -48,3 +48,48 @@ Object.assign(window.SA_I18N.D, {
  "Newest first · tap an award for the details · checked at the start and end of every week": "Nyast först · tryck på en utmärkelse för detaljer · kollas i början och slutet av varje vecka",
  "Profile →": "Profil →"
 });
+
+Object.assign(window.SA_I18N.D, {
+ "Sweden": "Sverige",
+ "Men": "Herrar",
+ "Mikko Riipinen's fourteen for the November World Cup qualifiers, how they're playing this season, and what's still to win.": "Mikko Riipinens fjorton till VM-kvalet i november, hur de spelar den här säsongen och vad som återstår att vinna.",
+ "Next game": "Nästa match",
+ "The road to 2027": "Vägen till 2027",
+ "Second round, group of six. The top three go to the World Cup.": "Andra omgången, grupp med sex lag. De tre bästa går till VM.",
+ "November window": "Novemberfönstret",
+ "Announced by the Swedish Basketball Federation on 3 November.": "Presenterad av Svenska Basketbollförbundet den 3 november.",
+ "Squad meets in Stockholm": "Truppen samlas i Stockholm",
+ "Camp in Stockholm": "Läger i Stockholm",
+ "Hungary at Avicii Arena": "Ungern i Avicii Arena",
+ "Camp in France": "Läger i Frankrike",
+ "France in Dijon": "Frankrike i Dijon",
+ "Read the announcement on basket.se ↗": "Läs uttagningen på basket.se ↗",
+ "Out": "Ut",
+ "In": "In",
+ "The NBA doesn't stop for the window. Led the qualifiers with 26.0 a game": "NBA pausar inte för fönstret. Ledde kvalet med 26,0 poäng per match",
+ "Injured. 19.7 points and 6.2 assists in the qualifiers": "Skadad. 19,7 poäng och 6,2 assist per match i kvalet",
+ "First senior call-up, 18 years old": "Första A-landslagskallelsen, 18 år",
+ "Back in the squad": "Tillbaka i truppen",
+ "Tobias Borg and Wilhelm Falk": "Tobias Borg och Wilhelm Falk",
+ "Jämtland Basket, plays at home in the SBL": "Jämtland Basket, spelar hemma i SBL",
+ "Who carries the scoring": "Vem bär poängen",
+ "Points per game against true shooting, each player in his main competition this season.": "Poäng per match mot true shooting, varje spelare i sin huvudtävling den här säsongen.",
+ "Scores a lot, efficiently": "Gör många poäng, effektivt",
+ "Points per game": "Poäng per match",
+ "Top scorers": "Flest poäng",
+ "Most efficient": "Mest effektiva",
+ "The fourteen": "De fjorton",
+ "Tap a player for his profile. Yellow marks the best in the squad.": "Tryck på en spelare för profilen. Gult markerar bäst i truppen.",
+ "Guards": "Guards",
+ "Forwards": "Forwards",
+ "Centers": "Centers",
+ "First call-up": "Första kallelsen",
+ "Back": "Tillbaka",
+ "Rebounds": "Returer",
+ "Assists": "Assist",
+ "Youth club ": "Moderklubb ",
+ "True shooting = points ÷ (2 × (field goal attempts + 0.44 × free throw attempts)). Efficiency = points + rebounds + assists + steals + blocks − missed shots − turnovers, per game, shown where the box scores are complete. Both come from the games we track. Youth clubs from the Swedish Basketball Federation.": "True shooting = poäng ÷ (2 × (skottförsök + 0,44 × straffförsök)). Effektivitet = poäng + returer + assist + steals + block − missade skott − bollförluster, per match, där matchprotokollen är kompletta. Båda kommer från matcherna vi bevakar. Moderklubbar från Svenska Basketbollförbundet."
+});
+window.SA_I18N.RULES.unshift(...[["^Sweden (vs|at) (.+)$", "Sverige mot $2"], ["^(\\d+) days? to go$", "$1 dagar kvar"], ["^(.+), next$", "$1, nästa"], ["^(\\d+) wins?, (\\d+) loss(es)?$", "$1 vinst, $2 förlust"], ["^(\\d+) games? left this window$", "$1 matcher kvar i fönstret"], ["^Last game: (\\d+) pts, (\\d+) reb, (\\d+) ast (vs|at) (.+)$", "Senaste matchen: $1 p, $2 ret, $3 ass mot $5"], ["^(\\d+) games?$", "$1 matcher"], ["^is the squad's top scorer at ([\\d.]+) a game \\((.+)\\)\\.$", " är truppens bästa poänggörare med $1 per match ($2)."], ["^is the most efficient, with ([\\d.]+)% true shooting \\((.+)\\)\\.$", " är mest effektiv med $1 % true shooting ($2)."]]);
+Object.assign(window.SA_I18N.D, { "days to go": "dagar kvar", "day to go": "dag kvar" });
+window.SA_I18N.RULES.unshift(["^(\\d+) players shoot below the squad's median of ([\\d.]+)%\\. (\\d+) of them (?:is a guard|are guards): (.+)\\.$", "$1 spelare skjuter under truppens median på $2 %. $3 av dem är guards: $4."], ["^(\\d+) players shoot below the squad's median of ([\\d.]+)%\\.$", "$1 spelare skjuter under truppens median på $2 %."]);

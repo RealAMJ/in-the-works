@@ -28,6 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@75..100,400..800&display=swap">
 <link rel="stylesheet" href="theme.css?v=50523d4c">
 <script src="dash-shim.js?v=095507e5"></script>
 </head>
@@ -337,36 +338,48 @@
   </div>
 
   <div class="pg" data-page="sweden" id="sweden" hidden>
-    <section class="nt-hero">
-      <button type="button" class="crumb" data-page-go="home" style="color:rgba(255,255,255,.8)">Home › <b style="color:#fff">Sweden</b></button>
-      <h1>Sweden men's national team</h1>
-      <p>Mikko Riipinen's squad for the November 2026 World Cup qualifiers and where every player is playing right now.</p>
-      <div class="nt-coach" data-draw="nt-coach" data-source="coaches"></div>
-    </section>
-    <section class="pp-sec nt-news">
-      <h2>Squad news: November window</h2>
-      <p class="pp-sub">Announced 3 November 2026 by the Swedish Basketball Federation.</p>
-      <p>Fourteen players are called up for the second round of World Cup qualifying: Hungary at home in Avicii Arena on Friday 27 November (19:00) and France away in Dijon on Monday 30 November (20:30). Twelve of the fourteen will play in each game.</p>
-      <p>Out: Pelle Larsson, the top scorer in the European qualifiers so far with 26.0 points a game, is with the Miami Heat, and the NBA does not stop for international windows. Ludvig Håkanson (19.7 points and 6.2 assists a game in the qualifiers) has withdrawn injured. Julius Price and Pierre Hampton from the August squad are not in this group.</p>
-      <p>In: Tobias Borg is back after missing August injured, Wilhelm Falk returns after playing the November 2025 and February 2026 windows, and 18-year-old Michael Odinks of Norrköping Dolphins gets his first senior call-up after a strong debut season in the SBL. Gustav Hansson of Jämtland Basket is also in.</p>
-      <p>The squad meets in Stockholm on 22 November and trains there until the Hungary game, then travels to France. More than 8,500 tickets have been sold for Sweden–Hungary.</p>
-      <p class="pp-sub"><a href="https://www.basket.se/nyheter/herrlandslagets-vm-kvaltrupp-uttagen-5/" target="_blank" rel="noopener">Source: basket.se ↗</a></p>
-    </section>
-    <section class="pp-sec">
-      <h2>World Cup 2027 qualifiers</h2>
-      <p class="pp-sub">Second round. The top three of the six-team group qualify for the World Cup.</p>
-      <div class="nt-games" data-draw="nt-games" data-source="ntgames"></div>
-    </section>
-    <section class="pp-sec">
-      <h2>Roster and where they play now</h2>
-      <p class="pp-sub">Tap a player for his profile. This season's line is points / rebounds / assists per game in his main competition.</p>
-      <div class="pp-tbl">
-        <table data-source="ntroster" data-row-key="player">
-          <thead><tr><th data-field="player">Player</th><th data-field="position">Pos</th><th data-field="club_at_callup">Called up from</th><th>Plays now</th><th>Competitions</th><th class="n">This season</th><th data-field="note">Note</th></tr></thead>
-          <tbody data-draw="nt-roster"></tbody>
-        </table>
+   <div class="ntz">
+    <header class="ntz-hero">
+      <div class="ntz-cross" aria-hidden="true"></div>
+      <div class="ntz-faces" data-draw="ntz-faces" data-source="ntroster photos" aria-hidden="true"></div>
+      <div class="ntz-wrap ntz-in">
+        <button type="button" class="ntz-crumb" data-page-go="home">Home › <b>Sweden</b></button>
+        <h1 class="ntz-d">Sweden<span>Men</span></h1>
+        <p class="ntz-intro">Mikko Riipinen's fourteen for the November World Cup qualifiers, how they're playing this season, and what's still to win.</p>
+        <div class="ntz-next" data-draw="ntz-next" data-source="ntgames"></div>
       </div>
-    </section>
+    </header>
+    <section class="ntz-s"><div class="ntz-wrap">
+      <div class="ntz-sh"><div><h2 class="ntz-d">The road to 2027</h2><p class="ntz-lede">Second round, group of six. The top three go to the World Cup.</p></div></div>
+      <div class="ntz-rail" data-draw="ntz-rail" data-source="ntgames"></div>
+    </div></section>
+    <section class="ntz-s"><div class="ntz-wrap">
+      <div class="ntz-news"><div>
+        <div class="ntz-sh ntz-nw"><div><h2 class="ntz-d">November window</h2><p class="ntz-lede">Announced by the Swedish Basketball Federation on 3 November.</p></div></div>
+        <p class="ntz-lead">Fourteen called up, without <strong>Pelle Larsson</strong> (Miami Heat) and <strong>Ludvig Håkanson</strong> (injured). An 18-year-old gets his first senior call: Norrköping's <strong>Michael Odinks</strong>.</p>
+        <ol class="ntz-plan"><li><b>22 Nov</b><span>Squad meets in Stockholm</span></li><li><b>23–26 Nov</b><span>Camp in Stockholm</span></li><li class="g"><b>27 Nov</b><span>Hungary at Avicii Arena</span></li><li><b>28–29 Nov</b><span>Camp in France</span></li><li class="g"><b>30 Nov</b><span>France in Dijon</span></li></ol>
+        <a class="ntz-src" href="https://www.basket.se/nyheter/herrlandslagets-vm-kvaltrupp-uttagen-5/" target="_blank" rel="noopener">Read the announcement on basket.se ↗</a>
+      </div>
+      <div class="ntz-moves">
+        <div class="ntz-mv out"><div class="tag">Out</div><div><b>Pelle Larsson</b><span>The NBA doesn't stop for the window. Led the qualifiers with 26.0 a game</span></div></div>
+        <div class="ntz-mv out"><div class="tag">Out</div><div><b>Ludvig Håkanson</b><span>Injured. 19.7 points and 6.2 assists in the qualifiers</span></div></div>
+        <div class="ntz-mv in"><div class="tag">In</div><div><b>Michael Odinks</b><span>First senior call-up, 18 years old</span></div></div>
+        <div class="ntz-mv in"><div class="tag">In</div><div><b>Tobias Borg and Wilhelm Falk</b><span>Back in the squad</span></div></div>
+        <div class="ntz-mv in"><div class="tag">In</div><div><b>Gustav Hansson</b><span>Jämtland Basket, plays at home in the SBL</span></div></div>
+      </div></div>
+    </div></section>
+    <section class="ntz-s"><div class="ntz-wrap">
+      <div class="ntz-sh"><div><h2 class="ntz-d">Who carries the scoring</h2><p class="ntz-lede">Points per game against true shooting, each player in his main competition this season.</p></div></div>
+      <div class="ntz-chartwrap"><div class="ntz-chart" data-draw="ntz-chart" data-source="ntroster players stats gamelogs boxscores schedule"></div><div class="ntz-read" data-draw="ntz-read" data-source="ntroster players stats gamelogs boxscores schedule"></div></div>
+      <div class="ntz-rank" data-draw="ntz-rank" data-source="ntroster players stats gamelogs boxscores schedule"></div>
+    </div></section>
+    <section class="ntz-s"><div class="ntz-wrap">
+      <div class="ntz-sh"><div><h2 class="ntz-d">The fourteen</h2><p class="ntz-lede">Tap a player for his profile. Yellow marks the best in the squad.</p></div>
+        <div class="ntz-filters" role="group" aria-label="Position" data-draw="ntz-flt" data-source="ntroster"></div></div>
+      <div data-draw="ntz-squad" data-source="ntroster players stats photos gamelogs boxscores schedule"></div>
+      <p class="ntz-foot">True shooting = points ÷ (2 × (field goal attempts + 0.44 × free throw attempts)). Efficiency = points + rebounds + assists + steals + blocks − missed shots − turnovers, per game, shown where the box scores are complete. Both come from the games we track. Youth clubs from the Swedish Basketball Federation.</p>
+    </div></section>
+   </div>
   </div>
 
   <div class="pg" data-page="compare" id="compare" hidden>
@@ -3161,6 +3174,162 @@
   });
 
   // ---- Sweden national team
+  // ---- Sweden page: dark poster layout (squad from ntroster, numbers from the game logs)
+  let ntzPos = 'all';
+  const NTZ_LG = { 'Orlen Basket Liga': 'Poland', 'Liga ACB': 'Spain, ACB', 'Primera FEB': 'Spain, Primera FEB', EuroLeague: 'EuroLeague', BBL: 'Germany', LKL: 'Lithuania', Basketligan: 'Sweden, SBL', 'ABA League': 'ABA League' };
+  const ntzSplit = (s) => { const m = /(\d+)\s*\/\s*(\d+)/.exec(String(s || '')); return m ? [Number(m[1]), Number(m[2])] : null; };
+  // per player: main competition line plus true shooting, efficiency and the last games in it
+  function ntzSquad() {
+    const ro = ds('ntroster'), pl = ds('players'), st = ds('stats'); if (!ro || !pl || !st) return null;
+    return ro.map((r) => {
+      const p = pl.find((x) => isSame(x.player, r.player));
+      const s = st.filter((x) => isSame(x.player, r.player) && Number(x.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp))[0] || null;
+      const gs = s ? playerGames(r.player).filter((g) => g.note !== 'DNP' && norm(g.competition) === norm(s.competition)) : [];
+      let pts = 0, fga = 0, fta = 0, n = 0; const eff = [];
+      gs.forEach((g) => {
+        const fg = ntzSplit(g.fg), ft = ntzSplit(g.ft); if (!fg || !ft) return;
+        n++; pts += Number(g.pts) || 0; fga += fg[1]; fta += ft[1];
+        const v = ['pts', 'reb', 'ast', 'stl', 'blk', 'tov'].map((k) => (g[k] === '' || g[k] == null || isNaN(Number(g[k])) ? null : Number(g[k])));
+        if (!v.includes(null)) eff.push(v[0] + v[1] + v[2] + v[3] + v[4] - (fg[1] - fg[0]) - (ft[1] - ft[0]) - v[5]);
+      });
+      const gp = s ? Number(s.gp) : 0;
+      return { r, p, s, name: r.player, club: p ? p.club : homeClubOf(r.player), comp: s ? s.competition : '', gp,
+        ppg: s ? Number(s.pts) : null, rpg: s ? Number(s.reb) : null, apg: s ? Number(s.ast) : null,
+        ts: n && fga + fta > 0 ? (100 * pts) / (2 * (fga + 0.44 * fta)) : null,
+        eff: eff.length && eff.length >= Math.max(1, gp * 0.8) ? eff.reduce((a, b) => a + b, 0) / eff.length : null,
+        log: gs.slice(-8), last: gs[gs.length - 1] || null };
+    });
+  }
+  const ntzGroup = (r) => (/center/i.test(r.position) ? 'Centers' : /forward/i.test(r.position) ? 'Forwards' : 'Guards');
+  dash.draw('ntz-faces', (el) => {
+    el.replaceChildren();
+    (ds('ntroster') || []).filter((r) => r.hero).forEach((r) => { const ph = photoFor(r.player); if (ph) { const i = document.createElement('img'); i.src = ph.src; i.alt = ''; el.append(i); } });
+  });
+  dash.draw('ntz-next', (el) => {
+    el.replaceChildren();
+    const g = (ds('ntgames') || []).slice().sort((a, b) => a.date.localeCompare(b.date)), nx = g.find((x) => x.status !== 'final');
+    if (!nx) { el.hidden = true; return; } el.hidden = false;
+    const days = Math.max(0, Math.round((new Date(nx.date + 'T12:00:00Z') - new Date(todayStr() + 'T12:00:00Z')) / 864e5));
+    const a = mk('div'); a.append(mk('div', 'when', 'Next game'), mk('div', 'vs', `Sweden ${nx.venue === 'Away' ? 'at' : 'vs'} ${nx.opponent}`), mk('div', 'when', [dayFmt(nx.date), nx.time && nx.time !== 'TBC' ? nx.time : '', nx.city].filter(Boolean).join(', ')));
+    const c = mk('div', 'cd'); c.append(mk('b', '', String(days)), mk('span', '', days === 1 ? 'day to go' : 'days to go'));
+    el.append(a, c);
+  });
+  dash.draw('ntz-rail', (el) => {
+    el.replaceChildren();
+    const g = (ds('ntgames') || []).slice().sort((a, b) => a.date.localeCompare(b.date)); if (!g.length) return;
+    const rail = mk('div', 'ntz-tix'); let first = true;
+    g.forEach((x) => {
+      const f = x.status === 'final', w = /^W/.test(x.score || ''), up = !f && first; if (!f) first = false;
+      const t = mk('div', 'ntz-t' + (f ? (w ? ' w' : ' l') : '') + (up ? ' up' : ''));
+      const top = mk('div'); top.append(mk('div', 'when', dayFmt(x.date) + (up ? ', next' : '')), mk('div', 'op', `${x.venue === 'Away' ? 'at' : 'vs'} ${x.opponent}`));
+      const bot = mk('div'); bot.append(mk('div', 'res', f ? String(x.score) : (x.time && x.time !== 'TBC' ? x.time : 'TBC')), mk('div', 'note', x.city || ''));
+      t.append(top, bot); rail.append(t);
+    });
+    const W = g.filter((x) => /^W/.test(x.score || '')).length, L = g.filter((x) => /^L/.test(x.score || '')).length, left = g.length - W - L;
+    const prog = mk('div', 'ntz-prog');
+    const bar = mk('div', 'bar'); g.forEach((x) => bar.append(mk('i', /^W/.test(x.score || '') ? 'w' : /^L/.test(x.score || '') ? 'l' : '')));
+    prog.append(mk('span', '', `${W} ${W === 1 ? 'win' : 'wins'}, ${L} ${L === 1 ? 'loss' : 'losses'}`), bar, mk('span', '', `${left} ${left === 1 ? 'game' : 'games'} left this window`));
+    el.append(rail, prog);
+  });
+  dash.draw('ntz-chart', (el) => {
+    el.replaceChildren();
+    const sq = ntzSquad(); if (!sq) return;
+    const pts = sq.filter((p) => p.ts != null && p.ppg != null); if (pts.length < 3) return;
+    const NS = 'http://www.w3.org/2000/svg', W = 760, H = 430, m = { l: 46, r: 20, t: 16, b: 40 };
+    const xMax = Math.max(22, Math.ceil(Math.max(...pts.map((p) => p.ppg)) / 5) * 5 + 2), yMin = Math.min(35, Math.floor(Math.min(...pts.map((p) => p.ts)) / 5) * 5), yMax = Math.max(70, Math.ceil(Math.max(...pts.map((p) => p.ts)) / 5) * 5);
+    const X = (v) => m.l + (v / xMax) * (W - m.l - m.r), Y = (v) => m.t + (1 - (v - yMin) / (yMax - yMin)) * (H - m.t - m.b);
+    const med = (a) => { const s = [...a].sort((x, y) => x - y); return (s[(s.length - 1) >> 1] + s[s.length >> 1]) / 2; };
+    const mx = med(pts.map((p) => p.ppg)), my = med(pts.map((p) => p.ts));
+    const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', `0 0 ${W} ${H}`); s.setAttribute('role', 'img'); s.setAttribute('aria-label', 'Points per game against true shooting for the squad');
+    const add = (tag, at, txt) => { const e = document.createElementNS(NS, tag); Object.entries(at).forEach(([k, v]) => e.setAttribute(k, v)); if (txt != null) e.textContent = txt; s.append(e); return e; };
+    for (let v = yMin; v <= yMax; v += 10) { add('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), class: 'grid' }); add('text', { x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end', class: 'ax' }, v + '%'); }
+    for (let v = 0; v <= xMax; v += 5) add('text', { x: X(v), y: H - m.b + 20, 'text-anchor': 'middle', class: 'ax' }, String(v));
+    add('text', { x: (W + m.l) / 2, y: H - 4, 'text-anchor': 'middle', class: 'ax' }, 'Points per game');
+    add('line', { x1: X(mx), x2: X(mx), y1: m.t, y2: H - m.b, class: 'med' }); add('line', { x1: m.l, x2: W - m.r, y1: Y(my), y2: Y(my), class: 'med' });
+    add('text', { x: W - m.r, y: m.t + 12, 'text-anchor': 'end', class: 'ax' }, 'Scores a lot, efficiently');
+    // names on the leaders and the outliers only; the rest on hover
+    const lab = new Set([...pts].sort((a, b) => b.ppg - a.ppg).slice(0, 3).concat([...pts].sort((a, b) => b.ts - a.ts).slice(0, 2), [...pts].sort((a, b) => a.ts - b.ts).slice(0, 1)).map((p) => p.name));
+    const tip = mk('div', 'ntz-tip');
+    pts.forEach((p) => {
+      const g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'pt'); g.setAttribute('tabindex', '0'); g.setAttribute('aria-label', `${p.name}: ${p.ppg.toFixed(1)} points, ${p.ts.toFixed(1)}% true shooting`);
+      const hit = document.createElementNS(NS, 'circle'); Object.entries({ cx: X(p.ppg), cy: Y(p.ts), r: 14, fill: 'transparent' }).forEach(([k, v]) => hit.setAttribute(k, v));
+      const dot = document.createElementNS(NS, 'circle'); Object.entries({ cx: X(p.ppg), cy: Y(p.ts), r: 6, class: 'dot' }).forEach(([k, v]) => dot.setAttribute(k, v));
+      g.append(hit, dot);
+      if (lab.has(p.name)) { const t = document.createElementNS(NS, 'text'); Object.entries({ x: X(p.ppg) + 11, y: Y(p.ts) + 4, class: 'lab' }).forEach(([k, v]) => t.setAttribute(k, v)); t.textContent = p.name.split(' ').slice(-1)[0]; g.append(t); }
+      const show = () => { const r = el.getBoundingClientRect(), c = dot.getBoundingClientRect(); tip.replaceChildren(mk('b', '', p.name), mk('span', '', `${p.ppg.toFixed(1)} points, ${p.ts.toFixed(1)}% true shooting`), mk('span', '', `${p.gp} games, ${NTZ_LG[p.comp] || p.comp}`)); tip.style.left = (c.left - r.left + c.width / 2) + 'px'; tip.style.top = (c.top - r.top) + 'px'; tip.classList.add('on'); };
+      const hide = () => tip.classList.remove('on');
+      g.addEventListener('mouseenter', show); g.addEventListener('focus', show); g.addEventListener('mouseleave', hide); g.addEventListener('blur', hide);
+      g.addEventListener('click', () => showLog(p.name));
+      s.append(g);
+    });
+    el.append(s, tip);
+  });
+  dash.draw('ntz-read', (el) => {
+    el.replaceChildren();
+    const sq = ntzSquad(); if (!sq) return;
+    const pts = sq.filter((p) => p.ts != null && p.ppg != null); if (pts.length < 3) return;
+    const top = [...pts].sort((a, b) => b.ppg - a.ppg)[0], eff = [...pts].sort((a, b) => b.ts - a.ts)[0];
+    const s = [...pts.map((p) => p.ts)].sort((a, b) => a - b), my = (s[(s.length - 1) >> 1] + s[s.length >> 1]) / 2;
+    const below = pts.filter((p) => p.ts < my), guards = below.filter((p) => /guard/i.test(p.r.position));
+    const p1 = mk('p'); p1.append(mk('b', '', top.name), ` is the squad's top scorer at ${top.ppg.toFixed(1)} a game (${NTZ_LG[top.comp] || top.comp}).`);
+    const p2 = mk('p'); p2.append(mk('b', '', eff.name), ` is the most efficient, with ${eff.ts.toFixed(1)}% true shooting (${NTZ_LG[eff.comp] || eff.comp}).`);
+    const join = (a) => (a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]);
+    const p3 = mk('p', '', `${below.length} players shoot below the squad's median of ${my.toFixed(1)}%.` + (guards.length ? ` ${guards.length} of them ${guards.length === 1 ? 'is a guard' : 'are guards'}: ${join(guards.map((p) => p.name.split(' ').slice(-1)[0]))}.` : ''));
+    el.append(p1, p2, p3);
+  });
+  dash.draw('ntz-rank', (el) => {
+    el.replaceChildren();
+    const sq = ntzSquad(); if (!sq) return;
+    const pts = sq.filter((p) => p.ts != null && p.ppg != null);
+    [['ppg', 'Top scorers', (v) => v.toFixed(1)], ['ts', 'Most efficient', (v) => v.toFixed(1) + '%']].forEach(([k, t, f]) => {
+      const list = [...pts].sort((a, b) => b[k] - a[k]).slice(0, 5); if (!list.length) return;
+      el.append(mk('h3', '', t)); const ol = mk('ol');
+      list.forEach((p, i) => { const li = mk('li'); li.tabIndex = 0; li.onclick = () => showLog(p.name); const bar = mk('div', 'bar'); const fill = mk('span'); fill.style.width = (p[k] / list[0][k] * 100).toFixed(0) + '%'; bar.append(fill); li.append(mk('i', '', String(i + 1)), mk('span', '', p.name), mk('b', '', f(p[k])), bar); ol.append(li); });
+      el.append(ol);
+    });
+  });
+  dash.draw('ntz-flt', (el) => {
+    el.replaceChildren();
+    [['all', 'All'], ['Guards', 'Guards'], ['Forwards', 'Forwards'], ['Centers', 'Centers']].forEach(([k, l]) => {
+      const b = mk('button', '', l); b.type = 'button'; b.setAttribute('aria-pressed', ntzPos === k ? 'true' : 'false');
+      b.onclick = () => { ntzPos = k; dash.draw('ntz-flt'); dash.draw('ntz-squad'); }; el.append(b);
+    });
+  });
+  dash.draw('ntz-squad', (el) => {
+    el.replaceChildren();
+    const sq = ntzSquad(); if (!sq) { el.textContent = '—'; return; }
+    const best = {}; ['ppg', 'rpg', 'apg', 'ts', 'eff'].forEach((k) => { best[k] = Math.max(...sq.map((p) => (p[k] == null ? -1 : p[k]))); });
+    ['Guards', 'Forwards', 'Centers'].filter((G) => ntzPos === 'all' || ntzPos === G).forEach((G) => {
+      const rs = sq.filter((p) => ntzGroup(p.r) === G); if (!rs.length) return;
+      const hd = mk('div', 'ntz-grp'); hd.append(mk('span', 'ntz-d', G), mk('span', '', String(rs.length))); el.append(hd);
+      const grid = mk('div', 'ntz-sq');
+      rs.forEach((p) => {
+        const parts = p.name.split(' '), ph = photoFor(p.name);
+        const c = mk('button', 'ntz-pc'); c.type = 'button'; c.onclick = () => showLog(p.name); c.style.setProperty('--tc', teamColor(p.club || p.name));
+        const pic = mk('div', 'pic');
+        if (/first senior/i.test(p.r.note || '')) pic.append(mk('span', 'badge', 'First call-up'));
+        else if (/^back/i.test(p.r.note || '')) pic.append(mk('span', 'badge back', 'Back'));
+        else if (p.r.home_club) pic.append(mk('span', 'badge sbl', 'SBL'));
+        if (ph) { const i = document.createElement('img'); i.src = ph.src; i.alt = ''; i.loading = 'lazy'; pic.append(i); } else pic.append(mk('div', 'ini', initials(p.name)));
+        if (p.last) pic.append(mk('div', 'last', `Last game: ${p.last.pts} pts, ${p.last.reb} reb, ${p.last.ast} ast ${p.last.venue === 'Away' ? 'at' : 'vs'} ${p.last.opponent}`));
+        const body = mk('div', 'body');
+        const id = mk('div'); id.append(mk('div', 'fn', parts.slice(0, -1).join(' ')), mk('div', 'ln', parts[parts.length - 1]), mk('div', 'cl', p.club || '—'), mk('div', 'lg', NTZ_LG[p.comp] || p.comp || ''));
+        const stx = mk('div', 'st');
+        [['ppg', 'Points'], ['rpg', 'Rebounds'], ['apg', 'Assists']].forEach(([k, l]) => { const d = mk('div'); d.append(mk('b', p[k] != null && p[k] === best[k] ? 'top' : '', p[k] == null ? '–' : p[k].toFixed(1)), mk('span', '', l)); stx.append(d); });
+        const adv = mk('div', 'adv');
+        const a1 = mk('span', '', 'TS '); a1.append(mk('b', p.ts != null && p.ts === best.ts ? 'top' : '', p.ts == null ? '–' : p.ts.toFixed(1) + '%'));
+        const a2 = mk('span', '', 'Eff '); a2.append(mk('b', p.eff != null && p.eff === best.eff ? 'top' : '', p.eff == null ? '–' : p.eff.toFixed(1)));
+        adv.append(a1, a2, mk('span', '', `${p.gp} ${p.gp === 1 ? 'game' : 'games'}`));
+        const sp = mk('div', 'spark'); sp.title = `Points in his last ${p.log.length} games`; const mx = Math.max(20, ...p.log.map((g) => Number(g.pts) || 0));
+        p.log.forEach((g) => { const i = mk('i'); i.style.height = Math.max(8, ((Number(g.pts) || 0) / mx) * 100) + '%'; sp.append(i); });
+        const mod = mk('div', 'mod', 'Youth club '); mod.append(mk('b', '', p.r.youth_club || '—'));
+        body.append(id, stx, adv, sp, mod);
+        c.append(pic, body); grid.append(c);
+      });
+      el.append(grid);
+    });
+  });
+
   dash.draw('nt-coach', (el) => {
     el.replaceChildren();
     const c = (ds('coaches') || []).find((r) => /national team/i.test(r.note || '')) || (ds('coaches') || [])[0];
