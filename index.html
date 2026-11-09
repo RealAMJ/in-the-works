@@ -2687,7 +2687,9 @@
     // Hero
     const hc = p ? '' : homeClubOf(name);
     const hero = mk('section', 'pp-hero'); hero.style.setProperty('--tc', teamColor(p ? p.club : (hc || name)));
-    if (bio && bio.number) hero.append(mk('span', 'pp-bignum', bio.number));
+    // shirt number: bio first, else the players / SBL / national team lists (filled from the game feeds)
+    const shirt = (bio && bio.number) || (p && p.number) || ((ds('sblplayers') || []).find((x) => isSame(x.player, name)) || {}).number || ((ds('ntroster') || []).find((x) => isSame(x.player, name)) || {}).number || '';
+    if (shirt) hero.append(mk('span', 'pp-bignum', shirt));
     const pic = mk('div', 'pp-pic');
     if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); hero.classList.add('has-photo'); } else pic.append(mk('span', 'pp-ini', initials(name)));
     const id = mk('div', 'pp-id');
@@ -2695,7 +2697,7 @@
     const parts = name.split(' ');
     id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]));
     const meta = mk('div', 'pp-meta');
-    [bio && bio.number ? '#' + bio.number : '', bio && bio.position].filter(Boolean).forEach((t) => meta.append(mk('span', '', t)));
+    [shirt ? '#' + shirt : '', bio && bio.position].filter(Boolean).forEach((t) => meta.append(mk('span', '', t)));
     const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag y', '🇸🇪 Sweden'));
     if (p && p.level) tags.append(mk('span', 'pp-tag', p.level)); else if (hc) tags.append(mk('span', 'pp-tag', 'SBL'));
     if (nt) tags.append(mk('span', 'pp-tag', 'National team'));

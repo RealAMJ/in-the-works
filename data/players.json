@@ -5,7 +5,8 @@
   "country": "USA",
   "level": "NBA",
   "competitions": "NBA (incl. NBA Cup)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "9"
  },
  {
   "player": "Bobi Klintman",
@@ -13,7 +14,8 @@
   "country": "Italy",
   "level": "Europe",
   "competitions": "LBA · EuroLeague",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "34"
  },
  {
   "player": "Melwin Pantzar",
@@ -21,7 +23,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Liga ACB · Champions League (BCL)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "19"
  },
  {
   "player": "Ludvig Håkanson",
@@ -37,7 +40,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Liga ACB · Champions League (BCL)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "35"
  },
  {
   "player": "Wilhelm Falk",
@@ -45,7 +49,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Liga ACB · Champions League (BCL)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "13"
  },
  {
   "player": "Kenny Pohto",
@@ -61,7 +66,8 @@
   "country": "Austria",
   "level": "Europe",
   "competitions": "Austrian Superliga · ABA League · FIBA Europe Cup",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "13"
  },
  {
   "player": "Zaba Bangala",
@@ -69,7 +75,8 @@
   "country": "Germany",
   "level": "Europe",
   "competitions": "BBL",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "0"
  },
  {
   "player": "Viktor Gaddefors",
@@ -77,7 +84,8 @@
   "country": "Poland",
   "level": "Europe",
   "competitions": "Orlen Basket Liga",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "18"
  },
  {
   "player": "Tobias Borg",
@@ -85,7 +93,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Primera FEB",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "6"
  },
  {
   "player": "Oskar Palmquist",
@@ -93,7 +102,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Primera FEB",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "9"
  },
  {
   "player": "Chris Czerapowicz",
@@ -101,7 +111,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Primera FEB",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "35"
  },
  {
   "player": "Felix Terins",
@@ -109,7 +120,8 @@
   "country": "Spain",
   "level": "Europe",
   "competitions": "Primera FEB",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "8"
  },
  {
   "player": "Elliot Cadeau",
@@ -117,7 +129,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (Big Ten)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "3"
  },
  {
   "player": "Julius Price",
@@ -125,7 +138,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (ACC)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "5"
  },
  {
   "player": "William Berg",
@@ -133,7 +147,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (American)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "44"
  },
  {
   "player": "Tunde Fasasi",
@@ -141,7 +156,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (Mountain West)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "32"
  },
  {
   "player": "Nathan Amoran",
@@ -149,7 +165,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "10"
  },
  {
   "player": "Alliou Fall",
@@ -157,7 +174,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "44"
  },
  {
   "player": "Linus Holmström",
@@ -165,7 +183,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "4"
  },
  {
   "player": "Samuel Obenjo",
@@ -173,7 +192,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "13"
  },
  {
   "player": "Oskar Stumer",
@@ -181,7 +201,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "8"
  },
  {
   "player": "Denzel Andersson",
@@ -189,7 +210,8 @@
   "country": "Poland",
   "level": "Europe",
   "competitions": "Orlen Basket Liga",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "5"
  },
  {
   "player": "Adam Ramstedt",
@@ -197,7 +219,8 @@
   "country": "Iceland",
   "level": "Europe",
   "competitions": "Icelandic Premier League",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "2"
  },
  {
   "player": "Olle Lundqvist",
@@ -213,7 +236,8 @@
   "country": "Croatia",
   "level": "Europe",
   "competitions": "Croatian Premier League",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "13"
  },
  {
   "player": "Kasper Hagberg",
@@ -245,7 +269,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (Big West)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "16"
  },
  {
   "player": "Villiam Garcia Adsten",
@@ -253,7 +278,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (America East)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "1"
  },
  {
   "player": "Isak Homelius",
@@ -261,7 +287,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (Big Sky)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "12"
  },
  {
   "player": "Rodrigas Jucevicius",
@@ -269,7 +296,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (SoCon)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "25"
  },
  {
   "player": "Zion Vaamonde",
@@ -277,7 +305,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (SoCon)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "15"
  },
  {
   "player": "William Kermoury",
@@ -285,7 +314,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (CAA)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "7"
  },
  {
   "player": "Casper Pohto",
@@ -293,7 +323,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (Big East)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "6"
  },
  {
   "player": "Ademar Santos",
@@ -301,7 +332,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (MEAC)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "37"
  },
  {
   "player": "Hugo Tidare",
@@ -309,7 +341,8 @@
   "country": "USA",
   "level": "NCAA",
   "competitions": "NCAA D-I (ASUN)",
-  "status": "Confirmed"
+  "status": "Confirmed",
+  "number": "8"
  },
  {
   "player": "Elijah Clarance",
