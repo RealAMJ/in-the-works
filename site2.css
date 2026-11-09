@@ -2088,3 +2088,12 @@ body { padding-top: 0 !important; overflow-x: clip; }
 .sw:not(.on-home) .pg:not([hidden]) { margin-top: 18px; }
 .sw .sa-foot { width: 100vw; margin-left: calc(50% - 50vw); border-radius: 0; }
 body { padding-bottom: 0 !important; }
+
+/* lead story photo: masked on its box (not the image), face placed from the face box; on narrow screens it sits above the text */
+#home.hz #h-week .hw-photo { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 35%); mask-image: linear-gradient(90deg, transparent, #000 35%); }
+#home.hz #h-week .hw-photo img { -webkit-mask-image: none; mask-image: none; object-fit: fill; }
+@media (max-width: 1099px) {
+  #home.hz #h-week .hw-item:first-child { display: flex; flex-direction: column; align-content: stretch; min-height: 0; padding: 0; }
+  #home.hz #h-week .hw-item:first-child .hw-photo { position: relative; inset: auto; width: 100%; height: 240px; flex: none; -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent); mask-image: linear-gradient(180deg, #000 60%, transparent); }
+  #home.hz #h-week .hw-item:first-child .hw-txt { max-width: none; padding: 0 20px 22px; margin-top: -28px; }
+}

@@ -3245,6 +3245,12 @@
     const lay = mk('div', 'wk-lay'); lay.append(main, side);
     el.append(lay);
   });
+  // lead story photo: the detected face fills about half the photo's height, centred, so it is never cut at the eyes
+  function leadFit(img, photo) {
+    const fb = Array.isArray(photo.fbox) ? photo.fbox : null; if (!fb) { Object.assign(img.style, { width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%' }); return; }
+    const [bx, by, bw, bh] = fb, k = 0.46 / bh;
+    Object.assign(img.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(bx + bw / 2) * 100}%)`, top: ((0.44 - (by + bh / 2) * k) * 100) + '%' });
+  }
   dash.draw('h-wk', (el) => {
     el.replaceChildren();
     const d = wkStories(); if (!d) { el.textContent = '—'; return; }
@@ -3254,7 +3260,7 @@
       const txt = mk('div', 'hw-txt'); txt.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'hw-h', tx(r, 'headline')));
       if (i === 0) { if (tx(r, 'stats')) txt.append(mk('span', 'hw-stats', tx(r, 'stats'))); txt.append(mk('span', 'hw-meta', [r.date ? dayFmt(r.date) : '', 'Read the story →'].filter(Boolean).join(' · '))); }
       b.append(txt);
-      if (ph) { const f = mk('span', i === 0 ? 'hw-photo' : 'hw-face'); const im = new Image(); im.alt = ''; im.src = ph.src; if (i !== 0) faceFit(im, ph); f.append(im); b.append(f); b.classList.add('has-ph'); }
+      if (ph) { const f = mk('span', i === 0 ? 'hw-photo' : 'hw-face'); const im = new Image(); im.alt = ''; im.src = ph.src; if (i !== 0) faceFit(im, ph); else leadFit(im, ph); f.append(im); if (i === 0) b.prepend(f); else b.append(f); b.classList.add('has-ph'); }
       b.onclick = () => openStory(r.story_id);
       el.append(b);
     });
