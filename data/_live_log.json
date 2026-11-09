@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T21:11:27+01:00",
+ "at": "2026-11-09T21:12:17+01:00",
  "log": [
   {
    "game": "g20261109vir",
@@ -8,7 +8,7 @@
   {
    "game": "g20261109vir",
    "src": "LBA (legabasket.it)",
-   "period": 2,
+   "period": 3,
    "clock": "",
    "done": false,
    "teams": [
@@ -19,7 +19,7 @@
     ],
     [
      "Tezenis Verona",
-     36,
+     38,
      11
     ]
    ]
