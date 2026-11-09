@@ -1501,7 +1501,7 @@
   "espn_id": "401919029",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919029",
   "clock": "Q2 04:46",
-  "live_updated": "2026-11-09T07:03:19+01:00"
+  "live_updated": "2026-11-09T07:03:55+01:00"
  },
  {
   "game_id": "g20261109vir",
@@ -1994,6 +1994,58 @@
   "players": "Casper Pohto",
   "team": "St. John's",
   "opponent": "Syracuse",
+  "venue": "Home",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261116bcvi",
+  "date": "2026-11-16",
+  "time": "20:00",
+  "players": "Barra Njie",
+  "team": "BC Vienna",
+  "opponent": "SC Derby",
+  "venue": "Away",
+  "competition": "ABA League",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261117iona",
+  "date": "2026-11-17",
+  "time": "00:00",
+  "players": "Alliou Fall",
+  "team": "Iona",
+  "opponent": "UMBC",
+  "venue": "Away",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261117miam",
+  "date": "2026-11-17",
+  "time": "01:30",
+  "players": "Pelle Larsson",
+  "team": "Miami Heat",
+  "opponent": "Houston Rockets",
+  "venue": "Home",
+  "competition": "NBA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261117denv",
+  "date": "2026-11-17",
+  "time": "05:00",
+  "players": "Oskar Stumer",
+  "team": "Denver",
+  "opponent": "Colorado Colorado Springs",
   "venue": "Home",
   "competition": "NCAA",
   "note": "",

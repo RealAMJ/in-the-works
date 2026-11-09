@@ -97,4 +97,14 @@ DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NBA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261117miam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T003000Z
+DTEND:20261117T023000Z
+SUMMARY:Larsson: Miami Heat vs Houston Rockets
+DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NBA
+END:VEVENT
 END:VCALENDAR

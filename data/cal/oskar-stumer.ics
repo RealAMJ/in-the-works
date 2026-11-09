@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261117denv@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T040000Z
+DTEND:20261117T060000Z
+SUMMARY:Stumer: Denver vs Colorado Colorado Springs
+DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

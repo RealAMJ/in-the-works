@@ -57,4 +57,14 @@ DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261117iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261116T230000Z
+DTEND:20261117T010000Z
+SUMMARY:Fall: Iona at UMBC
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
