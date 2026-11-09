@@ -1741,7 +1741,7 @@ button.tp-r:hover { border-color: var(--se-blue); }
 #player .pp-chip b { font: 400 26px/1 Anton, sans-serif; }
 #player .pp-chip .d { font-size: 12px; font-weight: 700; color: #7fb3ff; } #player .pp-chip.up .d { color: #fecc02; }
 #player .pp-chip .o { font-size: 11px; color: #93a6c4; }
-#player .pp-fline { margin-top: 22px; } #player .pp-fline svg { width: 100%; height: auto; display: block; }
+#player .pp-fline { margin-top: 22px; } #player .pp-fline svg { width: 100%; height: auto; max-height: 160px; display: block; }
 #player .pp-chiprow { display: grid; grid-template-columns: repeat(var(--n, 10), minmax(0, 1fr)); gap: 8px; }
 #player .pp-chip { min-width: 0; text-align: center; justify-items: center; border-left: 1px solid rgba(160, 190, 235, .11); border-top: 4px solid #7fb3ff; padding: 12px 6px; }
 #player .pp-chip.up { border-top-color: #fecc02; }

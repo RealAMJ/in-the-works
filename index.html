@@ -2877,7 +2877,9 @@
           fa.append(row); fs.append(fa);
           // line chart with an average line
           const fb = mk('div', 'pp-fline'); 
-          const NS = 'http://www.w3.org/2000/svg', W = 900, H = 200, m = { l: 34, r: 16, t: 18, b: 30 };
+          // drawn at the real width of the page so text stays a normal size and the chart stays short
+          const pw = ((document.querySelector('#player') || document.body).clientWidth || 900) - 60;
+          const NS = 'http://www.w3.org/2000/svg', W = Math.round(Math.min(1180, Math.max(300, pw))), H = W < 600 ? 140 : 150, m = { l: 34, r: 16, t: 24, b: 26 };
           const mx2 = Math.max(10, ...last.map((g) => Number(g.pts) || 0)) * 1.1;
           const X = (i) => m.l + (last.length === 1 ? 0 : (i / (last.length - 1)) * (W - m.l - m.r)), Y = (v) => m.t + (1 - v / mx2) * (H - m.t - m.b);
           const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
