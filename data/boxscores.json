@@ -2014,5 +2014,27 @@
   "tov": 1,
   "pf": 5,
   "eff": ""
+ },
+ {
+  "line_id": "g20261109wsu-berg",
+  "game_id": "g20261109wsu",
+  "player": "William Berg",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
  }
 ]
