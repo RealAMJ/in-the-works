@@ -430,5 +430,21 @@
    0.3446,
    0.2554
   ]
+ },
+ {
+  "player": "Vedran Bosnić",
+  "src": "photos/vedran-bosnic.webp",
+  "credit": "",
+  "face": [
+   0,
+   0.51,
+   0.495
+  ],
+  "fbox": [
+   0.2196,
+   0.0607,
+   0.5514,
+   0.4214
+  ]
  }
 ]

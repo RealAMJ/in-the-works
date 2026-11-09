@@ -237,15 +237,20 @@
   </div>
 
   <div class="pg" data-page="coaches" id="pg-coaches" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Coaches</b></button><h1>Coaches abroad</h1><p>Swedish coaches on men's benches outside Sweden, and their teams' games.</p></header>
+   <div class="ntz cox">
+    <header class="stx-head"><div class="ntz-wrap">
+      <button type="button" class="ntz-crumb" data-page-go="home">Home › <b>Coaches</b></button>
+      <h1 class="ntz-d">Coaches abroad</h1>
+      <p class="stx-intro" data-draw="cox-intro" data-source="coaches">Swedes on men's benches outside Sweden. Records are from the games we track.</p>
+      <div class="cox-cards" data-draw="cox-cards" data-source="coaches coachgames teamform photos"></div>
+    </div></header>
+    <div class="ntz-wrap"><section class="ntz-s"><div class="cox-two">
+      <div><h2 class="ntz-d cox-h">Next up</h2><p class="ntz-lede">Stockholm time. Tap a game for the preview.</p><div class="cox-list" data-draw="cox-next" data-source="coachgames"></div></div>
+      <div><h2 class="ntz-d cox-h">Results</h2><p class="ntz-lede">Newest first. Tap a game for the game center.</p><div class="cox-list" data-draw="cox-res" data-source="coachgames"></div></div>
+    </div></section></div>
+   </div>
   <section class="sw-card" id="coaches">
-    <h2>Swedish coaches abroad</h2>
-    <p class="note">Swedish coaches working with men's teams outside Sweden this season. Tap a club to see its recent form.</p>
-    <div class="sw-coaches" data-draw="coaches" data-source="coaches"></div>
-    <div class="co-grid" data-draw="co-grid" data-source="coaches coachgames teams"></div>
-    <section class="pp-sec co-sec"><h2>Coaches' next games</h2><p class="pp-sub">Upcoming games for teams with a Swedish coach, Stockholm time. Tap a team for its page.</p><div class="td-grid" data-draw="co-up" data-source="coachgames"></div></section>
     <section class="pp-sec co-sec h2h-sec h2h-fold" id="co-swe-vs-swe"><button type="button" class="h2h-toggle" data-h2h-toggle aria-expanded="false" aria-controls="co-swe-vs-swe-body"><span class="h2h-tt">Swede vs Swede schedule</span><span class="h2h-count" data-draw="h2h-count" data-source="schedule gamelogs players coaches coachgames">—</span><span class="h2h-chev" aria-hidden="true"></span></button><div class="h2h-body" id="co-swe-vs-swe-body"><div class="h2h-in"><p class="pp-sub">Every game where a Swedish player or coach faces another Swede, with who is on each side.</p><div data-draw="h2h" data-source="schedule gamelogs players coaches coachgames"></div></div></div></section>
-    <section class="pp-sec co-sec"><h2>Latest results</h2><p class="pp-sub">The most recent games for the coaches' teams.</p><div class="td-grid" data-draw="co-res" data-source="coachgames"></div></section>
     <div class="sw-box" id="coach-games">
       <h3>Coaches' schedule</h3>
       <p class="note">Every game for the coaches' teams, in Stockholm time. Tap a team or a result to see the team's last five games, record and top scorers.</p>
@@ -3167,6 +3172,73 @@
   });
 
   // ---- Sweden national team
+  // ---- Coaches page: dark layout. Record = the club's tracked games (team form + coach games, one per date)
+  function coxGames(c) {
+    const m = new Map();
+    (ds('teamform') || []).filter((t) => t.row_id !== 'placeholder' && sameTeam(t.team, c.club) && /^[WL]$/.test(t.result || '') && t.date).forEach((t) => m.set(t.date, t.result));
+    (ds('coachgames') || []).filter((g) => g.coach === c.coach && g.status === 'final' && /^[WL]/.test(g.score || '')).forEach((g) => m.set(g.date, g.score[0]));
+    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([, r]) => r);
+  }
+  dash.draw('cox-intro', (el) => {
+    const c = (ds('coaches') || []).filter((x) => x.coach && x.coach !== 'placeholder');
+    const n = new Set(c.map((x) => x.country)).size;
+    const w = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+    el.textContent = c.length ? `${w[c.length] || c.length} Swedes on men's benches in ${n === 1 ? 'one country' : (w[n] || n).toLowerCase() + ' countries'}. Records are from the games we track.` : 'Swedes on men\'s benches outside Sweden.';
+  });
+  dash.draw('cox-cards', (el) => {
+    el.replaceChildren();
+    const C = (ds('coaches') || []).filter((x) => x.coach && x.coach !== 'placeholder'); if (!C.length) { el.textContent = '—'; return; }
+    const G = (ds('coachgames') || []).slice().sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    C.forEach((c) => {
+      const res = coxGames(c), w = res.filter((r) => r === 'W').length, l = res.length - w;
+      const nx = G.find((g) => g.coach === c.coach && g.status !== 'final' && g.date >= todayStr());
+      const card = mk('article', 'cox-c'); card.style.setProperty('--tc', teamColor(c.club));
+      const top = mk('div', 'top');
+      const av = mk('span', 'cox-av'); const ph = photoFor(c.coach);
+      if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = ''; faceFit(img, ph); av.append(img); } else av.textContent = initials(c.coach);
+      const head = /head coach/i.test(c.role || '');
+      top.append(av, mk('span', 'tag' + (/Riipinen/.test(c.coach) ? ' se' : ''), /Riipinen/.test(c.coach) ? 'Sweden head coach' : head ? 'Head coach' : 'Staff'));
+      const parts = c.coach.split(' ');
+      top.append(mk('div', 'fn', parts.slice(0, -1).join(' ')), mk('div', 'ln', parts[parts.length - 1]));
+      const body = mk('div', 'body');
+      const club = mk('div', 'club'); const cb = mk('button', 'cox-club', c.club); cb.type = 'button'; cb.onclick = () => showTeam(c.club);
+      club.append(cb, mk('span', '', [c.league, c.country, c.since ? 'since ' + c.since : ''].filter(Boolean).join(', ')));
+      body.append(club);
+      if (!head) body.append(mk('div', 'role', c.role));
+      if (c.note) body.append(mk('div', 'note', c.note));
+      const rec = mk('div', 'rec'); rec.append(mk('b', '', `${w}-${l}`));
+      const fx = mk('div'); const form = mk('div', 'form'); res.slice(-5).forEach((r) => form.append(mk('i', r === 'W' ? 'fw' : 'fl', r)));
+      fx.append(form, mk('small', '', `${res.length} tracked ${res.length === 1 ? 'game' : 'games'}`)); rec.append(fx); body.append(rec);
+      const foot = mk('div', 'nx');
+      if (nx) { foot.append('Next: '); const b = mk('button', 'cox-nxb', `${nx.venue === 'Away' ? 'at' : 'vs'} ${nx.opponent}`); b.type = 'button'; b.onclick = () => showCard(nx.game_id); foot.append(b, `, ${dayFmt(nx.date)} ${nx.time && nx.time !== 'TBC' ? nx.time : ''}`); }
+      else foot.textContent = 'No game scheduled';
+      card.append(top, body, foot); el.append(card);
+    });
+  });
+  const coxRow = (g, kind, first) => {
+    const r = mk('button', 'cox-row' + (first ? ' next' : '')); r.type = 'button'; r.onclick = () => showCard(g.game_id);
+    const when = mk('div', 'when');
+    if (kind === 'next') when.append(mk('b', '', g.time && g.time !== 'TBC' ? g.time : 'TBC'), dayFmt(g.date));
+    else { const d = dayFmt(g.date).split(' '); when.append(mk('b', '', d.slice(1).join(' ')), d[0]); }
+    const m = mk('div', 'm'); m.append(mk('b', '', `${g.team} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', kind === 'next' ? g.competition : `${g.competition}, coach ${g.coach}`));
+    const right = mk('div', kind === 'next' ? 'cp' : 'res');
+    if (kind === 'next') right.textContent = g.coach.split(' ').slice(-1)[0];
+    else { const wn = /^W/.test(g.score); right.append(mk('i', wn ? 'fw' : 'fl', wn ? 'W' : 'L'), String(g.score).replace(/^[WL]\s*/, '')); }
+    r.append(when, m, right); return r;
+  };
+  dash.draw('cox-next', (el) => {
+    el.replaceChildren();
+    const G = (ds('coachgames') || []).filter((g) => g.status !== 'final' && g.date >= todayStr()).sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time)).slice(0, 6);
+    if (!G.length) { el.append(mk('p', 'ntz-lede', 'Nothing scheduled yet.')); return; }
+    G.forEach((g, i) => el.append(coxRow(g, 'next', i === 0)));
+  });
+  dash.draw('cox-res', (el) => {
+    el.replaceChildren();
+    const G = (ds('coachgames') || []).filter((g) => g.status === 'final' && /^[WL]/.test(g.score || '')).sort((a, b) => (b.date + b.time).localeCompare(a.date + a.time)).slice(0, 6);
+    if (!G.length) { el.append(mk('p', 'ntz-lede', 'No results yet.')); return; }
+    G.forEach((g) => el.append(coxRow(g, 'res')));
+  });
+
   // ---- Stats page: one row per player (main competition, others fold out), TS%, 3P%, EFF, last 8
   let stxSort = 'pts', stxLvl = 'all';
   const stxOpen = new Set();

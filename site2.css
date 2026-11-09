@@ -1551,3 +1551,43 @@ button.tp-r:hover { border-color: var(--se-blue); }
   .stx-t td.stx-pl { max-width: 175px; white-space: normal; }
   .stx-tabs button { padding: 6px 11px; }
 }
+/* ---- Coaches page (dark) */
+.cox { margin-bottom: 18px; }
+.cox-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.cox-c { display: grid; grid-template-rows: auto 1fr auto; border-radius: 16px; overflow: hidden; background: var(--nz-deep); border: 1px solid var(--nz-line); }
+.cox-c .top { position: relative; padding: 14px 14px 12px; background: linear-gradient(140deg, var(--tc), var(--nz-deep) 85%); }
+.cox-av { position: relative; width: 52px; height: 52px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: var(--nz-y); color: var(--nz-night); font: 400 19px Anton, sans-serif; }
+.cox-c .tag { position: absolute; right: 12px; top: 12px; font-size: 10px; font-weight: 800; padding: 3px 8px; border-radius: 999px; background: rgba(3, 10, 23, .6); color: #fff; }
+.cox-c .tag.se { background: var(--nz-y); color: var(--nz-night); }
+.cox-c .fn { margin-top: 10px; font-size: 12px; color: #c9d6ea; }
+.cox-c .ln { font: 400 26px/1 Anton, sans-serif; text-transform: uppercase; }
+.cox-c .body { padding: 12px 14px; display: grid; gap: 10px; align-content: start; }
+.cox-club { display: block; padding: 0; border: 0; background: none; font: inherit; font-weight: 700; color: var(--nz-ink); cursor: pointer; text-align: left; }
+.cox-club:hover { text-decoration: underline; }
+.cox-c .club span { font-size: 12px; color: var(--nz-mut); }
+.cox-c .role { font-size: 12px; color: var(--nz-sky); font-weight: 600; }
+.cox-c .note { font-size: 12px; color: var(--nz-mut); line-height: 1.4; }
+.cox-c .rec { display: flex; align-items: center; gap: 10px; padding-top: 10px; border-top: 1px solid var(--nz-line); }
+.cox-c .rec b { font: 400 26px/1 Anton, sans-serif; }
+.cox-c .form { display: flex; gap: 3px; }
+.cox-c .form i, .cox-row .res i { flex: 0 0 auto; min-width: 16px; height: 16px; padding: 0 3px; border-radius: 4px; display: grid; place-items: center; font: 700 9px Archivo, sans-serif; font-style: normal; }
+.cox-c .fw, .cox-row .fw { background: var(--nz-g); color: #03140a; }
+.cox-c .fl, .cox-row .fl { background: var(--nz-r); color: #2a0705; }
+.cox-c .rec small { display: block; font-size: 11px; color: var(--nz-mut); }
+.cox-c .nx { padding: 10px 14px; border-top: 1px solid var(--nz-line); font-size: 12px; color: var(--nz-mut); }
+.cox-nxb { padding: 0; border: 0; background: none; font: inherit; font-weight: 700; color: var(--nz-ink); cursor: pointer; }
+.cox-two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.cox-h { font-size: clamp(34px, 4.4vw, 52px); margin: 0 0 6px; }
+.cox-two .ntz-lede { margin-bottom: 16px; }
+.cox-list { display: grid; gap: 6px; }
+.cox-row { display: grid; grid-template-columns: 78px 1fr auto; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 12px; background: var(--nz-deep); border: 1px solid var(--nz-line); font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.cox-row:hover { border-color: rgba(160, 190, 235, .35); }
+.cox-row.next { border-color: var(--nz-y); box-shadow: inset 3px 0 0 var(--nz-y); }
+.cox-row .when { font-size: 12px; color: var(--nz-mut); line-height: 1.3; }
+.cox-row .when b { display: block; color: var(--nz-ink); font: 400 18px/1.1 Anton, sans-serif; }
+.cox-row .m b { font-weight: 700; } .cox-row .m span { display: block; font-size: 12px; color: var(--nz-mut); }
+.cox-row .res { font: 400 20px Anton, sans-serif; display: flex; align-items: center; gap: 8px; }
+.cox-row .res i { height: 18px; padding: 0 7px; font-size: 11px; border-radius: 6px; }
+.cox-row .cp { font-size: 12px; color: var(--nz-sky); font-weight: 600; }
+@media (max-width: 1100px) { .cox-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cox-two { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .cox-cards { display: flex; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; } .cox-c { flex: 0 0 80%; scroll-snap-align: start; } }
