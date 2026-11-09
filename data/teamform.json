@@ -5696,5 +5696,33 @@
   "note": "",
   "leaders": "Acuff|32|5|10;LaVine|15|4|2;Hunter|14|3|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "wichita-state-2026-11-09",
+  "team": "Wichita State",
+  "date": "2026-11-09",
+  "competition": "NCAA",
+  "opponent": "USC",
+  "venue": "Neutral",
+  "score": "86-93",
+  "result": "L",
+  "top": "Gray 18 pts, 3 reb",
+  "note": "",
+  "leaders": "Gray|18|3|0;Berg|17|11|2;Frison|17|1|6",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "usc-2026-11-09",
+  "team": "USC",
+  "date": "2026-11-09",
+  "competition": "NCAA",
+  "opponent": "Wichita State",
+  "venue": "Neutral",
+  "score": "93-86",
+  "result": "W",
+  "top": "Rice 32 pts, 5 reb",
+  "note": "",
+  "leaders": "Rice|32|5|9;Arenas|30|4|1;Ratliff|10|13|0",
+  "source": "ESPN"
  }
 ]

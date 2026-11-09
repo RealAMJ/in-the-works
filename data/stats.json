@@ -544,12 +544,12 @@
   "player": "William Berg",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 1,
-  "min": 28.0,
-  "pts": 26.0,
-  "reb": 16.0,
-  "ast": 0.0,
-  "note": "Averages from game log (1 games, through 2026-11-05)"
+  "gp": 2,
+  "min": 24.5,
+  "pts": 21.5,
+  "reb": 13.5,
+  "ast": 1.0,
+  "note": "Averages from game log (2 games, through 2026-11-09)"
  },
  {
   "row_id": "hansson-sbl",

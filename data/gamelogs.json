@@ -5764,5 +5764,31 @@
   "pf": 2,
   "pm": 19,
   "eff": ""
+ },
+ {
+  "row_id": "berg-2026-11-09",
+  "player": "William Berg",
+  "date": "2026-11-09",
+  "competition": "NCAA",
+  "team": "Wichita State",
+  "opponent": "USC",
+  "venue": "Neutral",
+  "result": "L 86-93",
+  "min": 21,
+  "pts": 17,
+  "reb": 11,
+  "ast": 2,
+  "source": "ESPN",
+  "fg": "5/7",
+  "three": "0/0",
+  "ft": "7/10",
+  "oreb": 6,
+  "dreb": 5,
+  "stl": 2,
+  "blk": 0,
+  "tov": 4,
+  "pf": 4,
+  "pm": "",
+  "eff": ""
  }
 ]
