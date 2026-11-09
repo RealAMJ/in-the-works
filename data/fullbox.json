@@ -39978,7 +39978,7 @@
   "fg": "2/3",
   "three": "2/2",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39999,13 +39999,13 @@
   "fg": "1/3",
   "three": "1/3",
   "ft": "1/2",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261109mia-0-7",
+  "row_id": "g20261109mia-0-8",
   "game_id": "g20261109mia",
   "team": "Miami Heat",
   "player": "Ryan Conwell",
@@ -40020,7 +40020,7 @@
   "fg": "1/3",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40062,7 +40062,7 @@
   "fg": "2/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40146,7 +40146,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40209,7 +40209,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
