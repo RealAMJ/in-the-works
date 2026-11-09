@@ -1,75 +1,6 @@
 {
- "at": "2026-11-09T03:14:22+01:00",
+ "at": "2026-11-09T03:15:12+01:00",
  "log": [
-  {
-   "game": "g20261107tor",
-   "checking": "FIBA LiveStats"
-  },
-  {
-   "game": "g20261107tor",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "WKS \u015al\u0105sk Wroc\u0142aw",
-     81,
-     11
-    ],
-    [
-     "Arriva Lotto Twarde Pierniki Toru\u0144",
-     76,
-     11
-    ]
-   ]
-  },
-  {
-   "game": "g20261108bur",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "g20261108bur",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "INSOLAC CAJA 87",
-     73,
-     12
-    ],
-    [
-     "GRUPO URETA TIZONA BURGOS",
-     75,
-     11
-    ]
-   ]
-  },
-  {
-   "game": "g20261108sant",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "g20261108sant",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "BIELE ISB",
-     66,
-     11
-    ],
-    [
-     "CLASS BASQUET SANT ANTONI",
-     74,
-     11
-    ]
-   ]
-  },
   {
    "game": "g20261109mia",
    "checking": "ESPN"
@@ -78,64 +9,18 @@
    "game": "g20261109mia",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:49",
+   "clock": "08:46",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     3,
+     5,
      14
     ],
     [
      "Sacramento Kings",
-     2,
+     7,
      12
-    ]
-   ]
-  },
-  {
-   "game": "c20261107anw",
-   "checking": "FIBA LiveStats"
-  },
-  {
-   "game": "c20261107anw",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Dziki Warszawa",
-     96,
-     12
-    ],
-    [
-     "Anwil W\u0142oc\u0142awek",
-     75,
-     10
-    ]
-   ]
-  },
-  {
-   "game": "c20261108san",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "c20261108san",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "BIELE ISB",
-     66,
-     11
-    ],
-    [
-     "CLASS BASQUET SANT ANTONI",
-     74,
-     11
     ]
    ]
   }
