@@ -5478,5 +5478,31 @@
   "pf": 2,
   "pm": 1,
   "eff": ""
+ },
+ {
+  "row_id": "larsson-2026-11-09",
+  "player": "Pelle Larsson",
+  "date": "2026-11-09",
+  "competition": "NBA",
+  "team": "Miami Heat",
+  "opponent": "Sacramento Kings",
+  "venue": "Away",
+  "result": "W 114-108",
+  "min": 22,
+  "pts": 11,
+  "reb": 3,
+  "ast": 3,
+  "source": "ESPN",
+  "fg": "4/7",
+  "three": "3/4",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 6,
+  "pm": 3,
+  "eff": ""
  }
 ]

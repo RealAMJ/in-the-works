@@ -5668,5 +5668,33 @@
   "note": "",
   "leaders": "Tass|17|21|0;Williamson|16|4|4;Lottie|14|3|5",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "miami-heat-2026-11-09",
+  "team": "Miami Heat",
+  "date": "2026-11-09",
+  "competition": "NBA",
+  "opponent": "Sacramento Kings",
+  "venue": "Away",
+  "score": "114-108",
+  "result": "W",
+  "top": "Antetokounmpo 29 pts, 14 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|29|14|3;Thompson|23|2|4;Adebayo|18|8|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "sacramento-kings-2026-11-09",
+  "team": "Sacramento Kings",
+  "date": "2026-11-09",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Home",
+  "score": "108-114",
+  "result": "L",
+  "top": "Acuff 32 pts, 5 reb",
+  "note": "",
+  "leaders": "Acuff|32|5|10;LaVine|15|4|2;Hunter|14|3|1",
+  "source": "ESPN"
  }
 ]
