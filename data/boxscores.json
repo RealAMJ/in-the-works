@@ -2070,15 +2070,15 @@
   "fg": "2/4",
   "three": "1/1",
   "ft": "1/2",
-  "pm": 7,
+  "pm": 5,
   "source": "LBA (legabasket.it)",
   "note": "live",
   "oreb": 1,
   "dreb": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
-  "pf": 3,
+  "tov": 1,
+  "pf": 4,
   "eff": ""
  }
 ]
