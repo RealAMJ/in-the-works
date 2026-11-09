@@ -2097,3 +2097,21 @@ body { padding-bottom: 0 !important; }
   #home.hz #h-week .hw-item:first-child .hw-photo { position: relative; inset: auto; width: 100%; height: 240px; flex: none; -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent); mask-image: linear-gradient(180deg, #000 60%, transparent); }
   #home.hz #h-week .hw-item:first-child .hw-txt { max-width: none; padding: 0 20px 22px; margin-top: -28px; }
 }
+/* ===== Whole site on the night background: no grey edges anywhere ===== */
+:root, :root[data-theme="light"], :root:not([data-theme="light"]) {
+  --color-bg: #030a17; --color-panel: #071429; --color-fg: #f2f6fc; --color-fg-muted: #93a6c4; --color-border-line: rgba(160,190,235,.14);
+  --cds-border: rgba(160,190,235,.14); --cds-text-secondary: #93a6c4; --cds-chart-muted: #3a4a66; --cds-surface-popover: #0b1a33; color-scheme: dark;
+}
+html, body { background: #030a17 !important; color: #f2f6fc; }
+/* page headers run edge to edge like the home hero; their content stays in the page column */
+.ntz, .ntz.stx, .ntz.cox, .ntz.cpx { border-radius: 0 !important; border: 0 !important; }
+.ntz-hero, .stx-head, .cpx-hero, .lx-hero, #player .pp-hero, #player .pp-facts, .tp-hero, .gch {
+  width: 100vw !important; max-width: none !important; margin-left: calc(50% - 50vw) !important; margin-right: calc(50% - 50vw) !important; border-radius: 0 !important; box-sizing: border-box;
+  padding-left: max(18px, calc((100vw - 1224px) / 2 + 36px)) !important; padding-right: max(18px, calc((100vw - 1224px) / 2 + 36px)) !important; border-left: 0 !important; border-right: 0 !important; }
+.navback:has(> .nav-back[hidden]) { display: none; }
+.sw:not(.on-home) .pg:not([hidden]) { margin-top: 0; }
+.sw:not(.on-home) .navback { padding: 12px 0; }
+.pg > .pg-head:first-child { padding-top: 28px; }
+#player .pp { border-radius: 0; }
+.sw .pg { overflow: visible !important; }
+#player .pp-highs { grid-template-columns: repeat(2, minmax(0, 1fr)); } #player .pp-high { min-width: 0; } #player .pp-high small, #player .pp-high span { overflow-wrap: anywhere; } @media (max-width: 760px) { #player .pp-splitwrap { grid-template-columns: 1fr !important; } }
