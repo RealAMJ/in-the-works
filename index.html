@@ -2888,9 +2888,23 @@
           add('line', { x1: m.l, x2: W - m.r, y1: Y(avg), y2: Y(avg), stroke: '#fecc02', 'stroke-dasharray': '5 5', 'stroke-width': 1.5 });
           add('text', { x: W - m.r, y: Y(avg) - 6, 'text-anchor': 'end', fill: '#fecc02', 'font-size': 12, 'font-weight': 700 }, `avg ${f1x(avg)}`);
           const area = last.map((g, i) => `${X(i)},${Y(Number(g.pts) || 0)}`).join(' ');
-          add('polygon', { points: `${X(0)},${Y(0)} ${area} ${X(last.length - 1)},${Y(0)}`, fill: 'rgba(127,179,255,.10)' });
-          add('polyline', { points: area, fill: 'none', stroke: '#7fb3ff', 'stroke-width': 2.5, 'stroke-linejoin': 'round' });
-          last.forEach((g, i) => { const v = Number(g.pts) || 0; const gg = document.createElementNS(NS, 'g'); gg.style.cursor = 'pointer'; gg.addEventListener('click', () => showCard(g.game_id));
+          add('polygon', { points: `${X(0)},${Y(0)} ${area} ${X(last.length - 1)},${Y(0)}`, fill: 'rgba(127,179,255,.10)' }).classList.add('pp-farea');
+          add('polyline', { points: area, fill: 'none', stroke: '#7fb3ff', 'stroke-width': 2.5, 'stroke-linejoin': 'round', pathLength: 1 }).classList.add('pp-fpath');
+          // hover: a guide line down to the axis, the point grows, a tooltip with the game's line
+          const guide = add('line', { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: 'rgba(242,246,252,.35)', 'stroke-dasharray': '3 4' }); guide.classList.add('pp-fguide');
+          fb.style.position = 'relative';
+          const tip = mk('div', 'pp-ftip'); fb.append(tip);
+          const hide = () => { guide.classList.remove('on'); tip.classList.remove('on'); svg.querySelectorAll('.pp-fpt.on').forEach((e) => e.classList.remove('on')); };
+          svg.addEventListener('mouseleave', hide);
+          last.forEach((g, i) => { const v = Number(g.pts) || 0; const gg = document.createElementNS(NS, 'g'); gg.classList.add('pp-fpt'); gg.style.setProperty('--i', i); gg.style.cursor = 'pointer'; gg.addEventListener('click', () => showCard(g.game_id));
+            const hit = document.createElementNS(NS, 'rect'); Object.entries({ x: X(i) - (W - m.l - m.r) / Math.max(1, last.length - 1) / 2, y: 0, width: (W - m.l - m.r) / Math.max(1, last.length - 1), height: H, fill: 'transparent' }).forEach(([k, val]) => hit.setAttribute(k, val)); gg.append(hit);
+            gg.addEventListener('mouseenter', () => {
+              hide(); gg.classList.add('on'); guide.setAttribute('x1', X(i)); guide.setAttribute('x2', X(i)); guide.classList.add('on');
+              const sc = String(g.score || ''), res = sc ? ` · ${sc}` : '';
+              tip.replaceChildren(mk('b', '', `${v} pts`), mk('span', '', [g.reb != null && g.reb !== '' ? `${g.reb} reb` : '', g.ast != null && g.ast !== '' ? `${g.ast} ast` : '', g.fg ? `${g.fg} FG` : ''].filter(Boolean).join(' · ')), mk('em', '', `${g.venue === 'Away' ? '@' : 'vs'} ${g.opponent || ''}${g.date ? ' · ' + dayFmt(g.date) : ''}${res}`));
+              const r = svg.getBoundingClientRect(), k = r.width / W; let lx = X(i) * k; tip.style.left = lx + 'px'; tip.style.top = (Y(v) * k) + 'px';
+              tip.classList.toggle('below', Y(v) < H * 0.45); tip.classList.toggle('left', lx > r.width - 110); tip.classList.toggle('right', lx < 110); tip.classList.add('on');
+            });
             const c = document.createElementNS(NS, 'circle'); Object.entries({ cx: X(i), cy: Y(v), r: 6, fill: v >= avg ? '#fecc02' : '#7fb3ff', stroke: '#030a17', 'stroke-width': 2 }).forEach(([k, val]) => c.setAttribute(k, val));
             const t = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: Y(v) - 12, 'text-anchor': 'middle', fill: '#f2f6fc', 'font-size': 13, 'font-weight': 700 }).forEach(([k, val]) => t.setAttribute(k, val)); t.textContent = v;
             const o = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: H - 8, 'text-anchor': 'middle', fill: '#93a6c4', 'font-size': 11 }).forEach(([k, val]) => o.setAttribute(k, val)); o.textContent = teamAbbr(g.opponent);

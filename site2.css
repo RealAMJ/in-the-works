@@ -1747,3 +1747,29 @@ button.tp-r:hover { border-color: var(--se-blue); }
 #player .pp-chip.up { border-top-color: #fecc02; }
 #player .pp-chip b { font-size: 30px; }
 @media (max-width: 760px) { #player .pp-chiprow { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; } #player .pp-chip b { font-size: 22px; } #player .pp-chip .d { font-size: 10px; } }
+
+/* form chart: line draws in, points pop in, hover guide and tooltip */
+#player .pp-fpt circle { transition: transform .18s ease; transform-box: fill-box; transform-origin: center; }
+#player .pp-fpt.on circle { transform: scale(1.5); }
+#player .pp-fpt text { transition: opacity .15s ease; }
+#player .pp-fguide { opacity: 0; transition: opacity .15s ease; pointer-events: none; }
+#player .pp-fguide.on { opacity: 1; }
+#player .pp-ftip { position: absolute; transform: translate(-50%, calc(-100% - 16px)); background: #0b1a33; border: 1px solid rgba(254,204,2,.55); border-radius: 10px; padding: 7px 11px; display: grid; gap: 2px; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .15s ease, transform .15s ease; box-shadow: 0 10px 28px rgba(0,0,0,.45); z-index: 3; font-size: 12px; color: #93a6c4; }
+#player .pp-ftip.left { transform: translate(-100%, calc(-100% - 16px)); }
+#player .pp-ftip.right { transform: translate(0, calc(-100% - 16px)); }
+#player .pp-ftip.on { opacity: 1; }
+#player .pp-ftip.below { transform: translate(-50%, 18px); }
+#player .pp-ftip.below.left { transform: translate(-100%, 18px); }
+#player .pp-ftip.below.right { transform: translate(0, 18px); }
+#player .pp-fpt.on text:not(:last-of-type) { opacity: 0 !important; }
+#player .pp-ftip b { font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 20px; color: #fecc02; letter-spacing: .02em; }
+#player .pp-ftip span { color: #f2f6fc; font-weight: 600; }
+#player .pp-ftip em { font-style: normal; }
+@media (prefers-reduced-motion: no-preference) {
+  #player .pp-fpath { stroke-dasharray: 1; stroke-dashoffset: 1; animation: pp-fdraw 1.1s cubic-bezier(.3,.7,.2,1) .15s forwards; }
+  #player .pp-farea { opacity: 0; animation: pp-ffade .6s ease .7s forwards; }
+  #player .pp-fpt circle, #player .pp-fpt text { opacity: 0; animation: pp-ffade .35s ease forwards; animation-delay: calc(.25s + var(--i) * .12s); }
+  #player .pp-fpt.on circle { opacity: 1; }
+}
+@keyframes pp-fdraw { to { stroke-dashoffset: 0; } }
+@keyframes pp-ffade { to { opacity: 1; } }
