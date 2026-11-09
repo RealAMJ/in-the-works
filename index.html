@@ -2907,7 +2907,7 @@
       const hl = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
       if (hl.length) { const ul = mk('ul', 'pp-list'); hl.forEach((h) => ul.append(mk('li', '', h))); hon.append(ul); two.append(so, hon); } else { two.classList.add('one'); two.append(so); }
       el.append(two);
-      const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null);
+      const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null, name);
       if (ups) el.append(ups);
     }
 
@@ -4271,10 +4271,54 @@
   }
   document.querySelectorAll('[data-nav-back]').forEach((b) => b.addEventListener('click', goBack));
 
+
+  // ---- Upcoming games on a player profile: face-off card for the next game (his season, last meeting, rest, countdown), then compact rows
+  function upDays(d) { const t = new Date(todayStr() + 'T00:00:00Z'), g = new Date(d + 'T00:00:00Z'); return Math.round((g - t) / 864e5); }
+  function upWhen(g) { const n = upDays(g.date); return n <= 0 ? 'Today' : n === 1 ? 'Tomorrow' : `In ${n} days`; }
+  function upTime(g) { return g.time && g.time !== 'TBC' ? g.time : 'TBC'; }
+  function upOpen(g) { return () => (g.sbl && g.url ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id)); }
+  function upLastVs(who, g) { const pg = playerGames(who).filter((x) => x.note !== 'DNP' && sameTeam(x.opponent, g.opponent)); return pg[pg.length - 1] || null; }
+  function upSeason(who, g) { const pg = playerGames(who).filter((x) => x.note !== 'DNP' && norm(x.competition) === norm(g.competition)); if (!pg.length) return null; const a = (k) => pg.reduce((t, x) => t + (Number(x[k]) || 0), 0) / pg.length; return { pts: a('pts'), reb: a('reb'), ast: a('ast'), n: pg.length }; }
+  function upCountdown(g, el) {
+    if (!g.time || g.time === 'TBC') { el.append(mk('span', 'upx-cd-tbc', upWhen(g))); return; }
+    // the schedule's times are Swedish time
+    const tz = (d) => { const p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Stockholm', timeZoneName: 'shortOffset' }).formatToParts(d).find((q) => q.type === 'timeZoneName').value; const m = /GMT([+-]\d+)/.exec(p); return m ? Number(m[1]) : 1; };
+    const guess = new Date(`${g.date}T${g.time}:00Z`); const at = new Date(guess.getTime() - tz(guess) * 36e5);
+    const draw = () => { el.replaceChildren(); let s = Math.max(0, Math.floor((at - Date.now()) / 1000)); const d = Math.floor(s / 86400); s -= d * 86400; const h = Math.floor(s / 3600); s -= h * 3600; const mi = Math.floor(s / 60);
+      [[d, 'days'], [h, 'hrs'], [mi, 'min']].forEach(([v, l]) => { const b = mk('div', 'upx-cd-u'); b.append(mk('b', '', String(v).padStart(2, '0')), mk('span', '', l)); el.append(b); }); };
+    draw(); const iv = setInterval(() => { if (!el.isConnected) clearInterval(iv); else draw(); }, 30000);
+  }
+  function upVs(g) { const v = mk('div', 'upx-vs'); const t1 = mk('div', 'upx-team'); t1.append(crest(g.team, 'upx-crest'), mk('b', '', g.team), mk('span', '', g.venue === 'Away' ? 'Away' : 'Home'));
+    const t2 = mk('div', 'upx-team'); t2.append(crest(g.opponent, 'upx-crest'), mk('b', '', g.opponent), mk('span', '', g.venue === 'Away' ? 'Home' : 'Away')); v.append(t1, mk('div', 'upx-at', g.venue === 'Away' ? '@' : 'VS'), t2); return v; }
+  function ppUpcomingV(up, who, title) {
+    const sec = ppSection(title || 'Upcoming games'); sec.classList.add('upx', 'upx-d');
+    const g0 = up[0], rest = up.slice(1);
+    const hero = mk('button', 'upx-hero'); hero.type = 'button'; hero.onclick = upOpen(g0);
+    const top = mk('div', 'upx-top'); top.append(mk('span', 'upx-pill', upDays(g0.date) <= 1 ? `Next game · ${upWhen(g0)}` : 'Next game'), mk('span', 'upx-comp', g0.competition));
+    hero.append(top, upVs(g0));
+    const facts = mk('div', 'upx-facts');
+    const se = upSeason(who, g0);
+    if (se) { const f = mk('div', 'upx-fact'); f.append(mk('span', 'k', 'His season'), mk('b', '', `${f1x(se.pts)} pts · ${f1x(se.reb)} reb · ${f1x(se.ast)} ast`), mk('span', 's', `${se.n} games in ${g0.competition}`)); facts.append(f); }
+    const lv = upLastVs(who, g0);
+    { const f = mk('div', 'upx-fact'); f.append(mk('span', 'k', `Last time vs ${teamAbbr(g0.opponent)}`)); if (lv) f.append(mk('b', '', `${lv.pts} pts · ${lv.reb} reb · ${lv.ast} ast`), mk('span', 's', `${dayFmt(lv.date)}${lv.result ? ' · ' + lv.result : ''}`)); else f.append(mk('b', '', 'First meeting'), mk('span', 's', 'No earlier game this season')); facts.append(f); }
+    const pg = playerGames(who).filter((x) => x.date < g0.date); const lastD = pg.length ? pg[pg.length - 1].date : null;
+    if (lastD) { const rd = Math.round((new Date(g0.date + 'T00:00:00Z') - new Date(lastD + 'T00:00:00Z')) / 864e5) - 1; const f = mk('div', 'upx-fact'); f.append(mk('span', 'k', 'Rest'), mk('b', '', rd <= 0 ? 'Back-to-back' : `${rd} day${rd === 1 ? '' : 's'}`), mk('span', 's', `since ${dayFmt(lastD)}`)); facts.append(f); }
+    hero.append(facts, mk('div', 'upx-line'));
+    const cd = mk('div', 'upx-cd'); upCountdown(g0, cd);
+    const meta = mk('div', 'upx-meta'); meta.append(mk('b', '', `${dayFmt(g0.date)} · ${upTime(g0)}`), mk('span', '', 'Swedish time'));
+    const row = mk('div', 'upx-row'); row.append(meta, cd); hero.append(row);
+    sec.append(hero);
+    if (rest.length) { const l = mk('div', 'upx-list'); rest.forEach((g) => { const r = mk('button', 'upx-li'); r.type = 'button'; r.onclick = upOpen(g);
+      const dd = mk('div', 'upx-date'); dd.append(mk('b', '', String(Number(g.date.slice(8, 10)))), mk('span', '', new Date(g.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }).toUpperCase()));
+      const m = mk('div', 'upx-m'); m.append(mk('b', '', `${g.venue === 'Away' ? '@' : 'vs'} ${g.opponent}`), mk('span', '', `${g.competition} · ${upTime(g)}`));
+      r.append(dd, crest(g.opponent, 'upx-crest-s'), m, mk('span', 'upx-in', upWhen(g))); l.append(r); }); sec.append(l); }
+    return sec;
+  }
   // Upcoming games section (Today-style cards) for a player, or for the teams in a game
-  function ppUpcoming(filter, title, sub, max, extra) {
+  function ppUpcoming(filter, title, sub, max, extra, who) {
     const up = (allGames() || []).concat(extra || []).filter((x) => x.status !== 'final' && filter(x)).slice(0, 5);
     if (!up.length) return null;
+    if (who) return ppUpcomingV(up, who, title);
     const sec = ppSection(title || 'Upcoming games', sub); const l = mk('div', 'cox-list');
     up.forEach((g, i) => { const r = mk('button', 'cox-row' + (i === 0 ? ' next' : '')); r.type = 'button'; r.onclick = () => (g.sbl && g.url ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id));
       const w = mk('div', 'when'); w.append(mk('b', '', g.time && g.time !== 'TBC' ? g.time : 'TBC'), dayFmt(g.date));
