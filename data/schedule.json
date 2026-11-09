@@ -1474,13 +1474,13 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "L 8-10",
+  "score": "L 10-12",
   "watch_url": "https://www.nba.com/watch/league-pass-stream",
   "watch_label": "NBA League Pass",
   "espn_id": "401909951",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909951",
-  "clock": "Q1 07:27",
-  "live_updated": "2026-11-09T03:19:02+01:00"
+  "clock": "Q1 06:50",
+  "live_updated": "2026-11-09T03:19:52+01:00"
  },
  {
   "game_id": "g20261109wsu",
