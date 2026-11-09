@@ -1200,3 +1200,11 @@ button.tp-r:hover { border-color: var(--se-blue); }
   .pp-hero.has-photo .pp-id { grid-column: 2; }
 }
 @media (max-width: 640px) { .pp-hero.has-photo .pp-last { font-size: min(2rem, 7vw); } }
+/* awards: one section per level */
+.awx-group { display: grid; gap: 10px; }
+.awx-group + .awx-group { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--color-border-line); }
+.awx-ghead { display: flex; align-items: center; gap: 10px; }
+.awx-ghead h3 { margin: 0; font-size: 1.15rem; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }
+.awx-ghead h3::before { content: ''; display: inline-block; width: 4px; height: .9em; margin-right: 8px; border-radius: 2px; background: var(--se-yellow); vertical-align: -1px; }
+.awx-ghead .cn { font-size: 12px; font-weight: 800; padding: 2px 8px; border-radius: 999px; background: var(--color-bg); border: 1px solid var(--color-border-line); color: var(--color-fg-muted); }
+.awx-none { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }

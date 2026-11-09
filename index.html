@@ -1695,10 +1695,29 @@
       e.append(mk('div', 'aw-empty-icon', '🏆'), mk('p', '', L('Nothing yet this season.', 'Inget än den här säsongen.')), mk('p', 'note', L('Weekly and monthly awards and broken records show up here as they happen; MVPs, all-league teams and championships arrive when the season ends in spring.', 'Veckans och månadens utmärkelser och slagna rekord dyker upp här direkt; MVP, all-league-lag och titlar kommer när säsongen tar slut i vår.')));
       el.append(e); return;
     }
-    let month = '';
-    rows.forEach((r) => {
+    // one section per level: NBA, Europe, NCAA, SBL (league on the row first, else the player's level)
+    const level = (r) => {
+      const lg = norm(r.league || '');
+      if (/\bsbl\b|basketligan/.test(lg)) return 'sbl';
+      if (/ncaa|college|big ten|acc\b|sec\b|big east|big 12/.test(lg)) return 'ncaa';
+      if (/^nba\b/.test(lg)) return 'nba';
+      const p = pl.status === 'ok' ? pl.data.find((x) => isSame(x.player, r.player)) : null;
+      if (p && p.level === 'NCAA') return 'ncaa';
+      if (p && p.level === 'NBA') return 'nba';
+      if (!p && homeClubOf(r.player)) return 'sbl';
+      return 'europe';
+    };
+    const GROUPS = [['nba', 'NBA', 'NBA'], ['europe', 'Europe', 'Europa'], ['ncaa', 'NCAA', 'NCAA'], ['sbl', 'SBL', 'SBL']];
+    GROUPS.forEach(([g, en, sv]) => {
+      const list = rows.filter((r) => level(r) === g);
+      const sec = mk('section', 'awx-group'); sec.dataset.key = g;
+      const hd = mk('div', 'awx-ghead'); hd.append(mk('h3', '', L(en, sv)), mk('span', 'cn', String(list.length)));
+      sec.append(hd);
+      if (!list.length) { sec.append(mk('p', 'awx-none', L('Nothing yet this season.', 'Inget än den här säsongen.'))); el.append(sec); return; }
+      let month = '';
+      list.forEach((r) => {
       const m = r.date ? new Date(r.date + 'T12:00:00Z').toLocaleDateString(LOC(), { month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
-      if (m !== month) { month = m; el.append(mk('div', 'awx-month', m)); }
+      if (m !== month) { month = m; sec.append(mk('div', 'awx-month', m)); }
       const k = awKind(r);
       const c = mk('article', 'awx ' + k[1]);
       c.append(mk('div', 'awx-ic', k[2]));
@@ -1713,7 +1732,9 @@
       if (r.team) who.append(mk('span', 'muted', ' · ' + r.team));
       b.append(top, mk('h3', 'awx-title', tx(r, 'title') || r.title), who);
       if (tx(r, 'detail')) b.append(mk('p', 'awx-detail', tx(r, 'detail')));
-      c.append(b); el.append(c);
+      c.append(b); sec.append(c);
+      });
+      el.append(sec);
     });
   });
 
