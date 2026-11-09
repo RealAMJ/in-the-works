@@ -2115,3 +2115,10 @@ html, body { background: #030a17 !important; color: #f2f6fc; }
 #player .pp { border-radius: 0; }
 .sw .pg { overflow: visible !important; }
 #player .pp-highs { grid-template-columns: repeat(2, minmax(0, 1fr)); } #player .pp-high { min-width: 0; } #player .pp-high small, #player .pp-high span { overflow-wrap: anywhere; } @media (max-width: 760px) { #player .pp-splitwrap { grid-template-columns: 1fr !important; } }
+/* full-width bands keep their content on the page column: --gut is the page's side padding (set from the body's padding by a small script) */
+:root { --gut: 28px; }
+.sw .tb, .sw .st-bar { padding-left: var(--gut) !important; padding-right: var(--gut) !important; }
+.ntz-hero, .stx-head, .cpx-hero, .lx-hero, #player .pp-hero, #player .pp-facts, .tp-hero, .gch {
+  padding-left: calc(var(--gut) + clamp(16px, 3vw, 36px)) !important; padding-right: calc(var(--gut) + clamp(16px, 3vw, 36px)) !important; }
+#player .pp-hero .pp-bignum { right: calc(var(--gut) + clamp(1rem, 4vw, 3.5rem)); }
+.sw.on-home .tb, .sw.on-home .st-bar { padding-left: var(--gut) !important; padding-right: var(--gut) !important; }

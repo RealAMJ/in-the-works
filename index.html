@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=b6e3b155">
+<link rel="stylesheet" href="site2.css?v=2cfc7738">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -2606,6 +2606,8 @@
     document.querySelectorAll('[data-open-search]').forEach((b) => b.addEventListener('click', open));
     document.addEventListener('keydown', (e) => { if (e.key === '/' && !/input|textarea|select/i.test((e.target && e.target.tagName) || '')) { e.preventDefault(); open(); } }); })();
   dash.draw('tb-live', () => { const g = games() || []; const live = g.filter((r) => r.status === 'live').length; const b = document.querySelector('.tb-nav [data-page-go="games"]'); if (!b) return; b.querySelector('.tb-dot')?.remove(); if (live) { const d = mk('span', 'tb-dot', String(live)); d.title = `${live} live now`; b.append(d); } });
+  // page side padding as a CSS variable, so full-width bands line up with the page column
+  (() => { const set = () => document.documentElement.style.setProperty('--gut', getComputedStyle(document.body).paddingLeft || '28px'); set(); window.addEventListener('resize', set); })();
   // ---- Footer: when the data was last updated (data/_version.json), Swedish time
   dash.draw('foot-upd', (el) => {
     fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (!v || !v.updated) return; const d = new Date(v.updated);
