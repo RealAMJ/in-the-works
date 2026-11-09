@@ -308,10 +308,13 @@
       <p>Player of the week and month, all-league teams, MVPs, broken records and titles for the Swedes we follow abroad and for players in the SBL.</p>
       <div class="lx-nums" data-draw="awnums" data-source="awards"></div>
     </section>
-    <section class="lx-sec">
-      <div class="lx-head"><h2>Honours list</h2><span class="lx-note">Newest first · checked at the start and end of every week</span></div>
-      <div class="sw-chips lx-chips" data-draw="awchips" data-source="awards" aria-label="Filter awards"></div>
-      <div class="awx-list" data-draw="awards" data-source="awards players"></div>
+    <section class="lx-sec aw-sec">
+      <div class="aw-bar">
+        <div class="aw-tabs" role="group" aria-label="Level" data-draw="awtabs" data-source="awards players ntroster sblplayers"></div>
+        <div class="sw-chips lx-chips aw-kinds" data-draw="awchips" data-source="awards" aria-label="Filter awards"></div>
+      </div>
+      <div class="awx-board all" data-draw="awards" data-source="awards players ntroster sblplayers"></div>
+      <p class="lx-note aw-foot">Newest first · tap an award for the details · checked at the start and end of every week</p>
     </section>
   </div>
 
@@ -1671,70 +1674,89 @@
     n(L('Titles', 'Titlar'), rows.filter((r) => awKind(r)[1] === 'champ').length);
     n(L('Players honoured', 'Spelare'), new Set(rows.map((r) => r.player)).size);
   });
+  // Awards page: level tabs (All / NBA / Europe / NCAA / SBL), kind filter, and a board of compact tiles
+  let awLevel = 'all';
+  const AW_LEVELS = [['nba', 'NBA', 'NBA'], ['europe', 'Europe', 'Europa'], ['ncaa', 'NCAA', 'NCAA'], ['sbl', 'SBL', 'SBL']];
+  const awLevelOf = (r) => {
+    const lg = norm(r.league || '');
+    if (/\bsbl\b|basketligan/.test(lg)) return 'sbl';
+    if (/ncaa|college|big ten|acc\b|sec\b|big east|big 12/.test(lg)) return 'ncaa';
+    if (/^nba\b/.test(lg)) return 'nba';
+    const p = (ds('players') || []).find((x) => isSame(x.player, r.player));
+    if (p && p.level === 'NCAA') return 'ncaa';
+    if (p && p.level === 'NBA') return 'nba';
+    if (!p && homeClubOf(r.player)) return 'sbl';
+    return 'europe';
+  };
+  const awFiltered = () => (awRows() || []).filter((r) => awCat === 'all' || awKind(r)[1] === awCat);
+  const awRedraw = () => { dash.draw('awtabs'); dash.draw('awchips'); dash.draw('awards'); };
+  dash.draw('awtabs', (el) => {
+    el.replaceChildren();
+    const rows = awFiltered();
+    [['all', 'All', 'Alla']].concat(AW_LEVELS).forEach(([c, en, sv]) => {
+      const n = c === 'all' ? rows.length : rows.filter((r) => awLevelOf(r) === c).length;
+      const b = mk('button', 'aw-tab' + (awLevel === c ? ' on' : '')); b.type = 'button';
+      b.append(mk('span', '', L(en, sv)), mk('span', 'cn', String(n)));
+      b.setAttribute('aria-pressed', awLevel === c ? 'true' : 'false');
+      b.onclick = () => { awLevel = c; awRedraw(); };
+      el.append(b);
+    });
+  });
   dash.draw('awchips', (el) => {
     el.replaceChildren();
     const rows = awRows(); if (!rows || !rows.length) return;
-    [['all', 'All', 'Alla']].concat(AW_KINDS.map((k) => [k[1], k[3] + 's', k[4]])).forEach(([c, en, sv]) => {
+    [['all', 'Everything', 'Allt']].concat(AW_KINDS.map((k) => [k[1], k[3] + 's', k[4]])).forEach(([c, en, sv]) => {
       const n = c === 'all' ? rows.length : rows.filter((r) => awKind(r)[1] === c).length;
       if (c !== 'all' && !n) return;
       const b = mk('button', 'chip' + (awCat === c ? ' on' : '')); b.type = 'button';
       b.append(mk('span', '', L(en, sv)), mk('span', 'cn', String(n)));
       b.setAttribute('aria-pressed', awCat === c ? 'true' : 'false');
-      b.onclick = () => { awCat = c; dash.draw('awchips'); dash.draw('awards'); };
+      b.onclick = () => { awCat = c; awRedraw(); };
       el.append(b);
     });
   });
+  // one award as a compact tile; tap it for the full text
+  function awTile(r) {
+    const k = awKind(r);
+    const d = document.createElement('details'); d.className = 'awt ' + k[1]; d.dataset.key = r.row_id;
+    const s = document.createElement('summary');
+    s.append(mk('span', 'awt-ic', k[2]));
+    const body = mk('div', 'awt-body');
+    body.append(mk('div', 'awt-title', tx(r, 'title') || r.title));
+    const who = mk('div', 'awt-who');
+    if (r.team) who.append(crest(r.team, 'sm'));
+    who.append((ds('players') || []).some((p) => isSame(p.player, r.player)) || homeClubOf(r.player) ? names(r.player) : mk('span', '', r.player));
+    if (r.team) who.append(mk('span', 'muted', r.team));
+    const meta = mk('div', 'awt-meta');
+    meta.append(mk('span', 'awt-type', L(k[3], k[4])));
+    if (r.league) meta.append(mk('span', 'awt-lg', r.league));
+    meta.append(mk('span', 'awt-date', r.date ? dayFmt(r.date) : ''));
+    body.append(who, meta);
+    s.append(body, mk('span', 'awt-more', '›'));
+    d.append(s);
+    if (tx(r, 'detail')) d.append(mk('p', 'awt-detail', tx(r, 'detail')));
+    return d;
+  }
   dash.draw('awards', (el) => {
     el.replaceChildren();
-    const rows0 = awRows(); if (!rows0) { el.textContent = '—'; return; }
-    const pl = dash.data('players');
-    const tracked = (n) => (pl.status === 'ok' && pl.data.some((p) => norm(p.player) === norm(n))) || !!homeClubOf(n);
-    const rows = rows0.filter((r) => awCat === 'all' || awKind(r)[1] === awCat);
-    if (!rows.length) {
-      const e = mk('div', 'aw-empty');
-      e.append(mk('div', 'aw-empty-icon', '🏆'), mk('p', '', L('Nothing yet this season.', 'Inget än den här säsongen.')), mk('p', 'note', L('Weekly and monthly awards and broken records show up here as they happen; MVPs, all-league teams and championships arrive when the season ends in spring.', 'Veckans och månadens utmärkelser och slagna rekord dyker upp här direkt; MVP, all-league-lag och titlar kommer när säsongen tar slut i vår.')));
-      el.append(e); return;
-    }
-    // one section per level: NBA, Europe, NCAA, SBL (league on the row first, else the player's level)
-    const level = (r) => {
-      const lg = norm(r.league || '');
-      if (/\bsbl\b|basketligan/.test(lg)) return 'sbl';
-      if (/ncaa|college|big ten|acc\b|sec\b|big east|big 12/.test(lg)) return 'ncaa';
-      if (/^nba\b/.test(lg)) return 'nba';
-      const p = pl.status === 'ok' ? pl.data.find((x) => isSame(x.player, r.player)) : null;
-      if (p && p.level === 'NCAA') return 'ncaa';
-      if (p && p.level === 'NBA') return 'nba';
-      if (!p && homeClubOf(r.player)) return 'sbl';
-      return 'europe';
-    };
-    const GROUPS = [['nba', 'NBA', 'NBA'], ['europe', 'Europe', 'Europa'], ['ncaa', 'NCAA', 'NCAA'], ['sbl', 'SBL', 'SBL']];
-    GROUPS.forEach(([g, en, sv]) => {
-      const list = rows.filter((r) => level(r) === g);
-      const sec = mk('section', 'awx-group'); sec.dataset.key = g;
-      const hd = mk('div', 'awx-ghead'); hd.append(mk('h3', '', L(en, sv)), mk('span', 'cn', String(list.length)));
-      sec.append(hd);
-      if (!list.length) { sec.append(mk('p', 'awx-none', L('Nothing yet this season.', 'Inget än den här säsongen.'))); el.append(sec); return; }
-      let month = '';
-      list.forEach((r) => {
-      const m = r.date ? new Date(r.date + 'T12:00:00Z').toLocaleDateString(LOC(), { month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
-      if (m !== month) { month = m; sec.append(mk('div', 'awx-month', m)); }
-      const k = awKind(r);
-      const c = mk('article', 'awx ' + k[1]);
-      c.append(mk('div', 'awx-ic', k[2]));
-      const b = mk('div', 'awx-body');
-      const top = mk('div', 'awx-top');
-      top.append(mk('span', 'awx-type', L(k[3], k[4])));
-      if (r.league) top.append(mk('span', 'awx-lg', r.league));
-      top.append(mk('span', 'awx-date', r.date ? dayFmt(r.date) : ''));
-      const who = mk('div', 'awx-who');
-      if (r.team) who.append(crest(r.team, 'sm'));
-      who.append(tracked(r.player) ? names(r.player) : mk('span', '', r.player));
-      if (r.team) who.append(mk('span', 'muted', ' · ' + r.team));
-      b.append(top, mk('h3', 'awx-title', tx(r, 'title') || r.title), who);
-      if (tx(r, 'detail')) b.append(mk('p', 'awx-detail', tx(r, 'detail')));
-      c.append(b); sec.append(c);
-      });
-      el.append(sec);
+    const rows = awFiltered();
+    if (!awRows()) { el.textContent = '—'; return; }
+    const levels = awLevel === 'all' ? AW_LEVELS : AW_LEVELS.filter(([c]) => c === awLevel);
+    el.className = 'awx-board' + (awLevel === 'all' ? ' all' : ' one');
+    levels.forEach(([c, en, sv]) => {
+      const list = rows.filter((r) => awLevelOf(r) === c);
+      const col = mk('section', 'aw-col' + (list.length ? '' : ' empty')); col.dataset.key = c;
+      const hd = mk('div', 'aw-colhead'); hd.append(mk('h3', '', L(en, sv)), mk('span', 'cn', String(list.length)));
+      col.append(hd);
+      if (!list.length) col.append(mk('p', 'aw-none', L('Nothing yet this season.', 'Inget än den här säsongen.')));
+      const MAX = awLevel === 'all' ? 4 : 999;
+      list.slice(0, MAX).forEach((r) => col.append(awTile(r)));
+      if (list.length > MAX) {
+        const more = mk('button', 'aw-all', L(`See all ${list.length} →`, `Visa alla ${list.length} →`)); more.type = 'button';
+        more.onclick = () => { awLevel = c; awRedraw(); };
+        col.append(more);
+      }
+      el.append(col);
     });
   });
 
