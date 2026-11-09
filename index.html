@@ -2861,56 +2861,6 @@
       if (cur) {
         const cg2 = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
         const avg = Number(cur.pts);
-        // 1. form: last 10 games, points against his average
-        if (cg2.length >= 2) {
-          const fs = ppSection('Form', `Points in his last ${Math.min(10, cg2.length)} games in ${cur.competition}. Yellow is above his average of ${f1x(avg)}, blue below.`);
-          const strip = mk('div', 'pp-formstrip'); strip.style.gridTemplateColumns = `repeat(${Math.min(10, cg2.length)}, minmax(0, 1fr))`; const mx = Math.max(...cg2.slice(-10).map((g) => Number(g.pts) || 0), 1);
-          cg2.slice(-10).forEach((g) => { const v = Number(g.pts) || 0; const c = mk('button', 'pp-fs ' + (v >= avg ? 'up' : 'dn')); c.type = 'button'; c.onclick = () => showCard(g.game_id);
-            const bar = mk('i'); bar.style.height = Math.max(10, (v / mx) * 100) + '%'; c.append(mk('b', '', String(v)), bar, mk('span', '', `${g.venue === 'Away' ? '@' : 'vs'} ${teamAbbr(g.opponent)}`)); c.title = `${v} pts ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`; strip.append(c); });
-          fs.append(strip); el.append(fs); strip.remove();
-          const last = cg2.slice(-10);
-          // chips with the difference to his average
-          const fa = mk('div', 'pp-fchips'); 
-          const row = mk('div', 'pp-chiprow'); row.style.setProperty('--n', String(last.length));
-          last.forEach((g) => { const v = Number(g.pts) || 0, d = v - avg; const c = mk('button', 'pp-chip ' + (d >= 0 ? 'up' : 'dn')); c.type = 'button'; c.onclick = () => showCard(g.game_id);
-            c.append(mk('b', '', String(v)), mk('span', 'd', (d >= 0 ? '▲ +' : '▼ ') + d.toFixed(1).replace('-', '−')), mk('span', 'o', `${g.venue === 'Away' ? '@' : 'vs'} ${teamAbbr(g.opponent)}`)); row.append(c); });
-          fa.append(row); fs.append(fa);
-          // line chart with an average line
-          const fb = mk('div', 'pp-fline'); 
-          // drawn at the real width of the page so text stays a normal size and the chart stays short
-          const pw = ((document.querySelector('#player') || document.body).clientWidth || 900) - 60;
-          const NS = 'http://www.w3.org/2000/svg', W = Math.round(Math.min(1180, Math.max(300, pw))), H = W < 600 ? 140 : 150, m = { l: 34, r: 16, t: 24, b: 26 };
-          const mx2 = Math.max(10, ...last.map((g) => Number(g.pts) || 0)) * 1.1;
-          const X = (i) => m.l + (last.length === 1 ? 0 : (i / (last.length - 1)) * (W - m.l - m.r)), Y = (v) => m.t + (1 - v / mx2) * (H - m.t - m.b);
-          const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-          const add = (tag, at, txt) => { const e = document.createElementNS(NS, tag); Object.entries(at).forEach(([k, v]) => e.setAttribute(k, v)); if (txt != null) e.textContent = txt; svg.append(e); return e; };
-          [0, 10, 20, 30].filter((v) => v < mx2).forEach((v) => { add('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: 'rgba(160,190,235,.1)' }); add('text', { x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end', fill: '#93a6c4', 'font-size': 12 }, String(v)); });
-          add('line', { x1: m.l, x2: W - m.r, y1: Y(avg), y2: Y(avg), stroke: '#fecc02', 'stroke-dasharray': '5 5', 'stroke-width': 1.5 });
-          add('text', { x: W - m.r, y: Y(avg) - 6, 'text-anchor': 'end', fill: '#fecc02', 'font-size': 12, 'font-weight': 700 }, `avg ${f1x(avg)}`);
-          const area = last.map((g, i) => `${X(i)},${Y(Number(g.pts) || 0)}`).join(' ');
-          add('polygon', { points: `${X(0)},${Y(0)} ${area} ${X(last.length - 1)},${Y(0)}`, fill: 'rgba(127,179,255,.10)' }).classList.add('pp-farea');
-          add('polyline', { points: area, fill: 'none', stroke: '#7fb3ff', 'stroke-width': 2.5, 'stroke-linejoin': 'round', pathLength: 1 }).classList.add('pp-fpath');
-          // hover: a guide line down to the axis, the point grows, a tooltip with the game's line
-          const guide = add('line', { x1: 0, x2: 0, y1: m.t, y2: H - m.b, stroke: 'rgba(242,246,252,.35)', 'stroke-dasharray': '3 4' }); guide.classList.add('pp-fguide');
-          fb.style.position = 'relative';
-          const tip = mk('div', 'pp-ftip'); fb.append(tip);
-          const hide = () => { guide.classList.remove('on'); tip.classList.remove('on'); svg.querySelectorAll('.pp-fpt.on').forEach((e) => e.classList.remove('on')); };
-          svg.addEventListener('mouseleave', hide);
-          last.forEach((g, i) => { const v = Number(g.pts) || 0; const gg = document.createElementNS(NS, 'g'); gg.classList.add('pp-fpt'); gg.style.setProperty('--i', i); gg.style.cursor = 'pointer'; gg.addEventListener('click', () => showCard(g.game_id));
-            const hit = document.createElementNS(NS, 'rect'); Object.entries({ x: X(i) - (W - m.l - m.r) / Math.max(1, last.length - 1) / 2, y: 0, width: (W - m.l - m.r) / Math.max(1, last.length - 1), height: H, fill: 'transparent' }).forEach(([k, val]) => hit.setAttribute(k, val)); gg.append(hit);
-            gg.addEventListener('mouseenter', () => {
-              hide(); gg.classList.add('on'); guide.setAttribute('x1', X(i)); guide.setAttribute('x2', X(i)); guide.classList.add('on');
-              const sc = String(g.score || ''), res = sc ? ` · ${sc}` : '';
-              tip.replaceChildren(mk('b', '', `${v} pts`), mk('span', '', [g.reb != null && g.reb !== '' ? `${g.reb} reb` : '', g.ast != null && g.ast !== '' ? `${g.ast} ast` : '', g.fg ? `${g.fg} FG` : ''].filter(Boolean).join(' · ')), mk('em', '', `${g.venue === 'Away' ? '@' : 'vs'} ${g.opponent || ''}${g.date ? ' · ' + dayFmt(g.date) : ''}${res}`));
-              const r = svg.getBoundingClientRect(), k = r.width / W; let lx = X(i) * k; tip.style.left = lx + 'px'; tip.style.top = (Y(v) * k) + 'px';
-              tip.classList.toggle('below', Y(v) < H * 0.45); tip.classList.toggle('left', lx > r.width - 110); tip.classList.toggle('right', lx < 110); tip.classList.add('on');
-            });
-            const c = document.createElementNS(NS, 'circle'); Object.entries({ cx: X(i), cy: Y(v), r: 6, fill: v >= avg ? '#fecc02' : '#7fb3ff', stroke: '#030a17', 'stroke-width': 2 }).forEach(([k, val]) => c.setAttribute(k, val));
-            const t = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: Y(v) - 12, 'text-anchor': 'middle', fill: '#f2f6fc', 'font-size': 13, 'font-weight': 700 }).forEach(([k, val]) => t.setAttribute(k, val)); t.textContent = v;
-            const o = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: H - 8, 'text-anchor': 'middle', fill: '#93a6c4', 'font-size': 11 }).forEach(([k, val]) => o.setAttribute(k, val)); o.textContent = teamAbbr(g.opponent);
-            gg.append(c, t, o); svg.append(gg); });
-          fb.append(svg); fs.append(fb);
-        }
         // 2. rank among the Swedes we track (whole-league ranks aren't available for every league)
         { const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
           const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b = best.get(k); if (!b || Number(r.gp) > Number(b.gp)) best.set(k, r); });
