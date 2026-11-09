@@ -99,6 +99,11 @@ def checks(now):
                     issues.append(f"Missing line for {', '.join(missing)}: {what}")
                 if r.get('post_done') and not r.get('notified') and not missing and now - tip > dt.timedelta(hours=5):
                     issues.append(f"Alert not sent: {what}")
+    # Sweden's national team games (tracked from 27 Nov 2026 by ntstats.py)
+    for r in U.load('ntgames'):
+        tip = U.tip_time(r)
+        if r.get('date', '') >= '2026-11-27' and tip and r.get('status') != 'final' and now - tip > dt.timedelta(hours=4):
+            issues.append(f"National team game not final {int((now - tip).total_seconds() // 3600)} h after tip-off: Sweden {'at' if r.get('venue') == 'Away' else 'vs'} {r.get('opponent')} ({r.get('date')})")
     # the live job: has it run lately while games are on? Ask GitHub for its latest run (the live log is only
     # rewritten when a game is checked, so before tip-off it looks old even when the job runs fine)
     busy = [r for r in sched + coach if U.tip_time(r) and r.get('status') != 'final'

@@ -551,7 +551,16 @@ def main(argv):
     soon = [tip_time(r) for r in sched + coach if r.get('status') != 'final' and tip_time(r)]
     # keep the run chain going while any game is due in the next 12 hours (GitHub's own timer can skip runs for hours)
     soon = [x for x in soon if t - AFTER <= x <= t + dt.timedelta(hours=12)]
-    if soon and not only:
+    # Sweden's national team games (data/ntgames.json): own feed lookup and lines, see ntstats.py
+    nt_soon, nt_changed = False, False
+    if not only:
+        try:
+            import ntstats
+            nt_changed, nt_soon = ntstats.run(t)
+            touched = touched or nt_changed
+        except Exception as e:
+            print(f"  ntstats error {e.__class__.__name__}: {e}")
+    if (soon or nt_soon) and not only:
         print('KEEP_GOING')
     changed = False
     if touched:
@@ -559,6 +568,7 @@ def main(argv):
         changed |= save('coachgames', coach)
         changed |= save('fullbox', fullbox)
         changed |= save('boxscores', boxscores)
+    changed |= nt_changed
     if LOG:
         json.dump({'at': now().isoformat(timespec='seconds'), 'log': LOG}, open(os.path.join(DATA, '_live_log.json'), 'w'), indent=1)
     changed |= write_version(changed)

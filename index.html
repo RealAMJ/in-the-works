@@ -369,13 +369,13 @@
       </div></div>
     </div></section>
     <section class="ntz-s"><div class="ntz-wrap">
-      <div class="ntz-sh"><div><h2 class="ntz-d">Who carries the scoring</h2><p class="ntz-lede">Points per game against true shooting, each player in his main competition this season.</p></div></div>
+      <div class="ntz-sh"><div><h2 class="ntz-d">Who carries the scoring</h2><p class="ntz-lede" data-draw="ntz-clede" data-source="ntlines">Points per game against true shooting, each player in his main competition this season.</p></div><div class="ntz-mode" role="group" aria-label="Stats" data-draw="ntz-mode" data-source="ntlines"></div></div>
       <div class="ntz-chartwrap"><div class="ntz-chart" data-draw="ntz-chart" data-source="ntroster players stats gamelogs boxscores schedule"></div><div class="ntz-read" data-draw="ntz-read" data-source="ntroster players stats gamelogs boxscores schedule"></div></div>
       <div class="ntz-rank" data-draw="ntz-rank" data-source="ntroster players stats gamelogs boxscores schedule"></div>
     </div></section>
     <section class="ntz-s"><div class="ntz-wrap">
       <div class="ntz-sh"><div><h2 class="ntz-d">The fourteen</h2><p class="ntz-lede">Tap a player for his profile. Yellow marks the best in the squad.</p></div>
-        <div class="ntz-filters" role="group" aria-label="Position" data-draw="ntz-flt" data-source="ntroster"></div></div>
+        <div class="ntz-sqr"><div class="ntz-mode" role="group" aria-label="Stats" data-draw="ntz-mode2" data-source="ntlines"></div><div class="ntz-filters" role="group" aria-label="Position" data-draw="ntz-flt" data-source="ntroster"></div></div></div>
       <div data-draw="ntz-squad" data-source="ntroster players stats photos gamelogs boxscores schedule"></div>
       <p class="ntz-foot">True shooting = points ÷ (2 × (field goal attempts + 0.44 × free throw attempts)). Efficiency = points + rebounds + assists + steals + blocks − missed shots − turnovers, per game, shown where the box scores are complete. Both come from the games we track. Youth clubs from the Swedish Basketball Federation.</p>
     </div></section>
@@ -3175,11 +3175,27 @@
 
   // ---- Sweden national team
   // ---- Sweden page: dark poster layout (squad from ntroster, numbers from the game logs)
-  let ntzPos = 'all';
+  let ntzPos = 'all', ntzMode = 'club';
   const NTZ_LG = { 'Orlen Basket Liga': 'Poland', 'Liga ACB': 'Spain, ACB', 'Primera FEB': 'Spain, Primera FEB', EuroLeague: 'EuroLeague', BBL: 'Germany', LKL: 'Lithuania', Basketligan: 'Sweden, SBL', 'ABA League': 'ABA League' };
   const ntzSplit = (s) => { const m = /(\d+)\s*\/\s*(\d+)/.exec(String(s || '')); return m ? [Number(m[1]), Number(m[2])] : null; };
   // per player: main competition line plus true shooting, efficiency and the last games in it
+  // national team view: the lines from Sweden's games tracked since 27 Nov 2026 (data/ntlines.json)
+  function ntzNational() {
+    const ro = ds('ntroster'), pl = ds('players'), nl = ds('ntlines'); if (!ro || !nl) return null;
+    return ro.map((r) => {
+      const p = (pl || []).find((x) => isSame(x.player, r.player));
+      const gs = nl.filter((x) => isSame(x.player, r.player)).sort((a, b) => String(a.date).localeCompare(String(b.date)));
+      const n = gs.length, avg = (k) => (n ? gs.reduce((a, g) => a + (Number(g[k]) || 0), 0) / n : null);
+      let pts = 0, fga = 0, fta = 0; const eff = [];
+      gs.forEach((g) => { const fg = ntzSplit(g.fg), ft = ntzSplit(g.ft); if (!fg || !ft) return; pts += Number(g.pts) || 0; fga += fg[1]; fta += ft[1];
+        eff.push((+g.pts || 0) + (+g.reb || 0) + (+g.ast || 0) + (+g.stl || 0) + (+g.blk || 0) - (fg[1] - fg[0]) - (ft[1] - ft[0]) - (+g.tov || 0)); });
+      return { r, p, s: null, name: r.player, club: p ? p.club : homeClubOf(r.player), comp: 'Sweden', gp: n,
+        ppg: avg('pts'), rpg: avg('reb'), apg: avg('ast'), ts: fga + fta > 0 ? (100 * pts) / (2 * (fga + 0.44 * fta)) : null,
+        eff: eff.length ? eff.reduce((a, b) => a + b, 0) / eff.length : null, log: gs.slice(-8).map((g) => Object.assign({}, g, { opponent: g.opponent })), last: gs[n - 1] || null };
+    });
+  }
   function ntzSquad() {
+    if (ntzMode === 'nt' && (ds('ntlines') || []).length) return ntzNational();
     const ro = ds('ntroster'), pl = ds('players'), st = ds('stats'); if (!ro || !pl || !st) return null;
     return ro.map((r) => {
       const p = pl.find((x) => isSame(x.player, r.player));
@@ -3201,6 +3217,16 @@
     });
   }
   const ntzGroup = (r) => (/center/i.test(r.position) ? 'Centers' : /forward/i.test(r.position) ? 'Forwards' : 'Guards');
+  // Club season / National team switch: shown once there are national team lines
+  const ntzRedraw = () => ['ntz-mode', 'ntz-mode2', 'ntz-clede', 'ntz-chart', 'ntz-read', 'ntz-rank', 'ntz-squad'].forEach((k) => dash.draw(k));
+  const ntzModeDraw = (el) => {
+    el.replaceChildren();
+    if (!(ds('ntlines') || []).length) { el.hidden = true; return; }
+    el.hidden = false;
+    [['club', 'Club season'], ['nt', '🇸🇪 National team']].forEach(([m, l]) => { const b = mk('button', '', l); b.type = 'button'; b.setAttribute('aria-pressed', ntzMode === m ? 'true' : 'false'); b.onclick = () => { ntzMode = m; ntzRedraw(); }; el.append(b); });
+  };
+  dash.draw('ntz-mode', ntzModeDraw); dash.draw('ntz-mode2', ntzModeDraw);
+  dash.draw('ntz-clede', (el) => { el.textContent = ntzMode === 'nt' && (ds('ntlines') || []).length ? 'Points per game against true shooting for Sweden, games since 27 November 2026.' : 'Points per game against true shooting, each player in his main competition this season.'; });
   dash.draw('ntz-faces', (el) => {
     el.replaceChildren();
     (ds('ntroster') || []).filter((r) => r.hero).forEach((r) => { const ph = photoFor(r.player); if (ph) { const i = document.createElement('img'); i.src = ph.src; i.alt = ''; el.append(i); } });
@@ -3235,7 +3261,7 @@
     el.replaceChildren();
     const sq = ntzSquad(); if (!sq) return;
     const pts = sq.filter((p) => p.ts != null && p.ppg != null); if (pts.length < 3) return;
-    const NS = 'http://www.w3.org/2000/svg', W = 760, H = 430, m = { l: 46, r: 20, t: 16, b: 40 };
+    const NS = 'http://www.w3.org/2000/svg', W = 760, H = 320, m = { l: 46, r: 20, t: 14, b: 38 };
     const xMax = Math.max(22, Math.ceil(Math.max(...pts.map((p) => p.ppg)) / 5) * 5 + 2), yMin = Math.min(35, Math.floor(Math.min(...pts.map((p) => p.ts)) / 5) * 5), yMax = Math.max(70, Math.ceil(Math.max(...pts.map((p) => p.ts)) / 5) * 5);
     const X = (v) => m.l + (v / xMax) * (W - m.l - m.r), Y = (v) => m.t + (1 - (v - yMin) / (yMax - yMin)) * (H - m.t - m.b);
     const med = (a) => { const s = [...a].sort((x, y) => x - y); return (s[(s.length - 1) >> 1] + s[s.length >> 1]) / 2; };
