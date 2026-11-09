@@ -1517,7 +1517,9 @@
   "status": "final",
   "score": "W 95-81",
   "live_feed": "lba:25408",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261110ewu",

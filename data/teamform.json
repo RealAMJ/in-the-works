@@ -5724,5 +5724,33 @@
   "note": "",
   "leaders": "Rice|32|5|9;Arenas|30|4|1;Ratliff|10|13|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-09",
+  "team": "Virtus Bologna",
+  "date": "2026-11-09",
+  "competition": "LBA (Italy)",
+  "opponent": "Tezenis Verona",
+  "venue": "Home",
+  "score": "95-81",
+  "result": "W",
+  "top": "Moore 18 pts, 3 reb",
+  "note": "",
+  "leaders": "Moore|18|3|3;Frazier|17|2|2;Carr|13|3|4",
+  "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "tezenis-verona-2026-11-09",
+  "team": "Tezenis Verona",
+  "date": "2026-11-09",
+  "competition": "LBA (Italy)",
+  "opponent": "Virtus Bologna",
+  "venue": "Away",
+  "score": "81-95",
+  "result": "L",
+  "top": "Samuels 20 pts, 4 reb",
+  "note": "",
+  "leaders": "Samuels|20|4|1;Loro|13|8|1;Zampini|10|1|5",
+  "source": "LBA (legabasket.it)"
  }
 ]

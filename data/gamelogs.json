@@ -5790,5 +5790,31 @@
   "pf": 4,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "klintman-2026-11-09",
+  "player": "Bobi Klintman",
+  "date": "2026-11-09",
+  "competition": "LBA (Italy)",
+  "team": "Virtus Bologna",
+  "opponent": "Tezenis Verona",
+  "venue": "Home",
+  "result": "W 95-81",
+  "min": 14,
+  "pts": 6,
+  "reb": 2,
+  "ast": 1,
+  "source": "LBA (legabasket.it)",
+  "fg": "2/5",
+  "three": "1/2",
+  "ft": "1/2",
+  "oreb": 1,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 4,
+  "pm": 5,
+  "eff": ""
  }
 ]
