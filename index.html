@@ -40,10 +40,11 @@
     <div class="tb-row">
       <button type="button" class="tb-brand" data-page-go="home" aria-label="Swedes Abroad, home"><span class="tb-flag" aria-hidden="true"></span><span><span class="tb-name">Swedes Abroad</span><br><span class="tb-tag">Basketball · 2026-27</span></span></button>
       <div class="tb-search srch"><svg class="sr-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><input type="search" data-search="top" placeholder="Search players, teams, leagues…" aria-label="Search players, teams, coaches and leagues" autocomplete="off" spellcheck="false"><div class="sr-res" role="listbox" aria-label="Search results" data-draw="sr-top" data-source="players coaches teams schedule"></div></div>
+      <button type="button" class="tb-sbtn" data-open-search aria-label="Search"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="lbl">Search</span><kbd>/</kbd></button>
       <button type="button" class="tb-cmp" data-open-compare aria-label="Compare two players"><span aria-hidden="true">⇄</span><span class="lbl">Compare</span></button>
       <button type="button" class="lang-sw" data-lang-toggle data-no-tr role="switch" aria-checked="false" aria-label="Svenska / English"><span class="ls-knob" aria-hidden="true"></span><span class="ls-opt ls-en">EN</span><span class="ls-opt ls-sv">SV</span></button>
     </div>
-    <nav class="tb-nav" aria-label="Pages">
+    <nav class="tb-nav" aria-label="Pages" data-draw="tb-live" data-source="schedule">
       <button type="button" data-page-go="home" class="on" aria-current="page">Home</button>
       <button type="button" data-page-go="games">Games</button>
       <button type="button" data-page-go="week">This week</button>
@@ -56,15 +57,17 @@
     </nav>
   </header>
 
+  <div class="st-bar" data-draw="st-bar" data-source="schedule players"></div>
   <div class="strip" aria-label="Scoreboard">
     <button type="button" class="st-arrow" data-dir="-1" aria-label="Earlier games">‹</button>
-    <div class="st-row" data-draw="strip" data-source="schedule gamelogs coachgames coaches"></div>
+    <div class="st-row" data-draw="strip" data-source="schedule gamelogs coachgames coaches boxscores players"></div>
     <button type="button" class="st-arrow" data-dir="1" aria-label="Later games">›</button>
   </div>
   <div class="navback"><button type="button" class="nav-back" data-nav-back hidden>‹ Back</button></div>
 
-  <div class="pg" data-page="home" id="home">
+  <div class="pg hz" data-page="home" id="home">
     <section class="hero" aria-label="Search">
+      <div class="hero-live" data-draw="hero-live" data-source="schedule"></div>
       <div class="hero-eyebrow">Swedish men's basketball around the world</div>
       <h1>Every Swede abroad. Every game, every stat.</h1>
       <p>Follow Swedish players and coaches in the NBA, the EuroLeague, college basketball and leagues across Europe, with results as they come in. All times are Stockholm time.</p>
@@ -78,62 +81,86 @@
       </div>
     </section>
 
-  <section class="sw-tiles" aria-label="Summary">
+  <section class="sw-tiles" aria-label="Summary" hidden>
     <div class="sw-tile go" data-go="schedule" data-view="upcoming"><div class="lab">Next up</div><div data-draw="t-next" data-source="schedule">—</div></div>
     <div class="sw-tile go" id="tile-last"><div class="lab">Latest result</div><div data-draw="t-last" data-source="schedule">—</div></div>
     <div class="sw-tile go" id="tile-today"><div class="lab">Today</div><div data-draw="t-today" data-source="schedule">—</div></div>
     <div class="sw-tile go" data-go="standouts"><div class="lab">Standout games</div><div data-draw="t-hl" data-source="highlights">—</div></div>
   </section>
 
-    <div class="home-grid">
-    <article class="hc wide" id="h-week">
+    <div class="hz-flow">
+    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">01</span><span class="hz-cl">The week</span></div>
+      <article class="hc wide" id="h-week">
       <div class="hc-head"><h2>This week</h2><button type="button" class="hc-more" data-page-go="week">Read all stories →</button></div>
       <p class="hc-note">The week's big performances, written from the box scores.</p>
       <div class="hc-body" data-draw="h-wk" data-source="thisweek"></div>
     </article>
-    <article class="hc" id="h-results">
+    </div>
+    <div class="hz-ch">
+      <section class="hz-faces" aria-label="Faces of the season">
+        <div class="hz-fh"><div><span class="hz-kick">Faces of the season</span><h2>The Swedes abroad</h2></div><div class="hz-farr"><button type="button" data-fdir="-1" aria-label="Scroll left">‹</button><button type="button" data-fdir="1" aria-label="Scroll right">›</button><button type="button" class="hc-more" data-page-go="players">All players →</button></div></div>
+        <div class="hz-frow" data-draw="h-faces" data-source="photos players stats sblplayers ntroster"></div>
+      </section>
+    </div>
+    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">02</span><span class="hz-cl">Scores</span></div>
+      <div class="hz-two">
+      <article class="hc" id="h-results">
       <div class="hc-head"><h2>Latest results</h2><button type="button" class="hc-more" data-go="schedule" data-view="final">See all →</button></div>
       <p class="hc-note">Tap a score for the game summary.</p>
       <div class="hc-body" data-draw="h-res" data-source="schedule"></div>
     </article>
-    <article class="hc" id="h-upcoming">
+      <article class="hc" id="h-upcoming">
       <div class="hc-head"><h2>Coming up</h2><button type="button" class="hc-more" data-go="schedule" data-view="upcoming">See all →</button></div>
       <p class="hc-note">Next games for Swedish players, Stockholm time.</p>
       <div class="hc-body" data-draw="h-next" data-source="schedule"></div>
     </article>
-    <article class="hc wide" id="h-leaders">
+      </div>
+    </div>
+    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">03</span><span class="hz-cl">Numbers</span></div>
+      <div class="hz-two">
+      <article class="hc wide" id="h-leaders">
       <div class="hc-head"><h2>Stat leaders</h2><button type="button" class="hc-more" data-go="stats">See all →</button></div>
       <p class="hc-note">Best per-game average this season, each player in his top competition (2+ games).</p>
       <div class="ld-tabs" role="group" aria-label="Stat"><button type="button" data-stat="pts" aria-pressed="true">PTS</button><button type="button" data-stat="reb" aria-pressed="false">REB</button><button type="button" data-stat="ast" aria-pressed="false">AST</button><button type="button" data-stat="min" aria-pressed="false">MIN</button></div>
       <div class="hc-body" data-draw="h-lead" data-source="stats"></div>
     </article>
-    <article class="hc" id="h-standouts">
+      <article class="hc" id="h-standouts">
       <div class="hc-head"><h2>Standout games</h2><button type="button" class="hc-more" data-go="standouts">See all →</button></div>
       <p class="hc-note">Big nights from the latest box scores.</p>
       <div class="hc-body" data-draw="h-hl" data-source="highlights"></div>
     </article>
-    <article class="hc" id="h-where">
+      </div>
+    </div>
+    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">04</span><span class="hz-cl">Around the world</span></div>
+      <div class="hz-two">
+      <article class="hc" id="h-where">
       <div class="hc-head"><h2>Where Swedes play</h2><button type="button" class="hc-more" data-go="players">See all →</button></div>
       <p class="hc-note">Tap a level or a country to see those players.</p>
       <div class="hc-body" data-draw="h-where" data-source="players"></div>
       <p class="hc-cap">By country</p>
       <div class="wh-chips" data-draw="h-countries" data-source="players"></div>
     </article>
-    <article class="hc" id="h-awards">
+      <article class="hc" id="h-awards">
       <div class="hc-head"><h2>Records &amp; awards</h2><button type="button" class="hc-more" data-go="awards">See all →</button></div>
       <p class="hc-note">Awards, records and titles this season.</p>
       <div class="hc-body" data-draw="h-aw" data-source="awards"></div>
     </article>
-    <article class="hc" id="h-sbl">
+      </div>
+    </div>
+    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">05</span><span class="hz-cl">Home and the bench</span></div>
+      <div class="hz-two">
+      <article class="hc" id="h-sbl">
       <div class="hc-head"><h2>SBL standouts</h2><button type="button" class="hc-more" data-go="sbl">See all →</button></div>
       <p class="hc-note">Latest big games in the Swedish league at home.</p>
       <div class="hc-body" data-draw="h-sbl" data-source="sbl"></div>
     </article>
-    <article class="hc" id="h-coaches">
+      <article class="hc" id="h-coaches">
       <div class="hc-head"><h2>Coaches abroad</h2><button type="button" class="hc-more" data-go="coaches">See all →</button></div>
       <p class="hc-note">Swedish coaches with men's teams outside Sweden.</p>
       <div class="hc-body" data-draw="h-co" data-source="coaches"></div>
     </article>
+      </div>
+    </div>
     </div>
   </div>
 
@@ -415,6 +442,27 @@
   <div class="sw-team-wrap" data-draw="team" data-source="teamform teams coachgames"></div>
   <div class="sw-team-wrap" data-draw="plog" data-source="gamelogs boxscores"></div>
   <div class="sw-team-wrap" data-draw="today" data-source="schedule previews gamelogs boxscores stats teams teamform"></div>
+  <footer class="sa-foot" aria-label="About Swedes Abroad">
+    <div class="sa-foot-in">
+      <div class="sa-foot-brand">
+        <div class="sa-foot-logo"><span class="sa-flag" aria-hidden="true"></span>SWEDES ABROAD</div>
+        <p>Every Swedish player and coach abroad: games, live scores, box scores and stats, as they come in.</p>
+        <!-- social links go here (Instagram, X, TikTok, email) once the handles are known -->
+      </div>
+      <nav class="sa-foot-col" aria-label="Pages"><h3>Explore</h3>
+        <button type="button" data-page-go="games">Games</button><button type="button" data-page-go="week">This week</button><button type="button" data-page-go="players">Players</button><button type="button" data-page-go="stats">Stats</button>
+      </nav>
+      <nav class="sa-foot-col" aria-label="More pages"><h3>Sweden</h3>
+        <button type="button" data-page-go="sweden">National team</button><button type="button" data-page-go="coaches">Coaches</button><button type="button" data-page-go="sbl">SBL</button><button type="button" data-page-go="awards">Awards</button>
+      </nav>
+      <div class="sa-foot-col"><h3>Follow the games</h3>
+        <a href="data/cal/all.ics">📅 Add every game to your calendar</a>
+        <span class="sa-foot-note">Times are Swedish time.</span>
+        <span class="sa-foot-note" data-draw="foot-upd" data-source="schedule">Updated —</span>
+      </div>
+    </div>
+    <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
+  </footer>
 </div>
 <script src="i18n.js?v=d06c73ea"></script>
 <script>
@@ -2435,6 +2483,7 @@
       const nb = mk('button', 'nm', r.player); nb.type = 'button'; nb.title = 'Open ' + r.player + "'s stats and games"; nb.onclick = () => showLog(r.player);
       who.append(nb, mk('span', 'ld-sub', `${r.competition} · ${r.gp} GP`));
       const bar = mk('div', 'ld-bar'); const fill = mk('span', 'ld-fill'); fill.style.width = Math.max(2, Number(r[leadStat]) / max * 100) + '%'; bar.append(fill);
+      const ph = photoFor(r.player); if (ph) { const f = mk('span', 'ld-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); who.prepend(f); who.classList.add('has-face'); }
       row.append(mk('span', 'ld-rank', String(i + 1)), who, bar, mk('span', 'ld-val', Number(r[leadStat]).toFixed(1)));
       el.append(row);
     });
@@ -2451,6 +2500,7 @@
       if (r.game_id) { c.tabIndex = 0; c.title = 'Open the game summary'; c.onclick = () => showCard(r.game_id); c.onkeydown = (e) => { if (e.key === 'Enter') showCard(r.game_id); }; }
       const top = mk('div', 'hh-top'); const w = mk('span'); w.append(names(r.player)); top.append(w, mk('span', 'hh-date', r.date ? dayFmt(r.date) : ''));
       c.append(top, mk('div', 'hh-head', tx(r, 'headline') || ''));
+      { const ph = photoFor(r.player); if (ph) { const f = mk('span', 'hh-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); c.prepend(f); c.classList.add('has-face'); } }
       el.append(c);
     });
   });
@@ -2516,6 +2566,51 @@
     });
   });
 
+  dash.draw('hero-live', (el) => {
+    el.replaceChildren(); const g = games(); if (!g) return;
+    const t = g.filter(isTonight), live = t.filter((r) => r.status === 'live').length, done = t.filter((r) => r.status === 'final').length;
+    const dot = mk('i', live ? 'on' : ''); el.append(dot, mk('b', '', live ? `${live} live now` : t.length ? `${t.length} game${t.length === 1 ? '' : 's'} today` : 'No games today'));
+    if (t.length && !live) el.append(mk('span', '', `${done} finished`));
+    fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (v && v.updated) el.append(mk('span', '', 'Updated ' + new Date(v.updated).toLocaleTimeString('en-GB', { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit' }))); }).catch(() => {});
+  });
+  // ---- Home: photo gallery of the players we have pictures of, biggest scorers first
+  function portraitFit(img, photo) {
+    const fb = Array.isArray(photo.fbox) ? photo.fbox : null; if (!fb) { Object.assign(img.style, { width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%' }); return; }
+    const [bx, by, bw, bh] = fb, k = 0.26 / bh;  // face = 26% of the card's height, its middle at 30% from the top
+    Object.assign(img.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(bx + bw / 2) * 100}%)`, top: ((0.30 - (by + bh / 2) * k) * 100) + '%' });
+  }
+  dash.draw('h-faces', (el) => {
+    el.replaceChildren(); const ph = ds('photos'), pl = ds('players'); if (!ph || !pl) return;
+    const roster = new Map(); pl.forEach((r) => roster.set(norm(r.player), r)); (ds('sblplayers') || []).forEach((r) => { const n = r.player || r.name; if (n && !roster.has(norm(n))) roster.set(norm(n), Object.assign({ level: 'SBL', club: r.team || r.club }, r, { player: n })); });
+    const st = ds('stats') || [];
+    const ppg = (n) => { const r = st.filter((x) => isSame(x.player, n) && Number(x.gp) > 0 && (!x.season || x.season === '2026-27')).sort((a, b) => Number(b.gp) - Number(a.gp))[0]; return r ? r : null; };
+    const rows = ph.filter((r) => /^photos\//.test(String(r.src || '')) && roster.has(norm(r.player))).map((r) => ({ r, p: roster.get(norm(r.player)), s: ppg(r.player) }))
+      .sort((a, b) => (Number(b.s && b.s.pts) || 0) - (Number(a.s && a.s.pts) || 0));
+    rows.forEach(({ r, p, s }, i) => {
+      const c = mk('button', 'hz-fc'); c.type = 'button'; c.onclick = () => showLog(r.player); c.style.setProperty('--d', (i * 40) + 'ms');
+      const pic = mk('span', 'hz-fpic'); const im = new Image(); im.alt = r.player; im.loading = 'lazy'; im.src = r.src; portraitFit(im, r); pic.append(im);
+      const parts = String(r.player).split(' '); const nm = mk('span', 'hz-fname'); nm.append(mk('span', 'f', parts.slice(0, -1).join(' ')), mk('b', '', parts[parts.length - 1]));
+      const meta = mk('span', 'hz-fmeta', [p.club, p.level === 'Europe' ? (p.country || '') : p.level].filter(Boolean).join(' · '));
+      c.append(pic, mk('span', 'hz-fshade'));
+      if (p.number) c.append(mk('span', 'hz-fnum', String(p.number)));
+      if (s) { const v = mk('span', 'hz-fstat'); v.append(mk('b', '', f1x(s.pts)), mk('span', '', 'PPG')); c.append(v); }
+      c.append(nm, meta); el.append(c);
+    });
+    const sec = el.closest('.hz-faces'); if (sec && !sec.dataset.wired) { sec.dataset.wired = '1'; sec.querySelectorAll('[data-fdir]').forEach((b) => b.addEventListener('click', () => el.scrollBy({ left: Number(b.dataset.fdir) * el.clientWidth * 0.8, behavior: 'smooth' }))); }
+  });
+  // ---- Home: sections rise in as they scroll into view
+  (() => { const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' }) : null;
+    document.querySelectorAll('#home.hz .hz-ch').forEach((x) => { if (io) io.observe(x); else x.classList.add('in'); }); })();
+  // ---- Header: search button (and the / key) jumps to the search box; a live dot on Games while games are on
+  (() => { const open = () => { if (!document.querySelector('.sw.on-home')) goTo('home'); setTimeout(() => { const i = document.querySelector('[data-search=hero]'); if (i) { i.scrollIntoView({ block: 'center', behavior: 'smooth' }); i.focus({ preventScroll: true }); } }, 60); };
+    document.querySelectorAll('[data-open-search]').forEach((b) => b.addEventListener('click', open));
+    document.addEventListener('keydown', (e) => { if (e.key === '/' && !/input|textarea|select/i.test((e.target && e.target.tagName) || '')) { e.preventDefault(); open(); } }); })();
+  dash.draw('tb-live', () => { const g = games() || []; const live = g.filter((r) => r.status === 'live').length; const b = document.querySelector('.tb-nav [data-page-go="games"]'); if (!b) return; b.querySelector('.tb-dot')?.remove(); if (live) { const d = mk('span', 'tb-dot', String(live)); d.title = `${live} live now`; b.append(d); } });
+  // ---- Footer: when the data was last updated (data/_version.json), Swedish time
+  dash.draw('foot-upd', (el) => {
+    fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (!v || !v.updated) return; const d = new Date(v.updated);
+      el.textContent = 'Updated ' + d.toLocaleString('en-GB', { timeZone: 'Europe/Stockholm', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); }).catch(() => {});
+  });
   // ---- Home: coaches
   dash.draw('h-co', (el) => {
     el.replaceChildren();
@@ -2683,9 +2778,35 @@
     const them = { name: r.opponent && r.opponent !== '—' ? r.opponent : 'TBC', score: os, swe: false, win: String(r.score || '')[0] === 'L' };
     return r.venue === 'Away' ? { home: them, away: us } : { home: us, away: them };
   }
+  let stFilter = 'all';
+  const ST_F = [['all', 'All'], ['NBA', 'NBA'], ['Europe', 'Europe'], ['NCAA', 'NCAA'], ['SBL', 'SBL'], ['coach', 'Coaches']];
+  function stLevel(r) {
+    if (r.sbl || norm(r.competition) === 'basketligan') return 'SBL';
+    const n = String(r.players || '').split(/\s*,\s*/).filter(Boolean)[0]; if (!n) return r.coach ? 'coach' : '';
+    const p = (ds('players') || []).find((x) => isSame(x.player, n)); return p ? (p.level === 'Pro' ? 'Europe' : p.level) : '';
+  }
+  function stOk(r) { return stFilter === 'all' || (stFilter === 'coach' ? !!r.coach : stLevel(r) === stFilter); }
+  // the Swede's line on a finished game: "Larsson 14 PTS" from the box score or game log
+  function stLine(r) {
+    const names = String(r.players || '').split(/\s*,\s*/).filter(Boolean); if (!names.length) return null;
+    const bx = ds('boxscores') || [], gl = ds('gamelogs') || [];
+    const line = (n) => { const b = bx.find((x) => x.game_id === r.game_id && isSame(x.player, n)) || gl.find((x) => x.date === r.date && isSame(x.player, n)); return b && b.note !== 'DNP' && b.pts !== '' && b.pts != null ? b : null; };
+    // points, plus his best other number when it stands out (5+ rebounds, 4+ assists, 3+ steals or blocks)
+    const extra = (b) => { const c = [['REB', b.reb, 5], ['AST', b.ast, 4], ['STL', b.stl, 3], ['BLK', b.blk, 3]].map(([k, v, t]) => [k, Number(v), Number(v) / t]).filter(([, v, q]) => !isNaN(v) && q >= 1).sort((x, y) => y[2] - x[2]); return c.length ? [c[0][0], c[0][1]] : null; };
+    return names.map((n) => { const b = r.status === 'final' ? line(n) : null; return { n: n.split(' ').slice(-1)[0], p: b ? Number(b.pts) : null, x: b ? extra(b) : null }; });
+  }
+  dash.draw('st-bar', (el) => {
+    el.replaceChildren(); const g = allGames(); if (!g) return; const gs = games() || [];
+    const t = gs.filter(isTonight), live = gs.filter((r) => r.status === 'live').length;
+    const lab = mk('div', 'st-bar-l'); lab.append(mk('b', '', 'Scores'), mk('span', 'st-bar-n', live ? `${live} live` : `${t.length} today`)); if (live) lab.classList.add('live');
+    const ch = mk('div', 'st-bar-f'); ch.setAttribute('role', 'group'); ch.setAttribute('aria-label', 'Filter games');
+    ST_F.forEach(([k, l]) => { if (k !== 'all' && !g.some((r) => (k === 'coach' ? r.coach : stLevel(r) === k))) return; const b = mk('button', stFilter === k ? 'on' : '', l); b.type = 'button'; b.setAttribute('aria-pressed', stFilter === k ? 'true' : 'false'); b.onclick = () => { stFilter = k; stripUser = false; dash.draw('st-bar'); dash.draw('strip'); }; ch.append(b); });
+    const all = mk('button', 'st-bar-all', 'All games →'); all.type = 'button'; all.onclick = () => goTo('schedule');
+    el.append(lab, ch, all);
+  });
   dash.draw('strip', (row) => {
     row.replaceChildren();
-    const g = allGames(); if (!g) return;
+    const g0 = allGames(); if (!g0) return; const g = g0.filter(stOk);
     let anchor = null, lastDay = '';
     g.forEach((r) => {
       if (r.date !== lastDay) {
@@ -2706,8 +2827,17 @@
         l.append(crest(t.name), mk('span', 'st-code', teamAbbr(t.name)), mk('span', 'st-sc', t.score == null ? '' : String(t.score)));
         c.append(l);
       });
-      { const pn = String(r.players || '').split(/\s*,\s*/).filter(Boolean).map((n) => n.split(' ').slice(-1)[0]).join(' · ');
-        if (pn) c.append(mk('div', 'st-swe', '🇸🇪 ' + pn));
+      { const ln = stLine(r); const pn = ln ? ln.map((x) => x.n).join(' · ') : '';
+        if (ln) { const sw = mk('div', 'st-swe'); const nm = mk('div', 'st-nmrow'); nm.append(mk('span', 'st-flag', '🇸🇪'));
+          ln.slice(0, 2).forEach((x, i) => { if (i) nm.append(mk('span', 'st-sep', '·')); nm.append(mk('span', 'st-pn', x.n)); });
+          if (ln.length > 2) nm.append(mk('span', 'st-sep', `+${ln.length - 2}`));
+          sw.append(nm);
+          const one = ln.length === 1 ? ln[0] : null;
+          if (one && one.p != null) { const st = mk('div', 'st-line'); const chip = (v, k, hi) => { const e = mk('span', 'st-chip' + (hi ? ' hi' : '')); e.append(mk('b', '', String(v)), mk('span', '', k)); return e; };
+            st.append(chip(one.p, 'PTS', !one.x || one.p >= one.x[1])); if (one.x) st.append(chip(one.x[1], one.x[0], one.x[1] > one.p)); sw.append(st); }
+          else if (ln.length > 1 && ln.some((x) => x.p != null)) { const st = mk('div', 'st-line'); ln.slice(0, 2).forEach((x) => { if (x.p == null) return; const e = mk('span', 'st-chip'); e.append(mk('b', '', String(x.p)), mk('span', '', 'PTS')); st.append(e); }); sw.append(st); }
+          c.append(sw); }
+        if (r.status === 'final') { const res = String(r.score || '')[0]; if (res === 'W' || res === 'L') c.classList.add(res === 'W' ? 'sw-w' : 'sw-l'); }
         if (r.coach) { const cl = mk('div', 'st-coach'); cl.append(mk('span', 'cc-tag', 'Coach'), document.createTextNode(` ${coachFlag(r.coach)} ${r.coach.split(' ').slice(-1)[0]}`)); c.append(cl); if (!pn) c.classList.add('coachg'); } }
       if (isH2H(r)) { c.classList.add('h2hg'); c.append(mk('span', 'st-h2h', 'SWE v SWE')); }
       c.title = `${ha.home.name} vs ${ha.away.name} · ${r.players}`;
@@ -2719,6 +2849,8 @@
     }
   });
   document.querySelectorAll('.st-row').forEach((row) => ['wheel', 'touchstart', 'pointerdown'].forEach((ev) => row.addEventListener(ev, () => { stripUser = true; }, { passive: true })));
+  // fade only the edges that have more games behind them
+  document.querySelectorAll('.st-row').forEach((row) => { const f = () => { row.classList.toggle('fl', row.scrollLeft > 4); row.classList.toggle('fr', row.scrollLeft + row.clientWidth < row.scrollWidth - 4); }; row.addEventListener('scroll', f, { passive: true }); window.addEventListener('resize', f); setTimeout(f, 600); setTimeout(f, 2000); });
   document.querySelectorAll('.st-arrow').forEach((b) => b.addEventListener('click', () => {
     stripUser = true;
     document.querySelectorAll('.st-row').forEach((row) => row.scrollBy({ left: Number(b.dataset.dir) * row.clientWidth * 0.8, behavior: 'smooth' }));
@@ -3116,9 +3248,13 @@
   dash.draw('h-wk', (el) => {
     el.replaceChildren();
     const d = wkStories(); if (!d) { el.textContent = '—'; return; }
-    d.slice(0, 4).forEach((r) => {
+    d.slice(0, 4).forEach((r, i) => {
       const b = mk('button', 'hw-item'); b.type = 'button'; b.dataset.key = r.story_id;
-      b.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'hw-h', tx(r, 'headline')));
+      const lead = String(r.players || '').split(/\s*,\s*/)[0], ph = lead ? photoFor(lead) : null;
+      const txt = mk('div', 'hw-txt'); txt.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'hw-h', tx(r, 'headline')));
+      if (i === 0) { if (tx(r, 'stats')) txt.append(mk('span', 'hw-stats', tx(r, 'stats'))); txt.append(mk('span', 'hw-meta', [r.date ? dayFmt(r.date) : '', 'Read the story →'].filter(Boolean).join(' · '))); }
+      b.append(txt);
+      if (ph) { const f = mk('span', i === 0 ? 'hw-photo' : 'hw-face'); const im = new Image(); im.alt = ''; im.src = ph.src; if (i !== 0) faceFit(im, ph); f.append(im); b.append(f); b.classList.add('has-ph'); }
       b.onclick = () => openStory(r.story_id);
       el.append(b);
     });
