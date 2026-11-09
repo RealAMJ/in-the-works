@@ -1997,14 +1997,14 @@
   "line_id": "g20261109mia-larsson",
   "game_id": "g20261109mia",
   "player": "Pelle Larsson",
-  "min": 17,
+  "min": 18,
   "pts": 8,
   "reb": 1,
   "ast": 2,
   "fg": "3/4",
   "three": "2/2",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -1,
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
@@ -2012,7 +2012,7 @@
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "pf": 4,
+  "pf": 5,
   "eff": ""
  }
 ]
