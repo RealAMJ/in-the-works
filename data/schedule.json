@@ -1514,9 +1514,11 @@
   "venue": "Home",
   "competition": "LBA (Italy)",
   "note": "Round 7",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "lba:25408"
+  "status": "live",
+  "score": "W 42-36",
+  "live_feed": "lba:25408",
+  "clock": "Q2 ",
+  "live_updated": "2026-11-09T21:06:01+01:00"
  },
  {
   "game_id": "g20261110ewu",

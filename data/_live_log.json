@@ -1,26 +1,26 @@
 {
- "at": "2026-11-09T07:30:56+01:00",
+ "at": "2026-11-09T21:06:01+01:00",
  "log": [
   {
-   "game": "g20261109wsu",
-   "checking": "ESPN"
+   "game": "g20261109vir",
+   "checking": "LBA (legabasket.it)"
   },
   {
-   "game": "g20261109wsu",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261109vir",
+   "src": "LBA (legabasket.it)",
+   "period": 2,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "Wichita State Shockers",
-     86,
-     17
+     "Virtus Costa Bologna",
+     42,
+     12
     ],
     [
-     "USC Trojans",
-     93,
-     14
+     "Tezenis Verona",
+     36,
+     11
     ]
    ]
   }
