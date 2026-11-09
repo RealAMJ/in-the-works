@@ -308,13 +308,26 @@
       <p>Player of the week and month, all-league teams, MVPs, broken records and titles for the Swedes we follow abroad and for players in the SBL.</p>
       <div class="lx-nums" data-draw="awnums" data-source="awards"></div>
     </section>
+    <section class="aw-spot" data-draw="awspot" data-source="awards players ntroster sblplayers photos" aria-label="Latest honour"></section>
+    <section class="lx-sec aw-cab">
+      <div class="lx-head"><h2>Honoured players</h2><span class="lx-note">Tap a player for their honours</span></div>
+      <div class="aw-faces" data-draw="awfaces" data-source="awards players ntroster sblplayers photos"></div>
+    </section>
     <section class="lx-sec aw-sec">
-      <div class="aw-bar">
+      <div class="aw-bar" data-sticky>
         <div class="aw-tabs" role="group" aria-label="Level" data-draw="awtabs" data-source="awards players ntroster sblplayers"></div>
-        <div class="sw-chips lx-chips aw-kinds" data-draw="awchips" data-source="awards" aria-label="Filter awards"></div>
+        <div class="aw-bar-r">
+          <div class="sw-chips lx-chips aw-kinds" data-draw="awchips" data-source="awards" aria-label="Filter awards"></div>
+          <div class="aw-view" data-draw="awview" data-source="awards" role="group" aria-label="View"></div>
+        </div>
       </div>
-      <div class="awx-board all" data-draw="awards" data-source="awards players ntroster sblplayers"></div>
+      <div class="aw-who-on" data-draw="awwhoon" data-source="awards"></div>
+      <div class="awx-board all" data-draw="awards" data-source="awards players ntroster sblplayers ntgames"></div>
       <p class="lx-note aw-foot">Newest first · tap an award for the details · checked at the start and end of every week</p>
+    </section>
+    <section class="lx-sec aw-watch-sec">
+      <div class="lx-head"><h2>Within reach</h2><span class="lx-note">Season milestones coming up, counted from the games we track</span></div>
+      <div class="aw-watch" data-draw="awwatch" data-source="gamelogs players ntroster sblplayers photos"></div>
     </section>
   </div>
 
@@ -751,6 +764,7 @@
     y += 30; x.fillStyle = '#fff'; x.font = F(900, 108);
     wrapLines(x, String(r.player || '').toUpperCase(), W - 160).slice(0, 2).forEach((l) => { y += 104; x.fillText(l, 80, y); });
     if (g) { y += 62; x.fillStyle = sub; x.font = F(600, 34); x.fillText(`${g.team} · ${g.competition}`, 80, y); }
+    else if (r.award) { y += 62; x.fillStyle = sub; x.font = F(600, 34); x.fillText([r.team, r.league].filter(Boolean).join(' · '), 80, y); }
     if (b && b.note !== 'DNP') {
       y += 70;
       const cells = cellsFor(), cw = (W - 160) / cells.length;
@@ -765,6 +779,7 @@
     }
     y += 90; x.fillStyle = '#fff'; x.font = F(700, 46);
     wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 58; });
+    if (!g && r.award && r.date) { x.fillStyle = 'rgba(255,255,255,.5)'; x.font = F(500, 30); x.fillText(dayFmt(r.date), 80, Math.min(y + 40, H - 160)); }
     if (g) {
       let ry = black ? Math.min(Math.max(y + 30, 0), H - 200) : H - 150;  // black: follows the headline, never over the chevrons
       if (!r.recap) { x.fillStyle = sub; x.font = F(600, 34); x.fillText(resLine, 80, ry); } else ry = black ? Math.min(y - 10, H - 160) : ry - 48;
@@ -1665,17 +1680,8 @@
   const AW_KINDS = [['Championship', 'champ', '🏆', 'Championship', 'Mästerskap'], ['Record', 'record', '📈', 'Record', 'Rekord'], ['Award', 'award', '★', 'Award', 'Utmärkelse']];
   const awKind = (r) => AW_KINDS.find(([t]) => new RegExp(t, 'i').test(r.type || '')) || AW_KINDS[2];
   const awRows = () => { const d = dash.data('awards'); return d.status === 'ok' ? d.data.filter((r) => r.row_id !== 'placeholder' && r.title).sort((a, b) => String(b.date).localeCompare(String(a.date))) : null; };
-  dash.draw('awnums', (el) => {
-    el.replaceChildren();
-    const rows = awRows(); if (!rows) return;
-    const n = (lab, v) => { const d = mk('div', 'lx-num'); d.append(mk('b', '', String(v)), mk('span', '', lab)); el.append(d); };
-    n(L('Awards', 'Utmärkelser'), rows.filter((r) => awKind(r)[1] === 'award').length);
-    n(L('Records', 'Rekord'), rows.filter((r) => awKind(r)[1] === 'record').length);
-    n(L('Titles', 'Titlar'), rows.filter((r) => awKind(r)[1] === 'champ').length);
-    n(L('Players honoured', 'Spelare'), new Set(rows.map((r) => r.player)).size);
-  });
-  // Awards page: level tabs (All / NBA / Europe / NCAA / SBL), kind filter, and a board of compact tiles
-  let awLevel = 'all';
+  // ---- Awards page: numbers that filter, latest-honour spotlight, honoured players, level tabs, board/timeline, milestones
+  let awLevel = 'all', awView = 'board', awPlayer = null;
   const AW_LEVELS = [['nba', 'NBA', 'NBA'], ['europe', 'Europe', 'Europa'], ['ncaa', 'NCAA', 'NCAA'], ['sbl', 'SBL', 'SBL']];
   const awLevelOf = (r) => {
     const lg = norm(r.league || '');
@@ -1688,8 +1694,79 @@
     if (!p && homeClubOf(r.player)) return 'sbl';
     return 'europe';
   };
-  const awFiltered = () => (awRows() || []).filter((r) => awCat === 'all' || awKind(r)[1] === awCat);
-  const awRedraw = () => { dash.draw('awtabs'); dash.draw('awchips'); dash.draw('awards'); };
+  // an icon per kind of honour, read from the type and title
+  const awIcon = (r) => {
+    const t = `${r.type || ''} ${r.title || ''}`;
+    if (/championship|title|champion/i.test(r.type || '')) return ['🏆', L('Title', 'Titel')];
+    if (/record/i.test(t)) return ['📈', L('Record', 'Rekord')];
+    if (/\bMVP\b|most valuable/i.test(t)) return ['👑', 'MVP'];
+    if (/of the (week|month|round)|månadens|veckans/i.test(t)) return ['⭐', /month|månad/i.test(t) ? L('Player of the month', 'Månadens spelare') : L('Player of the week', 'Veckans spelare')];
+    if (/vote/i.test(t)) return ['🗳️', L('Votes', 'Röster')];
+    if (/all-|team\b|preseason|first team|second team/i.test(t)) return ['🛡️', L('All-league team', 'Lag')];
+    return ['🏅', L('Award', 'Utmärkelse')];
+  };
+  const awHasProfile = (n) => (ds('players') || []).some((p) => isSame(p.player, n)) || !!homeClubOf(n);
+  const awFiltered = () => (awRows() || []).filter((r) => (awCat === 'all' || awKind(r)[1] === awCat) && (!awPlayer || isSame(r.player, awPlayer)));
+  const awRedraw = () => ['awnums', 'awfaces', 'awtabs', 'awchips', 'awview', 'awwhoon', 'awards'].forEach((k) => dash.draw(k));
+  const awToList = () => { const s = document.querySelector('.aw-sec'); if (s) s.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+  const awAvatar = (n, cls) => {
+    const av = mk('span', cls || 'aw-av'); const ph = photoFor(n);
+    if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = ''; img.loading = 'lazy'; faceFit(img, ph); av.append(img); } else av.textContent = initials(n);
+    return av;
+  };
+  dash.draw('awnums', (el) => {
+    el.replaceChildren();
+    const rows = awRows(); if (!rows) return;
+    const n = (lab, v, onClick, on) => { const d = mk('button', 'lx-num aw-numbtn' + (on ? ' on' : '')); d.type = 'button'; d.append(mk('b', '', String(v)), mk('span', '', lab)); d.onclick = onClick; el.append(d); };
+    const kind = (k) => () => { awCat = awCat === k ? 'all' : k; awRedraw(); awToList(); };
+    n(L('Awards', 'Utmärkelser'), rows.filter((r) => awKind(r)[1] === 'award').length, kind('award'), awCat === 'award');
+    n(L('Records', 'Rekord'), rows.filter((r) => awKind(r)[1] === 'record').length, kind('record'), awCat === 'record');
+    n(L('Titles', 'Titlar'), rows.filter((r) => awKind(r)[1] === 'champ').length, kind('champ'), awCat === 'champ');
+    n(L('Players honoured', 'Spelare'), new Set(rows.map((r) => r.player)).size, () => { const f = document.querySelector('.aw-cab'); if (f) f.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, false);
+  });
+  // the newest honour, big, with the player's photo and a share button
+  dash.draw('awspot', (el) => {
+    el.replaceChildren();
+    const rows = awRows(); if (!rows || !rows.length) { el.hidden = true; return; }
+    el.hidden = false;
+    const r = rows[0], [ic, kindTxt] = awIcon(r), ph = photoFor(r.player);
+    el.style.setProperty('--tc', teamColor(r.team || r.player));
+    const txt = mk('div', 'aw-spot-txt');
+    txt.append(mk('div', 'aw-spot-kick', `${ic} ${L('Latest honour', 'Senaste utmärkelsen')} · ${kindTxt}`));
+    txt.append(mk('h2', 'aw-spot-title', tx(r, 'title') || r.title));
+    const who = mk('div', 'aw-spot-who');
+    if (r.team) who.append(crest(r.team, 'sm'));
+    who.append(awHasProfile(r.player) ? names(r.player) : mk('span', '', r.player));
+    who.append(mk('span', 'aw-spot-meta', [r.team, r.league, r.date ? dayFmt(r.date) : ''].filter(Boolean).join(' · ')));
+    txt.append(who);
+    if (tx(r, 'detail')) txt.append(mk('p', 'aw-spot-detail', tx(r, 'detail')));
+    const acts = mk('div', 'aw-spot-acts');
+    const sh = mk('button', 'pp-btn', '⤴ Share'); sh.type = 'button'; sh.title = 'Make an image of this honour for social media';
+    sh.onclick = () => openShare({ award: true, player: r.player, team: r.team, league: r.league, date: r.date, tag: L('Award', 'Utmärkelse'), headline: tx(r, 'title') || r.title, headline_sv: r.title_sv || r.title });
+    acts.append(sh);
+    if (awHasProfile(r.player)) { const pb = mk('button', 'pp-btn ghost', L('Profile →', 'Profil →')); pb.type = 'button'; pb.onclick = () => showLog(r.player); acts.append(pb); }
+    txt.append(acts);
+    const pic = mk('div', 'aw-spot-pic');
+    if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = r.player; pic.append(img); } else pic.append(mk('span', 'aw-spot-ini', initials(r.player)));
+    el.append(txt, pic);
+  });
+  // honoured players: faces with their number of honours; tap to see only theirs
+  dash.draw('awfaces', (el) => {
+    el.replaceChildren();
+    const rows = awRows(); if (!rows) return;
+    const by = new Map(); rows.forEach((r) => { const k = norm(r.player); if (!by.has(k)) by.set(k, { n: r.player, rows: [] }); by.get(k).rows.push(r); });
+    const list = [...by.values()].sort((a, b) => b.rows.length - a.rows.length || String(b.rows[0].date).localeCompare(String(a.rows[0].date)));
+    if (!list.length) { el.append(mk('p', 'aw-none', L('Nobody yet this season.', 'Ingen än den här säsongen.'))); return; }
+    list.forEach(({ n, rows: rs }) => {
+      const b = mk('button', 'aw-face' + (awPlayer && isSame(awPlayer, n) ? ' on' : '')); b.type = 'button';
+      const wrap = mk('span', 'aw-face-av'); wrap.append(awAvatar(n), mk('span', 'aw-face-n', String(rs.length)));
+      const last = n.split(' ').slice(-1)[0];
+      b.append(wrap, mk('span', 'aw-face-name', last), mk('span', 'aw-face-ic', [...new Set(rs.map((r) => awIcon(r)[0]))].join('')));
+      b.title = `${n}: ${rs.length} ${rs.length === 1 ? 'honour' : 'honours'}`;
+      b.onclick = () => { awPlayer = awPlayer && isSame(awPlayer, n) ? null : n; awRedraw(); if (awPlayer) awToList(); };
+      el.append(b);
+    });
+  });
   dash.draw('awtabs', (el) => {
     el.replaceChildren();
     const rows = awFiltered();
@@ -1715,20 +1792,40 @@
       el.append(b);
     });
   });
+  dash.draw('awview', (el) => {
+    el.replaceChildren();
+    [['board', '▦', 'Board', 'Tavla'], ['timeline', '┆', 'Timeline', 'Tidslinje']].forEach(([v, ic, en, sv]) => {
+      const b = mk('button', 'aw-vbtn' + (awView === v ? ' on' : '')); b.type = 'button'; b.title = L(en, sv);
+      b.append(mk('span', 'aw-vic', ic), mk('span', '', L(en, sv)));
+      b.setAttribute('aria-pressed', awView === v ? 'true' : 'false');
+      b.onclick = () => { awView = v; awRedraw(); };
+      el.append(b);
+    });
+  });
+  // "showing X's honours" with a way back
+  dash.draw('awwhoon', (el) => {
+    el.replaceChildren();
+    if (!awPlayer) { el.hidden = true; return; }
+    el.hidden = false;
+    el.append(awAvatar(awPlayer, 'aw-av sm'), mk('span', '', L(`Showing ${awPlayer}'s honours`, `Visar ${awPlayer}s utmärkelser`)));
+    const x = mk('button', 'aw-clear', L('Show everyone ✕', 'Visa alla ✕')); x.type = 'button';
+    x.onclick = () => { awPlayer = null; awRedraw(); };
+    el.append(x);
+  });
   // one award as a compact tile; tap it for the full text
   function awTile(r) {
-    const k = awKind(r);
+    const k = awKind(r), [ic, kindTxt] = awIcon(r);
     const d = document.createElement('details'); d.className = 'awt ' + k[1]; d.dataset.key = r.row_id;
     const s = document.createElement('summary');
-    s.append(mk('span', 'awt-ic', k[2]));
+    s.append(mk('span', 'awt-ic', ic));
     const body = mk('div', 'awt-body');
     body.append(mk('div', 'awt-title', tx(r, 'title') || r.title));
     const who = mk('div', 'awt-who');
     if (r.team) who.append(crest(r.team, 'sm'));
-    who.append((ds('players') || []).some((p) => isSame(p.player, r.player)) || homeClubOf(r.player) ? names(r.player) : mk('span', '', r.player));
+    who.append(awHasProfile(r.player) ? names(r.player) : mk('span', '', r.player));
     if (r.team) who.append(mk('span', 'muted', r.team));
     const meta = mk('div', 'awt-meta');
-    meta.append(mk('span', 'awt-type', L(k[3], k[4])));
+    meta.append(mk('span', 'awt-type', kindTxt));
     if (r.league) meta.append(mk('span', 'awt-lg', r.league));
     meta.append(mk('span', 'awt-date', r.date ? dayFmt(r.date) : ''));
     body.append(who, meta);
@@ -1739,8 +1836,29 @@
   }
   dash.draw('awards', (el) => {
     el.replaceChildren();
-    const rows = awFiltered();
     if (!awRows()) { el.textContent = '—'; return; }
+    const rows = awFiltered().filter((r) => awLevel === 'all' || awLevelOf(r) === awLevel);
+    if (awView === 'timeline') {
+      // one line through the season: honours by date, with the national team windows and today for context
+      el.className = 'aw-tl';
+      const marks = [];
+      (ds('ntgames') || []).forEach((g) => marks.push({ date: g.date, mark: `🇸🇪 ${g.venue === 'Away' ? L('Sweden at', 'Sverige mot') : L('Sweden vs', 'Sverige mot')} ${g.opponent}${g.score ? ' · ' + g.score : ''}` }));
+      marks.push({ date: todayStr(), mark: L('Today', 'Idag'), today: true });
+      const first = rows.length ? rows[rows.length - 1].date : todayStr();
+      const items = rows.map((r) => ({ date: r.date, r })).concat(marks.filter((m) => m.date >= String(first).slice(0, 8) + '01' && m.date <= todayStr()))
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)) || (a.r ? 1 : -1));
+      if (!rows.length) el.append(mk('p', 'aw-none', L('Nothing here yet.', 'Inget här än.')));
+      let month = '';
+      items.forEach((it) => {
+        const m = it.date ? new Date(it.date + 'T12:00:00Z').toLocaleDateString(LOC(), { month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
+        if (m !== month) { month = m; el.append(mk('div', 'aw-tl-month', m)); }
+        const row = mk('div', 'aw-tl-row' + (it.r ? '' : it.today ? ' today' : ' mark'));
+        row.append(mk('div', 'aw-tl-date', it.date ? dayFmt(it.date) : ''), mk('div', 'aw-tl-dot', it.r ? awIcon(it.r)[0] : ''));
+        const body = mk('div', 'aw-tl-body'); body.append(it.r ? awTile(it.r) : mk('span', 'aw-tl-mark', it.mark));
+        row.append(body); el.append(row);
+      });
+      return;
+    }
     const levels = awLevel === 'all' ? AW_LEVELS : AW_LEVELS.filter(([c]) => c === awLevel);
     el.className = 'awx-board' + (awLevel === 'all' ? ' all' : ' one');
     levels.forEach(([c, en, sv]) => {
@@ -1759,6 +1877,43 @@
       el.append(col);
     });
   });
+  // season milestones within reach, from the game logs (each player's own competitions)
+  dash.draw('awwatch', (el) => {
+    el.replaceChildren();
+    const gl = ds('gamelogs'); if (!gl) { el.textContent = '—'; return; }
+    const STEPS = [['pts', 100, L('points', 'poäng')], ['reb', 50, L('rebounds', 'returer')], ['ast', 50, L('assists', 'assist')], ['tpm', 25, L('threes', 'treor')], ['stl', 20, L('steals', 'steals')], ['blk', 20, L('blocks', 'block')]];
+    const tot = new Map();
+    // every game we have for each profiled player (game logs plus box-score lines), the same list the profiles use
+    const names0 = [...new Set(gl.filter((r) => r.player && awHasProfile(r.player)).map((r) => r.player))];
+    names0.flatMap((n) => playerGames(n).filter((g) => g.note !== 'DNP' && g.competition).map((g) => Object.assign({}, g, { player: n }))).forEach((r) => {
+      const k = r.player + '|' + r.competition;
+      if (!tot.has(k)) tot.set(k, { player: r.player, comp: r.competition, gp: 0, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 });
+      const t = tot.get(k); t.gp++;
+      ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((s) => { t[s] += Number(r[s]) || 0; });
+      t.tpm += Number(String(r.three || '').split('/')[0]) || 0;
+    });
+    const out = [];
+    tot.forEach((t) => STEPS.forEach(([s, step, word]) => {
+      const v = t[s]; if (v < step * 0.6) return;
+      const next = (Math.floor(v / step) + 1) * step, left = next - v, per = v / t.gp;
+      if (per <= 0 || left > Math.max(per * 2.5, 1)) return;   // close: about two games away at his pace
+      out.push({ ...t, s, word, v, next, left, games: Math.ceil(left / per), frac: v / next });
+    }));
+    out.sort((a, b) => a.games - b.games || b.frac - a.frac);
+    if (!out.length) { el.append(mk('p', 'aw-none', L('No milestones close right now.', 'Inga milstolpar nära just nu.'))); return; }
+    out.slice(0, 8).forEach((m) => {
+      const c = mk('button', 'aw-wcard'); c.type = 'button'; c.onclick = () => showLog(m.player);
+      const top = mk('div', 'aw-wtop'); top.append(awAvatar(m.player, 'aw-av sm'));
+      const nm = mk('div', 'aw-wname'); nm.append(mk('b', '', m.player), mk('span', '', m.comp)); top.append(nm);
+      const big = mk('div', 'aw-wbig'); big.append(mk('b', '', String(m.left)), mk('span', '', L(`${m.word} from ${m.next}`, `${m.word} kvar till ${m.next}`)));
+      const bar = mk('div', 'aw-wbar'); const fill = mk('i'); fill.style.width = Math.min(100, m.frac * 100).toFixed(1) + '%'; bar.append(fill);
+      const foot = mk('div', 'aw-wfoot', L(`${m.v} so far in ${m.gp} games · about ${m.games} ${m.games === 1 ? 'game' : 'games'} at his pace`, `${m.v} hittills på ${m.gp} matcher · ungefär ${m.games} ${m.games === 1 ? 'match' : 'matcher'} i hans takt`));
+      c.append(top, big, bar, foot); el.append(c);
+    });
+  });
+  // the filter bar sticks under the site's top bar
+  function awStickTop() { const tb = document.querySelector('.tb'); const bar = document.querySelector('.aw-bar'); if (tb && bar) bar.style.top = (tb.getBoundingClientRect().height + 6) + 'px'; }
+  window.addEventListener('resize', awStickTop); setTimeout(awStickTop, 500);
 
   // Game summary popup (opened from "Latest result")
   dash.draw('gcard', (el) => {

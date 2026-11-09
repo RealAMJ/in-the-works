@@ -40,3 +40,11 @@ Object.assign(window.SA_I18N.D, {
  "5x5": "5x5"
 });
 window.SA_I18N.RULES.push(["^Perfect FG \\((\\d+/\\d+)\\)$", "Perfekt från fältet ($1)"], ["^Perfect from three \\((\\d+/\\d+)\\)$", "Perfekt från trepoäng ($1)"], ["^Perfect FT \\((\\d+/\\d+)\\)$", "Perfekt från straffs ($1)"], ["^\\+(\\d+) on the floor$", "+$1 på planen"]);
+Object.assign(window.SA_I18N.D, {
+ "Honoured players": "Prisade spelare",
+ "Tap a player for their honours": "Tryck på en spelare för hans utmärkelser",
+ "Within reach": "Inom räckhåll",
+ "Season milestones coming up, counted from the games we track": "Milstolpar som närmar sig den här säsongen, räknat från matcherna vi bevakar",
+ "Newest first · tap an award for the details · checked at the start and end of every week": "Nyast först · tryck på en utmärkelse för detaljer · kollas i början och slutet av varje vecka",
+ "Profile →": "Profil →"
+});
