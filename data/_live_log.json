@@ -1,26 +1,26 @@
 {
- "at": "2026-11-08T23:24:06+01:00",
+ "at": "2026-11-09T02:42:04+01:00",
  "log": [
   {
-   "game": "g20261108isu",
+   "game": "g20261109mia",
    "checking": "ESPN"
   },
   {
-   "game": "g20261108isu",
+   "game": "g20261109mia",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Idaho State Bengals",
-     82,
-     16
+     "Sacramento Kings",
+     0,
+     0
     ],
     [
-     "Air Force Falcons",
-     89,
-     20
+     "Miami Heat",
+     0,
+     0
     ]
    ]
   }
