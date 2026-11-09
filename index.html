@@ -688,10 +688,126 @@
     [-26, 0, 26].forEach((d) => { x.beginPath(); x.moveTo(cx + d - 10, cy - 18); x.lineTo(cx + d + 8, cy); x.lineTo(cx + d - 10, cy + 18); x.stroke(); });
   }
   // Styles offered to viewers (v1, the blue card, is kept in the code but no longer offered)
-  const CARD_STYLES = [['v2', 'Stats'], ['v3', 'Headline']];
+  const CARD_STYLES = [['z2', 'Stats'], ['z3', 'Headline']];
   const CARD_BRAND = 'SWEDES ABROAD';  // name at the top of the black cards
+  // ---- Share cards in the dark look (night navy, Anton numbers, yellow accents), 1080x1350
+  function rrect(x, X, Y, w, h, r) { x.beginPath(); x.moveTo(X + r, Y); x.arcTo(X + w, Y, X + w, Y + h, r); x.arcTo(X + w, Y + h, X, Y + h, r); x.arcTo(X, Y + h, X, Y, r); x.arcTo(X, Y, X + w, Y, r); x.closePath(); }
+  async function drawCardZ(r, style) {
+    try { await Promise.all([document.fonts.load('400 120px Anton'), document.fonts.load('800 40px Archivo'), document.fonts.load('600 32px Archivo'), document.fonts.load('500 30px Archivo')]); } catch (e) { /* system font */ }
+    const W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
+    const x = c.getContext('2d');
+    const A = (s) => `400 ${s}px Anton, Impact, sans-serif`, R = (w, s) => `${w} ${s}px Archivo, Inter, system-ui, sans-serif`;
+    const NIGHT = '#030a17', INK = '#f2f6fc', MUT = '#93a6c4', Y = '#fecc02', SKY = '#7fb3ff', GR = '#45d483', RD = '#ff6b5e';
+    const gid = gameById(r.game_id) || { g: null, lines: [] };
+    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (r.pts != null && r.pts !== '' ? r : null);
+    const sv = LOC().startsWith('sv');
+    const ph = await cardPhoto(r.player);
+    // background: night navy with a blue glow top right and a faint yellow glow low left
+    x.fillStyle = NIGHT; x.fillRect(0, 0, W, H);
+    let gl = x.createRadialGradient(W * 0.85, 120, 20, W * 0.85, 120, 900); gl.addColorStop(0, 'rgba(40,90,170,.55)'); gl.addColorStop(1, 'rgba(3,10,23,0)'); x.fillStyle = gl; x.fillRect(0, 0, W, H);
+    gl = x.createRadialGradient(80, H - 120, 10, 80, H - 120, 700); gl.addColorStop(0, 'rgba(254,204,2,.10)'); gl.addColorStop(1, 'rgba(254,204,2,0)'); x.fillStyle = gl; x.fillRect(0, 0, W, H);
+    // faint court lines
+    x.strokeStyle = 'rgba(160,190,235,.07)'; x.lineWidth = 3; x.beginPath(); x.arc(W / 2, -260, 760, 0, Math.PI); x.stroke();
+    if (ph) {
+      const fb = Array.isArray(ph.fbox) ? ph.fbox : null, f = Array.isArray(ph.face) ? ph.face : null;
+      let ih, y0;
+      if (fb) { ih = 230 / fb[3]; y0 = 230 - fb[1] * ih; } else { ih = f ? 248 / (f[1] - f[0]) : 740; y0 = f ? 226 - f[0] * ih : 150; }
+      const iw = ph.img.naturalWidth * ih / ph.img.naturalHeight;
+      const x0 = fb ? W / 2 - (fb[0] + fb[2] / 2) * iw : W / 2 - iw * (f && f[2] != null ? f[2] : 0.5);
+      // the photo is drawn through a soft oval mask, so it melts into the navy with no hard edges
+      const oc = document.createElement('canvas'); oc.width = W; oc.height = H; const o = oc.getContext('2d');
+      o.drawImage(ph.img, x0, y0, iw, ih);
+      const fcx = W / 2, fcy = fb ? 230 + 115 : 340;
+      const m = o.createRadialGradient(fcx, fcy + 60, 120, fcx, fcy + 60, 520); m.addColorStop(0, 'rgba(0,0,0,1)'); m.addColorStop(.6, 'rgba(0,0,0,.9)'); m.addColorStop(1, 'rgba(0,0,0,0)');
+      o.globalCompositeOperation = 'destination-in'; o.fillStyle = m; o.fillRect(0, 0, W, H);
+      const vb = o.createLinearGradient(0, y0 + ih - 200, 0, y0 + ih - 10); vb.addColorStop(0, 'rgba(0,0,0,1)'); vb.addColorStop(1, 'rgba(0,0,0,0)'); o.fillStyle = vb; o.fillRect(0, 0, W, H);
+      if (x0 > -90 || x0 + iw < W + 90) {  // narrow photos: soften their left and right edges too
+        const hz = o.createLinearGradient(x0, 0, x0 + iw, 0), e = Math.min(0.3, 110 / iw);
+        hz.addColorStop(0, 'rgba(0,0,0,0)'); hz.addColorStop(e, 'rgba(0,0,0,1)'); hz.addColorStop(1 - e, 'rgba(0,0,0,1)'); hz.addColorStop(1, 'rgba(0,0,0,0)');
+        o.fillStyle = hz; o.fillRect(0, 0, W, H);
+      }
+      x.drawImage(oc, 0, 0);
+      x.fillStyle = 'rgba(3,10,23,.18)'; x.fillRect(0, 0, W, H);
+      fg = x.createLinearGradient(0, 470, 0, 780); fg.addColorStop(0, 'rgba(3,10,23,0)'); fg.addColorStop(1, 'rgba(3,10,23,.97)'); x.fillStyle = fg; x.fillRect(0, 470, W, H - 470);
+    }
+    if (!ph) {  // no photo: the shirt number (or initials) as a big outlined mark where the face would be
+      const nm = String(r.player || '');
+      const num = ((ds('players') || []).find((q) => isSame(q.name || q.player, nm)) || (ds('ntroster') || []).find((q) => isSame(q.player || q.name, nm)) || (ds('sblplayers') || []).find((q) => isSame(q.player || q.name, nm)) || {}).number;
+      const mark = num ? String(num) : nm.split(/\s+/).map((w) => w[0] || '').join('').slice(0, 3).toUpperCase();
+      x.save(); x.font = A(num ? 420 : 340); x.textAlign = 'center'; x.lineWidth = 4; x.strokeStyle = 'rgba(254,204,2,.55)'; x.strokeText(mark, W / 2, 520);
+      x.fillStyle = 'rgba(254,204,2,.04)'; x.fillText(mark, W / 2, 520); x.restore();
+    }
+    // header: yellow bar + brand, date on the right
+    x.fillStyle = Y; x.fillRect(80, 92, 10, 52);
+    x.fillStyle = INK; x.font = A(50); x.textBaseline = 'alphabetic'; x.fillText('SWEDES ABROAD', 108, 140);
+    if (r.date) { x.fillStyle = MUT; x.font = R(700, 28); x.textAlign = 'right'; x.fillText(dayFmt(r.date).toUpperCase(), W - 80, 134); x.textAlign = 'left'; }
+    if (ph && ph.credit) { x.fillStyle = 'rgba(147,166,196,.7)'; x.font = R(500, 22); x.textAlign = 'right'; x.fillText(ph.credit, W - 60, H - 36); x.textAlign = 'left'; }
+    const tagTxt = String(r.tag || (r.recap ? (sv ? 'Slutresultat' : 'Final') : (sv ? 'Veckans match' : 'Standout game'))).toUpperCase();
+    const pill = (X, Yb) => { x.font = R(800, 30); const tw = x.measureText(tagTxt).width; x.fillStyle = Y; rrect(x, X, Yb - 38, tw + 40, 54, 27); x.fill(); x.fillStyle = NIGHT; x.fillText(tagTxt, X + 20, Yb - 2); };
+    const won = g && String(g.score || '').startsWith('W'), lost = g && String(g.score || '').startsWith('L');
+    const scoreTxt = g ? String(g.score || '').replace(/^[WL]\s*/, '') : '';
+    const resultRow = (Yb) => {  // W/L badge + score + opponent
+      if (!g) return;
+      let X = 80;
+      if (won || lost) { x.fillStyle = won ? GR : RD; rrect(x, X, Yb - 40, 56, 56, 12); x.fill(); x.fillStyle = NIGHT; x.font = A(38); x.textAlign = 'center'; x.fillText(won ? (sv ? 'V' : 'W') : (sv ? 'F' : 'L'), X + 28, Yb + 2); x.textAlign = 'left'; X += 76; }
+      x.fillStyle = INK; x.font = A(44); x.fillText(scoreTxt, X, Yb + 4); X += x.measureText(scoreTxt).width + 20;
+      x.fillStyle = MUT; x.font = R(600, 32); x.fillText(`${g.venue === 'Away' ? (sv ? 'borta mot' : 'at') : (sv ? 'mot' : 'vs')} ${g.opponent}`, X, Yb);
+    };
+    const cellsFor = () => {
+      const extra = [['AST', b.ast], ['BLK', b.blk], ['STL', b.stl]].filter(([, v]) => Number(v) > 0).sort((p, q) => Number(q[1]) - Number(p[1]));
+      const cells = [['PTS', b.pts], ['REB', b.reb], Number(b.ast) > 0 ? ['AST', b.ast] : (extra[0] || ['AST', b.ast])];
+      if ((b.stl || 0) >= 3 && cells[2][0] !== 'STL') cells.push(['STL', b.stl]); else if ((b.blk || 0) >= 3 && cells[2][0] !== 'BLK') cells.push(['BLK', b.blk]); else if (b.fg) cells.push(['FG', b.fg]);
+      return cells;
+    };
+    const played = b && b.note !== 'DNP';
+    if (style === 'z3') {
+      // Headline: name in yellow, headline in big Anton capitals, a stat strip, the result
+      let hd = String(tx(r, 'headline') || '');
+      [r.tag, 'Double-double', 'Dubbel-dubbel', 'Triple-double', 'Trippel-dubbel', 'Perfect shooting', 'Perfekt skytte'].filter(Boolean).forEach((t) => { if (hd.toLowerCase().startsWith(String(t).toLowerCase() + ':')) hd = hd.slice(String(t).length + 1).trim(); });
+      x.font = A(96); const lines = wrapLines(x, hd.toUpperCase(), W - 160).slice(0, 4);
+      const stat = played ? cellsFor().map(([k, v]) => [String(v), k]) : [];
+      const blockH = 54 + 40 + 88 + lines.length * 104 + (stat.length ? 120 : 0) + (g ? 80 : 0);
+      let y = H - 110 - blockH;
+      pill(80, y + 40); y += 54 + 40 + 76;
+      x.fillStyle = Y; x.font = A(84); x.fillText(String(r.player || '').toUpperCase(), 80, y); y += 30;
+      x.fillStyle = INK; x.font = A(96); lines.forEach((l) => { y += 104; x.fillText(l, 80, y); });
+      if (stat.length) {
+        y += 40; x.strokeStyle = 'rgba(160,190,235,.22)'; x.lineWidth = 2; x.beginPath(); x.moveTo(80, y); x.lineTo(W - 80, y); x.stroke(); y += 72;
+        let X = 80; stat.forEach(([v, k], i) => { x.fillStyle = i === 0 ? Y : INK; x.font = A(58); x.fillText(v, X, y); X += x.measureText(v).width + 10; x.fillStyle = MUT; x.font = R(800, 26); x.fillText(k, X, y); X += x.measureText(k).width + 40; });
+      }
+      if (g) { y += 80; resultRow(y); }
+      return c;
+    }
+    // Stats: tag, huge name, club line, stat tiles, headline, result
+    let y = 520;
+    pill(80, y);
+    y += 20; x.fillStyle = INK; x.font = A(122);
+    wrapLines(x, String(r.player || '').toUpperCase(), W - 160).slice(0, 2).forEach((l) => { y += 128; x.fillText(l, 80, y); });
+    const club = g ? `${g.team} · ${g.competition}` : r.award ? [r.team, r.league].filter(Boolean).join(' · ') : '';
+    if (club) { y += 56; x.fillStyle = SKY; x.font = R(700, 32); x.fillText(club, 80, y); }
+    if (played) {
+      y += 48;
+      const cells = cellsFor(), gap = 16, cw = (W - 160 - gap * (cells.length - 1)) / cells.length;
+      cells.forEach(([k, v], i) => {
+        const cx = 80 + (cw + gap) * i;
+        x.fillStyle = 'rgba(7,20,41,.85)'; rrect(x, cx, y, cw, 196, 18); x.fill();
+        x.strokeStyle = i === 0 ? 'rgba(254,204,2,.75)' : 'rgba(160,190,235,.18)'; x.lineWidth = 2; rrect(x, cx, y, cw, 196, 18); x.stroke();
+        const s = String(v); x.fillStyle = i === 0 ? Y : INK; x.font = A(s.length > 4 ? 66 : s.length > 3 ? 82 : 104); x.textAlign = 'center'; x.fillText(s, cx + cw / 2, y + 122);
+        x.fillStyle = MUT; x.font = R(800, 26); x.fillText(k, cx + cw / 2, y + 168); x.textAlign = 'left';
+      });
+      y += 196;
+    }
+    y += 82; x.fillStyle = INK; x.font = R(700, 44);
+    wrapLines(x, tx(r, 'headline'), W - 160).slice(0, 3).forEach((l) => { x.fillText(l, 80, y); y += 56; });
+    if (g && !r.recap) { y += 34; resultRow(Math.min(y, H - 110)); }
+    // bottom: yellow and blue stripe
+    x.fillStyle = Y; x.fillRect(0, H - 14, W * 0.62, 14); x.fillStyle = '#006aa7'; x.fillRect(W * 0.62, H - 14, W * 0.38, 14);
+    return c;
+  }
   async function drawCard(r, style) {
     style = style || 'v1';
+    if (style === 'z2' || style === 'z3') return drawCardZ(r, style);
     try { await document.fonts.load('900 64px Inter'); await document.fonts.load('600 32px Inter'); } catch (e) { /* system font */ }
     const W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
     const x = c.getContext('2d'), F = (w, s) => `${w} ${s}px Inter, system-ui, sans-serif`;
@@ -2703,9 +2819,19 @@
     if (nt) tags.append(mk('span', 'pp-tag', 'National team'));
     const acts = mk('div', 'pp-actions'); const cb = mk('button', 'pp-btn', '⇄ Compare'); cb.type = 'button'; cb.onclick = () => openCompare(name); acts.append(cb);
     { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
+    { const st0 = (ds('stats') || []).filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp))[0];
+      if (st0) { const sh = mk('button', 'pp-btn', '⤴ Share profile'); sh.type = 'button';
+        sh.onclick = () => openShare({ award: true, player: name, team: (p && p.club) || hc, league: st0.competition, tag: 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
+        acts.append(sh); } }
     id.append(meta, tags, acts);
     hero.append(pic, id);
     el.append(hero);
+    // sticky mini header: appears once the big header has scrolled away
+    { const mini = mk('div', 'pp-mini'); const mav = mk('span', 'pp-mini-av'); if (photo) { const im = document.createElement('img'); im.src = photo.src; im.alt = ''; faceFit(im, photo); mav.append(im); } else mav.textContent = initials(name);
+      const mt = mk('div'); mt.append(mk('b', '', name), mk('span', '', [shirt ? '#' + shirt : '', (p && p.club) || hc].filter(Boolean).join(', ')));
+      const mtabs = tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); hero.scrollIntoView({ block: 'start' }); }, 'pp-mini-tabs');
+      mini.append(mav, mt, mtabs); el.append(mini);
+      if (window.IntersectionObserver) { const io = new IntersectionObserver((e) => mini.classList.toggle('on', !e[0].isIntersecting), { rootMargin: '-120px 0px 0px 0px' }); io.observe(hero); } }
     const facts = mk('dl', 'pp-facts');
     const fact = (k, v) => { const d = mk('div'); d.append(mk('dt', '', k), mk('dd', '', v == null || v === '' ? '—' : String(v))); facts.append(d); };
     fact('Nationality', 'Sweden'); fact('Position', bio && bio.position); fact('Height', bio && heightTxt(bio.height_cm));
@@ -2732,6 +2858,63 @@
         if (cur.note) sec.append(mk('p', 'pp-sub', 'Source: ' + cur.note));
       }
       el.append(sec);
+      if (cur) {
+        const cg2 = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
+        const avg = Number(cur.pts);
+        // 1. form: last 10 games, points against his average
+        if (cg2.length >= 2) {
+          const fs = ppSection('Form', `Points in his last ${Math.min(10, cg2.length)} games in ${cur.competition}. Yellow is above his average of ${f1x(avg)}, blue below.`);
+          const strip = mk('div', 'pp-formstrip'); strip.style.gridTemplateColumns = `repeat(${Math.min(10, cg2.length)}, minmax(0, 1fr))`; const mx = Math.max(...cg2.slice(-10).map((g) => Number(g.pts) || 0), 1);
+          cg2.slice(-10).forEach((g) => { const v = Number(g.pts) || 0; const c = mk('button', 'pp-fs ' + (v >= avg ? 'up' : 'dn')); c.type = 'button'; c.onclick = () => showCard(g.game_id);
+            const bar = mk('i'); bar.style.height = Math.max(10, (v / mx) * 100) + '%'; c.append(mk('b', '', String(v)), bar, mk('span', '', `${g.venue === 'Away' ? '@' : 'vs'} ${teamAbbr(g.opponent)}`)); c.title = `${v} pts ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`; strip.append(c); });
+          fs.append(strip); el.append(fs); strip.remove();
+          const last = cg2.slice(-10);
+          // chips with the difference to his average
+          const fa = mk('div', 'pp-fchips'); 
+          const row = mk('div', 'pp-chiprow'); row.style.setProperty('--n', String(last.length));
+          last.forEach((g) => { const v = Number(g.pts) || 0, d = v - avg; const c = mk('button', 'pp-chip ' + (d >= 0 ? 'up' : 'dn')); c.type = 'button'; c.onclick = () => showCard(g.game_id);
+            c.append(mk('b', '', String(v)), mk('span', 'd', (d >= 0 ? '▲ +' : '▼ ') + d.toFixed(1).replace('-', '−')), mk('span', 'o', `${g.venue === 'Away' ? '@' : 'vs'} ${teamAbbr(g.opponent)}`)); row.append(c); });
+          fa.append(row); fs.append(fa);
+          // line chart with an average line
+          const fb = mk('div', 'pp-fline'); 
+          const NS = 'http://www.w3.org/2000/svg', W = 900, H = 200, m = { l: 34, r: 16, t: 18, b: 30 };
+          const mx2 = Math.max(10, ...last.map((g) => Number(g.pts) || 0)) * 1.1;
+          const X = (i) => m.l + (last.length === 1 ? 0 : (i / (last.length - 1)) * (W - m.l - m.r)), Y = (v) => m.t + (1 - v / mx2) * (H - m.t - m.b);
+          const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+          const add = (tag, at, txt) => { const e = document.createElementNS(NS, tag); Object.entries(at).forEach(([k, v]) => e.setAttribute(k, v)); if (txt != null) e.textContent = txt; svg.append(e); return e; };
+          [0, 10, 20, 30].filter((v) => v < mx2).forEach((v) => { add('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: 'rgba(160,190,235,.1)' }); add('text', { x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end', fill: '#93a6c4', 'font-size': 12 }, String(v)); });
+          add('line', { x1: m.l, x2: W - m.r, y1: Y(avg), y2: Y(avg), stroke: '#fecc02', 'stroke-dasharray': '5 5', 'stroke-width': 1.5 });
+          add('text', { x: W - m.r, y: Y(avg) - 6, 'text-anchor': 'end', fill: '#fecc02', 'font-size': 12, 'font-weight': 700 }, `avg ${f1x(avg)}`);
+          const area = last.map((g, i) => `${X(i)},${Y(Number(g.pts) || 0)}`).join(' ');
+          add('polygon', { points: `${X(0)},${Y(0)} ${area} ${X(last.length - 1)},${Y(0)}`, fill: 'rgba(127,179,255,.10)' });
+          add('polyline', { points: area, fill: 'none', stroke: '#7fb3ff', 'stroke-width': 2.5, 'stroke-linejoin': 'round' });
+          last.forEach((g, i) => { const v = Number(g.pts) || 0; const gg = document.createElementNS(NS, 'g'); gg.style.cursor = 'pointer'; gg.addEventListener('click', () => showCard(g.game_id));
+            const c = document.createElementNS(NS, 'circle'); Object.entries({ cx: X(i), cy: Y(v), r: 6, fill: v >= avg ? '#fecc02' : '#7fb3ff', stroke: '#030a17', 'stroke-width': 2 }).forEach(([k, val]) => c.setAttribute(k, val));
+            const t = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: Y(v) - 12, 'text-anchor': 'middle', fill: '#f2f6fc', 'font-size': 13, 'font-weight': 700 }).forEach(([k, val]) => t.setAttribute(k, val)); t.textContent = v;
+            const o = document.createElementNS(NS, 'text'); Object.entries({ x: X(i), y: H - 8, 'text-anchor': 'middle', fill: '#93a6c4', 'font-size': 11 }).forEach(([k, val]) => o.setAttribute(k, val)); o.textContent = teamAbbr(g.opponent);
+            gg.append(c, t, o); svg.append(gg); });
+          fb.append(svg); fs.append(fb);
+        }
+        // 2. rank among the Swedes we track (whole-league ranks aren't available for every league)
+        { const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
+          const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b = best.get(k); if (!b || Number(r.gp) > Number(b.gp)) best.set(k, r); });
+          const pool = [...best.values()]; const rk = mk('div', 'pp-ranks');
+          [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['min', 'Minutes']].forEach(([k, l]) => { const sorted = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); const i = sorted.findIndex((r) => isSame(r.player, name)); if (i < 0) return;
+            const d = mk('div'); d.append(mk('b', '', `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`), mk('span', '', `${l} among ${sorted.length} Swedes`)); rk.append(d); });
+          if (rk.childNodes.length) { const rs = ppSection('Where he ranks', 'Among the Swedes we track this season, each in his main competition (2+ games).'); rs.append(rk); el.append(rs); } }
+        // 3. splits and 4. highs
+        if (cg2.length >= 2) {
+          const sp = ppSection('Splits and highs', `${cur.competition}, this season.`); const wrap2 = mk('div', 'pp-splitwrap');
+          const tw = mk('div', 'stx-tw'); const t = mk('table', 'stx-t pp-split'); const hr = mk('tr'); ['', 'GP', 'PTS', 'REB', 'AST', 'FG%'].forEach((x, i) => hr.append(mk('th', i ? '' : 'l', x))); const th = mk('thead'); th.append(hr); t.append(th); const tb = mk('tbody');
+          const line = (lab, gs) => { if (!gs.length) return; const n = gs.length, a = (k) => (gs.reduce((s, g) => s + (Number(g[k]) || 0), 0) / n).toFixed(1); const fg = fracPct(gs, 'fg'); const tr = mk('tr'); [lab, String(n), a('pts'), a('reb'), a('ast'), fg ? fg.p.toFixed(1) : '–'].forEach((v, i) => tr.append(mk('td', i ? '' : 'l', v))); tb.append(tr); };
+          line('Season', cg2); line('Last 5', cg2.slice(-5)); line('Home', cg2.filter((g) => g.venue === 'Home')); line('Away', cg2.filter((g) => g.venue === 'Away')); line('Wins', cg2.filter((g) => /^W/.test(g.result || g.score || ''))); line('Losses', cg2.filter((g) => /^L/.test(g.result || g.score || '')));
+          t.append(tb); tw.append(t);
+          const hi = mk('div', 'pp-highs');
+          [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['stl', 'Steals'], ['blk', 'Blocks']].forEach(([k, l]) => { const g = cg2.slice().sort((a, b) => (Number(b[k]) || 0) - (Number(a[k]) || 0))[0]; if (!g || !(Number(g[k]) > 0)) return;
+            const c = mk('button', 'pp-high'); c.type = 'button'; c.onclick = () => showCard(g.game_id); c.append(mk('span', '', `${l} high`), mk('b', '', String(g[k])), mk('small', '', `${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`)); hi.append(c); });
+          wrap2.append(tw, hi); sp.append(wrap2); el.append(sp);
+        }
+      }
       const lg = ppSection('Last games', 'Tap a game for the full game center. The arrow compares points with his season average in that competition.');
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
@@ -2752,13 +2935,13 @@
       const two = mk('div', 'pp-two');
       const so = ppSection('Standout games');
       const sl = realHl().filter((r) => isSame(r.player, name)).concat((ds('sbl') || []).filter((r) => isSame(r.player, name) && !realHl().some((x) => isSame(x.player, name) && x.date === r.date))).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-      if (sl.length) sl.forEach((r) => { const c = mk('article', 'hh' + (r.game_id ? ' go' : '')); if (r.game_id) c.onclick = () => showCard(r.game_id); c.append(mk('div', 'hh-top', r.date ? dayFmt(r.date) : ''), mk('div', 'hh-head', tx(r, 'headline'))); so.append(c); });
+      if (sl.length) sl.forEach((r) => { const c = mk('article', 'hh' + (r.game_id ? ' go' : '')); if (r.game_id) c.onclick = () => showCard(r.game_id); c.append(mk('div', 'hh-top', [r.date ? dayFmt(r.date) : '', r.opponent ? (r.venue === 'Away' ? 'at ' : 'vs ') + r.opponent : ''].filter(Boolean).join(', ')), mk('div', 'hh-head', tx(r, 'headline'))); if (r.tags || r.tag) { const tg = mk('div', 'hh-tags'); String(r.tags || r.tag).split(/,\s*(?![^()]*\))/).filter(Boolean).forEach((t) => tg.append(mk('span', '', t))); c.append(tg); } so.append(c); });
       else so.append(mk('p', 'empty', 'No standout games yet.'));
       const hon = ppSection('Honours');
       const hl = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
-      if (hl.length) { const ul = mk('ul', 'pp-list'); hl.forEach((h) => ul.append(mk('li', '', h))); hon.append(ul); } else hon.append(mk('p', 'empty', 'None listed yet.'));
-      two.append(so, hon); el.append(two);
-      const ups = upcomingSection((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null);
+      if (hl.length) { const ul = mk('ul', 'pp-list'); hl.forEach((h) => ul.append(mk('li', '', h))); hon.append(ul); two.append(so, hon); } else { two.classList.add('one'); two.append(so); }
+      el.append(two);
+      const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null);
       if (ups) el.append(ups);
     }
 
@@ -4123,6 +4306,16 @@
   document.querySelectorAll('[data-nav-back]').forEach((b) => b.addEventListener('click', goBack));
 
   // Upcoming games section (Today-style cards) for a player, or for the teams in a game
+  function ppUpcoming(filter, title, sub, max, extra) {
+    const up = (allGames() || []).concat(extra || []).filter((x) => x.status !== 'final' && filter(x)).slice(0, 5);
+    if (!up.length) return null;
+    const sec = ppSection(title || 'Upcoming games', sub); const l = mk('div', 'cox-list');
+    up.forEach((g, i) => { const r = mk('button', 'cox-row' + (i === 0 ? ' next' : '')); r.type = 'button'; r.onclick = () => (g.sbl && g.url ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id));
+      const w = mk('div', 'when'); w.append(mk('b', '', g.time && g.time !== 'TBC' ? g.time : 'TBC'), dayFmt(g.date));
+      const m = mk('div', 'm'); m.append(mk('b', '', `${g.team} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', g.competition));
+      r.append(w, m, mk('div', 'cp', i === 0 ? 'Next' : '')); l.append(r); });
+    sec.append(l); return sec;
+  }
   function upcomingSection(filter, title, sub, max, extra) {
     const up = (allGames() || []).concat(extra || []).filter((x) => x.status !== 'final' && filter(x)).slice(0, max || 6);
     if (!up.length) return null;
