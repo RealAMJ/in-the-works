@@ -39894,7 +39894,7 @@
   "fg": "3/4",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39936,7 +39936,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39978,7 +39978,7 @@
   "fg": "2/3",
   "three": "2/2",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -39999,7 +39999,7 @@
   "fg": "1/3",
   "three": "1/3",
   "ft": "1/2",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40020,7 +40020,7 @@
   "fg": "1/3",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40062,7 +40062,7 @@
   "fg": "2/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40146,7 +40146,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40179,7 +40179,7 @@
   "player": "Malik Monk",
   "pos": "",
   "min": 4,
-  "pts": 0,
+  "pts": 1,
   "reb": 0,
   "ast": 1,
   "stl": 0,
@@ -40187,8 +40187,8 @@
   "tov": 0,
   "fg": "0/2",
   "three": "0/1",
-  "ft": "0/1",
-  "pm": -2,
+  "ft": "1/2",
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
