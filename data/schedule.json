@@ -1479,8 +1479,8 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909951",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909951",
-  "clock": "Q4 00:40",
-  "live_updated": "2026-11-09T05:27:46+01:00"
+  "clock": "Q4 00:38",
+  "live_updated": "2026-11-09T05:28:36+01:00"
  },
  {
   "game_id": "g20261109wsu",
@@ -1493,11 +1493,11 @@
   "competition": "NCAA",
   "note": "Lake Tahoe Classic, Stateline NV",
   "status": "live",
-  "score": "L 17-19",
+  "score": "L 17-20",
   "espn_id": "401919029",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919029",
-  "clock": "Q1 12:11",
-  "live_updated": "2026-11-09T05:27:46+01:00"
+  "clock": "Q1 12:00",
+  "live_updated": "2026-11-09T05:28:36+01:00"
  },
  {
   "game_id": "g20261109vir",
