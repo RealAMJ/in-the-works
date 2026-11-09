@@ -525,8 +525,10 @@ def main(argv):
         if not only and row.get('live_done') and not back:
             continue
         tip = tip_time(row)
-        # a game that isn't final yet keeps being checked for 36 h (late feeds, club sites that post the score later)
-        late = tip is not None and row.get('status') != 'final' and tip <= t <= tip + dt.timedelta(hours=36)
+        # a game that isn't final yet keeps being checked for 7 days (late feeds, a feed found days later, club sites
+        # that post the score later); after the first 36 h only once an hour, to keep the runs light
+        late = tip is not None and row.get('status') != 'final' and tip <= t <= tip + dt.timedelta(days=7) \
+            and (t <= tip + dt.timedelta(hours=36) or t.minute < 6)
         if not only and not every and not back and not in_window(row, t) and not late:
             continue
         src, reader = feed_for(row)

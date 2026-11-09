@@ -5452,5 +5452,31 @@
   "pf": 3,
   "pm": -3,
   "eff": ""
+ },
+ {
+  "row_id": "andersson-2026-11-06",
+  "player": "Denzel Andersson",
+  "date": "2026-11-06",
+  "competition": "Orlen Basket Liga",
+  "team": "Astoria Bydgoszcz",
+  "opponent": "PGE Start Lublin",
+  "venue": "Home",
+  "result": "W 70-62",
+  "min": 33,
+  "pts": 4,
+  "reb": 7,
+  "ast": 1,
+  "source": "FIBA LiveStats",
+  "fg": "2/5",
+  "three": "0/1",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 5,
+  "stl": 2,
+  "blk": 1,
+  "tov": 2,
+  "pf": 2,
+  "pm": 1,
+  "eff": ""
  }
 ]

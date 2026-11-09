@@ -51,6 +51,18 @@ def match(names, row):
     return (a & n1 and b & n2) or (a & n2 and b & n1)
 
 
+def own_team_on_roster(names, row, fid):
+    """Our team is one of the two and the game's Swede is on that feed's roster: a match even when the opponent's
+    league name is all sponsor. Only for player games (a coach isn't on the rosters)."""
+    swedes = [U.norm(x).split()[-1] for x in str(row.get('players') or '').split(',') if x.strip()]
+    roster = ROSTERS.get(fid) or set()
+    if not swedes or not roster:
+        return False
+    t = words_or_short(row.get('team', ''))
+    return bool((t & words_or_short(names[0]) or t & words_or_short(names[1]))
+                and any(any(sw in fam or fam in sw for fam in roster if len(fam) > 2) for sw in swedes))
+
+
 def main():
     seeds = json.load(open(SEEDS)) if os.path.exists(SEEDS) else {}
     sched, coach = U.load('schedule'), U.load('coachgames')
@@ -61,7 +73,9 @@ def main():
             if r.get('live_feed') or r.get('status') == 'final' or r.get('competition') in ('NBA', 'NCAA'):
                 continue
             tip = U.tip_time(r)
-            if tip and now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30) and r.get('competition') in seeds:
+            # upcoming and just-played games every run; games that ended without a feed (up to a week back) once an hour
+            if tip and r.get('competition') in seeds and (now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30)
+                                                         or (now - dt.timedelta(days=7) <= tip < now and now.minute < 6)):
                 todo.append(r)
     # Spanish leagues and the EuroLeague have their own free live pages
     import sources
@@ -71,7 +85,9 @@ def main():
             if r.get('live_feed') or r.get('status') == 'final' and not r.get('backfill'):
                 continue
             tip = U.tip_time(r)
-            if not tip or not (now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30)) and not r.get('backfill'):
+            recent = tip and now - dt.timedelta(hours=6) <= tip <= now + dt.timedelta(hours=30)
+            missed = tip and now - dt.timedelta(days=7) <= tip < now and now.minute < 6  # ended without a feed: hourly
+            if not tip or not (recent or missed) and not r.get('backfill'):
                 continue
             comp = r.get('competition')
             try:
@@ -122,7 +138,7 @@ def main():
         log.append({'competition': comp, 'seed': seed, 'scanned': len(ids), 'answered': len(res),
                     'sample': sorted(((fid, n) for fid, n in res.items()), key=lambda x: abs(x[0] - seed))[:12]})
         for r in rows:
-            hit = [fid for fid, n in res.items() if match(n, r)]
+            hit = [fid for fid, n in res.items() if match(n, r) or own_team_on_roster(n, r, fid)]
             # two teams from the same cities can be another league's game (a women's game in Toruń vs Wrocław matched
             # Twarde Pierniki - Śląsk): once the rosters are in the feed, the game's Swede has to be on one of them
             swedes = [U.norm(x).split()[-1] for x in str(r.get('players') or '').split(',') if x.strip()]
@@ -143,12 +159,12 @@ def main():
         for comp in {c for c, _ in far}:
             seed = int(seeds[comp])
             with cf.ThreadPoolExecutor(32) as ex:
-                res = {fid: n for fid, n in ex.map(fetch, range(seed + SPAN, seed + 6000)) if n}
+                res = {fid: n for fid, n in ex.map(fetch, list(range(seed + SPAN, seed + 6000)) + list(range(seed - 3000, seed - SPAN))) if n}
             for c, r in far:
                 if c != comp or r.get('live_feed'):
                     continue
                 swedes = [U.norm(x).split()[-1] for x in str(r.get('players') or '').split(',') if x.strip()]
-                hit = [fid for fid, n in res.items() if match(n, r) and (not swedes or not ROSTERS.get(fid) or any(any(sw in fam or fam in sw for fam in ROSTERS[fid] if len(fam) > 2) for sw in swedes))]
+                hit = [fid for fid, n in res.items() if (match(n, r) or own_team_on_roster(n, r, fid)) and (not swedes or not ROSTERS.get(fid) or any(any(sw in fam or fam in sw for fam in ROSTERS[fid] if len(fam) > 2) for sw in swedes))]
                 if hit:
                     fid = min(hit)
                     r['live_feed'] = f'fiba:{fid}'

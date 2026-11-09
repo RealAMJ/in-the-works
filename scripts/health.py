@@ -83,7 +83,8 @@ def checks(now):
                 continue
             what = f"{r.get('team')} {'vs' if r.get('venue') == 'Home' else 'at'} {r.get('opponent')} ({r.get('date')}, {r.get('competition')})"
             if r.get('status') != 'final':
-                if now - tip > dt.timedelta(hours=6) and r.get('date', '') >= since:
+                # unfinished games stay on the list for 10 days, so a missed result can't just age out of the check
+                if now - tip > dt.timedelta(hours=6) and r.get('date', '') >= (now - dt.timedelta(days=10)).date().isoformat():
                     issues.append(f"Not final {int((now - tip).total_seconds() // 3600)} h after tip-off: {what}")
                 continue
             if r.get('date', '') < since:
@@ -126,8 +127,9 @@ def checks(now):
         dates = {g['date'] for g in gl if g.get('player') == s.get('player') and g.get('competition') == s.get('competition')}
         for b in bx:
             g = games.get(b.get('game_id'))
+            # only games whose post-game work is done (the averages are updated in that step, minutes after the final)
             if g and b.get('player') == s.get('player') and g.get('competition') == s.get('competition') \
-                    and b.get('note') != 'DNP' and g.get('status') == 'final':
+                    and b.get('note') != 'DNP' and g.get('status') == 'final' and g.get('post_done'):
                 dates.add(g['date'])
         if len(dates) != s.get('gp'):
             issues.append(f"Averages out of step: {s.get('player')} {s.get('competition')} shows {s.get('gp')} games, logs have {len(dates)}")
