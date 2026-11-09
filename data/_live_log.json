@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T05:49:23+01:00",
+ "at": "2026-11-09T05:50:13+01:00",
  "log": [
   {
    "game": "g20261109wsu",
@@ -9,12 +9,12 @@
    "game": "g20261109wsu",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:55",
+   "clock": "04:38",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     37,
+     38,
      17
     ],
     [
