@@ -1603,7 +1603,7 @@ button.tp-r:hover { border-color: var(--se-blue); }
 .cpx-id h1 { font-size: clamp(56px, 9vw, 120px); margin: 0; }
 .cpx-sub { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; color: var(--nz-mut); }
 .cpx-sub .cox-club { font-size: 18px; }
-.cpx-facts { display: flex; flex-wrap: wrap; gap: 1px; margin-top: 10px; border: 1px solid var(--nz-line); border-radius: 12px; overflow: hidden; background: var(--nz-line); width: max-content; max-width: 100%; }
+.cpx-facts { display: none; flex-wrap: wrap; gap: 1px; margin-top: 10px; border: 1px solid var(--nz-line); border-radius: 12px; overflow: hidden; background: var(--nz-line); width: max-content; max-width: 100%; }
 .cpx-facts div { display: grid; padding: 8px 14px; background: rgba(3, 10, 23, .6); }
 .cpx-facts span { font-size: 11px; color: var(--nz-mut); }
 .cpx-facts b { font-weight: 700; }
@@ -1633,3 +1633,34 @@ button.tp-r:hover { border-color: var(--se-blue); }
 @media (max-width: 760px) { .cpx-in { grid-template-columns: 1fr; } .cpx-pic { order: -1; height: 200px; justify-content: center; } .cpx-id { padding-bottom: 22px; } .cpx-now, .cpx-lists { grid-template-columns: 1fr; } }
 .cpx-lists .cox-list { align-content: start; }
 .stx-t.cpx-tab td.l { text-align: left; }
+/* coach profile v2: tabs, tiles, facts row */
+.cpx-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.cpx-tags span { font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, .1); }
+.cpx-tags span.y { background: var(--nz-y); color: var(--nz-night); }
+.cpx-factsrow { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; padding-top: 16px; padding-bottom: 4px; }
+.cpx-factsrow div { display: grid; gap: 2px; padding: 10px 12px; background: var(--nz-deep); }
+.cpx-factsrow div:first-child { border-radius: 12px 0 0 12px; } .cpx-factsrow div:last-child { border-radius: 0 12px 12px 0; }
+.cpx-factsrow span { font-size: 11px; color: var(--nz-mut); } .cpx-factsrow b { font-weight: 700; font-size: 14px; }
+.cpx-tabs { margin-top: 18px; border-bottom-color: var(--nz-line); }
+.cpx-tabs button { color: var(--nz-mut); } .cpx-tabs button:hover, .cpx-tabs button.on { color: var(--nz-ink); }
+.cpx-body { padding-bottom: 36px; }
+.cpx-sec { padding: 30px 0 6px; }
+.cpx-h { font-size: clamp(30px, 4vw, 46px); margin: 0 0 6px; }
+.cpx-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.cpx-tiles div { display: grid; gap: 4px; padding: 14px; border-radius: 14px; background: var(--nz-deep); border: 1px solid var(--nz-line); }
+.cpx-tiles b { font: 400 34px/1 Anton, sans-serif; } .cpx-tiles span { font-size: 12px; color: var(--nz-mut); }
+.cpx-formrow { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+.cpx-form.big i { min-width: 24px; height: 24px; font-size: 11px; }
+.cpx-lists { margin-top: 22px; }
+.cpx-about { color: #c9d6ea; max-width: 46rem; line-height: 1.6; }
+.cpx-nt { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 10px; margin-top: 12px; }
+.cpx-nt div { display: grid; gap: 2px; padding: 14px; border-radius: 14px; background: var(--nz-deep); border: 1px solid var(--nz-line); }
+.cpx-nt b { font: 400 22px Anton, sans-serif; text-transform: uppercase; } .cpx-nt span { color: #c9d6ea; font-size: 13px; } .cpx-nt small { color: var(--nz-mut); }
+.cpx-dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 10px; margin: 14px 0 0; }
+.cpx-dl div { padding: 12px 14px; border-radius: 12px; background: var(--nz-deep); border: 1px solid var(--nz-line); }
+.cpx-dl dt { font-size: 12px; color: var(--nz-mut); } .cpx-dl dd { margin: 2px 0 0; font-weight: 700; }
+.cpx-wl { display: inline-grid; place-items: center; min-width: 18px; height: 18px; border-radius: 4px; font: 700 10px Archivo, sans-serif; font-style: normal; }
+.cpx-wl.fw { background: var(--nz-g); color: #03140a; } .cpx-wl.fl { background: var(--nz-r); color: #2a0705; }
+.stx-t.cpx-tab tr.go { cursor: pointer; } .stx-t.cpx-tab tr.go:hover td { background: #0a1a35; }
+@media (max-width: 900px) { .cpx-factsrow { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cpx-factsrow div { border-radius: 0 !important; } .cpx-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .cpx-factsrow { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cpx-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

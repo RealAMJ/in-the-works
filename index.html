@@ -3249,67 +3249,105 @@
   });
 
   // ---- Coach profile: this season (tracked games) + career by season and titles (data/coachcareer.json)
+  let cpTab = 'overview';
+  // every tracked game this season for a coach's team: coach games (full details) plus team form rows on other dates
+  function cpGames(c) {
+    const m = new Map();
+    (ds('teamform') || []).filter((t) => t.row_id !== 'placeholder' && c.club && sameTeam(t.team, c.club) && t.date).forEach((t) => m.set(t.date, { date: t.date, opponent: t.opponent, venue: t.venue, competition: t.competition, score: t.score ? `${t.result || ''} ${String(t.score).replace(/^[WL]\s*/, '')}`.trim() : (t.result || ''), top: t.top || '' }));
+    (ds('coachgames') || []).filter((g) => isSame(g.coach, c.coach) && g.status === 'final').forEach((g) => m.set(g.date, Object.assign({}, m.get(g.date) || {}, { date: g.date, opponent: g.opponent, venue: g.venue, competition: g.competition, score: g.score, game_id: g.game_id })));
+    return [...m.values()].filter((g) => /^[WL]/.test(g.score || '')).sort((a, b) => b.date.localeCompare(a.date));
+  }
   dash.draw('cpx', (el) => {
     el.replaceChildren();
     if (!cpCoach) return;
     const c = (ds('coaches') || []).find((x) => isSame(x.coach, cpCoach)) || { coach: cpCoach };
     const car = (ds('coachcareer') || []).find((x) => isSame(x.coach, cpCoach)) || {};
     const parts = c.coach.split(' ');
+    // hero
     const hero = mk('header', 'cpx-hero'); hero.style.setProperty('--tc', teamColor(c.club || c.coach));
     const wrap = mk('div', 'ntz-wrap cpx-in');
     const crumb = mk('button', 'ntz-crumb'); crumb.type = 'button'; crumb.append('Coaches › ', mk('b', '', c.coach)); crumb.onclick = () => showPage('coaches');
     const pic = mk('div', 'cpx-pic'); const ph = photoFor(c.coach);
     if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = c.coach; pic.append(img); } else pic.append(mk('span', 'cpx-ini', initials(c.coach)));
     const id = mk('div', 'cpx-id');
+    const tags = mk('div', 'cpx-tags'); tags.append(mk('span', 'y', /Riipinen/.test(c.coach) ? '🇸🇪 Sweden head coach' : '🇸🇪 Swedish connection'));
+    if (c.role) tags.append(mk('span', '', c.role));
+    if ((car.titles || []).length) tags.append(mk('span', '', `🏆 ${car.titles.length} ${car.titles.length === 1 ? 'title' : 'titles'}`));
     id.append(crumb, mk('div', 'cpx-fn', parts.slice(0, -1).join(' ')), mk('h1', 'ntz-d', parts[parts.length - 1]));
-    const sub = mk('div', 'cpx-sub'); if (c.club) { const cb = mk('button', 'cox-club', c.club); cb.type = 'button'; cb.onclick = () => showTeam(c.club); sub.append(cb); }
-    sub.append(mk('span', '', [c.role, c.league, c.country].filter(Boolean).join(', ')));
-    id.append(sub);
-    const facts = mk('div', 'cpx-facts');
-    [['Born', car.born], ['Nationality', car.nationality], ['Coaching since', car.since], ['Titles', car.titles ? String(car.titles.length) : '']].forEach(([k, v]) => { if (v) { const d = mk('div'); d.append(mk('span', '', k), mk('b', '', v)); facts.append(d); } });
-    if (facts.childNodes.length) id.append(facts);
+    const sub = mk('div', 'cpx-sub'); if (c.club) { sub.append(crest(c.club, 'sm')); const cb = mk('button', 'cox-club', c.club); cb.type = 'button'; cb.onclick = () => showTeam(c.club); sub.append(cb); }
+    sub.append(mk('span', '', [c.league, c.country].filter(Boolean).join(', ')));
+    id.append(sub, tags);
     wrap.append(id, pic); hero.append(wrap); el.append(hero);
-    const body = mk('div', 'ntz-wrap');
-    // this season
-    if (c.club) {
-      const res = coxGames(c), w = res.filter((r) => r === 'W').length;
-      const sec = mk('section', 'ntz-s'); sec.append(mk('h2', 'ntz-d cox-h', 'This season'), mk('p', 'ntz-lede', `${c.club}, from the games we track.`));
-      const row = mk('div', 'cpx-now');
-      const rec = mk('div', 'cpx-rec'); rec.append(mk('b', '', `${w}-${res.length - w}`), mk('span', '', `${res.length} tracked ${res.length === 1 ? 'game' : 'games'}`));
-      const form = mk('div', 'cpx-form'); res.slice(-10).forEach((r) => form.append(mk('i', r === 'W' ? 'fw' : 'fl', r)));
-      rec.append(form); row.append(rec);
+    // facts strip (like the player profile)
+    const facts = mk('div', 'ntz-wrap cpx-factsrow');
+    const fact = (k, v) => { const d = mk('div'); d.append(mk('span', '', k), mk('b', '', v || '—')); facts.append(d); };
+    fact('Born', car.born); fact('Nationality', car.nationality); fact('Role', c.role); fact('Club', c.club); fact('Since', c.since); fact('Coaching since', car.since);
+    el.append(facts);
+    // tabs
+    const tabsW = mk('div', 'ntz-wrap'); tabsW.append(tabBar([['overview', 'Overview'], ['games', 'Games'], ['career', 'Career'], ['bio', 'Bio']], cpTab, (k) => { cpTab = k; dash.draw('cpx'); }, 'cpx-tabs'));
+    el.append(tabsW);
+    const body = mk('div', 'ntz-wrap cpx-body'); el.append(body);
+    const sec = (t, sub2) => { const s = mk('section', 'cpx-sec'); s.append(mk('h2', 'ntz-d cpx-h', t)); if (sub2) s.append(mk('p', 'ntz-lede', sub2)); body.append(s); return s; };
+    const games = cpGames(c), wins = games.filter((g) => g.score[0] === 'W').length;
+    const G = (ds('coachgames') || []).filter((g) => isSame(g.coach, c.coach)).sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    const upcoming = G.filter((g) => g.status !== 'final' && g.date >= todayStr());
+    const titleCards = (list) => { const g = mk('div', 'cpx-titles'); list.forEach((t) => { const d = mk('div', 'cpx-t'); d.append(mk('span', 'ic', '🏆'), mk('b', '', t.title), mk('span', '', [t.team, t.season].filter(Boolean).join(', '))); g.append(d); }); return g; };
+    if (cpTab === 'overview') {
+      const s = sec('Season 2026-27', c.club ? `${c.club}, from the games we track.` : '');
+      const tiles = mk('div', 'cpx-tiles');
+      const tile = (v, k, cls) => { const d = mk('div', cls || ''); d.append(mk('b', '', v), mk('span', '', k)); tiles.append(d); };
+      tile(`${wins}-${games.length - wins}`, 'Record'); tile(games.length ? Math.round((wins / games.length) * 100) + '%' : '—', 'Win %'); tile(String(games.length), 'Games');
+      const home = games.filter((g) => g.venue === 'Home'), away = games.filter((g) => g.venue === 'Away');
+      tile(`${home.filter((g) => g.score[0] === 'W').length}-${home.filter((g) => g.score[0] !== 'W').length}`, 'At home'); tile(`${away.filter((g) => g.score[0] === 'W').length}-${away.filter((g) => g.score[0] !== 'W').length}`, 'Away');
+      s.append(tiles);
+      const form = mk('div', 'cpx-form big'); games.slice(0, 10).reverse().forEach((g) => { const i = mk('i', g.score[0] === 'W' ? 'fw' : 'fl', g.score[0]); i.title = `${g.score} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`; form.append(i); });
+      if (games.length) { const fw = mk('div', 'cpx-formrow'); fw.append(mk('span', 'ntz-lede', 'Last 10, oldest first'), form); s.append(fw); }
       const lists = mk('div', 'cpx-lists');
-      const G = (ds('coachgames') || []).filter((g) => isSame(g.coach, c.coach)).sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
-      const nx = G.filter((g) => g.status !== 'final' && g.date >= todayStr()).slice(0, 3), ls = G.filter((g) => g.status === 'final' && /^[WL]/.test(g.score || '')).reverse().slice(0, 3);
-      const l1 = mk('div', 'cox-list'); l1.append(mk('h3', '', 'Next')); nx.forEach((g, i) => l1.append(coxRow(g, 'next', i === 0))); if (!nx.length) l1.append(mk('p', 'ntz-lede', 'Nothing scheduled yet.'));
-      const l2 = mk('div', 'cox-list'); l2.append(mk('h3', '', 'Latest')); ls.forEach((g) => l2.append(coxRow(g, 'res'))); if (!ls.length) l2.append(mk('p', 'ntz-lede', 'No results yet.'));
-      lists.append(l1, l2); row.append(lists); sec.append(row); body.append(sec);
+      const l1 = mk('div', 'cox-list'); l1.append(mk('h3', '', 'Next games')); upcoming.slice(0, 4).forEach((g, i) => l1.append(coxRow(g, 'next', i === 0))); if (!upcoming.length) l1.append(mk('p', 'ntz-lede', 'Nothing scheduled yet.'));
+      const l2 = mk('div', 'cox-list'); l2.append(mk('h3', '', 'Last games'));
+      games.slice(0, 4).forEach((g) => { if (g.game_id) l2.append(coxRow(Object.assign({ team: c.club, coach: c.coach, time: '' }, (ds('coachgames') || []).find((x) => x.game_id === g.game_id)), 'res')); else { const r = mk('div', 'cox-row'); const w = mk('div', 'when'); const d = dayFmt(g.date).split(' '); w.append(mk('b', '', d.slice(1).join(' ')), d[0]); const m = mk('div', 'm'); m.append(mk('b', '', `${c.club} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', g.competition || '')); const rr = mk('div', 'res'); rr.append(mk('i', g.score[0] === 'W' ? 'fw' : 'fl', g.score[0]), g.score.replace(/^[WL]\s*/, '')); r.append(w, m, rr); l2.append(r); } });
+      if (!games.length) l2.append(mk('p', 'ntz-lede', 'No results yet.'));
+      const more = mk('button', 'cox-prof', 'All games →'); more.type = 'button'; more.onclick = () => { cpTab = 'games'; dash.draw('cpx'); }; l2.append(more);
+      lists.append(l1, l2); s.append(lists);
+      const t = sec('Titles', (car.titles || []).length ? `${car.titles.length} as a coach.` : '');
+      if ((car.titles || []).length) { t.append(titleCards(car.titles.slice(-4).reverse())); if (car.titles.length > 4) { const b2 = mk('button', 'cox-prof', `All ${car.titles.length} titles and the full career →`); b2.type = 'button'; b2.onclick = () => { cpTab = 'career'; dash.draw('cpx'); }; t.append(b2); } }
+      else t.append(mk('p', 'ntz-lede', car.note_missing ? 'We haven\'t found a published record of his earlier career yet.' : 'No championships as a coach so far.'));
+      if (c.note) { const a2 = sec('About'); a2.append(mk('p', 'cpx-about', c.note)); const b3 = mk('button', 'cox-prof', 'Read the full bio →'); b3.type = 'button'; b3.onclick = () => { cpTab = 'bio'; dash.draw('cpx'); }; a2.append(b3); }
+    } else if (cpTab === 'games') {
+      const s = sec('Games 2026-27', 'Every game we track for his team this season, newest first. Tap a game with a game center.');
+      if (upcoming.length) { const l = mk('div', 'cox-list'); l.append(mk('h3', '', 'Coming up')); upcoming.forEach((g, i) => l.append(coxRow(g, 'next', i === 0))); s.append(l); }
+      if (games.length) {
+        const tw = mk('div', 'stx-tw'); const t = mk('table', 'stx-t cpx-tab'); const hr = mk('tr'); ['Date', 'Opponent', 'H/A', 'Competition', 'Result', 'Top scorer'].forEach((x, i) => hr.append(mk('th', i === 4 ? '' : 'l', x))); const th = mk('thead'); th.append(hr); t.append(th);
+        const tb = mk('tbody');
+        games.forEach((g) => { const tr = mk('tr', g.game_id ? 'go' : ''); if (g.game_id) { tr.tabIndex = 0; tr.onclick = () => showCard(g.game_id); }
+          const res = mk('td'); res.append(mk('i', 'cpx-wl ' + (g.score[0] === 'W' ? 'fw' : 'fl'), g.score[0]), ' ' + g.score.replace(/^[WL]\s*/, ''));
+          tr.append(mk('td', 'l', dayFmt(g.date)), mk('td', 'l', g.opponent || ''), mk('td', 'l', g.venue === 'Away' ? 'Away' : 'Home'), mk('td', 'l', g.competition || ''), res, mk('td', 'l', g.top || '–')); tb.append(tr); });
+        t.append(tb); tw.append(t); s.append(tw);
+      } else s.append(mk('p', 'ntz-lede', 'No results yet.'));
+    } else if (cpTab === 'career') {
+      const t = sec('Titles');
+      if ((car.titles || []).length) t.append(titleCards(car.titles.slice().reverse())); else t.append(mk('p', 'ntz-lede', car.note_missing ? 'We haven\'t found a published record of his earlier career yet.' : 'No championships as a coach so far.'));
+      if ((car.honours || []).length) { const ul = mk('ul', 'cpx-hon'); car.honours.forEach((x) => ul.append(mk('li', '', x))); t.append(ul); }
+      const cs = sec('Coaching career', (car.seasons || []).length ? 'Season by season, newest first. Yellow rows won a title.' : '');
+      if ((car.seasons || []).length) {
+        const tw = mk('div', 'stx-tw'); const t2 = mk('table', 'stx-t cpx-tab');
+        const hr = mk('tr'); ['Season', 'Team', 'League', 'Role', 'Record', 'Finish'].forEach((x, i) => hr.append(mk('th', i === 4 ? '' : 'l', x)));
+        const th = mk('thead'); th.append(hr); t2.append(th); const tb = mk('tbody');
+        car.seasons.slice().reverse().forEach((s2) => { const won = /champion|winner|cup|supercup/i.test(s2.finish || '') && !/quarterfinal|final \(silver\)/i.test(s2.finish || ''); const tr = mk('tr', won ? 'won' : '');
+          [s2.season, s2.team, [s2.league, s2.country].filter(Boolean).join(', '), s2.role, s2.record || '–', s2.finish || '–'].forEach((v, i) => tr.append(mk('td', i === 4 ? '' : 'l', v || '–'))); tb.append(tr); });
+        t2.append(tb); tw.append(t2); cs.append(tw);
+      } else cs.append(mk('p', 'ntz-lede', 'Only his current job is confirmed here. If you know his earlier clubs, they can be added.'));
+      if ((car.national_teams || []).length) { const n = sec('National teams'); const g = mk('div', 'cpx-nt'); car.national_teams.forEach((x) => { const d = mk('div'); d.append(mk('b', '', x.team), mk('span', '', [x.years, x.role].filter(Boolean).join(', ')), mk('small', '', x.result || '')); g.append(d); }); n.append(g); }
+    } else {
+      const s = sec('Bio');
+      const dl = mk('dl', 'cpx-dl');
+      [['Born', car.born], ['Nationality', car.nationality], ['Role now', c.role], ['Club now', [c.club, c.league, c.country].filter(Boolean).join(', ')], ['In the job since', c.since], ['Coaching since', car.since]].forEach(([k, v]) => { if (v) { const d = mk('div'); d.append(mk('dt', '', k), mk('dd', '', v)); dl.append(d); } });
+      s.append(dl);
+      if (c.note) s.append(mk('p', 'cpx-about', c.note));
+      if (car.playing) { const p2 = sec('As a player'); p2.append(mk('p', 'cpx-about', car.playing)); }
+      if ((car.honours || []).length) { const h2 = sec('Honours'); const ul = mk('ul', 'cpx-hon'); car.honours.forEach((x) => ul.append(mk('li', '', x))); h2.append(ul); }
+      if ((car.sources || []).length) s.append(mk('p', 'ntz-foot', 'Sources: ' + car.sources.join(', ')));
     }
-    // titles
-    const titles = car.titles || [];
-    const ts = mk('section', 'ntz-s'); ts.append(mk('h2', 'ntz-d cox-h', 'Titles'));
-    if (titles.length) { const g = mk('div', 'cpx-titles'); titles.forEach((t) => { const d = mk('div', 'cpx-t'); d.append(mk('span', 'ic', '🏆'), mk('b', '', t.title), mk('span', '', [t.team, t.season].filter(Boolean).join(', '))); g.append(d); }); ts.append(g); }
-    else ts.append(mk('p', 'ntz-lede', car.note_missing ? 'We haven\'t found a published record of his earlier career yet.' : car.seasons ? 'No championships as a coach so far.' : 'Career details are being added.'));
-    if ((car.honours || []).length) { const ul = mk('ul', 'cpx-hon'); car.honours.forEach((x) => ul.append(mk('li', '', x))); ts.append(ul); }
-    body.append(ts);
-    // career by season
-    const cs = mk('section', 'ntz-s'); cs.append(mk('h2', 'ntz-d cox-h', 'Coaching career'));
-    if ((car.seasons || []).length) {
-      cs.append(mk('p', 'ntz-lede', 'Season by season. Yellow rows won a title.'));
-      const tw = mk('div', 'stx-tw'); const t = mk('table', 'stx-t cpx-tab');
-      const hr = mk('tr'); ['Season', 'Team', 'League', 'Role', 'Record', 'Finish'].forEach((x, i) => hr.append(mk('th', i < 4 || i === 5 ? 'l' : '', x)));
-      const th = mk('thead'); th.append(hr); t.append(th);
-      const tb = mk('tbody');
-      car.seasons.slice().reverse().forEach((s) => { const won = /champion|winner|won|title|gold/i.test(s.finish || ''); const tr = mk('tr', won ? 'won' : '');
-        [s.season, s.team, [s.league, s.country].filter(Boolean).join(', '), s.role, s.record || '–', s.finish || '–'].forEach((v, i) => tr.append(mk('td', i < 4 || i === 5 ? 'l' : '', v || '–'))); tb.append(tr); });
-      t.append(tb); tw.append(t); cs.append(tw);
-    } else cs.append(mk('p', 'ntz-lede', 'Career details are being added.'));
-    if (car.note_missing) cs.append(mk('p', 'ntz-lede', 'Only his current job is confirmed here. If you know his earlier clubs, they can be added.'));
-    if ((car.national_teams || []).length) { const ul = mk('ul', 'cpx-hon'); car.national_teams.forEach((n) => ul.append(mk('li', '', [n.years, n.team, n.role, n.result].filter(Boolean).join(', ')))); cs.append(mk('h3', 'cpx-h3', 'National teams'), ul); }
-    if (car.playing) cs.append(mk('h3', 'cpx-h3', 'As a player'), mk('p', 'ntz-lede', car.playing));
-    if (c.note) cs.append(mk('p', 'ntz-lede cpx-note', c.note));
-    if ((car.sources || []).length) cs.append(mk('p', 'ntz-foot', 'Sources: ' + car.sources.join(', ')));
-    body.append(cs); el.append(body);
   });
 
   // ---- Stats page: one row per player (main competition, others fold out), TS%, 3P%, EFF, last 8
