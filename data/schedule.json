@@ -1142,7 +1142,8 @@
   "competition": "Orlen Basket Liga",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2951826"
  },
  {
   "game_id": "g20261107uncw",
@@ -1297,7 +1298,8 @@
   "competition": "Primera FEB",
   "note": "Round 7",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "feb:2535787"
  },
  {
   "game_id": "g20261108jov",
@@ -1396,7 +1398,8 @@
   "competition": "Segunda FEB",
   "note": "Likely 18:00, not confirmed",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "feb:2536332"
  },
  {
   "game_id": "g20261108maine",

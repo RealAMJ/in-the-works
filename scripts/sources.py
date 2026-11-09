@@ -398,11 +398,22 @@ def same_game(a1, a2, row):
     return bool((t & w1 and o & w2) or (t & w2 and o & w1))
 
 
+def own_team(a1, a2, row):
+    # our team is one of the two: enough when the date matches too (a team plays once a day), for opponents whose
+    # league name is all sponsor ("Insolac Caja 87" for Caja 87 Sevilla)
+    t = words(row.get('team'))
+    return bool(t & words(a1) or t & words(a2))
+
+
 FEB_COMP = {'Primera FEB': 1, 'Segunda FEB': 2}
 
 
 def feb_teams(pid):
     t = text(page(f'https://baloncestoenvivo.feb.es/partido/{pid}'))
+    # the page starts with the site's menu (every competition's name): read from the game's own header on
+    k = t.rfind('Gráfico de tiro')
+    if k >= 0:
+        t = t[k + len('Gráfico de tiro'):]
     m = re.search(r'Estad[ií]sticas (.+?) \d+ p \d+ (.+?) \d', t) or re.search(r'Estad[ií]sticas (.+?) p (.+?) \d', t)
     d = re.search(r'Fecha (\d{2}/\d{2}/\d{4})', t)
     return (m.group(1), m.group(2), d.group(1) if d else '') if m else None
@@ -421,18 +432,25 @@ def find_feb(row):
             continue
         ids.append(int(pid.group(1)))
         teams = [clean(x) for x in re.findall(r'Equipo\.aspx\?i=\d+">(.*?)</a>', tr)]
-        if day in tr and len(teams) == 2 and same_game(teams[0], teams[1], row):
+        if day in tr and len(teams) == 2 and (same_game(teams[0], teams[1], row) or own_team(teams[0], teams[1], row)):
             return f'feb:{pid.group(1)}'
-    # other groups (e.g. Segunda FEB "B") are not on the default page: their games have ids close to these
-    if not ids:
-        return None
-    lo, hi = min(ids), max(ids)
-    for pid in list(range(hi + 1, hi + 60)) + list(range(lo - 40, lo)):
+    # other groups (e.g. Segunda FEB "B") are not on the default page. A team's games are a few ids apart through the
+    # season, so look after the team's own last known game first, then near the default page's ids
+    near = []
+    for g in U.load('schedule'):
+        f = str(g.get('live_feed') or '')
+        if f.startswith('feb:') and g.get('team') == row.get('team') and g.get('date', '') < row.get('date', ''):
+            near.append(int(f[4:]))
+    cand = list(range(max(near) + 1, max(near) + 40)) if near else []
+    if ids:
+        lo, hi = min(ids), max(ids)
+        cand += list(range(hi + 1, hi + 60)) + list(range(lo - 40, lo))
+    for pid in cand:
         try:
             tm = feb_teams(pid)
         except Exception:
             continue
-        if tm and tm[2] == day and same_game(tm[0], tm[1], row):
+        if tm and tm[2] == day and (same_game(tm[0], tm[1], row) or own_team(tm[0], tm[1], row)):
             return f'feb:{pid}'
     return None
 

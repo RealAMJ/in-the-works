@@ -113,6 +113,7 @@ def main():
     by_comp = {}
     for r in todo:
         by_comp.setdefault(r['competition'], []).append(r)
+    far = []
     for comp, rows in by_comp.items():
         seed = int(seeds[comp])
         ids = [seed + k for k in range(-SPAN, SPAN) if k]
@@ -135,6 +136,25 @@ def main():
                 print(f"  {r['game_id']}: {comp} {r.get('team')} - {r.get('opponent')} -> {fid}")
             else:
                 print(f"  {r['game_id']}: no id found near {seed} for {r.get('team')} - {r.get('opponent')}")
+                far.append((comp, r))
+    # a new round's ids can be thousands past the last one (the Polish league jumped ~2,700 in a week): once an hour,
+    # look much further ahead for games still without a feed
+    if far and U.now().minute < 6:
+        for comp in {c for c, _ in far}:
+            seed = int(seeds[comp])
+            with cf.ThreadPoolExecutor(32) as ex:
+                res = {fid: n for fid, n in ex.map(fetch, range(seed + SPAN, seed + 6000)) if n}
+            for c, r in far:
+                if c != comp or r.get('live_feed'):
+                    continue
+                swedes = [U.norm(x).split()[-1] for x in str(r.get('players') or '').split(',') if x.strip()]
+                hit = [fid for fid, n in res.items() if match(n, r) and (not swedes or not ROSTERS.get(fid) or any(any(sw in fam or fam in sw for fam in ROSTERS[fid] if len(fam) > 2) for sw in swedes))]
+                if hit:
+                    fid = min(hit)
+                    r['live_feed'] = f'fiba:{fid}'
+                    seeds[comp] = max(int(seeds[comp]), fid)
+                    found += 1
+                    print(f"  {r['game_id']}: {comp} {r.get('team')} - {r.get('opponent')} -> {fid} (far scan)")
     if found:
         U.save('schedule', sched)
         U.save('coachgames', coach)

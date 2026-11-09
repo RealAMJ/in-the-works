@@ -133,7 +133,8 @@
   "competition": "Orlen Basket Liga",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2951824"
  },
  {
   "game_id": "c20261108san",
@@ -146,7 +147,8 @@
   "competition": "Segunda FEB",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "feb:2536332"
  },
  {
   "game_id": "c20261110msu",
