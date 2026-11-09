@@ -1144,7 +1144,9 @@
   "status": "final",
   "score": "L 76-81",
   "live_feed": "fiba:2951826",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261107uncw",
@@ -1301,7 +1303,9 @@
   "status": "final",
   "score": "W 75-73",
   "live_feed": "feb:2535787",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108jov",
@@ -1402,7 +1406,9 @@
   "status": "final",
   "score": "W 74-66",
   "live_feed": "feb:2536332",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261108maine",
@@ -1473,8 +1479,8 @@
   "watch_label": "NBA League Pass",
   "espn_id": "401909951",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909951",
-  "clock": "Q1 07:30",
-  "live_updated": "2026-11-09T03:17:45+01:00"
+  "clock": "Q1 07:29",
+  "live_updated": "2026-11-09T03:18:11+01:00"
  },
  {
   "game_id": "g20261109wsu",

@@ -135,7 +135,8 @@
   "status": "final",
   "score": "L 75-96",
   "live_feed": "fiba:2951824",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261108san",
@@ -150,7 +151,8 @@
   "status": "final",
   "score": "W 74-66",
   "live_feed": "feb:2536332",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261110msu",
