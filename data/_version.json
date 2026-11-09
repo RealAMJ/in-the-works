@@ -1,11 +1,12 @@
 {
- "updated": "2026-11-09T21:28:34+01:00",
- "app": "d52603aa26bd",
+ "updated": "2026-11-09T21:28:43+01:00",
+ "app": "92975afe002f",
  "files": {
   "awards": "1c451ad9ae1b",
   "bios": "2b5c5b9e1da8",
   "boxscores": "cef2ba23a71d",
   "career": "4d71859a21b0",
+  "coachcareer": "84bcc29ac85c",
   "coaches": "efb2086390f9",
   "coachgames": "b2d32b291de0",
   "feed_seeds": "c3c0e68cdbb6",
