@@ -195,29 +195,22 @@
   </div>
 
   <div class="pg" data-page="stats" id="pg-stats" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Stats</b></button><h1>Season stats</h1><p>Per-game averages for every Swede, one row per competition. Tap a name for the full game log.</p></header>
-  <section class="sw-card sx-top" id="stat-leaders">
-    <h2>Stat leaders</h2>
-    <p class="note">The top five Swedes in each category this season, each in his best competition (at least 2 games). Shooting is added up from the games we track. Tap a name for his profile.</p>
-    <div class="pp-tabs sx-levels" role="group" aria-label="Level" data-draw="sx-levels" data-source="players"></div>
-    <div class="sx" data-draw="sx" data-source="stats players gamelogs boxscores schedule"></div>
-  </section>
-
-  <section class="sw-card" id="stats">
-    <h2>Season stats</h2>
-    <p class="note">Tap any player's name, anywhere on the page, to open their stats, last game and full game log. Per-game averages, one row per competition. Sources: NBA.com, Proballers, Flashscore/Livesport and Eurobasket, read Oct 28. Snapshots can lag a game or two; a season shown in amber means no 2026-27 line was published yet.</p>
-    <input class="sw-search" type="search" placeholder="Search player…" aria-label="Search stats" data-filter="stats">
-    <div class="sw-scroll">
-      <table class="cards statsT" data-source="stats" data-row-key="row_id">
-        <thead><tr>
-          <th data-field="player">Player</th><th data-field="competition">Competition</th><th data-field="season">Season</th><th data-field="gp" class="n">GP</th>
-          <th data-field="min" class="n hide-sm">MIN</th><th data-field="pts" class="n">PTS</th><th data-field="reb" class="n">REB</th>
-          <th data-field="ast" class="n">AST</th><th data-field="note" class="hide-sm">Note</th>
-        </tr></thead>
-        <tbody data-draw="stats"></tbody>
-      </table>
+   <div class="ntz stx">
+    <header class="stx-head"><div class="ntz-wrap">
+      <button type="button" class="ntz-crumb" data-page-go="home">Home › <b>Stats</b></button>
+      <h1 class="ntz-d">Season stats</h1>
+      <p class="stx-intro">Every Swede abroad, one row per player in his main competition. Tap a column to sort, a leader to jump to that stat, a name for his profile.</p>
+      <div class="stx-lead" data-draw="stx-lead" data-source="stats players gamelogs boxscores schedule"></div>
+    </div></header>
+    <div class="ntz-wrap">
+      <div class="stx-bar">
+        <div class="stx-tabs" role="group" aria-label="Level" data-draw="stx-tabs" data-source="stats players"></div>
+        <input class="stx-search" type="search" placeholder="Search player, club or league" aria-label="Search stats" data-stx-q>
+      </div>
+      <div class="stx-tw"><table class="stx-t"><thead><tr data-draw="stx-hd" data-source="stats"></tr></thead><tbody data-draw="stx-body" data-source="stats players photos gamelogs boxscores schedule"></tbody></table></div>
+      <p class="ntz-foot stx-foot">Per game, 2026-27, from the games we track (game logs and box scores). True shooting = points ÷ (2 × (FGA + 0.44 × FTA)); efficiency = points + rebounds + assists + steals + blocks − missed shots − turnovers, shown where the box scores are complete. Leaders need 2+ games, true shooting 15+ field goal attempts and three-point 10+ attempts. Tap ⓘ for where a player's numbers come from.</p>
     </div>
-  </section>
+   </div>
   </div>
 
   <div class="pg" data-page="players" id="pg-players" hidden>
@@ -3174,6 +3167,99 @@
   });
 
   // ---- Sweden national team
+  // ---- Stats page: one row per player (main competition, others fold out), TS%, 3P%, EFF, last 8
+  let stxSort = 'pts', stxLvl = 'all';
+  const stxOpen = new Set();
+  const STX_LG = { 'Orlen Basket Liga': 'Poland', 'Liga ACB': 'Spain, ACB', 'Primera FEB': 'Spain, Primera FEB', 'Segunda FEB': 'Spain, Segunda FEB', EuroLeague: 'EuroLeague', BBL: 'Germany', LKL: 'Lithuania', Basketligan: 'Sweden, SBL', 'ABA League': 'ABA League', 'LBA (Italy)': 'Italy', 'Champions League (BCL)': 'Champions League', 'FIBA Europe Cup': 'FIBA Europe Cup', 'Croatian Premier League': 'Croatia', 'Icelandic Premier League': 'Iceland', 'BLNO (Norway)': 'Norway', 'ProB (Germany)': 'Germany, ProB', 'Austrian Superliga': 'Austria', 'BBL Pokal (cup)': 'German cup', 'Champions League qualifiers': 'BCL qualifiers' };
+  const STX_COLS = [['player', 'Player', 'l'], ['comp', 'League', 'l stx-lgc'], ['gp', 'GP'], ['min', 'MIN', 'hide-sm'], ['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST'], ['ts', 'TS%'], ['tp', '3P%', 'hide-sm'], ['eff', 'EFF'], ['spark', 'Last 8', 'hide-sm']];
+  const stxOk = { ts: (p) => p.gp >= 2 && p.fga >= 15, tp: (p) => p.gp >= 2 && p.tpa >= 10, eff: (p) => p.gp >= 2 && p.eff != null, def: (p) => p.gp >= 2 };
+  function stxRows() {
+    const st = ds('stats'), pl = ds('players'); if (!st || !pl) return null;
+    const out = [];
+    pl.forEach((p) => {
+      const rows = st.filter((r) => isSame(r.player, p.player) && Number(r.gp) > 0 && (!r.season || r.season === '2026-27')).sort((a, b) => Number(b.gp) - Number(a.gp));
+      if (!rows.length) return;
+      const all = playerGames(p.player).filter((g) => g.note !== 'DNP');
+      const comps = rows.map((r) => {
+        const gs = all.filter((g) => norm(g.competition) === norm(r.competition));
+        let pts = 0, fga = 0, fta = 0, tpm = 0, tpa = 0; const eff = [];
+        gs.forEach((g) => { const fg = ntzSplit(g.fg), ft = ntzSplit(g.ft), th = ntzSplit(g.three); if (!fg || !ft) return; pts += Number(g.pts) || 0; fga += fg[1]; fta += ft[1]; if (th) { tpm += th[0]; tpa += th[1]; }
+          const v = ['pts', 'reb', 'ast', 'stl', 'blk', 'tov'].map((k) => (g[k] === '' || g[k] == null || isNaN(Number(g[k])) ? null : Number(g[k])));
+          if (!v.includes(null)) eff.push(v[0] + v[1] + v[2] + v[3] + v[4] - (fg[1] - fg[0]) - (ft[1] - ft[0]) - v[5]); });
+        const gp = Number(r.gp);
+        return { row: r, comp: r.competition, gp, min: r.min === '' ? null : Number(r.min), pts: Number(r.pts), reb: Number(r.reb), ast: Number(r.ast),
+          ts: fga + fta > 0 ? (100 * pts) / (2 * (fga + 0.44 * fta)) : null, fga, tp: tpa ? (100 * tpm) / tpa : null, tpa,
+          eff: eff.length && eff.length >= Math.max(1, gp * 0.8) ? eff.reduce((a, b) => a + b, 0) / eff.length : null, spark: gs.slice(-8).map((g) => Number(g.pts) || 0), note: r.note || '' };
+      });
+      out.push(Object.assign({ player: p.player, club: p.club, level: p.level, comps }, comps[0]));
+    });
+    return out;
+  }
+  const stxFmt = (k, v) => (v == null || (typeof v === 'number' && isNaN(v)) ? '–' : k === 'ts' || k === 'tp' ? v.toFixed(1) + '%' : k === 'gp' ? String(Math.round(v)) : v.toFixed(1));
+  const stxRedraw = () => ['stx-lead', 'stx-tabs', 'stx-hd', 'stx-body'].forEach((k) => dash.draw(k));
+  dash.draw('stx-lead', (el) => {
+    el.replaceChildren();
+    const P = stxRows(); if (!P) return;
+    [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['ts', 'True shooting'], ['tp', 'Three-point'], ['eff', 'Efficiency']].forEach(([k, l]) => {
+      const f = stxOk[k] || stxOk.def; const p = P.filter(f).sort((a, b) => (b[k] ?? -1) - (a[k] ?? -1))[0]; if (!p) return;
+      const b = mk('button', stxSort === k ? 'on' : ''); b.type = 'button';
+      b.append(mk('span', 'k', l), mk('b', '', stxFmt(k, p[k])), mk('span', 'n', p.player));
+      b.onclick = () => { stxSort = k; stxRedraw(); };
+      el.append(b);
+    });
+  });
+  dash.draw('stx-tabs', (el) => {
+    el.replaceChildren();
+    const P = stxRows(); if (!P) return;
+    [['all', 'All'], ['NBA', 'NBA'], ['Europe', 'Europe'], ['NCAA', 'NCAA'], ['Pro', 'Other pro']].forEach(([k, l]) => {
+      const n = k === 'all' ? P.length : P.filter((p) => p.level === k).length; if (k !== 'all' && !n) return;
+      const b = mk('button', '', l); b.type = 'button'; b.append(mk('span', 'c', String(n))); b.setAttribute('aria-pressed', stxLvl === k ? 'true' : 'false');
+      b.onclick = () => { stxLvl = k; stxRedraw(); }; el.append(b);
+    });
+  });
+  dash.draw('stx-hd', (tr) => {
+    tr.replaceChildren();
+    STX_COLS.forEach(([k, l, c]) => {
+      const sortable = !['player', 'comp', 'spark'].includes(k);
+      const th = mk('th', [c || '', stxSort === k ? 'on' : ''].join(' ').trim(), l);
+      if (sortable) { th.tabIndex = 0; th.setAttribute('aria-sort', stxSort === k ? 'descending' : 'none'); const go = () => { stxSort = k; stxRedraw(); }; th.onclick = go; th.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }; }
+      tr.append(th);
+    });
+  });
+  dash.draw('stx-body', (tb) => {
+    tb.replaceChildren();
+    const P = stxRows(); if (!P) { const tr = mk('tr'); tr.append(mk('td', '', '—')); tb.append(tr); return; }
+    const best = {}; ['pts', 'reb', 'ast', 'ts', 'tp', 'eff', 'min'].forEach((k) => { const f = stxOk[k] || stxOk.def; best[k] = Math.max(...P.filter(f).map((p) => (p[k] == null ? -1 : p[k]))); });
+    const qEl = document.querySelector('[data-stx-q]'), q = qEl ? qEl.value.trim().toLowerCase() : '';
+    const rows = P.filter((p) => (stxLvl === 'all' || p.level === stxLvl) && (!q || [p.player, p.club, ...p.comps.map((c) => c.comp + ' ' + (STX_LG[c.comp] || ''))].join(' ').toLowerCase().includes(q)))
+      // shooting columns: players under the minimum attempts go to the bottom (one 1/1 night isn't 100%)
+      .sort((a, b) => { const v = (p) => (['ts', 'tp'].includes(stxSort) && !stxOk[stxSort](p) ? -1 : p[stxSort] ?? -1); return v(b) - v(a); });
+    if (!rows.length) { const tr = mk('tr'); const td = mk('td', 'stx-none', `Nothing matches “${q}”. Try a last name, a club or a league.`); td.colSpan = STX_COLS.length; tr.append(td); tb.append(tr); return; }
+    const cells = (tr, p, sub) => {
+      STX_COLS.slice(2).forEach(([k, , c]) => {
+        const td = mk('td', c || '');
+        if (k === 'spark') { const s = mk('span', 'stx-spark'); const m = Math.max(20, ...p.spark); p.spark.forEach((v) => { const i = mk('i'); i.style.height = Math.max(8, (v / m) * 100) + '%'; s.append(i); }); td.append(s); }
+        else { const f = stxOk[k] || stxOk.def; const top = !sub && p[k] != null && p[k] === best[k] && f(p); td.append(mk('span', (k === 'gp' ? '' : 'stx-num') + (top ? ' top' : ''), stxFmt(k, p[k]))); }
+        tr.append(td);
+      });
+    };
+    rows.forEach((p) => {
+      const tr = mk('tr', 'stx-m');
+      const td = mk('td', 'stx-pl'); const pn = mk('div', 'stx-pn');
+      const av = mk('span', 'stx-av'); const ph = photoFor(p.player);
+      if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = ''; img.loading = 'lazy'; faceFit(img, ph); av.append(img); } else av.textContent = initials(p.player);
+      const id = mk('div'); id.append(names(p.player));
+      const extra = p.comps.length - 1;
+      if (extra) { const b = mk('button', 'stx-more', `+${extra} ${extra === 1 ? 'competition' : 'competitions'}`); b.type = 'button'; b.setAttribute('aria-expanded', stxOpen.has(p.player) ? 'true' : 'false'); b.onclick = () => { stxOpen.has(p.player) ? stxOpen.delete(p.player) : stxOpen.add(p.player); dash.draw('stx-body'); }; id.append(b); }
+      if (p.note) { const i = mk('span', 'stx-info', 'ⓘ'); i.title = p.note; i.tabIndex = 0; i.setAttribute('aria-label', p.note); id.append(i); }
+      id.append(mk('small', '', p.club || ''), mk('span', 'stx-lgm', STX_LG[p.comp] || p.comp));
+      pn.append(av, id); td.append(pn); tr.append(td, mk('td', 'stx-lgc', STX_LG[p.comp] || p.comp));
+      cells(tr, p); tb.append(tr);
+      if (stxOpen.has(p.player)) p.comps.slice(1).forEach((c) => { const sr = mk('tr', 'stx-sub'); sr.append(mk('td', 'stx-pl', 'also'), mk('td', 'stx-lgc', STX_LG[c.comp] || c.comp)); cells(sr, c, true); tb.append(sr); });
+    });
+  });
+  document.addEventListener('input', (e) => { if (e.target.matches && e.target.matches('[data-stx-q]')) dash.draw('stx-body'); });
+
   // ---- Sweden page: dark poster layout (squad from ntroster, numbers from the game logs)
   let ntzPos = 'all', ntzMode = 'club';
   const NTZ_LG = { 'Orlen Basket Liga': 'Poland', 'Liga ACB': 'Spain, ACB', 'Primera FEB': 'Spain, Primera FEB', EuroLeague: 'EuroLeague', BBL: 'Germany', LKL: 'Lithuania', Basketligan: 'Sweden, SBL', 'ABA League': 'ABA League' };

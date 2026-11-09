@@ -94,3 +94,11 @@ window.SA_I18N.RULES.unshift(...[["^Sweden (vs|at) (.+)$", "Sverige mot $2"], ["
 Object.assign(window.SA_I18N.D, { "days to go": "dagar kvar", "day to go": "dag kvar" });
 window.SA_I18N.RULES.unshift(["^(\\d+) players shoot below the squad's median of ([\\d.]+)%\\. (\\d+) of them (?:is a guard|are guards): (.+)\\.$", "$1 spelare skjuter under truppens median på $2 %. $3 av dem är guards: $4."], ["^(\\d+) players shoot below the squad's median of ([\\d.]+)%\\.$", "$1 spelare skjuter under truppens median på $2 %."]);
 Object.assign(window.SA_I18N.D, { "Club season": "Klubbsäsong", "🇸🇪 National team": "🇸🇪 Landslaget", "Points per game against true shooting for Sweden, games since 27 November 2026.": "Poäng per match mot true shooting för Sverige, matcher sedan 27 november 2026." });
+Object.assign(window.SA_I18N.D, {
+ "Season stats": "Säsongsstatistik",
+ "Every Swede abroad, one row per player in his main competition. Tap a column to sort, a leader to jump to that stat, a name for his profile.": "Varje svensk utomlands, en rad per spelare i hans huvudtävling. Tryck på en kolumn för att sortera, en ledare för att hoppa till statistiken, ett namn för profilen.",
+ "True shooting": "True shooting", "Three-point": "Trepoäng", "Efficiency": "Effektivitet", "Other pro": "Övrigt proffs", "League": "Liga", "Last 8": "Senaste 8", "also": "även",
+ "Search player, club or league": "Sök spelare, klubb eller liga",
+ "Per game, 2026-27, from the games we track (game logs and box scores). True shooting = points ÷ (2 × (FGA + 0.44 × FTA)); efficiency = points + rebounds + assists + steals + blocks − missed shots − turnovers, shown where the box scores are complete. Leaders need 2+ games, true shooting 15+ field goal attempts and three-point 10+ attempts. Tap ⓘ for where a player's numbers come from.": "Per match, 2026-27, från matcherna vi bevakar (matchloggar och matchprotokoll). True shooting = poäng ÷ (2 × (skottförsök + 0,44 × straffförsök)); effektivitet = poäng + returer + assist + steals + block − missade skott − bollförluster, där matchprotokollen är kompletta. Ledare kräver minst 2 matcher, true shooting minst 15 skottförsök och trepoäng minst 10 försök. Tryck på ⓘ för var spelarens siffror kommer ifrån."
+});
+window.SA_I18N.RULES.unshift(["^\\+(\\d+) competitions?$", "+$1 tävlingar"]);
