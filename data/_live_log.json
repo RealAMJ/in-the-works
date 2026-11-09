@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T21:57:02+01:00",
+ "at": "2026-11-09T21:58:18+01:00",
  "log": [
   {
    "game": "g20261109vir",
@@ -9,17 +9,17 @@
    "game": "g20261109vir",
    "src": "LBA (legabasket.it)",
    "period": 4,
-   "clock": "",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Virtus Costa Bologna",
-     93,
+     95,
      12
     ],
     [
      "Tezenis Verona",
-     79,
+     81,
      11
     ]
    ]
