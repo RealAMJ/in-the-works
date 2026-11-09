@@ -40052,7 +40052,7 @@
   "team": "Sacramento Kings",
   "player": "De'Andre Hunter",
   "pos": "",
-  "min": 22,
+  "min": 23,
   "pts": 7,
   "reb": 3,
   "ast": 1,
@@ -40062,7 +40062,7 @@
   "fg": "2/7",
   "three": "1/4",
   "ft": "2/2",
-  "pm": -8,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -40146,7 +40146,7 @@
   "fg": "8/14",
   "three": "2/6",
   "ft": "3/3",
-  "pm": -7,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ESPN"
