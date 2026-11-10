@@ -617,13 +617,13 @@
   "time": "19:04",
   "home": "Norrköping Dolphins",
   "away": "Uppsala Basket",
-  "hs": 22,
-  "as_": 21,
+  "hs": 25,
+  "as_": 24,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851700/summary",
   "box": false,
-  "clock": "00:55",
-  "period": 1
+  "clock": "09:06",
+  "period": 2
  },
  {
   "game_id": "sbl-2851701",
@@ -631,12 +631,12 @@
   "time": "19:04",
   "home": "Södertälje BBK",
   "away": "Nässjö Basket",
-  "hs": 11,
-  "as_": 16,
+  "hs": 14,
+  "as_": 21,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851701/summary",
   "box": false,
-  "clock": "02:05",
+  "clock": "00:10",
   "period": 1
  },
  {
@@ -645,13 +645,13 @@
   "time": "19:04",
   "home": "Köping Stars",
   "away": "Jämtland Basket",
-  "hs": 18,
-  "as_": 24,
+  "hs": 21,
+  "as_": 27,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851702/summary",
   "box": false,
-  "clock": "00:34",
-  "period": 1
+  "clock": "09:17",
+  "period": 2
  },
  {
   "game_id": "sbl-2851792",
