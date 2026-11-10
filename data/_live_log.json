@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T04:24:23+01:00",
+ "at": "2026-11-10T04:26:13+01:00",
  "log": [
   {
    "game": "g20261110ewu",
@@ -9,17 +9,17 @@
    "game": "g20261110ewu",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:22",
+   "clock": "01:44",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     28,
+     34,
      15
     ],
     [
      "Oregon State Beavers",
-     42,
+     43,
      13
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261110stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:44",
+   "clock": "08:58",
    "done": false,
    "teams": [
     [
      "Rice Owls",
-     16,
+     18,
      16
     ],
     [
      "Stanford Cardinal",
-     24,
+     26,
      16
     ]
    ]
