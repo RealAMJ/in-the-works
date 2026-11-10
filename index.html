@@ -2868,7 +2868,14 @@
   // national team players who play at home: club from the roster, e.g. "Jämtland Basket (Basketligan, Sweden)"
   function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); if (r && r.home_club) return r.home_club.replace(/\s*\(.*\)\s*$/, ''); const s = (ds('sblplayers') || []).find((x) => isSame(x.player, name)); return s ? s.club : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
-  const PP_KIND = { 'season': ['avg', 'Numbers'], 'where he ranks': ['rank', 'Ranking'], 'splits and highs': ['split', 'Splits'], 'last games': ['games', 'Recent'], 'standout games': ['star', 'Highlights'], 'honours': ['trophy', 'Honours'], 'upcoming games': ['next', 'Schedule'], 'about': ['about', 'About'], 'game log': ['games', 'Every game'], 'career stats': ['career', 'Career'], 'bio': ['about', 'Bio'], 'did you know': ['star', 'Did you know'], 'career path': ['trophy', 'Career path'] };
+  const PP_KIND = { 'season': ['avg', 'Numbers'], 'where he ranks': ['rank', 'Ranking'], 'splits and highs': ['split', 'Splits'], 'last games': ['games', 'Recent'], 'standout games': ['star', 'Highlights'], 'honours': ['trophy', 'Honours'], 'upcoming games': ['next', 'Schedule'], 'about': ['about', 'Story'], 'game log': ['games', 'Every game'], 'career stats': ['career', 'Career'], 'bio': ['about', 'Bio'], 'did you know': ['star', 'Did you know'], 'career path': ['trophy', 'Career path'] };
+  // numbers count up the first time they scroll into view
+  function ppCount(root) {
+    if (!window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
+    root.querySelectorAll('b[data-to]').forEach((b) => { const to = Number(b.dataset.to); if (!b.dataset.to || isNaN(to)) return; const dec = (b.dataset.to.split('.')[1] || '').length;
+      const run = () => { const t0 = performance.now(), d = 700; const step = (t) => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); b.textContent = (to * e).toFixed(dec); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); };
+      const io = new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) { io.disconnect(); run(); } }), { threshold: .4 }); io.observe(b); });
+  }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); const key = Object.keys(PP_KIND).find((k) => String(title).toLowerCase().startsWith(k)); if (key) { s.dataset.k = PP_KIND[key][0]; s.dataset.kick = PP_KIND[key][1]; } s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face
   // has the same size and place in the circle, whatever the photo looks like
@@ -2973,17 +2980,113 @@
     fact('Born', bio && bornTxt(bio.born)); fact('Birthplace', bio && tx(bio, 'birthplace')); fact('Club', (p && p.club) || hc);
     el.append(facts);
     el.append(tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); }));
+    if (ppTab === 'overview') requestAnimationFrame(() => {  // jump menu: one link per section, the one in view is lit
+      const secs = [...el.querySelectorAll(':scope > .pp-sec[data-k], :scope > .pp-two > .pp-sec[data-k]')]; if (secs.length < 3) return;
+      el.querySelectorAll(':scope > .pp-jump').forEach((x) => x.remove()); const nav = mk('nav', 'pp-jump'); nav.setAttribute('aria-label', 'Sections');
+      const short = { avg: 'Averages', glance: 'At a glance', rank: 'Ranks', split: 'Splits', games: 'Games', star: 'Standouts', trophy: 'Honours', next: 'Upcoming', about: 'About' };
+      secs.forEach((x) => { const b = mk('button', '', short[x.dataset.k] || x.querySelector('h2').textContent); b.type = 'button'; b.onclick = () => x.scrollIntoView({ behavior: 'smooth', block: 'start' }); b._t = x; nav.append(b); });
+      const tabs = el.querySelector(':scope > .subnav'); if (tabs) tabs.after(nav);
+      if ('IntersectionObserver' in window) { const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) nav.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b._t === e.target)); }), { rootMargin: '-40% 0px -55% 0px' }); secs.forEach((x) => io.observe(x)); }
+    });
     const cur = rows.find((r) => r.competition === ppComp[key]) || rows[0];
 
     if (ppTab === 'overview') {
+      if (window.PPCALM && cur) {
+        // ---- calmer overview: one headline number per section, words before numbers, details folded away
+        const cg = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
+        const last = parts[parts.length - 1];
+        // 1. the season in one number
+        const s1 = ppSection('This season'); s1.classList.add('cz'); s1.removeAttribute('data-k'); s1.removeAttribute('data-kick');
+        const hero = mk('div', 'cz-hero');
+        const hl = mk('div', 'cz-hl'); hl.append(mk('b', '', f1x(cur.pts)), mk('span', '', 'points a game'));
+        const sub = mk('p', 'cz-line'); sub.append(mk('strong', '', f1x(cur.reb)), ' rebounds · ', mk('strong', '', f1x(cur.ast)), ' assists · ', mk('strong', '', f1x(cur.min)), ' minutes');
+        const fg = fracPct(cg, 'fg'), ft = fracPct(cg, 'ft'), th3 = fracPct(cg, 'three');
+        const q = mk('p', 'cz-quiet', [`${cur.gp} games in ${cur.competition}`, fg ? `${fg.p.toFixed(0)}% FG` : '', th3 ? `${th3.p.toFixed(0)}% 3P` : '', ft ? `${ft.p.toFixed(0)}% FT` : ''].filter(Boolean).join(' · '));
+        const left = mk('div', 'cz-l'); left.append(hl, sub, q);
+        // points per game as one small line
+        const pts = cg.slice(-10).map((g) => Number(g.pts) || 0);
+        const right = mk('div', 'cz-r');
+        if (pts.length >= 2) { const NS = 'http://www.w3.org/2000/svg', W = 260, H = 70, mx = Math.max(...pts, 1);
+          const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.classList.add('cz-spark');
+          const X = (i) => 6 + i * (W - 12) / (pts.length - 1), Y = (v) => H - 8 - v / mx * (H - 18);
+          const pl = document.createElementNS(NS, 'polyline'); pl.setAttribute('points', pts.map((v, i) => `${X(i)},${Y(v)}`).join(' ')); svg.append(pl);
+          const c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', X(pts.length - 1)); c.setAttribute('cy', Y(pts[pts.length - 1])); c.setAttribute('r', 4.5); svg.append(c);
+          right.append(svg, mk('span', 'cz-cap', `Points, last ${pts.length} games`)); }
+        hero.append(left, right); s1.append(hero); el.append(s1);
+        // 2. at a glance: the ranks and best game as sentences
+        const s2 = ppSection('At a glance'); s2.classList.add('cz'); s2.removeAttribute('data-k'); s2.removeAttribute('data-kick');
+        const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
+        const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b0 = best.get(k); if (!b0 || Number(r.gp) > Number(b0.gp)) best.set(k, r); });
+        const pool = [...best.values()]; const rk = {};
+        ['pts', 'reb', 'ast'].forEach((k) => { const so = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); rk[k] = { i: so.findIndex((r) => isSame(r.player, name)), n: so.length }; });
+        const lab = { pts: 'points', reb: 'rebounds', ast: 'assists' }; const ord = (i) => `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`;
+        const lead = Object.keys(rk).filter((k) => rk[k].i === 0), top = Object.keys(rk).filter((k) => rk[k].i > 0 && rk[k].i < 5);
+        const facts = mk('ul', 'cz-facts');
+        const fact = (icon, html) => { const li = mk('li'); li.append(mk('i', '', icon)); const t = mk('span'); t.innerHTML = html; li.append(t); facts.append(li); };
+        const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        if (lead.length) fact('★', `Leads all ${rk[lead[0]].n} Swedes in <b>${lead.map((k) => lab[k]).join(' and ')}</b>`);
+        top.forEach((k) => fact('↑', `<b>${ord(rk[k].i)}</b> in ${lab[k]} among ${rk[k].n} Swedes`));
+        const bg = cg.slice().sort((a, b) => (Number(b.pts) || 0) - (Number(a.pts) || 0))[0];
+        if (bg) fact('●', `Best game: <b>${esc(bg.pts)} points</b>${Number(bg.reb) >= 8 ? `, ${esc(bg.reb)} rebounds` : ''} ${bg.venue === 'Away' ? 'at' : 'vs'} ${esc(bg.opponent)} <em>${esc(dayFmt(bg.date))}</em>`);
+        const l5 = cg.slice(-5); if (l5.length >= 3) { const a5 = l5.reduce((t, g) => t + (Number(g.pts) || 0), 0) / l5.length; const d = a5 - Number(cur.pts); fact(d >= 0 ? '↗' : '↘', `Last ${l5.length} games: <b>${a5.toFixed(1)} points</b>, ${Math.abs(d).toFixed(1)} ${d >= 0 ? 'above' : 'below'} his average`); }
+        s2.append(facts); el.append(s2);
+        // 3. last games as quiet rows: points big, the rest small
+        const s3 = ppSection('Last games'); s3.classList.add('cz'); s3.removeAttribute('data-k'); s3.removeAttribute('data-kick');
+        const list = mk('div', 'cz-games');
+        games.filter((g) => g.note !== 'DNP').slice(-5).reverse().forEach((g) => { const r = mk('button', 'cz-g'); r.type = 'button'; r.onclick = () => showCard(g.game_id);
+          const res = String(g.result || ''); const w = mk('div', 'cz-gw'); w.append(mk('b', '', `${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', `${dayFmt(g.date)} · ${g.competition}`));
+          const rs = mk('span', 'cz-res ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res || '—');
+          const p2 = mk('div', 'cz-gp'); p2.append(mk('b', '', String(g.pts)), mk('span', '', 'pts'));
+          r.append(w, rs, p2, mk('span', 'cz-gx', `${g.reb} reb · ${g.ast} ast`)); list.append(r); });
+        s3.append(list); const more = mk('button', 'hc-more', 'Full game log →'); more.type = 'button'; more.onclick = () => { ppTab = 'log'; dash.draw('pp'); }; s3.append(more); el.append(s3);
+        // 4. details folded away, each with a one-line summary
+        const fold = (title, summary, body) => { const d = mk('details', 'cz-fold'); const sm = mk('summary'); sm.append(mk('b', '', title), mk('span', '', summary), mk('i', '', '+')); d.append(sm, body); return d; };
+        const box = mk('section', 'pp-sec cz cz-more'); box.append(mk('h2', '', 'More'));
+        if (cg.length >= 2) { const t = mk('table', 'cz-t'); const hr = mk('tr'); ['', 'GP', 'PTS', 'REB', 'AST'].forEach((x) => hr.append(mk('th', '', x))); t.append(hr);
+          const line = (lb, gs) => { if (!gs.length) return; const n = gs.length, av = (k) => (gs.reduce((s0, g) => s0 + (Number(g[k]) || 0), 0) / n).toFixed(1); const tr = mk('tr'); [lb, String(n), av('pts'), av('reb'), av('ast')].forEach((v) => tr.append(mk('td', '', v))); t.append(tr); };
+          line('Home', cg.filter((g) => g.venue === 'Home')); line('Away', cg.filter((g) => g.venue === 'Away')); line('Wins', cg.filter((g) => /^W/.test(g.result || ''))); line('Losses', cg.filter((g) => /^L/.test(g.result || '')));
+          const hm = cg.filter((g) => g.venue === 'Home'), aw = cg.filter((g) => g.venue === 'Away'); const avp = (gs) => gs.length ? (gs.reduce((s0, g) => s0 + (Number(g.pts) || 0), 0) / gs.length).toFixed(1) : '–';
+          box.append(fold('Splits', [hm.length ? `${avp(hm)} pts at home` : '', aw.length ? `${avp(aw)} away` : ''].filter(Boolean).join(', ') || 'Home, away, wins and losses', t)); }
+        const sl = realHl().filter((r) => isSame(r.player, name)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+        if (sl.length) { const ul = mk('ul', 'cz-list'); sl.forEach((r) => { const li = mk('li'); li.append(mk('b', '', tx(r, 'headline')), mk('span', '', r.date ? dayFmt(r.date) : '')); if (r.game_id) { li.classList.add('go'); li.onclick = () => showCard(r.game_id); } ul.append(li); }); box.append(fold('Standout games', `${sl.length} big night${sl.length === 1 ? '' : 's'} this season`, ul)); }
+        const hn = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
+        if (hn.length) { const ul = mk('ul', 'cz-list'); hn.forEach((h) => { const li = mk('li'); li.append(mk('b', '', h)); ul.append(li); }); box.append(fold('Honours', hn[0] + (hn.length > 1 ? ` and ${hn.length - 1} more` : ''), ul)); }
+        if (box.querySelector('details')) el.append(box);
+        const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', '', 0, hc ? (ds('sblgames') || []) : null, name);
+        if (ups) el.append(ups);
+      } else {
       const sec = ppSection('Season 2026-27 averages');
       if (!cur) sec.append(mk('p', 'empty', 'No games yet this season.'));
       else {
         if (rows.length > 1) { const tabs = mk('div', 'pp-tabs'); rows.forEach((r) => { const b = mk('button', r === cur ? 'on' : '', r.competition); b.type = 'button'; b.onclick = () => { ppComp[key] = r.competition; dash.draw('pp'); }; tabs.append(b); }); sec.append(tabs); }
         const cg = games.filter((g) => norm(g.competition) === norm(cur.competition));
+        // ranks among the Swedes we track (for the small "1st among Swedes" note under each number)
+        const allS = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
+        const bestS = new Map(); allS.forEach((r) => { const k0 = norm(r.player); const b0 = bestS.get(k0); if (!b0 || Number(r.gp) > Number(b0.gp)) bestS.set(k0, r); });
+        const poolS = [...bestS.values()]; const rankOf = (k) => { const so = poolS.filter((r) => r[k] !== '' && r[k] != null).sort((x, y) => Number(y[k]) - Number(x[k])); const i = so.findIndex((r) => isSame(r.player, name)); return i < 0 ? '' : `${i + 1}${['st', 'nd', 'rd'][i] || 'th'} among Swedes`; };
+        // Season / Last 5 / Career switch
+        const cgp = cg.filter((g) => g.note !== 'DNP'), l5 = cgp.slice(-5);
+        const avgOf = (gs, k) => gs.length ? gs.reduce((t, g) => t + (Number(g[k]) || 0), 0) / gs.length : null;
+        const car = (ds('career') || []).filter((r) => isSame(r.player, name) && Number(r.gp) > 0);
+        const carAvg = (k) => { const rowsC = car.concat([{ gp: Number(cur.gp), [k]: Number(cur[k]) }]); const n = rowsC.reduce((t, r) => t + Number(r.gp), 0); return n ? rowsC.reduce((t, r) => t + Number(r.gp) * (Number(r[k]) || 0), 0) / n : null; };
+        const modes = [['season', 'Season', () => ({ pts: cur.pts, reb: cur.reb, ast: cur.ast, min: cur.min, note: `${cur.gp} games` })]];
+        if (l5.length >= 3 && l5.length < cgp.length) modes.push(['l5', 'Last 5', () => ({ pts: avgOf(l5, 'pts'), reb: avgOf(l5, 'reb'), ast: avgOf(l5, 'ast'), min: avgOf(l5, 'min'), note: 'last 5 games' })]);
+        if (car.length) modes.push(['career', 'Career', () => ({ pts: carAvg('pts'), reb: carAvg('reb'), ast: carAvg('ast'), min: carAvg('min'), note: `${car.reduce((t, r) => t + Number(r.gp), 0) + Number(cur.gp)} games` })]);
+        const head = mk('div', 'pp-avhead');
         const big = mk('div', 'pp-big');
-        [['Points', cur.pts], ['Rebounds', cur.reb], ['Assists', cur.ast], ['Minutes', cur.min]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); big.append(d); });
-        sec.append(big);
+        const drawBig = (m) => { big.replaceChildren(); const v = modes.find((x) => x[0] === m)[2]();
+          [['Points', 'pts'], ['Rebounds', 'reb'], ['Assists', 'ast'], ['Minutes', 'min']].forEach(([k, f]) => { const d = mk('div'); const n = v[f]; const bb = mk('b', '', n == null || n === '' ? '–' : f1x(n)); bb.dataset.to = n == null || n === '' ? '' : Number(n).toFixed(1); d.append(bb, mk('span', '', k)); if (m === 'season') { const r = rankOf(f); if (r) d.append(mk('em', 'pp-rk' + (r.startsWith('1st') ? ' top' : ''), r)); } else d.append(mk('em', 'pp-rk', v.note)); big.append(d); });
+          ppCount(big); };
+        if (modes.length > 1) { const sw = mk('div', 'pp-mode'); modes.forEach(([k, l], i) => { const bt = mk('button', i ? '' : 'on', l); bt.type = 'button'; bt.onclick = () => { sw.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === bt)); drawBig(k); sec.querySelector('h2').textContent = k === 'season' ? 'Season 2026-27 averages' : k === 'l5' ? 'Last 5 games' : 'Career averages'; sec.classList.toggle('pp-notseason', k !== 'season'); }; sw.append(bt); }); head.append(sw); }
+        // points trend, last 10 games
+        const tp = cgp.slice(-10).map((g) => Number(g.pts) || 0);
+        if (tp.length >= 2) { const NS = 'http://www.w3.org/2000/svg', W = 220, H = 56, mx = Math.max(...tp, 1); const sv = document.createElementNS(NS, 'svg'); sv.setAttribute('viewBox', `0 0 ${W} ${H}`); sv.classList.add('pp-trend');
+          const X = (i) => 5 + i * (W - 10) / (tp.length - 1), Y = (v) => H - 6 - v / mx * (H - 14);
+          const ar = document.createElementNS(NS, 'polygon'); ar.setAttribute('points', `${X(0)},${H} ` + tp.map((v, i) => `${X(i)},${Y(v)}`).join(' ') + ` ${X(tp.length - 1)},${H}`); sv.append(ar);
+          const pl = document.createElementNS(NS, 'polyline'); pl.setAttribute('points', tp.map((v, i) => `${X(i)},${Y(v)}`).join(' ')); sv.append(pl);
+          const c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', X(tp.length - 1)); c.setAttribute('cy', Y(tp[tp.length - 1])); c.setAttribute('r', 4); sv.append(c);
+          const tw0 = mk('div', 'pp-trendw'); tw0.append(sv, mk('span', '', `Points, last ${tp.length} games`)); head.append(tw0); }
+        sec.append(head, big); drawBig('season');
         const tiles = mk('div', 'pp-tiles');
         const tile = (k, v, s) => { const t = mk('div', 'pp-tile'); t.append(mk('span', 'v', v), mk('span', 'k', k)); if (s) t.append(mk('span', 'p', s)); tiles.append(t); };
         tile('Games', String(cur.gp));
@@ -2994,6 +3097,25 @@
       }
       el.append(sec);
       if (cur) {
+        { const cg = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
+          // at a glance: the ranks and best game as sentences
+          const s2 = ppSection('At a glance'); s2.removeAttribute('data-k'); s2.removeAttribute('data-kick');
+          const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
+          const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b0 = best.get(k); if (!b0 || Number(r.gp) > Number(b0.gp)) best.set(k, r); });
+          const pool = [...best.values()]; const rk = {};
+          ['pts', 'reb', 'ast'].forEach((k) => { const so = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); rk[k] = { i: so.findIndex((r) => isSame(r.player, name)), n: so.length }; });
+          const lab = { pts: 'points', reb: 'rebounds', ast: 'assists' }; const ord = (i) => `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`;
+          const lead = Object.keys(rk).filter((k) => rk[k].i === 0), top = Object.keys(rk).filter((k) => rk[k].i > 0 && rk[k].i < 5);
+          const facts = mk('ul', 'cz-facts');
+          const fact = (icon, html) => { const li = mk('li'); li.append(mk('i', '', icon)); const t = mk('span'); t.innerHTML = html; li.append(t); facts.append(li); };
+          const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+          if (lead.length) fact('★', `Leads all ${rk[lead[0]].n} Swedes in <b>${lead.map((k) => lab[k]).join(' and ')}</b>`);
+          top.forEach((k) => fact('↑', `<b>${ord(rk[k].i)}</b> in ${lab[k]} among ${rk[k].n} Swedes`));
+          const bg = cg.slice().sort((a, b) => (Number(b.pts) || 0) - (Number(a.pts) || 0))[0];
+          if (bg) fact('●', `Best game: <b>${esc(bg.pts)} points</b>${Number(bg.reb) >= 8 ? `, ${esc(bg.reb)} rebounds` : ''} ${bg.venue === 'Away' ? 'at' : 'vs'} ${esc(bg.opponent)} <em>${esc(dayFmt(bg.date))}</em>`);
+          const l5 = cg.slice(-5); if (l5.length >= 3) { const a5 = l5.reduce((t, g) => t + (Number(g.pts) || 0), 0) / l5.length; const d = a5 - Number(cur.pts); fact(d >= 0 ? '↗' : '↘', `Last ${l5.length} games: <b>${a5.toFixed(1)} points</b>, ${Math.abs(d).toFixed(1)} ${d >= 0 ? 'above' : 'below'} his average`); }
+          s2.append(facts); el.append(s2);
+          s2.dataset.k = 'glance'; s2.dataset.kick = 'In short'; }
         const cg2 = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
         const avg = Number(cur.pts);
         // 2. rank among the Swedes we track (whole-league ranks aren't available for every league)
@@ -3002,10 +3124,12 @@
           const pool = [...best.values()]; const rk = mk('div', 'pp-ranks');
           [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['min', 'Minutes']].forEach(([k, l]) => { const sorted = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); const i = sorted.findIndex((r) => isSame(r.player, name)); if (i < 0) return;
             const d = mk('div'); d.append(mk('b', '', `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`), mk('span', '', `${l} among ${sorted.length} Swedes`)); rk.append(d); });
-          if (rk.childNodes.length) { const rs = ppSection('Where he ranks', 'Among the Swedes we track this season, each in his main competition (2+ games).'); rs.append(rk); el.append(rs); } }
+          if (rk.childNodes.length) { const firsts = [...rk.querySelectorAll('b')].filter((x) => x.textContent === '1st').length; const rs = ppSection('Where he ranks', firsts ? `First among all Swedes in ${firsts} categor${firsts === 1 ? 'y' : 'ies'}.` : 'Among the Swedes we track this season, each in his main competition (2+ games).'); rs.append(rk); el.append(rs); } }
         // 3. splits and 4. highs
         if (cg2.length >= 2) {
-          const sp = ppSection('Splits and highs', `${cur.competition}, this season.`); const wrap2 = mk('div', 'pp-splitwrap');
+          const avp = (gs) => gs.length ? gs.reduce((t, g) => t + (Number(g.pts) || 0), 0) / gs.length : null; const hmA = avp(cg2.filter((g) => g.venue === 'Home')), awA = avp(cg2.filter((g) => g.venue === 'Away'));
+          const take = hmA != null && awA != null ? (hmA >= awA ? `Better at home: ${hmA.toFixed(1)} points, ${awA.toFixed(1)} away.` : `Better on the road: ${awA.toFixed(1)} points, ${hmA.toFixed(1)} at home.`) : `${cur.competition}, this season.`;
+          const sp = ppSection('Splits and highs', take); const wrap2 = mk('div', 'pp-splitwrap');
           const tw = mk('div', 'stx-tw'); const t = mk('table', 'stx-t pp-split'); const hr = mk('tr'); ['', 'GP', 'PTS', 'REB', 'AST', 'FG%'].forEach((x, i) => hr.append(mk('th', i ? '' : 'l', x))); const th = mk('thead'); th.append(hr); t.append(th); const tb = mk('tbody');
           const line = (lab, gs) => { if (!gs.length) return; const n = gs.length, a = (k) => (gs.reduce((s, g) => s + (Number(g[k]) || 0), 0) / n).toFixed(1); const fg = fracPct(gs, 'fg'); const tr = mk('tr'); [lab, String(n), a('pts'), a('reb'), a('ast'), fg ? fg.p.toFixed(1) : '–'].forEach((v, i) => tr.append(mk('td', i ? '' : 'l', v))); tb.append(tr); };
           line('Season', cg2); line('Last 5', cg2.slice(-5)); line('Home', cg2.filter((g) => g.venue === 'Home')); line('Away', cg2.filter((g) => g.venue === 'Away')); line('Wins', cg2.filter((g) => /^W/.test(g.result || g.score || ''))); line('Losses', cg2.filter((g) => /^L/.test(g.result || g.score || '')));
@@ -3016,7 +3140,8 @@
           wrap2.append(tw, hi); sp.append(wrap2); el.append(sp);
         }
       }
-      const lg = ppSection('Last games', 'Tap a game for the full game center. The arrow compares points with his season average in that competition.');
+      const lgW = games.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = games.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
+      const lg = ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. Tap a game for the full game center.` : 'Tap a game for the full game center.');
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
         const strip = mk('div', 'lg-row');
@@ -3044,6 +3169,7 @@
       el.append(two);
       const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null, name);
       if (ups) el.append(ups);
+      }
     }
 
     if (ppTab === 'log') {
