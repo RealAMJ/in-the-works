@@ -2,781 +2,937 @@
  {
   "team": "Air Force",
   "src": "logos/air-force.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Anadolu Efes",
   "src": "logos/anadolu-efes.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": true
  },
  {
   "team": "Anadolu Efes Istanbul",
   "src": "logos/anadolu-efes-istanbul.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": true
  },
  {
   "team": "Anwil Włocławek",
   "src": "logos/anwil-wocawek.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "Arkansas",
   "src": "logos/arkansas.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Atlanta Hawks",
   "src": "logos/atlanta-hawks.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Austin Peay",
   "src": "logos/austin-peay.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "BC Vienna",
   "src": "logos/bc-vienna.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "Bahcesehir Koleji",
   "src": "logos/bahcesehir-koleji.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Barça",
   "src": "logos/barca.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Bayern Munich",
   "src": "logos/bayern-munich.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Belmont",
   "src": "logos/belmont.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Besiktas Istanbul",
   "src": "logos/besiktas-istanbul.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Bosna BH Telecom",
   "src": "logos/bosna-bh-telecom.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Brooklyn Nets",
   "src": "logos/brooklyn-nets.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Cal State Northridge",
   "src": "logos/cal-state-northridge.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Casademont Zaragoza",
   "src": "logos/casademont-zaragoza.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": true
  },
  {
   "team": "Central Michigan",
   "src": "logos/central-michigan.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Charlotte Hornets",
   "src": "logos/charlotte-hornets.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Cleveland Cavaliers",
   "src": "logos/cleveland-cavaliers.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Colgate",
   "src": "logos/colgate.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Crvena Zvezda Belgrade",
   "src": "logos/crvena-zvezda-belgrade.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Dallas Mavericks",
   "src": "logos/dallas-mavericks.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Delaware State",
   "src": "logos/delaware-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Denver",
   "src": "logos/denver.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Detroit Pistons",
   "src": "logos/detroit-pistons.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Drexel",
   "src": "logos/drexel.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Dubai Basketball",
   "src": "logos/dubai-basketball.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Dubrava",
   "src": "logos/dubrava.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "Dziki Warszawa",
   "src": "logos/dziki-warszawa.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "East Carolina",
   "src": "logos/east-carolina.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Eastern Washington",
   "src": "logos/eastern-washington.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Energa Trefl Sopot",
   "src": "logos/energa-trefl-sopot.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": true
  },
  {
   "team": "FC Bayern Munich",
   "src": "logos/fc-bayern-munich.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Fordham",
   "src": "logos/fordham.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Georgetown",
   "src": "logos/georgetown.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Golden State Warriors",
   "src": "logos/golden-state-warriors.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": true
  },
  {
   "team": "Grupo Ureta Tizona Burgos",
   "src": "logos/grupo-ureta-tizona-burgos.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Hapoel Tel Aviv",
   "src": "logos/hapoel-tel-aviv.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Hofstra",
   "src": "logos/hofstra.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Houston Rockets",
   "src": "logos/houston-rockets.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Idaho State",
   "src": "logos/idaho-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Indiana Pacers",
   "src": "logos/indiana-pacers.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": true
  },
  {
   "team": "Iona",
   "src": "logos/iona.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Iowa",
   "src": "logos/iowa.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Jackson State",
   "src": "logos/jackson-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "KK DepoLink Škrljevo",
   "src": "logos/kk-depolink-skrljevo.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "KK Dubrava",
   "src": "logos/kk-dubrava.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "KK Zabok",
   "src": "logos/kk-zabok.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "Kent State",
   "src": "logos/kent-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Kids&Us Manresa",
   "src": "logos/kids-us-manresa.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "King Szczecin",
   "src": "logos/king-szczecin.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "Kosner Baskonia",
   "src": "logos/kosner-baskonia.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": true
  },
  {
   "team": "LA Clippers",
   "src": "logos/la-clippers.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "LDLC ASVEL Villeurbanne",
   "src": "logos/ldlc-asvel-villeurbanne.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": true
  },
  {
   "team": "La Laguna Tenerife",
   "src": "logos/la-laguna-tenerife.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Legia Warszawa",
   "src": "logos/legia-warszawa.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "Lietkabelis",
   "src": "logos/lietkabelis.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Lipscomb",
   "src": "logos/lipscomb.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Little Rock",
   "src": "logos/little-rock.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Los Angeles Lakers",
   "src": "logos/los-angeles-lakers.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Louisiana",
   "src": "logos/louisiana.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "MKS Dąbrowa Górnicza",
   "src": "logos/mks-dabrowa-gornicza.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "Maccabi Tel Aviv",
   "src": "logos/maccabi-tel-aviv.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Maine",
   "src": "logos/maine.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Manhattan",
   "src": "logos/manhattan.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Marquette",
   "src": "logos/marquette.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Marshall",
   "src": "logos/marshall.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Miami Heat",
   "src": "logos/miami-heat.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Michigan",
   "src": "logos/michigan.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Milwaukee Bucks",
   "src": "logos/milwaukee-bucks.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Minnesota Timberwolves",
   "src": "logos/minnesota-timberwolves.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Mississippi State",
   "src": "logos/mississippi-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Monbus Obradoiro",
   "src": "logos/monbus-obradoiro.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": false
  },
  {
   "team": "Monmouth",
   "src": "logos/monmouth.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "NINERS Chemnitz",
   "src": "logos/niners-chemnitz.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "NJIT",
   "src": "logos/njit.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Navy",
   "src": "logos/navy.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Neptunas",
   "src": "logos/neptunas.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Nevada",
   "src": "logos/nevada.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "New Mexico",
   "src": "logos/new-mexico.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "New Orleans Pelicans",
   "src": "logos/new-orleans-pelicans.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": true
  },
  {
   "team": "Niners Chemnitz",
   "src": "logos/niners-chemnitz.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Nitra Blue Wings",
   "src": "logos/nitra-blue-wings.png",
-  "source": "FIBA LiveStats"
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "North Carolina Central",
   "src": "logos/north-carolina-central.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Northern Arizona",
   "src": "logos/northern-arizona.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Northwestern State",
   "src": "logos/northwestern-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Oakland",
   "src": "logos/oakland.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Ohio State",
   "src": "logos/ohio-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Olimpia Milano",
   "src": "logos/olimpia-milano.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Olympiacos",
   "src": "logos/olympiacos.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Olympiacos Piraeus",
   "src": "logos/olympiacos-piraeus.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Oregon",
   "src": "logos/oregon.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Oregon State",
   "src": "logos/oregon-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Orlando Magic",
   "src": "logos/orlando-magic.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "PGE Start Lublin",
   "src": "logos/pge-start-lublin.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "Panathinaikos Athens",
   "src": "logos/panathinaikos-athens.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Partizan",
   "src": "logos/partizan.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Partizan Belgrade",
   "src": "logos/partizan-belgrade.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Philadelphia 76ers",
   "src": "logos/philadelphia-76ers.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": true
  },
  {
   "team": "Providence",
   "src": "logos/providence.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Real Madrid",
   "src": "logos/real-madrid.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Recoletas Salud San Pablo Burgos",
   "src": "logos/recoletas-salud-san-pablo-burgos.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Rhode Island",
   "src": "logos/rhode-island.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Rice",
   "src": "logos/rice.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Robert Morris",
   "src": "logos/robert-morris.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Rostock Seawolves",
   "src": "logos/rostock-seawolves.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Río Breogán",
   "src": "logos/rio-breogan.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": false
  },
  {
   "team": "SIU Edwardsville",
   "src": "logos/siu-edwardsville.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "SKYLINERS Juniors",
   "src": "logos/skyliners-juniors.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "SMU",
   "src": "logos/smu.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Sacramento Kings",
   "src": "logos/sacramento-kings.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": false
  },
  {
   "team": "Sacred Heart",
   "src": "logos/sacred-heart.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "San Jose State",
   "src": "logos/san-jose-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "San Pablo Burgos",
   "src": "logos/san-pablo-burgos.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Santa Clara",
   "src": "logos/santa-clara.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Seattle U",
   "src": "logos/seattle-u.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Siauliai",
   "src": "logos/siauliai.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Skyliners Juniors (Frankfurt)",
   "src": "logos/skyliners-juniors-frankfurt.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Southeast Missouri State",
   "src": "logos/southeast-missouri-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "St. Bonaventure",
   "src": "logos/st-bonaventure.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "St. John's",
   "src": "logos/st-john-s.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Stanford",
   "src": "logos/stanford.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Surne Bilbao",
   "src": "logos/surne-bilbao.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": false
  },
  {
   "team": "Syracuse",
   "src": "logos/syracuse.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Tennessee Tech",
   "src": "logos/tennessee-tech.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "UC Irvine",
   "src": "logos/uc-irvine.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "UC Riverside",
   "src": "logos/uc-riverside.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "UCAM Murcia",
   "src": "logos/ucam-murcia.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": true
  },
  {
   "team": "UConn",
   "src": "logos/uconn.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "UIC",
   "src": "logos/uic.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "UMBC",
   "src": "logos/umbc.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "UNC Wilmington",
   "src": "logos/unc-wilmington.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "UNLV",
   "src": "logos/unlv.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "USC",
   "src": "logos/usc.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "UTSA",
   "src": "logos/utsa.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Utah Jazz",
   "src": "logos/utah-jazz.png",
-  "source": "NBA (ESPN)"
+  "source": "NBA (ESPN)",
+  "dark": true
  },
  {
   "team": "Utah State",
   "src": "logos/utah-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Utah Tech",
   "src": "logos/utah-tech.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "VEF Riga",
   "src": "logos/vef-riga.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "VMI",
   "src": "logos/vmi.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Valencia Basket",
   "src": "logos/valencia-basket.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Vermont",
   "src": "logos/vermont.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Virtus Bologna",
   "src": "logos/virtus-bologna.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Western Carolina",
   "src": "logos/western-carolina.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Wichita State",
   "src": "logos/wichita-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "William & Mary",
   "src": "logos/william-mary.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Wisconsin",
   "src": "logos/wisconsin.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Wyoming",
   "src": "logos/wyoming.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Xavier",
   "src": "logos/xavier.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": true
  },
  {
   "team": "Youngstown State",
   "src": "logos/youngstown-state.png",
-  "source": "NCAA (ESPN)"
+  "source": "NCAA (ESPN)",
+  "dark": false
  },
  {
   "team": "Zalgiris Kaunas",
   "src": "logos/zalgiris-kaunas.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  },
  {
   "team": "Zastal Zielona Góra",
   "src": "logos/zastal-zielona-gora.png",
-  "source": "Orlen Basket Liga (plk.pl)"
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
  },
  {
   "team": "iLERNA Lleida",
   "src": "logos/ilerna-lleida.png",
-  "source": "Liga ACB (acb.com)"
+  "source": "Liga ACB (acb.com)",
+  "dark": false
  },
  {
   "team": "ratiopharm Ulm",
   "src": "logos/ratiopharm-ulm.png",
-  "source": "EuroCup"
+  "source": "EuroCup",
+  "dark": false
  },
  {
   "team": "Žalgiris Kaunas",
   "src": "logos/zalgiris-kaunas.png",
-  "source": "EuroLeague"
+  "source": "EuroLeague",
+  "dark": false
  }
 ]

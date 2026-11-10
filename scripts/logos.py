@@ -153,6 +153,19 @@ def match(name, src):
 SKIP = {'Fribourg Olympic', 'Unicaja'}
 
 
+def is_dark(path):
+    """True when most of the logo has too little contrast with the site's navy (#071429) to be seen."""
+    from PIL import Image
+    def rl(c):
+        c = c / 255
+        return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+    lum = lambda p: 0.2126 * rl(p[0]) + 0.7152 * rl(p[1]) + 0.0722 * rl(p[2])
+    bg = lum((7, 20, 41))
+    px = [p for p in Image.open(path).convert('RGBA').getdata() if p[3] > 128]
+    low = sum(1 for p in px if (lum(p) + 0.05) / (bg + 0.05) < 2.0)
+    return bool(px) and low / len(px) > 0.5
+
+
 def main():
     from PIL import Image
     os.makedirs(OUT, exist_ok=True)
@@ -179,7 +192,7 @@ def main():
             print('could not fetch', name, e)
             missing.append(name)
             continue
-        have[name] = {'team': name, 'src': fn, 'source': m[2]}
+        have[name] = {'team': name, 'src': fn, 'source': m[2], 'dark': is_dark(os.path.join(ROOT, fn))}
         added += 1
     json.dump(sorted(have.values(), key=lambda r: r['team']), open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'added {added}, total {len(have)}, no logo for {len(missing)}')

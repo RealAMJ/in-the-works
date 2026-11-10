@@ -2781,10 +2781,10 @@
   let stripUser = false;
   // team logos (data/logos.json, copied by scripts/logos.py); teams without one keep the coloured initials
   let logoMap = null, logoSrc = null;
-  function logoFor(name) { const L = ds('logos'); if (!L) return null; if (L !== logoSrc) { logoSrc = L; logoMap = new Map(L.map((r) => [norm(r.team), r.src])); } return logoMap.get(norm(name)) || null; }
+  function logoFor(name) { const L = ds('logos'); if (!L) return null; if (L !== logoSrc) { logoSrc = L; logoMap = new Map(L.map((r) => [norm(r.team), r])); } return logoMap.get(norm(name)) || null; }
   function crest(name, cls) {
     const lg = logoFor(name);
-    if (lg) { const c = mk('span', 'crest has-logo' + (cls ? ' ' + cls : '')); const im = new Image(); im.src = lg; im.alt = ''; im.loading = 'lazy'; im.decoding = 'async'; c.append(im); c.setAttribute('aria-hidden', 'true'); return c; }
+    if (lg) { const c = mk('span', 'crest has-logo' + (lg.dark ? ' dark' : '') + (cls ? ' ' + cls : '')); const im = new Image(); im.src = lg.src; im.alt = ''; im.loading = 'lazy'; im.decoding = 'async'; c.append(im); c.setAttribute('aria-hidden', 'true'); return c; }
     const c = mk('span', 'crest' + (cls ? ' ' + cls : ''), teamAbbr(name).slice(0, 3)); c.style.background = teamColor(name); c.setAttribute('aria-hidden', 'true'); return c; }
   function splitScore(r) { const m = /(\d+)\s*[-–]\s*(\d+)/.exec(String(r.score || '')); return m ? [Number(m[1]), Number(m[2])] : [null, null]; }
   function homeAway(r) {

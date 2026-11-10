@@ -2396,3 +2396,8 @@ html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: 
 .strip .st-team:not(.swe) .crest.has-logo img { opacity: .72; filter: saturate(.6) drop-shadow(0 0 .5px rgba(255,255,255,.45)); }
 .strip .st-team.swe .crest.has-logo img { filter: drop-shadow(0 0 .5px rgba(255,255,255,.45)); }
 .strip .st-g:hover .st-team .crest.has-logo img { opacity: 1; filter: none; }
+
+/* dark logos (navy, black, maroon: data/logos.json "dark") get a thin white outline, like a sticker, so they stand out on the navy */
+.crest.has-logo.dark img, .strip .st-team .crest.has-logo.dark img, .strip .st-team:not(.swe) .crest.has-logo.dark img { filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff); }
+.strip .st-team:not(.swe) .crest.has-logo.dark img { opacity: .85; }
+#game .gchx .crest.has-logo.dark img { filter: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 0 10px rgba(160,190,235,.35)); }
