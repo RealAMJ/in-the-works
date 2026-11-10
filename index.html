@@ -4734,20 +4734,29 @@
   let navLast = null, navRestoring = false;
   function navNote(name) {
     const cur = { page: name, player: ppPlayer, card: openCard, story: wkSel, team: tpTeam };
-    if (!navRestoring && navLast && (navLast.page !== name || (name === 'player' && navLast.player !== ppPlayer) || (name === 'game' && navLast.card !== openCard) || (name === 'team' && navLast.team !== tpTeam))) { navStack.push(navLast); if (navStack.length > 50) navStack.shift(); }
+    if (!navRestoring && navLast && (navLast.page !== name || (name === 'player' && navLast.player !== ppPlayer) || (name === 'game' && navLast.card !== openCard) || (name === 'team' && navLast.team !== tpTeam))) { navStack.push(navLast); if (navStack.length > 50) navStack.shift(); try { history.pushState({ sa: navStack.length }, ''); } catch (e) { /* old browser */ } }
     navLast = cur;
     document.querySelectorAll('[data-nav-back]').forEach((b) => { b.hidden = !navStack.length; });
   }
   function goBack() {
     const s = navStack.pop();
     navRestoring = true;
-    if (s) { ppPlayer = s.player; openCard = s.card; wkSel = s.story; tpTeam = s.team; showPage(s.page); }
+    if (s) { ppPlayer = s.player; openCard = s.card; wkSel = s.story; tpTeam = s.team; showPage(s.page, true);
+      dash.setLink(s.page === 'player' && s.player ? 'player=' + s.player : s.page === 'game' && s.card ? 'game=' + s.card : s.page === 'team' && s.team ? 'team=' + s.team : s.page); }
     else showPage('home');
     navRestoring = false;
     dash.draw('pp'); dash.draw('gc'); dash.draw('wk'); dash.draw('tp');
     scrollTopSw();
   }
-  document.querySelectorAll('[data-nav-back]').forEach((b) => b.addEventListener('click', goBack));
+  // the browser's own back button (and the phone's back gesture) works the same as ours: every page change adds a step
+  // to the browser history, going back pops our own history, and our Back button goes back through the browser
+  window.addEventListener('popstate', (e) => {
+    const want = (e.state && e.state.sa) || 0;
+    if (want >= navStack.length) return;  // forward, or a step we didn't make
+    while (navStack.length > want + 1) navStack.pop();
+    goBack();
+  });
+  document.querySelectorAll('[data-nav-back]').forEach((b) => b.addEventListener('click', () => { if (navStack.length && history.state && history.state.sa) history.back(); else goBack(); }));
 
 
   // ---- Upcoming games on a player profile: face-off card for the next game (his season, last meeting, rest, countdown), then compact rows

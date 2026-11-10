@@ -138,7 +138,7 @@
     try { localStorage.setItem(P_KEY, JSON.stringify(p)); } catch (e) { /* storage blocked */ }
   }
   function setLink(name) {
-    try { history.replaceState(null, '', name && name !== 'home' ? '#' + encodeURIComponent(name).replace(/%3D/g, '=').replace(/%20/g, '+') : location.pathname + location.search); } catch (e) { /* ignore */ }
+    try { history.replaceState(history.state, '', name && name !== 'home' ? '#' + encodeURIComponent(name).replace(/%3D/g, '=').replace(/%20/g, '+') : location.pathname + location.search); } catch (e) { /* ignore */ }
   }
 
   window.dash = { data: data, draw: draw, flush: flush, onData: onData, params: params, setParams: setParams, setLink: setLink };
