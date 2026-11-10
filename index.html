@@ -5166,7 +5166,7 @@
     const fld = (k, s) => { const l = mk('label', 'plx-fld'); l.append(mk('span', '', k), s); return l; };
     el.append(fld('Country', sel([['', 'All countries']].concat(countries.map((c) => [c, c])), curC, (v) => { document.querySelectorAll('[data-filter=players]').forEach((i) => { i.value = v; }); q.players = v.toLowerCase(); dash.draw('plxwhere'); dash.draw('pl-grid'); dash.draw('plxtable'); })),
       fld('Level', sel(lv, plLevel, (v) => { plLevel = v; dash.draw('pl-levels'); dash.draw('pl-grid'); dash.draw('plxtable'); })),
-      fld('Sort', sel([['league', 'League level'], ['pts', 'Points'], ['level', 'Level'], ['name', 'Name'], ['club', 'Club']], plSort, (v) => { plSort = v; document.querySelectorAll('[data-pl-sort]').forEach((x) => x.classList.toggle('on', x.dataset.plSort === v)); dash.draw('pl-grid'); dash.draw('plxtable'); })));
+      fld('Sort', sel([['league', 'League level'], ['pts', 'Points'], ['name', 'Name'], ['club', 'Club']], plSort, (v) => { plSort = v; document.querySelectorAll('[data-pl-sort]').forEach((x) => x.classList.toggle('on', x.dataset.plSort === v)); dash.draw('pl-grid'); dash.draw('plxtable'); })));
     const vw = mk('div', 'plx-vw'); [['cards', '▦ Cards'], ['list', '☰ List']].forEach(([k, l]) => { const b = mk('button', plView === k ? 'on' : '', l); b.type = 'button'; b.onclick = () => { plView = k; dash.draw('plxsent'); dash.draw('pl-grid'); dash.draw('plxtable'); }; vw.append(b); }); el.append(vw);
   });
   // compact list view
@@ -5194,11 +5194,10 @@
     const LV = { NBA: 0, Europe: 1, NCAA: 2, Pro: 3 };
     const lscore = (p) => { const comps = st.filter((x) => isSame(x.player, p.player)).map((x) => x.competition).concat(String(p.competitions || '').split(/\s*·\s*/).map((c) => c.replace(/\s*\(.*?\)/, '').trim())); return Math.max(0, ...comps.map((c) => { const t = tierFor(c) || tierFor(c.split(' ')[0]); return t ? Number(t.score) : 0; })); };
     list = list.map((p) => ({ p, s: best(p.player), ls: lscore(p) }));
-    list.sort((a, b) => plSort === 'league' ? b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : plSort === 'name' ? a.p.player.split(' ').slice(-1)[0].localeCompare(b.p.player.split(' ').slice(-1)[0]) : plSort === 'club' ? String(a.p.club).localeCompare(String(b.p.club)) : plSort === 'level' ? (LV[a.p.level] ?? 9) - (LV[b.p.level] ?? 9) || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1));
-    if (plSort === 'league' && plLevel === 'all') list.sort((a, b) => (LV[a.p.level] ?? 9) - (LV[b.p.level] ?? 9) || b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1));
+    list.sort((a, b) => plSort === 'league' ? b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : plSort === 'name' ? a.p.player.split(' ').slice(-1)[0].localeCompare(b.p.player.split(' ').slice(-1)[0]) : plSort === 'club' ? String(a.p.club).localeCompare(String(b.p.club)) : plSort === 'level' ? b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1));
     if (!list.length) { el.append(mk('p', 'hc-note', 'No players match.')); return; }
     const LVN = { NBA: 'NBA', Europe: 'Europe', NCAA: 'College (NCAA)', Pro: 'Other pro leagues' };
-    let lastLv = null; const group = plSort === 'league' && plLevel === 'all'; el.classList.toggle('grouped', group);
+    let lastLv = null; const group = false; el.classList.toggle('grouped', group);
     list.forEach(({ p, s, ls }) => {
       if (group && p.level !== lastLv) { lastLv = p.level; const n = list.filter((x) => x.p.level === p.level).length; const h = mk('div', 'plx-gh'); h.append(mk('h3', '', LVN[p.level] || p.level || 'Other'), mk('span', '', `${n} player${n === 1 ? '' : 's'}`)); el.append(h); }
       const c = mk('button', 'plc'); c.type = 'button'; c.dataset.key = p.player; c.style.setProperty('--tc', teamColor(p.club));
