@@ -42101,7 +42101,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42122,7 +42122,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42143,7 +42143,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42155,7 +42155,7 @@
   "min": 15,
   "pts": 6,
   "reb": 1,
-  "ast": 3,
+  "ast": 4,
   "stl": 2,
   "blk": 0,
   "tov": 2,
@@ -42164,7 +42164,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42185,7 +42185,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42206,7 +42206,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42227,11 +42227,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-8",
+  "row_id": "g20261110ewu-0-7",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Shaumba Ngoyi",
@@ -42248,16 +42248,16 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-9",
+  "row_id": "g20261110ewu-0-8",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Zach Trezvant",
   "pos": "",
-  "min": 10,
+  "min": 11,
   "pts": 6,
   "reb": 6,
   "ast": 0,
@@ -42269,32 +42269,32 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-10",
+  "row_id": "g20261110ewu-0-9",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Isak Homelius",
   "pos": "",
   "min": 14,
-  "pts": 7,
+  "pts": 10,
   "reb": 1,
   "ast": 0,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "2/4",
-  "three": "1/2",
+  "fg": "3/5",
+  "three": "2/3",
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-11",
+  "row_id": "g20261110ewu-0-10",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Cole Scherer",
@@ -42311,11 +42311,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-12",
+  "row_id": "g20261110ewu-0-11",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Jalen Griffith",
@@ -42332,11 +42332,11 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261110ewu-0-13",
+  "row_id": "g20261110ewu-0-12",
   "game_id": "g20261110ewu",
   "team": "Eastern Washington",
   "player": "Maddox Monson",
@@ -42353,7 +42353,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42374,7 +42374,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42395,7 +42395,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42416,7 +42416,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42437,7 +42437,7 @@
   "ft": "5/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42458,7 +42458,7 @@
   "ft": "10/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42479,7 +42479,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42500,7 +42500,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42521,7 +42521,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42542,7 +42542,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42563,7 +42563,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42584,7 +42584,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42605,7 +42605,7 @@
   "ft": "5/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42626,7 +42626,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -42804,7 +42804,7 @@
   "player": "Tristan Vukotic",
   "pos": "",
   "min": 10,
-  "pts": 0,
+  "pts": 3,
   "reb": 0,
   "ast": 1,
   "stl": 0,
@@ -42812,7 +42812,7 @@
   "tov": 1,
   "fg": "0/1",
   "three": "0/1",
-  "ft": "0/0",
+  "ft": "3/3",
   "pm": "",
   "swede": false,
   "state": "live",
