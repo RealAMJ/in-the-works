@@ -44,7 +44,7 @@
  {
   "team": "BC Luleå",
   "src": "logos/bc-lulea.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -86,7 +86,7 @@
  {
   "team": "Borås Basket",
   "src": "logos/boras-basket.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -260,7 +260,7 @@
  {
   "team": "Högsbo",
   "src": "logos/hogsbo.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -296,13 +296,13 @@
  {
   "team": "Jämtland Basket",
   "src": "logos/jamtland-basket.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
   "team": "KFUM Nässjö",
   "src": "logos/kfum-nassjo.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -350,7 +350,7 @@
  {
   "team": "Köping Stars",
   "src": "logos/koping-stars.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -542,7 +542,7 @@
  {
   "team": "Norrköping Dolphins",
   "src": "logos/norrkoping-dolphins.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -758,7 +758,7 @@
  {
   "team": "Sloga Uppsala",
   "src": "logos/sloga-uppsala.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -800,7 +800,7 @@
  {
   "team": "Södertälje Kings",
   "src": "logos/sodertalje-kings.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -872,13 +872,13 @@
  {
   "team": "Umeå BSKT",
   "src": "logos/umea-bskt.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
   "team": "Uppsala Basket",
   "src": "logos/uppsala-basket.png",
-  "source": "Basketligan (FIBA LiveStats)",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
