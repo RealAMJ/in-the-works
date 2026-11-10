@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T05:50:38+01:00",
+ "at": "2026-11-10T05:51:43+01:00",
  "log": [
   {
    "game": "g20261110stan",
@@ -9,17 +9,17 @@
    "game": "g20261110stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:37",
+   "clock": "04:42",
    "done": false,
    "teams": [
     [
      "Rice Owls",
-     62,
+     65,
      16
     ],
     [
      "Stanford Cardinal",
-     80,
+     82,
      16
     ]
    ]
