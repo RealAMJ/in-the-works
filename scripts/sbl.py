@@ -25,9 +25,37 @@ COMP = 48974
 SCHEDULE = f'https://hosted.dcd.shared.geniussports.com/SBF/en/competition/{COMP}/schedule'
 
 # League names -> the spellings the site uses (checked in this order, so Sloga comes before Uppsala Basket)
-TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'Borås Basket'), ('nassjo', 'KFUM Nässjö'),
-         ('hogsbo', 'Högsbo'), ('sodertalje', 'Södertälje Kings'), ('jamtland', 'Jämtland Basket'), ('norrkoping', 'Norrköping Dolphins'), ('koping', 'Köping Stars'),
-         ('umea', 'Umeå BSKT'), ('lulea', 'BC Luleå')]
+TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'Borås Basket'), ('nassjo', 'Nässjö Basket'),
+         ('hogsbo', 'Högsbo Lions'), ('sodertalje', 'Södertälje BBK'), ('jamtland', 'Jämtland Basket'), ('norrkoping', 'Norrköping Dolphins'), ('koping', 'Köping Stars'),
+         ('umea', 'Umeå Basket'), ('lulea', 'BC Luleå')]
+# the clubs' own names (Andres, 10 Nov): older spellings in our data are renamed by rename_teams()
+RENAMED = {'Södertälje Kings': 'Södertälje BBK', 'KFUM Nässjö': 'Nässjö Basket', 'Högsbo': 'Högsbo Lions', 'Umeå BSKT': 'Umeå Basket'}
+
+
+def rename_teams():
+    """Put the clubs' current names in every data file that holds this season's SBL games (team fields only;
+    career and bio text keep the name the club had then)."""
+    changed = False
+    for fn in ('sbl', 'sblbox', 'sblleague', 'sblgames', 'sblroster', 'sblplayers', 'gamelogs', 'stats', 'teamform', 'ntroster'):
+        p = os.path.join(U.DATA, fn + '.json')
+        if not os.path.exists(p):
+            continue
+        rows, n = json.load(open(p, encoding='utf-8')), 0
+        for r in rows if isinstance(rows, list) else []:
+            for k in ('team', 'opponent', 'home', 'away', 'club', 'home_club'):
+                if isinstance(r, dict) and r.get(k) in RENAMED:
+                    r[k] = RENAMED[r[k]]; n += 1
+        if n:
+            U.save(fn, rows); changed = True
+    lp = os.path.join(U.DATA, 'logos.json')
+    if os.path.exists(lp):
+        L = json.load(open(lp, encoding='utf-8')); n = 0
+        for r in L:
+            if r.get('team') in RENAMED:
+                r['team'] = RENAMED[r['team']]; n += 1
+        if n:
+            json.dump(sorted(L, key=lambda r: r['team']), open(lp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1); changed = True
+    return changed
 
 
 # One spelling per player: the league's feeds, RealGM and the squads spell some players differently.
@@ -355,9 +383,9 @@ def main(argv):
         except Exception as e:
             print(f'  sbl live: {e.__class__.__name__} {e}')
         return 0
-    league_changed = False
+    league_changed = rename_teams()
     try:
-        league_changed = league()
+        league_changed = league() or league_changed
     except Exception as e:
         print(f'  sbl league: {e.__class__.__name__} {e}')
     days = int(argv[argv.index('--days') + 1]) if '--days' in argv else 4

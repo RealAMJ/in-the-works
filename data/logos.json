@@ -258,7 +258,7 @@
   "dark": false
  },
  {
-  "team": "Högsbo",
+  "team": "Högsbo Lions",
   "src": "logos/hogsbo.png",
   "source": "Basketligan (sblherr.se)",
   "dark": false
@@ -296,12 +296,6 @@
  {
   "team": "Jämtland Basket",
   "src": "logos/jamtland-basket.png",
-  "source": "Basketligan (sblherr.se)",
-  "dark": false
- },
- {
-  "team": "KFUM Nässjö",
-  "src": "logos/kfum-nassjo.png",
   "source": "Basketligan (sblherr.se)",
   "dark": false
  },
@@ -564,6 +558,12 @@
   "dark": false
  },
  {
+  "team": "Nässjö Basket",
+  "src": "logos/kfum-nassjo.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
   "team": "Oakland",
   "src": "logos/oakland.png",
   "source": "NCAA (ESPN)",
@@ -798,7 +798,7 @@
   "dark": false
  },
  {
-  "team": "Södertälje Kings",
+  "team": "Södertälje BBK",
   "src": "logos/sodertalje-kings.png",
   "source": "Basketligan (sblherr.se)",
   "dark": false
@@ -870,7 +870,7 @@
   "dark": true
  },
  {
-  "team": "Umeå BSKT",
+  "team": "Umeå Basket",
   "src": "logos/umea-bskt.png",
   "source": "Basketligan (sblherr.se)",
   "dark": false

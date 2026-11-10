@@ -1,7 +1,7 @@
 [
  {
   "player": "Adam Rask",
-  "team": "Umeå BSKT",
+  "team": "Umeå Basket",
   "number": 11,
   "height": null,
   "nationality": "SE",
@@ -19,7 +19,7 @@
  },
  {
   "player": "Ali Ali",
-  "team": "Södertälje Kings",
+  "team": "Södertälje BBK",
   "number": 4,
   "height": null,
   "nationality": "US",
@@ -28,7 +28,7 @@
  },
  {
   "player": "Andrew Rohde",
-  "team": "Södertälje Kings",
+  "team": "Södertälje BBK",
   "number": 7,
   "height": null,
   "nationality": "US",
@@ -37,7 +37,7 @@
  },
  {
   "player": "Anes Zekovic",
-  "team": "Högsbo",
+  "team": "Högsbo Lions",
   "number": 6,
   "height": 198,
   "nationality": "SE",
@@ -46,7 +46,7 @@
  },
  {
   "player": "Anton Johansson",
-  "team": "KFUM Nässjö",
+  "team": "Nässjö Basket",
   "number": 4,
   "height": null,
   "nationality": "SE",
@@ -64,7 +64,7 @@
  },
  {
   "player": "Charles Barton",
-  "team": "Högsbo",
+  "team": "Högsbo Lions",
   "number": 8,
   "height": 193,
   "nationality": "SE",
@@ -145,7 +145,7 @@
  },
  {
   "player": "Jesper Hallberg",
-  "team": "Högsbo",
+  "team": "Högsbo Lions",
   "number": 5,
   "height": null,
   "nationality": "SE",
@@ -154,7 +154,7 @@
  },
  {
   "player": "Jhonny Tovar",
-  "team": "KFUM Nässjö",
+  "team": "Nässjö Basket",
   "number": 34,
   "height": null,
   "nationality": "VE",
@@ -253,7 +253,7 @@
  },
  {
   "player": "Rahsaan Edwards",
-  "team": "KFUM Nässjö",
+  "team": "Nässjö Basket",
   "number": 10,
   "height": null,
   "nationality": "US",
@@ -262,7 +262,7 @@
  },
  {
   "player": "Tomas Atli Bjarkason",
-  "team": "Högsbo",
+  "team": "Högsbo Lions",
   "number": 4,
   "height": null,
   "nationality": "DK",
