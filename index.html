@@ -2636,7 +2636,7 @@
     if (t.length && !live) el.append(mk('span', '', `${done} finished`));
     fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (v && v.updated) el.append(mk('span', '', 'Updated ' + new Date(v.updated).toLocaleTimeString('en-GB', { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit' }))); }).catch(() => {});
   });
-  // ---- Home: photo gallery of the players we have pictures of, biggest scorers first
+  // ---- Home: photo gallery of the Swedes abroad we have pictures of (not the SBL players at home), biggest scorers first
   function portraitFit(img, photo) {
     const fb = Array.isArray(photo.fbox) ? photo.fbox : null; if (!fb) { Object.assign(img.style, { width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%' }); return; }
     const [bx, by, bw, bh] = fb, k = 0.26 / bh;  // face = 26% of the card's height, its middle at 30% from the top
@@ -2647,7 +2647,7 @@
     const roster = new Map(); pl.forEach((r) => roster.set(norm(r.player), r)); (ds('sblplayers') || []).forEach((r) => { const n = r.player || r.name; if (n && !roster.has(norm(n))) roster.set(norm(n), Object.assign({ level: 'SBL', club: r.team || r.club }, r, { player: n })); });
     const st = ds('stats') || [];
     const ppg = (n) => { const r = st.filter((x) => isSame(x.player, n) && Number(x.gp) > 0 && (!x.season || x.season === '2026-27')).sort((a, b) => Number(b.gp) - Number(a.gp))[0]; return r ? r : null; };
-    const rows = ph.filter((r) => /^photos\//.test(String(r.src || '')) && roster.has(norm(r.player))).map((r) => ({ r, p: roster.get(norm(r.player)), s: ppg(r.player) }))
+    const rows = ph.filter((r) => /^photos\//.test(String(r.src || '')) && roster.has(norm(r.player)) && roster.get(norm(r.player)).level !== 'SBL').map((r) => ({ r, p: roster.get(norm(r.player)), s: ppg(r.player) }))
       .sort((a, b) => (Number(b.s && b.s.pts) || 0) - (Number(a.s && a.s.pts) || 0));
     rows.forEach(({ r, p, s }, i) => {
       const c = mk('button', 'hz-fc'); c.type = 'button'; c.onclick = () => showLog(r.player); c.style.setProperty('--d', (i * 40) + 'ms');
