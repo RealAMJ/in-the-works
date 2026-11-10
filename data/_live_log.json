@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T05:10:32+01:00",
+ "at": "2026-11-10T05:11:23+01:00",
  "log": [
   {
    "game": "g20261110ewu",
@@ -9,12 +9,12 @@
    "game": "g20261110ewu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:39",
+   "clock": "11:20",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     57,
+     59,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261110stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:49",
+   "clock": "18:23",
    "done": false,
    "teams": [
     [
