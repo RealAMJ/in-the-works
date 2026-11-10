@@ -5868,5 +5868,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "odinks-2026-11-10",
+  "player": "Michael Odinks",
+  "date": "2026-11-10",
+  "competition": "Basketligan",
+  "team": "Norrköping Dolphins",
+  "opponent": "Uppsala Basket",
+  "venue": "Home",
+  "result": "W 100-82",
+  "min": 28,
+  "pts": 10,
+  "reb": 3,
+  "ast": 0,
+  "source": "FIBA LiveStats (Basketligan, game 2851700)",
+  "fg": "4/8",
+  "three": "2/3",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 0,
+  "tov": 2,
+  "pf": 2,
+  "pm": 22,
+  "eff": ""
  }
 ]

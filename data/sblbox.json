@@ -22137,27 +22137,27 @@
   "pm": 22,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-1",
   "game_id": "sbl-2851700",
   "team": "Norrköping Dolphins",
   "player": "DJ Smith",
-  "min": 20,
-  "pts": 12,
+  "min": 22,
+  "pts": 14,
   "reb": 1,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "4/14",
+  "fg": "5/15",
   "three": "0/8",
   "ft": "4/4",
-  "pm": 8,
+  "pm": 4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-2",
@@ -22177,54 +22177,54 @@
   "pm": -3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-3",
   "game_id": "sbl-2851700",
   "team": "Norrköping Dolphins",
   "player": "Mahrcus Forlini",
-  "min": 0,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/0",
-  "three": "0/0",
+  "fg": "0/1",
+  "three": "0/1",
   "ft": "0/0",
-  "pm": 2,
+  "pm": -2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-4",
   "game_id": "sbl-2851700",
   "team": "Norrköping Dolphins",
   "player": "Michael Odinks",
-  "min": 26,
+  "min": 28,
   "pts": 10,
   "reb": 3,
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "4/8",
   "three": "2/3",
   "ft": "0/0",
-  "pm": 26,
+  "pm": 22,
   "starter": true,
   "swede": true,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-5",
   "game_id": "sbl-2851700",
   "team": "Norrköping Dolphins",
   "player": "Cameron Faas",
-  "min": 18,
+  "min": 20,
   "pts": 12,
   "reb": 1,
   "ast": 2,
@@ -22234,10 +22234,10 @@
   "fg": "4/12",
   "three": "4/10",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-6",
@@ -22257,7 +22257,7 @@
   "pm": 20,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-7",
@@ -22277,27 +22277,27 @@
   "pm": 14,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-8",
   "game_id": "sbl-2851700",
   "team": "Norrköping Dolphins",
   "player": "Mario Spaleta",
-  "min": 18,
+  "min": 20,
   "pts": 14,
-  "reb": 8,
+  "reb": 9,
   "ast": 1,
   "stl": 2,
-  "blk": 0,
+  "blk": 1,
   "tov": 1,
   "fg": "6/6",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 1,
+  "pm": -3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-0-9",
@@ -22317,7 +22317,7 @@
   "pm": 15,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-0",
@@ -22337,34 +22337,34 @@
   "pm": -17,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-1",
   "game_id": "sbl-2851700",
   "team": "Uppsala Basket",
   "player": "Max Andersson",
-  "min": 24,
-  "pts": 13,
+  "min": 26,
+  "pts": 15,
   "reb": 2,
   "ast": 2,
-  "stl": 0,
+  "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "5/9",
+  "fg": "6/11",
   "three": "1/2",
   "ft": "2/2",
-  "pm": -13,
+  "pm": -9,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-2",
   "game_id": "sbl-2851700",
   "team": "Uppsala Basket",
   "player": "Sergey Sepman",
-  "min": 17,
+  "min": 19,
   "pts": 4,
   "reb": 4,
   "ast": 0,
@@ -22374,10 +22374,10 @@
   "fg": "1/4",
   "three": "0/3",
   "ft": "2/2",
-  "pm": -3,
+  "pm": 1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-3",
@@ -22397,7 +22397,7 @@
   "pm": -20,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-4",
@@ -22417,34 +22417,34 @@
   "pm": -15,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-5",
   "game_id": "sbl-2851700",
   "team": "Uppsala Basket",
   "player": "Melker Delryd",
-  "min": 24,
-  "pts": 11,
-  "reb": 7,
+  "min": 26,
+  "pts": 13,
+  "reb": 8,
   "ast": 1,
   "stl": 2,
   "blk": 0,
   "tov": 2,
-  "fg": "4/12",
+  "fg": "5/13",
   "three": "2/7",
   "ft": "1/1",
-  "pm": -15,
+  "pm": -11,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-6",
   "game_id": "sbl-2851700",
   "team": "Uppsala Basket",
   "player": "Rickard Rietz",
-  "min": 13,
+  "min": 15,
   "pts": 12,
   "reb": 1,
   "ast": 0,
@@ -22454,10 +22454,10 @@
   "fg": "3/6",
   "three": "3/6",
   "ft": "3/4",
-  "pm": -6,
+  "pm": -2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-7",
@@ -22477,7 +22477,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-8",
@@ -22497,27 +22497,27 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-9",
   "game_id": "sbl-2851700",
   "team": "Uppsala Basket",
   "player": "Eric Van Der Heijden",
-  "min": 27,
-  "pts": 12,
-  "reb": 4,
+  "min": 29,
+  "pts": 14,
+  "reb": 5,
   "ast": 3,
   "stl": 2,
   "blk": 0,
   "tov": 6,
-  "fg": "4/7",
+  "fg": "5/9",
   "three": "1/3",
   "ft": "3/4",
-  "pm": -20,
+  "pm": -16,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-10",
@@ -22537,7 +22537,7 @@
   "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851700-1-11",
@@ -22557,24 +22557,24 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-0",
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Lucas Veller",
-  "min": 15,
-  "pts": 3,
+  "min": 17,
+  "pts": 5,
   "reb": 1,
   "ast": 2,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "1/3",
+  "fg": "2/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 19,
+  "pm": 22,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22584,17 +22584,17 @@
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Ali Ali",
-  "min": 34,
-  "pts": 22,
+  "min": 35,
+  "pts": 24,
   "reb": 5,
   "ast": 7,
   "stl": 2,
   "blk": 0,
   "tov": 2,
-  "fg": "7/11",
+  "fg": "8/12",
   "three": "1/1",
   "ft": "7/7",
-  "pm": 21,
+  "pm": 23,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -22634,7 +22634,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 1,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22664,17 +22664,17 @@
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Daniel Pokela",
-  "min": 15,
+  "min": 17,
   "pts": 2,
   "reb": 1,
-  "ast": 1,
+  "ast": 2,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "1/2",
-  "three": "0/1",
+  "fg": "1/3",
+  "three": "0/2",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 5,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22685,16 +22685,16 @@
   "team": "Södertälje BBK",
   "player": "Marco-Maximilian Reinhold Frank",
   "min": 15,
-  "pts": 0,
+  "pts": 3,
   "reb": 2,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/2",
-  "three": "0/1",
+  "fg": "1/3",
+  "three": "1/2",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 14,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -22704,17 +22704,17 @@
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Noah Kartal",
-  "min": 16,
+  "min": 17,
   "pts": 2,
   "reb": 2,
-  "ast": 2,
-  "stl": 0,
+  "ast": 3,
+  "stl": 1,
   "blk": 0,
   "tov": 0,
   "fg": "0/0",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 10,
+  "pm": 12,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22724,7 +22724,7 @@
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Edwin Vilic",
-  "min": 0,
+  "min": 1,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -22734,7 +22734,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -2,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22744,7 +22744,7 @@
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Nicholas Spires",
-  "min": 25,
+  "min": 27,
   "pts": 15,
   "reb": 4,
   "ast": 2,
@@ -22754,7 +22754,7 @@
   "fg": "5/10",
   "three": "0/2",
   "ft": "5/5",
-  "pm": 11,
+  "pm": 13,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -22764,17 +22764,17 @@
   "game_id": "sbl-2851701",
   "team": "Nässjö Basket",
   "player": "Oliver Stefanovic",
-  "min": 19,
-  "pts": 14,
+  "min": 22,
+  "pts": 16,
   "reb": 3,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 2,
-  "fg": "5/8",
+  "fg": "5/9",
   "three": "1/2",
-  "ft": "3/4",
-  "pm": -21,
+  "ft": "5/6",
+  "pm": -24,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22784,17 +22784,17 @@
   "game_id": "sbl-2851701",
   "team": "Nässjö Basket",
   "player": "Mio Hjalmarsson",
-  "min": 21,
+  "min": 23,
   "pts": 10,
-  "reb": 0,
+  "reb": 1,
   "ast": 3,
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "fg": "3/6",
-  "three": "1/4",
+  "fg": "3/7",
+  "three": "1/5",
   "ft": "3/4",
-  "pm": -20,
+  "pm": -23,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22824,17 +22824,17 @@
   "game_id": "sbl-2851701",
   "team": "Nässjö Basket",
   "player": "Malte Fredman",
-  "min": 1,
+  "min": 4,
   "pts": 0,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -3,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22844,17 +22844,17 @@
   "game_id": "sbl-2851701",
   "team": "Nässjö Basket",
   "player": "Max Wirestig",
-  "min": 1,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -8,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -22924,17 +22924,17 @@
   "game_id": "sbl-2851701",
   "team": "Nässjö Basket",
   "player": "Abdou Medjedoub",
-  "min": 29,
-  "pts": 12,
-  "reb": 4,
+  "min": 31,
+  "pts": 14,
+  "reb": 5,
   "ast": 3,
   "stl": 1,
   "blk": 0,
   "tov": 2,
   "fg": "6/9",
   "three": "0/0",
-  "ft": "0/0",
-  "pm": -12,
+  "ft": "2/2",
+  "pm": -15,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -22994,10 +22994,10 @@
   "fg": "5/7",
   "three": "3/5",
   "ft": "0/0",
-  "pm": 12,
+  "pm": 11,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-1",
@@ -23017,7 +23017,7 @@
   "pm": -6,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-2",
@@ -23034,10 +23034,10 @@
   "fg": "3/8",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -9,
+  "pm": -10,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-3",
@@ -23057,7 +23057,7 @@
   "pm": -3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-4",
@@ -23077,7 +23077,7 @@
   "pm": 2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-5",
@@ -23091,13 +23091,13 @@
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "2/9",
-  "three": "2/8",
-  "ft": "1/1",
-  "pm": -8,
+  "fg": "2/10",
+  "three": "2/9",
+  "ft": "1/2",
+  "pm": -9,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-6",
@@ -23117,7 +23117,7 @@
   "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-7",
@@ -23137,7 +23137,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-8",
@@ -23157,7 +23157,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-9",
@@ -23174,10 +23174,10 @@
   "fg": "3/8",
   "three": "1/3",
   "ft": "2/2",
-  "pm": 1,
+  "pm": 0,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-10",
@@ -23194,10 +23194,10 @@
   "fg": "4/14",
   "three": "1/6",
   "ft": "5/7",
-  "pm": 2,
+  "pm": 1,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-0",
@@ -23214,10 +23214,10 @@
   "fg": "4/12",
   "three": "3/10",
   "ft": "1/2",
-  "pm": 16,
+  "pm": 17,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-1",
@@ -23237,7 +23237,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-2",
@@ -23257,7 +23257,7 @@
   "pm": -10,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-3",
@@ -23277,7 +23277,7 @@
   "pm": -10,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-4",
@@ -23297,7 +23297,7 @@
   "pm": 3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-5",
@@ -23314,10 +23314,10 @@
   "fg": "5/13",
   "three": "2/8",
   "ft": "9/12",
-  "pm": 14,
+  "pm": 15,
   "starter": true,
   "swede": true,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-6",
@@ -23325,19 +23325,19 @@
   "team": "Jämtland Basket",
   "player": "Daniel Johansson",
   "min": 26,
-  "pts": 12,
-  "reb": 7,
+  "pts": 13,
+  "reb": 8,
   "ast": 3,
   "stl": 0,
   "blk": 1,
   "tov": 2,
   "fg": "5/7",
   "three": "2/3",
-  "ft": "0/0",
-  "pm": 4,
+  "ft": "1/2",
+  "pm": 5,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-7",
@@ -23354,10 +23354,10 @@
   "fg": "5/12",
   "three": "1/3",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -6,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-8",
@@ -23377,7 +23377,7 @@
   "pm": -2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-9",
@@ -23394,10 +23394,10 @@
   "fg": "6/10",
   "three": "2/3",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-1-10",
@@ -23417,6 +23417,6 @@
   "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  }
 ]
