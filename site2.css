@@ -2769,3 +2769,11 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .sblf .sblf-box input:focus { border-color: #fecc02 !important; }
 .sblf .sblf-box .sr-icon { left: 18px; z-index: 1; color: #6b7785; }
 .lx-sec.sblf > .lx-head { flex-direction: column; align-items: center; text-align: center; gap: 6px; border-bottom: 0; padding-bottom: 0; }
+/* SBL find: teams fill the width */
+.sblf .sblf-teams { max-width: none; grid-template-columns: repeat(auto-fit, minmax(104px, 1fr)) !important; gap: 8px; }
+.sblf .sblf-tm { grid-template-columns: 1fr; grid-template-rows: auto auto auto; justify-items: center; text-align: center; row-gap: 4px; padding: 16px 8px 14px; }
+.sblf .sblf-tm .crest { grid-row: auto; width: 56px !important; height: 56px !important; margin-bottom: 6px !important; }
+.sblf .sblf-tm .n { white-space: normal; line-height: 1.2; font-size: 13px; align-self: auto; }
+.sblf .sblf-tm .k { font-size: 9px; align-self: auto; }
+@media (max-width: 860px) { .sblf .sblf-teams { grid-template-columns: repeat(3, 1fr) !important; } .sblf .sblf-tm .crest { width: 44px !important; height: 44px !important; } .sblf .sblf-tm .n { font-size: 12px; } }
+.sblf .sblf-tm { align-content: start; grid-template-rows: auto minmax(2.4em, auto) auto; } .sblf .sblf-tm .n { align-self: center; display: flex; align-items: center; justify-content: center; min-height: 2.4em; }
