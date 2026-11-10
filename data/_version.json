@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10T22:04:01+01:00",
- "app": "62bdd4d915f3",
+ "updated": "2026-11-11T00:06:33+01:00",
+ "app": "27092796a0ce",
  "files": {
   "awards": "1c451ad9ae1b",
   "bios": "2b5c5b9e1da8",
@@ -21,6 +21,7 @@
   "photos": "2893efc9eadb",
   "players": "721ac494dbf3",
   "previews": "732a8684f330",
+  "prospects": "729ac51ab60f",
   "sbl": "569c56ec0c64",
   "sblbox": "8845be073c13",
   "sblgames": "facf0640382d",
