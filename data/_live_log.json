@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T01:52:28+01:00",
+ "at": "2026-11-10T01:53:19+01:00",
  "log": [
   {
    "game": "c20261110msu",
@@ -9,12 +9,12 @@
    "game": "c20261110msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:40",
+   "clock": "10:28",
    "done": false,
    "teams": [
     [
      "Jackson State Tigers",
-     16,
+     19,
      17
     ],
     [
