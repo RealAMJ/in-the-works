@@ -2375,3 +2375,11 @@ html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: 
 #game .gchx .gch-mid { align-self: center; }
 #game .gchx.is-live .gch-team .tm { color: #fff; }
 #game .gchx.is-live .gch-score .l { color: rgba(255,255,255,.8); }
+
+/* team logos inside the crest circles: a white disc so dark logos stay visible on the navy */
+.crest.has-logo { background: #fff !important; padding: 0 !important; display: inline-grid; place-items: center; box-sizing: border-box; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(3,10,23,.08), 0 2px 8px rgba(0,0,0,.25); }
+.crest.has-logo img { width: 74%; height: 74%; object-fit: contain; display: block; }
+
+/* avatars that got a photo instead of initials */
+.pp-ini.has-ph, .td-pav.has-ph, .pp-av.has-ph, .plc-av.has-ph { position: relative; overflow: hidden; padding: 0; background: #0b1d3a; color: transparent; }
+#game .gchx .gch-score .time { font-size: .42em; color: #f2f6fc; letter-spacing: .02em; }
