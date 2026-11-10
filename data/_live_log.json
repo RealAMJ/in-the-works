@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T00:46:04+01:00",
+ "at": "2026-11-11T00:46:49+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,12 +9,12 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:26",
+   "clock": "13:49",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     11,
+     13,
      15
     ],
     [
