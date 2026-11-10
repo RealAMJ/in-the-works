@@ -1546,7 +1546,7 @@
       const panes = [], msBlocks = [];
       String(g.players || '').split(/\s*,\s*/).filter(Boolean).forEach((name) => {
         const fz = mk('div', 'td-focus');
-        const h = mk('div', 'td-focus-head'); const av = mk('span', 'td-pav', initials(name)); const nmw = mk('div', 'td-pname'); nmw.append(names(name)); h.append(av, nmw); fz.append(h);
+        const h = mk('div', 'td-focus-head'); const av = faceAv('span', 'td-pav', name); const nmw = mk('div', 'td-pname'); nmw.append(names(name)); h.append(av, nmw); fz.append(h);
         const all = rowsOf(name).filter((r) => !isDnp(r));
         const inC = all.filter((r) => r.competition === g.competition);
         const sRow = g.status !== 'final' && g.date >= todayStr() && st.status === 'ok' ? st.data.find((r) => norm(r.player) === norm(name) && r.competition === g.competition) : null;
@@ -2637,7 +2637,7 @@
   function coachCard(n, g) {
     const ci = coachInfo(n) || {};
     const c = mk('div', 'gc-pc coach-pc');
-    const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(n)));
+    const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', n));
     const nb = mk('div'); nb.append(mk('b', '', `${coachFlag(n)} ${n}`), mk('div', 'pp-sub', [ci.role || 'Coach', g.team].filter(Boolean).join(' · '))); top.append(nb); c.append(top);
     if (ci.note) c.append(mk('p', 'pp-sub', ci.note));
     const cg = (ds('coachgames') || []).filter((x) => isSame(x.coach, n) && x.status === 'final' && x.date < g.date);
@@ -2707,6 +2707,13 @@
     return u.protocol === 'https:' ? 'webcal://' + u.host + u.pathname : u.href;
   }
   const isSame = (a, b) => norm(a) === norm(b);
+  // a round avatar: the player's (or coach's) photo when we have one, otherwise his initials
+  function faceAv(tag, cls, name) {
+    const el = mk(tag, cls); const ph = photoFor(name);
+    if (ph) { const im = new Image(); im.src = ph.src; im.alt = ''; im.loading = 'lazy'; faceFit(im, ph); el.append(im); el.classList.add('has-ph'); }
+    else el.textContent = initials(name);
+    return el;
+  }
   function initials(n) { const w = String(n || '').split(/\s+/).filter(Boolean); return ((w[0] || '?')[0] + (w.length > 1 ? w[w.length - 1][0] : '')).toUpperCase(); }
   function shortComp(c) {
     const m = { 'Champions League (BCL)': 'BCL', 'Champions League qualifiers': 'BCL qual.', 'LBA (Italy)': 'LBA', 'FIBA Europe Cup': 'Europe Cup', 'Orlen Basket Liga': 'PLK', 'Icelandic Premier League': 'Iceland', 'Croatian Premier League': 'Croatia', 'BLNO (Norway)': 'BLNO', 'ProB (Germany)': 'ProB', 'Austrian Superliga': 'Austria', 'World Cup 2027 Qualifiers': 'WC qual.' };
@@ -2772,7 +2779,13 @@
 
   // ---- Scoreboard strip (EuroLeague style): opens on the latest result, scroll back for older games
   let stripUser = false;
-  function crest(name, cls) { const c = mk('span', 'crest' + (cls ? ' ' + cls : ''), teamAbbr(name).slice(0, 3)); c.style.background = teamColor(name); c.setAttribute('aria-hidden', 'true'); return c; }
+  // team logos (data/logos.json, copied by scripts/logos.py); teams without one keep the coloured initials
+  let logoMap = null, logoSrc = null;
+  function logoFor(name) { const L = ds('logos'); if (!L) return null; if (L !== logoSrc) { logoSrc = L; logoMap = new Map(L.map((r) => [norm(r.team), r.src])); } return logoMap.get(norm(name)) || null; }
+  function crest(name, cls) {
+    const lg = logoFor(name);
+    if (lg) { const c = mk('span', 'crest has-logo' + (cls ? ' ' + cls : '')); const im = new Image(); im.src = lg; im.alt = ''; im.loading = 'lazy'; im.decoding = 'async'; c.append(im); c.setAttribute('aria-hidden', 'true'); return c; }
+    const c = mk('span', 'crest' + (cls ? ' ' + cls : ''), teamAbbr(name).slice(0, 3)); c.style.background = teamColor(name); c.setAttribute('aria-hidden', 'true'); return c; }
   function splitScore(r) { const m = /(\d+)\s*[-–]\s*(\d+)/.exec(String(r.score || '')); return m ? [Number(m[1]), Number(m[2])] : [null, null]; }
   function homeAway(r) {
     const [ts, os] = splitScore(r);
@@ -3231,7 +3244,7 @@
     [[A, 'a'], [B, 'b']].forEach(([S, side]) => {
       const h = mk('div', 'cmp-head ' + side); h.style.setProperty('--tc', teamColor(S.p ? S.p.club : S.name));
       const nb = mk('button', 'nm', S.name); nb.type = 'button'; nb.onclick = () => showLog(S.name);
-      h.append(mk('div', 'pp-av', initials(S.name)), nb, mk('div', 'sub', [S.p && S.p.club, S.p && S.p.country].filter(Boolean).join(' · ')));
+      h.append(faceAv('div', 'pp-av', S.name), nb, mk('div', 'sub', [S.p && S.p.club, S.p && S.p.country].filter(Boolean).join(' · ')));
       if (S.rows.length > 1) { const tabs = mk('div', 'pp-tabs'); S.rows.forEach((r) => { const b = mk('button', S.row === r ? 'on' : '', shortComp(r.competition)); b.type = 'button'; b.onclick = () => { cmpComp[side] = r.competition; dash.draw('cmp'); }; tabs.append(b); }); h.append(tabs); }
       else if (S.row) h.append(mk('div', 'sub', S.row.competition));
       if (S.tier) h.append(mk('span', 'cmp-tier', `League level ${S.tier.score}/100 · tier ${S.tier.tier}`));
@@ -3434,7 +3447,7 @@
         lead((t) => t.fg.p, 'shooting'); lead((t) => t.reb, 'rebounding'); { const a = H.tov, b = A.tov; if (a !== b) k.push(`${teamAbbr(a < b ? ha.home.name : ha.away.name)} ${live ? 'is taking' : 'took'} better care of the ball (${Math.min(a, b)} turnovers to ${Math.max(a, b)})`); }
         const ul = mk('ul', 'cz-facts'); k.slice(0, 3).forEach((t) => { const li = mk('li'); li.append(mk('i', '', '●'), mk('span', '', t)); ul.append(li); }); if (k.length) sum.append(ul); }
       if (story) { const b = mk('button', 'hc-more', 'Read in This week →'); b.type = 'button'; b.onclick = () => openStory(story.story_id); sum.append(b); }
-      el.append(sum);
+      if (sum.children.length > 1) el.append(sum);
       // 3. game leaders, head to head
       if (H && A) { const gl = ppSection('Game leaders'); gl.dataset.k = 'rank'; gl.dataset.kick = 'Head to head';
         const grid = mk('div', 'gcx-leaders');
@@ -3509,7 +3522,7 @@
     mid.append(mk('span', 'gch-pill ' + (g.status || ''), final ? 'Final' : g.status === 'live' ? '● Live' + (g.clock && !g.autoLive ? ' · ' + g.clock : '') : 'Upcoming'));
     const sc = mk('div', 'gch-score');
     if (ha.home.score != null) sc.append(mk('span', ha.home.win ? 'w' : 'l', String(ha.home.score)), mk('span', 'sep', '–'), mk('span', ha.away.win ? 'w' : 'l', String(ha.away.score)));
-    else sc.append(mk('span', 'time', g.status === 'live' ? 'In progress' : (g.time && g.time !== 'TBC' ? g.time : 'TBC')));
+    else sc.append(mk('span', 'time', g.status === 'live' ? 'Under way' : (g.time && g.time !== 'TBC' ? g.time : 'TBC')));
     mid.append(sc, mk('span', 'gch-meta', `${g.competition} · ${longDate(g.date)}${g.time && g.time !== 'TBC' ? ' · ' + g.time + ' (Stockholm)' : ''}`));
     const lk = gameLinks(g); if (lk) mid.append(lk);
     hero.append(side(ha.home, 'home'), mid, side(ha.away, 'away'));
@@ -3549,7 +3562,7 @@
       const grid = mk('div', 'gc-swe');
       lines.forEach((r) => {
         const c = mk('div', 'gc-pc');
-        const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(r.player))); const nb = mk('div'); nb.append(names(r.player), mk('div', 'pp-sub', `${r.min || '—'} min · ${clubOf(r.player, r.team || g.team)}`)); top.append(nb);
+        const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', r.player)); const nb = mk('div'); nb.append(names(r.player), mk('div', 'pp-sub', `${r.min || '—'} min · ${clubOf(r.player, r.team || g.team)}`)); top.append(nb);
         c.append(top);
         if (/DNP/i.test(r.note || '')) { c.append(mk('p', 'empty', 'Did not play.')); grid.append(c); return; }
         const nums = mk('div', 'lg-nums'); [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', v === '' || v == null ? '—' : String(v)), mk('span', '', k)); nums.append(d); });
@@ -3650,7 +3663,7 @@
         const grid = mk('div', 'gc-swe');
         String(g.players || '').split(/\s*,\s*/).filter(Boolean).forEach((n) => {
           const r = (ds('stats') || []).find((x) => isSame(x.player, n) && norm(x.competition) === norm(g.competition));
-          const c = mk('div', 'gc-pc'); const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(n))); const nb = mk('div'); nb.append(names(n), mk('div', 'pp-sub', r ? `${r.gp} games in ${g.competition}` : 'No games in this competition yet')); top.append(nb); c.append(top);
+          const c = mk('div', 'gc-pc'); const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', n)); const nb = mk('div'); nb.append(names(n), mk('div', 'pp-sub', r ? `${r.gp} games in ${g.competition}` : 'No games in this competition yet')); top.append(nb); c.append(top);
           if (r) { const nums = mk('div', 'lg-nums'); [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); nums.append(d); }); c.append(nums); }
           grid.append(c);
         });
@@ -4123,7 +4136,7 @@
     const c = (ds('coaches') || []).find((r) => /national team/i.test(r.note || '')) || (ds('coaches') || [])[0];
     if (!c) { el.textContent = '—'; return; }
     const t = mk('div'); t.append(mk('b', '', c.coach), mk('span', '', `Head coach · also coaches ${c.club} (${c.country})`));
-    el.append(mk('div', 'pp-av', initials(c.coach)), t);
+    el.append(faceAv('div', 'pp-av', c.coach), t);
   });
   dash.draw('nt-games', (el) => {
     el.replaceChildren();
@@ -4240,7 +4253,7 @@
     String(g.players || '').split(/\s*,\s*/).filter(Boolean).forEach((n) => {
       const card = mk('div', 'pv-swede');
       const st = (ds('stats') || []).find((x) => isSame(x.player, n) && norm(x.competition) === norm(g.competition));
-      const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(n))); const nb = mk('div'); nb.append(names(n));
+      const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', n)); const nb = mk('div'); nb.append(names(n));
       const role = pvParse(pv.player_role).find((p) => isSame(p[0], n));
       nb.append(mk('div', 'pp-sub', role ? role[1] : (st ? `${st.gp} games in ${g.competition}` : g.competition))); top.append(nb); card.append(top);
       if (st) { const nums = mk('div', 'lg-nums'); [['PTS', st.pts], ['REB', st.reb], ['AST', st.ast], ['MIN', st.min]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); nums.append(d); }); nums.style.gridTemplateColumns = 'repeat(4, 1fr)'; card.append(nums); }
@@ -4350,7 +4363,7 @@
       const stats = (ds('stats') || []).filter((x) => isSame(x.player, n) && Number(x.gp) > 0);
       const st = stats.find((x) => norm(x.competition) === norm(g.competition)) || stats.sort((a, b) => Number(b.gp) - Number(a.gp))[0];
       const p = (ds('players') || []).find((x) => isSame(x.player, n));
-      const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(n))); const nb = mk('div'); nb.append(names(n));
+      const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', n)); const nb = mk('div'); nb.append(names(n));
       nb.append(mk('div', 'pp-sub', st ? `${st.gp} games in ${st.competition} this season` : (p ? `${p.club} · season opener` : g.competition))); top.append(nb); card.append(top);
       if (st) { const nums = mk('div', 'lg-nums'); nums.style.gridTemplateColumns = 'repeat(4, 1fr)'; [['PTS', st.pts], ['REB', st.reb], ['AST', st.ast], ['MIN', st.min]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); nums.append(d); }); card.append(nums); }
       else {
@@ -4546,7 +4559,7 @@
         const rows = (ds('stats') || []).filter((x) => isSame(x.player, p.player) && Number(x.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp));
         const st = rows.find((x) => x.competition === tpComp[norm(p.player)]) || rows[0];
         const c = mk('div', 'gc-pc tp-pc');
-        const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(p.player)));
+        const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', p.player));
         const nb = mk('div'); const nm = mk('button', 'tp-name-btn', p.player); nm.type = 'button'; nm.title = 'Open profile'; nm.onclick = () => showLog(p.player);
         nb.append(nm, mk('div', 'pp-sub', st ? `${st.gp} games in ${st.competition}` : (p.competitions || 'No games yet'))); top.append(nb); c.append(top);
         if (rows.length > 1) {
@@ -4558,7 +4571,7 @@
         const more = mk('button', 'hc-more', 'Full profile →'); more.type = 'button'; more.onclick = () => showLog(p.player); c.append(more);
         grid.append(c);
       });
-      coaches.forEach((co) => { const c = mk('div', 'gc-pc'); const top = mk('div', 'gc-pc-top'); top.append(mk('div', 'pp-ini sm', initials(co.coach))); const nb = mk('div'); nb.append(mk('b', '', co.coach), mk('div', 'pp-sub', `${co.role} · since ${co.since}`)); top.append(nb); c.append(top); if (co.note) c.append(mk('p', 'pp-sub', co.note)); grid.append(c); });
+      coaches.forEach((co) => { const c = mk('div', 'gc-pc'); const top = mk('div', 'gc-pc-top'); top.append(faceAv('div', 'pp-ini sm', co.coach)); const nb = mk('div'); nb.append(mk('b', '', co.coach), mk('div', 'pp-sub', `${co.role} · since ${co.since}`)); top.append(nb); c.append(top); if (co.note) c.append(mk('p', 'pp-sub', co.note)); grid.append(c); });
       sec.append(grid); el.append(sec);
     }
     // About
@@ -4833,7 +4846,7 @@
     const cg = ds('coachgames') || [];
     co.filter((r) => r.coach).forEach((r) => {
       const c = mk('article', 'coc'); c.dataset.key = r.coach; c.style.setProperty('--tc', teamColor(r.club));
-      const band = mk('div', 'plc-band'); band.append(mk('div', 'plc-av', initials(r.coach)));
+      const band = mk('div', 'plc-band'); band.append(faceAv('div', 'plc-av', r.coach));
       const tags = mk('div', 'plc-tags'); tags.append(mk('span', 'plc-tag' + (/head/i.test(r.role) ? ' y' : ''), r.role)); if (/national team/i.test(r.note || '')) tags.append(mk('span', 'plc-tag', 'Sweden head coach')); band.append(tags);
       const body = mk('div', 'plc-body');
       const parts = r.coach.split(' ');
