@@ -2389,3 +2389,10 @@ html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: 
 .crest.xl.has-logo img, .crest.lg.has-logo img { width: 100%; height: 100%; }
 #game .gchx .crest.xl.has-logo { box-shadow: none !important; }
 #game .gchx .gch-team.win .crest.has-logo img { filter: drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 2px rgba(255,255,255,.6)) drop-shadow(0 0 14px rgba(254,204,2,.55)); }
+/* score strip: calmer logos, just a faint edge so dark logos still read, no glow */
+.strip .crest.has-logo img { width: 112%; height: 112%; filter: drop-shadow(0 0 .5px rgba(255,255,255,.7)); }
+/* score strip, easier on the eye: smaller logos, no edge; the opponent's logo quieter so the Swedish team's stands out */
+.strip .crest.has-logo img { width: 96%; height: 96%; filter: none; }
+.strip .st-team:not(.swe) .crest.has-logo img { opacity: .72; filter: saturate(.6) drop-shadow(0 0 .5px rgba(255,255,255,.45)); }
+.strip .st-team.swe .crest.has-logo img { filter: drop-shadow(0 0 .5px rgba(255,255,255,.45)); }
+.strip .st-g:hover .st-team .crest.has-logo img { opacity: 1; filter: none; }
