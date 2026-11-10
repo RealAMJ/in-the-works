@@ -1908,7 +1908,7 @@
   dash.draw('sblup', (el) => {
     el.replaceChildren(); const up = (ds('sblgames') || []).filter((g) => g.status !== 'final').slice(0, 6); if (!up.length) return;
     const h = mk('div', 'lx-head'); h.append(mk('h2', '', 'Coming up'), mk('span', 'lx-note', 'Next SBL games for the players in focus')); el.append(h);
-    const l = mk('div', 'sblx-up'); up.forEach((g) => { const b = mk('button', 'sblx-g'); b.type = 'button'; b.onclick = () => g.url && window.open(g.url, '_blank', 'noopener');
+    const l = mk('div', 'sblx-up'); up.forEach((g) => { const b = mk('button', 'sblx-g'); b.type = 'button'; b.onclick = upOpen(g);
       const d = mk('div', 'upx-date'); d.append(mk('b', '', String(Number(g.date.slice(8, 10)))), mk('span', '', new Date(g.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }).toUpperCase()));
       const ha = homeAway(g); const teams = mk('div', 'tms'); [ha.home, ha.away].forEach((t) => { const r = mk('span', 't' + (t.swe ? ' swe' : '')); r.append(crest(t.name, 'sm'), t.name); teams.append(r); });
       const m = mk('div', 'meta'); m.append(mk('b', '', g.time || 'TBC'), mk('span', 'p', '🇸🇪 ' + g.players));
@@ -4555,7 +4555,7 @@
     if (r.note) tags.append(mk('span', 'tdg-note', r.note));
     if (tags.childNodes.length) body.append(tags);
     const acts = mk('div', 'tdg-acts');
-    if (r.sbl) { const a = document.createElement('a'); a.className = 'pp-btn dark'; a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Game page ↗'; acts.append(a); }
+    if (r.sbl && !sblOurs(r)) { const a = document.createElement('a'); a.className = 'pp-btn dark'; a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Game page ↗'; acts.append(a); }
     else { const b = mk('button', 'pp-btn dark', final ? 'Game center →' : 'Preview →'); b.type = 'button'; b.onclick = () => showCard(r.game_id); acts.append(b);
     const lk = gameLinks(r); if (lk) acts.append(lk); }
     body.append(acts);
@@ -5001,7 +5001,9 @@
   function upDays(d) { const t = new Date(todayStr() + 'T00:00:00Z'), g = new Date(d + 'T00:00:00Z'); return Math.round((g - t) / 864e5); }
   function upWhen(g) { const n = upDays(g.date); return n <= 0 ? 'Today' : n === 1 ? 'Tomorrow' : `In ${n} days`; }
   function upTime(g) { return g.time && g.time !== 'TBC' ? g.time : 'TBC'; }
-  function upOpen(g) { return () => (g.sbl && g.url ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id)); }
+  // SBL games open our own game page (data/sblleague.json); the league's page only if we don't have the game
+  const sblOurs = (g) => (ds('sblleague') || []).some((x) => x.game_id === g.game_id);
+  function upOpen(g) { return () => (g.sbl && g.url && !sblOurs(g) ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id)); }
   function upLastVs(who, g) { const pg = playerGames(who).filter((x) => x.note !== 'DNP' && sameTeam(x.opponent, g.opponent)); return pg[pg.length - 1] || null; }
   function upSeason(who, g) { const pg = playerGames(who).filter((x) => x.note !== 'DNP' && norm(x.competition) === norm(g.competition)); if (!pg.length) return null; const a = (k) => pg.reduce((t, x) => t + (Number(x[k]) || 0), 0) / pg.length; return { pts: a('pts'), reb: a('reb'), ast: a('ast'), n: pg.length }; }
   function upCountdown(g, el) {
@@ -5045,7 +5047,7 @@
     if (!up.length) return null;
     if (who) return ppUpcomingV(up, who, title);
     const sec = ppSection(title || 'Upcoming games', sub); const l = mk('div', 'cox-list');
-    up.forEach((g, i) => { const r = mk('button', 'cox-row' + (i === 0 ? ' next' : '')); r.type = 'button'; r.onclick = () => (g.sbl && g.url ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id));
+    up.forEach((g, i) => { const r = mk('button', 'cox-row' + (i === 0 ? ' next' : '')); r.type = 'button'; r.onclick = upOpen(g);
       const w = mk('div', 'when'); w.append(mk('b', '', g.time && g.time !== 'TBC' ? g.time : 'TBC'), dayFmt(g.date));
       const m = mk('div', 'm'); m.append(mk('b', '', `${g.team} ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', g.competition));
       r.append(w, m, mk('div', 'cp', i === 0 ? 'Next' : '')); l.append(r); });
