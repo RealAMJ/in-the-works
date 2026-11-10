@@ -57,10 +57,10 @@
     </nav>
   </header>
 
-  <div class="st-bar" data-draw="st-bar" data-source="schedule players"></div>
+  <div class="st-bar" data-draw="st-bar" data-source="schedule players sblleague"></div>
   <div class="strip" aria-label="Scoreboard">
     <button type="button" class="st-arrow" data-dir="-1" aria-label="Earlier games">‹</button>
-    <div class="st-row" data-draw="strip" data-source="schedule gamelogs coachgames coaches boxscores players"></div>
+    <div class="st-row" data-draw="strip" data-source="schedule gamelogs coachgames coaches boxscores players sblleague sblgames logos"></div>
     <button type="button" class="st-arrow" data-dir="1" aria-label="Later games">›</button>
   </div>
   <div class="navback"><button type="button" class="nav-back" data-nav-back hidden>‹ Back</button></div>
@@ -2970,7 +2970,13 @@
     const n = String(r.players || '').split(/\s*,\s*/).filter(Boolean)[0]; if (!n) return r.coach ? 'coach' : '';
     const p = (ds('players') || []).find((x) => isSame(x.player, n)); return p ? (p.level === 'Pro' ? 'Europe' : p.level) : '';
   }
-  function stOk(r) { return stFilter === 'all' || (stFilter === 'coach' ? !!r.coach : stLevel(r) === stFilter); }
+  // SBL games are only in the strip under the SBL filter, and then every game in the league (data/sblleague.json)
+  function stOk(r) { return stLevel(r) !== 'SBL' && (stFilter === 'all' || (stFilter === 'coach' ? !!r.coach : stLevel(r) === stFilter)); }
+  function stSblGames() {
+    const fp = new Map(); (ds('sblgames') || []).forEach((x) => fp.set(x.game_id, String(x.players || '').split(/\s*,\s*/).filter((n) => n && isNT(n)).join(', ')));
+    return (ds('sblleague') || []).map((x) => Object.assign(sblGame(x.game_id) || {}, { players: fp.get(x.game_id) || '', sblLeague: true }))
+      .filter((r) => r.game_id).sort((a, b) => String(a.date).localeCompare(String(b.date)) || String(a.time).localeCompare(String(b.time)));
+  }
   // the Swede's line on a finished game: "Larsson 14 PTS" from the box score or game log
   function stLine(r) {
     const names = String(r.players || '').split(/\s*,\s*/).filter(Boolean); if (!names.length) return null;
@@ -2982,16 +2988,16 @@
   }
   dash.draw('st-bar', (el) => {
     el.replaceChildren(); const g = allGames(); if (!g) return; const gs = games() || [];
-    const t = gs.filter(isTonight), live = gs.filter((r) => r.status === 'live').length;
+    const sb = stFilter === 'SBL', t = sb ? stSblGames().filter((r) => r.date === todayStr()) : gs.filter((r) => isTonight(r) && stLevel(r) !== 'SBL'), live = sb ? (ds('sblleague') || []).filter((r) => r.status === 'live').length : gs.filter((r) => r.status === 'live' && stLevel(r) !== 'SBL').length;
     const lab = mk('div', 'st-bar-l'); lab.append(mk('b', '', 'Scores'), mk('span', 'st-bar-n', live ? `${live} live` : `${t.length} today`)); if (live) lab.classList.add('live');
     const ch = mk('div', 'st-bar-f'); ch.setAttribute('role', 'group'); ch.setAttribute('aria-label', 'Filter games');
-    ST_F.forEach(([k, l]) => { if (k !== 'all' && !g.some((r) => (k === 'coach' ? r.coach : stLevel(r) === k))) return; const b = mk('button', stFilter === k ? 'on' : '', l); b.type = 'button'; b.setAttribute('aria-pressed', stFilter === k ? 'true' : 'false'); b.onclick = () => { stFilter = k; stripUser = false; dash.draw('st-bar'); dash.draw('strip'); }; ch.append(b); });
+    ST_F.forEach(([k, l]) => { if (k !== 'all' && !(k === 'SBL' ? (ds('sblleague') || []).length : g.some((r) => (k === 'coach' ? r.coach : stLevel(r) === k)))) return; const b = mk('button', stFilter === k ? 'on' : '', l); b.type = 'button'; b.setAttribute('aria-pressed', stFilter === k ? 'true' : 'false'); b.onclick = () => { stFilter = k; stripUser = false; dash.draw('st-bar'); dash.draw('strip'); }; ch.append(b); });
     const all = mk('button', 'st-bar-all', 'All games →'); all.type = 'button'; all.onclick = () => goTo('schedule');
     el.append(lab, ch, all);
   });
   dash.draw('strip', (row) => {
     row.replaceChildren();
-    const g0 = allGames(); if (!g0) return; const g = g0.filter(stOk);
+    const g0 = allGames(); if (!g0) return; const g = stFilter === 'SBL' ? stSblGames() : g0.filter(stOk);
     let anchor = null, lastDay = '';
     g.forEach((r) => {
       if (r.date !== lastDay) {
@@ -3004,9 +3010,9 @@
       }
       const c = mk('button', 'st-g ' + (r.status || '')); c.type = 'button'; c.dataset.key = r.game_id;
       const top = mk('div', 'st-top');
-      top.append(mk('span', 'st-stat', r.status === 'final' ? (r.pending ? 'Ended' : 'Final') : r.status === 'live' ? '● Live' + (r.clock && !r.autoLive ? ' ' + r.clock : '') : (r.time && r.time !== 'TBC' ? r.time : 'TBC')), mk('span', 'st-comp', shortComp(r.competition)));
+      top.append(mk('span', 'st-stat', r.status === 'final' ? (r.pending ? 'Ended' : 'Final') : r.status === 'live' ? '● Live' + (r.clock && !r.autoLive ? ' ' + r.clock : '') : (r.time && r.time !== 'TBC' ? r.time : 'TBC')), mk('span', 'st-comp', r.sblLeague ? 'SBL' : shortComp(r.competition)));
       c.append(top);
-      const ha = homeAway(r);
+      const ha = homeAway(r); if (r.sblLeague) { ha.home.swe = false; ha.away.swe = false; }
       [ha.home, ha.away].forEach((t) => {
         const l = mk('div', 'st-team' + (t.win ? ' win' : '') + (r.status === 'final' && !t.win ? ' lose' : '') + (t.swe ? ' swe' : ''));
         l.append(crest(t.name), mk('span', 'st-code', teamAbbr(t.name)), mk('span', 'st-sc', t.score == null ? '' : String(t.score)));
@@ -3022,7 +3028,7 @@
             st.append(chip(one.p, 'PTS', !one.x || one.p >= one.x[1])); if (one.x) st.append(chip(one.x[1], one.x[0], one.x[1] > one.p)); sw.append(st); }
           else if (ln.length > 1 && ln.some((x) => x.p != null)) { const st = mk('div', 'st-line'); ln.slice(0, 2).forEach((x) => { if (x.p == null) return; const e = mk('span', 'st-chip'); e.append(mk('b', '', String(x.p)), mk('span', '', 'PTS')); st.append(e); }); sw.append(st); }
           c.append(sw); }
-        if (r.status === 'final') { const res = String(r.score || '')[0]; if (res === 'W' || res === 'L') c.classList.add(res === 'W' ? 'sw-w' : 'sw-l'); }
+        if (r.status === 'final' && !r.sblLeague) { const res = String(r.score || '')[0]; if (res === 'W' || res === 'L') c.classList.add(res === 'W' ? 'sw-w' : 'sw-l'); }
         if (r.coach) { const cl = mk('div', 'st-coach'); cl.append(mk('span', 'cc-tag', 'Coach'), document.createTextNode(` ${coachFlag(r.coach)} ${r.coach.split(' ').slice(-1)[0]}`)); c.append(cl); if (!pn) c.classList.add('coachg'); } }
       if (isH2H(r)) { c.classList.add('h2hg'); c.append(mk('span', 'st-h2h', 'SWE v SWE')); }
       c.title = `${ha.home.name} vs ${ha.away.name} · ${r.players}`;
