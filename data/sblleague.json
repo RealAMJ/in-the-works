@@ -622,8 +622,8 @@
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851700/summary",
   "box": false,
-  "clock": "00:47",
-  "period": 3
+  "clock": "09:49",
+  "period": 4
  },
  {
   "game_id": "sbl-2851701",
@@ -631,12 +631,12 @@
   "time": "19:04",
   "home": "Södertälje BBK",
   "away": "Nässjö Basket",
-  "hs": 49,
-  "as_": 46,
+  "hs": 55,
+  "as_": 50,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851701/summary",
   "box": false,
-  "clock": "06:46",
+  "clock": "04:05",
   "period": 3
  },
  {
@@ -645,12 +645,12 @@
   "time": "19:04",
   "home": "Köping Stars",
   "away": "Jämtland Basket",
-  "hs": 59,
-  "as_": 61,
+  "hs": 70,
+  "as_": 68,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851702/summary",
   "box": false,
-  "clock": "03:10",
+  "clock": "00:25",
   "period": 3
  },
  {
