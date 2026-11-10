@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T05:35:08+01:00",
+ "at": "2026-11-10T05:35:33+01:00",
  "log": [
   {
    "game": "g20261110ewu",
@@ -9,7 +9,7 @@
    "game": "g20261110ewu",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:55",
+   "clock": "04:42",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261110stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:09",
+   "clock": "09:31",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Stanford Cardinal",
-     72,
+     74,
      16
     ]
    ]
