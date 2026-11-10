@@ -3596,7 +3596,8 @@
         if (tf.length) { const f = mk('div', 'gchx-form'); tf.forEach((r) => { const w = String(r.result).toUpperCase() === 'W'; const c = mk('i', w ? 'w' : 'l', w ? 'W' : 'L'); c.title = `${dayFmt(r.date)} ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent} ${r.score}`; f.append(c); }); s0.append(f); } });
       // the Swedes in this game, with their line so far, along the bottom of the band
       const sl = lines.filter((r) => r.player);
-      if (sl.length) { const strip = mk('div', 'gchx-swe'); strip.append(mk('span', 'lab', '🇸🇪 Swedes in this game'));
+      if (sl.length || g.coach) { const strip = mk('div', 'gchx-swe'); strip.append(mk('span', 'lab', sl.length ? '🇸🇪 Swedes in this game' : '🇸🇪 Swedish coach in this game'));
+        if (g.coach) { const cb = mk('button', 'gchx-p coach'); cb.type = 'button'; cb.onclick = () => showCoach(g.coach); const av = faceAv('span', 'av', g.coach); const t2 = mk('span', 't'); t2.append(mk('b', '', g.coach), mk('span', '', 'Coach · ' + (g.team || ''))); cb.append(av, t2); strip.append(cb); }
         sl.forEach((r) => { const b = mk('button', 'gchx-p'); b.type = 'button'; b.onclick = () => showLog(r.player); const ph = photoFor(r.player); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); av.append(im); } else av.textContent = initials(r.player);
           const t2 = mk('span', 't'); t2.append(mk('b', '', r.player), mk('span', '', /DNP/i.test(r.note || '') ? 'Did not play' : `${r.pts} PTS · ${r.reb} REB · ${r.ast} AST${r.min ? ' · ' + r.min + ' min' : ''}`)); b.append(av, t2); strip.append(b); });
         hero.append(strip); }
