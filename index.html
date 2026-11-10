@@ -312,6 +312,16 @@
       <h1>SBL standouts</h1>
       <p>The biggest single games in Basketligan this season.</p>
       <div class="lx-nums" data-draw="sblnums" data-source="sbl"></div>
+      <div class="sblx-spot" data-draw="sblspot" data-source="sblplayers photos awards stats"></div>
+    </section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Players we follow in the SBL</h2><span class="lx-note">Their season so far</span></div>
+      <div class="sblx-swe" data-draw="sblswe" data-source="stats sblplayers ntroster photos gamelogs"></div>
+    </section>
+    <section class="lx-sec" data-draw="sblup" data-source="sblgames logos"></section>
+    <section class="lx-sec" id="sbl-games">
+      <div class="lx-head"><h2>All SBL games</h2><span class="lx-note">Every game in the league, with full box scores (live during games)</span></div>
+      <div class="sblx-all" data-draw="sblall" data-source="sblleague logos"></div>
     </section>
     <section class="lx-sec">
       <div class="lx-head"><h2>Season bests</h2><span class="lx-note">Best single game in each category</span></div>
@@ -437,8 +447,12 @@
     <div class="pp" data-draw="pp" data-source="players stats gamelogs boxscores schedule bios career highlights awards ntroster leaguetiers photos"></div>
   </div>
 
+  <div class="pg" data-page="sblp" id="sblp" hidden>
+    <div class="pp" data-draw="sblp" data-source="sblbox sblleague sbl logos photos sblroster"></div>
+  </div>
+
   <div class="pg" data-page="game" id="game" hidden>
-    <div class="gpage" data-draw="gc" data-source="schedule boxscores teamform highlights gamelogs teams previews stats thisweek fullbox coachgames coaches"></div>
+    <div class="gpage" data-draw="gc" data-source="schedule boxscores teamform highlights gamelogs teams previews stats thisweek fullbox sblbox sblleague coachgames coaches"></div>
   </div>
 
   <div class="sw-team-wrap" data-draw="team" data-source="teamform teams coachgames"></div>
@@ -1840,6 +1854,37 @@
     if (hit) return [String(hit[1]), hit[0] === '3PM' ? '3PM' : hit[0], /Double-double/i.test(t) ? L('Double-double', 'Dubbel-dubbel') : ''];
     return [String(r.pts), 'PTS', /Double-double/i.test(t) ? L('Double-double', 'Dubbel-dubbel') : ''];
   };
+
+  // ---- SBL page (new): Player of the Month spotlight, the national team players in the league, their next games
+  dash.draw('sblspot', (el) => {
+    el.replaceChildren(); const sp = (ds('sblplayers') || []).find((r) => /month/i.test(r.note || '')); if (!sp) return;
+    const c = mk('button', 'sblx-potm'); c.type = 'button'; c.onclick = () => showLog(sp.player);
+    const pic = mk('span', 'pic'); const ph = photoFor(sp.player); if (ph) { const im = new Image(); im.alt = sp.player; im.src = ph.src; faceFit(im, ph); pic.append(im); } else pic.textContent = initials(sp.player);
+    const t = mk('div', 't'); t.append(mk('span', 'k', '★ ' + String(sp.note).replace(/^SBL /, '')), mk('b', '', sp.player), mk('span', 's', [sp.club, sp.number ? '#' + sp.number : ''].filter(Boolean).join(' · ')), mk('span', 'go', 'Open profile →'));
+    c.append(pic, t); el.append(c);
+  });
+  dash.draw('sblswe', (el) => {
+    el.replaceChildren();
+    const rows = (ds('stats') || []).filter((r) => norm(r.competition) === 'basketligan' && Number(r.gp) > 0).sort((a, b) => Number(b.pts) - Number(a.pts));
+    if (!rows.length) { el.append(mk('p', 'empty', 'No games yet.')); return; }
+    rows.forEach((r) => { const c = mk('button', 'sblx-pc'); c.type = 'button'; c.onclick = () => showLog(r.player);
+      const pic = mk('span', 'pic'); const ph = photoFor(r.player); if (ph) { const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); pic.append(im); } else pic.textContent = initials(r.player);
+      const club = homeClubOf(r.player) || ''; const hd = mk('div', 'hd'); const nm = mk('div', 'nm'); nm.append(mk('b', '', r.player), (() => { const x = mk('span', 'club'); if (club) x.append(crest(club, 'sm'), club); return x; })()); hd.append(pic, nm);
+      const nums = mk('div', 'nums'); [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast]].forEach(([k, v], i) => { const d = mk('div', i ? '' : 'y'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); nums.append(d); });
+      const nt = (ds('ntroster') || []).some((x) => isSame(x.player, r.player)); const sp = (ds('sblplayers') || []).find((x) => isSame(x.player, r.player));
+      const tag = nt ? '🇸🇪 National team' : sp && sp.note ? '★ ' + String(sp.note).replace(/^SBL /, '').replace(/, .*$/, '') : '';
+      if (tag) nm.append(mk('span', 'sblx-tag' + (nt ? ' nt' : ''), tag));
+      c.append(hd, nums, mk('span', 'gp', `${r.gp} games · ${f1x(r.min)} min`)); el.append(c); });
+  });
+  dash.draw('sblup', (el) => {
+    el.replaceChildren(); const up = (ds('sblgames') || []).filter((g) => g.status !== 'final').slice(0, 6); if (!up.length) return;
+    const h = mk('div', 'lx-head'); h.append(mk('h2', '', 'Coming up'), mk('span', 'lx-note', 'Their next SBL games')); el.append(h);
+    const l = mk('div', 'sblx-up'); up.forEach((g) => { const b = mk('button', 'sblx-g'); b.type = 'button'; b.onclick = () => g.url && window.open(g.url, '_blank', 'noopener');
+      const d = mk('div', 'upx-date'); d.append(mk('b', '', String(Number(g.date.slice(8, 10)))), mk('span', '', new Date(g.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }).toUpperCase()));
+      const ha = homeAway(g); const teams = mk('div', 'tms'); [ha.home, ha.away].forEach((t) => { const r = mk('span', 't' + (t.swe ? ' swe' : '')); r.append(crest(t.name, 'sm'), t.name); teams.append(r); });
+      const m = mk('div', 'meta'); m.append(mk('b', '', g.time || 'TBC'), mk('span', 'p', '🇸🇪 ' + g.players));
+      b.append(d, teams, m); l.append(b); }); el.append(l);
+  });
   dash.draw('sblnums', (el) => {
     el.replaceChildren();
     const rows = sblRows(); if (!rows) return;
@@ -1860,7 +1905,7 @@
       const t = mk('div', 'sbx-best');
       const hd = mk('div', 'sbx-best-h'); hd.append(mk('span', 'k', lab), mk('span', 'v', String(top)));
       t.append(hd);
-      const w = mk('div', 'sbx-who'); w.append(mk('div', 'n', who[0].player + (who.length > 1 ? L(` +${who.length - 1}`, ` +${who.length - 1}`) : '')), mk('div', 'm', `${who[0].team} · ${dayFmt(who[0].date)}`));
+      const w = mk('div', 'sbx-who'); w.append(faceAv('span', 'sbx-face', who[0].player)); const wt = mk('div'); const wn = mk('div', 'n'); wn.append(sblName(who[0].player)); if (who.length > 1) wn.append(` +${who.length - 1}`); wt.append(wn, mk('div', 'm', `${who[0].team} · ${dayFmt(who[0].date)}`)); w.append(wt);
       t.append(w);
       el.append(t);
     });
@@ -1869,12 +1914,12 @@
     el.replaceChildren();
     const rows = sblRows(); if (!rows || !rows.length) return;
     const by = new Map();
-    rows.forEach((r) => { const k = r.player; const o = by.get(k) || { player: k, team: r.team, n: 0, best: 0 }; o.n++; o.best = Math.max(o.best, Number(r.pts) || 0); by.set(k, o); });
+    rows.forEach((r) => { const k = norm(r.player); const o = by.get(k) || { player: r.player, team: r.team, n: 0, best: 0 }; o.n++; o.best = Math.max(o.best, Number(r.pts) || 0); by.set(k, o); });
     const list = [...by.values()].sort((a, b) => b.n - a.n || b.best - a.best).slice(0, 6);
     list.forEach((o, i) => {
       const r = mk('div', 'sbx-lead');
       r.append(mk('span', 'rk', String(i + 1)));
-      const nm = mk('div', 'nm'); nm.append(mk('div', 'n', o.player), mk('div', 'm', o.team));
+      const nm = mk('div', 'nm'); const on = mk('div', 'n'); on.append(sblName(o.player)); nm.append(on, mk('div', 'm', o.team)); r.append(faceAv('span', 'sbx-face sm', o.player));
       const c = mk('div', 'ct'); c.append(mk('b', '', String(o.n)), mk('span', '', o.n === 1 ? L('game', 'match') : L('games', 'matcher')));
       r.append(nm, c); el.append(r);
     });
@@ -1906,14 +1951,14 @@
       const big = mk('div', 'sbx-num'); big.append(mk('b', '', num), mk('span', '', sub ? (/Quad|Fyr/i.test(sub) ? 'QD' : /Trip/i.test(sub) ? 'TD' : 'DD') : unit));
       if (sub) big.title = sub;
       const mid = mk('div', 'sbx-mid');
-      const nmEl = mk('div', 'sbx-name'); nmEl.append(homeClubOf(r.player) ? names(r.player) : r.player);
+      const nmEl = mk('div', 'sbx-name'); nmEl.append(sblName(r.player));
       mid.append(nmEl, mk('div', 'sbx-ctx', `${r.team} ${r.venue === 'Away' ? L('at', 'mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
       const bits = [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].map(([v, k]) => `${v} ${k}`);
       if (Number(r.stl) >= 3) bits.push(`${r.stl} STL`); if (Number(r.blk) >= 3) bits.push(`${r.blk} BLK`);
       if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
       sblTags(r).split(/,\s*(?![^()]*\))/).filter((x) => /Perfect|5x5/.test(x)).forEach((x) => bits.push(x));
       mid.append(mk('div', 'sbx-stats', bits.join(' · ')));
-      c.append(big, mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res));
+      c.append(big, faceAv('span', 'sbx-face', r.player), mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res)); mid.prepend((() => { const x = mk('div', 'sbx-team'); x.append(crest(r.team, 'sm'), r.team); return x; })());
       el.append(c);
     });
     if (list.length > LIMIT) { const b = mk('button', 'lx-more', sblMore ? L('Show fewer', 'Visa färre') : L(`Show all ${list.length} standout games`, `Visa alla ${list.length} toppmatcher`)); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; el.append(b); }
@@ -3485,10 +3530,80 @@
 
   // ---- Game center (EuroLeague style, with tabs)
   let gcTab = null, gcFor = null;
+
+  // ---- SBL league: all games, box scores and a page for every player (from data/sblleague.json and data/sblbox.json)
+  function allBox() { return (ds('fullbox') || []).concat(ds('sblbox') || []); }
+  function sblGame(id) {
+    const r = (ds('sblleague') || []).find((x) => x.game_id === id); if (!r) return null;
+    const done = r.hs != null && r.as_ != null;
+    const sw = (ds('sblbox') || []).filter((x) => x.game_id === id && x.swede);
+    return { game_id: id, date: r.date, time: r.time, team: r.home, opponent: r.away, venue: 'Home', competition: 'Basketligan', status: r.status, clock: r.clock || '',
+      score: done ? `${r.hs > r.as_ ? 'W' : r.hs < r.as_ ? 'L' : 'T'} ${r.hs}-${r.as_}` : '', players: sw.map((x) => x.player).join(', '), box_url: r.url, sblLeague: true };
+  }
+  let sblAllView = 'results', sblAllDays = 4;
+  dash.draw('sblall', (el) => {
+    el.replaceChildren(); const G = ds('sblleague'); if (!G) { el.textContent = '—'; return; }
+    const live = G.filter((g) => g.status === 'live');
+    const tabs = mk('div', 'sblx-tabs'); [['results', 'Results'], ['upcoming', 'Upcoming'], ...(live.length ? [['live', `● Live (${live.length})`]] : [])].forEach(([k, l]) => { const b = mk('button', sblAllView === k ? 'on' : '', l); b.type = 'button'; b.onclick = () => { sblAllView = k; sblAllDays = 4; dash.draw('sblall'); }; tabs.append(b); });
+    el.append(tabs);
+    let list = sblAllView === 'live' ? live : sblAllView === 'results' ? G.filter((g) => g.status === 'final').reverse() : G.filter((g) => g.status === 'upcoming');
+    const days = new Map(); list.forEach((g) => { if (!days.has(g.date)) days.set(g.date, []); days.get(g.date).push(g); });
+    const all = [...days.entries()];
+    all.slice(0, sblAllDays).forEach(([d, gs]) => {
+      const sec = mk('div', 'sblx-day'); const dt = new Date(d + 'T12:00:00Z');
+      sec.append(mk('div', 'sblx-dh', dt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' })));
+      const grid = mk('div', 'sblx-gg');
+      gs.forEach((g) => { const c = mk('button', 'sblx-gc ' + g.status); c.type = 'button'; c.onclick = () => showCard(g.game_id);
+        const top = mk('div', 'tp'); top.append(mk('span', 'st', g.status === 'final' ? 'Final' : g.status === 'live' ? '● Live' + (g.clock ? ' · ' + g.clock : '') : g.time));
+        const sw = (ds('sblbox') || []).some((x) => x.game_id === g.game_id && x.swede); if (sw || (ds('sblgames') || []).some((x) => x.game_id === g.game_id)) top.append(mk('span', 'swe', '🇸🇪'));
+        c.append(top);
+        [[g.home, g.hs, g.as_], [g.away, g.as_, g.hs]].forEach(([t, s1, s2]) => { const r = mk('div', 'tr' + (g.status === 'final' ? (s1 > s2 ? ' win' : ' lose') : '')); r.append(crest(t, 'lg'), mk('span', 'nm', t), mk('span', 'sc', s1 == null ? '' : String(s1))); c.append(r); });
+        grid.append(c); });
+      sec.append(grid); el.append(sec); });
+    if (all.length > sblAllDays) { const b = mk('button', 'gmx-more', 'Show more days'); b.type = 'button'; b.onclick = () => { sblAllDays += 4; dash.draw('sblall'); }; el.append(b); }
+    if (!list.length) el.append(mk('p', 'empty', sblAllView === 'live' ? 'No games on right now.' : 'No games yet.'));
+  });
+  // a page for any SBL player: season averages from the box scores, game log and standout games
+  let sblpName = null;
+  function showSblPlayer(n) {
+    if ((ds('sblplayers') || []).some((x) => isSame(x.player, n)) || (ds('ntroster') || []).some((x) => isSame(x.player, n)) || (ds('players') || []).some((x) => isSame(x.player, n))) { showLog(n); return; }
+    sblpName = n; showPage('sblp', true); dash.setLink('sbl-player=' + n); dash.draw('sblp'); scrollTopSw();
+  }
+  function sblName(n, cls) { const b = mk('button', cls || 'sbl-nm', n); b.type = 'button'; b.onclick = (e) => { e.stopPropagation(); showSblPlayer(n); }; return b; }
+  dash.draw('sblp', (el) => {
+    el.replaceChildren(); if (!sblpName) return; const B = ds('sblbox'); if (!B) { el.textContent = 'Loading…'; return; }
+    const G = ds('sblleague') || []; const L = B.filter((r) => isSame(r.player, sblpName)).map((r) => Object.assign({ g: G.find((x) => x.game_id === r.game_id) }, r)).filter((r) => r.g).sort((a, b) => String(b.g.date).localeCompare(String(a.g.date)));
+    if (!L.length) { el.append(mk('p', 'empty', 'No games found for this player.')); return; }
+    const team = L[0].team, played = L.filter((r) => String(r.min) !== '0' && r.min !== '' && r.min != null);
+    const hero = mk('section', 'pp-hero sblp-hero'); hero.style.setProperty('--tc', teamColor(team));
+    const ph = photoFor(sblpName); const pic = mk('div', 'pp-pic'); if (ph) { const im = new Image(); im.src = ph.src; im.alt = sblpName; pic.append(im); hero.classList.add('has-photo'); } else pic.append(crest(team, 'xl'));
+    const id = mk('div', 'pp-id'); const club = mk('div', 'pp-club'); club.append(crest(team, 'sm'), mk('span', 'tm', team)); const parts = sblpName.split(' ');
+    const ro = (ds('sblroster') || []).find((x) => isSame(x.player, sblpName));
+    const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag', 'Basketligan'), mk('span', 'pp-tag', '2026-27'));
+    const meta = mk('div', 'pp-meta'); if (ro) { [ro.number != null ? '#' + ro.number : '', ro.position ? String(ro.position).replace(/s$/, '') : '', ro.height ? ro.height + ' cm' : '', ro.nationality ? (new Intl.DisplayNames(['en'], { type: 'region' }).of(ro.nationality) || ro.nationality) : ''].filter(Boolean).forEach((x) => meta.append(mk('span', '', x))); }
+    if (ro && ro.number != null) hero.append(mk('span', 'pp-bignum', String(ro.number)));
+    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]), meta, tags); hero.append(pic, id); el.append(hero);
+    if (ph && Array.isArray(ph.fbox)) { const im = pic.querySelector('img'); pic.classList.add('fitface'); const fit = () => heroFaceFit(pic, im, ph.fbox); im.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); }
+    const av = (k) => played.length ? played.reduce((t, r) => t + (Number(r[k]) || 0), 0) / played.length : 0;
+    const pct = (k) => { let m = 0, a = 0; played.forEach((r) => { const q = /^(\d+)\/(\d+)$/.exec(r[k] || ''); if (q) { m += +q[1]; a += +q[2]; } }); return a ? (m / a * 100).toFixed(1) : '–'; };
+    const sec = ppSection('Season 2026-27 averages'); sec.dataset.k = 'avg'; sec.dataset.kick = 'Numbers';
+    const big = mk('div', 'pp-big'); [['Points', 'pts'], ['Rebounds', 'reb'], ['Assists', 'ast'], ['Minutes', 'min']].forEach(([l, k]) => { const d = mk('div'); d.append(mk('b', '', av(k).toFixed(1)), mk('span', '', l)); big.append(d); });
+    const tiles = mk('div', 'pp-tiles'); [['Games', String(played.length)], ['FG%', pct('fg')], ['3P%', pct('three')], ['FT%', pct('ft')]].forEach(([k, v]) => { const t = mk('div', 'pp-tile'); t.append(mk('span', 'v', v), mk('span', 'k', k)); tiles.append(t); });
+    sec.append(big, tiles); el.append(sec);
+    const so = (ds('sbl') || []).filter((r) => isSame(r.player, sblpName));
+    if (so.length) { const s2 = ppSection('Standout games'); s2.dataset.k = 'star'; s2.dataset.kick = 'Highlights'; so.forEach((r) => { const c = mk('article', 'hh'); c.append(mk('div', 'hh-top', `${dayFmt(r.date)} · ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`), mk('div', 'hh-head', tx(r, 'headline'))); s2.append(c); }); el.append(s2); }
+    const lg = ppSection('Game log'); lg.dataset.k = 'games'; lg.dataset.kick = 'Every game';
+    const tw = mk('div', 'gcx-tw'); const t = mk('table', 'gcx-t sblp-t'); const hr = mk('tr'); ['Date', 'Opponent', 'Result', 'MIN', 'PTS', 'REB', 'AST', 'FG', '3P', 'FT'].forEach((x, i) => hr.append(mk('th', i < 2 ? 'pl' : '', x))); const th = mk('thead'); th.append(hr); t.append(th); const tb = mk('tbody');
+    L.forEach((r) => { const g = r.g, home = sameTeam(g.home, r.team), us = home ? g.hs : g.as_, them = home ? g.as_ : g.hs; const tr = mk('tr'); tr.style.cursor = 'pointer'; tr.onclick = () => showCard(g.game_id);
+      const opp = mk('td', 'pl'); opp.append(crest(home ? g.away : g.home, 'sm'), ' ' + (home ? 'vs ' : '@ ') + (home ? g.away : g.home));
+      tr.append(mk('td', 'pl', dayFmt(g.date)), opp, mk('td', us > them ? 'pos' : 'neg', us == null ? '' : `${us > them ? 'W' : 'L'} ${us}-${them}`), ...[r.min, r.pts, r.reb, r.ast, r.fg, r.three, r.ft].map((v) => mk('td', '', String(v ?? '')))); tb.append(tr); });
+    t.append(tb); tw.append(t); lg.append(tw); el.append(lg);
+  });
   function gameById(id) {
     const sc = ds('schedule'), gl = ds('gamelogs');
     let g = (allGames() || []).find((r) => r.game_id === id && !String(id).startsWith('gl:')) || null;
     let lines = null;
+    if (!g && String(id).startsWith('sbl-')) { g = sblGame(id); if (g) lines = (ds('sblbox') || []).filter((r) => r.game_id === id && r.swede).map((r) => Object.assign({ line_id: r.row_id }, r)); }
     if (!g && String(id).startsWith('gl:') && gl) {
       const gr = gl.filter((r) => r.row_id !== 'placeholder' && r.date && glKey(r) === id);
       if (gr.length) { const r0 = gr[0]; g = { game_id: id, date: r0.date, time: '', players: gr.map((r) => r.player).join(', '), team: r0.team, opponent: r0.opponent, venue: r0.venue, competition: r0.competition, status: 'final', score: r0.result, note: '' }; lines = gr.map((r) => Object.assign({}, r, { line_id: r.row_id, game_id: id })); }
@@ -3537,7 +3652,7 @@
     return wrap;
   }
   function gcx(el, g, lines, ha, final, story, hl) {
-    const fb = (ds('fullbox') || []).filter((r) => r.game_id === g.game_id);
+    const fb = allBox().filter((r) => r.game_id === g.game_id);
     const H = gcxTotals(fb, ha.home.name), A = gcxTotals(fb, ha.away.name);
     const live = g.status === 'live';
     if (gcTab === 'overview') {
@@ -3602,7 +3717,7 @@
       const tw = mk('div', 'gcx-tw'); const t = mk('table', 'gcx-t'); const hr = mk('tr'); hr.append(mk('th', 'pl', 'Player'));
       cols.forEach(([lab, k]) => { const th = mk('th', gcxSort.k === k ? 'on' : '', lab + (gcxSort.k === k ? (gcxSort.d < 0 ? ' ↓' : ' ↑') : '')); th.onclick = () => { gcxSort = { k, d: gcxSort.k === k ? -gcxSort.d : -1 }; dash.draw('gc'); }; hr.append(th); });
       const th0 = mk('thead'); th0.append(hr); t.append(th0); const tb = mk('tbody');
-      rows.forEach((r) => { const tr = mk('tr', r.swede ? 'swe' : ''); const pl = mk('td', 'pl'); if (r.swede) { const b = mk('button', 'gcx-pn', '🇸🇪 ' + r.player); b.type = 'button'; b.onclick = () => showLog(r.player); pl.append(b); } else pl.append(r.player); tr.append(pl);
+      rows.forEach((r) => { const tr = mk('tr', r.swede ? 'swe' : ''); const pl = mk('td', 'pl'); if (r.swede) { const b = mk('button', 'gcx-pn', '🇸🇪 ' + r.player); b.type = 'button'; b.onclick = () => showLog(r.player); pl.append(b); } else if (String(g.game_id).startsWith('sbl-')) pl.append(sblName(r.player, 'gcx-on')); else pl.append(r.player); tr.append(pl);
         cols.forEach(([, k]) => { let v = r[k]; if (k === 'pm' && v !== '' && v != null) v = (Number(v) > 0 ? '+' : '') + v; const td = mk('td', (best[k] != null && num(r, k) === best[k] && best[k] > 0 ? 'lead' : '') + (k === 'pm' && Number(r[k]) > 0 ? ' pos' : k === 'pm' && Number(r[k]) < 0 ? ' neg' : ''), v === '' || v == null ? '—' : String(v)); tr.append(td); }); tb.append(tr); });
       const tot = mk('tr', 'tot'); tot.append(mk('td', 'pl', 'Team')); [['min', ''], ['pts', T.pts], ['reb', T.reb], ['ast', T.ast], ['stl', T.stl], ['blk', T.blk], ['tov', T.tov], ['fg', `${T.fg.m}/${T.fg.a}`], ['three', `${T.three.m}/${T.three.a}`], ['ft', `${T.ft.m}/${T.ft.a}`], ['pm', '']].forEach(([, v]) => tot.append(mk('td', '', v === '' ? '' : String(v))));
       tb.append(tot); const pc = mk('tr', 'pct'); pc.append(mk('td', 'pl', '')); ['', '', '', '', '', '', '', T.fg.p == null ? '' : T.fg.p.toFixed(1) + '%', T.three.p == null ? '' : T.three.p.toFixed(1) + '%', T.ft.p == null ? '' : T.ft.p.toFixed(1) + '%', ''].forEach((v) => pc.append(mk('td', '', v))); tb.append(pc);
@@ -3708,7 +3823,7 @@
       const tw = mk('div', 'pp-two');
       [[g.team, ourRow], [g.opponent, oppRow]].forEach(([team, row]) => {
         const box = mk('div', 'gc-lead'); const h = mk('div', 'gc-lead-h'); h.append(crest(team, 'sm'), teamBtn(team)); box.append(h);
-        const fbT = (ds('fullbox') || []).filter((r) => r.game_id === g.game_id && sameTeam(r.team, team)).sort((x, y) => Number(y.pts) - Number(x.pts));
+        const fbT = allBox().filter((r) => r.game_id === g.game_id && sameTeam(r.team, team)).sort((x, y) => Number(y.pts) - Number(x.pts));
         const L = fbT.length ? fbT.slice(0, 3).map((r) => ({ n: r.player, pts: r.pts, reb: r.reb, ast: r.ast })) : leadersOfRow(row).slice(0, 3);
         if (!L.length) box.append(mk('p', 'empty', 'Not added yet.'));
         L.forEach((p, i) => { const r = mk('div', 'gc-lead-r'); r.append(mk('span', 'rk', String(i + 1)), mk('span', 'nm2', p.n), mk('span', 'st', `${p.pts || '—'} PTS · ${p.reb || '—'} REB · ${p.ast || '—'} AST`)); box.append(r); });
@@ -3725,7 +3840,7 @@
     }
 
     if (gcTab === 'box') {
-      const fb = (ds('fullbox') || []).filter((r) => r.game_id === g.game_id);
+      const fb = allBox().filter((r) => r.game_id === g.game_id);
       if (fb.length) {
         const liveNow = fb.some((r) => r.state === 'live');
         [ha.home.name, ha.away.name].forEach((team) => {
@@ -5180,6 +5295,7 @@
   (function openFromLink() {
     const h = decodeURIComponent(location.hash.slice(1).replace(/\+/g, ' '));
     // a specific game, player or team: reopen it (also makes links to one game shareable)
+    const sp = /^sbl-player=(.+)$/.exec(h); if (sp) { const go = () => { if (ds('sblbox')) showSblPlayer(sp[1]); else setTimeout(go, 300); }; showPage('sblp', true); sblpName = sp[1]; go(); return; }
     const m = /^(game|player|team|coach)=(.+)$/.exec(h);
     if (m) {
       if (m[1] === 'game') showCard(m[2]); else if (m[1] === 'player') showLog(m[2]); else if (m[1] === 'coach') showCoach(m[2]); else showTeam(m[2]);

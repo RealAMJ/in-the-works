@@ -42,6 +42,12 @@
   "dark": true
  },
  {
+  "team": "BC Luleå",
+  "src": "logos/bc-lulea.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
   "team": "BC Vienna",
   "src": "logos/bc-vienna.png",
   "source": "FIBA LiveStats",
@@ -75,6 +81,12 @@
   "team": "Besiktas Istanbul",
   "src": "logos/besiktas-istanbul.png",
   "source": "EuroLeague",
+  "dark": false
+ },
+ {
+  "team": "Borås Basket",
+  "src": "logos/boras-basket.png",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -246,6 +258,12 @@
   "dark": false
  },
  {
+  "team": "Högsbo Lions",
+  "src": "logos/hogsbo.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
   "team": "Idaho State",
   "src": "logos/idaho-state.png",
   "source": "NCAA (ESPN)",
@@ -274,6 +292,12 @@
   "src": "logos/jackson-state.png",
   "source": "NCAA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Jämtland Basket",
+  "src": "logos/jamtland-basket.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
  },
  {
   "team": "KK DepoLink Škrljevo",
@@ -316,6 +340,12 @@
   "src": "logos/kosner-baskonia.png",
   "source": "EuroLeague",
   "dark": true
+ },
+ {
+  "team": "Köping Stars",
+  "src": "logos/koping-stars.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
  },
  {
   "team": "LA Clippers",
@@ -504,6 +534,12 @@
   "dark": false
  },
  {
+  "team": "Norrköping Dolphins",
+  "src": "logos/norrkoping-dolphins.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
   "team": "North Carolina Central",
   "src": "logos/north-carolina-central.png",
   "source": "NCAA (ESPN)",
@@ -519,6 +555,12 @@
   "team": "Northwestern State",
   "src": "logos/northwestern-state.png",
   "source": "NCAA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "Nässjö Basket",
+  "src": "logos/kfum-nassjo.png",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -714,6 +756,12 @@
   "dark": false
  },
  {
+  "team": "Sloga Uppsala",
+  "src": "logos/sloga-uppsala.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
   "team": "Southeast Missouri State",
   "src": "logos/southeast-missouri-state.png",
   "source": "NCAA (ESPN)",
@@ -747,6 +795,12 @@
   "team": "Syracuse",
   "src": "logos/syracuse.png",
   "source": "NCAA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "Södertälje BBK",
+  "src": "logos/sodertalje-kings.png",
+  "source": "Basketligan (sblherr.se)",
   "dark": false
  },
  {
@@ -814,6 +868,18 @@
   "src": "logos/utsa.png",
   "source": "NCAA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Umeå Basket",
+  "src": "logos/umea-bskt.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
+  "team": "Uppsala Basket",
+  "src": "logos/uppsala-basket.png",
+  "source": "Basketligan (sblherr.se)",
+  "dark": false
  },
  {
   "team": "Utah Jazz",

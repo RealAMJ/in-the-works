@@ -446,5 +446,353 @@
    0.5514,
    0.4214
   ]
+ },
+ {
+  "player": "Adam Rask",
+  "src": "photos/sbl-adam-rask.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.376,
+   0.0933,
+   0.242,
+   0.2017
+  ]
+ },
+ {
+  "player": "Adam Tafra",
+  "src": "photos/sbl-adam-tafra.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.37,
+   0.1417,
+   0.2833,
+   0.2361
+  ]
+ },
+ {
+  "player": "Andrew Rohde",
+  "src": "photos/sbl-andrew-rohde.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.388,
+   0.0333,
+   0.254,
+   0.2117
+  ]
+ },
+ {
+  "player": "Anes Zekovic",
+  "src": "photos/sbl-anes-zekovic.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.368,
+   0.0967,
+   0.294,
+   0.245
+  ]
+ },
+ {
+  "player": "Anton Johansson",
+  "src": "photos/sbl-anton-johansson.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.33,
+   0.0633,
+   0.34,
+   0.2833
+  ]
+ },
+ {
+  "player": "Brayden Parker",
+  "src": "photos/sbl-brayden-parker.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.388,
+   0.065,
+   0.254,
+   0.2117
+  ]
+ },
+ {
+  "player": "Dalton Gayman",
+  "src": "photos/sbl-dalton-gayman.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.32,
+   0.1417,
+   0.23,
+   0.1917
+  ]
+ },
+ {
+  "player": "Eric Van Der Heijden",
+  "src": "photos/sbl-eric-van-der-heijden.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.402,
+   0.0933,
+   0.216,
+   0.18
+  ]
+ },
+ {
+  "player": "Jalen Leach",
+  "src": "photos/sbl-jalen-leach.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.388,
+   0.1133,
+   0.244,
+   0.2033
+  ]
+ },
+ {
+  "player": "Javier Marin",
+  "src": "photos/sbl-javier-marin.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.422,
+   0.0783,
+   0.212,
+   0.1767
+  ]
+ },
+ {
+  "player": "Jayden Martinez",
+  "src": "photos/sbl-jayden-martinez.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.392,
+   0.0917,
+   0.246,
+   0.205
+  ]
+ },
+ {
+  "player": "Jaylin Sean Henderson",
+  "src": "photos/sbl-jaylin-sean-henderson.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.366,
+   0.0633,
+   0.256,
+   0.2133
+  ]
+ },
+ {
+  "player": "Jeffery Taylor",
+  "src": "photos/sbl-jeffery-taylor.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.316,
+   0.14,
+   0.464,
+   0.3867
+  ]
+ },
+ {
+  "player": "Jesper Hallberg",
+  "src": "photos/sbl-jesper-hallberg.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.356,
+   0.0633,
+   0.33,
+   0.275
+  ]
+ },
+ {
+  "player": "Jhonny Tovar",
+  "src": "photos/sbl-jhonny-tovar.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.33,
+   0.07,
+   0.334,
+   0.2783
+  ]
+ },
+ {
+  "player": "Jordan Ivy Curry",
+  "src": "photos/sbl-jordan-ivy-curry.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.358,
+   0.1283,
+   0.29,
+   0.2417
+  ]
+ },
+ {
+  "player": "K.J. Debrick",
+  "src": "photos/sbl-kj-debrick.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.322,
+   0.14,
+   0.188,
+   0.1567
+  ]
+ },
+ {
+  "player": "Leo Ryott",
+  "src": "photos/sbl-leo-ryott.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.32,
+   0.1233,
+   0.242,
+   0.2017
+  ]
+ },
+ {
+  "player": "Marko Dujkovic",
+  "src": "photos/sbl-marko-dujkovic.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.284,
+   0.1167,
+   0.228,
+   0.19
+  ]
+ },
+ {
+  "player": "Michael Graham",
+  "src": "photos/sbl-michael-graham.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.388,
+   0.095,
+   0.232,
+   0.1933
+  ]
+ },
+ {
+  "player": "Milos Bajic",
+  "src": "photos/sbl-milos-bajic.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.32,
+   0.1483,
+   0.24,
+   0.2
+  ]
+ },
+ {
+  "player": "Nico Galette",
+  "src": "photos/sbl-nico-galette.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.392,
+   0.1233,
+   0.22,
+   0.1833
+  ]
+ },
+ {
+  "player": "Pierre Hampton",
+  "src": "photos/sbl-pierre-hampton.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.332,
+   0.1217,
+   0.364,
+   0.3033
+  ]
+ },
+ {
+  "player": "Rahsaan Edwards",
+  "src": "photos/sbl-rahsaan-edwards.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.326,
+   0.0883,
+   0.348,
+   0.29
+  ]
+ },
+ {
+  "player": "Tomas Atli Bjarkason",
+  "src": "photos/sbl-tomas-atli-bjarkason.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.368,
+   0.06,
+   0.318,
+   0.265
+  ]
+ },
+ {
+  "player": "Tre-Vaughn Minott",
+  "src": "photos/sbl-trevaughn-minott.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.32,
+   0.0533,
+   0.296,
+   0.2467
+  ]
+ },
+ {
+  "player": "Zane Nelson",
+  "src": "photos/sbl-zane-nelson.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.402,
+   0.0683,
+   0.236,
+   0.1967
+  ]
+ },
+ {
+  "player": "Charles Barton",
+  "src": "photos/sbl-charles-barton.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.382,
+   0.055,
+   0.296,
+   0.2467
+  ]
+ },
+ {
+  "player": "Ali Ali",
+  "src": "photos/sbl-ali-ali.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.366,
+   0.095,
+   0.252,
+   0.21
+  ]
  }
 ]

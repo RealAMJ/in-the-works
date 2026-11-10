@@ -14,7 +14,7 @@ Run: python3 scripts/sbl.py            (only at the top of the hour, so the 5-mi
 """
 import datetime as dt
 import os
-import re
+import json, re
 import sys
 import urllib.request
 
@@ -25,9 +25,51 @@ COMP = 48974
 SCHEDULE = f'https://hosted.dcd.shared.geniussports.com/SBF/en/competition/{COMP}/schedule'
 
 # League names -> the spellings the site uses (checked in this order, so Sloga comes before Uppsala Basket)
-TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'Borås Basket'), ('nassjo', 'KFUM Nässjö'),
-         ('hogsbo', 'Högsbo'), ('sodertalje', 'Södertälje Kings'), ('jamtland', 'Jämtland Basket'), ('norrkoping', 'Norrköping Dolphins'), ('koping', 'Köping Stars'),
-         ('umea', 'Umeå BSKT'), ('lulea', 'BC Luleå')]
+TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'Borås Basket'), ('nassjo', 'Nässjö Basket'),
+         ('hogsbo', 'Högsbo Lions'), ('sodertalje', 'Södertälje BBK'), ('jamtland', 'Jämtland Basket'), ('norrkoping', 'Norrköping Dolphins'), ('koping', 'Köping Stars'),
+         ('umea', 'Umeå Basket'), ('lulea', 'BC Luleå')]
+# the clubs' own names (Andres, 10 Nov): older spellings in our data are renamed by rename_teams()
+RENAMED = {'Södertälje Kings': 'Södertälje BBK', 'KFUM Nässjö': 'Nässjö Basket', 'Högsbo': 'Högsbo Lions', 'Umeå BSKT': 'Umeå Basket'}
+
+
+def rename_teams():
+    """Put the clubs' current names in every data file that holds this season's SBL games (team fields only;
+    career and bio text keep the name the club had then)."""
+    changed = False
+    for fn in ('sbl', 'sblbox', 'sblleague', 'sblgames', 'sblroster', 'sblplayers', 'gamelogs', 'stats', 'teamform', 'ntroster'):
+        p = os.path.join(U.DATA, fn + '.json')
+        if not os.path.exists(p):
+            continue
+        rows, n = json.load(open(p, encoding='utf-8')), 0
+        for r in rows if isinstance(rows, list) else []:
+            for k in ('team', 'opponent', 'home', 'away', 'club', 'home_club'):
+                if isinstance(r, dict) and r.get(k) in RENAMED:
+                    r[k] = RENAMED[r[k]]; n += 1
+        if n:
+            U.save(fn, rows); changed = True
+    lp = os.path.join(U.DATA, 'logos.json')
+    if os.path.exists(lp):
+        L = json.load(open(lp, encoding='utf-8')); n = 0
+        for r in L:
+            if r.get('team') in RENAMED:
+                r['team'] = RENAMED[r['team']]; n += 1
+        if n:
+            json.dump(sorted(L, key=lambda r: r['team']), open(lp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1); changed = True
+    return changed
+
+
+# One spelling per player: the league's feeds, RealGM and the squads spell some players differently.
+# Keys are U.norm() of a spelling we have seen; values are the spelling the site uses.
+ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette', 'jordan ivycurry': 'Jordan Ivy Curry',
+         'trevaughn minott gauthier': 'Tre-Vaughn Minott', 'ali ali youssouf': 'Ali Ali'}
+
+
+# players who have left the league: not listed as standouts (Andres, 10 Nov)
+LEFT = {'william christopher dunston jr', 'cj dunston'}
+
+
+def canon(name):
+    return ALIAS.get(U.norm(name), name)
 
 
 def team_name(s):
@@ -206,9 +248,146 @@ def home_averages(players, gl, st):
                    note=f"Averages from game log ({n} games, through {max(x['date'] for x in logs)})")
 
 
+# ---- The whole league: every game (sblleague.json), every box score (sblbox.json) and every team's logo
+def league_games():
+    """All league games from the schedule page: [dict(game_id, date, time, home, away, hs, as_, status)]."""
+    out = []
+    for m in re.finditer(r'match-wrap (STATUS_\w+)"\s*id\s*=\s*"extfix_(\d+)"(.*?)(?=match-wrap STATUS_|\Z)', schedule_page(), re.S):
+        status, gid, block = m.groups()
+        d = re.search(r'match-time.*?<span>([A-Z][a-z]{2} \d{1,2}, \d{4}),?\s*(\d{1,2}:\d{2}\s*[AP]M)?', block, re.S)
+        names = re.findall(r'team-name-full">([^<]+)<', block)
+        if not d or len(names) < 2:
+            continue
+        day = dt.datetime.strptime(d.group(1), '%b %d, %Y').date()
+        tm = dt.datetime.strptime(d.group(2).replace(' ', ''), '%I:%M%p').strftime('%H:%M') if d.group(2) else 'TBC'
+        sc = lambda cls: (re.search(cls + r'.*?fake-cell">\s*(\d+)\s*<', block, re.S) or [None, None])[1]
+        hs, as_ = sc('homescore'), sc('awayscore')
+        st = 'final' if status == 'STATUS_COMPLETE' else 'upcoming' if status == 'STATUS_SCHEDULED' else 'live'
+        out.append(dict(game_id=f'sbl-{gid}', date=day.isoformat(), time=tm, home=team_name(names[0].strip()), away=team_name(names[1].strip()),
+                        hs=int(hs) if hs and st != 'upcoming' else None, as_=int(as_) if as_ and st != 'upcoming' else None, status=st,
+                        url=f'https://hosted.dcd.shared.geniussports.com/SBF/en/competition/{COMP}/match/{gid}/summary'))
+    out.sort(key=lambda r: (r['date'], r['time']))
+    return out
+
+
+def _tip(g):
+    try:
+        return dt.datetime.strptime(f"{g['date']} {g['time']}", '%Y-%m-%d %H:%M').replace(tzinfo=U.now().tzinfo)
+    except Exception:
+        return None
+
+
+def clear_bg(im):
+    """The league's logos sit on a white square: make the white that touches the edges transparent and trim it."""
+    from PIL import Image, ImageDraw
+    im = im.convert('RGBA'); w, h = im.size
+    for xy in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)):
+        r, g, b, a = im.getpixel(xy)
+        if a > 200 and r > 235 and g > 235 and b > 235:
+            ImageDraw.floodfill(im, xy, (255, 255, 255, 0), thresh=40)
+    box = im.getbbox()
+    im = im.crop(box) if box else im
+    # back onto a square canvas with a small margin, so tall and wide logos sit in the crest circle like the others
+    side = int(max(im.size) * 1.08); sq = Image.new('RGBA', (side, side), (0, 0, 0, 0))
+    sq.paste(im, ((side - im.width) // 2, (side - im.height) // 2), im)
+    return sq
+
+
+def _save_logo(name, url, have):
+    """Copy a team's logo from the league feed into logos/ (once)."""
+    if not url or name in have:
+        return False
+    try:
+        import io, logos as LG
+        from PIL import Image
+        with urllib.request.urlopen(urllib.request.Request(url, headers=U.UA), timeout=30) as r:
+            im = Image.open(io.BytesIO(r.read())).convert('RGBA')
+        im = clear_bg(im)
+        im.thumbnail((128, 128))
+        fn = 'logos/' + LG.slug(name) + '.png'
+        im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(os.path.join(U.ROOT, fn), optimize=True)
+        have[name] = {'team': name, 'src': fn, 'source': 'Basketligan (FIBA LiveStats)', 'dark': LG.is_dark(os.path.join(U.ROOT, fn))}
+        return True
+    except Exception as e:
+        print(f'  sbl logo {name}: {e.__class__.__name__}')
+        return False
+
+
+def league(only_live=False, limit=60):
+    """Refresh the league's games and box scores. Finished games are read once; games that are on are read every run."""
+    games = league_games()
+    old = {g['game_id']: g for g in (U.load('sblleague') if os.path.exists(os.path.join(U.DATA, 'sblleague.json')) else [])}
+    box = U.load('sblbox') if os.path.exists(os.path.join(U.DATA, 'sblbox.json')) else []
+    lp = os.path.join(U.DATA, 'logos.json')
+    have_logos = {r['team']: r for r in json.load(open(lp, encoding='utf-8'))} if os.path.exists(lp) else {}
+    home = home_nt()
+    now, n, changed, logos_changed = U.now(), 0, False, False
+    for g in games:
+        o = old.get(g['game_id']) or {}
+        g['box'] = o.get('box', False)
+        t = _tip(g)
+        on = g['status'] == 'live' or (g['status'] == 'upcoming' and t and t <= now <= t + dt.timedelta(hours=3))
+        want = on or (g['status'] == 'final' and not g['box'])
+        if only_live and not on:
+            continue
+        if not want or n >= limit:
+            continue
+        n += 1
+        try:
+            f = U.read_fiba(g['game_id'][4:])
+        except Exception as e:
+            print(f"  sbl {g['game_id']}: feed error {e.__class__.__name__}")
+            continue
+        if len(f.get('teams') or []) != 2:
+            continue
+        for t in f['teams']:
+            logos_changed |= _save_logo(team_name(t['name']), t.get('logo'), have_logos)
+        lines = []
+        for ti, t in enumerate(f['teams']):
+            for i, p in enumerate(t['pl']):
+                if not p['name']:
+                    continue
+                swede = any(U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc for _, sur, hc in home)
+                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), canon(p['name']))
+                lines.append(dict(row_id=f"{g['game_id']}-{ti}-{i}", game_id=g['game_id'], team=team_name(t['name']), player=name,
+                                  min=U.as_min(p['min']), pts=p['pts'] or 0, reb=p['reb'] or 0, ast=p['ast'] or 0, stl=p['stl'] or 0, blk=p['blk'] or 0, tov=p['tov'] or 0,
+                                  fg=f"{p['fgm'] or 0}/{p['fga'] or 0}", three=f"{p['tpm'] or 0}/{p['tpa'] or 0}", ft=f"{p['ftm'] or 0}/{p['fta'] or 0}",
+                                  pm=p['pm'], starter=p.get('starter', False), swede=swede, state='final' if f.get('done') else 'live'))
+        if lines:
+            box = [r for r in box if r['game_id'] != g['game_id']] + lines
+            g['box'] = bool(f.get('done'))
+            if not f.get('done'):
+                g['status'], g['clock'], g['period'] = 'live', f.get('clock') or '', f.get('period') or 0
+                g['hs'], g['as_'] = f['teams'][0]['score'], f['teams'][1]['score']
+            changed = True
+    if [dict(x, box=None) for x in games] != [dict(x, box=None) for x in old.values()] or changed:
+        U.save('sblleague', games)
+        changed = True
+    if changed:
+        U.save('sblbox', box)
+    if logos_changed:
+        json.dump(sorted(have_logos.values(), key=lambda r: r['team']), open(lp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'sbl league: {len(games)} games, {n} feeds read, {len(box)} box lines')
+    return changed or logos_changed
+
+
 def main(argv):
     if '--force' not in argv and U.now().minute >= 6:
+        # between the hourly runs, only games that are on right now (read from our own list, so it costs nothing when none are)
+        try:
+            p = os.path.join(U.DATA, 'sblleague.json')
+            on = [g for g in (json.load(open(p, encoding='utf-8')) if os.path.exists(p) else [])
+                  if g['status'] == 'live' or (g['status'] == 'upcoming' and _tip(g) and _tip(g) <= U.now() <= _tip(g) + dt.timedelta(hours=3))]
+            if on and league(only_live=True):
+                U.write_version(True)
+        except Exception as e:
+            print(f'  sbl live: {e.__class__.__name__} {e}')
         return 0
+    league_changed = rename_teams()
+    try:
+        league_changed = league() or league_changed
+    except Exception as e:
+        print(f'  sbl league: {e.__class__.__name__} {e}')
     days = int(argv[argv.index('--days') + 1]) if '--days' in argv else 4
     rows = U.load('sbl')
     have = {r.get('row_id') for r in rows}
@@ -231,14 +410,14 @@ def main(argv):
             for p in t['pl']:
                 p = {k: (v or 0) if k not in ('name', 'min', 'pm') else v for k, v in p.items()}
                 tags = qualifies(p)
-                if not tags or not p['name']:
+                if not tags or not p['name'] or U.norm(p['name']) in LEFT:
                     continue
                 rid = re.sub(r'[^a-z]', '', U.norm(p['name']).replace(' ', ''))[:12] + '-' + day
                 if rid in have or (day, team_name(t['name']), p['pts'], p['reb'], p['ast']) in seen:
                     continue
                 en, sv = headlines(p)
                 # national team players at home: our spelling (the league has "Micheal Odinks")
-                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), p['name'])
+                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), canon(p['name']))
                 rows.append(dict(row_id=rid, date=day, player=name, team=team_name(t['name']), opponent=team_name(o['name']),
                                  venue='Home' if ti == 0 else 'Away',
                                  result=f"{'W' if t['score'] > o['score'] else 'L'} {t['score']}-{o['score']}",
@@ -270,7 +449,7 @@ def main(argv):
         U.save('gamelogs', gl)
         U.save('stats', st)
         print(f"sbl: game log updated for {', '.join(sorted(new_lines))}")
-    if added or new_lines or coming_changed:
+    if added or new_lines or coming_changed or league_changed:
         U.write_version(True)
     if added:
         rows.sort(key=lambda r: r.get('date') or '', reverse=True)

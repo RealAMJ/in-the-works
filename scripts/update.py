@@ -120,7 +120,8 @@ def read_fiba(fid):
                 pm=p.get('sPlusMinusPoints', ''), pf=p.get('sFoulsPersonal', 0),
                 oreb=p.get('sReboundsOffensive', 0), dreb=p.get('sReboundsDefensive', 0),
                 starter=bool(p.get('starter'))))
-        teams.append(dict(name=t.get('name') or t.get('nameInternational') or '', score=int(t.get('score') or 0), pl=pl))
+        teams.append(dict(name=t.get('name') or t.get('nameInternational') or '', score=int(t.get('score') or 0), pl=pl,
+                          logo=(t.get('logoS') or {}).get('url') if isinstance(t.get('logoS'), dict) else None))
     period = int(d.get('period') or 0)
     # FIBA counts overtime periods from 1 again with periodType OVERTIME
     if str(d.get('periodType') or '').upper().startswith('OVERTIME') or d.get('inOT') in (1, True, '1'):
