@@ -1,95 +1,95 @@
 {
- "at": "2026-11-08T01:26:17+01:00",
- "found": 0,
+ "at": "2026-11-10T19:06:45+01:00",
+ "found": 1,
  "log": [
   {
-   "competition": "Orlen Basket Liga",
-   "seed": 2949100,
+   "competition": "FIBA Europe Cup",
+   "seed": 2888341,
    "scanned": 799,
-   "answered": 367,
+   "answered": 310,
    "sample": [
     [
-     2949101,
+     2888340,
      [
-      "Energa Czarni Słupsk ",
-      "AMW Arka Gdynia "
+      "Lokomotiv Plovdiv ",
+      "Neftchi SC "
      ]
     ],
     [
-     2949102,
+     2888342,
      [
-      "Legia Warszawa WAR",
-      "Dziki Warszawa "
+      "Fribourg Olympic Basket ",
+      "VEF Riga "
      ]
     ],
     [
-     2949097,
+     2888339,
      [
-      "Arriva Lotto Twarde Pierniki Toruń ",
-      "Zastal Zielona Góra "
+      "VEF Riga ",
+      "Mykonos Betsson BC "
      ]
     ],
     [
-     2949103,
+     2888338,
      [
-      "Amicale Steesel Amicale Steesel",
-      "AS Soleuvre AS Soleuvre"
+      "Lokomotiv Plovdiv ",
+      "Fribourg Olympic Basket "
      ]
     ],
     [
-     2949096,
+     2888337,
      [
-      "N.C. Central ",
-      "Johnson C. Smith "
+      "Neftchi SC ",
+      "CSM CSU Raiffeisen Oradea "
      ]
     ],
     [
-     2949105,
+     2888336,
      [
-      "Kordall Steelers Kordall Steelers",
-      "Musel Pikes Musel Pikes"
+      "Mykonos Betsson BC ",
+      "Lokomotiv Plovdiv "
      ]
     ],
     [
-     2949106,
+     2888335,
      [
-      "Basket Esch Basket Esch",
-      "Arantia Larochette Arantia Larochette"
+      "CSM CSU Raiffeisen Oradea ",
+      "VEF Riga "
      ]
     ],
     [
-     2949107,
+     2888334,
      [
-      "Racing Luxembourg Racing Luxembourg",
-      "T71 Dudelange T71 Dudelange"
+      "Fribourg Olympic Basket ",
+      "Neftchi SC "
      ]
     ],
     [
-     2949109,
+     2888333,
      [
-      "Bascharage Hedgehogs Bascharage Hedgehogs",
-      "Mambra Mamer Mambra Mamer"
+      "Lokomotiv Plovdiv ",
+      "CSM CSU Raiffeisen Oradea "
      ]
     ],
     [
-     2949110,
+     2888332,
      [
-      "AB Contern AB Contern",
-      "BC Mess BC Mess"
+      "Fribourg Olympic Basket ",
+      "Mykonos Betsson BC "
      ]
     ],
     [
-     2949111,
+     2888331,
      [
-      "North Fox North Fox",
-      "US Heffingen US Heffingen"
+      "Neftchi SC ",
+      "VEF Riga "
      ]
     ],
     [
-     2949112,
+     2888330,
      [
-      "Black Frogs Schieren Black Frogs Schieren",
-      "Nitia Bettembourg Nitia Bettembourg"
+      "CSM CSU Raiffeisen Oradea ",
+      "Fribourg Olympic Basket "
      ]
     ]
    ]

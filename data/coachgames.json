@@ -182,7 +182,8 @@
   "competition": "FIBA Europe Cup",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2888330"
  },
  {
   "game_id": "c20261113anw",

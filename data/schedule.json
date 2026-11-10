@@ -1659,7 +1659,8 @@
   "competition": "Champions League (BCL)",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "bcl:136266"
  },
  {
   "game_id": "g20261112vmi",
