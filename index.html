@@ -319,6 +319,10 @@
       <div class="sblx-swe" data-draw="sblswe" data-source="stats sblplayers ntroster photos gamelogs"></div>
     </section>
     <section class="lx-sec" data-draw="sblup" data-source="sblgames logos"></section>
+    <section class="lx-sec">
+      <div class="lx-head"><h2>Within reach</h2><span class="lx-note">Season milestones coming up for players in the SBL</span></div>
+      <div class="aw-watch sblx-watch" data-draw="sblwatch" data-source="sblbox photos"></div>
+    </section>
     <section class="lx-sec" id="sbl-games">
       <div class="lx-head"><h2>All SBL games</h2><span class="lx-note">Every game in the league, with full box scores (live during games)</span></div>
       <div class="sblx-all" data-draw="sblall" data-source="sblleague logos ntroster"></div>
@@ -345,8 +349,8 @@
       <h1>Records &amp; awards</h1>
       <p>Player of the week and month, all-league teams, MVPs, broken records and titles for the Swedes we follow abroad and for players in the SBL.</p>
       <div class="lx-nums" data-draw="awnums" data-source="awards"></div>
+      <section class="aw-spot" data-draw="awspot" data-source="awards players ntroster sblplayers photos" aria-label="Latest honour"></section>
     </section>
-    <section class="aw-spot" data-draw="awspot" data-source="awards players ntroster sblplayers photos" aria-label="Latest honour"></section>
     <section class="lx-sec aw-cab">
       <div class="lx-head"><h2>Honoured players</h2><span class="lx-note">Tap a player for their honours</span></div>
       <div class="aw-faces" data-draw="awfaces" data-source="awards players ntroster sblplayers photos"></div>
@@ -362,6 +366,10 @@
       <div class="aw-who-on" data-draw="awwhoon" data-source="awards"></div>
       <div class="awx-board all" data-draw="awards" data-source="awards players ntroster sblplayers ntgames"></div>
       <p class="lx-note aw-foot">Newest first · tap an award for the details · checked at the start and end of every week</p>
+    </section>
+    <section class="lx-sec awh-sec">
+      <div class="lx-head"><h2>Season highs</h2><span class="lx-note">The best single games by Swedes abroad this season</span></div>
+      <div class="awh" data-draw="awhighs" data-source="gamelogs boxscores schedule players photos logos"></div>
     </section>
     <section class="lx-sec aw-watch-sec">
       <div class="lx-head"><h2>Within reach</h2><span class="lx-note">Season milestones coming up, counted from the games we track</span></div>
@@ -2174,22 +2182,27 @@
     });
   });
   // season milestones within reach, from the game logs (each player's own competitions)
-  dash.draw('awwatch', (el) => {
-    el.replaceChildren();
-    const gl = ds('gamelogs'); if (!gl) { el.textContent = '—'; return; }
+
+  // season highs: the best single game in each stat by the Swedes abroad (game logs and box scores we track)
+  dash.draw('awhighs', (el) => {
+    el.replaceChildren(); const P = ds('players'); if (!P || !ds('gamelogs')) { el.textContent = '—'; return; }
+    const lines = []; P.forEach((p) => { if (!p.player) return; playerGames(p.player).forEach((g) => { if (g.note !== 'DNP' && norm(g.competition) !== 'basketligan') lines.push(Object.assign({ who: p.player }, g)); }); });
+    const tp = (g) => Number(String(g.three || g.tpm || '').split('/')[0]) || Number(g.tpm) || 0;
+    const cats = [['Points', (g) => Number(g.pts)], ['Rebounds', (g) => Number(g.reb)], ['Assists', (g) => Number(g.ast)], ['Threes', tp], ['Steals', (g) => Number(g.stl)], ['Blocks', (g) => Number(g.blk)]];
+    cats.forEach(([lab, f]) => { const top = lines.filter((g) => f(g) > 0).sort((a, b) => f(b) - f(a) || String(b.date).localeCompare(String(a.date)))[0]; if (!top) return;
+      const c = mk('button', 'awh-c'); c.type = 'button'; if (top.game_id) c.onclick = () => showCardFor(top.game_id, top.who);
+      const hd = mk('div', 'hd'); hd.append(mk('span', 'k', lab), mk('b', '', String(f(top)))); c.append(hd);
+      const w = mk('div', 'w'); w.append(faceAv('span', 'awh-face', top.who)); const t = mk('div'); t.append(mk('b', '', top.who), (() => { const x = mk('span', 'm'); if (top.team) x.append(crest(top.team, 'sm'), ' '); x.append(`${top.venue === 'Away' ? 'at' : 'vs'} ${top.opponent || ''} · ${dayFmt(top.date)}`); return x; })()); w.append(t); c.append(w);
+      const tied = lines.filter((g) => g !== top && f(g) === f(top));
+      if (tied.length) c.append(mk('span', 'nx', `Shared with ${tied.map((g) => g.who.split(' ').pop()).filter((v, i, x) => x.indexOf(v) === i).join(', ')}`));
+      else { const runner = lines.filter((g) => f(g) > 0 && f(g) < f(top)).sort((a, b) => f(b) - f(a))[0]; if (runner) c.append(mk('span', 'nx', `Next best: ${runner.who.split(' ').pop()} ${f(runner)}`)); }
+      el.append(c); });
+  });
+  // milestones within reach: totals [{player, comp, gp, pts, reb, ast, tpm, stl, blk}] -> cards
+  function watchCards(el, totals, open, max) {
     const STEPS = [['pts', 100, L('points', 'poäng')], ['reb', 50, L('rebounds', 'returer')], ['ast', 50, L('assists', 'assist')], ['tpm', 25, L('threes', 'treor')], ['stl', 20, L('steals', 'steals')], ['blk', 20, L('blocks', 'block')]];
-    const tot = new Map();
-    // every game we have for each profiled player (game logs plus box-score lines), the same list the profiles use
-    const names0 = [...new Set(gl.filter((r) => r.player && awHasProfile(r.player)).map((r) => r.player))];
-    names0.flatMap((n) => playerGames(n).filter((g) => g.note !== 'DNP' && g.competition).map((g) => Object.assign({}, g, { player: n }))).forEach((r) => {
-      const k = r.player + '|' + r.competition;
-      if (!tot.has(k)) tot.set(k, { player: r.player, comp: r.competition, gp: 0, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 });
-      const t = tot.get(k); t.gp++;
-      ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((s) => { t[s] += Number(r[s]) || 0; });
-      t.tpm += Number(String(r.three || '').split('/')[0]) || 0;
-    });
     const out = [];
-    tot.forEach((t) => STEPS.forEach(([s, step, word]) => {
+    totals.forEach((t) => STEPS.forEach(([s, step, word]) => {
       const v = t[s]; if (v < step * 0.6) return;
       const next = (Math.floor(v / step) + 1) * step, left = next - v, per = v / t.gp;
       if (per <= 0 || left > Math.max(per * 2.5, 1)) return;   // close: about two games away at his pace
@@ -2197,15 +2210,40 @@
     }));
     out.sort((a, b) => a.games - b.games || b.frac - a.frac);
     if (!out.length) { el.append(mk('p', 'aw-none', L('No milestones close right now.', 'Inga milstolpar nära just nu.'))); return; }
-    out.slice(0, 8).forEach((m) => {
-      const c = mk('button', 'aw-wcard'); c.type = 'button'; c.onclick = () => showLog(m.player);
+    out.slice(0, max || 8).forEach((m) => {
+      const c = mk('button', 'aw-wcard'); c.type = 'button'; c.onclick = () => open(m.player);
       const top = mk('div', 'aw-wtop'); top.append(awAvatar(m.player, 'aw-av sm'));
-      const nm = mk('div', 'aw-wname'); nm.append(mk('b', '', m.player), mk('span', '', m.comp)); top.append(nm);
+      const nm = mk('div', 'aw-wname'); nm.append(mk('b', '', m.player), mk('span', '', m.team || m.comp)); top.append(nm);
       const big = mk('div', 'aw-wbig'); big.append(mk('b', '', String(m.left)), mk('span', '', L(`${m.word} from ${m.next}`, `${m.word} kvar till ${m.next}`)));
       const bar = mk('div', 'aw-wbar'); const fill = mk('i'); fill.style.width = Math.min(100, m.frac * 100).toFixed(1) + '%'; bar.append(fill);
       const foot = mk('div', 'aw-wfoot', L(`${m.v} so far in ${m.gp} games · about ${m.games} ${m.games === 1 ? 'game' : 'games'} at his pace`, `${m.v} hittills på ${m.gp} matcher · ungefär ${m.games} ${m.games === 1 ? 'match' : 'matcher'} i hans takt`));
       c.append(top, big, bar, foot); el.append(c);
     });
+  }
+  // season milestones within reach for the Swedes abroad (the SBL has its own on the SBL page)
+  dash.draw('awwatch', (el) => {
+    el.replaceChildren();
+    const gl = ds('gamelogs'); if (!gl) { el.textContent = '—'; return; }
+    const tot = new Map();
+    const names0 = [...new Set(gl.filter((r) => r.player && awHasProfile(r.player)).map((r) => r.player))];
+    names0.flatMap((n) => playerGames(n).filter((g) => g.note !== 'DNP' && g.competition && norm(g.competition) !== 'basketligan').map((g) => Object.assign({}, g, { player: n }))).forEach((r) => {
+      const k = r.player + '|' + r.competition;
+      if (!tot.has(k)) tot.set(k, { player: r.player, comp: r.competition, gp: 0, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 });
+      const t = tot.get(k); t.gp++;
+      ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(r[x]) || 0; });
+      t.tpm += Number(String(r.three || '').split('/')[0]) || 0;
+    });
+    watchCards(el, [...tot.values()], showLog, 8);
+  });
+  // the same for every player in the SBL, from the league's box scores
+  dash.draw('sblwatch', (el) => {
+    el.replaceChildren(); const B = ds('sblbox'); if (!B) { el.textContent = '—'; return; }
+    const tot = new Map();
+    const LEFT = SBL_LEFT;
+    B.forEach((r) => { if (!r.player || !Number(r.min) || LEFT.includes(norm(r.player))) return; const k = norm(r.player);
+      if (!tot.has(k)) tot.set(k, { player: r.player, team: r.team, comp: 'Basketligan', gp: 0, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 });
+      const t = tot.get(k); t.gp++; ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(r[x]) || 0; }); t.tpm += Number(String(r.three || '').split('/')[0]) || 0; });
+    watchCards(el, [...tot.values()], showSblPlayer, 12);
   });
   // the filter bar sticks under the site's top bar
   function awStickTop() { const tb = document.querySelector('.tb'); const bar = document.querySelector('.aw-bar'); if (tb && bar) bar.style.top = (tb.getBoundingClientRect().height + 6) + 'px'; }
@@ -3582,11 +3620,15 @@
   });
   // a page for any SBL player: season averages from the box scores, game log and standout games
   let sblpName = null;
+  // players who have left the league (Andres): no SBL player page and no place in the SBL lists
+  const SBL_LEFT = ['william christopher dunston jr', 'cj dunston', 'andrew akuchie'];
+  const sblLeft = (n) => SBL_LEFT.includes(norm(n));
   function showSblPlayer(n) {
     if ((ds('sblplayers') || []).some((x) => isSame(x.player, n)) || (ds('ntroster') || []).some((x) => isSame(x.player, n)) || (ds('players') || []).some((x) => isSame(x.player, n))) { showLog(n); return; }
+    if (sblLeft(n)) return;
     sblpName = n; showPage('sblp', true); dash.setLink('sbl-player=' + n); dash.draw('sblp'); scrollTopSw();
   }
-  function sblName(n, cls) { const b = mk('button', cls || 'sbl-nm', n); b.type = 'button'; b.onclick = (e) => { e.stopPropagation(); showSblPlayer(n); }; return b; }
+  function sblName(n, cls) { if (sblLeft(n)) return mk('span', '', n); const b = mk('button', cls || 'sbl-nm', n); b.type = 'button'; b.onclick = (e) => { e.stopPropagation(); showSblPlayer(n); }; return b; }
   dash.draw('sblp', (el) => {
     el.replaceChildren(); if (!sblpName) return; const B = ds('sblbox'); if (!B) { el.textContent = 'Loading…'; return; }
     const G = ds('sblleague') || []; const L = B.filter((r) => isSame(r.player, sblpName)).map((r) => Object.assign({ g: G.find((x) => x.game_id === r.game_id) }, r)).filter((r) => r.g).sort((a, b) => String(b.g.date).localeCompare(String(a.g.date)));
