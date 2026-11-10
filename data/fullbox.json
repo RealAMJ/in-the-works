@@ -41622,6 +41622,27 @@
   "source": "ESPN"
  },
  {
+  "row_id": "c20261110msu-0-8",
+  "game_id": "c20261110msu",
+  "team": "Jackson State",
+  "player": "Ebo Wilson",
+  "pos": "",
+  "min": 0,
+  "pts": 0,
+  "reb": 1,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
   "row_id": "c20261110msu-1-0",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
