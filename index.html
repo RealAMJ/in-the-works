@@ -491,7 +491,18 @@
   function paintComp(el, c) { if (!compClass(c)) { const col = compColor(c); el.style.color = col; el.style.borderColor = col; } }
   function compClass(c) { c = String(c || ''); return c === 'NBA' ? ' nba' : c === 'EuroLeague' ? ' el' : /^Champions League/.test(c) ? ' bcl' : c === 'FIBA Europe Cup' ? ' fec' : /ACB/.test(c) ? ' acb' : /^NCAA/.test(c) ? ' ncaa' : EURO.test(c) ? ' eu' : ''; }
   function nrmT(x) { return String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim(); }
-  function sameT(a, b) { const x = nrmT(a), y = nrmT(b); return !!x && !!y && (x === y || x.includes(y) || y.includes(x)); }
+  // two team names are the same club: equal, or one is the other with extra words ('Bayern' / 'FC Bayern Munich').
+  // Words that make a different school or club never count as extra: 'Michigan' is not 'Central Michigan' or 'Michigan State'.
+  const TEAM_QUALIFIERS = new Set(['central', 'eastern', 'western', 'northern', 'southern', 'north', 'south', 'east', 'west', 'northeast', 'northwest', 'southeast', 'southwest', 'state', 'st', 'tech', 'am', 'a', 'm', 'international', 'christian', 'baptist', 'little', 'upstate', 'ii', 'b', 'juniors', 'women', 'u18', 'u20', 'u21', 'u23']);
+  function looseSame(x, y) {
+    if (!x || !y) return false; if (x === y) return true;
+    const a = x.split(' '), b = y.split(' '); const [lg, sh] = a.length >= b.length ? [a, b] : [b, a];
+    for (let i = 0; i + sh.length <= lg.length; i++) {
+      if (sh.every((w, j) => lg[i + j] === w)) { const extra = lg.slice(0, i).concat(lg.slice(i + sh.length)); return !extra.some((w) => TEAM_QUALIFIERS.has(w)); }
+    }
+    return false;
+  }
+  function sameT(a, b) { return looseSame(nrmT(a), nrmT(b)); }
   function swedeClubs() {
     const out = [];
     const p = dash.data('players'); if (p.status === 'ok') p.data.forEach((r) => { if (r.club) out.push(r.club); });
@@ -1122,7 +1133,7 @@
   };
   // Team panel
   const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-  const sameTeam = (a, b) => { const x = norm(a), y = norm(b); return !!x && !!y && (x === y || x.includes(y) || y.includes(x)); };
+  const sameTeam = (a, b) => looseSame(norm(a).replace(/[^a-z0-9]+/g, ' ').trim(), norm(b).replace(/[^a-z0-9]+/g, ' ').trim());
   const closeTeam = () => { openTeam = null; dash.draw('team'); };
   const closeLog = () => { openPlayer = null; dash.draw('plog'); };
   const pcComp = {}, pcLog = {};
