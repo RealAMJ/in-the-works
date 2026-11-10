@@ -888,7 +888,7 @@
     }
     // header: yellow bar + brand, date on the right
     x.fillStyle = Y; x.fillRect(80, 92, 10, 52);
-    x.fillStyle = INK; x.font = A(50); x.textBaseline = 'alphabetic'; x.fillText(isSblCard ? 'SBL' : 'SWEDES ABROAD', 108, 140);
+    x.fillStyle = INK; x.font = A(50); x.textBaseline = 'alphabetic'; x.fillText(r.brand ? String(r.brand).toUpperCase() : isSblCard ? 'SBL' : 'SWEDES ABROAD', 108, 140);
     if (r.date) { x.fillStyle = MUT; x.font = R(700, 28); x.textAlign = 'right'; x.fillText(dayFmt(r.date).toUpperCase(), W - 80, 134); x.textAlign = 'left'; }
     if (ph && ph.credit) { x.fillStyle = 'rgba(147,166,196,.7)'; x.font = R(500, 22); x.textAlign = 'right'; x.fillText(ph.credit, W - 60, H - 36); x.textAlign = 'left'; }
     const tagTxt = String(r.tag || (r.recap ? (sv ? 'Slutresultat' : 'Final') : (sv ? 'Veckans match' : 'Standout game'))).toUpperCase();
@@ -3145,7 +3145,7 @@
   function gameShare(g) {
     const bits = [`${g.pts} points`]; if (Number(g.reb) >= 5) bits.push(`${g.reb} rebounds`); if (Number(g.stl) >= 3) bits.push(`${g.stl} steals`); else if (Number(g.ast) >= 4) bits.push(`${g.ast} assists`);
     const hd = bits.length > 1 ? bits.slice(0, -1).join(', ') + ' and ' + bits[bits.length - 1] : bits[0];
-    return Object.assign({}, g, { tag: g.competition, headline: hd, game_id: '', g: { game_id: '', date: g.date, team: g.team, opponent: g.opponent, venue: g.venue, competition: g.competition, status: 'final', score: g.result } });
+    return Object.assign({}, g, { tag: g.competition, brand: g.competition, headline: hd, game_id: '', g: { game_id: '', date: g.date, team: g.team, opponent: g.opponent, venue: g.venue, competition: g.competition, status: 'final', score: g.result } });
   }
   function lastGameCard(g, avg, share) {
     const res = String(g.result || '');
@@ -3201,7 +3201,7 @@
     if (!isProspect) { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
     { const st0 = (ds('stats') || []).filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp))[0];
       if (st0) { const sh = mk('button', 'pp-btn', '⤴ Share profile'); sh.type = 'button';
-        sh.onclick = () => openShare({ award: true, player: name, team: (p && p.club) || hc, league: st0.competition, tag: 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
+        sh.onclick = () => openShare({ award: true, brand: isProspect ? st0.competition : '', player: name, team: (p && p.club) || hc, league: st0.competition, tag: 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
         acts.append(sh); } }
     id.append(meta, tags, acts);
     hero.append(pic, id);
