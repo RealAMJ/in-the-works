@@ -65,7 +65,7 @@ ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette'
 
 
 # players who have left the league: not listed as standouts (Andres, 10 Nov)
-LEFT = {'william christopher dunston jr', 'cj dunston'}
+LEFT = {'william christopher dunston jr', 'cj dunston', 'andrew akuchie'}
 
 
 def canon(name):
