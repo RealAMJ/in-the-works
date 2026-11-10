@@ -821,7 +821,7 @@
   // A player's card photo: data/photos.json row {player, src, credit}; src is an image in this repo
   // (e.g. "photos/will-berg.jpg") or a data: URI. Only photos we have the right to use go there.
   function cardPhoto(name) {
-    const ph = ds('photos') || [];
+    const ph = (ds('photos') || []).concat(prospect(name) ? prospectRows('photos') : []);
     const r = ph.find((x) => x.player !== 'placeholder' && isSame(x.player, name) && x.src && !/^https?:/i.test(String(x.src)));
     if (!r) return Promise.resolve(null);
     return new Promise((res) => { const im = new Image(); im.onload = () => res({ img: im, credit: r.credit || '', face: r.face, fbox: r.fbox }); im.onerror = () => res(null); im.src = r.src; });
@@ -847,7 +847,7 @@
     const NIGHT = '#030a17', INK = '#f2f6fc', MUT = '#93a6c4', Y = '#fecc02', SKY = '#7fb3ff', GR = '#45d483', RD = '#ff6b5e';
     const gid = gameById(r.game_id) || { g: null, lines: [] };
     const isSblCard = String(r.game_id || '').startsWith('sbl-') || !!r.sbl;
-    const g = (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const g = r.g || (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
     const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (isSblCard ? (ds('sblbox') || []).find((l) => l.game_id === r.game_id && isSame(l.player, r.player)) : null) || (r.pts != null && r.pts !== '' ? r : null);
     const sv = LOC().startsWith('sv');
     const ph = await cardPhoto(r.player);
@@ -963,7 +963,7 @@
     // their game and line come from the game log instead
     const gid = gameById(r.game_id) || { g: null, lines: [] };
     const isSblCard = String(r.game_id || '').startsWith('sbl-') || !!r.sbl;
-    const g = (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const g = r.g || (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
     const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (isSblCard ? (ds('sblbox') || []).find((l) => l.game_id === r.game_id && isSame(l.player, r.player)) : null) || (r.pts != null && r.pts !== '' ? r : null);
     const sv = LOC().startsWith('sv');
     const black = style !== 'v1';
@@ -3115,7 +3115,7 @@
     const k = 0.6 / Math.max(0.05, f[1] - f[0]);  // face = 60% of the circle's height
     Object.assign(img.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(f[2] != null ? f[2] : 0.5) * 100}%)`, top: ((0.2 - f[0] * k) * 100) + '%', objectFit: 'fill' });
   }
-  function photoFor(name) { const ph = ds('photos'); return ph ? ph.find((r) => isSame(r.player, name) && /^(data:image\/|photos\/)/.test(String(r.src || ''))) : null; }
+  function photoFor(name) { const ok = (r) => isSame(r.player, name) && /^(data:image\/|photos\/)/.test(String(r.src || '')); const ph = ds('photos'); return (ph && ph.find(ok)) || (prospect(name) ? prospectRows('photos').find(ok) || null : null); }
   function tabBar(tabs, cur, onPick, cls) {
     const bar = mk('div', 'subnav' + (cls ? ' ' + cls : '')); bar.setAttribute('role', 'tablist');
     tabs.forEach(([k, lab]) => { const b = mk('button', k === cur ? 'on' : '', lab); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', k === cur ? 'true' : 'false'); b.onclick = () => onPick(k); bar.append(b); });
@@ -3141,10 +3141,16 @@
     const show = cols <= 2 ? cols * 3 : cols;
     cards.forEach((c, i) => { c.hidden = i >= show; });
   }
-  function lastGameCard(g, avg) {
+  // a game from a search-only profile as a share card: his line and the result, nothing to open
+  function gameShare(g) {
+    const bits = [`${g.pts} points`]; if (Number(g.reb) >= 5) bits.push(`${g.reb} rebounds`); if (Number(g.stl) >= 3) bits.push(`${g.stl} steals`); else if (Number(g.ast) >= 4) bits.push(`${g.ast} assists`);
+    const hd = bits.length > 1 ? bits.slice(0, -1).join(', ') + ' and ' + bits[bits.length - 1] : bits[0];
+    return Object.assign({}, g, { tag: g.competition, headline: hd, game_id: '', g: { game_id: '', date: g.date, team: g.team, opponent: g.opponent, venue: g.venue, competition: g.competition, status: 'final', score: g.result } });
+  }
+  function lastGameCard(g, avg, share) {
     const res = String(g.result || '');
     const c = mk('button', 'lg-card ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '')); c.type = 'button'; c.dataset.key = g.game_id;
-    c.onclick = () => showCard(g.game_id);
+    c.onclick = share ? () => openShare(gameShare(g)) : () => showCard(g.game_id); if (share) c.title = 'Share this game';
     const top = mk('div', 'lg-top'); top.append(mk('span', '', dayFmt(g.date)), mk('span', 'lg-res', res || '—'));
     const opp = mk('div', 'lg-opp'); opp.append(crest(g.opponent, 'sm'), mk('span', '', (g.venue === 'Away' ? '@ ' : 'vs ') + g.opponent));
     const nums = mk('div', 'lg-nums');
@@ -3160,7 +3166,7 @@
     try { ppDraw(el, !!pr); } finally { dsOverlay = null; }
   });
   function ppDraw(el, isProspect) {
-    el.replaceChildren();
+    el.replaceChildren(); if (isProspect && ppTab === 'log') ppTab = 'overview';
     if (!ppPlayer) { el.append(mk('p', 'hc-note', 'Pick a player from the search or any list.')); return; }
     const pl = ds('players'), st = ds('stats');
     if (!pl || !st) { el.textContent = '—'; return; }
@@ -3203,7 +3209,7 @@
     // sticky mini header: appears once the big header has scrolled away
     { const mini = mk('div', 'pp-mini'); const mav = mk('span', 'pp-mini-av'); if (photo) { const im = document.createElement('img'); im.src = photo.src; im.alt = ''; faceFit(im, photo); mav.append(im); } else mav.textContent = initials(name);
       const mt = mk('div'); mt.append(mk('b', '', name), mk('span', '', [shirt ? '#' + shirt : '', (p && p.club) || hc].filter(Boolean).join(', ')));
-      const mtabs = tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); hero.scrollIntoView({ block: 'start' }); }, 'pp-mini-tabs');
+      const mtabs = tabBar([['overview', 'Overview'], ...(isProspect ? [] : [['log', 'Game log']]), ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); hero.scrollIntoView({ block: 'start' }); }, 'pp-mini-tabs');
       mini.append(mav, mt, mtabs); el.append(mini);
       if (window.IntersectionObserver) { const io = new IntersectionObserver((e) => mini.classList.toggle('on', !e[0].isIntersecting), { rootMargin: '-120px 0px 0px 0px' }); io.observe(hero); } }
     const facts = mk('dl', 'pp-facts');
@@ -3212,7 +3218,7 @@
     fact('Born', bio && bornTxt(bio.born)); fact('Birthplace', bio && tx(bio, 'birthplace')); fact('Club', (p && p.club) || hc);
     el.append(facts);
     { const lv = liveNowEl(name, (p && p.club) || hc); if (lv) el.append(lv); }
-    el.append(tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); }));
+    el.append(tabBar([['overview', 'Overview'], ...(isProspect ? [] : [['log', 'Game log']]), ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); }));
     if (ppTab === 'overview') requestAnimationFrame(() => {  // jump menu: one link per section, the one in view is lit
       const secs = [...el.querySelectorAll(':scope > .pp-sec[data-k], :scope > .pp-two > .pp-sec[data-k]')]; if (secs.length < 3) return;
       el.querySelectorAll(':scope > .pp-jump').forEach((x) => x.remove()); const nav = mk('nav', 'pp-jump'); nav.setAttribute('aria-label', 'Sections');
@@ -3299,7 +3305,7 @@
           t.append(tb); tw.append(t);
           const hi = mk('div', 'pp-highs');
           [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['stl', 'Steals'], ['blk', 'Blocks']].forEach(([k, l]) => { const g = cg2.slice().sort((a, b) => (Number(b[k]) || 0) - (Number(a[k]) || 0))[0]; if (!g || !(Number(g[k]) > 0)) return;
-            const c = mk('button', 'pp-high'); c.type = 'button'; c.onclick = () => showCard(g.game_id); c.append(mk('span', '', `${l} high`), mk('b', '', String(g[k])), mk('small', '', `${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`)); hi.append(c); });
+            const c = mk('button', 'pp-high'); c.type = 'button'; c.onclick = isProspect ? () => openShare(gameShare(g)) : () => showCard(g.game_id); c.append(mk('span', '', `${l} high`), mk('b', '', String(g[k])), mk('small', '', `${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}, ${dayFmt(g.date)}`)); hi.append(c); });
           wrap2.append(tw, hi); sp.append(wrap2); el.append(sp);
         }
       }
@@ -3310,15 +3316,15 @@
           const wr = ppSection('Within reach', `His next season milestones in ${cur.competition}, nearest first.`); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
           const box = mk('div', 'aw-watch pp-watch'); watchCards(box, [t], () => {}, 4, true); box.querySelectorAll('.aw-wtop').forEach((x) => x.remove()); wr.append(box); el.append(wr); } }
       const lgW = games.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = games.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
-      const lg = ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. Tap a game for the full game center.` : 'Tap a game for the full game center.');
+      const tapTx = isProspect ? 'Tap a game to share his line.' : 'Tap a game for the full game center.'; const lg = ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. ${tapTx}` : tapTx);
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
         const strip = mk('div', 'lg-row');
-        games.slice(-12).reverse().forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null)); });
+        games.slice(-12).reverse().forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null, isProspect)); });
         lg.append(strip);
         requestAnimationFrame(() => fitLastGames(strip));
         if (window.ResizeObserver) { let w0 = 0; new ResizeObserver((e) => { const w = Math.round(e[0].contentRect.width); if (w && w !== w0) { w0 = w; fitLastGames(strip); } }).observe(strip); }
-        const more = mk('button', 'hc-more', 'Full game log →'); more.type = 'button'; more.onclick = () => { ppTab = 'log'; dash.draw('pp'); }; lg.append(more);
+        if (!isProspect) { const more = mk('button', 'hc-more', 'Full game log →'); more.type = 'button'; more.onclick = () => { ppTab = 'log'; dash.draw('pp'); }; lg.append(more); }
       }
       el.append(lg);
       if (bio && tx(bio, 'story')) {
