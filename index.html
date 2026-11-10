@@ -2868,7 +2868,8 @@
   // national team players who play at home: club from the roster, e.g. "Jämtland Basket (Basketligan, Sweden)"
   function homeClubOf(name) { const r = (ds('ntroster') || []).find((x) => isSame(x.player, name)); if (r && r.home_club) return r.home_club.replace(/\s*\(.*\)\s*$/, ''); const s = (ds('sblplayers') || []).find((x) => isSame(x.player, name)); return s ? s.club : ''; }
   function longDate(d) { return new Date(d + 'T12:00:00Z').toLocaleDateString(LOC(), { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); }
-  function ppSection(title, sub) { const s = mk('section', 'pp-sec'); s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
+  const PP_KIND = { 'season': ['avg', 'Numbers'], 'where he ranks': ['rank', 'Ranking'], 'splits and highs': ['split', 'Splits'], 'last games': ['games', 'Recent'], 'standout games': ['star', 'Highlights'], 'honours': ['trophy', 'Honours'], 'upcoming games': ['next', 'Schedule'], 'about': ['about', 'About'], 'game log': ['games', 'Every game'], 'career stats': ['career', 'Career'], 'bio': ['about', 'Bio'], 'did you know': ['star', 'Did you know'], 'career path': ['trophy', 'Career path'] };
+  function ppSection(title, sub) { const s = mk('section', 'pp-sec'); const key = Object.keys(PP_KIND).find((k) => String(title).toLowerCase().startsWith(k)); if (key) { s.dataset.k = PP_KIND[key][0]; s.dataset.kick = PP_KIND[key][1]; } s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face
   // has the same size and place in the circle, whatever the photo looks like
   function faceFit(img, photo) {

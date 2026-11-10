@@ -2122,3 +2122,26 @@ html, body { background: #030a17 !important; color: #f2f6fc; }
   padding-left: calc(var(--gut) + clamp(16px, 3vw, 36px)) !important; padding-right: calc(var(--gut) + clamp(16px, 3vw, 36px)) !important; }
 #player .pp-hero .pp-bignum { right: calc(var(--gut) + clamp(1rem, 4vw, 3.5rem)); }
 .sw.on-home .tb, .sw.on-home .st-bar { padding-left: var(--gut) !important; padding-right: var(--gut) !important; }
+/* ===== Player profile: each section is its own panel, with its own accent, kicker and icon ===== */
+#player .pp-sec[data-k] { --acc: #7fb3ff; position: relative; margin: 0 0 22px; padding: clamp(18px, 2.6vw, 30px); border-radius: 20px; background: radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--acc) 12%, transparent), transparent 55%), #071429; border: 1px solid rgba(160,190,235,.12); overflow: hidden; }
+#player .pp-sec[data-k]::before { content: attr(data-kick); display: inline-flex; align-items: center; gap: 8px; margin-bottom: 8px; font: 800 11px Archivo, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--acc); }
+#player .pp-sec[data-k]::after { content: ''; position: absolute; left: 0; top: 22px; width: 4px; height: 38px; border-radius: 0 4px 4px 0; background: var(--acc); }
+#player .pp-sec[data-k] > h2 { margin-top: 0; }
+#player .pp-sec[data-k="avg"] { --acc: #fecc02; }
+#player .pp-sec[data-k="rank"] { --acc: #45d483; }
+#player .pp-sec[data-k="split"] { --acc: #7fb3ff; }
+#player .pp-sec[data-k="games"] { --acc: #b48cff; }
+#player .pp-sec[data-k="star"] { --acc: #ff9f43; }
+#player .pp-sec[data-k="trophy"] { --acc: #fecc02; }
+#player .pp-sec[data-k="next"] { --acc: #4fd1c5; }
+#player .pp-sec[data-k="career"] { --acc: #ff6b9a; }
+#player .pp-sec[data-k="about"] { --acc: #93a6c4; }
+/* season numbers: a lighter inner band so the big numbers sit on their own plate */
+#player .pp-sec[data-k="avg"] { background: linear-gradient(135deg, rgba(254,204,2,.10), transparent 45%), #0a1a35; border-color: rgba(254,204,2,.25); }
+/* side-by-side panels keep their own panels */
+#player .pp-two > .pp-sec[data-k] { margin-bottom: 0; }
+@media (max-width: 760px) { #player .pp-sec[data-k] { border-radius: 16px; margin-bottom: 14px; } }
+#player .pp-sec[data-k] .stx-t th { background: transparent; position: static; }
+/* square section panels */
+#player .pp-sec[data-k] { border-radius: 0 !important; }
+#player .pp-sec[data-k]::after { border-radius: 0; }
