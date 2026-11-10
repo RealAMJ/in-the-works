@@ -4851,8 +4851,10 @@
     const cur = { page: name, player: ppPlayer, card: openCard, story: wkSel, team: tpTeam };
     if (!navRestoring && navLast && (navLast.page !== name || (name === 'player' && navLast.player !== ppPlayer) || (name === 'game' && navLast.card !== openCard) || (name === 'team' && navLast.team !== tpTeam))) { navStack.push(navLast); if (navStack.length > 50) navStack.shift(); try { history.pushState({ sa: navStack.length }, ''); } catch (e) { /* old browser */ } }
     navLast = cur;
-    document.querySelectorAll('[data-nav-back]').forEach((b) => { b.hidden = !navStack.length; });
+    document.querySelectorAll('[data-nav-back]').forEach((b) => { b.hidden = !navStack.length && name === 'home'; });
   }
+  try { const saved = JSON.parse(sessionStorage.getItem('sa-nav') || 'null'); if (saved && Array.isArray(saved.stack) && history.state && history.state.sa === saved.stack.length) navStack.push(...saved.stack); } catch (e) { /* no storage */ }
+  window.addEventListener('pagehide', () => { try { sessionStorage.setItem('sa-nav', JSON.stringify({ stack: navStack })); } catch (e) { /* no storage */ } });
   function goBack() {
     const s = navStack.pop();
     navRestoring = true;
@@ -4867,7 +4869,8 @@
   // to the browser history, going back pops our own history, and our Back button goes back through the browser
   window.addEventListener('popstate', (e) => {
     const want = (e.state && e.state.sa) || 0;
-    if (want >= navStack.length) return;  // forward, or a step we didn't make
+    // a step from before the page last loaded (after a refresh or a site update): open what the address names
+    if (want >= navStack.length) { navRestoring = true; try { openFromLink(); } finally { navRestoring = false; } navLast = null; navNote(curPage); scrollTopSw(); return; }
     while (navStack.length > want + 1) navStack.pop();
     goBack();
   });
@@ -5292,7 +5295,7 @@
   try { const p0 = dash.params && dash.params().lang; if (p0 === 'sv') setLang('sv', true); } catch (e) { /* no saved choice */ }
 
   // ---- Open the page a link names
-  (function openFromLink() {
+  function openFromLink() {
     const h = decodeURIComponent(location.hash.slice(1).replace(/\+/g, ' '));
     // a specific game, player or team: reopen it (also makes links to one game shareable)
     const sp = /^sbl-player=(.+)$/.exec(h); if (sp) { const go = () => { if (ds('sblbox')) showSblPlayer(sp[1]); else setTimeout(go, 300); }; showPage('sblp', true); sblpName = sp[1]; go(); return; }
@@ -5307,7 +5310,8 @@
     if (!pg) return;
     showPage(pg.dataset.page, true);
     if (el !== pg) requestAnimationFrame(() => el.scrollIntoView());
-  })();
+  }
+  openFromLink();
 </script>
 
 </body>
