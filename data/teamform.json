@@ -5780,5 +5780,33 @@
   "note": "",
   "leaders": "Williams|23|1|2;Brunt|7|1|1;Manyuon|6|2|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-10",
+  "team": "Eastern Washington",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Oregon State",
+  "venue": "Away",
+  "score": "84-94",
+  "result": "L",
+  "top": "Marquardt 18 pts, 5 reb",
+  "note": "",
+  "leaders": "Marquardt|18|5|0;Miller|11|7|2;Homelius|10|1|0;Scherer|10|1|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "oregon-state-2026-11-10",
+  "team": "Oregon State",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Home",
+  "score": "94-84",
+  "result": "W",
+  "top": "Freitag 21 pts, 2 reb",
+  "note": "",
+  "leaders": "Freitag|21|2|5;Smiley|17|2|2;Lake|15|2|4",
+  "source": "ESPN"
  }
 ]

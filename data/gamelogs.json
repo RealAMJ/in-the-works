@@ -5816,5 +5816,31 @@
   "pf": 4,
   "pm": 5,
   "eff": ""
+ },
+ {
+  "row_id": "homelius-2026-11-10",
+  "player": "Isak Homelius",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "team": "Eastern Washington",
+  "opponent": "Oregon State",
+  "venue": "Away",
+  "result": "L 84-94",
+  "min": 14,
+  "pts": 10,
+  "reb": 1,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "3/5",
+  "three": "2/3",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
