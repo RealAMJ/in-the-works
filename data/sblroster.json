@@ -1,0 +1,290 @@
+[
+ {
+  "player": "Adam Rask",
+  "team": "Umeå BSKT",
+  "number": 11,
+  "height": null,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Adam Rask"
+ },
+ {
+  "player": "Adam Tafra",
+  "team": "Köping Stars",
+  "number": 1,
+  "height": 204,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Adam Tafra"
+ },
+ {
+  "player": "Andrew Rohde",
+  "team": "Södertälje Kings",
+  "number": 7,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Andrew Rohde"
+ },
+ {
+  "player": "Anes Zekovic",
+  "team": "Högsbo",
+  "number": 6,
+  "height": 198,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Anes Zekovic"
+ },
+ {
+  "player": "Anton Johansson",
+  "team": "KFUM Nässjö",
+  "number": 4,
+  "height": null,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Anton Johansson"
+ },
+ {
+  "player": "Brayden Parker",
+  "team": "Jämtland Basket",
+  "number": 25,
+  "height": null,
+  "nationality": "US",
+  "position": "Centers",
+  "league_name": "Brayden Parker"
+ },
+ {
+  "player": "Dalton Gayman",
+  "team": "Sloga Uppsala",
+  "number": 21,
+  "height": 201,
+  "nationality": "US",
+  "position": "Forwards",
+  "league_name": "Dalton Gayman"
+ },
+ {
+  "player": "Eric Van Der Heijden",
+  "team": "Uppsala Basket",
+  "number": 23,
+  "height": null,
+  "nationality": "NL",
+  "position": "Forwards",
+  "league_name": "Eric Van der Heijden"
+ },
+ {
+  "player": "Gustav Hansson",
+  "team": "Jämtland Basket",
+  "number": 7,
+  "height": 185,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Gustav Hansson"
+ },
+ {
+  "player": "Jalen Leach",
+  "team": "BC Luleå",
+  "number": 3,
+  "height": 193,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Jalen Leach"
+ },
+ {
+  "player": "Javier Marin",
+  "team": "Uppsala Basket",
+  "number": 6,
+  "height": null,
+  "nationality": "ES",
+  "position": "Guards",
+  "league_name": "Javier Marin"
+ },
+ {
+  "player": "Jayden Martinez",
+  "team": "Borås Basket",
+  "number": 10,
+  "height": null,
+  "nationality": "US",
+  "position": "Forwards",
+  "league_name": "Jayden Martinez"
+ },
+ {
+  "player": "Jaylin Sean Henderson",
+  "team": "Köping Stars",
+  "number": 23,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Jaylin Henderson"
+ },
+ {
+  "player": "Jeffery Taylor",
+  "team": "Norrköping Dolphins",
+  "number": 44,
+  "height": 201,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Jeffery Taylor"
+ },
+ {
+  "player": "Jesper Hallberg",
+  "team": "Högsbo",
+  "number": 5,
+  "height": null,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Jesper Hallberg"
+ },
+ {
+  "player": "Jhonny Tovar",
+  "team": "KFUM Nässjö",
+  "number": 34,
+  "height": null,
+  "nationality": "VE",
+  "position": "Forwards",
+  "league_name": "Jhonny Tovar"
+ },
+ {
+  "player": "Jonatan Arvidsson",
+  "team": "BC Luleå",
+  "number": 20,
+  "height": 184,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Jonatan Arvidsson"
+ },
+ {
+  "player": "Jordan Ivy Curry",
+  "team": "Borås Basket",
+  "number": 1,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Jordan Ivy Curry"
+ },
+ {
+  "player": "Jordan Ivy-Curry",
+  "team": "Borås Basket",
+  "number": 1,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Jordan Ivy Curry"
+ },
+ {
+  "player": "K.J. Debrick",
+  "team": "Sloga Uppsala",
+  "number": 32,
+  "height": 206,
+  "nationality": "US",
+  "position": "Centers",
+  "league_name": "KJ Debrick"
+ },
+ {
+  "player": "Leo Ryott",
+  "team": "Sloga Uppsala",
+  "number": 11,
+  "height": null,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Leo Ryott"
+ },
+ {
+  "player": "Marko Dujkovic",
+  "team": "Sloga Uppsala",
+  "number": 22,
+  "height": 226,
+  "nationality": "RS",
+  "position": "Centers",
+  "league_name": "Marko Dujkovic"
+ },
+ {
+  "player": "Michael Graham",
+  "team": "Borås Basket",
+  "number": 21,
+  "height": null,
+  "nationality": "US",
+  "position": "Centers",
+  "league_name": "Michael Graham"
+ },
+ {
+  "player": "Michael Odinks",
+  "team": "Norrköping Dolphins",
+  "number": 10,
+  "height": null,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Michael Odinks"
+ },
+ {
+  "player": "Milos Bajic",
+  "team": "Sloga Uppsala",
+  "number": 4,
+  "height": 197,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Milos Bajic"
+ },
+ {
+  "player": "Nico Galette",
+  "team": "BC Luleå",
+  "number": 44,
+  "height": 198,
+  "nationality": "US",
+  "position": "Forwards",
+  "league_name": "Nico Galette"
+ },
+ {
+  "player": "Nicolas Galette",
+  "team": "BC Luleå",
+  "number": 44,
+  "height": 198,
+  "nationality": "US",
+  "position": "Forwards",
+  "league_name": "Nico Galette"
+ },
+ {
+  "player": "Pierre Hampton",
+  "team": "Norrköping Dolphins",
+  "number": 15,
+  "height": 201,
+  "nationality": "SE",
+  "position": "Forwards",
+  "league_name": "Pierre Hampton"
+ },
+ {
+  "player": "Rahsaan Edwards",
+  "team": "KFUM Nässjö",
+  "number": 10,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Rahsaan Edwards"
+ },
+ {
+  "player": "Tomas Atli Bjarkason",
+  "team": "Högsbo",
+  "number": 4,
+  "height": null,
+  "nationality": "DK",
+  "position": "Forwards",
+  "league_name": "Tomas Bjarkason"
+ },
+ {
+  "player": "Tre-Vaughn Minott",
+  "team": "Köping Stars",
+  "number": 4,
+  "height": null,
+  "nationality": "CA",
+  "position": "Centers",
+  "league_name": "Tre-Vaughn Minott"
+ },
+ {
+  "player": "Zane Nelson",
+  "team": "Jämtland Basket",
+  "number": 5,
+  "height": null,
+  "nationality": "US",
+  "position": "Guards",
+  "league_name": "Zane Nelson"
+ }
+]

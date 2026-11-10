@@ -16,7 +16,7 @@
     'leaguetiers', 'logos', 'ntgames', 'sblleague', 'ntlines', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'sblgames', 'sblplayers', 'schedule', 'stats', 'teamform',
     'teams', 'thisweek'];
   // Big files only some pages need: fetched the first time a page asks for them (full box scores grow all season)
-  var LAZY = ['fullbox', 'sblbox'];
+  var LAZY = ['fullbox', 'sblbox', 'sblroster'];
   var asked = {};
 
   var store = {};

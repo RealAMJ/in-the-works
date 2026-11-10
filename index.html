@@ -448,7 +448,7 @@
   </div>
 
   <div class="pg" data-page="sblp" id="sblp" hidden>
-    <div class="pp" data-draw="sblp" data-source="sblbox sblleague sbl logos photos"></div>
+    <div class="pp" data-draw="sblp" data-source="sblbox sblleague sbl logos photos sblroster"></div>
   </div>
 
   <div class="pg" data-page="game" id="game" hidden>
@@ -1905,7 +1905,7 @@
       const t = mk('div', 'sbx-best');
       const hd = mk('div', 'sbx-best-h'); hd.append(mk('span', 'k', lab), mk('span', 'v', String(top)));
       t.append(hd);
-      const w = mk('div', 'sbx-who'); w.append(crest(who[0].team, 'lg')); const wt = mk('div'); const wn = mk('div', 'n'); wn.append(sblName(who[0].player)); if (who.length > 1) wn.append(` +${who.length - 1}`); wt.append(wn, mk('div', 'm', `${who[0].team} · ${dayFmt(who[0].date)}`)); w.append(wt);
+      const w = mk('div', 'sbx-who'); w.append(faceAv('span', 'sbx-face', who[0].player)); const wt = mk('div'); const wn = mk('div', 'n'); wn.append(sblName(who[0].player)); if (who.length > 1) wn.append(` +${who.length - 1}`); wt.append(wn, mk('div', 'm', `${who[0].team} · ${dayFmt(who[0].date)}`)); w.append(wt);
       t.append(w);
       el.append(t);
     });
@@ -1919,7 +1919,7 @@
     list.forEach((o, i) => {
       const r = mk('div', 'sbx-lead');
       r.append(mk('span', 'rk', String(i + 1)));
-      const nm = mk('div', 'nm'); const on = mk('div', 'n'); on.append(sblName(o.player)); nm.append(on, mk('div', 'm', o.team)); r.append(crest(o.team, 'sm'));
+      const nm = mk('div', 'nm'); const on = mk('div', 'n'); on.append(sblName(o.player)); nm.append(on, mk('div', 'm', o.team)); r.append(faceAv('span', 'sbx-face sm', o.player));
       const c = mk('div', 'ct'); c.append(mk('b', '', String(o.n)), mk('span', '', o.n === 1 ? L('game', 'match') : L('games', 'matcher')));
       r.append(nm, c); el.append(r);
     });
@@ -1958,7 +1958,7 @@
       if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
       sblTags(r).split(/,\s*(?![^()]*\))/).filter((x) => /Perfect|5x5/.test(x)).forEach((x) => bits.push(x));
       mid.append(mk('div', 'sbx-stats', bits.join(' · ')));
-      c.append(big, crest(r.team, 'lg'), mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res));
+      c.append(big, faceAv('span', 'sbx-face', r.player), mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res)); mid.prepend((() => { const x = mk('div', 'sbx-team'); x.append(crest(r.team, 'sm'), r.team); return x; })());
       el.append(c);
     });
     if (list.length > LIMIT) { const b = mk('button', 'lx-more', sblMore ? L('Show fewer', 'Visa färre') : L(`Show all ${list.length} standout games`, `Visa alla ${list.length} toppmatcher`)); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; el.append(b); }
@@ -3578,8 +3578,12 @@
     const hero = mk('section', 'pp-hero sblp-hero'); hero.style.setProperty('--tc', teamColor(team));
     const ph = photoFor(sblpName); const pic = mk('div', 'pp-pic'); if (ph) { const im = new Image(); im.src = ph.src; im.alt = sblpName; pic.append(im); hero.classList.add('has-photo'); } else pic.append(crest(team, 'xl'));
     const id = mk('div', 'pp-id'); const club = mk('div', 'pp-club'); club.append(crest(team, 'sm'), mk('span', 'tm', team)); const parts = sblpName.split(' ');
+    const ro = (ds('sblroster') || []).find((x) => isSame(x.player, sblpName));
     const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag', 'Basketligan'), mk('span', 'pp-tag', '2026-27'));
-    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]), tags); hero.append(pic, id); el.append(hero);
+    const meta = mk('div', 'pp-meta'); if (ro) { [ro.number != null ? '#' + ro.number : '', ro.position ? String(ro.position).replace(/s$/, '') : '', ro.height ? ro.height + ' cm' : '', ro.nationality ? (new Intl.DisplayNames(['en'], { type: 'region' }).of(ro.nationality) || ro.nationality) : ''].filter(Boolean).forEach((x) => meta.append(mk('span', '', x))); }
+    if (ro && ro.number != null) hero.append(mk('span', 'pp-bignum', String(ro.number)));
+    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]), meta, tags); hero.append(pic, id); el.append(hero);
+    if (ph && Array.isArray(ph.fbox)) { const im = pic.querySelector('img'); pic.classList.add('fitface'); const fit = () => heroFaceFit(pic, im, ph.fbox); im.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); }
     const av = (k) => played.length ? played.reduce((t, r) => t + (Number(r[k]) || 0), 0) / played.length : 0;
     const pct = (k) => { let m = 0, a = 0; played.forEach((r) => { const q = /^(\d+)\/(\d+)$/.exec(r[k] || ''); if (q) { m += +q[1]; a += +q[2]; } }); return a ? (m / a * 100).toFixed(1) : '–'; };
     const sec = ppSection('Season 2026-27 averages'); sec.dataset.k = 'avg'; sec.dataset.kick = 'Numbers';

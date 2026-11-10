@@ -2582,3 +2582,12 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 #sblp .sblp-hero .pp-pic .crest.xl { width: 150px; height: 150px; }
 #sblp .sblp-t td { white-space: nowrap; }
 @media (max-width: 760px) { #sblp .sblp-hero:not(.has-photo) .pp-pic { display: none; } #sblp .sblp-hero { min-height: 0; } }
+
+/* SBL faces */
+#pg-sbl .sbx-face { position: relative; width: 48px; height: 48px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: #0b1d3a; color: #93a6c4; font: 800 13px Archivo, sans-serif; box-shadow: 0 0 0 2px rgba(254,204,2,.45); flex: none; }
+#pg-sbl .sbx-face.sm { width: 32px; height: 32px; font-size: 10px; }
+#pg-sbl .sbx-row .sbx-face { width: 52px; height: 52px; }
+#pg-sbl .sbx-team { display: flex; align-items: center; gap: 6px; font: 700 11px Archivo, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #93a6c4; margin-bottom: 2px; }
+#pg-sbl .sbx-row { grid-template-columns: 80px 52px minmax(0, 1fr) auto; }
+#sblp .pp-meta { display: flex; gap: 14px; color: #b9c9e4; font-size: 14px; }
+@media (max-width: 860px) { #pg-sbl .sbx-row { grid-template-columns: 56px minmax(0, 1fr); } #pg-sbl .sbx-row .sbx-face { display: none; } }
