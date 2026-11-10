@@ -321,7 +321,7 @@
     <section class="lx-sec" data-draw="sblup" data-source="sblgames logos"></section>
     <section class="lx-sec" id="sbl-games">
       <div class="lx-head"><h2>All SBL games</h2><span class="lx-note">Every game in the league, with full box scores (live during games)</span></div>
-      <div class="sblx-all" data-draw="sblall" data-source="sblleague logos"></div>
+      <div class="sblx-all" data-draw="sblall" data-source="sblleague logos ntroster"></div>
     </section>
     <section class="lx-sec">
       <div class="lx-head"><h2>Season bests</h2><span class="lx-note">Best single game in each category</span></div>
@@ -3547,6 +3547,8 @@
   let gcTab = null, gcFor = null;
 
   // ---- SBL league: all games, box scores and a page for every player (from data/sblleague.json and data/sblbox.json)
+  // the Swedish flag is for national team players only (data/ntroster.json)
+  function isNT(n) { return (ds('ntroster') || []).some((x) => isSame(x.player, n)); }
   function allBox() { return (ds('fullbox') || []).concat(ds('sblbox') || []); }
   function sblGame(id) {
     const r = (ds('sblleague') || []).find((x) => x.game_id === id); if (!r) return null;
@@ -3570,7 +3572,7 @@
       const grid = mk('div', 'sblx-gg');
       gs.forEach((g) => { const c = mk('button', 'sblx-gc ' + g.status); c.type = 'button'; c.onclick = () => showCard(g.game_id);
         const top = mk('div', 'tp'); top.append(mk('span', 'st', g.status === 'final' ? 'Final' : g.status === 'live' ? '● Live' + (g.clock ? ' · ' + g.clock : '') : g.time));
-        const sw = (ds('sblbox') || []).some((x) => x.game_id === g.game_id && x.swede); if (sw || (ds('sblgames') || []).some((x) => x.game_id === g.game_id)) top.append(mk('span', 'swe', '🇸🇪'));
+        const sw = (ds('sblbox') || []).some((x) => x.game_id === g.game_id && x.swede && isNT(x.player)); if (sw || (ds('sblgames') || []).some((x) => x.game_id === g.game_id && String(x.players || '').split(/\s*,\s*/).some(isNT))) top.append(mk('span', 'swe', '🇸🇪'));
         c.append(top);
         [[g.home, g.hs, g.as_], [g.away, g.as_, g.hs]].forEach(([t, s1, s2]) => { const r = mk('div', 'tr' + (g.status === 'final' ? (s1 > s2 ? ' win' : ' lose') : '')); r.append(crest(t, 'lg'), mk('span', 'nm', t), mk('span', 'sc', s1 == null ? '' : String(s1))); c.append(r); });
         grid.append(c); });
@@ -3733,7 +3735,7 @@
       const tw = mk('div', 'gcx-tw'); const t = mk('table', 'gcx-t'); const hr = mk('tr'); hr.append(mk('th', 'pl', 'Player'));
       cols.forEach(([lab, k]) => { const th = mk('th', gcxSort.k === k ? 'on' : '', lab + (gcxSort.k === k ? (gcxSort.d < 0 ? ' ↓' : ' ↑') : '')); th.onclick = () => { gcxSort = { k, d: gcxSort.k === k ? -gcxSort.d : -1 }; dash.draw('gc'); }; hr.append(th); });
       const th0 = mk('thead'); th0.append(hr); t.append(th0); const tb = mk('tbody');
-      rows.forEach((r) => { const tr = mk('tr', isFocus(r) ? 'swe' : ''); const pl = mk('td', 'pl'); if (r.swede) { const b = mk('button', isFocus(r) ? 'gcx-pn' : 'gcx-on', '🇸🇪 ' + r.player); b.type = 'button'; b.onclick = () => showLog(r.player); pl.append(b); } else if (String(g.game_id).startsWith('sbl-')) pl.append(sblName(r.player, isFocus(r) ? 'gcx-pn' : 'gcx-on')); else pl.append(r.player); tr.append(pl);
+      rows.forEach((r) => { const tr = mk('tr', isFocus(r) ? 'swe' : ''); const pl = mk('td', 'pl'); if (r.swede) { const b = mk('button', isFocus(r) ? 'gcx-pn' : 'gcx-on', (isNT(r.player) ? '🇸🇪 ' : '') + r.player); b.type = 'button'; b.onclick = () => showLog(r.player); pl.append(b); } else if (String(g.game_id).startsWith('sbl-')) pl.append(sblName(r.player, isFocus(r) ? 'gcx-pn' : 'gcx-on')); else pl.append(r.player); tr.append(pl);
         cols.forEach(([, k]) => { let v = r[k]; if (k === 'pm' && v !== '' && v != null) v = (Number(v) > 0 ? '+' : '') + v; const td = mk('td', (best[k] != null && num(r, k) === best[k] && best[k] > 0 ? 'lead' : '') + (k === 'pm' && Number(r[k]) > 0 ? ' pos' : k === 'pm' && Number(r[k]) < 0 ? ' neg' : ''), v === '' || v == null ? '—' : String(v)); tr.append(td); }); tb.append(tr); });
       const tot = mk('tr', 'tot'); tot.append(mk('td', 'pl', 'Team')); [['min', ''], ['pts', T.pts], ['reb', T.reb], ['ast', T.ast], ['stl', T.stl], ['blk', T.blk], ['tov', T.tov], ['fg', `${T.fg.m}/${T.fg.a}`], ['three', `${T.three.m}/${T.three.a}`], ['ft', `${T.ft.m}/${T.ft.a}`], ['pm', '']].forEach(([, v]) => tot.append(mk('td', '', v === '' ? '' : String(v))));
       tb.append(tot); const pc = mk('tr', 'pct'); pc.append(mk('td', 'pl', '')); ['', '', '', '', '', '', '', T.fg.p == null ? '' : T.fg.p.toFixed(1) + '%', T.three.p == null ? '' : T.three.p.toFixed(1) + '%', T.ft.p == null ? '' : T.ft.p.toFixed(1) + '%', ''].forEach((v) => pc.append(mk('td', '', v))); tb.append(pc);
