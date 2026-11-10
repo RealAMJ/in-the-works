@@ -2648,3 +2648,9 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 #pg-sbl .aw-watch { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
 #pg-sbl .aw-watch > * { border-radius: 0 !important; background: #071429 !important; border: 1px solid rgba(160,190,235,.14) !important; transition: transform .2s ease, border-color .2s ease; } #pg-sbl .aw-watch > *:hover { transform: translateY(-3px); border-color: rgba(254,204,2,.6) !important; }
 #pg-sbl .aw-watch .aw-wbig b { color: #fecc02; }
+
+/* within reach on a profile */
+#player .pp-watch, #sblp .pp-watch { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+#player .pp-watch .aw-wcard, #sblp .pp-watch .aw-wcard { border-radius: 0; background: #071429; border: 1px solid rgba(160,190,235,.14); cursor: default; transition: transform .2s ease, border-color .2s ease; }
+#player .pp-watch .aw-wcard:hover, #sblp .pp-watch .aw-wcard:hover { transform: translateY(-3px); border-color: #4fd1c5; }
+#player .pp-watch .aw-wbig b, #sblp .pp-watch .aw-wbig b { color: #4fd1c5; }

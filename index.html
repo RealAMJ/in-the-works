@@ -373,7 +373,7 @@
     </section>
     <section class="lx-sec aw-watch-sec">
       <div class="lx-head"><h2>Within reach</h2><span class="lx-note">Season milestones coming up, counted from the games we track</span></div>
-      <div class="aw-watch" data-draw="awwatch" data-source="gamelogs players ntroster sblplayers photos"></div>
+      <div class="aw-watch" data-draw="awwatch" data-source="gamelogs boxscores schedule players ntroster sblplayers photos"></div>
     </section>
   </div>
 
@@ -2199,13 +2199,15 @@
       el.append(c); });
   });
   // milestones within reach: totals [{player, comp, gp, pts, reb, ast, tpm, stl, blk}] -> cards
-  function watchCards(el, totals, open, max) {
-    const STEPS = [['pts', 100, L('points', 'poäng')], ['reb', 50, L('rebounds', 'returer')], ['ast', 50, L('assists', 'assist')], ['tpm', 25, L('threes', 'treor')], ['stl', 20, L('steals', 'steals')], ['blk', 20, L('blocks', 'block')]];
+  function watchCards(el, totals, open, max, any) {
+    // round numbers to reach: smaller steps early in the season (50 points, 25 rebounds, 10 threes...) so college players
+    // a few games in have milestones too, the usual ones (100 points, 50 rebounds...) after that
+    const STEPS = [['pts', [50, 100], L('points', 'poäng')], ['reb', [25, 50], L('rebounds', 'returer')], ['ast', [25, 50], L('assists', 'assist')], ['tpm', [10, 25], L('threes', 'treor')], ['stl', [10, 20], L('steals', 'steals')], ['blk', [10, 20], L('blocks', 'block')]];
     const out = [];
-    totals.forEach((t) => STEPS.forEach(([s, step, word]) => {
-      const v = t[s]; if (v < step * 0.6) return;
+    totals.forEach((t) => STEPS.forEach(([s, [small, big], word]) => {
+      const v = t[s]; const step = v < big ? small : big; if (v < step * 0.6) return;
       const next = (Math.floor(v / step) + 1) * step, left = next - v, per = v / t.gp;
-      if (per <= 0 || left > Math.max(per * 2.5, 1)) return;   // close: about two games away at his pace
+      if (per <= 0 || (!any && left > Math.max(per * 2.5, 1))) return;   // close: about two games away at his pace (a profile shows his next ones whatever the distance)
       out.push({ ...t, s, word, v, next, left, games: Math.ceil(left / per), frac: v / next });
     }));
     out.sort((a, b) => a.games - b.games || b.frac - a.frac);
@@ -2225,7 +2227,8 @@
     el.replaceChildren();
     const gl = ds('gamelogs'); if (!gl) { el.textContent = '—'; return; }
     const tot = new Map();
-    const names0 = [...new Set(gl.filter((r) => r.player && awHasProfile(r.player)).map((r) => r.player))];
+    // everyone with a profile: game-log players and the box-score players (college, NBA...)
+    const names0 = [...new Set(gl.filter((r) => r.player && awHasProfile(r.player)).map((r) => r.player).concat((ds('players') || []).map((r) => r.player).filter(Boolean)))];
     names0.flatMap((n) => playerGames(n).filter((g) => g.note !== 'DNP' && g.competition && norm(g.competition) !== 'basketligan').map((g) => Object.assign({}, g, { player: n }))).forEach((r) => {
       const k = r.player + '|' + r.competition;
       if (!tot.has(k)) tot.set(k, { player: r.player, comp: r.competition, gp: 0, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 });
@@ -2233,7 +2236,7 @@
       ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(r[x]) || 0; });
       t.tpm += Number(String(r.three || '').split('/')[0]) || 0;
     });
-    watchCards(el, [...tot.values()], showLog, 8);
+    watchCards(el, [...tot.values()], showLog, 12);
   });
   // the same for every player in the SBL, from the league's box scores
   dash.draw('sblwatch', (el) => {
@@ -3268,6 +3271,12 @@
           wrap2.append(tw, hi); sp.append(wrap2); el.append(sp);
         }
       }
+      // within reach: his next round numbers this season, in his current competition
+      if (cur) { const cgw = games.filter((g) => g.note !== 'DNP' && norm(g.competition) === norm(cur.competition));
+        if (cgw.length >= 2) { const t = { player: name, comp: cur.competition, gp: cgw.length, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 };
+          cgw.forEach((g) => { ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(g[x]) || 0; }); t.tpm += Number(String(g.three || '').split('/')[0]) || 0; });
+          const wr = ppSection('Within reach', `His next season milestones in ${cur.competition}, nearest first.`); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
+          const box = mk('div', 'aw-watch pp-watch'); watchCards(box, [t], () => {}, 4, true); box.querySelectorAll('.aw-wtop').forEach((x) => x.remove()); wr.append(box); el.append(wr); } }
       const lgW = games.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = games.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
       const lg = ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. Tap a game for the full game center.` : 'Tap a game for the full game center.');
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
@@ -3651,6 +3660,10 @@
     sec.append(big, tiles); el.append(sec);
     const so = (ds('sbl') || []).filter((r) => isSame(r.player, sblpName));
     if (so.length) { const s2 = ppSection('Standout games'); s2.dataset.k = 'star'; s2.dataset.kick = 'Highlights'; so.forEach((r) => { const c = mk('article', 'hh'); { const gid = sblGameFor(r); if (gid) { c.classList.add('go'); c.style.cursor = 'pointer'; c.onclick = () => showCardFor(gid, r.player); } } c.append(mk('div', 'hh-top', `${dayFmt(r.date)} · ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`), mk('div', 'hh-head', tx(r, 'headline'))); s2.append(c); }); el.append(s2); }
+    if (played.length >= 2) { const t = { player: sblpName, comp: 'Basketligan', gp: played.length, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 };
+      played.forEach((r) => { ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(r[x]) || 0; }); t.tpm += Number(String(r.three || '').split('/')[0]) || 0; });
+      const wr = ppSection('Within reach', 'His next season milestones in the SBL, nearest first.'); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
+      const box = mk('div', 'aw-watch pp-watch'); watchCards(box, [t], () => {}, 4, true); box.querySelectorAll('.aw-wtop').forEach((x) => x.remove()); wr.append(box); el.append(wr); }
     const lg = ppSection('Game log'); lg.dataset.k = 'games'; lg.dataset.kick = 'Every game';
     const tw = mk('div', 'gcx-tw'); const t = mk('table', 'gcx-t sblp-t'); const hr = mk('tr'); ['Date', 'Opponent', 'Result', 'MIN', 'PTS', 'REB', 'AST', 'FG', '3P', 'FT'].forEach((x, i) => hr.append(mk('th', i < 2 ? 'pl' : '', x))); const th = mk('thead'); th.append(hr); t.append(th); const tb = mk('tbody');
     L.forEach((r) => { const g = r.g, home = sameTeam(g.home, r.team), us = home ? g.hs : g.as_, them = home ? g.as_ : g.hs; const tr = mk('tr'); tr.style.cursor = 'pointer'; tr.onclick = () => showCard(g.game_id);
