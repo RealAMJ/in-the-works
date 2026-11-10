@@ -3835,8 +3835,9 @@
     }
     if (gcTab === 'box') {
       if (!fb.length) { const sec = ppSection('Box score'); sec.append(mk('p', 'empty', final ? 'The box score is added once it is published.' : 'The box score fills in during the game.')); el.append(sec); return; }
-      // no player is lit unless the game was opened from his profile (the flags and stars still show)
-      const isFocus = (r) => !!gcFocus && isSame(r.player, gcFocus);
+      // other games: every Swede is lit, always. SBL games: only the player whose profile or standout game it was opened from
+      const sblG = String(g.game_id || '').startsWith('sbl-');
+      const isFocus = (r) => (sblG ? !!gcFocus && isSame(r.player, gcFocus) : !!r.swede);
       const teams = [ha.home.name, ha.away.name]; if (!gcxTeam || !teams.some((t) => sameTeam(t, gcxTeam))) gcxTeam = teams.find((t) => fb.some((r) => isFocus(r) && sameTeam(r.team, t))) || teams[0];
       const sec = ppSection('Box score'); sec.dataset.k = 'games'; sec.dataset.kick = live ? 'Live · updates on its own' : 'Full box score';
       const seg = mk('div', 'gcx-seg'); teams.forEach((t) => { const tt = t === teams[0] ? H : A; const b = mk('button', sameTeam(t, gcxTeam) ? 'on' : ''); b.type = 'button'; b.append(crest(t, 'sm'), mk('span', '', t), mk('b', '', tt ? String(tt.pts) : '')); b.onclick = () => { gcxTeam = t; dash.draw('gc'); }; seg.append(b); }); sec.append(seg);
@@ -3981,7 +3982,7 @@
           const frac = (k) => { let m = 0, a2 = 0; list.forEach((r) => { const q2 = /^(\d+)\s*\/\s*(\d+)$/.exec(String(r[k] || '')); if (q2) { m += +q2[1]; a2 += +q2[2]; } }); return `${m}/${a2}`; };
           const sec = ppSection(team, liveNow ? 'Live box score, updated during the game.' : 'Full box score.');
           const h = sec.querySelector('h2'); if (h) { h.textContent = ''; h.append(crest(team, 'sm'), document.createTextNode(' ' + team)); }
-          const rowsT = list.map((r) => Object.assign({ _key: r.row_id, _cls: gcFocus && isSame(r.player, gcFocus) ? 'swe-row' : '' }, r));
+          const rowsT = list.map((r) => Object.assign({ _key: r.row_id, _cls: (String(g.game_id || '').startsWith('sbl-') ? gcFocus && isSame(r.player, gcFocus) : r.swede) ? 'swe-row' : '' }, r));
           rowsT.push({ _cls: 'tot-row', player: 'Team', pts: sum('pts'), reb: sum('reb'), ast: sum('ast'), stl: sum('stl'), blk: sum('blk'), tov: sum('tov'), fg: frac('fg'), three: frac('three'), ft: frac('ft'), pm: '', min: '', pos: '' });
           sec.append(statTable([
             ['Player', (r) => { const x = mk('span'); if (r.swede) { x.append(mk('span', '', '🇸🇪 ')); x.append(names(r.player)); } else x.append(r.player); if (r.pos) x.append(mk('span', 'pp-sub', ' ' + r.pos)); return x; }],
