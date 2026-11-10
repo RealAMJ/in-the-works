@@ -2816,3 +2816,9 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 /* game leaders that open a player page */
 #game .gcx-ls.go { cursor: pointer; transition: border-color .2s ease, transform .2s ease; } #game .gcx-ls.go:hover, #game .gcx-ls.go:focus-visible { border-color: #fecc02; transform: translateY(-2px); outline: none; }
 #game .gcx-ls.go:hover b { text-decoration: underline; text-underline-offset: 3px; }
+/* small logos next to text stay inside their badge (the 122% bleed is for the big headers) */
+.crest.sm.has-logo img { width: 100%; height: 100%; max-width: 100%; object-fit: contain; }
+#pg-sbl .sbx-team { min-height: 26px; }
+/* logos are centred on their badge whatever the badge's size: percentage sizes now resolve (in a grid cell they did not, so tall logos grew past the badge) */
+.crest.has-logo { position: relative; }
+.crest.has-logo img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
