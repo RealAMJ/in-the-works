@@ -2991,70 +2991,6 @@
     const cur = rows.find((r) => r.competition === ppComp[key]) || rows[0];
 
     if (ppTab === 'overview') {
-      if (window.PPCALM && cur) {
-        // ---- calmer overview: one headline number per section, words before numbers, details folded away
-        const cg = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
-        const last = parts[parts.length - 1];
-        // 1. the season in one number
-        const s1 = ppSection('This season'); s1.classList.add('cz'); s1.removeAttribute('data-k'); s1.removeAttribute('data-kick');
-        const hero = mk('div', 'cz-hero');
-        const hl = mk('div', 'cz-hl'); hl.append(mk('b', '', f1x(cur.pts)), mk('span', '', 'points a game'));
-        const sub = mk('p', 'cz-line'); sub.append(mk('strong', '', f1x(cur.reb)), ' rebounds · ', mk('strong', '', f1x(cur.ast)), ' assists · ', mk('strong', '', f1x(cur.min)), ' minutes');
-        const fg = fracPct(cg, 'fg'), ft = fracPct(cg, 'ft'), th3 = fracPct(cg, 'three');
-        const q = mk('p', 'cz-quiet', [`${cur.gp} games in ${cur.competition}`, fg ? `${fg.p.toFixed(0)}% FG` : '', th3 ? `${th3.p.toFixed(0)}% 3P` : '', ft ? `${ft.p.toFixed(0)}% FT` : ''].filter(Boolean).join(' · '));
-        const left = mk('div', 'cz-l'); left.append(hl, sub, q);
-        // points per game as one small line
-        const pts = cg.slice(-10).map((g) => Number(g.pts) || 0);
-        const right = mk('div', 'cz-r');
-        if (pts.length >= 2) { const NS = 'http://www.w3.org/2000/svg', W = 260, H = 70, mx = Math.max(...pts, 1);
-          const svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.classList.add('cz-spark');
-          const X = (i) => 6 + i * (W - 12) / (pts.length - 1), Y = (v) => H - 8 - v / mx * (H - 18);
-          const pl = document.createElementNS(NS, 'polyline'); pl.setAttribute('points', pts.map((v, i) => `${X(i)},${Y(v)}`).join(' ')); svg.append(pl);
-          const c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', X(pts.length - 1)); c.setAttribute('cy', Y(pts[pts.length - 1])); c.setAttribute('r', 4.5); svg.append(c);
-          right.append(svg, mk('span', 'cz-cap', `Points, last ${pts.length} games`)); }
-        hero.append(left, right); s1.append(hero); el.append(s1);
-        // 2. at a glance: the ranks and best game as sentences
-        const s2 = ppSection('At a glance'); s2.classList.add('cz'); s2.removeAttribute('data-k'); s2.removeAttribute('data-kick');
-        const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
-        const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b0 = best.get(k); if (!b0 || Number(r.gp) > Number(b0.gp)) best.set(k, r); });
-        const pool = [...best.values()]; const rk = {};
-        ['pts', 'reb', 'ast'].forEach((k) => { const so = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); rk[k] = { i: so.findIndex((r) => isSame(r.player, name)), n: so.length }; });
-        const lab = { pts: 'points', reb: 'rebounds', ast: 'assists' }; const ord = (i) => `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`;
-        const lead = Object.keys(rk).filter((k) => rk[k].i === 0), top = Object.keys(rk).filter((k) => rk[k].i > 0 && rk[k].i < 5);
-        const facts = mk('ul', 'cz-facts');
-        const fact = (icon, html) => { const li = mk('li'); li.append(mk('i', '', icon)); const t = mk('span'); t.innerHTML = html; li.append(t); facts.append(li); };
-        const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-        if (lead.length) fact('★', `Leads all ${rk[lead[0]].n} Swedes in <b>${lead.map((k) => lab[k]).join(' and ')}</b>`);
-        top.forEach((k) => fact('↑', `<b>${ord(rk[k].i)}</b> in ${lab[k]} among ${rk[k].n} Swedes`));
-        const bg = cg.slice().sort((a, b) => (Number(b.pts) || 0) - (Number(a.pts) || 0))[0];
-        if (bg) fact('●', `Best game: <b>${esc(bg.pts)} points</b>${Number(bg.reb) >= 8 ? `, ${esc(bg.reb)} rebounds` : ''} ${bg.venue === 'Away' ? 'at' : 'vs'} ${esc(bg.opponent)} <em>${esc(dayFmt(bg.date))}</em>`);
-        const l5 = cg.slice(-5); if (l5.length >= 3) { const a5 = l5.reduce((t, g) => t + (Number(g.pts) || 0), 0) / l5.length; const d = a5 - Number(cur.pts); fact(d >= 0 ? '↗' : '↘', `Last ${l5.length} games: <b>${a5.toFixed(1)} points</b>, ${Math.abs(d).toFixed(1)} ${d >= 0 ? 'above' : 'below'} his average`); }
-        s2.append(facts); el.append(s2);
-        // 3. last games as quiet rows: points big, the rest small
-        const s3 = ppSection('Last games'); s3.classList.add('cz'); s3.removeAttribute('data-k'); s3.removeAttribute('data-kick');
-        const list = mk('div', 'cz-games');
-        games.filter((g) => g.note !== 'DNP').slice(-5).reverse().forEach((g) => { const r = mk('button', 'cz-g'); r.type = 'button'; r.onclick = () => showCard(g.game_id);
-          const res = String(g.result || ''); const w = mk('div', 'cz-gw'); w.append(mk('b', '', `${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent}`), mk('span', '', `${dayFmt(g.date)} · ${g.competition}`));
-          const rs = mk('span', 'cz-res ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res || '—');
-          const p2 = mk('div', 'cz-gp'); p2.append(mk('b', '', String(g.pts)), mk('span', '', 'pts'));
-          r.append(w, rs, p2, mk('span', 'cz-gx', `${g.reb} reb · ${g.ast} ast`)); list.append(r); });
-        s3.append(list); const more = mk('button', 'hc-more', 'Full game log →'); more.type = 'button'; more.onclick = () => { ppTab = 'log'; dash.draw('pp'); }; s3.append(more); el.append(s3);
-        // 4. details folded away, each with a one-line summary
-        const fold = (title, summary, body) => { const d = mk('details', 'cz-fold'); const sm = mk('summary'); sm.append(mk('b', '', title), mk('span', '', summary), mk('i', '', '+')); d.append(sm, body); return d; };
-        const box = mk('section', 'pp-sec cz cz-more'); box.append(mk('h2', '', 'More'));
-        if (cg.length >= 2) { const t = mk('table', 'cz-t'); const hr = mk('tr'); ['', 'GP', 'PTS', 'REB', 'AST'].forEach((x) => hr.append(mk('th', '', x))); t.append(hr);
-          const line = (lb, gs) => { if (!gs.length) return; const n = gs.length, av = (k) => (gs.reduce((s0, g) => s0 + (Number(g[k]) || 0), 0) / n).toFixed(1); const tr = mk('tr'); [lb, String(n), av('pts'), av('reb'), av('ast')].forEach((v) => tr.append(mk('td', '', v))); t.append(tr); };
-          line('Home', cg.filter((g) => g.venue === 'Home')); line('Away', cg.filter((g) => g.venue === 'Away')); line('Wins', cg.filter((g) => /^W/.test(g.result || ''))); line('Losses', cg.filter((g) => /^L/.test(g.result || '')));
-          const hm = cg.filter((g) => g.venue === 'Home'), aw = cg.filter((g) => g.venue === 'Away'); const avp = (gs) => gs.length ? (gs.reduce((s0, g) => s0 + (Number(g.pts) || 0), 0) / gs.length).toFixed(1) : '–';
-          box.append(fold('Splits', [hm.length ? `${avp(hm)} pts at home` : '', aw.length ? `${avp(aw)} away` : ''].filter(Boolean).join(', ') || 'Home, away, wins and losses', t)); }
-        const sl = realHl().filter((r) => isSame(r.player, name)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-        if (sl.length) { const ul = mk('ul', 'cz-list'); sl.forEach((r) => { const li = mk('li'); li.append(mk('b', '', tx(r, 'headline')), mk('span', '', r.date ? dayFmt(r.date) : '')); if (r.game_id) { li.classList.add('go'); li.onclick = () => showCard(r.game_id); } ul.append(li); }); box.append(fold('Standout games', `${sl.length} big night${sl.length === 1 ? '' : 's'} this season`, ul)); }
-        const hn = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
-        if (hn.length) { const ul = mk('ul', 'cz-list'); hn.forEach((h) => { const li = mk('li'); li.append(mk('b', '', h)); ul.append(li); }); box.append(fold('Honours', hn[0] + (hn.length > 1 ? ` and ${hn.length - 1} more` : ''), ul)); }
-        if (box.querySelector('details')) el.append(box);
-        const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', '', 0, hc ? (ds('sblgames') || []) : null, name);
-        if (ups) el.append(ups);
-      } else {
       const sec = ppSection('Season 2026-27 averages');
       if (!cur) sec.append(mk('p', 'empty', 'No games yet this season.'));
       else {
@@ -3169,7 +3105,6 @@
       el.append(two);
       const ups = ppUpcoming((x) => String(x.players || '').split(/\s*,\s*/).some((n) => isSame(n, name)), 'Upcoming games', hc ? `${parts[parts.length - 1]}'s next games.` : `${parts[parts.length - 1]}'s next games. Tap for the preview.`, 0, hc ? (ds('sblgames') || []) : null, name);
       if (ups) el.append(ups);
-      }
     }
 
     if (ppTab === 'log') {
