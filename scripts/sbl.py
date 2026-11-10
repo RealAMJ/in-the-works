@@ -33,7 +33,7 @@ TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'B
 # One spelling per player: the league's feeds, RealGM and the squads spell some players differently.
 # Keys are U.norm() of a spelling we have seen; values are the spelling the site uses.
 ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette', 'jordan ivycurry': 'Jordan Ivy Curry',
-         'trevaughn minott gauthier': 'Tre-Vaughn Minott'}
+         'trevaughn minott gauthier': 'Tre-Vaughn Minott', 'ali ali youssouf': 'Ali Ali'}
 
 
 # players who have left the league: not listed as standouts (Andres, 10 Nov)

@@ -18,6 +18,15 @@
   "league_name": "Adam Tafra"
  },
  {
+  "player": "Ali Ali",
+  "team": "Södertälje Kings",
+  "number": 4,
+  "height": null,
+  "nationality": "US",
+  "position": "Forwards",
+  "league_name": "Ali Ali"
+ },
+ {
   "player": "Andrew Rohde",
   "team": "Södertälje Kings",
   "number": 7,
