@@ -2777,3 +2777,7 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .sblf .sblf-tm .k { font-size: 9px; align-self: auto; }
 @media (max-width: 860px) { .sblf .sblf-teams { grid-template-columns: repeat(3, 1fr) !important; } .sblf .sblf-tm .crest { width: 44px !important; height: 44px !important; } .sblf .sblf-tm .n { font-size: 12px; } }
 .sblf .sblf-tm { align-content: start; grid-template-rows: auto minmax(2.4em, auto) auto; } .sblf .sblf-tm .n { align-self: center; display: flex; align-items: center; justify-content: center; min-height: 2.4em; }
+.sblf .sblf-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 340px)); justify-content: center; }
+@media (max-width: 640px) { .sblf .sblf-grid { grid-template-columns: 1fr; } }
+.sblf .sblf-grid { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1110px; margin-inline: auto; } .sblf .sblf-grid > .sblf-r { flex: 0 1 340px; min-width: 280px; }
+@media (max-width: 640px) { .sblf .sblf-grid > .sblf-r { flex: 1 1 100%; min-width: 0; } }
