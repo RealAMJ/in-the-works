@@ -5752,5 +5752,33 @@
   "note": "",
   "leaders": "Samuels|20|4|1;Loro|13|8|1;Zampini|10|1|5",
   "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-10",
+  "team": "Mississippi State",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Jackson State",
+  "venue": "Home",
+  "score": "98-57",
+  "result": "W",
+  "top": "Hubbard 14 pts, 1 reb",
+  "note": "",
+  "leaders": "Hubbard|14|1|3;Reed|14|8|2;Johnson|12|5|2;Simpkins|12|2|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "jackson-state-2026-11-10",
+  "team": "Jackson State",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Away",
+  "score": "57-98",
+  "result": "L",
+  "top": "Williams 23 pts, 1 reb",
+  "note": "",
+  "leaders": "Williams|23|1|2;Brunt|7|1|1;Manyuon|6|2|1",
+  "source": "ESPN"
  }
 ]
