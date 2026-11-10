@@ -3377,6 +3377,111 @@
     if (r.pm !== '' && r.pm != null && Math.abs(Number(r.pm)) >= 10) f.push(`${Number(r.pm) > 0 ? '+' : ''}${r.pm} on the floor`);
     return f;
   }
+
+  // ---- Game page (new): spotlight on the Swede, the game in numbers, game leaders, one box score at a time
+  let gcxTeam = null, gcxSort = { k: 'pts', d: -1 };
+  function gcxTotals(fb, team) {
+    const L = fb.filter((r) => sameTeam(r.team, team)); if (!L.length) return null;
+    const sum = (k) => L.reduce((t, r) => t + (Number(r[k]) || 0), 0);
+    const fr = (k) => { let m = 0, a = 0; L.forEach((r) => { const q = /^(\d+)\s*\/\s*(\d+)$/.exec(String(r[k] || '')); if (q) { m += +q[1]; a += +q[2]; } }); return { m, a, p: a ? m / a * 100 : null }; };
+    return { pts: sum('pts'), reb: sum('reb'), ast: sum('ast'), stl: sum('stl'), blk: sum('blk'), tov: sum('tov'), fg: fr('fg'), three: fr('three'), ft: fr('ft'), list: L };
+  }
+  function gcxBars(home, away, hn, an) {
+    const wrap = mk('div', 'gcx-bars');
+    const head = mk('div', 'gcx-bh'); head.append((() => { const d = mk('span'); d.append(crest(hn, 'sm'), teamAbbr(hn)); return d; })(), (() => { const d = mk('span'); d.append(teamAbbr(an), crest(an, 'sm')); return d; })()); wrap.append(head);
+    const rows = [['Field goals', (t) => t.fg.p, (t) => `${t.fg.m}/${t.fg.a}`, '%'], ['Three-pointers', (t) => t.three.p, (t) => `${t.three.m}/${t.three.a}`, '%'], ['Free throws', (t) => t.ft.p, (t) => `${t.ft.m}/${t.ft.a}`, '%'],
+      ['Rebounds', (t) => t.reb], ['Assists', (t) => t.ast], ['Steals', (t) => t.stl], ['Blocks', (t) => t.blk], ['Turnovers', (t) => t.tov, null, '', true]];
+    rows.forEach(([lab, f, sub, unit, low]) => { const a = f(home), b = f(away); if (a == null || b == null) return;
+      const better = a === b ? 0 : ((a > b) !== !!low ? -1 : 1); const tot = (a + b) || 1;
+      const r = mk('div', 'gcx-br');
+      const va = mk('span', 'v' + (better < 0 ? ' best' : '')); va.append(mk('b', '', unit ? a.toFixed(0) + unit : String(a))); if (sub) va.append(mk('small', '', sub(home)));
+      const vb = mk('span', 'v r' + (better > 0 ? ' best' : '')); vb.append(mk('b', '', unit ? b.toFixed(0) + unit : String(b))); if (sub) vb.append(mk('small', '', sub(away)));
+      const bar = mk('div', 'gcx-track'); const l = mk('i', 'l' + (better < 0 ? ' best' : '')); l.style.width = (a / tot * 100) + '%'; l.style.setProperty('--c', teamColor(hn)); const rr = mk('i', 'r' + (better > 0 ? ' best' : '')); rr.style.width = (b / tot * 100) + '%'; rr.style.setProperty('--c', teamColor(an)); bar.append(l, rr);
+      const mid = mk('div', 'gcx-bm'); mid.append(mk('span', 'lab', lab), bar);
+      r.append(va, mid, vb); wrap.append(r); });
+    return wrap;
+  }
+  function gcx(el, g, lines, ha, final, story, hl) {
+    const fb = (ds('fullbox') || []).filter((r) => r.game_id === g.game_id);
+    const H = gcxTotals(fb, ha.home.name), A = gcxTotals(fb, ha.away.name);
+    const live = g.status === 'live';
+    if (gcTab === 'overview') {
+      // 1. the Swede first: photo, his line, how it compares with his season
+      lines.filter((r) => !/DNP/i.test(r.note || '')).forEach((r) => {
+        const sec = ppSection('Swede spotlight'); sec.dataset.k = 'avg'; sec.dataset.kick = live ? 'Right now' : 'Swede spotlight'; sec.classList.add('gcx-spot'); if (live) sec.classList.add('gcx-live');
+        const ph = photoFor(r.player); const pic = mk('div', 'gcx-pic'); if (ph) { const im = new Image(); im.alt = r.player; im.src = ph.src; faceFit(im, ph); pic.append(im); } else pic.append(mk('span', 'pp-ini', initials(r.player)));
+        const who = mk('div', 'gcx-who'); const nb = mk('button', 'gcx-nm', r.player); nb.type = 'button'; nb.onclick = () => showLog(r.player); who.append(nb, mk('span', 'pp-sub', `${r.min || '—'} min · ${clubOf(r.player, r.team || g.team)}`));
+        const st = (ds('stats') || []).find((x) => isSame(x.player, r.player) && norm(x.competition) === norm(g.competition));
+        const nums = mk('div', 'gcx-nums');
+        [['PTS', 'pts'], ['REB', 'reb'], ['AST', 'ast']].forEach(([k, f]) => { const v = Number(r[f]); const d = mk('div'); d.append(mk('b', '', r[f] === '' || r[f] == null ? '—' : String(r[f])), mk('span', '', k));
+          if (st && st[f] !== '' && st[f] != null && !isNaN(v)) { const diff = v - Number(st[f]); d.append(mk('em', diff >= 0 ? 'up' : 'dn', `${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff).toFixed(1)} vs avg`)); } nums.append(d); });
+        const shoot = mk('div', 'gcx-shoot'); [['FG', r.fg], ['3P', r.three], ['FT', r.ft]].forEach(([k, v]) => { const q = /^(\d+)\s*\/\s*(\d+)$/.exec(String(v || '')); const d = mk('div'); const pct = q && +q[2] ? +q[1] / +q[2] : null; d.append(mk('span', 'k', k), mk('b', '', v || '—'));
+          const tr = mk('div', 'gcx-mini'); const f = mk('i'); f.style.width = (pct == null ? 0 : pct * 100) + '%'; tr.append(f); d.append(tr); shoot.append(d); });
+        const fl = lineFlags(r); const tags = mk('div', 'pp-tags'); fl.forEach((x) => tags.append(mk('span', 'pp-tag y', x)));
+        if (final) { const h2 = realHl().find((h) => h.game_id === g.game_id && norm(h.player) === norm(r.player)) || recapCard(g, r, fl); const b = mk('button', 'pp-tag share-pill', '⤴ Share'); b.type = 'button'; b.onclick = () => openShare(h2); tags.append(b); }
+        const body = mk('div', 'gcx-sbody'); body.append(who, nums, shoot, tags);
+        const wrap = mk('div', 'gcx-sw'); wrap.append(pic, body); sec.append(wrap); el.append(sec); });
+      if (g.coach) { const cs = ppSection('Swedish coach in this game'); cs.dataset.k = 'avg'; cs.dataset.kick = 'On the bench'; const cg0 = mk('div', 'gc-swe'); cg0.append(coachCard(g.coach, g)); cs.append(cg0); el.append(cs); }
+      if (!lines.length && g.players) { const ps = ppSection('Swedes in this game'); ps.dataset.k = 'avg'; ps.dataset.kick = 'Swede spotlight'; ps.append(mk('p', 'empty', final ? 'The box score line is added once it is published.' : 'Lines appear here during and after the game.')); el.append(ps); }
+      // 2. the story in one or two lines
+      const sum = ppSection(live ? 'So far' : 'Game summary'); sum.dataset.k = 'glance'; sum.dataset.kick = 'In short';
+      const res = String(g.score || '');
+      if (story) sum.append(mk('p', 'gc-p', tx(story, 'headline')));
+      else if (hl.length) hl.forEach((h) => sum.append(mk('p', 'gc-p', tx(h, 'headline'))));
+      else if (final) sum.append(mk('p', 'gc-p', `${g.team} ${res[0] === 'W' ? 'beat' : 'lost to'} ${g.opponent} ${res.replace(/^[WL]\s*/, '')} ${g.venue === 'Away' ? 'on the road' : 'at home'} in the ${g.competition}.`));
+      else if (!live) sum.append(mk('p', 'gc-p', `${g.team} ${g.venue === 'Away' ? 'visit' : 'host'} ${g.opponent} in the ${g.competition}. Switch to Preview for records and team leaders.`));
+      if (H && A) { const k = []; const lead = (f, lab, low) => { const a = f(H), b = f(A); if (a == null || b == null || a === b) return; const win = (a > b) !== !!low ? ha.home.name : ha.away.name; k.push(`${teamAbbr(win)} ${live ? 'is winning' : 'won'} the ${lab} battle (${Math.max(a, b).toFixed(0)}${lab === 'shooting' ? '%' : ''} to ${Math.min(a, b).toFixed(0)}${lab === 'shooting' ? '%' : ''})`); };
+        lead((t) => t.fg.p, 'shooting'); lead((t) => t.reb, 'rebounding'); { const a = H.tov, b = A.tov; if (a !== b) k.push(`${teamAbbr(a < b ? ha.home.name : ha.away.name)} ${live ? 'is taking' : 'took'} better care of the ball (${Math.min(a, b)} turnovers to ${Math.max(a, b)})`); }
+        const ul = mk('ul', 'cz-facts'); k.slice(0, 3).forEach((t) => { const li = mk('li'); li.append(mk('i', '', '●'), mk('span', '', t)); ul.append(li); }); if (k.length) sum.append(ul); }
+      if (story) { const b = mk('button', 'hc-more', 'Read in This week →'); b.type = 'button'; b.onclick = () => openStory(story.story_id); sum.append(b); }
+      el.append(sum);
+      // 3. game leaders, head to head
+      if (H && A) { const gl = ppSection('Game leaders'); gl.dataset.k = 'rank'; gl.dataset.kick = 'Head to head';
+        const grid = mk('div', 'gcx-leaders');
+        [['Points', 'pts'], ['Rebounds', 'reb'], ['Assists', 'ast']].forEach(([lab, f]) => { const top = (t) => t.list.slice().sort((x, y) => Number(y[f]) - Number(x[f]))[0];
+          const a = top(H), b = top(A); const row = mk('div', 'gcx-lr');
+          const side = (p, t, r) => { const d = mk('div', 'gcx-ls' + (r ? ' r' : '') + (Number(p[f]) >= Number((r ? a : b)[f]) ? ' best' : '')); const ph = photoFor(p.player); const av = mk('span', 'gcx-av'); if (ph) { const im = new Image(); im.src = ph.src; im.alt = ''; faceFit(im, ph); av.append(im); } else { av.textContent = initials(p.player); av.style.background = teamColor(t); }
+            const tx2 = mk('div'); tx2.append(mk('b', '', p.player), mk('span', '', `${teamAbbr(t)} · ${p.min} min`)); d.append(av, tx2, mk('strong', '', String(p[f]))); return d; };
+          row.append(side(a, ha.home.name, false), mk('span', 'gcx-lab', lab), side(b, ha.away.name, true)); grid.append(row); });
+        gl.append(grid); el.append(gl); }
+      // 4. the game in numbers
+      if (H && A) { const nb = ppSection(live ? 'Team stats so far' : 'The game in numbers'); nb.dataset.k = 'split'; nb.dataset.kick = 'Team stats'; nb.append(gcxBars(H, A, ha.home.name, ha.away.name)); el.append(nb); }
+      // 5. next games, compact
+      const up = (allGames() || []).filter((x) => x.status !== 'final' && x.game_id !== g.game_id && [g.team, g.opponent].some((t) => sameTeam(x.team, t) || sameTeam(x.opponent, t))).slice(0, 3);
+      if (up.length) { const us = ppSection('Next up'); us.dataset.k = 'next'; us.dataset.kick = 'Schedule'; const l = mk('div', 'gcx-next');
+        up.forEach((x) => { const b = mk('button', 'gcx-nx'); b.type = 'button'; b.onclick = () => showCard(x.game_id); const d = mk('div', 'upx-date'); d.append(mk('b', '', String(Number(x.date.slice(8, 10)))), mk('span', '', new Date(x.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }).toUpperCase()));
+          const m = mk('div', 'upx-m'); m.append(mk('b', '', `${x.team} ${x.venue === 'Away' ? '@' : 'vs'} ${x.opponent}`), mk('span', '', `${x.competition} · ${x.time || 'TBC'}`)); b.append(d, crest(x.opponent, 'sm'), m, mk('span', 'upx-in', 'Preview →')); l.append(b); });
+        us.append(l); el.append(us); }
+      return;
+    }
+    if (gcTab === 'box') {
+      if (!fb.length) { const sec = ppSection('Box score'); sec.append(mk('p', 'empty', final ? 'The box score is added once it is published.' : 'The box score fills in during the game.')); el.append(sec); return; }
+      const teams = [ha.home.name, ha.away.name]; if (!gcxTeam || !teams.some((t) => sameTeam(t, gcxTeam))) gcxTeam = teams.find((t) => fb.some((r) => r.swede && sameTeam(r.team, t))) || teams[0];
+      const sec = ppSection('Box score'); sec.dataset.k = 'games'; sec.dataset.kick = live ? 'Live · updates on its own' : 'Full box score';
+      const seg = mk('div', 'gcx-seg'); teams.forEach((t) => { const tt = t === teams[0] ? H : A; const b = mk('button', sameTeam(t, gcxTeam) ? 'on' : ''); b.type = 'button'; b.append(crest(t, 'sm'), mk('span', '', t), mk('b', '', tt ? String(tt.pts) : '')); b.onclick = () => { gcxTeam = t; dash.draw('gc'); }; seg.append(b); }); sec.append(seg);
+      const list = fb.filter((r) => sameTeam(r.team, gcxTeam)); const T = gcxTotals(fb, gcxTeam);
+      const cols = [['MIN', 'min'], ['PTS', 'pts'], ['REB', 'reb'], ['AST', 'ast'], ['STL', 'stl'], ['BLK', 'blk'], ['TOV', 'tov'], ['FG', 'fg'], ['3P', 'three'], ['FT', 'ft'], ['+/-', 'pm']];
+      const num = (r, k) => { const v = r[k]; const q = /^(\d+)\s*\/\s*(\d+)$/.exec(String(v || '')); return q ? +q[1] : Number(v) || 0; };
+      const best = {}; ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((k) => { best[k] = Math.max(...list.map((r) => num(r, k))); });
+      const rows = list.slice().sort((x, y) => (num(x, gcxSort.k) - num(y, gcxSort.k)) * gcxSort.d);
+      const tw = mk('div', 'gcx-tw'); const t = mk('table', 'gcx-t'); const hr = mk('tr'); hr.append(mk('th', 'pl', 'Player'));
+      cols.forEach(([lab, k]) => { const th = mk('th', gcxSort.k === k ? 'on' : '', lab + (gcxSort.k === k ? (gcxSort.d < 0 ? ' ↓' : ' ↑') : '')); th.onclick = () => { gcxSort = { k, d: gcxSort.k === k ? -gcxSort.d : -1 }; dash.draw('gc'); }; hr.append(th); });
+      const th0 = mk('thead'); th0.append(hr); t.append(th0); const tb = mk('tbody');
+      rows.forEach((r) => { const tr = mk('tr', r.swede ? 'swe' : ''); const pl = mk('td', 'pl'); if (r.swede) { const b = mk('button', 'gcx-pn', '🇸🇪 ' + r.player); b.type = 'button'; b.onclick = () => showLog(r.player); pl.append(b); } else pl.append(r.player); tr.append(pl);
+        cols.forEach(([, k]) => { let v = r[k]; if (k === 'pm' && v !== '' && v != null) v = (Number(v) > 0 ? '+' : '') + v; const td = mk('td', (best[k] != null && num(r, k) === best[k] && best[k] > 0 ? 'lead' : '') + (k === 'pm' && Number(r[k]) > 0 ? ' pos' : k === 'pm' && Number(r[k]) < 0 ? ' neg' : ''), v === '' || v == null ? '—' : String(v)); tr.append(td); }); tb.append(tr); });
+      const tot = mk('tr', 'tot'); tot.append(mk('td', 'pl', 'Team')); [['min', ''], ['pts', T.pts], ['reb', T.reb], ['ast', T.ast], ['stl', T.stl], ['blk', T.blk], ['tov', T.tov], ['fg', `${T.fg.m}/${T.fg.a}`], ['three', `${T.three.m}/${T.three.a}`], ['ft', `${T.ft.m}/${T.ft.a}`], ['pm', '']].forEach(([, v]) => tot.append(mk('td', '', v === '' ? '' : String(v))));
+      tb.append(tot); const pc = mk('tr', 'pct'); pc.append(mk('td', 'pl', '')); ['', '', '', '', '', '', '', T.fg.p == null ? '' : T.fg.p.toFixed(1) + '%', T.three.p == null ? '' : T.three.p.toFixed(1) + '%', T.ft.p == null ? '' : T.ft.p.toFixed(1) + '%', ''].forEach((v) => pc.append(mk('td', '', v))); tb.append(pc);
+      t.append(tb); tw.append(t); sec.append(tw);
+      sec.append(mk('p', 'pp-sub gcx-note', `Tap a column to sort. Yellow marks the team's best in that stat.${[...new Set(fb.map((r) => r.source).filter(Boolean))].length ? ' Source: ' + [...new Set(fb.map((r) => r.source).filter(Boolean))].join(', ') + '.' : ''}`));
+      el.append(sec); return;
+    }
+    if (gcTab === 'teams') {
+      if (H && A) { const nb = ppSection('This game'); nb.dataset.k = 'split'; nb.dataset.kick = 'Head to head'; nb.append(gcxBars(H, A, ha.home.name, ha.away.name)); el.append(nb); }
+      const sec = ppSection('This season'); sec.dataset.k = 'rank'; sec.dataset.kick = 'Form'; const tw = mk('div', 'pp-two');
+      [ha.home, ha.away].forEach((tm) => { const box = mk('div', 'gc-tc'); const h = mk('div', 'gc-lead-h'); h.append(crest(tm.name, 'sm'), teamBtn(tm.name)); box.append(h); const info = (ds('teams') || []).find((r) => r.team !== 'placeholder' && sameTeam(r.team, tm.name)); if (info && info.record) box.append(mk('p', 'gcx-rec', info.record)); box.append(formMini(tm.name)); if (info && info.notes) box.append(mk('p', 'gc-p', info.notes)); tw.append(box); });
+      sec.append(tw); el.append(sec); return;
+    }
+  }
   dash.draw('gc', (el) => {
     el.replaceChildren();
     if (!openCard) { el.append(mk('p', 'hc-note', 'Pick a game from the scoreboard or any result.')); return; }
@@ -3384,7 +3489,7 @@
     const found = gameById(openCard);
     if (!found) { el.append(mk('p', 'hc-note', 'This game could not be found.')); return; }
     const { g, lines } = found;
-    if (gcFor !== g.game_id) { gcFor = g.game_id; gcTab = g.status === 'final' ? 'overview' : 'preview'; }
+    if (gcFor !== g.game_id) { gcFor = g.game_id; gcTab = g.status === 'final' || g.status === 'live' ? 'overview' : 'preview'; }
     // Hero
     const ha = homeAway(g);
     const final = g.status === 'final';
@@ -3408,6 +3513,18 @@
     mid.append(sc, mk('span', 'gch-meta', `${g.competition} · ${longDate(g.date)}${g.time && g.time !== 'TBC' ? ' · ' + g.time + ' (Stockholm)' : ''}`));
     const lk = gameLinks(g); if (lk) mid.append(lk);
     hero.append(side(ha.home, 'home'), mid, side(ha.away, 'away'));
+    if (window.GCX !== false) {
+      hero.classList.add('gchx'); if (g.status === 'live') hero.classList.add('is-live');
+      // last five results as small W/L blocks under each team
+      hero.querySelectorAll('.gch-team').forEach((s0, i) => { const t = i ? ha.away.name : ha.home.name; const tf = (ds('teamform') || []).filter((r) => r.row_id !== 'placeholder' && r.date && r.date < g.date && sameTeam(r.team, t)).sort((x, y) => String(y.date).localeCompare(String(x.date))).slice(0, 5).reverse();
+        if (tf.length) { const f = mk('div', 'gchx-form'); tf.forEach((r) => { const w = String(r.result).toUpperCase() === 'W'; const c = mk('i', w ? 'w' : 'l', w ? 'W' : 'L'); c.title = `${dayFmt(r.date)} ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent} ${r.score}`; f.append(c); }); s0.append(f); } });
+      // the Swedes in this game, with their line so far, along the bottom of the band
+      const sl = lines.filter((r) => r.player);
+      if (sl.length) { const strip = mk('div', 'gchx-swe'); strip.append(mk('span', 'lab', '🇸🇪 Swedes in this game'));
+        sl.forEach((r) => { const b = mk('button', 'gchx-p'); b.type = 'button'; b.onclick = () => showLog(r.player); const ph = photoFor(r.player); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); av.append(im); } else av.textContent = initials(r.player);
+          const t2 = mk('span', 't'); t2.append(mk('b', '', r.player), mk('span', '', /DNP/i.test(r.note || '') ? 'Did not play' : `${r.pts} PTS · ${r.reb} REB · ${r.ast} AST${r.min ? ' · ' + r.min + ' min' : ''}`)); b.append(av, t2); strip.append(b); });
+        hero.append(strip); }
+    }
     el.append(hero);
     const pv = (ds('previews') || []).find((r) => r.game_id === g.game_id);
     const tabs = [['overview', 'Overview'], ['box', 'Box score'], ['teams', 'Team comparison'], ['preview', 'Preview']];
@@ -3416,6 +3533,7 @@
     const hl = realHl().filter((r) => r.game_id === g.game_id);
     const story = (ds('thisweek') || []).find((r) => r.game_id === g.game_id);
 
+    if (window.GCX !== false && ['overview', 'box', 'teams'].includes(gcTab)) { gcx(el, g, lines, ha, final, story, hl); return; }
     if (gcTab === 'overview') {
       const sum = ppSection('Game summary');
       const res = String(g.score || '');
