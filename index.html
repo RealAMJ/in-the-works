@@ -243,16 +243,25 @@
   </div>
 
   <div class="pg" data-page="players" id="pg-players" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Players</b></button><h1>Players</h1><p>Every Swedish men's player abroad this season, his club and every competition it plays in.</p></header>
+    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Players</b></button></header>
+    <section class="lx-hero plx-hero">
+      <div class="lx-kicker">2026-27 · Swedish men's players abroad</div>
+      <h1>The Swedes abroad</h1>
+      <p>Every Swedish player abroad this season: his club, his league and how his season is going. Tap a player for all his games and stats.</p>
+      <div class="lx-nums" data-draw="plxnums" data-source="players ntroster stats"></div>
+      <div class="plx-where" data-draw="plxwhere" data-source="players"></div>
+    </section>
   <section class="sw-card" id="players">
-    <h2>Players and the competitions they play in</h2>
-    <p class="note">League plus any European cup their club is entered in this season. Tap a player to see all their games and stats.</p>
+    <div class="plx-rows" data-draw="plxrows" data-source="players stats schedule boxscores gamelogs ntroster photos logos"></div>
+    <div class="plx-rh plx-allh"><h3>All players</h3><span>Filter, sort or search the full list</span></div>
     <div class="pl-bar">
       <input class="sw-search" type="search" placeholder="Search player, club, league…" aria-label="Search players" data-filter="players">
+      <div class="plx-sent" data-draw="plxsent" data-source="players"></div>
       <div class="pp-tabs" role="group" aria-label="Level" data-draw="pl-levels" data-source="players"></div>
       <div class="pp-tabs pl-sort" role="group" aria-label="Sort by"><span class="pp-sub">Sort:</span><button type="button" class="on" data-pl-sort="league" aria-pressed="true">League level</button><button type="button" data-pl-sort="pts" aria-pressed="false">Points</button><button type="button" data-pl-sort="level" aria-pressed="false">Level</button><button type="button" data-pl-sort="name" aria-pressed="false">Name</button><button type="button" data-pl-sort="club" aria-pressed="false">Club</button></div>
     </div>
-    <div class="pl-grid" data-draw="pl-grid" data-source="players stats ntroster photos leaguetiers"></div>
+    <div class="plx-table" data-draw="plxtable" data-source="players stats ntroster photos logos schedule"></div>
+    <div class="pl-grid" data-draw="pl-grid" data-source="players stats ntroster photos leaguetiers schedule gamelogs boxscores logos"></div>
     <div class="sw-scroll">
       <table class="cards playersT" data-source="players" data-row-key="player">
         <thead><tr>
@@ -5099,9 +5108,83 @@
     document.querySelectorAll('[data-pl-sort]').forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
     dash.draw('pl-grid');
   }));
-  document.querySelectorAll('[data-filter=players]').forEach((inp) => inp.addEventListener('input', () => dash.draw('pl-grid')));
+  document.querySelectorAll('[data-filter=players]').forEach((inp) => inp.addEventListener('input', () => { dash.draw('pl-grid'); dash.draw('plxsent'); dash.draw('plxwhere'); }));
+
+  // ---- Players page: header numbers and where they play
+  dash.draw('plxnums', (el) => {
+    el.replaceChildren(); const P = (ds('players') || []).filter((p) => p.player); if (!P.length) return;
+    const n = (v, l) => { const d = mk('div', 'lx-num'); d.append(mk('b', '', String(v)), mk('span', '', l)); el.append(d); };
+    n(P.length, 'Players'); n(new Set(P.map((p) => p.country).filter(Boolean)).size, 'Countries');
+    n(new Set(P.map((p) => String(p.competitions || '').split(/\s*·\s*/)[0].replace(/\s*\(.*?\)/, '').trim()).filter(Boolean)).size, 'Leagues');
+    n(P.filter((p) => (ds('ntroster') || []).some((x) => isSame(x.player, p.player))).length, 'National team');
+  });
+  dash.draw('plxwhere', (el) => {
+    el.replaceChildren(); const P = (ds('players') || []).filter((p) => p.country); const by = new Map(); P.forEach((p) => by.set(p.country, (by.get(p.country) || 0) + 1));
+    [...by.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).forEach(([c, k]) => { const b = mk('button', 'plx-ct' + ((q.players || '') === c.toLowerCase() ? ' on' : ''), ''); b.type = 'button'; b.append(mk('span', '', c), mk('b', '', String(k)));
+      b.onclick = () => { const on = (q.players || '') === c.toLowerCase(); document.querySelectorAll('[data-filter=players]').forEach((i) => { i.value = on ? '' : c; }); q.players = on ? '' : c.toLowerCase(); dash.draw('plxwhere'); dash.draw('pl-grid'); }; el.append(b); });
+  });
+  function plNext(name) { const g = (allGames() || []).find((r) => r.status !== 'final' && String(r.players || '').split(/\s*,\s*/).some((n) => isSame(n, name))); return g || null; }
+
+  // ---- Players page extras: rows, form, list view, sentence filters, highlighted matches
+  let plView = 'cards';
+  function plForm(name) { return playerGames(name).filter((g) => g.note !== 'DNP').slice(-5); }
+  function plFormEl(name) {
+    const f = plForm(name); if (!f.length) return null; const mx = Math.max(10, ...f.map((g) => Number(g.pts) || 0));
+    const w = mk('div', 'plc-form'); w.append(mk('span', 'k', 'Form'));
+    const bars = mk('div', 'bars'); f.forEach((g) => { const v = Number(g.pts) || 0; const r = String(g.result || '')[0]; const b = mk('i', r === 'W' ? 'w' : r === 'L' ? 'l' : ''); b.style.height = Math.max(8, v / mx * 100) + '%'; b.title = `${v} pts ${g.venue === 'Away' ? 'at' : 'vs'} ${g.opponent} · ${dayFmt(g.date)}`; bars.append(b); });
+    w.append(bars, mk('span', 'v', f.map((g) => g.pts).join(' · '))); return w;
+  }
+  function plHi(text) { const t = (q.players || '').trim(); const el = mk('span'); if (!t) { el.textContent = text; return el; } const i = String(text).toLowerCase().indexOf(t); if (i < 0) { el.textContent = text; return el; }
+    el.append(text.slice(0, i), mk('mark', '', text.slice(i, i + t.length)), text.slice(i + t.length)); return el; }
+  function plMini(p, sub, tag) {
+    const c = mk('button', 'plx-mini'); c.type = 'button'; c.onclick = () => showLog(p.player);
+    c.append(faceAv('span', 'av', p.player)); const t = mk('div', 't'); t.append(mk('b', '', p.player), (() => { const x = mk('span', 'c'); if (p.club) x.append(crest(p.club, 'sm'), ' ' + p.club); return x; })(), mk('span', 's', sub)); c.append(t);
+    if (tag) c.append(mk('span', 'tg' + (tag.live ? ' live' : ''), tag.text)); return c;
+  }
+  dash.draw('plxrows', (el) => {
+    el.replaceChildren(); const P = (ds('players') || []).filter((p) => p.player); const st = ds('stats') || []; if (!P.length) return;
+    const row = (title, sub, items) => { if (!items.length) return; const r = mk('section', 'plx-row'); const h = mk('div', 'plx-rh'); h.append(mk('h3', '', title), mk('span', '', sub)); const l = mk('div', 'plx-rl'); items.forEach((x) => l.append(x)); r.append(h, l); el.append(r); };
+    // playing today (and tonight)
+    const today = (games() || []).filter(isTonight);
+    row('Playing today', 'Swedes with a game today or tonight, Swedish time', P.map((p) => ({ p, g: today.find((g) => String(g.players || '').split(/\s*,\s*/).some((n) => isSame(n, p.player))) })).filter((x) => x.g)
+      .sort((a, b) => String(a.g.time).localeCompare(String(b.g.time))).map(({ p, g }) => plMini(p, `${g.venue === 'Away' ? '@' : 'vs'} ${g.opponent}`, g.status === 'live' ? { text: '● Live', live: true } : g.status === 'final' ? { text: g.score || 'Final' } : { text: g.time || 'TBC' })));
+    // hot right now: best points over the last three games, compared with his season average
+    const hot = P.map((p) => { const f = plForm(p.player).slice(-3); if (f.length < 2) return null; const a = f.reduce((t, g) => t + (Number(g.pts) || 0), 0) / f.length; const s = st.filter((x) => isSame(x.player, p.player) && Number(x.gp) > 0).sort((x, y) => Number(y.gp) - Number(x.gp))[0]; return { p, a, d: s ? a - Number(s.pts) : 0 }; })
+      .filter((x) => x && x.a >= 8 && x.d > 0).sort((a, b) => b.d - a.d).slice(0, 10);
+    row('Hot right now', 'Most points above their season average over the last three games', hot.map(({ p, a, d }) => plMini(p, `${a.toFixed(1)} pts last 3`, { text: `+${d.toFixed(1)}` })));
+    // national team
+    const nt = ds('ntroster') || [];
+    row('National team', 'The players called up for Sweden in November', P.filter((p) => nt.some((x) => isSame(x.player, p.player))).map((p) => { const s = st.filter((x) => isSame(x.player, p.player) && Number(x.gp) > 0).sort((x, y) => Number(y.gp) - Number(x.gp))[0]; return plMini(p, s ? `${f1x(s.pts)} pts · ${shortComp(s.competition)}` : (p.club || ''), { text: '🇸🇪' }); }));
+  });
+  // filters as one sentence
+  dash.draw('plxsent', (el) => {
+    el.replaceChildren(); const P = (ds('players') || []).filter((p) => p.player); if (!P.length) return;
+    const sel = (opts, val, on) => { const s = document.createElement('select'); s.className = 'plx-sel'; opts.forEach(([v, l]) => { const o = document.createElement('option'); o.value = v; o.textContent = l; if (v === val) o.selected = true; s.append(o); }); s.onchange = () => on(s.value); return s; };
+    const countries = [...new Set(P.map((p) => p.country).filter(Boolean))].sort();
+    const curC = countries.find((c) => c.toLowerCase() === (q.players || '')) || '';
+    const lv = [['all', 'All levels'], ['NBA', 'NBA'], ['Europe', 'Europe'], ['NCAA', 'College'], ['Pro', 'Other pro leagues']].filter(([k]) => k === 'all' || P.some((p) => p.level === k));
+    const fld = (k, s) => { const l = mk('label', 'plx-fld'); l.append(mk('span', '', k), s); return l; };
+    el.append(fld('Country', sel([['', 'All countries']].concat(countries.map((c) => [c, c])), curC, (v) => { document.querySelectorAll('[data-filter=players]').forEach((i) => { i.value = v; }); q.players = v.toLowerCase(); dash.draw('plxwhere'); dash.draw('pl-grid'); dash.draw('plxtable'); })),
+      fld('Level', sel(lv, plLevel, (v) => { plLevel = v; dash.draw('pl-levels'); dash.draw('pl-grid'); dash.draw('plxtable'); })),
+      fld('Sort', sel([['league', 'League level'], ['pts', 'Points'], ['level', 'Level'], ['name', 'Name'], ['club', 'Club']], plSort, (v) => { plSort = v; document.querySelectorAll('[data-pl-sort]').forEach((x) => x.classList.toggle('on', x.dataset.plSort === v)); dash.draw('pl-grid'); dash.draw('plxtable'); })));
+    const vw = mk('div', 'plx-vw'); [['cards', '▦ Cards'], ['list', '☰ List']].forEach(([k, l]) => { const b = mk('button', plView === k ? 'on' : '', l); b.type = 'button'; b.onclick = () => { plView = k; dash.draw('plxsent'); dash.draw('pl-grid'); dash.draw('plxtable'); }; vw.append(b); }); el.append(vw);
+  });
+  // compact list view
+  dash.draw('plxtable', (el) => {
+    el.replaceChildren(); el.hidden = plView !== 'list'; if (plView !== 'list') return;
+    const grid = document.querySelector('#pg-players .pl-grid'); const keys = grid ? [...grid.querySelectorAll('.plc')].map((c) => c.dataset.key) : [];
+    const P = ds('players') || [], st = ds('stats') || [];
+    const t = mk('table', 'gcx-t plx-t'); const hr = mk('tr'); ['Player', 'Club', 'League', 'GP', 'PTS', 'REB', 'AST', 'Form', 'Next'].forEach((x, i) => hr.append(mk('th', i < 3 ? 'pl' : '', x))); const th = mk('thead'); th.append(hr); t.append(th); const tb = mk('tbody');
+    keys.forEach((k) => { const p = P.find((x) => x.player === k); if (!p) return; const s = st.filter((x) => isSame(x.player, p.player) && Number(x.gp) > 0).sort((x, y) => Number(y.gp) - Number(x.gp))[0];
+      const tr = mk('tr'); tr.style.cursor = 'pointer'; tr.onclick = () => showLog(p.player);
+      const n = mk('td', 'pl'); const nw = mk('div', 'plx-tc nm'); nw.append(faceAv('span', 'plx-tav', p.player), plHi(p.player)); n.append(nw); const c = mk('td', 'pl'); const cw = mk('div', 'plx-tc'); if (p.club) cw.append(crest(p.club, 'sm'), plHi(p.club)); c.append(cw);
+      const f = mk('td', 'fm'); const fe = plFormEl(p.player); if (fe) f.append(fe.querySelector('.bars'));
+      const nx = plNext(p.player); tr.append(n, c, mk('td', 'pl', s ? shortComp(s.competition) : ''), mk('td', '', s ? String(s.gp) : '–'), mk('td', 'y', s ? f1x(s.pts) : '–'), mk('td', '', s ? f1x(s.reb) : '–'), mk('td', '', s ? f1x(s.ast) : '–'), f, mk('td', 'nx', nx ? `${nx.venue === 'Away' ? '@' : 'vs'} ${nx.opponent} · ${dayFmt(nx.date)}` : ''));
+      tb.append(tr); });
+    t.append(tb); const w = mk('div', 'gcx-tw'); w.append(t); el.append(w);
+  });
   dash.draw('pl-grid', (el) => {
-    el.replaceChildren();
+    el.replaceChildren(); el.classList.toggle('as-list', plView === 'list'); requestAnimationFrame(() => dash.draw('plxtable'));
     const pl = ds('players'), st = ds('stats');
     if (!pl || !st) { el.textContent = '—'; return; }
     const nt = ds('ntroster') || [];
@@ -5112,8 +5195,12 @@
     const lscore = (p) => { const comps = st.filter((x) => isSame(x.player, p.player)).map((x) => x.competition).concat(String(p.competitions || '').split(/\s*·\s*/).map((c) => c.replace(/\s*\(.*?\)/, '').trim())); return Math.max(0, ...comps.map((c) => { const t = tierFor(c) || tierFor(c.split(' ')[0]); return t ? Number(t.score) : 0; })); };
     list = list.map((p) => ({ p, s: best(p.player), ls: lscore(p) }));
     list.sort((a, b) => plSort === 'league' ? b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : plSort === 'name' ? a.p.player.split(' ').slice(-1)[0].localeCompare(b.p.player.split(' ').slice(-1)[0]) : plSort === 'club' ? String(a.p.club).localeCompare(String(b.p.club)) : plSort === 'level' ? (LV[a.p.level] ?? 9) - (LV[b.p.level] ?? 9) || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1) : Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1));
+    if (plSort === 'league' && plLevel === 'all') list.sort((a, b) => (LV[a.p.level] ?? 9) - (LV[b.p.level] ?? 9) || b.ls - a.ls || Number(b.s ? b.s.pts : -1) - Number(a.s ? a.s.pts : -1));
     if (!list.length) { el.append(mk('p', 'hc-note', 'No players match.')); return; }
+    const LVN = { NBA: 'NBA', Europe: 'Europe', NCAA: 'College (NCAA)', Pro: 'Other pro leagues' };
+    let lastLv = null; const group = plSort === 'league' && plLevel === 'all'; el.classList.toggle('grouped', group);
     list.forEach(({ p, s, ls }) => {
+      if (group && p.level !== lastLv) { lastLv = p.level; const n = list.filter((x) => x.p.level === p.level).length; const h = mk('div', 'plx-gh'); h.append(mk('h3', '', LVN[p.level] || p.level || 'Other'), mk('span', '', `${n} player${n === 1 ? '' : 's'}`)); el.append(h); }
       const c = mk('button', 'plc'); c.type = 'button'; c.dataset.key = p.player; c.style.setProperty('--tc', teamColor(p.club));
       c.onclick = () => showLog(p.player);
       const band = mk('div', 'plc-band');
@@ -5123,15 +5210,17 @@
       band.append(av, tags);
       const parts = p.player.split(' ');
       const body = mk('div', 'plc-body');
-      body.append(mk('span', 'plc-first', parts.slice(0, -1).join(' ')), mk('span', 'plc-last', parts[parts.length - 1]));
-      const club = mk('div', 'plc-club'); club.append(crest(p.club, 'sm'), mk('span', '', p.club)); body.append(club);
+      const fn = mk('span', 'plc-first'); fn.append(plHi(parts.slice(0, -1).join(' '))); const ln = mk('span', 'plc-last'); ln.append(plHi(parts[parts.length - 1])); body.append(fn, ln);
+      const club = mk('div', 'plc-club'); club.append(crest(p.club, 'sm'), plHi(p.club || '')); body.append(club);
       body.append(mk('div', 'plc-comp', [p.country, p.competitions].filter(Boolean).join(' · ')));
       const nums = mk('div', 'plc-nums');
       if (s) [['PTS', s.pts], ['REB', s.reb], ['AST', s.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', f1x(v)), mk('span', '', k)); nums.append(d); });
-      else nums.append(mk('span', 'plc-wait', p.level === 'NCAA' ? 'College season starts in November' : 'No games yet'));
+      else nums.append(mk('span', 'plc-wait', 'No games played yet'));
       body.append(nums);
       if (s) body.append(mk('div', 'plc-foot', `${s.gp} games · ${shortComp(s.competition)}`));
-      if (ls) band.append(mk('span', 'plc-ls', `League level ${ls}`));
+      if (p.number) band.append(mk('span', 'plc-num', String(p.number)));
+      { const fe = plFormEl(p.player); if (fe) body.append(fe); }
+      { const nx = plNext(p.player); if (nx) { const d = mk('div', 'plc-next'); d.append(mk('span', 'k', 'Next'), (() => { const x = mk('span', 'v'); x.append(crest(nx.opponent, 'sm'), `${nx.venue === 'Away' ? '@' : 'vs'} ${nx.opponent} · ${dayFmt(nx.date)}`); return x; })()); body.append(d); } }
       if (p.status && p.status !== 'Confirmed') body.append(mk('div', 'plc-foot warn', p.status));
       c.append(band, body);
       el.append(c);
