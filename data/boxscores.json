@@ -2086,12 +2086,12 @@
   "game_id": "g20261110ewu",
   "player": "Isak Homelius",
   "min": 13,
-  "pts": 5,
+  "pts": 7,
   "reb": 1,
   "ast": 0,
   "fg": "2/4",
   "three": "1/2",
-  "ft": "0/0",
+  "ft": "2/2",
   "pm": "",
   "source": "ESPN",
   "note": "live",
@@ -2121,7 +2121,7 @@
   "dreb": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 2,
   "eff": ""
  }
