@@ -3372,9 +3372,68 @@
   }
   { const a = document.getElementById('cal-all'); if (a) a.href = calUrl(''); }
   dash.draw('wk-label', (el) => { const d = ds('thisweek'); el.textContent = d && d[0] ? 'Week of ' + String(d[0].week || '').replace(/2026-(\d\d)-(\d\d)/g, (m, mo, da) => dayFmt(`2026-${mo}-${da}`)) : '—'; });
+  // ---- This week (new): magazine front with the lead story, the week in numbers and a story grid; a story opens as an article
+  function wkFace(n, cls) { const ph = photoFor(n); const el = mk('span', cls || 'wkx-face'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = ph.src; faceFit(im, ph); el.append(im); } else el.textContent = initials(n); return el; }
+  function wkWeekGames(d) { const w = String(d[0] && d[0].week || ''); const m = w.match(/(\d{4}-\d\d-\d\d)\D+(\d{4}-\d\d-\d\d)/); if (!m) return []; return (games() || []).filter((g) => g.date >= m[1] && g.date <= m[2] && g.status === 'final'); }
+  function wkx(el, d) {
+    const ups = d.filter((r) => /coming up/i.test(r.kind)), stories = d.filter((r) => !/coming up/i.test(r.kind));
+    if (wkSel) { const story = d.find((r) => r.story_id === wkSel); if (story) { wkxArticle(el, d, story); return; } }
+    const lead = stories.find((r) => /lead/i.test(r.kind)) || stories[0];
+    // 1. lead story, big, with the player's photo
+    const hero = mk('button', 'wkx-hero'); hero.type = 'button'; hero.onclick = () => openStory(lead.story_id);
+    const lp = String(lead.players || '').split(/\s*,\s*/)[0]; const ph = photoFor(lp);
+    if (ph) { const pic = mk('span', 'wkx-hpic'); const im = new Image(); im.alt = lp; im.src = ph.src; leadFit(im, ph); pic.append(im); hero.append(pic); hero.classList.add('has-ph'); }
+    const ht = mk('div', 'wkx-ht'); ht.append(mk('span', wkKindCls(lead.kind), lead.kind), mk('h2', '', tx(lead, 'headline')));
+    if (tx(lead, 'stats')) { const st = mk('div', 'wkx-chips'); tx(lead, 'stats').split(' · ').slice(0, 5).forEach((x) => { const m = /^(\S+)\s+(.*)$/.exec(x); const c = mk('span', 'wkx-chip'); if (m) c.append(mk('b', '', m[1]), mk('span', '', m[2])); else c.textContent = x; st.append(c); }); ht.append(st); }
+    ht.append(mk('p', 'wkx-lede', String(tx(lead, 'body')).split(/\n\n+/)[0].split(/(?<=\.)\s/)[0]), mk('span', 'wkx-read', `${longDate(lead.date)} · Read the story →`));
+    hero.append(ht); el.append(hero);
+    // 2. the week in numbers
+    const wg = wkWeekGames(d); if (wg.length) {
+      const bx = (ds('boxscores') || []).filter((r) => wg.some((g) => g.game_id === r.game_id) && r.note !== 'DNP' && r.pts !== '' && r.pts != null);
+      const wins = wg.filter((g) => /^W/.test(String(g.score || ''))).length, losses = wg.filter((g) => /^L/.test(String(g.score || ''))).length;
+      const top = bx.slice().sort((a, b) => Number(b.pts) - Number(a.pts))[0], reb = bx.slice().sort((a, b) => Number(b.reb) - Number(a.reb))[0], ast = bx.slice().sort((a, b) => Number(b.ast) - Number(a.ast))[0];
+      const nb = mk('section', 'wkx-nums'); nb.append(mk('div', 'wkx-sh', 'The week in numbers'));
+      const row = mk('div', 'wkx-nrow'); const k = (v, l, who) => { const c = mk('div', 'wkx-n'); c.append(mk('b', '', v), mk('span', '', l)); if (who) { const w = mk('span', 'who'); w.append(wkFace(who, 'wkx-mini'), who.split(' ').pop()); c.append(w); } row.append(c); };
+      k(String(wg.length), 'games played'); k(`${wins}-${losses}`, 'Swedish teams');
+      if (top) k(String(top.pts), 'most points', top.player); if (reb) k(String(reb.reb), 'most rebounds', reb.player); if (ast) k(String(ast.ast), 'most assists', ast.player);
+      nb.append(row); el.append(nb); }
+    // 3. the rest of the stories as cards
+    const grid = mk('section', 'wkx-grid-w'); grid.append(mk('div', 'wkx-sh', 'More stories'));
+    const g2 = mk('div', 'wkx-grid');
+    stories.filter((r) => r !== lead).forEach((r) => { const c = mk('button', 'wkx-card' + (/swede vs swede/i.test(r.kind) ? ' h2h' : '')); c.type = 'button'; c.onclick = () => openStory(r.story_id);
+      const faces = mk('div', 'wkx-faces'); String(r.players || '').split(/\s*,\s*/).filter(Boolean).slice(0, 3).forEach((n) => faces.append(wkFace(n)));
+      const top = mk('div', 'wkx-ctop'); top.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'wkx-date', dayFmt(r.date)));
+      c.append(top, mk('h3', '', tx(r, 'headline')), mk('p', '', tx(r, 'stats') || ''), faces); g2.append(c); });
+    grid.append(g2); el.append(grid);
+    // 4. coming up
+    ups.forEach((r) => { const u = mk('button', 'wkx-up'); u.type = 'button'; u.onclick = () => openStory(r.story_id); u.append(mk('span', 'k', 'Coming up'), mk('b', '', String(tx(r, 'headline')).replace(/^Coming up:\s*/i, '')), mk('span', 'go', 'Read →')); el.append(u); });
+  }
+  function wkxArticle(el, d, story) {
+    const back = mk('button', 'wkx-back', '‹ All stories this week'); back.type = 'button'; back.onclick = () => { wkSel = null; dash.draw('wk'); scrollTopSw(); }; el.append(back);
+    const art = mk('article', 'wkx-art');
+    const head = mk('header', 'wkx-ah'); const lp = String(story.players || '').split(/\s*,\s*/)[0]; const ph = photoFor(lp);
+    if (ph) { const pic = mk('span', 'wkx-hpic'); const im = new Image(); im.alt = lp; im.src = ph.src; leadFit(im, ph); pic.append(im); head.append(pic); head.classList.add('has-ph'); }
+    const ht = mk('div', 'wkx-ht'); ht.append(mk('span', wkKindCls(story.kind), story.kind), mk('h1', '', tx(story, 'headline')), mk('span', 'wkx-read', longDate(story.date)));
+    head.append(ht); art.append(head);
+    const wrap = mk('div', 'wkx-aw'); const body = mk('div', 'wkx-body');
+    String(tx(story, 'body')).split(/\n\n+/).forEach((para, i) => body.append(mk('p', i === 0 ? 'first' : '', para)));
+    const acts = mk('div', 'wkx-acts'); if (story.game_id) { const b = mk('button', 'wkx-btn', 'Open the game →'); b.type = 'button'; b.onclick = () => showCard(story.game_id); acts.append(b); } body.append(acts);
+    // side: each Swede in the story with his line from that game
+    const side = mk('aside', 'wkx-aside'); side.append(mk('div', 'wkx-sh', 'In this story'));
+    const bx = ds('boxscores') || [];
+    String(story.players || '').split(/\s*,\s*/).filter(Boolean).forEach((n) => { const b = mk('button', 'wkx-who'); b.type = 'button'; b.onclick = () => showLog(n); b.append(wkFace(n, 'wkx-face lg'));
+      const t = mk('div'); t.append(mk('b', '', n)); const l = bx.filter((r) => isSame(r.player, n) && (r.game_id === story.game_id || (ds('schedule') || []).some((g) => g.game_id === r.game_id && g.date === story.date))).pop();
+      t.append(mk('span', '', l && l.note !== 'DNP' && l.pts !== '' ? `${l.pts} PTS · ${l.reb} REB · ${l.ast} AST` : 'Open profile →')); b.append(t); side.append(b); });
+    wrap.append(body, side); art.append(wrap); el.append(art);
+    // next stories
+    const idx = d.indexOf(story); const more = mk('section', 'wkx-grid-w'); more.append(mk('div', 'wkx-sh', 'Keep reading')); const g2 = mk('div', 'wkx-grid');
+    [1, 2, 3].map((k) => d[(idx + k) % d.length]).filter((r) => r && r !== story).forEach((r) => { const c = mk('button', 'wkx-card'); c.type = 'button'; c.onclick = () => openStory(r.story_id); const top = mk('div', 'wkx-ctop'); top.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'wkx-date', dayFmt(r.date))); c.append(top, mk('h3', '', tx(r, 'headline'))); g2.append(c); });
+    more.append(g2); el.append(more);
+  }
   dash.draw('wk', (el) => {
     el.replaceChildren();
     const d = wkStories(); if (!d) { el.textContent = '—'; return; }
+    if (window.WKX !== false) { wkx(el, d); return; }
     if (!d.length) { el.append(mk('p', 'hc-note', 'This week\'s stories are on their way.')); return; }
     const story = d.find((r) => r.story_id === wkSel) || d.find((r) => /lead/i.test(r.kind)) || d[0];
     const main = mk('article', 'wk-main'); main.dataset.key = story.story_id;
