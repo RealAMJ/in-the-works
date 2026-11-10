@@ -315,7 +315,7 @@
       <div class="sblx-spot" data-draw="sblspot" data-source="sblplayers photos awards stats"></div>
     </section>
     <section class="lx-sec">
-      <div class="lx-head"><h2>Players we follow in the SBL</h2><span class="lx-note">Their season so far</span></div>
+      <div class="lx-head"><h2>Players in focus</h2><span class="lx-note">National team players and award winners in the SBL this season</span></div>
       <div class="sblx-swe" data-draw="sblswe" data-source="stats sblplayers ntroster photos gamelogs"></div>
     </section>
     <section class="lx-sec" data-draw="sblup" data-source="sblgames logos"></section>
@@ -1893,7 +1893,7 @@
   });
   dash.draw('sblup', (el) => {
     el.replaceChildren(); const up = (ds('sblgames') || []).filter((g) => g.status !== 'final').slice(0, 6); if (!up.length) return;
-    const h = mk('div', 'lx-head'); h.append(mk('h2', '', 'Coming up'), mk('span', 'lx-note', 'Their next SBL games')); el.append(h);
+    const h = mk('div', 'lx-head'); h.append(mk('h2', '', 'Coming up'), mk('span', 'lx-note', 'Next SBL games for the players in focus')); el.append(h);
     const l = mk('div', 'sblx-up'); up.forEach((g) => { const b = mk('button', 'sblx-g'); b.type = 'button'; b.onclick = () => g.url && window.open(g.url, '_blank', 'noopener');
       const d = mk('div', 'upx-date'); d.append(mk('b', '', String(Number(g.date.slice(8, 10)))), mk('span', '', new Date(g.date + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short' }).toUpperCase()));
       const ha = homeAway(g); const teams = mk('div', 'tms'); [ha.home, ha.away].forEach((t) => { const r = mk('span', 't' + (t.swe ? ' swe' : '')); r.append(crest(t.name, 'sm'), t.name); teams.append(r); });
