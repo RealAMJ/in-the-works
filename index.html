@@ -444,7 +444,7 @@
   </div>
 
   <div class="pg" data-page="player" id="player" hidden>
-    <div class="pp" data-draw="pp" data-source="players stats gamelogs boxscores schedule bios career highlights awards ntroster leaguetiers photos"></div>
+    <div class="pp" data-draw="pp" data-source="players stats gamelogs boxscores schedule bios career highlights awards ntroster leaguetiers photos sblbox"></div>
   </div>
 
   <div class="pg" data-page="sblp" id="sblp" hidden>
@@ -3013,6 +3013,20 @@
     const top = ih >= H ? Math.min(0, Math.max(H - ih, 0.36 * H - (fy + fh / 2) * ih)) : H - ih;  // short photos stand on the bottom edge
     Object.assign(img.style, { position: 'absolute', width: iw + 'px', height: ih + 'px', maxWidth: 'none', maxHeight: 'none', left: left + 'px', top: top + 'px', objectFit: 'fill' });
   }
+  // who a player is ranked against: SBL players against everyone in the SBL (season averages from the league's
+  // box scores, 2+ games), everyone else against the Swedes abroad we track (each in his main competition, 2+ games)
+  function ordn(n) { const t = n % 100, u = n % 10; return n + (t >= 11 && t <= 13 ? 'th' : u === 1 ? 'st' : u === 2 ? 'nd' : u === 3 ? 'rd' : 'th'); }
+  function rankPool(competition) {
+    if (norm(competition) === 'basketligan') {
+      const B = ds('sblbox'); if (!B) return { pool: [], who: 'SBL players', short: 'in the SBL' };
+      const m = new Map(); B.forEach((r) => { if (!r.player || !Number(r.min)) return; const k = norm(r.player); const o = m.get(k) || { player: r.player, gp: 0, pts: 0, reb: 0, ast: 0, min: 0 }; o.gp++; ['pts', 'reb', 'ast', 'min'].forEach((f) => { o[f] += Number(r[f]) || 0; }); m.set(k, o); });
+      const pool = [...m.values()].filter((o) => o.gp >= 2).map((o) => ({ player: o.player, gp: o.gp, pts: o.pts / o.gp, reb: o.reb / o.gp, ast: o.ast / o.gp, min: o.min / o.gp }));
+      return { pool, who: 'SBL players', short: 'in the SBL' };
+    }
+    const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27') && norm(r.competition) !== 'basketligan');
+    const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b0 = best.get(k); if (!b0 || Number(r.gp) > Number(b0.gp)) best.set(k, r); });
+    return { pool: [...best.values()], who: 'Swedes', short: 'among Swedes' };
+  }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); const key = Object.keys(PP_KIND).find((k) => String(title).toLowerCase().startsWith(k)); if (key) { s.dataset.k = PP_KIND[key][0]; s.dataset.kick = PP_KIND[key][1]; } s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face
   // has the same size and place in the circle, whatever the photo looks like
@@ -3136,9 +3150,7 @@
         if (rows.length > 1) { const tabs = mk('div', 'pp-tabs'); rows.forEach((r) => { const b = mk('button', r === cur ? 'on' : '', r.competition); b.type = 'button'; b.onclick = () => { ppComp[key] = r.competition; dash.draw('pp'); }; tabs.append(b); }); sec.append(tabs); }
         const cg = games.filter((g) => norm(g.competition) === norm(cur.competition));
         // ranks among the Swedes we track (for the small "1st among Swedes" note under each number)
-        const allS = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
-        const bestS = new Map(); allS.forEach((r) => { const k0 = norm(r.player); const b0 = bestS.get(k0); if (!b0 || Number(r.gp) > Number(b0.gp)) bestS.set(k0, r); });
-        const poolS = [...bestS.values()]; const rankOf = (k) => { const so = poolS.filter((r) => r[k] !== '' && r[k] != null).sort((x, y) => Number(y[k]) - Number(x[k])); const i = so.findIndex((r) => isSame(r.player, name)); return i < 0 ? '' : `${i + 1}${['st', 'nd', 'rd'][i] || 'th'} among Swedes`; };
+        const RP = rankPool(cur.competition); const poolS = RP.pool; const rankOf = (k) => { const so = poolS.filter((r) => r[k] !== '' && r[k] != null).sort((x, y) => Number(y[k]) - Number(x[k])); const i = so.findIndex((r) => isSame(r.player, name)); return i < 0 ? '' : `${ordn(i + 1)} ${RP.who === 'Swedes' ? 'among Swedes' : 'in the SBL'}`; };
         // Season / Last 5 / Career switch
         const cgp = cg.filter((g) => g.note !== 'DNP'), l5 = cgp.slice(-5);
         const avgOf = (gs, k) => gs.length ? gs.reduce((t, g) => t + (Number(g[k]) || 0), 0) / gs.length : null;
@@ -3175,17 +3187,15 @@
         { const cg = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
           // at a glance: the ranks and best game as sentences
           const s2 = ppSection('At a glance'); s2.removeAttribute('data-k'); s2.removeAttribute('data-kick');
-          const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
-          const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b0 = best.get(k); if (!b0 || Number(r.gp) > Number(b0.gp)) best.set(k, r); });
-          const pool = [...best.values()]; const rk = {};
+          const RP2 = rankPool(cur.competition); const pool = RP2.pool; const rk = {};
           ['pts', 'reb', 'ast'].forEach((k) => { const so = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); rk[k] = { i: so.findIndex((r) => isSame(r.player, name)), n: so.length }; });
-          const lab = { pts: 'points', reb: 'rebounds', ast: 'assists' }; const ord = (i) => `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`;
+          const lab = { pts: 'points', reb: 'rebounds', ast: 'assists' }; const ord = (i) => `${ordn(i + 1)}`;
           const lead = Object.keys(rk).filter((k) => rk[k].i === 0), top = Object.keys(rk).filter((k) => rk[k].i > 0 && rk[k].i < 5);
           const facts = mk('ul', 'cz-facts');
           const fact = (icon, html) => { const li = mk('li'); li.append(mk('i', '', icon)); const t = mk('span'); t.innerHTML = html; li.append(t); facts.append(li); };
           const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-          if (lead.length) fact('★', `Leads all ${rk[lead[0]].n} Swedes in <b>${lead.map((k) => lab[k]).join(' and ')}</b>`);
-          top.forEach((k) => fact('↑', `<b>${ord(rk[k].i)}</b> in ${lab[k]} among ${rk[k].n} Swedes`));
+          if (lead.length) fact('★', `Leads all ${rk[lead[0]].n} ${RP2.who} in <b>${lead.map((k) => lab[k]).join(' and ')}</b>`);
+          top.forEach((k) => fact('↑', `<b>${ord(rk[k].i)}</b> in ${lab[k]} among ${rk[k].n} ${RP2.who}`));
           const bg = cg.slice().sort((a, b) => (Number(b.pts) || 0) - (Number(a.pts) || 0))[0];
           if (bg) fact('●', `Best game: <b>${esc(bg.pts)} points</b>${Number(bg.reb) >= 8 ? `, ${esc(bg.reb)} rebounds` : ''} ${bg.venue === 'Away' ? 'at' : 'vs'} ${esc(bg.opponent)} <em>${esc(dayFmt(bg.date))}</em>`);
           const l5 = cg.slice(-5); if (l5.length >= 3) { const a5 = l5.reduce((t, g) => t + (Number(g.pts) || 0), 0) / l5.length; const d = a5 - Number(cur.pts); fact(d >= 0 ? '↗' : '↘', `Last ${l5.length} games: <b>${a5.toFixed(1)} points</b>, ${Math.abs(d).toFixed(1)} ${d >= 0 ? 'above' : 'below'} his average`); }
@@ -3194,12 +3204,10 @@
         const cg2 = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
         const avg = Number(cur.pts);
         // 2. rank among the Swedes we track (whole-league ranks aren't available for every league)
-        { const all = (ds('stats') || []).filter((r) => Number(r.gp) >= 2 && (!r.season || r.season === '2026-27'));
-          const best = new Map(); all.forEach((r) => { const k = norm(r.player); const b = best.get(k); if (!b || Number(r.gp) > Number(b.gp)) best.set(k, r); });
-          const pool = [...best.values()]; const rk = mk('div', 'pp-ranks');
+        { const RP3 = rankPool(cur.competition); const pool = RP3.pool; const rk = mk('div', 'pp-ranks');
           [['pts', 'Points'], ['reb', 'Rebounds'], ['ast', 'Assists'], ['min', 'Minutes']].forEach(([k, l]) => { const sorted = pool.filter((r) => r[k] !== '' && r[k] != null).sort((a, b) => Number(b[k]) - Number(a[k])); const i = sorted.findIndex((r) => isSame(r.player, name)); if (i < 0) return;
-            const d = mk('div'); d.append(mk('b', '', `${i + 1}${['st', 'nd', 'rd'][i] || 'th'}`), mk('span', '', `${l} among ${sorted.length} Swedes`)); rk.append(d); });
-          if (rk.childNodes.length) { const firsts = [...rk.querySelectorAll('b')].filter((x) => x.textContent === '1st').length; const rs = ppSection('Where he ranks', firsts ? `First among all Swedes in ${firsts} categor${firsts === 1 ? 'y' : 'ies'}.` : 'Among the Swedes we track this season, each in his main competition (2+ games).'); rs.append(rk); el.append(rs); } }
+            const d = mk('div'); d.append(mk('b', '', `${ordn(i + 1)}`), mk('span', '', `${l} among ${sorted.length} ${RP3.who}`)); rk.append(d); });
+          if (rk.childNodes.length) { const firsts = [...rk.querySelectorAll('b')].filter((x) => x.textContent === '1st').length; const rs = ppSection('Where he ranks', firsts ? `First among all ${RP3.who} in ${firsts} categor${firsts === 1 ? 'y' : 'ies'}.` : (RP3.who === 'Swedes' ? 'Among the Swedes abroad we track this season, each in his main competition (2+ games).' : 'Among every player in the SBL this season (2+ games).')); rs.append(rk); el.append(rs); } }
         // 3. splits and 4. highs
         if (cg2.length >= 2) {
           const avp = (gs) => gs.length ? gs.reduce((t, g) => t + (Number(g.pts) || 0), 0) / gs.length : null; const hmA = avp(cg2.filter((g) => g.venue === 'Home')), awA = avp(cg2.filter((g) => g.venue === 'Away'));
