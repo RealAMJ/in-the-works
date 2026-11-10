@@ -2383,3 +2383,9 @@ html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: 
 /* avatars that got a photo instead of initials */
 .pp-ini.has-ph, .td-pav.has-ph, .pp-av.has-ph, .plc-av.has-ph { position: relative; overflow: hidden; padding: 0; background: #0b1d3a; color: transparent; }
 #game .gchx .gch-score .time { font-size: .42em; color: #f2f6fc; letter-spacing: .02em; }
+/* team logos: no circle; the logo itself, with a thin light outline and a soft glow so dark logos still read on navy */
+.crest.has-logo { background: transparent !important; box-shadow: none !important; overflow: visible; }
+.crest.has-logo img { width: 122%; height: 122%; max-width: none; filter: drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 1px rgba(255,255,255,.6)) drop-shadow(0 0 8px rgba(160,190,235,.35)); }
+.crest.xl.has-logo img, .crest.lg.has-logo img { width: 100%; height: 100%; }
+#game .gchx .crest.xl.has-logo { box-shadow: none !important; }
+#game .gchx .gch-team.win .crest.has-logo img { filter: drop-shadow(0 0 1px rgba(255,255,255,.9)) drop-shadow(0 0 2px rgba(255,255,255,.6)) drop-shadow(0 0 14px rgba(254,204,2,.55)); }
