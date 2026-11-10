@@ -2591,3 +2591,5 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 #pg-sbl .sbx-row { grid-template-columns: 80px 52px minmax(0, 1fr) auto; }
 #sblp .pp-meta { display: flex; gap: 14px; color: #b9c9e4; font-size: 14px; }
 @media (max-width: 860px) { #pg-sbl .sbx-row { grid-template-columns: 56px minmax(0, 1fr); } #pg-sbl .sbx-row .sbx-face { display: none; } }
+/* SBL results / upcoming / coming up: logos plain, no glow or outline */
+.sblx-gc .crest.has-logo img, .sblx-g .crest.has-logo img, .sblx-pc .crest.has-logo img { filter: none !important; width: 100%; height: 100%; }
