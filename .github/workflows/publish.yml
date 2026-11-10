@@ -12,6 +12,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: read
 
 concurrency:
   group: publish
@@ -25,6 +26,8 @@ jobs:
       name: github-pages
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # the newest copy, including any score update saved since the push
       - name: Check the data files read correctly
         run: python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"
       - uses: actions/configure-pages@v5
@@ -37,10 +40,17 @@ jobs:
         continue-on-error: true
         with:
           timeout: 150000
-      # Pages takes one publish at a time; if the live job is publishing right now, wait and try again
-      - name: Wait for the other publish
+      # Pages takes one publish at a time. If an older publish (usually the live-scores job's) is still
+      # running or stuck, cancel it: this copy is newer and has everything it had.
+      - name: Make room
         if: steps.d1.outcome == 'failure'
-        run: sleep 15
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for sha in $(gh api "repos/${{ github.repository }}/deployments?environment=github-pages&per_page=10" --jq '.[].sha'); do
+            if [ "$sha" != "$(git rev-parse HEAD)" ]; then gh api -X POST "repos/${{ github.repository }}/pages/deployments/$sha/cancel" >/dev/null 2>&1 && echo "cancelled $sha" || true; fi
+          done
+          sleep 5
       - name: Publish (second try)
         id: d2
         if: steps.d1.outcome == 'failure'
@@ -48,7 +58,7 @@ jobs:
         continue-on-error: true
         with:
           timeout: 150000
-      - name: Wait again
+      - name: Wait
         if: steps.d1.outcome == 'failure' && steps.d2.outcome == 'failure'
         run: sleep 30
       - name: Publish (third try)

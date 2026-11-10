@@ -2876,6 +2876,22 @@
       const run = () => { const t0 = performance.now(), d = 700; const step = (t) => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); b.textContent = (to * e).toFixed(dec); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); };
       const io = new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) { io.disconnect(); run(); } }), { threshold: .4 }); io.observe(b); });
   }
+  // profile photo: faces the same size and centred, and every photo fills the whole box
+  function heroFaceFit(box, img, fb) {
+    const W = box.clientWidth, H = box.clientHeight, nw = img.naturalWidth, nh = img.naturalHeight; if (!W || !H || !nw || !nh) return;
+    const [fx, fy, fw, fh] = fb, ar = nw / nh;
+    // the face is 40% of the box's height (55% of its width on narrow boxes); photos that are shorter or narrower
+    // than that would leave a gap, so they are zoomed in until they fill the box, like the half-body photos
+    // (on phones the box is tall and narrow, so a photo only has to fill its width there; it stands on the bottom edge)
+    const tall = H > 1.6 * W;
+    // zooming a close-up to fill the box would make its face huge, so a face is never more than 1.2 times the normal size
+    const face = Math.min(0.40 * H, 0.55 * W);
+    const ih = Math.max(face / fh, Math.min(Math.max(tall ? 0 : H, W / ar), 1.2 * face / fh)), iw = ih * ar;
+    const cx = W / 2 - (fx + fw / 2) * iw;
+    const left = iw >= W ? Math.min(0, Math.max(W - iw, cx)) : cx;
+    const top = ih >= H ? Math.min(0, Math.max(H - ih, 0.36 * H - (fy + fh / 2) * ih)) : H - ih;  // short photos stand on the bottom edge
+    Object.assign(img.style, { position: 'absolute', width: iw + 'px', height: ih + 'px', maxWidth: 'none', maxHeight: 'none', left: left + 'px', top: top + 'px', objectFit: 'fill' });
+  }
   function ppSection(title, sub) { const s = mk('section', 'pp-sec'); const key = Object.keys(PP_KIND).find((k) => String(title).toLowerCase().startsWith(k)); if (key) { s.dataset.k = PP_KIND[key][0]; s.dataset.kick = PP_KIND[key][1]; } s.append(mk('h2', '', title)); if (sub) s.append(mk('p', 'pp-sub', sub)); return s; }
   // small round pictures: zoom on the face (photos.json face = [top, bottom] as parts of the height) so every face
   // has the same size and place in the circle, whatever the photo looks like
@@ -2949,7 +2965,9 @@
     const shirt = (bio && bio.number) || (p && p.number) || ((ds('sblplayers') || []).find((x) => isSame(x.player, name)) || {}).number || ((ds('ntroster') || []).find((x) => isSame(x.player, name)) || {}).number || '';
     if (shirt) hero.append(mk('span', 'pp-bignum', shirt));
     const pic = mk('div', 'pp-pic');
-    if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); hero.classList.add('has-photo'); } else pic.append(mk('span', 'pp-ini', initials(name)));
+    if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = name; pic.append(img); hero.classList.add('has-photo');
+      if (Array.isArray(photo.fbox)) { pic.classList.add('fitface'); const fit = () => heroFaceFit(pic, img, photo.fbox); img.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); } }
+    else pic.append(mk('span', 'pp-ini', initials(name)));
     const id = mk('div', 'pp-id');
     const club = mk('div', 'pp-club'); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) { const s = mk('button', 'tm', hc); s.type = 'button'; s.tabIndex = -1; s.style.cursor = 'default'; club.append(crest(hc, 'sm'), s); }
     const parts = name.split(' ');

@@ -2254,3 +2254,11 @@ html:has(#coach:not([hidden])), html:has(#coach:not([hidden])) body,
 html:has(#team:not([hidden])), html:has(#team:not([hidden])) body,
 html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: #0a1830 !important; }
 #player .pp-jump { background: rgba(10,24,48,.9); }
+
+/* profile photo box: fixed size, the photo is placed by the face (see heroFaceFit) */
+#player .pp-hero .pp-pic.fitface { position: relative; overflow: hidden; width: clamp(11rem, 26vw, 17rem); aspect-ratio: 4 / 5; height: auto; align-self: end; }
+@media (max-width: 760px) { #player .pp-hero.has-photo .pp-pic.fitface { position: absolute; aspect-ratio: auto; width: 46%; height: 100%; top: 0; bottom: 0; left: 0; } }
+/* soft edges on the photo box itself (the photo can be bigger than the box) */
+#player .pp-hero .pp-pic.fitface img { -webkit-mask-image: none !important; mask-image: none !important; }
+#player .pp-hero .pp-pic.fitface { -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent), linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); -webkit-mask-composite: source-in; mask-image: linear-gradient(180deg, #000 80%, transparent), linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-composite: intersect; }
+@media (max-width: 760px) { #player .pp-hero .pp-pic.fitface { -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent), linear-gradient(90deg, #000 55%, transparent); mask-image: linear-gradient(180deg, #000 70%, transparent), linear-gradient(90deg, #000 55%, transparent); } }
