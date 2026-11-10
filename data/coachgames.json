@@ -164,12 +164,11 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "W 98-57",
   "espn_id": "401906793",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401906793",
-  "clock": "Q2 00:27",
-  "live_updated": "2026-11-10T03:23:12+01:00"
+  "live_done": true
  },
  {
   "game_id": "c20261111ora",

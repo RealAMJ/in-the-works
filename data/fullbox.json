@@ -41534,7 +41534,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41555,7 +41555,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41576,7 +41576,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41597,7 +41597,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41618,11 +41618,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-6",
+  "row_id": "c20261110msu-0-5",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Kobe Butler",
@@ -41639,11 +41639,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-8",
+  "row_id": "c20261110msu-0-6",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Ebo Wilson",
@@ -41660,11 +41660,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-9",
+  "row_id": "c20261110msu-0-7",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Jayden Williams",
@@ -41681,11 +41681,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-10",
+  "row_id": "c20261110msu-0-8",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "DJ Davis",
@@ -41702,11 +41702,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-12",
+  "row_id": "c20261110msu-0-9",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Blake Nettles",
@@ -41723,11 +41723,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-14",
+  "row_id": "c20261110msu-0-10",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Mike Williams",
@@ -41744,11 +41744,11 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-15",
+  "row_id": "c20261110msu-0-11",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Tamarion Hoover",
@@ -41765,11 +41765,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-0-16",
+  "row_id": "c20261110msu-0-12",
   "game_id": "c20261110msu",
   "team": "Jackson State",
   "player": "Chip Brunt",
@@ -41786,7 +41786,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41807,7 +41807,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41828,7 +41828,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41849,7 +41849,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41870,7 +41870,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -41891,11 +41891,11 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-6",
+  "row_id": "c20261110msu-1-5",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Kendyl Sanders",
@@ -41912,11 +41912,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-7",
+  "row_id": "c20261110msu-1-6",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Tristan Reed",
@@ -41933,11 +41933,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-8",
+  "row_id": "c20261110msu-1-7",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Tee Bartlett",
@@ -41954,11 +41954,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-9",
+  "row_id": "c20261110msu-1-8",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Gai Chol",
@@ -41975,11 +41975,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-10",
+  "row_id": "c20261110msu-1-9",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Jalyn Collingwood",
@@ -41996,11 +41996,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-11",
+  "row_id": "c20261110msu-1-10",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Willie Burnett III",
@@ -42017,11 +42017,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-12",
+  "row_id": "c20261110msu-1-11",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Tajuan Simpkins",
@@ -42038,11 +42038,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-13",
+  "row_id": "c20261110msu-1-12",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "King Grace",
@@ -42059,11 +42059,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261110msu-1-14",
+  "row_id": "c20261110msu-1-13",
   "game_id": "c20261110msu",
   "team": "Mississippi State",
   "player": "Ashton Magee",
@@ -42080,7 +42080,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
