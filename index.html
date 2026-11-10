@@ -846,8 +846,9 @@
     const A = (s) => `400 ${s}px Anton, Impact, sans-serif`, R = (w, s) => `${w} ${s}px Archivo, Inter, system-ui, sans-serif`;
     const NIGHT = '#030a17', INK = '#f2f6fc', MUT = '#93a6c4', Y = '#fecc02', SKY = '#7fb3ff', GR = '#45d483', RD = '#ff6b5e';
     const gid = gameById(r.game_id) || { g: null, lines: [] };
-    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
-    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (r.pts != null && r.pts !== '' ? r : null);
+    const isSblCard = String(r.game_id || '').startsWith('sbl-') || !!r.sbl;
+    const g = (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (isSblCard ? (ds('sblbox') || []).find((l) => l.game_id === r.game_id && isSame(l.player, r.player)) : null) || (r.pts != null && r.pts !== '' ? r : null);
     const sv = LOC().startsWith('sv');
     const ph = await cardPhoto(r.player);
     // background: night navy with a blue glow top right and a faint yellow glow low left
@@ -887,7 +888,7 @@
     }
     // header: yellow bar + brand, date on the right
     x.fillStyle = Y; x.fillRect(80, 92, 10, 52);
-    x.fillStyle = INK; x.font = A(50); x.textBaseline = 'alphabetic'; x.fillText('SWEDES ABROAD', 108, 140);
+    x.fillStyle = INK; x.font = A(50); x.textBaseline = 'alphabetic'; x.fillText(isSblCard ? 'SBL' : 'SWEDES ABROAD', 108, 140);
     if (r.date) { x.fillStyle = MUT; x.font = R(700, 28); x.textAlign = 'right'; x.fillText(dayFmt(r.date).toUpperCase(), W - 80, 134); x.textAlign = 'left'; }
     if (ph && ph.credit) { x.fillStyle = 'rgba(147,166,196,.7)'; x.font = R(500, 22); x.textAlign = 'right'; x.fillText(ph.credit, W - 60, H - 36); x.textAlign = 'left'; }
     const tagTxt = String(r.tag || (r.recap ? (sv ? 'Slutresultat' : 'Final') : (sv ? 'Veckans match' : 'Standout game'))).toUpperCase();
@@ -961,8 +962,9 @@
     // games only in the game logs (e.g. the SBL national team players' league games) have no schedule row or box score line:
     // their game and line come from the game log instead
     const gid = gameById(r.game_id) || { g: null, lines: [] };
-    const g = (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
-    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (r.pts != null && r.pts !== '' ? r : null);
+    const isSblCard = String(r.game_id || '').startsWith('sbl-') || !!r.sbl;
+    const g = (isSblCard && sblSide(r.game_id, r.team)) || (ds('schedule') || []).find((s) => s.game_id === r.game_id) || gid.g;
+    const b = (ds('boxscores') || []).find((l) => l.game_id === r.game_id && norm(l.player) === norm(r.player)) || gid.lines.find((l) => isSame(l.player, r.player)) || (isSblCard ? (ds('sblbox') || []).find((l) => l.game_id === r.game_id && isSame(l.player, r.player)) : null) || (r.pts != null && r.pts !== '' ? r : null);
     const sv = LOC().startsWith('sv');
     const black = style !== 'v1';
     const ph = black ? await cardPhoto(r.player) : null;
@@ -1987,7 +1989,7 @@
       if (r.fg) bits.push(`${r.fg} FG`); if (threes(r) >= 3) bits.push(`${r.three} 3P`);
       sblTags(r).split(/,\s*(?![^()]*\))/).filter((x) => /Perfect|5x5/.test(x)).forEach((x) => bits.push(x));
       mid.append(mk('div', 'sbx-stats', bits.join(' · ')));
-      c.append(big, faceAv('span', 'sbx-face', r.player), mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res)); mid.prepend((() => { const x = mk('div', 'sbx-team'); x.append(crest(r.team, 'sm'), r.team); return x; })());
+      c.append(big, faceAv('span', 'sbx-face', r.player), mid, mk('span', 'sbx-res ' + wl, SV() ? res.replace(/^W/, 'V').replace(/^L/, 'F') : res)); mid.append(shareBtn(sblShare(r))); mid.prepend((() => { const x = mk('div', 'sbx-team'); x.append(crest(r.team, 'sm'), r.team); return x; })());
       el.append(c);
     });
     if (list.length > LIMIT) { const b = mk('button', 'lx-more', sblMore ? L('Show fewer', 'Visa färre') : L(`Show all ${list.length} standout games`, `Visa alla ${list.length} toppmatcher`)); b.type = 'button'; b.onclick = () => { sblMore = !sblMore; dash.draw('sblhl'); }; el.append(b); }
@@ -3319,7 +3321,7 @@
       const two = mk('div', 'pp-two');
       const so = ppSection('Standout games');
       const sl = realHl().filter((r) => isSame(r.player, name)).concat((ds('sbl') || []).filter((r) => isSame(r.player, name) && !realHl().some((x) => isSame(x.player, name) && x.date === r.date))).sort((a, b) => String(b.date).localeCompare(String(a.date)));
-      if (sl.length) sl.forEach((r) => { const gid = r.game_id || (r.row_id && !r.highlight_id ? sblGameFor(r) : null); const c = mk('article', 'hh' + (gid ? ' go' : '')); if (gid) c.onclick = () => showCardFor(gid, name); c.append(mk('div', 'hh-top', [r.date ? dayFmt(r.date) : '', r.opponent ? (r.venue === 'Away' ? 'at ' : 'vs ') + r.opponent : ''].filter(Boolean).join(', ')), mk('div', 'hh-head', tx(r, 'headline'))); if (r.tags || r.tag) { const tg = mk('div', 'hh-tags'); String(r.tags || r.tag).split(/,\s*(?![^()]*\))/).filter(Boolean).forEach((t) => tg.append(mk('span', '', t))); c.append(tg); } so.append(c); });
+      if (sl.length) sl.forEach((r) => { const gid = r.game_id || (r.row_id && !r.highlight_id ? sblGameFor(r) : null); const c = mk('article', 'hh' + (gid ? ' go' : '')); if (gid) c.onclick = () => showCardFor(gid, name); c.append(mk('div', 'hh-top', [r.date ? dayFmt(r.date) : '', r.opponent ? (r.venue === 'Away' ? 'at ' : 'vs ') + r.opponent : ''].filter(Boolean).join(', ')), mk('div', 'hh-head', tx(r, 'headline'))); if (r.tags || r.tag) { const tg = mk('div', 'hh-tags'); String(r.tags || r.tag).split(/,\s*(?![^()]*\))/).filter(Boolean).forEach((t) => tg.append(mk('span', '', t))); c.append(tg); } c.append(shareBtn(r.row_id && !r.highlight_id ? sblShare(r) : r)); so.append(c); });
       else so.append(mk('p', 'empty', 'No standout games yet.'));
       const hon = ppSection('Honours');
       const hl = [...((bio && tx(bio, 'honours')) ? tx(bio, 'honours').split(' · ') : []), ...(ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && isSame(r.player, name)).map((r) => r.title)];
@@ -3620,6 +3622,15 @@
   function sblClock(g) { if (!g || !g.clock) return ''; const t = String(g.clock).replace(/^0(\d:)/, '$1'); const pr = Number(g.period) || 0; return (pr > 4 ? (pr > 5 ? 'OT' + (pr - 4) : 'OT') : pr ? 'Q' + pr : '') + (pr ? ' ' : '') + t; }
   function isNT(n) { return (ds('ntroster') || []).some((x) => isSame(x.player, n)); }
   function allBox() { return (ds('fullbox') || []).concat(ds('sblbox') || []); }
+  function sblSide(id, team) {
+    const r = (ds('sblleague') || []).find((x) => x.game_id === id); if (!r || !team) return null;
+    const home = sameTeam(r.home, team), us = home ? r.hs : r.as_, them = home ? r.as_ : r.hs, done = us != null && them != null;
+    return { game_id: id, date: r.date, team: home ? r.home : r.away, opponent: home ? r.away : r.home, venue: home ? 'Home' : 'Away', competition: 'Basketligan', status: r.status,
+      score: done ? `${us > them ? 'W' : us < them ? 'L' : 'T'} ${us}-${them}` : '' };
+  }
+  function shareBtn(card) { const b = mk('button', 'pp-tag share-pill hl-share', '⤴ Share'); b.type = 'button'; b.title = 'Make an image of this performance for social media'; b.onclick = (e) => { e.stopPropagation(); openShare(card); }; b.onkeydown = (e) => e.stopPropagation(); return b; }
+  // an SBL standout (data/sbl.json) as a share card
+  function sblShare(r) { return Object.assign({}, r, { game_id: sblGameFor(r) || '', sbl: true, tag: String(sblTags(r) || '').split(/,\s*(?![^()]*\))/)[0] || L('Standout game', 'Veckans match') }); }
   function sblGame(id) {
     const r = (ds('sblleague') || []).find((x) => x.game_id === id); if (!r) return null;
     const done = r.hs != null && r.as_ != null;
@@ -3716,7 +3727,7 @@
     const tiles = mk('div', 'pp-tiles'); [['Games', String(played.length)], ['FG%', pct('fg')], ['3P%', pct('three')], ['FT%', pct('ft')]].forEach(([k, v]) => { const t = mk('div', 'pp-tile'); t.append(mk('span', 'v', v), mk('span', 'k', k)); tiles.append(t); });
     sec.append(big, tiles); el.append(sec);
     const so = (ds('sbl') || []).filter((r) => isSame(r.player, sblpName));
-    if (so.length) { const s2 = ppSection('Standout games'); s2.dataset.k = 'star'; s2.dataset.kick = 'Highlights'; so.forEach((r) => { const c = mk('article', 'hh'); { const gid = sblGameFor(r); if (gid) { c.classList.add('go'); c.style.cursor = 'pointer'; c.onclick = () => showCardFor(gid, r.player); } } c.append(mk('div', 'hh-top', `${dayFmt(r.date)} · ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`), mk('div', 'hh-head', tx(r, 'headline'))); s2.append(c); }); el.append(s2); }
+    if (so.length) { const s2 = ppSection('Standout games'); s2.dataset.k = 'star'; s2.dataset.kick = 'Highlights'; so.forEach((r) => { const c = mk('article', 'hh'); { const gid = sblGameFor(r); if (gid) { c.classList.add('go'); c.style.cursor = 'pointer'; c.onclick = () => showCardFor(gid, r.player); } } c.append(mk('div', 'hh-top', `${dayFmt(r.date)} · ${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`), mk('div', 'hh-head', tx(r, 'headline')), shareBtn(sblShare(r))); s2.append(c); }); el.append(s2); }
     if (played.length >= 2) { const t = { player: sblpName, comp: 'Basketligan', gp: played.length, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 };
       played.forEach((r) => { ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(r[x]) || 0; }); t.tpm += Number(String(r.three || '').split('/')[0]) || 0; });
       const wr = ppSection('Within reach', 'His next season milestones in the SBL, nearest first.'); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
@@ -3820,7 +3831,10 @@
         [['Points', 'pts'], ['Rebounds', 'reb'], ['Assists', 'ast']].forEach(([lab, f]) => { const top = (t) => t.list.slice().sort((x, y) => Number(y[f]) - Number(x[f]))[0];
           const a = top(H), b = top(A); const row = mk('div', 'gcx-lr');
           const side = (p, t, r) => { const d = mk('div', 'gcx-ls' + (r ? ' r' : '') + (Number(p[f]) >= Number((r ? a : b)[f]) ? ' best' : '')); const ph = photoFor(p.player); const av = mk('span', 'gcx-av'); if (ph) { const im = new Image(); im.src = ph.src; im.alt = ''; faceFit(im, ph); av.append(im); } else { av.textContent = initials(p.player); av.style.background = teamColor(t); }
-            const tx2 = mk('div'); tx2.append(mk('b', '', p.player), mk('span', '', `${teamAbbr(t)} · ${p.min} min`)); d.append(av, tx2, mk('strong', '', String(p[f]))); return d; };
+            const tx2 = mk('div'); tx2.append(mk('b', '', p.player), mk('span', '', `${teamAbbr(t)} · ${p.min} min`)); d.append(av, tx2, mk('strong', '', String(p[f])));
+            // a leader opens his page: every SBL player has one, elsewhere the Swedes we follow
+            const sblL = String(g.game_id || '').startsWith('sbl-'); if (sblL ? !sblLeft(p.player) : (ds('players') || []).some((x) => isSame(x.player, p.player))) { d.classList.add('go'); d.tabIndex = 0; d.setAttribute('role', 'button'); d.title = 'Open ' + p.player; const op = () => (sblL ? showSblPlayer(p.player) : showLog(p.player)); d.onclick = op; d.onkeydown = (e) => { if (e.key === 'Enter') op(); }; }
+            return d; };
           row.append(side(a, ha.home.name, false), mk('span', 'gcx-lab', lab), side(b, ha.away.name, true)); grid.append(row); });
         gl.append(grid); el.append(gl); }
       // 4. the game in numbers
