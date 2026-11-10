@@ -13,10 +13,10 @@
   var DATA = 'data/';
   var POLL_MS = 10000;
   var IDS = ['awards', 'bios', 'boxscores', 'career', 'coachcareer', 'coaches', 'coachgames', 'gamelogs', 'highlights',
-    'leaguetiers', 'logos', 'ntgames', 'ntlines', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'sblgames', 'sblplayers', 'schedule', 'stats', 'teamform',
+    'leaguetiers', 'logos', 'ntgames', 'sblleague', 'ntlines', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'sblgames', 'sblplayers', 'schedule', 'stats', 'teamform',
     'teams', 'thisweek'];
   // Big files only some pages need: fetched the first time a page asks for them (full box scores grow all season)
-  var LAZY = ['fullbox'];
+  var LAZY = ['fullbox', 'sblbox'];
   var asked = {};
 
   var store = {};
