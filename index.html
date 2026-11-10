@@ -323,6 +323,11 @@
       <div class="lx-nums" data-draw="sblnums" data-source="sbl"></div>
       <div class="sblx-spot" data-draw="sblspot" data-source="sblplayers photos awards stats"></div>
     </section>
+    <section class="lx-sec sblf">
+      <div class="lx-head"><h2>Find a player</h2><span class="lx-note">Every player in the SBL this season</span></div>
+      <div class="srch sblf-box"><svg class="sr-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><input class="sblf-in" type="search" placeholder="Search a player or a team" aria-label="Search SBL players" autocomplete="off" spellcheck="false"></div>
+      <div class="sblf-res" data-draw="sblfind" data-source="sblbox sblroster photos logos"></div>
+    </section>
     <section class="lx-sec">
       <div class="lx-head"><h2>Players in focus</h2><span class="lx-note">National team players and award winners in the SBL this season</span></div>
       <div class="sblx-swe" data-draw="sblswe" data-source="stats sblplayers ntroster photos gamelogs"></div>
@@ -3646,6 +3651,39 @@
     if (sblLeft(n)) return;
     sblpName = n; showPage('sblp', true); dash.setLink('sbl-player=' + n); dash.draw('sblp'); scrollTopSw();
   }
+  // ---- SBL: find any player in the league (box scores plus the squad lists)
+  let sblQ = '';
+  function sblPeople() {
+    const m = new Map(); const key = (n) => norm(n);
+    (ds('sblbox') || []).forEach((r) => { if (!r.player || sblLeft(r.player)) return; const k = key(r.player); let x = m.get(k); if (!x) { x = { player: r.player, team: r.team, gp: 0, pts: 0, reb: 0, ast: 0 }; m.set(k, x); }
+      if (Number(r.min) > 0 || Number(r.pts) > 0) { x.gp++; x.pts += Number(r.pts) || 0; x.reb += Number(r.reb) || 0; x.ast += Number(r.ast) || 0; } x.team = r.team || x.team; });
+    (ds('sblroster') || []).forEach((r) => { if (!r.player || sblLeft(r.player)) return; const k = key(r.player); let x = m.get(k); if (!x) { x = { player: r.player, team: r.team, gp: 0, pts: 0, reb: 0, ast: 0 }; m.set(k, x); } if (r.number != null) x.num = r.number; if (r.position) x.pos = String(r.position).replace(/s$/, ''); });
+    return [...m.values()];
+  }
+  function sblHi(text, t) { const el = mk('span'); const i = norm(text).indexOf(t); if (!t || i < 0 || norm(text).length !== String(text).length) { el.textContent = text; return el; } el.append(text.slice(0, i), mk('mark', '', text.slice(i, i + t.length)), text.slice(i + t.length)); return el; }
+  dash.draw('sblfind', (el) => {
+    el.replaceChildren(); const P = sblPeople(); if (!P.length) { el.append(mk('p', 'sblf-hint', 'Loading players…')); return; }
+    const t = norm(sblQ);
+    if (!t) { const by = new Map(); P.forEach((x) => by.set(x.team, (by.get(x.team) || 0) + 1));
+      const tw = mk('div', 'sblf-teams'); [...by.entries()].sort((a, b) => a[0].localeCompare(b[0], 'sv')).forEach(([tm, k]) => { const b = mk('button', 'sblf-tm'); b.type = 'button'; b.append(crest(tm, 'lg'), mk('span', 'n', tm), mk('span', 'k', `${k} players`));
+        b.onclick = () => { document.querySelectorAll('.sblf-in').forEach((i) => { i.value = tm; }); sblQ = tm; dash.draw('sblfind'); }; tw.append(b); });
+      el.append(mk('p', 'sblf-hint', `${P.length} players from ${by.size} teams. Type a name, or pick a team.`), tw); return; }
+    const hit = P.filter((x) => norm(x.player).includes(t) || norm(x.team).includes(t))
+      .sort((a, b) => (norm(b.player).startsWith(t) || norm(b.player).split(' ').some((w) => w.startsWith(t))) - (norm(a.player).startsWith(t) || norm(a.player).split(' ').some((w) => w.startsWith(t))) || b.gp - a.gp || (b.gp ? b.pts / b.gp : 0) - (a.gp ? a.pts / a.gp : 0));
+    if (!hit.length) { el.append(mk('p', 'sblf-hint', `No player matches “${sblQ}”.`)); return; }
+    const grid = mk('div', 'sblf-grid');
+    hit.slice(0, 24).forEach((x) => { const c = mk('button', 'sblf-r'); c.type = 'button'; c.onclick = () => showSblPlayer(x.player);
+      c.append(faceAv('span', 'av', x.player)); const tx = mk('div', 't'); const nm = mk('b'); nm.append(sblHi(x.player, t)); if (isNT(x.player)) nm.append(' 🇸🇪');
+      const tm = mk('span', 'c'); tm.append(crest(x.team, 'sm'), sblHi(x.team, t)); tx.append(nm, tm);
+      tx.append(mk('span', 's', [x.num != null ? '#' + x.num : '', x.pos || ''].filter(Boolean).join(' · ') || ' '));
+      const st = mk('div', 'n'); if (x.gp) { st.append(mk('b', '', (x.pts / x.gp).toFixed(1)), mk('span', '', `PTS · ${x.gp} GP`)); } else st.append(mk('span', '', 'No games yet'));
+      c.append(tx, st); grid.append(c); });
+    el.append(grid); if (hit.length > 24) el.append(mk('p', 'sblf-hint', `Showing 24 of ${hit.length}. Keep typing to narrow it down.`));
+  });
+  document.querySelectorAll('.sblf-in').forEach((inp) => {
+    inp.addEventListener('input', () => { sblQ = inp.value; dash.draw('sblfind'); });
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { const f = document.querySelector('.sblf-r'); if (f) f.click(); } if (e.key === 'Escape') { inp.value = ''; sblQ = ''; dash.draw('sblfind'); } });
+  });
   function sblName(n, cls) { if (sblLeft(n)) return mk('span', '', n); const b = mk('button', cls || 'sbl-nm', n); b.type = 'button'; b.onclick = (e) => { e.stopPropagation(); showSblPlayer(n); }; return b; }
   dash.draw('sblp', (el) => {
     el.replaceChildren(); if (!sblpName) return; const B = ds('sblbox'); if (!B) { el.textContent = 'Loading…'; return; }
