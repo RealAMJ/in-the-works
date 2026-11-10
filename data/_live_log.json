@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T00:39:49+01:00",
+ "at": "2026-11-11T00:40:39+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:10",
+   "clock": "16:00",
    "done": false,
    "teams": [
     [
@@ -21,6 +21,75 @@
      "Georgetown Hoyas",
      9,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261111main",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111main",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Rhode Island Rams",
+     0,
+     0
+    ],
+    [
+     "Maine Black Bears",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261111iona",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111iona",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Fordham Rams",
+     0,
+     0
+    ],
+    [
+     "Iona Gaels",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261111youn",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111youn",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Central Michigan Chippewas",
+     0,
+     0
+    ],
+    [
+     "Youngstown State Penguins",
+     0,
+     0
     ]
    ]
   }
