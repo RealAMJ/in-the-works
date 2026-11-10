@@ -3,9 +3,7 @@ name: Live scores and site
 on:
   schedule:
     - cron: "*/5 * * * *"     # starts every 5 minutes (GitHub may start runs a few minutes late)
-  push:
-    branches: [main]
-  workflow_dispatch:
+  workflow_dispatch:   # pushes are published by publish.yml, which doesn't wait for this job
 
 permissions:
   contents: write
@@ -94,6 +92,10 @@ jobs:
             fi
           fi
 
+      - name: Use the newest copy of the site (1)
+        if: steps.r1.outputs.changed == 'true' || github.event_name != 'schedule'
+        run: git fetch -q origin main && git merge -q --ff-only origin/main || true
+
       - uses: actions/upload-pages-artifact@v3
         if: steps.r1.outputs.changed == 'true' || github.event_name != 'schedule'
         with:
@@ -139,6 +141,10 @@ jobs:
               echo "changed=false" >> "$GITHUB_OUTPUT"
             fi
           fi
+
+      - name: Use the newest copy of the site (2)
+        if: steps.r2.outputs.changed == 'true'
+        run: git fetch -q origin main && git merge -q --ff-only origin/main || true
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.r2.outputs.changed == 'true'
@@ -186,6 +192,10 @@ jobs:
             fi
           fi
 
+      - name: Use the newest copy of the site (3)
+        if: steps.r3.outputs.changed == 'true'
+        run: git fetch -q origin main && git merge -q --ff-only origin/main || true
+
       - uses: actions/upload-pages-artifact@v3
         if: steps.r3.outputs.changed == 'true'
         with:
@@ -232,6 +242,10 @@ jobs:
             fi
           fi
 
+      - name: Use the newest copy of the site (4)
+        if: steps.r4.outputs.changed == 'true'
+        run: git fetch -q origin main && git merge -q --ff-only origin/main || true
+
       - uses: actions/upload-pages-artifact@v3
         if: steps.r4.outputs.changed == 'true'
         with:
@@ -277,6 +291,10 @@ jobs:
               echo "changed=false" >> "$GITHUB_OUTPUT"
             fi
           fi
+
+      - name: Use the newest copy of the site (5)
+        if: steps.r5.outputs.changed == 'true'
+        run: git fetch -q origin main && git merge -q --ff-only origin/main || true
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.r5.outputs.changed == 'true'

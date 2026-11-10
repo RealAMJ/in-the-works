@@ -1,0 +1,48 @@
+name: Publish site
+
+# Publishes the site straight away when someone pushes a change (layout, styles, photos, data fixes).
+# The live-scores job runs for several minutes at a time, so changes used to wait in line behind it.
+# Pushes made by the live job itself don't start this (GitHub doesn't start workflows from its own token).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the data files read correctly
+        run: python3 -c "import json,glob; [json.load(open(f, encoding='utf-8')) for f in glob.glob('data/*.json')]"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish
+        id: d1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 150000
+      # Pages takes one publish at a time; if the live job is publishing right now, wait and try again
+      - name: Wait for the other publish
+        if: steps.d1.outcome == 'failure'
+        run: sleep 30
+      - name: Publish (second try)
+        if: steps.d1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 150000
