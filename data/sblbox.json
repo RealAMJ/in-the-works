@@ -22577,7 +22577,7 @@
   "pm": 22,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-1",
@@ -22597,7 +22597,7 @@
   "pm": 23,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-2",
@@ -22617,7 +22617,7 @@
   "pm": 14,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-3",
@@ -22634,10 +22634,10 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 1,
+  "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-4",
@@ -22657,7 +22657,7 @@
   "pm": 18,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-5",
@@ -22674,17 +22674,17 @@
   "fg": "1/3",
   "three": "0/2",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-6",
   "game_id": "sbl-2851701",
   "team": "Södertälje BBK",
   "player": "Marco-Maximilian Reinhold Frank",
-  "min": 15,
+  "min": 16,
   "pts": 3,
   "reb": 2,
   "ast": 1,
@@ -22694,10 +22694,10 @@
   "fg": "1/3",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 14,
+  "pm": 12,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-7",
@@ -22714,10 +22714,10 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 12,
+  "pm": 10,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-8",
@@ -22734,10 +22734,10 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-0-9",
@@ -22757,7 +22757,7 @@
   "pm": 13,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-0",
@@ -22774,10 +22774,10 @@
   "fg": "5/9",
   "three": "1/2",
   "ft": "5/6",
-  "pm": -24,
+  "pm": -22,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-1",
@@ -22794,10 +22794,10 @@
   "fg": "3/7",
   "three": "1/5",
   "ft": "3/4",
-  "pm": -23,
+  "pm": -21,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-2",
@@ -22817,7 +22817,7 @@
   "pm": -9,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-3",
@@ -22834,10 +22834,10 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-4",
@@ -22854,10 +22854,10 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -6,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-5",
@@ -22877,7 +22877,7 @@
   "pm": -13,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-6",
@@ -22897,7 +22897,7 @@
   "pm": -3,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-7",
@@ -22917,7 +22917,7 @@
   "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-8",
@@ -22925,7 +22925,7 @@
   "team": "Nässjö Basket",
   "player": "Abdou Medjedoub",
   "min": 31,
-  "pts": 14,
+  "pts": 16,
   "reb": 5,
   "ast": 3,
   "stl": 1,
@@ -22933,11 +22933,11 @@
   "tov": 2,
   "fg": "6/9",
   "three": "0/0",
-  "ft": "2/2",
-  "pm": -15,
+  "ft": "4/4",
+  "pm": -13,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-9",
@@ -22957,7 +22957,7 @@
   "pm": -8,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851701-1-10",
@@ -22977,7 +22977,7 @@
   "pm": -13,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851702-0-0",
@@ -22994,7 +22994,7 @@
   "fg": "5/7",
   "three": "3/5",
   "ft": "0/0",
-  "pm": 11,
+  "pm": 10,
   "starter": false,
   "swede": false,
   "state": "final"
@@ -23114,7 +23114,7 @@
   "fg": "4/5",
   "three": "4/5",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 0,
   "starter": false,
   "swede": false,
   "state": "final"
@@ -23254,7 +23254,7 @@
   "fg": "4/6",
   "three": "3/4",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -9,
   "starter": false,
   "swede": false,
   "state": "final"
@@ -23354,7 +23354,7 @@
   "fg": "5/12",
   "three": "1/3",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -7,
   "starter": true,
   "swede": false,
   "state": "final"

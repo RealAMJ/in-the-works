@@ -328,6 +328,8 @@ def league(only_live=False, limit=60):
     for g in games:
         o = old.get(g['game_id']) or {}
         g['box'] = o.get('box', False)
+        if o.get('status') == 'final' and o.get('box') and g['status'] != 'final':  # a finished game stays finished, with its score
+            g.update(status='final', hs=o.get('hs'), as_=o.get('as_')); g.pop('clock', None); g.pop('period', None)
         t = _tip(g)
         on = g['status'] == 'live' or (g['status'] == 'upcoming' and t and t <= now <= t + dt.timedelta(hours=3))
         want = on or (g['status'] == 'final' and not g['box'])
@@ -361,7 +363,9 @@ def league(only_live=False, limit=60):
             g['box'] = bool(f.get('done'))
             if not f.get('done'):
                 g['status'], g['clock'], g['period'] = 'live', f.get('clock') or '', f.get('period') or 0
-                g['hs'], g['as_'] = f['teams'][0]['score'], f['teams'][1]['score']
+            else:  # the feed has the final: the league's schedule can still say live (or 0-0) for a while after
+                g['status'] = 'final'; g.pop('clock', None); g.pop('period', None)
+            g['hs'], g['as_'] = f['teams'][0]['score'], f['teams'][1]['score']
             changed = True
     if [dict(x, box=None) for x in games] != [dict(x, box=None) for x in old.values()] or changed:
         U.save('sblleague', games)
