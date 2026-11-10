@@ -2500,7 +2500,7 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
   .wkx-up { grid-template-columns: 1fr; gap: 6px; }
 }
 /* ===== SBL page (mock-up): dark look, Player of the Month, national team players, logos ===== */
-#pg-sbl { font-family: Archivo, Inter, system-ui, sans-serif; display: grid; gap: 30px; }
+#pg-sbl:not([hidden]) { display: grid; } #pg-sbl { font-family: Archivo, Inter, system-ui, sans-serif; gap: 30px; }
 #pg-sbl .sbl-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); grid-template-areas: 'k s' 'h s' 'p s' 'n s'; column-gap: 32px; row-gap: 12px; align-items: start; border-radius: 0; background: radial-gradient(70% 120% at 100% 0%, rgba(0,106,167,.55), transparent 60%), radial-gradient(60% 90% at 0% 100%, rgba(254,204,2,.10), transparent 60%), #071429 !important; border: 1px solid rgba(160,190,235,.14); }
 #pg-sbl .sbl-hero::after { display: none; }
 #pg-sbl .sbl-hero .lx-kicker { grid-area: k; } #pg-sbl .sbl-hero h1 { grid-area: h; font: 400 clamp(46px, 7vw, 92px)/.9 Anton, Impact, sans-serif; } #pg-sbl .sbl-hero p { grid-area: p; color: #b9c9e4; }
@@ -2593,3 +2593,4 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 @media (max-width: 860px) { #pg-sbl .sbx-row { grid-template-columns: 56px minmax(0, 1fr); } #pg-sbl .sbx-row .sbx-face { display: none; } }
 /* SBL results / upcoming / coming up: logos plain, no glow or outline */
 .sblx-gc .crest.has-logo img, .sblx-g .crest.has-logo img, .sblx-pc .crest.has-logo img { filter: none !important; width: 100%; height: 100%; }
+.pg[hidden] { display: none !important; }
