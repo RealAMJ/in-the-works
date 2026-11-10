@@ -5842,5 +5842,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "price-2026-11-10",
+  "player": "Julius Price",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "team": "Stanford",
+  "opponent": "Rice",
+  "venue": "Home",
+  "result": "W 91-73",
+  "min": 31,
+  "pts": 10,
+  "reb": 1,
+  "ast": 4,
+  "source": "ESPN",
+  "fg": "4/6",
+  "three": "1/2",
+  "ft": "1/1",
+  "oreb": 1,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 2,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

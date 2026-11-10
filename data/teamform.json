@@ -5808,5 +5808,33 @@
   "note": "",
   "leaders": "Freitag|21|2|5;Smiley|17|2|2;Lake|15|2|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-10",
+  "team": "Stanford",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Rice",
+  "venue": "Home",
+  "score": "91-73",
+  "result": "W",
+  "top": "Townsend 31 pts, 8 reb",
+  "note": "",
+  "leaders": "Townsend|31|8|6;Maurer|14|11|0;Bliss|12|7|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "rice-2026-11-10",
+  "team": "Rice",
+  "date": "2026-11-10",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "73-91",
+  "result": "L",
+  "top": "Thompson 14 pts, 0 reb",
+  "note": "",
+  "leaders": "Thompson|14|0|2;Hobbs|12|2|2;Adkins|9|3|1;Flasar|9|6|1;Vukotic|9|2|2",
+  "source": "ESPN"
  }
 ]
