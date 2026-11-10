@@ -2229,3 +2229,28 @@ html, body { background: #030a17 !important; color: #f2f6fc; }
 #player:has(.pp-mini.on) .pp-jump { top: 128px; }
 #player:has(.pp-mini.on) .pp-sec[data-k] { scroll-margin-top: 190px; }
 @media (max-width: 760px) { #player .pp-mini { top: 104px; } #player:has(.pp-mini.on) .pp-jump { top: 166px; } }
+/* option: sections in the strip's near-black, framed by a thin blue line like the strip */
+#player .pp-sec[data-k] { background: #01050d !important; border: 1px solid rgba(127,179,255,.28) !important; }
+#player .pp-sec[data-k="avg"] { border-color: rgba(254,204,2,.45) !important; }
+#player .pp-sec[data-k] .pp-tile, #player .pp-sec[data-k] .pp-high, #player .pp-ranks > div, #player .pp-sec .lg-card, #player .pp-sec .hh, #player .pp-big, #player .upx .upx-hero, #player .upx .upx-li { background-color: #071429 !important; }
+/* middle option: the page behind the profile a touch lighter, so the dark panels sit on it */
+html:has(#player:not([hidden])), html:has(#player:not([hidden])) body { background: #0c1c38 !important; }
+#player .pp-sec[data-k] { box-shadow: 0 16px 34px -18px rgba(0,0,0,.9); }
+#player .pp-jump { background: rgba(12,28,56,.9); }
+#player.pg { background: transparent !important; }
+/* profiles (player, coach, team, game): lighter page, dark panels lifted just off black */
+html:has(#coach:not([hidden])), html:has(#coach:not([hidden])) body,
+html:has(#team:not([hidden])), html:has(#team:not([hidden])) body,
+html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: #0c1c38 !important; }
+#coach.pg, #team.pg, #game.pg { background: transparent !important; }
+#coach .ntz.cpx { background: transparent !important; }
+#player .pp-sec[data-k] { background: #050e1e !important; }
+#team .pp-sec, #game .pp-sec, #coach .cpx .pp-sec { background: #050e1e !important; border: 1px solid rgba(127,179,255,.28) !important; border-radius: 0 !important; padding: clamp(18px, 2.6vw, 30px) !important; box-shadow: 0 16px 34px -18px rgba(0,0,0,.9); margin-bottom: 18px; }
+#coach .cpx-sec { background: #050e1e !important; border: 1px solid rgba(127,179,255,.28); padding: clamp(18px, 2.6vw, 30px); box-shadow: 0 16px 34px -18px rgba(0,0,0,.9); margin-bottom: 18px; }
+/* a touch darker: panels and the page behind them */
+#player .pp-sec[data-k], #team .pp-sec, #game .pp-sec, #coach .cpx .pp-sec, #coach .cpx-sec { background: #030a16 !important; }
+html:has(#player:not([hidden])), html:has(#player:not([hidden])) body,
+html:has(#coach:not([hidden])), html:has(#coach:not([hidden])) body,
+html:has(#team:not([hidden])), html:has(#team:not([hidden])) body,
+html:has(#game:not([hidden])), html:has(#game:not([hidden])) body { background: #0a1830 !important; }
+#player .pp-jump { background: rgba(10,24,48,.9); }
