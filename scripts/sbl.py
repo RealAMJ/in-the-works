@@ -36,6 +36,10 @@ ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette'
          'trevaughn minott gauthier': 'Tre-Vaughn Minott'}
 
 
+# players who have left the league: not listed as standouts (Andres, 10 Nov)
+LEFT = {'william christopher dunston jr', 'cj dunston'}
+
+
 def canon(name):
     return ALIAS.get(U.norm(name), name)
 
@@ -378,7 +382,7 @@ def main(argv):
             for p in t['pl']:
                 p = {k: (v or 0) if k not in ('name', 'min', 'pm') else v for k, v in p.items()}
                 tags = qualifies(p)
-                if not tags or not p['name']:
+                if not tags or not p['name'] or U.norm(p['name']) in LEFT:
                     continue
                 rid = re.sub(r'[^a-z]', '', U.norm(p['name']).replace(' ', ''))[:12] + '-' + day
                 if rid in have or (day, team_name(t['name']), p['pts'], p['reb'], p['ast']) in seen:
