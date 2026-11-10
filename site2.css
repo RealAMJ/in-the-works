@@ -2785,3 +2785,17 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .sblf .sblf-grid { max-width: none; } .sblf .sblf-grid > .sblf-r { flex: 0 1 calc(25% - 8px); min-width: 260px; }
 @media (max-width: 1100px) { .sblf .sblf-grid > .sblf-r { flex-basis: calc(33.333% - 7px); } }
 @media (max-width: 640px) { .sblf .sblf-grid > .sblf-r { flex: 1 1 100%; min-width: 0; } }
+/* Live now on a player profile */
+.ppl-live { display: grid; gap: 8px; margin: 14px 0 4px; }
+.ppl-g { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px 18px; padding: 12px 18px; background: linear-gradient(90deg, rgba(230,57,70,.22), rgba(10,26,51,.9) 55%); border: 1px solid rgba(230,57,70,.55); transition: border-color .2s ease, transform .2s ease; }
+.ppl-g:hover, .ppl-g:focus-visible { border-color: #ff5a5a; transform: translateY(-2px); }
+.ppl-g .k { font: 800 11px Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #fff; background: #e63946; padding: 5px 10px; border-radius: 999px; white-space: nowrap; animation: pplPulse 2s ease-in-out infinite; }
+@keyframes pplPulse { 50% { box-shadow: 0 0 0 6px rgba(230,57,70,.15); } }
+@media (prefers-reduced-motion: reduce) { .ppl-g .k { animation: none; } }
+.ppl-g .sc { display: flex; align-items: center; justify-content: center; gap: 14px; min-width: 0; }
+.ppl-g .tm { display: flex; align-items: center; gap: 8px; min-width: 0; color: #b9c9e4; font: 600 14px Archivo, sans-serif; } .ppl-g .tm.me { color: #f2f6fc; }
+.ppl-g .tm .n { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ppl-g .tm b { font: 400 28px/1 Anton, sans-serif; color: inherit; margin-left: 4px; }
+.ppl-g .vs { color: #93a6c4; font-size: 12px; } .ppl-g .go { font: 700 12px Archivo, sans-serif; color: #fecc02; white-space: nowrap; }
+@media (max-width: 640px) { .ppl-g { grid-template-columns: 1fr auto; padding: 12px; } .ppl-g .sc { grid-column: 1 / -1; grid-row: 2; justify-content: space-between; gap: 8px; } .ppl-g .tm { font-size: 13px; } .ppl-g .tm b { font-size: 24px; } }
+.ppl-g .tm b { border: 0 !important; text-decoration: none !important; background: none !important; padding: 0 !important; } .ppl-g .k { justify-self: start; }
+.ppl-g .tm { text-decoration: none !important; border: 0 !important; cursor: inherit; }

@@ -3194,6 +3194,7 @@
     fact('Nationality', 'Sweden'); fact('Position', bio && bio.position); fact('Height', bio && heightTxt(bio.height_cm));
     fact('Born', bio && bornTxt(bio.born)); fact('Birthplace', bio && tx(bio, 'birthplace')); fact('Club', (p && p.club) || hc);
     el.append(facts);
+    { const lv = liveNowEl(name, (p && p.club) || hc); if (lv) el.append(lv); }
     el.append(tabBar([['overview', 'Overview'], ['log', 'Game log'], ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); }));
     if (ppTab === 'overview') requestAnimationFrame(() => {  // jump menu: one link per section, the one in view is lit
       const secs = [...el.querySelectorAll(':scope > .pp-sec[data-k], :scope > .pp-two > .pp-sec[data-k]')]; if (secs.length < 3) return;
@@ -3609,13 +3610,15 @@
 
   // ---- SBL league: all games, box scores and a page for every player (from data/sblleague.json and data/sblbox.json)
   // the Swedish flag is for national team players only (data/ntroster.json)
+  // game clock for an SBL game: Q1-Q4, then OT
+  function sblClock(g) { if (!g || !g.clock) return ''; const t = String(g.clock).replace(/^0(\d:)/, '$1'); const pr = Number(g.period) || 0; return (pr > 4 ? (pr > 5 ? 'OT' + (pr - 4) : 'OT') : pr ? 'Q' + pr : '') + (pr ? ' ' : '') + t; }
   function isNT(n) { return (ds('ntroster') || []).some((x) => isSame(x.player, n)); }
   function allBox() { return (ds('fullbox') || []).concat(ds('sblbox') || []); }
   function sblGame(id) {
     const r = (ds('sblleague') || []).find((x) => x.game_id === id); if (!r) return null;
     const done = r.hs != null && r.as_ != null;
     const sw = (ds('sblbox') || []).filter((x) => x.game_id === id && x.swede);
-    return { game_id: id, date: r.date, time: r.time, team: r.home, opponent: r.away, venue: 'Home', competition: 'Basketligan', status: r.status, clock: r.clock || '',
+    return { game_id: id, date: r.date, time: r.time, team: r.home, opponent: r.away, venue: 'Home', competition: 'Basketligan', status: r.status, clock: sblClock(r),
       score: done ? `${r.hs > r.as_ ? 'W' : r.hs < r.as_ ? 'L' : 'T'} ${r.hs}-${r.as_}` : '', players: '', box_url: r.url, sblLeague: true };
   }
   let sblAllView = 'results', sblAllDays = 4;
@@ -3632,7 +3635,7 @@
       sec.append(mk('div', 'sblx-dh', dt.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' })));
       const grid = mk('div', 'sblx-gg');
       gs.forEach((g) => { const c = mk('button', 'sblx-gc ' + g.status); c.type = 'button'; c.onclick = () => showCard(g.game_id);
-        const top = mk('div', 'tp'); top.append(mk('span', 'st', g.status === 'final' ? 'Final' : g.status === 'live' ? '● Live' + (g.clock ? ' · ' + g.clock : '') : g.time));
+        const top = mk('div', 'tp'); top.append(mk('span', 'st', g.status === 'final' ? 'Final' : g.status === 'live' ? '● Live' + (g.clock ? ' · ' + sblClock(g) : '') : g.time));
         const sw = (ds('sblbox') || []).some((x) => x.game_id === g.game_id && x.swede && isNT(x.player)); if (sw || (ds('sblgames') || []).some((x) => x.game_id === g.game_id && String(x.players || '').split(/\s*,\s*/).some(isNT))) top.append(mk('span', 'swe', '🇸🇪'));
         c.append(top);
         [[g.home, g.hs, g.as_], [g.away, g.as_, g.hs]].forEach(([t, s1, s2]) => { const r = mk('div', 'tr' + (g.status === 'final' ? (s1 > s2 ? ' win' : ' lose') : '')); r.append(crest(t, 'lg'), mk('span', 'nm', t), mk('span', 'sc', s1 == null ? '' : String(s1))); c.append(r); });
@@ -3698,6 +3701,7 @@
     const meta = mk('div', 'pp-meta'); if (ro) { [ro.number != null ? '#' + ro.number : '', ro.position ? String(ro.position).replace(/s$/, '') : '', ro.height ? ro.height + ' cm' : '', ro.nationality ? (new Intl.DisplayNames(['en'], { type: 'region' }).of(ro.nationality) || ro.nationality) : ''].filter(Boolean).forEach((x) => meta.append(mk('span', '', x))); }
     if (ro && ro.number != null) hero.append(mk('span', 'pp-bignum', String(ro.number)));
     id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]), meta, tags); hero.append(pic, id); el.append(hero);
+    { const lv = liveNowEl(sblpName, team); if (lv) el.append(lv); }
     if (ph && Array.isArray(ph.fbox)) { const im = pic.querySelector('img'); pic.classList.add('fitface'); const fit = () => heroFaceFit(pic, im, ph.fbox); im.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); }
     const av = (k) => played.length ? played.reduce((t, r) => t + (Number(r[k]) || 0), 0) / played.length : 0;
     const pct = (k) => { let m = 0, a = 0; played.forEach((r) => { const q = /^(\d+)\/(\d+)$/.exec(r[k] || ''); if (q) { m += +q[1]; a += +q[2]; } }); return a ? (m / a * 100).toFixed(1) : '–'; };
@@ -5002,6 +5006,25 @@
   function upWhen(g) { const n = upDays(g.date); return n <= 0 ? 'Today' : n === 1 ? 'Tomorrow' : `In ${n} days`; }
   function upTime(g) { return g.time && g.time !== 'TBC' ? g.time : 'TBC'; }
   // SBL games open our own game page (data/sblleague.json); the league's page only if we don't have the game
+  // "Live now" on a player profile: his own games that are live (schedule), and any live SBL game of his team
+  function liveNowFor(name, team) {
+    const out = [], seen = new Set();
+    (games() || []).filter((g) => g.status === 'live' && String(g.players || '').split(/\s*,\s*/).some((n) => isSame(n, name))).forEach((g) => {
+      const m = /(\d+)\s*-\s*(\d+)/.exec(g.score || ''); seen.add(g.game_id);
+      out.push({ id: g.game_id, us: g.team, them: g.opponent, a: m ? m[1] : '', b: m ? m[2] : '', clock: g.clock && !g.autoLive ? g.clock : '', comp: shortComp(g.competition), away: g.venue === 'Away' }); });
+    if (team) (ds('sblleague') || []).filter((g) => g.status === 'live' && !seen.has(g.game_id) && (sameTeam(g.home, team) || sameTeam(g.away, team))).forEach((g) => {
+      const home = sameTeam(g.home, team);
+      out.push({ id: g.game_id, us: home ? g.home : g.away, them: home ? g.away : g.home, a: String((home ? g.hs : g.as_) ?? ''), b: String((home ? g.as_ : g.hs) ?? ''), clock: sblClock(g), comp: 'SBL', away: !home }); });
+    return out;
+  }
+  function liveNowEl(name, team) {
+    const L = liveNowFor(name, team); if (!L.length) return null;
+    const w = mk('section', 'ppl-live'); L.forEach((g) => { const b = mk('button', 'ppl-g'); b.type = 'button'; b.onclick = () => showCardFor(g.id, name);
+      b.append(mk('span', 'k', '● Live now' + (g.clock ? ' · ' + g.clock : '')));
+      const sc = mk('span', 'sc'); const side = (t, v, mine) => { const x = mk('span', 'tm' + (mine ? ' me' : '')); x.append(crest(t, 'sm'), mk('span', 'n', t), mk('b', '', v)); return x; };
+      sc.append(side(g.us, g.a, true), mk('span', 'vs', g.away ? '@' : 'vs'), side(g.them, g.b, false)); b.append(sc, mk('span', 'go', 'Box score →')); w.append(b); });
+    return w;
+  }
   const sblOurs = (g) => (ds('sblleague') || []).some((x) => x.game_id === g.game_id);
   function upOpen(g) { return () => (g.sbl && g.url && !sblOurs(g) ? window.open(g.url, '_blank', 'noopener') : showCard(g.game_id)); }
   function upLastVs(who, g) { const pg = playerGames(who).filter((x) => x.note !== 'DNP' && sameTeam(x.opponent, g.opponent)); return pg[pg.length - 1] || null; }
