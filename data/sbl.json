@@ -44,6 +44,28 @@
   "source": "FIBA LiveStats (Basketligan, game 2851700)"
  },
  {
+  "row_id": "jaylinseanhe-2026-11-10",
+  "date": "2026-11-10",
+  "player": "Jaylin Sean Henderson",
+  "team": "Köping Stars",
+  "opponent": "Jämtland Basket",
+  "venue": "Home",
+  "result": "L 94-97",
+  "min": 35,
+  "pts": 14,
+  "reb": 4,
+  "ast": 10,
+  "stl": 1,
+  "blk": 1,
+  "fg": "4/14",
+  "three": "1/6",
+  "ft": "5/7",
+  "tags": "10 AST, Double-double",
+  "headline": "14 points and 10 assists (4/14 FG)",
+  "headline_sv": "14 poäng och 10 assist (4/14 från fältet)",
+  "source": "FIBA LiveStats (Basketligan, game 2851702)"
+ },
+ {
   "row_id": "leoryott-2026-11-09",
   "date": "2026-11-09",
   "player": "Leo Ryott",

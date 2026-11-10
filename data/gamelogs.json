@@ -5894,5 +5894,31 @@
   "pf": 2,
   "pm": 22,
   "eff": ""
+ },
+ {
+  "row_id": "hansson-2026-11-10",
+  "player": "Gustav Hansson",
+  "date": "2026-11-10",
+  "competition": "Basketligan",
+  "team": "Jämtland Basket",
+  "opponent": "Köping Stars",
+  "venue": "Away",
+  "result": "W 97-94",
+  "min": 34,
+  "pts": 21,
+  "reb": 6,
+  "ast": 7,
+  "source": "FIBA LiveStats (Basketligan, game 2851702)",
+  "fg": "5/13",
+  "three": "2/8",
+  "ft": "9/12",
+  "oreb": 2,
+  "dreb": 4,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 2,
+  "pm": 16,
+  "eff": ""
  }
 ]
