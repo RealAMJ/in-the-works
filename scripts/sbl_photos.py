@@ -42,7 +42,7 @@ def key(s):
 
 
 def find(name, team, sq):
-    name = {'Charles Barton': 'Charles Barton Jr'}.get(name, name)  # the squad list adds the Jr
+    name = {'Charles Barton': 'Charles Barton Jr', 'Markeith Browning': 'Markeith Browning II', 'Fredrik Andersson': 'Fredrik Andersson Klämberg'}.get(name, name)  # the squad list spells these longer
     n = U.norm(name).split()
     for p in sq.get(team, []):
         if key(p['name']) == key(name):
@@ -77,6 +77,16 @@ def main():
         want.setdefault(r['player'], r['team'])
     for r in U.load('sblplayers'):
         want.setdefault(r['player'], sbl.team_name(r.get('club', '')))
+    # everyone else in the league too: every player in the box scores, then anyone on a squad not matched yet
+    bp = os.path.join(U.DATA, 'sblbox.json')
+    for r in (json.load(open(bp, encoding='utf-8')) if os.path.exists(bp) else []):
+        if r.get('player') and U.norm(r['player']) not in sbl.LEFT:
+            want.setdefault(sbl.canon(r['player']), r.get('team'))
+    taken = {id(p) for n, t in want.items() for p in [find(n, t, sq)] if p}
+    for t, rows in sq.items():
+        for p in rows:
+            if id(p) not in taken and U.norm(p['name']) not in sbl.LEFT:
+                want.setdefault(sbl.canon(p['name']), t)
     photos = U.load('photos'); have = {U.norm(p['player']) for p in photos}
     rp = os.path.join(U.DATA, 'sblroster.json'); roster = json.load(open(rp, encoding='utf-8')) if os.path.exists(rp) else []
     rkey = {U.norm(r['player']) for r in roster}

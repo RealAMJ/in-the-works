@@ -61,7 +61,10 @@ def rename_teams():
 # One spelling per player: the league's feeds, RealGM and the squads spell some players differently.
 # Keys are U.norm() of a spelling we have seen; values are the spelling the site uses.
 ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette', 'jordan ivycurry': 'Jordan Ivy Curry',
-         'trevaughn minott gauthier': 'Tre-Vaughn Minott', 'ali ali youssouf': 'Ali Ali'}
+         'trevaughn minott gauthier': 'Tre-Vaughn Minott', 'ali ali youssouf': 'Ali Ali',
+         'deangilo deshawn smith ii': 'DJ Smith', 'deangilo deshawn smith': 'DJ Smith', 'deangilo smith': 'DJ Smith',
+         'asthon sherrel': 'Ashton Sherrell', 'atwood newton ii': 'Woody Newton', 'atwood newton': 'Woody Newton', 'markeith lee browning': 'Markeith Browning',
+         'markeith browning ii': 'Markeith Browning', 'javier marin ortega': 'Javier Marin', 'fredrik andersson klamberg': 'Fredrik Andersson'}
 
 
 # players who have left the league: not listed as standouts (Andres, 10 Nov)
