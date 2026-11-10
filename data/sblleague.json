@@ -617,13 +617,13 @@
   "time": "19:04",
   "home": "Norrköping Dolphins",
   "away": "Uppsala Basket",
-  "hs": 51,
-  "as_": 48,
+  "hs": 56,
+  "as_": 51,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851700/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 2
+  "clock": "08:23",
+  "period": 3
  },
  {
   "game_id": "sbl-2851701",
@@ -650,8 +650,8 @@
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851702/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 2
+  "clock": "10:00",
+  "period": 3
  },
  {
   "game_id": "sbl-2851792",
