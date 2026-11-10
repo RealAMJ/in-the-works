@@ -166,6 +166,7 @@
 
   <div class="pg" data-page="games" id="games" hidden>
     <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Games</b></button><h1>Games &amp; results</h1><p>Every game for Swedish players abroad since Oct 28, plus the coming week. Filter by league, search for a player, and tap a result for the box score.</p></header>
+  <section class="gmx-top" data-draw="gmx-top" data-source="schedule boxscores"></section>
   <section class="sw-card h2h-sec h2h-fold" id="swe-vs-swe">
     <button type="button" class="h2h-toggle" data-h2h-toggle aria-expanded="false" aria-controls="swe-vs-swe-body"><span class="h2h-tt">Swede vs Swede</span><span class="h2h-count" data-draw="h2h-count" data-h2h="upcoming" data-source="schedule gamelogs players coaches coachgames">—</span><span class="h2h-chev" aria-hidden="true"></span></button>
     <div class="h2h-body" id="swe-vs-swe-body"><div class="h2h-in">
@@ -187,6 +188,7 @@
       </select>
       <div class="sw-chipbar"><button type="button" class="chip-arrow" data-dir="-1" aria-label="Scroll left">‹</button><div class="sw-chips" data-draw="compchips" data-source="schedule" aria-label="Filter by competition"></div><button type="button" class="chip-arrow" data-dir="1" aria-label="Scroll right">›</button></div>
     </div>
+    <div class="gmx" data-draw="gmx" data-source="schedule boxscores gamelogs players photos logos"></div>
     <div class="sw-scroll">
       <table class="cards sched" data-source="schedule" data-row-key="game_id">
         <thead><tr>
@@ -475,7 +477,7 @@
   let picked = null;
   let view = 'upcoming';
   const viewSel = document.querySelector('.sw-view');
-  const setView = (v) => { view = v; viewSel.value = v; dash.draw('sched'); };
+  const setView = (v) => { view = v; viewSel.value = v; dash.draw('sched'); dash.draw('gmx'); };
   viewSel.addEventListener('change', () => setView(viewSel.value));
   function goTo(id) { const el = document.getElementById(id); if (!el) return; const pg = el.closest('.pg[data-page]'); if (pg && pg.hidden) showPage(pg.dataset.page); requestAnimationFrame(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' })); }
   document.querySelectorAll('[data-go]').forEach((el) => el.addEventListener('click', () => { if (el.dataset.view) setView(el.dataset.view); goTo(el.dataset.go); }));
@@ -555,7 +557,7 @@
     row.addEventListener('scroll', chipArrows, { passive: true });
   });
   window.addEventListener('resize', chipArrows);
-  dash.draw('compchips', (el) => drawChips(el, 'schedule', compSel, () => { dash.draw('compchips'); dash.draw('sched'); }));
+  dash.draw('compchips', (el) => drawChips(el, 'schedule', compSel, () => { dash.draw('compchips'); dash.draw('sched'); dash.draw('gmx'); }));
   dash.draw('ccompchips', (el) => drawChips(el, 'coachgames', ccompSel, () => { dash.draw('ccompchips'); dash.draw('coachsched'); }));
   const games = () => { const d = dash.data('schedule'); return d.status === 'ok' ? d.data.slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b))) : null; };
   const showPlayer = (name) => {
@@ -566,7 +568,7 @@
     goTo('schedule');
   };
   document.querySelectorAll('[data-filter]').forEach((inp) => {
-    inp.addEventListener('input', () => { q[inp.dataset.filter] = inp.value.trim().toLowerCase(); dash.draw(inp.dataset.filter); });
+    inp.addEventListener('input', () => { q[inp.dataset.filter] = inp.value.trim().toLowerCase(); dash.draw(inp.dataset.filter); if (inp.dataset.filter === 'sched') dash.draw('gmx'); });
   });
   const match = (row, term) => !term || Object.values(row).join(' ').toLowerCase().includes(term);
   const td = (text, cls) => { const c = document.createElement('td'); c.textContent = text == null || text === '' ? '—' : String(text); if (cls) c.className = cls; return c; };
@@ -636,6 +638,56 @@
   }
   function mkx(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function previewHost(r) { return inlinePreview(r); }
+
+  // ---- Games page: matchday cards grouped by day, five days at a time
+  let gmxDays = 5, gmxView = null;
+  function gmxLine(r) { const names = String(r.players || '').split(/\s*,\s*/).filter(Boolean); const bx = ds('boxscores') || [], gl = ds('gamelogs') || [];
+    return names.map((n) => { const b = r.status === 'final' && !r.pending ? (bx.find((x) => x.game_id === r.game_id && isSame(x.player, n)) || gl.find((x) => x.date === r.date && isSame(x.player, n))) : null; return { n, b: b && b.note !== 'DNP' && b.pts !== '' && b.pts != null ? b : null, dnp: b && b.note === 'DNP' }; }); }
+  function gmxCard(r) {
+    const c = mk('button', 'gmx-c ' + (r.status || '') + (isH2H(r) ? ' h2h' : '')); c.type = 'button'; c.onclick = () => showCard(r.game_id);
+    const res = String(r.score || ''); if (r.status === 'final' && /^[WL]/.test(res)) c.classList.add(res[0] === 'W' ? 'won' : 'lost');
+    const top = mk('div', 'gmx-top1'); const pill = mk('span', 'pill' + compClass(r.competition), r.competition); paintComp(pill, r.competition);
+    top.append(mk('span', 'gmx-st', r.status === 'final' ? (r.pending ? 'Ended' : 'Final') : r.status === 'live' ? '● Live' + (r.clock && !r.autoLive ? ' · ' + r.clock : '') : (r.time && r.time !== 'TBC' ? r.time : 'TBC')), pill);
+    const ha = homeAway(r); const mid = mk('div', 'gmx-mid');
+    [ha.home, ha.away].forEach((t) => { const row = mk('div', 'gmx-t' + (t.swe ? ' swe' : '') + (r.status === 'final' ? (t.win ? ' win' : ' lose') : '')); row.append(crest(t.name, 'lg'), mk('span', 'nm', t.name), mk('span', 'sc', t.score == null ? '' : String(t.score))); mid.append(row); });
+    const sw = mk('div', 'gmx-swe');
+    gmxLine(r).slice(0, 3).forEach(({ n, b, dnp }) => { const p = mk('span', 'gmx-p'); const ph = photoFor(n); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = ph.src; faceFit(im, ph); av.append(im); } else av.textContent = initials(n);
+      const t = mk('span', 't'); t.append(mk('b', '', n.split(' ').slice(-1)[0]));
+      if (b) { const st = mk('span', 'ln'); st.append(mk('strong', '', String(b.pts)), ' pts'); [['reb', 5, 'reb'], ['ast', 4, 'ast'], ['stl', 3, 'stl'], ['blk', 3, 'blk']].filter(([k, m]) => Number(b[k]) >= m).slice(0, 1).forEach(([k, , l]) => st.append(' · ', mk('strong', '', String(b[k])), ' ' + l)); t.append(st); }
+      else if (dnp) t.append(mk('span', 'ln', 'Did not play'));
+      p.append(av, t); sw.append(p); });
+    if (r.coach) { const p = mk('span', 'gmx-p coach'); p.append(mk('span', 'av', 'C'), (() => { const t = mk('span', 't'); t.append(mk('b', '', r.coach.split(' ').slice(-1)[0]), mk('span', 'ln', 'Coach')); return t; })()); sw.append(p); }
+    if (isH2H(r)) c.append(mk('span', 'gmx-h2h', 'Swede vs Swede'));
+    c.append(top, mid, sw); return c;
+  }
+  dash.draw('gmx', (el) => {
+    el.replaceChildren(); const rows = games(); if (!rows) return;
+    const inView = (r) => view === 'all' || (view === 'final' ? r.status === 'final' : r.status !== 'final');
+    const shown = rows.filter((r) => inView(r) && match(r, q.sched) && (!compSel.size || compSel.has(r.competition)));
+    if (view === 'final') shown.reverse();
+    if (!shown.length) { el.append(mk('p', 'empty', 'No games match.')); return; }
+    const days = new Map(); shown.forEach((r) => { if (!days.has(r.date)) days.set(r.date, []); days.get(r.date).push(r); });
+    const today = todayStr();
+    const allDays = [...days.entries()]; if (gmxView !== view) { gmxView = view; gmxDays = 5; }
+    allDays.slice(0, gmxDays).forEach(([d, list]) => {
+      const sec = mk('section', 'gmx-day' + (d === today ? ' today' : ''));
+      const dt = new Date(d + 'T12:00:00Z'); const h = mk('header', 'gmx-dh');
+      const big = mk('div', 'gmx-dd'); big.append(mk('b', '', String(dt.getUTCDate())), mk('span', '', dt.toLocaleDateString('en-GB', { month: 'short', timeZone: 'UTC' }).toUpperCase()));
+      const lab = mk('div', 'gmx-dl'); lab.append(mk('b', '', d === today ? 'Today' : dt.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' })), mk('span', '', `${list.length} game${list.length === 1 ? '' : 's'}${list.some((x) => x.status === 'live') ? ' · ' + list.filter((x) => x.status === 'live').length + ' live' : ''}`));
+      h.append(big, lab); const grid = mk('div', 'gmx-grid'); list.forEach((r) => grid.append(gmxCard(r))); sec.append(h, grid); el.append(sec); });
+    if (allDays.length > gmxDays) { const left = allDays.slice(gmxDays).reduce((t, [, l]) => t + l.length, 0); const b = mk('button', 'gmx-more', `Show more days (${left} more game${left === 1 ? '' : 's'})`); b.type = 'button'; b.onclick = () => { gmxDays += 5; dash.draw('gmx'); }; el.append(b); }
+  });
+  dash.draw('gmx-top', (el) => {
+    el.replaceChildren(); const g = games(); if (!g) return;
+    const live = g.filter((r) => r.status === 'live'), today = g.filter(isTonight), week = g.filter((r) => r.status !== 'final' && r.date <= new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10));
+    const fin = g.filter((r) => r.status === 'final' && /^[WL]/.test(String(r.score || ''))).slice(-20); const w = fin.filter((r) => String(r.score)[0] === 'W').length;
+    const next = g.find((r) => r.status === 'upcoming');
+    const box = (v, l, cls) => { const d = mk('div', 'gmx-k' + (cls ? ' ' + cls : '')); d.append(mk('b', '', v), mk('span', '', l)); return d; };
+    const row = mk('div', 'gmx-ks');
+    row.append(box(String(live.length), live.length === 1 ? 'game live now' : 'games live now', live.length ? 'live' : ''), box(String(today.length), 'games today'), box(String(week.length), 'in the next 7 days'), box(`${w}-${fin.length - w}`, `Swedish teams, last ${fin.length}`));
+    if (next) { const n = mk('button', 'gmx-next'); n.type = 'button'; n.onclick = () => showCard(next.game_id); n.append(mk('span', 'k', 'Next tip-off'), mk('b', '', `${next.time || 'TBC'} · ${next.players.split(',')[0].split(' ').pop()}`), mk('span', 's', `${next.team} ${next.venue === 'Away' ? '@' : 'vs'} ${next.opponent}`)); row.append(n); }
+    el.append(row);
+  });
   dash.draw('sched', (tb) => {
     const d = dash.data('schedule');
     tb.replaceChildren();
@@ -2819,7 +2871,7 @@
     const line = (n) => { const b = bx.find((x) => x.game_id === r.game_id && isSame(x.player, n)) || gl.find((x) => x.date === r.date && isSame(x.player, n)); return b && b.note !== 'DNP' && b.pts !== '' && b.pts != null ? b : null; };
     // points, plus his best other number when it stands out (5+ rebounds, 4+ assists, 3+ steals or blocks)
     const extra = (b) => { const c = [['REB', b.reb, 5], ['AST', b.ast, 4], ['STL', b.stl, 3], ['BLK', b.blk, 3]].map(([k, v, t]) => [k, Number(v), Number(v) / t]).filter(([, v, q]) => !isNaN(v) && q >= 1).sort((x, y) => y[2] - x[2]); return c.length ? [c[0][0], c[0][1]] : null; };
-    return names.map((n) => { const b = r.status === 'final' ? line(n) : null; return { n: n.split(' ').slice(-1)[0], p: b ? Number(b.pts) : null, x: b ? extra(b) : null }; });
+    return names.map((n) => { const b = r.status === 'final' && !r.pending ? line(n) : null; return { n: n.split(' ').slice(-1)[0], p: b ? Number(b.pts) : null, x: b ? extra(b) : null }; });
   }
   dash.draw('st-bar', (el) => {
     el.replaceChildren(); const g = allGames(); if (!g) return; const gs = games() || [];
