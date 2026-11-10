@@ -30,6 +30,16 @@ TEAMS = [('sloga', 'Sloga Uppsala'), ('uppsala', 'Uppsala Basket'), ('boras', 'B
          ('umea', 'Umeå BSKT'), ('lulea', 'BC Luleå')]
 
 
+# One spelling per player: the league's feeds, RealGM and the squads spell some players differently.
+# Keys are U.norm() of a spelling we have seen; values are the spelling the site uses.
+ALIAS = {'stanley onyekachukwu': 'Stan Okoye', 'nicolas galette': 'Nico Galette', 'jordan ivycurry': 'Jordan Ivy Curry',
+         'trevaughn minott gauthier': 'Tre-Vaughn Minott'}
+
+
+def canon(name):
+    return ALIAS.get(U.norm(name), name)
+
+
 def team_name(s):
     n = U.norm(s)
     for key, name in TEAMS:
@@ -306,7 +316,7 @@ def league(only_live=False, limit=60):
                 if not p['name']:
                     continue
                 swede = any(U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc for _, sur, hc in home)
-                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), p['name'])
+                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), canon(p['name']))
                 lines.append(dict(row_id=f"{g['game_id']}-{ti}-{i}", game_id=g['game_id'], team=team_name(t['name']), player=name,
                                   min=U.as_min(p['min']), pts=p['pts'] or 0, reb=p['reb'] or 0, ast=p['ast'] or 0, stl=p['stl'] or 0, blk=p['blk'] or 0, tov=p['tov'] or 0,
                                   fg=f"{p['fgm'] or 0}/{p['fga'] or 0}", three=f"{p['tpm'] or 0}/{p['tpa'] or 0}", ft=f"{p['ftm'] or 0}/{p['fta'] or 0}",
@@ -375,7 +385,7 @@ def main(argv):
                     continue
                 en, sv = headlines(p)
                 # national team players at home: our spelling (the league has "Micheal Odinks")
-                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), p['name'])
+                name = next((full for full, sur, hc in home if U.norm(p['name']).split()[-1] == sur and team_name(t['name']) == hc), canon(p['name']))
                 rows.append(dict(row_id=rid, date=day, player=name, team=team_name(t['name']), opponent=team_name(o['name']),
                                  venue='Home' if ti == 0 else 'Away',
                                  result=f"{'W' if t['score'] > o['score'] else 'L'} {t['score']}-{o['score']}",

@@ -42,6 +42,7 @@ def key(s):
 
 
 def find(name, team, sq):
+    name = {'Charles Barton': 'Charles Barton Jr'}.get(name, name)  # the squad list adds the Jr
     n = U.norm(name).split()
     for p in sq.get(team, []):
         if key(p['name']) == key(name):

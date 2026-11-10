@@ -640,18 +640,6 @@
   ]
  },
  {
-  "player": "Jordan Ivy-Curry",
-  "src": "photos/sbl-jordan-ivycurry.webp",
-  "credit": "",
-  "source": "SBL (sblherr.se)",
-  "fbox": [
-   0.358,
-   0.1283,
-   0.29,
-   0.2417
-  ]
- },
- {
   "player": "K.J. Debrick",
   "src": "photos/sbl-kj-debrick.webp",
   "credit": "",
@@ -724,18 +712,6 @@
   ]
  },
  {
-  "player": "Nicolas Galette",
-  "src": "photos/sbl-nicolas-galette.webp",
-  "credit": "",
-  "source": "SBL (sblherr.se)",
-  "fbox": [
-   0.392,
-   0.1233,
-   0.22,
-   0.1833
-  ]
- },
- {
   "player": "Pierre Hampton",
   "src": "photos/sbl-pierre-hampton.webp",
   "credit": "",
@@ -793,6 +769,18 @@
    0.0683,
    0.236,
    0.1967
+  ]
+ },
+ {
+  "player": "Charles Barton",
+  "src": "photos/sbl-charles-barton.webp",
+  "credit": "",
+  "source": "SBL (sblherr.se)",
+  "fbox": [
+   0.382,
+   0.055,
+   0.296,
+   0.2467
   ]
  }
 ]

@@ -54,6 +54,15 @@
   "league_name": "Brayden Parker"
  },
  {
+  "player": "Charles Barton",
+  "team": "Högsbo",
+  "number": 8,
+  "height": 193,
+  "nationality": "SE",
+  "position": "Guards",
+  "league_name": "Charles Barton Jr"
+ },
+ {
   "player": "Dalton Gayman",
   "team": "Sloga Uppsala",
   "number": 21,
@@ -162,15 +171,6 @@
   "league_name": "Jordan Ivy Curry"
  },
  {
-  "player": "Jordan Ivy-Curry",
-  "team": "Borås Basket",
-  "number": 1,
-  "height": null,
-  "nationality": "US",
-  "position": "Guards",
-  "league_name": "Jordan Ivy Curry"
- },
- {
   "player": "K.J. Debrick",
   "team": "Sloga Uppsala",
   "number": 32,
@@ -226,15 +226,6 @@
  },
  {
   "player": "Nico Galette",
-  "team": "BC Luleå",
-  "number": 44,
-  "height": 198,
-  "nationality": "US",
-  "position": "Forwards",
-  "league_name": "Nico Galette"
- },
- {
-  "player": "Nicolas Galette",
   "team": "BC Luleå",
   "number": 44,
   "height": 198,
