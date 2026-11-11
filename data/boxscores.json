@@ -2239,7 +2239,7 @@
   "line_id": "g20261111miam-larsson",
   "game_id": "g20261111miam",
   "player": "Pelle Larsson",
-  "min": 16,
+  "min": 17,
   "pts": 10,
   "reb": 3,
   "ast": 2,
@@ -2253,7 +2253,7 @@
   "dreb": 1,
   "stl": 1,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 0,
   "eff": ""
  },
