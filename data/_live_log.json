@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:06:16+01:00",
+ "at": "2026-11-11T01:06:44+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,12 +9,12 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:01",
+   "clock": "06:40",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     22,
+     25,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:00",
+   "clock": "17:18",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:31",
+   "clock": "18:17",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Fordham Rams",
-     0,
+     3,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:37",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
