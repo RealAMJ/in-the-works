@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:40:14+01:00",
+ "at": "2026-11-11T02:41:05+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -9,17 +9,17 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:20",
+   "clock": "07:20",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     49,
+     52,
      15
     ],
     [
      "Rhode Island Rams",
-     51,
+     54,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:00",
+   "clock": "12:42",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:14",
+   "clock": "01:35",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Lipscomb Bisons",
-     33,
+     37,
      16
     ]
    ]
