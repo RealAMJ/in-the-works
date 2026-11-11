@@ -1,29 +1,6 @@
 {
- "at": "2026-11-11T03:07:10+01:00",
+ "at": "2026-11-11T03:08:53+01:00",
  "log": [
-  {
-   "game": "g20261111main",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261111main",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Maine Black Bears",
-     65,
-     15
-    ],
-    [
-     "Rhode Island Rams",
-     71,
-     16
-    ]
-   ]
-  },
   {
    "game": "g20261111iona",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:41",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
@@ -55,7 +32,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:59",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -78,7 +55,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:53",
+   "clock": "15:12",
    "done": false,
    "teams": [
     [
@@ -124,7 +101,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:06",
+   "clock": "18:19",
    "done": false,
    "teams": [
     [
