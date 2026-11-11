@@ -2151,7 +2151,7 @@
   "line_id": "g20261111main-adsten",
   "game_id": "g20261111main",
   "player": "Villiam Garcia Adsten",
-  "min": 23,
+  "min": 24,
   "pts": 7,
   "reb": 6,
   "ast": 1,
@@ -2187,8 +2187,8 @@
   "dreb": 9,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
-  "pf": 2,
+  "tov": 2,
+  "pf": 3,
   "eff": ""
  },
  {

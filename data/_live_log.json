@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:00:31+01:00",
+ "at": "2026-11-11T03:01:23+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -9,7 +9,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:38",
+   "clock": "00:30",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Rhode Island Rams",
-     67,
+     68,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:14",
+   "clock": "02:27",
    "done": false,
    "teams": [
     [
