@@ -188,6 +188,16 @@ DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
 CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261101cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261101T150000Z
+DTEND:20261101T170000Z
+SUMMARY:Klintman: Culture City Weimar at TSV Oberhaching Tropics (L 88-94)
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
 UID:g12@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261101T170000Z
@@ -779,6 +789,17 @@ DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
 CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261108bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T180000Z
+SUMMARY:Hadi\, Klintman: Basketball Löwen Erfurt vs Culture City Weimar (L
+  69-74)
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi\, Mikai Klintman. https://r
+ ealamj.github.io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261108sju@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261108T170000Z
@@ -1059,6 +1080,26 @@ DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
 CATEGORIES:EuroLeague
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261113bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T173000Z
+DTEND:20261113T193000Z
+SUMMARY:Hadi: Basketball Löwen Erfurt vs Dresden Titans
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261113cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T180000Z
+DTEND:20261113T200000Z
+SUMMARY:Klintman: Culture City Weimar vs Dragons Rhöndorf
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261114iona@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261114T000000Z
@@ -1197,6 +1238,26 @@ SUMMARY:Amoran: Idaho State at Seattle U
 DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T150000Z
+DTEND:20261115T170000Z
+SUMMARY:Hadi: Basketball Löwen Erfurt at SKYLINERS Juniors
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T150000Z
+DTEND:20261115T170000Z
+SUMMARY:Klintman: Culture City Weimar at Dresden Titans
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261115lowe@swedes-abroad

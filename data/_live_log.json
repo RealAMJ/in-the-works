@@ -1,26 +1,26 @@
 {
- "at": "2026-11-11T23:49:35+01:00",
+ "at": "2026-11-11T23:53:12+01:00",
  "log": [
   {
-   "game": "c20261108bask",
-   "checking": "2. Basketball-Bundesliga live ticker"
+   "game": "g20261112vmi",
+   "checking": "ESPN"
   },
   {
-   "game": "c20261108bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
+   "game": "g20261112vmi",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Basketball L\u00f6wen Erfurt",
-     69,
-     10
+     "VMI Keydets",
+     0,
+     0
     ],
     [
-     "Culture City Weimar",
-     74,
-     12
+     "North Carolina Central Eagles",
+     0,
+     0
     ]
    ]
   }

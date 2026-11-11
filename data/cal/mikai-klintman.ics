@@ -7,4 +7,44 @@ X-WR-CALNAME:Swedes Abroad: Mikai Klintman
 X-WR-TIMEZONE:Europe/Stockholm
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g20261101cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261101T150000Z
+DTEND:20261101T170000Z
+SUMMARY:Klintman: Culture City Weimar at TSV Oberhaching Tropics (L 88-94)
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261108bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T180000Z
+SUMMARY:Klintman: Basketball Löwen Erfurt vs Culture City Weimar (L 69-74)
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi\, Mikai Klintman. https://r
+ ealamj.github.io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261113cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T180000Z
+DTEND:20261113T200000Z
+SUMMARY:Klintman: Culture City Weimar vs Dragons Rhöndorf
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T150000Z
+DTEND:20261115T170000Z
+SUMMARY:Klintman: Culture City Weimar at Dresden Titans
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
 END:VCALENDAR
