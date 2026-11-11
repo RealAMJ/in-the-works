@@ -3086,3 +3086,14 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 @media (max-width: 520px) { .hxs-row { grid-template-columns: 40px minmax(0, 1fr) auto; gap: 10px; } .hxs-av { width: 40px; height: 40px; } .hxs-res { display: none; } .hxs-n { gap: 8px; } .hxs-n b { font-size: 20px; } .hxs-h h2 { font-size: 26px; } }
 @media (prefers-reduced-motion: reduce) { .hxs[open] { animation: none; } }
 #home.hz .bx-dd { display: flex; flex-direction: column; gap: 8px; }
+/* sheet: frosted glass (the page shows through, blurred) */
+.hxs { background: linear-gradient(180deg, rgba(40,70,120,.42), rgba(12,26,52,.52)); -webkit-backdrop-filter: saturate(180%) blur(30px); backdrop-filter: saturate(180%) blur(30px);
+  border: 1px solid rgba(255,255,255,.16); box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 30px 80px -20px rgba(0,0,0,.75); }
+.hxs::backdrop { background: rgba(2,6,15,.28); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.hxs-h { border-bottom-color: rgba(255,255,255,.12); }
+.hxs-row + .hxs-row { border-top-color: rgba(255,255,255,.08); }
+.hxs-row:hover, .hxs-row:focus-visible { background: rgba(255,255,255,.08); }
+.hxs-x { background: rgba(255,255,255,.12); }
+.hxs-res { background: rgba(0,0,0,.22); }
+.hxs-av { background: rgba(19,41,77,.7); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .hxs { background: #0a1730; } }
