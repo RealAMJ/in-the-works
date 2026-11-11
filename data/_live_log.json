@@ -1,26 +1,26 @@
 {
- "at": "2026-11-11T19:42:32+01:00",
+ "at": "2026-11-11T20:11:59+01:00",
  "log": [
   {
-   "game": "c20261111ora",
-   "checking": "FIBA LiveStats"
+   "game": "g20261111ucam",
+   "checking": "FIBA (championsleague.basketball)"
   },
   {
-   "game": "c20261111ora",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261111ucam",
+   "src": "FIBA (championsleague.basketball)",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "CSM CSU Raiffeisen Oradea",
-     93,
-     12
+     "UCAM Murcia",
+     0,
+     0
     ],
     [
-     "Fribourg Olympic Basket",
-     67,
-     12
+     "BMA365 Bamberg Baskets",
+     0,
+     0
     ]
    ]
   }
