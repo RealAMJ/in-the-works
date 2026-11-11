@@ -5948,5 +5948,33 @@
   "note": "",
   "leaders": "Lindsey|20|1|8;Patrick|13|4|3;Jacobs|12|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "lipscomb-2026-11-11",
+  "team": "Lipscomb",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Belmont",
+  "venue": "Home",
+  "score": "88-75",
+  "result": "W",
+  "top": "Martin 23 pts, 5 reb",
+  "note": "",
+  "leaders": "Martin|23|5|3;Sargiunas|17|3|3;Simpkins|16|4|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "belmont-2026-11-11",
+  "team": "Belmont",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Away",
+  "score": "75-88",
+  "result": "L",
+  "top": "Smiley 23 pts, 3 reb",
+  "note": "",
+  "leaders": "Smiley|23|3|1;Jenkins|14|10|0;Neugebauer|10|4|0;Ristic|10|5|7",
+  "source": "ESPN"
  }
 ]

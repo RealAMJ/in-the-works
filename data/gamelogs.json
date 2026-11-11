@@ -5998,5 +5998,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "tidare-2026-11-11",
+  "player": "Hugo Tidare",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "team": "Lipscomb",
+  "opponent": "Belmont",
+  "venue": "Home",
+  "result": "W 88-75",
+  "min": 20,
+  "pts": 3,
+  "reb": 2,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "1/2",
+  "three": "1/2",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "pm": "",
+  "eff": ""
  }
 ]
