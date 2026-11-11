@@ -45245,11 +45245,11 @@
   "ast": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "3/4",
   "three": "0/0",
   "ft": "2/3",
-  "pm": 12,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45606,7 +45606,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "3/4",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
