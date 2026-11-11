@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:19:37+01:00",
+ "at": "2026-11-11T02:20:28+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:30",
+   "clock": "04:47",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:26",
+   "clock": "14:55",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     38,
+     40,
      15
     ],
     [
@@ -78,12 +78,12 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:39",
+   "clock": "14:51",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     46,
+     48,
      14
     ],
     [
@@ -101,17 +101,17 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:07",
+   "clock": "11:02",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     8,
+     12,
      14
     ],
     [
      "Lipscomb Bisons",
-     10,
+     12,
      16
     ]
    ]
