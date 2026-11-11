@@ -1658,11 +1658,11 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "W 95-72",
+  "score": "W 95-75",
   "espn_id": "401909963",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909963",
-  "clock": "Q4 11:17",
-  "live_updated": "2026-11-11T05:07:38+01:00"
+  "clock": "Q4 10:49",
+  "live_updated": "2026-11-11T05:08:22+01:00"
  },
  {
   "game_id": "g20261111newm",
@@ -1675,11 +1675,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 86-63",
+  "score": "W 87-63",
   "espn_id": "401924896",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924896",
-  "clock": "Q2 03:02",
-  "live_updated": "2026-11-11T05:07:38+01:00"
+  "clock": "Q2 02:50",
+  "live_updated": "2026-11-11T05:08:22+01:00"
  },
  {
   "game_id": "g20261111ucam",
