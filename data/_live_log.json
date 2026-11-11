@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:04:18+01:00",
+ "at": "2026-11-11T03:05:10+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -9,7 +9,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:09",
+   "clock": "00:12",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:16",
+   "clock": "05:43",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     57,
+     59,
      17
     ],
     [
      "Fordham Rams",
-     68,
+     71,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:42",
+   "clock": "01:41",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:55",
+   "clock": "15:53",
    "done": false,
    "teams": [
     [
