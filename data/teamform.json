@@ -6102,5 +6102,33 @@
   "note": "",
   "leaders": "Keppeler|11|4|0;Ward|10|9|3;Scott|10|4|3",
   "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "basketball-lowen-erfurt-2026-11-08",
+  "team": "Basketball Löwen Erfurt",
+  "date": "2026-11-08",
+  "competition": "ProB (Germany)",
+  "opponent": "Culture City Weimar",
+  "venue": "Home",
+  "score": "69-74",
+  "result": "L",
+  "top": "Amin 16 pts, 0 reb",
+  "note": "",
+  "leaders": "Amin|16|0|4;Watkins|12|4|0;Fliege|10|11|2",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "culture-city-weimar-2026-11-08",
+  "team": "Culture City Weimar",
+  "date": "2026-11-08",
+  "competition": "ProB (Germany)",
+  "opponent": "Basketball Löwen Erfurt",
+  "venue": "Away",
+  "score": "74-69",
+  "result": "W",
+  "top": "Biel 16 pts, 4 reb",
+  "note": "",
+  "leaders": "Biel|16|4|1;Bader|12|1|3;Beier-Christiansen|11|16|1",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]

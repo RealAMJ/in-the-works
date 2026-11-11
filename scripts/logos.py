@@ -34,7 +34,7 @@ def our_teams():
     def add(v):
         if v and v not in ('—', 'TBC', 'placeholder'):
             names.add(v)
-    for fn, keys in [('schedule', ['team', 'opponent']), ('teamform', ['team', 'opponent']), ('fullbox', ['team']), ('coachgames', ['team', 'opponent']), ('teams', ['team']), ('players', ['club']), ('sblgames', ['team', 'opponent'])]:
+    for fn, keys in [('schedule', ['team', 'opponent']), ('teamform', ['team', 'opponent']), ('fullbox', ['team']), ('coachgames', ['team', 'opponent']), ('teams', ['team']), ('players', ['club']), ('sblgames', ['team', 'opponent']), ('gamelogs', ['team', 'opponent'])]:
         p = os.path.join(DATA, fn + '.json')
         if not os.path.exists(p):
             continue
@@ -130,6 +130,27 @@ def league_pages():
                 imgs(f'https://www.aba-liga.com/match/{gid}/Overview/q1/1/home/x/', 'ABA League (aba-liga.com)', 'https://www.aba-liga.com')
         except Exception as e:
             print('  feed', f, str(e)[:80])
+    # ProA/ProB: the live ticker's /init/<game> names both teams, the crest is pics2/<season>/lo/<team id>.
+    # Walk our clubs' season calendars until no new team turns up (one league, so that's soon).
+    try:
+        import schedule_eu as E
+        seen, quiet = {}, 0
+        for f in E.prob():
+            gid = f['feed'].split(':', 1)[1]
+            d = U.get(f'https://live.2basketballbundesliga.de/init/{gid}')
+            season = str((d.get('game') or {}).get('season') or '').replace('/', '_')
+            new = 0
+            for t, ours in ((d.get('teamA') or {}, f['home']), (d.get('teamB') or {}, f['away'])):
+                if t.get('id') and t['id'] not in seen:
+                    seen[t['id']] = 1; new += 1
+                    out.append(({norm(t.get('caption')), norm(ours)} - {''}, f'https://api.2basketballbundesliga.de/pics2/{season}/lo/{t["id"]}',
+                                '2. Basketball-Bundesliga', 'euro'))
+            quiet = 0 if new else quiet + 1
+            if quiet >= 8:
+                break
+        print('  ProB', len(seen), 'teams')
+    except Exception as e:
+        print('  ProB', str(e)[:80])
     return out
 
 
@@ -152,7 +173,7 @@ def match(name, src):
 
 
 # wrong matches found by eye (a different club's crest, or a sponsor's logo): never take these from the fuzzy match
-SKIP = {'Fribourg Olympic', 'Unicaja'}
+SKIP = {'Fribourg Olympic', 'Unicaja', 'Tizona Burgos'}
 
 
 def is_dark(path):

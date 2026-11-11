@@ -2904,7 +2904,7 @@
     return t.find((r) => r.competition === comp) || t.find((r) => norm(comp).startsWith(norm(r.competition)) || norm(r.competition).startsWith(norm(comp))) || null;
   }
   // Leagues followed only through the player profiles (updated weekly): kept out of the top bar and game lists
-  const PROFILE_ONLY = ['ProB (Germany)', 'BLNO (Norway)'];
+  const PROFILE_ONLY = ['BLNO (Norway)'];
   const profileOnly = (r) => PROFILE_ONLY.includes(String(r.competition || ''));
   // Every game: the schedule (from Oct 28) plus earlier games rebuilt from the game logs
   function allGames() {

@@ -42,6 +42,12 @@
   "dark": true
  },
  {
+  "team": "BBC Coburg",
+  "src": "logos/bbc-coburg.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "BC Luleå",
   "src": "logos/bc-lulea.png",
   "source": "Basketligan (sblherr.se)",
@@ -54,15 +60,45 @@
   "dark": false
  },
  {
+  "team": "BG Hessing Leitershofen",
+  "src": "logos/bg-hessing-leitershofen.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "Bahcesehir Koleji",
   "src": "logos/bahcesehir-koleji.png",
   "source": "EuroCup",
   "dark": false
  },
  {
+  "team": "Barcelona",
+  "src": "logos/barcelona.png",
+  "source": "EuroLeague",
+  "dark": false
+ },
+ {
   "team": "Barça",
   "src": "logos/barca.png",
   "source": "EuroLeague",
+  "dark": false
+ },
+ {
+  "team": "Basketball Löwen Erfurt",
+  "src": "logos/basketball-lowen-erfurt.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
+  "team": "Baskonia",
+  "src": "logos/baskonia.png",
+  "source": "EuroLeague",
+  "dark": true
+ },
+ {
+  "team": "Bayer Giants Leverkusen",
+  "src": "logos/bayer-giants-leverkusen.png",
+  "source": "2. Basketball-Bundesliga",
   "dark": false
  },
  {
@@ -150,6 +186,12 @@
   "dark": false
  },
  {
+  "team": "Culture City Weimar",
+  "src": "logos/culture-city-weimar.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "Dallas Mavericks",
   "src": "logos/dallas-mavericks.png",
   "source": "NBA (ESPN)",
@@ -171,6 +213,18 @@
   "team": "Detroit Pistons",
   "src": "logos/detroit-pistons.png",
   "source": "NBA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "Dragons Rhöndorf",
+  "src": "logos/dragons-rhondorf.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
+  "team": "Dresden Titans",
+  "src": "logos/dresden-titans.png",
+  "source": "2. Basketball-Bundesliga",
   "dark": false
  },
  {
@@ -216,8 +270,26 @@
   "dark": true
  },
  {
+  "team": "Euvic GTK Gliwice",
+  "src": "logos/euvic-gtk-gliwice.png",
+  "source": "Orlen Basket Liga (plk.pl)",
+  "dark": false
+ },
+ {
+  "team": "FC Bayern Basketball II",
+  "src": "logos/fc-bayern-basketball-ii.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "FC Bayern Munich",
   "src": "logos/fc-bayern-munich.png",
+  "source": "EuroLeague",
+  "dark": false
+ },
+ {
+  "team": "Fenerbahce",
+  "src": "logos/fenerbahce.png",
   "source": "EuroLeague",
   "dark": false
  },
@@ -324,6 +396,12 @@
   "dark": false
  },
  {
+  "team": "KK Partizan",
+  "src": "logos/kk-partizan.png",
+  "source": "EuroLeague",
+  "dark": false
+ },
+ {
   "team": "KK Zabok",
   "src": "logos/kk-zabok.png",
   "source": "FIBA LiveStats",
@@ -386,6 +464,12 @@
  {
   "team": "Lietkabelis",
   "src": "logos/lietkabelis.png",
+  "source": "EuroCup",
+  "dark": false
+ },
+ {
+  "team": "Lietkabelis Panevezys",
+  "src": "logos/lietkabelis-panevezys.png",
   "source": "EuroCup",
   "dark": false
  },
@@ -654,6 +738,12 @@
   "dark": false
  },
  {
+  "team": "Paris Basketball",
+  "src": "logos/paris-basketball.png",
+  "source": "EuroLeague",
+  "dark": true
+ },
+ {
   "team": "Partizan",
   "src": "logos/partizan.png",
   "source": "EuroLeague",
@@ -672,10 +762,22 @@
   "dark": true
  },
  {
+  "team": "Porsche BBA Ludwigsburg",
+  "src": "logos/porsche-bba-ludwigsburg.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "Providence",
   "src": "logos/providence.png",
   "source": "NCAA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Ravens Reutlingen",
+  "src": "logos/ravens-reutlingen.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
  },
  {
   "team": "Real Madrid",
@@ -708,6 +810,12 @@
   "dark": false
  },
  {
+  "team": "Roma",
+  "src": "logos/roma.png",
+  "source": "EuroCup",
+  "dark": false
+ },
+ {
   "team": "Rostock Seawolves",
   "src": "logos/rostock-seawolves.png",
   "source": "EuroCup",
@@ -735,6 +843,12 @@
   "team": "SMU",
   "src": "logos/smu.png",
   "source": "NCAA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "SV Fellbach Flashers",
+  "src": "logos/sv-fellbach-flashers.png",
+  "source": "2. Basketball-Bundesliga",
   "dark": false
  },
  {
@@ -834,9 +948,27 @@
   "dark": false
  },
  {
+  "team": "TSV Oberhaching Tropics",
+  "src": "logos/tsv-oberhaching-tropics.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
+  "team": "TV Langen",
+  "src": "logos/tv-langen.png",
+  "source": "2. Basketball-Bundesliga",
+  "dark": false
+ },
+ {
   "team": "Tennessee Tech",
   "src": "logos/tennessee-tech.png",
   "source": "NCAA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "U-BT Cluj-Napoca",
+  "src": "logos/u-bt-cluj-napoca.png",
+  "source": "EuroCup",
   "dark": false
  },
  {

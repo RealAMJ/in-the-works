@@ -139,6 +139,23 @@
   "post_done": true
  },
  {
+  "game_id": "c20261108bask",
+  "date": "2026-11-08",
+  "time": "17:00",
+  "coach": "Leif Ibrahim",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Culture City Weimar",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "final",
+  "score": "L 69-74",
+  "live_feed": "prob:2006180",
+  "notified": true,
+  "live_done": true,
+  "post_done": true
+ },
+ {
   "game_id": "c20261108san",
   "date": "2026-11-08",
   "time": "18:00",
@@ -186,6 +203,20 @@
   "live_feed": "fiba:2888345",
   "live_done": true,
   "post_done": true
+ },
+ {
+  "game_id": "c20261113bask",
+  "date": "2026-11-13",
+  "time": "18:30",
+  "coach": "Leif Ibrahim",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Dresden Titans",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006183"
  },
  {
   "game_id": "c20261113anw",
@@ -238,5 +269,19 @@
   "note": "",
   "status": "upcoming",
   "score": ""
+ },
+ {
+  "game_id": "c20261115bask",
+  "date": "2026-11-15",
+  "time": "16:00",
+  "coach": "Leif Ibrahim",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "SKYLINERS Juniors",
+  "venue": "Away",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006193"
  }
 ]

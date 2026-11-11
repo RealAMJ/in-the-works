@@ -312,6 +312,23 @@
   "post_done": true
  },
  {
+  "game_id": "g20261101cult",
+  "date": "2026-11-01",
+  "time": "16:00",
+  "players": "Mikai Klintman",
+  "team": "Culture City Weimar",
+  "opponent": "TSV Oberhaching Tropics",
+  "venue": "Away",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "final",
+  "score": "L 88-94",
+  "live_feed": "prob:2006174",
+  "live_done": true,
+  "notified": true,
+  "post_done": true
+ },
+ {
   "game_id": "g12",
   "date": "2026-11-01",
   "time": "18:00",
@@ -1362,6 +1379,23 @@
   "notified": true
  },
  {
+  "game_id": "g20261108bask",
+  "date": "2026-11-08",
+  "time": "17:00",
+  "players": "Jacob Hadi, Mikai Klintman",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Culture City Weimar",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "Swedish matchup: Klintman plays for Culture City Weimar",
+  "status": "final",
+  "score": "L 69-74",
+  "live_feed": "prob:2006180",
+  "live_done": true,
+  "notified": true,
+  "post_done": true
+ },
+ {
   "game_id": "g20261108sju",
   "date": "2026-11-08",
   "time": "18:00",
@@ -1820,6 +1854,34 @@
   "watch_label": "EuroLeague TV"
  },
  {
+  "game_id": "g20261113bask",
+  "date": "2026-11-13",
+  "time": "18:30",
+  "players": "Jacob Hadi",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Dresden Titans",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006183"
+ },
+ {
+  "game_id": "g20261113cult",
+  "date": "2026-11-13",
+  "time": "19:00",
+  "players": "Mikai Klintman",
+  "team": "Culture City Weimar",
+  "opponent": "Dragons Rhöndorf",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006188"
+ },
+ {
   "game_id": "g20261114iona",
   "date": "2026-11-14",
   "time": "01:00",
@@ -2000,6 +2062,34 @@
   "note": "",
   "status": "upcoming",
   "score": ""
+ },
+ {
+  "game_id": "g20261115bask",
+  "date": "2026-11-15",
+  "time": "16:00",
+  "players": "Jacob Hadi",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "SKYLINERS Juniors",
+  "venue": "Away",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006193"
+ },
+ {
+  "game_id": "g20261115cult",
+  "date": "2026-11-15",
+  "time": "16:00",
+  "players": "Mikai Klintman",
+  "team": "Culture City Weimar",
+  "opponent": "Dresden Titans",
+  "venue": "Away",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006191"
  },
  {
   "game_id": "g20261115lowe",

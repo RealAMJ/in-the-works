@@ -6102,5 +6102,31 @@
   "pf": 0,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "hadi-2026-11-08",
+  "player": "Jacob Hadi",
+  "date": "2026-11-08",
+  "competition": "ProB (Germany)",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Culture City Weimar",
+  "venue": "Home",
+  "result": "L 69-74",
+  "min": 19,
+  "pts": 0,
+  "reb": 2,
+  "ast": 1,
+  "source": "2. Basketball-Bundesliga live ticker",
+  "fg": "0/3",
+  "three": "0/3",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 0,
+  "pm": "",
+  "eff": ""
  }
 ]

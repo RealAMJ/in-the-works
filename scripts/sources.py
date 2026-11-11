@@ -8,6 +8,8 @@ More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and
   BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
   LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
   LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
+  ProA / ProB (Germany)      live_feed "prob:<game id>"   live.2basketballbundesliga.de/g/<id> (its Socket.IO history; game ids from
+                                                          the league calendar api.2basketballbundesliga.de/cal/<team id>)
 Each reader returns the same shape as the other feeds: {period, clock, done, teams: [{name, score, pl: [...]}]}.
 """
 import datetime as dt
@@ -347,6 +349,93 @@ def read_lkl(gid, row=None):
     clk = f'{int(t.group(1)):02d}:{t.group(2)}' if t else ''
     done = per >= 4 and clk == '00:00' and teams[0]['score'] != teams[1]['score']
     return dict(period=per or 1, clock=clk, done=done, notstarted=not clock and not any(x['score'] for x in teams), teams=teams)
+
+
+# ------------------------------------------------------------------ ProA / ProB (2. Basketball-Bundesliga)
+PROB_LIVE = 'https://live.2basketballbundesliga.de'
+
+
+def _prob_events(gid):
+    """The ticker's game history over Socket.IO long-polling (plain HTTP): connect, ask for 'history',
+    read until the server has sent its end-of-history markers ([20])."""
+    import http.cookiejar
+    import json
+    import urllib.parse
+    import urllib.request
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    hd = dict(U.UA)
+
+    def call(q, data=None):
+        req = urllib.request.Request(f'{PROB_LIVE}/socket.io/?' + urllib.parse.urlencode(q), headers=hd,
+                                     data=data.encode() if data is not None else None)
+        with op.open(req, timeout=30) as r:
+            return r.read().decode('utf-8')
+
+    q = dict(EIO=4, transport='polling', game=gid)
+    q['sid'] = json.loads(call(q)[1:])['sid']
+    call(q, '40')
+    out, ends, asked = [], 0, False
+    for _ in range(25):
+        for pk in call(q).split('\x1e'):
+            if pk == '2':
+                call(q, '3')
+            elif pk.startswith('40') and not asked:
+                call(q, '42' + json.dumps(['history', str(gid)])); asked = True
+            elif pk.startswith('42'):
+                ev = json.loads(pk[2:])
+                if ev and str(ev[0]) == str(gid) and isinstance(ev[1], list) and ev[1]:
+                    if ev[1][0] == 20:
+                        ends += 1
+                    else:
+                        out.append(ev[1])
+        if ends >= 5:
+            break
+    try:
+        call(q, '41')
+    except Exception:
+        pass
+    return out
+
+
+def read_prob(gid, row=None):
+    init = U.get(f'{PROB_LIVE}/init/{gid}')
+    ev = _prob_events(gid)
+    people = init.get('player') or {}
+    side = {1: init.get('teamA') or {}, 2: init.get('teamB') or {}}
+    stats, starters, score, period, left, ended = {}, {}, (0, 0), 0, None, set()
+    for d in ev:
+        k = d[0]
+        if k == 0 and len(d) >= 6:            # scorelist: id, quarter, seconds left, home, away
+            score, period, left = (int(d[4]), int(d[5])), max(period, int(d[2])), int(d[3])
+        elif k == 4 and len(d) >= 28:         # player stats, cumulative; the last one per player wins
+            stats[(d[2], d[3])] = d
+        elif k == 7 and len(d) >= 4 and d[2] not in starters:
+            starters[d[2]] = set(d[3:])       # first line-up of each team = starting five
+        elif k == 3 and len(d) >= 5:          # quarter start (600 s, flag 0) / end (0 s, flag 1+)
+            period = max(period, int(d[2]))
+            if d[4]:
+                ended.add(int(d[2])); left = 0
+            elif int(d[2]) == period:
+                left = int(d[3])
+    teams = []
+    for t in (1, 2):
+        pl = []
+        for (tc, pid), d in sorted(stats.items(), key=lambda x: int(x[1][5] or 0)):
+            if tc != t:
+                continue
+            nm = ' '.join(str((people.get(str(pid)) or {}).get('name') or '').split())
+            pl.append(dict(name=nm, min=int(d[24] or 0) // 60, pts=d[6], reb=d[17], ast=d[18], stl=d[20], blk=d[19], tov=d[21],
+                           fgm=d[10] + d[13], fga=d[11] + d[14], tpm=d[13], tpa=d[14], ftm=d[7], fta=d[8], pm='',
+                           pf=d[16], oreb=d[27], dreb=d[26], starter=pid in starters.get(t, set())))
+        teams.append(dict(name=side[t].get('caption') or '', score=score[t - 1], pl=pl))
+    if row and row.get('team'):
+        # the ticker uses short names ("Basketball Löwen"); the schedule row has ours. Home team is listed first.
+        home = (row.get('venue') or 'Home') != 'Away'
+        teams[0]['name'], teams[1]['name'] = (row['team'], row.get('opponent', '')) if home else (row.get('opponent', ''), row['team'])
+    done = period >= 4 and period in ended and score[0] != score[1]
+    left = 0 if done else left
+    clk = f'{left // 60:02d}:{left % 60:02d}' if left is not None else ''
+    return dict(period=period or 1, clock=clk, done=done, notstarted=not ev, teams=teams)
 
 
 # ------------------------------------------------------------------ FEB

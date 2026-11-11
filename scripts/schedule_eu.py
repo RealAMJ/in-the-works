@@ -3,7 +3,8 @@
 European schedule check from the leagues' own fixture lists, once a day (like schedule_us.py for NBA/NCAA).
 
 Leagues: EuroLeague (official API), Champions League (BCL game list), BBL (season id table, re-read
-for our clubs' games), ABA League (season calendar) and LBA (current round from the league's front page).
+for our clubs' games), ABA League (season calendar), LBA (current round from the league's front page) and
+ProB (the league's team calendars, which also give the live-ticker game id).
 For every club we follow in those competitions (from data/schedule.json and data/coachgames.json) it
 looks 3 days back and 8 days ahead and:
   * fixes the date/time (Swedish time) of upcoming games that are already listed
@@ -106,13 +107,44 @@ def lba():
             yield dict(at=dt.datetime.fromisoformat(when), home=m.get('h_team_name', ''), away=m.get('v_team_name', ''), confirmed=True)
 
 
+# ProA/ProB clubs we follow -> the league's team id (calendar api.2basketballbundesliga.de/cal/<id>, ids from the
+# live ticker's /init/<game id>). The calendar lists the club's own games with the ticker game id in each UID.
+PROB_TEAMS = {'Basketball Löwen Erfurt': 563, 'Culture City Weimar': 588}
+
+
+def prob(clubs=None):
+    import urllib.request
+    for club, tid in PROB_TEAMS.items():
+        req = urllib.request.Request(f'https://api.2basketballbundesliga.de/cal/{tid}', headers=U.UA)
+        with urllib.request.urlopen(req, timeout=20) as r:
+            ics = r.read().decode('utf-8')
+        ics = re.sub(r'\r?\n[ \t]', '', ics)
+        for ev in ics.split('BEGIN:VEVENT')[1:]:
+            f = dict(re.findall(r'^([A-Z-]+)(?:;[^:]*)?:(.*?)\r?$', ev, re.M))
+            gid = re.search(r'liga2-(\d+)@', f.get('UID', ''))
+            m = re.search(r'Spiel (.+?) vs (.+)$', f.get('SUMMARY', ''))
+            when = re.match(r'(\d{8}T\d{6})Z', f.get('DTSTART', ''))
+            if not (gid and m and when):
+                continue
+            # the calendar uses the league's short names ("Basketball Löwen"); put ours in so the matching is exact
+            def ours(n):
+                return next((c for c in PROB_TEAMS if U.norm(n) == U.norm(c) or (S.words(n) - {'basketball'} and
+                                                                                    S.words(n) - {'basketball'} <= S.words(c))), n)
+            home, away = ours(m.group(1).strip()), ours(m.group(2).strip())
+            if club not in (home, away):
+                continue
+            yield dict(at=dt.datetime.strptime(when.group(1), '%Y%m%dT%H%M%S').replace(tzinfo=UTC), home=home, away=away,
+                       confirmed=True, feed=f'prob:{gid.group(1)}')
+
+
 def main(argv):
     now = U.now()
     if '--force' not in argv and not (now.hour == 7 and now.minute < 6):
         return 0
     sched, coach, players = U.load('schedule'), U.load('coachgames'), U.load('players')
     lo, hi = now - dt.timedelta(days=3), now + dt.timedelta(days=8)
-    comps = {'EuroLeague': euroleague, 'Champions League (BCL)': bcl, 'BBL': None, 'ABA League': aba, 'LBA (Italy)': lba}
+    comps = {'EuroLeague': euroleague, 'Champions League (BCL)': bcl, 'BBL': None, 'ABA League': aba, 'LBA (Italy)': lba,
+             'ProB (Germany)': prob}
     changes = 0
     for comp, reader in comps.items():
         # clubs we follow in this competition, and who to list for them
@@ -123,7 +155,7 @@ def main(argv):
                     clubs.setdefault((r['team'], who), r.get(who) or '')
         # also clubs whose players are listed in this competition but have no game of it on the schedule yet
         key = {'EuroLeague': 'euroleague', 'Champions League (BCL)': 'champions league', 'BBL': 'bbl',
-               'ABA League': 'aba', 'LBA (Italy)': 'lba'}[comp]
+               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob'}[comp]
         for p in players:
             comps = str(p.get('competitions') or '').lower()
             if p.get('status') == 'Confirmed' and p.get('club') and re.search(r'(^|[^a-z])' + re.escape(key) + r'([^a-z]|$)', comps) \
@@ -146,7 +178,13 @@ def main(argv):
                 if not (lo <= f['at'] <= hi):
                     continue
                 cw = S.words(club)
-                if cw & S.words(f['home']):
+                if f['home'] == club:
+                    venue, opp = 'Home', f['away']
+                elif f['away'] == club:
+                    venue, opp = 'Away', f['home']
+                elif comp == 'ProB (Germany)':
+                    continue
+                elif cw & S.words(f['home']):
                     venue, opp = 'Home', f['away']
                 elif cw & S.words(f['away']):
                     venue, opp = 'Away', f['home']
@@ -157,8 +195,18 @@ def main(argv):
                 near = [r for r in rows if r.get('team') == club and r.get('competition') == comp and r.get('date')
                         and abs((dt.date.fromisoformat(r['date']) - t.date()).days) <= 2
                         and (S.words(r.get('opponent', '')) & S.words(opp) or U.norm(r.get('opponent', '')) == U.norm(opp))]
+                if f.get('feed'):
+                    # one row per game: a derby of two clubs we follow is listed once, with both teams' Swedes
+                    near = near or [r for r in rows if r.get('live_feed') == f['feed']]
                 if near:
                     r = near[0]
+                    if who == 'players' and r.get('team') != club:
+                        have = [x.strip() for x in str(r.get('players') or '').split(',') if x.strip()]
+                        add = [x for x in names.split(', ') if x and x not in have]
+                        if add:
+                            r['players'] = ', '.join(have + add); changes += 1
+                    if f.get('feed') and not r.get('live_feed'):
+                        r['live_feed'] = f['feed']; changes += 1
                     if r.get('status') == 'upcoming' and f['at'] > now and (r.get('date'), r.get('time')) != (date, time) and time != 'TBC':
                         print(f"  {r['game_id']}: {r.get('date')} {r.get('time')} -> {date} {time} ({comp})")
                         r['date'], r['time'] = date, time
@@ -174,6 +222,8 @@ def main(argv):
                     gid = gid.rstrip('0123456789') + str(n); n += 1
                 row = dict(game_id=gid, date=date, time=time, **{who: names}, team=club, opponent=opp, venue=venue,
                            competition=comp, note='', status='upcoming', score='')
+                if f.get('feed'):
+                    row['live_feed'] = f['feed']
                 rows.append(row)
                 print(f"  added {gid}: {club} {'vs' if venue == 'Home' else 'at'} {opp} {date} {time} ({comp})")
                 changes += 1
