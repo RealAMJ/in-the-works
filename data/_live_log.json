@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T00:32:09+01:00",
+ "at": "2026-11-12T00:32:59+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,12 +9,12 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:07",
+   "clock": "07:41",
    "done": false,
    "teams": [
     [
      "North Carolina Central Eagles",
-     11,
+     13,
      15
     ],
     [
