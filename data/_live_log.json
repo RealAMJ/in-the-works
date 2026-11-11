@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:11:25+01:00",
+ "at": "2026-11-11T01:12:16+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:35",
+   "clock": "04:27",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:00",
+   "clock": "15:19",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     14,
+     16,
      14
     ],
     [
      "Central Michigan Chippewas",
-     8,
+     10,
      15
     ]
    ]
