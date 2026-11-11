@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:18:45+01:00",
+ "at": "2026-11-11T03:19:37+01:00",
  "log": [
   {
    "game": "g20261111iona",
@@ -9,7 +9,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:49",
+   "clock": "00:29",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Fordham Rams",
-     75,
+     77,
      15
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:43",
+   "clock": "07:23",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     15,
+     16,
      15
     ],
     [
@@ -78,17 +78,17 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:24",
+   "clock": "13:37",
    "done": false,
    "teams": [
     [
      "Little Rock Trojans",
-     2,
+     5,
      16
     ],
     [
      "New Mexico Lobos",
-     11,
+     13,
      13
     ]
    ]
