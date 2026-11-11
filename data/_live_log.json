@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:18:17+01:00",
+ "at": "2026-11-11T03:18:45+01:00",
  "log": [
   {
    "game": "g20261111iona",
@@ -9,12 +9,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:00",
+   "clock": "00:49",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     69,
+     72,
      17
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:44",
+   "clock": "07:43",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     13,
+     15,
      15
     ],
     [
