@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:31:44+01:00",
+ "at": "2026-11-11T01:32:36+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -55,12 +55,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:15",
+   "clock": "09:03",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     20,
+     23,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:06",
+   "clock": "07:41",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     28,
+     30,
      15
     ]
    ]
