@@ -2830,3 +2830,6 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 #game .gchx .gchx-p { transition: background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 #game .gchx .gchx-p.coach:hover, #game .gchx .gchx-p.coach:focus-visible { background: rgba(127,179,255,.26); border-color: #7fb3ff; box-shadow: 0 0 0 3px rgba(127,179,255,.18), 0 8px 22px -10px rgba(127,179,255,.6); transform: translateY(-1px); }
 #game .gchx .gchx-p:not(.coach):hover, #game .gchx .gchx-p:not(.coach):focus-visible { border-color: #fecc02; transform: translateY(-1px); }
+/* coach header: full-length photos cropped head to chest */
+.cpx-pic.crop { overflow: hidden; align-items: flex-start; justify-content: center; }
+.cpx-pic.crop img { max-width: none; flex: none; }

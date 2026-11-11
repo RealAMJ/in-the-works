@@ -2255,5 +2255,17 @@
    0.1883
   ],
   "sm": "photos/sm/sbl-ake-swahn.webp"
+ },
+ {
+  "player": "Mikko Riipinen",
+  "src": "photos/mikko-riipinen.webp",
+  "sm": "photos/sm/mikko-riipinen.webp",
+  "credit": "",
+  "fbox": [
+   0.3024,
+   0.0925,
+   0.3245,
+   0.1838
+  ]
  }
 ]

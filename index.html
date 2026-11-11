@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=fb5ef067">
+<link rel="stylesheet" href="site2.css?v=3dad5fae">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -4185,7 +4185,11 @@
     const wrap = mk('div', 'ntz-wrap cpx-in');
     const crumb = mk('button', 'ntz-crumb'); crumb.type = 'button'; crumb.append('Coaches › ', mk('b', '', c.coach)); crumb.onclick = () => showPage('coaches');
     const pic = mk('div', 'cpx-pic'); const ph = photoFor(c.coach);
-    if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = c.coach; pic.append(img); } else pic.append(mk('span', 'cpx-ini', initials(c.coach)));
+    if (ph) { const img = document.createElement('img'); img.src = ph.src; img.alt = c.coach; pic.append(img);
+      // a full-length photo is framed head to chest, like the player headers (face about a quarter of the frame)
+      if (Array.isArray(ph.fbox) && ph.fbox[3] < 0.3) { pic.classList.add('crop'); const fit = () => { const H = pic.clientHeight; if (!H || !img.naturalHeight) return; const k = 0.27 / ph.fbox[3];
+        const ih = H * k; img.style.height = ih + 'px'; img.style.marginTop = (-Math.max(0, ph.fbox[1] - ph.fbox[3] * 0.9) * ih) + 'px'; }; img.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); } }
+    else pic.append(mk('span', 'cpx-ini', initials(c.coach)));
     const id = mk('div', 'cpx-id');
     const tags = mk('div', 'cpx-tags'); tags.append(mk('span', 'y', /Riipinen/.test(c.coach) ? '🇸🇪 Sweden head coach' : '🇸🇪 Swedish connection'));
     if (c.role) tags.append(mk('span', '', c.role));
