@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:25:42+01:00",
+ "at": "2026-11-11T02:26:33+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:55",
+   "clock": "03:37",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:56",
+   "clock": "12:39",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:48",
+   "clock": "16:24",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:30",
+   "clock": "13:17",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     62,
+     64,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:03",
+   "clock": "08:34",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Lipscomb Bisons",
-     18,
+     21,
      16
     ]
    ]
