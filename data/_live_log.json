@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:41:05+01:00",
+ "at": "2026-11-11T02:41:57+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -9,7 +9,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:20",
+   "clock": "06:46",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:42",
+   "clock": "12:23",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     52,
+     54,
      17
     ],
     [
      "Fordham Rams",
-     54,
+     56,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:24",
+   "clock": "08:22",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:35",
+   "clock": "00:58",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     26,
+     28,
      14
     ],
     [
      "Lipscomb Bisons",
-     37,
+     40,
      16
     ]
    ]
