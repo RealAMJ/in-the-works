@@ -45270,7 +45270,7 @@
   "fg": "0/6",
   "three": "0/2",
   "ft": "6/8",
-  "pm": 9,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45354,7 +45354,7 @@
   "fg": "3/5",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45375,7 +45375,7 @@
   "fg": "2/6",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45438,7 +45438,7 @@
   "fg": "1/4",
   "three": "1/3",
   "ft": "2/2",
-  "pm": 11,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45522,7 +45522,7 @@
   "fg": "6/9",
   "three": "2/4",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45564,7 +45564,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "1/3",
-  "pm": 1,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45627,7 +45627,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "3/4",
-  "pm": -14,
+  "pm": -16,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45659,7 +45659,7 @@
   "team": "Utah Jazz",
   "player": "Isaiah Collier",
   "pos": "",
-  "min": 8,
+  "min": 10,
   "pts": 2,
   "reb": 4,
   "ast": 1,
@@ -45669,7 +45669,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
