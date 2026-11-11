@@ -3151,7 +3151,8 @@
     return Object.assign({}, g, { tag: g.competition, brand: g.competition, headline: hd, game_id: '', g: { game_id: '', date: g.date, team: g.team, opponent: g.opponent, venue: g.venue, competition: g.competition, status: 'final', score: g.result } });
   }
   function lastGameCard(g, avg, share) {
-    const res = String(g.result || '');
+    const liveG = (ds('schedule') || []).some((x) => x.game_id === g.game_id && x.status === 'live');  // a game in progress is not a result yet
+    const res = liveG ? '● Live' : String(g.result || '');
     const c = mk('button', 'lg-card ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '')); c.type = 'button'; c.dataset.key = g.game_id;
     const dnp = g.note === 'DNP'; c.onclick = share ? (dnp ? null : () => openShare(gameShare(g))) : () => showCard(g.game_id); if (share) { c.title = dnp ? 'Did not play' : 'Share this game'; if (dnp) { c.disabled = true; c.style.cursor = 'default'; } }
     const top = mk('div', 'lg-top'); top.append(mk('span', '', dayFmt(g.date)), mk('span', 'lg-res', res || '—'));
@@ -3161,7 +3162,7 @@
     else [['PTS', g.pts], ['REB', g.reb], ['AST', g.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', v === '' || v == null ? '—' : String(v)), mk('span', '', k)); nums.append(d); });
     const foot = mk('div', 'lg-foot');
     foot.append(mk('span', '', g.note === 'DNP' ? '' : `${g.min || '—'} min · FG ${g.fg || '—'}`));
-    if (avg != null && g.pts !== '' && g.pts != null) { const diff = Number(g.pts) - avg; foot.append(mk('span', 'lg-diff ' + (diff >= 0 ? 'up' : 'down'), `${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff).toFixed(1)} vs avg`)); }
+    if (!liveG && avg != null && g.pts !== '' && g.pts != null) { const diff = Number(g.pts) - avg; foot.append(mk('span', 'lg-diff ' + (diff >= 0 ? 'up' : 'down'), `${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff).toFixed(1)} vs avg`)); }
     c.append(top, opp, nums, foot, mk('div', 'lg-comp', shortComp(g.competition)));
     return c;
   }
@@ -3321,7 +3322,7 @@
           cgw.forEach((g) => { ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(g[x]) || 0; }); t.tpm += Number(String(g.three || '').split('/')[0]) || 0; });
           const wr = ppSection('Within reach', `His next season milestones in ${cur.competition}, nearest first.`); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
           const box = mk('div', 'aw-watch pp-watch'); watchCards(box, [t], () => {}, 4, true); box.querySelectorAll('.aw-wtop').forEach((x) => x.remove()); wr.append(box); el.append(wr); } }
-      const lgW = games.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = games.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
+      const liveIds = new Set(((ds('schedule') || [])).filter((x) => x.status === 'live').map((x) => x.game_id)); const doneG = games.filter((g) => !liveIds.has(g.game_id)); const lgW = doneG.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = doneG.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
       const tapTx = isProspect ? 'Tap a game to share his line.' : 'Tap a game for the full game center.'; const lg = isProspect ? ppSection('Best games', `His best game from each tournament, most recent first. ${tapTx}`) : ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. ${tapTx}` : tapTx);
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
