@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:39:35+01:00",
+ "at": "2026-11-11T03:40:27+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -9,12 +9,12 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:30",
+   "clock": "03:10",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     66,
+     68,
      14
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:30",
+   "clock": "05:58",
    "done": false,
    "teams": [
     [
