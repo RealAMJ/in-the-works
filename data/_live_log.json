@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:44:08+01:00",
+ "at": "2026-11-11T01:45:00+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:39",
+   "clock": "17:05",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:16",
+   "clock": "02:29",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     22,
+     26,
      15
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:14",
+   "clock": "05:00",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     26,
+     28,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:22",
+   "clock": "02:58",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     36,
+     38,
      15
     ]
    ]
