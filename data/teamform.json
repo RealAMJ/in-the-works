@@ -6032,5 +6032,33 @@
   "note": "",
   "leaders": "Peterson|25|4|4;Bailey|23|7|2;Collier|17|5|5",
   "source": "ESPN"
+ },
+ {
+  "row_id": "csm-oradea-2026-11-11",
+  "team": "CSM Oradea",
+  "date": "2026-11-11",
+  "competition": "FIBA Europe Cup",
+  "opponent": "Fribourg Olympic",
+  "venue": "Away",
+  "score": "93-67",
+  "result": "W",
+  "top": "Richard 20 pts, 3 reb",
+  "note": "",
+  "leaders": "Richard|20|3|2;Nichols|16|7|8;Akin|16|4|2",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "fribourg-olympic-2026-11-11",
+  "team": "Fribourg Olympic",
+  "date": "2026-11-11",
+  "competition": "FIBA Europe Cup",
+  "opponent": "CSM Oradea",
+  "venue": "Home",
+  "score": "67-93",
+  "result": "L",
+  "top": "Colon 12 pts, 1 reb",
+  "note": "",
+  "leaders": "Colon|12|1|1;Cotture|10|4|0;Moerman|10|6|3",
+  "source": "FIBA LiveStats"
  }
 ]
