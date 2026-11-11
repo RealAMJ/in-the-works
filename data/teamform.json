@@ -5920,5 +5920,33 @@
   "note": "",
   "leaders": "Brooks|22|1|2;Garner|13|6|2;Kampen|13|2|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "iona-2026-11-11",
+  "team": "Iona",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Fordham",
+  "venue": "Away",
+  "score": "72-78",
+  "result": "L",
+  "top": "Mitchell 16 pts, 12 reb",
+  "note": "",
+  "leaders": "Mitchell|16|12|0;Akametu|16|3|2;Vanderhorst|13|1|2;Odutayo|13|6|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "fordham-2026-11-11",
+  "team": "Fordham",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Home",
+  "score": "78-72",
+  "result": "W",
+  "top": "Lindsey 20 pts, 1 reb",
+  "note": "",
+  "leaders": "Lindsey|20|1|8;Patrick|13|4|3;Jacobs|12|1|0",
+  "source": "ESPN"
  }
 ]

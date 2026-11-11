@@ -5972,5 +5972,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "fall-2026-11-11",
+  "player": "Alliou Fall",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "team": "Iona",
+  "opponent": "Fordham",
+  "venue": "Away",
+  "result": "L 72-78",
+  "min": 13,
+  "pts": 2,
+  "reb": 9,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "1/1",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 9,
+  "stl": 0,
+  "blk": 0,
+  "tov": 2,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]
