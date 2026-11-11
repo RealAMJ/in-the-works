@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:04:32+01:00",
+ "at": "2026-11-11T01:05:24+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:18",
+   "clock": "07:01",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:44",
+   "clock": "18:06",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:25",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     0,
+     3,
      17
     ],
     [
@@ -78,17 +78,17 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:27",
+   "clock": "17:37",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     7,
+     9,
      14
     ],
     [
      "Central Michigan Chippewas",
-     2,
+     4,
      15
     ]
    ]
