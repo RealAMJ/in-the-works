@@ -45270,7 +45270,7 @@
   "fg": "0/6",
   "three": "0/2",
   "ft": "6/8",
-  "pm": 8,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45282,7 +45282,7 @@
   "player": "Klay Thompson",
   "pos": "",
   "min": 20,
-  "pts": 7,
+  "pts": 8,
   "reb": 0,
   "ast": 1,
   "stl": 1,
@@ -45290,8 +45290,8 @@
   "tov": 1,
   "fg": "2/10",
   "three": "1/8",
-  "ft": "2/2",
-  "pm": 2,
+  "ft": "3/3",
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45312,7 +45312,7 @@
   "fg": "4/8",
   "three": "3/4",
   "ft": "3/4",
-  "pm": 8,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45459,7 +45459,7 @@
   "fg": "3/5",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -10,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45480,7 +45480,7 @@
   "fg": "1/8",
   "three": "0/3",
   "ft": "4/5",
-  "pm": -21,
+  "pm": -22,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -45522,7 +45522,7 @@
   "fg": "6/8",
   "three": "2/3",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
