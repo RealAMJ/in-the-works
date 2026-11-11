@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:56:07+01:00",
+ "at": "2026-11-11T03:56:58+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -9,7 +9,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:31",
+   "clock": "00:16",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Lipscomb Bisons",
-     85,
+     86,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:03",
+   "clock": "00:59",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "New Mexico Lobos",
-     46,
+     47,
      13
     ]
    ]
