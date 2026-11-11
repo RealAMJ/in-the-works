@@ -13,7 +13,8 @@
    0.1328,
    0.3156,
    0.263
-  ]
+  ],
+  "sm": "photos/sm/michael-odinks.webp"
  },
  {
   "player": "Bobi Klintman",
@@ -29,7 +30,8 @@
    0.1139,
    0.2717,
    0.2264
-  ]
+  ],
+  "sm": "photos/sm/bobi-klintman.webp"
  },
  {
   "player": "Pelle Larsson",
@@ -45,7 +47,8 @@
    0.1592,
    0.3125,
    0.4276
-  ]
+  ],
+  "sm": "photos/sm/pelle-larsson.webp"
  },
  {
   "player": "Ademar Santos",
@@ -61,7 +64,8 @@
    0.1404,
    0.3959,
    0.4729
-  ]
+  ],
+  "sm": "photos/sm/ademar-santos.webp"
  },
  {
   "player": "Alliou Fall",
@@ -77,7 +81,8 @@
    0.1566,
    0.3784,
    0.4723
-  ]
+  ],
+  "sm": "photos/sm/alliou-fall.webp"
  },
  {
   "player": "Barra Njie",
@@ -93,7 +98,8 @@
    0.1679,
    0.2973,
    0.275
-  ]
+  ],
+  "sm": "photos/sm/barra-njie.webp"
  },
  {
   "player": "Casper Pohto",
@@ -109,7 +115,8 @@
    0.1043,
    0.4271,
    0.514
-  ]
+  ],
+  "sm": "photos/sm/casper-pohto.webp"
  },
  {
   "player": "Denzel Andersson",
@@ -125,7 +132,8 @@
    0.0304,
    0.3379,
    0.2004
-  ]
+  ],
+  "sm": "photos/sm/denzel-andersson.webp"
  },
  {
   "player": "Elliot Cadeau",
@@ -141,7 +149,8 @@
    0.056,
    0.4016,
    0.5227
-  ]
+  ],
+  "sm": "photos/sm/elliot-cadeau.webp"
  },
  {
   "player": "Gustav Hansson",
@@ -157,7 +166,8 @@
    0.0824,
    0.354,
    0.2563
-  ]
+  ],
+  "sm": "photos/sm/gustav-hansson.webp"
  },
  {
   "player": "Hugo Tidare",
@@ -173,7 +183,8 @@
    0.1495,
    0.4158,
    0.4657
-  ]
+  ],
+  "sm": "photos/sm/hugo-tidare.webp"
  },
  {
   "player": "Julius Price",
@@ -189,7 +200,8 @@
    0.1457,
    0.4059,
    0.479
-  ]
+  ],
+  "sm": "photos/sm/julius-price.webp"
  },
  {
   "player": "Luka Babic",
@@ -205,7 +217,8 @@
    0.0691,
    0.5065,
    0.3963
-  ]
+  ],
+  "sm": "photos/sm/luka-babic.webp"
  },
  {
   "player": "Melwin Pantzar",
@@ -221,7 +234,8 @@
    0.2304,
    0.6758,
    0.5696
-  ]
+  ],
+  "sm": "photos/sm/melwin-pantzar.webp"
  },
  {
   "player": "Nathan Amoran",
@@ -237,7 +251,8 @@
    0.1397,
    0.372,
    0.4314
-  ]
+  ],
+  "sm": "photos/sm/nathan-amoran.webp"
  },
  {
   "player": "Nils Cooper",
@@ -253,7 +268,8 @@
    0.1795,
    0.4367,
    0.4662
-  ]
+  ],
+  "sm": "photos/sm/nils-cooper.webp"
  },
  {
   "player": "Oskar Stumer",
@@ -269,7 +285,8 @@
    0.0974,
    0.4216,
    0.5308
-  ]
+  ],
+  "sm": "photos/sm/oskar-stumer.webp"
  },
  {
   "player": "Simon Birgander",
@@ -285,7 +302,8 @@
    0.1536,
    0.7101,
    0.6036
-  ]
+  ],
+  "sm": "photos/sm/simon-birgander.webp"
  },
  {
   "player": "Tunde Fasasi",
@@ -301,7 +319,8 @@
    0.1247,
    0.4057,
    0.4841
-  ]
+  ],
+  "sm": "photos/sm/tunde-fasasi.webp"
  },
  {
   "player": "Viktor Gaddefors",
@@ -317,7 +336,8 @@
    0.0804,
    0.3523,
    0.3089
-  ]
+  ],
+  "sm": "photos/sm/viktor-gaddefors.webp"
  },
  {
   "player": "Villiam Garcia Adsten",
@@ -333,7 +353,8 @@
    0.2793,
    0.4429,
    0.4554
-  ]
+  ],
+  "sm": "photos/sm/villiam-garcia-adsten.webp"
  },
  {
   "player": "Wilhelm Falk",
@@ -349,7 +370,8 @@
    0.1464,
    0.657,
    0.5643
-  ]
+  ],
+  "sm": "photos/sm/wilhelm-falk.webp"
  },
  {
   "player": "William Berg",
@@ -365,7 +387,8 @@
    0.154,
    0.4044,
    0.4499
-  ]
+  ],
+  "sm": "photos/sm/william-berg.webp"
  },
  {
   "player": "Linus Holmström",
@@ -381,7 +404,8 @@
    0.1489,
    0.4648,
    0.5154
-  ]
+  ],
+  "sm": "photos/sm/linus-holmstrom.webp"
  },
  {
   "player": "William Kermoury",
@@ -397,7 +421,8 @@
    0.1313,
    0.3992,
    0.4747
-  ]
+  ],
+  "sm": "photos/sm/william-kermoury.webp"
  },
  {
   "player": "Zaba Bangala",
@@ -413,7 +438,8 @@
    0.1143,
    0.5,
    0.3768
-  ]
+  ],
+  "sm": "photos/sm/zaba-bangala.webp"
  },
  {
   "player": "Jonatan Arvidsson",
@@ -429,7 +455,8 @@
    0.0696,
    0.3446,
    0.2554
-  ]
+  ],
+  "sm": "photos/sm/jonatan-arvidsson.webp"
  },
  {
   "player": "Vedran Bosnić",
@@ -445,7 +472,8 @@
    0.0607,
    0.5514,
    0.4214
-  ]
+  ],
+  "sm": "photos/sm/vedran-bosnic.webp"
  },
  {
   "player": "Adam Rask",
@@ -457,7 +485,8 @@
    0.0933,
    0.242,
    0.2017
-  ]
+  ],
+  "sm": "photos/sm/sbl-adam-rask.webp"
  },
  {
   "player": "Adam Tafra",
@@ -469,7 +498,8 @@
    0.1417,
    0.2833,
    0.2361
-  ]
+  ],
+  "sm": "photos/sm/sbl-adam-tafra.webp"
  },
  {
   "player": "Andrew Rohde",
@@ -481,7 +511,8 @@
    0.0333,
    0.254,
    0.2117
-  ]
+  ],
+  "sm": "photos/sm/sbl-andrew-rohde.webp"
  },
  {
   "player": "Anes Zekovic",
@@ -493,7 +524,8 @@
    0.0967,
    0.294,
    0.245
-  ]
+  ],
+  "sm": "photos/sm/sbl-anes-zekovic.webp"
  },
  {
   "player": "Anton Johansson",
@@ -505,7 +537,8 @@
    0.0633,
    0.34,
    0.2833
-  ]
+  ],
+  "sm": "photos/sm/sbl-anton-johansson.webp"
  },
  {
   "player": "Brayden Parker",
@@ -517,7 +550,8 @@
    0.065,
    0.254,
    0.2117
-  ]
+  ],
+  "sm": "photos/sm/sbl-brayden-parker.webp"
  },
  {
   "player": "Dalton Gayman",
@@ -529,7 +563,8 @@
    0.1417,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-dalton-gayman.webp"
  },
  {
   "player": "Eric Van Der Heijden",
@@ -541,7 +576,8 @@
    0.0933,
    0.216,
    0.18
-  ]
+  ],
+  "sm": "photos/sm/sbl-eric-van-der-heijden.webp"
  },
  {
   "player": "Jalen Leach",
@@ -553,7 +589,8 @@
    0.1133,
    0.244,
    0.2033
-  ]
+  ],
+  "sm": "photos/sm/sbl-jalen-leach.webp"
  },
  {
   "player": "Javier Marin",
@@ -565,7 +602,8 @@
    0.0783,
    0.212,
    0.1767
-  ]
+  ],
+  "sm": "photos/sm/sbl-javier-marin.webp"
  },
  {
   "player": "Jayden Martinez",
@@ -577,7 +615,8 @@
    0.0917,
    0.246,
    0.205
-  ]
+  ],
+  "sm": "photos/sm/sbl-jayden-martinez.webp"
  },
  {
   "player": "Jaylin Sean Henderson",
@@ -589,7 +628,8 @@
    0.0633,
    0.256,
    0.2133
-  ]
+  ],
+  "sm": "photos/sm/sbl-jaylin-sean-henderson.webp"
  },
  {
   "player": "Jeffery Taylor",
@@ -601,7 +641,8 @@
    0.14,
    0.464,
    0.3867
-  ]
+  ],
+  "sm": "photos/sm/sbl-jeffery-taylor.webp"
  },
  {
   "player": "Jesper Hallberg",
@@ -613,7 +654,8 @@
    0.0633,
    0.33,
    0.275
-  ]
+  ],
+  "sm": "photos/sm/sbl-jesper-hallberg.webp"
  },
  {
   "player": "Jhonny Tovar",
@@ -625,7 +667,8 @@
    0.07,
    0.334,
    0.2783
-  ]
+  ],
+  "sm": "photos/sm/sbl-jhonny-tovar.webp"
  },
  {
   "player": "Jordan Ivy Curry",
@@ -637,7 +680,8 @@
    0.1283,
    0.29,
    0.2417
-  ]
+  ],
+  "sm": "photos/sm/sbl-jordan-ivy-curry.webp"
  },
  {
   "player": "K.J. Debrick",
@@ -649,7 +693,8 @@
    0.14,
    0.188,
    0.1567
-  ]
+  ],
+  "sm": "photos/sm/sbl-kj-debrick.webp"
  },
  {
   "player": "Leo Ryott",
@@ -661,7 +706,8 @@
    0.1233,
    0.242,
    0.2017
-  ]
+  ],
+  "sm": "photos/sm/sbl-leo-ryott.webp"
  },
  {
   "player": "Marko Dujkovic",
@@ -673,7 +719,8 @@
    0.1167,
    0.228,
    0.19
-  ]
+  ],
+  "sm": "photos/sm/sbl-marko-dujkovic.webp"
  },
  {
   "player": "Michael Graham",
@@ -685,7 +732,8 @@
    0.095,
    0.232,
    0.1933
-  ]
+  ],
+  "sm": "photos/sm/sbl-michael-graham.webp"
  },
  {
   "player": "Milos Bajic",
@@ -697,7 +745,8 @@
    0.1483,
    0.24,
    0.2
-  ]
+  ],
+  "sm": "photos/sm/sbl-milos-bajic.webp"
  },
  {
   "player": "Nico Galette",
@@ -709,7 +758,8 @@
    0.1233,
    0.22,
    0.1833
-  ]
+  ],
+  "sm": "photos/sm/sbl-nico-galette.webp"
  },
  {
   "player": "Pierre Hampton",
@@ -721,7 +771,8 @@
    0.1217,
    0.364,
    0.3033
-  ]
+  ],
+  "sm": "photos/sm/sbl-pierre-hampton.webp"
  },
  {
   "player": "Rahsaan Edwards",
@@ -733,7 +784,8 @@
    0.0883,
    0.348,
    0.29
-  ]
+  ],
+  "sm": "photos/sm/sbl-rahsaan-edwards.webp"
  },
  {
   "player": "Tomas Atli Bjarkason",
@@ -745,7 +797,8 @@
    0.06,
    0.318,
    0.265
-  ]
+  ],
+  "sm": "photos/sm/sbl-tomas-atli-bjarkason.webp"
  },
  {
   "player": "Tre-Vaughn Minott",
@@ -757,7 +810,8 @@
    0.0533,
    0.296,
    0.2467
-  ]
+  ],
+  "sm": "photos/sm/sbl-trevaughn-minott.webp"
  },
  {
   "player": "Zane Nelson",
@@ -769,7 +823,8 @@
    0.0683,
    0.236,
    0.1967
-  ]
+  ],
+  "sm": "photos/sm/sbl-zane-nelson.webp"
  },
  {
   "player": "Charles Barton",
@@ -781,7 +836,8 @@
    0.055,
    0.296,
    0.2467
-  ]
+  ],
+  "sm": "photos/sm/sbl-charles-barton.webp"
  },
  {
   "player": "Ali Ali",
@@ -793,7 +849,8 @@
    0.095,
    0.252,
    0.21
-  ]
+  ],
+  "sm": "photos/sm/sbl-ali-ali.webp"
  },
  {
   "player": "Abdou Medjedoub",
@@ -805,7 +862,8 @@
    0.4633,
    0.188,
    0.1567
-  ]
+  ],
+  "sm": "photos/sm/sbl-abdou-medjedoub.webp"
  },
  {
   "player": "Alan Zekovic",
@@ -817,7 +875,8 @@
    0.13,
    0.242,
    0.2017
-  ]
+  ],
+  "sm": "photos/sm/sbl-alan-zekovic.webp"
  },
  {
   "player": "Albert Forsberg",
@@ -829,7 +888,8 @@
    0.0667,
    0.248,
    0.2067
-  ]
+  ],
+  "sm": "photos/sm/sbl-albert-forsberg.webp"
  },
  {
   "player": "Albin Ringheim",
@@ -841,7 +901,8 @@
    0.085,
    0.248,
    0.2067
-  ]
+  ],
+  "sm": "photos/sm/sbl-albin-ringheim.webp"
  },
  {
   "player": "Alexander Karras",
@@ -853,7 +914,8 @@
    0.05,
    0.32,
    0.2667
-  ]
+  ],
+  "sm": "photos/sm/sbl-alexander-karras.webp"
  },
  {
   "player": "Alexander Yemane",
@@ -865,7 +927,8 @@
    0.085,
    0.26,
    0.2167
-  ]
+  ],
+  "sm": "photos/sm/sbl-alexander-yemane.webp"
  },
  {
   "player": "Anders Bahati",
@@ -877,7 +940,8 @@
    0.08,
    0.262,
    0.2183
-  ]
+  ],
+  "sm": "photos/sm/sbl-anders-bahati.webp"
  },
  {
   "player": "Andreas Person",
@@ -889,7 +953,8 @@
    0.085,
    0.282,
    0.235
-  ]
+  ],
+  "sm": "photos/sm/sbl-andreas-person.webp"
  },
  {
   "player": "André Lorentsson",
@@ -901,7 +966,8 @@
    0.0617,
    0.236,
    0.1967
-  ]
+  ],
+  "sm": "photos/sm/sbl-andre-lorentsson.webp"
  },
  {
   "player": "Anton Jönsson",
@@ -913,7 +979,8 @@
    0.0817,
    0.31,
    0.2583
-  ]
+  ],
+  "sm": "photos/sm/sbl-anton-jonsson.webp"
  },
  {
   "player": "Arik Smith",
@@ -925,7 +992,8 @@
    0.115,
    0.42,
    0.35
-  ]
+  ],
+  "sm": "photos/sm/sbl-arik-smith.webp"
  },
  {
   "player": "Arvid Strömsten",
@@ -937,7 +1005,8 @@
    0.0817,
    0.234,
    0.195
-  ]
+  ],
+  "sm": "photos/sm/sbl-arvid-stromsten.webp"
  },
  {
   "player": "Ashton Sherrell",
@@ -949,7 +1018,8 @@
    0.0883,
    0.296,
    0.2467
-  ]
+  ],
+  "sm": "photos/sm/sbl-ashton-sherrell.webp"
  },
  {
   "player": "Basem Abdulkader",
@@ -961,7 +1031,8 @@
    0.0683,
    0.24,
    0.2
-  ]
+  ],
+  "sm": "photos/sm/sbl-basem-abdulkader.webp"
  },
  {
   "player": "Bj Symons",
@@ -973,7 +1044,8 @@
    0.0783,
    0.238,
    0.1983
-  ]
+  ],
+  "sm": "photos/sm/sbl-bj-symons.webp"
  },
  {
   "player": "Boje Finger",
@@ -985,7 +1057,8 @@
    0.1,
    0.324,
    0.27
-  ]
+  ],
+  "sm": "photos/sm/sbl-boje-finger.webp"
  },
  {
   "player": "Brian Goracke",
@@ -997,7 +1070,8 @@
    0.06,
    0.292,
    0.2433
-  ]
+  ],
+  "sm": "photos/sm/sbl-brian-goracke.webp"
  },
  {
   "player": "Bryan Jefferson",
@@ -1009,7 +1083,8 @@
    0.0633,
    0.256,
    0.2133
-  ]
+  ],
+  "sm": "photos/sm/sbl-bryan-jefferson.webp"
  },
  {
   "player": "Cameron Faas",
@@ -1021,7 +1096,8 @@
    0.165,
    0.336,
    0.28
-  ]
+  ],
+  "sm": "photos/sm/sbl-cameron-faas.webp"
  },
  {
   "player": "DJ Smith",
@@ -1033,7 +1109,8 @@
    0.175,
    0.388,
    0.3233
-  ]
+  ],
+  "sm": "photos/sm/sbl-dj-smith.webp"
  },
  {
   "player": "Daniel Hansson",
@@ -1045,7 +1122,8 @@
    0.1,
    0.25,
    0.2083
-  ]
+  ],
+  "sm": "photos/sm/sbl-daniel-hansson.webp"
  },
  {
   "player": "Daniel Johansson",
@@ -1057,7 +1135,8 @@
    0.07,
    0.228,
    0.19
-  ]
+  ],
+  "sm": "photos/sm/sbl-daniel-johansson.webp"
  },
  {
   "player": "Daniel Pokela",
@@ -1069,7 +1148,8 @@
    0.09,
    0.212,
    0.1767
-  ]
+  ],
+  "sm": "photos/sm/sbl-daniel-pokela.webp"
  },
  {
   "player": "David Höök",
@@ -1081,7 +1161,8 @@
    0.0817,
    0.26,
    0.2167
-  ]
+  ],
+  "sm": "photos/sm/sbl-david-hook.webp"
  },
  {
   "player": "Denzel George",
@@ -1093,7 +1174,8 @@
    0.075,
    0.274,
    0.2283
-  ]
+  ],
+  "sm": "photos/sm/sbl-denzel-george.webp"
  },
  {
   "player": "Derreck Brooks Jr",
@@ -1105,7 +1187,8 @@
    0.0567,
    0.294,
    0.245
-  ]
+  ],
+  "sm": "photos/sm/sbl-derreck-brooks-jr.webp"
  },
  {
   "player": "Duko Bos",
@@ -1117,7 +1200,8 @@
    0.0783,
    0.24,
    0.2
-  ]
+  ],
+  "sm": "photos/sm/sbl-duko-bos.webp"
  },
  {
   "player": "Edwin Vilic",
@@ -1129,7 +1213,8 @@
    0.1167,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-edwin-vilic.webp"
  },
  {
   "player": "Elliot Enbom",
@@ -1141,7 +1226,8 @@
    0.11,
    0.248,
    0.2067
-  ]
+  ],
+  "sm": "photos/sm/sbl-elliot-enbom.webp"
  },
  {
   "player": "Emanuel Lundmark",
@@ -1153,7 +1239,8 @@
    0.0533,
    0.264,
    0.22
-  ]
+  ],
+  "sm": "photos/sm/sbl-emanuel-lundmark.webp"
  },
  {
   "player": "Emil Drottman",
@@ -1165,7 +1252,8 @@
    0.0817,
    0.296,
    0.2467
-  ]
+  ],
+  "sm": "photos/sm/sbl-emil-drottman.webp"
  },
  {
   "player": "Ephraim Bahati",
@@ -1177,7 +1265,8 @@
    0.0583,
    0.35,
    0.2917
-  ]
+  ],
+  "sm": "photos/sm/sbl-ephraim-bahati.webp"
  },
  {
   "player": "Erik Augustine",
@@ -1189,7 +1278,8 @@
    0.0833,
    0.254,
    0.2117
-  ]
+  ],
+  "sm": "photos/sm/sbl-erik-augustine.webp"
  },
  {
   "player": "Erik Persson",
@@ -1201,7 +1291,8 @@
    0.07,
    0.226,
    0.1883
-  ]
+  ],
+  "sm": "photos/sm/sbl-erik-persson.webp"
  },
  {
   "player": "Felix Broström",
@@ -1213,7 +1304,8 @@
    0.09,
    0.354,
    0.295
-  ]
+  ],
+  "sm": "photos/sm/sbl-felix-brostrom.webp"
  },
  {
   "player": "Felix Edwardsson",
@@ -1225,7 +1317,8 @@
    0.085,
    0.316,
    0.2633
-  ]
+  ],
+  "sm": "photos/sm/sbl-felix-edwardsson.webp"
  },
  {
   "player": "Felix Wollberg",
@@ -1237,7 +1330,8 @@
    0.0677,
    0.349,
    0.349
-  ]
+  ],
+  "sm": "photos/sm/sbl-felix-wollberg.webp"
  },
  {
   "player": "Filip Gewert",
@@ -1249,7 +1343,8 @@
    0.08,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-filip-gewert.webp"
  },
  {
   "player": "Filip Larsson",
@@ -1261,7 +1356,8 @@
    0.105,
    0.264,
    0.22
-  ]
+  ],
+  "sm": "photos/sm/sbl-filip-larsson.webp"
  },
  {
   "player": "Filip Milivojevic",
@@ -1273,7 +1369,8 @@
    0.135,
    0.226,
    0.1883
-  ]
+  ],
+  "sm": "photos/sm/sbl-filip-milivojevic.webp"
  },
  {
   "player": "Fredrik Andersson",
@@ -1285,7 +1382,8 @@
    0.085,
    0.256,
    0.2133
-  ]
+  ],
+  "sm": "photos/sm/sbl-fredrik-andersson.webp"
  },
  {
   "player": "Gabriel Trygg",
@@ -1297,7 +1395,8 @@
    0.095,
    0.204,
    0.17
-  ]
+  ],
+  "sm": "photos/sm/sbl-gabriel-trygg.webp"
  },
  {
   "player": "Gustav Hallberg",
@@ -1309,7 +1408,8 @@
    0.0733,
    0.33,
    0.275
-  ]
+  ],
+  "sm": "photos/sm/sbl-gustav-hallberg.webp"
  },
  {
   "player": "Idriss Kamara",
@@ -1321,7 +1421,8 @@
    0.1562,
    0.3656,
    0.3656
-  ]
+  ],
+  "sm": "photos/sm/sbl-idriss-kamara.webp"
  },
  {
   "player": "Isac Åhnstrand",
@@ -1333,7 +1434,8 @@
    0.0733,
    0.252,
    0.21
-  ]
+  ],
+  "sm": "photos/sm/sbl-isac-ahnstrand.webp"
  },
  {
   "player": "Isaiah Hill",
@@ -1345,7 +1447,8 @@
    0.0867,
    0.314,
    0.2617
-  ]
+  ],
+  "sm": "photos/sm/sbl-isaiah-hill.webp"
  },
  {
   "player": "Isak Andersson",
@@ -1357,7 +1460,8 @@
    0.1117,
    0.236,
    0.1967
-  ]
+  ],
+  "sm": "photos/sm/sbl-isak-andersson.webp"
  },
  {
   "player": "Jakob Kinigi",
@@ -1369,7 +1473,8 @@
    0.0717,
    0.252,
    0.21
-  ]
+  ],
+  "sm": "photos/sm/sbl-jakob-kinigi.webp"
  },
  {
   "player": "Jalen Lake",
@@ -1381,7 +1486,8 @@
    0.12,
    0.3,
    0.25
-  ]
+  ],
+  "sm": "photos/sm/sbl-jalen-lake.webp"
  },
  {
   "player": "Johan Löfberg",
@@ -1393,7 +1499,8 @@
    0.0483,
    0.328,
    0.2733
-  ]
+  ],
+  "sm": "photos/sm/sbl-johan-lofberg.webp"
  },
  {
   "player": "John Brändmark",
@@ -1405,7 +1512,8 @@
    0.1017,
    0.2688,
    0.215
-  ]
+  ],
+  "sm": "photos/sm/sbl-john-brandmark.webp"
  },
  {
   "player": "John Gonzalez",
@@ -1417,7 +1525,8 @@
    0.12,
    0.24,
    0.2
-  ]
+  ],
+  "sm": "photos/sm/sbl-john-gonzalez.webp"
  },
  {
   "player": "Jonatan Boberg",
@@ -1429,7 +1538,8 @@
    0.0767,
    0.246,
    0.205
-  ]
+  ],
+  "sm": "photos/sm/sbl-jonatan-boberg.webp"
  },
  {
   "player": "Jonathan Ninkingira",
@@ -1441,7 +1551,8 @@
    0.0967,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-jonathan-ninkingira.webp"
  },
  {
   "player": "Kembo Nilsson",
@@ -1453,7 +1564,8 @@
    0.145,
    0.236,
    0.1967
-  ]
+  ],
+  "sm": "photos/sm/sbl-kembo-nilsson.webp"
  },
  {
   "player": "Kenan Barlov",
@@ -1465,7 +1577,8 @@
    0.155,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-kenan-barlov.webp"
  },
  {
   "player": "Koen Sapwell",
@@ -1477,7 +1590,8 @@
    0.0883,
    0.244,
    0.2033
-  ]
+  ],
+  "sm": "photos/sm/sbl-koen-sapwell.webp"
  },
  {
   "player": "Kyle Bynoe",
@@ -1489,7 +1603,8 @@
    0.0767,
    0.218,
    0.1817
-  ]
+  ],
+  "sm": "photos/sm/sbl-kyle-bynoe.webp"
  },
  {
   "player": "Leo Steinsen",
@@ -1501,7 +1616,8 @@
    0.1117,
    0.232,
    0.1933
-  ]
+  ],
+  "sm": "photos/sm/sbl-leo-steinsen.webp"
  },
  {
   "player": "Lojong Andarea Ladu",
@@ -1513,7 +1629,8 @@
    0.5517,
    0.138,
    0.115
-  ]
+  ],
+  "sm": "photos/sm/sbl-lojong-andarea-ladu.webp"
  },
  {
   "player": "Lucas Veller",
@@ -1525,7 +1642,8 @@
    0.065,
    0.266,
    0.2217
-  ]
+  ],
+  "sm": "photos/sm/sbl-lucas-veller.webp"
  },
  {
   "player": "Ludvig Johansson",
@@ -1537,7 +1655,8 @@
    0.0817,
    0.294,
    0.245
-  ]
+  ],
+  "sm": "photos/sm/sbl-ludvig-johansson.webp"
  },
  {
   "player": "Lukas Friberg",
@@ -1549,7 +1668,8 @@
    0.1567,
    0.252,
    0.21
-  ]
+  ],
+  "sm": "photos/sm/sbl-lukas-friberg.webp"
  },
  {
   "player": "Lukas Novakovic",
@@ -1561,7 +1681,8 @@
    0.0667,
    0.224,
    0.1867
-  ]
+  ],
+  "sm": "photos/sm/sbl-lukas-novakovic.webp"
  },
  {
   "player": "Mahrcus Forlini",
@@ -1573,7 +1694,8 @@
    0.125,
    0.4,
    0.3333
-  ]
+  ],
+  "sm": "photos/sm/sbl-mahrcus-forlini.webp"
  },
  {
   "player": "Malte Fredman",
@@ -1585,7 +1707,8 @@
    0.1033,
    0.354,
    0.295
-  ]
+  ],
+  "sm": "photos/sm/sbl-malte-fredman.webp"
  },
  {
   "player": "Marco-Maximilian Reinhold Frank",
@@ -1597,7 +1720,8 @@
    0.0972,
    0.245,
    0.2042
-  ]
+  ],
+  "sm": "photos/sm/sbl-marcomaximilian-reinhold-frank.webp"
  },
  {
   "player": "Marcus Stålberg",
@@ -1609,7 +1733,8 @@
    0.0933,
    0.234,
    0.195
-  ]
+  ],
+  "sm": "photos/sm/sbl-marcus-stalberg.webp"
  },
  {
   "player": "Markeith Browning",
@@ -1621,7 +1746,8 @@
    0.0717,
    0.298,
    0.2483
-  ]
+  ],
+  "sm": "photos/sm/sbl-markeith-browning.webp"
  },
  {
   "player": "Mass Jonsson Samateh",
@@ -1633,7 +1759,8 @@
    0.1,
    0.336,
    0.28
-  ]
+  ],
+  "sm": "photos/sm/sbl-mass-jonsson-samateh.webp"
  },
  {
   "player": "Max Andersson",
@@ -1645,7 +1772,8 @@
    0.1167,
    0.272,
    0.2267
-  ]
+  ],
+  "sm": "photos/sm/sbl-max-andersson.webp"
  },
  {
   "player": "Max Wirestig",
@@ -1657,7 +1785,8 @@
    0.0783,
    0.328,
    0.2733
-  ]
+  ],
+  "sm": "photos/sm/sbl-max-wirestig.webp"
  },
  {
   "player": "Maximus Karamouzis",
@@ -1669,7 +1798,8 @@
    0.1633,
    0.25,
    0.2083
-  ]
+  ],
+  "sm": "photos/sm/sbl-maximus-karamouzis.webp"
  },
  {
   "player": "Melker Delryd",
@@ -1681,7 +1811,8 @@
    0.085,
    0.256,
    0.2133
-  ]
+  ],
+  "sm": "photos/sm/sbl-melker-delryd.webp"
  },
  {
   "player": "Melker Lindblom",
@@ -1693,7 +1824,8 @@
    0.09,
    0.284,
    0.2367
-  ]
+  ],
+  "sm": "photos/sm/sbl-melker-lindblom.webp"
  },
  {
   "player": "Mio Hjalmarsson",
@@ -1705,7 +1837,8 @@
    0.0633,
    0.362,
    0.3017
-  ]
+  ],
+  "sm": "photos/sm/sbl-mio-hjalmarsson.webp"
  },
  {
   "player": "Moltas Gyllebring",
@@ -1717,7 +1850,8 @@
    0.0867,
    0.29,
    0.2417
-  ]
+  ],
+  "sm": "photos/sm/sbl-moltas-gyllebring.webp"
  },
  {
   "player": "Nathan Dawit",
@@ -1729,7 +1863,8 @@
    0.0917,
    0.414,
    0.345
-  ]
+  ],
+  "sm": "photos/sm/sbl-nathan-dawit.webp"
  },
  {
   "player": "Nathaniel Nzonyansi",
@@ -1741,7 +1876,8 @@
    0.11,
    0.32,
    0.2667
-  ]
+  ],
+  "sm": "photos/sm/sbl-nathaniel-nzonyansi.webp"
  },
  {
   "player": "Nicholas Spires",
@@ -1753,7 +1889,8 @@
    0.0883,
    0.248,
    0.2067
-  ]
+  ],
+  "sm": "photos/sm/sbl-nicholas-spires.webp"
  },
  {
   "player": "Niklas Larsson",
@@ -1765,7 +1902,8 @@
    0.1567,
    0.224,
    0.1867
-  ]
+  ],
+  "sm": "photos/sm/sbl-niklas-larsson.webp"
  },
  {
   "player": "Nils Botold",
@@ -1777,7 +1915,8 @@
    0.09,
    0.262,
    0.2183
-  ]
+  ],
+  "sm": "photos/sm/sbl-nils-botold.webp"
  },
  {
   "player": "Noah Kartal",
@@ -1789,7 +1928,8 @@
    0.0817,
    0.236,
    0.1967
-  ]
+  ],
+  "sm": "photos/sm/sbl-noah-kartal.webp"
  },
  {
   "player": "Noel Karlsson Rask",
@@ -1801,7 +1941,8 @@
    0.1017,
    0.252,
    0.21
-  ]
+  ],
+  "sm": "photos/sm/sbl-noel-karlsson-rask.webp"
  },
  {
   "player": "Oliver Cupan",
@@ -1813,7 +1954,8 @@
    0.0733,
    0.284,
    0.2367
-  ]
+  ],
+  "sm": "photos/sm/sbl-oliver-cupan.webp"
  },
  {
   "player": "Oliver Gehrke",
@@ -1825,7 +1967,8 @@
    0.0767,
    0.284,
    0.2367
-  ]
+  ],
+  "sm": "photos/sm/sbl-oliver-gehrke.webp"
  },
  {
   "player": "Oliver Stefanovic",
@@ -1837,7 +1980,8 @@
    0.0667,
    0.348,
    0.29
-  ]
+  ],
+  "sm": "photos/sm/sbl-oliver-stefanovic.webp"
  },
  {
   "player": "Olle Stümer",
@@ -1849,7 +1993,8 @@
    0.11,
    0.22,
    0.1833
-  ]
+  ],
+  "sm": "photos/sm/sbl-olle-stumer.webp"
  },
  {
   "player": "Peter Stümer",
@@ -1861,7 +2006,8 @@
    0.105,
    0.238,
    0.1983
-  ]
+  ],
+  "sm": "photos/sm/sbl-peter-stumer.webp"
  },
  {
   "player": "Richard Mendes",
@@ -1873,7 +2019,8 @@
    0.04,
    0.362,
    0.3017
-  ]
+  ],
+  "sm": "photos/sm/sbl-richard-mendes.webp"
  },
  {
   "player": "Rickard Rietz",
@@ -1885,7 +2032,8 @@
    0.0967,
    0.224,
    0.1867
-  ]
+  ],
+  "sm": "photos/sm/sbl-rickard-rietz.webp"
  },
  {
   "player": "Robert Holmes",
@@ -1897,7 +2045,8 @@
    0.0983,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-robert-holmes.webp"
  },
  {
   "player": "Romeo Myrthil",
@@ -1909,7 +2058,8 @@
    0.0717,
    0.234,
    0.195
-  ]
+  ],
+  "sm": "photos/sm/sbl-romeo-myrthil.webp"
  },
  {
   "player": "Sebastian Forsling",
@@ -1921,7 +2071,8 @@
    0.125,
    0.434,
    0.3617
-  ]
+  ],
+  "sm": "photos/sm/sbl-sebastian-forsling.webp"
  },
  {
   "player": "Sergey Sepman",
@@ -1933,7 +2084,8 @@
    0.1067,
    0.224,
    0.1867
-  ]
+  ],
+  "sm": "photos/sm/sbl-sergey-sepman.webp"
  },
  {
   "player": "Simon Maschmann",
@@ -1945,7 +2097,8 @@
    0.095,
    0.286,
    0.2383
-  ]
+  ],
+  "sm": "photos/sm/sbl-simon-maschmann.webp"
  },
  {
   "player": "Simon Tekeste",
@@ -1957,7 +2110,8 @@
    0.1433,
    0.302,
    0.2517
-  ]
+  ],
+  "sm": "photos/sm/sbl-simon-tekeste.webp"
  },
  {
   "player": "Tim Jonsson",
@@ -1969,7 +2123,8 @@
    0.065,
    0.324,
    0.27
-  ]
+  ],
+  "sm": "photos/sm/sbl-tim-jonsson.webp"
  },
  {
   "player": "Tim Schüberg",
@@ -1981,7 +2136,8 @@
    0.145,
    0.428,
    0.3567
-  ]
+  ],
+  "sm": "photos/sm/sbl-tim-schuberg.webp"
  },
  {
   "player": "Timur Grinev",
@@ -1993,7 +2149,8 @@
    0.1617,
    0.238,
    0.1983
-  ]
+  ],
+  "sm": "photos/sm/sbl-timur-grinev.webp"
  },
  {
   "player": "Tobias Sjöberg",
@@ -2005,7 +2162,8 @@
    0.095,
    0.23,
    0.1917
-  ]
+  ],
+  "sm": "photos/sm/sbl-tobias-sjoberg.webp"
  },
  {
   "player": "Tuburu Naivalurua",
@@ -2017,7 +2175,8 @@
    0.0817,
    0.238,
    0.1983
-  ]
+  ],
+  "sm": "photos/sm/sbl-tuburu-naivalurua.webp"
  },
  {
   "player": "Valdemar Säwström",
@@ -2029,7 +2188,8 @@
    0.0717,
    0.242,
    0.2017
-  ]
+  ],
+  "sm": "photos/sm/sbl-valdemar-sawstrom.webp"
  },
  {
   "player": "Vilhelm Bodingh",
@@ -2041,7 +2201,8 @@
    0.0867,
    0.238,
    0.1983
-  ]
+  ],
+  "sm": "photos/sm/sbl-vilhelm-bodingh.webp"
  },
  {
   "player": "Ville Nyholm",
@@ -2053,7 +2214,8 @@
    0.0683,
    0.344,
    0.2867
-  ]
+  ],
+  "sm": "photos/sm/sbl-ville-nyholm.webp"
  },
  {
   "player": "William Guténius",
@@ -2065,7 +2227,8 @@
    0.0833,
    0.246,
    0.205
-  ]
+  ],
+  "sm": "photos/sm/sbl-william-gutenius.webp"
  },
  {
   "player": "Yoel Weldegergis",
@@ -2077,7 +2240,8 @@
    0.065,
    0.228,
    0.19
-  ]
+  ],
+  "sm": "photos/sm/sbl-yoel-weldegergis.webp"
  },
  {
   "player": "Åke Swahn",
@@ -2089,6 +2253,7 @@
    0.105,
    0.226,
    0.1883
-  ]
+  ],
+  "sm": "photos/sm/sbl-ake-swahn.webp"
  }
 ]

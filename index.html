@@ -25,12 +25,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@75..100,400..800&display=swap">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css?v=d9b5c388">
 <link rel="stylesheet" href="theme.css?v=50523d4c">
-<script src="dash-shim.js?v=774a6353"></script>
+<script src="dash-shim.js?v=b2b86be1"></script>
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
@@ -687,7 +687,7 @@
     const ha = homeAway(r); const mid = mk('div', 'gmx-mid');
     [ha.home, ha.away].forEach((t) => { const row = mk('div', 'gmx-t' + (t.swe ? ' swe' : '') + (r.status === 'final' ? (t.win ? ' win' : ' lose') : '')); row.append(crest(t.name, 'lg'), mk('span', 'nm', t.name), mk('span', 'sc', t.score == null ? '' : String(t.score))); mid.append(row); });
     const sw = mk('div', 'gmx-swe');
-    gmxLine(r).slice(0, 3).forEach(({ n, b, dnp }) => { const p = mk('span', 'gmx-p'); const ph = photoFor(n); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = ph.src; faceFit(im, ph); av.append(im); } else av.textContent = initials(n);
+    gmxLine(r).slice(0, 3).forEach(({ n, b, dnp }) => { const p = mk('span', 'gmx-p'); const ph = photoFor(n); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = smSrc(ph); faceFit(im, ph); av.append(im); } else av.textContent = initials(n);
       const t = mk('span', 't'); t.append(mk('b', '', n.split(' ').slice(-1)[0]));
       if (b) { const st = mk('span', 'ln'); st.append(mk('strong', '', String(b.pts)), ' pts'); [['reb', 5, 'reb'], ['ast', 4, 'ast'], ['stl', 3, 'stl'], ['blk', 3, 'blk']].filter(([k, m]) => Number(b[k]) >= m).slice(0, 1).forEach(([k, , l]) => st.append(' · ', mk('strong', '', String(b[k])), ' ' + l)); t.append(st); }
       else if (dnp) t.append(mk('span', 'ln', 'Did not play'));
@@ -2656,7 +2656,7 @@
       const nb = mk('button', 'nm', r.player); nb.type = 'button'; nb.title = 'Open ' + r.player + "'s stats and games"; nb.onclick = () => showLog(r.player);
       who.append(nb, mk('span', 'ld-sub', `${r.competition} · ${r.gp} GP`));
       const bar = mk('div', 'ld-bar'); const fill = mk('span', 'ld-fill'); fill.style.width = Math.max(2, Number(r[leadStat]) / max * 100) + '%'; bar.append(fill);
-      const ph = photoFor(r.player); if (ph) { const f = mk('span', 'ld-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); who.prepend(f); who.classList.add('has-face'); }
+      const ph = photoFor(r.player); if (ph) { const f = mk('span', 'ld-face'); const im = new Image(); im.alt = ''; im.src = smSrc(ph); faceFit(im, ph); f.append(im); who.prepend(f); who.classList.add('has-face'); }
       row.append(mk('span', 'ld-rank', String(i + 1)), who, bar, mk('span', 'ld-val', Number(r[leadStat]).toFixed(1)));
       el.append(row);
     });
@@ -2673,7 +2673,7 @@
       if (r.game_id) { c.tabIndex = 0; c.title = 'Open the game summary'; c.onclick = () => showCardFor(r.game_id, r.player); c.onkeydown = (e) => { if (e.key === 'Enter') showCardFor(r.game_id, r.player); }; }
       const top = mk('div', 'hh-top'); const w = mk('span'); w.append(names(r.player)); top.append(w, mk('span', 'hh-date', r.date ? dayFmt(r.date) : ''));
       c.append(top, mk('div', 'hh-head', tx(r, 'headline') || ''));
-      { const ph = photoFor(r.player); if (ph) { const f = mk('span', 'hh-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); c.prepend(f); c.classList.add('has-face'); } }
+      { const ph = photoFor(r.player); if (ph) { const f = mk('span', 'hh-face'); const im = new Image(); im.alt = ''; im.src = smSrc(ph); faceFit(im, ph); f.append(im); c.prepend(f); c.classList.add('has-face'); } }
       el.append(c);
     });
   });
@@ -2887,7 +2887,7 @@
   // a round avatar: the player's (or coach's) photo when we have one, otherwise his initials
   function faceAv(tag, cls, name) {
     const el = mk(tag, cls); const ph = photoFor(name);
-    if (ph) { const im = new Image(); im.src = ph.src; im.alt = ''; im.loading = 'lazy'; faceFit(im, ph); el.append(im); el.classList.add('has-ph'); }
+    if (ph) { const im = new Image(); im.src = smSrc(ph); im.alt = ''; im.loading = 'lazy'; faceFit(im, ph); el.append(im); el.classList.add('has-ph'); }
     else el.textContent = initials(name);
     return el;
   }
@@ -3115,6 +3115,8 @@
     const k = 0.6 / Math.max(0.05, f[1] - f[0]);  // face = 60% of the circle's height
     Object.assign(img.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(f[2] != null ? f[2] : 0.5) * 100}%)`, top: ((0.2 - f[0] * k) * 100) + '%', objectFit: 'fill' });
   }
+  // the small copy (photos/sm/, 360 px tall) for avatars and cards; the full photo for headers and share cards
+  function smSrc(ph) { return (ph && ph.sm) || (ph && ph.src) || ''; }
   function photoFor(name) { const ok = (r) => isSame(r.player, name) && /^(data:image\/|photos\/)/.test(String(r.src || '')); const ph = ds('photos'); return (ph && ph.find(ok)) || (prospect(name) ? prospectRows('photos').find(ok) || null : null); }
   function tabBar(tabs, cur, onPick, cls) {
     const bar = mk('div', 'subnav' + (cls ? ' ' + cls : '')); bar.setAttribute('role', 'tablist');
@@ -3207,7 +3209,7 @@
     hero.append(pic, id);
     el.append(hero);
     // sticky mini header: appears once the big header has scrolled away
-    { const mini = mk('div', 'pp-mini'); const mav = mk('span', 'pp-mini-av'); if (photo) { const im = document.createElement('img'); im.src = photo.src; im.alt = ''; faceFit(im, photo); mav.append(im); } else mav.textContent = initials(name);
+    { const mini = mk('div', 'pp-mini'); const mav = mk('span', 'pp-mini-av'); if (photo) { const im = document.createElement('img'); im.src = smSrc(photo); im.alt = ''; faceFit(im, photo); mav.append(im); } else mav.textContent = initials(name);
       const mt = mk('div'); mt.append(mk('b', '', name), mk('span', '', [shirt ? '#' + shirt : '', (p && p.club) || hc].filter(Boolean).join(', ')));
       const mtabs = tabBar([['overview', 'Overview'], ...(isProspect ? [] : [['log', 'Game log']]), ['career', 'Career stats'], ['bio', 'Bio']], ppTab, (k) => { ppTab = k; dash.draw('pp'); hero.scrollIntoView({ block: 'start' }); }, 'pp-mini-tabs');
       mini.append(mav, mt, mtabs); el.append(mini);
@@ -3518,7 +3520,7 @@
   { const a = document.getElementById('cal-all'); if (a) a.href = calUrl(''); }
   dash.draw('wk-label', (el) => { const d = ds('thisweek'); el.textContent = d && d[0] ? 'Week of ' + String(d[0].week || '').replace(/2026-(\d\d)-(\d\d)/g, (m, mo, da) => dayFmt(`2026-${mo}-${da}`)) : '—'; });
   // ---- This week (new): magazine front with the lead story, the week in numbers and a story grid; a story opens as an article
-  function wkFace(n, cls) { const ph = photoFor(n); const el = mk('span', cls || 'wkx-face'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = ph.src; faceFit(im, ph); el.append(im); } else el.textContent = initials(n); return el; }
+  function wkFace(n, cls) { const ph = photoFor(n); const el = mk('span', cls || 'wkx-face'); if (ph) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.src = smSrc(ph); faceFit(im, ph); el.append(im); } else el.textContent = initials(n); return el; }
   function wkWeekGames(d) { const w = String(d[0] && d[0].week || ''); const m = w.match(/(\d{4}-\d\d-\d\d)\D+(\d{4}-\d\d-\d\d)/); if (!m) return []; return (games() || []).filter((g) => g.date >= m[1] && g.date <= m[2] && g.status === 'final'); }
   function wkx(el, d) {
     const ups = d.filter((r) => /coming up/i.test(r.kind)), stories = d.filter((r) => !/coming up/i.test(r.kind));
@@ -3622,7 +3624,7 @@
       const txt = mk('div', 'hw-txt'); txt.append(mk('span', wkKindCls(r.kind), r.kind), mk('span', 'hw-h', tx(r, 'headline')));
       if (i === 0) { if (tx(r, 'stats')) txt.append(mk('span', 'hw-stats', tx(r, 'stats'))); txt.append(mk('span', 'hw-meta', [r.date ? dayFmt(r.date) : '', 'Read the story →'].filter(Boolean).join(' · '))); }
       b.append(txt);
-      if (ph) { const f = mk('span', i === 0 ? 'hw-photo' : 'hw-face'); const im = new Image(); im.alt = ''; im.src = ph.src; if (i !== 0) faceFit(im, ph); else leadFit(im, ph); f.append(im); if (i === 0) b.prepend(f); else b.append(f); b.classList.add('has-ph'); }
+      if (ph) { const f = mk('span', i === 0 ? 'hw-photo' : 'hw-face'); const im = new Image(); im.alt = ''; im.src = i === 0 ? ph.src : smSrc(ph); if (i !== 0) faceFit(im, ph); else leadFit(im, ph); f.append(im); if (i === 0) b.prepend(f); else b.append(f); b.classList.add('has-ph'); }
       b.onclick = () => openStory(r.story_id);
       el.append(b);
     });
@@ -3845,7 +3847,7 @@
         const grid = mk('div', 'gcx-leaders');
         [['Points', 'pts'], ['Rebounds', 'reb'], ['Assists', 'ast']].forEach(([lab, f]) => { const top = (t) => t.list.slice().sort((x, y) => Number(y[f]) - Number(x[f]))[0];
           const a = top(H), b = top(A); const row = mk('div', 'gcx-lr');
-          const side = (p, t, r) => { const d = mk('div', 'gcx-ls' + (r ? ' r' : '') + (Number(p[f]) >= Number((r ? a : b)[f]) ? ' best' : '')); const ph = photoFor(p.player); const av = mk('span', 'gcx-av'); if (ph) { const im = new Image(); im.src = ph.src; im.alt = ''; faceFit(im, ph); av.append(im); } else { av.textContent = initials(p.player); av.style.background = teamColor(t); }
+          const side = (p, t, r) => { const d = mk('div', 'gcx-ls' + (r ? ' r' : '') + (Number(p[f]) >= Number((r ? a : b)[f]) ? ' best' : '')); const ph = photoFor(p.player); const av = mk('span', 'gcx-av'); if (ph) { const im = new Image(); im.src = smSrc(ph); im.alt = ''; faceFit(im, ph); av.append(im); } else { av.textContent = initials(p.player); av.style.background = teamColor(t); }
             const tx2 = mk('div'); tx2.append(mk('b', '', p.player), mk('span', '', `${teamAbbr(t)} · ${p.min} min`)); d.append(av, tx2, mk('strong', '', String(p[f])));
             // a leader opens his page: every SBL player has one, elsewhere the Swedes we follow
             const sblL = String(g.game_id || '').startsWith('sbl-'); if (sblL ? !sblLeft(p.player) : (ds('players') || []).some((x) => isSame(x.player, p.player))) { d.classList.add('go'); d.tabIndex = 0; d.setAttribute('role', 'button'); d.title = 'Open ' + p.player; const op = () => (sblL ? showSblPlayer(p.player) : showLog(p.player)); d.onclick = op; d.onkeydown = (e) => { if (e.key === 'Enter') op(); }; }
@@ -3933,7 +3935,7 @@
       const sl = lines.filter((r) => r.player);
       if (sl.length || g.coach) { const strip = mk('div', 'gchx-swe'); strip.append(mk('span', 'lab', sl.length ? '🇸🇪 Swedes in this game' : '🇸🇪 Swedish coach in this game'));
         if (g.coach) { const cb = mk('button', 'gchx-p coach'); cb.type = 'button'; cb.onclick = () => showCoach(g.coach); const av = faceAv('span', 'av', g.coach); const t2 = mk('span', 't'); t2.append(mk('b', '', g.coach), mk('span', '', 'Coach · ' + (g.team || ''))); cb.append(av, t2); strip.append(cb); }
-        sl.forEach((r) => { const b = mk('button', 'gchx-p'); b.type = 'button'; b.onclick = () => showLog(r.player); const ph = photoFor(r.player); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); av.append(im); } else av.textContent = initials(r.player);
+        sl.forEach((r) => { const b = mk('button', 'gchx-p'); b.type = 'button'; b.onclick = () => showLog(r.player); const ph = photoFor(r.player); const av = mk('span', 'av'); if (ph) { const im = new Image(); im.alt = ''; im.src = smSrc(ph); faceFit(im, ph); av.append(im); } else av.textContent = initials(r.player);
           const t2 = mk('span', 't'); t2.append(mk('b', '', r.player), mk('span', '', /DNP/i.test(r.note || '') ? 'Did not play' : `${r.pts} PTS · ${r.reb} REB · ${r.ast} AST${r.min ? ' · ' + r.min + ' min' : ''}`)); b.append(av, t2); strip.append(b); });
         hero.append(strip); }
     }
@@ -5304,7 +5306,7 @@
       c.onclick = () => showLog(p.player);
       const band = mk('div', 'plc-band');
       const photo = photoFor(p.player);
-      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = photo.src; img.alt = ''; img.loading = 'lazy'; faceFit(img, photo); av.append(img); } else av.textContent = initials(p.player);
+      const av = mk('div', 'plc-av'); if (photo) { const img = document.createElement('img'); img.src = smSrc(photo); img.alt = ''; img.loading = 'lazy'; faceFit(img, photo); av.append(img); } else av.textContent = initials(p.player);
       const tags = mk('div', 'plc-tags'); if (p.level) tags.append(mk('span', 'plc-tag', p.level)); if (nt.some((x) => isSame(x.player, p.player))) tags.append(mk('span', 'plc-tag y', 'National team'));
       band.append(av, tags);
       const parts = p.player.split(' ');

@@ -469,7 +469,7 @@ def stamp_assets():
         return False
     html = open(idx, encoding='utf-8').read()
     new = html
-    for fn in ('theme.css', 'site.css', 'site2.css', 'dash-shim.js', 'i18n.js'):
+    for fn in ('fonts.css', 'theme.css', 'site.css', 'site2.css', 'dash-shim.js', 'i18n.js'):
         fp = os.path.join(ROOT, fn)
         if os.path.exists(fp):
             v = hashlib.sha1(open(fp, 'rb').read()).hexdigest()[:8]
@@ -480,6 +480,29 @@ def stamp_assets():
     return False
 
 
+def write_bundle(files):
+    """data/_bundle.json: every file the page needs at start (dash-shim.js IDS) in one download, each with its
+    fingerprint. The page uses a bundled file only when its fingerprint matches _version.json, so it never shows
+    older data than the single files."""
+    shim = os.path.join(ROOT, 'dash-shim.js')
+    m = re.search(r"var IDS = \[([^\]]*)\]", open(shim, encoding='utf-8').read()) if os.path.exists(shim) else None
+    if not m:
+        return False
+    ids = re.findall(r"'([a-z0-9_-]+)'", m.group(1))
+    out = {'versions': {}, 'data': {}}
+    for i in ids:
+        fp = os.path.join(DATA, i + '.json')
+        if i in files and os.path.exists(fp):
+            out['versions'][i] = files[i]
+            out['data'][i] = json.load(open(fp, encoding='utf-8'))
+    path = os.path.join(DATA, '_bundle.json')
+    txt = json.dumps(out, ensure_ascii=False, separators=(',', ':'))
+    if os.path.exists(path) and open(path, encoding='utf-8').read() == txt:
+        return False
+    open(path, 'w', encoding='utf-8').write(txt)
+    return True
+
+
 def write_version(changed_any):
     files = {}
     for fn in sorted(os.listdir(DATA)):
@@ -488,7 +511,7 @@ def write_version(changed_any):
     stamp_assets()
     # fingerprint of the site's own files: open pages reload themselves when it changes
     app = hashlib.sha1()
-    for fn in ('index.html', 'dash-shim.js', 'i18n.js', 'site.css', 'site2.css', 'theme.css'):
+    for fn in ('index.html', 'dash-shim.js', 'i18n.js', 'fonts.css', 'site.css', 'site2.css', 'theme.css'):
         fp = os.path.join(ROOT, fn)
         if os.path.exists(fp):
             app.update(open(fp, 'rb').read())
@@ -499,6 +522,7 @@ def write_version(changed_any):
     except Exception:
         old = {}
     appv = files.pop('__app__')
+    write_bundle(files)
     if old.get('files') == files and old.get('app') == appv and not changed_any:
         return False
     json.dump({'updated': now().isoformat(timespec='seconds'), 'app': appv, 'files': files}, open(path, 'w'), indent=1)

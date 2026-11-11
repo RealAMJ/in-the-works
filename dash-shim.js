@@ -150,7 +150,19 @@
       stamp(v.updated);
       return Date.now();
     }, function () { return Date.now(); });
-    first.then(function (bust) { return loadIds(IDS, bust); }).then(function () {
+    // everything the page needs at start comes in one file (data/_bundle.json); a file whose fingerprint
+    // differs from _version.json (or a missing bundle) falls back to its own download
+    first.then(function (bust) {
+      return getJSON(DATA + '_bundle.json', bust).then(function (b) {
+        var miss = [];
+        IDS.forEach(function (id) {
+          var rows = b && b.data && b.data[id];
+          if (rows && b.versions && versions[id] && b.versions[id] === versions[id]) store[id] = { status: 'ok', data: Array.isArray(rows) ? rows : (rows && rows.rows) || [] };
+          else miss.push(id);
+        });
+        return loadIds(miss, bust);
+      }, function () { return loadIds(IDS, bust); });
+    }).then(function () {
       loaded = true;
       redrawFor(null);
       setInterval(poll, POLL_MS);

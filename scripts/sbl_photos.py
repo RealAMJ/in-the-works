@@ -109,6 +109,11 @@ def main():
         bg.save(os.path.join(U.ROOT, fn), 'WEBP', quality=82)
         fb = face_box(os.path.join(U.ROOT, fn))
         row = dict(player=name, src=fn, credit='', source='SBL (sblherr.se)')
+        # small copy for avatars and cards (the site's lists use it; headers and share cards use the full photo)
+        os.makedirs(os.path.join(U.ROOT, 'photos', 'sm'), exist_ok=True)
+        sm = 'photos/sm/' + os.path.basename(fn)
+        w0, h0 = bg.size; hh = min(360, h0); bg.resize((round(w0 * hh / h0), hh), Image.LANCZOS).save(os.path.join(U.ROOT, sm), 'WEBP', quality=82, method=6)
+        row['sm'] = sm
         if fb:
             row['fbox'] = fb
         photos.append(row); have.add(U.norm(name)); added += 1
