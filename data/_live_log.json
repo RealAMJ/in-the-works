@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T04:49:30+01:00",
+ "at": "2026-11-11T04:50:21+01:00",
  "log": [
   {
    "game": "g20261111miam",
@@ -9,12 +9,12 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "06:16",
+   "clock": "05:35",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     77,
+     82,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:31",
+   "clock": "07:15",
    "done": false,
    "teams": [
     [
      "Little Rock Trojans",
-     53,
+     55,
      16
     ],
     [
