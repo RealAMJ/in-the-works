@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:29:26+01:00",
+ "at": "2026-11-11T01:30:00+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -32,12 +32,12 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:29",
+   "clock": "08:12",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     17,
+     19,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:46",
+   "clock": "08:06",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     24,
+     26,
      15
     ]
    ]
