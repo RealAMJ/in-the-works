@@ -6076,5 +6076,31 @@
   "pf": 0,
   "pm": 3,
   "eff": ""
+ },
+ {
+  "row_id": "falk-2026-11-11",
+  "player": "Wilhelm Falk",
+  "date": "2026-11-11",
+  "competition": "Champions League (BCL)",
+  "team": "UCAM Murcia",
+  "opponent": "BMA365 Bamberg Baskets",
+  "venue": "Home",
+  "result": "W 98-66",
+  "min": 5,
+  "pts": 2,
+  "reb": 2,
+  "ast": 0,
+  "source": "FIBA (championsleague.basketball)",
+  "fg": "1/1",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "pm": 0,
+  "eff": ""
  }
 ]

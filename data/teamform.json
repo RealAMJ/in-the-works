@@ -6074,5 +6074,33 @@
   "note": "",
   "leaders": "Mbala|26|5|1;Moerman|15|7|1;Jurkovitz|10|1|5",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "ucam-murcia-2026-11-11",
+  "team": "UCAM Murcia",
+  "date": "2026-11-11",
+  "competition": "Champions League (BCL)",
+  "opponent": "BMA365 Bamberg Baskets",
+  "venue": "Home",
+  "score": "98-66",
+  "result": "W",
+  "top": "Boum 21 pts, 2 reb",
+  "note": "",
+  "leaders": "Boum|21|2|2;Radebaugh|15|4|5;Gates|13|3|1",
+  "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "bma-bamberg-baskets-2026-11-11",
+  "team": "BMA365 Bamberg Baskets",
+  "date": "2026-11-11",
+  "competition": "Champions League (BCL)",
+  "opponent": "UCAM Murcia",
+  "venue": "Away",
+  "score": "66-98",
+  "result": "L",
+  "top": "Keppeler 11 pts, 4 reb",
+  "note": "",
+  "leaders": "Keppeler|11|4|0;Ward|10|9|3;Scott|10|4|3",
+  "source": "FIBA (championsleague.basketball)"
  }
 ]

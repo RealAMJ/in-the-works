@@ -124,12 +124,12 @@
   "player": "Wilhelm Falk",
   "competition": "Champions League (BCL)",
   "season": "2026-27",
-  "gp": 3,
-  "min": 19,
-  "pts": 2.3,
-  "reb": 3.7,
-  "ast": 1.0,
-  "note": "Flashscore"
+  "gp": 4,
+  "min": 15.5,
+  "pts": 2.2,
+  "reb": 3.2,
+  "ast": 0.8,
+  "note": "Averages from game log (4 games, through 2026-11-11)"
  },
  {
   "row_id": "pohto-lkl",
