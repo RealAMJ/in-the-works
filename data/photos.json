@@ -2279,5 +2279,17 @@
    0.305,
    0.175
   ]
+ },
+ {
+  "player": "Ludvig Håkanson",
+  "src": "photos/ludvig-hakanson.webp",
+  "sm": "photos/sm/ludvig-hakanson.webp",
+  "credit": "",
+  "fbox": [
+   0.3136,
+   0.055,
+   0.3409,
+   0.1875
+  ]
  }
 ]
