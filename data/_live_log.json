@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:03:46+01:00",
+ "at": "2026-11-11T02:04:38+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:05",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -100,19 +100,19 @@
   {
    "game": "g20261111lips",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:37",
    "done": false,
    "teams": [
     [
-     "Lipscomb Bisons",
-     0,
-     0
-    ],
-    [
      "Belmont Bruins",
      0,
-     0
+     14
+    ],
+    [
+     "Lipscomb Bisons",
+     2,
+     16
     ]
    ]
   }
