@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=b0a0e45a">
+<link rel="stylesheet" href="site2.css?v=6a003371">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -102,65 +102,32 @@
         <div class="hz-frow" data-draw="h-faces" data-source="photos players stats sblplayers ntroster"></div>
       </section>
     </div>
-    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">02</span><span class="hz-cl">Scores</span></div>
-      <div class="hz-two">
-      <article class="hc" id="h-results">
-      <div class="hc-head"><h2>Latest results</h2><button type="button" class="hc-more" data-go="schedule" data-view="final">See all →</button></div>
-      <p class="hc-note">Tap a score for the game summary.</p>
-      <div class="hc-body" data-draw="h-res" data-source="schedule"></div>
-    </article>
-      <article class="hc" id="h-upcoming">
-      <div class="hc-head"><h2>Coming up</h2><button type="button" class="hc-more" data-go="schedule" data-view="upcoming">See all →</button></div>
-      <p class="hc-note">Next games for Swedish players, Stockholm time.</p>
-      <div class="hc-body" data-draw="h-next" data-source="schedule"></div>
-    </article>
-      </div>
-    </div>
-    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">03</span><span class="hz-cl">Numbers</span></div>
-      <div class="hz-two">
-      <article class="hc wide" id="h-leaders">
-      <div class="hc-head"><h2>Stat leaders</h2><button type="button" class="hc-more" data-go="stats">See all →</button></div>
-      <p class="hc-note">Best per-game average this season, each player in his top competition (2+ games).</p>
-      <div class="ld-tabs" role="group" aria-label="Stat"><button type="button" data-stat="pts" aria-pressed="true">PTS</button><button type="button" data-stat="reb" aria-pressed="false">REB</button><button type="button" data-stat="ast" aria-pressed="false">AST</button><button type="button" data-stat="min" aria-pressed="false">MIN</button></div>
-      <div class="hc-body" data-draw="h-lead" data-source="stats"></div>
-    </article>
-      <article class="hc" id="h-standouts">
-      <div class="hc-head"><h2>Standout games</h2><button type="button" class="hc-more" data-go="standouts">See all →</button></div>
-      <p class="hc-note">Big nights from the latest box scores.</p>
-      <div class="hc-body" data-draw="h-hl" data-source="highlights"></div>
-    </article>
-      </div>
-    </div>
-    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">04</span><span class="hz-cl">Around the world</span></div>
-      <div class="hz-two">
-      <article class="hc" id="h-where">
-      <div class="hc-head"><h2>Where Swedes play</h2><button type="button" class="hc-more" data-go="players">See all →</button></div>
-      <p class="hc-note">Tap a level or a country to see those players.</p>
-      <div class="hc-body" data-draw="h-where" data-source="players"></div>
-      <p class="hc-cap">By country</p>
-      <div class="wh-chips" data-draw="h-countries" data-source="players"></div>
-    </article>
-      <article class="hc" id="h-awards">
-      <div class="hc-head"><h2>Records &amp; awards</h2><button type="button" class="hc-more" data-go="awards">See all →</button></div>
-      <p class="hc-note">Awards, records and titles this season.</p>
-      <div class="hc-body" data-draw="h-aw" data-source="awards"></div>
-    </article>
-      </div>
-    </div>
-    <div class="hz-ch"><div class="hz-chh"><span class="hz-n">05</span><span class="hz-cl">Home and the bench</span></div>
-      <div class="hz-two">
-      <article class="hc" id="h-sbl">
-      <div class="hc-head"><h2>SBL standouts</h2><button type="button" class="hc-more" data-go="sbl">See all →</button></div>
-      <p class="hc-note">Latest big games in the Swedish league at home.</p>
-      <div class="hc-body" data-draw="h-sbl" data-source="sbl"></div>
-    </article>
-      <article class="hc" id="h-coaches">
-      <div class="hc-head"><h2>Coaches abroad</h2><button type="button" class="hc-more" data-go="coaches">See all →</button></div>
-      <p class="hc-note">Swedish coaches with men's teams outside Sweden.</p>
-      <div class="hc-body" data-draw="h-co" data-source="coaches"></div>
-    </article>
-      </div>
-    </div>
+    <section class="hz-ch hx" id="h-scores" aria-label="Scores">
+      <header class="hx-h"><div><span class="hz-kick">Scores</span><h2 class="hx-t">Results &amp; fixtures</h2></div>
+        <div class="hx-ctl"><div class="hx-seg" role="group" aria-label="Show"><button type="button" data-sc="final" aria-pressed="true">Latest results</button><button type="button" data-sc="next" aria-pressed="false">Coming up</button></div><button type="button" class="hc-more" data-page-go="games">All games →</button></div></header>
+      <div class="hx-row" data-draw="h-scores" data-source="schedule boxscores gamelogs photos logos players"></div>
+    </section>
+    <section class="hz-ch hx" id="h-leaders" aria-label="Stat leaders">
+      <header class="hx-h"><div><span class="hz-kick">Stat leaders</span><h2 class="hx-t">Leading the way</h2></div>
+        <div class="hx-ctl"><div class="hx-seg ld-tabs" role="group" aria-label="Stat"><button type="button" data-stat="pts" aria-pressed="true">Points</button><button type="button" data-stat="reb" aria-pressed="false">Rebounds</button><button type="button" data-stat="ast" aria-pressed="false">Assists</button></div><button type="button" class="hc-more" data-go="stats">Full stats →</button></div></header>
+      <p class="hx-note">Per game this season, each player in his main competition (2+ games).</p>
+      <div class="hx-lead" data-draw="h-lead" data-source="stats photos players"></div>
+    </section>
+    <section class="hz-ch hx" id="h-big" aria-label="Standout games">
+      <header class="hx-h"><div><span class="hz-kick">Big nights</span><h2 class="hx-t">Standout games</h2></div>
+        <div class="hx-ctl"><div class="hx-seg" role="group" aria-label="Where"><button type="button" data-big="abroad" aria-pressed="true">Abroad</button><button type="button" data-big="sbl" aria-pressed="false">SBL at home</button></div><button type="button" class="hc-more" data-go="standouts" id="h-big-more">See all →</button></div></header>
+      <div class="hx-row hx-3" data-draw="h-big" data-source="highlights boxscores photos sbl sblleague"></div>
+    </section>
+    <section class="hz-ch hx" id="h-season" aria-label="Season so far">
+      <header class="hx-h"><div><span class="hz-kick">2026-27</span><h2 class="hx-t">Season so far</h2></div>
+        <div class="hx-ctl"><button type="button" class="hc-more" data-page-go="players">All players →</button></div></header>
+      <div class="bx" data-draw="h-bento" data-source="gamelogs boxscores schedule coachgames players awards photos"></div>
+    </section>
+    <section class="hz-ch hx" id="h-bench" aria-label="Coaches abroad">
+      <header class="hx-h"><div><span class="hz-kick">On the bench</span><h2 class="hx-t">Coaches abroad</h2></div>
+        <div class="hx-ctl"><button type="button" class="hc-more" data-go="coaches">All coaches →</button></div></header>
+      <div class="hx-row hx-co" data-draw="h-co" data-source="coaches coachgames photos logos"></div>
+    </section>
     </div>
   </div>
 
@@ -502,7 +469,7 @@
     <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
   </footer>
 </div>
-<script src="i18n.js?v=d06c73ea"></script>
+<script src="i18n.js?v=33eb8029"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2592,51 +2559,26 @@
   });
 
   // ---- Home: game rows
-  function homeGameRow(r, fin) {
-    const row = mk('div', 'gr'); row.dataset.key = r.game_id;
-    const when = mk('div', 'gr-when');
-    const live = r.status === 'live';
-    when.append(mk('span', 'gr-d' + (live ? ' live' : ''), live ? 'Live' : r.date === todayStr() ? 'Today' : dayFmt(r.date)));
-    if (!fin && !live) when.append(mk('span', 'gr-t', r.time || ''));
-    const mid = mk('div', 'gr-mid');
-    const who = mk('div', 'gr-who'); who.append(names(r.players));
-    const sub = mk('div', 'gr-sub'); sub.append(teamBtn(r.team), document.createTextNode(r.venue === 'Away' ? ' at ' : ' vs '), teamBtn(r.opponent));
-    mid.append(who, sub);
-    const right = mk('div', 'gr-right');
-    if (fin || live) {
-      const res = String(r.score || '');
-      const b = mk('button', 'gr-score ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res || 'Final');
-      b.type = 'button'; b.title = 'Open the game summary';
-      b.onclick = (e) => { e.stopPropagation(); showCard(r.game_id); };
-      right.append(b);
-    }
-    if (r.competition) { const p = mk('span', 'pill' + compClass(r.competition), r.competition); paintComp(p, r.competition); right.append(p); }
-    if (!fin && isH2H(r)) right.append(mk('span', 'gr-h2h', 'Swede vs Swede'));
-    row.append(when, mid, right);
-    return row;
-  }
-  dash.draw('h-res', (el) => {
+  // ===== Home sections (v4): one idea per section, a short row of cards, toggles instead of long lists =====
+  const hxCountry = { USA: '🇺🇸', Spain: '🇪🇸', Germany: '🇩🇪', Poland: '🇵🇱', Austria: '🇦🇹', Croatia: '🇭🇷', France: '🇫🇷', Iceland: '🇮🇸', Italy: '🇮🇹', Lithuania: '🇱🇹', Norway: '🇳🇴', Romania: '🇷🇴', Greece: '🇬🇷', Turkey: '🇹🇷', Serbia: '🇷🇸', Slovenia: '🇸🇮', Finland: '🇫🇮', Denmark: '🇩🇰', Belgium: '🇧🇪', Netherlands: '🇳🇱', Switzerland: '🇨🇭', 'Czech Republic': '🇨🇿', Latvia: '🇱🇻', Estonia: '🇪🇪', Portugal: '🇵🇹', UK: '🇬🇧', Australia: '🇦🇺', Japan: '🇯🇵', Canada: '🇨🇦' };
+  function hxSeg(sel, key, cb) { document.querySelectorAll(sel).forEach((b) => b.addEventListener('click', () => { document.querySelectorAll(sel).forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false')); cb(b.dataset[key]); })); }
+  function hxRowNav(el) { // arrows for the card rows on wide screens are not needed: four cards fit; phones swipe
+    el.scrollLeft = 0; }
+  let hxSc = 'final';
+  hxSeg('[data-sc]', 'sc', (v) => { hxSc = v; dash.draw('h-scores'); });
+  dash.draw('h-scores', (el) => {
     el.replaceChildren();
     const g = games(); if (!g) { el.textContent = '—'; return; }
-    const f = g.filter((r) => r.status === 'final').slice(-6).reverse();
-    if (!f.length) { el.append(mk('p', 'empty', 'No results yet.')); return; }
-    f.forEach((r) => el.append(homeGameRow(r, true)));
-  });
-  dash.draw('h-next', (el) => {
-    el.replaceChildren();
-    const g = games(); if (!g) { el.textContent = '—'; return; }
-    const n = g.filter((r) => r.status === 'live').concat(g.filter((r) => r.status !== 'final' && r.status !== 'live')).slice(0, 6);
-    if (!n.length) { el.append(mk('p', 'empty', 'Nothing scheduled in the coming week.')); return; }
-    n.forEach((r) => el.append(homeGameRow(r, false)));
+    const rows = hxSc === 'final' ? g.filter((r) => r.status === 'final').slice(-4).reverse()
+      : g.filter((r) => r.status === 'live').concat(g.filter((r) => r.status !== 'final' && r.status !== 'live')).slice(0, 4);
+    if (!rows.length) { el.append(mk('p', 'empty', hxSc === 'final' ? 'No results yet.' : 'Nothing scheduled in the coming week.')); return; }
+    rows.forEach((r) => { const c = gmxCard(r); if (hxSc !== 'final' && r.status !== 'live') { const st = c.querySelector('.gmx-st'); if (st) st.textContent = (r.date === todayStr() ? L('Today', 'Idag') : dayFmt(r.date)) + ' · ' + (r.time && r.time !== 'TBC' ? r.time : 'TBC'); } el.append(c); });
+    hxRowNav(el);
   });
 
-  // ---- Home: stat leaders
+  // ---- Home: stat leaders, the leader as a big portrait card and the next four beside him
   let leadStat = 'pts';
-  document.querySelectorAll('.ld-tabs [data-stat]').forEach((b) => b.addEventListener('click', () => {
-    leadStat = b.dataset.stat;
-    document.querySelectorAll('.ld-tabs [data-stat]').forEach((x) => x.setAttribute('aria-pressed', x.dataset.stat === leadStat ? 'true' : 'false'));
-    dash.draw('h-lead');
-  }));
+  hxSeg('.ld-tabs [data-stat]', 'stat', (v) => { leadStat = v; dash.draw('h-lead'); });
   dash.draw('h-lead', (el) => {
     el.replaceChildren();
     const d = dash.data('stats'); if (d.status !== 'ok') { el.textContent = '—'; return; }
@@ -2647,38 +2589,63 @@
       const cur = best.get(r.player);
       if (!cur || v > Number(cur[leadStat])) best.set(r.player, r);
     });
-    const rows = [...best.values()].sort((a, b) => Number(b[leadStat]) - Number(a[leadStat])).slice(0, 8);
+    const rows = [...best.values()].sort((a, b) => Number(b[leadStat]) - Number(a[leadStat])).slice(0, 5);
     if (!rows.length) { el.append(mk('p', 'empty', 'No stats yet.')); return; }
-    const max = Number(rows[0][leadStat]) || 1;
-    rows.forEach((r, i) => {
-      const row = mk('div', 'ld-row'); row.dataset.key = r.row_id;
-      const who = mk('div', 'ld-who');
-      const nb = mk('button', 'nm', r.player); nb.type = 'button'; nb.title = 'Open ' + r.player + "'s stats and games"; nb.onclick = () => showLog(r.player);
-      who.append(nb, mk('span', 'ld-sub', `${r.competition} · ${r.gp} GP`));
-      const bar = mk('div', 'ld-bar'); const fill = mk('span', 'ld-fill'); fill.style.width = Math.max(2, Number(r[leadStat]) / max * 100) + '%'; bar.append(fill);
-      const ph = photoFor(r.player); if (ph) { const f = mk('span', 'ld-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); who.prepend(f); who.classList.add('has-face'); }
-      row.append(mk('span', 'ld-rank', String(i + 1)), who, bar, mk('span', 'ld-val', Number(r[leadStat]).toFixed(1)));
-      el.append(row);
+    const unit = { pts: 'PPG', reb: 'RPG', ast: 'APG' }[leadStat];
+    const clubOfP = (n) => { const p = (ds('players') || []).find((x) => isSame(x.player, n)); return p ? p.club : ''; };
+    const top = rows[0]; const f = mk('button', 'hx-lead1'); f.type = 'button'; f.onclick = () => showLog(top.player);
+    const ph = photoFor(top.player); const pic = mk('span', 'hx-l1pic'); if (ph) { const im = new Image(); im.alt = top.player; im.src = ph.src; portraitFit(im, ph); pic.append(im); } else pic.append(mk('span', 'hx-l1ini', initials(top.player)));
+    const parts = String(top.player).split(' ');
+    const txt = mk('span', 'hx-l1txt'); txt.append(mk('span', 'hx-l1rk', '#1'), mk('span', 'hx-l1f', parts.slice(0, -1).join(' ')), mk('b', 'hx-l1n', parts[parts.length - 1]), mk('span', 'hx-l1s', [clubOfP(top.player), top.competition].filter(Boolean).join(' · ')));
+    const val = mk('span', 'hx-l1v'); val.append(mk('b', '', Number(top[leadStat]).toFixed(1)), mk('span', '', unit));
+    f.append(pic, mk('span', 'hx-l1shade'), txt, val);
+    const list = mk('ol', 'hx-llist'); list.start = 2;
+    rows.slice(1).forEach((r, i) => {
+      const li = mk('li'); const b = mk('button', 'hx-lrow'); b.type = 'button'; b.onclick = () => showLog(r.player);
+      const who = mk('span', 'hx-lwho'); who.append(mk('b', '', r.player), mk('span', '', `${shortComp(r.competition)} · ${r.gp} GP`));
+      b.append(mk('span', 'hx-lrk', String(i + 2)), faceAv('span', 'hx-lav', r.player), who, mk('span', 'hx-lv', Number(r[leadStat]).toFixed(1)));
+      li.append(b); list.append(li);
     });
+    el.append(f, list);
   });
 
-  // ---- Home: standout games
-  dash.draw('h-hl', (el) => {
+  // ---- Home: standout games (abroad or SBL), three tiles with the numbers up front
+  let hxBig = 'abroad';
+  hxSeg('[data-big]', 'big', (v) => { hxBig = v; const m = document.getElementById('h-big-more'); if (m) m.dataset.go = v === 'sbl' ? 'sbl' : 'standouts'; dash.draw('h-big'); });
+  function hxBigTile(o) {
+    const c = mk(o.go ? 'button' : 'div', 'hx-big' + (o.go ? ' go' : '')); if (o.go) { c.type = 'button'; c.onclick = o.go; }
+    const top = mk('div', 'hx-bt'); top.append(faceAv('span', 'hx-bav', o.player));
+    const w = mk('div', 'hx-bw'); w.append(mk('b', '', o.player), mk('span', '', [o.team, o.date ? dayFmt(o.date) : ''].filter(Boolean).join(' · '))); top.append(w);
+    const nums = mk('div', 'hx-bn'); o.nums.forEach(([v, k]) => { const s = mk('span'); s.append(mk('b', '', String(v)), mk('i', '', k)); nums.append(s); });
+    c.append(top, nums);
+    if (o.tag) c.append(mk('span', 'hx-btag', o.tag));
+    c.append(mk('p', 'hx-bh', o.line || ''));
+    return c;
+  }
+  dash.draw('h-big', (el) => {
     el.replaceChildren();
-    if (dash.data('highlights').status !== 'ok') { el.textContent = '—'; return; }
-    const rows = realHl().slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3);
-    if (!rows.length) { el.append(mk('p', 'empty', 'No standout games yet. They show up here as results come in.')); return; }
-    rows.forEach((r) => {
-      const c = mk('article', 'hh' + (r.game_id ? ' go' : '')); c.dataset.key = r.highlight_id;
-      if (r.game_id) { c.tabIndex = 0; c.title = 'Open the game summary'; c.onclick = () => showCardFor(r.game_id, r.player); c.onkeydown = (e) => { if (e.key === 'Enter') showCardFor(r.game_id, r.player); }; }
-      const top = mk('div', 'hh-top'); const w = mk('span'); w.append(names(r.player)); top.append(w, mk('span', 'hh-date', r.date ? dayFmt(r.date) : ''));
-      c.append(top, mk('div', 'hh-head', tx(r, 'headline') || ''));
-      { const ph = photoFor(r.player); if (ph) { const f = mk('span', 'hh-face'); const im = new Image(); im.alt = ''; im.src = ph.src; faceFit(im, ph); f.append(im); c.prepend(f); c.classList.add('has-face'); } }
-      el.append(c);
-    });
+    let tiles = [];
+    if (hxBig === 'sbl') {
+      const rows = sblRows(); if (!rows) { el.textContent = '—'; return; }
+      tiles = rows.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3).map((r) => ({ player: r.player, team: r.team, date: r.date,
+        nums: [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].filter(([v]) => v !== '' && v != null),
+        tag: String(sblTags(r) || '').split(/,\s*(?![^()]*\))/)[0], line: `${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`,
+        go: (() => { const gid = sblGameFor(r); return gid ? () => showCardFor(gid, r.player) : null; })() }));
+    } else {
+      if (dash.data('highlights').status !== 'ok') { el.textContent = '—'; return; }
+      const bx = ds('boxscores') || [];
+      tiles = realHl().slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3).map((r) => {
+        const b = bx.find((x) => x.game_id === r.game_id && isSame(x.player, r.player));
+        const g = (games() || []).find((x) => x.game_id === r.game_id);
+        return { player: r.player, team: g ? g.team : clubOf(r.player), date: r.date, tag: tx(r, 'tag') || r.tag, line: tx(r, 'headline'),
+          nums: b ? [[b.pts, 'PTS'], [b.reb, 'REB'], [b.ast, 'AST']] : [], go: r.game_id ? () => showCardFor(r.game_id, r.player) : null };
+      });
+    }
+    if (!tiles.length) { el.append(mk('p', 'empty', 'No standout games yet. They show up here as results come in.')); return; }
+    tiles.forEach((t) => el.append(hxBigTile(t)));
   });
 
-  // ---- Home: where Swedes play
+  // ---- Home: where Swedes play, four big numbers and the countries as flags
   function filterPlayers(term) {
     document.querySelectorAll('[data-filter=players]').forEach((i) => { i.value = term; });
     q.players = term.toLowerCase();
@@ -2690,53 +2657,113 @@
     el.replaceChildren();
     const p = dash.data('players'); if (p.status !== 'ok') { el.textContent = '—'; return; }
     const by = d3.rollups(p.data.filter((r) => r.player), (v) => v.length, (r) => r.level || 'Other').sort((a, b) => b[1] - a[1]);
-    const max = by.length ? by[0][1] : 1;
+    const total = by.reduce((t, x) => t + x[1], 0) || 1;
     by.forEach(([lv, n]) => {
-      const b = mk('button', 'wh-row'); b.type = 'button'; b.dataset.key = lv; b.title = 'See these players';
-      const bar = mk('span', 'wh-bar'); const f = mk('span', 'wh-fill'); f.style.width = (n / max * 100) + '%'; bar.append(f);
-      b.append(mk('span', 'wh-k', LEVEL_LABEL[lv] || lv), bar, mk('span', 'wh-n', String(n)));
-      b.onclick = () => filterPlayers(lv);
-      el.append(b);
+      const b = mk('button', 'hx-lvl'); b.type = 'button'; b.title = 'See these players';
+      const bar = mk('span', 'hx-lvbar'); const f = mk('span'); f.style.width = (n / total * 100) + '%'; bar.append(f);
+      b.append(mk('b', '', String(n)), mk('span', 'k', LEVEL_LABEL[lv] || lv), bar);
+      b.onclick = () => filterPlayers(lv); el.append(b);
     });
   });
   dash.draw('h-countries', (el) => {
     el.replaceChildren();
     const p = dash.data('players'); if (p.status !== 'ok') return;
     d3.rollups(p.data.filter((r) => r.country), (v) => v.length, (r) => r.country).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).forEach(([c, n]) => {
-      const b = mk('button', 'chip', `${c} · ${n}`); b.type = 'button'; b.onclick = () => filterPlayers(c); el.append(b);
+      const b = mk('button', 'hx-flag'); b.type = 'button'; b.onclick = () => filterPlayers(c);
+      b.append(mk('span', 'fl', hxCountry[c] || '🌍'), mk('span', 'nm', c), mk('b', '', String(n))); el.append(b);
     });
   });
 
-  // ---- Home: awards
+  // ---- Home: awards, three cards
   dash.draw('h-aw', (el) => {
     el.replaceChildren();
     const d = dash.data('awards'); if (d.status !== 'ok') { el.textContent = '—'; return; }
     const rows = d.data.filter((r) => r.row_id !== 'placeholder' && r.title).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3);
     if (!rows.length) { el.append(mk('p', 'empty', 'Nothing yet this season.')); return; }
     rows.forEach((r) => {
-      const c = mk('article', 'hh'); c.dataset.key = r.row_id;
-      const top = mk('div', 'hh-top'); top.append(mk('span', 'aw-mini-type', r.type || 'Award'), mk('span', 'hh-date', [r.date ? dayFmt(r.date) : '', r.league].filter(Boolean).join(' · ')));
-      const who = mk('div', 'hh-line'); const w = mk('span'); w.append(names(r.player)); if (r.team) w.append(' · ' + r.team); who.append(w);
-      c.append(top, mk('div', 'hh-head', r.title), who);
+      const c = mk('button', 'hx-aw'); c.type = 'button'; c.onclick = () => (r.player ? showLog(String(r.player).split(/\s*,\s*/)[0]) : goTo('awards'));
+      const top = mk('div', 'hx-awt'); top.append(mk('span', 'hx-awi', /record/i.test(r.type || '') ? '★' : /champ/i.test(r.type || '') ? '♛' : '🏆'), mk('span', 'hx-awk', r.type || 'Award'));
+      const who = mk('div', 'hx-aww'); who.append(faceAv('span', 'hx-awav', String(r.player || '').split(/\s*,\s*/)[0]), mk('span', '', [r.player, r.team].filter(Boolean).join(' · ')));
+      c.append(top, mk('b', 'hx-awh', r.title), who, mk('span', 'hx-awd', [r.date ? dayFmt(r.date) : '', r.league].filter(Boolean).join(' · ')));
       el.append(c);
     });
   });
 
-  // ---- Home: SBL
-  dash.draw('h-sbl', (el) => {
+  // ---- Home: "Season so far", one bento grid of season facts (Apple product-page style); numbers count up once in view
+  function hxCount(el) {
+    const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (!e.isIntersecting) return; io.unobserve(e.target);
+      const t = e.target, to = Number(t.dataset.count), dec = (String(t.dataset.count).split('.')[1] || '').length, t0 = performance.now(), d = 900;
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { t.textContent = to.toFixed(dec); return; }
+      const step = (now) => { const k = Math.min(1, (now - t0) / d), v = to * (1 - Math.pow(1 - k, 3)); t.textContent = v.toFixed(dec); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); }), { threshold: .4 }) : null;
+    el.querySelectorAll('[data-count]').forEach((n) => { if (io) { n.textContent = (0).toFixed((String(n.dataset.count).split('.')[1] || '').length); io.observe(n); } });
+  }
+  function bxNum(v) { const b = mk('b', 'bx-num', String(v)); if (/^\d+(\.\d+)?$/.test(String(v))) b.dataset.count = String(v); return b; }
+  dash.draw('h-bento', (el) => {
     el.replaceChildren();
-    const rows = sblRows(); if (!rows) { el.textContent = '—'; return; }
-    const list = rows.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3);
-    if (!list.length) { el.append(mk('p', 'empty', 'Nothing has stood out yet this season.')); return; }
-    list.forEach((r) => {
-      const c = mk('article', 'hh'); c.dataset.key = r.row_id;
-      const top = mk('div', 'hh-top'); top.append(mk('span', '', `${r.player} · ${r.team}`), mk('span', 'hh-date', r.date ? dayFmt(r.date) : ''));
-      const line = mk('div', 'hh-line');
-      [['PTS', r.pts], ['REB', r.reb], ['AST', r.ast]].filter(([, v]) => v !== '' && v != null).forEach(([k, v]) => { const s = mk('span'); s.append(mk('b', '', String(v)), ' ' + k); line.append(s); });
-      line.append(mk('span', '', `${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`));
-      c.append(top, mk('div', 'hh-head', tx(r, 'headline') || ''), line);
-      el.append(c);
-    });
+    const gl = ds('gamelogs'), pl = ds('players'); if (!gl || !pl) { el.textContent = '—'; return; }
+    const season = gl.filter((r) => r.date >= '2026-09-01' && r.row_id !== 'placeholder' && norm(r.competition) !== 'basketligan' && !/qualif|world cup|national/i.test(String(r.competition || '')));
+    const played = season.filter((r) => r.pts !== '' && r.pts != null && r.note !== 'DNP');
+    const tile = (cls, kick) => { const t = mk('div', 'bx-t ' + cls); if (kick) t.append(mk('span', 'bx-k', kick)); el.append(t); return t; };
+    // best single game
+    const best = played.slice().sort((a, b) => Number(b.pts) - Number(a.pts) || Number(b.reb) - Number(a.reb))[0];
+    if (best) {
+      const t = tile('bx-best go', 'Best game of the season'); t.tabIndex = 0; t.setAttribute('role', 'button');
+      const bxl = (ds('boxscores') || []).find((x) => isSame(x.player, best.player) && (ds('schedule') || []).some((g) => g.game_id === x.game_id && g.date === best.date));
+      t.onclick = () => (bxl ? showCardFor(bxl.game_id, best.player) : showLog(best.player));
+      const ph = photoFor(best.player); if (ph) { const pic = mk('span', 'bx-pic'); const im = new Image(); im.alt = ''; im.src = ph.src; portraitFit(im, ph); pic.append(im); t.append(pic, mk('span', 'bx-shade')); }
+      const v = mk('div', 'bx-big'); v.append(bxNum(Number(best.pts)), mk('span', 'bx-u', 'PTS'));
+      const line = [best.reb != null && best.reb !== '' ? `${best.reb} reb` : '', best.ast != null && best.ast !== '' ? `${best.ast} ast` : '', best.fg ? `${best.fg} FG` : ''].filter(Boolean).join(' · ');
+      const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.venue === 'Away' ? 'at' : 'vs'} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', line));
+      t.append(v, w);
+    }
+    // Swedish teams' record in games with a Swede playing (one game counted once per team)
+    const gm = new Map(); played.forEach((r) => { const k = r.date + '|' + norm(r.team); if (!gm.has(k) && /^[WL]/.test(String(r.result || ''))) gm.set(k, String(r.result)[0]); });
+    const w = [...gm.values()].filter((x) => x === 'W').length, l = gm.size - w;
+    { const t = tile('bx-rec', 'Their teams'); const n = mk('div', 'bx-row'); n.append(bxNum(w), mk('span', 'bx-dash', '–'), bxNum(l)); t.append(n, mk('span', 'bx-s', `wins and losses in ${gm.size} games with a Swede on the floor`));
+      const bar = mk('div', 'bx-wl'); const f = mk('span'); f.style.width = (gm.size ? w / gm.size * 100 : 0) + '%'; bar.append(f); t.append(bar); }
+    // double-doubles
+    const dd = played.filter((r) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => Number(r[k]) >= 10).length >= 2);
+    { const t = tile('bx-dd', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', `by ${who.length} player${who.length === 1 ? '' : 's'}`)); }
+    // where they play: one stacked bar
+    { const t = tile('bx-where go', 'Where they play'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('players');
+      const by = d3.rollups(pl.filter((r) => r.player), (v) => v.length, (r) => r.level || 'Other').sort((a, b) => b[1] - a[1]);
+      const tot = by.reduce((s, x) => s + x[1], 0) || 1, cols = ['#7fb3ff', '#fecc02', '#45d483', '#ff8a65', '#c39bff'];
+      const top = mk('div', 'bx-row'); top.append(bxNum(tot), mk('span', 'bx-s', `players in ${new Set(pl.map((r) => r.country).filter(Boolean)).size} countries`));
+      const bar = mk('div', 'bx-stack'), leg = mk('div', 'bx-leg');
+      by.forEach(([lv, n], i) => { const s = mk('span'); s.style.flex = String(n); s.style.background = cols[i % cols.length]; bar.append(s);
+        const lg = mk('button', 'bx-lg'); lg.type = 'button'; lg.onclick = (e) => { e.stopPropagation(); filterPlayers(lv); }; const dot = mk('i'); dot.style.background = cols[i % cols.length]; lg.append(dot, mk('span', '', LEVEL_LABEL[lv] || lv), mk('b', '', String(n))); leg.append(lg); });
+      t.append(top, bar, leg); }
+    // Swede vs Swede
+    { const g = games() || []; const h = g.filter((r) => isH2H(r)); const t = tile('bx-h2h', 'Swede vs Swede'); t.append(bxNum(h.length), mk('span', 'bx-s', 'games on the schedule where Swedes face each other')); }
+    // coaches
+    { const cg = (ds('coachgames') || []).filter((x) => x.status === 'final' && /^[WL] /.test(String(x.score || ''))); const cw = cg.filter((x) => String(x.score)[0] === 'W').length;
+      const t = tile('bx-co go', 'Coaches abroad'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('coaches'); const n = mk('div', 'bx-row'); n.append(bxNum(cw), mk('span', 'bx-dash', '–'), bxNum(cg.length - cw)); t.append(n, mk('span', 'bx-s', 'combined record in the games we track')); }
+    // latest award
+    { const a = (ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && r.title).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
+      if (a) { const t = tile('bx-aw go', 'Latest honour'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('awards');
+        const r = mk('div', 'bx-awr'); r.append(faceAv('span', 'bx-awav', String(a.player || '').split(/\s*,\s*/)[0])); const tx2 = mk('div'); tx2.append(mk('b', '', a.title), mk('span', 'bx-s', [a.player, a.team, a.date ? dayFmt(a.date) : ''].filter(Boolean).join(' · '))); r.append(tx2); t.append(mk('span', 'bx-tro', '🏆'), r); } }
+    hxCount(el);
+  });
+
+  // ---- Live score pill (iPhone Live Activity style): floats at the bottom while a Swede's game is live, tap for the game
+  let lvpI = 0, lvpT = null, lvpHide = false;
+  dash.draw('live-pill', (el) => {
+    el.replaceChildren(); clearTimeout(lvpT);
+    const g = games() || [];
+    let rows = g.filter((r) => r.status === 'live');
+    const demo = /[?&]pill=demo/.test(location.search);
+    if (!rows.length && demo) rows = g.filter((r) => r.status === 'final').slice(-3).reverse();
+    if (!rows.length || lvpHide) { el.classList.remove('on'); return; }
+    const r = rows[lvpI % rows.length];
+    const ha = homeAway(r); const b = mk('button', 'lvp-b'); b.type = 'button'; b.onclick = () => showCard(r.game_id);
+    const st = mk('span', 'lvp-st' + (r.status === 'live' ? ' live' : ''), r.status === 'live' ? (r.clock && !r.autoLive ? r.clock : 'Live') : 'Final');
+    const sc = mk('span', 'lvp-sc'); sc.append(crest(ha.home.name, 'sm'), mk('b', '', teamAbbr(ha.home.name).slice(0, 4)), mk('strong', '', ha.home.score == null ? '–' : String(ha.home.score)), mk('i', '', '–'), mk('strong', '', ha.away.score == null ? '–' : String(ha.away.score)), mk('b', '', teamAbbr(ha.away.name).slice(0, 4)), crest(ha.away.name, 'sm'));
+    const ln = gmxLine(r)[0]; const sw = mk('span', 'lvp-sw'); if (ln) { sw.append(faceAv('span', 'lvp-av', ln.n), mk('span', '', ln.n.split(' ').slice(-1)[0] + (ln.b ? ` ${ln.b.pts} pts` : ''))); }
+    b.append(st, sc, sw);
+    if (rows.length > 1) b.append(mk('span', 'lvp-more', `${(lvpI % rows.length) + 1}/${rows.length}`));
+    const x = mk('button', 'lvp-x', '×'); x.type = 'button'; x.title = 'Hide'; x.onclick = () => { lvpHide = true; el.classList.remove('on'); };
+    el.append(b, x); el.classList.add('on');
+    if (rows.length > 1) lvpT = setTimeout(() => { lvpI++; dash.draw('live-pill'); }, 5000);
   });
 
   dash.draw('hero-live', (el) => {
@@ -2786,16 +2813,19 @@
     fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (!v || !v.updated) return; const d = new Date(v.updated);
       el.textContent = 'Updated ' + d.toLocaleString('en-GB', { timeZone: 'Europe/Stockholm', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); }).catch(() => {});
   });
-  // ---- Home: coaches
+  // ---- Home: coaches, one card each with his last result
   dash.draw('h-co', (el) => {
     el.replaceChildren();
     const d = dash.data('coaches'); if (d.status !== 'ok') { el.textContent = '—'; return; }
     const rows = d.data.filter((r) => r.coach);
     if (!rows.length) { el.append(mk('p', 'empty', 'No coaches listed yet.')); return; }
+    const cg = ds('coachgames') || [];
     rows.forEach((r) => {
-      const b = mk('button', 'co-row'); b.type = 'button'; b.dataset.key = r.coach;
-      b.append(mk('span', 'co-name', r.coach), mk('span', 'co-sub', [r.role, r.club, r.country].filter(Boolean).join(' · ')));
-      b.onclick = () => goTo('coaches');
+      const b = mk('button', 'hx-co1'); b.type = 'button'; b.onclick = () => showCoach(r.coach);
+      const club = mk('span', 'hx-coclub'); club.append(crest(r.club, 'sm'), mk('span', '', r.club || ''));
+      b.append(faceAv('span', 'hx-coav', r.coach), mk('b', 'hx-con', r.coach), mk('span', 'hx-cor', r.role || 'Coach'), club);
+      const last = cg.filter((x) => isSame(x.coach, r.coach) && x.status === 'final' && /^[WL] /.test(String(x.score || ''))).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
+      if (last) { const l = mk('span', 'hx-colast ' + (String(last.score)[0] === 'W' ? 'w' : 'l')); l.append(mk('b', '', String(last.score)), document.createTextNode(` ${last.venue === 'Away' ? 'at' : 'vs'} ${last.opponent}`)); b.append(l); }
       el.append(b);
     });
   });
@@ -5598,5 +5628,6 @@
   openFromLink();
 </script>
 
+<div class="lvp" data-draw="live-pill" data-source="schedule boxscores logos photos" aria-live="polite"></div>
 </body>
 </html>
