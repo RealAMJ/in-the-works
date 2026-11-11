@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:19:02+01:00",
+ "at": "2026-11-11T01:19:53+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:16",
+   "clock": "01:41",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:04",
+   "clock": "12:50",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:06",
+   "clock": "11:43",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     24,
+     27,
      14
     ],
     [

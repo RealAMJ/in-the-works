@@ -2173,7 +2173,7 @@
   "line_id": "g20261111iona-fall",
   "game_id": "g20261111iona",
   "player": "Alliou Fall",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -2188,7 +2188,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {
