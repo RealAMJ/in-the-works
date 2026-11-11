@@ -48,7 +48,14 @@ def words_or_short(s):
 def match(names, row):
     a, b = words_or_short(row.get('team', '')), words_or_short(row.get('opponent', ''))
     n1, n2 = words_or_short(names[0]), words_or_short(names[1])
-    return (a & n1 and b & n2) or (a & n2 and b & n1)
+    # a feed lists the home team first. Teams that meet twice (home and away legs) must not take the other leg's feed:
+    # a home game wants our team first, an away game wants it second; neutral or unknown venue takes either
+    venue = str(row.get('venue') or '')
+    if venue == 'Home':
+        return bool(a & n1 and b & n2)
+    if venue == 'Away':
+        return bool(a & n2 and b & n1)
+    return bool((a & n1 and b & n2) or (a & n2 and b & n1))
 
 
 def own_team_on_roster(names, row, fid):
@@ -59,8 +66,9 @@ def own_team_on_roster(names, row, fid):
     if not swedes or not roster:
         return False
     t = words_or_short(row.get('team', ''))
-    return bool((t & words_or_short(names[0]) or t & words_or_short(names[1]))
-                and any(any(sw in fam or fam in sw for fam in roster if len(fam) > 2) for sw in swedes))
+    venue = str(row.get('venue') or '')
+    side = (t & words_or_short(names[0])) if venue == 'Home' else (t & words_or_short(names[1])) if venue == 'Away' else (t & words_or_short(names[0]) or t & words_or_short(names[1]))
+    return bool(side and any(any(sw in fam or fam in sw for fam in roster if len(fam) > 2) for sw in swedes))
 
 
 def main():
