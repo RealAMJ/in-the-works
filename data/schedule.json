@@ -1662,7 +1662,7 @@
   "espn_id": "401909963",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909963",
   "clock": "Q4 07:20",
-  "live_updated": "2026-11-11T05:17:45+01:00"
+  "live_updated": "2026-11-11T05:18:11+01:00"
  },
  {
   "game_id": "g20261111newm",
@@ -1678,7 +1678,9 @@
   "score": "W 94-69",
   "espn_id": "401924896",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924896",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261111ucam",

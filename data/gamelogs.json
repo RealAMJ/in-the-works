@@ -6024,5 +6024,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "fasasi-2026-11-11",
+  "player": "Tunde Fasasi",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "team": "New Mexico",
+  "opponent": "Little Rock",
+  "venue": "Home",
+  "result": "W 94-69",
+  "min": 21,
+  "pts": 11,
+  "reb": 1,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "4/8",
+  "three": "3/7",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 3,
+  "blk": 3,
+  "tov": 0,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
