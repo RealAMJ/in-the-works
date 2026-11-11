@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:42:25+01:00",
+ "at": "2026-11-11T01:43:17+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,17 +9,17 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:57",
+   "clock": "18:05",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     45,
+     48,
      15
     ],
     [
      "Georgetown Hoyas",
-     35,
+     39,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:34",
+   "clock": "05:15",
    "done": false,
    "teams": [
     [
