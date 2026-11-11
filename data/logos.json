@@ -102,6 +102,12 @@
   "dark": false
  },
  {
+  "team": "CSM Oradea",
+  "src": "logos/csm-oradea.png",
+  "source": "FIBA LiveStats",
+  "dark": false
+ },
+ {
   "team": "Cal State Northridge",
   "src": "logos/cal-state-northridge.png",
   "source": "NCAA (ESPN)",
@@ -220,6 +226,12 @@
   "src": "logos/fordham.png",
   "source": "NCAA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Fribourg Olympic",
+  "src": "logos/fribourg-olympic.png",
+  "source": "FIBA LiveStats",
+  "dark": false
  },
  {
   "team": "Georgetown",
@@ -390,6 +402,12 @@
   "dark": true
  },
  {
+  "team": "Lokomotiv Plovdiv",
+  "src": "logos/lokomotiv-plovdiv.png",
+  "source": "FIBA LiveStats",
+  "dark": false
+ },
+ {
   "team": "Los Angeles Lakers",
   "src": "logos/los-angeles-lakers.png",
   "source": "NBA (ESPN)",
@@ -480,6 +498,12 @@
   "dark": true
  },
  {
+  "team": "Mykonos",
+  "src": "logos/mykonos.png",
+  "source": "FIBA LiveStats",
+  "dark": false
+ },
+ {
   "team": "NINERS Chemnitz",
   "src": "logos/niners-chemnitz.png",
   "source": "EuroCup",
@@ -495,6 +519,12 @@
   "team": "Navy",
   "src": "logos/navy.png",
   "source": "NCAA (ESPN)",
+  "dark": false
+ },
+ {
+  "team": "Neftchi Baku",
+  "src": "logos/neftchi-baku.png",
+  "source": "FIBA LiveStats",
   "dark": false
  },
  {

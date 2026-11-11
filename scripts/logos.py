@@ -106,6 +106,8 @@ def league_pages():
     imgs('https://lkl.lt/komandos', 'LKL (lkl.lt)', 'https://lkl.lt')
     imgs('https://www.championsleague.basketball/en/teams', 'Champions League (championsleague.basketball)')
     sched = json.load(open(os.path.join(DATA, 'schedule.json'), encoding='utf-8'))
+    cg = os.path.join(DATA, 'coachgames.json')  # coaches' games too (Riipinen's Oradea)
+    sched += json.load(open(cg, encoding='utf-8')) if os.path.exists(cg) else []
     for r in sched:
         f = str(r.get('live_feed') or '')
         kind, _, gid = f.partition(':')
