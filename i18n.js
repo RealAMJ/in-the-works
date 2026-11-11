@@ -111,3 +111,126 @@ Object.assign(window.SA_I18N.D, { "Overview": "Översikt", "Games": "Matcher", "
 window.SA_I18N.RULES.unshift(["^(\\d+) as a coach\\.$", "$1 som tränare."], ["^🏆 (\\d+) titles?$", "🏆 $1 titlar"], ["^All (\\d+) titles and the full career →$", "Alla $1 titlar och hela karriären →"]);
 Object.assign(window.SA_I18N.D, { "Scores": "Resultat", "Results & fixtures": "Resultat & matcher", "Latest results": "Senaste resultat", "All games →": "Alla matcher →", "Leading the way": "I topp", "Full stats →": "All statistik →", "Per game this season, each player in his main competition (2+ games).": "Per match den här säsongen, varje spelare i sin främsta tävling (minst 2 matcher).", "Big nights": "Storkvällar", "Abroad": "Utomlands", "SBL at home": "SBL hemma", "Around the world": "Runt om i världen", "All players →": "Alla spelare →", "Honours": "Meriter", "On the bench": "På bänken", "All coaches →": "Alla tränare →", "Points": "Poäng", "Rebounds": "Returer", "Assists": "Assist" });
 Object.assign(window.SA_I18N.D, { "Season so far": "Säsongen hittills", "Best game of the season": "Säsongens bästa match", "Their teams": "Deras lag", "Double-doubles": "Dubbel-dubblar", "Where they play": "Var de spelar", "Latest honour": "Senaste utmärkelsen", "games on the schedule where Swedes face each other": "matcher på schemat där svenskar möts", "combined record in the games we track": "sammanlagt facit i matcherna vi bevakar", "Hide": "Dölj" });
+// ---- Swedish for the remaining interface texts (Nov 2026 pass)
+Object.assign(window.SA_I18N.D, {
+  "Faces of the season": "Säsongens ansikten", "The Swedes abroad": "Svenskarna utomlands", "Perfect shooting": "Perfekt skytte",
+  "Every Swedish player and coach abroad: games, live scores, box scores and stats, as they come in.": "Varje svensk spelare och tränare utomlands: matcher, liveresultat, matchprotokoll och statistik, direkt när de kommer.",
+  "Follow the games": "Följ matcherna", "Times are Swedish time.": "Tiderna är svensk tid.", "Stats from league and team box scores": "Statistik från ligornas och lagens matchprotokoll",
+  "game live now": "match pågår nu", "games live now": "matcher pågår nu", "games today": "matcher idag", "in the next 7 days": "kommande 7 dagar", "Next tip-off": "Nästa matchstart",
+  "No Swede vs Swede games in the schedule right now.": "Inga matcher svensk mot svensk på schemat just nu.",
+  "New games, times and results show up in your calendar on their own.": "Nya matcher, tider och resultat dyker upp i din kalender av sig själva.",
+  "Show more days": "Visa fler dagar", "The week in numbers": "Veckan i siffror", "games played": "spelade matcher", "Swedish teams": "Svenska lag",
+  "most points": "flest poäng", "most rebounds": "flest returer", "most assists": "flest assist", "More stories": "Fler artiklar", "Read →": "Läs →",
+  "2026-27 · Swedish men's players abroad": "2026-27 · Svenska herrspelare utomlands",
+  "Every Swedish player abroad this season: his club, his league and how his season is going. Tap a player for all his games and stats.": "Varje svensk spelare utomlands den här säsongen: klubb, liga och hur säsongen går. Tryck på en spelare för alla hans matcher och all statistik.",
+  "Playing today": "Spelar idag", "Swedes with a game today or tonight, Swedish time": "Svenskar med match idag eller ikväll, svensk tid", "Hot right now": "Heta just nu",
+  "Most points above their season average over the last three games": "Flest poäng över sitt säsongssnitt de senaste tre matcherna",
+  "The players called up for Sweden in November": "Spelarna som tagits ut till Sverige i november", "All players": "Alla spelare",
+  "Filter, sort or search the full list": "Filtrera, sortera eller sök i hela listan", "Sort": "Sortera", "No games played yet": "Inga matcher spelade än",
+  "2026-27 club not confirmed": "klubb 2026-27 inte bekräftad", "Next:": "Nästa:",
+  "Open profile →": "Öppna profilen →", "Find a player": "Hitta en spelare", "Every player in the SBL this season": "Alla spelare i SBL den här säsongen",
+  "Players in focus": "Spelare i fokus", "National team players and award winners in the SBL this season": "Landslagsspelare och prisvinnare i SBL den här säsongen",
+  "★ Player of the Month": "★ Månadens spelare", "Next SBL games for the players in focus": "Nästa SBL-matcher för spelarna i fokus",
+  "Season milestones coming up for players in the SBL": "Kommande milstolpar för spelarna i SBL", "All SBL games": "Alla SBL-matcher",
+  "Every game in the league, with full box scores (live during games)": "Alla matcher i ligan, med fullständiga matchprotokoll (live under matcherna)",
+  "Season highs": "Säsongsbästa", "The best single games by Swedes abroad this season": "Svenskarnas bästa enskilda matcher utomlands den här säsongen",
+  "⤴ Share profile": "⤴ Dela profilen", "Averages": "Snitt", "At a glance": "I korthet", "Ranks": "Rankning", "Splits": "Fördelning",
+  "points": "poäng", "rebounds": "returer", "assists": "assist", "points and rebounds": "poäng och returer", "points and assists": "poäng och assist", "rebounds and assists": "returer och assist",
+  "points, rebounds and assists": "poäng, returer och assist", "Best game:": "Bästa match:", "Where he ranks": "Var han rankas", "Splits and highs": "Fördelning och toppnoteringar",
+  "Last 5": "Senaste 5", "Last 10": "Senaste 10", "Losses": "Förluster", "Points high": "Flest poäng", "Rebounds high": "Flest returer", "Assists high": "Flest assist", "Steals high": "Flest steals", "Blocks high": "Flest block",
+  "Tomorrow": "Imorgon", "His season": "Hans säsong", "First meeting": "Första mötet", "No earlier game this season": "Ingen tidigare match den här säsongen",
+  "Swedish time": "svensk tid", "days": "dagar", "day": "dag", "Back-to-back": "Back-to-back", "Did not play": "Spelade inte",
+  "Among the Swedes abroad we track this season, each in his main competition (2+ games).": "Bland svenskarna utomlands som vi bevakar den här säsongen, var och en i sin huvudtävling (minst 2 matcher).",
+  "Best games": "Bästa matcher", "🇸🇪 Swedes in this game": "🇸🇪 Svenskar i matchen", "Swede spotlight": "Svensk i fokus", "Right now": "Just nu",
+  "Game leaders": "Matchens bästa", "The game in numbers": "Matchen i siffror", "Finnish and Swedish": "Finsk och svensk", "Swedish Cup": "Svenska cupen", "Swedish champions": "Svenska mästare",
+  "Per game": "Per match", "Head to head": "Inbördes möten",
+  "USA": "USA", "Germany": "Tyskland", "Poland": "Polen", "Austria": "Österrike", "Croatia": "Kroatien", "France": "Frankrike", "Iceland": "Island", "Italy": "Italien", "Lithuania": "Litauen", "Norway": "Norge", "Romania": "Rumänien", "Finland": "Finland"
+});
+(function () {
+  const M = { January: 'januari', February: 'februari', March: 'mars', April: 'april', May: 'maj', June: 'juni', July: 'juli', August: 'augusti', September: 'september', October: 'oktober', November: 'november', December: 'december', Jan: 'jan', Feb: 'feb', Mar: 'mars', Apr: 'apr', Jun: 'juni', Jul: 'juli', Aug: 'aug', Sep: 'sep', Sept: 'sep', Oct: 'okt', Nov: 'nov', Dec: 'dec' };
+  const C = { Romania: 'Rumänien', Germany: 'Tyskland', USA: 'USA', Poland: 'Polen', Spain: 'Spanien', France: 'Frankrike', Italy: 'Italien' };
+  const R = [];
+  Object.keys(M).forEach((m) => {
+    R.push([`^★ Player of the Month, ${m} (\\d+)$`, `★ Månadens spelare, ${M[m]} $1`]);
+    R.push([`^SBL Player of the Month \\(${m}\\)$`, `SBL:s månadens spelare (${M[m]})`]);
+    Object.keys(C).forEach((c) => R.push([`^(.+), ${c}, since ${m} (\\d+)$`, `$1, ${C[c]}, sedan ${M[m]} $2`]));
+  });
+  Object.keys(C).forEach((c) => R.push([`^(.+), ${c}, since (\\d+)$`, `$1, ${C[c]}, sedan $2`]));
+  R.push(
+    ['^(.+) · Read the story →$', '$1 · Läs artikeln →'],
+    ['^Show more days \\((\\d+) more games?\\)$', 'Visa fler dagar ($1 matcher till)'],
+    ['^Season high · (.+)$', 'Säsongsbästa · $1'], ['^(\\d+)\\+ points · (.+)$', '$1+ poäng · $2'], ['^Perfect shooting · (.+)$', 'Perfekt skytte · $1'], ['^Double-double · (.+)$', 'Dubbel-dubbel · $1'], ['^Triple-double · (.+)$', 'Trippel-dubbel · $1'],
+    ['^(\\d+)\\+ points$', '$1+ poäng'],
+    ['^Swedish teams, last (\\d+)$', 'svenska lag, senaste $1'],
+    ['^([\\d.]+) pts last 3$', '$1 p senaste 3'],
+    ['^(.+) \\(last club, (.+)\\)$', '$1 (senaste klubb, $2)'], ['^(.+) · 2026-27 club not confirmed$', '$1 · klubb 2026-27 inte bekräftad'],
+    ['^(\\d+) players from (\\d+) teams\\. Type a name, or pick a team\\.$', '$1 spelare från $2 lag. Skriv ett namn eller välj ett lag.'], ['^(\\d+) players$', '$1 spelare'],
+    ['^Shared with (.+)$', 'Delas med $1'], ['^Next best: (.+)$', 'Näst bäst: $1'],
+    ['^Points, last (\\d+) games$', 'Poäng, senaste $1 matcherna'],
+    ['^(\\d+)(st|nd|rd|th) among Swedes$', 'Nr $1 bland svenskarna'],
+    ['^(\\d+)(st|nd|rd|th) in (points|rebounds|assists|minutes|steals|blocks) among (\\d+) Swedes$', 'Nr $1 bland $4 svenskar'],
+    ['^in points among (\\d+) Swedes$', 'i poäng bland $1 svenskar'], ['^in rebounds among (\\d+) Swedes$', 'i returer bland $1 svenskar'], ['^in assists among (\\d+) Swedes$', 'i assist bland $1 svenskar'],
+    ['^Points among (\\d+) Swedes$', 'Poäng bland $1 svenskar'], ['^Rebounds among (\\d+) Swedes$', 'Returer bland $1 svenskar'], ['^Assists among (\\d+) Swedes$', 'Assist bland $1 svenskar'], ['^Minutes among (\\d+) Swedes$', 'Minuter bland $1 svenskar'], ['^Steals among (\\d+) Swedes$', 'Steals bland $1 svenskar'], ['^Blocks among (\\d+) Swedes$', 'Block bland $1 svenskar'],
+    ['^Source: Averages from game log \\((\\d+) games, through ([^;]+); latest game (.+)\\)$', 'Källa: snitt från matchloggen ($1 matcher, till och med $2; senaste matchen: $3)'],
+    ['^Source: Averages from game log \\((\\d+) games, through (.+)\\)$', 'Källa: snitt från matchloggen ($1 matcher, till och med $2)'],
+    ['^Source: Averages from game log \\((\\d+) games, (.+)\\)$', 'Källa: snitt från matchloggen ($1 matcher, $2)'],
+    ['^Averages from game log \\((\\d+) games, through (.+)\\)$', 'Snitt från matchloggen ($1 matcher, till och med $2)'],
+    ['^Leads all (\\d+) Swedes in$', 'Leder alla $1 svenskar i'],
+    ['^(\\d+) points$', '$1 poäng'], ['^([\\d.]+) points$', '$1 poäng'],
+    ['^, (\\d+) rebounds (vs|at) (.+)$', ', $1 returer mot $3'], ['^vs (.+)$', 'mot $1'],
+    ['^First among all Swedes in (\\d+) categor(?:y|ies)\\.$', 'Etta bland alla svenskar i $1 kategorier.'],
+    ['^(.+), this season\\.$', '$1, den här säsongen.'],
+    ['^His next season milestones in (.+), nearest first\\.$', 'Hans nästa milstolpar i $1, närmast först.'],
+    ['^(\\d+)-(\\d+) in his last (\\d+)\\. Tap a game for the full game center\\.$', '$1-$2 i hans senaste $3. Tryck på en match för hela matchcentret.'],
+    ['^His best game from each tournament, most recent first\\. Tap a game to share his line\\.$', 'Hans bästa match från varje turnering, senaste först. Tryck på en match för att dela hans rad.'],
+    ['^His best game from each tournament, most recent first\\. Tap a game for the full game center\\.$', 'Hans bästa match från varje turnering, senaste först. Tryck på en match för hela matchcentret.'],
+    ['^Next game · (.+)$', 'Nästa match · $1'], ['^Last time vs (.+)$', 'Senast mot $1'], ['^(\\d+) days$', '$1 dagar'], ['^In (\\d+) days?$', 'Om $1 dagar'], ['^since (.+)$', 'sedan $1'],
+    ['^Last (\\d+) games:$', 'Senaste $1 matcherna:'], ['^, ([\\d.]+) below his average$', ', $1 under hans snitt'], ['^, ([\\d.]+) above his average$', ', $1 över hans snitt'],
+    ['^Better at home: ([\\d.]+) points, ([\\d.]+) away\\.$', 'Bättre hemma: $1 poäng, $2 borta.'], ['^Better on the road: ([\\d.]+) points, ([\\d.]+) at home\\.$', 'Bättre borta: $1 poäng, $2 hemma.'],
+    ['^(.+) averages$', 'Snitt i $1'],
+    ['^(.+) beat (.+) (\\d+-\\d+) at home in the (.+)\\.$', '$1 slog $2 med $3 hemma i $4.'], ['^(.+) beat (.+) (\\d+-\\d+) on the road in the (.+)\\.$', '$1 slog $2 med $3 borta i $4.'],
+    ['^(.+) lost to (.+) (\\d+-\\d+) at home in the (.+)\\.$', '$1 förlorade mot $2 med $3 hemma i $4.'], ['^(.+) lost to (.+) (\\d+-\\d+) on the road in the (.+)\\.$', '$1 förlorade mot $2 med $3 borta i $4.'],
+    ['^(\\S+) won the shooting battle \\((.+) to (.+)\\)$', '$1 vann skyttekampen ($2 mot $3)'], ['^(\\S+) is winning the shooting battle \\((.+) to (.+)\\)$', '$1 vinner skyttekampen ($2 mot $3)'],
+    ['^(\\S+) won the rebounding battle \\((.+) to (.+)\\)$', '$1 vann returkampen ($2 mot $3)'], ['^(\\S+) is winning the rebounding battle \\((.+) to (.+)\\)$', '$1 vinner returkampen ($2 mot $3)'],
+    ['^(\\S+) took better care of the ball \\((\\d+) turnovers to (\\d+)\\)$', '$1 tog bättre hand om bollen ($2 bollförluster mot $3)'], ['^(\\S+) is taking better care of the ball \\((\\d+) turnovers to (\\d+)\\)$', '$1 tar bättre hand om bollen ($2 bollförluster mot $3)'],
+    ['^(\\d+) players shoot below the squad\'s median of ([\\d.]+)%\\. (\\d+) of them (?:is a guard|are guards): (.+) and (.+)\\.$', '$1 spelare skjuter under truppens median på $2 %. $3 av dem är guards: $4 och $5.'],
+    ['^at (.+)$', 'borta mot $1'],
+    ['^([^,:.·\\d]+) at ([^,:.·\\d]+)$', '$1 borta mot $2']
+  );
+  window.SA_I18N.RULES.unshift(...R);
+  window.SA_I18N.PHRASES.push(['Perfect FG', 'Perfekt från fältet'], ['Perfect from three', 'Perfekt från trepoäng'], ['Perfect FT', 'Perfekt från straff'], [' PTS', ' P'], [' REB', ' RET'], [' AST', ' ASS']);
+})();
+Object.assign(window.SA_I18N.D, {
+  "Also head coach of Sweden's men's national team (since 2021). Swedish-Finnish.": "Även förbundskapten för svenska herrlandslaget (sedan 2021). Sverigefinne.",
+  "Coaches Swedish forward Jacob Hadi.": "Tränar den svenska forwarden Jacob Hadi.",
+  "Södertälje native; former Södertälje Kings and Loyola Marymount player.": "Uppvuxen i Södertälje; tidigare spelare i Södertälje Kings och Loyola Marymount.",
+  "Long career in Sweden: Södertälje Kings and head coach of Sweden's men's national team.": "Lång karriär i Sverige: Södertälje Kings och förbundskapten för svenska herrlandslaget.",
+  "Spent years in Swedish basketball (Wetterbygden Stars, Umeå BSKT, Sweden men's national team staff). Coaches Swedish guard Anton Lindqvist.": "Har många år i svensk basket (Wetterbygden Stars, Umeå BSKT, svenska herrlandslagets ledarstab). Tränar den svenska guarden Anton Lindqvist.",
+  "Fourteen called up, without": "Fjorton uttagna, utan", "(Miami Heat) and": "(Miami Heat) och",
+  "(injured). An 18-year-old gets his first senior call: Norrköping's": "(skadad). En 18-åring får sin första A-landslagskallelse: Norrköpings"
+});
+window.SA_I18N.RULES.unshift(
+  ['^Next game · Today$', 'Nästa match · Idag'], ['^Next game · Tomorrow$', 'Nästa match · Imorgon'], ['^Next game · Tonight$', 'Nästa match · Ikväll'],
+  ['^At Madison Square Garden\\. Swedish matchup: (.+) plays for (.+)$', 'I Madison Square Garden. Svenskt möte: $1 spelar för $2'],
+  ['^(\\d+) PTS · (\\d+) REB · (\\d+) AST · (.+)$', '$1 P · $2 RET · $3 ASS · $4']
+);
+(function () {
+  const C = { Sweden: 'Sverige', Poland: 'Polen', Spain: 'Spanien', Germany: 'Tyskland', Italy: 'Italien', France: 'Frankrike', Lithuania: 'Litauen', Croatia: 'Kroatien', Austria: 'Österrike', Iceland: 'Island', Norway: 'Norge' };
+  const R = [];
+  Object.keys(C).forEach((c) => {
+    R.push([`^is the squad's top scorer at ([\\d.]+) a game \\(${c}(.*)\\)\\.$`, ` är truppens bästa poänggörare med $1 per match (${C[c]}$2).`]);
+    R.push([`^is the most efficient, with ([\\d.]+)% true shooting \\(${c}(.*)\\)\\.$`, ` är mest effektiv med $1 % true shooting (${C[c]}$2).`]);
+  });
+  window.SA_I18N.RULES.unshift(...R);
+})();
+Object.assign(window.SA_I18N.D, {
+  "Numbers": "Siffror", "Ranking": "Rankning", "Recent": "Senaste", "Highlights": "Höjdpunkter", "Schedule": "Schema", "Story": "Historien", "Every game": "Varje match",
+  "Did you know": "Visste du att", "Career path": "Karriärväg", "Form": "Form", "In short": "I korthet", "Milestones": "Milstolpar", "On the bench": "På bänken",
+  "Team stats": "Lagstatistik", "Live · updates on its own": "Live · uppdateras av sig själv", "Full box score": "Fullständigt protokoll",
+  "Explore": "Utforska", "Field goals": "Skott från fältet", "Three-pointers": "Trepoängare", "Free throws": "Straffkast", "hrs": "tim", "min": "min"
+});
+window.SA_I18N.RULES.unshift(
+  ['^Head coach · (.+)$', 'Huvudtränare · $1'],
+  ['^([\\d.]+) pts · ([\\d.]+) reb · ([\\d.]+) ast$', '$1 p · $2 ret · $3 ass'],
+  ['^(\\d*[12])(st|nd)$', '$1:a'], ['^(\\d+)(st|nd|rd|th)$', '$1:e']
+);

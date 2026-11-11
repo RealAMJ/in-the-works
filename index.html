@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=6e1ec3e0">
+<link rel="stylesheet" href="site2.css?v=eb5ebcdf">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -458,7 +458,7 @@
     <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
   </footer>
 </div>
-<script src="i18n.js?v=33eb8029"></script>
+<script src="i18n.js?v=69f24e1a"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -1288,7 +1288,7 @@
         box.append(p);
       }
     }
-    if (info && info.updated) box.append(mk('p', 'empty', 'Updated ' + dayFmt(info.updated)));
+    if (info && info.updated) box.append(mk('p', 'empty', L('Updated ', 'Uppdaterad ') + dayFmt(info.updated)));
     el.append(box);
     placeSheet(el, box, 'team:' + openTeam);
     x.focus({ preventScroll: true });
@@ -2618,7 +2618,7 @@
       const rows = sblRows(); if (!rows) { el.textContent = '—'; return; }
       tiles = rows.slice().sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3).map((r) => ({ player: r.player, team: r.team, date: r.date,
         nums: [[r.pts, 'PTS'], [r.reb, 'REB'], [r.ast, 'AST']].filter(([v]) => v !== '' && v != null),
-        tag: String(sblTags(r) || '').split(/,\s*(?![^()]*\))/)[0], line: `${r.venue === 'Away' ? 'at' : 'vs'} ${r.opponent}`,
+        tag: String(sblTags(r) || '').split(/,\s*(?![^()]*\))/)[0], line: `${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${r.opponent}`,
         go: (() => { const gid = sblGameFor(r); return gid ? () => showCardFor(gid, r.player) : null; })() }));
     } else {
       if (dash.data('highlights').status !== 'ok') { el.textContent = '—'; return; }
@@ -2706,23 +2706,23 @@
         else Object.assign(im.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%' });
         pic.append(im); t.append(pic, mk('span', 'bx-shade')); }
       const v = mk('div', 'bx-big'); v.append(bxNum(Number(best.pts)), mk('span', 'bx-u', 'PTS'));
-      const line = [best.reb != null && best.reb !== '' ? `${best.reb} reb` : '', best.ast != null && best.ast !== '' ? `${best.ast} ast` : '', best.fg ? `${best.fg} FG` : ''].filter(Boolean).join(' · ');
-      const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.venue === 'Away' ? 'at' : 'vs'} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', line));
+      const line = [best.reb != null && best.reb !== '' ? `${best.reb} ${L('reb', 'ret')}` : '', best.ast != null && best.ast !== '' ? `${best.ast} ${L('ast', 'ass')}` : '', best.fg ? `${best.fg} ${L('FG', 'skott')}` : ''].filter(Boolean).join(' · ');
+      const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', line));
       t.append(v, w);
     }
     // Swedish teams' record in games with a Swede playing (one game counted once per team)
     const gm = new Map(); played.forEach((r) => { const k = r.date + '|' + norm(r.team); if (!gm.has(k) && /^[WL]/.test(String(r.result || ''))) gm.set(k, String(r.result)[0]); });
     const w = [...gm.values()].filter((x) => x === 'W').length, l = gm.size - w;
-    { const t = tile('bx-rec', 'Their teams'); const n = mk('div', 'bx-row'); n.append(bxNum(w), mk('span', 'bx-dash', '–'), bxNum(l)); t.append(n, mk('span', 'bx-s', `wins and losses in ${gm.size} games with a Swede on the floor`));
+    { const t = tile('bx-rec', 'Their teams'); const n = mk('div', 'bx-row'); n.append(bxNum(w), mk('span', 'bx-dash', '–'), bxNum(l)); t.append(n, mk('span', 'bx-s', L(`wins and losses in ${gm.size} games with a Swede on the floor`, `vinster och förluster i ${gm.size} matcher med en svensk på planen`)));
       const bar = mk('div', 'bx-wl'); const f = mk('span'); f.style.width = (gm.size ? w / gm.size * 100 : 0) + '%'; bar.append(f); t.append(bar); }
     // double-doubles
     const dd = played.filter((r) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => Number(r[k]) >= 10).length >= 2);
-    { const t = tile('bx-dd', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', `by ${who.length} player${who.length === 1 ? '' : 's'}`)); }
+    { const t = tile('bx-dd', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', L(`by ${who.length} player${who.length === 1 ? '' : 's'}`, `av ${who.length} spelare`))); }
     // where they play: one stacked bar
     { const t = tile('bx-where go', 'Where they play'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('players');
       const by = d3.rollups(pl.filter((r) => r.player), (v) => v.length, (r) => r.level || 'Other').sort((a, b) => b[1] - a[1]);
       const tot = by.reduce((s, x) => s + x[1], 0) || 1, cols = ['#7fb3ff', '#fecc02', '#45d483', '#ff8a65', '#c39bff'];
-      const top = mk('div', 'bx-row'); top.append(bxNum(tot), mk('span', 'bx-s', `players in ${new Set(pl.map((r) => r.country).filter(Boolean)).size} countries`));
+      const top = mk('div', 'bx-row'); top.append(bxNum(tot), mk('span', 'bx-s', L(`players in ${new Set(pl.map((r) => r.country).filter(Boolean)).size} countries`, `spelare i ${new Set(pl.map((r) => r.country).filter(Boolean)).size} länder`)));
       const bar = mk('div', 'bx-stack'), leg = mk('div', 'bx-leg');
       by.forEach(([lv, n], i) => { const s = mk('span'); s.style.flex = String(n); s.style.background = cols[i % cols.length]; bar.append(s);
         const lg = mk('button', 'bx-lg'); lg.type = 'button'; lg.onclick = (e) => { e.stopPropagation(); filterPlayers(lv); }; const dot = mk('i'); dot.style.background = cols[i % cols.length]; lg.append(dot, mk('span', '', LEVEL_LABEL[lv] || lv), mk('b', '', String(n))); leg.append(lg); });
@@ -2752,7 +2752,7 @@
     const ha = homeAway(r); const b = mk('button', 'lvp-b'); b.type = 'button'; b.onclick = () => showCard(r.game_id);
     const st = mk('span', 'lvp-st' + (r.status === 'live' ? ' live' : ''), r.status === 'live' ? (r.clock && !r.autoLive ? r.clock : 'Live') : 'Final');
     const sc = mk('span', 'lvp-sc'); sc.append(crest(ha.home.name, 'sm'), mk('b', '', teamAbbr(ha.home.name).slice(0, 4)), mk('strong', '', ha.home.score == null ? '–' : String(ha.home.score)), mk('i', '', '–'), mk('strong', '', ha.away.score == null ? '–' : String(ha.away.score)), mk('b', '', teamAbbr(ha.away.name).slice(0, 4)), crest(ha.away.name, 'sm'));
-    const ln = gmxLine(r)[0]; const sw = mk('span', 'lvp-sw'); if (ln) { sw.append(faceAv('span', 'lvp-av', ln.n), mk('span', '', ln.n.split(' ').slice(-1)[0] + (ln.b ? ` ${ln.b.pts} pts` : ''))); }
+    const ln = gmxLine(r)[0]; const sw = mk('span', 'lvp-sw'); if (ln) { sw.append(faceAv('span', 'lvp-av', ln.n), mk('span', '', ln.n.split(' ').slice(-1)[0] + (ln.b ? ` ${ln.b.pts} ${L('pts', 'p')}` : ''))); }
     b.append(st, sc, sw);
     if (rows.length > 1) b.append(mk('span', 'lvp-more', `${(lvpI % rows.length) + 1}/${rows.length}`));
     const x = mk('button', 'lvp-x', '×'); x.type = 'button'; x.title = 'Hide'; x.onclick = () => { lvpHide = true; el.classList.remove('on'); };
@@ -2765,7 +2765,7 @@
     const t = g.filter(isTonight), live = t.filter((r) => r.status === 'live').length, done = t.filter((r) => r.status === 'final').length;
     const dot = mk('i', live ? 'on' : ''); el.append(dot, mk('b', '', live ? `${live} live now` : t.length ? `${t.length} game${t.length === 1 ? '' : 's'} today` : 'No games today'));
     if (t.length && !live) el.append(mk('span', '', `${done} finished`));
-    fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (v && v.updated) el.append(mk('span', '', 'Updated ' + new Date(v.updated).toLocaleTimeString('en-GB', { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit' }))); }).catch(() => {});
+    fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (v && v.updated) el.append(mk('span', '', L('Updated ', 'Uppdaterad ') + new Date(v.updated).toLocaleTimeString(L('en-GB', 'sv-SE'), { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit' }))); }).catch(() => {});
   });
   // ---- Home: photo gallery of the Swedes abroad we have pictures of (not the SBL players at home), biggest scorers first
   function portraitFit(img, photo) {
@@ -2805,7 +2805,7 @@
   // ---- Footer: when the data was last updated (data/_version.json), Swedish time
   dash.draw('foot-upd', (el) => {
     fetch('data/_version.json', { cache: 'no-store' }).then((r) => r.json()).then((v) => { if (!v || !v.updated) return; const d = new Date(v.updated);
-      el.textContent = 'Updated ' + d.toLocaleString('en-GB', { timeZone: 'Europe/Stockholm', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); }).catch(() => {});
+      el.textContent = L('Updated ', 'Uppdaterad ') + d.toLocaleString(L('en-GB', 'sv-SE'), { timeZone: 'Europe/Stockholm', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); }).catch(() => {});
   });
   // ---- Home: coaches, one card each with his last result
   dash.draw('h-co', (el) => {
@@ -2819,7 +2819,7 @@
       const club = mk('span', 'hx-coclub'); club.append(crest(r.club, 'sm'), mk('span', '', r.club || ''));
       b.append(faceAv('span', 'hx-coav', r.coach), mk('b', 'hx-con', r.coach), mk('span', 'hx-cor', r.role || 'Coach'), club);
       const last = cg.filter((x) => isSame(x.coach, r.coach) && x.status === 'final' && /^[WL] /.test(String(x.score || ''))).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
-      if (last) { const l = mk('span', 'hx-colast ' + (String(last.score)[0] === 'W' ? 'w' : 'l')); l.append(mk('b', '', String(last.score)), document.createTextNode(` ${last.venue === 'Away' ? 'at' : 'vs'} ${last.opponent}`)); b.append(l); }
+      if (last) { const l = mk('span', 'hx-colast ' + (String(last.score)[0] === 'W' ? 'w' : 'l')); l.append(mk('b', '', String(last.score)), document.createTextNode(` ${last.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${last.opponent}`)); b.append(l); }
       el.append(b);
     });
   });
@@ -5535,7 +5535,7 @@
     if (el && el.closest && el.closest('.h2h-ha') && I18N_CTX[t]) out = I18N_CTX[t];
     if (out == null && Object.prototype.hasOwnProperty.call(I18N.D, t)) out = I18N.D[t];
     if (out == null) for (const [re, rep] of I18N_RX) { if (re.test(t)) { out = t.replace(re, rep); break; } }
-    if (out == null && t.length < 90) { let u = t; I18N.PHRASES.forEach(([a, b]) => { u = u.split(a).join(b); }); if (u !== t) out = u; }
+    if (out == null && t.length < 140) { let u = t; I18N.PHRASES.forEach(([a, b]) => { u = u.split(a).join(b); }); if (u !== t) out = u; }
     if (out == null && /^(Home|Away) · /.test(t)) out = t.replace(/^Home/, 'Hemma').replace(/^Away/, 'Borta');
     return out == null ? s : lead + out + trail;
   }
@@ -5546,7 +5546,7 @@
   }
   function shown(o, el) { return LANG === 'sv' ? trStr(o, el) : enTimes(o); }
   const TR_ORIG = new WeakMap(), TR_SET = new WeakMap(), TR_AORIG = new WeakMap();
-  const TR_ATTRS = ['placeholder', 'title', 'aria-label'];
+  const TR_ATTRS = ['placeholder', 'title', 'aria-label', 'data-kick'];
   function trAttrs(el) {
     if (el.closest('[data-no-tr]')) return;
     TR_ATTRS.forEach((a) => {
