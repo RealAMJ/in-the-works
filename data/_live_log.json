@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:06:44+01:00",
+ "at": "2026-11-11T03:07:10+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -8,9 +8,9 @@
   {
    "game": "g20261111main",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:07",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Maine Black Bears",
@@ -32,12 +32,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:51",
+   "clock": "04:41",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     59,
+     61,
      17
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:25",
+   "clock": "00:59",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     76,
+     78,
      14
     ],
     [
@@ -124,7 +124,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:29",
+   "clock": "19:06",
    "done": false,
    "teams": [
     [
