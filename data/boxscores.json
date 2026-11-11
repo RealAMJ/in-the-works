@@ -2166,7 +2166,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 2,
-  "pf": 2,
+  "pf": 3,
   "eff": ""
  },
  {
@@ -2217,7 +2217,7 @@
   "line_id": "g20261111lips-tidare",
   "game_id": "g20261111lips",
   "player": "Hugo Tidare",
-  "min": 0,
+  "min": 1,
   "pts": 0,
   "reb": 0,
   "ast": 0,
