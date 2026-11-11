@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:30:52+01:00",
+ "at": "2026-11-11T03:31:43+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -9,17 +9,17 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:11",
+   "clock": "05:34",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     60,
+     62,
      14
     ],
     [
      "Lipscomb Bisons",
-     68,
+     71,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:46",
+   "clock": "03:29",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Utah Jazz",
-     19,
+     21,
      13
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:10",
+   "clock": "08:42",
    "done": false,
    "teams": [
     [
      "Little Rock Trojans",
-     12,
+     15,
      16
     ],
     [
