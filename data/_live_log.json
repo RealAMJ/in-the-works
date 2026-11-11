@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:57:49+01:00",
+ "at": "2026-11-11T03:58:15+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -10,7 +10,7 @@
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Belmont Bruins",
@@ -32,12 +32,12 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:44",
+   "clock": "08:22",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     39,
+     41,
      15
     ],
     [
