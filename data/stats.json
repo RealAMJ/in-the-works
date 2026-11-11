@@ -424,12 +424,12 @@
   "player": "Linus Holmström",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 2,
-  "min": 31.5,
-  "pts": 19.0,
-  "reb": 5.0,
-  "ast": 3.0,
-  "note": "Averages from game log (2 games, through 2026-11-07)"
+  "gp": 3,
+  "min": 30.7,
+  "pts": 14.3,
+  "reb": 3.7,
+  "ast": 2.3,
+  "note": "Averages from game log (3 games, through 2026-11-11)"
  },
  {
   "row_id": "obenjo-ncaa",
@@ -460,12 +460,12 @@
   "player": "Villiam Garcia Adsten",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 3,
-  "min": 23.7,
-  "pts": 10.7,
-  "reb": 4.7,
-  "ast": 1.7,
-  "note": "Averages from game log (3 games, through 2026-11-08)"
+  "gp": 4,
+  "min": 23.8,
+  "pts": 9.8,
+  "reb": 5.0,
+  "ast": 1.5,
+  "note": "Averages from game log (4 games, through 2026-11-11)"
  },
  {
   "row_id": "homelius-ncaa",

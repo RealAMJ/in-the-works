@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:10:36+01:00",
+ "at": "2026-11-11T03:11:02+01:00",
  "log": [
   {
    "game": "g20261111iona",
@@ -25,29 +25,6 @@
    ]
   },
   {
-   "game": "g20261111youn",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261111youn",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Youngstown State Penguins",
-     78,
-     14
-    ],
-    [
-     "Central Michigan Chippewas",
-     91,
-     15
-    ]
-   ]
-  },
-  {
    "game": "g20261111lips",
    "checking": "ESPN"
   },
@@ -60,7 +37,7 @@
    "teams": [
     [
      "Belmont Bruins",
-     40,
+     41,
      14
     ],
     [
@@ -101,7 +78,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:02",
+   "clock": "17:00",
    "done": false,
    "teams": [
     [

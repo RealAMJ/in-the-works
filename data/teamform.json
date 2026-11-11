@@ -5864,5 +5864,61 @@
   "note": "",
   "leaders": "Iwuchukwu|28|13|0;Mulready|14|6|2;Parker|13|1|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "maine-2026-11-11",
+  "team": "Maine",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Rhode Island",
+  "venue": "Away",
+  "score": "65-71",
+  "result": "L",
+  "top": "Lopes 13 pts, 2 reb",
+  "note": "",
+  "leaders": "Lopes|13|2|0;Williams|13|5|3;Evans|10|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "rhode-island-2026-11-11",
+  "team": "Rhode Island",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Home",
+  "score": "71-65",
+  "result": "W",
+  "top": "Williamson 18 pts, 3 reb",
+  "note": "",
+  "leaders": "Williamson|18|3|5;Fontenet|13|12|1;Deniusas|12|5|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "youngstown-state-2026-11-11",
+  "team": "Youngstown State",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Central Michigan",
+  "venue": "Away",
+  "score": "78-91",
+  "result": "L",
+  "top": "Haynes 15 pts, 4 reb",
+  "note": "",
+  "leaders": "Haynes|15|4|4;Nwankwo|15|5|0;Aekins|12|0|7",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "central-michigan-2026-11-11",
+  "team": "Central Michigan",
+  "date": "2026-11-11",
+  "competition": "NCAA",
+  "opponent": "Youngstown State",
+  "venue": "Home",
+  "score": "91-78",
+  "result": "W",
+  "top": "Brooks 22 pts, 1 reb",
+  "note": "",
+  "leaders": "Brooks|22|1|2;Garner|13|6|2;Kampen|13|2|1",
+  "source": "ESPN"
  }
 ]
