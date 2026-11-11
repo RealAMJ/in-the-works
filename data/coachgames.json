@@ -181,9 +181,10 @@
   "venue": "Away",
   "competition": "FIBA Europe Cup",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "fiba:2888330"
+  "status": "final",
+  "score": "W 93-67",
+  "live_feed": "fiba:2888330",
+  "live_done": true
  },
  {
   "game_id": "c20261113anw",

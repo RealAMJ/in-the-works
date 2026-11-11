@@ -1,26 +1,26 @@
 {
- "at": "2026-11-11T05:44:38+01:00",
+ "at": "2026-11-11T19:42:32+01:00",
  "log": [
   {
-   "game": "g20261111miam",
-   "checking": "ESPN"
+   "game": "c20261111ora",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261111miam",
-   "src": "ESPN",
-   "period": 0,
+   "game": "c20261111ora",
+   "src": "FIBA LiveStats",
+   "period": 4,
    "clock": "00:00",
    "done": true,
    "teams": [
     [
-     "Miami Heat",
-     115,
-     15
+     "CSM CSU Raiffeisen Oradea",
+     93,
+     12
     ],
     [
-     "Utah Jazz",
-     109,
-     13
+     "Fribourg Olympic Basket",
+     67,
+     12
     ]
    ]
   }
