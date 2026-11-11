@@ -2236,28 +2236,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261111miam-larsson",
-  "game_id": "g20261111miam",
-  "player": "Pelle Larsson",
-  "min": 24,
-  "pts": 10,
-  "reb": 5,
-  "ast": 2,
-  "fg": "3/5",
-  "three": "2/2",
-  "ft": "2/2",
-  "pm": 11,
-  "source": "ESPN",
-  "note": "live",
-  "oreb": 4,
-  "dreb": 1,
-  "stl": 1,
-  "blk": 0,
-  "tov": 1,
-  "pf": 0,
-  "eff": ""
- },
- {
   "line_id": "g20261111newm-fasasi",
   "game_id": "g20261111newm",
   "player": "Tunde Fasasi",
@@ -2277,6 +2255,28 @@
   "blk": 3,
   "tov": 0,
   "pf": 2,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261111miam-larsson",
+  "game_id": "g20261111miam",
+  "player": "Pelle Larsson",
+  "min": 24,
+  "pts": 10,
+  "reb": 5,
+  "ast": 2,
+  "fg": "3/5",
+  "three": "2/2",
+  "ft": "2/2",
+  "pm": 11,
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 4,
+  "dreb": 1,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 0,
   "eff": ""
  }
 ]
