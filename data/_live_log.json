@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T04:44:02+01:00",
+ "at": "2026-11-11T04:44:52+01:00",
  "log": [
   {
    "game": "g20261111miam",
@@ -9,7 +9,7 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "07:40",
+   "clock": "07:00",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Utah Jazz",
-     60,
+     62,
      13
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:22",
+   "clock": "08:20",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "New Mexico Lobos",
-     72,
+     74,
      13
     ]
    ]
