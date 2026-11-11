@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:21:48+01:00",
+ "at": "2026-11-11T02:22:40+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:47",
+   "clock": "04:02",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     73,
+     75,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:14",
+   "clock": "14:01",
    "done": false,
    "teams": [
     [
@@ -54,18 +54,18 @@
   {
    "game": "g20261111iona",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "18:32",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     37,
+     39,
      17
     ],
     [
      "Fordham Rams",
-     43,
+     47,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:23",
+   "clock": "09:15",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Lipscomb Bisons",
-     15,
+     18,
      16
     ]
    ]
