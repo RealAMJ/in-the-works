@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:42:39+01:00",
+ "at": "2026-11-11T03:43:31+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -55,17 +55,17 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:29",
+   "clock": "04:52",
    "done": false,
    "teams": [
     [
      "Little Rock Trojans",
-     22,
+     25,
      16
     ],
     [
      "New Mexico Lobos",
-     33,
+     36,
      13
     ]
    ]
