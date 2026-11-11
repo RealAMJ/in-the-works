@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:39:27+01:00",
+ "at": "2026-11-11T01:40:17+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -8,8 +8,8 @@
   {
    "game": "g20261111dela",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "20:00",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:43",
+   "clock": "04:11",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     21,
+     22,
      15
     ],
     [
      "Rhode Island Rams",
-     14,
+     16,
      16
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:32",
+   "clock": "07:07",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     23,
+     26,
      17
     ],
     [
      "Fordham Rams",
-     23,
+     26,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:59",
+   "clock": "04:18",
    "done": false,
    "teams": [
     [
@@ -90,6 +90,29 @@
      "Central Michigan Chippewas",
      36,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261111lips",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111lips",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Lipscomb Bisons",
+     0,
+     0
+    ],
+    [
+     "Belmont Bruins",
+     0,
+     0
     ]
    ]
   }
