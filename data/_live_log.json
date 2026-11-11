@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T00:39:44+01:00",
+ "at": "2026-11-12T00:40:34+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:44",
+   "clock": "04:26",
    "done": false,
    "teams": [
     [
@@ -21,6 +21,75 @@
      "VMI Keydets",
      30,
      17
+    ]
+   ]
+  },
+  {
+   "game": "g20261112stjo",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112stjo",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "St. John's Red Storm",
+     0,
+     0
+    ],
+    [
+     "Colgate Raiders",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261112mich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112mich",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Michigan Wolverines",
+     0,
+     0
+    ],
+    [
+     "Marquette Golden Eagles",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261112uncw",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112uncw",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UNC Wilmington Seahawks",
+     0,
+     0
+    ],
+    [
+     "Kent State Golden Flashes",
+     0,
+     0
     ]
    ]
   }
