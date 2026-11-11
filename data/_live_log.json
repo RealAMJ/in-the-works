@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T20:48:29+01:00",
+ "at": "2026-11-11T20:49:20+01:00",
  "log": [
   {
    "game": "g20261111ucam",
@@ -9,17 +9,17 @@
    "game": "g20261111ucam",
    "src": "FIBA (championsleague.basketball)",
    "period": 1,
-   "clock": "06:34",
+   "clock": "03:05",
    "done": false,
    "teams": [
     [
      "UCAM Murcia",
-     7,
+     17,
      0
     ],
     [
      "BMA365 Bamberg Baskets",
-     9,
+     15,
      0
     ]
    ]
