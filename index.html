@@ -3153,7 +3153,7 @@
   function lastGameCard(g, avg, share) {
     const res = String(g.result || '');
     const c = mk('button', 'lg-card ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : '')); c.type = 'button'; c.dataset.key = g.game_id;
-    c.onclick = share ? () => openShare(gameShare(g)) : () => showCard(g.game_id); if (share) c.title = 'Share this game';
+    const dnp = g.note === 'DNP'; c.onclick = share ? (dnp ? null : () => openShare(gameShare(g))) : () => showCard(g.game_id); if (share) { c.title = dnp ? 'Did not play' : 'Share this game'; if (dnp) { c.disabled = true; c.style.cursor = 'default'; } }
     const top = mk('div', 'lg-top'); top.append(mk('span', '', dayFmt(g.date)), mk('span', 'lg-res', res || '—'));
     const opp = mk('div', 'lg-opp'); opp.append(crest(g.opponent, 'sm'), mk('span', '', (g.venue === 'Away' ? '@ ' : 'vs ') + g.opponent));
     const nums = mk('div', 'lg-nums');
@@ -3233,7 +3233,7 @@
     const cur = rows.find((r) => r.competition === ppComp[key]) || rows[0];
 
     if (ppTab === 'overview') {
-      const sec = ppSection('Season 2026-27 averages');
+      const sec = ppSection(isProspect && cur ? `${cur.competition} averages` : 'Season 2026-27 averages');
       if (!cur) sec.append(mk('p', 'empty', 'No games yet this season.'));
       else {
         if (rows.length > 1) { const tabs = mk('div', 'pp-tabs'); rows.forEach((r) => { const b = mk('button', r === cur ? 'on' : '', r.competition); b.type = 'button'; b.onclick = () => { ppComp[key] = r.competition; dash.draw('pp'); }; tabs.append(b); }); sec.append(tabs); }
@@ -3313,7 +3313,7 @@
         }
       }
       // within reach: his next round numbers this season, in his current competition
-      if (cur) { const cgw = games.filter((g) => g.note !== 'DNP' && norm(g.competition) === norm(cur.competition));
+      if (cur && !isProspect) { const cgw = games.filter((g) => g.note !== 'DNP' && norm(g.competition) === norm(cur.competition));
         if (cgw.length >= 2) { const t = { player: name, comp: cur.competition, gp: cgw.length, pts: 0, reb: 0, ast: 0, tpm: 0, stl: 0, blk: 0 };
           cgw.forEach((g) => { ['pts', 'reb', 'ast', 'stl', 'blk'].forEach((x) => { t[x] += Number(g[x]) || 0; }); t.tpm += Number(String(g.three || '').split('/')[0]) || 0; });
           const wr = ppSection('Within reach', `His next season milestones in ${cur.competition}, nearest first.`); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
