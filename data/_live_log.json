@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T20:16:29+01:00",
+ "at": "2026-11-11T20:21:01+01:00",
  "log": [
   {
    "game": "g20261111ucam",
@@ -9,7 +9,7 @@
    "game": "g20261111ucam",
    "src": "FIBA (championsleague.basketball)",
    "period": 1,
-   "clock": "",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
