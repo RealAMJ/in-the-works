@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:52:01+01:00",
+ "at": "2026-11-11T01:52:52+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:28",
+   "clock": "14:09",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:55",
+   "clock": "02:29",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Fordham Rams",
-     32,
+     34,
      15
     ]
    ]
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     49,
+     50,
      15
     ]
    ]
