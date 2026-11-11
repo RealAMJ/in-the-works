@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:14:52+01:00",
+ "at": "2026-11-11T02:15:44+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,12 +9,12 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:48",
+   "clock": "07:21",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     62,
+     64,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:50",
+   "clock": "16:03",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     36,
+     38,
      15
     ],
     [
      "Rhode Island Rams",
-     33,
+     36,
      16
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:28",
+   "clock": "16:39",
    "done": false,
    "teams": [
     [
@@ -101,12 +101,12 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:05",
+   "clock": "13:55",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     4,
+     6,
      14
     ],
     [
