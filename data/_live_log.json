@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:29:34+01:00",
+ "at": "2026-11-11T03:30:25+01:00",
  "log": [
   {
    "game": "g20261111lips",
@@ -9,7 +9,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:55",
+   "clock": "06:23",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:28",
+   "clock": "09:25",
    "done": false,
    "teams": [
     [
