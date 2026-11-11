@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:12:32+01:00",
+ "at": "2026-11-11T02:13:03+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:15",
+   "clock": "17:46",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     54,
+     56,
      15
     ]
    ]
