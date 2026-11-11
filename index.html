@@ -3180,7 +3180,9 @@
     const nt = (ds('ntroster') || []).find((r) => isSame(r.player, name));
     const photo = photoFor(name);
     const games = playerGames(name);
-    const rows = st.filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp));
+    // tournament profiles open on the tournament with his best numbers (points + rebounds + assists a game); others on the one with most games
+    const best = (r) => Number(r.pts || 0) + Number(r.reb || 0) + Number(r.ast || 0);
+    const rows = st.filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => (isProspect ? best(b) - best(a) : 0) || Number(b.gp) - Number(a.gp));
     const car = (ds('career') || []).filter((r) => isSame(r.player, name));
     // Hero
     const hc = p ? '' : homeClubOf(name);
@@ -3203,7 +3205,7 @@
     if (nt) tags.append(mk('span', 'pp-tag', 'National team'));
     const acts = mk('div', 'pp-actions'); const cb = mk('button', 'pp-btn', '⇄ Compare'); cb.type = 'button'; cb.onclick = () => openCompare(name); if (!isProspect) acts.append(cb);
     if (!isProspect) { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
-    { const st0 = (ds('stats') || []).filter((r) => isSame(r.player, name) && Number(r.gp) > 0).sort((a, b) => Number(b.gp) - Number(a.gp))[0];
+    { const st0 = rows[0];
       if (st0) { const sh = mk('button', 'pp-btn', '⤴ Share profile'); sh.type = 'button';
         sh.onclick = () => openShare({ award: true, brand: isProspect ? name : '', player: name, team: (p && p.club) || hc, league: st0.competition, tag: 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
         acts.append(sh); } }
@@ -3289,7 +3291,7 @@
           const bg = cg.slice().sort((a, b) => (Number(b.pts) || 0) - (Number(a.pts) || 0))[0];
           if (bg) fact('●', `Best game: <b>${esc(bg.pts)} points</b>${Number(bg.reb) >= 8 ? `, ${esc(bg.reb)} rebounds` : ''} ${bg.venue === 'Away' ? 'at' : 'vs'} ${esc(bg.opponent)} <em>${esc(dayFmt(bg.date))}</em>`);
           const l5 = cg.slice(-5); if (l5.length >= 3) { const a5 = l5.reduce((t, g) => t + (Number(g.pts) || 0), 0) / l5.length; const d = a5 - Number(cur.pts); fact(d >= 0 ? '↗' : '↘', `Last ${l5.length} games: <b>${a5.toFixed(1)} points</b>, ${Math.abs(d).toFixed(1)} ${d >= 0 ? 'above' : 'below'} his average`); }
-          s2.append(facts); el.append(s2);
+          s2.append(facts); if (facts.childNodes.length) el.append(s2);
           s2.dataset.k = 'glance'; s2.dataset.kick = 'In short'; }
         const cg2 = games.filter((g) => norm(g.competition) === norm(cur.competition) && g.note !== 'DNP');
         const avg = Number(cur.pts);
