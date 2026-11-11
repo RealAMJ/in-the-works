@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=03b6b713">
+<link rel="stylesheet" href="site2.css?v=96654dcd">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -2815,7 +2815,9 @@
     if (ci.note) c.append(mk('p', 'pp-sub', ci.note));
     const cg = (ds('coachgames') || []).filter((x) => isSame(x.coach, n) && x.status === 'final' && x.date < g.date);
     if (cg.length) { const w = cg.filter((x) => String(x.score)[0] === 'W').length; c.append(mk('div', 'pp-sub', `Record in tracked games before this one: ${w}-${cg.length - w}`)); }
-    const tb = mk('button', 'hc-more', 'Coach profile →'); tb.type = 'button'; tb.onclick = () => showCoach(n); c.append(tb);
+    const tb = mk('button', 'hc-more', 'Coach profile →'); tb.type = 'button'; tb.onclick = (e) => { e.stopPropagation(); showCoach(n); }; c.append(tb);
+    // the whole card opens his profile, like a player's
+    c.classList.add('go'); c.tabIndex = 0; c.setAttribute('role', 'button'); c.title = 'Open ' + n; c.onclick = () => showCoach(n); c.onkeydown = (e) => { if (e.key === 'Enter') showCoach(n); };
     return c;
   }
   function glKey(r) { return 'gl:' + r.date + ':' + [nrmT(r.team), nrmT(r.opponent)].sort().join(':'); }
