@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:16:35+01:00",
+ "at": "2026-11-11T02:17:02+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     67,
+     68,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:05",
+   "clock": "15:39",
    "done": false,
    "teams": [
     [
@@ -101,17 +101,17 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:25",
+   "clock": "13:10",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     6,
+     8,
      14
     ],
     [
      "Lipscomb Bisons",
-     6,
+     8,
      16
     ]
    ]
