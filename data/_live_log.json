@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:35:48+01:00",
+ "at": "2026-11-11T02:36:15+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:13",
+   "clock": "10:59",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Rhode Island Rams",
-     45,
+     47,
      16
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:58",
+   "clock": "03:30",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     22,
+     24,
      14
     ],
     [
