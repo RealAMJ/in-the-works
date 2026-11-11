@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:10:48+01:00",
+ "at": "2026-11-11T02:11:40+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,17 +9,17 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:33",
+   "clock": "08:26",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     60,
+     62,
      15
     ],
     [
      "Georgetown Hoyas",
-     62,
+     66,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:32",
+   "clock": "17:21",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Rhode Island Rams",
-     30,
+     33,
      16
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:10",
+   "clock": "18:31",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     36,
+     39,
      14
     ],
     [
      "Central Michigan Chippewas",
-     52,
+     54,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:16",
+   "clock": "14:32",
    "done": false,
    "teams": [
     [
