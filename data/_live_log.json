@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:37:07+01:00",
+ "at": "2026-11-11T02:37:59+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     80,
+     81,
      15
     ]
    ]
@@ -42,7 +42,7 @@
     ],
     [
      "Rhode Island Rams",
-     47,
+     49,
      16
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:25",
+   "clock": "09:13",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     60,
+     62,
      14
     ],
     [
