@@ -6004,5 +6004,33 @@
   "note": "",
   "leaders": "Hubbard|17|6|1;Walters|13|1|3;King|12|3|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-11",
+  "team": "Miami Heat",
+  "date": "2026-11-11",
+  "competition": "NBA",
+  "opponent": "Utah Jazz",
+  "venue": "Away",
+  "score": "115-109",
+  "result": "W",
+  "top": "Antetokounmpo 30 pts, 11 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|30|11|4;Mitchell|19|5|8;Larsson|14|7|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "utah-jazz-2026-11-11",
+  "team": "Utah Jazz",
+  "date": "2026-11-11",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Home",
+  "score": "109-115",
+  "result": "L",
+  "top": "Peterson 25 pts, 4 reb",
+  "note": "",
+  "leaders": "Peterson|25|4|4;Bailey|23|7|2;Collier|17|5|5",
+  "source": "ESPN"
  }
 ]

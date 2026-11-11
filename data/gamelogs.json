@@ -6050,5 +6050,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "larsson-2026-11-11",
+  "player": "Pelle Larsson",
+  "date": "2026-11-11",
+  "competition": "NBA",
+  "team": "Miami Heat",
+  "opponent": "Utah Jazz",
+  "venue": "Away",
+  "result": "W 115-109",
+  "min": 31,
+  "pts": 14,
+  "reb": 7,
+  "ast": 2,
+  "source": "ESPN",
+  "fg": "4/7",
+  "three": "2/3",
+  "ft": "4/4",
+  "oreb": 4,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 4,
+  "pf": 0,
+  "pm": 3,
+  "eff": ""
  }
 ]
