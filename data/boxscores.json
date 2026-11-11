@@ -2175,7 +2175,7 @@
   "player": "Alliou Fall",
   "min": 6,
   "pts": 0,
-  "reb": 4,
+  "reb": 5,
   "ast": 0,
   "fg": "0/0",
   "three": "0/0",
@@ -2184,7 +2184,7 @@
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
-  "dreb": 4,
+  "dreb": 5,
   "stl": 0,
   "blk": 0,
   "tov": 1,
@@ -2210,7 +2210,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  }
 ]
