@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T03:21:21+01:00",
+ "at": "2026-11-11T03:23:02+01:00",
  "log": [
   {
    "game": "g20261111iona",
@@ -9,7 +9,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:19",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:06",
+   "clock": "08:41",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     53,
+     55,
      14
     ],
     [
      "Lipscomb Bisons",
-     61,
+     66,
      16
     ]
    ]
@@ -76,22 +76,7 @@
   },
   {
    "game": "g20261111newm",
-   "src": "ESPN",
-   "period": 1,
-   "clock": "13:03",
-   "done": false,
-   "teams": [
-    [
-     "Little Rock Trojans",
-     7,
-     16
-    ],
-    [
-     "New Mexico Lobos",
-     16,
-     13
-    ]
-   ]
+   "error": "URLError: <urlopen error _ssl.c:994: The handshake operation timed out>"
   }
  ]
 }
