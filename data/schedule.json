@@ -1662,7 +1662,8 @@
   "espn_id": "401909963",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909963",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261111newm",
