@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:50:18+01:00",
+ "at": "2026-11-11T01:51:10+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:17",
+   "clock": "14:49",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     44,
+     46,
      15
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:58",
+   "clock": "03:36",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     30,
+     32,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:29",
+   "clock": "00:03",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Central Michigan Chippewas",
-     46,
+     47,
      15
     ]
    ]
