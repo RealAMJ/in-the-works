@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:05:24+01:00",
+ "at": "2026-11-11T01:06:16+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     25,
+     27,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261111main",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:06",
+   "clock": "18:00",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Rhode Island Rams",
-     0,
+     2,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:25",
+   "clock": "18:31",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     3,
+     5,
      17
     ],
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Youngstown State Penguins",
-     9,
+     10,
      14
     ],
     [
