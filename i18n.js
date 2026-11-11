@@ -235,3 +235,4 @@ window.SA_I18N.RULES.unshift(
   ['^(\\d*[12])(st|nd)$', '$1:a'], ['^(\\d+)(st|nd|rd|th)$', '$1:e']
 );
 Object.assign(window.SA_I18N.D, { "Every game this season where Swedes face each other, players and coaches.": "Alla matcher den här säsongen där svenskar möter varandra, spelare och tränare." });
+window.SA_I18N.RULES.unshift(['^(\\d+) this season, newest first\\. Tap one for the game\\.$', '$1 den här säsongen, nyast först. Tryck på en för matchen.']);

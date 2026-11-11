@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=34fcb5de">
+<link rel="stylesheet" href="site2.css?v=1cff15b3">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -458,7 +458,7 @@
     <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
   </footer>
 </div>
-<script src="i18n.js?v=2bd37483"></script>
+<script src="i18n.js?v=87a7810d"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2686,6 +2686,34 @@
       const step = (now) => { const k = Math.min(1, (now - t0) / d), v = to * (1 - Math.pow(1 - k, 3)); t.textContent = v.toFixed(dec); if (k < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); }), { threshold: .4 }) : null;
     el.querySelectorAll('[data-count]').forEach((n) => { if (io) { n.textContent = (0).toFixed((String(n.dataset.count).split('.')[1] || '').length); io.observe(n); } });
   }
+  // ---- A sheet that slides up over the page (iOS style) with a list of games; Esc, the × or the backdrop closes it
+  function hxSheet(title, sub, rows) {
+    let d = document.getElementById('hx-sheet');
+    if (!d) { d = document.createElement('dialog'); d.id = 'hx-sheet'; d.className = 'hxs'; document.body.append(d);
+      d.addEventListener('click', (e) => { if (e.target === d) d.close(); }); }
+    d.replaceChildren();
+    const head = mk('div', 'hxs-h'); const tt = mk('div'); tt.append(mk('h2', '', title), mk('p', '', sub));
+    const x = mk('button', 'hxs-x', '×'); x.type = 'button'; x.setAttribute('aria-label', L('Close', 'Stäng')); x.onclick = () => d.close();
+    head.append(tt, x); const list = mk('div', 'hxs-list'); rows.forEach((r) => list.append(r));
+    d.append(mk('span', 'hxs-grab'), head, list);
+    if (!d.open) { try { d.showModal(); } catch (e) { d.setAttribute('open', ''); } }
+    if (swEl) { trBusy = true; trNode(d); trBusy = false; }
+    list.scrollTop = 0;
+  }
+  function ddSheet(dd) {
+    const sch = ds('schedule') || [], bx = ds('boxscores') || [];
+    const rows = dd.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || Number(b.pts) - Number(a.pts)).map((r) => {
+      const line = bx.find((x) => isSame(x.player, r.player) && sch.some((g) => g.game_id === x.game_id && g.date === r.date));
+      const b = mk('button', 'hxs-row'); b.type = 'button';
+      b.onclick = () => { document.getElementById('hx-sheet').close(); if (line) showCardFor(line.game_id, r.player); else showLog(r.player); };
+      const nums = mk('span', 'hxs-n'); [['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST'], ['stl', 'STL'], ['blk', 'BLK']].filter(([k]) => k === 'pts' || k === 'reb' || k === 'ast' || Number(r[k]) >= 10).forEach(([k, u]) => { const s2 = mk('span', Number(r[k]) >= 10 ? 'dd' : ''); s2.append(mk('b', '', String(r[k] ?? '–')), mk('i', '', u)); nums.append(s2); });
+      const who = mk('span', 'hxs-w'); who.append(mk('b', '', r.player), mk('span', '', `${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
+      const res = String(r.result || ''); const rc = mk('span', 'hxs-res ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res);
+      b.append(faceAv('span', 'hxs-av', r.player), who, nums, rc);
+      return b;
+    });
+    hxSheet(L('Double-doubles', 'Dubbel-dubblar'), L(`${dd.length} this season, newest first. Tap one for the game.`, `${dd.length} den här säsongen, nyast först. Tryck på en för matchen.`), rows);
+  }
   function bxNum(v) { const b = mk('b', 'bx-num', String(v)); if (/^\d+(\.\d+)?$/.test(String(v))) b.dataset.count = String(v); return b; }
   dash.draw('h-bento', (el) => {
     el.replaceChildren();
@@ -2717,7 +2745,9 @@
       const bar = mk('div', 'bx-wl'); const f = mk('span'); f.style.width = (gm.size ? w / gm.size * 100 : 0) + '%'; bar.append(f); t.append(bar); }
     // double-doubles
     const dd = played.filter((r) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => Number(r[k]) >= 10).length >= 2);
-    { const t = tile('bx-dd', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', L(`by ${who.length} player${who.length === 1 ? '' : 's'}`, `av ${who.length} spelare`))); }
+    { const t = tile('bx-dd go', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', L(`by ${who.length} player${who.length === 1 ? '' : 's'}`, `av ${who.length} spelare`)), mk('span', 'bx-go', L('See them all →', 'Se alla →')));
+      t.tabIndex = 0; t.setAttribute('role', 'button'); t.title = L('Every double-double this season', 'Alla dubbel-dubblar den här säsongen');
+      const open = () => ddSheet(dd); t.onclick = open; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } }; }
     // where they play: one stacked bar
     { const t = tile('bx-where go', 'Where they play'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('players');
       const by = d3.rollups(pl.filter((r) => r.player), (v) => v.length, (r) => r.level || 'Other').sort((a, b) => b[1] - a[1]);
