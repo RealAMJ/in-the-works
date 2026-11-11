@@ -2691,7 +2691,7 @@
     let d = document.getElementById('hx-sheet');
     if (!d) { d = document.createElement('dialog'); d.id = 'hx-sheet'; d.className = 'hxs'; document.body.append(d);
       d.addEventListener('click', (e) => { if (e.target === d) d.close(); }); }
-    d.replaceChildren();
+    d.replaceChildren(); d.className = 'hxs';
     const head = mk('div', 'hxs-h'); const tt = mk('div'); tt.append(mk('h2', '', title), mk('p', '', sub));
     const x = mk('button', 'hxs-x', '×'); x.type = 'button'; x.setAttribute('aria-label', L('Close', 'Stäng')); x.onclick = () => d.close();
     head.append(tt, x); const list = mk('div', 'hxs-list'); rows.forEach((r) => list.append(r));
@@ -2699,6 +2699,43 @@
     if (!d.open) { try { d.showModal(); } catch (e) { d.setAttribute('open', ''); } }
     if (swEl) { trBusy = true; trNode(d); trBusy = false; }
     list.scrollTop = 0;
+  }
+  // ---- Swede vs Swede sheet: a Swede's photo on each side, their lines head to head, the score in the middle
+  function h2hSheet(mu) {
+    const bx = ds('boxscores') || [], gl = ds('gamelogs') || [];
+    const lineFor = (n, x) => { const g = x.g; return (x.gameId && bx.find((r) => r.game_id === x.gameId && isSame(r.player, n))) || gl.find((r) => r.date === g.date && isSame(r.player, n)) || null; };
+    const sideEl = (list, x, cls, win, final) => {
+      const s = mk('div', 'hhs-side ' + cls + (final ? (win ? ' win' : ' lose') : ''));
+      const main = list.find((p) => p.role === 'Player') || list[0];
+      s.append(faceAv('span', 'hhs-av', main.n), mk('b', 'hhs-nm', main.n));
+      const ln = main.role === 'Player' ? lineFor(main.n, x) : null;
+      if (main.role !== 'Player') s.append(mk('span', 'hhs-role', main.role));
+      else if (ln && ln.note !== 'DNP' && ln.pts !== '' && ln.pts != null) { const nums = mk('span', 'hhs-nums'); [['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST']].forEach(([k, u]) => { const q = mk('span'); q.append(mk('b', '', String(ln[k] ?? '–')), mk('i', '', u)); nums.append(q); }); s.append(nums); }
+      else if (ln && ln.note === 'DNP') s.append(mk('span', 'hhs-role', L('Did not play', 'Spelade inte')));
+      else s.append(mk('span', 'hhs-role', final ? '' : L('Player', 'Spelare')));
+      const more = list.filter((p) => p !== main); if (more.length) s.append(mk('span', 'hhs-more', '+ ' + more.map((p) => `${p.n} (${p.role === 'Player' ? L('player', 'spelare') : L('coach', 'tränare')})`).join(', ')));
+      return s;
+    };
+    const rows = mu.slice().reverse().map((x) => {
+      const g = x.g, final = g.status === 'final', live = g.status === 'live';
+      const [ts, os] = splitScore(g); const won = String(g.score || '')[0] === 'W';
+      const away = g.venue === 'Away';
+      const L1 = { list: away ? x.b : x.a, team: away ? g.opponent : g.team, sc: away ? os : ts, win: away ? !won : won };
+      const R1 = { list: away ? x.a : x.b, team: away ? g.team : g.opponent, sc: away ? ts : os, win: away ? won : !won };
+      const row = mk(x.gameId ? 'button' : 'div', 'hhs-row' + (live ? ' live' : '')); if (x.gameId) { row.type = 'button'; row.onclick = () => { document.getElementById('hx-sheet').close(); showCard(x.gameId); }; }
+      const mid = mk('div', 'hhs-mid');
+      const cr = mk('div', 'hhs-crests'); cr.append(crest(L1.team, 'sm'), mk('span', 'hhs-vs', 'vs'), crest(R1.team, 'sm'));
+      const sc = mk('div', 'hhs-sc');
+      if (final || live) { sc.append(mk('b', L1.win && final ? 'w' : '', L1.sc == null ? '–' : String(L1.sc)), mk('i', '', '–'), mk('b', R1.win && final ? 'w' : '', R1.sc == null ? '–' : String(R1.sc))); }
+      else sc.append(mk('b', 'up', g.time && g.time !== 'TBC' ? g.time : 'TBC'));
+      mid.append(cr, sc, mk('span', 'hhs-st', [live ? L('Live', 'Live') : final ? L('Final', 'Slut') : '', dayFmt(g.date), shortComp(g.competition)].filter(Boolean).join(' · ')));
+      const tn = mk('div', 'hhs-teams'); tn.append(mk('span', '', L1.team), mk('span', '', R1.team));
+      row.append(sideEl(L1.list, x, 'l', L1.win, final), mid, sideEl(R1.list, x, 'r', R1.win, final), tn);
+      return row;
+    });
+    const up = mu.filter((x) => x.g.status !== 'final').length;
+    hxSheet(L('Swede vs Swede', 'Svensk mot svensk'), L(`${mu.length} games this season where Swedes face each other · ${up} coming up. Tap one for the game.`, `${mu.length} matcher den här säsongen där svenskar möts · ${up} kommande. Tryck på en för matchen.`), rows);
+    const d = document.getElementById('hx-sheet'); if (d) d.classList.add('hhs');
   }
   function ddSheet(dd) {
     const sch = ds('schedule') || [], bx = ds('boxscores') || [];
@@ -2761,7 +2798,7 @@
     { const g = games() || []; const mu = swedeMatchups(); const upN = mu.filter((x) => x.g.status !== 'final').length; const t = tile('bx-h2h go', 'Swede vs Swede'); t.append(bxNum(mu.length), mk('span', 'bx-s', L(`games this season where Swedes face each other · ${upN} coming up`, `matcher den här säsongen där svenskar möts · ${upN} kommande`)), mk('span', 'bx-go', L('See the games →', 'Se matcherna →')));
       // opens the Games page with its Swede vs Swede panel unfolded and in view
       t.tabIndex = 0; t.setAttribute('role', 'button'); t.title = L('Show the Swede vs Swede games', 'Visa matcherna svensk mot svensk');
-      const go = () => { goTo('games'); setTimeout(() => { const b = document.querySelector('[data-h2h-toggle][aria-controls="swe-vs-swe-body"]'); const sec = b && b.closest('.h2h-fold'); if (!sec) return; if (!sec.classList.contains('open')) b.click(); sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 120); };
+      const go = () => h2hSheet(mu);
       t.onclick = go; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }; }
     // coaches
     { const cg = (ds('coachgames') || []).filter((x) => x.status === 'final' && /^[WL] /.test(String(x.score || ''))); const cw = cg.filter((x) => String(x.score)[0] === 'W').length;

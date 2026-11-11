@@ -236,3 +236,4 @@ window.SA_I18N.RULES.unshift(
 );
 Object.assign(window.SA_I18N.D, { "Every game this season where Swedes face each other, players and coaches.": "Alla matcher den här säsongen där svenskar möter varandra, spelare och tränare." });
 window.SA_I18N.RULES.unshift(['^(\\d+) this season, newest first\\. Tap one for the game\\.$', '$1 den här säsongen, nyast först. Tryck på en för matchen.']);
+window.SA_I18N.RULES.unshift(['^(\\d+) games this season where Swedes face each other · (\\d+) coming up\\. Tap one for the game\\.$', '$1 matcher den här säsongen där svenskar möts · $2 kommande. Tryck på en för matchen.']);
