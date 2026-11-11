@@ -2291,5 +2291,70 @@
    0.3409,
    0.1875
   ]
+ },
+ {
+  "player": "Zion Vaamonde",
+  "src": "photos/zion-vaamonde.webp",
+  "sm": "photos/sm/zion-vaamonde.webp",
+  "credit": "",
+  "source": "ESPN",
+  "fbox": [
+   0.3864,
+   0.172,
+   0.4977,
+   0.5023
+  ]
+ },
+ {
+  "player": "Rodrigas Jucevicius",
+  "src": "photos/rodrigas-jucevicius.webp",
+  "sm": "photos/sm/rodrigas-jucevicius.webp",
+  "credit": "",
+  "source": "ESPN",
+  "fbox": [
+   0.4047,
+   0.1686,
+   0.493,
+   0.4896
+  ]
+ },
+ {
+  "player": "Samuel Obenjo",
+  "src": "photos/samuel-obenjo.webp",
+  "sm": "photos/sm/samuel-obenjo.webp",
+  "credit": "",
+  "source": "ESPN",
+  "fbox": [
+   0.3531,
+   0.1963,
+   0.3645,
+   0.4463
+  ]
+ },
+ {
+  "player": "Kenny Pohto",
+  "src": "photos/kenny-pohto.webp",
+  "sm": "photos/sm/kenny-pohto.webp",
+  "credit": "",
+  "source": "LKL (lkl.lt)",
+  "fbox": [
+   0.3568,
+   0.2193,
+   0.3281,
+   0.3684
+  ]
+ },
+ {
+  "player": "Jacob Hadi",
+  "src": "photos/jacob-hadi.webp",
+  "sm": "photos/sm/jacob-hadi.webp",
+  "credit": "",
+  "source": "Basketball Löwen Erfurt",
+  "fbox": [
+   0.2811,
+   0.0985,
+   0.434,
+   0.3023
+  ]
  }
 ]
