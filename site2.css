@@ -2826,3 +2826,7 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .lg-nums .lg-dnp { grid-column: 1 / -1; display: grid; justify-items: center; gap: 4px; }
 .lg-card.dnp .lg-dnp b { color: #93a6c4; letter-spacing: .04em; } .lg-card.dnp { opacity: .85; }
 .coach-pc.go { cursor: pointer; transition: border-color .2s ease, transform .2s ease; } .coach-pc.go:hover, .coach-pc.go:focus-visible { border-color: #fecc02; transform: translateY(-2px); outline: none; }
+/* the coach's button in "Swedish coach in this game" lights up on hover like the players' */
+#game .gchx .gchx-p { transition: background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
+#game .gchx .gchx-p.coach:hover, #game .gchx .gchx-p.coach:focus-visible { background: rgba(127,179,255,.26); border-color: #7fb3ff; box-shadow: 0 0 0 3px rgba(127,179,255,.18), 0 8px 22px -10px rgba(127,179,255,.6); transform: translateY(-1px); }
+#game .gchx .gchx-p:not(.coach):hover, #game .gchx .gchx-p:not(.coach):focus-visible { border-color: #fecc02; transform: translateY(-1px); }
