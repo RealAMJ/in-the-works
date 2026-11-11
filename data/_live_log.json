@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T02:39:42+01:00",
+ "at": "2026-11-11T02:40:14+01:00",
  "log": [
   {
    "game": "g20261111main",
@@ -42,7 +42,7 @@
     ],
     [
      "Fordham Rams",
-     53,
+     54,
      15
     ]
    ]
@@ -78,18 +78,64 @@
    "game": "g20261111lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:52",
+   "clock": "02:14",
    "done": false,
    "teams": [
     [
      "Belmont Bruins",
-     24,
+     26,
      14
     ],
     [
      "Lipscomb Bisons",
      33,
      16
+    ]
+   ]
+  },
+  {
+   "game": "g20261111miam",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111miam",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Utah Jazz",
+     0,
+     0
+    ],
+    [
+     "Miami Heat",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261111newm",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261111newm",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "New Mexico Lobos",
+     0,
+     0
+    ],
+    [
+     "Little Rock Trojans",
+     0,
+     0
     ]
    ]
   }
