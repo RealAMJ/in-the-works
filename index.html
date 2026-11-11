@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=6a003371">
+<link rel="stylesheet" href="site2.css?v=6e1ec3e0">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -2699,7 +2699,12 @@
       const t = tile('bx-best go', 'Best game of the season'); t.tabIndex = 0; t.setAttribute('role', 'button');
       const bxl = (ds('boxscores') || []).find((x) => isSame(x.player, best.player) && (ds('schedule') || []).some((g) => g.game_id === x.game_id && g.date === best.date));
       t.onclick = () => (bxl ? showCardFor(bxl.game_id, best.player) : showLog(best.player));
-      const ph = photoFor(best.player); if (ph) { const pic = mk('span', 'bx-pic'); const im = new Image(); im.alt = ''; im.src = ph.src; portraitFit(im, ph); pic.append(im); t.append(pic, mk('span', 'bx-shade')); }
+      const ph = photoFor(best.player); if (ph) { const pic = mk('span', 'bx-pic'); const im = new Image(); im.alt = ''; im.src = ph.src;
+        // big portrait: the face takes ~40% of the tile's height, its middle at 34% from the top (falls back to filling the box)
+        const fb = Array.isArray(ph.fbox) ? ph.fbox : null;
+        if (fb) { const [fx, fy, fw, fh] = fb, k = 0.40 / fh; Object.assign(im.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(fx + fw / 2) * 100}%)`, top: ((0.34 - (fy + fh / 2) * k) * 100) + '%' }); }
+        else Object.assign(im.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%' });
+        pic.append(im); t.append(pic, mk('span', 'bx-shade')); }
       const v = mk('div', 'bx-big'); v.append(bxNum(Number(best.pts)), mk('span', 'bx-u', 'PTS'));
       const line = [best.reb != null && best.reb !== '' ? `${best.reb} reb` : '', best.ast != null && best.ast !== '' ? `${best.ast} ast` : '', best.fg ? `${best.fg} FG` : ''].filter(Boolean).join(' · ');
       const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.venue === 'Away' ? 'at' : 'vs'} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', line));
