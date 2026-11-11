@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=3dad5fae">
+<link rel="stylesheet" href="site2.css?v=7facab6c">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -4260,6 +4260,10 @@
       } else cs.append(mk('p', 'ntz-lede', 'Only his current job is confirmed here. If you know his earlier clubs, they can be added.'));
       if ((car.national_teams || []).length) { const n = sec('National teams'); const g = mk('div', 'cpx-nt'); car.national_teams.forEach((x) => { const d = mk('div'); d.append(mk('b', '', x.team), mk('span', '', [x.years, x.role].filter(Boolean).join(', ')), mk('small', '', x.result || '')); g.append(d); }); n.append(g); }
     } else {
+      const story = SV() ? (car.story_sv || car.story) : car.story;
+      if (story) { const st = sec('The story'); String(story).split(/\n\n+/).forEach((para, i) => st.append(mk('p', i === 0 ? 'cpx-about cpx-lede' : 'cpx-about', para))); }
+      const facts = SV() ? (car.facts_sv || car.facts) : car.facts;
+      if (Array.isArray(facts) && facts.length) { const fs = sec('Did you know?'); const ul = mk('ul', 'cpx-hon cpx-facts'); facts.forEach((x) => ul.append(mk('li', '', x))); fs.append(ul); }
       const s = sec('Bio');
       const dl = mk('dl', 'cpx-dl');
       [['Born', car.born], ['Nationality', car.nationality], ['Role now', c.role], ['Club now', [c.club, c.league, c.country].filter(Boolean).join(', ')], ['In the job since', c.since], ['Coaching since', car.since]].forEach(([k, v]) => { if (v) { const d = mk('div'); d.append(mk('dt', '', k), mk('dd', '', v)); dl.append(d); } });

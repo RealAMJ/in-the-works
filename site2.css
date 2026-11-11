@@ -2833,3 +2833,10 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 /* coach header: full-length photos cropped head to chest */
 .cpx-pic.crop { overflow: hidden; align-items: flex-start; justify-content: center; }
 .cpx-pic.crop img { max-width: none; flex: none; }
+/* coach bio: the story */
+.cpx-about.cpx-lede { font-size: 1.15rem; line-height: 1.6; color: #f2f6fc; }
+.cpx-sec .cpx-about + .cpx-about { margin-top: .9em; }
+.cpx-facts li::marker { content: '★  '; color: #fecc02; }
+.cpx-hon.cpx-facts { background: none; border: 0; padding: 0; margin: 8px 0 0; list-style: none; display: grid; gap: 12px; }
+.cpx-hon.cpx-facts li { position: relative; padding-left: 26px; font-size: 1rem; line-height: 1.5; color: #dbe5f3; }
+.cpx-hon.cpx-facts li::marker { content: none; } .cpx-hon.cpx-facts li::before { content: '★'; position: absolute; left: 0; color: #fecc02; }
