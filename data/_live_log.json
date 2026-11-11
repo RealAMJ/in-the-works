@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:10:34+01:00",
+ "at": "2026-11-11T01:11:25+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -9,7 +9,7 @@
    "game": "g20261111dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:49",
+   "clock": "04:35",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Georgetown Hoyas",
-     29,
+     30,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:16",
+   "clock": "15:38",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Fordham Rams",
-     6,
+     9,
      15
     ]
    ]
@@ -83,12 +83,12 @@
    "teams": [
     [
      "Youngstown State Penguins",
-     12,
+     14,
      14
     ],
     [
      "Central Michigan Chippewas",
-     6,
+     8,
      15
     ]
    ]
