@@ -3322,11 +3322,14 @@
           const wr = ppSection('Within reach', `His next season milestones in ${cur.competition}, nearest first.`); wr.dataset.k = 'next'; wr.dataset.kick = 'Milestones';
           const box = mk('div', 'aw-watch pp-watch'); watchCards(box, [t], () => {}, 4, true); box.querySelectorAll('.aw-wtop').forEach((x) => x.remove()); wr.append(box); el.append(wr); } }
       const lgW = games.slice(-5).filter((g) => /^W/.test(g.result || '')).length, lgN = games.slice(-5).filter((g) => /^[WL]/.test(g.result || '')).length;
-      const tapTx = isProspect ? 'Tap a game to share his line.' : 'Tap a game for the full game center.'; const lg = ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. ${tapTx}` : tapTx);
+      const tapTx = isProspect ? 'Tap a game to share his line.' : 'Tap a game for the full game center.'; const lg = isProspect ? ppSection('Best games', `His best game from each tournament, most recent first. ${tapTx}`) : ppSection('Last games', lgN ? `${lgW}-${lgN - lgW} in his last ${lgN}. ${tapTx}` : tapTx);
       if (!games.length) lg.append(mk('p', 'empty', 'No games tracked yet.'));
       else {
         const strip = mk('div', 'lg-row');
-        games.slice(-12).reverse().forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null, isProspect)); });
+        // tournament profiles: his best game (points + rebounds + assists) from each tournament, newest tournament first
+        const lineOf = (g) => (Number(g.pts) || 0) + (Number(g.reb) || 0) + (Number(g.ast) || 0);
+        const shown = isProspect ? [...games.filter((g) => g.note !== 'DNP').reduce((m, g) => { const k = norm(g.competition), b = m.get(k); if (!b || lineOf(g) > lineOf(b)) m.set(k, g); return m; }, new Map()).values()].sort((a, b) => String(b.date).localeCompare(String(a.date))) : games.slice(-12).reverse();
+        shown.forEach((g) => { const r = rows.find((x) => norm(x.competition) === norm(g.competition)); strip.append(lastGameCard(g, r ? Number(r.pts) : null, isProspect)); });
         lg.append(strip);
         requestAnimationFrame(() => fitLastGames(strip));
         if (window.ResizeObserver) { let w0 = 0; new ResizeObserver((e) => { const w = Math.round(e[0].contentRect.width); if (w && w !== w0) { w0 = w; fitLastGames(strip); } }).observe(strip); }
