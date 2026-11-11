@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=eb5ebcdf">
+<link rel="stylesheet" href="site2.css?v=34fcb5de">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -124,10 +124,10 @@
     <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Games</b></button><h1>Games &amp; results</h1><p>Every game for Swedish players abroad since Oct 28, plus the coming week. Filter by league, search for a player, and tap a result for the box score.</p></header>
   <section class="gmx-top" data-draw="gmx-top" data-source="schedule boxscores"></section>
   <section class="sw-card h2h-sec h2h-fold" id="swe-vs-swe">
-    <button type="button" class="h2h-toggle" data-h2h-toggle aria-expanded="false" aria-controls="swe-vs-swe-body"><span class="h2h-tt">Swede vs Swede</span><span class="h2h-count" data-draw="h2h-count" data-h2h="upcoming" data-source="schedule gamelogs players coaches coachgames">—</span><span class="h2h-chev" aria-hidden="true"></span></button>
+    <button type="button" class="h2h-toggle" data-h2h-toggle aria-expanded="false" aria-controls="swe-vs-swe-body"><span class="h2h-tt">Swede vs Swede</span><span class="h2h-count" data-draw="h2h-count" data-source="schedule gamelogs players coaches coachgames">—</span><span class="h2h-chev" aria-hidden="true"></span></button>
     <div class="h2h-body" id="swe-vs-swe-body"><div class="h2h-in">
-      <p class="note">Coming games where Swedes face each other, players and coaches.</p>
-      <div data-draw="h2h" data-h2h="upcoming" data-source="schedule gamelogs players coaches coachgames"></div>
+      <p class="note">Every game this season where Swedes face each other, players and coaches.</p>
+      <div data-draw="h2h" data-source="schedule gamelogs players coaches coachgames"></div>
     </div></div>
   </section>
 
@@ -458,7 +458,7 @@
     <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
   </footer>
 </div>
-<script src="i18n.js?v=69f24e1a"></script>
+<script src="i18n.js?v=2bd37483"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -2728,7 +2728,11 @@
         const lg = mk('button', 'bx-lg'); lg.type = 'button'; lg.onclick = (e) => { e.stopPropagation(); filterPlayers(lv); }; const dot = mk('i'); dot.style.background = cols[i % cols.length]; lg.append(dot, mk('span', '', LEVEL_LABEL[lv] || lv), mk('b', '', String(n))); leg.append(lg); });
       t.append(top, bar, leg); }
     // Swede vs Swede
-    { const g = games() || []; const h = g.filter((r) => isH2H(r)); const t = tile('bx-h2h', 'Swede vs Swede'); t.append(bxNum(h.length), mk('span', 'bx-s', 'games on the schedule where Swedes face each other')); }
+    { const g = games() || []; const mu = swedeMatchups(); const upN = mu.filter((x) => x.g.status !== 'final').length; const t = tile('bx-h2h go', 'Swede vs Swede'); t.append(bxNum(mu.length), mk('span', 'bx-s', L(`games this season where Swedes face each other · ${upN} coming up`, `matcher den här säsongen där svenskar möts · ${upN} kommande`)), mk('span', 'bx-go', L('See the games →', 'Se matcherna →')));
+      // opens the Games page with its Swede vs Swede panel unfolded and in view
+      t.tabIndex = 0; t.setAttribute('role', 'button'); t.title = L('Show the Swede vs Swede games', 'Visa matcherna svensk mot svensk');
+      const go = () => { goTo('games'); setTimeout(() => { const b = document.querySelector('[data-h2h-toggle][aria-controls="swe-vs-swe-body"]'); const sec = b && b.closest('.h2h-fold'); if (!sec) return; if (!sec.classList.contains('open')) b.click(); sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 120); };
+      t.onclick = go; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }; }
     // coaches
     { const cg = (ds('coachgames') || []).filter((x) => x.status === 'final' && /^[WL] /.test(String(x.score || ''))); const cw = cg.filter((x) => String(x.score)[0] === 'W').length;
       const t = tile('bx-co go', 'Coaches abroad'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('coaches'); const n = mk('div', 'bx-row'); n.append(bxNum(cw), mk('span', 'bx-dash', '–'), bxNum(cg.length - cw)); t.append(n, mk('span', 'bx-s', 'combined record in the games we track')); }
@@ -5457,6 +5461,9 @@
       if (!a.length || !b.length) return;
       const key = g.date + '|' + [nrmT(g.team), nrmT(g.opponent)].sort().join('|');
       if (m.has(key)) { if (fromSched && !m.get(key).gameId) m.get(key).gameId = g.game_id; return; }
+      // the same game under another spelling of a club ("Tizona Burgos" / "Grupo Ureta Tizona Burgos"): one card, Swedes merged
+      const twin = [...m.values()].find((x) => x.g.date === g.date && ((sameTeam(x.g.team, g.team) && sameTeam(x.g.opponent, g.opponent)) || (sameTeam(x.g.team, g.opponent) && sameTeam(x.g.opponent, g.team))));
+      if (twin) { const flip = !sameTeam(twin.g.team, g.team); const mrg = (to, from) => from.forEach((p) => { if (!to.some((q) => q.n === p.n)) to.push(p); }); mrg(twin.a, flip ? b : a); mrg(twin.b, flip ? a : b); if (fromSched && !twin.gameId) twin.gameId = g.game_id; return; }
       m.set(key, { g, a, b, gameId: fromSched ? g.game_id : null });
     };
     (allGames() || []).forEach((g) => add(g, true));

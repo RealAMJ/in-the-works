@@ -3052,3 +3052,5 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .lvp-b { flex: 1 1 auto; } .lvp-sw { min-width: 0; overflow: hidden; } .lvp-sw span:last-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; } .lvp-x { flex: none; }
 /* room for Å, Ä and Ö on the big Anton headings (Swedish titles, accented names) */
 .sw h1, .sw .ntz-d, .sw .lx-head h2 { line-height: 1.04 !important; padding-top: .06em; }
+#home.hz .bx-go { margin-top: auto; padding-top: 6px; font: 700 13px Archivo, sans-serif; color: var(--nz-sky); }
+#home.hz .bx-h2h { align-content: stretch; display: flex; flex-direction: column; gap: 8px; }
