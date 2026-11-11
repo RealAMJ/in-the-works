@@ -2840,3 +2840,7 @@ html:has(#player:not([hidden])), html:has(#player:not([hidden])) body, html:has(
 .cpx-hon.cpx-facts { background: none; border: 0; padding: 0; margin: 8px 0 0; list-style: none; display: grid; gap: 12px; }
 .cpx-hon.cpx-facts li { position: relative; padding-left: 26px; font-size: 1rem; line-height: 1.5; color: #dbe5f3; }
 .cpx-hon.cpx-facts li::marker { content: none; } .cpx-hon.cpx-facts li::before { content: '★'; position: absolute; left: 0; color: #fecc02; }
+/* surnames with accented capitals (Å, Ä, Ö, É...): room above the line so the accent doesn't touch the club name */
+#player .pp-last.acc, #sblp .pp-last.acc, .pp-last.acc { padding-top: .14em; }
+#player .pp-last, #sblp .pp-last { overflow-wrap: normal; word-break: normal; }
+@media (max-width: 640px) { #player .pp-last.acc, #sblp .pp-last.acc { padding-top: .22em; } }

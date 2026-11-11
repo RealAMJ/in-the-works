@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=7facab6c">
+<link rel="stylesheet" href="site2.css?v=b0a0e45a">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -3172,6 +3172,9 @@
     const pr = ppPlayer && prospect(ppPlayer); if (pr) dsOverlay = { players: prospectRows('players'), stats: prospectRows('stats'), gamelogs: prospectRows('gamelogs'), photos: prospectRows('photos'), bios: prospectRows('bios') };
     try { ppDraw(el, !!pr); } finally { dsOverlay = null; }
   });
+  // a big surname shrinks to fit its line instead of breaking mid-word (long names on phones)
+  function fitSurname(h) { if (!h) return; const go = () => { h.style.fontSize = ''; h.style.whiteSpace = 'nowrap'; const w = h.parentElement ? h.parentElement.clientWidth : 0; if (!w) return; const sw = h.scrollWidth; if (sw > w) { const fs = parseFloat(getComputedStyle(h).fontSize); h.style.fontSize = Math.floor(fs * w / sw * 0.98) + 'px'; } };
+    requestAnimationFrame(go); if (document.fonts && document.fonts.ready) document.fonts.ready.then(go); if (window.ResizeObserver && h.parentElement) new ResizeObserver(() => requestAnimationFrame(go)).observe(h.parentElement); }
   function ppDraw(el, isProspect) {
     el.replaceChildren(); if (isProspect && ppTab === 'log') ppTab = 'overview';
     if (!ppPlayer) { el.append(mk('p', 'hc-note', 'Pick a player from the search or any list.')); return; }
@@ -3200,7 +3203,7 @@
     const id = mk('div', 'pp-id');
     const club = mk('div', 'pp-club'); if (p && p.club) { club.append(crest(p.club, 'sm'), teamBtn(p.club)); } else if (hc) { const s = mk('button', 'tm', hc); s.type = 'button'; s.tabIndex = -1; s.style.cursor = 'default'; club.append(crest(hc, 'sm'), s); }
     const parts = name.split(' ');
-    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]));
+    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last' + (/[ÅÄÖÉÈÊËÜÚÙÛÁÀÂÍÌÎÏÓÒÔØŠŽČĆ]/.test(String(parts[parts.length - 1]).toUpperCase()) ? ' acc' : ''), parts[parts.length - 1]));
     const meta = mk('div', 'pp-meta');
     [shirt ? '#' + shirt : '', bio && bio.position].filter(Boolean).forEach((t) => meta.append(mk('span', '', t)));
     const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag y', '🇸🇪 Sweden'));
@@ -3214,7 +3217,7 @@
         acts.append(sh); } }
     id.append(meta, tags, acts);
     hero.append(pic, id);
-    el.append(hero);
+    el.append(hero); fitSurname(id.querySelector('.pp-last'));
     // sticky mini header: appears once the big header has scrolled away
     { const mini = mk('div', 'pp-mini'); const mav = mk('span', 'pp-mini-av'); if (photo) { const im = document.createElement('img'); im.src = smSrc(photo); im.alt = ''; faceFit(im, photo); mav.append(im); } else mav.textContent = initials(name);
       const mt = mk('div'); mt.append(mk('b', '', name), mk('span', '', [shirt ? '#' + shirt : '', (p && p.club) || hc].filter(Boolean).join(', ')));
@@ -3744,7 +3747,7 @@
     const tags = mk('div', 'pp-tags'); tags.append(mk('span', 'pp-tag', 'Basketligan'), mk('span', 'pp-tag', '2026-27'));
     const meta = mk('div', 'pp-meta'); if (ro) { [ro.number != null ? '#' + ro.number : '', ro.position ? String(ro.position).replace(/s$/, '') : '', ro.height ? ro.height + ' cm' : '', ro.nationality ? (new Intl.DisplayNames(['en'], { type: 'region' }).of(ro.nationality) || ro.nationality) : ''].filter(Boolean).forEach((x) => meta.append(mk('span', '', x))); }
     if (ro && ro.number != null) hero.append(mk('span', 'pp-bignum', String(ro.number)));
-    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last', parts[parts.length - 1]), meta, tags); hero.append(pic, id); el.append(hero);
+    id.append(club, mk('div', 'pp-first', parts.slice(0, -1).join(' ')), mk('h1', 'pp-last' + (/[ÅÄÖÉÈÊËÜÚÙÛÁÀÂÍÌÎÏÓÒÔØŠŽČĆ]/.test(String(parts[parts.length - 1]).toUpperCase()) ? ' acc' : ''), parts[parts.length - 1]), meta, tags); hero.append(pic, id); el.append(hero); fitSurname(id.querySelector('.pp-last'));
     { const lv = liveNowEl(sblpName, team); if (lv) el.append(lv); }
     if (ph && Array.isArray(ph.fbox)) { const im = pic.querySelector('img'); pic.classList.add('fitface'); const fit = () => heroFaceFit(pic, im, ph.fbox); im.addEventListener('load', fit); if (window.ResizeObserver) new ResizeObserver(fit).observe(pic); }
     const av = (k) => played.length ? played.reduce((t, r) => t + (Number(r[k]) || 0), 0) / played.length : 0;
