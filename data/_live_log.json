@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T00:02:13+01:00",
+ "at": "2026-11-12T00:06:42+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -8,19 +8,19 @@
   {
    "game": "g20261112vmi",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:58",
    "done": false,
    "teams": [
     [
-     "VMI Keydets",
-     0,
-     0
-    ],
-    [
      "North Carolina Central Eagles",
      0,
-     0
+     15
+    ],
+    [
+     "VMI Keydets",
+     0,
+     17
     ]
    ]
   }
