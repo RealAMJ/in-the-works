@@ -3207,7 +3207,7 @@
     if (!isProspect) { const cal = document.createElement('a'); cal.className = 'pp-btn'; cal.href = calUrl(name); cal.textContent = '📅 Add games to calendar'; cal.title = 'Subscribe in your calendar app: new games and results appear on their own'; acts.append(cal); }
     { const st0 = rows[0];
       if (st0) { const sh = mk('button', 'pp-btn', '⤴ Share profile'); sh.type = 'button';
-        sh.onclick = () => openShare({ award: true, brand: isProspect ? name : '', player: name, team: (p && p.club) || hc, league: st0.competition, tag: 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
+        sh.onclick = () => openShare({ award: true, brand: isProspect ? name : '', player: name, team: isProspect ? (st0.team || (games.find((g) => norm(g.competition) === norm(st0.competition)) || {}).team || (p && p.club) || hc) : ((p && p.club) || hc), league: st0.competition, tag: isProspect ? L('Tournament averages', 'Turneringssnitt') : 'Season 2026-27', headline: `${f1x(st0.pts)} points, ${f1x(st0.reb)} rebounds and ${f1x(st0.ast)} assists a game`, headline_sv: `${f1x(st0.pts)} poäng, ${f1x(st0.reb)} returer och ${f1x(st0.ast)} assist per match` });
         acts.append(sh); } }
     id.append(meta, tags, acts);
     hero.append(pic, id);
