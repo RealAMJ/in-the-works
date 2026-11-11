@@ -1,29 +1,6 @@
 {
- "at": "2026-11-11T03:58:15+01:00",
+ "at": "2026-11-11T03:59:01+01:00",
  "log": [
-  {
-   "game": "g20261111lips",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261111lips",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Belmont Bruins",
-     75,
-     14
-    ],
-    [
-     "Lipscomb Bisons",
-     88,
-     16
-    ]
-   ]
-  },
   {
    "game": "g20261111miam",
    "checking": "ESPN"
@@ -32,12 +9,12 @@
    "game": "g20261111miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:22",
+   "clock": "08:01",
    "done": false,
    "teams": [
     [
      "Miami Heat",
-     41,
+     44,
      15
     ],
     [
@@ -55,7 +32,7 @@
    "game": "g20261111newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:40",
+   "clock": "00:12",
    "done": false,
    "teams": [
     [
