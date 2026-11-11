@@ -34,7 +34,7 @@
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=c7684261">
+<link rel="stylesheet" href="site2.css?v=03b6b713">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -3157,9 +3157,10 @@
     const top = mk('div', 'lg-top'); top.append(mk('span', '', dayFmt(g.date)), mk('span', 'lg-res', res || '—'));
     const opp = mk('div', 'lg-opp'); opp.append(crest(g.opponent, 'sm'), mk('span', '', (g.venue === 'Away' ? '@ ' : 'vs ') + g.opponent));
     const nums = mk('div', 'lg-nums');
-    [['PTS', g.pts], ['REB', g.reb], ['AST', g.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', v === '' || v == null ? '—' : String(v)), mk('span', '', k)); nums.append(d); });
+    if (g.note === 'DNP') { c.classList.add('dnp'); const d = mk('div', 'lg-dnp'); d.append(mk('b', '', 'DNP'), mk('span', '', 'Did not play')); nums.append(d); }
+    else [['PTS', g.pts], ['REB', g.reb], ['AST', g.ast]].forEach(([k, v]) => { const d = mk('div'); d.append(mk('b', '', v === '' || v == null ? '—' : String(v)), mk('span', '', k)); nums.append(d); });
     const foot = mk('div', 'lg-foot');
-    foot.append(mk('span', '', `${g.min || '—'} min · FG ${g.fg || '—'}`));
+    foot.append(mk('span', '', g.note === 'DNP' ? '' : `${g.min || '—'} min · FG ${g.fg || '—'}`));
     if (avg != null && g.pts !== '' && g.pts != null) { const diff = Number(g.pts) - avg; foot.append(mk('span', 'lg-diff ' + (diff >= 0 ? 'up' : 'down'), `${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff).toFixed(1)} vs avg`)); }
     c.append(top, opp, nums, foot, mk('div', 'lg-comp', shortComp(g.competition)));
     return c;
