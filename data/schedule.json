@@ -1693,11 +1693,10 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "live",
-  "score": "W 42-31",
+  "status": "final",
+  "score": "W 98-66",
   "live_feed": "bcl:136266",
-  "clock": "Q2 02:53",
-  "live_updated": "2026-11-11T21:17:57+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261112vmi",
