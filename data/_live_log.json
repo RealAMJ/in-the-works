@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:24:35+01:00",
+ "at": "2026-11-11T01:25:26+01:00",
  "log": [
   {
    "game": "g20261111dela",
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Maine Black Bears",
-     13,
+     15,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261111iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:57",
+   "clock": "11:32",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261111youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:27",
+   "clock": "10:16",
    "done": false,
    "teams": [
     [
