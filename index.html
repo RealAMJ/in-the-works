@@ -3267,7 +3267,7 @@
         const tiles = mk('div', 'pp-tiles');
         const tile = (k, v, s) => { const t = mk('div', 'pp-tile'); t.append(mk('span', 'v', v), mk('span', 'k', k)); if (s) t.append(mk('span', 'p', s)); tiles.append(t); };
         tile('Games', String(cur.gp));
-        [['FG%', 'fg'], ['3P%', 'three'], ['FT%', 'ft']].forEach(([k, f]) => { const s = fracPct(cg, f); tile(k, s ? s.p.toFixed(1) : '—', s ? `${s.m}/${s.a}` : ''); });
+        [['FG%', 'fg'], ['3P%', 'three'], ['FT%', 'ft']].forEach(([k, f]) => { const s = fracPct(cg.length ? cg : [cur], f); /* no game log: the competition's own totals */ tile(k, s ? s.p.toFixed(1) : '—', s ? `${s.m}/${s.a}` : ''); });
         const tr = tierFor(cur.competition); if (tr) tile('League level', String(tr.score), `tier ${tr.tier}`);
         sec.append(tiles);
         if (cur.note) sec.append(mk('p', 'pp-sub', 'Source: ' + cur.note));
@@ -3366,7 +3366,7 @@
 
     if (ppTab === 'career') {
       const sec = ppSection('Career stats', 'Per-game averages, season by season. College and pro seasons are listed where we have them.');
-      const curRows = rows.map((r) => ({ season: '2026-27', team: p ? p.club : '', league: r.competition, gp: r.gp, min: r.min, pts: r.pts, reb: r.reb, ast: r.ast, fg_pct: (fracPct(games.filter((g) => norm(g.competition) === norm(r.competition)), 'fg') || {}).p, tp_pct: (fracPct(games.filter((g) => norm(g.competition) === norm(r.competition)), 'three') || {}).p, ft_pct: (fracPct(games.filter((g) => norm(g.competition) === norm(r.competition)), 'ft') || {}).p, _cls: 'cur' }));
+      const curRows = rows.map((r) => ({ season: isProspect ? String((games.find((g) => norm(g.competition) === norm(r.competition)) || {}).date || '').slice(0, 4) || r.season : '2026-27', team: isProspect ? ((games.find((g) => norm(g.competition) === norm(r.competition)) || {}).team || r.team || (p ? p.club : '')) : (p ? p.club : ''), league: r.competition, gp: r.gp, min: r.min, pts: r.pts, reb: r.reb, ast: r.ast, fg_pct: (fracPct((games.some((g) => norm(g.competition) === norm(r.competition)) ? games.filter((g) => norm(g.competition) === norm(r.competition)) : [r]), 'fg') || {}).p, tp_pct: (fracPct((games.some((g) => norm(g.competition) === norm(r.competition)) ? games.filter((g) => norm(g.competition) === norm(r.competition)) : [r]), 'three') || {}).p, ft_pct: (fracPct((games.some((g) => norm(g.competition) === norm(r.competition)) ? games.filter((g) => norm(g.competition) === norm(r.competition)) : [r]), 'ft') || {}).p, _cls: 'cur' }));
       const past = car.filter((r) => !(r.season === '2026-27' && curRows.length)).slice().sort((a, b) => String(b.season).localeCompare(String(a.season)));
       const all = curRows.concat(past.filter((r) => r.level !== 'College')).concat(past.filter((r) => r.level === 'College').map((r) => Object.assign({ _cls: 'college' }, r)));
       const pct = (k) => (r) => (r[k] == null || r[k] === '' ? '—' : Number(r[k]).toFixed(1));
