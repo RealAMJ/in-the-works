@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:25:54+01:00",
+ "at": "2026-11-12T01:26:45+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:54",
+   "clock": "12:10",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:11",
+   "clock": "09:47",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:24",
+   "clock": "09:39",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     11,
+     16,
      16
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:37",
+   "clock": "13:16",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     13,
+     16,
      15
     ]
    ]
