@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:03:26+01:00",
+ "at": "2026-11-12T02:06:01+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:46",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     64,
+     65,
      17
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:03",
+   "clock": "04:09",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Wichita State Shockers",
-     43,
+     48,
      17
     ]
    ]
@@ -124,12 +124,12 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:42",
+   "clock": "16:48",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     2,
+     5,
      15
     ],
     [
