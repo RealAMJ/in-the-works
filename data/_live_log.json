@@ -1,29 +1,6 @@
 {
- "at": "2026-11-12T03:49:52+01:00",
+ "at": "2026-11-12T03:50:43+01:00",
  "log": [
-  {
-   "game": "g20261112robe",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261112robe",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Robert Morris Colonials",
-     53,
-     15
-    ],
-    [
-     "Arkansas Razorbacks",
-     76,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261112uci",
    "checking": "ESPN"
