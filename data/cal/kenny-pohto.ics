@@ -37,4 +37,14 @@ DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
  ks/
 CATEGORIES:LKL
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261117juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T180000Z
+DTEND:20261117T200000Z
+SUMMARY:Pohto: Juventus Utena vs Pallacanestro Reggiana
+DESCRIPTION:Champions League (BCL). Players: Kenny Pohto. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
 END:VCALENDAR

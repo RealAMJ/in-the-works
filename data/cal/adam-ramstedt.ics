@@ -27,4 +27,24 @@ DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
  mj.github.io/in-the-works/
 CATEGORIES:Icelandic Premier League
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261112krba@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261112T191500Z
+DTEND:20261112T211500Z
+SUMMARY:Ramstedt: KR Basket vs Höttur
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119krba@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T191500Z
+DTEND:20261119T211500Z
+SUMMARY:Ramstedt: KR Basket at ÍR
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
+END:VEVENT
 END:VCALENDAR

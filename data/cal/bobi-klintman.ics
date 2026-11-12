@@ -68,6 +68,16 @@ DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
 CATEGORIES:EuroLeague
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115virt@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T180000Z
+DTEND:20261115T200000Z
+SUMMARY:Klintman: Virtus Bologna at Dolomiti Energia Trentino
+DESCRIPTION:LBA (Italy). Players: Bobi Klintman. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:LBA (Italy)
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261117vir@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261117T200000Z

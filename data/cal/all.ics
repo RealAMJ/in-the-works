@@ -1060,6 +1060,16 @@ DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261112krba@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261112T191500Z
+DTEND:20261112T211500Z
+SUMMARY:Ramstedt: KR Basket vs Höttur
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261113vmi@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261113T170000Z
@@ -1270,6 +1280,16 @@ DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
 CATEGORIES:BBL
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115virt@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T180000Z
+DTEND:20261115T200000Z
+SUMMARY:Klintman: Virtus Bologna at Dolomiti Energia Trentino
+DESCRIPTION:LBA (Italy). Players: Bobi Klintman. https://realamj.github.io/
+ in-the-works/
+CATEGORIES:LBA (Italy)
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261115mich@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261115T190000Z
@@ -1340,6 +1360,26 @@ DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261117juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T180000Z
+DTEND:20261117T200000Z
+SUMMARY:Pohto: Juventus Utena vs Pallacanestro Reggiana
+DESCRIPTION:Champions League (BCL). Players: Kenny Pohto. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261117jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T193000Z
+DTEND:20261117T213000Z
+SUMMARY:Håkanson\, Birgander: Joventut Badalona vs Futebol Clube do Porto
+DESCRIPTION:Champions League (BCL). Players: Ludvig Håkanson\, Simon Birga
+ nder. https://realamj.github.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261117vir@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261117T200000Z
@@ -1348,6 +1388,26 @@ SUMMARY:Klintman: Virtus Bologna vs Panathinaikos Athens
 DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
  n-the-works/
 CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261118unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T213000Z
+SUMMARY:Pantzar: Unicaja vs BK KVIS Pardubice
+DESCRIPTION:Champions League (BCL). Players: Melwin Pantzar. https://realam
+ j.github.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119krba@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T191500Z
+DTEND:20261119T211500Z
+SUMMARY:Ramstedt: KR Basket at ÍR
+DESCRIPTION:Icelandic Premier League. Players: Adam Ramstedt. https://reala
+ mj.github.io/in-the-works/
+CATEGORIES:Icelandic Premier League
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261119vir@swedes-abroad

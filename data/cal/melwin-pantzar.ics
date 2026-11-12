@@ -37,4 +37,14 @@ DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
  -the-works/
 CATEGORIES:Liga ACB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261118unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T213000Z
+SUMMARY:Pantzar: Unicaja vs BK KVIS Pardubice
+DESCRIPTION:Champions League (BCL). Players: Melwin Pantzar. https://realam
+ j.github.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
 END:VCALENDAR

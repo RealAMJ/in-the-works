@@ -37,4 +37,14 @@ DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
  realamj.github.io/in-the-works/
 CATEGORIES:Liga ACB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261117jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T193000Z
+DTEND:20261117T213000Z
+SUMMARY:Birgander: Joventut Badalona vs Futebol Clube do Porto
+DESCRIPTION:Champions League (BCL). Players: Ludvig Håkanson\, Simon Birga
+ nder. https://realamj.github.io/in-the-works/
+CATEGORIES:Champions League (BCL)
+END:VEVENT
 END:VCALENDAR
