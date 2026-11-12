@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:29:51+01:00",
+ "at": "2026-11-12T02:30:44+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -9,7 +9,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:13",
+   "clock": "10:48",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "St. John's Red Storm",
-     71,
+     73,
      16
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:25",
+   "clock": "06:40",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     22,
+     25,
      15
     ],
     [
      "Arkansas Razorbacks",
-     19,
+     25,
      15
     ]
    ]
