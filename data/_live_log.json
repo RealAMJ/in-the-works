@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T04:16:31+01:00",
+ "at": "2026-11-12T04:17:20+01:00",
  "log": [
   {
    "game": "g20261112uci",
@@ -9,12 +9,12 @@
    "game": "g20261112uci",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:04",
+   "clock": "11:21",
    "done": false,
    "teams": [
     [
      "Lincoln (CA) Oaklanders",
-     8,
+     11,
      13
     ],
     [
