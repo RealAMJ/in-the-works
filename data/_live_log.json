@@ -1,26 +1,141 @@
 {
- "at": "2026-11-12T01:58:47+01:00",
+ "at": "2026-11-12T02:01:07+01:00",
  "log": [
   {
-   "game": "g20261111froy",
-   "checking": "Norwegian federation (basket.no)"
+   "game": "g20261112vmi",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261111froy",
-   "src": "Norwegian federation (basket.no)",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261112vmi",
+   "src": "ESPN",
+   "period": 2,
+   "clock": "01:19",
+   "done": false,
    "teams": [
     [
-     "Fyllingen",
-     83,
-     10
+     "North Carolina Central Eagles",
+     49,
+     15
     ],
     [
-     "Froya Basket Laksev\u00e5g",
-     76,
-     9
+     "VMI Keydets",
+     61,
+     17
+    ]
+   ]
+  },
+  {
+   "game": "g20261112stjo",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112stjo",
+   "src": "ESPN",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Colgate Raiders",
+     32,
+     14
+    ],
+    [
+     "St. John's Red Storm",
+     49,
+     16
+    ]
+   ]
+  },
+  {
+   "game": "g20261112mich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112mich",
+   "src": "ESPN",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Marquette Golden Eagles",
+     27,
+     16
+    ],
+    [
+     "Michigan Wolverines",
+     35,
+     17
+    ]
+   ]
+  },
+  {
+   "game": "g20261112uncw",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112uncw",
+   "src": "ESPN",
+   "period": 1,
+   "clock": "00:30",
+   "done": false,
+   "teams": [
+    [
+     "Kent State Golden Flashes",
+     28,
+     15
+    ],
+    [
+     "UNC Wilmington Seahawks",
+     49,
+     15
+    ]
+   ]
+  },
+  {
+   "game": "g20261112wich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112wich",
+   "src": "ESPN",
+   "period": 1,
+   "clock": "06:36",
+   "done": false,
+   "teams": [
+    [
+     "Friends Falcons",
+     20,
+     15
+    ],
+    [
+     "Wichita State Shockers",
+     41,
+     17
+    ]
+   ]
+  },
+  {
+   "game": "g20261112robe",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112robe",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Arkansas Razorbacks",
+     0,
+     0
+    ],
+    [
+     "Robert Morris Colonials",
+     0,
+     0
     ]
    ]
   }
