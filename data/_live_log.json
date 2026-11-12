@@ -1,26 +1,26 @@
 {
- "at": "2026-11-12T05:46:03+01:00",
+ "at": "2026-11-12T19:58:34+01:00",
  "log": [
   {
-   "game": "g20261112uci",
-   "checking": "ESPN"
+   "game": "g20261112krba",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261112uci",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261112krba",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "Lincoln (CA) Oaklanders",
-     40,
-     13
+     "KR",
+     0,
+     11
     ],
     [
-     "UC Irvine Anteaters",
-     90,
-     18
+     "H\u00f6ttur",
+     0,
+     12
     ]
    ]
   }
