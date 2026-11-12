@@ -2393,7 +2393,7 @@
   "line_id": "g20261112vmi-vaamonde",
   "game_id": "g20261112vmi",
   "player": "Zion Vaamonde",
-  "min": 8,
+  "min": 9,
   "pts": 2,
   "reb": 0,
   "ast": 0,
@@ -2408,7 +2408,7 @@
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {
