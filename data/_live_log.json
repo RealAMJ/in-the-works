@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:57:10+01:00",
+ "at": "2026-11-12T01:58:02+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,12 +9,12 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:14",
+   "clock": "02:29",
    "done": false,
    "teams": [
     [
      "North Carolina Central Eagles",
-     45,
+     47,
      15
     ],
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Kent State Golden Flashes",
-     24,
+     26,
      15
     ],
     [
