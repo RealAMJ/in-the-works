@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:01:39+01:00",
+ "at": "2026-11-12T03:02:08+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -32,12 +32,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:26",
+   "clock": "00:56",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     64,
+     66,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:30",
+   "clock": "04:18",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Friends Falcons",
-     52,
+     54,
      16
     ],
     [
