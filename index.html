@@ -2910,6 +2910,49 @@
     hxSheet(L('Leagues', 'Ligor'), L('Pick one or more. Games update as you tap.', 'Välj en eller flera. Matcherna uppdateras när du trycker.'), rowsNow());
   }
   dash.draw('compfilt', (el) => { el.replaceChildren(); el.append(mk('span', 'cf-i', '☰'), mk('span', '', L('Leagues', 'Ligor')), mk('b', 'cf-n', compSel.size ? String(compSel.size) : L('All', 'Alla'))); el.onclick = compSheet; });
+  // ---- Honour sheet: the award up front, with fireworks as it opens (once per opening; none with reduced motion)
+  function openProfile(n) { if ((ds('players') || []).some((p) => isSame(p.player, n))) showLog(n); else if (typeof showSblPlayer === 'function') showSblPlayer(n); else showLog(n); }
+  function awardSheet(a) {
+    const who = String(a.player || '').split(/\s*,\s*/)[0];
+    const hero = mk('div', 'aws-hero');
+    const ph = photoFor(who); const pic = mk('span', 'aws-pic'); if (ph) { const im = new Image(); im.alt = who; im.src = ph.src; faceFit(im, ph); pic.append(im); } else pic.append(mk('b', '', initials(who)));
+    hero.append(mk('span', 'aws-tro', '🏆'), pic, mk('span', 'aws-k', tx(a, 'type') || L('Award', 'Utmärkelse')), mk('h3', 'aws-t', tx(a, 'title') || a.title),
+      mk('span', 'aws-who', [a.player, a.team].filter(Boolean).join(' · ')), mk('span', 'aws-when', [a.date ? dayFmt(a.date) : '', a.league].filter(Boolean).join(' · ')));
+    const items = [hero];
+    const det = tx(a, 'detail') || a.detail; if (det) items.push(mk('p', 'aws-d', det));
+    const acts = mk('div', 'aws-acts');
+    const pb = mk('button', 'hxs-cta', L(`${who.split(' ').slice(-1)[0]}'s profile →`, `${who.split(' ').slice(-1)[0]}s profil →`)); pb.type = 'button'; pb.onclick = () => { hxClose(); openProfile(who); };
+    const ab = mk('button', 'aws-all', L('All records & awards →', 'Alla rekord & utmärkelser →')); ab.type = 'button'; ab.onclick = () => { hxClose(); goTo('awards'); };
+    acts.append(pb, ab); items.push(acts);
+    const more = (ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && r.title && r.row_id !== a.row_id).sort((x, y) => String(y.date).localeCompare(String(x.date))).slice(0, 5);
+    if (more.length) { items.push(mk('div', 'whs-h', L('More honours this season', 'Fler utmärkelser den här säsongen')));
+      more.forEach((r) => { const n = String(r.player || '').split(/\s*,\s*/)[0]; const b = mk('button', 'whs-row'); b.type = 'button'; b.onclick = () => awardSheet(r);
+        const w = mk('span', 'hxs-w'); w.append(mk('b', '', tx(r, 'title') || r.title), mk('span', '', [r.player, r.team, r.date ? dayFmt(r.date) : ''].filter(Boolean).join(' · '))); b.append(faceAv('span', 'whs-av', n), w, mk('span', 'aws-mini', '🏆')); items.push(b); }); }
+    hxSheet(L('Latest honour', 'Senaste utmärkelsen'), '', items);
+    const d = document.getElementById('hx-sheet'); if (d) d.classList.add('aws');
+    fireworks();
+  }
+  function fireworks() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.getElementById('hx-fw')?.remove();
+    const c = document.createElement('canvas'); c.id = 'hx-fw'; c.setAttribute('aria-hidden', 'true');
+    // above the open sheet: as a popover it sits in the top layer too; without popover support it goes inside the sheet
+    const canPop = typeof c.showPopover === 'function'; if (canPop) c.setAttribute('popover', 'manual');
+    (canPop ? document.body : (document.getElementById('hx-sheet') || document.body)).append(c); if (canPop) try { c.showPopover(); } catch (e) { /* not supported */ }
+    const dpr = Math.min(2, window.devicePixelRatio || 1); const W = innerWidth, H = innerHeight; c.width = W * dpr; c.height = H * dpr; const g = c.getContext('2d'); g.scale(dpr, dpr);
+    const cols = ['#fecc02', '#ffd84d', '#ffffff', '#7fb3ff', '#006aa7', '#ffb703'];
+    const P = []; const burst = (x, y, n, sp) => { for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, v = sp * (0.35 + Math.random() * 0.75); P.push({ x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 1.2, life: 1, d: 0.008 + Math.random() * 0.01, r: 1.6 + Math.random() * 2.6, c: cols[(Math.random() * cols.length) | 0], sq: Math.random() < 0.45, rot: Math.random() * 6 }); } };
+    const shots = [[0.5, 0.28, 0], [0.22, 0.36, 260], [0.78, 0.33, 480], [0.38, 0.22, 760], [0.64, 0.2, 980]];
+    shots.forEach(([fx, fy, t]) => setTimeout(() => burst(W * fx, H * fy, 70, 7.5), t));
+    const t0 = performance.now();
+    const step = (now) => { g.clearRect(0, 0, W, H);
+      for (const p of P) { if (p.life <= 0) continue; p.vx *= 0.985; p.vy = p.vy * 0.985 + 0.09; p.x += p.vx; p.y += p.vy; p.life -= p.d; p.rot += 0.2;
+        g.globalAlpha = Math.max(0, p.life); g.fillStyle = p.c;
+        if (p.sq) { g.save(); g.translate(p.x, p.y); g.rotate(p.rot); g.fillRect(-p.r, -p.r * 0.6, p.r * 2, p.r * 1.2); g.restore(); } else { g.beginPath(); g.arc(p.x, p.y, p.r, 0, 6.283); g.fill(); } }
+      if (now - t0 < 3600) requestAnimationFrame(step); else c.remove(); };
+    requestAnimationFrame(step);
+    const d = document.getElementById('hx-sheet'); if (d) d.addEventListener('close', () => c.remove(), { once: true });
+  }
   function hxTap(t, fn) { t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = fn; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fn(); } }; }
   function bxNum(v) { const b = mk('b', 'bx-num', String(v)); if (/^\d+(\.\d+)?$/.test(String(v))) b.dataset.count = String(v); return b; }
   dash.draw('h-bento', (el) => {
@@ -2965,7 +3008,7 @@
       const t = tile('bx-co go', 'Coaches abroad'); hxTap(t, coachesSheet); const n = mk('div', 'bx-row'); n.append(bxNum(cw), mk('span', 'bx-dash', '–'), bxNum(cg.length - cw)); t.append(n, mk('span', 'bx-s', 'combined record in the games we track'), mk('span', 'bx-go', L('Each coach →', 'Varje tränare →'))); }
     // latest award
     { const a = (ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && r.title).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
-      if (a) { const t = tile('bx-aw go', 'Latest honour'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('awards');
+      if (a) { const t = tile('bx-aw go', 'Latest honour'); hxTap(t, () => awardSheet(a));
         const r = mk('div', 'bx-awr'); r.append(faceAv('span', 'bx-awav', String(a.player || '').split(/\s*,\s*/)[0])); const tx2 = mk('div'); tx2.append(mk('b', '', a.title), mk('span', 'bx-s', [a.player, a.team, a.date ? dayFmt(a.date) : ''].filter(Boolean).join(' · '))); r.append(tx2); t.append(mk('span', 'bx-tro', '🏆'), r); } }
     hxCount(el);
   });

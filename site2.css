@@ -3262,3 +3262,21 @@ button.lx-num.go::after { content: '→'; font: 700 12px Archivo, sans-serif; co
 .tpx-about p { margin: 0; font-size: 16px; line-height: 1.6; color: #dbe5f3; }
 .cox-c.go { cursor: pointer; transition: transform .2s ease, border-color .2s ease; }
 .cox-c.go:hover, .cox-c.go:focus-visible { transform: translateY(-3px); }
+
+/* honour sheet + fireworks */
+#hx-fw { position: fixed; inset: 0; width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: transparent; pointer-events: none; z-index: 2000; overflow: visible; }
+#hx-fw::backdrop { display: none; }
+.hxs.aws .hxs-h { display: none; }
+.aws-hero { position: relative; display: grid; justify-items: center; text-align: center; gap: 6px; padding: 30px 12px 18px; margin: 0 -12px; background: radial-gradient(70% 90% at 50% 0%, rgba(254,204,2,.22), transparent 70%); }
+.aws-tro { position: absolute; top: 18px; right: 24px; font-size: 34px; animation: awsPop .6s cubic-bezier(.2,1.6,.4,1) both .2s; }
+.aws-pic { width: 112px; height: 112px; border-radius: 50%; overflow: hidden; position: relative; display: grid; place-items: center; background: #13294d; border: 3px solid #fecc02; box-shadow: 0 0 0 6px rgba(254,204,2,.15), 0 16px 40px -10px rgba(254,204,2,.45); margin-bottom: 8px; animation: awsPop .55s cubic-bezier(.2,1.5,.4,1) both; }
+.aws-pic img { position: absolute; } .aws-pic b { font: 400 34px Anton, sans-serif; color: #c9d6ea; }
+.aws-k { font: 800 11px Archivo, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: #fecc02; }
+.aws-t { margin: 0; font: 400 clamp(26px, 5vw, 36px)/1.08 Anton, Impact, sans-serif; text-transform: uppercase; padding-top: .06em; max-width: 520px; }
+.aws-who { font: 700 15px Archivo, sans-serif; } .aws-when { font-size: 13px; color: #93a6c4; }
+.aws-d { margin: 4px 6px 0; font-size: 15px; line-height: 1.6; color: #dbe5f3; }
+.aws-acts { display: grid; gap: 4px; }
+.aws-all { all: unset; cursor: pointer; text-align: center; padding: 10px; font: 700 14px Archivo, sans-serif; color: #7fb3ff; }
+.aws-mini { font-size: 18px; }
+@keyframes awsPop { from { transform: scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .aws-pic, .aws-tro { animation: none; } }
