@@ -6186,5 +6186,33 @@
   "note": "",
   "leaders": "Ledoux|22|3|2;Davis|19|4|4;Nilsen|11|2|0",
   "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "vmi-2026-11-12",
+  "team": "VMI",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "North Carolina Central",
+  "venue": "Home",
+  "score": "65-51",
+  "result": "W",
+  "top": "Johnson 18 pts, 3 reb",
+  "note": "",
+  "leaders": "Johnson|18|3|1;Johnson|12|8|3;Daushvili|11|7|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "north-carolina-central-2026-11-12",
+  "team": "North Carolina Central",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "VMI",
+  "venue": "Away",
+  "score": "51-65",
+  "result": "L",
+  "top": "Duor 10 pts, 6 reb",
+  "note": "",
+  "leaders": "Duor|10|6|0;Brown|10|1|2;Mason|9|5|1",
+  "source": "ESPN"
  }
 ]
