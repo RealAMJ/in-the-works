@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:24:09+01:00",
+ "at": "2026-11-12T01:25:02+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,12 +9,12 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:49",
+   "clock": "13:18",
    "done": false,
    "teams": [
     [
      "North Carolina Central Eagles",
-     29,
+     30,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:39",
+   "clock": "10:33",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     22,
+     24,
      16
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:41",
+   "clock": "13:37",
    "done": false,
    "teams": [
     [
