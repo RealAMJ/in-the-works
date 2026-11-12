@@ -6284,5 +6284,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "cooper-2026-11-12",
+  "player": "Nils Cooper",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "team": "UC Irvine",
+  "opponent": "Lincoln (CA)",
+  "venue": "Home",
+  "result": "W 90-40",
+  "min": 21,
+  "pts": 7,
+  "reb": 3,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "3/9",
+  "three": "1/2",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 0,
+  "pm": "",
+  "eff": ""
  }
 ]

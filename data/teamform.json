@@ -6354,5 +6354,33 @@
   "note": "",
   "leaders": "Richmond|16|4|4;Thompson|15|5|7;Bowser|12|10|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "uc-irvine-2026-11-12",
+  "team": "UC Irvine",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Lincoln (CA)",
+  "venue": "Home",
+  "score": "90-40",
+  "result": "W",
+  "top": "Jester 14 pts, 4 reb",
+  "note": "",
+  "leaders": "Jester|14|4|1;Lee|13|3|1;Isaac|11|2|2;Johnson|11|3|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "lincoln-ca-2026-11-12",
+  "team": "Lincoln (CA)",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "UC Irvine",
+  "venue": "Away",
+  "score": "40-90",
+  "result": "L",
+  "top": "Munitlak 11 pts, 9 reb",
+  "note": "",
+  "leaders": "Munitlak|11|9|1;Holmes|11|0|3;Thomas|8|9|1",
+  "source": "ESPN"
  }
 ]
