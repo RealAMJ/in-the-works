@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:35:14+01:00",
+ "at": "2026-11-12T01:35:40+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:27",
+   "clock": "08:05",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:32",
+   "clock": "05:57",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:54",
+   "clock": "06:37",
    "done": false,
    "teams": [
     [
@@ -101,12 +101,12 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:00",
+   "clock": "17:40",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     6,
+     9,
      15
     ],
     [
