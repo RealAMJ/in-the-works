@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:42:10+01:00",
+ "at": "2026-11-12T01:43:02+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:40",
+   "clock": "06:07",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     48,
+     49,
      17
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:25",
+   "clock": "14:20",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     9,
+     11,
      15
     ],
     [
      "Wichita State Shockers",
-     11,
+     14,
      17
     ]
    ]
