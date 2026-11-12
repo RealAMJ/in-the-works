@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:48:21+01:00",
+ "at": "2026-11-12T01:49:13+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "North Carolina Central Eagles",
-     44,
+     45,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:06",
+   "clock": "00:31",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:31",
+   "clock": "01:08",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:45",
+   "clock": "04:18",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     37,
+     39,
      15
     ]
    ]
