@@ -6270,5 +6270,61 @@
   "note": "",
   "leaders": "Porter|21|2|1;Stevens|16|3|3;Egbuonu|9|3|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "unc-wilmington-2026-11-12",
+  "team": "UNC Wilmington",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Kent State",
+  "venue": "Home",
+  "score": "91-73",
+  "result": "W",
+  "top": "Wessler 29 pts, 7 reb",
+  "note": "",
+  "leaders": "Wessler|29|7|1;Walsh|17|6|2;Nelson|12|3|2;Lamothe|12|3|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "kent-state-2026-11-12",
+  "team": "Kent State",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "UNC Wilmington",
+  "venue": "Away",
+  "score": "73-91",
+  "result": "L",
+  "top": "Willis 26 pts, 3 reb",
+  "note": "",
+  "leaders": "Willis|26|3|4;Miller|13|4|1;Sumlin|7|6|0;Henry|7|2|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "wichita-state-2026-11-12",
+  "team": "Wichita State",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Friends",
+  "venue": "Home",
+  "score": "113-60",
+  "result": "W",
+  "top": "Giles 19 pts, 2 reb",
+  "note": "",
+  "leaders": "Giles|19|2|4;Ighovodja|19|3|3;Battie|14|5|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "friends-2026-11-12",
+  "team": "Friends",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Wichita State",
+  "venue": "Away",
+  "score": "60-113",
+  "result": "L",
+  "top": "Edwards 12 pts, 1 reb",
+  "note": "",
+  "leaders": "Edwards|12|1|0;Evans|11|2|3;Knight|9|0|2",
+  "source": "ESPN"
  }
 ]

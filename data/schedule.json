@@ -1853,7 +1853,9 @@
   "score": "W 91-73",
   "espn_id": "401926863",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926863",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261112wich",
@@ -1869,7 +1871,9 @@
   "score": "W 113-60",
   "espn_id": "401919030",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919030",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261112robe",
@@ -1885,8 +1889,8 @@
   "score": "L 40-50",
   "espn_id": "401928824",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928824",
-  "clock": "Q2 13:24",
-  "live_updated": "2026-11-12T03:16:59+01:00"
+  "clock": "Q2 13:18",
+  "live_updated": "2026-11-12T03:17:30+01:00"
  },
  {
   "game_id": "g20261112uci",
