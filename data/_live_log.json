@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:20:12+01:00",
+ "at": "2026-11-12T01:21:05+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:38",
+   "clock": "15:21",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:06",
+   "clock": "11:42",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     7,
+     9,
      16
     ],
     [
@@ -78,12 +78,12 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:32",
+   "clock": "14:56",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     8,
+     10,
      15
     ],
     [
