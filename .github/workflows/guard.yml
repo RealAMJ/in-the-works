@@ -1,0 +1,58 @@
+name: Live guard
+
+# Keeps the live job (live.yml) running on game days. The live job starts its own next run, but
+# when one run fails to start (GitHub sometimes answers with a start-up failure) that chain stops,
+# and GitHub's own 5-minute timer is too unreliable to pick it up. This guard checks every two
+# minutes and starts the live job again if nothing is running or waiting. The live job in turn
+# starts this guard when it isn't running, so each one restarts the other. Both stop on their
+# own when no game tipped off in the last 4 hours or starts in the next 12.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 * * * *"     # backup start once an hour (often late, which is fine)
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: guard
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Watch the live job
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          active() { gh run list --workflow live.yml --limit 5 --json status \
+                     -q '[.[] | select(.status != "completed")] | length' 2>/dev/null || echo 1; }
+          end=$(( $(date +%s) + 315 * 60 ))
+          i=0
+          while [ "$(date +%s)" -lt "$end" ]; do
+            # fresh schedule every 20 minutes (new games, finals)
+            if [ $((i % 10)) -eq 0 ]; then git pull -q --ff-only origin main || true; fi
+            i=$((i + 1))
+            if [ "$(python3 scripts/guard_due.py)" != "due" ]; then echo "no games due, stopping"; exit 0; fi
+            if [ "$(active)" = "0" ]; then
+              # a run that just finished starts its successor within seconds: look again before acting
+              sleep 45
+              if [ "$(active)" = "0" ]; then
+                echo "$(date -u +%H:%M) live job not running, starting it"
+                gh workflow run live.yml --ref main || echo "::warning::could not start the live job"
+              fi
+            fi
+            sleep 120
+          done
+          # still game time after ~5 hours: hand over to a fresh guard
+          if [ "$(python3 scripts/guard_due.py)" = "due" ]; then gh workflow run guard.yml --ref main || true; fi

@@ -318,6 +318,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if grep -q KEEP_GOING /tmp/out.txt 2>/dev/null; then
+            # make sure the guard (guard.yml) is watching: it restarts this job if a run fails to start
+            g=$(gh run list --workflow guard.yml --limit 3 --json status -q '[.[] | select(.status != "completed")] | length' 2>/dev/null || echo 1)
+            if [ "$g" = "0" ]; then gh workflow run guard.yml --ref main && echo "guard started" || true; fi
             # nothing live yet (game still to start): wait a few minutes before the next run
             if ! grep -q "^  [gc]" /tmp/out.txt; then sleep 240; fi
             # start the next run; GitHub's API sometimes answers with an error, so retry before giving up
