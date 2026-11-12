@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:58:13+01:00",
+ "at": "2026-11-12T02:59:04+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -32,17 +32,17 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:56",
+   "clock": "02:32",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     56,
+     62,
      16
     ],
     [
      "Michigan Wolverines",
-     69,
+     71,
      17
     ]
    ]
@@ -78,13 +78,13 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:41",
+   "clock": "07:36",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     49,
-     15
+     50,
+     16
     ],
     [
      "Wichita State Shockers",
