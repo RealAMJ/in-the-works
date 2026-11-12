@@ -6130,5 +6130,61 @@
   "note": "",
   "leaders": "Biel|16|4|1;Bader|12|1|3;Beier-Christiansen|11|16|1",
   "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "froya-basket-laksevag-2026-11-08",
+  "team": "Froya Basket Laksevåg",
+  "date": "2026-11-08",
+  "competition": "BLNO (Norway)",
+  "opponent": "Kongsberg Miners",
+  "venue": "Home",
+  "score": "99-89",
+  "result": "W",
+  "top": "Johnson 17 pts, 3 reb",
+  "note": "",
+  "leaders": "Johnson|17|3|0;Downs|17|5|3;Dalland|14|0|0;Månsson|14|4|6",
+  "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "kongsberg-miners-2026-11-08",
+  "team": "Kongsberg Miners",
+  "date": "2026-11-08",
+  "competition": "BLNO (Norway)",
+  "opponent": "Froya Basket Laksevåg",
+  "venue": "Away",
+  "score": "89-99",
+  "result": "L",
+  "top": "Anderson 29 pts, 3 reb",
+  "note": "",
+  "leaders": "Anderson|29|3|8;Cookson|16|9|2;Tillman|14|6|4",
+  "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "froya-basket-laksevag-2026-11-11",
+  "team": "Froya Basket Laksevåg",
+  "date": "2026-11-11",
+  "competition": "BLNO (Norway)",
+  "opponent": "Fyllingen",
+  "venue": "Away",
+  "score": "76-83",
+  "result": "L",
+  "top": "Downs 20 pts, 9 reb",
+  "note": "",
+  "leaders": "Downs|20|9|2;Borg|14|7|1;Hagberg|14|4|10",
+  "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "fyllingen-2026-11-11",
+  "team": "Fyllingen",
+  "date": "2026-11-11",
+  "competition": "BLNO (Norway)",
+  "opponent": "Froya Basket Laksevåg",
+  "venue": "Home",
+  "score": "83-76",
+  "result": "W",
+  "top": "Ledoux 22 pts, 3 reb",
+  "note": "",
+  "leaders": "Ledoux|22|3|2;Davis|19|4|4;Nilsen|11|2|0",
+  "source": "Norwegian federation (basket.no)"
  }
 ]

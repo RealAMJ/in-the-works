@@ -178,6 +178,22 @@ def genius(comp):
             yield dict(at=t.astimezone(UTC), home=hn, away=an, confirmed=bool(m.group(2)), feed=f'fiba:{gid.group(1)}')
 
 
+# BLNO (Norway): the federation's match API lists the whole season; times are Norwegian time (= Swedish time)
+NIF_TEAMS = {'Froya Basket Laksevåg': (449378, 'Frøya')}   # site club name: (tournament id, team name in the API)
+
+
+def nif():
+    for club, (tid, short) in NIF_TEAMS.items():
+        for m in (S.nif_get(f'ta/TournamentMatches/?tournamentId={tid}') or {}).get('matches') or []:
+            h, a = S.nif_team(m.get('hometeam')), S.nif_team(m.get('awayteam'))
+            if short not in (h, a) or not m.get('matchDate'):
+                continue
+            hm = int(m.get('matchStartTime') or 0)
+            t = dt.datetime.fromisoformat(m['matchDate'][:10] + f'T{hm // 100:02d}:{hm % 100:02d}').replace(tzinfo=U.STHLM)
+            yield dict(at=t.astimezone(UTC), home=club if h == short else (m.get('hometeamOrgName') or h), away=club if a == short else (m.get('awayteamOrgName') or a),
+                       confirmed=bool(hm), feed=f"nif:{m['matchId']}")
+
+
 def main(argv):
     now = U.now()
     if '--force' not in argv and not (now.hour == 7 and now.minute < 6):
@@ -185,7 +201,7 @@ def main(argv):
     sched, coach, players = U.load('schedule'), U.load('coachgames'), U.load('players')
     lo, hi = now - dt.timedelta(days=3), now + dt.timedelta(days=8)
     comps = {'EuroLeague': euroleague, 'Champions League (BCL)': bcl, 'BBL': None, 'ABA League': aba, 'LBA (Italy)': lba,
-             'ProB (Germany)': prob, 'Icelandic Premier League': lambda: genius('Icelandic Premier League')}
+             'ProB (Germany)': prob, 'Icelandic Premier League': lambda: genius('Icelandic Premier League'), 'BLNO (Norway)': nif}
     changes = 0
     for comp, reader in comps.items():
         # clubs we follow in this competition, and who to list for them
@@ -196,7 +212,7 @@ def main(argv):
                     clubs.setdefault((r['team'], who), r.get(who) or '')
         # also clubs whose players are listed in this competition but have no game of it on the schedule yet
         key = {'EuroLeague': 'euroleague', 'Champions League (BCL)': 'champions league', 'BBL': 'bbl',
-               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob', 'Icelandic Premier League': 'icelandic premier league'}[comp]
+               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob', 'Icelandic Premier League': 'icelandic premier league', 'BLNO (Norway)': 'blno'}[comp]
         for p in players:
             comps = str(p.get('competitions') or '').lower()
             if p.get('status') == 'Confirmed' and p.get('club') and re.search(r'(^|[^a-z])' + re.escape(key) + r'([^a-z]|$)', comps) \
@@ -223,7 +239,7 @@ def main(argv):
                     venue, opp = 'Home', f['away']
                 elif f['away'] == club:
                     venue, opp = 'Away', f['home']
-                elif comp in ('ProB (Germany)', 'Icelandic Premier League'):
+                elif comp in ('ProB (Germany)', 'Icelandic Premier League', 'BLNO (Norway)'):
                     continue
                 elif cw & S.words(f['home']):
                     venue, opp = 'Home', f['away']

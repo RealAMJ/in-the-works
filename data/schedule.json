@@ -329,6 +329,23 @@
   "post_done": true
  },
  {
+  "game_id": "g20261101froy",
+  "date": "2026-11-01",
+  "time": "17:00",
+  "players": "Kasper Hagberg",
+  "team": "Froya Basket Laksevåg",
+  "opponent": "Bærum Basket",
+  "venue": "Home",
+  "competition": "BLNO (Norway)",
+  "note": "",
+  "status": "final",
+  "score": "W 95-83",
+  "live_feed": "nif:8426805",
+  "notified": true,
+  "live_done": true,
+  "post_done": true
+ },
+ {
   "game_id": "g12",
   "date": "2026-11-01",
   "time": "18:00",
@@ -1396,6 +1413,23 @@
   "post_done": true
  },
  {
+  "game_id": "g20261108froy",
+  "date": "2026-11-08",
+  "time": "17:00",
+  "players": "Kasper Hagberg",
+  "team": "Froya Basket Laksevåg",
+  "opponent": "Kongsberg Miners",
+  "venue": "Home",
+  "competition": "BLNO (Norway)",
+  "note": "",
+  "status": "final",
+  "score": "W 99-89",
+  "live_feed": "nif:8426783",
+  "notified": true,
+  "live_done": true,
+  "post_done": true
+ },
+ {
   "game_id": "g20261108sju",
   "date": "2026-11-08",
   "time": "18:00",
@@ -1716,6 +1750,23 @@
   "live_done": true,
   "post_done": true,
   "notified": true
+ },
+ {
+  "game_id": "g20261111froy",
+  "date": "2026-11-11",
+  "time": "18:00",
+  "players": "Kasper Hagberg",
+  "team": "Froya Basket Laksevåg",
+  "opponent": "Fyllingen",
+  "venue": "Away",
+  "competition": "BLNO (Norway)",
+  "note": "",
+  "status": "final",
+  "score": "L 76-83",
+  "live_feed": "nif:8426747",
+  "notified": true,
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "g20261111ucam",
@@ -2126,6 +2177,20 @@
   "status": "upcoming",
   "score": "",
   "live_feed": "prob:2006191"
+ },
+ {
+  "game_id": "g20261115froy",
+  "date": "2026-11-15",
+  "time": "17:00",
+  "players": "Kasper Hagberg",
+  "team": "Froya Basket Laksevåg",
+  "opponent": "Centrum Tigers",
+  "venue": "Home",
+  "competition": "BLNO (Norway)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "nif:8426728"
  },
  {
   "game_id": "g20261115lowe",

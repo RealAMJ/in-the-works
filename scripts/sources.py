@@ -8,6 +8,8 @@ More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and
   BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
   LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
   LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
+  BLNO (Norway)              live_feed "nif:<match id>"   the Norwegian federation's match API (sf14-terminlister-prod-app.azurewebsites.net,
+                                                          used by kamper.basket.no): score by quarter, player box score
   ProA / ProB (Germany)      live_feed "prob:<game id>"   live.2basketballbundesliga.de/g/<id> (its Socket.IO history; game ids from
                                                           the league calendar api.2basketballbundesliga.de/cal/<team id>)
 Each reader returns the same shape as the other feeds: {period, clock, done, teams: [{name, score, pl: [...]}]}.
@@ -436,6 +438,63 @@ def read_prob(gid, row=None):
     left = 0 if done else left
     clk = f'{left // 60:02d}:{left % 60:02d}' if left is not None else ''
     return dict(period=period or 1, clock=clk, done=done, notstarted=not ev, teams=teams)
+
+
+# ------------------------------------------------------------------ BLNO (Norway): the federation's match API
+NIF_API = 'https://sf14-terminlister-prod-app.azurewebsites.net/'
+
+
+def nif_get(path):
+    import gzip
+    import json
+    import urllib.request
+    req = urllib.request.Request(NIF_API + path, headers=dict(U.UA, Accept='application/json', **{'Accept-Encoding': 'gzip'}))
+    with urllib.request.urlopen(req, timeout=30) as r:
+        raw = r.read()
+        if r.headers.get('Content-Encoding') == 'gzip' or raw[:2] == b'\x1f\x8b':
+            raw = gzip.decompress(raw)
+    txt = raw.decode('utf-8').strip()
+    return json.loads(txt) if txt else None  # games not started yet: empty answer
+
+
+def nif_team(name):
+    return re.sub(r'\s*-\s*(MEN|KVINNER|WOMEN)\s*\d*$', '', str(name or ''), flags=re.I).strip()
+
+
+def read_nif(mid, row=None):
+    """Norwegian federation match API. Score from the quarter results while a game is on (the final result once
+    it is set), the box score from basketball/match/Players. No game clock is published, only the quarter."""
+    m = nif_get(f'ta/Match?matchId={mid}') or {}
+    inc = nif_get(f'ta/MatchIncidents?matchId={mid}') or {}
+    pl = nif_get(f'basketball/match/Players/{mid}') or []
+    per = inc.get('matchPeriodResults') or []
+    hs = sum(int(x.get('homeGoals') or 0) for x in per); as_ = sum(int(x.get('awayGoals') or 0) for x in per)
+    res = m.get('matchResult') or {}
+    if res.get('matchEndResult'):
+        hs, as_ = int(res.get('homeGoals') or hs), int(res.get('awayGoals') or as_)
+    teams = []
+    for tid, nm, sc in ((m.get('hometeamId'), m.get('hometeamOrgName') or nif_team(m.get('hometeam')), hs),
+                        (m.get('awayteamId'), m.get('awayteamOrgName') or nif_team(m.get('awayteam')), as_)):
+        rows = []
+        for p in pl:
+            if str(p.get('orgId')) != str(tid):
+                continue
+            g = lambda k: int(p.get(k) or 0)
+            fgm, tpm = g('p2Sum') + g('p3Sum'), g('p3Sum')
+            rows.append(dict(name=' '.join(f"{p.get('firstName', '')} {p.get('lastName', '')}".split()), min=g('totalSeconds') // 60,
+                             pts=g('points'), reb=g('offRebSum') + g('defRebSum'), ast=g('assists'), stl=g('stSum'), blk=g('blSum'), tov=g('toSum'),
+                             fgm=fgm, fga=fgm + g('p2MissSum') + g('p3MissSum'), tpm=tpm, tpa=tpm + g('p3MissSum'), ftm=g('p1Sum'), fta=g('p1Sum') + g('p1MissSum'),
+                             pm='', pf=g('fouls'), oreb=g('offRebSum'), dreb=g('defRebSum'), starter=False))
+        teams.append(dict(name=nm, score=sc, pl=rows))
+    if row and row.get('team'):
+        home = (row.get('venue') or 'Home') != 'Away'
+        teams[0]['name'], teams[1]['name'] = (row['team'], row.get('opponent', '')) if home else (row.get('opponent', ''), row['team'])
+    period = len(per)
+    # final once the federation has set the result and four (or more) quarters are in, or the result alone 3+ hours after tip-off
+    tip = U.tip_time(row) if row else None
+    late = bool(tip and U.now() > tip + dt.timedelta(hours=3))
+    done = bool(res.get('matchEndResult')) and hs != as_ and (period >= 4 or late)
+    return dict(period=max(period, 1), clock='00:00' if done else '', done=done, notstarted=not per and not res.get('matchEndResult'), teams=teams)
 
 
 # ------------------------------------------------------------------ FEB
