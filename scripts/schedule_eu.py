@@ -4,7 +4,8 @@ European schedule check from the leagues' own fixture lists, once a day (like sc
 
 Leagues: EuroLeague (official API), Champions League (BCL game list), BBL (season id table, re-read
 for our clubs' games), ABA League (season calendar), LBA (current round from the league's front page) and
-ProB (the league's team calendars, which also give the live-ticker game id).
+ProB (the league's team calendars, which also give the live-ticker game id) and the Icelandic league
+(Genius Sports team schedule pages, whose match ids are the FIBA LiveStats ids).
 For every club we follow in those competitions (from data/schedule.json and data/coachgames.json) it
 looks 3 days back and 8 days ahead and:
   * fixes the date/time (Swedish time) of upcoming games that are already listed
@@ -137,6 +138,46 @@ def prob(clubs=None):
                        confirmed=True, feed=f'prob:{gid.group(1)}')
 
 
+# Leagues run on Genius Sports' hosted pages (the same system as FIBA LiveStats): each club we follow has a team
+# schedule page with the whole season, and the match id there is the FIBA LiveStats id. Times are local to the league.
+GENIUS_TEAMS = {
+    # site club name: (federation code, competition id, team id, league time zone, site competition)
+    'KR Basket': ('KKI', 49040, 168328, 'Atlantic/Reykjavik', 'Icelandic Premier League'),
+}
+
+
+def genius(comp):
+    import urllib.request
+    from zoneinfo import ZoneInfo
+    for club, (org, cid, tid, tz, c) in GENIUS_TEAMS.items():
+        if c != comp:
+            continue
+        url = f'https://hosted.dcd.shared.geniussports.com/{org}/en/competition/{cid}/team/{tid}/schedule'
+        req = urllib.request.Request(url, headers=dict(U.UA, Accept='text/html,*/*'))
+        with urllib.request.urlopen(req, timeout=60) as r:
+            h = r.read().decode('utf-8', 'replace')
+        for b in h.split('<div class="match-wrap')[1:]:
+            gid = re.search(r'match/(\d+)/', b)
+            when = re.search(r'match-time">.*?<span>([^<]+)', b, re.S) or re.search(r'notlive-match-time">([^<]+)', b)
+            home = re.search(r'home-team.*?team/(\d+)/.*?class="teamnames">([^<]+)<', b, re.S)
+            away = re.search(r'away-team.*?team/(\d+)/.*?class="teamnames">([^<]+)<', b, re.S)
+            if not (gid and when and home and away):
+                continue
+            m = re.match(r'\s*([A-Z][a-z]{2} \d{1,2}, \d{4}),?\s*(\d{1,2}:\d{2}\s*[AP]M)?', when.group(1))
+            if not m:
+                continue
+            t = dt.datetime.strptime(m.group(1) + ' ' + (m.group(2) or '12:00 PM').replace(' ', ''), '%b %d, %Y %I:%M%p').replace(tzinfo=ZoneInfo(tz))
+            hn, an = ' '.join(home.group(2).split()), ' '.join(away.group(2).split())
+            # our club is the side whose team id is the page's; it gets the site's spelling
+            if home.group(1) == str(tid):
+                hn = club
+            elif away.group(1) == str(tid):
+                an = club
+            else:
+                continue
+            yield dict(at=t.astimezone(UTC), home=hn, away=an, confirmed=bool(m.group(2)), feed=f'fiba:{gid.group(1)}')
+
+
 def main(argv):
     now = U.now()
     if '--force' not in argv and not (now.hour == 7 and now.minute < 6):
@@ -144,7 +185,7 @@ def main(argv):
     sched, coach, players = U.load('schedule'), U.load('coachgames'), U.load('players')
     lo, hi = now - dt.timedelta(days=3), now + dt.timedelta(days=8)
     comps = {'EuroLeague': euroleague, 'Champions League (BCL)': bcl, 'BBL': None, 'ABA League': aba, 'LBA (Italy)': lba,
-             'ProB (Germany)': prob}
+             'ProB (Germany)': prob, 'Icelandic Premier League': lambda: genius('Icelandic Premier League')}
     changes = 0
     for comp, reader in comps.items():
         # clubs we follow in this competition, and who to list for them
@@ -155,7 +196,7 @@ def main(argv):
                     clubs.setdefault((r['team'], who), r.get(who) or '')
         # also clubs whose players are listed in this competition but have no game of it on the schedule yet
         key = {'EuroLeague': 'euroleague', 'Champions League (BCL)': 'champions league', 'BBL': 'bbl',
-               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob'}[comp]
+               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob', 'Icelandic Premier League': 'icelandic premier league'}[comp]
         for p in players:
             comps = str(p.get('competitions') or '').lower()
             if p.get('status') == 'Confirmed' and p.get('club') and re.search(r'(^|[^a-z])' + re.escape(key) + r'([^a-z]|$)', comps) \
@@ -182,7 +223,7 @@ def main(argv):
                     venue, opp = 'Home', f['away']
                 elif f['away'] == club:
                     venue, opp = 'Away', f['home']
-                elif comp == 'ProB (Germany)':
+                elif comp in ('ProB (Germany)', 'Icelandic Premier League'):
                     continue
                 elif cw & S.words(f['home']):
                     venue, opp = 'Home', f['away']

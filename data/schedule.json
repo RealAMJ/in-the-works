@@ -1848,6 +1848,20 @@
   "score": ""
  },
  {
+  "game_id": "g20261112krba",
+  "date": "2026-11-12",
+  "time": "20:15",
+  "players": "Adam Ramstedt",
+  "team": "KR Basket",
+  "opponent": "Höttur",
+  "venue": "Home",
+  "competition": "Icelandic Premier League",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "fiba:2856148"
+ },
+ {
   "game_id": "g20261113vmi",
   "date": "2026-11-13",
   "time": "18:00",
@@ -2127,6 +2141,19 @@
   "score": ""
  },
  {
+  "game_id": "g20261115virt",
+  "date": "2026-11-15",
+  "time": "19:00",
+  "players": "Bobi Klintman",
+  "team": "Virtus Bologna",
+  "opponent": "Dolomiti Energia Trentino",
+  "venue": "Away",
+  "competition": "LBA (Italy)",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "g20261115mich",
   "date": "2026-11-15",
   "time": "20:00",
@@ -2218,6 +2245,32 @@
   "score": ""
  },
  {
+  "game_id": "g20261117juve",
+  "date": "2026-11-17",
+  "time": "19:00",
+  "players": "Kenny Pohto",
+  "team": "Juventus Utena",
+  "opponent": "Pallacanestro Reggiana",
+  "venue": "Home",
+  "competition": "Champions League (BCL)",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261117jove",
+  "date": "2026-11-17",
+  "time": "20:30",
+  "players": "Ludvig Håkanson, Simon Birgander",
+  "team": "Joventut Badalona",
+  "opponent": "Futebol Clube do Porto",
+  "venue": "Home",
+  "competition": "Champions League (BCL)",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
   "game_id": "g20261117vir",
   "date": "2026-11-17",
   "time": "21:00",
@@ -2231,6 +2284,33 @@
   "score": "",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV"
+ },
+ {
+  "game_id": "g20261118unic",
+  "date": "2026-11-18",
+  "time": "20:30",
+  "players": "Melwin Pantzar",
+  "team": "Unicaja",
+  "opponent": "BK KVIS Pardubice",
+  "venue": "Home",
+  "competition": "Champions League (BCL)",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "g20261119krba",
+  "date": "2026-11-19",
+  "time": "20:15",
+  "players": "Adam Ramstedt",
+  "team": "KR Basket",
+  "opponent": "ÍR",
+  "venue": "Away",
+  "competition": "Icelandic Premier League",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "fiba:2856151"
  },
  {
   "game_id": "g20261119vir",
