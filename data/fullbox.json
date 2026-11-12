@@ -52916,7 +52916,7 @@
   "ft": "0/2",
   "pm": 20,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -52937,7 +52937,7 @@
   "ft": "3/4",
   "pm": 25,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -52946,7 +52946,7 @@
   "team": "KR Basket",
   "player": "Þórir Guðmundur Þorbjarnarson",
   "pos": "",
-  "min": 31,
+  "min": 32,
   "pts": 27,
   "reb": 6,
   "ast": 9,
@@ -52958,7 +52958,7 @@
   "ft": "5/6",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -52979,7 +52979,7 @@
   "ft": "2/2",
   "pm": 10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53000,7 +53000,7 @@
   "ft": "4/4",
   "pm": 22,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53021,7 +53021,7 @@
   "ft": "1/2",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53030,7 +53030,7 @@
   "team": "KR Basket",
   "player": "Lars Erik Bragason",
   "pos": "",
-  "min": 12,
+  "min": 13,
   "pts": 0,
   "reb": 0,
   "ast": 1,
@@ -53042,7 +53042,7 @@
   "ft": "0/0",
   "pm": 11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53053,7 +53053,7 @@
   "pos": "",
   "min": 22,
   "pts": 10,
-  "reb": 1,
+  "reb": 2,
   "ast": 3,
   "stl": 0,
   "blk": 1,
@@ -53063,7 +53063,7 @@
   "ft": "1/1",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53084,7 +53084,7 @@
   "ft": "0/0",
   "pm": -15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53105,7 +53105,7 @@
   "ft": "1/4",
   "pm": -13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53114,19 +53114,19 @@
   "team": "Höttur",
   "player": "Ásmundur Múli Ármannsson",
   "pos": "",
-  "min": 13,
+  "min": 14,
   "pts": 6,
   "reb": 2,
   "ast": 3,
   "stl": 2,
   "blk": 0,
   "tov": 1,
-  "fg": "1/4",
+  "fg": "1/5",
   "three": "0/1",
   "ft": "4/5",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53147,7 +53147,7 @@
   "ft": "2/2",
   "pm": -15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53168,7 +53168,7 @@
   "ft": "3/3",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53189,7 +53189,7 @@
   "ft": "0/0",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53210,7 +53210,7 @@
   "ft": "6/6",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53219,7 +53219,7 @@
   "team": "Höttur",
   "player": "Adam Eiður Ásgeirsson",
   "pos": "",
-  "min": 26,
+  "min": 27,
   "pts": 19,
   "reb": 2,
   "ast": 1,
@@ -53231,7 +53231,7 @@
   "ft": "0/0",
   "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -53252,7 +53252,7 @@
   "ft": "2/3",
   "pm": -13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  }
 ]
