@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:54:06+01:00",
+ "at": "2026-11-12T01:54:58+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:44",
+   "clock": "02:59",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     42,
+     44,
      15
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:03",
+   "clock": "08:41",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     15,
+     17,
      15
     ],
     [
