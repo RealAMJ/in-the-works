@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:16:58+01:00",
+ "at": "2026-11-12T02:17:49+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:36",
+   "clock": "15:20",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Michigan Wolverines",
-     46,
+     47,
      17
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:01",
+   "clock": "12:31",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Arkansas Razorbacks",
-     6,
+     8,
      15
     ]
    ]
