@@ -142,7 +142,7 @@
         <option value="final">Results</option>
         <option value="all">All games</option>
       </select>
-      <div class="sw-chipbar"><button type="button" class="chip-arrow" data-dir="-1" aria-label="Scroll left">‹</button><div class="sw-chips" data-draw="compchips" data-source="schedule" aria-label="Filter by competition"></div><button type="button" class="chip-arrow" data-dir="1" aria-label="Scroll right">›</button></div>
+      <div class="sw-chipbar"><button type="button" class="chip-arrow" data-dir="-1" aria-label="Scroll left">‹</button><div class="sw-chips" data-draw="compchips" data-source="schedule" aria-label="Filter by competition"></div><button type="button" class="chip-arrow" data-dir="1" aria-label="Scroll right">›</button></div><button type="button" class="cf-btn" data-draw="compfilt" data-source="schedule" aria-label="Filter by league"></button>
     </div>
     <div class="gmx" data-draw="gmx" data-source="schedule boxscores gamelogs players photos logos"></div>
     <div class="sw-scroll">
@@ -2687,7 +2687,7 @@
     el.querySelectorAll('[data-count]').forEach((n) => { if (io) { n.textContent = (0).toFixed((String(n.dataset.count).split('.')[1] || '').length); io.observe(n); } });
   }
   // ---- A sheet that slides up over the page (iOS style) with a list of games; Esc, the × or the backdrop closes it
-  function hxSheet(title, sub, rows) {
+  function hxSheet(title, sub, rows, tools) {
     let d = document.getElementById('hx-sheet');
     if (!d) { d = document.createElement('dialog'); d.id = 'hx-sheet'; d.className = 'hxs'; document.body.append(d);
       d.addEventListener('click', (e) => { if (e.target === d) d.close(); }); }
@@ -2695,7 +2695,7 @@
     const head = mk('div', 'hxs-h'); const tt = mk('div'); tt.append(mk('h2', '', title), mk('p', '', sub));
     const x = mk('button', 'hxs-x', '×'); x.type = 'button'; x.setAttribute('aria-label', L('Close', 'Stäng')); x.onclick = () => d.close();
     head.append(tt, x); const list = mk('div', 'hxs-list'); rows.forEach((r) => list.append(r));
-    d.append(mk('span', 'hxs-grab'), head, list);
+    d.append(mk('span', 'hxs-grab'), head); if (tools) d.append(tools); d.append(list);
     if (!d.open) { try { d.showModal(); } catch (e) { d.setAttribute('open', ''); } }
     if (swEl) { trBusy = true; trNode(d); trBusy = false; }
     list.scrollTop = 0;
@@ -2737,20 +2737,133 @@
     hxSheet(L('Swede vs Swede', 'Svensk mot svensk'), L(`${mu.length} games this season where Swedes face each other · ${up} coming up. Tap one for the game.`, `${mu.length} matcher den här säsongen där svenskar möts · ${up} kommande. Tryck på en för matchen.`), rows);
     const d = document.getElementById('hx-sheet'); if (d) d.classList.add('hhs');
   }
-  function ddSheet(dd) {
+  function statRows(list, hi) {
     const sch = ds('schedule') || [], bx = ds('boxscores') || [];
-    const rows = dd.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || Number(b.pts) - Number(a.pts)).map((r) => {
+    return list.map((r, i) => {
       const line = bx.find((x) => isSame(x.player, r.player) && sch.some((g) => g.game_id === x.game_id && g.date === r.date));
       const b = mk('button', 'hxs-row'); b.type = 'button';
-      b.onclick = () => { document.getElementById('hx-sheet').close(); if (line) showCardFor(line.game_id, r.player); else showLog(r.player); };
-      const nums = mk('span', 'hxs-n'); [['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST'], ['stl', 'STL'], ['blk', 'BLK']].filter(([k]) => k === 'pts' || k === 'reb' || k === 'ast' || Number(r[k]) >= 10).forEach(([k, u]) => { const s2 = mk('span', Number(r[k]) >= 10 ? 'dd' : ''); s2.append(mk('b', '', String(r[k] ?? '–')), mk('i', '', u)); nums.append(s2); });
+      b.onclick = () => { hxClose(); if (line) showCardFor(line.game_id, r.player); else showLog(r.player); };
+      const nums = mk('span', 'hxs-n'); [['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST'], ['stl', 'STL'], ['blk', 'BLK']].filter(([k]) => k === 'pts' || k === 'reb' || k === 'ast' || Number(r[k]) >= 10).forEach(([k, u]) => { const s2 = mk('span', hi(k, r) ? 'dd' : ''); s2.append(mk('b', '', String(r[k] ?? '–')), mk('i', '', u)); nums.append(s2); });
       const who = mk('span', 'hxs-w'); who.append(mk('b', '', r.player), mk('span', '', `${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${r.opponent} · ${dayFmt(r.date)}`));
       const res = String(r.result || ''); const rc = mk('span', 'hxs-res ' + (res[0] === 'W' ? 'w' : res[0] === 'L' ? 'l' : ''), res);
       b.append(faceAv('span', 'hxs-av', r.player), who, nums, rc);
       return b;
     });
-    hxSheet(L('Double-doubles', 'Dubbel-dubblar'), L(`${dd.length} this season, newest first. Tap one for the game.`, `${dd.length} den här säsongen, nyast först. Tryck på en för matchen.`), rows);
   }
+  function hxClose() { const d = document.getElementById('hx-sheet'); if (d && d.open) d.close(); }
+  function ddSheet(dd) {
+    const list = dd.slice().sort((a, b) => String(b.date).localeCompare(String(a.date)) || Number(b.pts) - Number(a.pts));
+    hxSheet(L('Double-doubles', 'Dubbel-dubblar'), L(`${dd.length} this season, newest first. Tap one for the game.`, `${dd.length} den här säsongen, nyast först. Tryck på en för matchen.`), statRows(list, (k, r) => Number(r[k]) >= 10));
+  }
+  function bestSheet(played) {
+    const list = played.slice().sort((a, b) => Number(b.pts) - Number(a.pts) || Number(b.reb) - Number(a.reb)).slice(0, 10);
+    hxSheet(L('Best games', 'Bästa matcherna'), L('The 10 highest-scoring games by a Swede abroad this season. Tap one for the game.', 'De 10 matcherna med flest poäng av en svensk utomlands den här säsongen. Tryck på en för matchen.'), statRows(list, (k) => k === 'pts'));
+  }
+  // a small segmented control for sheets
+  function hxSegEl(opts, cur, onPick) { const w = mk('div', 'hxs-tools'); const sg = mk('div', 'hxs-seg'); opts.forEach(([k, l]) => { const b = mk('button', '', l); b.type = 'button'; b.setAttribute('aria-pressed', k === cur ? 'true' : 'false'); b.onclick = () => { sg.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false')); onPick(k); }; sg.append(b); }); w.append(sg); return w; }
+  function hxSetList(rows) { const l = document.querySelector('#hx-sheet .hxs-list'); if (!l) return; l.replaceChildren(...rows); l.scrollTop = 0; const d = document.getElementById('hx-sheet'); if (swEl && d) { trBusy = true; trNode(d); trBusy = false; } }
+  // ---- Their teams: every game with a Swede on the floor, wins and losses
+  function teamsSheet(played) {
+    const sch = ds('schedule') || []; const gm = new Map();
+    played.forEach((r) => { const k = r.date + '|' + norm(r.team); if (!/^[WL]/.test(String(r.result || ''))) return; if (!gm.has(k)) gm.set(k, { date: r.date, team: r.team, opponent: r.opponent, venue: r.venue, result: String(r.result), comp: r.competition, pl: [] }); gm.get(k).pl.push(r); });
+    const all = [...gm.values()].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    const rowsFor = (f) => all.filter((g) => f === 'all' || g.result[0] === f).map((g) => {
+      const b = mk('button', 'tms-row'); b.type = 'button';
+      const sg = sch.find((x) => x.date === g.date && sameTeam(x.team, g.team));
+      b.onclick = () => { hxClose(); if (sg) showCardFor(sg.game_id, g.pl[0].player); else showLog(g.pl[0].player); };
+      const res = mk('span', 'tms-res ' + (g.result[0] === 'W' ? 'w' : 'l')); res.append(mk('b', '', g.result[0]), mk('span', '', g.result.replace(/^[WL]\s*/, '')));
+      const mid = mk('span', 'tms-mid'); const tl = mk('span', 'tms-t'); tl.append(crest(g.team, 'sm'), mk('b', '', g.team), mk('i', '', g.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')), crest(g.opponent, 'sm'), mk('span', '', g.opponent));
+      mid.append(tl, mk('span', 'tms-sub', `${dayFmt(g.date)} · ${shortComp(g.comp)}`));
+      const sw = mk('span', 'tms-sw'); g.pl.slice(0, 3).forEach((p) => { const c = mk('span', 'tms-p'); c.append(faceAv('span', 'tms-av', p.player), mk('span', '', `${String(p.player).split(' ').slice(-1)[0]} ${p.pts}`)); sw.append(c); });
+      b.append(res, mid, sw); return b; });
+    const w = all.filter((g) => g.result[0] === 'W').length;
+    const tools = hxSegEl([['all', L('All', 'Alla') + ` · ${all.length}`], ['W', L('Wins', 'Vinster') + ` · ${w}`], ['L', L('Losses', 'Förluster') + ` · ${all.length - w}`]], 'all', (k) => hxSetList(rowsFor(k)));
+    hxSheet(L('Their teams', 'Deras lag'), L(`${w}–${all.length - w} in ${all.length} games with a Swede on the floor, newest first.`, `${w}–${all.length - w} i ${all.length} matcher med en svensk på planen, nyast först.`), rowsFor('all'), tools);
+  }
+  // ---- Coaches abroad: record and form for each coach
+  function coachForm(n) { return (ds('coachgames') || []).filter((x) => isSame(x.coach, n) && x.status === 'final' && /^[WL] /.test(String(x.score || ''))).sort((a, b) => String(a.date).localeCompare(String(b.date))); }
+  function coachDots(fin) { const d = mk('span', 'cos-dots'); fin.slice(-5).forEach((x) => d.append(mk('i', String(x.score)[0] === 'W' ? 'w' : 'l', String(x.score)[0]))); return d; }
+  function coachesSheet() {
+    const rows = (ds('coaches') || []).filter((r) => r.coach).map((r) => {
+      const fin = coachForm(r.coach); const w = fin.filter((x) => String(x.score)[0] === 'W').length;
+      const b = mk('button', 'cos-row'); b.type = 'button'; b.onclick = () => { hxClose(); showCoach(r.coach); };
+      const who = mk('span', 'cos-w'); const cl = mk('span', 'cos-club'); cl.append(crest(r.club, 'sm'), mk('span', '', r.club || '')); who.append(mk('b', '', r.coach), mk('span', 'cos-role', r.role || ''), cl);
+      const rec = mk('span', 'cos-rec'); rec.append(mk('b', '', fin.length ? `${w}–${fin.length - w}` : '–'), coachDots(fin));
+      b.append(faceAv('span', 'cos-av', r.coach), who, rec); return b; });
+    hxSheet(L('Coaches abroad', 'Tränare utomlands'), L('Record in the games we track, last five on the right. Tap a coach for his profile.', 'Facit i matcherna vi bevakar, de fem senaste till höger. Tryck på en tränare för profilen.'), rows);
+  }
+  // ---- Where they play: every player, by level or by country
+  function whereSheet() {
+    const pl = (ds('players') || []).filter((r) => r.player);
+    const rowsFor = (by) => { const key = (r) => by === 'level' ? (LEVEL_LABEL[r.level] || r.level || 'Other') : (r.country || '—');
+      const groups = d3.rollups(pl, (v) => v, key).sort((a, b) => b[1].length - a[1].length || String(a[0]).localeCompare(String(b[0])));
+      const out = []; groups.forEach(([k, list]) => { out.push(mk('div', 'whs-h', `${by === 'country' ? (hxCountry[k] || '') + ' ' : ''}${k} · ${list.length}`));
+        list.slice().sort((a, b) => String(a.player).localeCompare(String(b.player))).forEach((p) => { const b = mk('button', 'whs-row'); b.type = 'button'; b.onclick = () => { hxClose(); showLog(p.player); };
+          const w = mk('span', 'hxs-w'); w.append(mk('b', '', p.player), mk('span', '', [p.club, p.competitions].filter(Boolean).join(' · '))); b.append(faceAv('span', 'whs-av', p.player), w, crest(p.club || '', 'sm')); out.push(b); }); });
+      return out; };
+    const tools = hxSegEl([['level', L('By level', 'Per nivå')], ['country', L('By country', 'Per land')]], 'level', (k) => hxSetList(rowsFor(k)));
+    hxSheet(L('Where they play', 'Var de spelar'), L(`${pl.length} Swedish players abroad this season. Tap one for his profile.`, `${pl.length} svenska spelare utomlands den här säsongen. Tryck på en för profilen.`), rowsFor('level'), tools);
+  }
+  // ---- One game, quick view (score bar, live pill): score, the Swedes' lines, and the way to the game center
+  function gameBlock(r) {
+    const ha = homeAway(r); const fin = r.status === 'final', live = r.status === 'live';
+    const w = mk('div', 'gqs-sb' + (live ? ' live' : ''));
+    const side = (t) => { const s2 = mk('div', 'gqs-t' + (fin ? (t.win ? ' win' : ' lose') : '')); s2.append(crest(t.name, 'lg'), mk('b', '', t.name)); return s2; };
+    const mid = mk('div', 'gqs-mid');
+    if (fin || live) { const sc = mk('div', 'gqs-sc'); sc.append(mk('b', ha.home.win && fin ? 'w' : '', ha.home.score == null ? '–' : String(ha.home.score)), mk('i', '', '–'), mk('b', ha.away.win && fin ? 'w' : '', ha.away.score == null ? '–' : String(ha.away.score))); mid.append(sc); }
+    else mid.append(mk('div', 'gqs-time', r.time && r.time !== 'TBC' ? r.time : 'TBC'));
+    mid.append(mk('span', 'gqs-st', [live ? (r.clock && !r.autoLive ? r.clock : L('Live', 'Live')) : fin ? L('Final', 'Slut') : '', dayFmt(r.date), shortComp(r.competition)].filter(Boolean).join(' · ')));
+    w.append(side(ha.home), mid, side(ha.away)); return w;
+  }
+  function gameSwedes(r) {
+    const out = mk('div', 'gqs-sw');
+    gmxLine(r).forEach(({ n, b, dnp }) => { const row = mk('button', 'gqs-p'); row.type = 'button'; row.onclick = () => { hxClose(); showLog(n); };
+      const w = mk('span', 'hxs-w'); w.append(mk('b', '', n), mk('span', '', clubOf(n, r.team)));
+      const nums = mk('span', 'hxs-n'); if (b) [['pts', 'PTS'], ['reb', 'REB'], ['ast', 'AST']].forEach(([k, u]) => { const q = mk('span', k === 'pts' ? 'dd' : ''); q.append(mk('b', '', String(b[k] ?? '–')), mk('i', '', u)); nums.append(q); });
+      else nums.append(mk('span', 'gqs-note', dnp ? L('Did not play', 'Spelade inte') : r.status === 'final' ? '' : L('Not started yet', 'Inte startat än')));
+      row.append(faceAv('span', 'hxs-av', n), w, nums); out.append(row); });
+    if (r.coach) { const row = mk('button', 'gqs-p'); row.type = 'button'; row.onclick = () => { hxClose(); showCoach(r.coach); }; const w = mk('span', 'hxs-w'); w.append(mk('b', '', r.coach), mk('span', '', L('Coach', 'Tränare') + ' · ' + r.team)); row.append(faceAv('span', 'hxs-av', r.coach), w); out.append(row); }
+    return out;
+  }
+  function gameQuick(r) {
+    const go = mk('button', 'hxs-cta', L('Open game center →', 'Öppna matchcentret →')); go.type = 'button'; go.onclick = () => { hxClose(); showCard(r.game_id); };
+    const ha = homeAway(r);
+    hxSheet(`${teamAbbr(ha.home.name)} – ${teamAbbr(ha.away.name)}`, r.competition || '', [gameBlock(r), gameSwedes(r), go]);
+  }
+  function liveSheet(rows) {
+    const items = rows.map((r) => { const c = mk('button', 'lvs-row'); c.type = 'button'; c.onclick = () => { hxClose(); showCard(r.game_id); }; c.append(gameBlock(r)); const sw = mk('div', 'lvs-sw'); gmxLine(r).forEach(({ n, b }) => { const p = mk('span', 'tms-p'); p.append(faceAv('span', 'tms-av', n), mk('span', '', `${n.split(' ').slice(-1)[0]}${b ? ` ${b.pts} ${L('pts', 'p')} · ${b.reb} ${L('reb', 'ret')} · ${b.ast} ${L('ast', 'ass')}` : ''}`)); sw.append(p); }); c.append(sw); return c; });
+    const live = rows.some((r) => r.status === 'live');
+    hxSheet(live ? L('Live now', 'Pågår nu') : L('Latest games', 'Senaste matcherna'), live ? L(`${rows.length} game${rows.length === 1 ? '' : 's'} with a Swede on right now. Tap one for the game center.`, `${rows.length} ${rows.length === 1 ? 'match' : 'matcher'} med en svensk pågår just nu. Tryck på en för matchcentret.`) : '', items);
+  }
+  // ---- Coach quick view (game pages)
+  function coachQuick(n, g) {
+    const ci = coachInfo(n) || {}; const fin = coachForm(n); const w = fin.filter((x) => String(x.score)[0] === 'W').length;
+    const top = mk('div', 'cqs-top'); top.append(faceAv('span', 'cqs-av', n)); const t = mk('div'); const cl = mk('span', 'cos-club'); cl.append(crest(ci.club || g.team, 'sm'), mk('span', '', ci.club || g.team));
+    t.append(mk('b', 'cqs-n', `${coachFlag(n)} ${n}`), mk('span', 'cos-role', [ci.role, ci.since ? L(`since ${ci.since}`, `sedan ${ci.since}`) : ''].filter(Boolean).join(' · ')), cl); top.append(t);
+    const stats = mk('div', 'cqs-stats'); const box = (v, k) => { const e = mk('div'); e.append(mk('b', '', v), mk('span', '', k)); return e; };
+    stats.append(box(fin.length ? `${w}–${fin.length - w}` : '–', L('Record', 'Facit')));
+    const fm = mk('div'); fm.append(coachDots(fin), mk('span', '', L('Last 5', 'Senaste 5'))); stats.append(fm);
+    const nx = (ds('coachgames') || []).filter((x) => isSame(x.coach, n) && x.status !== 'final' && x.date >= todayStr()).sort((a, b) => sortKey(a).localeCompare(sortKey(b)))[0];
+    if (nx) stats.append(box(`${nx.venue === 'Away' ? '@' : L('vs', 'mot')} ${teamAbbr(nx.opponent)}`, `${L('Next', 'Nästa')} · ${dayFmt(nx.date)}`));
+    const items = [top, stats]; if (ci.note) items.push(mk('p', 'cqs-note', ci.note));
+    const go = mk('button', 'hxs-cta', L('Coach profile →', 'Tränarprofil →')); go.type = 'button'; go.onclick = () => { hxClose(); showCoach(n); }; items.push(go);
+    hxSheet(L('Swedish coach', 'Svensk tränare'), g ? `${g.team} · ${dayFmt(g.date)}` : '', items);
+  }
+  // ---- League filter as a sheet (phones)
+  function compSheet() {
+    const d = dash.data('schedule'); if (d.status !== 'ok') return;
+    const counts = new Map(); d.data.forEach((r) => { if (r.competition) counts.set(r.competition, (counts.get(r.competition) || 0) + 1); });
+    const rank = (c) => { const i = COMP_ORDER.findIndex((x) => x === c); return i < 0 ? 999 : i; };
+    const comps = [...counts.keys()].sort((a, b) => rank(a) - rank(b) || counts.get(b) - counts.get(a) || a.localeCompare(b));
+    const redraw = () => { dash.draw('compchips'); dash.draw('sched'); dash.draw('gmx'); dash.draw('compfilt'); };
+    const rowsNow = () => { const out = []; const all = mk('button', 'cfs-row' + (compSel.size ? '' : ' on')); all.type = 'button'; all.append(mk('span', 'cfs-ck'), mk('b', '', L('All leagues', 'Alla ligor'))); all.onclick = () => { compSel.clear(); redraw(); hxSetList(rowsNow()); }; out.push(all);
+      comps.forEach((c) => { const b = mk('button', 'cfs-row' + (compSel.has(c) ? ' on' : '')); b.type = 'button'; const dot = mk('span', 'cfs-dot'); dot.style.background = compColor(c); b.append(mk('span', 'cfs-ck'), mk('b', '', c), dot, mk('span', 'cfs-n', String(counts.get(c))));
+        b.onclick = () => { if (compSel.has(c)) compSel.delete(c); else compSel.add(c); redraw(); hxSetList(rowsNow()); }; out.push(b); });
+      const done = mk('button', 'hxs-cta', L('Show games', 'Visa matcherna')); done.type = 'button'; done.onclick = hxClose; out.push(done); return out; };
+    hxSheet(L('Leagues', 'Ligor'), L('Pick one or more. Games update as you tap.', 'Välj en eller flera. Matcherna uppdateras när du trycker.'), rowsNow());
+  }
+  dash.draw('compfilt', (el) => { el.replaceChildren(); el.append(mk('span', 'cf-i', '☰'), mk('span', '', L('Leagues', 'Ligor')), mk('b', 'cf-n', compSel.size ? String(compSel.size) : L('All', 'Alla'))); el.onclick = compSheet; });
+  function hxTap(t, fn) { t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = fn; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fn(); } }; }
   function bxNum(v) { const b = mk('b', 'bx-num', String(v)); if (/^\d+(\.\d+)?$/.test(String(v))) b.dataset.count = String(v); return b; }
   dash.draw('h-bento', (el) => {
     el.replaceChildren();
@@ -2761,9 +2874,9 @@
     // best single game
     const best = played.slice().sort((a, b) => Number(b.pts) - Number(a.pts) || Number(b.reb) - Number(a.reb))[0];
     if (best) {
-      const t = tile('bx-best go', 'Best game of the season'); t.tabIndex = 0; t.setAttribute('role', 'button');
+      const t = tile('bx-best go', 'Best game of the season'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); bestSheet(played); } };
       const bxl = (ds('boxscores') || []).find((x) => isSame(x.player, best.player) && (ds('schedule') || []).some((g) => g.game_id === x.game_id && g.date === best.date));
-      t.onclick = () => (bxl ? showCardFor(bxl.game_id, best.player) : showLog(best.player));
+      t.onclick = () => bestSheet(played);
       const ph = photoFor(best.player); if (ph) { const pic = mk('span', 'bx-pic'); const im = new Image(); im.alt = ''; im.src = ph.src;
         // big portrait: the face takes ~40% of the tile's height, its middle at 34% from the top (falls back to filling the box)
         const fb = Array.isArray(ph.fbox) ? ph.fbox : null;
@@ -2773,20 +2886,20 @@
       const v = mk('div', 'bx-big'); v.append(bxNum(Number(best.pts)), mk('span', 'bx-u', 'PTS'));
       const line = [best.reb != null && best.reb !== '' ? `${best.reb} ${L('reb', 'ret')}` : '', best.ast != null && best.ast !== '' ? `${best.ast} ${L('ast', 'ass')}` : '', best.fg ? `${best.fg} ${L('FG', 'skott')}` : ''].filter(Boolean).join(' · ');
       const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', line));
-      t.append(v, w);
+      t.append(v, w, mk('span', 'bx-go bx-go-best', L('Top 10 →', 'Topp 10 →')));
     }
     // Swedish teams' record in games with a Swede playing (one game counted once per team)
     const gm = new Map(); played.forEach((r) => { const k = r.date + '|' + norm(r.team); if (!gm.has(k) && /^[WL]/.test(String(r.result || ''))) gm.set(k, String(r.result)[0]); });
     const w = [...gm.values()].filter((x) => x === 'W').length, l = gm.size - w;
-    { const t = tile('bx-rec', 'Their teams'); const n = mk('div', 'bx-row'); n.append(bxNum(w), mk('span', 'bx-dash', '–'), bxNum(l)); t.append(n, mk('span', 'bx-s', L(`wins and losses in ${gm.size} games with a Swede on the floor`, `vinster och förluster i ${gm.size} matcher med en svensk på planen`)));
-      const bar = mk('div', 'bx-wl'); const f = mk('span'); f.style.width = (gm.size ? w / gm.size * 100 : 0) + '%'; bar.append(f); t.append(bar); }
+    { const t = tile('bx-rec go', 'Their teams'); hxTap(t, () => teamsSheet(played)); const n = mk('div', 'bx-row'); n.append(bxNum(w), mk('span', 'bx-dash', '–'), bxNum(l)); t.append(n, mk('span', 'bx-s', L(`wins and losses in ${gm.size} games with a Swede on the floor`, `vinster och förluster i ${gm.size} matcher med en svensk på planen`)));
+      const bar = mk('div', 'bx-wl'); const f = mk('span'); f.style.width = (gm.size ? w / gm.size * 100 : 0) + '%'; bar.append(f); t.append(bar, mk('span', 'bx-go', L('Every result →', 'Alla resultat →'))); }
     // double-doubles
     const dd = played.filter((r) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => Number(r[k]) >= 10).length >= 2);
     { const t = tile('bx-dd go', 'Double-doubles'); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n))); t.append(av, mk('span', 'bx-s', L(`by ${who.length} player${who.length === 1 ? '' : 's'}`, `av ${who.length} spelare`)), mk('span', 'bx-go', L('See them all →', 'Se alla →')));
       t.tabIndex = 0; t.setAttribute('role', 'button'); t.title = L('Every double-double this season', 'Alla dubbel-dubblar den här säsongen');
       const open = () => ddSheet(dd); t.onclick = open; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } }; }
     // where they play: one stacked bar
-    { const t = tile('bx-where go', 'Where they play'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('players');
+    { const t = tile('bx-where go', 'Where they play'); hxTap(t, whereSheet);
       const by = d3.rollups(pl.filter((r) => r.player), (v) => v.length, (r) => r.level || 'Other').sort((a, b) => b[1] - a[1]);
       const tot = by.reduce((s, x) => s + x[1], 0) || 1, cols = ['#7fb3ff', '#fecc02', '#45d483', '#ff8a65', '#c39bff'];
       const top = mk('div', 'bx-row'); top.append(bxNum(tot), mk('span', 'bx-s', L(`players in ${new Set(pl.map((r) => r.country).filter(Boolean)).size} countries`, `spelare i ${new Set(pl.map((r) => r.country).filter(Boolean)).size} länder`)));
@@ -2802,7 +2915,7 @@
       t.onclick = go; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }; }
     // coaches
     { const cg = (ds('coachgames') || []).filter((x) => x.status === 'final' && /^[WL] /.test(String(x.score || ''))); const cw = cg.filter((x) => String(x.score)[0] === 'W').length;
-      const t = tile('bx-co go', 'Coaches abroad'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('coaches'); const n = mk('div', 'bx-row'); n.append(bxNum(cw), mk('span', 'bx-dash', '–'), bxNum(cg.length - cw)); t.append(n, mk('span', 'bx-s', 'combined record in the games we track')); }
+      const t = tile('bx-co go', 'Coaches abroad'); hxTap(t, coachesSheet); const n = mk('div', 'bx-row'); n.append(bxNum(cw), mk('span', 'bx-dash', '–'), bxNum(cg.length - cw)); t.append(n, mk('span', 'bx-s', 'combined record in the games we track'), mk('span', 'bx-go', L('Each coach →', 'Varje tränare →'))); }
     // latest award
     { const a = (ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && r.title).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
       if (a) { const t = tile('bx-aw go', 'Latest honour'); t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = () => goTo('awards');
@@ -2820,7 +2933,7 @@
     if (!rows.length && demo) rows = g.filter((r) => r.status === 'final').slice(-3).reverse();
     if (!rows.length || lvpHide) { el.classList.remove('on'); return; }
     const r = rows[lvpI % rows.length];
-    const ha = homeAway(r); const b = mk('button', 'lvp-b'); b.type = 'button'; b.onclick = () => showCard(r.game_id);
+    const ha = homeAway(r); const b = mk('button', 'lvp-b'); b.type = 'button'; b.onclick = () => liveSheet(rows);
     const st = mk('span', 'lvp-st' + (r.status === 'live' ? ' live' : ''), r.status === 'live' ? (r.clock && !r.autoLive ? r.clock : 'Live') : 'Final');
     const sc = mk('span', 'lvp-sc'); sc.append(crest(ha.home.name, 'sm'), mk('b', '', teamAbbr(ha.home.name).slice(0, 4)), mk('strong', '', ha.home.score == null ? '–' : String(ha.home.score)), mk('i', '', '–'), mk('strong', '', ha.away.score == null ? '–' : String(ha.away.score)), mk('b', '', teamAbbr(ha.away.name).slice(0, 4)), crest(ha.away.name, 'sm'));
     const ln = gmxLine(r)[0]; const sw = mk('span', 'lvp-sw'); if (ln) { sw.append(faceAv('span', 'lvp-av', ln.n), mk('span', '', ln.n.split(' ').slice(-1)[0] + (ln.b ? ` ${ln.b.pts} ${L('pts', 'p')}` : ''))); }
@@ -2912,7 +3025,7 @@
     if (cg.length) { const w = cg.filter((x) => String(x.score)[0] === 'W').length; c.append(mk('div', 'pp-sub', `Record in tracked games before this one: ${w}-${cg.length - w}`)); }
     const tb = mk('button', 'hc-more', 'Coach profile →'); tb.type = 'button'; tb.onclick = (e) => { e.stopPropagation(); showCoach(n); }; c.append(tb);
     // the whole card opens his profile, like a player's
-    c.classList.add('go'); c.tabIndex = 0; c.setAttribute('role', 'button'); c.title = 'Open ' + n; c.onclick = () => showCoach(n); c.onkeydown = (e) => { if (e.key === 'Enter') showCoach(n); };
+    c.classList.add('go'); c.tabIndex = 0; c.setAttribute('role', 'button'); c.title = 'Open ' + n; c.onclick = () => coachQuick(n, g); c.onkeydown = (e) => { if (e.key === 'Enter') coachQuick(n, g); };
     return c;
   }
   function glKey(r) { return 'gl:' + r.date + ':' + [nrmT(r.team), nrmT(r.opponent)].sort().join(':'); }
@@ -3136,7 +3249,7 @@
         if (r.coach) { const cl = mk('div', 'st-coach'); cl.append(mk('span', 'cc-tag', 'Coach'), document.createTextNode(` ${coachFlag(r.coach)} ${r.coach.split(' ').slice(-1)[0]}`)); c.append(cl); if (!pn) c.classList.add('coachg'); } }
       if (isH2H(r)) { c.classList.add('h2hg'); c.append(mk('span', 'st-h2h', 'SWE v SWE')); }
       c.title = `${ha.home.name} vs ${ha.away.name} · ${r.players}`;
-      c.onclick = () => showCard(r.game_id);
+      c.onclick = () => (r.sblLeague ? showCard(r.game_id) : gameQuick(r));
       row.append(c);
     });
     if (!stripUser && anchor) {
