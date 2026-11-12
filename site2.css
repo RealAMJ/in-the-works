@@ -3228,3 +3228,18 @@ button.hhs-row:hover, button.hhs-row:focus-visible { background: rgba(255,255,25
 .hxs::backdrop { background: rgba(2,6,15,.12); }
 .lvp { background: linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.03)), rgba(14,30,62,.38); -webkit-backdrop-filter: saturate(190%) blur(20px); backdrop-filter: saturate(190%) blur(20px); border: 1px solid rgba(255,255,255,.24); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 18px 40px -12px rgba(0,0,0,.7); }
 .share-ov .share-box { background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.02) 38%), linear-gradient(180deg, rgba(30,60,110,.30), rgba(8,20,44,.45)) !important; -webkit-backdrop-filter: saturate(190%) blur(22px); backdrop-filter: saturate(190%) blur(22px); }
+/* SBL sheets */
+button.lx-num.go, .sbx-lead.go { all: unset; box-sizing: border-box; cursor: pointer; }
+button.lx-num.go { display: grid; transition: transform .2s ease; }
+button.lx-num.go:hover, button.lx-num.go:focus-visible { transform: translateY(-2px); }
+button.lx-num.go::after { content: '→'; font: 700 12px Archivo, sans-serif; color: #7fb3ff; }
+.sbx-lead.go { width: 100%; transition: background .2s ease; border-radius: 12px; }
+.sbx-lead.go:hover, .sbx-lead.go:focus-visible { background: rgba(127,179,255,.07); }
+.sbs-ppg { display: grid; justify-items: end; } .sbs-ppg b { font: 400 22px/1 Anton, Impact, sans-serif; } .sbs-ppg i { font: 800 9px Archivo, sans-serif; font-style: normal; letter-spacing: .12em; color: #93a6c4; }
+.sbs-top { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-top: 1px solid rgba(255,255,255,.1); padding-top: 10px; }
+.sbs-col { display: grid; gap: 2px; align-content: start; min-width: 0; }
+.sbs-h { font: 800 10px Archivo, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #fecc02; padding: 4px 6px; }
+.sbs-p { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 7px 6px; border-radius: 10px; }
+.sbs-p:hover, .sbs-p:focus-visible { background: rgba(255,255,255,.07); }
+.sbs-p .hxs-w b { font-size: 13px; } .sbs-pts { font: 400 22px/1 Anton, Impact, sans-serif; }
+@media (max-width: 520px) { .sbs-top { grid-template-columns: 1fr; } }
