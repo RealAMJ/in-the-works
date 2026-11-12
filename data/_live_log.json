@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:39:15+01:00",
+ "at": "2026-11-12T03:40:07+01:00",
  "log": [
   {
    "game": "g20261112robe",
@@ -21,6 +21,29 @@
      "Arkansas Razorbacks",
      72,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261112uci",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112uci",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UC Irvine Anteaters",
+     0,
+     0
+    ],
+    [
+     "Lincoln (CA) Oaklanders",
+     0,
+     0
     ]
    ]
   }
