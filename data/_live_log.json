@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:11:30+01:00",
+ "at": "2026-11-12T03:12:21+01:00",
  "log": [
   {
    "game": "g20261112uncw",
@@ -9,7 +9,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:47",
+   "clock": "01:07",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:40",
+   "clock": "00:36",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:37",
+   "clock": "14:47",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     35,
+     38,
      15
     ],
     [
