@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:09:55+01:00",
+ "at": "2026-11-12T02:10:45+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:45",
+   "clock": "17:14",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Friends Falcons",
-     24,
+     26,
      15
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:34",
+   "clock": "15:05",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Arkansas Razorbacks",
-     0,
+     2,
      15
     ]
    ]
