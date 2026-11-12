@@ -1,95 +1,95 @@
 {
- "at": "2026-11-10T19:06:45+01:00",
- "found": 1,
+ "at": "2026-11-12T14:18:12+01:00",
+ "found": 0,
  "log": [
   {
-   "competition": "FIBA Europe Cup",
-   "seed": 2888341,
+   "competition": "Orlen Basket Liga",
+   "seed": 2951826,
    "scanned": 799,
-   "answered": 310,
+   "answered": 374,
    "sample": [
     [
-     2888340,
+     2951825,
      [
-      "Lokomotiv Plovdiv ",
-      "Neftchi SC "
+      "MKS Dąbrowa Górnicza ",
+      "Górnik Zamek Książ Wałbrzych "
      ]
     ],
     [
-     2888342,
+     2951827,
      [
-      "Fribourg Olympic Basket ",
-      "VEF Riga "
+      "Decka Pelplin ",
+      "ŁKS Coolpack Łódź "
      ]
     ],
     [
-     2888339,
+     2951824,
      [
-      "VEF Riga ",
-      "Mykonos Betsson BC "
+      "Dziki Warszawa ",
+      "Anwil Włocławek "
      ]
     ],
     [
-     2888338,
+     2951828,
      [
-      "Lokomotiv Plovdiv ",
-      "Fribourg Olympic Basket "
+      "Solvera Sokół Łańcut ",
+      "PGE Spójnia Stargard "
      ]
     ],
     [
-     2888337,
+     2951823,
      [
-      "Neftchi SC ",
-      "CSM CSU Raiffeisen Oradea "
+      "Southern Nazarene ",
+      "Langston "
      ]
     ],
     [
-     2888336,
+     2951836,
      [
-      "Mykonos Betsson BC ",
-      "Lokomotiv Plovdiv "
+      "Zdrovo Polonia 1912 Leszno ",
+      "Enea Basket Poznań "
      ]
     ],
     [
-     2888335,
+     2951837,
      [
-      "CSM CSU Raiffeisen Oradea ",
-      "VEF Riga "
+      "RMKS Xbest Rybnik ",
+      "GMMInoxMergerLogisticsPanteryŁańcut "
      ]
     ],
     [
-     2888334,
+     2951814,
      [
-      "Fribourg Olympic Basket ",
-      "Neftchi SC "
+      "Hunter ",
+      "Saint Elizabeth "
      ]
     ],
     [
-     2888333,
+     2951838,
      [
-      "Lokomotiv Plovdiv ",
-      "CSM CSU Raiffeisen Oradea "
+      "Nautiqus AZS Uniwersytet Gdański ",
+      "Brother MUKS Poznań "
      ]
     ],
     [
-     2888332,
+     2951813,
      [
-      "Fribourg Olympic Basket ",
-      "Mykonos Betsson BC "
+      "Dragūnai Dragūnai",
+      "Prodesus Prodesus"
      ]
     ],
     [
-     2888331,
+     2951839,
      [
-      "Neftchi SC ",
-      "VEF Riga "
+      "Sparta Ziębice ",
+      "Basket 4Ever AZS UMed Ksawerów "
      ]
     ],
     [
-     2888330,
+     2951840,
      [
-      "CSM CSU Raiffeisen Oradea ",
-      "Fribourg Olympic Basket "
+      "BSA  AMW Arka Gdynia ",
+      "Tarnovia Tarnowo Podgórne "
      ]
     ]
    ]
