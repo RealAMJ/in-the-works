@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:19:12+01:00",
+ "at": "2026-11-12T02:20:04+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -9,7 +9,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:19",
+   "clock": "14:36",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:51",
+   "clock": "14:46",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Michigan Wolverines",
-     47,
+     50,
      17
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:33",
+   "clock": "19:08",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     50,
+     54,
      15
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:42",
+   "clock": "10:56",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     11,
+     13,
      15
     ],
     [
      "Arkansas Razorbacks",
-     10,
+     12,
      15
     ]
    ]
