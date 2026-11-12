@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:26:45+01:00",
+ "at": "2026-11-12T01:27:37+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,12 +9,12 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:10",
+   "clock": "11:51",
    "done": false,
    "teams": [
     [
      "North Carolina Central Eagles",
-     30,
+     32,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:47",
+   "clock": "09:19",
    "done": false,
    "teams": [
     [
      "Colgate Raiders",
-     17,
+     19,
      14
     ],
     [
      "St. John's Red Storm",
-     24,
+     27,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:39",
+   "clock": "09:14",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     16,
+     19,
      16
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:16",
+   "clock": "12:40",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     16,
+     18,
      15
     ]
    ]
