@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:44:21+01:00",
+ "at": "2026-11-12T01:45:13+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:58",
+   "clock": "02:18",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     38,
+     40,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:27",
+   "clock": "02:49",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:40",
+   "clock": "05:54",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     17,
+     19,
      15
     ],
     [
      "UNC Wilmington Seahawks",
-     28,
+     31,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:23",
+   "clock": "12:54",
    "done": false,
    "teams": [
     [
