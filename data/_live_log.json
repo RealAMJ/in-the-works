@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:03:50+01:00",
+ "at": "2026-11-12T03:04:39+01:00",
  "log": [
   {
    "game": "g20261112mich",
@@ -9,7 +9,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:40",
+   "clock": "00:31",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:35",
+   "clock": "05:00",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     55,
+     58,
      16
     ],
     [
      "Wichita State Shockers",
-     99,
+     101,
      17
     ]
    ]
