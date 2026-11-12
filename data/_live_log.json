@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:45:13+01:00",
+ "at": "2026-11-12T01:46:05+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,12 +9,12 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:54",
+   "clock": "05:45",
    "done": false,
    "teams": [
     [
      "North Carolina Central Eagles",
-     42,
+     44,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:18",
+   "clock": "01:59",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     40,
+     42,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:49",
+   "clock": "02:20",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:54",
+   "clock": "05:52",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     31,
+     32,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:54",
+   "clock": "12:23",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Wichita State Shockers",
-     19,
+     21,
      17
     ]
    ]
