@@ -2503,7 +2503,7 @@
   "line_id": "g20261112stjo-pohto",
   "game_id": "g20261112stjo",
   "player": "Casper Pohto",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 1,
@@ -2517,7 +2517,7 @@
   "dreb": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 1,
   "eff": ""
  },
