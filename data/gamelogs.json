@@ -6232,5 +6232,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "cadeau-2026-11-12",
+  "player": "Elliot Cadeau",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "team": "Michigan",
+  "opponent": "Marquette",
+  "venue": "Home",
+  "result": "W 84-70",
+  "min": 34,
+  "pts": 17,
+  "reb": 7,
+  "ast": 10,
+  "source": "ESPN",
+  "fg": "6/10",
+  "three": "2/4",
+  "ft": "3/5",
+  "oreb": 3,
+  "dreb": 4,
+  "stl": 1,
+  "blk": 1,
+  "tov": 4,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]

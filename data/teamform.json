@@ -6242,5 +6242,33 @@
   "note": "",
   "leaders": "Alekseyenko|15|8|4;Ahayere|9|5|2;Jones|8|4|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "michigan-2026-11-12",
+  "team": "Michigan",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Marquette",
+  "venue": "Home",
+  "score": "84-70",
+  "result": "W",
+  "top": "Estrella 18 pts, 8 reb",
+  "note": "",
+  "leaders": "Estrella|18|8|2;Cadeau|17|7|10;McKenney|15|5|4;Costello|15|4|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "marquette-2026-11-12",
+  "team": "Marquette",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Michigan",
+  "venue": "Away",
+  "score": "70-84",
+  "result": "L",
+  "top": "Porter 21 pts, 2 reb",
+  "note": "",
+  "leaders": "Porter|21|2|1;Stevens|16|3|3;Egbuonu|9|3|0",
+  "source": "ESPN"
  }
 ]
