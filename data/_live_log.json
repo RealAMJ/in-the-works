@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:42:40+01:00",
+ "at": "2026-11-12T02:43:31+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -19,7 +19,7 @@
     ],
     [
      "St. John's Red Storm",
-     81,
+     82,
      16
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:30",
+   "clock": "07:55",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     46,
+     49,
      16
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:57",
+   "clock": "10:06",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     51,
+     54,
      15
     ],
     [
@@ -78,17 +78,17 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:11",
+   "clock": "13:44",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     41,
+     42,
      15
     ],
     [
      "Wichita State Shockers",
-     77,
+     79,
      17
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:08",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     28,
+     30,
      15
     ],
     [
