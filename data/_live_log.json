@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:53:07+01:00",
+ "at": "2026-11-12T02:53:59+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -9,7 +9,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:19",
+   "clock": "01:35",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "St. John's Red Storm",
-     85,
+     87,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:18",
+   "clock": "04:19",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:46",
+   "clock": "08:48",
    "done": false,
    "teams": [
     [
      "Friends Falcons",
-     46,
+     49,
      15
     ],
     [
      "Wichita State Shockers",
-     87,
+     89,
      17
     ]
    ]
