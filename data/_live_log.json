@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:05:58+01:00",
+ "at": "2026-11-12T03:06:50+01:00",
  "log": [
   {
    "game": "g20261112mich",
@@ -9,12 +9,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:29",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     68,
+     70,
      16
     ],
     [
@@ -42,7 +42,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     84,
+     85,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:55",
+   "clock": "03:16",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Wichita State Shockers",
-     104,
+     108,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:57",
+   "clock": "16:34",
    "done": false,
    "teams": [
     [
