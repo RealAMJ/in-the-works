@@ -348,7 +348,7 @@
   </div>
 
   <div class="pg" data-page="week" id="week" hidden>
-    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>This week</b></button><h1>This week</h1><p data-draw="wk-label" data-source="thisweek">—</p></header>
+    <header class="pg-head wk-head"><button type="button" class="crumb" data-page-go="home">Home › <b>This week</b></button><span class="wk-kick" data-draw="wk-label" data-source="thisweek">—</span><h1>This week</h1><p class="wk-sub">The week's big performances, written from the box scores.</p></header>
     <div class="wk" data-draw="wk" data-source="thisweek"></div>
   </div>
 
@@ -4384,10 +4384,9 @@
       top.append(mk('div', 'fn', parts.slice(0, -1).join(' ')), nmb);
       const body = mk('div', 'body');
       const club = mk('div', 'club'); const cb = mk('button', 'cox-club', c.club); cb.type = 'button'; cb.onclick = () => showTeam(c.club);
-      club.append(cb, mk('span', '', [c.league, c.country, c.since ? 'since ' + c.since : ''].filter(Boolean).join(', ')));
+      club.append(cb, mk('span', '', [c.league, c.country].filter(Boolean).join(', ')));
       body.append(club);
       if (!head) body.append(mk('div', 'role', c.role));
-      if (c.note) body.append(mk('div', 'note', c.note));
       const rec = mk('div', 'rec'); rec.append(mk('b', '', `${w}-${l}`));
       const fx = mk('div'); const form = mk('div', 'form'); res.slice(-5).forEach((r) => form.append(mk('i', r === 'W' ? 'fw' : 'fl', r)));
       fx.append(form, mk('small', '', `${res.length} tracked ${res.length === 1 ? 'game' : 'games'}`)); rec.append(fx); body.append(rec);
@@ -4396,6 +4395,8 @@
       else foot.textContent = 'No game scheduled';
       const pb = mk('button', 'cox-prof', 'Career and titles →'); pb.type = 'button'; pb.onclick = () => showCoach(c.coach);
       body.append(pb);
+      card.classList.add('go'); card.tabIndex = 0; card.setAttribute('role', 'button'); card.title = L('Quick view', 'Snabbvy');
+      card.onclick = (e) => { if (e.target.closest('button')) return; coachQuick(c.coach); }; card.onkeydown = (e) => { if (e.key === 'Enter' && e.target === card) coachQuick(c.coach); };
       card.append(top, body, foot); el.append(card);
     });
   });
@@ -5252,7 +5253,7 @@
       sec.append(grid); el.append(sec);
     }
     // About
-    if (info && info.notes) { const sec = ppSection('About this team'); sec.append(mk('p', 'gc-p', info.notes)); el.append(sec); }
+    if (info && info.notes) { const sec = ppSection('About this team'); const q = mk('div', 'tpx-about'); q.append(crest(name, 'lg'), mk('p', '', info.notes)); sec.append(q); el.append(sec); }
     // Results
     if (S) {
       const sec = ppSection('Latest results', 'Tap a game with a Swede in it for the full game center.');
@@ -5274,7 +5275,12 @@
     // Leaders lately
     if (S && S.lead.size) {
       const sec = ppSection('Top performers lately', 'Players who led the team in our tracked games.');
-      [...S.lead.values()].sort((a, b) => b.pts / b.g - a.pts / a.g || b.g - a.g).slice(0, 6).forEach((p, i) => { const r = mk('div', 'gc-lead-r'); r.append(mk('span', 'rk', String(i + 1)), mk('span', 'nm2', p.n), mk('span', 'st', `${(p.pts / p.g).toFixed(1)} PTS · best ${p.best} · ${p.g} G`)); sec.append(r); });
+      const tl = mk('div', 'tpx-list');
+      [...S.lead.values()].sort((a, b) => b.pts / b.g - a.pts / a.g || b.g - a.g).slice(0, 6).forEach((p, i) => { const r = mk('div', 'tpx-r' + (i === 0 ? ' top' : ''));
+        const w = mk('span', 'tpx-w'); w.append(mk('b', '', p.n), mk('span', '', L(`best ${p.best} · ${p.g} game${p.g === 1 ? '' : 's'} as top scorer`, `bästa ${p.best} · ${p.g} ${p.g === 1 ? 'match' : 'matcher'} som bästa poänggörare`)));
+        const v = mk('span', 'tpx-v'); v.append(mk('b', '', (p.pts / p.g).toFixed(1)), mk('i', '', 'PPG'));
+        r.append(mk('span', 'tpx-rk', String(i + 1)), faceAv('span', 'tpx-av', p.n), w, v); tl.append(r); });
+      sec.append(tl);
       el.append(sec);
     }
     // Upcoming

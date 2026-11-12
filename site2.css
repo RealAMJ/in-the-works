@@ -3243,3 +3243,22 @@ button.lx-num.go::after { content: '→'; font: 700 12px Archivo, sans-serif; co
 .sbs-p:hover, .sbs-p:focus-visible { background: rgba(255,255,255,.07); }
 .sbs-p .hxs-w b { font-size: 13px; } .sbs-pts { font: 400 22px/1 Anton, Impact, sans-serif; }
 @media (max-width: 520px) { .sbs-top { grid-template-columns: 1fr; } }
+
+/* ===== Polish: This week title, team page, coaches page ===== */
+#week .wk-head { justify-items: start; text-align: left; gap: 6px; padding-bottom: 8px; }
+#week .wk-head .wk-kick { font: 800 12px Archivo, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: #fecc02; }
+#week .wk-head h1 { font: 400 clamp(44px, 7vw, 88px)/1.02 Anton, Impact, sans-serif !important; text-transform: uppercase; letter-spacing: .01em; margin: 0; }
+#week .wk-head .wk-sub { margin: 0; color: #93a6c4; }
+.tpx-list { display: grid; gap: 8px; }
+.tpx-r { display: grid; grid-template-columns: 26px 44px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 14px; background: rgba(127,179,255,.05); border: 1px solid rgba(160,190,235,.1); }
+.tpx-r.top { background: linear-gradient(90deg, rgba(254,204,2,.12), transparent 60%), rgba(127,179,255,.05); border-color: rgba(254,204,2,.35); }
+.tpx-rk { font: 400 20px Anton, Impact, sans-serif; color: #93a6c4; } .tpx-r.top .tpx-rk { color: #fecc02; }
+.tpx-av { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; position: relative; display: grid; place-items: center; background: #13294d; font: 800 13px Archivo, sans-serif; color: #c9d6ea; }
+.tpx-av img { position: absolute; }
+.tpx-w { display: grid; gap: 2px; min-width: 0; } .tpx-w b { font: 700 15px Archivo, sans-serif; } .tpx-w span { font-size: 12px; color: #93a6c4; }
+.tpx-v { display: grid; justify-items: end; } .tpx-v b { font: 400 30px/1 Anton, Impact, sans-serif; } .tpx-r.top .tpx-v b { color: #fecc02; }
+.tpx-v i { font: 800 9px Archivo, sans-serif; font-style: normal; letter-spacing: .12em; color: #93a6c4; }
+.tpx-about { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; padding: 20px; border-radius: 16px; background: linear-gradient(135deg, rgba(127,179,255,.08), transparent 70%); border: 1px solid rgba(160,190,235,.12); }
+.tpx-about p { margin: 0; font-size: 16px; line-height: 1.6; color: #dbe5f3; }
+.cox-c.go { cursor: pointer; transition: transform .2s ease, border-color .2s ease; }
+.cox-c.go:hover, .cox-c.go:focus-visible { transform: translateY(-3px); }
