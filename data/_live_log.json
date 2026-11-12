@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:52:21+01:00",
+ "at": "2026-11-12T01:54:06+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:32",
+   "clock": "03:20",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     55,
+     60,
      17
     ]
    ]
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Kent State Golden Flashes",
-     23,
+     24,
      15
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:30",
+   "clock": "09:03",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Wichita State Shockers",
-     27,
+     33,
      17
     ]
    ]
