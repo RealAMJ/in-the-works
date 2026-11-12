@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:32:56+01:00",
+ "at": "2026-11-12T02:33:46+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -9,7 +9,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:59",
+   "clock": "08:03",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:32",
+   "clock": "11:14",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:18",
+   "clock": "15:05",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     39,
+     41,
      15
     ],
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Wichita State Shockers",
-     63,
+     65,
      17
     ]
    ]
