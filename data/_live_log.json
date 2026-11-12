@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:08:48+01:00",
+ "at": "2026-11-12T01:09:40+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -32,17 +32,17 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:13",
+   "clock": "15:06",
    "done": false,
    "teams": [
     [
      "Colgate Raiders",
-     8,
+     14,
      14
     ],
     [
      "St. John's Red Storm",
-     11,
+     14,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:21",
+   "clock": "15:59",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Michigan Wolverines",
-     2,
+     4,
      17
     ]
    ]
