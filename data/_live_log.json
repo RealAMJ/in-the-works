@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T21:12:03+01:00",
+ "at": "2026-11-12T21:12:56+01:00",
  "log": [
   {
    "game": "g20261112krba",
@@ -9,7 +9,7 @@
    "game": "g20261112krba",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "08:49",
+   "clock": "08:13",
    "done": false,
    "teams": [
     [
