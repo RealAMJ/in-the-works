@@ -247,6 +247,8 @@ def main():
         fn = 'logos/' + slug(name) + '.png'
         try:
             im = Image.open(io.BytesIO(get(m[1], raw=True))).convert('RGBA')
+            if 'Genius' in m[2]:  # these come as small JPGs on a white square: clear the white like the SBL logos
+                sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import sbl; im = sbl.clear_bg(im)
             im.thumbnail((128, 128))
             im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(os.path.join(ROOT, fn), optimize=True)
         except Exception as e:
