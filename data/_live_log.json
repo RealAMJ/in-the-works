@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:49:13+01:00",
+ "at": "2026-11-12T01:50:06+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:59",
+   "clock": "04:32",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:31",
+   "clock": "00:03",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     47,
+     49,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:08",
+   "clock": "00:28",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Kent State Golden Flashes",
-     21,
+     23,
      15
     ],
     [
