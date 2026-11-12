@@ -1817,8 +1817,8 @@
   "score": "W 85-56",
   "espn_id": "401920680",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920680",
-  "clock": "Q2 02:48",
-  "live_updated": "2026-11-12T02:52:15+01:00"
+  "clock": "Q2 02:19",
+  "live_updated": "2026-11-12T02:53:07+01:00"
  },
  {
   "game_id": "g20261112mich",
@@ -1834,8 +1834,8 @@
   "score": "W 69-56",
   "espn_id": "401909524",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909524",
-  "clock": "Q2 04:52",
-  "live_updated": "2026-11-12T02:52:15+01:00"
+  "clock": "Q2 04:18",
+  "live_updated": "2026-11-12T02:53:07+01:00"
  },
  {
   "game_id": "g20261112uncw",
@@ -1852,7 +1852,7 @@
   "espn_id": "401926863",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926863",
   "clock": "Q2 07:56",
-  "live_updated": "2026-11-12T02:52:15+01:00"
+  "live_updated": "2026-11-12T02:53:07+01:00"
  },
  {
   "game_id": "g20261112wich",
@@ -1865,11 +1865,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 87-45",
+  "score": "W 87-46",
   "espn_id": "401919030",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919030",
-  "clock": "Q2 10:05",
-  "live_updated": "2026-11-12T02:52:15+01:00"
+  "clock": "Q2 09:46",
+  "live_updated": "2026-11-12T02:53:07+01:00"
  },
  {
   "game_id": "g20261112robe",
@@ -1886,7 +1886,7 @@
   "espn_id": "401928824",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928824",
   "clock": "End of Q1",
-  "live_updated": "2026-11-12T02:52:15+01:00"
+  "live_updated": "2026-11-12T02:53:07+01:00"
  },
  {
   "game_id": "g20261112uci",
