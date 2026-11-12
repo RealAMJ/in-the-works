@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:15:18+01:00",
+ "at": "2026-11-12T03:16:09+01:00",
  "log": [
   {
    "game": "g20261112uncw",
@@ -8,9 +8,9 @@
   {
    "game": "g20261112uncw",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Kent State Golden Flashes",
@@ -55,7 +55,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:41",
+   "clock": "13:30",
    "done": false,
    "teams": [
     [
