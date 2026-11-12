@@ -7,4 +7,44 @@ X-WR-CALNAME:Swedes Abroad: Kasper Hagberg
 X-WR-TIMEZONE:Europe/Stockholm
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:g20261101froy@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261101T160000Z
+DTEND:20261101T180000Z
+SUMMARY:Hagberg: Froya Basket Laksevåg vs Bærum Basket (W 95-83)
+DESCRIPTION:BLNO (Norway). Players: Kasper Hagberg. https://realamj.github.
+ io/in-the-works/
+CATEGORIES:BLNO (Norway)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261108froy@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T180000Z
+SUMMARY:Hagberg: Froya Basket Laksevåg vs Kongsberg Miners (W 99-89)
+DESCRIPTION:BLNO (Norway). Players: Kasper Hagberg. https://realamj.github.
+ io/in-the-works/
+CATEGORIES:BLNO (Norway)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261111froy@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261111T170000Z
+DTEND:20261111T190000Z
+SUMMARY:Hagberg: Froya Basket Laksevåg at Fyllingen (L 76-83)
+DESCRIPTION:BLNO (Norway). Players: Kasper Hagberg. https://realamj.github.
+ io/in-the-works/
+CATEGORIES:BLNO (Norway)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115froy@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T160000Z
+DTEND:20261115T180000Z
+SUMMARY:Hagberg: Froya Basket Laksevåg vs Centrum Tigers
+DESCRIPTION:BLNO (Norway). Players: Kasper Hagberg. https://realamj.github.
+ io/in-the-works/
+CATEGORIES:BLNO (Norway)
+END:VEVENT
 END:VCALENDAR
