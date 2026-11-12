@@ -1903,10 +1903,12 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 7-0",
   "espn_id": "401929625",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401929625"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401929625",
+  "clock": "Q1 17:54",
+  "live_updated": "2026-11-12T04:05:04+01:00"
  },
  {
   "game_id": "g20261112krba",
