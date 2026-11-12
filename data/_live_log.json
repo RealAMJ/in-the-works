@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:18:55+01:00",
+ "at": "2026-11-12T01:19:45+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:52",
+   "clock": "12:16",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Michigan Wolverines",
-     8,
+     11,
      17
     ]
    ]
@@ -88,7 +88,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     2,
+     4,
      15
     ]
    ]
