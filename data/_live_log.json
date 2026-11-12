@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T03:37:32+01:00",
+ "at": "2026-11-12T03:38:24+01:00",
  "log": [
   {
    "game": "g20261112robe",
@@ -9,17 +9,17 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:44",
+   "clock": "04:00",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     48,
+     50,
      15
     ],
     [
      "Arkansas Razorbacks",
-     69,
+     72,
      15
     ]
    ]
