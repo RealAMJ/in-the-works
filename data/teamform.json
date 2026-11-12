@@ -6382,5 +6382,33 @@
   "note": "",
   "leaders": "Munitlak|11|9|1;Holmes|11|0|3;Thomas|8|9|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "kr-basket-2026-11-12",
+  "team": "KR Basket",
+  "date": "2026-11-12",
+  "competition": "Icelandic Premier League",
+  "opponent": "Höttur",
+  "venue": "Home",
+  "score": "112-92",
+  "result": "W",
+  "top": "Þorbjarnarson 27 pts, 6 reb",
+  "note": "",
+  "leaders": "Þorbjarnarson|27|6|9;Berzins|23|1|1;Lanaras|20|7|5",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "hottur-2026-11-12",
+  "team": "Höttur",
+  "date": "2026-11-12",
+  "competition": "Icelandic Premier League",
+  "opponent": "KR Basket",
+  "venue": "Away",
+  "score": "92-112",
+  "result": "L",
+  "top": "Ásgeirsson 19 pts, 2 reb",
+  "note": "",
+  "leaders": "Ásgeirsson|19|2|1;Martin|15|10|3;Knezevic|15|4|2",
+  "source": "FIBA LiveStats"
  }
 ]

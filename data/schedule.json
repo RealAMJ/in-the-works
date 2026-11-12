@@ -1924,7 +1924,9 @@
   "status": "final",
   "score": "W 112-92",
   "live_feed": "fiba:2856148",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261113vmi",
