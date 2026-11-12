@@ -130,6 +130,44 @@ def league_pages():
                 imgs(f'https://www.aba-liga.com/match/{gid}/Overview/q1/1/home/x/', 'ABA League (aba-liga.com)', 'https://www.aba-liga.com')
         except Exception as e:
             print('  feed', f, str(e)[:80])
+    # Iceland (and any league on Genius Sports' hosted pages): the team logos on our clubs' schedule pages,
+    # named by the team-name link next to them; our club also under the site's spelling
+    try:
+        import schedule_eu as E
+        for club, (org, cid, tid, tz, comp) in E.GENIUS_TEAMS.items():
+            h = sources.page(f'https://hosted.dcd.shared.geniussports.com/{org}/en/competition/{cid}/team/{tid}/schedule')
+            n0 = len(out)
+            for tid2, src, alt in re.findall(r'team/(\d+)/[^"]*"\s+title="[^"]*"><img src\s*=\s*"([^"]+)"\s+alt="([^"]+)"', h):
+                keys = {norm(alt)} | ({norm(club)} if tid2 == str(tid) else set())
+                out.append((keys, src, f'{comp} (Genius Sports)', 'euro'))
+            print('  Genius', club, len(out) - n0, 'logos')
+    except Exception as e:
+        print('  Genius', str(e)[:80])
+    # Norway (BLNO): the federation's API has each club's logo (base64 PNG), under the club's team names
+    try:
+        import base64, tempfile
+        import schedule_eu as E
+        seen = set()
+        for club, (tour, short) in E.NIF_TEAMS.items():
+            for m in (sources.nif_get(f'ta/TournamentMatches/?tournamentId={tour}') or {}).get('matches') or []:
+                for side in ('home', 'away'):
+                    oid = m.get(side + 'teamClubOrgId')
+                    if not oid or oid in seen:
+                        continue
+                    seen.add(oid)
+                    org = (sources.nif_get(f'org/Organisation?orgIds={oid}') or [{}])[0]
+                    b64 = org.get('orgLogoBase64')
+                    if not b64:
+                        continue
+                    f = tempfile.NamedTemporaryFile(suffix='.png', delete=False); f.write(base64.b64decode(b64)); f.close()
+                    nm = sources.nif_team(m.get(side + 'team'))
+                    keys = {norm(nm), norm(m.get(side + 'teamOrgName')), norm(org.get('orgName'))} - {''}
+                    if nm == short:
+                        keys.add(norm(club))
+                    out.append((keys, 'file://' + f.name, 'Norwegian federation (basket.no)', 'euro'))
+        print('  BLNO', len(seen), 'clubs')
+    except Exception as e:
+        print('  BLNO', str(e)[:80])
     # ProA/ProB: the live ticker's /init/<game> names both teams, the crest is pics2/<season>/lo/<team id>.
     # Walk our clubs' season calendars until no new team turns up (one league, so that's soon).
     try:

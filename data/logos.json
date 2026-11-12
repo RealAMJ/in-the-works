@@ -6,6 +6,18 @@
   "dark": true
  },
  {
+  "team": "Ammerud",
+  "src": "logos/ammerud.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
+  "team": "Ammerud Basket",
+  "src": "logos/ammerud-basket.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
   "team": "Anadolu Efes",
   "src": "logos/anadolu-efes.png",
   "source": "EuroLeague",
@@ -138,6 +150,12 @@
   "dark": false
  },
  {
+  "team": "Bærum Basket",
+  "src": "logos/brum-basket.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": true
+ },
+ {
   "team": "CSM Oradea",
   "src": "logos/csm-oradea.png",
   "source": "FIBA LiveStats",
@@ -160,6 +178,12 @@
   "src": "logos/central-michigan.png",
   "source": "NCAA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Centrum Tigers",
+  "src": "logos/centrum-tigers.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
  },
  {
   "team": "Charlotte Hornets",
@@ -306,16 +330,52 @@
   "dark": false
  },
  {
+  "team": "Froya",
+  "src": "logos/froya.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
+  "team": "Froya Basket Laksevåg",
+  "src": "logos/froya-basket-laksevag.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
+  "team": "Fyllingen",
+  "src": "logos/fyllingen.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
   "team": "Georgetown",
   "src": "logos/georgetown.png",
   "source": "NCAA (ESPN)",
   "dark": true
  },
  {
+  "team": "Gimle",
+  "src": "logos/gimle.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
+  "team": "Gimle BBK",
+  "src": "logos/gimle-bbk.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
   "team": "Golden State Warriors",
   "src": "logos/golden-state-warriors.png",
   "source": "NBA (ESPN)",
   "dark": true
+ },
+ {
+  "team": "Grindavík",
+  "src": "logos/grindavik.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": false
  },
  {
   "team": "Grupo Ureta Tizona Burgos",
@@ -345,6 +405,12 @@
   "team": "Högsbo Lions",
   "src": "logos/hogsbo.png",
   "source": "Basketligan (sblherr.se)",
+  "dark": false
+ },
+ {
+  "team": "Höttur",
+  "src": "logos/hottur.png",
+  "source": "Icelandic Premier League (Genius Sports)",
   "dark": false
  },
  {
@@ -405,6 +471,18 @@
   "team": "KK Zabok",
   "src": "logos/kk-zabok.png",
   "source": "FIBA LiveStats",
+  "dark": false
+ },
+ {
+  "team": "KR Basket",
+  "src": "logos/kr-basket.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": false
+ },
+ {
+  "team": "Keflavík",
+  "src": "logos/keflavik.png",
+  "source": "Icelandic Premier League (Genius Sports)",
   "dark": false
  },
  {
@@ -636,6 +714,12 @@
   "dark": true
  },
  {
+  "team": "Nidaros Jets",
+  "src": "logos/nidaros-jets.png",
+  "source": "Norwegian federation (basket.no)",
+  "dark": false
+ },
+ {
   "team": "Niners Chemnitz",
   "src": "logos/niners-chemnitz.png",
   "source": "EuroCup",
@@ -645,6 +729,12 @@
   "team": "Nitra Blue Wings",
   "src": "logos/nitra-blue-wings.png",
   "source": "FIBA LiveStats",
+  "dark": false
+ },
+ {
+  "team": "Njarðvík",
+  "src": "logos/njarvik.png",
+  "source": "Icelandic Premier League (Genius Sports)",
   "dark": false
  },
  {
@@ -894,6 +984,12 @@
   "dark": false
  },
  {
+  "team": "Sindri",
+  "src": "logos/sindri.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": false
+ },
+ {
   "team": "Skyliners Juniors (Frankfurt)",
   "src": "logos/skyliners-juniors-frankfurt.png",
   "source": "EuroCup",
@@ -964,6 +1060,18 @@
   "src": "logos/tennessee-tech.png",
   "source": "NCAA (ESPN)",
   "dark": false
+ },
+ {
+  "team": "Tindastoll",
+  "src": "logos/tindastoll.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": true
+ },
+ {
+  "team": "Tindastóll",
+  "src": "logos/tindastoll.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": true
  },
  {
   "team": "U-BT Cluj-Napoca",
@@ -1155,6 +1263,24 @@
   "team": "ratiopharm Ulm",
   "src": "logos/ratiopharm-ulm.png",
   "source": "EuroCup",
+  "dark": false
+ },
+ {
+  "team": "Álftanes",
+  "src": "logos/alftanes.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": false
+ },
+ {
+  "team": "Ármann",
+  "src": "logos/armann.png",
+  "source": "Icelandic Premier League (Genius Sports)",
+  "dark": false
+ },
+ {
+  "team": "ÍR",
+  "src": "logos/ir.png",
+  "source": "Icelandic Premier League (Genius Sports)",
   "dark": false
  },
  {
