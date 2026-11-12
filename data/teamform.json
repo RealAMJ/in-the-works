@@ -6214,5 +6214,33 @@
   "note": "",
   "leaders": "Duor|10|6|0;Brown|10|1|2;Mason|9|5|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "st-johns-2026-11-12",
+  "team": "St. John's",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Colgate",
+  "venue": "Home",
+  "score": "90-59",
+  "result": "W",
+  "top": "Hall 17 pts, 3 reb",
+  "note": "",
+  "leaders": "Hall|17|3|4;Jackson|17|3|1;Yessoufou|15|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "colgate-2026-11-12",
+  "team": "Colgate",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "St. John's",
+  "venue": "Away",
+  "score": "59-90",
+  "result": "L",
+  "top": "Alekseyenko 15 pts, 8 reb",
+  "note": "",
+  "leaders": "Alekseyenko|15|8|4;Ahayere|9|5|2;Jones|8|4|1",
+  "source": "ESPN"
  }
 ]

@@ -508,12 +508,12 @@
   "player": "Casper Pohto",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 2,
-  "min": 1.5,
-  "pts": 2.0,
+  "gp": 3,
+  "min": 3.0,
+  "pts": 1.3,
   "reb": 0.0,
-  "ast": 0.0,
-  "note": "Averages from game log (2 games, through 2026-11-08)"
+  "ast": 0.3,
+  "note": "Averages from game log (3 games, through 2026-11-12)"
  },
  {
   "row_id": "tidare-ncaa",
