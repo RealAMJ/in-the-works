@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:46:06+01:00",
+ "at": "2026-11-12T02:46:34+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -9,12 +9,12 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:02",
+   "clock": "04:44",
    "done": false,
    "teams": [
     [
      "Colgate Raiders",
-     51,
+     54,
      14
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261112wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:42",
+   "clock": "12:18",
    "done": false,
    "teams": [
     [
