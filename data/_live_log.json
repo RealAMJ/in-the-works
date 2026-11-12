@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:16:24+01:00",
+ "at": "2026-11-12T01:17:14+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -9,7 +9,7 @@
    "game": "g20261112vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:16",
+   "clock": "15:38",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     37,
+     40,
      17
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:35",
+   "clock": "12:17",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:46",
+   "clock": "13:08",
    "done": false,
    "teams": [
     [
      "Marquette Golden Eagles",
-     5,
+     7,
      16
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:08",
+   "clock": "15:47",
    "done": false,
    "teams": [
     [
