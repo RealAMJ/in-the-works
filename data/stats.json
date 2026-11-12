@@ -436,12 +436,12 @@
   "player": "Samuel Obenjo",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 2,
-  "min": 25.0,
-  "pts": 3.0,
-  "reb": 4.5,
-  "ast": 2.5,
-  "note": "Averages from game log (2 games, through 2026-11-07)"
+  "gp": 3,
+  "min": 26.0,
+  "pts": 2.7,
+  "reb": 4.7,
+  "ast": 1.7,
+  "note": "Averages from game log (3 games, through 2026-11-12)"
  },
  {
   "row_id": "stumer-ncaa",

@@ -6326,5 +6326,33 @@
   "note": "",
   "leaders": "Edwards|12|1|0;Evans|11|2|3;Knight|9|0|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "robert-morris-2026-11-12",
+  "team": "Robert Morris",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Arkansas",
+  "venue": "Away",
+  "score": "53-76",
+  "result": "L",
+  "top": "Valentine 13 pts, 1 reb",
+  "note": "",
+  "leaders": "Valentine|13|1|5;Garris|11|3|2;Livingston|10|1|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "arkansas-2026-11-12",
+  "team": "Arkansas",
+  "date": "2026-11-12",
+  "competition": "NCAA",
+  "opponent": "Robert Morris",
+  "venue": "Home",
+  "score": "76-53",
+  "result": "W",
+  "top": "Richmond 16 pts, 4 reb",
+  "note": "",
+  "leaders": "Richmond|16|4|4;Thompson|15|5|7;Bowser|12|10|3",
+  "source": "ESPN"
  }
 ]
