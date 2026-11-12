@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:56:07+01:00",
+ "at": "2026-11-12T02:56:57+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Colgate Raiders",
-     56,
+     57,
      14
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:40",
+   "clock": "06:08",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     80,
+     82,
      15
     ]
    ]
