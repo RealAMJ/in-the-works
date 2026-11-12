@@ -1,29 +1,6 @@
 {
- "at": "2026-11-12T03:07:41+01:00",
+ "at": "2026-11-12T03:08:33+01:00",
  "log": [
-  {
-   "game": "g20261112mich",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261112mich",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Marquette Golden Eagles",
-     70,
-     16
-    ],
-    [
-     "Michigan Wolverines",
-     84,
-     17
-    ]
-   ]
-  },
   {
    "game": "g20261112uncw",
    "checking": "ESPN"
@@ -32,17 +9,17 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:05",
+   "clock": "02:49",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     67,
+     68,
      15
     ],
     [
      "UNC Wilmington Seahawks",
-     86,
+     89,
      15
     ]
    ]
@@ -78,7 +55,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:10",
+   "clock": "15:51",
    "done": false,
    "teams": [
     [
