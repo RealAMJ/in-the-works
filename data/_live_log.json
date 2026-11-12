@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T02:42:14+01:00",
+ "at": "2026-11-12T02:42:40+01:00",
  "log": [
   {
    "game": "g20261112stjo",
@@ -32,7 +32,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:46",
+   "clock": "08:30",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261112uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:29",
+   "clock": "10:57",
    "done": false,
    "teams": [
     [
      "Kent State Golden Flashes",
-     49,
+     51,
      15
     ],
     [
      "UNC Wilmington Seahawks",
-     69,
+     71,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261112robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:25",
+   "clock": "00:08",
    "done": false,
    "teams": [
     [
