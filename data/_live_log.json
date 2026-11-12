@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T01:09:40+01:00",
+ "at": "2026-11-12T01:10:33+01:00",
  "log": [
   {
    "game": "g20261112vmi",
@@ -32,7 +32,7 @@
    "game": "g20261112stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:06",
+   "clock": "15:05",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261112mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:59",
+   "clock": "15:32",
    "done": false,
    "teams": [
     [
@@ -77,17 +77,40 @@
   {
    "game": "g20261112uncw",
    "src": "ESPN",
+   "period": 1,
+   "clock": "19:57",
+   "done": false,
+   "teams": [
+    [
+     "Kent State Golden Flashes",
+     0,
+     15
+    ],
+    [
+     "UNC Wilmington Seahawks",
+     0,
+     15
+    ]
+   ]
+  },
+  {
+   "game": "g20261112wich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261112wich",
+   "src": "ESPN",
    "period": 0,
    "clock": "00:00",
    "done": false,
    "teams": [
     [
-     "UNC Wilmington Seahawks",
+     "Wichita State Shockers",
      0,
      0
     ],
     [
-     "Kent State Golden Flashes",
+     "Friends Falcons",
      0,
      0
     ]
