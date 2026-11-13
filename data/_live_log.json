@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:36:31+01:00",
+ "at": "2026-11-13T20:37:34+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -25,29 +25,6 @@
    ]
   },
   {
-   "game": "g20261113vir",
-   "checking": "EuroLeague live"
-  },
-  {
-   "game": "g20261113vir",
-   "src": "EuroLeague live",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "ANADOLU EFES ISTANBUL",
-     103,
-     12
-    ],
-    [
-     "VIRTUS BOLOGNA",
-     91,
-     12
-    ]
-   ]
-  },
-  {
    "game": "g20261113bask",
    "checking": "2. Basketball-Bundesliga live ticker"
   },
@@ -55,7 +32,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "02:20",
+   "clock": "02:00",
    "done": false,
    "teams": [
     [
@@ -65,7 +42,7 @@
     ],
     [
      "Dresden Titans",
-     85,
+     87,
      10
     ]
    ]
@@ -99,7 +76,22 @@
   },
   {
    "game": "c20261113bask",
-   "error": "TimeoutError: The read operation timed out"
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 4,
+   "clock": "02:00",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Erfurt",
+     63,
+     10
+    ],
+    [
+     "Dresden Titans",
+     87,
+     10
+    ]
+   ]
   },
   {
    "game": "c20261113anw",
@@ -108,8 +100,8 @@
   {
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
