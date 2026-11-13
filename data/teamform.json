@@ -6494,5 +6494,33 @@
   "note": "",
   "leaders": "Stein|21|4|2;Vucić|13|17|3;Garbacz|10|1|1;Lawrence|10|3|0",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "basketball-lowen-erfurt-2026-11-13",
+  "team": "Basketball Löwen Erfurt",
+  "date": "2026-11-13",
+  "competition": "ProB (Germany)",
+  "opponent": "Dresden Titans",
+  "venue": "Home",
+  "score": "66-91",
+  "result": "L",
+  "top": "Nellessen 13 pts, 6 reb",
+  "note": "",
+  "leaders": "Nellessen|13|6|0;Watkins|12|4|4;Emelifeonwu|12|2|0",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "dresden-titans-2026-11-13",
+  "team": "Dresden Titans",
+  "date": "2026-11-13",
+  "competition": "ProB (Germany)",
+  "opponent": "Basketball Löwen Erfurt",
+  "venue": "Away",
+  "score": "91-66",
+  "result": "W",
+  "top": "Heck 20 pts, 6 reb",
+  "note": "",
+  "leaders": "Heck|20|6|1;Uboh|14|2|4;Pisic|12|2|2;Leiba|12|10|0",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]

@@ -6440,5 +6440,31 @@
   "pf": 3,
   "pm": -3,
   "eff": ""
+ },
+ {
+  "row_id": "hadi-2026-11-13",
+  "player": "Jacob Hadi",
+  "date": "2026-11-13",
+  "competition": "ProB (Germany)",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "Dresden Titans",
+  "venue": "Home",
+  "result": "L 66-91",
+  "min": 24,
+  "pts": 9,
+  "reb": 11,
+  "ast": 1,
+  "source": "2. Basketball-Bundesliga live ticker",
+  "fg": "3/8",
+  "three": "1/2",
+  "ft": "2/2",
+  "oreb": 5,
+  "dreb": 6,
+  "stl": 1,
+  "blk": 0,
+  "tov": 4,
+  "pf": 4,
+  "pm": "",
+  "eff": ""
  }
 ]
