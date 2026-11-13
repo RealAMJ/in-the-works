@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T22:00:41+01:00",
+ "at": "2026-11-13T22:01:35+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "00:10",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -67,29 +67,6 @@
      "Dresden Titans",
      91,
      10
-    ]
-   ]
-  },
-  {
-   "game": "c20261113anw",
-   "checking": "FIBA LiveStats"
-  },
-  {
-   "game": "c20261113anw",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Anwil W\u0142oc\u0142awek",
-     67,
-     12
-    ],
-    [
-     "AMW Arka Gdynia",
-     79,
-     12
     ]
    ]
   }
