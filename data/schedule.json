@@ -1939,7 +1939,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401926203",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926203"
  },
  {
   "game_id": "g20261113vir",
@@ -1951,11 +1953,13 @@
   "venue": "Away",
   "competition": "EuroLeague",
   "note": "Round 11",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 0-0",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
-  "live_feed": "euroleague:E2026:109"
+  "live_feed": "euroleague:E2026:109",
+  "clock": "End of Q0",
+  "live_updated": "2026-11-13T18:22:39+01:00"
  },
  {
   "game_id": "g20261113bask",

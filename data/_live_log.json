@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T18:21:48+01:00",
+ "at": "2026-11-13T18:22:45+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -30,7 +30,22 @@
   },
   {
    "game": "g20261113vir",
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "src": "EuroLeague live",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "ANADOLU EFES ISTANBUL",
+     0,
+     12
+    ],
+    [
+     "VIRTUS BOLOGNA",
+     0,
+     12
+    ]
+   ]
   },
   {
    "game": "g20261113bask",
