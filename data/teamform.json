@@ -6438,5 +6438,33 @@
   "note": "",
   "leaders": "Loyd|22|5|0;Malcolm|20|5|1;Fernando|15|10|0",
   "source": "EuroLeague live"
+ },
+ {
+  "row_id": "culture-city-weimar-2026-11-13",
+  "team": "Culture City Weimar",
+  "date": "2026-11-13",
+  "competition": "ProB (Germany)",
+  "opponent": "Dragons Rhöndorf",
+  "venue": "Home",
+  "score": "78-76",
+  "result": "W",
+  "top": "Grau 16 pts, 8 reb",
+  "note": "",
+  "leaders": "Grau|16|8|3;Biel|15|7|2;Meyer|10|6|2",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "dragons-rhondorf-2026-11-13",
+  "team": "Dragons Rhöndorf",
+  "date": "2026-11-13",
+  "competition": "ProB (Germany)",
+  "opponent": "Culture City Weimar",
+  "venue": "Away",
+  "score": "76-78",
+  "result": "L",
+  "top": "Paulo 23 pts, 5 reb",
+  "note": "",
+  "leaders": "Paulo|23|5|2;Reinhart|14|1|6;Saldern|13|4|2",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]
