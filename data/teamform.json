@@ -6410,5 +6410,33 @@
   "note": "",
   "leaders": "Ásgeirsson|19|2|1;Martin|15|10|3;Knezevic|15|4|2",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-13",
+  "team": "Virtus Bologna",
+  "date": "2026-11-13",
+  "competition": "EuroLeague",
+  "opponent": "Anadolu Efes Istanbul",
+  "venue": "Away",
+  "score": "91-103",
+  "result": "L",
+  "top": "Alston 15 pts, 1 reb",
+  "note": "",
+  "leaders": "Alston|15|1|2;Bello|11|1|2;Carr|11|2|6",
+  "source": "EuroLeague live"
+ },
+ {
+  "row_id": "anadolu-efes-istanbul-2026-11-13",
+  "team": "Anadolu Efes Istanbul",
+  "date": "2026-11-13",
+  "competition": "EuroLeague",
+  "opponent": "Virtus Bologna",
+  "venue": "Home",
+  "score": "103-91",
+  "result": "W",
+  "top": "Loyd 22 pts, 5 reb",
+  "note": "",
+  "leaders": "Loyd|22|5|0;Malcolm|20|5|1;Fernando|15|10|0",
+  "source": "EuroLeague live"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:40:26+01:00",
+ "at": "2026-11-13T20:41:09+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -78,17 +78,17 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "00:26",
+   "clock": "01:01",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     64,
+     63,
      10
     ],
     [
      "Dresden Titans",
-     91,
+     89,
      10
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "08:52",
+   "clock": "08:51",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     24,
+     25,
      12
     ],
     [

@@ -6336,5 +6336,31 @@
   "pf": 3,
   "pm": 20,
   "eff": ""
+ },
+ {
+  "row_id": "klintman-2026-11-13",
+  "player": "Bobi Klintman",
+  "date": "2026-11-13",
+  "competition": "EuroLeague",
+  "team": "Virtus Bologna",
+  "opponent": "Anadolu Efes Istanbul",
+  "venue": "Away",
+  "result": "L 91-103",
+  "min": 28,
+  "pts": 10,
+  "reb": 2,
+  "ast": 2,
+  "source": "EuroLeague live",
+  "fg": "3/6",
+  "three": "2/4",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": -16,
+  "eff": ""
  }
 ]
