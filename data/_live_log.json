@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:37:11+01:00",
+ "at": "2026-11-13T19:38:19+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -78,7 +78,7 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "04:58",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     33,
+     34,
      9
     ]
    ]
