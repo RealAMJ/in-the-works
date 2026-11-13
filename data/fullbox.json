@@ -53292,7 +53292,7 @@
   "fg": "1/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53313,7 +53313,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53325,7 +53325,7 @@
   "player": "Bruno Fernando",
   "pos": "",
   "min": 3,
-  "pts": 0,
+  "pts": 2,
   "reb": 2,
   "ast": 0,
   "stl": 0,
@@ -53333,8 +53333,8 @@
   "tov": 0,
   "fg": "0/1",
   "three": "0/0",
-  "ft": "0/0",
-  "pm": 0,
+  "ft": "2/2",
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53355,7 +53355,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53376,7 +53376,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53397,7 +53397,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53439,7 +53439,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -53460,7 +53460,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
