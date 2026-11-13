@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:21:54+01:00",
+ "at": "2026-11-13T19:23:59+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,12 +32,12 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "00:33",
+   "clock": "00:23",
    "done": false,
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     56,
+     57,
      12
     ],
     [
@@ -55,17 +55,17 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "03:44",
+   "clock": "02:47",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     25,
+     28,
      10
     ],
     [
      "Dresden Titans",
-     36,
+     39,
      10
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "02:05",
+   "clock": "00:24",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     20,
+     22,
      12
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     25,
+     30,
      9
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "03:44",
+   "clock": "02:47",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     25,
+     28,
      10
     ],
     [
      "Dresden Titans",
-     36,
+     39,
      10
     ]
    ]
