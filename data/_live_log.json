@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:51:03+01:00",
+ "at": "2026-11-13T20:52:05+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -55,12 +55,12 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "02:15",
+   "clock": "01:46",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     72,
+     74,
      12
     ],
     [
@@ -101,12 +101,12 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "04:29",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     32,
+     34,
      12
     ],
     [
