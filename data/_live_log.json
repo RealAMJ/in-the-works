@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:32:48+01:00",
+ "at": "2026-11-13T20:34:55+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -53,22 +53,7 @@
   },
   {
    "game": "g20261113bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "03:19",
-   "done": false,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     60,
-     10
-    ],
-    [
-     "Dresden Titans",
-     83,
-     10
-    ]
-   ]
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "game": "g20261113cult",
@@ -76,22 +61,7 @@
   },
   {
    "game": "g20261113cult",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "07:58",
-   "done": false,
-   "teams": [
-    [
-     "Culture City Weimar",
-     60,
-     12
-    ],
-    [
-     "Dragons Rh\u00f6ndorf",
-     62,
-     9
-    ]
-   ]
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "game": "c20261113bask",
@@ -99,22 +69,7 @@
   },
   {
    "game": "c20261113bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "03:19",
-   "done": false,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     60,
-     10
-    ],
-    [
-     "Dresden Titans",
-     83,
-     10
-    ]
-   ]
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "game": "c20261113anw",
@@ -124,17 +79,17 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "01:51",
+   "clock": "00:54",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     20,
+     22,
      12
     ],
     [
      "AMW Arka Gdynia",
-     13,
+     15,
      12
     ]
    ]
