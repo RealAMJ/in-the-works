@@ -1954,12 +1954,12 @@
   "competition": "EuroLeague",
   "note": "Round 11",
   "status": "live",
-  "score": "L 70-82",
+  "score": "L 73-82",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:109",
-  "clock": "Q4 08:44",
-  "live_updated": "2026-11-13T20:02:07+01:00"
+  "clock": "Q4 07:56",
+  "live_updated": "2026-11-13T20:03:06+01:00"
  },
  {
   "game_id": "g20261113bask",
@@ -1975,7 +1975,7 @@
   "score": "L 38-59",
   "live_feed": "prob:2006183",
   "clock": "Q3 03:45",
-  "live_updated": "2026-11-13T20:02:10+01:00"
+  "live_updated": "2026-11-13T20:03:09+01:00"
  },
  {
   "game_id": "g20261113cult",
@@ -1991,7 +1991,7 @@
   "score": "W 40-39",
   "live_feed": "prob:2006188",
   "clock": "Q2 01:21",
-  "live_updated": "2026-11-13T20:02:13+01:00"
+  "live_updated": "2026-11-13T20:03:11+01:00"
  },
  {
   "game_id": "g20261114iona",
