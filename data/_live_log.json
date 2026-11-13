@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T21:51:36+01:00",
+ "at": "2026-11-13T21:52:34+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -78,12 +78,12 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "04:32",
+   "clock": "03:36",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     59,
+     61,
      12
     ],
     [
