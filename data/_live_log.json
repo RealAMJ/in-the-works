@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T18:59:23+01:00",
+ "at": "2026-11-13T19:00:36+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "08:25",
+   "clock": "07:54",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "VIRTUS BOLOGNA",
-     23,
+     25,
      12
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "10:00",
+   "clock": "01:42",
    "done": false,
    "teams": [
     [
