@@ -1,26 +1,26 @@
 {
- "at": "2026-11-12T21:55:41+01:00",
+ "at": "2026-11-13T17:43:39+01:00",
  "log": [
   {
-   "game": "g20261112krba",
-   "checking": "FIBA LiveStats"
+   "game": "g20261113vmi",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261112krba",
-   "src": "FIBA LiveStats",
-   "period": 4,
+   "game": "g20261113vmi",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "KR",
-     112,
-     11
+     "VMI Keydets",
+     0,
+     0
     ],
     [
-     "H\u00f6ttur",
-     92,
-     12
+     "Mary Baldwin Fighting Squirrels",
+     0,
+     0
     ]
    ]
   }
