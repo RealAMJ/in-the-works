@@ -217,8 +217,8 @@
   "status": "live",
   "score": "L 47-67",
   "live_feed": "prob:2006183",
-  "clock": "Q3 00:16",
-  "live_updated": "2026-11-13T20:16:46+01:00"
+  "clock": "Q4 00:16",
+  "live_updated": "2026-11-13T20:17:53+01:00"
  },
  {
   "game_id": "c20261113anw",
@@ -230,9 +230,11 @@
   "venue": "Home",
   "competition": "Orlen Basket Liga",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "fiba:2953994"
+  "status": "live",
+  "score": "W 0-0",
+  "live_feed": "fiba:2953994",
+  "clock": "Q1 09:41",
+  "live_updated": "2026-11-13T20:17:54+01:00"
  },
  {
   "game_id": "c20261114msu",
