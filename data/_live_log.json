@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:16:54+01:00",
+ "at": "2026-11-13T19:18:05+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "01:38",
+   "clock": "01:01",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "10:00",
+   "clock": "04:54",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Dresden Titans",
-     31,
+     33,
      10
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "04:05",
+   "clock": "03:19",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     21,
+     23,
      9
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "06:15",
+   "clock": "04:54",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Dresden Titans",
-     31,
+     33,
      10
     ]
    ]
