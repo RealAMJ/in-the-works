@@ -1958,8 +1958,8 @@
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:109",
-  "clock": "Q4 01:18",
-  "live_updated": "2026-11-13T20:24:42+01:00"
+  "clock": "Q4 00:47",
+  "live_updated": "2026-11-13T20:25:43+01:00"
  },
  {
   "game_id": "g20261113bask",
@@ -1972,10 +1972,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 54-72",
+  "score": "L 54-74",
   "live_feed": "prob:2006183",
-  "clock": "Q4 06:29",
-  "live_updated": "2026-11-13T20:24:46+01:00"
+  "clock": "Q4 06:09",
+  "live_updated": "2026-11-13T20:25:48+01:00"
  },
  {
   "game_id": "g20261113cult",
@@ -1988,10 +1988,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 52-54",
+  "score": "L 52-57",
   "live_feed": "prob:2006188",
-  "clock": "Q3 01:35",
-  "live_updated": "2026-11-13T20:24:49+01:00"
+  "clock": "Q3 01:01",
+  "live_updated": "2026-11-13T20:25:51+01:00"
  },
  {
   "game_id": "g20261114iona",
