@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:49:24+01:00",
+ "at": "2026-11-13T19:50:42+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,17 +32,17 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 3,
-   "clock": "05:02",
+   "clock": "04:15",
    "done": false,
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     71,
+     73,
      12
     ],
     [
      "VIRTUS BOLOGNA",
-     56,
+     60,
      12
     ]
    ]
@@ -53,7 +53,22 @@
   },
   {
    "game": "g20261113bask",
-   "error": "TimeoutError: The read operation timed out"
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 3,
+   "clock": "08:00",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Erfurt",
+     36,
+     10
+    ],
+    [
+     "Dresden Titans",
+     53,
+     10
+    ]
+   ]
   },
   {
    "game": "g20261113cult",
@@ -61,7 +76,22 @@
   },
   {
    "game": "g20261113cult",
-   "error": "TimeoutError: The read operation timed out"
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 2,
+   "clock": "01:21",
+   "done": false,
+   "teams": [
+    [
+     "Culture City Weimar",
+     40,
+     12
+    ],
+    [
+     "Dragons Rh\u00f6ndorf",
+     39,
+     9
+    ]
+   ]
   },
   {
    "game": "c20261113bask",
@@ -71,17 +101,17 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "00:10",
+   "clock": "08:00",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     33,
+     36,
      10
     ],
     [
      "Dresden Titans",
-     45,
+     53,
      10
     ]
    ]
