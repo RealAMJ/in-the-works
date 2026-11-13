@@ -653,11 +653,13 @@
   "time": "19:04",
   "home": "Borås Basket",
   "away": "Köping Stars",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851792/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851793",
@@ -665,11 +667,13 @@
   "time": "19:04",
   "home": "BC Luleå",
   "away": "Södertälje BBK",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 2,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851793/summary",
-  "box": false
+  "box": false,
+  "clock": "09:27",
+  "period": 1
  },
  {
   "game_id": "sbl-2851794",
@@ -677,11 +681,13 @@
   "time": "19:04",
   "home": "Uppsala Basket",
   "away": "Umeå Basket",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851794/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851795",
@@ -689,11 +695,13 @@
   "time": "19:04",
   "home": "Nässjö Basket",
   "away": "Norrköping Dolphins",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851795/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851796",
@@ -701,11 +709,13 @@
   "time": "19:04",
   "home": "Jämtland Basket",
   "away": "Högsbo Lions",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851796/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851704",
