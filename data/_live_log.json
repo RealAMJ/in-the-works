@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:47:51+01:00",
+ "at": "2026-11-13T19:49:24+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 3,
-   "clock": "05:43",
+   "clock": "05:02",
    "done": false,
    "teams": [
     [
@@ -53,22 +53,7 @@
   },
   {
    "game": "g20261113bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 3,
-   "clock": "00:10",
-   "done": false,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     33,
-     10
-    ],
-    [
-     "Dresden Titans",
-     45,
-     10
-    ]
-   ]
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "game": "g20261113cult",
@@ -76,22 +61,7 @@
   },
   {
    "game": "g20261113cult",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 2,
-   "clock": "01:21",
-   "done": false,
-   "teams": [
-    [
-     "Culture City Weimar",
-     40,
-     12
-    ],
-    [
-     "Dragons Rh\u00f6ndorf",
-     39,
-     9
-    ]
-   ]
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "game": "c20261113bask",
