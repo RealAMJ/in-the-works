@@ -1953,13 +1953,12 @@
   "venue": "Away",
   "competition": "EuroLeague",
   "note": "Round 11",
-  "status": "live",
+  "status": "final",
   "score": "L 91-103",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:109",
-  "clock": "End of Q0",
-  "live_updated": "2026-11-13T20:33:18+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261113bask",
@@ -1972,10 +1971,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 60-83",
+  "score": "L 63-85",
   "live_feed": "prob:2006183",
-  "clock": "Q4 03:19",
-  "live_updated": "2026-11-13T20:32:41+01:00"
+  "clock": "Q4 02:20",
+  "live_updated": "2026-11-13T20:35:52+01:00"
  },
  {
   "game_id": "g20261113cult",
@@ -1988,10 +1987,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 60-62",
+  "score": "W 62-62",
   "live_feed": "prob:2006188",
-  "clock": "Q4 07:58",
-  "live_updated": "2026-11-13T20:32:45+01:00"
+  "clock": "Q4 07:23",
+  "live_updated": "2026-11-13T20:35:58+01:00"
  },
  {
   "game_id": "g20261114iona",
