@@ -55056,7 +55056,7 @@
   "fg": "4/6",
   "three": "2/3",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55077,7 +55077,7 @@
   "fg": "4/5",
   "three": "0/1",
   "ft": "0/1",
-  "pm": -17,
+  "pm": -18,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55119,7 +55119,7 @@
   "fg": "3/6",
   "three": "1/3",
   "ft": "4/8",
-  "pm": -6,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55161,7 +55161,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "4/4",
-  "pm": 5,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55203,7 +55203,7 @@
   "fg": "1/7",
   "three": "0/1",
   "ft": "2/2",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55215,7 +55215,7 @@
   "player": "Jarosław Zyskowski",
   "pos": "",
   "min": 15,
-  "pts": 5,
+  "pts": 6,
   "reb": 0,
   "ast": 1,
   "stl": 0,
@@ -55223,8 +55223,8 @@
   "tov": 0,
   "fg": "2/4",
   "three": "0/1",
-  "ft": "1/1",
-  "pm": 4,
+  "ft": "2/3",
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55287,7 +55287,7 @@
   "fg": "4/6",
   "three": "0/0",
   "ft": "1/3",
-  "pm": 7,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55301,14 +55301,14 @@
   "min": 19,
   "pts": 5,
   "reb": 4,
-  "ast": 1,
+  "ast": 2,
   "stl": 1,
   "blk": 0,
   "tov": 1,
   "fg": "2/8",
   "three": "0/2",
   "ft": "1/1",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55329,7 +55329,7 @@
   "fg": "3/7",
   "three": "1/3",
   "ft": "6/7",
-  "pm": 7,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -55350,7 +55350,7 @@
   "fg": "4/7",
   "three": "2/4",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
