@@ -1971,10 +1971,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 63-87",
+  "score": "L 64-91",
   "live_feed": "prob:2006183",
-  "clock": "Q4 02:00",
-  "live_updated": "2026-11-13T20:37:25+01:00"
+  "clock": "Q4 00:26",
+  "live_updated": "2026-11-13T20:40:17+01:00"
  },
  {
   "game_id": "g20261113cult",
@@ -1987,10 +1987,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "W 62-62",
+  "score": "W 67-65",
   "live_feed": "prob:2006188",
-  "clock": "Q4 07:23",
-  "live_updated": "2026-11-13T20:37:30+01:00"
+  "clock": "Q4 05:28",
+  "live_updated": "2026-11-13T20:40:22+01:00"
  },
  {
   "game_id": "g20261114iona",

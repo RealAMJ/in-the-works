@@ -215,10 +215,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 63-89",
+  "score": "L 64-91",
   "live_feed": "prob:2006183",
-  "clock": "Q4 01:01",
-  "live_updated": "2026-11-13T20:39:13+01:00"
+  "clock": "Q4 00:26",
+  "live_updated": "2026-11-13T20:40:26+01:00"
  },
  {
   "game_id": "c20261113anw",
@@ -231,10 +231,10 @@
   "competition": "Orlen Basket Liga",
   "note": "",
   "status": "live",
-  "score": "W 22-17",
+  "score": "W 24-20",
   "live_feed": "fiba:2953994",
-  "clock": "Q2 09:45",
-  "live_updated": "2026-11-13T20:39:13+01:00"
+  "clock": "Q2 08:52",
+  "live_updated": "2026-11-13T20:40:26+01:00"
  },
  {
   "game_id": "c20261114msu",
