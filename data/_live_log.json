@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:18:45+01:00",
+ "at": "2026-11-13T20:19:50+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 4,
-   "clock": "02:59",
+   "clock": "02:44",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "VIRTUS BOLOGNA",
-     83,
+     85,
      12
     ]
    ]
@@ -124,17 +124,17 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "09:04",
+   "clock": "07:50",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     0,
+     5,
      12
     ],
     [
      "AMW Arka Gdynia",
-     2,
+     4,
      12
     ]
    ]
