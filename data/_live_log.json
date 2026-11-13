@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:20:59+01:00",
+ "at": "2026-11-13T20:22:04+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,12 +32,12 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 4,
-   "clock": "01:36",
+   "clock": "01:31",
    "done": false,
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     98,
+     101,
      12
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "09:37",
+   "clock": "08:10",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     49,
+     52,
      10
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "03:07",
+   "clock": "02:55",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     49,
+     51,
      9
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "09:37",
+   "clock": "08:10",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     49,
+     52,
      10
     ],
     [
@@ -124,12 +124,12 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "06:55",
+   "clock": "06:36",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     8,
+     10,
      12
     ],
     [
