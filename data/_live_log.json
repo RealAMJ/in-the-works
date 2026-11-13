@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T00:38:08+01:00",
+ "at": "2026-11-14T00:42:42+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -19,6 +19,29 @@
     ],
     [
      "Mary Baldwin Fighting Squirrels",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261114iona",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261114iona",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Hofstra Pride",
+     0,
+     0
+    ],
+    [
+     "Iona Gaels",
      0,
      0
     ]
