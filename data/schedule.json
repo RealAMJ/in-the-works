@@ -1954,12 +1954,12 @@
   "competition": "EuroLeague",
   "note": "Round 11",
   "status": "live",
-  "score": "W 11-11",
+  "score": "L 12-13",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:109",
-  "clock": "Q1 05:50",
-  "live_updated": "2026-11-13T18:39:10+01:00"
+  "clock": "Q1 05:17",
+  "live_updated": "2026-11-13T18:40:12+01:00"
  },
  {
   "game_id": "g20261113bask",
