@@ -1959,7 +1959,7 @@
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:109",
   "clock": "Q4 01:31",
-  "live_updated": "2026-11-13T20:22:55+01:00"
+  "live_updated": "2026-11-13T20:23:38+01:00"
  },
  {
   "game_id": "g20261113bask",
@@ -1974,8 +1974,8 @@
   "status": "live",
   "score": "L 54-70",
   "live_feed": "prob:2006183",
-  "clock": "Q4 10:00",
-  "live_updated": "2026-11-13T20:22:59+01:00"
+  "clock": "Q4 07:38",
+  "live_updated": "2026-11-13T20:23:43+01:00"
  },
  {
   "game_id": "g20261113cult",
@@ -1991,7 +1991,7 @@
   "score": "L 50-54",
   "live_feed": "prob:2006188",
   "clock": "Q3 02:02",
-  "live_updated": "2026-11-13T20:23:03+01:00"
+  "live_updated": "2026-11-13T20:23:47+01:00"
  },
  {
   "game_id": "g20261114iona",
