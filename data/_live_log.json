@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:07:54+01:00",
+ "at": "2026-11-13T20:09:04+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 4,
-   "clock": "05:55",
+   "clock": "05:53",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "01:56",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     38,
+     40,
      10
     ],
     [
@@ -77,8 +77,8 @@
   {
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "01:21",
    "done": false,
    "teams": [
     [
