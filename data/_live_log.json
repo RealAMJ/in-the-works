@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:43:43+01:00",
+ "at": "2026-11-13T19:44:41+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,12 +32,12 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 3,
-   "clock": "07:29",
+   "clock": "06:40",
    "done": false,
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     65,
+     68,
      12
     ],
     [
