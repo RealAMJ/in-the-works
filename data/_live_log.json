@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T18:07:21+01:00",
+ "at": "2026-11-13T18:12:20+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -21,6 +21,60 @@
      "Mary Baldwin Fighting Squirrels",
      0,
      0
+    ]
+   ]
+  },
+  {
+   "game": "g20261113vir",
+   "checking": "EuroLeague live"
+  },
+  {
+   "game": "g20261113vir",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "game": "g20261113bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
+  },
+  {
+   "game": "g20261113bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Erfurt",
+     0,
+     10
+    ],
+    [
+     "Dresden Titans",
+     0,
+     13
+    ]
+   ]
+  },
+  {
+   "game": "c20261113bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
+  },
+  {
+   "game": "c20261113bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Erfurt",
+     0,
+     10
+    ],
+    [
+     "Dresden Titans",
+     0,
+     13
     ]
    ]
   }
