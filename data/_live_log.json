@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:29:45+01:00",
+ "at": "2026-11-13T20:30:44+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -55,7 +55,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "04:55",
+   "clock": "04:25",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Dresden Titans",
-     79,
+     81,
      10
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "00:00",
+   "clock": "08:57",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     56,
+     58,
      12
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     57,
+     59,
      9
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "04:55",
+   "clock": "04:25",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Dresden Titans",
-     79,
+     81,
      10
     ]
    ]
@@ -124,17 +124,17 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "03:52",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
-     18,
+     20,
      12
     ],
     [
      "AMW Arka Gdynia",
-     11,
+     13,
      12
     ]
    ]
