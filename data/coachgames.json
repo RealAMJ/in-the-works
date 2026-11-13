@@ -215,10 +215,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 56-77",
+  "score": "L 56-79",
   "live_feed": "prob:2006183",
-  "clock": "Q4 05:42",
-  "live_updated": "2026-11-13T20:27:57+01:00"
+  "clock": "Q4 05:03",
+  "live_updated": "2026-11-13T20:28:44+01:00"
  },
  {
   "game_id": "c20261113anw",
@@ -233,8 +233,8 @@
   "status": "live",
   "score": "W 17-11",
   "live_feed": "fiba:2953994",
-  "clock": "Q1 04:06",
-  "live_updated": "2026-11-13T20:27:57+01:00"
+  "clock": "Q1 03:52",
+  "live_updated": "2026-11-13T20:28:44+01:00"
  },
  {
   "game_id": "c20261114msu",
