@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T18:31:34+01:00",
+ "at": "2026-11-13T18:32:32+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -31,7 +31,7 @@
   {
    "game": "g20261113vir",
    "src": "EuroLeague live",
-   "period": 0,
+   "period": 1,
    "clock": "00:00",
    "done": false,
    "teams": [
@@ -66,7 +66,7 @@
     [
      "Dresden Titans",
      0,
-     13
+     10
     ]
    ]
   },
@@ -89,7 +89,7 @@
     [
      "Dresden Titans",
      0,
-     13
+     10
     ]
    ]
   }
