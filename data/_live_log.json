@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T21:59:42+01:00",
+ "at": "2026-11-13T22:00:41+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -78,8 +78,8 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "00:05",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Anwil W\u0142oc\u0142awek",
@@ -88,7 +88,7 @@
     ],
     [
      "AMW Arka Gdynia",
-     78,
+     79,
      12
     ]
    ]
