@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:15:35+01:00",
+ "at": "2026-11-13T19:16:54+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -37,7 +37,7 @@
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     54,
+     56,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "06:15",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "04:15",
+   "clock": "04:05",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     18,
+     21,
      9
     ]
    ]
