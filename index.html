@@ -279,6 +279,10 @@
       <div class="lx-nums" data-draw="sblnums" data-source="sbl"></div>
       <div class="sblx-spot" data-draw="sblspot" data-source="sblplayers photos awards stats"></div>
     </section>
+    <section class="lx-sec sbl-season">
+      <div class="lx-head"><h2>Season so far</h2><span class="lx-note">Basketligan 2026-27 in numbers, from every box score</span></div>
+      <div class="bx sbl-bx" data-draw="sblbento" data-source="sblbox sblleague sbl sblroster photos logos awards ntroster"></div>
+    </section>
     <section class="lx-sec sblf">
       <div class="lx-head"><h2>Find a player</h2><span class="lx-note">Every player in the SBL this season</span></div>
       <div class="srch sblf-box"><svg class="sr-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><input class="sblf-in" type="search" placeholder="Search a player or a team" aria-label="Search SBL players" autocomplete="off" spellcheck="false"></div>
@@ -1912,6 +1916,63 @@
     const go = mk('button', 'hxs-cta', L('Open game center →', 'Öppna matchcentret →')); go.type = 'button'; go.onclick = () => { hxClose(); showCard(g.game_id); }; items.push(go);
     hxSheet(`${teamAbbr(g.home)} – ${teamAbbr(g.away)}`, 'Basketligan', items);
   }
+  // ---- SBL "Season so far": a bento grid of league facts from every box score
+  function sblLine(x) { const g = (ds('sblleague') || []).find((y) => y.game_id === x.game_id); if (!g) return null; const home = x.team === g.home; const us = home ? g.hs : g.as_, them = home ? g.as_ : g.hs;
+    return Object.assign({}, x, { date: g.date, venue: home ? 'Home' : 'Away', opponent: home ? g.away : g.home, result: us != null && them != null ? `${Number(us) > Number(them) ? 'W' : 'L'} ${us}-${them}` : '' }); }
+  function sblTable() { const T = new Map(); (ds('sblleague') || []).filter((g) => g.status === 'final' && g.hs != null).forEach((g) => { [[g.home, g.hs, g.as_], [g.away, g.as_, g.hs]].forEach(([t, a, b]) => { const o = T.get(t) || { team: t, w: 0, l: 0, pf: 0, pa: 0 }; if (Number(a) > Number(b)) o.w++; else o.l++; o.pf += Number(a); o.pa += Number(b); T.set(t, o); }); });
+    return [...T.values()].sort((a, b) => b.w - a.w || a.l - b.l || (b.pf - b.pa) - (a.pf - a.pa)); }
+  dash.draw('sblbento', (el) => {
+    el.replaceChildren(); const B = ds('sblbox'), G = ds('sblleague'); if (!B || !G) { el.textContent = '—'; return; }
+    const tile = (cls, kick) => { const t = mk('div', 'bx-t ' + cls); if (kick) t.append(mk('span', 'bx-k', kick)); el.append(t); return t; };
+    const lines = B.filter((x) => Number(x.min) > 0 || Number(x.pts) > 0);
+    // best single game
+    const top10 = lines.slice().sort((a, b) => Number(b.pts) - Number(a.pts) || Number(b.reb) - Number(a.reb)).slice(0, 10).map(sblLine).filter(Boolean);
+    const best = top10[0];
+    if (best) { const t = tile('bx-best go', L('Best game of the season', 'Säsongens bästa match'));
+      hxTap(t, () => sblListSheet(L('Best games', 'Bästa matcherna'), L('The 10 highest-scoring games in Basketligan this season.', 'De 10 matcherna med flest poäng i Basketligan den här säsongen.'), top10, 'pts'));
+      const ph = photoFor(best.player); if (ph) { const pic = mk('span', 'bx-pic'); const im = new Image(); im.alt = ''; im.src = ph.src; const fb = Array.isArray(ph.fbox) ? ph.fbox : null;
+        if (fb) { const [fx, fy, fw, fh] = fb, k = 0.40 / fh; Object.assign(im.style, { position: 'absolute', height: (k * 100) + '%', width: 'auto', maxWidth: 'none', left: '50%', transform: `translateX(-${(fx + fw / 2) * 100}%)`, top: ((0.34 - (fy + fh / 2) * k) * 100) + '%' }); }
+        else Object.assign(im.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 15%' });
+        pic.append(im); t.append(pic, mk('span', 'bx-shade')); }
+      const v = mk('div', 'bx-big'); v.append(bxNum(Number(best.pts)), mk('span', 'bx-u', 'PTS'));
+      const w = mk('div', 'bx-who'); w.append(mk('b', '', best.player), mk('span', '', `${best.team} · ${best.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${best.opponent} · ${dayFmt(best.date)}`), mk('span', 'bx-line', `${best.reb} ${L('reb', 'ret')} · ${best.ast} ${L('ast', 'ass')} · ${best.fg} ${L('FG', 'skott')}`));
+      t.append(v, w, mk('span', 'bx-go bx-go-best', L('Top 10 →', 'Topp 10 →'))); }
+    // top of the table
+    const tab = sblTable();
+    if (tab.length) { const o = tab[0]; const t = tile('bx-top go', L('Top of the table', 'Serieledare'));
+      hxTap(t, () => { const rows = tab.map((x, i) => { const b = mk('button', 'whs-row sbs-tab'); b.type = 'button'; b.onclick = () => { hxClose(); showTeam(x.team); }; const w2 = mk('span', 'hxs-w'); const d = x.pf - x.pa; w2.append(mk('b', '', x.team), mk('span', '', `${L('Point difference', 'Poängskillnad')} ${d > 0 ? '+' : ''}${d}`)); const r = mk('span', 'sbs-wl'); r.append(mk('b', '', `${x.w}–${x.l}`)); b.append(mk('span', 'sbs-rk', String(i + 1)), crest(x.team, 'sm'), w2, r); return b; });
+        hxSheet(L('The table', 'Tabellen'), L('Wins and losses from every Basketligan game this season.', 'Vinster och förluster från alla matcher i Basketligan den här säsongen.'), rows); });
+      const r = mk('div', 'bx-team'); r.append(crest(o.team, 'lg'), mk('b', '', o.team)); const n = mk('div', 'bx-row'); n.append(bxNum(o.w), mk('span', 'bx-dash', '–'), bxNum(o.l));
+      t.append(r, n, mk('span', 'bx-go', L('The table →', 'Tabellen →'))); }
+    // scoring leader
+    const P = sblPeople().filter((x) => x.gp >= 3).map((x) => Object.assign(x, { ppg: x.pts / x.gp })).sort((a, b) => b.ppg - a.ppg);
+    if (P.length) { const o = P[0]; const t = tile('bx-lead go', L('Scoring leader', 'Poängligan'));
+      hxTap(t, () => { const rows = P.slice(0, 10).map((x, i) => { const b = mk('button', 'whs-row sbs-tab'); b.type = 'button'; b.onclick = () => { hxClose(); showSblPlayer(x.player); }; const w2 = mk('span', 'hxs-w'); w2.append(mk('b', '', x.player + (isNT(x.player) ? ' 🇸🇪' : '')), mk('span', '', `${x.team} · ${x.gp} ${L('GP', 'M')}`)); const v2 = mk('span', 'sbs-ppg'); v2.append(mk('b', '', x.ppg.toFixed(1)), mk('i', '', 'PPG')); b.append(mk('span', 'sbs-rk', String(i + 1)), faceAv('span', 'whs-av', x.player), w2, v2); return b; });
+        hxSheet(L('Scoring leaders', 'Poängligan'), L('Points per game, 3 games or more.', 'Poäng per match, minst 3 matcher.'), rows); });
+      const r = mk('div', 'bx-team'); r.append(faceAv('span', 'bx-awav', o.player), mk('b', '', o.player)); const n = mk('div', 'bx-row'); n.append(bxNum(Number(o.ppg.toFixed(1))), mk('span', 'bx-s', 'PPG'));
+      t.append(r, n, mk('span', 'bx-s', o.team), mk('span', 'bx-go', L('Top 10 →', 'Topp 10 →'))); }
+    // double-doubles
+    const dd = lines.filter((r) => ['pts', 'reb', 'ast', 'stl', 'blk'].filter((k) => Number(r[k]) >= 10).length >= 2).map(sblLine).filter(Boolean).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    { const t = tile('bx-dd go', L('Double-doubles', 'Dubbel-dubblar')); t.append(bxNum(dd.length)); const who = [...new Set(dd.map((r) => r.player))]; const av = mk('div', 'bx-avs'); who.slice(0, 5).forEach((n) => av.append(faceAv('span', 'bx-av', n)));
+      t.append(av, mk('span', 'bx-s', L(`by ${who.length} players`, `av ${who.length} spelare`)), mk('span', 'bx-go', L('See them all →', 'Se alla →')));
+      hxTap(t, () => sblListSheet(L('Double-doubles', 'Dubbel-dubblar'), L(`${dd.length} this season, newest first.`, `${dd.length} den här säsongen, nyast först.`), dd)); }
+    // highest-scoring game
+    const fin = G.filter((g) => g.status === 'final' && g.hs != null); const hi = fin.slice().sort((a, b) => (Number(b.hs) + Number(b.as_)) - (Number(a.hs) + Number(a.as_)))[0];
+    if (hi) { const t = tile('bx-hi go', L('Highest-scoring game', 'Mest poängrika matchen')); hxTap(t, () => sblGameQuick(hi));
+      t.append(bxNum(Number(hi.hs) + Number(hi.as_)), mk('span', 'bx-s', L('points in one game', 'poäng i en match')));
+      const r = mk('div', 'bx-score'); r.append(crest(hi.home, 'sm'), mk('b', '', `${hi.hs}–${hi.as_}`), crest(hi.away, 'sm')); t.append(r, mk('span', 'bx-s', `${hi.home} – ${hi.away} · ${dayFmt(hi.date)}`)); }
+    // national team players at home
+    const nt = sblPeople().filter((x) => isNT(x.player) && x.gp).sort((a, b) => b.pts / b.gp - a.pts / a.gp);
+    if (nt.length) { const t = tile('bx-nt', L('National team at home', 'Landslaget på hemmaplan'));
+      const row = mk('div', 'bx-ntrow'); nt.slice(0, 4).forEach((x) => { const b = mk('button', 'bx-ntp'); b.type = 'button'; b.onclick = () => showSblPlayer(x.player); const w2 = mk('span', 'hxs-w'); w2.append(mk('b', '', x.player), mk('span', '', x.team));
+        const v2 = mk('span', 'sbs-ppg'); v2.append(mk('b', '', (x.pts / x.gp).toFixed(1)), mk('i', '', 'PPG')); b.append(faceAv('span', 'bx-awav', x.player), w2, v2); row.append(b); });
+      t.append(row, mk('span', 'bx-s', L('Sweden squad players in Basketligan this season.', 'Spelare ur landslagstruppen i Basketligan den här säsongen.'))); }
+    // player of the month
+    const aw = (ds('awards') || []).filter((r) => r.row_id !== 'placeholder' && r.title && /SBL/.test(String(r.league || r.title))).sort((x, y) => String(y.date).localeCompare(String(x.date)))[0];
+    if (aw) { const t = tile('bx-aw go', L('Player of the month', 'Månadens spelare')); hxTap(t, () => awardSheet(aw));
+      const r = mk('div', 'bx-awr'); r.append(faceAv('span', 'bx-awav', String(aw.player).split(/\s*,\s*/)[0])); const tx2 = mk('div'); tx2.append(mk('b', '', tx(aw, 'title') || aw.title), mk('span', 'bx-s', [aw.player, aw.team, aw.date ? dayFmt(aw.date) : ''].filter(Boolean).join(' · '))); r.append(tx2); t.append(mk('span', 'bx-tro', '🏆'), r); }
+    hxCount(el);
+  });
   dash.draw('sblnums', (el) => {
     el.replaceChildren();
     const rows = sblRows(); if (!rows) return;

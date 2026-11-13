@@ -243,3 +243,4 @@ window.SA_I18N.RULES.unshift(['^All (\\d+) this season, newest first\\.$', 'Alla
 Object.assign(window.SA_I18N.D, { "The week's big performances, written from the box scores.": "Veckans stora insatser, skrivna utifrån matchprotokollen.", "Quick view": "Snabbvy" });
 window.SA_I18N.RULES.unshift(['^best (\\d+) · (\\d+) games? as top scorer$', 'bästa $1 · $2 matcher som bästa poänggörare']);
 Object.assign(window.SA_I18N.D, { "All records & awards →": "Alla rekord & utmärkelser →", "More honours this season": "Fler utmärkelser den här säsongen", "Latest honour": "Senaste utmärkelsen" });
+Object.assign(window.SA_I18N.D, { "Basketligan 2026-27 in numbers, from every box score": "Basketligan 2026-27 i siffror, från varje matchprotokoll", "Season so far": "Säsongen hittills" });
