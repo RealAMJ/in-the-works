@@ -54155,7 +54155,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54176,7 +54176,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54194,10 +54194,10 @@
   "tov": 3,
   "fg": "2/8",
   "three": "1/6",
-  "ft": "5/6",
+  "ft": "5/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54218,7 +54218,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54239,7 +54239,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54260,7 +54260,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54281,7 +54281,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54302,7 +54302,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54323,7 +54323,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54344,7 +54344,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54365,7 +54365,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54386,7 +54386,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54407,7 +54407,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54428,7 +54428,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54449,7 +54449,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54459,18 +54459,18 @@
   "player": "Kenan Reinhart",
   "pos": "",
   "min": 20,
-  "pts": 12,
+  "pts": 14,
   "reb": 1,
   "ast": 6,
   "stl": 3,
   "blk": 0,
   "tov": 2,
-  "fg": "4/13",
+  "fg": "5/14",
   "three": "2/5",
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54491,7 +54491,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54502,7 +54502,7 @@
   "pos": "",
   "min": 26,
   "pts": 13,
-  "reb": 3,
+  "reb": 4,
   "ast": 2,
   "stl": 0,
   "blk": 0,
@@ -54512,7 +54512,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54533,7 +54533,7 @@
   "ft": "2/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54554,7 +54554,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -54575,7 +54575,7 @@
   "ft": "4/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
