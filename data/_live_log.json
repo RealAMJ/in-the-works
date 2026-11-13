@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T22:38:39+01:00",
+ "at": "2026-11-13T22:39:30+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -21,52 +21,6 @@
      "Mary Baldwin Fighting Squirrels",
      0,
      0
-    ]
-   ]
-  },
-  {
-   "game": "g20261113bask",
-   "checking": "2. Basketball-Bundesliga live ticker"
-  },
-  {
-   "game": "g20261113bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     66,
-     10
-    ],
-    [
-     "Dresden Titans",
-     91,
-     10
-    ]
-   ]
-  },
-  {
-   "game": "c20261113bask",
-   "checking": "2. Basketball-Bundesliga live ticker"
-  },
-  {
-   "game": "c20261113bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     66,
-     10
-    ],
-    [
-     "Dresden Titans",
-     91,
-     10
     ]
    ]
   }
