@@ -214,11 +214,10 @@
   "venue": "Home",
   "competition": "ProB (Germany)",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "L 66-91",
   "live_feed": "prob:2006183",
-  "clock": "Q4 00:10",
-  "live_updated": "2026-11-13T22:37:41+01:00"
+  "live_done": true
  },
  {
   "game_id": "c20261113anw",
