@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:06:27+01:00",
+ "at": "2026-11-13T19:07:33+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -54,8 +54,8 @@
   {
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
-   "period": 1,
-   "clock": "00:13",
+   "period": 2,
+   "clock": "09:25",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Dresden Titans",
-     21,
+     23,
      10
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "08:02",
+   "clock": "07:16",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     5,
+     8,
      12
     ],
     [
      "Dragons Rh\u00f6ndorf",
-     5,
+     6,
      9
     ]
    ]
@@ -100,8 +100,8 @@
   {
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
-   "period": 1,
-   "clock": "00:13",
+   "period": 2,
+   "clock": "08:58",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Dresden Titans",
-     21,
+     25,
      10
     ]
    ]
