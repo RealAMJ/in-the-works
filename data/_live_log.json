@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:00:55+01:00",
+ "at": "2026-11-13T20:02:16+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,17 +32,17 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 4,
-   "clock": "00:00",
+   "clock": "08:44",
    "done": false,
    "teams": [
     [
      "ANADOLU EFES ISTANBUL",
-     76,
+     82,
      12
     ],
     [
      "VIRTUS BOLOGNA",
-     68,
+     70,
      12
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "03:59",
+   "clock": "03:45",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Dresden Titans",
-     57,
+     59,
      10
     ]
    ]
@@ -113,6 +113,29 @@
      "Dresden Titans",
      59,
      10
+    ]
+   ]
+  },
+  {
+   "game": "c20261113anw",
+   "checking": "FIBA LiveStats"
+  },
+  {
+   "game": "c20261113anw",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
+   "teams": [
+    [
+     "Anwil W\u0142oc\u0142awek",
+     0,
+     12
+    ],
+    [
+     "AMW Arka Gdynia",
+     0,
+     12
     ]
    ]
   }

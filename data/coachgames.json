@@ -218,7 +218,7 @@
   "score": "L 38-59",
   "live_feed": "prob:2006183",
   "clock": "Q3 03:45",
-  "live_updated": "2026-11-13T20:00:55+01:00"
+  "live_updated": "2026-11-13T20:02:16+01:00"
  },
  {
   "game_id": "c20261113anw",
@@ -231,7 +231,8 @@
   "competition": "Orlen Basket Liga",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "fiba:2953994"
  },
  {
   "game_id": "c20261114msu",

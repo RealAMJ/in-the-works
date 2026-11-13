@@ -1,47 +1,5 @@
 [
  {
-  "game_id": "sbl-2851793",
-  "date": "2026-11-13",
-  "time": "19:04",
-  "team": "BC Luleå",
-  "opponent": "Södertälje BBK",
-  "venue": "Home",
-  "competition": "Basketligan",
-  "players": "Jonatan Arvidsson",
-  "status": "upcoming",
-  "score": "",
-  "sbl": true,
-  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851793/summary"
- },
- {
-  "game_id": "sbl-2851795",
-  "date": "2026-11-13",
-  "time": "19:04",
-  "team": "Norrköping Dolphins",
-  "opponent": "Nässjö Basket",
-  "venue": "Away",
-  "competition": "Basketligan",
-  "players": "Michael Odinks",
-  "status": "upcoming",
-  "score": "",
-  "sbl": true,
-  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851795/summary"
- },
- {
-  "game_id": "sbl-2851796",
-  "date": "2026-11-13",
-  "time": "19:04",
-  "team": "Jämtland Basket",
-  "opponent": "Högsbo Lions",
-  "venue": "Home",
-  "competition": "Basketligan",
-  "players": "Gustav Hansson",
-  "status": "upcoming",
-  "score": "",
-  "sbl": true,
-  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851796/summary"
- },
- {
   "game_id": "sbl-2851706",
   "date": "2026-11-17",
   "time": "19:04",
@@ -124,5 +82,47 @@
   "score": "",
   "sbl": true,
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851798/summary"
+ },
+ {
+  "game_id": "sbl-2851712",
+  "date": "2026-12-04",
+  "time": "19:04",
+  "team": "BC Luleå",
+  "opponent": "Köping Stars",
+  "venue": "Away",
+  "competition": "Basketligan",
+  "players": "Jonatan Arvidsson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851712/summary"
+ },
+ {
+  "game_id": "sbl-2851713",
+  "date": "2026-12-04",
+  "time": "19:04",
+  "team": "Jämtland Basket",
+  "opponent": "Sloga Uppsala",
+  "venue": "Away",
+  "competition": "Basketligan",
+  "players": "Gustav Hansson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851713/summary"
+ },
+ {
+  "game_id": "sbl-2851803",
+  "date": "2026-12-08",
+  "time": "19:04",
+  "team": "Norrköping Dolphins",
+  "opponent": "Högsbo Lions",
+  "venue": "Away",
+  "competition": "Basketligan",
+  "players": "Michael Odinks",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851803/summary"
  }
 ]
