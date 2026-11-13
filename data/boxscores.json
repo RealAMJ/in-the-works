@@ -2672,14 +2672,14 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {
   "line_id": "g20261113bask-hadi",
   "game_id": "g20261113bask",
   "player": "Jacob Hadi",
-  "min": 6,
+  "min": 7,
   "pts": 2,
   "reb": 2,
   "ast": 1,
