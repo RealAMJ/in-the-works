@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:26:54+01:00",
+ "at": "2026-11-13T20:27:57+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -32,7 +32,7 @@
    "game": "g20261113vir",
    "src": "EuroLeague live",
    "period": 4,
-   "clock": "00:41",
+   "clock": "00:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "VIRTUS BOLOGNA",
-     88,
+     90,
      12
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "06:09",
+   "clock": "05:42",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     54,
+     56,
      10
     ],
     [
      "Dresden Titans",
-     74,
+     77,
      10
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g20261113cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "01:01",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     52,
+     56,
      12
     ],
     [
@@ -101,17 +101,17 @@
    "game": "c20261113bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "06:09",
+   "clock": "05:42",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     54,
+     56,
      10
     ],
     [
      "Dresden Titans",
-     74,
+     77,
      10
     ]
    ]
@@ -124,7 +124,7 @@
    "game": "c20261113anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "04:37",
+   "clock": "04:06",
    "done": false,
    "teams": [
     [
