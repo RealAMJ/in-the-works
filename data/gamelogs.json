@@ -6414,5 +6414,31 @@
   "pf": 1,
   "pm": 25,
   "eff": ""
+ },
+ {
+  "row_id": "odinks-2026-11-13",
+  "player": "Michael Odinks",
+  "date": "2026-11-13",
+  "competition": "Basketligan",
+  "team": "Norrköping Dolphins",
+  "opponent": "Nässjö Basket",
+  "venue": "Away",
+  "result": "L 90-93",
+  "min": 23,
+  "pts": 8,
+  "reb": 2,
+  "ast": 0,
+  "source": "FIBA LiveStats (Basketligan, game 2851795)",
+  "fg": "3/5",
+  "three": "0/1",
+  "ft": "2/2",
+  "oreb": 1,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 3,
+  "pf": 3,
+  "pm": -3,
+  "eff": ""
  }
 ]

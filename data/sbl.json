@@ -110,6 +110,28 @@
   "source": "FIBA LiveStats (Basketligan, game 2851796)"
  },
  {
+  "row_id": "abdoumedjedo-2026-11-13",
+  "date": "2026-11-13",
+  "player": "Abdou Medjedoub",
+  "team": "Nässjö Basket",
+  "opponent": "Norrköping Dolphins",
+  "venue": "Home",
+  "result": "W 93-90",
+  "min": 27,
+  "pts": 10,
+  "reb": 2,
+  "ast": 1,
+  "stl": 1,
+  "blk": 0,
+  "fg": "5/5",
+  "three": "0/0",
+  "ft": "0/0",
+  "tags": "Perfect FG (5/5)",
+  "headline": "10 points on perfect 5/5 shooting",
+  "headline_sv": "10 poäng med perfekta 5/5 från fältet",
+  "source": "FIBA LiveStats (Basketligan, game 2851795)"
+ },
+ {
   "row_id": "mariospaleta-2026-11-10",
   "date": "2026-11-10",
   "player": "Mario Spaleta",

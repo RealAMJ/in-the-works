@@ -217,8 +217,8 @@
   "status": "live",
   "score": "L 66-91",
   "live_feed": "prob:2006183",
-  "clock": "Q4 00:10",
-  "live_updated": "2026-11-13T22:03:25+01:00"
+  "clock": "Q4 10:00",
+  "live_updated": "2026-11-13T22:04:14+01:00"
  },
  {
   "game_id": "c20261113anw",
@@ -233,7 +233,8 @@
   "status": "final",
   "score": "L 67-79",
   "live_feed": "fiba:2953994",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261114msu",

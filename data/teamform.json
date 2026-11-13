@@ -6466,5 +6466,33 @@
   "note": "",
   "leaders": "Paulo|23|5|2;Reinhart|14|1|6;Saldern|13|4|2",
   "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "anwil-wloclawek-2026-11-13",
+  "team": "Anwil Włocławek",
+  "date": "2026-11-13",
+  "competition": "Orlen Basket Liga",
+  "opponent": "Arka Gdynia",
+  "venue": "Home",
+  "score": "67-79",
+  "result": "L",
+  "top": "Hines 17 pts, 1 reb",
+  "note": "",
+  "leaders": "Hines|17|1|0;Freeman|10|6|2;Edwin|10|1|3;Lecomte|10|1|3",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "arka-gdynia-2026-11-13",
+  "team": "Arka Gdynia",
+  "date": "2026-11-13",
+  "competition": "Orlen Basket Liga",
+  "opponent": "Anwil Włocławek",
+  "venue": "Away",
+  "score": "79-67",
+  "result": "W",
+  "top": "Stein 21 pts, 4 reb",
+  "note": "",
+  "leaders": "Stein|21|4|2;Vucić|13|17|3;Garbacz|10|1|1;Lawrence|10|3|0",
+  "source": "FIBA LiveStats"
  }
 ]

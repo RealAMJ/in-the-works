@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:03:25+01:00",
+ "updated": "2026-11-13T22:04:14+01:00",
  "app": "4c404caf4a0f",
  "files": {
   "awards": "1c451ad9ae1b",
@@ -8,10 +8,10 @@
   "career": "4d71859a21b0",
   "coachcareer": "5de253530720",
   "coaches": "efb2086390f9",
-  "coachgames": "31c5cf57791c",
+  "coachgames": "8be65cf48b65",
   "feed_seeds": "3b098e820f52",
   "fullbox": "455af48e388b",
-  "gamelogs": "f10fa9cf82f9",
+  "gamelogs": "4d533df0ed59",
   "highlights": "3b3021dbe8af",
   "leaguetiers": "8eff8731a606",
   "logos": "2f3108d46d88",
@@ -22,16 +22,16 @@
   "players": "721ac494dbf3",
   "previews": "732a8684f330",
   "prospects": "87fe3108008c",
-  "sbl": "fd195271e552",
+  "sbl": "3facef14a3a1",
   "sblbox": "11aef4dfb83e",
   "sblgames": "d678b32837ba",
   "sblleague": "755e1d14c7e5",
   "sblplayers": "d94465dcd549",
   "sblroster": "71c352b80281",
-  "schedule": "b8e278934bab",
-  "stats": "4a584d72e4ff",
-  "teamform": "907217943e66",
-  "teams": "791dcecf3a52",
+  "schedule": "b8d914cb94cc",
+  "stats": "e292918d19db",
+  "teamform": "725e8831b47f",
+  "teams": "f74c819be226",
   "thisweek": "77ee1f738998"
  }
 }
