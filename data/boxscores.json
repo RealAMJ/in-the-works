@@ -2789,7 +2789,7 @@
   "line_id": "g20261114iona-fall",
   "game_id": "g20261114iona",
   "player": "Alliou Fall",
-  "min": 16,
+  "min": 17,
   "pts": 4,
   "reb": 2,
   "ast": 1,
@@ -2805,6 +2805,28 @@
   "blk": 2,
   "tov": 3,
   "pf": 1,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261114east-homelius",
+  "game_id": "g20261114east",
+  "player": "Isak Homelius",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
   "eff": ""
  }
 ]
