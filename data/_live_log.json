@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:14:13+01:00",
+ "at": "2026-11-14T03:14:39+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -8,8 +8,8 @@
   {
    "game": "g20261114iona",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "04:58",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:55",
+   "clock": "15:33",
    "done": false,
    "teams": [
     [
      "Corban Warriors",
-     4,
+     6,
      14
     ],
     [
      "Eastern Washington Eagles",
-     11,
+     13,
      15
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:36",
+   "clock": "17:05",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     3,
+     5,
      17
     ],
     [
