@@ -6746,5 +6746,33 @@
   "note": "",
   "leaders": "Kody|11|1|0;Martinez|9|5|0;Bramble|7|5|1;Solarin|7|5|1",
   "source": "FEB Live"
+ },
+ {
+  "row_id": "youngstown-state-2026-11-14",
+  "team": "Youngstown State",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Marshall",
+  "venue": "Home",
+  "score": "74-71",
+  "result": "W",
+  "top": "Amoako 17 pts, 11 reb",
+  "note": "",
+  "leaders": "Amoako|17|11|0;Nwankwo|12|4|2;Haynes|10|4|1;Moupadele|10|4|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "marshall-2026-11-14",
+  "team": "Marshall",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Youngstown State",
+  "venue": "Away",
+  "score": "71-74",
+  "result": "L",
+  "top": "Otshudi 28 pts, 5 reb",
+  "note": "",
+  "leaders": "Otshudi|28|5|4;Slay|21|4|1;Oshodi|8|0|0",
+  "source": "ESPN"
  }
 ]
