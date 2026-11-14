@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:45:27+01:00",
+ "at": "2026-11-14T04:46:19+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -8,9 +8,9 @@
   {
    "game": "g20261114miam",
    "src": "ESPN",
-   "period": 4,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Cleveland Cavaliers",
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:01",
+   "clock": "07:53",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:35",
+   "clock": "06:13",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:56",
+   "clock": "12:38",
    "done": false,
    "teams": [
     [
