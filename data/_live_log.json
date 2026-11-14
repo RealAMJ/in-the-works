@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:05:25+01:00",
+ "at": "2026-11-14T03:06:15+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,7 +9,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:01",
+   "clock": "02:02",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:34",
+   "clock": "02:04",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:17",
+   "clock": "18:57",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     0,
+     2,
      15
     ]
    ]
