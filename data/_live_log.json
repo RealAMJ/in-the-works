@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T20:17:54+01:00",
+ "at": "2026-11-14T20:18:44+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,7 +9,7 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:13",
+   "clock": "13:30",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Maine Black Bears",
-     38,
+     40,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:32",
+   "clock": "17:13",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Youngstown State Penguins",
-     28,
+     31,
      14
     ]
    ]
