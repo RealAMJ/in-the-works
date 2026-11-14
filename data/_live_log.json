@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:28:59+01:00",
+ "at": "2026-11-14T04:29:50+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:20",
+   "clock": "13:27",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "UNLV Rebels",
-     45,
+     47,
      14
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:56",
+   "clock": "11:25",
    "done": false,
    "teams": [
     [
      "Corban Warriors",
-     46,
+     49,
      14
     ],
     [
