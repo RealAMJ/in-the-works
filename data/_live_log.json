@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:50:27+01:00",
+ "at": "2026-11-14T03:51:18+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -9,12 +9,12 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "03:02",
+   "clock": "02:54",
    "done": false,
    "teams": [
     [
      "Cleveland Cavaliers",
-     79,
+     81,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:24",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
