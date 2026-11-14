@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:22:15+01:00",
+ "at": "2026-11-14T04:23:05+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,12 +32,12 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:24",
+   "clock": "15:48",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     38,
+     40,
      16
     ],
     [
@@ -55,17 +55,17 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:54",
+   "clock": "15:43",
    "done": false,
    "teams": [
     [
      "Corban Warriors",
-     33,
+     34,
      14
     ],
     [
      "Eastern Washington Eagles",
-     63,
+     65,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:50",
+   "clock": "18:35",
    "done": false,
    "teams": [
     [
