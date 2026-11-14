@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:16:20+01:00",
+ "at": "2026-11-14T03:17:10+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,7 +9,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 3,
-   "clock": "03:33",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Hofstra Pride",
-     53,
+     55,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:00",
+   "clock": "14:57",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:06",
+   "clock": "13:27",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     15,
+     20,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:45",
+   "clock": "15:35",
    "done": false,
    "teams": [
     [
