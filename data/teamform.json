@@ -6578,5 +6578,33 @@
   "note": "",
   "leaders": "Moore|22|1|8;Thomas|17|7|2;Jefferson|6|5|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-14",
+  "team": "Miami Heat",
+  "date": "2026-11-14",
+  "competition": "NBA",
+  "opponent": "Cleveland Cavaliers",
+  "venue": "Home",
+  "score": "133-121",
+  "result": "W",
+  "top": "Antetokounmpo 37 pts, 9 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|37|9|2;Adebayo|37|14|3;Mitchell|22|5|17",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "cleveland-cavaliers-2026-11-14",
+  "team": "Cleveland Cavaliers",
+  "date": "2026-11-14",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Away",
+  "score": "121-133",
+  "result": "L",
+  "top": "Mitchell 25 pts, 4 reb",
+  "note": "",
+  "leaders": "Mitchell|25|4|7;Proctor|22|4|3;Harden|20|6|8",
+  "source": "ESPN"
  }
 ]
