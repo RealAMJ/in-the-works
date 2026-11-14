@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T05:18:55+01:00",
+ "at": "2026-11-14T05:19:46+01:00",
  "log": [
   {
    "game": "c20261114msu",
@@ -9,17 +9,17 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:19",
+   "clock": "03:06",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     74,
+     75,
      17
     ],
     [
      "Mississippi State Bulldogs",
-     57,
+     58,
      16
     ]
    ]
