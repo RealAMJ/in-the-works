@@ -293,5 +293,45 @@
   "status": "upcoming",
   "score": "",
   "live_feed": "prob:2006193"
+ },
+ {
+  "game_id": "c20261118miss",
+  "date": "2026-11-18",
+  "time": "01:00",
+  "coach": "Erik Johansson",
+  "team": "Mississippi State",
+  "opponent": "UCF",
+  "venue": "Away",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "c20261120bask",
+  "date": "2026-11-20",
+  "time": "18:30",
+  "coach": "Leif Ibrahim",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "FC Bayern Basketball II",
+  "venue": "Home",
+  "competition": "ProB (Germany)",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "prob:2006196"
+ },
+ {
+  "game_id": "c20261121miss",
+  "date": "2026-11-21",
+  "time": "01:30",
+  "coach": "Erik Johansson",
+  "team": "Mississippi State",
+  "opponent": "Tulsa",
+  "venue": "Neutral",
+  "competition": "NCAA",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
  }
 ]

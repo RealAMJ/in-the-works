@@ -107,4 +107,14 @@ DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NBA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261119miam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Larsson: Miami Heat vs Milwaukee Bucks
+DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NBA
+END:VEVENT
 END:VCALENDAR

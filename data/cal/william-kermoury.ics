@@ -38,11 +38,41 @@ DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261114uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T210000Z
+DTEND:20261114T230000Z
+SUMMARY:Kermoury: UNC Wilmington vs Montreat
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261115uncw@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261115T000000Z
 DTEND:20261115T020000Z
 SUMMARY:Kermoury: UNC Wilmington vs Louisiana
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Kermoury: UNC Wilmington at Long Island University
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T230000Z
+DTEND:20261122T010000Z
+SUMMARY:Kermoury: UNC Wilmington at Norfolk State
 DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:NCAA

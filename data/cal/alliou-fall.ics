@@ -67,4 +67,14 @@ DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261121iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T000000Z
+DTEND:20261121T020000Z
+SUMMARY:Fall: Iona vs Kansas City
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

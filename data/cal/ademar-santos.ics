@@ -47,4 +47,24 @@ DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261118dela@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T000000Z
+DTEND:20261118T020000Z
+SUMMARY:Santos: Delaware State vs Cheyney (PA)
+DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121dela@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T000000Z
+DTEND:20261121T020000Z
+SUMMARY:Santos: Delaware State vs Niagara
+DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

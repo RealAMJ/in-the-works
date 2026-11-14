@@ -47,4 +47,14 @@ DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:BBL
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261121lowe@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T173000Z
+DTEND:20261121T193000Z
+SUMMARY:Bangala: Löwen Braunschweig vs BMA365 Bamberg Baskets
+DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:BBL
+END:VEVENT
 END:VCALENDAR

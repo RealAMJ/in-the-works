@@ -37,4 +37,14 @@ DESCRIPTION:ProB (Germany). Players: Jacob Hadi. https://realamj.github.io/
  in-the-works/
 CATEGORIES:ProB (Germany)
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261120bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T173000Z
+DTEND:20261120T193000Z
+SUMMARY:Hadi: Basketball Löwen Erfurt vs FC Bayern Basketball II
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi\, Mikai Klintman. https://r
+ ealamj.github.io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
 END:VCALENDAR

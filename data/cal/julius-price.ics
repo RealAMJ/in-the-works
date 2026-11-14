@@ -47,4 +47,24 @@ DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261118stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T030000Z
+DTEND:20261118T050000Z
+SUMMARY:Price: Stanford vs UC Irvine
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T030000Z
+DTEND:20261120T050000Z
+SUMMARY:Price: Stanford vs Sacramento State
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

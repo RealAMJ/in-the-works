@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261122mich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T000000Z
+DTEND:20261122T020000Z
+SUMMARY:Cadeau: Michigan at Villanova
+DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

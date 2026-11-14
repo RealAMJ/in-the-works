@@ -57,4 +57,24 @@ DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
  /in-the-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261120main@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T000000Z
+DTEND:20261120T020000Z
+SUMMARY:Adsten: Maine at Quinnipiac
+DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
+ /in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122main@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T230000Z
+DTEND:20261122T010000Z
+SUMMARY:Adsten: Maine at Massachusetts
+DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
+ /in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

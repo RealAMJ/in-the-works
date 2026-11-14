@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Samuel Obenjo. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261120robe@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T000000Z
+DTEND:20261120T020000Z
+SUMMARY:Obenjo: Robert Morris at Toledo
+DESCRIPTION:NCAA. Players: Samuel Obenjo. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

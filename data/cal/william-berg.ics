@@ -47,4 +47,24 @@ DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261119wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T010000Z
+DTEND:20261119T030000Z
+SUMMARY:Berg: Wichita State at Loyola Chicago
+DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T190000Z
+DTEND:20261121T210000Z
+SUMMARY:Berg: Wichita State vs New Mexico
+DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

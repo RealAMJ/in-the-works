@@ -57,4 +57,24 @@ DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261118lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T233000Z
+DTEND:20261118T013000Z
+SUMMARY:Tidare: Lipscomb at Purdue
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T010000Z
+DTEND:20261121T030000Z
+SUMMARY:Tidare: Lipscomb at Alabama A&M
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

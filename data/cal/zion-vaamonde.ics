@@ -57,4 +57,24 @@ DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
  lamj.github.io/in-the-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261119vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Vaamonde: VMI at Longwood
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T170000Z
+DTEND:20261121T190000Z
+SUMMARY:Vaamonde: VMI vs Gardner-Webb
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

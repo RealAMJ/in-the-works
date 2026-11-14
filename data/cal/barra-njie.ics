@@ -57,4 +57,14 @@ DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:ABA League
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261121bcvi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T200000Z
+SUMMARY:Njie: BC Vienna at Spartak Office Shoes
+DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:ABA League
+END:VEVENT
 END:VCALENDAR

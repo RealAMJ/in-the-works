@@ -37,4 +37,14 @@ DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261121ucir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T213000Z
+DTEND:20261121T233000Z
+SUMMARY:Cooper: UC Irvine vs San Diego
+DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

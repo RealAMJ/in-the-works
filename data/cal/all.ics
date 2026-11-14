@@ -1190,10 +1190,20 @@ DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115youn@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T180000Z
+DTEND:20261114T200000Z
+SUMMARY:Holmström: Youngstown State vs Marshall
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261114denv@swedes-abroad
 DTSTAMP:20260101T000000Z
-DTSTART:20261114T210000Z
-DTEND:20261114T230000Z
+DTSTART:20261114T200000Z
+DTEND:20261114T220000Z
 SUMMARY:Stumer: Denver vs Wyoming
 DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
  orks/
@@ -1210,12 +1220,12 @@ DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
-UID:g20261115youn@swedes-abroad
+UID:g20261114uncw@swedes-abroad
 DTSTAMP:20260101T000000Z
-DTSTART:20261114T230000Z
-DTEND:20261115T010000Z
-SUMMARY:Holmström: Youngstown State vs Marshall
-DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+DTSTART:20261114T210000Z
+DTEND:20261114T230000Z
+SUMMARY:Kermoury: UNC Wilmington vs Montreat
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:NCAA
 END:VEVENT
@@ -1267,16 +1277,6 @@ DTEND:20261115T050000Z
 SUMMARY:Fasasi: New Mexico at Santa Clara
 DESCRIPTION:NCAA. Players: Tunde Fasasi. https://realamj.github.io/in-the-w
  orks/
-CATEGORIES:NCAA
-END:VEVENT
-BEGIN:VEVENT
-UID:g20261115idah@swedes-abroad
-DTSTAMP:20260101T000000Z
-DTSTART:20261115T030000Z
-DTEND:20261115T050000Z
-SUMMARY:Amoran: Idaho State at Seattle U
-DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
- works/
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
@@ -1350,6 +1350,16 @@ DESCRIPTION:NCAA. Players: Samuel Obenjo. https://realamj.github.io/in-the-
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115idah@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T210000Z
+DTEND:20261115T230000Z
+SUMMARY:Amoran: Idaho State at Seattle U
+DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261116stjo@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261116T000000Z
@@ -1392,8 +1402,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:g20261117denv@swedes-abroad
 DTSTAMP:20260101T000000Z
-DTSTART:20261117T040000Z
-DTEND:20261117T060000Z
+DTSTART:20261117T030000Z
+DTEND:20261117T050000Z
 SUMMARY:Stumer: Denver vs Colorado Colorado Springs
 DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
  orks/
@@ -1430,6 +1440,46 @@ DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
 CATEGORIES:EuroLeague
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261118lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261117T233000Z
+DTEND:20261118T013000Z
+SUMMARY:Tidare: Lipscomb at Purdue
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261118dela@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T000000Z
+DTEND:20261118T020000Z
+SUMMARY:Santos: Delaware State vs Cheyney (PA)
+DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261118east@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T013000Z
+DTEND:20261118T033000Z
+SUMMARY:Homelius: Eastern Washington at Utah
+DESCRIPTION:NCAA. Players: Isak Homelius. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261118stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261118T030000Z
+DTEND:20261118T050000Z
+SUMMARY:Price: Stanford vs UC Irvine
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261118unic@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261118T193000Z
@@ -1438,6 +1488,66 @@ SUMMARY:Pantzar: Unicaja vs BK KVIS Pardubice
 DESCRIPTION:Champions League (BCL). Players: Melwin Pantzar. https://realam
  j.github.io/in-the-works/
 CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119miam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Larsson: Miami Heat vs Milwaukee Bucks
+DESCRIPTION:NBA. Players: Pelle Larsson. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NBA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119stjo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Pohto: St. John's vs Siena
+DESCRIPTION:NCAA. Players: Casper Pohto. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Jucevicius\, Vaamonde: VMI at Longwood
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T000000Z
+DTEND:20261119T020000Z
+SUMMARY:Kermoury: UNC Wilmington at Long Island University
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119youn@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T003000Z
+DTEND:20261119T023000Z
+SUMMARY:Holmström: Youngstown State at Cincinnati
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261119wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261119T010000Z
+DTEND:20261119T030000Z
+SUMMARY:Berg: Wichita State at Loyola Chicago
+DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261119krba@swedes-abroad
@@ -1458,6 +1568,187 @@ SUMMARY:Klintman: Virtus Bologna at Valencia Basket
 DESCRIPTION:EuroLeague. Players: Bobi Klintman. https://realamj.github.io/i
  n-the-works/
 CATEGORIES:EuroLeague
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120robe@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T000000Z
+DTEND:20261120T020000Z
+SUMMARY:Obenjo: Robert Morris at Toledo
+DESCRIPTION:NCAA. Players: Samuel Obenjo. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120main@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T000000Z
+DTEND:20261120T020000Z
+SUMMARY:Adsten: Maine at Quinnipiac
+DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
+ /in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120stan@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T030000Z
+DTEND:20261120T050000Z
+SUMMARY:Price: Stanford vs Sacramento State
+DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120bask@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T173000Z
+DTEND:20261120T193000Z
+SUMMARY:Hadi\, Klintman: Basketball Löwen Erfurt vs FC Bayern Basketball I
+ I
+DESCRIPTION:ProB (Germany). Players: Jacob Hadi\, Mikai Klintman. https://r
+ ealamj.github.io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120cult@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T190000Z
+DTEND:20261120T210000Z
+SUMMARY:Klintman: Culture City Weimar vs Ahorn Camp Baskets
+DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120idah@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T210000Z
+DTEND:20261120T230000Z
+SUMMARY:Amoran: Idaho State vs South Dakota State
+DESCRIPTION:NCAA. Players: Nathan Amoran. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121dela@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T000000Z
+DTEND:20261121T020000Z
+SUMMARY:Santos: Delaware State vs Niagara
+DESCRIPTION:NCAA. Players: Ademar Santos. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T000000Z
+DTEND:20261121T020000Z
+SUMMARY:Fall: Iona vs Kansas City
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T010000Z
+DTEND:20261121T030000Z
+SUMMARY:Tidare: Lipscomb at Alabama A&M
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121vmi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T170000Z
+DTEND:20261121T190000Z
+SUMMARY:Jucevicius\, Vaamonde: VMI vs Gardner-Webb
+DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
+ lamj.github.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121lowe@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T173000Z
+DTEND:20261121T193000Z
+SUMMARY:Bangala: Löwen Braunschweig vs BMA365 Bamberg Baskets
+DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:BBL
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121denv@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T200000Z
+SUMMARY:Stumer: Denver at Eastern Michigan
+DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121bcvi@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T200000Z
+SUMMARY:Njie: BC Vienna at Spartak Office Shoes
+DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:ABA League
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T190000Z
+DTEND:20261121T210000Z
+SUMMARY:Berg: Wichita State vs New Mexico
+DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121ucir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T213000Z
+DTEND:20261121T233000Z
+SUMMARY:Cooper: UC Irvine vs San Diego
+DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122uncw@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T230000Z
+DTEND:20261122T010000Z
+SUMMARY:Kermoury: UNC Wilmington at Norfolk State
+DESCRIPTION:NCAA. Players: William Kermoury. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122main@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T230000Z
+DTEND:20261122T010000Z
+SUMMARY:Adsten: Maine at Massachusetts
+DESCRIPTION:NCAA. Players: Villiam Garcia Adsten. https://realamj.github.io
+ /in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122mich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T000000Z
+DTEND:20261122T020000Z
+SUMMARY:Cadeau: Michigan at Villanova
+DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
+ works/
+CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261124vir@swedes-abroad
