@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:27:03+01:00",
+ "at": "2026-11-14T03:27:54+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -8,9 +8,9 @@
   {
    "game": "g20261114iona",
    "src": "ESPN",
-   "period": 3,
-   "clock": "00:09",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Iona Gaels",
@@ -32,7 +32,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "11:36",
+   "clock": "11:16",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:00",
+   "clock": "10:58",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     12,
+     14,
      16
     ],
     [
      "UNLV Rebels",
-     14,
+     19,
      14
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:55",
+   "clock": "08:18",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     37,
+     39,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:56",
+   "clock": "11:53",
    "done": false,
    "teams": [
     [
