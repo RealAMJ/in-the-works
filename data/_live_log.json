@@ -1,26 +1,49 @@
 {
- "at": "2026-11-14T05:29:05+01:00",
+ "at": "2026-11-14T18:41:15+01:00",
  "log": [
   {
-   "game": "c20261114msu",
+   "game": "g20261114main",
    "checking": "ESPN"
   },
   {
-   "game": "c20261114msu",
+   "game": "g20261114main",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Xavier Musketeers",
-     81,
-     17
+     "Maine Black Bears",
+     0,
+     0
     ],
     [
-     "Mississippi State Bulldogs",
-     63,
-     16
+     "Drexel Dragons",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261115youn",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261115youn",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Youngstown State Penguins",
+     0,
+     0
+    ],
+    [
+     "Marshall Thundering Herd",
+     0,
+     0
     ]
    ]
   }
