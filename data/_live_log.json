@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:42:54+01:00",
+ "at": "2026-11-14T02:43:46+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,17 +9,17 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:25",
+   "clock": "00:22",
    "done": false,
    "teams": [
     [
      "Mary Baldwin Fighting Squirrels",
-     50,
+     52,
      18
     ],
     [
      "VMI Keydets",
-     69,
+     71,
      17
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:34",
+   "clock": "10:52",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Miami Heat",
-     29,
+     34,
      15
     ]
    ]
