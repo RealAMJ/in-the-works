@@ -57683,7 +57683,7 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57704,7 +57704,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57725,7 +57725,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57746,7 +57746,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57767,11 +57767,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-0-7",
+  "row_id": "c20261114msu-0-5",
   "game_id": "c20261114msu",
   "team": "Xavier",
   "player": "Rolyns Aligbe",
@@ -57788,11 +57788,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-0-8",
+  "row_id": "c20261114msu-0-6",
   "game_id": "c20261114msu",
   "team": "Xavier",
   "player": "Gabriel Pozzato",
@@ -57809,11 +57809,11 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-0-10",
+  "row_id": "c20261114msu-0-7",
   "game_id": "c20261114msu",
   "team": "Xavier",
   "player": "Nikos Chitikoudis",
@@ -57830,11 +57830,11 @@
   "ft": "5/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-0-13",
+  "row_id": "c20261114msu-0-8",
   "game_id": "c20261114msu",
   "team": "Xavier",
   "player": "Ruben Dominguez",
@@ -57851,11 +57851,11 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-0-14",
+  "row_id": "c20261114msu-0-9",
   "game_id": "c20261114msu",
   "team": "Xavier",
   "player": "Kalek House",
@@ -57872,7 +57872,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57893,7 +57893,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57914,7 +57914,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57935,7 +57935,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57956,7 +57956,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57977,11 +57977,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-6",
+  "row_id": "c20261114msu-1-5",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Kendyl Sanders",
@@ -57998,11 +57998,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-7",
+  "row_id": "c20261114msu-1-6",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Tristan Reed",
@@ -58019,11 +58019,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-10",
+  "row_id": "c20261114msu-1-7",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Jalyn Collingwood",
@@ -58040,11 +58040,11 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-11",
+  "row_id": "c20261114msu-1-8",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Willie Burnett III",
@@ -58061,11 +58061,11 @@
   "ft": "6/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-12",
+  "row_id": "c20261114msu-1-9",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Tajuan Simpkins",
@@ -58082,11 +58082,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-13",
+  "row_id": "c20261114msu-1-10",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "King Grace",
@@ -58103,11 +58103,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261114msu-1-14",
+  "row_id": "c20261114msu-1-11",
   "game_id": "c20261114msu",
   "team": "Mississippi State",
   "player": "Ashton Magee",
@@ -58124,7 +58124,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
