@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:21:01+01:00",
+ "at": "2026-11-14T03:21:53+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,17 +9,17 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 3,
-   "clock": "01:31",
+   "clock": "01:07",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     56,
+     59,
      17
     ],
     [
      "Hofstra Pride",
-     55,
+     58,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:20",
+   "clock": "13:09",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UNLV Rebels",
-     9,
+     10,
      14
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:16",
+   "clock": "14:28",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     9,
+     11,
      17
     ],
     [
