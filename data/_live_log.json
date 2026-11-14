@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:59:07+01:00",
+ "at": "2026-11-14T03:59:59+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Cleveland Cavaliers",
-     90,
+     91,
      12
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:32",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     31,
+     33,
      16
     ],
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     27,
+     29,
      16
     ]
    ]
