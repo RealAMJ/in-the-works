@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:41:19+01:00",
+ "at": "2026-11-14T19:42:12+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,12 +9,12 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:10",
+   "clock": "02:35",
    "done": false,
    "teams": [
     [
      "Drexel Dragons",
-     27,
+     30,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:19",
+   "clock": "03:48",
    "done": false,
    "teams": [
     [
      "Marshall Thundering Herd",
-     24,
+     26,
      15
     ],
     [
      "Youngstown State Penguins",
-     22,
+     24,
      14
     ]
    ]
