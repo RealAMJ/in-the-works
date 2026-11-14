@@ -6570,5 +6570,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "price-2026-11-14",
+  "player": "Julius Price",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "team": "Stanford",
+  "opponent": "UNLV",
+  "venue": "Away",
+  "result": "L 68-76",
+  "min": 34,
+  "pts": 16,
+  "reb": 0,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "4/14",
+  "three": "2/5",
+  "ft": "6/7",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 3,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

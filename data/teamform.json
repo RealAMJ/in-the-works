@@ -6634,5 +6634,33 @@
   "note": "",
   "leaders": "Harris|19|5|1;Zook|10|1|0;Zimmermann|9|3|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-14",
+  "team": "Stanford",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "UNLV",
+  "venue": "Away",
+  "score": "68-76",
+  "result": "L",
+  "top": "Maurer 20 pts, 9 reb",
+  "note": "",
+  "leaders": "Maurer|20|9|0;Price|16|0|0;Townsend|11|6|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "unlv-2026-11-14",
+  "team": "UNLV",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Home",
+  "score": "76-68",
+  "result": "W",
+  "top": "Miles 17 pts, 3 reb",
+  "note": "",
+  "leaders": "Miles|17|3|2;Jones|16|6|2;Mack|15|5|5",
+  "source": "ESPN"
  }
 ]
