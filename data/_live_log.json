@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:19:18+01:00",
+ "at": "2026-11-14T03:20:10+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -55,12 +55,12 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:13",
+   "clock": "13:20",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     10,
+     12,
      16
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:34",
+   "clock": "12:11",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     22,
+     26,
      15
     ]
    ]
@@ -106,7 +106,7 @@
    "teams": [
     [
      "Xavier Musketeers",
-     7,
+     8,
      17
     ],
     [
