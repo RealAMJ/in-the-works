@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:50:00+01:00",
+ "at": "2026-11-14T19:50:31+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,7 +9,7 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:03",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:29",
+   "clock": "01:26",
    "done": false,
    "teams": [
     [
