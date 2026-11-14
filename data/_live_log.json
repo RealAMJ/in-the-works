@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:20:10+01:00",
+ "at": "2026-11-14T03:21:01+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,7 +9,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 3,
-   "clock": "01:43",
+   "clock": "01:31",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:11",
+   "clock": "11:58",
    "done": false,
    "teams": [
     [
@@ -101,17 +101,17 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:35",
+   "clock": "15:16",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     8,
+     9,
      17
     ],
     [
      "Mississippi State Bulldogs",
-     4,
+     6,
      16
     ]
    ]
