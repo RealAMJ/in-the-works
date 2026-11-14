@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:25:46+01:00",
+ "at": "2026-11-14T19:26:38+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,17 +9,17 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:03",
+   "clock": "08:14",
    "done": false,
    "teams": [
     [
      "Drexel Dragons",
-     19,
+     21,
      15
     ],
     [
      "Maine Black Bears",
-     15,
+     18,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:19",
+   "clock": "08:32",
    "done": false,
    "teams": [
     [
      "Marshall Thundering Herd",
-     16,
+     20,
      15
     ],
     [
