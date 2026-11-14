@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T22:36:56+01:00",
+ "at": "2026-11-14T22:37:46+01:00",
  "log": [
   {
    "game": "g20261114denv",
@@ -9,12 +9,12 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:59",
+   "clock": "04:00",
    "done": false,
    "teams": [
     [
      "Wyoming Cowboys",
-     67,
+     71,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261114dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:39",
+   "clock": "03:52",
    "done": false,
    "teams": [
     [
      "Delaware State Hornets",
-     13,
+     16,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:11",
+   "clock": "05:58",
    "done": false,
    "teams": [
     [
