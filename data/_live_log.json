@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T22:46:23+01:00",
+ "at": "2026-11-14T22:47:13+01:00",
  "log": [
   {
    "game": "g20261114denv",
@@ -9,7 +9,7 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:36",
+   "clock": "01:17",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261114dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:31",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:37",
+   "clock": "02:33",
    "done": false,
    "teams": [
     [
      "Montreat Cavaliers",
-     21,
+     24,
      41
     ],
     [
      "UNC Wilmington Seahawks",
-     45,
+     49,
      15
     ]
    ]
