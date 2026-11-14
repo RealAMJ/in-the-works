@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:48:13+01:00",
+ "at": "2026-11-14T03:49:05+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Cleveland Cavaliers",
-     76,
+     79,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:09",
+   "clock": "00:44",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     55,
+     58,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:06",
+   "clock": "03:54",
    "done": false,
    "teams": [
     [
