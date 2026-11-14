@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T01:23:27+01:00",
+ "at": "2026-11-14T01:24:18+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,12 +9,12 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:30",
+   "clock": "08:49",
    "done": false,
    "teams": [
     [
      "Mary Baldwin Fighting Squirrels",
-     10,
+     12,
      18
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:46",
+   "clock": "12:14",
    "done": false,
    "teams": [
     [
