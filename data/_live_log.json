@@ -1,29 +1,6 @@
 {
- "at": "2026-11-14T21:21:14+01:00",
+ "at": "2026-11-14T21:22:03+01:00",
  "log": [
-  {
-   "game": "g20261115youn",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261115youn",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Marshall Thundering Herd",
-     71,
-     15
-    ],
-    [
-     "Youngstown State Penguins",
-     74,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261114denv",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:34",
+   "clock": "11:19",
    "done": false,
    "teams": [
     [
