@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:24:02+01:00",
+ "at": "2026-11-14T03:24:54+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,7 +9,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 3,
-   "clock": "00:21",
+   "clock": "00:09",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:53",
+   "clock": "12:31",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:51",
+   "clock": "10:16",
    "done": false,
    "teams": [
     [
      "Corban Warriors",
-     9,
+     11,
      14
     ],
     [
      "Eastern Washington Eagles",
-     29,
+     33,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:57",
+   "clock": "13:09",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     8,
+     10,
      16
     ]
    ]
