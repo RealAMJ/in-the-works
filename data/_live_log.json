@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:14:39+01:00",
+ "at": "2026-11-14T03:15:30+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,12 +9,12 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 3,
-   "clock": "04:58",
+   "clock": "04:24",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     51,
+     53,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:33",
+   "clock": "14:50",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     13,
+     15,
      15
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:05",
+   "clock": "16:34",
    "done": false,
    "teams": [
     [
