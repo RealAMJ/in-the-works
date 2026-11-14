@@ -60539,7 +60539,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60560,7 +60560,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60581,7 +60581,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60602,7 +60602,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60623,11 +60623,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-21",
+  "row_id": "g20261114uncw-0-5",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Jace Ramirez",
@@ -60644,11 +60644,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-22",
+  "row_id": "g20261114uncw-0-6",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Dyllan Barnwell",
@@ -60665,11 +60665,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-24",
+  "row_id": "g20261114uncw-0-7",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Lawrence Cole",
@@ -60686,11 +60686,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-36",
+  "row_id": "g20261114uncw-0-8",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Jonathan Hines",
@@ -60707,11 +60707,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-37",
+  "row_id": "g20261114uncw-0-9",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Ricardo Gomez",
@@ -60728,11 +60728,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-38",
+  "row_id": "g20261114uncw-0-10",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Lucas Mouawad",
@@ -60749,11 +60749,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-39",
+  "row_id": "g20261114uncw-0-11",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Alex Johnson",
@@ -60770,11 +60770,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-0-40",
+  "row_id": "g20261114uncw-0-12",
   "game_id": "g20261114uncw",
   "team": "Montreat",
   "player": "Amaree Gartrell",
@@ -60791,7 +60791,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60812,7 +60812,7 @@
   "ft": "2/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60833,7 +60833,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60854,7 +60854,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60875,7 +60875,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60896,7 +60896,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60917,7 +60917,7 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -60938,11 +60938,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-1-9",
+  "row_id": "g20261114uncw-1-7",
   "game_id": "g20261114uncw",
   "team": "UNC Wilmington",
   "player": "Kellum Brown",
@@ -60959,11 +60959,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-1-11",
+  "row_id": "g20261114uncw-1-8",
   "game_id": "g20261114uncw",
   "team": "UNC Wilmington",
   "player": "Tahlan Pettway",
@@ -60980,11 +60980,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-1-12",
+  "row_id": "g20261114uncw-1-9",
   "game_id": "g20261114uncw",
   "team": "UNC Wilmington",
   "player": "Makel Smith",
@@ -61001,11 +61001,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114uncw-1-14",
+  "row_id": "g20261114uncw-1-10",
   "game_id": "g20261114uncw",
   "team": "UNC Wilmington",
   "player": "Jahnathan Lamothe",
@@ -61022,7 +61022,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]

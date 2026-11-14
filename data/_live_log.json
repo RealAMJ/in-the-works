@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T23:58:44+01:00",
+ "at": "2026-11-14T23:59:34+01:00",
  "log": [
   {
    "game": "g20261114uncw",
@@ -8,9 +8,9 @@
   {
    "game": "g20261114uncw",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Montreat Cavaliers",
