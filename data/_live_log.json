@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:23:17+01:00",
+ "at": "2026-11-14T02:24:10+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,7 +9,7 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:11",
+   "clock": "09:25",
    "done": false,
    "teams": [
     [
@@ -30,22 +30,7 @@
   },
   {
    "game": "g20261114iona",
-   "src": "ESPN",
-   "period": 2,
-   "clock": "14:34",
-   "done": false,
-   "teams": [
-    [
-     "Iona Gaels",
-     32,
-     17
-    ],
-    [
-     "Hofstra Pride",
-     35,
-     15
-    ]
-   ]
+   "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011)>"
   },
   {
    "game": "g20261114miam",
@@ -55,7 +40,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:27",
+   "clock": "05:52",
    "done": false,
    "teams": [
     [
@@ -65,7 +50,7 @@
     ],
     [
      "Miami Heat",
-     14,
+     16,
      15
     ]
    ]
