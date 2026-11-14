@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T23:38:34+01:00",
+ "at": "2026-11-14T23:39:27+01:00",
  "log": [
   {
    "game": "g20261114dela",
@@ -9,7 +9,7 @@
    "game": "g20261114dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:59",
+   "clock": "04:03",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "East Carolina Pirates",
-     62,
+     66,
      14
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:39",
+   "clock": "07:01",
    "done": false,
    "teams": [
     [
      "Montreat Cavaliers",
-     35,
+     37,
      41
     ],
     [
