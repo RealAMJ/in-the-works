@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:36:48+01:00",
+ "at": "2026-11-14T04:37:40+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:52",
+   "clock": "11:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "UNLV Rebels",
-     49,
+     51,
      14
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:19",
+   "clock": "09:06",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     87,
+     89,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:50",
+   "clock": "13:58",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     38,
+     41,
      16
     ]
    ]
