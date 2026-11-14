@@ -56568,7 +56568,7 @@
   "fg": "5/8",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -56622,7 +56622,7 @@
   "player": "Bam Adebayo",
   "pos": "",
   "min": 28,
-  "pts": 25,
+  "pts": 26,
   "reb": 9,
   "ast": 2,
   "stl": 0,
@@ -56630,8 +56630,8 @@
   "tov": 0,
   "fg": "9/13",
   "three": "2/2",
-  "ft": "5/6",
-  "pm": 16,
+  "ft": "6/7",
+  "pm": 17,
   "swede": false,
   "state": "live",
   "source": "ESPN"
