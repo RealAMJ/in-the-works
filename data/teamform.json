@@ -6718,5 +6718,33 @@
   "note": "",
   "leaders": "Pagonis|14|7|1;Abram|13|4|4;Lorenzano-White|11|1|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "class-sant-antoni-2026-11-14",
+  "team": "Class Sant Antoni",
+  "date": "2026-11-14",
+  "competition": "Segunda FEB",
+  "opponent": "Molina Basket",
+  "venue": "Home",
+  "score": "90-48",
+  "result": "W",
+  "top": "Johnson 16 pts, 4 reb",
+  "note": "",
+  "leaders": "Johnson|16|4|3;Johnson|15|5|0;Barral|15|5|0",
+  "source": "FEB Live"
+ },
+ {
+  "row_id": "molina-basket-2026-11-14",
+  "team": "Molina Basket",
+  "date": "2026-11-14",
+  "competition": "Segunda FEB",
+  "opponent": "Class Sant Antoni",
+  "venue": "Away",
+  "score": "48-90",
+  "result": "L",
+  "top": "Kody 11 pts, 1 reb",
+  "note": "",
+  "leaders": "Kody|11|1|0;Martinez|9|5|0;Bramble|7|5|1;Solarin|7|5|1",
+  "source": "FEB Live"
  }
 ]
