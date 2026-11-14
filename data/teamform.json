@@ -6662,5 +6662,33 @@
   "note": "",
   "leaders": "Miles|17|3|2;Jones|16|6|2;Mack|15|5|5",
   "source": "ESPN"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-14",
+  "team": "Mississippi State",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Xavier",
+  "venue": "Home",
+  "score": "63-81",
+  "result": "L",
+  "top": "Hubbard 12 pts, 4 reb",
+  "note": "",
+  "leaders": "Hubbard|12|4|3;Johnson|11|2|2;Burnett|9|2|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "xavier-2026-11-14",
+  "team": "Xavier",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Away",
+  "score": "81-63",
+  "result": "W",
+  "top": "Washington 21 pts, 8 reb",
+  "note": "",
+  "leaders": "Washington|21|8|4;Milicevic|12|3|0;Chitikoudis|11|6|1",
+  "source": "ESPN"
  }
 ]
