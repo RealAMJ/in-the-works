@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:06:15+01:00",
+ "at": "2026-11-14T03:06:43+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -19,7 +19,7 @@
     ],
     [
      "Hofstra Pride",
-     48,
+     49,
      15
     ]
    ]
@@ -54,19 +54,19 @@
   {
    "game": "g20261114stan",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:45",
    "done": false,
    "teams": [
     [
-     "UNLV Rebels",
-     0,
-     0
-    ],
-    [
      "Stanford Cardinal",
      0,
-     0
+     16
+    ],
+    [
+     "UNLV Rebels",
+     0,
+     14
     ]
    ]
   },
