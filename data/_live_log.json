@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:35:05+01:00",
+ "at": "2026-11-14T02:35:56+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     62,
+     64,
      17
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:40",
+   "clock": "01:20",
    "done": false,
    "teams": [
     [
      "Cleveland Cavaliers",
-     22,
+     23,
      12
     ],
     [
      "Miami Heat",
-     20,
+     22,
      15
     ]
    ]
