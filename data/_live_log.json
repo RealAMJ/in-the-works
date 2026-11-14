@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T01:10:15+01:00",
+ "at": "2026-11-14T01:11:05+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,7 +9,7 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:08",
+   "clock": "16:43",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     5,
+     6,
      17
     ]
    ]
@@ -31,19 +31,19 @@
   {
    "game": "g20261114iona",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:12",
    "done": false,
    "teams": [
     [
-     "Hofstra Pride",
-     0,
-     0
-    ],
-    [
      "Iona Gaels",
      0,
-     0
+     17
+    ],
+    [
+     "Hofstra Pride",
+     2,
+     15
     ]
    ]
   }
