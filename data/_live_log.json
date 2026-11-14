@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T01:26:30+01:00",
+ "at": "2026-11-14T01:27:21+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,7 +9,7 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:49",
+   "clock": "08:34",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:08",
+   "clock": "10:33",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Hofstra Pride",
-     9,
+     12,
      15
     ]
    ]
