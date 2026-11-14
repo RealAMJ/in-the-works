@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T00:44:09+01:00",
+ "at": "2026-11-15T00:44:59+01:00",
  "log": [
-  {
-   "game": "g20261115uncw",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261115uncw",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Louisiana Ragin' Cajuns",
-     0,
-     0
-    ],
-    [
-     "UNC Wilmington Seahawks",
-     0,
-     0
-    ]
-   ]
-  },
   {
    "game": "g20261115lips",
    "checking": "ESPN"
