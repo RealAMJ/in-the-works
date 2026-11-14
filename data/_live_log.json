@@ -1,29 +1,6 @@
 {
- "at": "2026-11-14T23:57:29+01:00",
+ "at": "2026-11-14T23:57:55+01:00",
  "log": [
-  {
-   "game": "g20261114dela",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261114dela",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Delaware State Hornets",
-     48,
-     15
-    ],
-    [
-     "East Carolina Pirates",
-     72,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261114uncw",
    "checking": "ESPN"

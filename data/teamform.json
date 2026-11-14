@@ -6802,5 +6802,33 @@
   "note": "",
   "leaders": "Gores|15|0|1;Meyer|13|5|4;Gerrits|13|6|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "delaware-state-2026-11-14",
+  "team": "Delaware State",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "East Carolina",
+  "venue": "Away",
+  "score": "48-72",
+  "result": "L",
+  "top": "Reedus 10 pts, 10 reb",
+  "note": "",
+  "leaders": "Reedus|10|10|2;Ekukwai|8|3|0;Parker|8|7|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "east-carolina-2026-11-14",
+  "team": "East Carolina",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Delaware State",
+  "venue": "Home",
+  "score": "72-48",
+  "result": "W",
+  "top": "Blaine 22 pts, 4 reb",
+  "note": "",
+  "leaders": "Blaine|22|4|1;Cooper|11|8|2;Klitschko|8|4|1;Best|8|1|0",
+  "source": "ESPN"
  }
 ]
