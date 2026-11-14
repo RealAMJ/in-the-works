@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:31:58+01:00",
+ "at": "2026-11-14T04:32:50+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -9,7 +9,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 4,
-   "clock": "01:21",
+   "clock": "01:18",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:58",
+   "clock": "12:38",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:03",
+   "clock": "15:55",
    "done": false,
    "teams": [
     [
