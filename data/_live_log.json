@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:34:47+01:00",
+ "at": "2026-11-14T19:35:39+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,12 +9,12 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:26",
+   "clock": "05:10",
    "done": false,
    "teams": [
     [
      "Drexel Dragons",
-     23,
+     25,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:03",
+   "clock": "06:48",
    "done": false,
    "teams": [
     [
