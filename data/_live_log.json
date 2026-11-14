@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:29:54+01:00",
+ "at": "2026-11-14T02:30:46+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,12 +9,12 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:23",
+   "clock": "07:18",
    "done": false,
    "teams": [
     [
      "Mary Baldwin Fighting Squirrels",
-     35,
+     36,
      18
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:00",
+   "clock": "11:27",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     34,
+     39,
      17
     ],
     [
