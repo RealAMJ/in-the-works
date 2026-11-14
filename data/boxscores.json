@@ -2830,28 +2830,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261114stan-price",
-  "game_id": "g20261114stan",
-  "player": "Julius Price",
-  "min": 31,
-  "pts": 14,
-  "reb": 0,
-  "ast": 0,
-  "fg": "4/12",
-  "three": "2/4",
-  "ft": "4/5",
-  "pm": "",
-  "source": "ESPN",
-  "note": "live",
-  "oreb": 0,
-  "dreb": 0,
-  "stl": 0,
-  "blk": 0,
-  "tov": 3,
-  "pf": 1,
-  "eff": ""
- },
- {
   "line_id": "g20261114east-homelius",
   "game_id": "g20261114east",
   "player": "Isak Homelius",
@@ -2871,6 +2849,28 @@
   "blk": 0,
   "tov": 0,
   "pf": 0,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261114stan-price",
+  "game_id": "g20261114stan",
+  "player": "Julius Price",
+  "min": 31,
+  "pts": 14,
+  "reb": 0,
+  "ast": 0,
+  "fg": "4/12",
+  "three": "2/4",
+  "ft": "4/5",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 3,
+  "pf": 1,
   "eff": ""
  }
 ]

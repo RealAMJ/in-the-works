@@ -6606,5 +6606,33 @@
   "note": "",
   "leaders": "Mitchell|25|4|7;Proctor|22|4|3;Harden|20|6|8",
   "source": "ESPN"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-14",
+  "team": "Eastern Washington",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Corban",
+  "venue": "Home",
+  "score": "102-68",
+  "result": "W",
+  "top": "Homelius 20 pts, 2 reb",
+  "note": "",
+  "leaders": "Homelius|20|2|1;Scherer|15|4|5;Miller|14|3|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "corban-2026-11-14",
+  "team": "Corban",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Away",
+  "score": "68-102",
+  "result": "L",
+  "top": "Harris 19 pts, 5 reb",
+  "note": "",
+  "leaders": "Harris|19|5|1;Zook|10|1|0;Zimmermann|9|3|3",
+  "source": "ESPN"
  }
 ]
