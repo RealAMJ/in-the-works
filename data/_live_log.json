@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:36:30+01:00",
+ "at": "2026-11-14T19:37:21+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,7 +9,7 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:10",
+   "clock": "04:08",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Maine Black Bears",
-     22,
+     24,
      15
     ]
    ]
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Marshall Thundering Herd",
-     20,
+     22,
      15
     ],
     [
      "Youngstown State Penguins",
-     21,
+     19,
      14
     ]
    ]
