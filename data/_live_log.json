@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:27:56+01:00",
+ "at": "2026-11-14T19:28:46+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -9,17 +9,17 @@
    "game": "g20261114main",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:14",
+   "clock": "07:52",
    "done": false,
    "teams": [
     [
      "Drexel Dragons",
-     22,
+     24,
      15
     ],
     [
      "Maine Black Bears",
-     18,
+     20,
      15
     ]
    ]
@@ -42,7 +42,7 @@
     ],
     [
      "Youngstown State Penguins",
-     15,
+     18,
      14
     ]
    ]
