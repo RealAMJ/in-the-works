@@ -2767,7 +2767,7 @@
   "line_id": "g20261113vmi-jucevicius",
   "game_id": "g20261113vmi",
   "player": "Rodrigas Jucevicius",
-  "min": 18,
+  "min": 19,
   "pts": 5,
   "reb": 5,
   "ast": 2,
@@ -2781,7 +2781,7 @@
   "dreb": 5,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 0,
   "eff": ""
  },
