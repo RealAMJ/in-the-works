@@ -2171,8 +2171,11 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "L 0-0",
+  "espn_id": "401926864",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926864",
+  "live_done": true
  },
  {
   "game_id": "g20261115lips",
@@ -2185,7 +2188,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401920705",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920705"
  },
  {
   "game_id": "g20261115wich",
@@ -2198,7 +2203,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401917951",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401917951"
  },
  {
   "game_id": "g20261115miam",
