@@ -1,29 +1,6 @@
 {
- "at": "2026-11-14T22:49:23+01:00",
+ "at": "2026-11-14T22:50:14+01:00",
  "log": [
-  {
-   "game": "g20261114denv",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261114denv",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Wyoming Cowboys",
-     76,
-     15
-    ],
-    [
-     "Denver Pioneers",
-     53,
-     14
-    ]
-   ]
-  },
   {
    "game": "g20261114dela",
    "checking": "ESPN"
@@ -55,7 +32,7 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:53",
+   "clock": "01:21",
    "done": false,
    "teams": [
     [
@@ -65,7 +42,7 @@
     ],
     [
      "UNC Wilmington Seahawks",
-     52,
+     54,
      15
     ]
    ]
