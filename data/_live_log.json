@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T23:54:12+01:00",
+ "at": "2026-11-14T23:55:01+01:00",
  "log": [
   {
    "game": "g20261114dela",
@@ -32,17 +32,17 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:18",
+   "clock": "00:35",
    "done": false,
    "teams": [
     [
      "Montreat Cavaliers",
-     39,
+     41,
      41
     ],
     [
      "UNC Wilmington Seahawks",
-     97,
+     100,
      15
     ]
    ]
