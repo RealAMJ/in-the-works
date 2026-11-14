@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:39:51+01:00",
+ "at": "2026-11-14T02:40:43+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,12 +9,12 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:26",
+   "clock": "02:33",
    "done": false,
    "teams": [
     [
      "Mary Baldwin Fighting Squirrels",
-     44,
+     47,
      18
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:31",
+   "clock": "09:17",
    "done": false,
    "teams": [
     [
@@ -67,6 +67,75 @@
      "Miami Heat",
      29,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261114stan",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261114stan",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "UNLV Rebels",
+     0,
+     0
+    ],
+    [
+     "Stanford Cardinal",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261114east",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261114east",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Eastern Washington Eagles",
+     0,
+     0
+    ],
+    [
+     "Corban Warriors",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "c20261114msu",
+   "checking": "ESPN"
+  },
+  {
+   "game": "c20261114msu",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Mississippi State Bulldogs",
+     0,
+     0
+    ],
+    [
+     "Xavier Musketeers",
+     0,
+     0
     ]
    ]
   }

@@ -247,7 +247,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401906794",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401906794"
  },
  {
   "game_id": "c20261114ora",
