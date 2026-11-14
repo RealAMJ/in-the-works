@@ -6830,5 +6830,33 @@
   "note": "",
   "leaders": "Blaine|22|4|1;Cooper|11|8|2;Klitschko|8|4|1;Best|8|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "unc-wilmington-2026-11-14",
+  "team": "UNC Wilmington",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Montreat",
+  "venue": "Home",
+  "score": "100-41",
+  "result": "W",
+  "top": "Pettway 19 pts, 4 reb",
+  "note": "",
+  "leaders": "Pettway|19|4|5;Luster|16|6|1;Lamothe|15|7|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "montreat-2026-11-14",
+  "team": "Montreat",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "UNC Wilmington",
+  "venue": "Away",
+  "score": "41-100",
+  "result": "L",
+  "top": "Johnson 11 pts, 3 reb",
+  "note": "",
+  "leaders": "Johnson|11|3|2;Jones|10|1|0;Sanders|5|5|3;Cole|5|4|1",
+  "source": "ESPN"
  }
 ]
