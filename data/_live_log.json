@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:53:29+01:00",
+ "at": "2026-11-14T03:54:20+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -9,17 +9,17 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "02:29",
+   "clock": "01:42",
    "done": false,
    "teams": [
     [
      "Cleveland Cavaliers",
-     81,
+     84,
      12
     ],
     [
      "Miami Heat",
-     85,
+     86,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:50",
+   "clock": "01:54",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     22,
+     24,
      16
     ],
     [
@@ -78,17 +78,17 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:54",
+   "clock": "03:28",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     28,
+     31,
      17
     ],
     [
      "Mississippi State Bulldogs",
-     25,
+     27,
      16
     ]
    ]
