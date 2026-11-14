@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T21:05:05+01:00",
+ "at": "2026-11-14T21:05:57+01:00",
  "log": [
   {
    "game": "g20261115youn",
@@ -9,12 +9,12 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:12",
+   "clock": "01:49",
    "done": false,
    "teams": [
     [
      "Marshall Thundering Herd",
-     67,
+     68,
      15
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:16",
+   "clock": "17:12",
    "done": false,
    "teams": [
     [
      "Wyoming Cowboys",
-     3,
+     5,
      15
     ],
     [
      "Denver Pioneers",
-     2,
+     4,
      14
     ]
    ]
