@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:51:25+01:00",
+ "at": "2026-11-14T02:52:18+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -8,9 +8,9 @@
   {
    "game": "g20261113vmi",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Mary Baldwin Fighting Squirrels",
@@ -42,7 +42,7 @@
     ],
     [
      "Hofstra Pride",
-     43,
+     44,
      15
     ]
    ]

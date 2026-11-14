@@ -55415,7 +55415,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55436,7 +55436,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55457,7 +55457,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55478,7 +55478,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55499,7 +55499,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55520,7 +55520,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55541,7 +55541,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55562,7 +55562,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55583,7 +55583,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55604,7 +55604,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55625,7 +55625,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55646,7 +55646,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55667,7 +55667,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55688,7 +55688,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55709,7 +55709,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55730,7 +55730,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55751,7 +55751,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55772,7 +55772,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55793,7 +55793,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55814,7 +55814,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55835,7 +55835,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55856,7 +55856,7 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -55877,11 +55877,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261113vmi-1-10",
+  "row_id": "g20261113vmi-1-9",
   "game_id": "g20261113vmi",
   "team": "VMI",
   "player": "Rodrigas Jucevicius",
@@ -55898,11 +55898,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261113vmi-1-11",
+  "row_id": "g20261113vmi-1-10",
   "game_id": "g20261113vmi",
   "team": "VMI",
   "player": "Rokas Zilys",
@@ -55919,11 +55919,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261113vmi-1-12",
+  "row_id": "g20261113vmi-1-11",
   "game_id": "g20261113vmi",
   "team": "VMI",
   "player": "Cazell Henderson-Bradley",
@@ -55940,7 +55940,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -56244,7 +56244,7 @@
   "player": "Justin Moore",
   "pos": "",
   "min": 29,
-  "pts": 11,
+  "pts": 12,
   "reb": 0,
   "ast": 7,
   "stl": 1,
@@ -56252,7 +56252,7 @@
   "tov": 1,
   "fg": "5/13",
   "three": "1/5",
-  "ft": "0/0",
+  "ft": "1/1",
   "pm": "",
   "swede": false,
   "state": "live",
