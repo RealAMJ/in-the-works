@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T21:16:38+01:00",
+ "at": "2026-11-14T21:17:28+01:00",
  "log": [
   {
    "game": "g20261115youn",
@@ -32,7 +32,7 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:49",
+   "clock": "12:25",
    "done": false,
    "teams": [
     [
@@ -44,29 +44,6 @@
      "Denver Pioneers",
      8,
      14
-    ]
-   ]
-  },
-  {
-   "game": "c20261114san",
-   "checking": "FEB Live"
-  },
-  {
-   "game": "c20261114san",
-   "src": "FEB Live",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "CLASS BASQUET SANT ANTONI",
-     90,
-     10
-    ],
-    [
-     "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
-     48,
-     12
     ]
    ]
   }
