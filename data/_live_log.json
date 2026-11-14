@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:27:43+01:00",
+ "at": "2026-11-14T04:28:09+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:50",
+   "clock": "14:36",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:24",
+   "clock": "12:58",
    "done": false,
    "teams": [
     [
      "Corban Warriors",
-     44,
+     46,
      14
     ],
     [
      "Eastern Washington Eagles",
-     74,
+     76,
      15
     ]
    ]
