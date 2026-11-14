@@ -1,29 +1,6 @@
 {
- "at": "2026-11-14T20:59:54+01:00",
+ "at": "2026-11-14T21:00:23+01:00",
  "log": [
-  {
-   "game": "g20261114main",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261114main",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Drexel Dragons",
-     66,
-     15
-    ],
-    [
-     "Maine Black Bears",
-     64,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261115youn",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:23",
+   "clock": "02:47",
    "done": false,
    "teams": [
     [

@@ -6690,5 +6690,33 @@
   "note": "",
   "leaders": "Washington|21|8|4;Milicevic|12|3|0;Chitikoudis|11|6|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "maine-2026-11-14",
+  "team": "Maine",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Drexel",
+  "venue": "Home",
+  "score": "64-66",
+  "result": "L",
+  "top": "Franz 16 pts, 5 reb",
+  "note": "",
+  "leaders": "Franz|16|5|0;Lopes|15|2|1;Flagg|12|5|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "drexel-2026-11-14",
+  "team": "Drexel",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Away",
+  "score": "66-64",
+  "result": "W",
+  "top": "Pagonis 14 pts, 7 reb",
+  "note": "",
+  "leaders": "Pagonis|14|7|1;Abram|13|4|4;Lorenzano-White|11|1|1",
+  "source": "ESPN"
  }
 ]
