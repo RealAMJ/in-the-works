@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:33:42+01:00",
+ "at": "2026-11-14T04:34:34+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,12 +32,12 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:14",
+   "clock": "11:52",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     45,
+     46,
      16
     ],
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Corban Warriors",
-     49,
+     51,
      14
     ],
     [
