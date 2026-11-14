@@ -59006,7 +59006,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59027,7 +59027,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59048,7 +59048,7 @@
   "ft": "6/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59069,7 +59069,7 @@
   "ft": "7/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59090,7 +59090,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59111,7 +59111,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59132,7 +59132,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59153,7 +59153,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59174,11 +59174,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-0-11",
+  "row_id": "g20261115youn-0-9",
   "game_id": "g20261115youn",
   "team": "Marshall",
   "player": "Alex Charlotin",
@@ -59195,11 +59195,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-0-12",
+  "row_id": "g20261115youn-0-10",
   "game_id": "g20261115youn",
   "team": "Marshall",
   "player": "Fazl Oshodi",
@@ -59216,11 +59216,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-0-14",
+  "row_id": "g20261115youn-0-11",
   "game_id": "g20261115youn",
   "team": "Marshall",
   "player": "DeMarco Johnson",
@@ -59237,7 +59237,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59258,7 +59258,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59279,7 +59279,7 @@
   "ft": "5/11",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59300,7 +59300,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59321,7 +59321,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -59342,11 +59342,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-1-7",
+  "row_id": "g20261115youn-1-5",
   "game_id": "g20261115youn",
   "team": "Youngstown State",
   "player": "Japhet Moupadele",
@@ -59363,11 +59363,11 @@
   "ft": "6/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-1-10",
+  "row_id": "g20261115youn-1-6",
   "game_id": "g20261115youn",
   "team": "Youngstown State",
   "player": "Kaelen Destin",
@@ -59384,11 +59384,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-1-11",
+  "row_id": "g20261115youn-1-7",
   "game_id": "g20261115youn",
   "team": "Youngstown State",
   "player": "Jayden Tyler",
@@ -59405,11 +59405,11 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115youn-1-12",
+  "row_id": "g20261115youn-1-8",
   "game_id": "g20261115youn",
   "team": "Youngstown State",
   "player": "Jamar Livingston",
@@ -59426,7 +59426,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
