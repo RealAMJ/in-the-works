@@ -2856,12 +2856,12 @@
   "game_id": "g20261114stan",
   "player": "Julius Price",
   "min": 34,
-  "pts": 14,
+  "pts": 16,
   "reb": 0,
   "ast": 0,
   "fg": "4/14",
   "three": "2/5",
-  "ft": "4/5",
+  "ft": "6/7",
   "pm": "",
   "source": "ESPN",
   "note": "live",
@@ -2870,7 +2870,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  }
 ]
