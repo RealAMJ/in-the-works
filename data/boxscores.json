@@ -2742,28 +2742,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261114iona-fall",
-  "game_id": "g20261114iona",
-  "player": "Alliou Fall",
-  "min": 9,
-  "pts": 4,
-  "reb": 2,
-  "ast": 0,
-  "fg": "2/2",
-  "three": "0/0",
-  "ft": "0/0",
-  "pm": "",
-  "source": "ESPN",
-  "note": "live",
-  "oreb": 1,
-  "dreb": 1,
-  "stl": 0,
-  "blk": 1,
-  "tov": 2,
-  "pf": 1,
-  "eff": ""
- },
- {
   "line_id": "g20261113vmi-vaamonde",
   "game_id": "g20261113vmi",
   "player": "Zion Vaamonde",
@@ -2805,6 +2783,28 @@
   "blk": 0,
   "tov": 1,
   "pf": 0,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261114iona-fall",
+  "game_id": "g20261114iona",
+  "player": "Alliou Fall",
+  "min": 9,
+  "pts": 4,
+  "reb": 2,
+  "ast": 0,
+  "fg": "2/2",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 1,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 1,
+  "tov": 2,
+  "pf": 1,
   "eff": ""
  }
 ]
