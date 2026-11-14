@@ -1,29 +1,6 @@
 {
- "at": "2026-11-14T04:46:19+01:00",
+ "at": "2026-11-14T04:47:10+01:00",
  "log": [
-  {
-   "game": "g20261114miam",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261114miam",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Cleveland Cavaliers",
-     121,
-     12
-    ],
-    [
-     "Miami Heat",
-     133,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261114stan",
    "checking": "ESPN"
@@ -55,7 +32,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:13",
+   "clock": "05:46",
    "done": false,
    "teams": [
     [
@@ -78,12 +55,12 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:38",
+   "clock": "12:03",
    "done": false,
    "teams": [
     [
      "Xavier Musketeers",
-     57,
+     59,
      17
     ],
     [
