@@ -6550,5 +6550,33 @@
   "note": "",
   "leaders": "Sutherland|13|2|2;Via|11|5|1;Vagaia|7|7|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "iona-2026-11-14",
+  "team": "Iona",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Hofstra",
+  "venue": "Away",
+  "score": "59-62",
+  "result": "L",
+  "top": "Vanderhorst 15 pts, 5 reb",
+  "note": "",
+  "leaders": "Vanderhorst|15|5|0;Jungers|12|3|1;Odutayo|9|8|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "hofstra-2026-11-14",
+  "team": "Hofstra",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Home",
+  "score": "62-59",
+  "result": "W",
+  "top": "Moore 22 pts, 1 reb",
+  "note": "",
+  "leaders": "Moore|22|1|8;Thomas|17|7|2;Jefferson|6|5|2",
+  "source": "ESPN"
  }
 ]

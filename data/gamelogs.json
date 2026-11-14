@@ -6518,5 +6518,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "fall-2026-11-14",
+  "player": "Alliou Fall",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "team": "Iona",
+  "opponent": "Hofstra",
+  "venue": "Away",
+  "result": "L 59-62",
+  "min": 20,
+  "pts": 5,
+  "reb": 4,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/2",
+  "three": "0/0",
+  "ft": "1/3",
+  "oreb": 2,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 2,
+  "tov": 3,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
