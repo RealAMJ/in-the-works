@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T21:24:10+01:00",
+ "at": "2026-11-14T21:25:01+01:00",
  "log": [
   {
    "game": "g20261114denv",
@@ -9,17 +9,17 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:23",
+   "clock": "09:37",
    "done": false,
    "teams": [
     [
      "Wyoming Cowboys",
-     12,
+     14,
      15
     ],
     [
      "Denver Pioneers",
-     11,
+     13,
      14
     ]
    ]
