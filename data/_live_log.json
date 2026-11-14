@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:51:30+01:00",
+ "at": "2026-11-14T04:52:21+01:00",
  "log": [
   {
    "game": "g20261114stan",
@@ -9,17 +9,17 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:11",
+   "clock": "06:03",
    "done": false,
    "teams": [
     [
      "Stanford Cardinal",
-     55,
+     57,
      16
     ],
     [
      "UNLV Rebels",
-     63,
+     64,
      14
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:40",
+   "clock": "11:17",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     44,
+     45,
      16
     ]
    ]
