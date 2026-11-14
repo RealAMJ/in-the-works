@@ -6774,5 +6774,33 @@
   "note": "",
   "leaders": "Otshudi|28|5|4;Slay|21|4|1;Oshodi|8|0|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "denver-2026-11-14",
+  "team": "Denver",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Wyoming",
+  "venue": "Home",
+  "score": "53-76",
+  "result": "L",
+  "top": "Martin 17 pts, 3 reb",
+  "note": "",
+  "leaders": "Martin|17|3|0;Nelson|8|0|0;Wysocki|7|2|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "wyoming-2026-11-14",
+  "team": "Wyoming",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "opponent": "Denver",
+  "venue": "Away",
+  "score": "76-53",
+  "result": "W",
+  "top": "Gores 15 pts, 0 reb",
+  "note": "",
+  "leaders": "Gores|15|0|1;Meyer|13|5|4;Gerrits|13|6|1",
+  "source": "ESPN"
  }
 ]

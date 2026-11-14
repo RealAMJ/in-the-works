@@ -6622,5 +6622,31 @@
   "pf": 4,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "stumer-2026-11-14",
+  "player": "Oskar Stumer",
+  "date": "2026-11-14",
+  "competition": "NCAA",
+  "team": "Denver",
+  "opponent": "Wyoming",
+  "venue": "Home",
+  "result": "L 53-76",
+  "min": 20,
+  "pts": 5,
+  "reb": 8,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/3",
+  "three": "0/1",
+  "ft": "1/2",
+  "oreb": 4,
+  "dreb": 4,
+  "stl": 0,
+  "blk": 1,
+  "tov": 0,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
