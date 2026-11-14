@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T22:08:37+01:00",
+ "at": "2026-11-14T22:09:27+01:00",
  "log": [
   {
    "game": "g20261114denv",
@@ -9,17 +9,17 @@
    "game": "g20261114denv",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:41",
+   "clock": "15:32",
    "done": false,
    "teams": [
     [
      "Wyoming Cowboys",
-     40,
+     42,
      15
     ],
     [
      "Denver Pioneers",
-     30,
+     32,
      14
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261114dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:39",
+   "clock": "16:09",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261114uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:54",
+   "clock": "18:03",
    "done": false,
    "teams": [
     [
      "Montreat Cavaliers",
-     0,
+     3,
      41
     ],
     [
