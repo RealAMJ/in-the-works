@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:09:23+01:00",
+ "at": "2026-11-14T03:10:15+01:00",
  "log": [
   {
    "game": "g20261114iona",
@@ -9,7 +9,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:06",
+   "clock": "00:29",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Hofstra Pride",
-     49,
+     51,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:44",
+   "clock": "00:28",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Miami Heat",
-     53,
+     54,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:10",
+   "clock": "17:48",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UNLV Rebels",
-     4,
+     6,
      14
     ]
    ]
@@ -88,7 +88,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     4,
+     6,
      15
     ]
    ]
