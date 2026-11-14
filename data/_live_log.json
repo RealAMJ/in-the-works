@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:46:31+01:00",
+ "at": "2026-11-14T19:47:23+01:00",
  "log": [
   {
    "game": "g20261114main",
@@ -32,17 +32,17 @@
    "game": "g20261115youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:40",
+   "clock": "02:36",
    "done": false,
    "teams": [
     [
      "Marshall Thundering Herd",
-     28,
+     32,
      15
     ],
     [
      "Youngstown State Penguins",
-     24,
+     26,
      14
     ]
    ]
