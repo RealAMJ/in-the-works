@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T01:01:07+01:00",
+ "at": "2026-11-14T01:05:36+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -8,19 +8,19 @@
   {
    "game": "g20261113vmi",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:52",
    "done": false,
    "teams": [
     [
-     "VMI Keydets",
-     0,
-     0
+     "Mary Baldwin Fighting Squirrels",
+     3,
+     18
     ],
     [
-     "Mary Baldwin Fighting Squirrels",
+     "VMI Keydets",
      0,
-     0
+     17
     ]
    ]
   },
