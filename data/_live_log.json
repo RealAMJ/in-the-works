@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:33:22+01:00",
+ "at": "2026-11-14T03:33:48+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:10",
+   "clock": "08:52",
    "done": false,
    "teams": [
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Corban Warriors",
-     14,
+     15,
      14
     ],
     [
@@ -78,7 +78,7 @@
    "game": "c20261114msu",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:42",
+   "clock": "10:18",
    "done": false,
    "teams": [
     [
