@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T03:39:25+01:00",
+ "at": "2026-11-14T03:40:17+01:00",
  "log": [
   {
    "game": "g20261114miam",
@@ -9,7 +9,7 @@
    "game": "g20261114miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "05:37",
+   "clock": "05:22",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     75,
+     78,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261114stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:42",
+   "clock": "06:12",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261114east",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:14",
+   "clock": "04:32",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Eastern Washington Eagles",
-     44,
+     46,
      15
     ]
    ]
