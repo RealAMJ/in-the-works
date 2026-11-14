@@ -2268,7 +2268,8 @@
   "competition": "LBA (Italy)",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "lba:25417"
  },
  {
   "game_id": "g20261115mich",
