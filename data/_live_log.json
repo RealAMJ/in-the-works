@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T01:11:05+01:00",
+ "at": "2026-11-14T01:11:56+01:00",
  "log": [
   {
    "game": "g20261113vmi",
@@ -9,7 +9,7 @@
    "game": "g20261113vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:43",
+   "clock": "16:19",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "VMI Keydets",
-     6,
+     8,
      17
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261114iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:12",
+   "clock": "18:43",
    "done": false,
    "teams": [
     [
