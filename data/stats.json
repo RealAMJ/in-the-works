@@ -484,24 +484,24 @@
   "player": "Rodrigas Jucevicius",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 2,
-  "min": 7.5,
-  "pts": 1.0,
-  "reb": 2.0,
-  "ast": 1.5,
-  "note": "Averages from game log (2 games, through 2026-11-06)"
+  "gp": 3,
+  "min": 11.7,
+  "pts": 2.3,
+  "reb": 3.0,
+  "ast": 1.7,
+  "note": "Averages from game log (3 games, through 2026-11-13)"
  },
  {
   "row_id": "vaamonde-ncaa",
   "player": "Zion Vaamonde",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 4,
-  "min": 13.0,
+  "gp": 5,
+  "min": 14.4,
   "pts": 4.8,
   "reb": 1.2,
-  "ast": 0.5,
-  "note": "Averages from game log (4 games, through 2026-11-12)"
+  "ast": 0.8,
+  "note": "Averages from game log (5 games, through 2026-11-13)"
  },
  {
   "row_id": "pohto-ncaa",
