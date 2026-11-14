@@ -57263,7 +57263,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57284,7 +57284,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57305,7 +57305,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57326,7 +57326,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57347,11 +57347,11 @@
   "ft": "6/7",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-7",
+  "row_id": "g20261114stan-0-5",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Donavin Young",
@@ -57368,11 +57368,11 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-8",
+  "row_id": "g20261114stan-0-6",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Aidan Cammann",
@@ -57389,11 +57389,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-9",
+  "row_id": "g20261114stan-0-7",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Evan Stinson",
@@ -57410,11 +57410,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-13",
+  "row_id": "g20261114stan-0-8",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Elias Obenyah",
@@ -57431,11 +57431,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-14",
+  "row_id": "g20261114stan-0-9",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Anthony Batson Jr.",
@@ -57452,11 +57452,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-0-15",
+  "row_id": "g20261114stan-0-10",
   "game_id": "g20261114stan",
   "team": "Stanford",
   "player": "Christian Bliss",
@@ -57473,7 +57473,7 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57494,7 +57494,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57515,7 +57515,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57536,7 +57536,7 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57557,7 +57557,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57578,11 +57578,11 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-1-6",
+  "row_id": "g20261114stan-1-5",
   "game_id": "g20261114stan",
   "team": "UNLV",
   "player": "Jackson Kiss",
@@ -57599,11 +57599,11 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-1-8",
+  "row_id": "g20261114stan-1-6",
   "game_id": "g20261114stan",
   "team": "UNLV",
   "player": "MJ Thomas",
@@ -57620,11 +57620,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-1-10",
+  "row_id": "g20261114stan-1-7",
   "game_id": "g20261114stan",
   "team": "UNLV",
   "player": "Issac Williamson",
@@ -57641,11 +57641,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261114stan-1-11",
+  "row_id": "g20261114stan-1-8",
   "game_id": "g20261114stan",
   "team": "UNLV",
   "player": "Kota Suttle Jr.",
@@ -57662,7 +57662,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -57734,7 +57734,7 @@
   "team": "Xavier",
   "player": "Tru Washington",
   "pos": "",
-  "min": 28,
+  "min": 29,
   "pts": 19,
   "reb": 8,
   "ast": 4,
@@ -57818,7 +57818,7 @@
   "team": "Xavier",
   "player": "Nikos Chitikoudis",
   "pos": "",
-  "min": 22,
+  "min": 23,
   "pts": 11,
   "reb": 6,
   "ast": 1,
@@ -57860,7 +57860,7 @@
   "team": "Xavier",
   "player": "Kalek House",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 3,
   "reb": 4,
   "ast": 3,
@@ -57944,7 +57944,7 @@
   "team": "Mississippi State",
   "player": "RJ Johnson",
   "pos": "",
-  "min": 24,
+  "min": 25,
   "pts": 6,
   "reb": 1,
   "ast": 2,
@@ -57972,8 +57972,8 @@
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "fg": "4/10",
-  "three": "2/7",
+  "fg": "4/11",
+  "three": "2/8",
   "ft": "2/2",
   "pm": "",
   "swede": false,
@@ -58049,7 +58049,7 @@
   "team": "Mississippi State",
   "player": "Willie Burnett III",
   "pos": "",
-  "min": 5,
+  "min": 6,
   "pts": 6,
   "reb": 2,
   "ast": 0,
