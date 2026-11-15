@@ -7054,5 +7054,33 @@
   "note": "",
   "leaders": "Burnham|21|3|1;Seckendorff|19|4|2;Fleming|12|4|14;Rödl|12|5|1;Seric|12|1|1;Williams|12|2|2",
   "source": "easyCredit BBL"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-15",
+  "team": "Virtus Bologna",
+  "date": "2026-11-15",
+  "competition": "LBA (Italy)",
+  "opponent": "Dolomiti Energia Trentino",
+  "venue": "Away",
+  "score": "88-75",
+  "result": "W",
+  "top": "Frazier 18 pts, 1 reb",
+  "note": "",
+  "leaders": "Frazier|18|1|1;Carr|17|2|4;Diarra|13|4|0",
+  "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "dolomiti-energia-trentino-2026-11-15",
+  "team": "Dolomiti Energia Trentino",
+  "date": "2026-11-15",
+  "competition": "LBA (Italy)",
+  "opponent": "Virtus Bologna",
+  "venue": "Home",
+  "score": "75-88",
+  "result": "L",
+  "top": "Olivari 23 pts, 6 reb",
+  "note": "",
+  "leaders": "Olivari|23|6|5;Niang|10|7|0;Bayehe|10|6|0",
+  "source": "LBA (legabasket.it)"
  }
 ]
