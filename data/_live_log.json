@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T04:18:29+01:00",
+ "at": "2026-11-15T04:19:19+01:00",
  "log": [
   {
    "game": "g20261115miam",
@@ -9,12 +9,12 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 4,
-   "clock": "08:40",
+   "clock": "08:33",
    "done": false,
    "teams": [
     [
      "Detroit Pistons",
-     93,
+     96,
      13
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261115newm",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:21",
+   "clock": "11:54",
    "done": false,
    "teams": [
     [
      "New Mexico Lobos",
-     11,
+     14,
      13
     ],
     [
      "Santa Clara Broncos",
-     18,
+     21,
      15
     ]
    ]
