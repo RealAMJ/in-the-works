@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T16:33:03+01:00",
+ "at": "2026-11-15T16:34:00+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -9,7 +9,7 @@
    "game": "g20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "04:58",
+   "clock": "04:46",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Basketball L\u00f6wen Erfurt",
-     18,
+     21,
      10
     ]
    ]
