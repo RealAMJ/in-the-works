@@ -2293,9 +2293,11 @@
   "venue": "Home",
   "competition": "BLNO (Norway)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "nif:8426728"
+  "status": "live",
+  "score": "W 92-67",
+  "live_feed": "nif:8426728",
+  "clock": "Q4 ",
+  "live_updated": "2026-11-15T18:30:18+01:00"
  },
  {
   "game_id": "g20261115lowe",
@@ -2308,10 +2310,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "L 19-25",
+  "score": "L 19-26",
   "live_feed": "bbl:2006855",
-  "clock": "Q1 01:21",
-  "live_updated": "2026-11-15T18:29:28+01:00"
+  "clock": "Q1 01:09",
+  "live_updated": "2026-11-15T18:30:20+01:00"
  },
  {
   "game_id": "g20261115virt",
