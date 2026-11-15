@@ -6986,5 +6986,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "cadeau-2026-11-15",
+  "player": "Elliot Cadeau",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "team": "Michigan",
+  "opponent": "William & Mary",
+  "venue": "Home",
+  "result": "W 123-79",
+  "min": 26,
+  "pts": 11,
+  "reb": 4,
+  "ast": 11,
+  "source": "ESPN",
+  "fg": "4/9",
+  "three": "2/5",
+  "ft": "1/1",
+  "oreb": 0,
+  "dreb": 4,
+  "stl": 3,
+  "blk": 1,
+  "tov": 3,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

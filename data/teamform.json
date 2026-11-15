@@ -7110,5 +7110,33 @@
   "note": "",
   "leaders": "Mitchell|9|3|2;McGee|7|1|0;Scott|6|3|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "michigan-2026-11-15",
+  "team": "Michigan",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "William & Mary",
+  "venue": "Home",
+  "score": "123-79",
+  "result": "W",
+  "top": "Thiam 16 pts, 7 reb",
+  "note": "",
+  "leaders": "Thiam|16|7|3;Costello|16|3|2;Estrella|15|7|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "william-mary-2026-11-15",
+  "team": "William & Mary",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Michigan",
+  "venue": "Away",
+  "score": "79-123",
+  "result": "L",
+  "top": "Sivka 13 pts, 6 reb",
+  "note": "",
+  "leaders": "Sivka|13|6|2;Carter|10|2|2;Connery|9|2|3;Ward|9|2|0;Clark|9|5|4",
+  "source": "ESPN"
  }
 ]
