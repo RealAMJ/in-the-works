@@ -222,6 +222,12 @@ def main(argv):
                 if p['player'] not in listed:
                     listed.append(p['player'])
                 clubs[k] = ', '.join(listed)
+        # a derby row lists both teams' Swedes; new games of a club get only the players of that club
+        club_of = {x.get('player'): x.get('club') for x in players if x.get('player')}
+        for k, v in list(clubs.items()):
+            if k[1] == 'players':
+                keep = [n for n in str(v or '').split(', ') if n and (club_of.get(n) in (None, k[0]))]
+                clubs[k] = ', '.join(keep) or v
         if not clubs:
             continue
         try:
