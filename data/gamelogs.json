@@ -6674,5 +6674,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "tidare-2026-11-15",
+  "player": "Hugo Tidare",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "team": "Lipscomb",
+  "opponent": "Western Carolina",
+  "venue": "Away",
+  "result": "W 75-68",
+  "min": 26,
+  "pts": 13,
+  "reb": 1,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "4/6",
+  "three": "3/4",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 1,
+  "tov": 1,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

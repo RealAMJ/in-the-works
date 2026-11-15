@@ -520,12 +520,12 @@
   "player": "Hugo Tidare",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 4,
-  "min": 17.2,
-  "pts": 5.2,
+  "gp": 5,
+  "min": 19.0,
+  "pts": 6.8,
   "reb": 1.0,
-  "ast": 0.5,
-  "note": "Averages from game log (4 games, through 2026-11-11)"
+  "ast": 0.4,
+  "note": "Averages from game log (5 games, through 2026-11-15)"
  },
  {
   "row_id": "cooper-ncaa",

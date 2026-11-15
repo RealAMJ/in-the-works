@@ -61923,7 +61923,7 @@
   "fg": "4/11",
   "three": "1/4",
   "ft": "7/7",
-  "pm": -7,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -61965,7 +61965,7 @@
   "fg": "1/7",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62070,7 +62070,7 @@
   "fg": "8/9",
   "three": "0/0",
   "ft": "3/4",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62145,7 +62145,7 @@
   "player": "Davion Mitchell",
   "pos": "",
   "min": 16,
-  "pts": 2,
+  "pts": 4,
   "reb": 1,
   "ast": 5,
   "stl": 1,
@@ -62153,8 +62153,8 @@
   "tov": 2,
   "fg": "1/4",
   "three": "0/2",
-  "ft": "0/0",
-  "pm": 14,
+  "ft": "2/2",
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ESPN"

@@ -6886,5 +6886,33 @@
   "note": "",
   "leaders": "Collins|24|5|0;Minzer|17|8|1;Floyd|4|4|0;Ryans|4|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "lipscomb-2026-11-15",
+  "team": "Lipscomb",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Western Carolina",
+  "venue": "Away",
+  "score": "75-68",
+  "result": "W",
+  "top": "Simpkins 15 pts, 7 reb",
+  "note": "",
+  "leaders": "Simpkins|15|7|1;Esmeraldo|15|5|5;Tidare|13|1|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "western-carolina-2026-11-15",
+  "team": "Western Carolina",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Home",
+  "score": "68-75",
+  "result": "L",
+  "top": "Manning 20 pts, 4 reb",
+  "note": "",
+  "leaders": "Manning|20|4|1;Zhu|11|3|3;Prunty|10|2|2",
+  "source": "ESPN"
  }
 ]
