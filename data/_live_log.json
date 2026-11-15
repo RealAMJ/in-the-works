@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:50:30+01:00",
+ "at": "2026-11-15T17:51:32+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -9,12 +9,12 @@
    "game": "g20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "00:17",
+   "clock": "00:12",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     62,
+     63,
      11
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "01:15",
+   "clock": "00:30",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Culture City Weimar",
-     50,
+     52,
      12
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "c20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "00:17",
+   "clock": "00:12",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     62,
+     63,
      11
     ],
     [
