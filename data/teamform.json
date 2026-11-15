@@ -6914,5 +6914,33 @@
   "note": "",
   "leaders": "Manning|20|4|1;Zhu|11|3|3;Prunty|10|2|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-15",
+  "team": "Miami Heat",
+  "date": "2026-11-15",
+  "competition": "NBA",
+  "opponent": "Detroit Pistons",
+  "venue": "Home",
+  "score": "137-117",
+  "result": "W",
+  "top": "Antetokounmpo 34 pts, 14 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|34|14|8;Thompson|26|1|4;Adebayo|20|5|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "detroit-pistons-2026-11-15",
+  "team": "Detroit Pistons",
+  "date": "2026-11-15",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Away",
+  "score": "117-137",
+  "result": "L",
+  "top": "Cunningham 33 pts, 5 reb",
+  "note": "",
+  "leaders": "Cunningham|33|5|8;Huerter|20|4|7;Robinson|10|1|1;Thompson|10|8|5;Jenkins|10|1|5",
+  "source": "ESPN"
  }
 ]
