@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:02:22+01:00",
+ "at": "2026-11-15T20:03:15+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "04:41",
+   "clock": "04:12",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     73,
+     74,
      10
     ]
    ]
@@ -31,7 +31,7 @@
   {
    "game": "g20261115virt",
    "src": "LBA (legabasket.it)",
-   "period": 2,
+   "period": 3,
    "clock": "",
    "done": false,
    "teams": [
@@ -55,7 +55,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:31",
+   "clock": "19:27",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Michigan Wolverines",
-     0,
+     1,
      17
     ]
    ]
@@ -77,19 +77,19 @@
   {
    "game": "g20261115robe",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:58",
    "done": false,
    "teams": [
     [
-     "Robert Morris Colonials",
-     0,
-     0
-    ],
-    [
      "Capital Crusaders",
      0,
-     0
+     20
+    ],
+    [
+     "Robert Morris Colonials",
+     0,
+     15
     ]
    ]
   }
