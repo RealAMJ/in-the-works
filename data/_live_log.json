@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T20:14:27+01:00",
+ "at": "2026-11-15T20:15:18+01:00",
  "log": [
-  {
-   "game": "g20261115lowe",
-   "checking": "easyCredit BBL"
-  },
-  {
-   "game": "g20261115lowe",
-   "src": "easyCredit BBL",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "NINERS Chemnitz",
-     111,
-     10
-    ],
-    [
-     "Basketball L\u00f6wen Braunschweig",
-     79,
-     10
-    ]
-   ]
-  },
   {
    "game": "g20261115virt",
    "checking": "LBA (legabasket.it)"
@@ -42,7 +19,7 @@
     ],
     [
      "Virtus Costa Bologna",
-     57,
+     58,
      12
     ]
    ]
@@ -78,7 +55,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:46",
+   "clock": "13:14",
    "done": false,
    "teams": [
     [
