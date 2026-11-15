@@ -64086,9 +64086,9 @@
   "fg": "4/9",
   "three": "1/5",
   "ft": "3/3",
-  "pm": 19,
+  "pm": 23,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64107,9 +64107,9 @@
   "fg": "4/6",
   "three": "2/2",
   "ft": "0/0",
-  "pm": 23,
+  "pm": 24,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64128,9 +64128,9 @@
   "fg": "4/8",
   "three": "4/5",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 18,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64149,9 +64149,9 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": "",
+  "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64172,7 +64172,7 @@
   "ft": "1/1",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64191,9 +64191,9 @@
   "fg": "4/9",
   "three": "3/6",
   "ft": "1/2",
-  "pm": 2,
+  "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64212,9 +64212,9 @@
   "fg": "0/3",
   "three": "0/0",
   "ft": "2/4",
-  "pm": 8,
+  "pm": 12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64233,9 +64233,9 @@
   "fg": "4/7",
   "three": "1/4",
   "ft": "3/4",
-  "pm": 12,
+  "pm": 13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64254,9 +64254,9 @@
   "fg": "8/12",
   "three": "4/5",
   "ft": "1/2",
-  "pm": 27,
+  "pm": 28,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64275,9 +64275,9 @@
   "fg": "6/7",
   "three": "0/0",
   "ft": "7/11",
-  "pm": 22,
+  "pm": 23,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64298,7 +64298,7 @@
   "ft": "5/11",
   "pm": -7,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64319,7 +64319,7 @@
   "ft": "1/2",
   "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64338,9 +64338,9 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "2/4",
-  "pm": -13,
+  "pm": -18,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64361,7 +64361,7 @@
   "ft": "7/8",
   "pm": -21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64380,9 +64380,9 @@
   "fg": "4/12",
   "three": "3/11",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64401,9 +64401,9 @@
   "fg": "1/3",
   "three": "0/1",
   "ft": "2/2",
-  "pm": -9,
+  "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64422,9 +64422,9 @@
   "fg": "2/9",
   "three": "1/6",
   "ft": "5/5",
-  "pm": -10,
+  "pm": -15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64445,7 +64445,7 @@
   "ft": "0/0",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64466,7 +64466,7 @@
   "ft": "0/0",
   "pm": -18,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64485,9 +64485,9 @@
   "fg": "3/7",
   "three": "0/1",
   "ft": "3/4",
-  "pm": -22,
+  "pm": -27,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "easyCredit BBL"
  },
  {
@@ -64517,7 +64517,7 @@
   "team": "Dolomiti Energia Trentino",
   "player": "Charles Brown",
   "pos": "",
-  "min": 17,
+  "min": 16,
   "pts": 2,
   "reb": 1,
   "ast": 4,
@@ -64559,7 +64559,7 @@
   "team": "Dolomiti Energia Trentino",
   "player": "Cheickh Niang",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 5,
   "reb": 3,
   "ast": 0,
@@ -64601,7 +64601,7 @@
   "team": "Dolomiti Energia Trentino",
   "player": "Toto Forray",
   "pos": "",
-  "min": 6,
+  "min": 5,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -64685,7 +64685,7 @@
   "team": "Dolomiti Energia Trentino",
   "player": "Jordan Bayehe",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 8,
   "reb": 4,
   "ast": 0,
@@ -64748,7 +64748,7 @@
   "team": "Virtus Bologna",
   "player": "Marcus Carr",
   "pos": "",
-  "min": 14,
+  "min": 15,
   "pts": 5,
   "reb": 2,
   "ast": 3,
@@ -64792,13 +64792,13 @@
   "pos": "",
   "min": 18,
   "pts": 0,
-  "reb": 6,
+  "reb": 7,
   "ast": 3,
   "stl": 0,
   "blk": 1,
   "tov": 1,
-  "fg": "0/1",
-  "three": "0/1",
+  "fg": "0/2",
+  "three": "0/2",
   "ft": "0/0",
   "pm": 12,
   "swede": false,
@@ -64811,7 +64811,7 @@
   "team": "Virtus Bologna",
   "player": "Tommaso Baldasso",
   "pos": "",
-  "min": 7,
+  "min": 6,
   "pts": 7,
   "reb": 3,
   "ast": 1,
@@ -65343,8 +65343,8 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/1",
-  "three": "0/0",
+  "fg": "0/2",
+  "three": "0/1",
   "ft": "0/0",
   "pm": "",
   "swede": false,
@@ -65387,6 +65387,27 @@
   "tov": 0,
   "fg": "0/2",
   "three": "0/1",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115robe-0-9",
+  "game_id": "g20261115robe",
+  "team": "Capital",
+  "player": "Royal Sibley",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
   "ft": "0/0",
   "pm": "",
   "swede": false,
@@ -65441,7 +65462,7 @@
   "team": "Capital",
   "player": "Dallas Tucker",
   "pos": "",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -65483,7 +65504,7 @@
   "team": "Robert Morris",
   "player": "Darius Livingston",
   "pos": "",
-  "min": 5,
+  "min": 6,
   "pts": 3,
   "reb": 0,
   "ast": 1,
@@ -65546,14 +65567,14 @@
   "team": "Robert Morris",
   "player": "Ace Valentine",
   "pos": "",
-  "min": 4,
-  "pts": 0,
+  "min": 5,
+  "pts": 2,
   "reb": 1,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "0/0",
+  "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -65569,8 +65590,8 @@
   "pos": "",
   "min": 2,
   "pts": 2,
-  "reb": 0,
-  "ast": 0,
+  "reb": 1,
+  "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
