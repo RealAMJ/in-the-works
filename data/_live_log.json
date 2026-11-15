@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:20:37+01:00",
+ "at": "2026-11-15T20:21:29+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -19,7 +19,7 @@
     ],
     [
      "Virtus Costa Bologna",
-     67,
+     68,
      12
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:38",
+   "clock": "11:08",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:53",
+   "clock": "11:00",
    "done": false,
    "teams": [
     [
      "Capital Crusaders",
-     4,
+     6,
      20
     ],
     [
      "Robert Morris Colonials",
-     20,
+     23,
      15
     ]
    ]
