@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T03:11:31+01:00",
+ "at": "2026-11-15T03:12:23+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,7 +9,7 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:05",
+   "clock": "00:03",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Western Carolina Catamounts",
-     67,
+     68,
      16
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:59",
+   "clock": "02:44",
    "done": false,
    "teams": [
     [
      "Detroit Pistons",
-     52,
+     53,
      13
     ],
     [
      "Miami Heat",
-     55,
+     58,
      15
     ]
    ]
