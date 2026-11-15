@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T18:18:28+01:00",
+ "at": "2026-11-15T18:19:22+01:00",
  "log": [
   {
    "game": "g20261115froy",
@@ -32,17 +32,17 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "06:21",
+   "clock": "05:48",
    "done": false,
    "teams": [
     [
      "NINERS Chemnitz",
-     13,
+     16,
      10
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     7,
+     11,
      10
     ]
    ]
