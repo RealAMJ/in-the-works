@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T18:31:12+01:00",
+ "at": "2026-11-15T18:31:39+01:00",
  "log": [
-  {
-   "game": "g20261115froy",
-   "checking": "Norwegian federation (basket.no)"
-  },
-  {
-   "game": "g20261115froy",
-   "src": "Norwegian federation (basket.no)",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Froya Basket Laksev\u00e5g",
-     92,
-     0
-    ],
-    [
-     "Centrum Tigers",
-     67,
-     0
-    ]
-   ]
-  },
   {
    "game": "g20261115lowe",
    "checking": "easyCredit BBL"
