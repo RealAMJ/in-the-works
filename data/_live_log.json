@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:21:25+01:00",
+ "at": "2026-11-15T17:22:33+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -32,12 +32,12 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "02:49",
+   "clock": "02:09",
    "done": false,
    "teams": [
     [
      "Dresden Titans",
-     59,
+     61,
      10
     ],
     [
