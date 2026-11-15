@@ -61463,7 +61463,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61484,7 +61484,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61505,7 +61505,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61526,7 +61526,7 @@
   "ft": "11/14",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61547,11 +61547,11 @@
   "ft": "6/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-6",
+  "row_id": "g20261115lips-0-5",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Sawyer Dotson",
@@ -61568,11 +61568,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-7",
+  "row_id": "g20261115lips-0-6",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Hendrix Loughridge",
@@ -61589,11 +61589,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-8",
+  "row_id": "g20261115lips-0-7",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Josh Scott",
@@ -61610,11 +61610,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-9",
+  "row_id": "g20261115lips-0-8",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Or Ashkenazi",
@@ -61631,11 +61631,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-12",
+  "row_id": "g20261115lips-0-9",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Luke Jack",
@@ -61652,11 +61652,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-0-14",
+  "row_id": "g20261115lips-0-10",
   "game_id": "g20261115lips",
   "team": "Lipscomb",
   "player": "Vuk Visnjic",
@@ -61673,7 +61673,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61694,7 +61694,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61715,7 +61715,7 @@
   "ft": "7/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61736,7 +61736,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61757,7 +61757,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61778,7 +61778,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61799,7 +61799,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61820,11 +61820,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-1-9",
+  "row_id": "g20261115lips-1-7",
   "game_id": "g20261115lips",
   "team": "Western Carolina",
   "player": "Jacob Zhu",
@@ -61841,11 +61841,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115lips-1-12",
+  "row_id": "g20261115lips-1-8",
   "game_id": "g20261115lips",
   "team": "Western Carolina",
   "player": "Travelle Bryson",
@@ -61862,7 +61862,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61977,7 +61977,7 @@
   "player": "Paul Reed",
   "pos": "",
   "min": 11,
-  "pts": 3,
+  "pts": 4,
   "reb": 4,
   "ast": 0,
   "stl": 0,
@@ -61985,8 +61985,8 @@
   "tov": 0,
   "fg": "1/2",
   "three": "0/0",
-  "ft": "1/2",
-  "pm": 2,
+  "ft": "2/4",
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62235,10 +62235,10 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/0",
-  "three": "0/0",
+  "fg": "0/1",
+  "three": "0/1",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
