@@ -61923,7 +61923,7 @@
   "fg": "4/9",
   "three": "1/4",
   "ft": "7/7",
-  "pm": -4,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -61965,7 +61965,7 @@
   "fg": "1/7",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -61986,7 +61986,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62007,7 +62007,7 @@
   "fg": "2/4",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62049,7 +62049,7 @@
   "fg": "6/8",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 1,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62061,7 +62061,7 @@
   "player": "Giannis Antetokounmpo",
   "pos": "",
   "min": 14,
-  "pts": 15,
+  "pts": 17,
   "reb": 6,
   "ast": 4,
   "stl": 0,
@@ -62069,8 +62069,8 @@
   "tov": 2,
   "fg": "7/8",
   "three": "0/0",
-  "ft": "1/2",
-  "pm": 0,
+  "ft": "3/4",
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62112,7 +62112,7 @@
   "fg": "2/3",
   "three": "1/1",
   "ft": "6/8",
-  "pm": 9,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62154,7 +62154,7 @@
   "fg": "1/4",
   "three": "0/2",
   "ft": "0/0",
-  "pm": 11,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62238,7 +62238,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -62259,7 +62259,7 @@
   "fg": "1/4",
   "three": "1/4",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "ESPN"
