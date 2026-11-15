@@ -6908,5 +6908,31 @@
   "pf": 3,
   "pm": -11,
   "eff": 4
+ },
+ {
+  "row_id": "hadi-2026-11-15",
+  "player": "Jacob Hadi",
+  "date": "2026-11-15",
+  "competition": "ProB (Germany)",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "SKYLINERS Juniors",
+  "venue": "Away",
+  "result": "L 56-64",
+  "min": 24,
+  "pts": 5,
+  "reb": 2,
+  "ast": 1,
+  "source": "2. Basketball-Bundesliga live ticker",
+  "fg": "1/6",
+  "three": "1/4",
+  "ft": "2/2",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 1,
+  "blk": 0,
+  "tov": 3,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

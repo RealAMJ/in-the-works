@@ -6970,5 +6970,61 @@
   "note": "",
   "leaders": "Mahi|26|9|5;Gavalyugov|19|4|3;Zugic|15|8|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "basketball-lowen-erfurt-2026-11-15",
+  "team": "Basketball Löwen Erfurt",
+  "date": "2026-11-15",
+  "competition": "ProB (Germany)",
+  "opponent": "SKYLINERS Juniors",
+  "venue": "Away",
+  "score": "56-64",
+  "result": "L",
+  "top": "Watkins 20 pts, 7 reb",
+  "note": "",
+  "leaders": "Watkins|20|7|0;Emelifeonwu|11|3|2;Bacak|9|8|0",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "skyliners-juniors-2026-11-15",
+  "team": "SKYLINERS Juniors",
+  "date": "2026-11-15",
+  "competition": "ProB (Germany)",
+  "opponent": "Basketball Löwen Erfurt",
+  "venue": "Home",
+  "score": "64-56",
+  "result": "W",
+  "top": "Zentgraf 15 pts, 4 reb",
+  "note": "",
+  "leaders": "Zentgraf|15|4|1;Crnjac|11|8|2;Smazak|11|4|5",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "culture-city-weimar-2026-11-15",
+  "team": "Culture City Weimar",
+  "date": "2026-11-15",
+  "competition": "ProB (Germany)",
+  "opponent": "Dresden Titans",
+  "venue": "Away",
+  "score": "54-82",
+  "result": "L",
+  "top": "Sabaliauskas 11 pts, 6 reb",
+  "note": "",
+  "leaders": "Sabaliauskas|11|6|1;Grau|11|6|0;Biel|11|5|1",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "dresden-titans-2026-11-15",
+  "team": "Dresden Titans",
+  "date": "2026-11-15",
+  "competition": "ProB (Germany)",
+  "opponent": "Culture City Weimar",
+  "venue": "Home",
+  "score": "82-54",
+  "result": "W",
+  "top": "Leiba 17 pts, 6 reb",
+  "note": "",
+  "leaders": "Leiba|17|6|1;Pisic|11|1|1;Uboh|10|3|0",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]

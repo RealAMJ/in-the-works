@@ -297,7 +297,8 @@
   "status": "final",
   "score": "L 56-64",
   "live_feed": "prob:2006193",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261118miss",
