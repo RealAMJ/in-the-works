@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T18:58:34+01:00",
+ "at": "2026-11-15T18:59:24+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "02:28",
+   "clock": "02:21",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     34,
+     36,
      10
     ]
    ]
