@@ -77,4 +77,14 @@ DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261122lips@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T220000Z
+DTEND:20261123T000000Z
+SUMMARY:Tidare: Lipscomb vs Milligan
+DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

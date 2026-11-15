@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261122ucir@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T213000Z
+DTEND:20261122T233000Z
+SUMMARY:Cooper: UC Irvine vs Loyola Marymount
+DESCRIPTION:NCAA. Players: Nils Cooper. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
