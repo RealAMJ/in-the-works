@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:49:23+01:00",
+ "at": "2026-11-15T20:50:12+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     74,
+     75,
      12
     ],
     [
@@ -32,17 +32,17 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:54",
+   "clock": "00:45",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     40,
+     41,
      15
     ],
     [
      "Michigan Wolverines",
-     46,
+     48,
      17
     ]
    ]

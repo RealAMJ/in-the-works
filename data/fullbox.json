@@ -64506,7 +64506,7 @@
   "fg": "3/7",
   "three": "0/2",
   "ft": "3/4",
-  "pm": -20,
+  "pm": -18,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64527,7 +64527,7 @@
   "fg": "1/7",
   "three": "0/2",
   "ft": "2/2",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64569,7 +64569,7 @@
   "fg": "4/7",
   "three": "2/2",
   "ft": "0/2",
-  "pm": -2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64581,7 +64581,7 @@
   "player": "Quincy Olivari",
   "pos": "",
   "min": 31,
-  "pts": 21,
+  "pts": 23,
   "reb": 6,
   "ast": 5,
   "stl": 0,
@@ -64589,8 +64589,8 @@
   "tov": 2,
   "fg": "8/15",
   "three": "4/8",
-  "ft": "1/1",
-  "pm": -2,
+  "ft": "3/3",
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64653,7 +64653,7 @@
   "fg": "2/4",
   "three": "0/0",
   "ft": "1/4",
-  "pm": 6,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64821,7 +64821,7 @@
   "fg": "2/3",
   "three": "1/2",
   "ft": "4/4",
-  "pm": 12,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64842,7 +64842,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -12,
+  "pm": -14,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64863,7 +64863,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64905,7 +64905,7 @@
   "fg": "0/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -64926,7 +64926,7 @@
   "fg": "4/6",
   "three": "0/0",
   "ft": "5/6",
-  "pm": -6,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "LBA (legabasket.it)"
@@ -65064,7 +65064,7 @@
   "player": "Brian Carter Jr.",
   "pos": "",
   "min": 12,
-  "pts": 5,
+  "pts": 6,
   "reb": 1,
   "ast": 2,
   "stl": 1,
@@ -65072,7 +65072,7 @@
   "tov": 3,
   "fg": "1/4",
   "three": "0/1",
-  "ft": "3/4",
+  "ft": "4/5",
   "pm": "",
   "swede": false,
   "state": "live",
