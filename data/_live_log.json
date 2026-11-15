@@ -1,26 +1,26 @@
 {
- "at": "2026-11-16T00:04:16+01:00",
+ "at": "2026-11-16T00:40:15+01:00",
  "log": [
   {
-   "game": "g20261115idah",
+   "game": "g20261116stjo",
    "checking": "ESPN"
   },
   {
-   "game": "g20261115idah",
+   "game": "g20261116stjo",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Idaho State Bengals",
-     70,
-     16
+     "St. John's Red Storm",
+     0,
+     0
     ],
     [
-     "Seattle U Redhawks",
-     77,
-     16
+     "Syracuse Orange",
+     0,
+     0
     ]
    ]
   }
