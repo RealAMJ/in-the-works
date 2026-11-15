@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:39:37+01:00",
+ "at": "2026-11-15T19:40:28+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "01:09",
+   "clock": "01:01",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     61,
+     62,
      10
     ]
    ]
@@ -44,6 +44,52 @@
      "Virtus Costa Bologna",
      37,
      12
+    ]
+   ]
+  },
+  {
+   "game": "g20261115mich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261115mich",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Michigan Wolverines",
+     0,
+     0
+    ],
+    [
+     "William & Mary Tribe",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261115robe",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261115robe",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Robert Morris Colonials",
+     0,
+     0
+    ],
+    [
+     "Capital Crusaders",
+     0,
+     0
     ]
    ]
   }
