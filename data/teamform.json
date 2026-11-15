@@ -7138,5 +7138,33 @@
   "note": "",
   "leaders": "Sivka|13|6|2;Carter|10|2|2;Connery|9|2|3;Ward|9|2|0;Clark|9|5|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "idaho-state-2026-11-15",
+  "team": "Idaho State",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Seattle U",
+  "venue": "Away",
+  "score": "70-77",
+  "result": "L",
+  "top": "Johnson 17 pts, 5 reb",
+  "note": "",
+  "leaders": "Johnson|17|5|2;Morris|16|6|3;Amoran|12|6|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "seattle-u-2026-11-15",
+  "team": "Seattle U",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Idaho State",
+  "venue": "Home",
+  "score": "77-70",
+  "result": "W",
+  "top": "Heimbrodt 18 pts, 6 reb",
+  "note": "",
+  "leaders": "Heimbrodt|18|6|3;Dzellat|12|3|0;Yeo|11|3|0;Boston|11|4|4",
+  "source": "ESPN"
  }
 ]

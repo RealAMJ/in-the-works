@@ -7012,5 +7012,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "amoran-2026-11-15",
+  "player": "Nathan Amoran",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "team": "Idaho State",
+  "opponent": "Seattle U",
+  "venue": "Away",
+  "result": "L 70-77",
+  "min": 25,
+  "pts": 12,
+  "reb": 6,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "5/10",
+  "three": "2/4",
+  "ft": "0/0",
+  "oreb": 3,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 4,
+  "pm": "",
+  "eff": ""
  }
 ]

@@ -2382,7 +2382,9 @@
   "score": "L 70-77",
   "espn_id": "401917528",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401917528",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261116stjo",
