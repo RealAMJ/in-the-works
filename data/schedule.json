@@ -2311,8 +2311,8 @@
   "status": "live",
   "score": "L 43-64",
   "live_feed": "bbl:2006855",
-  "clock": "Q3 09:18",
-  "live_updated": "2026-11-15T19:23:12+01:00"
+  "clock": "Q3 08:53",
+  "live_updated": "2026-11-15T19:23:38+01:00"
  },
  {
   "game_id": "g20261115virt",
@@ -2328,7 +2328,7 @@
   "score": "W 24-12",
   "live_feed": "lba:25417",
   "clock": "Q1 ",
-  "live_updated": "2026-11-15T19:23:12+01:00"
+  "live_updated": "2026-11-15T19:23:38+01:00"
  },
  {
   "game_id": "g20261115mich",
