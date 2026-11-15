@@ -2224,11 +2224,11 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "W 121-102",
+  "score": "W 121-104",
   "espn_id": "401909982",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909982",
   "clock": "Q4 03:39",
-  "live_updated": "2026-11-15T04:31:28+01:00"
+  "live_updated": "2026-11-15T04:32:18+01:00"
  },
  {
   "game_id": "g20261115newm",
@@ -2244,8 +2244,8 @@
   "score": "L 22-33",
   "espn_id": "401917530",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401917530",
-  "clock": "Q1 07:22",
-  "live_updated": "2026-11-15T04:31:28+01:00"
+  "clock": "Q1 07:03",
+  "live_updated": "2026-11-15T04:32:19+01:00"
  },
  {
   "game_id": "g20261115bask",
