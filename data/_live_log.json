@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:06:23+01:00",
+ "at": "2026-11-15T20:07:14+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "03:07",
+   "clock": "02:24",
    "done": false,
    "teams": [
     [
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     34,
+     37,
      12
     ],
     [
      "Virtus Costa Bologna",
-     41,
+     44,
      12
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:36",
+   "clock": "16:39",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     2,
+     7,
      15
     ],
     [
      "Michigan Wolverines",
-     9,
+     12,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:48",
+   "clock": "16:49",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Robert Morris Colonials",
-     5,
+     7,
      15
     ]
    ]
