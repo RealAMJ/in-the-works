@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:43:26+01:00",
+ "at": "2026-11-15T02:44:19+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,7 +9,7 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:03",
+   "clock": "06:41",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261115wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:16",
+   "clock": "04:35",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wichita State Shockers",
-     66,
+     68,
      17
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:30",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
