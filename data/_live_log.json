@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:32:21+01:00",
+ "at": "2026-11-15T17:33:26+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -78,12 +78,12 @@
    "game": "c20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "07:16",
+   "clock": "05:47",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     49,
+     51,
      11
     ],
     [
