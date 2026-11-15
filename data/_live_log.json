@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T22:00:27+01:00",
+ "at": "2026-11-15T22:01:18+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -9,12 +9,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:27",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     78,
+     79,
      15
     ],
     [
