@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:12:10+01:00",
+ "at": "2026-11-15T02:13:01+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -32,12 +32,12 @@
    "game": "g20261115wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:49",
+   "clock": "17:23",
    "done": false,
    "teams": [
     [
      "Austin Peay Governors",
-     31,
+     33,
      12
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:39",
+   "clock": "11:02",
    "done": false,
    "teams": [
     [
      "Detroit Pistons",
-     2,
+     5,
      13
     ],
     [
