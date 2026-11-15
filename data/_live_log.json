@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T01:00:45+01:00",
+ "at": "2026-11-15T01:05:16+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -8,19 +8,19 @@
   {
    "game": "g20261115lips",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "18:59",
    "done": false,
    "teams": [
     [
-     "Western Carolina Catamounts",
-     0,
-     0
+     "Lipscomb Bisons",
+     3,
+     16
     ],
     [
-     "Lipscomb Bisons",
-     0,
-     0
+     "Western Carolina Catamounts",
+     3,
+     16
     ]
    ]
   },
@@ -31,19 +31,19 @@
   {
    "game": "g20261115wich",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:11",
    "done": false,
    "teams": [
     [
-     "Wichita State Shockers",
-     0,
-     0
+     "Austin Peay Governors",
+     5,
+     12
     ],
     [
-     "Austin Peay Governors",
-     0,
-     0
+     "Wichita State Shockers",
+     4,
+     17
     ]
    ]
   }
