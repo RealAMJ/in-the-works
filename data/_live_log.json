@@ -1,26 +1,72 @@
 {
- "at": "2026-11-15T14:40:23+01:00",
+ "at": "2026-11-15T15:43:37+01:00",
  "log": [
   {
-   "game": "c20261114ora",
-   "checking": "Romanian federation (frbaschet.ro)"
+   "game": "g20261115bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
   },
   {
-   "game": "c20261114ora",
-   "src": "Romanian federation (frbaschet.ro)",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261115bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "CSM Oradea",
-     85,
-     0
+     "SKYLINERS Juniors",
+     0,
+     17
     ],
     [
-     "SCM Timi\u0219oara",
-     70,
-     0
+     "Basketball L\u00f6wen Erfurt",
+     0,
+     16
+    ]
+   ]
+  },
+  {
+   "game": "g20261115cult",
+   "checking": "2. Basketball-Bundesliga live ticker"
+  },
+  {
+   "game": "g20261115cult",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Dresden Titans",
+     0,
+     10
+    ],
+    [
+     "Culture City Weimar",
+     0,
+     12
+    ]
+   ]
+  },
+  {
+   "game": "c20261115bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
+  },
+  {
+   "game": "c20261115bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "SKYLINERS Juniors",
+     0,
+     17
+    ],
+    [
+     "Basketball L\u00f6wen Erfurt",
+     0,
+     16
     ]
    ]
   }
