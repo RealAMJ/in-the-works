@@ -65064,7 +65064,7 @@
   "player": "Brian Carter Jr.",
   "pos": "",
   "min": 20,
-  "pts": 8,
+  "pts": 10,
   "reb": 2,
   "ast": 2,
   "stl": 1,
@@ -65072,7 +65072,7 @@
   "tov": 3,
   "fg": "1/6",
   "three": "0/1",
-  "ft": "6/8",
+  "ft": "8/10",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -65276,7 +65276,7 @@
   "min": 24,
   "pts": 11,
   "reb": 3,
-  "ast": 8,
+  "ast": 9,
   "stl": 3,
   "blk": 1,
   "tov": 3,
@@ -65295,14 +65295,14 @@
   "player": "Quinn Costello",
   "pos": "",
   "min": 22,
-  "pts": 13,
+  "pts": 16,
   "reb": 3,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "3/10",
-  "three": "3/9",
+  "fg": "4/11",
+  "three": "4/10",
   "ft": "4/4",
   "pm": "",
   "swede": false,
@@ -65315,7 +65315,7 @@
   "team": "Michigan",
   "player": "Oscar Goodman",
   "pos": "",
-  "min": 9,
+  "min": 10,
   "pts": 6,
   "reb": 6,
   "ast": 0,
@@ -65411,7 +65411,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65432,7 +65432,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65453,7 +65453,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65474,7 +65474,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65495,11 +65495,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-6",
+  "row_id": "g20261115robe-0-5",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Hayden Purdy",
@@ -65516,11 +65516,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-7",
+  "row_id": "g20261115robe-0-6",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Kobe Brown",
@@ -65537,11 +65537,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-8",
+  "row_id": "g20261115robe-0-7",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "AJ Davis",
@@ -65558,11 +65558,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-9",
+  "row_id": "g20261115robe-0-8",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Royal Sibley",
@@ -65579,11 +65579,11 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-10",
+  "row_id": "g20261115robe-0-9",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Sohn McGee",
@@ -65600,11 +65600,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-11",
+  "row_id": "g20261115robe-0-10",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Tristyn Ambrose-Pearce",
@@ -65621,11 +65621,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-12",
+  "row_id": "g20261115robe-0-11",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Kamran Ensley",
@@ -65642,11 +65642,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-14",
+  "row_id": "g20261115robe-0-12",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "David Mensah",
@@ -65663,11 +65663,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-15",
+  "row_id": "g20261115robe-0-13",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Cole McClurg",
@@ -65684,11 +65684,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-16",
+  "row_id": "g20261115robe-0-14",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Darren Gray",
@@ -65705,11 +65705,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-17",
+  "row_id": "g20261115robe-0-15",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Dallas Tucker",
@@ -65726,11 +65726,11 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-18",
+  "row_id": "g20261115robe-0-16",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Logan Woloshan",
@@ -65747,11 +65747,11 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-0-19",
+  "row_id": "g20261115robe-0-17",
   "game_id": "g20261115robe",
   "team": "Capital",
   "player": "Devonte Curry",
@@ -65768,7 +65768,7 @@
   "ft": "3/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65789,7 +65789,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65810,7 +65810,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65831,7 +65831,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65852,7 +65852,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65873,11 +65873,11 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-7",
+  "row_id": "g20261115robe-1-5",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "Jalik Dunkley",
@@ -65894,11 +65894,11 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-8",
+  "row_id": "g20261115robe-1-6",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "KC Ugwuakazi",
@@ -65915,11 +65915,11 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-9",
+  "row_id": "g20261115robe-1-7",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "Dylan Donovan",
@@ -65936,11 +65936,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-11",
+  "row_id": "g20261115robe-1-8",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "Michael Parlow",
@@ -65957,11 +65957,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-12",
+  "row_id": "g20261115robe-1-9",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "Will Occomy",
@@ -65978,11 +65978,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115robe-1-13",
+  "row_id": "g20261115robe-1-10",
   "game_id": "g20261115robe",
   "team": "Robert Morris",
   "player": "Lukas Sloane",
@@ -65999,7 +65999,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]

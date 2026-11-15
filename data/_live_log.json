@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T21:46:44+01:00",
+ "at": "2026-11-15T21:47:35+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -9,17 +9,17 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:08",
+   "clock": "05:59",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     68,
+     70,
      15
     ],
     [
      "Michigan Wolverines",
-     97,
+     100,
      17
     ]
    ]
@@ -31,9 +31,9 @@
   {
    "game": "g20261115robe",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Capital Crusaders",
