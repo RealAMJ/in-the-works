@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:42:33+01:00",
+ "at": "2026-11-15T02:43:26+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,17 +9,17 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:05",
+   "clock": "07:03",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     52,
+     55,
      16
     ],
     [
      "Western Carolina Catamounts",
-     54,
+     56,
      16
     ]
    ]
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Austin Peay Governors",
-     47,
+     49,
      12
     ],
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Detroit Pistons",
-     37,
+     39,
      13
     ],
     [
