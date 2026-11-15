@@ -2259,11 +2259,10 @@
   "venue": "Away",
   "competition": "ProB (Germany)",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "L 56-64",
   "live_feed": "prob:2006193",
-  "clock": "Q4 00:12",
-  "live_updated": "2026-11-15T17:53:27+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261115cult",
@@ -2308,7 +2307,7 @@
   "score": "W 0-0",
   "live_feed": "bbl:2006855",
   "clock": "End of Q1",
-  "live_updated": "2026-11-15T17:53:33+01:00"
+  "live_updated": "2026-11-15T17:54:34+01:00"
  },
  {
   "game_id": "g20261115virt",
