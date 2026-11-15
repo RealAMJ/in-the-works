@@ -294,9 +294,11 @@
   "venue": "Away",
   "competition": "ProB (Germany)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "prob:2006193"
+  "status": "live",
+  "score": "L 2-7",
+  "live_feed": "prob:2006193",
+  "clock": "Q1 07:02",
+  "live_updated": "2026-11-15T16:06:59+01:00"
  },
  {
   "game_id": "c20261118miss",

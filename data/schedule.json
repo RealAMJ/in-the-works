@@ -2259,9 +2259,11 @@
   "venue": "Away",
   "competition": "ProB (Germany)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "prob:2006193"
+  "status": "live",
+  "score": "L 2-7",
+  "live_feed": "prob:2006193",
+  "clock": "Q1 07:02",
+  "live_updated": "2026-11-15T16:06:48+01:00"
  },
  {
   "game_id": "g20261115cult",
@@ -2273,9 +2275,11 @@
   "venue": "Away",
   "competition": "ProB (Germany)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "prob:2006191"
+  "status": "live",
+  "score": "L 5-7",
+  "live_feed": "prob:2006191",
+  "clock": "Q1 08:05",
+  "live_updated": "2026-11-15T16:06:54+01:00"
  },
  {
   "game_id": "g20261115froy",
