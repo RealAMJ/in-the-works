@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T16:40:08+01:00",
+ "at": "2026-11-15T16:40:58+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -32,18 +32,41 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "04:50",
+   "clock": "03:45",
    "done": false,
    "teams": [
     [
      "Dresden Titans",
-     39,
+     41,
      10
     ],
     [
      "Culture City Weimar",
-     18,
+     21,
      12
+    ]
+   ]
+  },
+  {
+   "game": "g20261115froy",
+   "checking": "Norwegian federation (basket.no)"
+  },
+  {
+   "game": "g20261115froy",
+   "src": "Norwegian federation (basket.no)",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Froya Basket Laksev\u00e5g",
+     0,
+     0
+    ],
+    [
+     "Centrum Tigers",
+     0,
+     0
     ]
    ]
   },
@@ -55,7 +78,7 @@
    "game": "c20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 2,
-   "clock": "02:30",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
