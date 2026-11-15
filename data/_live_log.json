@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:31:39+01:00",
+ "at": "2026-11-15T19:32:30+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "04:02",
+   "clock": "03:52",
    "done": false,
    "teams": [
     [
@@ -37,12 +37,12 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     19,
+     21,
      12
     ],
     [
      "Virtus Costa Bologna",
-     28,
+     31,
      12
     ]
    ]
