@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:09:51+01:00",
+ "at": "2026-11-15T17:10:54+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -9,12 +9,12 @@
    "game": "g20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "06:23",
+   "clock": "05:50",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     32,
+     34,
      11
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "07:41",
+   "clock": "06:20",
    "done": false,
    "teams": [
     [
      "Dresden Titans",
-     50,
+     53,
      10
     ],
     [
