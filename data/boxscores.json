@@ -3273,11 +3273,11 @@
   "line_id": "g20261115idah-amoran",
   "game_id": "g20261115idah",
   "player": "Nathan Amoran",
-  "min": 15,
-  "pts": 10,
+  "min": 16,
+  "pts": 12,
   "reb": 6,
   "ast": 0,
-  "fg": "4/9",
+  "fg": "5/10",
   "three": "2/4",
   "ft": "0/0",
   "pm": "",
@@ -3287,7 +3287,7 @@
   "dreb": 3,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 2,
   "eff": ""
  }
