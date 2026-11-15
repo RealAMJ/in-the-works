@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T04:00:55+01:00",
+ "at": "2026-11-15T04:01:47+01:00",
  "log": [
   {
    "game": "g20261115miam",
@@ -9,17 +9,17 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "03:26",
+   "clock": "02:40",
    "done": false,
    "teams": [
     [
      "Detroit Pistons",
-     78,
+     80,
      13
     ],
     [
      "Miami Heat",
-     90,
+     92,
      15
     ]
    ]
