@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T21:44:59+01:00",
+ "at": "2026-11-15T21:45:52+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -9,7 +9,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:48",
+   "clock": "06:50",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Michigan Wolverines",
-     93,
+     95,
      17
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:14",
+   "clock": "01:08",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Robert Morris Colonials",
-     87,
+     90,
      15
     ]
    ]
