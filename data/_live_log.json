@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:03:15+01:00",
+ "at": "2026-11-15T20:03:50+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,12 +9,12 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "04:12",
+   "clock": "03:55",
    "done": false,
    "teams": [
     [
      "NINERS Chemnitz",
-     96,
+     98,
      10
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:27",
+   "clock": "18:46",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     0,
+     2,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:06",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Robert Morris Colonials",
-     0,
+     3,
      15
     ]
    ]
