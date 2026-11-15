@@ -7026,5 +7026,33 @@
   "note": "",
   "leaders": "Leiba|17|6|1;Pisic|11|1|1;Uboh|10|3|0",
   "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "lowen-braunschweig-2026-11-15",
+  "team": "Löwen Braunschweig",
+  "date": "2026-11-15",
+  "competition": "BBL",
+  "opponent": "NINERS Chemnitz",
+  "venue": "Away",
+  "score": "79-111",
+  "result": "L",
+  "top": "Bangala 15 pts, 4 reb",
+  "note": "",
+  "leaders": "Bangala|15|4|2;Zylka|12|2|3;Edwards|11|2|0",
+  "source": "easyCredit BBL"
+ },
+ {
+  "row_id": "niners-chemnitz-2026-11-15",
+  "team": "NINERS Chemnitz",
+  "date": "2026-11-15",
+  "competition": "BBL",
+  "opponent": "Löwen Braunschweig",
+  "venue": "Home",
+  "score": "111-79",
+  "result": "W",
+  "top": "Burnham 21 pts, 3 reb",
+  "note": "",
+  "leaders": "Burnham|21|3|1;Seckendorff|19|4|2;Fleming|12|4|14;Rödl|12|5|1;Seric|12|1|1;Williams|12|2|2",
+  "source": "easyCredit BBL"
  }
 ]

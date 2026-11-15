@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:15:18+01:00",
+ "at": "2026-11-15T20:15:47+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     44,
+     46,
      12
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:48",
+   "clock": "14:39",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:14",
+   "clock": "12:51",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Robert Morris Colonials",
-     14,
+     18,
      15
     ]
    ]

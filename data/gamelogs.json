@@ -6934,5 +6934,31 @@
   "pf": 2,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "bangala-2026-11-15",
+  "player": "Zaba Bangala",
+  "date": "2026-11-15",
+  "competition": "BBL",
+  "team": "Löwen Braunschweig",
+  "opponent": "NINERS Chemnitz",
+  "venue": "Away",
+  "result": "L 79-111",
+  "min": 25,
+  "pts": 15,
+  "reb": 4,
+  "ast": 2,
+  "source": "easyCredit BBL",
+  "fg": "5/7",
+  "three": "0/0",
+  "ft": "5/11",
+  "oreb": 2,
+  "dreb": 2,
+  "stl": 2,
+  "blk": 1,
+  "tov": 3,
+  "pf": 2,
+  "pm": -7,
+  "eff": ""
  }
 ]
