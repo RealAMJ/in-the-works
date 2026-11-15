@@ -62235,10 +62235,10 @@
   "stl": 1,
   "blk": 1,
   "tov": 1,
-  "fg": "2/4",
+  "fg": "2/5",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ESPN"
