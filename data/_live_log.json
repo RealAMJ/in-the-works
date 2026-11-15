@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:48:33+01:00",
+ "at": "2026-11-15T20:49:23+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -14,12 +14,12 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     73,
+     74,
      12
     ],
     [
      "Virtus Costa Bologna",
-     87,
+     88,
      12
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:21",
+   "clock": "00:54",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     39,
+     40,
      15
     ],
     [
