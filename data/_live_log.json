@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:02:25+01:00",
+ "at": "2026-11-15T19:03:17+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "01:12",
+   "clock": "00:52",
    "done": false,
    "teams": [
     [
@@ -31,7 +31,7 @@
   {
    "game": "g20261115virt",
    "src": "LBA (legabasket.it)",
-   "period": 0,
+   "period": 1,
    "clock": "",
    "done": false,
    "teams": [
@@ -42,7 +42,7 @@
     ],
     [
      "Virtus Costa Bologna",
-     0,
+     3,
      12
     ]
    ]

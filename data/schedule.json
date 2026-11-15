@@ -2311,8 +2311,8 @@
   "status": "live",
   "score": "L 39-55",
   "live_feed": "bbl:2006855",
-  "clock": "Q2 01:12",
-  "live_updated": "2026-11-15T19:02:25+01:00"
+  "clock": "Q2 00:52",
+  "live_updated": "2026-11-15T19:03:17+01:00"
  },
  {
   "game_id": "g20261115virt",
@@ -2324,9 +2324,11 @@
   "venue": "Away",
   "competition": "LBA (Italy)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "lba:25417"
+  "status": "live",
+  "score": "W 3-0",
+  "live_feed": "lba:25417",
+  "clock": "Q1 ",
+  "live_updated": "2026-11-15T19:03:17+01:00"
  },
  {
   "game_id": "g20261115mich",
