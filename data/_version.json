@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T03:05:36+01:00",
+ "updated": "2026-11-15T03:06:05+01:00",
  "app": "4c404caf4a0f",
  "files": {
   "awards": "1c451ad9ae1b",
@@ -10,8 +10,8 @@
   "coaches": "efb2086390f9",
   "coachgames": "90442b663c23",
   "feed_seeds": "3b098e820f52",
-  "fullbox": "fe9052fdbdb3",
-  "gamelogs": "6be9a421ce57",
+  "fullbox": "3234f9e8881b",
+  "gamelogs": "981e5b0c1f9e",
   "highlights": "95fec6077d71",
   "leaguetiers": "8eff8731a606",
   "logos": "2f3108d46d88",
@@ -28,9 +28,9 @@
   "sblleague": "755e1d14c7e5",
   "sblplayers": "d94465dcd549",
   "sblroster": "71c352b80281",
-  "schedule": "86045e82f36e",
-  "stats": "78830a8dec85",
-  "teamform": "95004b32ca6b",
+  "schedule": "aa26ea14c4fb",
+  "stats": "f1ce0653a6ce",
+  "teamform": "90b1949eaee3",
   "teams": "1c474cd44ea0",
   "thisweek": "77ee1f738998"
  }

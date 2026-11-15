@@ -6648,5 +6648,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "berg-2026-11-15",
+  "player": "William Berg",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "team": "Wichita State",
+  "opponent": "Austin Peay",
+  "venue": "Home",
+  "result": "W 76-60",
+  "min": 27,
+  "pts": 13,
+  "reb": 9,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "6/8",
+  "three": "1/2",
+  "ft": "0/0",
+  "oreb": 3,
+  "dreb": 6,
+  "stl": 0,
+  "blk": 1,
+  "tov": 1,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]

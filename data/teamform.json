@@ -6858,5 +6858,33 @@
   "note": "",
   "leaders": "Johnson|11|3|2;Jones|10|1|0;Sanders|5|5|3;Cole|5|4|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "wichita-state-2026-11-15",
+  "team": "Wichita State",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Austin Peay",
+  "venue": "Home",
+  "score": "76-60",
+  "result": "W",
+  "top": "Battie 27 pts, 11 reb",
+  "note": "",
+  "leaders": "Battie|27|11|0;Berg|13|9|1;Frison|10|3|9",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "austin-peay-2026-11-15",
+  "team": "Austin Peay",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Wichita State",
+  "venue": "Away",
+  "score": "60-76",
+  "result": "L",
+  "top": "Collins 24 pts, 5 reb",
+  "note": "",
+  "leaders": "Collins|24|5|0;Minzer|17|8|1;Floyd|4|4|0;Ryans|4|1|0",
+  "source": "ESPN"
  }
 ]
