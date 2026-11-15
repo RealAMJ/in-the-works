@@ -2309,10 +2309,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "L 54-74",
+  "score": "L 54-77",
   "live_feed": "bbl:2006855",
-  "clock": "Q3 05:08",
-  "live_updated": "2026-11-15T19:30:15+01:00"
+  "clock": "Q3 04:23",
+  "live_updated": "2026-11-15T19:31:09+01:00"
  },
  {
   "game_id": "g20261115virt",
@@ -2325,10 +2325,10 @@
   "competition": "LBA (Italy)",
   "note": "",
   "status": "live",
-  "score": "W 26-15",
+  "score": "W 28-19",
   "live_feed": "lba:25417",
   "clock": "Q2 ",
-  "live_updated": "2026-11-15T19:30:16+01:00"
+  "live_updated": "2026-11-15T19:31:09+01:00"
  },
  {
   "game_id": "g20261115mich",
