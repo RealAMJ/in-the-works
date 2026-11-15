@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:27:10+01:00",
+ "at": "2026-11-15T20:27:38+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -32,12 +32,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:31",
+   "clock": "09:11",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     21,
+     25,
      15
     ],
     [
@@ -60,7 +60,7 @@
    "teams": [
     [
      "Capital Crusaders",
-     7,
+     9,
      20
     ],
     [
