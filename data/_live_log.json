@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:36:07+01:00",
+ "at": "2026-11-15T20:36:59+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -32,12 +32,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:30",
+   "clock": "05:59",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     33,
+     35,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:18",
+   "clock": "05:27",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Robert Morris Colonials",
-     30,
+     32,
      15
     ]
    ]
