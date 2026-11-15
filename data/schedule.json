@@ -2309,10 +2309,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "L 69-94",
+  "score": "L 69-96",
   "live_feed": "bbl:2006855",
-  "clock": "Q4 06:16",
-  "live_updated": "2026-11-15T19:55:09+01:00"
+  "clock": "Q4 06:10",
+  "live_updated": "2026-11-15T19:55:38+01:00"
  },
  {
   "game_id": "g20261115virt",
@@ -2328,7 +2328,7 @@
   "score": "W 39-32",
   "live_feed": "lba:25417",
   "clock": "Q2 ",
-  "live_updated": "2026-11-15T19:55:09+01:00"
+  "live_updated": "2026-11-15T19:55:39+01:00"
  },
  {
   "game_id": "g20261115mich",
