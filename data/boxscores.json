@@ -3191,7 +3191,7 @@
   "ast": 2,
   "fg": "5/7",
   "three": "0/0",
-  "ft": "5/11",
+  "ft": "5/9",
   "pm": -8,
   "source": "easyCredit BBL",
   "note": "live",
@@ -3201,6 +3201,28 @@
   "blk": 1,
   "tov": 3,
   "pf": 2,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261115mich-cadeau",
+  "game_id": "g20261115mich",
+  "player": "Elliot Cadeau",
+  "min": 0,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
   "eff": ""
  }
 ]
