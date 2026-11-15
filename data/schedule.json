@@ -2260,10 +2260,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 51-59",
+  "score": "L 51-61",
   "live_feed": "prob:2006193",
-  "clock": "Q4 03:23",
-  "live_updated": "2026-11-15T17:44:02+01:00"
+  "clock": "Q4 01:50",
+  "live_updated": "2026-11-15T17:44:50+01:00"
  },
  {
   "game_id": "g20261115cult",
@@ -2279,7 +2279,7 @@
   "score": "L 48-79",
   "live_feed": "prob:2006191",
   "clock": "Q4 03:53",
-  "live_updated": "2026-11-15T17:44:07+01:00"
+  "live_updated": "2026-11-15T17:44:57+01:00"
  },
  {
   "game_id": "g20261115froy",
