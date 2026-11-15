@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T21:39:48+01:00",
+ "at": "2026-11-15T21:40:15+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -9,7 +9,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:23",
+   "clock": "08:15",
    "done": false,
    "teams": [
     [
@@ -44,6 +44,29 @@
      "Robert Morris Colonials",
      81,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261115idah",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261115idah",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Seattle U Redhawks",
+     0,
+     0
+    ],
+    [
+     "Idaho State Bengals",
+     0,
+     0
     ]
    ]
   }
