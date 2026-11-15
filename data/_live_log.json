@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:30:08+01:00",
+ "at": "2026-11-15T20:30:59+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -14,12 +14,12 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     48,
+     51,
      12
     ],
     [
      "Virtus Costa Bologna",
-     73,
+     75,
      12
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:29",
+   "clock": "08:11",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:05",
+   "clock": "07:55",
    "done": false,
    "teams": [
     [
      "Capital Crusaders",
-     9,
+     11,
      20
     ],
     [
      "Robert Morris Colonials",
-     27,
+     28,
      15
     ]
    ]
