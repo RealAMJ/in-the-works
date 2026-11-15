@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:41:58+01:00",
+ "at": "2026-11-15T02:42:33+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,12 +9,12 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:09",
+   "clock": "08:05",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     50,
+     52,
      16
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261115wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:59",
+   "clock": "05:16",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wichita State Shockers",
-     64,
+     66,
      17
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:47",
+   "clock": "00:30",
    "done": false,
    "teams": [
     [
