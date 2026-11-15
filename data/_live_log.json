@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T16:23:12+01:00",
+ "at": "2026-11-15T16:24:11+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -8,7 +8,7 @@
   {
    "game": "g20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
-   "period": 1,
+   "period": 2,
    "clock": "00:29",
    "done": false,
    "teams": [
@@ -32,17 +32,17 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "01:13",
+   "clock": "00:53",
    "done": false,
    "teams": [
     [
      "Dresden Titans",
-     25,
+     26,
      10
     ],
     [
      "Culture City Weimar",
-     12,
+     13,
      12
     ]
    ]
@@ -54,7 +54,7 @@
   {
    "game": "c20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
-   "period": 1,
+   "period": 2,
    "clock": "00:29",
    "done": false,
    "teams": [
