@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:11:18+01:00",
+ "at": "2026-11-15T20:11:50+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "00:51",
+   "clock": "00:39",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:52",
+   "clock": "15:19",
    "done": false,
    "teams": [
     [
      "William & Mary Tribe",
-     9,
+     12,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:47",
+   "clock": "15:33",
    "done": false,
    "teams": [
     [
