@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T02:54:32+01:00",
+ "at": "2026-11-15T02:55:21+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,17 +9,17 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:21",
+   "clock": "03:38",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     61,
+     64,
      16
     ],
     [
      "Western Carolina Catamounts",
-     61,
+     64,
      16
     ]
    ]
