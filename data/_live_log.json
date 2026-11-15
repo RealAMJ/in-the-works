@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T18:30:20+01:00",
+ "at": "2026-11-15T18:31:12+01:00",
  "log": [
   {
    "game": "g20261115froy",
@@ -9,8 +9,8 @@
    "game": "g20261115froy",
    "src": "Norwegian federation (basket.no)",
    "period": 4,
-   "clock": "",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Froya Basket Laksev\u00e5g",
@@ -32,12 +32,12 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "01:09",
+   "clock": "00:23",
    "done": false,
    "teams": [
     [
      "NINERS Chemnitz",
-     26,
+     30,
      10
     ],
     [
