@@ -2192,7 +2192,7 @@
   "espn_id": "401920705",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920705",
   "clock": "Q2 17:26",
-  "live_updated": "2026-11-15T02:11:20+01:00"
+  "live_updated": "2026-11-15T02:12:10+01:00"
  },
  {
   "game_id": "g20261115wich",
@@ -2208,8 +2208,8 @@
   "score": "W 38-31",
   "espn_id": "401917951",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401917951",
-  "clock": "Q2 18:32",
-  "live_updated": "2026-11-15T02:11:20+01:00"
+  "clock": "Q2 17:49",
+  "live_updated": "2026-11-15T02:12:10+01:00"
  },
  {
   "game_id": "g20261115miam",
@@ -2221,10 +2221,12 @@
   "venue": "Home",
   "competition": "NBA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 3-2",
   "espn_id": "401909982",
-  "box_url": "https://www.espn.com/nba/game/_/gameId/401909982"
+  "box_url": "https://www.espn.com/nba/game/_/gameId/401909982",
+  "clock": "Q1 11:39",
+  "live_updated": "2026-11-15T02:12:10+01:00"
  },
  {
   "game_id": "g20261115newm",
