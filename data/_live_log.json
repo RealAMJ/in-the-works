@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T01:36:08+01:00",
+ "at": "2026-11-15T01:36:58+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,7 +9,7 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:26",
+   "clock": "05:22",
    "done": false,
    "teams": [
     [
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Austin Peay Governors",
-     17,
+     18,
      12
     ],
     [
