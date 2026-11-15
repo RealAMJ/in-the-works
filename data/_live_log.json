@@ -1,26 +1,26 @@
 {
- "at": "2026-11-15T06:18:20+01:00",
+ "at": "2026-11-15T14:40:23+01:00",
  "log": [
   {
-   "game": "g20261115newm",
-   "checking": "ESPN"
+   "game": "c20261114ora",
+   "checking": "Romanian federation (frbaschet.ro)"
   },
   {
-   "game": "g20261115newm",
-   "src": "ESPN",
-   "period": 0,
+   "game": "c20261114ora",
+   "src": "Romanian federation (frbaschet.ro)",
+   "period": 4,
    "clock": "00:00",
    "done": true,
    "teams": [
     [
-     "New Mexico Lobos",
+     "CSM Oradea",
      85,
-     13
+     0
     ],
     [
-     "Santa Clara Broncos",
-     90,
-     15
+     "SCM Timi\u0219oara",
+     70,
+     0
     ]
    ]
   }

@@ -8,6 +8,7 @@ More free live sources the GitHub job can read (FIBA LiveStats, NBA via ESPN and
   BCL (Champions League)     live_feed "bcl:<game id>"    page championsleague.basketball/en/games/<id> (FIBA's own box score)
   LBA (Italy, Serie A)       live_feed "lba:<game id>"    page legabasket.it/game/<id>/x (its __NEXT_DATA__ JSON)
   LKL (Lithuania)            live_feed "lkl:<game id>"    JSON lkl.lt/api/livestream/boxscore/<id> (id from lkl.lt/rungtynes/<id>)
+  Liga Națională (Romania)   live_feed "bh:<league>:<team>:<game>"  BasketHotel schedule widget (frbaschet.ro), final score only
   BLNO (Norway)              live_feed "nif:<match id>"   the Norwegian federation's match API (sf14-terminlister-prod-app.azurewebsites.net,
                                                           used by kamper.basket.no): score by quarter, player box score
   ProA / ProB (Germany)      live_feed "prob:<game id>"   live.2basketballbundesliga.de/g/<id> (its Socket.IO history; game ids from
@@ -495,6 +496,65 @@ def read_nif(mid, row=None):
     late = bool(tip and U.now() > tip + dt.timedelta(hours=3))
     done = bool(res.get('matchEndResult')) and hs != as_ and (period >= 4 or late)
     return dict(period=max(period, 1), clock='00:00' if done else '', done=done, notstarted=not per and not res.get('matchEndResult'), teams=teams)
+
+
+# ------------------------------------------------------------------ BasketHotel (Genius Sports) widgets: Romania's Liga Națională
+BH_API = '9c3622c013ca2f69e8c373ecbf5af38e180f6d7d'   # the Romanian federation's public widget key (frbaschet.ro)
+BH_URL = 'https://widgets.baskethotel.com/widget-service/show'
+_BH_STATE = {}
+
+
+def _bh_get(params):
+    import urllib.parse
+    import urllib.request
+    q = dict(api=BH_API, lang='en', nnav='1')
+    q.update(params)
+    req = urllib.request.Request(BH_URL + '?' + urllib.parse.urlencode(q), headers=dict(U.UA))
+    with urllib.request.urlopen(req, timeout=40) as r:
+        t = r.read().decode('utf-8', 'replace')
+    return t.replace('\\/', '/').replace('\\n', '\n').replace('\\"', '"').replace("\\'", "'")
+
+
+def bh_games(league, team):
+    """A team's season in a BasketHotel league: [{gid, date, time (league local), home, away, hs, as_}] from the
+    schedule widget's results and fixtures lists."""
+    if league not in _BH_STATE:
+        t = _bh_get({'request[0][container]': 'c', 'request[0][widget]': '303', 'request[0][param][league_id]': str(league),
+                     'request[0][param][template]': 'v2', 'request[0][param][game_link_visible]': '1', 'request[0][param][team_link_visible]': '1'})
+        m = re.search(r"state:\s*'([A-Za-z0-9+/=]+)'", t)
+        if not m:
+            raise ValueError('no widget state')
+        _BH_STATE[league] = m.group(1)
+    out = []
+    for kind in ('results_only', 'schedule_only'):
+        t = _bh_get({'request[0][container]': 'c', 'request[0][widget]': '303', 'request[0][part]': 'schedule_and_results',
+                     'request[0][state]': _BH_STATE[league], 'request[0][param][filter][type]': kind,
+                     'request[0][param][filter][tab]': 'schedule_and_results', 'request[0][param][filter][team]': str(team)})
+        t = re.sub(r'<script.*?</script>', '', t, flags=re.S)
+        for tr in re.findall(r'<tr>(.*?)</tr>', t, re.S):
+            gid = re.search(r'game_id="(\d+)"[^>]*>\s*(\d{4}-\d\d-\d\d)\s+(\d{1,2}:\d\d)?', tr)
+            h = re.search(r'schedule-team-a.*?team_id="(\d+)"[^>]*>([^<]+)<', tr, re.S)
+            a = re.search(r'schedule-team-b.*?team_id="(\d+)"[^>]*>([^<]+)<', tr, re.S)
+            sc = re.search(r'result-column.*?>(?:<span[^>]*>)?\s*(\d+)\s*(?:</span>)?\s*:\s*(?:<span[^>]*>)?\s*(\d+)', tr, re.S)
+            if not (gid and h and a):
+                continue
+            out.append(dict(gid=gid.group(1), date=gid.group(2), time=gid.group(3) or '', home_id=h.group(1), home=' '.join(h.group(2).split()),
+                            away_id=a.group(1), away=' '.join(a.group(2).split()), hs=int(sc.group(1)) if sc else None, as_=int(sc.group(2)) if sc else None))
+    return out
+
+
+def read_bh(spec, row=None):
+    """live_feed "bh:<league>:<team>:<game>": the final score once the league lists the result (no box score)."""
+    league, team, gid = spec.split(':')
+    g = next((x for x in bh_games(league, team) if x['gid'] == gid), None)
+    if not g:
+        raise ValueError('game not in the league schedule')
+    row = row or {}
+    home = (row.get('venue') or 'Home') != 'Away'
+    names = (row.get('team', g['home']), row.get('opponent', g['away'])) if home else (row.get('opponent', g['home']), row.get('team', g['away']))
+    done = g['hs'] is not None and g['as_'] is not None
+    return dict(period=4 if done else 1, clock='00:00' if done else '', done=done, notstarted=not done,
+                teams=[dict(name=names[0], score=g['hs'] or 0, pl=[]), dict(name=names[1], score=g['as_'] or 0, pl=[])])
 
 
 # ------------------------------------------------------------------ FEB

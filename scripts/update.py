@@ -327,6 +327,9 @@ def feed_for(row):
     if f.startswith('lkl:'):
         import sources
         return 'LKL Live', lambda: sources.read_lkl(f.split(':', 1)[1], row)
+    if f.startswith('bh:'):
+        import sources
+        return 'Romanian federation (frbaschet.ro)', lambda: sources.read_bh(f.split(':', 1)[1], row)
     if f.startswith('nif:'):
         import sources
         return 'Norwegian federation (basket.no)', lambda: sources.read_nif(f.split(':', 1)[1], row)

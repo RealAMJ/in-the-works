@@ -256,15 +256,17 @@
  {
   "game_id": "c20261114ora",
   "date": "2026-11-14",
-  "time": "17:00",
+  "time": "16:00",
   "coach": "Mikko Riipinen",
   "team": "CSM Oradea",
   "opponent": "SCM Timișoara",
   "venue": "Home",
   "competition": "Liga Națională",
   "note": "",
-  "status": "upcoming",
-  "score": ""
+  "status": "final",
+  "score": "W 85-70",
+  "live_feed": "bh:25493:21665:6189531",
+  "live_done": true
  },
  {
   "game_id": "c20261114san",
@@ -335,5 +337,19 @@
   "note": "",
   "status": "upcoming",
   "score": ""
+ },
+ {
+  "game_id": "c20261121csmo",
+  "date": "2026-11-21",
+  "time": "17:00",
+  "coach": "Mikko Riipinen",
+  "team": "CSM Oradea",
+  "opponent": "CSO Voluntari",
+  "venue": "Away",
+  "competition": "Liga Națională",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "bh:25493:21665:6189539"
  }
 ]

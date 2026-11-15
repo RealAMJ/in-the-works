@@ -194,6 +194,22 @@ def nif():
                        confirmed=bool(hm), feed=f"nif:{m['matchId']}")
 
 
+# BasketHotel leagues (Romania): club -> (league id, team id, league time zone)
+BH_TEAMS = {'CSM Oradea': (25493, 21665, 'Europe/Bucharest')}
+
+
+def bh():
+    from zoneinfo import ZoneInfo
+    for club, (league, tid, tz) in BH_TEAMS.items():
+        for g in S.bh_games(league, tid):
+            if not g['time']:
+                continue
+            t = dt.datetime.fromisoformat(f"{g['date']}T{int(g['time'].split(':')[0]):02d}:{g['time'].split(':')[1]}").replace(tzinfo=ZoneInfo(tz))
+            home = club if g['home_id'] == str(tid) else g['home']
+            away = club if g['away_id'] == str(tid) else g['away']
+            yield dict(at=t.astimezone(UTC), home=home, away=away, confirmed=True, feed=f"bh:{league}:{tid}:{g['gid']}")
+
+
 def main(argv):
     now = U.now()
     if '--force' not in argv and not (now.hour == 7 and now.minute < 6):
@@ -201,7 +217,7 @@ def main(argv):
     sched, coach, players = U.load('schedule'), U.load('coachgames'), U.load('players')
     lo, hi = now - dt.timedelta(days=3), now + dt.timedelta(days=8)
     comps = {'EuroLeague': euroleague, 'Champions League (BCL)': bcl, 'BBL': None, 'ABA League': aba, 'LBA (Italy)': lba,
-             'ProB (Germany)': prob, 'Icelandic Premier League': lambda: genius('Icelandic Premier League'), 'BLNO (Norway)': nif}
+             'ProB (Germany)': prob, 'Icelandic Premier League': lambda: genius('Icelandic Premier League'), 'BLNO (Norway)': nif, 'Liga Națională': bh}
     changes = 0
     for comp, reader in comps.items():
         # clubs we follow in this competition, and who to list for them
@@ -212,7 +228,7 @@ def main(argv):
                     clubs.setdefault((r['team'], who), r.get(who) or '')
         # also clubs whose players are listed in this competition but have no game of it on the schedule yet
         key = {'EuroLeague': 'euroleague', 'Champions League (BCL)': 'champions league', 'BBL': 'bbl',
-               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob', 'Icelandic Premier League': 'icelandic premier league', 'BLNO (Norway)': 'blno'}[comp]
+               'ABA League': 'aba', 'LBA (Italy)': 'lba', 'ProB (Germany)': 'prob', 'Icelandic Premier League': 'icelandic premier league', 'BLNO (Norway)': 'blno', 'Liga Națională': 'liga națională'}[comp]
         for p in players:
             comps = str(p.get('competitions') or '').lower()
             if p.get('status') == 'Confirmed' and p.get('club') and re.search(r'(^|[^a-z])' + re.escape(key) + r'([^a-z]|$)', comps) \
@@ -245,7 +261,7 @@ def main(argv):
                     venue, opp = 'Home', f['away']
                 elif f['away'] == club:
                     venue, opp = 'Away', f['home']
-                elif comp in ('ProB (Germany)', 'Icelandic Premier League', 'BLNO (Norway)'):
+                elif comp in ('ProB (Germany)', 'Icelandic Premier League', 'BLNO (Norway)', 'Liga Națională'):
                     continue
                 elif cw & S.words(f['home']):
                     venue, opp = 'Home', f['away']
