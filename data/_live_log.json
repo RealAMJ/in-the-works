@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T03:39:38+01:00",
+ "at": "2026-11-15T03:40:13+01:00",
  "log": [
   {
    "game": "g20261115miam",
@@ -21,6 +21,29 @@
      "Miami Heat",
      77,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261115newm",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261115newm",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Santa Clara Broncos",
+     0,
+     0
+    ],
+    [
+     "New Mexico Lobos",
+     0,
+     0
     ]
    ]
   }
