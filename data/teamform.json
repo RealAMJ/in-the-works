@@ -7082,5 +7082,33 @@
   "note": "",
   "leaders": "Olivari|23|6|5;Niang|10|7|0;Bayehe|10|6|0",
   "source": "LBA (legabasket.it)"
+ },
+ {
+  "row_id": "robert-morris-2026-11-15",
+  "team": "Robert Morris",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Capital",
+  "venue": "Home",
+  "score": "94-45",
+  "result": "W",
+  "top": "Ugwuakazi 20 pts, 10 reb",
+  "note": "",
+  "leaders": "Ugwuakazi|20|10|1;Dunkley|17|7|2;Occomy|13|2|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "capital-2026-11-15",
+  "team": "Capital",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "opponent": "Robert Morris",
+  "venue": "Away",
+  "score": "45-94",
+  "result": "L",
+  "top": "Mitchell 9 pts, 3 reb",
+  "note": "",
+  "leaders": "Mitchell|9|3|2;McGee|7|1|0;Scott|6|3|1",
+  "source": "ESPN"
  }
 ]

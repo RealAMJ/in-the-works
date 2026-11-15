@@ -3226,28 +3226,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261115mich-cadeau",
-  "game_id": "g20261115mich",
-  "player": "Elliot Cadeau",
-  "min": 24,
-  "pts": 11,
-  "reb": 3,
-  "ast": 9,
-  "fg": "4/9",
-  "three": "2/5",
-  "ft": "1/1",
-  "pm": "",
-  "source": "ESPN",
-  "note": "live",
-  "oreb": 0,
-  "dreb": 3,
-  "stl": 3,
-  "blk": 1,
-  "tov": 3,
-  "pf": 2,
-  "eff": ""
- },
- {
   "line_id": "g20261115robe-obenjo",
   "game_id": "g20261115robe",
   "player": "Samuel Obenjo",
@@ -3267,6 +3245,28 @@
   "blk": 2,
   "tov": 1,
   "pf": 0,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261115mich-cadeau",
+  "game_id": "g20261115mich",
+  "player": "Elliot Cadeau",
+  "min": 25,
+  "pts": 11,
+  "reb": 3,
+  "ast": 9,
+  "fg": "4/9",
+  "three": "2/5",
+  "ft": "1/1",
+  "pm": "",
+  "source": "ESPN",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 3,
+  "stl": 3,
+  "blk": 1,
+  "tov": 3,
+  "pf": 2,
   "eff": ""
  }
 ]

@@ -6960,5 +6960,31 @@
   "pf": 2,
   "pm": -7,
   "eff": ""
+ },
+ {
+  "row_id": "obenjo-2026-11-15",
+  "player": "Samuel Obenjo",
+  "date": "2026-11-15",
+  "competition": "NCAA",
+  "team": "Robert Morris",
+  "opponent": "Capital",
+  "venue": "Home",
+  "result": "W 94-45",
+  "min": 23,
+  "pts": 5,
+  "reb": 8,
+  "ast": 3,
+  "source": "ESPN",
+  "fg": "1/1",
+  "three": "0/0",
+  "ft": "3/6",
+  "oreb": 4,
+  "dreb": 4,
+  "stl": 1,
+  "blk": 2,
+  "tov": 1,
+  "pf": 0,
+  "pm": "",
+  "eff": ""
  }
 ]
