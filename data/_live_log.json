@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T04:46:35+01:00",
+ "at": "2026-11-15T04:47:24+01:00",
  "log": [
-  {
-   "game": "g20261115miam",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261115miam",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Detroit Pistons",
-     117,
-     13
-    ],
-    [
-     "Miami Heat",
-     137,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261115newm",
    "checking": "ESPN"
@@ -37,7 +14,7 @@
    "teams": [
     [
      "New Mexico Lobos",
-     30,
+     32,
      13
     ],
     [
