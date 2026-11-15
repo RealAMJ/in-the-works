@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:37:20+01:00",
+ "at": "2026-11-15T19:38:13+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,7 +9,7 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "02:11",
+   "clock": "01:55",
    "done": false,
    "teams": [
     [
