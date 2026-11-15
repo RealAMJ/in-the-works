@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T01:47:34+01:00",
+ "at": "2026-11-15T01:48:25+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,7 +9,7 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:31",
+   "clock": "00:25",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Western Carolina Catamounts",
-     35,
+     37,
      16
     ]
    ]
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Austin Peay Governors",
-     26,
+     27,
      12
     ],
     [
