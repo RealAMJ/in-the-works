@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T21:05:18+01:00",
+ "at": "2026-11-15T21:05:45+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -32,12 +32,12 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:15",
+   "clock": "17:30",
    "done": false,
    "teams": [
     [
      "Capital Crusaders",
-     26,
+     28,
      20
     ],
     [
