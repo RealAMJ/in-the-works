@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:11:50+01:00",
+ "at": "2026-11-15T20:12:42+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,17 +9,17 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "00:39",
+   "clock": "00:11",
    "done": false,
    "teams": [
     [
      "NINERS Chemnitz",
-     105,
+     108,
      10
     ],
     [
      "Basketball L\u00f6wen Braunschweig",
-     77,
+     79,
      10
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:19",
+   "clock": "15:16",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Michigan Wolverines",
-     12,
+     13,
      17
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:33",
+   "clock": "14:32",
    "done": false,
    "teams": [
     [
      "Capital Crusaders",
-     1,
+     4,
      20
     ],
     [
      "Robert Morris Colonials",
-     10,
+     12,
      15
     ]
    ]
