@@ -2378,12 +2378,11 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "L 70-77",
   "espn_id": "401917528",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401917528",
-  "clock": "Halftime",
-  "live_updated": "2026-11-16T00:03:24+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261116stjo",
