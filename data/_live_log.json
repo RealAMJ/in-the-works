@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T03:17:09+01:00",
+ "at": "2026-11-15T03:18:00+01:00",
  "log": [
-  {
-   "game": "g20261115lips",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261115lips",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Lipscomb Bisons",
-     75,
-     16
-    ],
-    [
-     "Western Carolina Catamounts",
-     68,
-     16
-    ]
-   ]
-  },
   {
    "game": "g20261115miam",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261115miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:21",
+   "clock": "00:45",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     60,
+     62,
      15
     ]
    ]
