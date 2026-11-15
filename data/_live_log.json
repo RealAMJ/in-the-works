@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:03:50+01:00",
+ "at": "2026-11-15T20:04:42+01:00",
  "log": [
   {
    "game": "g20261115lowe",
@@ -9,12 +9,12 @@
    "game": "g20261115lowe",
    "src": "easyCredit BBL",
    "period": 4,
-   "clock": "03:55",
+   "clock": "03:25",
    "done": false,
    "teams": [
     [
      "NINERS Chemnitz",
-     98,
+     101,
      10
     ],
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Virtus Costa Bologna",
-     39,
+     41,
      12
     ]
    ]
@@ -65,7 +65,7 @@
     ],
     [
      "Michigan Wolverines",
-     1,
+     4,
      17
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g20261115robe",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:06",
+   "clock": "18:57",
    "done": false,
    "teams": [
     [
      "Capital Crusaders",
-     0,
+     1,
      20
     ],
     [
