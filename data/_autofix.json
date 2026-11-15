@@ -1,0 +1,39 @@
+{
+ "fixes": [
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Pelle Larsson, 2026-10-31 (NBA)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Bobi Klintman, 2026-10-30 (EuroLeague)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Chris Czerapowicz, 2026-10-30 (Primera FEB)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Bobi Klintman, 2026-10-28 (EuroLeague)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Pelle Larsson, 2026-10-29 (NBA)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Adam Ramstedt, 2026-10-29 (Icelandic Premier League)"
+  },
+  {
+   "at": "2026-11-15T14:26:29+01:00",
+   "what": "Added the missing game-log row for Barra Njie, 2026-10-30 (ABA League)"
+  }
+ ],
+ "issues": [
+  "Team notes for Juventus Utena are from 2026-10-31; they last played 2026-11-08",
+  "Team notes for Löwen Braunschweig are from 2026-10-31; they last played 2026-11-07",
+  "Team notes for Basketball Löwen Erfurt are from 2026-11-08; they last played 2026-11-13",
+  "Team notes for Mississippi State are from 2026-10-30; they last played 2026-11-14",
+  "Team notes for Culture City Weimar are from 2026-11-08; they last played 2026-11-13"
+ ]
+}

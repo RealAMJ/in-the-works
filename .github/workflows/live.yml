@@ -41,6 +41,9 @@ jobs:
       - name: After-game paperwork (team form, records, averages, highlights)
         run: python3 scripts/postgame.py || true
 
+      - name: Automatic data fixes (game logs, averages, rosters)
+        run: python3 scripts/autofix.py || true
+
       - name: NBA/NCAA schedule check (07:00 only)
         run: python3 scripts/schedule_us.py || true
 

@@ -398,6 +398,49 @@ def as_min(m):
     return int(p[0]) if p[0].isdigit() else m
 
 
+HOLD_MAX = dt.timedelta(hours=3)
+GENERIC_WORDS = {'basket', 'basketball', 'club', 'baskets', 'team', 'bbk', 'the', 'and'}
+
+
+def _words(s):
+    return {w for w in norm(s).split() if len(w) > 2 and w not in GENERIC_WORDS}
+
+
+def feed_checks(row, feed, us, them, done, swedes):
+    """Checks a feed update has to pass before it reaches the site. Returns (ok, reason, done):
+    * the right game: one of the feed's team names matches our team or the opponent, or a listed Swede is in it
+    * not a score from before tip-off
+    * the score doesn't go backwards (small stat corrections allowed)
+    * a final whose box score doesn't add up to the score is held as live (up to 3 h, then accepted)"""
+    t = now()
+    tip = tip_time(row)
+    names = [x.get('name') or '' for x in feed['teams']]
+    ours = [row.get('team', ''), row.get('opponent', '')]
+    if not any(_words(n) & _words(o) or norm(n) == norm(o) for n in names for o in ours):
+        in_feed = {norm(p.get('name')) for x in feed['teams'] for p in x.get('pl') or []}
+        if not any(any(last(sw) in n.split() for n in in_feed) for sw in swedes):
+            return False, f"feed teams {names} don't match {ours}", done
+    # before tip-off a finished game (or more than a few baskets) means the feed is another game, e.g. the other leg
+    if tip and t < tip and (done or us['score'] + them['score'] > 20):
+        return False, 'score before tip-off', done
+    m = re.match(r'[WL] (\d+)-(\d+)', str(row.get('score') or ''))
+    if m and row.get('status') == 'live' and us['score'] + them['score'] < int(m.group(1)) + int(m.group(2)) - 5:
+        return False, f"score went backwards ({row['score']} -> {us['score']}-{them['score']})", done
+    if done:
+        bad = [x for x in feed['teams'] if x.get('pl') and sum(int(p.get('pts') or 0) for p in x['pl']) != x['score']]
+        if bad:
+            since = row.get('held_since')
+            if not since:
+                row['held_since'] = t.isoformat(timespec='seconds')
+            if not since or t - dt.datetime.fromisoformat(since) < HOLD_MAX:
+                row['held'] = "box score doesn't add up to the final score"
+                return True, '', False
+            LOG.append({'game': row['game_id'], 'accepted_after_hold': True})
+        row.pop('held', None)
+        row.pop('held_since', None)
+    return True, '', done
+
+
 def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
     gid = row['game_id']
     swedes = [s.strip() for s in (row.get('players') or '').split(',') if s.strip()]
@@ -410,6 +453,11 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
     if not started:
         return False
     done = bool(feed['done'])
+    ok, why, done = feed_checks(row, feed, us, them, done, swedes)
+    if not ok:
+        print(f"  {gid}: update skipped ({why})")
+        LOG.append({'game': gid, 'skipped': why})
+        return False
     res = ('W' if us['score'] > them['score'] else 'L') if done else ('W' if us['score'] >= them['score'] else 'L')
     row['score'] = f"{res} {us['score']}-{them['score']}"
     row['status'] = 'final' if done else 'live'
@@ -418,7 +466,7 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
         row.pop('live_updated', None)
         row['live_done'] = True
     else:
-        row['clock'] = clock_label(feed)
+        row['clock'] = 'Final · checking' if row.get('held') else clock_label(feed)
         row['live_updated'] = now().isoformat(timespec='seconds')
 
     # Box scores, both teams; names on our site for the two sides

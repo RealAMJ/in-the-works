@@ -11,6 +11,8 @@ Checks:
   * the public site lagging more than 30 minutes behind the data in the repository
   * duplicate ids in the data files
   * averages (data/stats.json) that don't match the game logs
+and once a day (07:00-08:00) a morning report: the last 24 hours of games, the automatic fixes (scripts/autofix.py)
+and anything that needs a look.
 
 Run: python3 scripts/health.py            (--dry-run prints without sending or saving)
 """
@@ -161,6 +163,36 @@ def checks(now):
     return issues
 
 
+def morning(now):
+    """The daily report: last 24 hours of games, what the automatic fixes did, what still needs a look."""
+    sched, coach, bx = U.load('schedule'), U.load('coachgames'), U.load('boxscores')
+    day = [r for r in sched + coach if U.tip_time(r) and now - dt.timedelta(hours=24) <= U.tip_time(r) <= now - dt.timedelta(hours=2)]
+    fin = [r for r in day if r.get('status') == 'final']
+    held = [r for r in day if r.get('held')]
+    open_ = [r for r in day if r.get('status') != 'final' and not r.get('held')]
+    lines_missing = []
+    for r in fin:
+        if r['game_id'].startswith('c'):
+            continue
+        for n in [x.strip() for x in str(r.get('players') or '').split(',') if x.strip()]:
+            if not any(b.get('game_id') == r['game_id'] and U.norm(b.get('player')) == U.norm(n) for b in bx):
+                lines_missing.append(f"{n} ({r.get('team')})")
+    try:
+        af = json.load(open(os.path.join(U.DATA, '_autofix.json')))
+    except Exception:
+        af = {}
+    since = (now - dt.timedelta(hours=24)).isoformat(timespec='seconds')
+    fixes = [x['what'] for x in af.get('fixes', []) if x.get('at', '') >= since]
+    todo = [f"Held (box score doesn't add up): {r.get('team')} vs {r.get('opponent')}" for r in held] \
+        + [f"Missing line: {x}" for x in lines_missing] + af.get('issues', []) + checks(now)
+    msg = f"Good morning! Last 24 h: {len(day)} game{'s' if len(day) != 1 else ''}, {len(fin)} final"
+    msg += ', every Swede\'s line in.' if not lines_missing else '.'
+    if fixes:
+        msg += '\n\nFixed automatically:\n' + '\n'.join('• ' + f for f in fixes[:10])
+    msg += ('\n\nNeeds a look:\n' + '\n'.join('• ' + t for t in todo[:12])) if todo else '\n\nNothing needs a look.'
+    return msg
+
+
 def main(argv):
     dry = '--dry-run' in argv
     now = U.now()
@@ -179,10 +211,19 @@ def main(argv):
     elif not issues and state.get('sig'):
         msg = 'Site check: all clear again'
     print('\n'.join(issues) if issues else 'all fine')
+    # once a day, between 07:00 and 08:00 Swedish time: the morning report
+    today = now.date().isoformat()
+    if ('--morning' in argv or now.hour == 7) and state.get('morning') != today:
+        rep = morning(now)
+        print(rep)
+        if not dry and notify.send(rep):
+            state['morning'] = today
+            json.dump(state, open(STATE, 'w'), ensure_ascii=False, indent=1)
     if dry or not msg:
         return 0
     if notify.send(msg):
-        json.dump({'sig': sig, 'sent_at': now.isoformat(timespec='seconds'), 'issues': issues}, open(STATE, 'w'), ensure_ascii=False, indent=1)
+        state.update(sig=sig, sent_at=now.isoformat(timespec='seconds'), issues=issues)
+        json.dump(state, open(STATE, 'w'), ensure_ascii=False, indent=1)
     return 0
 
 
