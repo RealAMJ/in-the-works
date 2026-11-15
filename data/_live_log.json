@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T01:46:21+01:00",
+ "at": "2026-11-15T01:47:11+01:00",
  "log": [
   {
    "game": "g20261115lips",
@@ -9,7 +9,7 @@
    "game": "g20261115lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:48",
+   "clock": "01:19",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Western Carolina Catamounts",
-     30,
+     33,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:51",
+   "clock": "02:18",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Wichita State Shockers",
-     30,
+     31,
      17
     ]
    ]
