@@ -1,29 +1,6 @@
 {
- "at": "2026-11-15T22:04:20+01:00",
+ "at": "2026-11-15T22:05:10+01:00",
  "log": [
-  {
-   "game": "g20261115mich",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261115mich",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "William & Mary Tribe",
-     79,
-     15
-    ],
-    [
-     "Michigan Wolverines",
-     123,
-     17
-    ]
-   ]
-  },
   {
    "game": "g20261115idah",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261115idah",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:44",
+   "clock": "17:58",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "Seattle U Redhawks",
-     2,
+     4,
      16
     ]
    ]
