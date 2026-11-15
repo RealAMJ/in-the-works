@@ -61883,7 +61883,7 @@
   "ft": "2/2",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61904,7 +61904,7 @@
   "ft": "0/0",
   "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61913,7 +61913,7 @@
   "team": "Detroit Pistons",
   "player": "Cade Cunningham",
   "pos": "",
-  "min": 37,
+  "min": 36,
   "pts": 33,
   "reb": 5,
   "ast": 8,
@@ -61925,7 +61925,7 @@
   "ft": "14/14",
   "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61946,7 +61946,7 @@
   "ft": "0/0",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61967,7 +61967,7 @@
   "ft": "1/2",
   "pm": -22,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -61986,9 +61986,9 @@
   "fg": "1/3",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -11,
+  "pm": -12,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62009,7 +62009,7 @@
   "ft": "3/4",
   "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62028,9 +62028,9 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "1/3",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62051,7 +62051,7 @@
   "ft": "0/0",
   "pm": -27,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62060,7 +62060,7 @@
   "team": "Detroit Pistons",
   "player": "Isaac Jones",
   "pos": "",
-  "min": 1,
+  "min": 2,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -62070,9 +62070,9 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62081,7 +62081,7 @@
   "team": "Detroit Pistons",
   "player": "Javonte Green",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 5,
   "reb": 1,
   "ast": 0,
@@ -62093,7 +62093,7 @@
   "ft": "5/5",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62114,7 +62114,7 @@
   "ft": "0/0",
   "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62135,7 +62135,7 @@
   "ft": "2/2",
   "pm": -2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62156,7 +62156,7 @@
   "ft": "7/9",
   "pm": 17,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62177,7 +62177,7 @@
   "ft": "0/0",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62198,7 +62198,7 @@
   "ft": "9/13",
   "pm": 20,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62219,7 +62219,7 @@
   "ft": "0/0",
   "pm": 15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62240,7 +62240,7 @@
   "ft": "4/4",
   "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62261,7 +62261,7 @@
   "ft": "4/4",
   "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62282,7 +62282,7 @@
   "ft": "2/2",
   "pm": 0,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62301,9 +62301,9 @@
   "fg": "2/4",
   "three": "1/2",
   "ft": "2/2",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62322,9 +62322,9 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62343,9 +62343,9 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "2/2",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62366,7 +62366,7 @@
   "ft": "2/2",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62385,9 +62385,9 @@
   "fg": "3/10",
   "three": "2/7",
   "ft": "1/2",
-  "pm": 7,
+  "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -62396,14 +62396,14 @@
   "team": "New Mexico",
   "player": "Federico Grani",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 2,
-  "reb": 1,
+  "reb": 2,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "fg": "1/1",
+  "fg": "1/2",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -62438,7 +62438,7 @@
   "team": "New Mexico",
   "player": "Hudson Mayes",
   "pos": "",
-  "min": 13,
+  "min": 14,
   "pts": 7,
   "reb": 3,
   "ast": 0,
@@ -62480,7 +62480,7 @@
   "team": "New Mexico",
   "player": "Jake Hall",
   "pos": "",
-  "min": 13,
+  "min": 14,
   "pts": 10,
   "reb": 1,
   "ast": 1,
@@ -62627,7 +62627,7 @@
   "team": "Santa Clara",
   "player": "Brad Longcor III",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 9,
   "reb": 0,
   "ast": 1,
@@ -62674,7 +62674,7 @@
   "reb": 2,
   "ast": 2,
   "stl": 0,
-  "blk": 0,
+  "blk": 1,
   "tov": 0,
   "fg": "0/0",
   "three": "0/0",
