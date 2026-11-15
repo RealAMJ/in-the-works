@@ -61031,7 +61031,7 @@
   "team": "Lipscomb",
   "player": "Truman Byrne",
   "pos": "",
-  "min": 22,
+  "min": 23,
   "pts": 6,
   "reb": 1,
   "ast": 1,
@@ -61137,7 +61137,7 @@
   "player": "Sawyer Dotson",
   "pos": "",
   "min": 3,
-  "pts": 3,
+  "pts": 4,
   "reb": 0,
   "ast": 0,
   "stl": 0,
@@ -61145,7 +61145,7 @@
   "tov": 0,
   "fg": "1/1",
   "three": "1/1",
-  "ft": "0/0",
+  "ft": "1/1",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -61199,7 +61199,7 @@
   "team": "Lipscomb",
   "player": "Or Ashkenazi",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 0,
   "reb": 0,
   "ast": 1,
@@ -61992,7 +61992,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115miam-0-6",
+  "row_id": "g20261115miam-0-7",
   "game_id": "g20261115miam",
   "team": "Detroit Pistons",
   "player": "Javonte Green",
@@ -62013,7 +62013,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115miam-0-7",
+  "row_id": "g20261115miam-0-8",
   "game_id": "g20261115miam",
   "team": "Detroit Pistons",
   "player": "Kevin Huerter",
