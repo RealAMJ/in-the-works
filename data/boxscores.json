@@ -3097,7 +3097,7 @@
   "line_id": "g20261115bask-hadi",
   "game_id": "g20261115bask",
   "player": "Jacob Hadi",
-  "min": 20,
+  "min": 22,
   "pts": 5,
   "reb": 2,
   "ast": 0,
@@ -3111,7 +3111,7 @@
   "dreb": 2,
   "stl": 1,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 2,
   "eff": ""
  },
@@ -3119,7 +3119,7 @@
   "line_id": "c20261115bask-hadi",
   "game_id": "c20261115bask",
   "player": "Jacob Hadi",
-  "min": 21,
+  "min": 22,
   "pts": 5,
   "reb": 2,
   "ast": 0,
@@ -3133,7 +3133,7 @@
   "dreb": 2,
   "stl": 1,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 2,
   "eff": ""
  }

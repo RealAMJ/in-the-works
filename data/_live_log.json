@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:35:24+01:00",
+ "at": "2026-11-15T17:36:30+01:00",
  "log": [
   {
    "game": "g20261115bask",
@@ -9,17 +9,17 @@
    "game": "g20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "05:47",
+   "clock": "05:06",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     51,
+     53,
      11
     ],
     [
      "Basketball L\u00f6wen Erfurt",
-     45,
+     47,
      10
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261115cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "10:00",
+   "clock": "06:39",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "c20261115bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "05:25",
+   "clock": "05:06",
    "done": false,
    "teams": [
     [
      "SKYLINERS Juniors",
-     51,
+     53,
      11
     ],
     [
