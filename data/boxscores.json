@@ -3242,7 +3242,7 @@
   "oreb": 0,
   "dreb": 2,
   "stl": 3,
-  "blk": 0,
+  "blk": 1,
   "tov": 3,
   "pf": 1,
   "eff": ""
@@ -3251,7 +3251,7 @@
   "line_id": "g20261115robe-obenjo",
   "game_id": "g20261115robe",
   "player": "Samuel Obenjo",
-  "min": 18,
+  "min": 19,
   "pts": 3,
   "reb": 8,
   "ast": 2,
