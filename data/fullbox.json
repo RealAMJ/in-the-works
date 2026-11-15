@@ -65579,7 +65579,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65600,7 +65600,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65621,7 +65621,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65642,7 +65642,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65663,7 +65663,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65684,7 +65684,7 @@
   "ft": "8/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65705,7 +65705,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65726,7 +65726,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65747,7 +65747,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65768,7 +65768,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65789,11 +65789,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-0-12",
+  "row_id": "g20261115mich-0-11",
   "game_id": "g20261115mich",
   "team": "William & Mary",
   "player": "ZZ Clark",
@@ -65810,11 +65810,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-0-13",
+  "row_id": "g20261115mich-0-12",
   "game_id": "g20261115mich",
   "team": "William & Mary",
   "player": "Nilavan Daniels",
@@ -65831,11 +65831,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-0-14",
+  "row_id": "g20261115mich-0-13",
   "game_id": "g20261115mich",
   "team": "William & Mary",
   "player": "Jayden Forsythe",
@@ -65852,7 +65852,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65873,7 +65873,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65894,7 +65894,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65915,7 +65915,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65936,7 +65936,7 @@
   "ft": "7/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65957,7 +65957,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65978,7 +65978,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -65999,11 +65999,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-8",
+  "row_id": "g20261115mich-1-7",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Harrison Hochberg",
@@ -66020,11 +66020,11 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-9",
+  "row_id": "g20261115mich-1-8",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Jalen Reed",
@@ -66041,11 +66041,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-10",
+  "row_id": "g20261115mich-1-9",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Marcus Moller",
@@ -66062,11 +66062,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-11",
+  "row_id": "g20261115mich-1-10",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Ricky Liburd",
@@ -66083,11 +66083,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-12",
+  "row_id": "g20261115mich-1-11",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Malachi Brown",
@@ -66104,11 +66104,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261115mich-1-16",
+  "row_id": "g20261115mich-1-12",
   "game_id": "g20261115mich",
   "team": "Michigan",
   "player": "Kenny Noland",
@@ -66125,7 +66125,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66150,6 +66150,27 @@
   "source": "ESPN"
  },
  {
+  "row_id": "g20261115idah-0-1",
+  "game_id": "g20261115idah",
+  "team": "Idaho State",
+  "player": "Kenyon DeMuynck",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
   "row_id": "g20261115idah-0-2",
   "game_id": "g20261115idah",
   "team": "Idaho State",
@@ -66158,6 +66179,69 @@
   "min": 1,
   "pts": 0,
   "reb": 1,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115idah-0-3",
+  "game_id": "g20261115idah",
+  "team": "Idaho State",
+  "player": "Eyal Harel",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115idah-0-4",
+  "game_id": "g20261115idah",
+  "team": "Idaho State",
+  "player": "Landen Birley",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115idah-1-0",
+  "game_id": "g20261115idah",
+  "team": "Seattle U",
+  "player": "Will Heimbrodt",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
@@ -66198,12 +66282,54 @@
   "player": "Halvine Dzellat",
   "pos": "",
   "min": 1,
-  "pts": 0,
+  "pts": 2,
   "reb": 0,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 1,
+  "fg": "1/1",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115idah-1-3",
+  "game_id": "g20261115idah",
+  "team": "Seattle U",
+  "player": "Tyler Boston",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "g20261115idah-1-4",
+  "game_id": "g20261115idah",
+  "team": "Seattle U",
+  "player": "Mason Williams",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",

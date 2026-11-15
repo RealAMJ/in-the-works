@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T22:03:31+01:00",
+ "at": "2026-11-15T22:04:20+01:00",
  "log": [
   {
    "game": "g20261115mich",
@@ -8,9 +8,9 @@
   {
    "game": "g20261115mich",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "William & Mary Tribe",
@@ -32,7 +32,7 @@
    "game": "g20261115idah",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:22",
+   "clock": "18:44",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Seattle U Redhawks",
-     0,
+     2,
      16
     ]
    ]
