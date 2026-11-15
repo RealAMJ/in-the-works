@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T05:34:55+01:00",
+ "at": "2026-11-15T05:35:47+01:00",
  "log": [
   {
    "game": "g20261115newm",
@@ -9,17 +9,17 @@
    "game": "g20261115newm",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:10",
+   "clock": "09:05",
    "done": false,
    "teams": [
     [
      "New Mexico Lobos",
-     54,
+     56,
      13
     ],
     [
      "Santa Clara Broncos",
-     65,
+     67,
      15
     ]
    ]
