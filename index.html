@@ -3887,7 +3887,11 @@
   function wkStories() {
     const d = ds('thisweek'); if (!d) return null;
     const up = (r) => /coming up/i.test(r.kind || '');
-    return d.map((r, i) => [r, i]).sort((a, b) => (up(a[0]) - up(b[0])) || String(b[0].date || '').localeCompare(String(a[0].date || '')) || (a[1] - b[1])).map((x) => x[0]);
+    const out = d.map((r, i) => [r, i]).sort((a, b) => (up(a[0]) - up(b[0])) || String(b[0].date || '').localeCompare(String(a[0].date || '')) || (a[1] - b[1])).map((x) => x[0]);
+    // the story shown big (home page and This week) always has a photo: the lead story if its player has one, else the newest story that does
+    const hasPh = (r) => !up(r) && !!photoFor(String(r.players || '').split(/\s*,\s*/)[0]);
+    const feat = out.find((r) => /lead/i.test(r.kind || '') && hasPh(r)) || out.find(hasPh);
+    return feat ? [feat, ...out.filter((r) => r !== feat)] : out;
   }
   { const a = document.getElementById('cal-all'); if (a) a.href = calUrl(''); }
   dash.draw('wk-label', (el) => { const d = ds('thisweek'); el.textContent = d && d[0] ? 'Week of ' + String(d[0].week || '').replace(/2026-(\d\d)-(\d\d)/g, (m, mo, da) => dayFmt(`2026-${mo}-${da}`)) : '—'; });
@@ -3897,7 +3901,7 @@
   function wkx(el, d) {
     const ups = d.filter((r) => /coming up/i.test(r.kind)), stories = d.filter((r) => !/coming up/i.test(r.kind));
     if (wkSel) { const story = d.find((r) => r.story_id === wkSel); if (story) { wkxArticle(el, d, story); return; } }
-    const lead = stories.find((r) => /lead/i.test(r.kind)) || stories[0];
+    const lead = stories[0];
     // 1. lead story, big, with the player's photo
     const hero = mk('button', 'wkx-hero'); hero.type = 'button'; hero.onclick = () => openStory(lead.story_id);
     const lp = String(lead.players || '').split(/\s*,\s*/)[0]; const ph = photoFor(lp);
