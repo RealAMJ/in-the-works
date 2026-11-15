@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:50:12+01:00",
+ "at": "2026-11-15T20:50:39+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -9,8 +9,8 @@
    "game": "g20261115virt",
    "src": "LBA (legabasket.it)",
    "period": 4,
-   "clock": "",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Dolomiti Energia Trentino",
@@ -32,7 +32,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:45",
+   "clock": "00:33",
    "done": false,
    "teams": [
     [
