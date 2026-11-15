@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:40:02+01:00",
+ "at": "2026-11-15T20:40:54+01:00",
  "log": [
   {
    "game": "g20261115virt",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Dolomiti Energia Trentino",
-     62,
+     66,
      12
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261115mich",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:25",
+   "clock": "03:55",
    "done": false,
    "teams": [
     [
