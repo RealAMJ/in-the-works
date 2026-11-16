@@ -1,26 +1,26 @@
 {
- "at": "2026-11-16T22:08:53+01:00",
+ "at": "2026-11-16T23:40:50+01:00",
  "log": [
   {
-   "game": "g20261116bcvi",
-   "checking": "ABA League (aba-liga.com)"
+   "game": "g20261117iona",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261116bcvi",
-   "src": "ABA League (aba-liga.com)",
-   "period": 4,
+   "game": "g20261117iona",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "SC Derby",
-     79,
-     10
+     "UMBC Retrievers",
+     0,
+     0
     ],
     [
-     "BC Vienna",
-     87,
-     10
+     "Iona Gaels",
+     0,
+     0
     ]
    ]
   }
