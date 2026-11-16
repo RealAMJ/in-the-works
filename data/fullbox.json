@@ -66885,6 +66885,27 @@
   "source": "ESPN"
  },
  {
+  "row_id": "g20261116stjo-1-5",
+  "game_id": "g20261116stjo",
+  "team": "St. John's",
+  "player": "Babacar Sane",
+  "pos": "",
+  "min": 1,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/1",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": "",
+  "swede": false,
+  "state": "live",
+  "source": "ESPN"
+ },
+ {
   "row_id": "g20261116stjo-1-6",
   "game_id": "g20261116stjo",
   "team": "St. John's",
