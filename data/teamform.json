@@ -7250,5 +7250,33 @@
   "note": "",
   "leaders": "",
   "source": "club site (final score only)"
+ },
+ {
+  "row_id": "bc-vienna-2026-11-16",
+  "team": "BC Vienna",
+  "date": "2026-11-16",
+  "competition": "ABA League",
+  "opponent": "SC Derby",
+  "venue": "Away",
+  "score": "87-79",
+  "result": "W",
+  "top": "Sherfield 19 pts, 6 reb",
+  "note": "",
+  "leaders": "Sherfield|19|6|6;Novaković|14|4|1;Jovanović|12|13|0",
+  "source": "ABA League (aba-liga.com)"
+ },
+ {
+  "row_id": "sc-derby-2026-11-16",
+  "team": "SC Derby",
+  "date": "2026-11-16",
+  "competition": "ABA League",
+  "opponent": "BC Vienna",
+  "venue": "Home",
+  "score": "79-87",
+  "result": "L",
+  "top": "Davis 25 pts, 5 reb",
+  "note": "",
+  "leaders": "Davis|25|5|0;Caruthers|13|2|5;Anđušić|10|5|3;Pavićević|10|6|1",
+  "source": "ABA League (aba-liga.com)"
  }
 ]

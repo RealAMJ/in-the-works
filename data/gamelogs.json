@@ -7064,5 +7064,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "njie-2026-11-16",
+  "player": "Barra Njie",
+  "date": "2026-11-16",
+  "competition": "ABA League",
+  "team": "BC Vienna",
+  "opponent": "SC Derby",
+  "venue": "Away",
+  "result": "W 87-79",
+  "min": 25,
+  "pts": 10,
+  "reb": 2,
+  "ast": 4,
+  "source": "ABA League (aba-liga.com)",
+  "fg": "4/8",
+  "three": "1/3",
+  "ft": "1/2",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 2,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": 11,
+  "eff": ""
  }
 ]
