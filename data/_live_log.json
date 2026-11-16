@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T02:06:47+01:00",
+ "at": "2026-11-16T02:07:38+01:00",
  "log": [
   {
    "game": "g20261116stjo",
@@ -9,17 +9,17 @@
    "game": "g20261116stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "20:00",
+   "clock": "19:26",
    "done": false,
    "teams": [
     [
      "Syracuse Orange",
-     33,
+     35,
      16
     ],
     [
      "St. John's Red Storm",
-     30,
+     32,
      16
     ]
    ]
