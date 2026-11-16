@@ -67,4 +67,14 @@ DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261124wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261124T003000Z
+DTEND:20261124T023000Z
+SUMMARY:Berg: Wichita State vs Texas A&M-Corpus Christi
+DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
+ orks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

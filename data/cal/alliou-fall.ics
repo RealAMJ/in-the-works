@@ -77,4 +77,14 @@ DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261124iona@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261124T000000Z
+DTEND:20261124T020000Z
+SUMMARY:Fall: Iona vs Fairleigh Dickinson
+DESCRIPTION:NCAA. Players: Alliou Fall. https://realamj.github.io/in-the-wo
+ rks/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

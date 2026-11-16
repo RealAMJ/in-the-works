@@ -2297,7 +2297,8 @@
   "score": "W 92-67",
   "live_feed": "nif:8426728",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261115lowe",

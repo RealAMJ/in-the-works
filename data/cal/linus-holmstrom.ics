@@ -67,4 +67,14 @@ DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
  he-works/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261124youn@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261123T233000Z
+DTEND:20261124T013000Z
+SUMMARY:Holmström: Youngstown State vs Maryland Eastern Shore
+DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR
