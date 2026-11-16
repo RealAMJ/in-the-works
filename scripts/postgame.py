@@ -30,7 +30,7 @@ LABELS = {
     'Croatian Premier League': ['Premijer liga'], 'Icelandic Premier League': ['Bónus deild'], 'LBA (Italy)': ['LBA'],
     'ABA League': ['ABA'], 'Austrian Superliga': ['Austrian Superliga', 'Superliga'], 'NBA': ['NBA'], 'NCAA': ['NCAA'],
     'EuroLeague': ['EuroLeague'], 'FIBA Europe Cup': ['FIBA Europe Cup'], 'Primera FEB': ['Primera FEB'],
-    'Segunda FEB': ['Segunda FEB'], 'LKL': ['LKL'], 'BBL': ['BBL'], 'Liga Națională': ['Liga Națională'], 'ENBL': ['ENBL'],
+    'Segunda FEB': ['Segunda FEB'], 'LKL': ['LKL'], 'BBL': ['BBL'], 'Liga Națională': ['Liga Națională'], 'ENBL': ['ENBL'], 'ProB (Germany)': ['ProB Süd', 'ProB Nord', 'ProB'], 'BLNO (Norway)': ['BLNO'],
 }
 MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 MAN = ['jan', 'feb', 'mar', 'apr', 'maj', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec']
@@ -120,7 +120,7 @@ def main():
         if g.get('status') != 'final' or g.get('post_done') or not re.match(r'[WL] \d+-\d+', str(g.get('score') or '')):
             continue
         rows = [r for r in fb if r.get('game_id') == g['game_id']]
-        score_only = str(g.get('live_feed') or '').startswith('club:')  # final score only, no box score
+        score_only = str(g.get('live_feed') or '').startswith(('club:', 'bh:'))  # final score only, no box score
         if not rows and not score_only:
             continue
         a, b = map(int, g['score'].split()[1].split('-'))

@@ -62,8 +62,8 @@
  {
   "team": "Juventus Utena",
   "record": "",
-  "notes": "Lost 82-94 at Jonava on Oct 31. Mixed start: a 76-75 BCL road win at Reggiana and 100-90 over Gargzdai, but heavy home losses to Unicaja (66-105) and Rytas (76-94).",
-  "updated": "2026-10-31"
+  "notes": "Last game: L 85-94 vs Žalgiris Kaunas (LKL, Nov 8). Before that: W 98-95 vs BK KVIS Pardubice (BCL, Nov 3); L 82-94 at Jonava (Hipocredit) (LKL, Oct 31).",
+  "updated": "2026-11-08"
  },
  {
   "team": "Jonava (Hipocredit)",
@@ -74,8 +74,8 @@
  {
   "team": "Löwen Braunschweig",
   "record": "",
-  "notes": "Lost 72-96 at home to Würzburg on Oct 31. Three straight losses after a 2-0 BBL start: 98-107 in overtime vs Ludwigsburg, out of the cup 75-102 vs Chemnitz, then 73-88 at Hagen.",
-  "updated": "2026-10-31"
+  "notes": "Last game: L 79-111 at NINERS Chemnitz (BBL, Nov 15). Before that: L 87-97 at Telekom Baskets Bonn (BBL, Nov 7); L 66-108 at Bayern Munich (BBL, Nov 3).",
+  "updated": "2026-11-15"
  },
  {
   "team": "Palencia",
@@ -151,9 +151,9 @@
  },
  {
   "team": "CSM Oradea",
-  "record": "3-2 Liga Națională · 4-2 FIBA Europe Cup",
-  "notes": "Last game: W 86-80 at Fribourg Olympic in the Europe Cup (Nov 11; Nichols 29 pts). Before that, losses at Mykonos (79-89, Nov 3) and Rapid București (79-96, Oct 31), after a 99-83 win at Neftchi (D. Nichols 23 pts). Went out in Champions League qualifying (98-96 loss to Salon Vilpas).",
-  "updated": "2026-11-11"
+  "record": "4-2 Liga Națională · 4-2 FIBA Europe Cup",
+  "notes": "Last game: W 85-70 vs SCM Timișoara (Liga Națională, Nov 14). Before that: W 86-80 at Fribourg Olympic (Europe Cup, Nov 11); L 79-89 at Mykonos (Europe Cup, Nov 3).",
+  "updated": "2026-11-14"
  },
  {
   "team": "Anwil Włocławek",
@@ -169,21 +169,21 @@
  },
  {
   "team": "Basketball Löwen Erfurt",
-  "record": "1-6 ProB Süd",
-  "notes": "Lost the Thuringia derby 69-74 to Weimar at home on Nov 8. Only win so far is 76-74 over Ludwigsburg.",
-  "updated": "2026-11-08"
+  "record": "1-8 ProB Süd",
+  "notes": "Last game: L 56-64 at SKYLINERS Juniors (ProB, Nov 15). Before that: L 66-91 vs Dresden Titans (ProB, Nov 13); L 69-74 vs Culture City Weimar (ProB, Nov 8).",
+  "updated": "2026-11-15"
  },
  {
   "team": "Mississippi State",
-  "record": "0-0 (opens Nov 2 vs Tennessee Tech)",
-  "notes": "Ended last season losing six of their last seven.",
-  "updated": "2026-10-30"
+  "record": "3-1",
+  "notes": "Last game: L 63-81 vs Xavier (Nov 14). Before that: W 98-57 vs Jackson State (Nov 10); W 82-44 vs Northwestern State (Nov 6).",
+  "updated": "2026-11-14"
  },
  {
   "team": "Culture City Weimar",
-  "record": "2-5 ProB Süd",
-  "notes": "Won the Thuringia derby 74-69 at Erfurt on Nov 8 (Mikai Klintman did not play), ending a five-game losing run. Won the opener 81-77 over SKYLINERS Juniors (Klintman 20 pts).",
-  "updated": "2026-11-08"
+  "record": "3-6 ProB Süd",
+  "notes": "Last game: L 54-82 at Dresden Titans (ProB, Nov 15). Before that: W 78-76 vs Dragons Rhöndorf (ProB, Nov 13); W 74-69 at Basketball Löwen Erfurt (ProB, Nov 8).",
+  "updated": "2026-11-15"
  },
  {
   "team": "Ostrów Wielkopolski",
@@ -283,9 +283,9 @@
  },
  {
   "team": "Froya Basket Laksevåg",
-  "record": "7-3 BLNO",
-  "notes": "Lost 76-83 at Fyllingen on Nov 11 (Hagberg 14 pts, 10 ast). Beat Kongsberg Miners 99-89 at home on Nov 8 (Hagberg 10 pts, 14 ast). Hosts Centrum Tigers on Nov 15.",
-  "updated": "2026-11-11"
+  "record": "8-3 BLNO",
+  "notes": "Last game: W 92-67 vs Centrum Tigers (BLNO, Nov 15). Before that: L 76-83 at Fyllingen (BLNO, Nov 11); W 99-89 vs Kongsberg Miners (BLNO, Nov 8).",
+  "updated": "2026-11-15"
  },
  {
   "team": "Bærum Basket",

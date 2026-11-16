@@ -291,7 +291,10 @@ def read_espn(sport, row):
         clock = f"{int(float(m)):02d}:{int(float(sec)):02d}"
     else:
         clock = f"00:{int(float(clock)):02d}"
-    return dict(period=int(st.get('period') or 0), clock=clock, done=state == 'post', notstarted=state == 'pre', teams=teams)
+    name = str(st['type'].get('name') or '')
+    if re.search(r'POSTPONED|CANCEL|SUSPENDED|FORFEIT', name):  # ESPN puts these in state 'post' with 0-0
+        return dict(period=0, clock='', done=False, notstarted=True, postponed=st['type'].get('description') or 'Postponed', teams=teams)
+    return dict(period=int(st.get('period') or 0), clock=clock, done=state == 'post' and st['type'].get('completed') is not False, notstarted=state == 'pre', teams=teams)
 
 
 def feed_for(row):
@@ -429,6 +432,8 @@ def feed_checks(row, feed, us, them, done, swedes):
     m = re.match(r'[WL] (\d+)-(\d+)', str(row.get('score') or ''))
     if m and row.get('status') == 'live' and us['score'] + them['score'] < int(m.group(1)) + int(m.group(2)) - 5:
         return False, f"score went backwards ({row['score']} -> {us['score']}-{them['score']})", done
+    if done and us['score'] + them['score'] == 0:
+        return False, 'a 0-0 final', done
     if done:
         bad = [x for x in feed['teams'] if x.get('pl') and sum(int(p.get('pts') or 0) for p in x['pl']) != x['score']]
         if bad:
@@ -447,6 +452,13 @@ def feed_checks(row, feed, us, them, done, swedes):
 def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
     gid = row['game_id']
     swedes = [s.strip() for s in (row.get('players') or '').split(',') if s.strip()]
+    if feed.get('postponed'):
+        if row.get('note') != feed['postponed']:
+            row.update(status='upcoming', score='', time='TBC', note=feed['postponed'], live_done=True)
+            row.pop('clock', None)
+            print(f"  {gid}: {feed['postponed']}")
+            return True
+        return False
     si = which_team(feed, row, swedes or swedes_all)
     us, them = feed['teams'][si], feed['teams'][1 - si]
     total = us['score'] + them['score']
@@ -468,6 +480,11 @@ def apply(row, feed, src, swedes_all, sched_names, fullbox, boxscores):
         row.pop('clock', None)
         row.pop('live_updated', None)
         row['live_done'] = True
+        # the score can come before the player stats (Norway): keep reading the feed until they're in
+        if not feed.get('nobox') and not any(t.get('pl') for t in feed['teams']):
+            row['need_box'] = True
+        else:
+            row.pop('need_box', None)
     else:
         row['clock'] = 'Final · checking' if row.get('held') else clock_label(feed)
         row['live_updated'] = now().isoformat(timespec='seconds')
@@ -603,7 +620,8 @@ def main(argv):
     for row in sched + coach:
         if only and row.get('game_id') != only:
             continue
-        back = bool(row.get('backfill'))  # finished game whose full box score should be fetched once
+        tip0 = tip_time(row)
+        back = bool(row.get('backfill')) or (bool(row.get('need_box')) and t.minute < 6 and tip0 is not None and t - tip0 < dt.timedelta(days=3))  # box score still to come
         if not only and row.get('live_done') and not back:
             continue
         tip = tip_time(row)

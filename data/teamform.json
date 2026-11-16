@@ -7194,5 +7194,61 @@
   "note": "",
   "leaders": "Anthony|17|2|4;White|12|5|1;Monroe|12|3|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "froya-basket-laksevag-2026-11-15",
+  "team": "Froya Basket Laksevåg",
+  "date": "2026-11-15",
+  "competition": "BLNO (Norway)",
+  "opponent": "Centrum Tigers",
+  "venue": "Home",
+  "score": "92-67",
+  "result": "W",
+  "top": "Downs 20 pts, 6 reb",
+  "note": "",
+  "leaders": "Downs|20|6|1;Jacobsen|16|1|2;Johnson|12|4|1",
+  "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "centrum-tigers-2026-11-15",
+  "team": "Centrum Tigers",
+  "date": "2026-11-15",
+  "competition": "BLNO (Norway)",
+  "opponent": "Froya Basket Laksevåg",
+  "venue": "Away",
+  "score": "67-92",
+  "result": "L",
+  "top": "Eidholm 20 pts, 7 reb",
+  "note": "",
+  "leaders": "Eidholm|20|7|3;Berbusmel|17|4|2;Selboe|8|5|3;Garcia|8|3|4",
+  "source": "Norwegian federation (basket.no)"
+ },
+ {
+  "row_id": "csm-oradea-2026-11-14",
+  "team": "CSM Oradea",
+  "date": "2026-11-14",
+  "competition": "Liga Națională",
+  "opponent": "SCM Timișoara",
+  "venue": "Home",
+  "score": "85-70",
+  "result": "W",
+  "top": "",
+  "note": "",
+  "leaders": "",
+  "source": "club site (final score only)"
+ },
+ {
+  "row_id": "scm-timioara-2026-11-14",
+  "team": "SCM Timișoara",
+  "date": "2026-11-14",
+  "competition": "Liga Națională",
+  "opponent": "CSM Oradea",
+  "venue": "Away",
+  "score": "70-85",
+  "result": "L",
+  "top": "",
+  "note": "",
+  "leaders": "",
+  "source": "club site (final score only)"
  }
 ]

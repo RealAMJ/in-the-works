@@ -7038,5 +7038,31 @@
   "pf": 4,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "hagberg-2026-11-15",
+  "player": "Kasper Hagberg",
+  "date": "2026-11-15",
+  "competition": "BLNO (Norway)",
+  "team": "Froya Basket Laksevåg",
+  "opponent": "Centrum Tigers",
+  "venue": "Home",
+  "result": "W 92-67",
+  "min": 27,
+  "pts": 2,
+  "reb": 6,
+  "ast": 12,
+  "source": "Norwegian federation (basket.no)",
+  "fg": "1/6",
+  "three": "0/3",
+  "ft": "0/0",
+  "oreb": 1,
+  "dreb": 5,
+  "stl": 2,
+  "blk": 0,
+  "tov": 2,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]

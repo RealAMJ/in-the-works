@@ -3160,28 +3160,6 @@
   "eff": ""
  },
  {
-  "line_id": "g20261115froy-hagberg",
-  "game_id": "g20261115froy",
-  "player": "Kasper Hagberg",
-  "min": 0,
-  "pts": 0,
-  "reb": 0,
-  "ast": 0,
-  "fg": "0/0",
-  "three": "0/0",
-  "ft": "0/0",
-  "pm": "",
-  "source": "Norwegian federation (basket.no) (not in the box score)",
-  "note": "DNP",
-  "oreb": 0,
-  "dreb": 0,
-  "stl": 0,
-  "blk": 0,
-  "tov": 0,
-  "pf": 0,
-  "eff": ""
- },
- {
   "line_id": "g20261115lowe-bangala",
   "game_id": "g20261115lowe",
   "player": "Zaba Bangala",
@@ -3311,6 +3289,28 @@
   "blk": 0,
   "tov": 0,
   "pf": 0,
+  "eff": ""
+ },
+ {
+  "line_id": "g20261115froy-hagberg",
+  "game_id": "g20261115froy",
+  "player": "Kasper Hagberg",
+  "min": 27,
+  "pts": 2,
+  "reb": 6,
+  "ast": 12,
+  "fg": "1/6",
+  "three": "0/3",
+  "ft": "0/0",
+  "pm": "",
+  "source": "Norwegian federation (basket.no)",
+  "note": "",
+  "oreb": 1,
+  "dreb": 5,
+  "stl": 2,
+  "blk": 0,
+  "tov": 2,
+  "pf": 3,
   "eff": ""
  }
 ]

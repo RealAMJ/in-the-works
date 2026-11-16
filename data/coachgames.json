@@ -266,7 +266,8 @@
   "status": "final",
   "score": "W 85-70",
   "live_feed": "bh:25493:21665:6189531",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261114san",

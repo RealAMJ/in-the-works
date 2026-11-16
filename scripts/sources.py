@@ -553,7 +553,7 @@ def read_bh(spec, row=None):
     home = (row.get('venue') or 'Home') != 'Away'
     names = (row.get('team', g['home']), row.get('opponent', g['away'])) if home else (row.get('opponent', g['home']), row.get('team', g['away']))
     done = g['hs'] is not None and g['as_'] is not None
-    return dict(period=4 if done else 1, clock='00:00' if done else '', done=done, notstarted=not done,
+    return dict(period=4 if done else 1, clock='00:00' if done else '', done=done, notstarted=not done, nobox=True,
                 teams=[dict(name=names[0], score=g['hs'] or 0, pl=[]), dict(name=names[1], score=g['as_'] or 0, pl=[])])
 
 
