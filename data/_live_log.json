@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T20:21:51+01:00",
+ "at": "2026-11-16T20:22:45+01:00",
  "log": [
   {
    "game": "g20261116bcvi",
@@ -8,13 +8,13 @@
   {
    "game": "g20261116bcvi",
    "src": "ABA League (aba-liga.com)",
-   "period": 1,
+   "period": 2,
    "clock": "",
    "done": false,
    "teams": [
     [
      "SC Derby BC Vienna",
-     34,
+     38,
      13
     ],
     [
