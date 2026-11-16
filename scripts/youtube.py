@@ -26,7 +26,13 @@ import update as U  # noqa: E402
 
 API = 'https://www.googleapis.com/youtube/v3/'
 PATH = os.path.join(U.DATA, 'watch_yt.json')
-OFFICIAL = re.compile(r'\b(NBA|Euro ?League|EuroCup|ACB|Liga Endesa|Basketball Champions League|FIBA|Svensk Basket|Basketligan|SBL|easyCredit BBL|BBL|LKL|ABA League|Lega Basket|LBA|Orlen Basket Liga|PLK|Primera FEB|FEB|ESPN|NCAA|March Madness|Big Ten|Big East|ACC|SEC|Pac-12|Mountain West|Big West|Horizon League|Southern Conference|ASUN|CAA|MAAC|MEAC|Summit League|Patriot League|Big Sky|America East|Heat|Miami HEAT|Eurohoops|Sportbladet|Expressen|Aftonbladet|SVT|TV4|Basketnews|BasketNews|Mozzart|Arena Sport|DAZN|Movistar|Sky Sport|Digi Sport|Rúv|RÚV|NRK|TV 2|12 News|KSN|KAKE|The Wolverine)\b', re.I)
+# official channels by their exact name (lower case); a club's own channel is matched by its name below
+OFFICIAL = {'nba', 'miami heat', 'euroleague', 'euroleague basketball', 'acb', 'liga endesa', 'basketball champions league', 'fiba',
+            'fiba basketball', 'fiba europe cup', 'svensk basket', 'basketligan', 'easycredit bbl', 'lkl', 'aba league', 'lega basket', 'lba',
+            'orlen basket liga', 'primera feb', 'feb', 'espn', 'espn wichita', 'ncaa march madness', "big ten men's basketball", 'big ten network',
+            'the wolverine: michigan football and basketball', 'the michigan insider', '12 news', 'eurohoops', 'basketnews', 'sportbladet', 'expressen',
+            'aftonbladet', 'svt sport', 'tv4 sport', 'digi sport', 'nrk sport', 'rúv', 'ruv'}
+FAN = re.compile(r'highlight|full play|fan|nation|polska|edits?\b|daily|vision|mixtape|hoops|ballin|talk|clips|hub|news\b(?!.*12)', re.I)
 
 
 def plain(s):
@@ -44,10 +50,15 @@ def words(s):
 
 
 def official(channel, club, leagues):
-    if OFFICIAL.search(channel):
+    c = plain(channel).strip()
+    if c in OFFICIAL:
         return True
-    cw = words(channel)
-    return bool(cw & words(club)) or any(cw & words(l) for l in leagues)
+    if FAN.search(channel):
+        return False
+    base = re.sub(r'\s*[-|–]\s*(canal oficial|official|oficial|officiel|ufficiale)\s*$', '', c).strip()
+    # the club's own channel: its name, or the club's distinctive words and nothing much else
+    cw, kw = words(base), words(club)
+    return bool(kw) and (base == plain(club) or (kw <= cw or cw <= kw) and len(cw) <= len(kw) + 1 and bool(cw & kw))
 
 
 def kind(title):
@@ -74,6 +85,8 @@ def main(argv):
         have = json.load(open(PATH, encoding='utf-8'))
     except Exception:
         have = []
+    who = {n: (c, l) for n, c, l in people}
+    have = [x for x in have if x.get('player') in who and official(x.get('channel', ''), *who[x['player']][:1], re.split(r'[,;/]', who[x['player']][1]))]
     seen = {x['vid'] for x in have}
     since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=int(os.environ.get('YT_DAYS', 10)))).strftime('%Y-%m-%dT%H:%M:%SZ')
     found = []
