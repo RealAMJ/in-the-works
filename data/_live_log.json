@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T00:21:46+01:00",
+ "at": "2026-11-17T00:22:39+01:00",
  "log": [
   {
    "game": "g20261117iona",
@@ -9,17 +9,17 @@
    "game": "g20261117iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:17",
+   "clock": "09:45",
    "done": false,
    "teams": [
     [
      "Iona Gaels",
-     16,
+     19,
      17
     ],
     [
      "UMBC Retrievers",
-     17,
+     20,
      15
     ]
    ]
