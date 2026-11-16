@@ -114,11 +114,14 @@ def read_aba(path, row=None):
         if a < 0:
             break
         b = h.find('</table>', a)
-        pl = []
+        pl, total = [], None
         for r in re.findall(r'<tr.*?</tr>', h[a:b], re.S):
             c = [clean(x) for x in CELL.findall(r)]
             if len(c) >= 28 and re.match(r'\d+:\d+', c[2] or ''):
                 n = lambda k: int(c[k]) if re.fullmatch(r'-?\d+', c[k] or '') else 0
+                if re.fullmatch(r'(team )?totals?|team|ukupno', c[1].strip(), re.I):  # the team's totals row, not a player
+                    total = n(3)
+                    continue
                 nm = re.sub(r'\s*\*$', '', c[1]).split()
                 if len(nm) > 1 and re.fullmatch(r'\w{1,2}\.', nm[-1]):  # ABA writes "Njie A." -> "A. Njie"
                     nm = [nm[-1]] + nm[:-1]
@@ -128,7 +131,8 @@ def read_aba(path, row=None):
         if len(pl) >= 5:  # a team's box score (skips the "Team Compare" totals table)
             before = clean(h[pos:a].split('>', 1)[-1] if pos == i else h[pos:a]).replace('Boxscore', ' ')
             name = re.sub(r'^.*[\d%]\s*', '', before).strip() or before[-40:].strip()
-            teams.append(dict(name=name, score=sum(p['pts'] for p in pl), pl=pl))
+            # the totals row is the score (it also counts points no player is credited with)
+            teams.append(dict(name=name, score=total if total is not None else sum(p['pts'] for p in pl), pl=pl))
         pos = b
     txt = clean(h)
     done = 'game finished' in txt

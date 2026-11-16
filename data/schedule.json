@@ -2417,10 +2417,17 @@
   "competition": "ABA League",
   "note": "",
   "status": "live",
+<<<<<<< HEAD
   "score": "W 146-140",
   "live_feed": "aba:80/26/1",
   "clock": "Q4 ",
   "live_updated": "2026-11-16T21:51:50+01:00"
+=======
+  "score": "W 73-70",
+  "live_feed": "aba:80/26/1",
+  "clock": "Q4 ",
+  "live_updated": "2026-11-16T21:51:58+01:00"
+>>>>>>> 108281f9 (ABA: the box score's Total row isn't a player (scores showed doubled, BC Vienna 146-136))
  },
  {
   "game_id": "g20261117iona",

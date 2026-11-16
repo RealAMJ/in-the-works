@@ -67615,6 +67615,7 @@
   "three": "0/0",
   "ft": "4/4",
   "pm": 5,
+<<<<<<< HEAD
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67636,6 +67637,8 @@
   "three": "5/20",
   "ft": "9/14",
   "pm": -3,
+=======
+>>>>>>> 108281f9 (ABA: the box score's Total row isn't a player (scores showed doubled, BC Vienna 146-136))
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67849,6 +67852,7 @@
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
+<<<<<<< HEAD
  },
  {
   "row_id": "g20261116bcvi-1-11",
@@ -67870,5 +67874,7 @@
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
+=======
+>>>>>>> 108281f9 (ABA: the box score's Total row isn't a player (scores showed doubled, BC Vienna 146-136))
  }
 ]
