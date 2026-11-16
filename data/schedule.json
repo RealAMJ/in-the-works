@@ -2500,7 +2500,8 @@
   "status": "upcoming",
   "score": "",
   "watch_url": "https://euroleague.tv/home",
-  "watch_label": "EuroLeague TV"
+  "watch_label": "EuroLeague TV",
+  "live_feed": "euroleague:E2026:119"
  },
  {
   "game_id": "g20261118lips",
