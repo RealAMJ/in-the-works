@@ -1,28 +1,17 @@
 {
- "at": "2026-11-16T08:57:36+01:00",
+ "at": "2026-11-16T19:42:43+01:00",
  "log": [
   {
-   "game": "g20261115froy",
-   "checking": "Norwegian federation (basket.no)"
+   "game": "g20261116bcvi",
+   "checking": "ABA League (aba-liga.com)"
   },
   {
-   "game": "g20261115froy",
-   "src": "Norwegian federation (basket.no)",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Froya Basket Laksev\u00e5g",
-     92,
-     12
-    ],
-    [
-     "Centrum Tigers",
-     67,
-     8
-    ]
-   ]
+   "game": "g20261116bcvi",
+   "src": "ABA League (aba-liga.com)",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": []
   }
  ]
 }
