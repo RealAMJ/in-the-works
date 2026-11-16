@@ -2416,11 +2416,10 @@
   "venue": "Away",
   "competition": "ABA League",
   "note": "",
-  "status": "live",
-  "score": "W 85-77",
+  "status": "final",
+  "score": "W 87-79",
   "live_feed": "aba:80/26/1",
-  "clock": "Q4 ",
-  "live_updated": "2026-11-16T22:08:00+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261117iona",
