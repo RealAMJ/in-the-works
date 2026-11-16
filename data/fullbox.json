@@ -67425,7 +67425,7 @@
   "fg": "2/9",
   "three": "2/6",
   "ft": "0/0",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67509,7 +67509,7 @@
   "fg": "4/5",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67572,7 +67572,7 @@
   "fg": "9/13",
   "three": "1/2",
   "ft": "3/6",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67593,7 +67593,7 @@
   "fg": "6/8",
   "three": "1/2",
   "ft": "0/2",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67614,7 +67614,7 @@
   "fg": "0/4",
   "three": "0/0",
   "ft": "4/4",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67635,7 +67635,7 @@
   "fg": "27/58",
   "three": "5/20",
   "ft": "9/14",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67710,7 +67710,7 @@
   "player": "N. Jovanović",
   "pos": "",
   "min": 23,
-  "pts": 6,
+  "pts": 7,
   "reb": 13,
   "ast": 0,
   "stl": 0,
@@ -67718,8 +67718,8 @@
   "tov": 3,
   "fg": "1/4",
   "three": "0/0",
-  "ft": "4/4",
-  "pm": 12,
+  "ft": "5/5",
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67740,7 +67740,7 @@
   "fg": "5/8",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67761,7 +67761,7 @@
   "fg": "4/7",
   "three": "1/3",
   "ft": "1/2",
-  "pm": 4,
+  "pm": 5,
   "swede": true,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67782,7 +67782,7 @@
   "fg": "5/6",
   "three": "2/3",
   "ft": "0/2",
-  "pm": 1,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67824,7 +67824,7 @@
   "fg": "4/11",
   "three": "1/6",
   "ft": "5/8",
-  "pm": 8,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67857,7 +67857,7 @@
   "player": "Total",
   "pos": "",
   "min": 174,
-  "pts": 69,
+  "pts": 70,
   "reb": 36,
   "ast": 10,
   "stl": 6,
@@ -67865,8 +67865,8 @@
   "tov": 11,
   "fg": "26/56",
   "three": "7/22",
-  "ft": "10/18",
-  "pm": 1,
+  "ft": "11/19",
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
