@@ -7166,5 +7166,33 @@
   "note": "",
   "leaders": "Heimbrodt|18|6|3;Dzellat|12|3|0;Yeo|11|3|0;Boston|11|4|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "st-johns-2026-11-16",
+  "team": "St. John's",
+  "date": "2026-11-16",
+  "competition": "NCAA",
+  "opponent": "Syracuse",
+  "venue": "Home",
+  "score": "79-62",
+  "result": "W",
+  "top": "Yessoufou 19 pts, 14 reb",
+  "note": "",
+  "leaders": "Yessoufou|19|14|1;Hall|18|7|5;Jackson|14|1|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "syracuse-2026-11-16",
+  "team": "Syracuse",
+  "date": "2026-11-16",
+  "competition": "NCAA",
+  "opponent": "St. John's",
+  "venue": "Away",
+  "score": "62-79",
+  "result": "L",
+  "top": "Anthony 17 pts, 2 reb",
+  "note": "",
+  "leaders": "Anthony|17|2|4;White|12|5|1;Monroe|12|3|2",
+  "source": "ESPN"
  }
 ]
