@@ -67425,7 +67425,7 @@
   "fg": "2/9",
   "three": "2/6",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67509,7 +67509,7 @@
   "fg": "5/7",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -12,
+  "pm": -14,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67572,7 +67572,7 @@
   "fg": "9/15",
   "three": "1/3",
   "ft": "4/8",
-  "pm": -2,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67593,7 +67593,7 @@
   "fg": "6/8",
   "three": "1/2",
   "ft": "0/2",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67611,10 +67611,10 @@
   "stl": 0,
   "blk": 1,
   "tov": 2,
-  "fg": "1/5",
-  "three": "0/0",
+  "fg": "1/6",
+  "three": "0/1",
   "ft": "4/4",
-  "pm": 3,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67719,7 +67719,7 @@
   "fg": "5/8",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67740,7 +67740,7 @@
   "fg": "4/8",
   "three": "1/3",
   "ft": "1/2",
-  "pm": 8,
+  "pm": 10,
   "swede": true,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67761,7 +67761,7 @@
   "fg": "6/7",
   "three": "2/3",
   "ft": "0/2",
-  "pm": 5,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67782,7 +67782,7 @@
   "fg": "2/8",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
@@ -67794,7 +67794,7 @@
   "player": "G. Sherfield",
   "pos": "",
   "min": 34,
-  "pts": 14,
+  "pts": 16,
   "reb": 6,
   "ast": 6,
   "stl": 4,
@@ -67802,8 +67802,8 @@
   "tov": 3,
   "fg": "4/12",
   "three": "1/7",
-  "ft": "5/9",
-  "pm": 12,
+  "ft": "7/11",
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "ABA League (aba-liga.com)"
