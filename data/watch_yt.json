@@ -44,17 +44,6 @@
   "channel": "CB Zamora - Canal Oficial"
  },
  {
-  "kind": "Feature",
-  "player": "Pelle Larsson",
-  "title": "Pelle Larsson vs Jazz November 10, 2026 Full Play",
-  "src": "youtube",
-  "vid": "6pL924RNpAI",
-  "thumb": "https://i.ytimg.com/vi/6pL924RNpAI/hqdefault.jpg",
-  "secs": 287,
-  "date": "2026-11-12",
-  "channel": "NBA Full Play Highlights"
- },
- {
   "kind": "Highlight",
   "player": "Elliot Cadeau",
   "title": "Elliot Cadeau Highlights vs. Marquette | Michigan Basketball | 11/11/2026",
@@ -86,16 +75,5 @@
   "secs": 314,
   "date": "2026-11-12",
   "channel": "The Michigan Insider"
- },
- {
-  "kind": "Feature",
-  "player": "Pelle Larsson",
-  "title": "Heat mają Giannisa, Bama i Klaya. A najważniejszy jest… Pelle Larsson?",
-  "src": "youtube",
-  "vid": "mJnJwxX-jV0",
-  "thumb": "https://i.ytimg.com/vi/mJnJwxX-jV0/hqdefault.jpg",
-  "secs": 42,
-  "date": "2026-11-11",
-  "channel": "HEAT CHECK PL | MIAMI HEAT POLSKA"
  }
 ]
