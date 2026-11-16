@@ -63,9 +63,9 @@ def official(channel, club, leagues):
 
 def kind(title):
     t = plain(title)
-    if re.search(r'interview|press|postgame|post-game|speaks|talks|declarati|rueda de prensa|habla|dopo|intervju|infor |efter |after the|media day|on the win|on the loss', t):
+    if re.search(r'interview|press|postgame|post-game|speaks|talks|declarati|rueda de prensa|habla|previa|dopo|intervju|infor |efter |after the|media day|on the win|on the loss|🎙', t):
         return 'Interview'
-    if re.search(r'highlight|\bpts\b|points|puntos|punti|tasku|dunk|block|career-high|career high|season-high|game-high|\d+ ?p\b|mvp|jugador de la jornada', t):
+    if re.search(r'highlight|\bpts\b|points|puntos|punti|tasku|dunk|block|career-high|career high|season-high|game-high|assists|rebounds|\d+ ?p\b|mvp|jugador de la jornada', t):
         return 'Highlight'
     return 'Feature'
 
@@ -87,6 +87,8 @@ def main(argv):
         have = []
     who = {n: (c, l) for n, c, l in people}
     have = [x for x in have if x.get('player') in who and official(x.get('channel', ''), *who[x['player']][:1], re.split(r'[,;/]', who[x['player']][1]))]
+    for x in have:
+        x['kind'] = kind(x['title'])
     seen = {x['vid'] for x in have}
     since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=int(os.environ.get('YT_DAYS', 10)))).strftime('%Y-%m-%dT%H:%M:%SZ')
     found = []
