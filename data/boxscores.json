@@ -3312,5 +3312,27 @@
   "tov": 2,
   "pf": 3,
   "eff": ""
+ },
+ {
+  "line_id": "g20261116bcvi-njie",
+  "game_id": "g20261116bcvi",
+  "player": "Barra Njie",
+  "min": 3,
+  "pts": 2,
+  "reb": 0,
+  "ast": 2,
+  "fg": "1/1",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": -2,
+  "source": "ABA League (aba-liga.com)",
+  "note": "live",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "eff": ""
  }
 ]
