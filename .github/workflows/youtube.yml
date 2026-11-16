@@ -1,0 +1,49 @@
+name: YouTube videos
+
+# Once a day: YouTube videos of the Swedes abroad from official channels (scripts/youtube.py, needs the
+# YOUTUBE_API_KEY secret), merged into the Video page, then the site is published.
+on:
+  schedule:
+    - cron: "37 5 * * *"      # 06:37 Swedish time in winter
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Search YouTube
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python3 scripts/youtube.py
+      - name: Update the Video page list
+        run: python3 scripts/watch.py --force
+      - name: Save and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain -- data)" ]; then
+            git config user.name "swedes-abroad-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -q -m "YouTube videos $(TZ=Europe/Stockholm date '+%Y-%m-%d %H:%M')"
+            for i in 1 2 3 4 5; do
+              if git pull -q --rebase origin main; then git push -q origin HEAD:main && break; fi
+              git checkout --theirs data/_version.json data/_bundle.json data/_live_log.json 2>/dev/null; git add data; GIT_EDITOR=true git rebase --continue || true
+              python3 -c "import sys; sys.path.insert(0, 'scripts'); import update; update.write_version(True)"; git add -A data; git commit -q -m "Version stamp" || true
+              sleep 5
+            done
+            gh workflow run publish.yml --ref main || true
+          fi

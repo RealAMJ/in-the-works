@@ -4,7 +4,7 @@ The Video page's list (data/watch.json), rebuilt from three sources:
   * ESPN clips that name one of our Swedes (data/videos.json, from scripts/videos.py), as "Highlight"
   * interviews and team videos from the players' NBA.com profiles (NBA_IDS below); NBA.com doesn't let other
     sites play its videos, so these open on NBA.com
-  * hand-picked YouTube videos from official channels (data/watch_extra.json), which play on the site
+  * hand-picked YouTube videos (data/watch_extra.json) and the daily YouTube search (data/watch_yt.json)
 
 Runs once an hour from the live job (--force to run now).
 """
@@ -71,10 +71,13 @@ def main(argv):
         except Exception as e:  # NBA.com can refuse automated requests: keep what we had
             print(f'  NBA.com {p}: {e.__class__.__name__}')
             items += [x for x in old if x.get('src') == 'nba' and x.get('player') == p]
-    try:
-        items += json.load(open(os.path.join(U.DATA, 'watch_extra.json'), encoding='utf-8'))
-    except Exception:
-        pass
+    for extra in ('watch_extra.json', 'watch_yt.json'):  # hand-picked, and the daily YouTube search (scripts/youtube.py)
+        try:
+            items += json.load(open(os.path.join(U.DATA, extra), encoding='utf-8'))
+        except Exception:
+            pass
+    seen = set()
+    items = [x for x in items if not (x.get('vid') and x['vid'] in seen) and not seen.add(x.get('vid') or id(x))]
     dated = sorted([x for x in items if x.get('date')], key=lambda x: x['date'], reverse=True)
     items = dated[:80] + [x for x in items if not x.get('date')]
     if U.save('watch', items):

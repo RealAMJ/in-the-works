@@ -3044,13 +3044,13 @@
   }
   function vidCard(v, big, col) {
     // NBA.com doesn't allow its videos on other sites: those open on NBA.com
-    const out = v.src === 'nba'; const a = mk(out ? 'a' : 'button', 'vid' + (big ? ' big' : '') + (col ? ' col' : '') + (v.player ? ' swe' : '') + (out ? ' out' : ''));
+    const out = v.src === 'nba' || v.src === 'ytlink'; const a = mk(out ? 'a' : 'button', 'vid' + (big ? ' big' : '') + (col ? ' col' : '') + (v.player ? ' swe' : '') + (out ? ' out' : ''));
     if (out) { a.href = v.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; } else { a.type = 'button'; a.onclick = () => playVideo(v); }
     const th = mk('span', 'vid-th'); if (v.thumb) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.onerror = () => { im.remove(); th.classList.add('nothumb'); }; im.src = v.thumb; th.append(im); } else th.classList.add('nothumb');
-    th.append(mk('span', 'vid-ph', v.src === 'nba' ? 'NBA.com' : v.src === 'youtube' ? 'YouTube' : 'ESPN'));
+    th.append(mk('span', 'vid-ph', v.src === 'nba' ? 'NBA.com' : /^yt|youtube/.test(v.src) ? 'YouTube' : 'ESPN'));
     const du = mk('span', 'vid-dur', `${Math.floor((v.secs || 0) / 60)}:${String((v.secs || 0) % 60).padStart(2, '0')}`); du.setAttribute('data-no-tr', ''); if (!v.secs) du.hidden = true;
     th.append(mk('span', 'vid-play', out ? '↗' : '▶'), du); if (v.player) th.append(mk('span', 'vid-swe', '🇸🇪 ' + v.player.split(' ').slice(-1)[0]));
-    const t = mk('span', 'vid-t'); t.append(mk('b', '', v.title), mk('span', '', [v.kind, v.sub || '', v.src === 'youtube' ? (v.channel || 'YouTube') : v.src === 'nba' ? 'NBA.com ↗' : 'ESPN', v.date ? dayFmt(v.date) : ''].filter(Boolean).join(' · ')));
+    const t = mk('span', 'vid-t'); t.append(mk('b', '', v.title), mk('span', '', [v.kind, v.sub || '', v.src === 'youtube' ? (v.channel || 'YouTube') : v.src === 'ytlink' ? (v.channel || 'YouTube') + ' ↗' : v.src === 'nba' ? 'NBA.com ↗' : 'ESPN', v.date ? dayFmt(v.date) : ''].filter(Boolean).join(' · ')));
     a.append(th, t); return a;
   }
   dash.draw('h-watch', (el) => {
