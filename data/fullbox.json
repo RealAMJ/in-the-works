@@ -66629,7 +66629,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66650,7 +66650,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66659,7 +66659,7 @@
   "team": "Syracuse",
   "player": "Ryan Moesch",
   "pos": "",
-  "min": 32,
+  "min": 33,
   "pts": 9,
   "reb": 9,
   "ast": 5,
@@ -66671,7 +66671,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66687,12 +66687,12 @@
   "stl": 1,
   "blk": 0,
   "tov": 3,
-  "fg": "1/7",
-  "three": "0/3",
+  "fg": "1/8",
+  "three": "0/4",
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66713,7 +66713,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66734,11 +66734,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261116stjo-0-7",
+  "row_id": "g20261116stjo-0-6",
   "game_id": "g20261116stjo",
   "team": "Syracuse",
   "player": "Tasman Goodrick",
@@ -66755,11 +66755,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261116stjo-0-8",
+  "row_id": "g20261116stjo-0-7",
   "game_id": "g20261116stjo",
   "team": "Syracuse",
   "player": "Amarri Monroe",
@@ -66776,11 +66776,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261116stjo-0-9",
+  "row_id": "g20261116stjo-0-8",
   "game_id": "g20261116stjo",
   "team": "Syracuse",
   "player": "Abdramane Siby",
@@ -66797,11 +66797,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261116stjo-0-15",
+  "row_id": "g20261116stjo-0-9",
   "game_id": "g20261116stjo",
   "team": "Syracuse",
   "player": "Kiyan Anthony",
@@ -66818,7 +66818,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66839,7 +66839,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66848,7 +66848,7 @@
   "team": "St. John's",
   "player": "Keyshawn Hall",
   "pos": "",
-  "min": 36,
+  "min": 37,
   "pts": 18,
   "reb": 7,
   "ast": 5,
@@ -66860,7 +66860,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66872,7 +66872,7 @@
   "min": 38,
   "pts": 10,
   "reb": 2,
-  "ast": 5,
+  "ast": 6,
   "stl": 3,
   "blk": 0,
   "tov": 3,
@@ -66881,7 +66881,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66890,7 +66890,7 @@
   "team": "St. John's",
   "player": "Tounde Yessoufou",
   "pos": "",
-  "min": 37,
+  "min": 38,
   "pts": 19,
   "reb": 14,
   "ast": 1,
@@ -66902,7 +66902,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66912,18 +66912,18 @@
   "player": "Ian Jackson",
   "pos": "",
   "min": 29,
-  "pts": 12,
-  "reb": 0,
+  "pts": 14,
+  "reb": 1,
   "ast": 3,
   "stl": 2,
   "blk": 1,
   "tov": 2,
-  "fg": "4/11",
+  "fg": "5/12",
   "three": "2/6",
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66944,7 +66944,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -66953,7 +66953,7 @@
   "team": "St. John's",
   "player": "Reed Bailey",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -66965,11 +66965,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261116stjo-1-13",
+  "row_id": "g20261116stjo-1-8",
   "game_id": "g20261116stjo",
   "team": "St. John's",
   "player": "Lefteris Liotopoulos",
@@ -66986,7 +66986,7 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
