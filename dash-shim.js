@@ -14,7 +14,7 @@
   var POLL_MS = 10000;
   var IDS = ['awards', 'bios', 'boxscores', 'career', 'coachcareer', 'coaches', 'coachgames', 'gamelogs', 'highlights',
     'leaguetiers', 'logos', 'ntgames', 'sblleague', 'ntlines', 'ntroster', 'photos', 'players', 'previews', 'sbl', 'sblgames', 'sblplayers', 'schedule', 'stats', 'teamform',
-    'teams', 'thisweek', 'prospects'];
+    'teams', 'thisweek', 'prospects', 'videos', 'watch'];
   // Big files only some pages need: fetched the first time a page asks for them (full box scores grow all season)
   var LAZY = ['fullbox', 'sblbox', 'sblroster'];
   var asked = {};

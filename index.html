@@ -30,11 +30,11 @@
 <link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css?v=d9b5c388">
 <link rel="stylesheet" href="theme.css?v=50523d4c">
-<script src="dash-shim.js?v=b2b86be1"></script>
+<script src="dash-shim.js?v=ee72ed80"></script>
 </head>
 <body>
 <link rel="stylesheet" href="site.css?v=7b0d4f0d">
-<link rel="stylesheet" href="site2.css?v=f0021685">
+<link rel="stylesheet" href="site2.css?v=f9968f3e">
 <div class="sw on-home">
   <header class="tb">
     <div class="tb-row">
@@ -49,6 +49,7 @@
       <button type="button" data-page-go="games">Games</button>
       <button type="button" data-page-go="week">This week</button>
       <button type="button" data-page-go="players">Players</button>
+      <button type="button" data-page-go="video">Video</button>
       <button type="button" data-page-go="stats">Stats</button>
       <button type="button" data-page-go="sweden">Sweden</button>
       <button type="button" data-page-go="coaches">Coaches</button>
@@ -106,6 +107,11 @@
       <header class="hx-h"><div><span class="hz-kick">2026-27</span><h2 class="hx-t">Season so far</h2></div>
         <div class="hx-ctl"><button type="button" class="hc-more" data-page-go="players">All players →</button></div></header>
       <div class="bx" data-draw="h-bento" data-source="gamelogs boxscores schedule coachgames players awards photos"></div>
+    </section>
+    <section class="hz-ch hx" id="h-watch" aria-label="Watch">
+      <header class="hx-h"><div><span class="hz-kick">Video</span><h2 class="hx-t">Watch</h2></div>
+        <div class="hx-ctl"><button type="button" class="hc-more" data-page-go="video">All videos →</button></div></header>
+      <div data-draw="h-watch" data-source="watch"></div>
     </section>
     <section class="hz-ch hx" id="h-big" aria-label="Standout games">
       <header class="hx-h"><div><span class="hz-kick">Big nights</span><h2 class="hx-t">Standout games</h2></div>
@@ -177,6 +183,17 @@
     <div class="sw-hl" data-draw="hl" data-source="highlights"></div>
     <p class="note" data-draw="hl-empty" data-source="highlights">—</p>
   </section>
+  </div>
+
+  <div class="pg" data-page="video" id="video" hidden>
+    <header class="pg-head"><button type="button" class="crumb" data-page-go="home">Home › <b>Video</b></button></header>
+    <section class="vx-hero">
+      <span class="vx-kick">Swedes on video</span>
+      <h1>Watch</h1>
+      <p>Game highlights, locker-room interviews and features with the Swedes abroad. Most clips play right here.</p>
+      <div class="vx-chips" data-draw="vx-chips" data-source="watch videos"></div>
+    </section>
+    <div data-draw="vx" data-source="watch videos schedule"></div>
   </div>
 
   <div class="pg" data-page="stats" id="pg-stats" hidden>
@@ -434,7 +451,7 @@
   </div>
 
   <div class="pg" data-page="game" id="game" hidden>
-    <div class="gpage" data-draw="gc" data-source="schedule boxscores teamform highlights gamelogs teams previews stats thisweek fullbox sblbox sblleague coachgames coaches"></div>
+    <div class="gpage" data-draw="gc" data-source="videos schedule boxscores teamform highlights gamelogs teams previews stats thisweek fullbox sblbox sblleague coachgames coaches"></div>
   </div>
 
   <div class="sw-team-wrap" data-draw="team" data-source="teamform teams coachgames"></div>
@@ -448,7 +465,7 @@
         <!-- social links go here (Instagram, X, TikTok, email) once the handles are known -->
       </div>
       <nav class="sa-foot-col" aria-label="Pages"><h3>Explore</h3>
-        <button type="button" data-page-go="games">Games</button><button type="button" data-page-go="week">This week</button><button type="button" data-page-go="players">Players</button><button type="button" data-page-go="stats">Stats</button>
+        <button type="button" data-page-go="games">Games</button><button type="button" data-page-go="week">This week</button><button type="button" data-page-go="players">Players</button><button type="button" data-page-go="video">Video</button><button type="button" data-page-go="stats">Stats</button>
       </nav>
       <nav class="sa-foot-col" aria-label="More pages"><h3>Sweden</h3>
         <button type="button" data-page-go="sweden">National team</button><button type="button" data-page-go="coaches">Coaches</button><button type="button" data-page-go="sbl">SBL</button><button type="button" data-page-go="awards">Awards</button>
@@ -462,7 +479,7 @@
     <div class="sa-foot-bar"><span>© 2026 Swedes Abroad</span><span>Stats from league and team box scores</span></div>
   </footer>
 </div>
-<script src="i18n.js?v=88575eca"></script>
+<script src="i18n.js?v=7011267a"></script>
 <script>
   var LANG = 'en';
   function LOC() { return LANG === 'sv' ? 'sv-SE' : 'en-GB'; }
@@ -3014,6 +3031,58 @@
     requestAnimationFrame(step);
     const d = document.getElementById('hx-sheet'); if (d) d.addEventListener('close', () => c.remove(), { once: true });
   }
+  // ---- Video player sheet: ESPN clips in ESPN's own embeddable player, YouTube videos in YouTube's (no-cookie) player
+  function playVideo(v) {
+    const src = v.src === 'youtube' ? `https://www.youtube-nocookie.com/embed/${v.vid}?autoplay=1&rel=0&modestbranding=1` : `https://www.espn.com/watch/syndicatedplayer/_/id/${v.vid}`;
+    const box = mk('div', 'vps-frame'); const f = document.createElement('iframe'); f.src = src; f.title = v.title; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin'; box.append(f);
+    const meta = mk('div', 'vps-meta'); meta.append(mk('span', 'vps-k', [v.kind, v.player].filter(Boolean).join(' · ')), mk('h3', '', v.title));
+    const link = mk('a', 'vps-out', v.src === 'youtube' ? L('Watch on YouTube ↗', 'Se på YouTube ↗') : L('Watch on ESPN ↗', 'Se på ESPN ↗')); link.href = v.src === 'youtube' ? `https://www.youtube.com/watch?v=${v.vid}` : `https://www.espn.com/video/clip/_/id/${v.vid}`; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    const items = [box, meta];
+    if (v.game_id) { const gb = mk('button', 'aws-all', L('Open the game →', 'Öppna matchen →')); gb.type = 'button'; gb.onclick = () => { hxClose(); showCard(v.game_id); }; items.push(gb); }
+    items.push(link);
+    hxSheet('', '', items); const d = document.getElementById('hx-sheet'); if (d) { d.classList.add('vps'); d.addEventListener('close', () => { f.src = 'about:blank'; }, { once: true }); }
+  }
+  function vidCard(v, big, col) {
+    // NBA.com doesn't allow its videos on other sites: those open on NBA.com
+    const out = v.src === 'nba'; const a = mk(out ? 'a' : 'button', 'vid' + (big ? ' big' : '') + (col ? ' col' : '') + (v.player ? ' swe' : '') + (out ? ' out' : ''));
+    if (out) { a.href = v.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; } else { a.type = 'button'; a.onclick = () => playVideo(v); }
+    const th = mk('span', 'vid-th'); if (v.thumb) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.onerror = () => { im.remove(); th.classList.add('nothumb'); }; im.src = v.thumb; th.append(im); } else th.classList.add('nothumb');
+    th.append(mk('span', 'vid-ph', v.src === 'nba' ? 'NBA.com' : v.src === 'youtube' ? 'YouTube' : 'ESPN'));
+    const du = mk('span', 'vid-dur', `${Math.floor((v.secs || 0) / 60)}:${String((v.secs || 0) % 60).padStart(2, '0')}`); du.setAttribute('data-no-tr', '');
+    th.append(mk('span', 'vid-play', out ? '↗' : '▶'), du); if (v.player) th.append(mk('span', 'vid-swe', '🇸🇪 ' + v.player.split(' ').slice(-1)[0]));
+    const t = mk('span', 'vid-t'); t.append(mk('b', '', v.title), mk('span', '', [v.kind, v.sub || '', v.src === 'youtube' ? (v.channel || 'YouTube') : v.src === 'nba' ? 'NBA.com ↗' : 'ESPN', v.date ? dayFmt(v.date) : ''].filter(Boolean).join(' · ')));
+    a.append(th, t); return a;
+  }
+  dash.draw('h-watch', (el) => {
+    el.replaceChildren(); const W = ds('watch'); if (!W || !W.length) { el.closest('section')?.setAttribute('hidden', ''); return; }
+    const sel = el.dataset.f || 'all'; const list = W.filter((v) => sel === 'all' || (sel === 'hl' ? v.kind === 'Highlight' : v.kind !== 'Highlight'));
+    if (!list.length) return; const w = mk('div', 'vid-wrap'); w.append(vidCard(list[0], true)); const r = mk('div', 'vid-row'); list.slice(1, 5).forEach((v) => r.append(vidCard(v))); w.append(r); el.append(w);
+  });
+  // ---- Video page
+  let vxWho = '';
+  dash.draw('vx-chips', (el) => {
+    el.replaceChildren(); const W = ds('watch') || []; const who = [...new Set(W.map((v) => v.player).filter(Boolean))];
+    [['', L('Everyone', 'Alla')], ...who.map((n) => [n, n.split(' ').slice(-1)[0]])].forEach(([k, l]) => { const b = mk('button', 'vx-chip' + (vxWho === k ? ' on' : '')); b.type = 'button';
+      if (k) b.append(faceAv('span', 'vx-cav', k)); b.append(mk('span', '', l)); b.onclick = () => { vxWho = k; dash.draw('vx-chips'); dash.draw('vx'); }; el.append(b); });
+  });
+  dash.draw('vx', (el) => {
+    el.replaceChildren(); const W = (ds('watch') || []).filter((v) => !vxWho || v.player === vxWho);
+    const sec = (kick, title, note, list, opts) => { if (!list.length) return; const s2 = mk('section', 'vx-sec'); const h = mk('div', 'vx-h'); const t = mk('div'); t.append(mk('span', 'vx-k', kick), mk('h2', '', title)); h.append(t); if (note) h.append(mk('span', 'vx-note', note)); s2.append(h);
+      const g = mk('div', 'vx-grid' + (opts && opts.wide ? ' wide' : '')); list.forEach((v) => g.append(vidCard(v, false, true))); s2.append(g); el.append(s2); };
+    // 1. the newest one, big
+    const latest = W.slice().sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))[0];
+    if (latest) { const f = mk('section', 'vx-sec vx-feat'); const w = mk('div', 'vid-wrap'); w.append(vidCard(latest, true)); const r = mk('div', 'vid-row');
+      W.filter((v) => v !== latest && v.date).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 3).forEach((v) => r.append(vidCard(v))); w.append(r); f.append(w); el.append(f); }
+    sec(L('Swedes in action', 'Svenskar i farten'), L('Game highlights', 'Matchhöjdpunkter'), L('Plays by the Swedes, from ESPN', 'Svenskarnas aktioner, från ESPN'), W.filter((v) => v.kind === 'Highlight'));
+    sec(L('After the game', 'Efter matchen'), L('Interviews', 'Intervjuer'), L('Locker room and press conferences', 'Omklädningsrum och presskonferenser'), W.filter((v) => v.kind === 'Interview'));
+    sec(L('Off the court', 'Utanför planen'), L('Features & more', 'Reportage & mer'), L('Longer videos about the players', 'Längre videor om spelarna'), W.filter((v) => v.kind === 'Feature'), { wide: true });
+    // 4. full game highlights of the games our Swedes played in
+    const V = ds('videos') || []; const sch = ds('schedule') || [];
+    const full = V.map((g) => { const c = g.clips.find((x) => x.full); const r = sch.find((x) => x.game_id === g.game_id); if (!c || !r || (vxWho && !String(r.players || '').includes(vxWho))) return null;
+      return { kind: L('Full game', 'Hela matchen'), player: '', title: `${r.team} ${String(r.score || '').replace(/^([WL]) /, '$1 ')} ${r.venue === 'Away' ? L('at', 'borta mot') : L('vs', 'mot')} ${r.opponent}`, src: 'espn', vid: (String(c.url).match(/\/id\/(\d+)/) || [])[1], thumb: c.thumb, secs: c.secs, date: r.date, game_id: r.game_id, sub: r.players }; }).filter(Boolean).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 8);
+    sec(L('Every game', 'Varje match'), L('Full game highlights', 'Hela matchens höjdpunkter'), L('The games the Swedes played in', 'Matcherna svenskarna spelade i'), full);
+    if (!el.children.length) el.append(mk('p', 'empty', L('No videos yet.', 'Inga videor än.')));
+  });
   function hxTap(t, fn) { t.tabIndex = 0; t.setAttribute('role', 'button'); t.onclick = fn; t.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fn(); } }; }
   function bxNum(v) { const b = mk('b', 'bx-num', String(v)); if (/^\d+(\.\d+)?$/.test(String(v))) b.dataset.count = String(v); return b; }
   dash.draw('h-bento', (el) => {
@@ -3095,6 +3164,7 @@
     if (rows.length > 1) lvpT = setTimeout(() => { lvpI++; dash.draw('live-pill'); }, 5000);
   });
 
+  hxSeg('[data-wf]', 'wf', (v) => { const el = document.querySelector('[data-draw="h-watch"]'); if (el) { el.dataset.f = v; dash.draw('h-watch'); } });
   dash.draw('hero-live', (el) => {
     el.replaceChildren(); const g = games(); if (!g) return;
     const t = g.filter(isTonight), live = t.filter((r) => r.status === 'live').length, done = t.filter((r) => r.status === 'final').length;
@@ -4218,6 +4288,19 @@
         const ul = mk('ul', 'cz-facts'); k.slice(0, 3).forEach((t) => { const li = mk('li'); li.append(mk('i', '', '●'), mk('span', '', t)); ul.append(li); }); if (k.length) sum.append(ul); }
       if (story) { const b = mk('button', 'hc-more', 'Read in This week →'); b.type = 'button'; b.onclick = () => openStory(story.story_id); sum.append(b); }
       if (sum.children.length > 1) el.append(sum);
+      // 3. video highlights (NBA and college, from ESPN) when there are any
+      { const V = (ds('videos') || []).find((x) => x.game_id === g.game_id);
+        if (V && V.clips && V.clips.length) { const vs = ppSection(L('Highlights', 'Höjdpunkter'), L('Video clips from the game, from ESPN.', 'Videoklipp från matchen, från ESPN.')); vs.dataset.k = 'star'; vs.dataset.kick = L('Video', 'Video');
+          const dur = (n) => `${Math.floor(n / 60)}:${String(n % 60).padStart(2, '0')}`;
+          const card = (c, big) => { const a = mk('button', 'vid' + (big ? ' big' : '') + (c.swedes && c.swedes.length ? ' swe' : '')); a.type = 'button'; a.onclick = () => playVideo({ src: 'espn', vid: (String(c.url).match(/\/id\/(\d+)/) || [])[1], title: c.title, kind: L('Highlight', 'Höjdpunkt'), player: (c.swedes || [])[0] || '' });
+            const th = mk('span', 'vid-th'); if (c.thumb) { const im = new Image(); im.alt = ''; im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.src = c.thumb; th.append(im); }
+            { const du = mk('span', 'vid-dur', dur(c.secs || 0)); du.setAttribute('data-no-tr', ''); th.append(mk('span', 'vid-play', '▶'), du); }
+            if (c.swedes && c.swedes.length) th.append(mk('span', 'vid-swe', '🇸🇪 ' + c.swedes.map((n) => n.split(' ').slice(-1)[0]).join(', ')));
+            const t = mk('span', 'vid-t'); t.append(mk('b', '', c.full ? L('Game highlights', 'Matchens höjdpunkter') : c.title), mk('span', '', 'ESPN'));
+            a.append(th, t); return a; };
+          const full = V.clips.find((c) => c.full) || V.clips[0]; const rest = V.clips.filter((c) => c !== full);
+          const w = mk('div', 'vid-wrap'); w.append(card(full, true)); if (rest.length) { const r = mk('div', 'vid-row'); rest.slice(0, 4).forEach((c) => r.append(card(c))); w.append(r); }
+          vs.append(w); el.append(vs); } }
       // 3. game leaders, head to head
       if (H && A) { const gl = ppSection('Game leaders'); gl.dataset.k = 'rank'; gl.dataset.kick = 'Head to head';
         const grid = mk('div', 'gcx-leaders');
