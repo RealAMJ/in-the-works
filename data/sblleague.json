@@ -714,11 +714,11 @@
   "home": "Högsbo Lions",
   "away": "Uppsala Basket",
   "hs": 27,
-  "as_": 25,
+  "as_": 28,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851704/summary",
   "box": false,
-  "clock": "08:57",
+  "clock": "07:39",
   "period": 2
  },
  {
@@ -727,13 +727,13 @@
   "time": "19:04",
   "home": "Umeå Basket",
   "away": "Nässjö Basket",
-  "hs": 20,
-  "as_": 24,
+  "hs": 24,
+  "as_": 28,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851705/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 1
+  "clock": "08:19",
+  "period": 2
  },
  {
   "game_id": "sbl-2851706",
@@ -741,12 +741,12 @@
   "time": "19:04",
   "home": "Norrköping Dolphins",
   "away": "Sloga Uppsala",
-  "hs": 26,
-  "as_": 15,
+  "hs": 32,
+  "as_": 18,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851706/summary",
   "box": false,
-  "clock": "02:01",
+  "clock": "00:00",
   "period": 1
  },
  {
@@ -755,13 +755,13 @@
   "time": "19:04",
   "home": "Södertälje BBK",
   "away": "Borås Basket",
-  "hs": 22,
-  "as_": 20,
+  "hs": 27,
+  "as_": 22,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851707/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 1
+  "clock": "07:32",
+  "period": 2
  },
  {
   "game_id": "sbl-2851708",
@@ -769,13 +769,13 @@
   "time": "19:04",
   "home": "Jämtland Basket",
   "away": "BC Luleå",
-  "hs": 15,
-  "as_": 20,
+  "hs": 19,
+  "as_": 24,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851708/summary",
   "box": false,
-  "clock": "00:13",
-  "period": 1
+  "clock": "08:27",
+  "period": 2
  },
  {
   "game_id": "sbl-2851801",
