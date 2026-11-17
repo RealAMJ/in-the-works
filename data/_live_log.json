@@ -1,29 +1,6 @@
 {
- "at": "2026-11-17T03:55:07+01:00",
+ "at": "2026-11-17T03:55:59+01:00",
  "log": [
-  {
-   "game": "g20261117miam",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261117miam",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Houston Rockets",
-     110,
-     14
-    ],
-    [
-     "Miami Heat",
-     128,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261117denv",
    "checking": "ESPN"
