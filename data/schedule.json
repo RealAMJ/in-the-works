@@ -2491,7 +2491,7 @@
   "score": "L 81-89",
   "live_feed": "bcl:136277",
   "clock": "Q4 04:06",
-  "live_updated": "2026-11-17T21:05:57+01:00"
+  "live_updated": "2026-11-17T21:06:51+01:00"
  },
  {
   "game_id": "g20261117jove",
@@ -2504,10 +2504,10 @@
   "competition": "Champions League (BCL)",
   "note": "",
   "status": "live",
-  "score": "W 9-9",
+  "score": "W 28-27",
   "live_feed": "bcl:136314",
-  "clock": "Q1 04:51",
-  "live_updated": "2026-11-17T21:05:58+01:00"
+  "clock": "Q2 03:11",
+  "live_updated": "2026-11-17T21:06:54+01:00"
  },
  {
   "game_id": "g20261117vir",
@@ -2520,12 +2520,12 @@
   "competition": "EuroLeague",
   "note": "Round 12",
   "status": "live",
-  "score": "L 0-6",
+  "score": "L 4-6",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:119",
-  "clock": "Q1 07:40",
-  "live_updated": "2026-11-17T21:05:58+01:00"
+  "clock": "Q1 07:21",
+  "live_updated": "2026-11-17T21:06:54+01:00"
  },
  {
   "game_id": "g20261118lips",
