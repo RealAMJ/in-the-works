@@ -7278,5 +7278,33 @@
   "note": "",
   "leaders": "Davis|25|5|0;Caruthers|13|2|5;Anđušić|10|5|3;Pavićević|10|6|1",
   "source": "ABA League (aba-liga.com)"
+ },
+ {
+  "row_id": "iona-2026-11-17",
+  "team": "Iona",
+  "date": "2026-11-17",
+  "competition": "NCAA",
+  "opponent": "UMBC",
+  "venue": "Away",
+  "score": "67-75",
+  "result": "L",
+  "top": "Jungers 18 pts, 6 reb",
+  "note": "",
+  "leaders": "Jungers|18|6|1;Odutayo|17|6|2;Kirk|9|3|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "umbc-2026-11-17",
+  "team": "UMBC",
+  "date": "2026-11-17",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Home",
+  "score": "75-67",
+  "result": "W",
+  "top": "Morton 26 pts, 3 reb",
+  "note": "",
+  "leaders": "Morton|26|3|1;Jacobs|13|7|2;Able|9|8|5;Varela|9|2|3",
+  "source": "ESPN"
  }
 ]
