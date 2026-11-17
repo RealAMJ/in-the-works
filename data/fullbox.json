@@ -68246,7 +68246,7 @@
   "ft": "4/4",
   "pm": -24,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68267,7 +68267,7 @@
   "ft": "3/4",
   "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68288,7 +68288,7 @@
   "ft": "3/3",
   "pm": -34,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68309,7 +68309,7 @@
   "ft": "6/7",
   "pm": -9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68330,7 +68330,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68349,9 +68349,9 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68361,7 +68361,7 @@
   "player": "Isaiah Crawford",
   "pos": "",
   "min": 21,
-  "pts": 10,
+  "pts": 11,
   "reb": 10,
   "ast": 3,
   "stl": 0,
@@ -68369,10 +68369,10 @@
   "tov": 1,
   "fg": "3/5",
   "three": "1/2",
-  "ft": "3/3",
-  "pm": 2,
+  "ft": "4/4",
+  "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68391,9 +68391,9 @@
   "fg": "3/5",
   "three": "0/0",
   "ft": "0/2",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68412,9 +68412,9 @@
   "fg": "2/7",
   "three": "2/7",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68435,7 +68435,7 @@
   "ft": "0/1",
   "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68444,7 +68444,7 @@
   "team": "Houston Rockets",
   "player": "Bruce Thornton",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 7,
   "reb": 0,
   "ast": 0,
@@ -68454,9 +68454,9 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "3/3",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68477,7 +68477,7 @@
   "ft": "4/6",
   "pm": 21,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68498,7 +68498,7 @@
   "ft": "0/1",
   "pm": 11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68519,7 +68519,7 @@
   "ft": "2/4",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68540,7 +68540,7 @@
   "ft": "2/2",
   "pm": 13,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68561,7 +68561,7 @@
   "ft": "1/1",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68582,7 +68582,7 @@
   "ft": "2/3",
   "pm": 15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68603,7 +68603,7 @@
   "ft": "0/0",
   "pm": 8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68612,7 +68612,7 @@
   "team": "Miami Heat",
   "player": "Simone Fontecchio",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 10,
   "reb": 6,
   "ast": 2,
@@ -68622,9 +68622,9 @@
   "fg": "4/10",
   "three": "2/8",
   "ft": "0/0",
-  "pm": 1,
+  "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68633,7 +68633,7 @@
   "team": "Miami Heat",
   "player": "Keshad Johnson",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 2,
   "ast": 0,
@@ -68643,9 +68643,9 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68664,9 +68664,9 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68675,7 +68675,7 @@
   "team": "Miami Heat",
   "player": "Tre Donaldson",
   "pos": "",
-  "min": 2,
+  "min": 3,
   "pts": 0,
   "reb": 0,
   "ast": 0,
@@ -68685,9 +68685,9 @@
   "fg": "0/3",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68706,9 +68706,9 @@
   "fg": "3/10",
   "three": "1/7",
   "ft": "7/8",
-  "pm": 19,
+  "pm": 17,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
