@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T20:39:36+01:00",
+ "at": "2026-11-17T20:40:36+01:00",
  "log": [
   {
    "game": "g20261117juve",
@@ -46,6 +46,14 @@
      0
     ]
    ]
+  },
+  {
+   "game": "g20261117vir",
+   "checking": "EuroLeague live"
+  },
+  {
+   "game": "g20261117vir",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   }
  ]
 }
