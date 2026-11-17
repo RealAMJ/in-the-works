@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T21:50:38+01:00",
+ "at": "2026-11-17T21:51:31+01:00",
  "log": [
   {
    "game": "g20261117jove",
@@ -31,8 +31,8 @@
   {
    "game": "g20261117vir",
    "src": "EuroLeague live",
-   "period": 2,
-   "clock": "00:38",
+   "period": 0,
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
