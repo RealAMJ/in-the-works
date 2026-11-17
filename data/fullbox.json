@@ -67847,7 +67847,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67868,7 +67868,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67889,7 +67889,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67910,7 +67910,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67919,7 +67919,7 @@
   "team": "Iona",
   "player": "Kevon Vanderhorst",
   "pos": "",
-  "min": 32,
+  "min": 33,
   "pts": 6,
   "reb": 3,
   "ast": 3,
@@ -67931,7 +67931,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67952,7 +67952,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67973,7 +67973,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -67994,7 +67994,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68015,7 +68015,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68036,7 +68036,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68057,7 +68057,7 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68078,7 +68078,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68099,7 +68099,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68120,7 +68120,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68141,11 +68141,11 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117iona-1-6",
+  "row_id": "g20261117iona-1-5",
   "game_id": "g20261117iona",
   "team": "UMBC",
   "player": "Steven Huan",
@@ -68156,17 +68156,17 @@
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "1/2",
   "three": "1/1",
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117iona-1-7",
+  "row_id": "g20261117iona-1-6",
   "game_id": "g20261117iona",
   "team": "UMBC",
   "player": "JP Ndong",
@@ -68183,11 +68183,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117iona-1-12",
+  "row_id": "g20261117iona-1-7",
   "game_id": "g20261117iona",
   "team": "UMBC",
   "player": "Carlos Varela",
@@ -68204,11 +68204,11 @@
   "ft": "7/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117iona-1-13",
+  "row_id": "g20261117iona-1-8",
   "game_id": "g20261117iona",
   "team": "UMBC",
   "player": "Evan Morton",
@@ -68225,7 +68225,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68324,7 +68324,7 @@
   "ast": 0,
   "stl": 0,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
@@ -68385,7 +68385,7 @@
   "pts": 2,
   "reb": 0,
   "ast": 0,
-  "stl": 0,
+  "stl": 1,
   "blk": 0,
   "tov": 0,
   "fg": "1/2",
