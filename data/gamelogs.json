@@ -7220,5 +7220,31 @@
   "pf": 1,
   "pm": -24,
   "eff": ""
+ },
+ {
+  "row_id": "pohto-2026-11-17",
+  "player": "Kenny Pohto",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "team": "Juventus Utena",
+  "opponent": "Pallacanestro Reggiana",
+  "venue": "Home",
+  "result": "L 95-102",
+  "min": 10,
+  "pts": 4,
+  "reb": 2,
+  "ast": 0,
+  "source": "FIBA (championsleague.basketball)",
+  "fg": "2/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "pm": -2,
+  "eff": ""
  }
 ]

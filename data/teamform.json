@@ -7362,5 +7362,33 @@
   "note": "",
   "leaders": "Ellis|14|2|3;Hull|11|7|1;Morinini|10|1|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "juventus-utena-2026-11-17",
+  "team": "Juventus Utena",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "opponent": "Pallacanestro Reggiana",
+  "venue": "Home",
+  "score": "95-102",
+  "result": "L",
+  "top": "Valinskas 20 pts, 2 reb",
+  "note": "",
+  "leaders": "Valinskas|20|2|6;Nzekwesi|14|14|2;Hunter|13|4|0",
+  "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "pallacanestro-reggiana-2026-11-17",
+  "team": "Pallacanestro Reggiana",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "opponent": "Juventus Utena",
+  "venue": "Away",
+  "score": "102-95",
+  "result": "W",
+  "top": "Thor 31 pts, 5 reb",
+  "note": "",
+  "leaders": "Thor|31|5|1;Barford|20|3|3;Caupain|15|3|5;Visconti|15|1|1",
+  "source": "FIBA (championsleague.basketball)"
  }
 ]
