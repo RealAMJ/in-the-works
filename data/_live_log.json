@@ -1,26 +1,26 @@
 {
- "at": "2026-11-17T05:57:49+01:00",
+ "at": "2026-11-17T18:41:21+01:00",
  "log": [
   {
-   "game": "g20261117denv",
-   "checking": "ESPN"
+   "game": "g20261117juve",
+   "checking": "FIBA (championsleague.basketball)"
   },
   {
-   "game": "g20261117denv",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261117juve",
+   "src": "FIBA (championsleague.basketball)",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "Colorado Colorado Springs Mountain Lions",
-     63,
-     18
+     "BC Juventus Utena",
+     0,
+     0
     ],
     [
-     "Denver Pioneers",
-     101,
-     14
+     "Pallacanestro Reggiana",
+     0,
+     0
     ]
    ]
   }
