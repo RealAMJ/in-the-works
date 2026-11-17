@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T21:09:38+01:00",
+ "at": "2026-11-17T21:10:19+01:00",
  "log": [
   {
    "game": "g20261117juve",
@@ -9,18 +9,18 @@
    "game": "g20261117juve",
    "src": "FIBA (championsleague.basketball)",
    "period": 4,
-   "clock": "04:06",
-   "done": false,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "BC Juventus Utena",
-     81,
-     0
+     95,
+     12
     ],
     [
      "Pallacanestro Reggiana",
-     89,
-     0
+     102,
+     10
     ]
    ]
   },
@@ -55,17 +55,17 @@
    "game": "g20261117vir",
    "src": "EuroLeague live",
    "period": 1,
-   "clock": "06:01",
+   "clock": "05:22",
    "done": false,
    "teams": [
     [
      "VIRTUS BOLOGNA",
-     6,
+     8,
      12
     ],
     [
      "PANATHINAIKOS AKTOR ATHENS",
-     6,
+     8,
      12
     ]
    ]

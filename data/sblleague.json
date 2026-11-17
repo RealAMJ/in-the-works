@@ -725,13 +725,11 @@
   "time": "19:04",
   "home": "Umeå Basket",
   "away": "Nässjö Basket",
-  "hs": 74,
-  "as_": 92,
-  "status": "live",
+  "hs": 75,
+  "as_": 94,
+  "status": "final",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851705/summary",
-  "box": false,
-  "clock": "02:01",
-  "period": 4
+  "box": true
  },
  {
   "game_id": "sbl-2851706",

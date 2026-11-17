@@ -27357,7 +27357,7 @@
   "pm": -9,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-1",
@@ -27377,7 +27377,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-2",
@@ -27397,7 +27397,7 @@
   "pm": -8,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-3",
@@ -27417,34 +27417,34 @@
   "pm": -12,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-4",
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Isak Andersson",
-  "min": 24,
-  "pts": 8,
-  "reb": 3,
+  "min": 26,
+  "pts": 9,
+  "reb": 4,
   "ast": 3,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "4/6",
-  "three": "0/1",
-  "ft": "0/0",
-  "pm": -4,
+  "fg": "4/7",
+  "three": "0/2",
+  "ft": "1/2",
+  "pm": -5,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-5",
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Adam Rask",
-  "min": 6,
+  "min": 8,
   "pts": 4,
   "reb": 3,
   "ast": 0,
@@ -27454,10 +27454,10 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "2/2",
-  "pm": -10,
+  "pm": -11,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-6",
@@ -27477,7 +27477,7 @@
   "pm": -16,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-7",
@@ -27497,34 +27497,34 @@
   "pm": -6,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-8",
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Arvid Strömsten",
-  "min": 0,
+  "min": 2,
   "pts": 0,
-  "reb": 0,
+  "reb": 1,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/0",
+  "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-9",
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "David Czerapowicz",
-  "min": 31,
+  "min": 33,
   "pts": 11,
   "reb": 4,
   "ast": 4,
@@ -27534,10 +27534,10 @@
   "fg": "4/8",
   "three": "2/5",
   "ft": "1/2",
-  "pm": -11,
+  "pm": -12,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-10",
@@ -27557,47 +27557,47 @@
   "pm": -11,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-11",
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Felix Wollberg",
-  "min": 16,
+  "min": 18,
   "pts": 8,
   "reb": 2,
   "ast": 6,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "3/3",
-  "three": "0/0",
+  "fg": "3/4",
+  "three": "0/1",
   "ft": "2/3",
-  "pm": -3,
+  "pm": -4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-0",
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Mio Hjalmarsson",
-  "min": 26,
+  "min": 28,
   "pts": 10,
   "reb": 1,
   "ast": 7,
   "stl": 2,
   "blk": 0,
   "tov": 1,
-  "fg": "3/8",
-  "three": "2/4",
+  "fg": "3/10",
+  "three": "2/6",
   "ft": "2/2",
-  "pm": 17,
+  "pm": 18,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-1",
@@ -27617,7 +27617,7 @@
   "pm": 12,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-2",
@@ -27637,27 +27637,27 @@
   "pm": 1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-3",
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Rahsaan Edwards",
-  "min": 30,
+  "min": 32,
   "pts": 9,
   "reb": 3,
-  "ast": 1,
+  "ast": 2,
   "stl": 0,
   "blk": 0,
   "tov": 2,
   "fg": "4/11",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 12,
+  "pm": 13,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-4",
@@ -27677,7 +27677,7 @@
   "pm": 13,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-5",
@@ -27697,7 +27697,7 @@
   "pm": 7,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-6",
@@ -27717,36 +27717,36 @@
   "pm": 9,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-7",
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Abdou Medjedoub",
-  "min": 16,
-  "pts": 15,
-  "reb": 3,
+  "min": 18,
+  "pts": 17,
+  "reb": 5,
   "ast": 1,
   "stl": 1,
   "blk": 0,
-  "tov": 1,
-  "fg": "7/7",
+  "tov": 2,
+  "fg": "8/8",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 9,
+  "pm": 10,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-8",
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Derreck Brooks Jr",
-  "min": 25,
+  "min": 27,
   "pts": 16,
-  "reb": 3,
+  "reb": 4,
   "ast": 1,
   "stl": 1,
   "blk": 1,
@@ -27754,17 +27754,17 @@
   "fg": "4/10",
   "three": "3/6",
   "ft": "5/6",
-  "pm": 9,
+  "pm": 10,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-1-9",
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Jhonny Tovar",
-  "min": 14,
+  "min": 16,
   "pts": 0,
   "reb": 4,
   "ast": 1,
@@ -27774,9 +27774,9 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  }
 ]

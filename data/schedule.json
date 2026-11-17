@@ -2487,11 +2487,10 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "live",
-  "score": "L 81-89",
+  "status": "final",
+  "score": "L 95-102",
   "live_feed": "bcl:136277",
-  "clock": "Q4 04:06",
-  "live_updated": "2026-11-17T21:09:36+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261117jove",
@@ -2507,7 +2506,7 @@
   "score": "W 28-27",
   "live_feed": "bcl:136314",
   "clock": "Q2 03:11",
-  "live_updated": "2026-11-17T21:09:37+01:00"
+  "live_updated": "2026-11-17T21:10:19+01:00"
  },
  {
   "game_id": "g20261117vir",
@@ -2520,12 +2519,12 @@
   "competition": "EuroLeague",
   "note": "Round 12",
   "status": "live",
-  "score": "W 6-6",
+  "score": "W 8-8",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:119",
-  "clock": "Q1 06:01",
-  "live_updated": "2026-11-17T21:09:38+01:00"
+  "clock": "Q1 05:22",
+  "live_updated": "2026-11-17T21:10:19+01:00"
  },
  {
   "game_id": "g20261118lips",
