@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T05:19:30+01:00",
+ "at": "2026-11-17T05:20:22+01:00",
  "log": [
   {
    "game": "g20261117denv",
@@ -9,17 +9,17 @@
    "game": "g20261117denv",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:28",
+   "clock": "13:35",
    "done": false,
    "teams": [
     [
      "Colorado Colorado Springs Mountain Lions",
-     39,
+     42,
      18
     ],
     [
      "Denver Pioneers",
-     64,
+     67,
      14
     ]
    ]
