@@ -7418,5 +7418,33 @@
   "note": "",
   "leaders": "Dundao|22|2|4;Bropleh|17|5|3;Allen-Williams|9|2|3",
   "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-17",
+  "team": "Virtus Bologna",
+  "date": "2026-11-17",
+  "competition": "EuroLeague",
+  "opponent": "Panathinaikos Athens",
+  "venue": "Home",
+  "score": "84-79",
+  "result": "W",
+  "top": "Diarra 15 pts, 9 reb",
+  "note": "",
+  "leaders": "Diarra|15|9|0;Diouf|15|7|1;Bello|11|2|4",
+  "source": "EuroLeague live"
+ },
+ {
+  "row_id": "panathinaikos-athens-2026-11-17",
+  "team": "Panathinaikos Athens",
+  "date": "2026-11-17",
+  "competition": "EuroLeague",
+  "opponent": "Virtus Bologna",
+  "venue": "Away",
+  "score": "79-84",
+  "result": "L",
+  "top": "Nunn 18 pts, 8 reb",
+  "note": "",
+  "leaders": "Nunn|18|8|1;Francisco|10|2|7;Sloukas|10|2|2;Bonga|10|3|0",
+  "source": "EuroLeague live"
  }
 ]
