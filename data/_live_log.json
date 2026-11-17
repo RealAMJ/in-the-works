@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T20:09:41+01:00",
+ "at": "2026-11-17T20:10:35+01:00",
  "log": [
   {
    "game": "g20261117juve",
@@ -20,6 +20,29 @@
     [
      "Pallacanestro Reggiana",
      51,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261117jove",
+   "checking": "FIBA (championsleague.basketball)"
+  },
+  {
+   "game": "g20261117jove",
+   "src": "FIBA (championsleague.basketball)",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
+   "teams": [
+    [
+     "Club Joventut Badalona SAD",
+     0,
+     0
+    ],
+    [
+     "Futebol Clube do Porto",
+     0,
      0
     ]
    ]
