@@ -2487,9 +2487,11 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "bcl:136277"
+  "status": "live",
+  "score": "W 13-8",
+  "live_feed": "bcl:136277",
+  "clock": "Q1 06:53",
+  "live_updated": "2026-11-17T19:08:53+01:00"
  },
  {
   "game_id": "g20261117jove",
