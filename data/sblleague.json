@@ -713,12 +713,12 @@
   "time": "19:04",
   "home": "Högsbo Lions",
   "away": "Uppsala Basket",
-  "hs": 36,
-  "as_": 62,
+  "hs": 41,
+  "as_": 69,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851704/summary",
   "box": false,
-  "clock": "07:59",
+  "clock": "05:31",
   "period": 3
  },
  {
@@ -746,8 +746,8 @@
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851706/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 2
+  "clock": "09:51",
+  "period": 3
  },
  {
   "game_id": "sbl-2851707",
@@ -760,8 +760,8 @@
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851707/summary",
   "box": false,
-  "clock": "00:00",
-  "period": 2
+  "clock": "10:00",
+  "period": 3
  },
  {
   "game_id": "sbl-2851708",
