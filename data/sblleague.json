@@ -713,11 +713,13 @@
   "time": "19:04",
   "home": "Högsbo Lions",
   "away": "Uppsala Basket",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851704/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851705",
@@ -725,11 +727,13 @@
   "time": "19:04",
   "home": "Umeå Basket",
   "away": "Nässjö Basket",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851705/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851706",
@@ -737,11 +741,13 @@
   "time": "19:04",
   "home": "Norrköping Dolphins",
   "away": "Sloga Uppsala",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851706/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851707",
@@ -749,11 +755,13 @@
   "time": "19:04",
   "home": "Södertälje BBK",
   "away": "Borås Basket",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851707/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851708",
@@ -761,11 +769,13 @@
   "time": "19:04",
   "home": "Jämtland Basket",
   "away": "BC Luleå",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 0,
+  "as_": 0,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851708/summary",
-  "box": false
+  "box": false,
+  "clock": "10:00",
+  "period": 1
  },
  {
   "game_id": "sbl-2851801",
