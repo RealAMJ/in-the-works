@@ -68255,7 +68255,7 @@
   "team": "Houston Rockets",
   "player": "Jabari Smith Jr.",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 3,
   "reb": 3,
   "ast": 0,
@@ -68265,7 +68265,7 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68298,7 +68298,7 @@
   "player": "Alperen Sengun",
   "pos": "",
   "min": 8,
-  "pts": 0,
+  "pts": 1,
   "reb": 5,
   "ast": 1,
   "stl": 0,
@@ -68306,8 +68306,8 @@
   "tov": 2,
   "fg": "0/2",
   "three": "0/0",
-  "ft": "0/0",
-  "pm": -4,
+  "ft": "1/1",
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68391,7 +68391,7 @@
   "fg": "2/3",
   "three": "2/2",
   "ft": "0/0",
-  "pm": 4,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68460,7 +68460,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117miam-1-5",
+  "row_id": "g20261117miam-1-6",
   "game_id": "g20261117miam",
   "team": "Miami Heat",
   "player": "Bobby Portis",
