@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T21:27:57+01:00",
+ "at": "2026-11-17T21:28:49+01:00",
  "log": [
   {
    "game": "g20261117jove",
@@ -32,12 +32,12 @@
    "game": "g20261117vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "09:23",
+   "clock": "09:10",
    "done": false,
    "teams": [
     [
      "VIRTUS BOLOGNA",
-     19,
+     21,
      12
     ],
     [
