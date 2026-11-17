@@ -2521,13 +2521,12 @@
   "venue": "Home",
   "competition": "EuroLeague",
   "note": "Round 12",
-  "status": "live",
+  "status": "final",
   "score": "W 84-79",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:119",
-  "clock": "End of Q0",
-  "live_updated": "2026-11-17T23:09:10+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261118lips",
