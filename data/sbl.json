@@ -154,6 +154,28 @@
   "source": "FIBA LiveStats (Basketligan, game 2851708)"
  },
  {
+  "row_id": "abdoumedjedo-2026-11-17",
+  "date": "2026-11-17",
+  "player": "Abdou Medjedoub",
+  "team": "Nässjö Basket",
+  "opponent": "Umeå Basket",
+  "venue": "Away",
+  "result": "W 94-75",
+  "min": 18,
+  "pts": 17,
+  "reb": 5,
+  "ast": 1,
+  "stl": 1,
+  "blk": 0,
+  "fg": "8/8",
+  "three": "0/0",
+  "ft": "1/2",
+  "tags": "Perfect FG (8/8)",
+  "headline": "17 points on perfect 8/8 shooting",
+  "headline_sv": "17 poäng med perfekta 8/8 från fältet",
+  "source": "FIBA LiveStats (Basketligan, game 2851705)"
+ },
+ {
   "row_id": "jordanivycur-2026-11-13",
   "date": "2026-11-13",
   "player": "Jordan Ivy Curry",
