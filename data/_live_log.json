@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T03:01:45+01:00",
+ "at": "2026-11-17T03:02:18+01:00",
  "log": [
   {
    "game": "g20261117miam",
@@ -9,17 +9,17 @@
    "game": "g20261117miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "09:06",
+   "clock": "08:36",
    "done": false,
    "teams": [
     [
      "Houston Rockets",
-     55,
+     57,
      14
     ],
     [
      "Miami Heat",
-     64,
+     69,
      15
     ]
    ]
