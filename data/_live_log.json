@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T21:50:05+01:00",
+ "at": "2026-11-17T21:50:38+01:00",
  "log": [
   {
    "game": "g20261117jove",
@@ -9,17 +9,17 @@
    "game": "g20261117jove",
    "src": "FIBA (championsleague.basketball)",
    "period": 3,
-   "clock": "05:10",
+   "clock": "01:10",
    "done": false,
    "teams": [
     [
      "Club Joventut Badalona SAD",
-     44,
+     50,
      0
     ],
     [
      "Futebol Clube do Porto",
-     43,
+     48,
      0
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261117vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "01:15",
+   "clock": "00:38",
    "done": false,
    "teams": [
     [
