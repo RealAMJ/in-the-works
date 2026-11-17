@@ -2452,11 +2452,11 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "W 115-92",
+  "score": "W 115-94",
   "espn_id": "401909998",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401909998",
-  "clock": "Q4 06:18",
-  "live_updated": "2026-11-17T03:39:53+01:00"
+  "clock": "Q4 05:57",
+  "live_updated": "2026-11-17T03:40:37+01:00"
  },
  {
   "game_id": "g20261117denv",
@@ -2469,7 +2469,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401926228",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926228"
  },
  {
   "game_id": "g20261117juve",
