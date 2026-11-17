@@ -1,26 +1,26 @@
 {
- "at": "2026-11-17T23:09:59+01:00",
+ "at": "2026-11-18T00:13:24+01:00",
  "log": [
   {
-   "game": "g20261117vir",
-   "checking": "EuroLeague live"
+   "game": "g20261118lips",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261117vir",
-   "src": "EuroLeague live",
+   "game": "g20261118lips",
+   "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "VIRTUS BOLOGNA",
-     84,
-     12
+     "Purdue Boilermakers",
+     0,
+     0
     ],
     [
-     "PANATHINAIKOS AKTOR ATHENS",
-     79,
-     12
+     "Lipscomb Bisons",
+     0,
+     0
     ]
    ]
   }
