@@ -2508,7 +2508,7 @@
   "score": "W 74-66",
   "live_feed": "bcl:136314",
   "clock": "Q4 00:55",
-  "live_updated": "2026-11-17T22:19:11+01:00"
+  "live_updated": "2026-11-17T22:20:04+01:00"
  },
  {
   "game_id": "g20261117vir",
@@ -2521,12 +2521,12 @@
   "competition": "EuroLeague",
   "note": "Round 12",
   "status": "live",
-  "score": "L 52-54",
+  "score": "W 54-54",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:119",
-  "clock": "Q3 04:48",
-  "live_updated": "2026-11-17T22:19:12+01:00"
+  "clock": "Q3 03:38",
+  "live_updated": "2026-11-17T22:20:04+01:00"
  },
  {
   "game_id": "g20261118lips",
