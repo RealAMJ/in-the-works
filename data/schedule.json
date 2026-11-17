@@ -2507,7 +2507,9 @@
   "status": "final",
   "score": "W 74-70",
   "live_feed": "bcl:136314",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261117vir",
@@ -2524,8 +2526,8 @@
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:119",
-  "clock": "Q4 05:06",
-  "live_updated": "2026-11-17T22:43:24+01:00"
+  "clock": "Q4 05:00",
+  "live_updated": "2026-11-17T22:43:55+01:00"
  },
  {
   "game_id": "g20261118lips",

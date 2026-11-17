@@ -282,5 +282,16 @@
   "tag": "Season high",
   "headline_sv": "Säsongsbästa 10 poäng",
   "detail_sv": "Njie gjorde 10 poäng (4/8 från fältet, 1/3 från tre, 1/2 på straffar), 2 returer och 4 assist på 25 minuter när BC Vienna vann med 87-79 borta mot SC Derby."
+ },
+ {
+  "highlight_id": "g20261117jove-birgander",
+  "date": "2026-11-17",
+  "player": "Simon Birgander",
+  "game_id": "g20261117jove",
+  "headline": "Perfect shooting: 6 points on 3/3 from the field",
+  "detail": "Birgander had 6 points (3/3 FG, 0/0 3PT, 0/0 FT), 5 rebounds and 0 assists in 14 minutes as Joventut Badalona won 74-70 at home to Futebol Clube do Porto.",
+  "tag": "Perfect shooting",
+  "headline_sv": "Perfekt skytte: 6 poäng på 3/3 från fältet",
+  "detail_sv": "Birgander gjorde 6 poäng (3/3 från fältet, 0/0 från tre, 0/0 på straffar), 5 returer och 0 assist på 14 minuter när Joventut Badalona vann med 74-70 hemma mot Futebol Clube do Porto."
  }
 ]

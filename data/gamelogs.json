@@ -7246,5 +7246,31 @@
   "pf": 1,
   "pm": -2,
   "eff": ""
+ },
+ {
+  "row_id": "birgander-2026-11-17",
+  "player": "Simon Birgander",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "team": "Joventut Badalona",
+  "opponent": "Futebol Clube do Porto",
+  "venue": "Home",
+  "result": "W 74-70",
+  "min": 14,
+  "pts": 6,
+  "reb": 5,
+  "ast": 0,
+  "source": "FIBA (championsleague.basketball)",
+  "fg": "3/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 2,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 0,
+  "pm": -2,
+  "eff": ""
  }
 ]

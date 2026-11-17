@@ -7390,5 +7390,33 @@
   "note": "",
   "leaders": "Thor|31|5|1;Barford|20|3|3;Caupain|15|3|5;Visconti|15|1|1",
   "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "joventut-badalona-2026-11-17",
+  "team": "Joventut Badalona",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "opponent": "Futebol Clube do Porto",
+  "venue": "Home",
+  "score": "74-70",
+  "result": "W",
+  "top": "Laprovittola 20 pts, 2 reb",
+  "note": "",
+  "leaders": "Laprovittola|20|2|4;Sulejmanovic|10|4|1;Rubio|8|3|3",
+  "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "futebol-clube-do-porto-2026-11-17",
+  "team": "Futebol Clube do Porto",
+  "date": "2026-11-17",
+  "competition": "Champions League (BCL)",
+  "opponent": "Joventut Badalona",
+  "venue": "Away",
+  "score": "70-74",
+  "result": "L",
+  "top": "Dundao 22 pts, 2 reb",
+  "note": "",
+  "leaders": "Dundao|22|2|4;Bropleh|17|5|3;Allen-Williams|9|2|3",
+  "source": "FIBA (championsleague.basketball)"
  }
 ]
