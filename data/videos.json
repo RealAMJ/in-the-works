@@ -1193,5 +1193,60 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261117iona",
+  "date": "2026-11-17",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Nathan Kirk hits the 3-pointer vs. UMBC Retrievers",
+    "secs": 16,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1116/b84f1068-abb0-4521-a70f-0ac45ec6050b/b84f1068-abb0-4521-a70f-0ac45ec6050b.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50505494/nathan-kirk-hits-3-pointer-vs-umbc-retrievers",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Ore Odutayo rocks the rim with powerful jam",
+    "secs": 25,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1116/813713bf-a2cf-48d0-83f4-4f85dce6ff92/813713bf-a2cf-48d0-83f4-4f85dce6ff92.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50505574/ore-odutayo-rocks-rim-powerful-jam",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Riley Jacobs gets up for the beautiful jam",
+    "secs": 22,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1116/c6c24652-9980-4745-a245-1c0178e1f03b/c6c24652-9980-4745-a245-1c0178e1f03b.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50505637/riley-jacobs-gets-beautiful-jam",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Riley Jacobs elevates for jam vs. Iona Gaels",
+    "secs": 22,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1116/368d1804-91f6-477b-8180-520c6382a12d/368d1804-91f6-477b-8180-520c6382a12d.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50505638/riley-jacobs-elevates-jam-vs-iona-gaels",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Kevon Vanderhorst drains the deep 3",
+    "secs": 15,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/b9b410a1-5f45-4c24-9a11-ac405b058c71/b9b410a1-5f45-4c24-9a11-ac405b058c71.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506146/kevon-vanderhorst-drains-deep-3",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Kevon Vanderhorst gets the hoop and the harm",
+    "secs": 17,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/dc39e508-2a20-4293-9675-a2c820e220d5/dc39e508-2a20-4293-9675-a2c820e220d5.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506151/kevon-vanderhorst-gets-hoop-harm",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]
