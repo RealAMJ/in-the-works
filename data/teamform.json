@@ -7334,5 +7334,33 @@
   "note": "",
   "leaders": "Sengun|23|7|2;Durant|22|2|3;Smith|12|10|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "denver-2026-11-17",
+  "team": "Denver",
+  "date": "2026-11-17",
+  "competition": "NCAA",
+  "opponent": "Colorado Colorado Springs",
+  "venue": "Home",
+  "score": "101-63",
+  "result": "W",
+  "top": "Johnson 22 pts, 1 reb",
+  "note": "",
+  "leaders": "Johnson|22|1|6;Wysocki|19|6|2;Martin|17|6|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "colorado-colorado-springs-2026-11-17",
+  "team": "Colorado Colorado Springs",
+  "date": "2026-11-17",
+  "competition": "NCAA",
+  "opponent": "Denver",
+  "venue": "Away",
+  "score": "63-101",
+  "result": "L",
+  "top": "Ellis 14 pts, 2 reb",
+  "note": "",
+  "leaders": "Ellis|14|2|3;Hull|11|7|1;Morinini|10|1|2",
+  "source": "ESPN"
  }
 ]

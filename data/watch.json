@@ -1,6 +1,17 @@
 [
  {
   "kind": "Highlight",
+  "player": "Oskar Stumer",
+  "title": "Oskar Stumer fights off defender for and-1",
+  "src": "espn",
+  "vid": "50507413",
+  "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/95fa1e17-b4a2-40ca-900e-ea0918171348/95fa1e17-b4a2-40ca-900e-ea0918171348.jpg",
+  "secs": 19,
+  "date": "2026-11-17",
+  "game_id": "g20261117denv"
+ },
+ {
+  "kind": "Highlight",
   "player": "William Berg",
   "title": "William Berg throws down powerful jam vs. Austin Peay Governors",
   "src": "espn",

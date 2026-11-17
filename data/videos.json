@@ -1303,5 +1303,38 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261117denv",
+  "date": "2026-11-17",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Oskar Stumer fights off defender for and-1",
+    "secs": 19,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/95fa1e17-b4a2-40ca-900e-ea0918171348/95fa1e17-b4a2-40ca-900e-ea0918171348.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50507413/oskar-stumer-fights-defender-1",
+    "full": false,
+    "swedes": [
+     "Oskar Stumer"
+    ]
+   },
+   {
+    "title": "Shaun Wysocki elevates for flush vs. Colorado CS Mountain Lions",
+    "secs": 18,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/54978128-88c5-41df-9115-71d931335daa/54978128-88c5-41df-9115-71d931335daa.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50507571/shaun-wysocki-elevates-flush-vs-colorado-cs-mountain-lions",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Carson Johnson buries 3-pointer against Colorado CS Mountain Lions",
+    "secs": 14,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/fd91abf8-7a97-453a-b99b-c68ca8e43295/fd91abf8-7a97-453a-b99b-c68ca8e43295.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50507804/carson-johnson-buries-3-pointer-colorado-cs-mountain-lions",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]

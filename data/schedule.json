@@ -2473,7 +2473,9 @@
   "score": "W 101-63",
   "espn_id": "401926228",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401926228",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261117juve",

@@ -7116,5 +7116,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "stumer-2026-11-17",
+  "player": "Oskar Stumer",
+  "date": "2026-11-17",
+  "competition": "NCAA",
+  "team": "Denver",
+  "opponent": "Colorado Colorado Springs",
+  "venue": "Home",
+  "result": "W 101-63",
+  "min": 21,
+  "pts": 4,
+  "reb": 5,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "2/3",
+  "three": "0/1",
+  "ft": "0/1",
+  "oreb": 0,
+  "dreb": 5,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
