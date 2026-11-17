@@ -7306,5 +7306,33 @@
   "note": "",
   "leaders": "Morton|26|3|1;Jacobs|13|7|2;Able|9|8|5;Varela|9|2|3",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-17",
+  "team": "Miami Heat",
+  "date": "2026-11-17",
+  "competition": "NBA",
+  "opponent": "Houston Rockets",
+  "venue": "Home",
+  "score": "128-110",
+  "result": "W",
+  "top": "Antetokounmpo 20 pts, 13 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|20|13|6;Thompson|17|0|2;Wiggins|17|5|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "houston-rockets-2026-11-17",
+  "team": "Houston Rockets",
+  "date": "2026-11-17",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Away",
+  "score": "110-128",
+  "result": "L",
+  "top": "Sengun 23 pts, 7 reb",
+  "note": "",
+  "leaders": "Sengun|23|7|2;Durant|22|2|3;Smith|12|10|1",
+  "source": "ESPN"
  }
 ]

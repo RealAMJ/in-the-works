@@ -1248,5 +1248,60 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261117miam",
+  "date": "2026-11-17",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Kevin Durant with the massive block at the rim",
+    "secs": 17,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/516c8456-3a9c-4ef4-9893-782096cc494a/516c8456-3a9c-4ef4-9893-782096cc494a.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506256/kevin-durant-massive-block-rim",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Fred VanVleet knocks down the 3-point shot",
+    "secs": 15,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/81647a41-116d-43fc-8ffd-7566cc2016e1/81647a41-116d-43fc-8ffd-7566cc2016e1.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506485/fred-vanvleet-knocks-3-point-shot",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Myron Gardner gets the basket plus the foul",
+    "secs": 13,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/2874120e-ab3b-4bdd-9f4d-20fcffefcddd/2874120e-ab3b-4bdd-9f4d-20fcffefcddd.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506557/myron-gardner-gets-basket-plus-foul",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Alperen Sengun gets the hoop and the harm",
+    "secs": 18,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/432f38c6-9152-436d-8cc1-47a6ae66b66c/432f38c6-9152-436d-8cc1-47a6ae66b66c.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506681/alperen-sengun-gets-hoop-harm",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Giannis Antetokounmpo gets the hoop and the harm",
+    "secs": 19,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/bfccb887-7e92-49e6-b720-a13bff478d7f/bfccb887-7e92-49e6-b720-a13bff478d7f.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50506983/giannis-antetokounmpo-gets-hoop-harm",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Davion Mitchell gets the and-1 to fall",
+    "secs": 14,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1117/1e4b5c0a-4784-4e5e-a772-296482aa8dab/1e4b5c0a-4784-4e5e-a772-296482aa8dab.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50507034/davion-mitchell-gets-1-fall",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]
