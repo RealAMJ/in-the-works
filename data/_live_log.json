@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T00:31:29+01:00",
+ "at": "2026-11-18T00:35:57+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -8,19 +8,19 @@
   {
    "game": "g20261118lips",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:28",
    "done": false,
    "teams": [
     [
-     "Purdue Boilermakers",
-     0,
-     0
+     "Lipscomb Bisons",
+     6,
+     16
     ],
     [
-     "Lipscomb Bisons",
-     0,
-     0
+     "Purdue Boilermakers",
+     6,
+     16
     ]
    ]
   }
