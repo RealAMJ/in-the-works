@@ -68729,7 +68729,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68750,7 +68750,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68764,14 +68764,14 @@
   "reb": 7,
   "ast": 1,
   "stl": 1,
-  "blk": 0,
+  "blk": 1,
   "tov": 1,
   "fg": "3/9",
   "three": "3/7",
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68780,19 +68780,19 @@
   "team": "Colorado Colorado Springs",
   "player": "Jayden Washington",
   "pos": "",
-  "min": 23,
+  "min": 24,
   "pts": 9,
-  "reb": 3,
+  "reb": 4,
   "ast": 3,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "2/7",
   "three": "2/6",
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68813,11 +68813,11 @@
   "ft": "5/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-6",
+  "row_id": "g20261117denv-0-5",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Ife Bolaji",
@@ -68834,11 +68834,11 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-8",
+  "row_id": "g20261117denv-0-6",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Joshua Ray",
@@ -68855,16 +68855,16 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-9",
+  "row_id": "g20261117denv-0-7",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Abel Hutchinson",
   "pos": "",
-  "min": 16,
+  "min": 17,
   "pts": 0,
   "reb": 2,
   "ast": 0,
@@ -68876,11 +68876,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-11",
+  "row_id": "g20261117denv-0-8",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Drew Azebeokhai Jr.",
@@ -68897,11 +68897,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-13",
+  "row_id": "g20261117denv-0-9",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Evan McKean",
@@ -68918,11 +68918,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-16",
+  "row_id": "g20261117denv-0-10",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "Tre Lucia",
@@ -68939,11 +68939,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-0-17",
+  "row_id": "g20261117denv-0-11",
   "game_id": "g20261117denv",
   "team": "Colorado Colorado Springs",
   "player": "James Ellis",
@@ -68960,7 +68960,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -68981,7 +68981,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69002,7 +69002,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69023,7 +69023,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69044,7 +69044,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69065,7 +69065,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69074,9 +69074,9 @@
   "team": "Denver",
   "player": "Harry Bates",
   "pos": "",
-  "min": 17,
+  "min": 18,
   "pts": 10,
-  "reb": 4,
+  "reb": 5,
   "ast": 2,
   "stl": 0,
   "blk": 1,
@@ -69086,7 +69086,7 @@
   "ft": "4/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -69095,23 +69095,23 @@
   "team": "Denver",
   "player": "Jordan Rogers",
   "pos": "",
-  "min": 13,
+  "min": 14,
   "pts": 0,
   "reb": 3,
   "ast": 1,
-  "stl": 0,
+  "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "0/1",
+  "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-8",
+  "row_id": "g20261117denv-1-7",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "Baba Mbengue",
@@ -69128,37 +69128,37 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-9",
+  "row_id": "g20261117denv-1-8",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "Will Kirsch",
   "pos": "",
-  "min": 4,
+  "min": 5,
   "pts": 6,
   "reb": 0,
   "ast": 1,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "2/3",
-  "three": "2/3",
+  "fg": "2/4",
+  "three": "2/4",
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-10",
+  "row_id": "g20261117denv-1-9",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "Trey Cady",
   "pos": "",
-  "min": 4,
+  "min": 5,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -69170,11 +69170,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-11",
+  "row_id": "g20261117denv-1-10",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "Jaelen Nelson",
@@ -69191,11 +69191,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-12",
+  "row_id": "g20261117denv-1-11",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "CJ Hyland",
@@ -69212,11 +69212,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117denv-1-13",
+  "row_id": "g20261117denv-1-12",
   "game_id": "g20261117denv",
   "team": "Denver",
   "player": "Logan Threatt",
@@ -69233,7 +69233,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
