@@ -68445,7 +68445,7 @@
   "player": "Bruce Thornton",
   "pos": "",
   "min": 9,
-  "pts": 5,
+  "pts": 6,
   "reb": 0,
   "ast": 0,
   "stl": 0,
@@ -68453,8 +68453,8 @@
   "tov": 0,
   "fg": "2/5",
   "three": "0/2",
-  "ft": "1/1",
-  "pm": -4,
+  "ft": "2/2",
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68559,7 +68559,7 @@
   "fg": "7/15",
   "three": "1/6",
   "ft": "1/1",
-  "pm": 11,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68580,7 +68580,7 @@
   "fg": "6/9",
   "three": "3/6",
   "ft": "2/3",
-  "pm": 17,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -68601,7 +68601,7 @@
   "fg": "7/14",
   "three": "2/6",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "ESPN"
