@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T19:32:40+01:00",
+ "at": "2026-11-17T19:33:17+01:00",
  "log": [
   {
    "game": "g20261117juve",
@@ -8,18 +8,18 @@
   {
    "game": "g20261117juve",
    "src": "FIBA (championsleague.basketball)",
-   "period": 1,
-   "clock": "04:05",
+   "period": 2,
+   "clock": "06:42",
    "done": false,
    "teams": [
     [
      "BC Juventus Utena",
-     19,
+     34,
      0
     ],
     [
      "Pallacanestro Reggiana",
-     12,
+     33,
      0
     ]
    ]
