@@ -3383,7 +3383,7 @@
   "line_id": "g20261117denv-stumer",
   "game_id": "g20261117denv",
   "player": "Oskar Stumer",
-  "min": 18,
+  "min": 19,
   "pts": 4,
   "reb": 3,
   "ast": 1,
@@ -3397,7 +3397,7 @@
   "dreb": 3,
   "stl": 1,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "pf": 0,
   "eff": ""
  }
