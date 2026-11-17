@@ -68507,7 +68507,7 @@
   "team": "Miami Heat",
   "player": "Andrew Wiggins",
   "pos": "",
-  "min": 15,
+  "min": 16,
   "pts": 9,
   "reb": 4,
   "ast": 0,
@@ -68517,7 +68517,7 @@
   "fg": "3/5",
   "three": "3/5",
   "ft": "0/0",
-  "pm": 17,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "ESPN"
