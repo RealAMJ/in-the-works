@@ -26431,13 +26431,13 @@
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "5/9",
-  "three": "2/5",
+  "fg": "5/8",
+  "three": "2/4",
   "ft": "0/0",
   "pm": 3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-1",
@@ -26457,7 +26457,7 @@
   "pm": 19,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-2",
@@ -26477,7 +26477,7 @@
   "pm": 19,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-3",
@@ -26497,7 +26497,7 @@
   "pm": -30,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-4",
@@ -26517,7 +26517,7 @@
   "pm": 4,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-5",
@@ -26537,7 +26537,7 @@
   "pm": -15,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-6",
@@ -26557,7 +26557,7 @@
   "pm": -4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-7",
@@ -26577,7 +26577,7 @@
   "pm": -7,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-8",
@@ -26597,7 +26597,7 @@
   "pm": -28,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-9",
@@ -26617,7 +26617,7 @@
   "pm": 19,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-10",
@@ -26637,7 +26637,7 @@
   "pm": -1,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-0-11",
@@ -26657,7 +26657,7 @@
   "pm": -14,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-0",
@@ -26677,7 +26677,7 @@
   "pm": 4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-1",
@@ -26697,7 +26697,7 @@
   "pm": 2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-2",
@@ -26717,7 +26717,7 @@
   "pm": -5,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-3",
@@ -26737,7 +26737,7 @@
   "pm": 10,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-4",
@@ -26757,7 +26757,7 @@
   "pm": 17,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-5",
@@ -26777,7 +26777,7 @@
   "pm": -2,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-6",
@@ -26797,7 +26797,7 @@
   "pm": -2,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-7",
@@ -26817,7 +26817,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-8",
@@ -26837,7 +26837,7 @@
   "pm": 4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-9",
@@ -26857,7 +26857,7 @@
   "pm": 14,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851704-1-10",
@@ -26877,7 +26877,7 @@
   "pm": -7,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851705-0-0",
@@ -26944,7 +26944,7 @@
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Basem Abdulkader",
-  "min": 11,
+  "min": 12,
   "pts": 2,
   "reb": 1,
   "ast": 0,
@@ -26954,7 +26954,7 @@
   "fg": "1/3",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -10,
+  "pm": -12,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27004,7 +27004,7 @@
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Bj Symons",
-  "min": 23,
+  "min": 24,
   "pts": 9,
   "reb": 6,
   "ast": 2,
@@ -27014,7 +27014,7 @@
   "fg": "2/5",
   "three": "0/1",
   "ft": "5/8",
-  "pm": -14,
+  "pm": -16,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27024,17 +27024,17 @@
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Duko Bos",
-  "min": 6,
-  "pts": 2,
+  "min": 8,
+  "pts": 4,
   "reb": 1,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "1/2",
+  "fg": "1/3",
   "three": "0/1",
-  "ft": "0/0",
-  "pm": -4,
+  "ft": "2/2",
+  "pm": -6,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27074,7 +27074,7 @@
   "fg": "3/6",
   "three": "1/4",
   "ft": "1/2",
-  "pm": -10,
+  "pm": -11,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27084,17 +27084,17 @@
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Oliver Gehrke",
-  "min": 26,
+  "min": 27,
   "pts": 9,
   "reb": 4,
   "ast": 5,
   "stl": 1,
   "blk": 0,
-  "tov": 3,
+  "tov": 4,
   "fg": "2/8",
   "three": "1/6",
   "ft": "4/9",
-  "pm": -9,
+  "pm": -11,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27104,17 +27104,17 @@
   "game_id": "sbl-2851705",
   "team": "Umeå Basket",
   "player": "Felix Wollberg",
-  "min": 14,
+  "min": 16,
   "pts": 8,
-  "reb": 1,
-  "ast": 4,
-  "stl": 0,
+  "reb": 2,
+  "ast": 5,
+  "stl": 1,
   "blk": 0,
-  "tov": 0,
+  "tov": 1,
   "fg": "3/3",
   "three": "0/0",
   "ft": "2/3",
-  "pm": -2,
+  "pm": -3,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27124,8 +27124,8 @@
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Mio Hjalmarsson",
-  "min": 22,
-  "pts": 9,
+  "min": 23,
+  "pts": 10,
   "reb": 1,
   "ast": 6,
   "stl": 2,
@@ -27133,8 +27133,8 @@
   "tov": 1,
   "fg": "3/8",
   "three": "2/4",
-  "ft": "1/1",
-  "pm": 15,
+  "ft": "2/2",
+  "pm": 17,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27154,7 +27154,7 @@
   "fg": "5/9",
   "three": "2/5",
   "ft": "2/2",
-  "pm": 11,
+  "pm": 12,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27184,17 +27184,17 @@
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Rahsaan Edwards",
-  "min": 26,
+  "min": 28,
   "pts": 9,
   "reb": 3,
   "ast": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "4/10",
   "three": "1/3",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 12,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27204,17 +27204,17 @@
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Ashton Sherrell",
-  "min": 24,
+  "min": 25,
   "pts": 12,
   "reb": 5,
-  "ast": 3,
+  "ast": 4,
   "stl": 1,
   "blk": 2,
   "tov": 1,
   "fg": "5/7",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 12,
+  "pm": 13,
   "starter": true,
   "swede": false,
   "state": "live"
@@ -27244,17 +27244,17 @@
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Richard Mendes",
-  "min": 12,
+  "min": 13,
   "pts": 10,
   "reb": 2,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "3/4",
+  "fg": "3/5",
   "three": "0/0",
   "ft": "4/5",
-  "pm": 8,
+  "pm": 9,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27274,7 +27274,7 @@
   "fg": "6/6",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 8,
+  "pm": 9,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27284,17 +27284,17 @@
   "game_id": "sbl-2851705",
   "team": "Nässjö Basket",
   "player": "Derreck Brooks Jr",
-  "min": 21,
-  "pts": 11,
+  "min": 22,
+  "pts": 14,
   "reb": 3,
   "ast": 1,
-  "stl": 0,
-  "blk": 0,
+  "stl": 1,
+  "blk": 1,
   "tov": 1,
-  "fg": "3/9",
-  "three": "2/5",
+  "fg": "4/10",
+  "three": "3/6",
   "ft": "3/4",
-  "pm": 7,
+  "pm": 9,
   "starter": false,
   "swede": false,
   "state": "live"
@@ -27337,7 +27337,7 @@
   "pm": 7,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-1",
@@ -27357,7 +27357,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-2",
@@ -27374,10 +27374,10 @@
   "fg": "2/8",
   "three": "2/5",
   "ft": "4/6",
-  "pm": 17,
+  "pm": 15,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-3",
@@ -27397,7 +27397,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-4",
@@ -27414,10 +27414,10 @@
   "fg": "4/11",
   "three": "2/5",
   "ft": "0/2",
-  "pm": 8,
+  "pm": 6,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-5",
@@ -27437,7 +27437,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-6",
@@ -27457,7 +27457,7 @@
   "pm": 19,
   "starter": true,
   "swede": true,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-7",
@@ -27474,17 +27474,17 @@
   "fg": "4/8",
   "three": "2/4",
   "ft": "4/4",
-  "pm": 21,
+  "pm": 19,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-8",
   "game_id": "sbl-2851708",
   "team": "Jämtland Basket",
   "player": "Denzel George",
-  "min": 24,
+  "min": 25,
   "pts": 14,
   "reb": 5,
   "ast": 4,
@@ -27494,10 +27494,10 @@
   "fg": "5/6",
   "three": "2/3",
   "ft": "2/2",
-  "pm": 0,
+  "pm": -2,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-9",
@@ -27517,7 +27517,7 @@
   "pm": 4,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-10",
@@ -27537,7 +27537,7 @@
   "pm": 19,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-0-11",
@@ -27554,10 +27554,10 @@
   "fg": "4/7",
   "three": "0/0",
   "ft": "3/4",
-  "pm": 0,
+  "pm": -2,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-0",
@@ -27574,10 +27574,10 @@
   "fg": "2/5",
   "three": "0/2",
   "ft": "3/4",
-  "pm": -9,
+  "pm": -7,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-1",
@@ -27597,7 +27597,7 @@
   "pm": -3,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-2",
@@ -27614,10 +27614,10 @@
   "fg": "3/14",
   "three": "1/10",
   "ft": "8/8",
-  "pm": -5,
+  "pm": -3,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-3",
@@ -27637,7 +27637,7 @@
   "pm": -12,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-4",
@@ -27657,7 +27657,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-5",
@@ -27677,7 +27677,7 @@
   "pm": -5,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-6",
@@ -27697,7 +27697,7 @@
   "pm": -4,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-7",
@@ -27714,10 +27714,10 @@
   "fg": "8/18",
   "three": "2/6",
   "ft": "0/0",
-  "pm": -21,
+  "pm": -19,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-8",
@@ -27737,7 +27737,7 @@
   "pm": 0,
   "starter": false,
   "swede": false,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-9",
@@ -27751,13 +27751,13 @@
   "stl": 1,
   "blk": 0,
   "tov": 4,
-  "fg": "3/9",
-  "three": "0/1",
+  "fg": "3/10",
+  "three": "0/2",
   "ft": "2/2",
-  "pm": -26,
+  "pm": -24,
   "starter": true,
   "swede": true,
-  "state": "live"
+  "state": "final"
  },
  {
   "row_id": "sbl-2851708-1-10",
@@ -27765,18 +27765,18 @@
   "team": "BC Luleå",
   "player": "Nico Galette",
   "min": 29,
-  "pts": 13,
-  "reb": 11,
+  "pts": 15,
+  "reb": 12,
   "ast": 2,
   "stl": 1,
   "blk": 1,
   "tov": 4,
-  "fg": "5/11",
+  "fg": "6/12",
   "three": "2/7",
   "ft": "1/2",
-  "pm": -10,
+  "pm": -8,
   "starter": true,
   "swede": false,
-  "state": "live"
+  "state": "final"
  }
 ]

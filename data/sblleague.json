@@ -715,11 +715,9 @@
   "away": "Uppsala Basket",
   "hs": 89,
   "as_": 96,
-  "status": "live",
+  "status": "final",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851704/summary",
-  "box": false,
-  "clock": "00:01",
-  "period": 4
+  "box": true
  },
  {
   "game_id": "sbl-2851705",
@@ -727,12 +725,12 @@
   "time": "19:04",
   "home": "Umeå Basket",
   "away": "Nässjö Basket",
-  "hs": 65,
-  "as_": 81,
+  "hs": 67,
+  "as_": 85,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851705/summary",
   "box": false,
-  "clock": "05:51",
+  "clock": "04:27",
   "period": 4
  },
  {
@@ -766,12 +764,10 @@
   "home": "Jämtland Basket",
   "away": "BC Luleå",
   "hs": 87,
-  "as_": 68,
-  "status": "live",
+  "as_": 70,
+  "status": "final",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851708/summary",
-  "box": false,
-  "clock": "00:08",
-  "period": 4
+  "box": true
  },
  {
   "game_id": "sbl-2851801",
