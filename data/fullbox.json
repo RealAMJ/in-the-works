@@ -70113,7 +70113,7 @@
   "fg": "2/7",
   "three": "1/4",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70155,7 +70155,7 @@
   "fg": "2/5",
   "three": "2/5",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70302,7 +70302,7 @@
   "fg": "5/8",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70319,11 +70319,11 @@
   "ast": 1,
   "stl": 1,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "3/8",
   "three": "0/0",
   "ft": "9/11",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
