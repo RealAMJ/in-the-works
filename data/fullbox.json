@@ -70113,7 +70113,7 @@
   "fg": "4/9",
   "three": "2/5",
   "ft": "0/0",
-  "pm": 10,
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70197,7 +70197,7 @@
   "fg": "2/7",
   "three": "0/2",
   "ft": "3/3",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70218,7 +70218,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70281,7 +70281,7 @@
   "fg": "2/5",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70293,7 +70293,7 @@
   "player": "Aliou Diarra",
   "pos": "",
   "min": 16,
-  "pts": 11,
+  "pts": 12,
   "reb": 8,
   "ast": 0,
   "stl": 2,
@@ -70301,8 +70301,8 @@
   "tov": 0,
   "fg": "5/8",
   "three": "0/0",
-  "ft": "1/1",
-  "pm": 4,
+  "ft": "2/2",
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70344,7 +70344,7 @@
   "fg": "3/9",
   "three": "1/6",
   "ft": "2/3",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70449,7 +70449,7 @@
   "fg": "6/14",
   "three": "1/5",
   "ft": "2/2",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70470,7 +70470,7 @@
   "fg": "2/5",
   "three": "0/0",
   "ft": "1/1",
-  "pm": -5,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70491,7 +70491,7 @@
   "fg": "2/6",
   "three": "1/2",
   "ft": "2/2",
-  "pm": 9,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -70512,7 +70512,7 @@
   "fg": "3/7",
   "three": "1/2",
   "ft": "3/3",
-  "pm": 3,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
