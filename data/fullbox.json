@@ -68297,7 +68297,7 @@
   "team": "Houston Rockets",
   "player": "Alperen Sengun",
   "pos": "",
-  "min": 10,
+  "min": 11,
   "pts": 5,
   "reb": 5,
   "ast": 1,
@@ -68334,7 +68334,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117miam-0-5",
+  "row_id": "g20261117miam-0-6",
   "game_id": "g20261117miam",
   "team": "Houston Rockets",
   "player": "Bogdan Bogdanovic",
@@ -68355,7 +68355,7 @@
   "source": "ESPN"
  },
  {
-  "row_id": "g20261117miam-0-6",
+  "row_id": "g20261117miam-0-7",
   "game_id": "g20261117miam",
   "team": "Houston Rockets",
   "player": "Reed Sheppard",
