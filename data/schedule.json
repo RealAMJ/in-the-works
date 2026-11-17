@@ -2488,10 +2488,10 @@
   "competition": "Champions League (BCL)",
   "note": "",
   "status": "live",
-  "score": "W 62-60",
+  "score": "L 76-84",
   "live_feed": "bcl:136277",
-  "clock": "Q3 05:02",
-  "live_updated": "2026-11-17T20:36:05+01:00"
+  "clock": "Q4 06:33",
+  "live_updated": "2026-11-17T20:36:52+01:00"
  },
  {
   "game_id": "g20261117jove",
@@ -2503,9 +2503,11 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "bcl:136314"
+  "status": "live",
+  "score": "W 0-0",
+  "live_feed": "bcl:136314",
+  "clock": "Q1 09:35",
+  "live_updated": "2026-11-17T20:36:54+01:00"
  },
  {
   "game_id": "g20261117vir",
