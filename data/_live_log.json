@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:13:17+01:00",
+ "at": "2026-11-18T02:14:10+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,7 +9,7 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:50",
+   "clock": "04:53",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:38",
+   "clock": "15:57",
    "done": false,
    "teams": [
     [
      "Cheyney (PA) Wolves",
-     42,
+     44,
      18
     ],
     [
