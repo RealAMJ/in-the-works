@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:08:50+01:00",
+ "at": "2026-11-18T02:09:19+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,17 +9,17 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:29",
+   "clock": "07:04",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     69,
+     72,
      16
     ],
     [
      "Purdue Boilermakers",
-     76,
+     79,
      16
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:31",
+   "clock": "17:56",
    "done": false,
    "teams": [
     [
      "Cheyney (PA) Wolves",
-     35,
+     39,
      18
     ],
     [
