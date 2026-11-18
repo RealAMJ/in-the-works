@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T03:40:01+01:00",
+ "at": "2026-11-18T03:40:52+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -44,29 +44,6 @@
      "UC Irvine Anteaters",
      0,
      0
-    ]
-   ]
-  },
-  {
-   "game": "c20261118miss",
-   "checking": "ESPN"
-  },
-  {
-   "game": "c20261118miss",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Mississippi State Bulldogs",
-     86,
-     16
-    ],
-    [
-     "UCF Knights",
-     83,
-     16
     ]
    ]
   }
