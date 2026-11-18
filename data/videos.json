@@ -1359,5 +1359,36 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261118east",
+  "date": "2026-11-18",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Eastern Washington Eagles vs. Utah Utes: Game Highlights",
+    "secs": 78,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/1ad12ccd-2fa2-4b3a-87fe-6cd8daeb3b7b/1ad12ccd-2fa2-4b3a-87fe-6cd8daeb3b7b.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50517265/game-highlights",
+    "full": true,
+    "swedes": []
+   },
+   {
+    "title": "Malek Gomma elevates for slam dunk vs. Eastern Washington Eagles",
+    "secs": 15,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/c36db0ef-6aae-47f4-af9a-f2e6552a31d0/c36db0ef-6aae-47f4-af9a-f2e6552a31d0.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50516003/malek-gomma-elevates-slam-dunk-vs-eastern-washington-eagles",
+    "full": false,
+    "swedes": []
+   },
+   {
+    "title": "Babacar Faye gets up for the beautiful jam",
+    "secs": 18,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/5ed5d57a-0a98-4dcf-a47f-6e270cb4fe36/5ed5d57a-0a98-4dcf-a47f-6e270cb4fe36.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50516869/babacar-faye-gets-beautiful-jam",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]
