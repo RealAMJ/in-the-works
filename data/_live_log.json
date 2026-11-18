@@ -1,26 +1,95 @@
 {
- "at": "2026-11-18T23:04:23+01:00",
+ "at": "2026-11-19T00:43:02+01:00",
  "log": [
   {
-   "game": "g20261118unic",
-   "checking": "FIBA (championsleague.basketball)"
+   "game": "g20261119miam",
+   "checking": "ESPN"
   },
   {
-   "game": "g20261118unic",
-   "src": "FIBA (championsleague.basketball)",
-   "period": 4,
+   "game": "g20261119miam",
+   "src": "ESPN",
+   "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Unicaja SD",
-     94,
-     12
+     "Miami Heat",
+     0,
+     0
     ],
     [
-     "BK KVIS Pardubice",
-     66,
-     12
+     "Milwaukee Bucks",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261119stjo",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261119stjo",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "St. John's Red Storm",
+     0,
+     0
+    ],
+    [
+     "Siena Saints",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261119vmi",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261119vmi",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Longwood Lancers",
+     0,
+     0
+    ],
+    [
+     "VMI Keydets",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261119uncw",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261119uncw",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Long Island University Sharks",
+     0,
+     0
+    ],
+    [
+     "UNC Wilmington Seahawks",
+     0,
+     0
     ]
    ]
   }
