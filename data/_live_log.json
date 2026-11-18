@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:39:49+01:00",
+ "at": "2026-11-18T01:40:39+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,7 +9,7 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:01",
+   "clock": "15:58",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:51",
+   "clock": "02:48",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Delaware State Hornets",
-     39,
+     42,
      15
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:34",
+   "clock": "07:09",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UCF Knights",
-     21,
+     23,
      16
     ]
    ]
