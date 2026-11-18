@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:09:19+01:00",
+ "at": "2026-11-18T02:10:11+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,7 +9,7 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:04",
+   "clock": "06:44",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Purdue Boilermakers",
-     79,
+     80,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:56",
+   "clock": "17:49",
    "done": false,
    "teams": [
     [
@@ -44,6 +44,29 @@
      "Delaware State Hornets",
      53,
      15
+    ]
+   ]
+  },
+  {
+   "game": "g20261118east",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261118east",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Utah Utes",
+     0,
+     0
+    ],
+    [
+     "Eastern Washington Eagles",
+     0,
+     0
     ]
    ]
   },
