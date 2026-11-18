@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T06:02:18+01:00",
+ "at": "2026-11-18T06:03:11+01:00",
  "log": [
   {
    "game": "g20261118stan",
@@ -9,17 +9,17 @@
    "game": "g20261118stan",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:46",
+   "clock": "02:04",
    "done": false,
    "teams": [
     [
      "UC Irvine Anteaters",
-     59,
+     61,
      18
     ],
     [
      "Stanford Cardinal",
-     57,
+     60,
      16
     ]
    ]
