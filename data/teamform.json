@@ -7502,5 +7502,33 @@
   "note": "",
   "leaders": "Hutchinson|20|7|4;Cody|17|2|0;Hill|11|4|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-18",
+  "team": "Mississippi State",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "UCF",
+  "venue": "Away",
+  "score": "86-83",
+  "result": "W",
+  "top": "Grace 19 pts, 4 reb",
+  "note": "",
+  "leaders": "Grace|19|4|2;Johnson|18|7|5;Reed|16|11|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "ucf-2026-11-18",
+  "team": "UCF",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Home",
+  "score": "83-86",
+  "result": "L",
+  "top": "Johnson 26 pts, 5 reb",
+  "note": "",
+  "leaders": "Johnson|26|5|2;Dean|18|0|1;Malone|14|3|1",
+  "source": "ESPN"
  }
 ]
