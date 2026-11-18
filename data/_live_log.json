@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T03:39:33+01:00",
+ "at": "2026-11-18T03:40:01+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -25,15 +25,38 @@
    ]
   },
   {
+   "game": "g20261118stan",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261118stan",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Stanford Cardinal",
+     0,
+     0
+    ],
+    [
+     "UC Irvine Anteaters",
+     0,
+     0
+    ]
+   ]
+  },
+  {
    "game": "c20261118miss",
    "checking": "ESPN"
   },
   {
    "game": "c20261118miss",
    "src": "ESPN",
-   "period": 2,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "Mississippi State Bulldogs",
