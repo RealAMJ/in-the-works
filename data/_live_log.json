@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T04:41:03+01:00",
+ "at": "2026-11-18T04:41:54+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -9,17 +9,17 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:17",
+   "clock": "00:09",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     68,
+     69,
      15
     ],
     [
      "Utah Utes",
-     64,
+     66,
      16
     ]
    ]
