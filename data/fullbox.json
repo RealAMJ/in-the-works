@@ -71984,7 +71984,7 @@
   "ft": "8/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72005,7 +72005,7 @@
   "ft": "6/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72026,7 +72026,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72047,7 +72047,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72068,11 +72068,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-0-7",
+  "row_id": "g20261118east-0-5",
   "game_id": "g20261118east",
   "team": "Eastern Washington",
   "player": "Alan Gballou",
@@ -72089,11 +72089,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-0-9",
+  "row_id": "g20261118east-0-6",
   "game_id": "g20261118east",
   "team": "Eastern Washington",
   "player": "Zach Trezvant",
@@ -72110,11 +72110,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-0-10",
+  "row_id": "g20261118east-0-7",
   "game_id": "g20261118east",
   "team": "Eastern Washington",
   "player": "Isak Homelius",
@@ -72131,11 +72131,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-0-11",
+  "row_id": "g20261118east-0-8",
   "game_id": "g20261118east",
   "team": "Eastern Washington",
   "player": "Malachi Richmond",
@@ -72152,11 +72152,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-0-12",
+  "row_id": "g20261118east-0-9",
   "game_id": "g20261118east",
   "team": "Eastern Washington",
   "player": "Cole Scherer",
@@ -72173,7 +72173,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72194,7 +72194,7 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72215,7 +72215,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72236,7 +72236,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72257,7 +72257,7 @@
   "ft": "8/12",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72278,7 +72278,7 @@
   "ft": "3/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72299,7 +72299,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72320,11 +72320,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-1-8",
+  "row_id": "g20261118east-1-7",
   "game_id": "g20261118east",
   "team": "Utah",
   "player": "Babacar Faye",
@@ -72341,11 +72341,11 @@
   "ft": "0/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-1-14",
+  "row_id": "g20261118east-1-8",
   "game_id": "g20261118east",
   "team": "Utah",
   "player": "Styles Clemmons",
@@ -72362,11 +72362,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261118east-1-15",
+  "row_id": "g20261118east-1-9",
   "game_id": "g20261118east",
   "team": "Utah",
   "player": "Taison Chatman",
@@ -72383,7 +72383,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -72394,7 +72394,7 @@
   "pos": "",
   "min": 7,
   "pts": 2,
-  "reb": 3,
+  "reb": 4,
   "ast": 0,
   "stl": 0,
   "blk": 0,
@@ -72434,7 +72434,7 @@
   "team": "UC Irvine",
   "player": "Jovan Jester Jr.",
   "pos": "",
-  "min": 8,
+  "min": 9,
   "pts": 12,
   "reb": 1,
   "ast": 1,
@@ -72455,7 +72455,7 @@
   "team": "UC Irvine",
   "player": "Nils Cooper",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 3,
   "reb": 1,
   "ast": 0,
@@ -72567,7 +72567,7 @@
   "stl": 1,
   "blk": 0,
   "tov": 3,
-  "fg": "1/4",
+  "fg": "1/5",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -72644,7 +72644,7 @@
   "team": "Stanford",
   "player": "Nick Townsend",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 0,
   "reb": 2,
   "ast": 0,
@@ -72693,7 +72693,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/0",
+  "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
