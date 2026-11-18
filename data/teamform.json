@@ -7558,5 +7558,33 @@
   "note": "",
   "leaders": "Anigbata|16|10|0;Campbell|15|4|3;Holcombe|13|9|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-18",
+  "team": "Stanford",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "UC Irvine",
+  "venue": "Home",
+  "score": "65-61",
+  "result": "W",
+  "top": "Maurer 13 pts, 3 reb",
+  "note": "",
+  "leaders": "Maurer|13|3|3;Price|12|7|1;Bliss|11|3|5",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "uc-irvine-2026-11-18",
+  "team": "UC Irvine",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "61-65",
+  "result": "L",
+  "top": "Jester 14 pts, 4 reb",
+  "note": "",
+  "leaders": "Jester|14|4|2;Isaac|11|5|2;Johnson|11|0|0",
+  "source": "ESPN"
  }
 ]

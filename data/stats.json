@@ -376,12 +376,12 @@
   "player": "Julius Price",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 4,
+  "gp": 5,
   "min": 33.2,
-  "pts": 12.8,
-  "reb": 2.0,
-  "ast": 3.0,
-  "note": "Averages from game log (4 games, through 2026-11-14)"
+  "pts": 12.6,
+  "reb": 3.0,
+  "ast": 2.6,
+  "note": "Averages from game log (5 games, through 2026-11-18)"
  },
  {
   "row_id": "fasasi-ncaa",

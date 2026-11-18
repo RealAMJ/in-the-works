@@ -7324,5 +7324,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "price-2026-11-18",
+  "player": "Julius Price",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "team": "Stanford",
+  "opponent": "UC Irvine",
+  "venue": "Home",
+  "result": "W 65-61",
+  "min": 33,
+  "pts": 12,
+  "reb": 7,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "4/6",
+  "three": "2/4",
+  "ft": "2/2",
+  "oreb": 1,
+  "dreb": 6,
+  "stl": 1,
+  "blk": 0,
+  "tov": 5,
+  "pf": 4,
+  "pm": "",
+  "eff": ""
  }
 ]
