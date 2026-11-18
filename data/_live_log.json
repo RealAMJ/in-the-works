@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:35:24+01:00",
+ "at": "2026-11-18T01:36:14+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,17 +9,17 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:42",
+   "clock": "19:10",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     36,
+     39,
      16
     ],
     [
      "Purdue Boilermakers",
-     51,
+     53,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:23",
+   "clock": "07:34",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UCF Knights",
-     19,
+     21,
      16
     ]
    ]
