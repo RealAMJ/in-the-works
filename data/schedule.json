@@ -2544,8 +2544,8 @@
   "score": "L 17-40",
   "espn_id": "401920706",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920706",
-  "clock": "Q1 06:23",
-  "live_updated": "2026-11-18T01:02:41+01:00"
+  "clock": "Q1 06:11",
+  "live_updated": "2026-11-18T01:03:21+01:00"
  },
  {
   "game_id": "g20261118dela",
@@ -2557,10 +2557,12 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 0-0",
   "espn_id": "401927342",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401927342"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401927342",
+  "clock": "Q1 19:59",
+  "live_updated": "2026-11-18T01:03:22+01:00"
  },
  {
   "game_id": "g20261118east",
