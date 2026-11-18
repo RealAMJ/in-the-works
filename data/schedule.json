@@ -2577,11 +2577,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 43-49",
+  "score": "L 48-49",
   "espn_id": "401920720",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920720",
-  "clock": "Q2 10:05",
-  "live_updated": "2026-11-18T04:03:24+01:00"
+  "clock": "Q2 09:00",
+  "live_updated": "2026-11-18T04:04:16+01:00"
  },
  {
   "game_id": "g20261118stan",
@@ -2594,11 +2594,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 2-2",
+  "score": "L 2-3",
   "espn_id": "401921729",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921729",
   "clock": "Q1 18:40",
-  "live_updated": "2026-11-18T04:03:24+01:00"
+  "live_updated": "2026-11-18T04:04:16+01:00"
  },
  {
   "game_id": "g20261118unic",
