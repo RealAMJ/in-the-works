@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T04:02:50+01:00",
+ "at": "2026-11-18T04:03:24+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Eastern Washington Eagles",
-     41,
+     43,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261118stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:07",
+   "clock": "18:40",
    "done": false,
    "teams": [
     [
      "UC Irvine Anteaters",
-     0,
+     2,
      18
     ],
     [
