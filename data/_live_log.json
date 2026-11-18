@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T21:36:38+01:00",
+ "at": "2026-11-18T21:37:10+01:00",
  "log": [
   {
    "game": "g20261118unic",
@@ -9,17 +9,17 @@
    "game": "g20261118unic",
    "src": "FIBA (championsleague.basketball)",
    "period": 3,
-   "clock": "10:00",
+   "clock": "07:20",
    "done": false,
    "teams": [
     [
      "Unicaja SD",
-     41,
+     51,
      0
     ],
     [
      "BK KVIS Pardubice",
-     34,
+     42,
      0
     ]
    ]
