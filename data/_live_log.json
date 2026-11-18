@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T03:09:37+01:00",
+ "at": "2026-11-18T03:10:28+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -32,12 +32,12 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:08",
+   "clock": "05:31",
    "done": false,
    "teams": [
     [
      "Mississippi State Bulldogs",
-     72,
+     74,
      16
     ],
     [
