@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:01:49+01:00",
+ "at": "2026-11-18T01:02:41+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,12 +9,12 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:12",
+   "clock": "06:23",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     14,
+     17,
      16
     ],
     [
@@ -54,19 +54,19 @@
   {
    "game": "c20261118miss",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:43",
    "done": false,
    "teams": [
     [
-     "UCF Knights",
-     0,
-     0
-    ],
-    [
      "Mississippi State Bulldogs",
      0,
-     0
+     16
+    ],
+    [
+     "UCF Knights",
+     2,
+     16
     ]
    ]
   }
