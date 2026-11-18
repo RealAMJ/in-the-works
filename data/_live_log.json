@@ -1,29 +1,6 @@
 {
- "at": "2026-11-18T02:56:49+01:00",
+ "at": "2026-11-18T02:57:40+01:00",
  "log": [
-  {
-   "game": "g20261118dela",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261118dela",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Cheyney (PA) Wolves",
-     70,
-     18
-    ],
-    [
-     "Delaware State Hornets",
-     90,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261118east",
    "checking": "ESPN"
@@ -32,12 +9,12 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:58",
+   "clock": "08:53",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     12,
+     14,
      15
     ],
     [
