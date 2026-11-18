@@ -1,29 +1,6 @@
 {
- "at": "2026-11-18T02:30:08+01:00",
+ "at": "2026-11-18T02:31:00+01:00",
  "log": [
-  {
-   "game": "g20261118lips",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261118lips",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Lipscomb Bisons",
-     78,
-     16
-    ],
-    [
-     "Purdue Boilermakers",
-     95,
-     16
-    ]
-   ]
-  },
   {
    "game": "g20261118dela",
    "checking": "ESPN"
@@ -32,7 +9,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:19",
+   "clock": "09:51",
    "done": false,
    "teams": [
     [
@@ -42,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     67,
+     70,
      15
     ]
    ]
