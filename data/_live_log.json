@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:12:36+01:00",
+ "at": "2026-11-18T01:13:26+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,7 +9,7 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:47",
+   "clock": "02:00",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Purdue Boilermakers",
-     46,
+     48,
      16
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:26",
+   "clock": "14:37",
    "done": false,
    "teams": [
     [
