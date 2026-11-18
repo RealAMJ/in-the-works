@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:14:48+01:00",
+ "at": "2026-11-18T01:15:39+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,12 +9,12 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:12",
+   "clock": "00:37",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     29,
+     33,
      16
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:45",
+   "clock": "13:18",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:15",
+   "clock": "14:42",
    "done": false,
    "teams": [
     [
