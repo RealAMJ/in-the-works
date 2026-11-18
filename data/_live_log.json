@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:18:17+01:00",
+ "at": "2026-11-18T02:19:09+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -32,17 +32,17 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:56",
+   "clock": "13:57",
    "done": false,
    "teams": [
     [
      "Cheyney (PA) Wolves",
-     47,
+     49,
      18
     ],
     [
      "Delaware State Hornets",
-     56,
+     58,
      15
     ]
    ]
@@ -77,8 +77,8 @@
   {
    "game": "c20261118miss",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "20:00",
    "done": false,
    "teams": [
     [
