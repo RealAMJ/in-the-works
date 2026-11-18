@@ -7446,5 +7446,33 @@
   "note": "",
   "leaders": "Nunn|18|8|1;Francisco|10|2|7;Sloukas|10|2|2;Bonga|10|3|0",
   "source": "EuroLeague live"
+ },
+ {
+  "row_id": "lipscomb-2026-11-18",
+  "team": "Lipscomb",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Purdue",
+  "venue": "Away",
+  "score": "78-95",
+  "result": "L",
+  "top": "Simpkins 22 pts, 4 reb",
+  "note": "",
+  "leaders": "Simpkins|22|4|3;Esmeraldo|19|3|8;Sargiunas|12|3|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "purdue-2026-11-18",
+  "team": "Purdue",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Home",
+  "score": "95-78",
+  "result": "W",
+  "top": "West 27 pts, 2 reb",
+  "note": "",
+  "leaders": "West|27|2|2;Jacobsen|19|12|7;Harris|16|3|5",
+  "source": "ESPN"
  }
 ]

@@ -7272,5 +7272,31 @@
   "pf": 0,
   "pm": -2,
   "eff": ""
+ },
+ {
+  "row_id": "tidare-2026-11-18",
+  "player": "Hugo Tidare",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "team": "Lipscomb",
+  "opponent": "Purdue",
+  "venue": "Away",
+  "result": "L 78-95",
+  "min": 23,
+  "pts": 5,
+  "reb": 1,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "2/5",
+  "three": "1/4",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]

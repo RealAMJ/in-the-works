@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:32:45+01:00",
+ "at": "2026-11-18T02:33:19+01:00",
  "log": [
   {
    "game": "g20261118dela",
@@ -32,7 +32,7 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:28",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:50",
+   "clock": "15:38",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "UCF Knights",
-     48,
+     51,
      16
     ]
    ]
