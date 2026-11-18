@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-18T22:22:06+01:00",
+ "updated": "2026-11-18T22:22:34+01:00",
  "app": "e234281d88aa",
  "files": {
   "awards": "1c451ad9ae1b",
   "bios": "2b5c5b9e1da8",
-  "boxscores": "5b06f0e325fc",
+  "boxscores": "5515cc4af514",
   "career": "4d71859a21b0",
   "coachcareer": "5de253530720",
   "coaches": "efb2086390f9",
@@ -28,7 +28,7 @@
   "sblleague": "0a535d4f6125",
   "sblplayers": "d94465dcd549",
   "sblroster": "71c352b80281",
-  "schedule": "a953cc4cdcf8",
+  "schedule": "9b92319e8494",
   "stats": "753b57af1b1d",
   "teamform": "9ba8cd64f1f0",
   "teams": "98d3430d3ebd",

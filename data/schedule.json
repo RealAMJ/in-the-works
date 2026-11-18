@@ -2612,11 +2612,11 @@
   "venue": "Home",
   "competition": "Champions League (BCL)",
   "note": "",
-  "status": "live",
-  "score": "W 75-64",
+  "status": "final",
+  "score": "W 94-66",
   "live_feed": "bcl:136278",
-  "clock": "Q4 06:00",
-  "live_updated": "2026-11-18T22:22:06+01:00"
+  "live_done": true,
+  "need_box": true
  },
  {
   "game_id": "g20261119miam",
