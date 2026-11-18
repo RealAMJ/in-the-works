@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:54:37+01:00",
+ "at": "2026-11-18T02:55:29+01:00",
  "log": [
   {
    "game": "g20261118dela",
@@ -9,12 +9,12 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:06",
+   "clock": "00:39",
    "done": false,
    "teams": [
     [
      "Cheyney (PA) Wolves",
-     68,
+     70,
      18
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:29",
+   "clock": "10:01",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "c20261118miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:43",
+   "clock": "09:25",
    "done": false,
    "teams": [
     [
      "Mississippi State Bulldogs",
-     66,
+     69,
      16
     ],
     [
      "UCF Knights",
-     60,
+     62,
      16
     ]
    ]
