@@ -7350,5 +7350,31 @@
   "pf": 4,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "pantzar-2026-11-18",
+  "player": "Melwin Pantzar",
+  "date": "2026-11-18",
+  "competition": "Champions League (BCL)",
+  "team": "Unicaja",
+  "opponent": "BK KVIS Pardubice",
+  "venue": "Home",
+  "result": "W 94-66",
+  "min": 10,
+  "pts": 2,
+  "reb": 1,
+  "ast": 8,
+  "source": "FIBA (championsleague.basketball)",
+  "fg": "1/2",
+  "three": "0/1",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 1,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 2,
+  "pm": 8,
+  "eff": ""
  }
 ]

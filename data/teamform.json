@@ -7586,5 +7586,33 @@
   "note": "",
   "leaders": "Jester|14|4|2;Isaac|11|5|2;Johnson|11|0|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "unicaja-2026-11-18",
+  "team": "Unicaja",
+  "date": "2026-11-18",
+  "competition": "Champions League (BCL)",
+  "opponent": "BK KVIS Pardubice",
+  "venue": "Home",
+  "score": "94-66",
+  "result": "W",
+  "top": "Kravish 16 pts, 8 reb",
+  "note": "",
+  "leaders": "Kravish|16|8|2;Noua|16|3|3;Kalinoski|13|2|5",
+  "source": "FIBA (championsleague.basketball)"
+ },
+ {
+  "row_id": "bk-kvis-pardubice-2026-11-18",
+  "team": "BK KVIS Pardubice",
+  "date": "2026-11-18",
+  "competition": "Champions League (BCL)",
+  "opponent": "Unicaja",
+  "venue": "Away",
+  "score": "66-94",
+  "result": "L",
+  "top": "Key 15 pts, 7 reb",
+  "note": "",
+  "leaders": "Key|15|7|3;Tuma|12|3|2;Davidson|11|1|1",
+  "source": "FIBA (championsleague.basketball)"
  }
 ]

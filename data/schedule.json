@@ -2615,7 +2615,9 @@
   "status": "final",
   "score": "W 94-66",
   "live_feed": "bcl:136278",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261119miam",
