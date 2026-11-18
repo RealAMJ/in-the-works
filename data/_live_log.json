@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:26:05+01:00",
+ "at": "2026-11-18T02:26:57+01:00",
  "log": [
   {
    "game": "g20261118lips",
@@ -9,7 +9,7 @@
    "game": "g20261118lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:25",
+   "clock": "01:18",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Purdue Boilermakers",
-     91,
+     93,
      16
     ]
    ]
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Cheyney (PA) Wolves",
-     52,
+     54,
      18
     ],
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Mississippi State Bulldogs",
-     44,
+     46,
      16
     ],
     [
