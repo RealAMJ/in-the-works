@@ -7530,5 +7530,33 @@
   "note": "",
   "leaders": "Johnson|26|5|2;Dean|18|0|1;Malone|14|3|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "eastern-washington-2026-11-18",
+  "team": "Eastern Washington",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Utah",
+  "venue": "Away",
+  "score": "71-67",
+  "result": "W",
+  "top": "Hamilton 24 pts, 7 reb",
+  "note": "",
+  "leaders": "Hamilton|24|7|0;Miller|16|10|1;Marquardt|13|8|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "utah-2026-11-18",
+  "team": "Utah",
+  "date": "2026-11-18",
+  "competition": "NCAA",
+  "opponent": "Eastern Washington",
+  "venue": "Home",
+  "score": "67-71",
+  "result": "L",
+  "top": "Anigbata 16 pts, 10 reb",
+  "note": "",
+  "leaders": "Anigbata|16|10|0;Campbell|15|4|3;Holcombe|13|9|4",
+  "source": "ESPN"
  }
 ]
