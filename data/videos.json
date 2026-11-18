@@ -1336,5 +1336,28 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261118lips",
+  "date": "2026-11-18",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Lipscomb Bisons vs. Purdue Boilermakers: Game Highlights",
+    "secs": 83,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/4c70bccb-03cd-4a70-bd65-ac0728798118/4c70bccb-03cd-4a70-bd65-ac0728798118.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50515770/game-highlights",
+    "full": true,
+    "swedes": []
+   },
+   {
+    "title": "Daniel Jacobsen elevates for slam dunk vs. Lipscomb Bisons",
+    "secs": 16,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/a33ff692-215e-48ed-a69c-c8756910c5e8/a33ff692-215e-48ed-a69c-c8756910c5e8.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50514936/daniel-jacobsen-elevates-slam-dunk-vs-lipscomb-bisons",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]
