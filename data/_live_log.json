@@ -1,26 +1,26 @@
 {
- "at": "2026-11-18T06:16:15+01:00",
+ "at": "2026-11-18T20:12:12+01:00",
  "log": [
   {
-   "game": "g20261118stan",
-   "checking": "ESPN"
+   "game": "g20261118unic",
+   "checking": "FIBA (championsleague.basketball)"
   },
   {
-   "game": "g20261118stan",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261118unic",
+   "src": "FIBA (championsleague.basketball)",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "UC Irvine Anteaters",
-     61,
-     18
+     "Unicaja SD",
+     0,
+     0
     ],
     [
-     "Stanford Cardinal",
-     65,
-     16
+     "BK KVIS Pardubice",
+     0,
+     0
     ]
    ]
   }
