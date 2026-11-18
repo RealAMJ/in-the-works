@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T02:39:00+01:00",
+ "at": "2026-11-18T02:39:50+01:00",
  "log": [
   {
    "game": "g20261118dela",
@@ -9,7 +9,7 @@
    "game": "g20261118dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:35",
+   "clock": "07:00",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     76,
+     79,
      15
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:34",
+   "clock": "16:10",
    "done": false,
    "teams": [
     [
      "Eastern Washington Eagles",
-     1,
+     2,
      15
     ],
     [
      "Utah Utes",
-     6,
+     9,
      16
     ]
    ]
