@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T04:37:14+01:00",
+ "at": "2026-11-18T04:38:04+01:00",
  "log": [
   {
    "game": "g20261118east",
@@ -9,7 +9,7 @@
    "game": "g20261118east",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:29",
+   "clock": "00:25",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261118stan",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:39",
+   "clock": "05:22",
    "done": false,
    "teams": [
     [
      "UC Irvine Anteaters",
-     26,
+     28,
      18
     ],
     [
