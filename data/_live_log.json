@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:08:18+01:00",
+ "at": "2026-11-19T02:09:11+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -111,7 +111,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     32,
+     34,
      16
     ]
    ]
@@ -124,17 +124,17 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:48",
+   "clock": "17:25",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     4,
+     6,
      17
     ],
     [
      "Loyola Chicago Ramblers",
-     5,
+     7,
      16
     ]
    ]
