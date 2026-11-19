@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:59:59+01:00",
+ "at": "2026-11-19T04:00:50+01:00",
  "log": [
   {
    "game": "g20261119wich",
@@ -9,7 +9,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:03",
+   "clock": "01:12",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Loyola Chicago Ramblers",
-     68,
+     71,
      16
     ]
    ]
