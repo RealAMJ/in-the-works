@@ -3735,7 +3735,7 @@
   "line_id": "g20261119wich-berg",
   "game_id": "g20261119wich",
   "player": "William Berg",
-  "min": 12,
+  "min": 13,
   "pts": 10,
   "reb": 5,
   "ast": 1,
@@ -3749,7 +3749,7 @@
   "dreb": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 0,
   "eff": ""
  }

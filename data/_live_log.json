@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:44:49+01:00",
+ "at": "2026-11-19T02:45:40+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -8,8 +8,8 @@
   {
    "game": "g20261119miam",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "12:00",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:17",
+   "clock": "06:25",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     101,
+     103,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:24",
+   "clock": "07:42",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     57,
+     60,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:26",
+   "clock": "06:09",
    "done": false,
    "teams": [
     [
@@ -101,17 +101,17 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:30",
+   "clock": "14:36",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     28,
+     30,
      14
     ],
     [
      "Cincinnati Bearcats",
-     52,
+     54,
      16
     ]
    ]
@@ -124,7 +124,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:21",
+   "clock": "02:03",
    "done": false,
    "teams": [
     [
