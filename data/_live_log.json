@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:47:22+01:00",
+ "at": "2026-11-19T02:47:49+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:45",
+   "clock": "04:27",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     107,
+     109,
      16
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:10",
+   "clock": "04:40",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     83,
+     85,
      15
     ],
     [
      "Long Island University Sharks",
-     76,
+     78,
      14
     ]
    ]
@@ -124,12 +124,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:04",
+   "clock": "00:57",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     41,
+     43,
      17
     ],
     [
