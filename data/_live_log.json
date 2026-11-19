@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T21:30:24+01:00",
+ "at": "2026-11-19T21:31:17+01:00",
  "log": [
   {
    "game": "g20261119krba",
@@ -9,17 +9,17 @@
    "game": "g20261119krba",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "01:54",
+   "clock": "01:15",
    "done": false,
    "teams": [
     [
      "\u00cdR",
-     65,
+     67,
      12
     ],
     [
      "KR",
-     64,
+     66,
      11
     ]
    ]
@@ -37,12 +37,12 @@
    "teams": [
     [
      "VALENCIA BASKET",
-     34,
+     36,
      12
     ],
     [
      "VIRTUS BOLOGNA",
-     27,
+     29,
      12
     ]
    ]
