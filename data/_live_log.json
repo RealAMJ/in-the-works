@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:39:36+01:00",
+ "at": "2026-11-19T01:40:29+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     40,
+     41,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:15",
+   "clock": "04:53",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     29,
+     32,
      15
     ]
    ]
@@ -83,7 +83,7 @@
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     38,
+     39,
      15
     ],
     [
@@ -113,6 +113,29 @@
      "Cincinnati Bearcats",
      12,
      16
+    ]
+   ]
+  },
+  {
+   "game": "g20261119wich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261119wich",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Loyola Chicago Ramblers",
+     0,
+     0
+    ],
+    [
+     "Wichita State Shockers",
+     0,
+     0
     ]
    ]
   }
