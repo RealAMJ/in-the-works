@@ -7454,5 +7454,31 @@
   "pf": 5,
   "pm": 0,
   "eff": ""
+ },
+ {
+  "row_id": "berg-2026-11-19",
+  "player": "William Berg",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "team": "Wichita State",
+  "opponent": "Loyola Chicago",
+  "venue": "Away",
+  "result": "W 79-75",
+  "min": 31,
+  "pts": 27,
+  "reb": 9,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "8/10",
+  "three": "1/1",
+  "ft": "10/10",
+  "oreb": 6,
+  "dreb": 3,
+  "stl": 0,
+  "blk": 2,
+  "tov": 4,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
