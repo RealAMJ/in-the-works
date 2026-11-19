@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:12:18+01:00",
+ "at": "2026-11-19T02:13:09+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:09",
+   "clock": "04:54",
    "done": false,
    "teams": [
     [
@@ -31,18 +31,18 @@
   {
    "game": "g20261119stjo",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:30",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     40,
+     42,
      16
     ],
     [
      "St. John's Red Storm",
-     57,
+     60,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:22",
+   "clock": "18:11",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     41,
+     43,
      15
     ]
    ]
