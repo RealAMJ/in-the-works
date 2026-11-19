@@ -1,5 +1,28 @@
 [
  {
+  "kind": "Feature",
+  "player": "William Berg",
+  "title": "William Berg on his monster game in Wichita State's road win at Loyola",
+  "src": "ytlink",
+  "vid": "hZLiAGLW3h0",
+  "thumb": "https://i.ytimg.com/vi/hZLiAGLW3h0/hqdefault.jpg",
+  "secs": 36,
+  "date": "2026-11-19",
+  "channel": "Wichita Eagle",
+  "url": "https://www.youtube.com/watch?v=hZLiAGLW3h0"
+ },
+ {
+  "kind": "Interview",
+  "player": "Mikko Riipinen",
+  "title": "Declarații Mikko Riipinen (antrenor principal) și Quincy Guerrier (jucător) din partea CSM Oradea",
+  "src": "youtube",
+  "vid": "zLX8oVhsClc",
+  "thumb": "https://i.ytimg.com/vi/zLX8oVhsClc/hqdefault.jpg",
+  "secs": 370,
+  "date": "2026-11-18",
+  "channel": "CSM Oradea"
+ },
+ {
   "kind": "Highlight",
   "player": "Oskar Stumer",
   "title": "Oskar Stumer fights off defender for and-1",
