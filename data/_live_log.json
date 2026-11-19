@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:09:50+01:00",
+ "at": "2026-11-19T01:10:41+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:03",
+   "clock": "15:42",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:47",
+   "clock": "16:13",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     5,
+     7,
      17
     ],
     [
@@ -78,18 +78,41 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:22",
+   "clock": "18:02",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     4,
+     7,
      15
     ],
     [
      "Long Island University Sharks",
-     1,
+     5,
      14
+    ]
+   ]
+  },
+  {
+   "game": "g20261119youn",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261119youn",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Cincinnati Bearcats",
+     0,
+     0
+    ],
+    [
+     "Youngstown State Penguins",
+     0,
+     0
     ]
    ]
   }
