@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:03:52+01:00",
+ "at": "2026-11-19T02:04:24+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,17 +9,17 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:20",
+   "clock": "06:49",
    "done": false,
    "teams": [
     [
      "Milwaukee Bucks",
-     31,
+     33,
      12
     ],
     [
      "Miami Heat",
-     48,
+     51,
      15
     ]
    ]
@@ -101,12 +101,12 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:17",
+   "clock": "06:32",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     11,
+     13,
      14
     ],
     [
