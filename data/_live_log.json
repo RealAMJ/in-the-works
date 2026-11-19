@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:14:01+01:00",
+ "at": "2026-11-19T03:14:51+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "02:14",
+   "clock": "02:06",
    "done": false,
    "teams": [
     [
@@ -19,30 +19,7 @@
     ],
     [
      "Miami Heat",
-     102,
-     15
-    ]
-   ]
-  },
-  {
-   "game": "g20261119vmi",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261119vmi",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "VMI Keydets",
-     76,
-     17
-    ],
-    [
-     "Longwood Lancers",
-     82,
+     104,
      15
     ]
    ]
@@ -55,7 +32,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 3,
-   "clock": "04:09",
+   "clock": "03:28",
    "done": false,
    "teams": [
     [
@@ -78,12 +55,12 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:07",
+   "clock": "04:30",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     42,
+     44,
      14
     ],
     [
@@ -101,12 +78,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:45",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     48,
+     51,
      17
     ],
     [
