@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:27:03+01:00",
+ "at": "2026-11-19T03:27:55+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,17 +9,17 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 4,
-   "clock": "09:31",
+   "clock": "08:51",
    "done": false,
    "teams": [
     [
      "Milwaukee Bucks",
-     94,
+     97,
      12
     ],
     [
      "Miami Heat",
-     118,
+     121,
      15
     ]
    ]
@@ -31,8 +31,8 @@
   {
    "game": "g20261119uncw",
    "src": "ESPN",
-   "period": 3,
-   "clock": "00:00",
+   "period": 4,
+   "clock": "04:56",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:27",
+   "clock": "00:08",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     89,
+     91,
      16
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:59",
+   "clock": "12:21",
    "done": false,
    "teams": [
     [
