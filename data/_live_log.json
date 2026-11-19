@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:42:37+01:00",
+ "at": "2026-11-19T01:43:28+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:36",
+   "clock": "01:27",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:47",
+   "clock": "03:33",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:17",
+   "clock": "04:08",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Long Island University Sharks",
-     34,
+     35,
      14
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:18",
+   "clock": "14:53",
    "done": false,
    "teams": [
     [
