@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:37:37+01:00",
+ "at": "2026-11-19T02:38:29+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:12",
+   "clock": "08:33",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     95,
+     99,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "11:12",
+   "clock": "10:23",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     54,
+     56,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:03",
+   "clock": "08:18",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Long Island University Sharks",
-     65,
+     68,
      14
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:40",
+   "clock": "18:34",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     24,
+     26,
      14
     ],
     [
      "Cincinnati Bearcats",
-     44,
+     48,
      16
     ]
    ]
@@ -124,7 +124,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:37",
+   "clock": "05:18",
    "done": false,
    "teams": [
     [
