@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:37:05+01:00",
+ "at": "2026-11-19T01:37:58+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:55",
+   "clock": "02:49",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:35",
+   "clock": "06:11",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     18,
+     20,
      17
     ],
     [
      "Longwood Lancers",
-     24,
+     27,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:35",
+   "clock": "06:28",
    "done": false,
    "teams": [
     [
@@ -101,12 +101,12 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:39",
+   "clock": "17:08",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     3,
+     5,
      14
     ],
     [
