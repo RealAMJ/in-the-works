@@ -2740,7 +2740,9 @@
   "status": "final",
   "score": "W 88-76",
   "live_feed": "fiba:2856151",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261119vir",
@@ -2758,7 +2760,7 @@
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
   "clock": "End of Q0",
-  "live_updated": "2026-11-19T22:02:48+01:00"
+  "live_updated": "2026-11-19T22:03:24+01:00"
  },
  {
   "game_id": "g20261120robe",

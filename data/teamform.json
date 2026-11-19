@@ -7782,5 +7782,33 @@
   "note": "",
   "leaders": "Agarwal|22|2|0;Schofield|14|3|3;Jeffrey|11|1|6",
   "source": "ESPN"
+ },
+ {
+  "row_id": "kr-basket-2026-11-19",
+  "team": "KR Basket",
+  "date": "2026-11-19",
+  "competition": "Icelandic Premier League",
+  "opponent": "ÍR",
+  "venue": "Away",
+  "score": "88-76",
+  "result": "W",
+  "top": "Berzins 18 pts, 1 reb",
+  "note": "",
+  "leaders": "Berzins|18|1|2;Jaunzems|17|10|6;Árnason|14|5|4",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "r-2026-11-19",
+  "team": "ÍR",
+  "date": "2026-11-19",
+  "competition": "Icelandic Premier League",
+  "opponent": "KR Basket",
+  "venue": "Home",
+  "score": "76-88",
+  "result": "L",
+  "top": "Hjálmarsson 20 pts, 11 reb",
+  "note": "",
+  "leaders": "Hjálmarsson|20|11|2;Mathis|15|4|4;Ingólfsson|13|7|2;Kone|13|16|2",
+  "source": "FIBA LiveStats"
  }
 ]
