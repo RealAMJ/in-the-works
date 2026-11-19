@@ -74871,7 +74871,7 @@
   "player": "Jericho Sims",
   "pos": "",
   "min": 14,
-  "pts": 2,
+  "pts": 3,
   "reb": 5,
   "ast": 2,
   "stl": 0,
@@ -74879,8 +74879,8 @@
   "tov": 2,
   "fg": "1/3",
   "three": "0/0",
-  "ft": "0/0",
-  "pm": -2,
+  "ft": "1/1",
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "ESPN"
@@ -75302,7 +75302,7 @@
   "ft": "1/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75323,7 +75323,7 @@
   "ft": "5/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75334,7 +75334,7 @@
   "pos": "",
   "min": 36,
   "pts": 24,
-  "reb": 14,
+  "reb": 15,
   "ast": 3,
   "stl": 0,
   "blk": 0,
@@ -75344,7 +75344,7 @@
   "ft": "4/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75365,7 +75365,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75386,11 +75386,11 @@
   "ft": "5/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-0-7",
+  "row_id": "g20261119uncw-0-5",
   "game_id": "g20261119uncw",
   "team": "UNC Wilmington",
   "player": "Spencer Elliott",
@@ -75407,11 +75407,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-0-10",
+  "row_id": "g20261119uncw-0-6",
   "game_id": "g20261119uncw",
   "team": "UNC Wilmington",
   "player": "Tahlan Pettway",
@@ -75428,11 +75428,11 @@
   "ft": "10/13",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-0-13",
+  "row_id": "g20261119uncw-0-7",
   "game_id": "g20261119uncw",
   "team": "UNC Wilmington",
   "player": "Treyvon Maddox",
@@ -75449,11 +75449,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-0-14",
+  "row_id": "g20261119uncw-0-8",
   "game_id": "g20261119uncw",
   "team": "UNC Wilmington",
   "player": "Jahnathan Lamothe",
@@ -75470,7 +75470,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75491,7 +75491,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75512,7 +75512,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75533,7 +75533,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75554,7 +75554,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75575,11 +75575,11 @@
   "ft": "11/13",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-6",
+  "row_id": "g20261119uncw-1-5",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Tyrell Bowles",
@@ -75596,11 +75596,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-7",
+  "row_id": "g20261119uncw-1-6",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Xinyi Li",
@@ -75617,11 +75617,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-9",
+  "row_id": "g20261119uncw-1-7",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Joshua Skinner",
@@ -75635,14 +75635,14 @@
   "tov": 0,
   "fg": "1/1",
   "three": "1/1",
-  "ft": "0/0",
+  "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-11",
+  "row_id": "g20261119uncw-1-8",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Vasean Allette",
@@ -75659,11 +75659,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-12",
+  "row_id": "g20261119uncw-1-9",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Kamari Jones",
@@ -75680,11 +75680,11 @@
   "ft": "5/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119uncw-1-13",
+  "row_id": "g20261119uncw-1-10",
   "game_id": "g20261119uncw",
   "team": "Long Island University",
   "player": "Deshawn Jean-Charles",
@@ -75701,7 +75701,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75710,7 +75710,7 @@
   "team": "Wichita State",
   "player": "Dillon Battie",
   "pos": "",
-  "min": 18,
+  "min": 19,
   "pts": 9,
   "reb": 6,
   "ast": 0,
@@ -75731,16 +75731,16 @@
   "team": "Wichita State",
   "player": "William Berg",
   "pos": "",
-  "min": 23,
-  "pts": 23,
-  "reb": 6,
+  "min": 24,
+  "pts": 25,
+  "reb": 7,
   "ast": 1,
   "stl": 0,
   "blk": 2,
   "tov": 2,
-  "fg": "7/8",
+  "fg": "7/9",
   "three": "1/1",
-  "ft": "8/8",
+  "ft": "10/10",
   "pm": "",
   "swede": true,
   "state": "live",
@@ -75859,7 +75859,7 @@
   "pos": "",
   "min": 17,
   "pts": 0,
-  "reb": 0,
+  "reb": 1,
   "ast": 7,
   "stl": 0,
   "blk": 0,
@@ -75878,7 +75878,7 @@
   "team": "Wichita State",
   "player": "Michael Gray Jr.",
   "pos": "",
-  "min": 20,
+  "min": 21,
   "pts": 7,
   "reb": 2,
   "ast": 0,
@@ -76004,15 +76004,15 @@
   "team": "Loyola Chicago",
   "player": "Elias Rapieque",
   "pos": "",
-  "min": 14,
+  "min": 15,
   "pts": 7,
   "reb": 3,
   "ast": 2,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "2/3",
-  "three": "0/0",
+  "fg": "2/4",
+  "three": "0/1",
   "ft": "3/6",
   "pm": "",
   "swede": false,

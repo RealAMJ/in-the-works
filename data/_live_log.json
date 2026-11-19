@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:46:40+01:00",
+ "at": "2026-11-19T03:47:33+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -14,7 +14,7 @@
    "teams": [
     [
      "Milwaukee Bucks",
-     112,
+     114,
      12
     ],
     [
@@ -31,9 +31,9 @@
   {
    "game": "g20261119uncw",
    "src": "ESPN",
-   "period": 4,
+   "period": 0,
    "clock": "00:00",
-   "done": false,
+   "done": true,
    "teams": [
     [
      "UNC Wilmington Seahawks",
@@ -55,12 +55,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:42",
+   "clock": "06:59",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     66,
+     68,
      17
     ],
     [
