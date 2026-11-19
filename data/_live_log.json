@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:04:24+01:00",
+ "at": "2026-11-19T02:05:15+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,12 +9,12 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:49",
+   "clock": "06:18",
    "done": false,
    "teams": [
     [
      "Milwaukee Bucks",
-     33,
+     36,
      12
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:32",
+   "clock": "05:44",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     28,
+     30,
      16
     ]
    ]
@@ -128,14 +128,14 @@
    "done": false,
    "teams": [
     [
-     "Loyola Chicago Ramblers",
-     0,
-     0
-    ],
-    [
      "Wichita State Shockers",
      0,
-     0
+     17
+    ],
+    [
+     "Loyola Chicago Ramblers",
+     0,
+     16
     ]
    ]
   }
