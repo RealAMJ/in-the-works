@@ -2755,12 +2755,12 @@
   "competition": "EuroLeague",
   "note": "Round 13",
   "status": "live",
-  "score": "W 84-82",
+  "score": "L 84-86",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "Q4 01:05",
-  "live_updated": "2026-11-19T23:04:45+01:00"
+  "clock": "Q4 00:52",
+  "live_updated": "2026-11-19T23:05:37+01:00"
  },
  {
   "game_id": "g20261120robe",
