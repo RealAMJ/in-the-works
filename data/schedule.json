@@ -2634,7 +2634,7 @@
   "espn_id": "401910009",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401910009",
   "clock": "Q2 00:59",
-  "live_updated": "2026-11-19T02:26:19+01:00"
+  "live_updated": "2026-11-19T02:27:11+01:00"
  },
  {
   "game_id": "g20261119stjo",
@@ -2647,11 +2647,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 78-47",
+  "score": "W 79-47",
   "espn_id": "401920682",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920682",
-  "clock": "Q2 14:37",
-  "live_updated": "2026-11-19T02:26:19+01:00"
+  "clock": "Q2 14:17",
+  "live_updated": "2026-11-19T02:27:11+01:00"
  },
  {
   "game_id": "g20261119vmi",
@@ -2664,11 +2664,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 49-44",
+  "score": "W 52-46",
   "espn_id": "401922047",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922047",
-  "clock": "Q2 14:58",
-  "live_updated": "2026-11-19T02:26:19+01:00"
+  "clock": "Q2 14:15",
+  "live_updated": "2026-11-19T02:27:11+01:00"
  },
  {
   "game_id": "g20261119uncw",
@@ -2684,8 +2684,8 @@
   "score": "W 64-60",
   "espn_id": "401919808",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919808",
-  "clock": "Q2 14:05",
-  "live_updated": "2026-11-19T02:26:20+01:00"
+  "clock": "Q2 13:34",
+  "live_updated": "2026-11-19T02:27:11+01:00"
  },
  {
   "game_id": "g20261119youn",
@@ -2702,7 +2702,7 @@
   "espn_id": "401920751",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920751",
   "clock": "End of Q1",
-  "live_updated": "2026-11-19T02:26:20+01:00"
+  "live_updated": "2026-11-19T02:27:12+01:00"
  },
  {
   "game_id": "g20261119wich",
@@ -2715,11 +2715,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 19-20",
+  "score": "W 24-22",
   "espn_id": "401911232",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911232",
-  "clock": "Q1 11:15",
-  "live_updated": "2026-11-19T02:26:20+01:00"
+  "clock": "Q1 10:42",
+  "live_updated": "2026-11-19T02:27:12+01:00"
  },
  {
   "game_id": "g20261119krba",
