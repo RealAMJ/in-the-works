@@ -1,29 +1,6 @@
 {
- "at": "2026-11-19T22:01:59+01:00",
+ "at": "2026-11-19T22:02:48+01:00",
  "log": [
-  {
-   "game": "g20261119krba",
-   "checking": "FIBA LiveStats"
-  },
-  {
-   "game": "g20261119krba",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "\u00cdR",
-     76,
-     12
-    ],
-    [
-     "KR",
-     88,
-     11
-    ]
-   ]
-  },
   {
    "game": "g20261119vir",
    "checking": "EuroLeague live"
