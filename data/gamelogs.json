@@ -7506,5 +7506,31 @@
   "pf": 2,
   "pm": 14,
   "eff": ""
+ },
+ {
+  "row_id": "klintman-2026-11-19",
+  "player": "Bobi Klintman",
+  "date": "2026-11-19",
+  "competition": "EuroLeague",
+  "team": "Virtus Bologna",
+  "opponent": "Valencia Basket",
+  "venue": "Away",
+  "result": "L 87-92",
+  "min": 17,
+  "pts": 12,
+  "reb": 9,
+  "ast": 3,
+  "source": "EuroLeague live",
+  "fg": "4/7",
+  "three": "2/3",
+  "ft": "2/4",
+  "oreb": 3,
+  "dreb": 6,
+  "stl": 0,
+  "blk": 0,
+  "tov": 1,
+  "pf": 1,
+  "pm": 3,
+  "eff": ""
  }
 ]

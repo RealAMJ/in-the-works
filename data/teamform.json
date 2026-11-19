@@ -7810,5 +7810,33 @@
   "note": "",
   "leaders": "Hjálmarsson|20|11|2;Mathis|15|4|4;Ingólfsson|13|7|2;Kone|13|16|2",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "virtus-bologna-2026-11-19",
+  "team": "Virtus Bologna",
+  "date": "2026-11-19",
+  "competition": "EuroLeague",
+  "opponent": "Valencia Basket",
+  "venue": "Away",
+  "score": "87-92",
+  "result": "L",
+  "top": "Bello 15 pts, 6 reb",
+  "note": "",
+  "leaders": "Bello|15|6|1;Carr|13|2|1;Frazier|12|1|3;Klintman|12|9|3",
+  "source": "EuroLeague live"
+ },
+ {
+  "row_id": "valencia-basket-2026-11-19",
+  "team": "Valencia Basket",
+  "date": "2026-11-19",
+  "competition": "EuroLeague",
+  "opponent": "Virtus Bologna",
+  "venue": "Home",
+  "score": "92-87",
+  "result": "W",
+  "top": "Shorts 20 pts, 1 reb",
+  "note": "",
+  "leaders": "Shorts|20|1|8;Sako|20|11|0;Taylor|15|5|3",
+  "source": "EuroLeague live"
  }
 ]

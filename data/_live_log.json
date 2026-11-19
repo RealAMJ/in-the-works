@@ -1,29 +1,6 @@
 {
- "at": "2026-11-20T00:43:43+01:00",
+ "at": "2026-11-20T00:44:09+01:00",
  "log": [
-  {
-   "game": "g20261119vir",
-   "checking": "EuroLeague live"
-  },
-  {
-   "game": "g20261119vir",
-   "src": "EuroLeague live",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "VALENCIA BASKET",
-     92,
-     12
-    ],
-    [
-     "VIRTUS BOLOGNA",
-     87,
-     12
-    ]
-   ]
-  },
   {
    "game": "g20261120robe",
    "checking": "ESPN"
