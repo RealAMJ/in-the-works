@@ -7698,5 +7698,33 @@
   "note": "",
   "leaders": "Tejada|21|5|3;Riley|15|3|5;Collins|14|2|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "unc-wilmington-2026-11-19",
+  "team": "UNC Wilmington",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "Long Island University",
+  "venue": "Away",
+  "score": "114-115",
+  "result": "L",
+  "top": "Pettway 25 pts, 1 reb",
+  "note": "",
+  "leaders": "Pettway|25|1|5;Wessler|24|15|3;Nelson|16|8|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "long-island-university-2026-11-19",
+  "team": "Long Island University",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "UNC Wilmington",
+  "venue": "Home",
+  "score": "115-114",
+  "result": "W",
+  "top": "Davis 26 pts, 3 reb",
+  "note": "",
+  "leaders": "Davis|26|3|6;Howard|25|8|3;Jones|20|1|0",
+  "source": "ESPN"
  }
 ]
