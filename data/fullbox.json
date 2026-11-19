@@ -75753,7 +75753,7 @@
   "player": "Dillon Battie",
   "pos": "",
   "min": 26,
-  "pts": 11,
+  "pts": 13,
   "reb": 8,
   "ast": 0,
   "stl": 0,
@@ -75761,10 +75761,10 @@
   "tov": 1,
   "fg": "3/8",
   "three": "1/2",
-  "ft": "4/4",
+  "ft": "6/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75785,7 +75785,7 @@
   "ft": "10/10",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75806,7 +75806,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75827,7 +75827,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75848,11 +75848,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-0-6",
+  "row_id": "g20261119wich-0-5",
   "game_id": "g20261119wich",
   "team": "Wichita State",
   "player": "Emmanuel Okorafor",
@@ -75869,11 +75869,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-0-7",
+  "row_id": "g20261119wich-0-6",
   "game_id": "g20261119wich",
   "team": "Wichita State",
   "player": "Jaret Valencia",
@@ -75890,11 +75890,11 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-0-11",
+  "row_id": "g20261119wich-0-7",
   "game_id": "g20261119wich",
   "team": "Wichita State",
   "player": "Jordan Frison",
@@ -75911,11 +75911,11 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-0-16",
+  "row_id": "g20261119wich-0-8",
   "game_id": "g20261119wich",
   "team": "Wichita State",
   "player": "Michael Gray Jr.",
@@ -75932,7 +75932,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75953,7 +75953,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75974,7 +75974,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -75995,7 +75995,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -76016,7 +76016,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -76037,11 +76037,11 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-1-6",
+  "row_id": "g20261119wich-1-5",
   "game_id": "g20261119wich",
   "team": "Loyola Chicago",
   "player": "Elias Rapieque",
@@ -76058,11 +76058,11 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-1-8",
+  "row_id": "g20261119wich-1-6",
   "game_id": "g20261119wich",
   "team": "Loyola Chicago",
   "player": "Xavier Amos",
@@ -76079,11 +76079,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-1-10",
+  "row_id": "g20261119wich-1-7",
   "game_id": "g20261119wich",
   "team": "Loyola Chicago",
   "player": "Malick Diallo",
@@ -76100,11 +76100,11 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-1-11",
+  "row_id": "g20261119wich-1-8",
   "game_id": "g20261119wich",
   "team": "Loyola Chicago",
   "player": "Dayton Williams",
@@ -76121,11 +76121,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261119wich-1-13",
+  "row_id": "g20261119wich-1-10",
   "game_id": "g20261119wich",
   "team": "Loyola Chicago",
   "player": "Chris Jeffrey",
@@ -76142,7 +76142,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
