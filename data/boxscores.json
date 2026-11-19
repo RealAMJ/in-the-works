@@ -3610,7 +3610,7 @@
   "fg": "1/2",
   "three": "1/2",
   "ft": "1/2",
-  "pm": 13,
+  "pm": 12,
   "source": "ESPN",
   "note": "live",
   "oreb": 0,
@@ -3618,7 +3618,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 1,
-  "pf": 2,
+  "pf": 3,
   "eff": ""
  },
  {
@@ -3735,7 +3735,7 @@
   "line_id": "g20261119wich-berg",
   "game_id": "g20261119wich",
   "player": "William Berg",
-  "min": 5,
+  "min": 6,
   "pts": 4,
   "reb": 2,
   "ast": 1,
