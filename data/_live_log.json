@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T20:39:16+01:00",
+ "at": "2026-11-19T20:40:08+01:00",
  "log": [
   {
    "game": "g20261119krba",
@@ -9,12 +9,12 @@
    "game": "g20261119krba",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "09:01",
+   "clock": "08:16",
    "done": false,
    "teams": [
     [
      "\u00cdR",
-     22,
+     25,
      12
     ],
     [
@@ -23,6 +23,14 @@
      11
     ]
    ]
+  },
+  {
+   "game": "g20261119vir",
+   "checking": "EuroLeague live"
+  },
+  {
+   "game": "g20261119vir",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   }
  ]
 }
