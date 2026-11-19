@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:18:42+01:00",
+ "at": "2026-11-19T02:19:33+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:35",
+   "clock": "03:18",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     65,
+     66,
      15
     ]
    ]
@@ -32,12 +32,12 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:33",
+   "clock": "17:07",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     42,
+     44,
      16
     ],
     [
@@ -55,12 +55,12 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:49",
+   "clock": "16:48",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     42,
+     43,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:41",
+   "clock": "17:21",
    "done": false,
    "teams": [
     [
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:15",
+   "clock": "00:41",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     39,
+     42,
      16
     ]
    ]
@@ -124,7 +124,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:04",
+   "clock": "13:31",
    "done": false,
    "teams": [
     [
