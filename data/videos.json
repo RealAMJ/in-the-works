@@ -1467,14 +1467,6 @@
   "source": "ESPN",
   "clips": [
    {
-    "title": "VMI Keydets vs. Longwood Lancers: Game Highlights",
-    "secs": 83,
-    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/740a6e80-120f-4568-8748-1fb7e97ff19b/740a6e80-120f-4568-8748-1fb7e97ff19b.jpg",
-    "url": "https://www.espn.com/video/clip/_/id/50526742/game-highlights",
-    "full": true,
-    "swedes": []
-   },
-   {
     "title": "MJ Williams gets the and-1 to fall",
     "secs": 22,
     "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/ce6abb8b-4a1f-4210-995b-cc1170cd049d/ce6abb8b-4a1f-4210-995b-cc1170cd049d.jpg",
@@ -1498,19 +1490,26 @@
   "source": "ESPN",
   "clips": [
    {
-    "title": "Youngstown State Penguins vs. Cincinnati Bearcats: Game Highlights",
-    "secs": 85,
-    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/f9da2e9f-1ace-4c53-923f-e7821507cd1a/f9da2e9f-1ace-4c53-923f-e7821507cd1a.jpg",
-    "url": "https://www.espn.com/video/clip/_/id/50526984/game-highlights",
-    "full": true,
-    "swedes": []
-   },
-   {
     "title": "Kelvin Amoako throws down big jam vs. Cincinnati Bearcats",
     "secs": 14,
     "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/2969bd08-99af-4704-85d8-21d57fe0cf31/2969bd08-99af-4704-85d8-21d57fe0cf31.jpg",
     "url": "https://www.espn.com/video/clip/_/id/50526239/kelvin-amoako-throws-big-jam-vs-cincinnati-bearcats",
     "full": false,
+    "swedes": []
+   }
+  ]
+ },
+ {
+  "game_id": "g20261119wich",
+  "date": "2026-11-19",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Wichita State Shockers vs. Loyola Chicago Ramblers: Game Highlights",
+    "secs": 78,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1119/7cc98ce6-d21c-4b15-a75f-512486b278d8/7cc98ce6-d21c-4b15-a75f-512486b278d8.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50527432/game-highlights",
+    "full": true,
     "swedes": []
    }
   ]
