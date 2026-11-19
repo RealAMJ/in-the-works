@@ -76518,7 +76518,7 @@
   "fg": "6/15",
   "three": "1/4",
   "ft": "7/8",
-  "pm": 16,
+  "pm": 17,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76539,7 +76539,7 @@
   "fg": "6/13",
   "three": "1/4",
   "ft": "2/2",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76623,7 +76623,7 @@
   "fg": "0/7",
   "three": "0/5",
   "ft": "0/0",
-  "pm": 11,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76635,7 +76635,7 @@
   "player": "Armoni Brooks",
   "pos": "",
   "min": 23,
-  "pts": 6,
+  "pts": 7,
   "reb": 4,
   "ast": 1,
   "stl": 0,
@@ -76643,8 +76643,8 @@
   "tov": 0,
   "fg": "2/14",
   "three": "1/7",
-  "ft": "1/1",
-  "pm": -7,
+  "ft": "2/2",
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76665,7 +76665,7 @@
   "fg": "9/13",
   "three": "0/0",
   "ft": "2/6",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76791,7 +76791,7 @@
   "fg": "3/8",
   "three": "2/5",
   "ft": "1/2",
-  "pm": -1,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76812,7 +76812,7 @@
   "fg": "4/6",
   "three": "3/5",
   "ft": "2/4",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76875,7 +76875,7 @@
   "fg": "3/7",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -16,
+  "pm": -17,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76959,7 +76959,7 @@
   "fg": "4/6",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 8,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76980,7 +76980,7 @@
   "fg": "4/7",
   "three": "2/3",
   "ft": "2/4",
-  "pm": 8,
+  "pm": 7,
   "swede": true,
   "state": "live",
   "source": "EuroLeague live"
