@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:13:59+01:00",
+ "at": "2026-11-19T02:14:51+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:54",
+   "clock": "04:07",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:28",
+   "clock": "17:17",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "19:48",
+   "clock": "19:31",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     48,
+     50,
      15
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:36",
+   "clock": "02:31",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     36,
+     39,
      16
     ]
    ]
@@ -129,7 +129,7 @@
    "teams": [
     [
      "Wichita State Shockers",
-     9,
+     12,
      17
     ],
     [
