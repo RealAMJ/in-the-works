@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:17:30+01:00",
+ "at": "2026-11-19T01:18:21+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -8,19 +8,19 @@
   {
    "game": "g20261119miam",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "11:33",
    "done": false,
    "teams": [
     [
-     "Miami Heat",
-     0,
-     0
-    ],
-    [
      "Milwaukee Bucks",
      0,
-     0
+     12
+    ],
+    [
+     "Miami Heat",
+     0,
+     15
     ]
    ]
   },
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:18",
+   "clock": "13:15",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:49",
+   "clock": "12:43",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     11,
+     13,
      17
     ],
     [
@@ -78,17 +78,17 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:20",
+   "clock": "13:47",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     12,
+     14,
      15
     ],
     [
      "Long Island University Sharks",
-     12,
+     14,
      14
     ]
    ]
