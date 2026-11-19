@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T21:49:46+01:00",
+ "at": "2026-11-19T21:50:39+01:00",
  "log": [
   {
    "game": "g20261119krba",
@@ -9,12 +9,12 @@
    "game": "g20261119krba",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "03:55",
+   "clock": "03:23",
    "done": false,
    "teams": [
     [
      "\u00cdR",
-     68,
+     70,
      12
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261119vir",
    "src": "EuroLeague live",
    "period": 2,
-   "clock": "02:03",
+   "clock": "01:25",
    "done": false,
    "teams": [
     [

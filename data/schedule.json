@@ -2738,10 +2738,10 @@
   "competition": "Icelandic Premier League",
   "note": "",
   "status": "live",
-  "score": "W 82-68",
+  "score": "W 82-70",
   "live_feed": "fiba:2856151",
-  "clock": "Q4 03:55",
-  "live_updated": "2026-11-19T21:49:46+01:00"
+  "clock": "Q4 03:23",
+  "live_updated": "2026-11-19T21:50:39+01:00"
  },
  {
   "game_id": "g20261119vir",
@@ -2758,8 +2758,8 @@
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "Q2 02:03",
-  "live_updated": "2026-11-19T21:49:46+01:00"
+  "clock": "Q2 01:25",
+  "live_updated": "2026-11-19T21:50:39+01:00"
  },
  {
   "game_id": "g20261120robe",
