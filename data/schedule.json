@@ -2738,10 +2738,10 @@
   "competition": "Icelandic Premier League",
   "note": "",
   "status": "live",
-  "score": "W 61-58",
+  "score": "W 61-60",
   "live_feed": "fiba:2856151",
   "clock": "Q3 03:48",
-  "live_updated": "2026-11-19T21:22:31+01:00"
+  "live_updated": "2026-11-19T21:23:22+01:00"
  },
  {
   "game_id": "g20261119vir",
@@ -2754,12 +2754,12 @@
   "competition": "EuroLeague",
   "note": "Round 13",
   "status": "live",
-  "score": "L 19-25",
+  "score": "L 19-27",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-19T21:22:31+01:00"
+  "clock": "Q1 00:38",
+  "live_updated": "2026-11-19T21:23:23+01:00"
  },
  {
   "game_id": "g20261120robe",
