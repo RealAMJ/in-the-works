@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:28:45+01:00",
+ "at": "2026-11-19T03:29:35+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     124,
+     127,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 4,
-   "clock": "04:39",
+   "clock": "04:07",
    "done": false,
    "teams": [
     [
@@ -44,29 +44,6 @@
      "Long Island University Sharks",
      107,
      14
-    ]
-   ]
-  },
-  {
-   "game": "g20261119youn",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261119youn",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Youngstown State Penguins",
-     54,
-     14
-    ],
-    [
-     "Cincinnati Bearcats",
-     91,
-     16
     ]
    ]
   },
