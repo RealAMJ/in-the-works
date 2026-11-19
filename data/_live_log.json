@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T20:58:23+01:00",
+ "at": "2026-11-19T20:59:16+01:00",
  "log": [
   {
    "game": "g20261119krba",
@@ -30,7 +30,22 @@
   },
   {
    "game": "g20261119vir",
-   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+   "src": "EuroLeague live",
+   "period": 1,
+   "clock": "09:39",
+   "done": false,
+   "teams": [
+    [
+     "VALENCIA BASKET",
+     0,
+     12
+    ],
+    [
+     "VIRTUS BOLOGNA",
+     0,
+     12
+    ]
+   ]
   }
  ]
 }
