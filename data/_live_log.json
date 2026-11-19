@@ -1,26 +1,26 @@
 {
- "at": "2026-11-19T04:14:53+01:00",
+ "at": "2026-11-19T19:58:19+01:00",
  "log": [
   {
-   "game": "g20261119wich",
-   "checking": "ESPN"
+   "game": "g20261119krba",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261119wich",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261119krba",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "Wichita State Shockers",
-     79,
-     17
+     "\u00cdR",
+     0,
+     12
     ],
     [
-     "Loyola Chicago Ramblers",
-     75,
-     16
+     "KR",
+     0,
+     11
     ]
    ]
   }
