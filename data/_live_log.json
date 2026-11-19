@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:21:39+01:00",
+ "at": "2026-11-19T02:22:30+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:29",
+   "clock": "02:14",
    "done": false,
    "teams": [
     [
@@ -124,12 +124,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:17",
+   "clock": "11:41",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     16,
+     19,
      17
     ],
     [
