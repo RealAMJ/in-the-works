@@ -76539,7 +76539,7 @@
   "fg": "6/9",
   "three": "1/2",
   "ft": "2/2",
-  "pm": -2,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76560,7 +76560,7 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -16,
+  "pm": -19,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76602,7 +76602,7 @@
   "fg": "1/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -12,
+  "pm": -15,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76644,7 +76644,7 @@
   "fg": "1/9",
   "three": "0/4",
   "ft": "1/1",
-  "pm": -10,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76665,7 +76665,7 @@
   "fg": "8/12",
   "three": "0/0",
   "ft": "2/6",
-  "pm": 0,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76791,7 +76791,7 @@
   "fg": "2/6",
   "three": "2/5",
   "ft": "1/2",
-  "pm": 6,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76803,16 +76803,16 @@
   "player": "Marcus Carr",
   "pos": "",
   "min": 19,
-  "pts": 10,
+  "pts": 13,
   "reb": 2,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "3/3",
-  "three": "2/2",
+  "fg": "4/4",
+  "three": "3/3",
   "ft": "2/4",
-  "pm": 6,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76854,7 +76854,7 @@
   "fg": "2/7",
   "three": "0/3",
   "ft": "0/0",
-  "pm": 9,
+  "pm": 12,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76959,7 +76959,7 @@
   "fg": "3/5",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 12,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76980,7 +76980,7 @@
   "fg": "3/6",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 8,
+  "pm": 11,
   "swede": true,
   "state": "live",
   "source": "EuroLeague live"
