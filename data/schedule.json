@@ -2634,7 +2634,7 @@
   "espn_id": "401910009",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401910009",
   "clock": "Halftime",
-  "live_updated": "2026-11-19T02:39:21+01:00"
+  "live_updated": "2026-11-19T02:39:53+01:00"
  },
  {
   "game_id": "g20261119stjo",
@@ -2650,8 +2650,8 @@
   "score": "W 99-57",
   "espn_id": "401920682",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920682",
-  "clock": "Q2 08:33",
-  "live_updated": "2026-11-19T02:39:21+01:00"
+  "clock": "Q2 08:21",
+  "live_updated": "2026-11-19T02:39:53+01:00"
  },
  {
   "game_id": "g20261119vmi",
@@ -2664,11 +2664,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 54-56",
+  "score": "L 54-57",
   "espn_id": "401922047",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922047",
   "clock": "Q2 09:58",
-  "live_updated": "2026-11-19T02:39:21+01:00"
+  "live_updated": "2026-11-19T02:39:53+01:00"
  },
  {
   "game_id": "g20261119uncw",
@@ -2685,7 +2685,7 @@
   "espn_id": "401919808",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919808",
   "clock": "Q2 07:35",
-  "live_updated": "2026-11-19T02:39:21+01:00"
+  "live_updated": "2026-11-19T02:39:54+01:00"
  },
  {
   "game_id": "g20261119youn",
@@ -2701,8 +2701,8 @@
   "score": "L 26-50",
   "espn_id": "401920751",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920751",
-  "clock": "Q2 17:57",
-  "live_updated": "2026-11-19T02:39:22+01:00"
+  "clock": "Q2 17:53",
+  "live_updated": "2026-11-19T02:39:54+01:00"
  },
  {
   "game_id": "g20261119wich",
@@ -2715,11 +2715,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 30-29",
+  "score": "L 30-31",
   "espn_id": "401911232",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911232",
   "clock": "Q1 05:02",
-  "live_updated": "2026-11-19T02:39:22+01:00"
+  "live_updated": "2026-11-19T02:39:54+01:00"
  },
  {
   "game_id": "g20261119krba",
