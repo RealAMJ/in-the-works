@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:13:10+01:00",
+ "at": "2026-11-19T03:14:01+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,17 +9,17 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "02:32",
+   "clock": "02:14",
    "done": false,
    "teams": [
     [
      "Milwaukee Bucks",
-     78,
+     80,
      12
     ],
     [
      "Miami Heat",
-     101,
+     102,
      15
     ]
    ]
@@ -31,13 +31,13 @@
   {
    "game": "g20261119vmi",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:03",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "VMI Keydets",
-     73,
+     76,
      17
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 3,
-   "clock": "04:41",
+   "clock": "04:09",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Long Island University Sharks",
-     94,
+     95,
      14
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:36",
+   "clock": "05:07",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     73,
+     76,
      16
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:34",
+   "clock": "17:45",
    "done": false,
    "teams": [
     [
@@ -111,7 +111,7 @@
     ],
     [
      "Loyola Chicago Ramblers",
-     46,
+     48,
      16
     ]
    ]
