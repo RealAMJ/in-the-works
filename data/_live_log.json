@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:34:02+01:00",
+ "at": "2026-11-19T01:34:54+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,12 +9,12 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:12",
+   "clock": "04:06",
    "done": false,
    "teams": [
     [
      "Milwaukee Bucks",
-     14,
+     16,
      12
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "06:50",
+   "clock": "06:17",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     19,
+     21,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:15",
+   "clock": "06:58",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:26",
+   "clock": "07:17",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Long Island University Sharks",
-     23,
+     24,
      14
     ]
    ]
@@ -101,17 +101,17 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:06",
+   "clock": "18:06",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     0,
+     3,
      14
     ],
     [
      "Cincinnati Bearcats",
-     3,
+     5,
      16
     ]
    ]
