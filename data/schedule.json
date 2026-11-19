@@ -2754,13 +2754,12 @@
   "venue": "Away",
   "competition": "EuroLeague",
   "note": "Round 13",
-  "status": "live",
+  "status": "final",
   "score": "L 87-92",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "End of Q0",
-  "live_updated": "2026-11-20T00:42:53+01:00"
+  "live_done": true
  },
  {
   "game_id": "g20261120robe",
