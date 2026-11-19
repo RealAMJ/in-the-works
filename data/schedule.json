@@ -2741,7 +2741,7 @@
   "score": "L 45-48",
   "live_feed": "fiba:2856151",
   "clock": "Halftime",
-  "live_updated": "2026-11-19T21:08:38+01:00"
+  "live_updated": "2026-11-19T21:09:29+01:00"
  },
  {
   "game_id": "g20261119vir",
@@ -2754,12 +2754,12 @@
   "competition": "EuroLeague",
   "note": "Round 13",
   "status": "live",
-  "score": "L 4-12",
+  "score": "L 6-14",
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "Q1 06:15",
-  "live_updated": "2026-11-19T21:08:38+01:00"
+  "clock": "Q1 06:01",
+  "live_updated": "2026-11-19T21:09:29+01:00"
  },
  {
   "game_id": "g20261120robe",
