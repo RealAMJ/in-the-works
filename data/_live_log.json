@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:10:03+01:00",
+ "at": "2026-11-19T03:10:55+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "03:30",
+   "clock": "03:28",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:28",
+   "clock": "00:23",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Longwood Lancers",
-     79,
+     80,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:52",
+   "clock": "05:36",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Cincinnati Bearcats",
-     71,
+     73,
      16
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "20:00",
+   "clock": "19:36",
    "done": false,
    "teams": [
     [
