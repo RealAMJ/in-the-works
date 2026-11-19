@@ -2760,7 +2760,7 @@
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
   "clock": "Q4 01:01",
-  "live_updated": "2026-11-20T00:39:58+01:00"
+  "live_updated": "2026-11-20T00:40:22+01:00"
  },
  {
   "game_id": "g20261120robe",
@@ -2773,7 +2773,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401928826",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928826"
  },
  {
   "game_id": "g20261120main",
@@ -2786,7 +2788,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401923304",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401923304"
  },
  {
   "game_id": "g20261120stan",

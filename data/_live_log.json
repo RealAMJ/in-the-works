@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T00:39:58+01:00",
+ "at": "2026-11-20T00:40:23+01:00",
  "log": [
   {
    "game": "g20261119vir",
@@ -21,6 +21,52 @@
      "VIRTUS BOLOGNA",
      87,
      12
+    ]
+   ]
+  },
+  {
+   "game": "g20261120robe",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261120robe",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Toledo Rockets",
+     0,
+     0
+    ],
+    [
+     "Robert Morris Colonials",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261120main",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261120main",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Quinnipiac Bobcats",
+     0,
+     0
+    ],
+    [
+     "Maine Black Bears",
+     0,
+     0
     ]
    ]
   }
