@@ -7376,5 +7376,31 @@
   "pf": 2,
   "pm": 8,
   "eff": ""
+ },
+ {
+  "row_id": "pohto-2026-11-19",
+  "player": "Casper Pohto",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "team": "St. John's",
+  "opponent": "Siena",
+  "venue": "Home",
+  "result": "W 119-72",
+  "min": 2,
+  "pts": 0,
+  "reb": 0,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 0,
+  "pm": "",
+  "eff": ""
  }
 ]
