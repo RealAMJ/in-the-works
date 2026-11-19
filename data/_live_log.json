@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T21:13:17+01:00",
+ "at": "2026-11-19T21:14:08+01:00",
  "log": [
   {
    "game": "g20261119krba",
@@ -9,7 +9,7 @@
    "game": "g20261119krba",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "09:47",
+   "clock": "09:06",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261119vir",
    "src": "EuroLeague live",
    "period": 1,
-   "clock": "04:05",
+   "clock": "03:41",
    "done": false,
    "teams": [
     [
      "VALENCIA BASKET",
-     16,
+     18,
      12
     ],
     [
      "VIRTUS BOLOGNA",
-     11,
+     14,
      12
     ]
    ]
