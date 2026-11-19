@@ -76518,7 +76518,7 @@
   "fg": "6/15",
   "three": "1/4",
   "ft": "7/8",
-  "pm": 17,
+  "pm": 18,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76539,7 +76539,7 @@
   "fg": "6/13",
   "three": "1/4",
   "ft": "2/2",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76623,7 +76623,7 @@
   "fg": "0/7",
   "three": "0/5",
   "ft": "0/0",
-  "pm": 12,
+  "pm": 13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76635,7 +76635,7 @@
   "player": "Armoni Brooks",
   "pos": "",
   "min": 23,
-  "pts": 10,
+  "pts": 11,
   "reb": 4,
   "ast": 1,
   "stl": 0,
@@ -76643,8 +76643,8 @@
   "tov": 0,
   "fg": "2/14",
   "three": "1/7",
-  "ft": "5/5",
-  "pm": -6,
+  "ft": "6/6",
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76728,7 +76728,7 @@
   "fg": "4/9",
   "three": "2/3",
   "ft": "1/2",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76770,7 +76770,7 @@
   "fg": "4/10",
   "three": "3/7",
   "ft": "4/4",
-  "pm": -11,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76781,7 +76781,7 @@
   "team": "Virtus Bologna",
   "player": "Trent Frazier",
   "pos": "",
-  "min": 25,
+  "min": 26,
   "pts": 12,
   "reb": 1,
   "ast": 3,
@@ -76812,7 +76812,7 @@
   "fg": "4/6",
   "three": "3/5",
   "ft": "2/4",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76875,7 +76875,7 @@
   "fg": "3/7",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -17,
+  "pm": -18,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76938,7 +76938,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76970,7 +76970,7 @@
   "team": "Virtus Bologna",
   "player": "Bobi Klintman",
   "pos": "",
-  "min": 16,
+  "min": 15,
   "pts": 12,
   "reb": 8,
   "ast": 2,
@@ -76980,7 +76980,7 @@
   "fg": "4/7",
   "three": "2/3",
   "ft": "2/4",
-  "pm": 9,
+  "pm": 8,
   "swede": true,
   "state": "live",
   "source": "EuroLeague live"
