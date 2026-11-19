@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:39:54+01:00",
+ "at": "2026-11-19T02:40:48+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "08:21",
+   "clock": "08:00",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:58",
+   "clock": "09:36",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     57,
+     58,
      15
     ]
    ]
@@ -124,17 +124,17 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:02",
+   "clock": "03:45",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     30,
+     34,
      17
     ],
     [
      "Loyola Chicago Ramblers",
-     31,
+     33,
      16
     ]
    ]
