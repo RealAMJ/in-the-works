@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:31:50+01:00",
+ "at": "2026-11-19T01:32:42+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:51",
+   "clock": "05:11",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     31,
+     33,
      15
     ],
     [
@@ -100,19 +100,19 @@
   {
    "game": "g20261119youn",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:39",
    "done": false,
    "teams": [
     [
-     "Cincinnati Bearcats",
-     0,
-     0
-    ],
-    [
      "Youngstown State Penguins",
      0,
-     0
+     14
+    ],
+    [
+     "Cincinnati Bearcats",
+     0,
+     16
     ]
    ]
   }
