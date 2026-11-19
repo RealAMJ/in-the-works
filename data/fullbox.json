@@ -76161,9 +76161,9 @@
   "fg": "4/12",
   "three": "2/7",
   "ft": "3/3",
-  "pm": -5,
+  "pm": -6,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76182,9 +76182,9 @@
   "fg": "4/11",
   "three": "0/0",
   "ft": "5/6",
-  "pm": -7,
+  "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76205,7 +76205,7 @@
   "ft": "0/0",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76215,7 +76215,7 @@
   "player": "Jarrett Bryant",
   "pos": "",
   "min": 23,
-  "pts": 8,
+  "pts": 9,
   "reb": 5,
   "ast": 2,
   "stl": 0,
@@ -76223,10 +76223,10 @@
   "tov": 1,
   "fg": "3/7",
   "three": "0/1",
-  "ft": "2/4",
-  "pm": -9,
+  "ft": "3/6",
+  "pm": -10,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76247,7 +76247,7 @@
   "ft": "2/4",
   "pm": 2,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76256,7 +76256,7 @@
   "team": "ÍR",
   "player": "Tómas Orri Hjálmarsson",
   "pos": "",
-  "min": 34,
+  "min": 35,
   "pts": 20,
   "reb": 11,
   "ast": 2,
@@ -76266,9 +76266,9 @@
   "fg": "6/14",
   "three": "3/7",
   "ft": "5/6",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76289,7 +76289,7 @@
   "ft": "0/0",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76298,7 +76298,7 @@
   "team": "ÍR",
   "player": "Ólafur Björn Gunnlaugsson",
   "pos": "",
-  "min": 31,
+  "min": 32,
   "pts": 6,
   "reb": 5,
   "ast": 3,
@@ -76308,9 +76308,9 @@
   "fg": "3/11",
   "three": "0/5",
   "ft": "0/0",
-  "pm": -14,
+  "pm": -15,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76331,7 +76331,7 @@
   "ft": "0/0",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76341,18 +76341,18 @@
   "player": "Adam Ramstedt",
   "pos": "",
   "min": 30,
-  "pts": 8,
+  "pts": 10,
   "reb": 5,
   "ast": 3,
   "stl": 0,
   "blk": 1,
   "tov": 1,
-  "fg": "4/7",
+  "fg": "5/8",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 14,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76361,7 +76361,7 @@
   "team": "KR Basket",
   "player": "Roberts Berzins",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 18,
   "reb": 1,
   "ast": 2,
@@ -76371,9 +76371,9 @@
   "fg": "6/20",
   "three": "3/10",
   "ft": "3/4",
-  "pm": 15,
+  "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76384,7 +76384,7 @@
   "pos": "",
   "min": 29,
   "pts": 10,
-  "reb": 7,
+  "reb": 8,
   "ast": 8,
   "stl": 2,
   "blk": 1,
@@ -76392,9 +76392,9 @@
   "fg": "3/7",
   "three": "2/3",
   "ft": "2/3",
-  "pm": 13,
+  "pm": 14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76415,7 +76415,7 @@
   "ft": "0/0",
   "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76436,7 +76436,7 @@
   "ft": "5/6",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76455,9 +76455,9 @@
   "fg": "8/14",
   "three": "1/2",
   "ft": "0/2",
-  "pm": 21,
+  "pm": 22,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76478,7 +76478,7 @@
   "ft": "1/2",
   "pm": -4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76487,19 +76487,19 @@
   "team": "KR Basket",
   "player": "Þorvaldur Orri Árnason",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 14,
   "reb": 5,
-  "ast": 3,
+  "ast": 4,
   "stl": 0,
   "blk": 0,
   "tov": 1,
   "fg": "5/13",
   "three": "1/2",
   "ft": "3/3",
-  "pm": -2,
+  "pm": -1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -76620,8 +76620,8 @@
   "stl": 1,
   "blk": 1,
   "tov": 0,
-  "fg": "0/3",
-  "three": "0/2",
+  "fg": "0/4",
+  "three": "0/3",
   "ft": "0/0",
   "pm": 11,
   "swede": false,
