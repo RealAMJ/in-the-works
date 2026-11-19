@@ -76539,7 +76539,7 @@
   "fg": "6/13",
   "three": "1/4",
   "ft": "2/2",
-  "pm": 8,
+  "pm": 10,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76602,7 +76602,7 @@
   "fg": "1/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -14,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76623,7 +76623,7 @@
   "fg": "0/7",
   "three": "0/5",
   "ft": "0/0",
-  "pm": 13,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76644,7 +76644,7 @@
   "fg": "2/14",
   "three": "1/7",
   "ft": "7/7",
-  "pm": -4,
+  "pm": -2,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76728,7 +76728,7 @@
   "fg": "4/9",
   "three": "2/3",
   "ft": "1/2",
-  "pm": 5,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76770,7 +76770,7 @@
   "fg": "4/10",
   "three": "3/7",
   "ft": "4/4",
-  "pm": -11,
+  "pm": -13,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76782,13 +76782,13 @@
   "player": "Trent Frazier",
   "pos": "",
   "min": 25,
-  "pts": 12,
+  "pts": 10,
   "reb": 1,
   "ast": 3,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "4/9",
+  "fg": "3/8",
   "three": "3/6",
   "ft": "1/2",
   "pm": -4,
@@ -76812,7 +76812,7 @@
   "fg": "4/7",
   "three": "3/6",
   "ft": "2/4",
-  "pm": 5,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76875,7 +76875,7 @@
   "fg": "3/7",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -17,
+  "pm": -19,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76938,7 +76938,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76980,7 +76980,7 @@
   "fg": "4/7",
   "three": "2/3",
   "ft": "2/4",
-  "pm": 7,
+  "pm": 5,
   "swede": true,
   "state": "live",
   "source": "EuroLeague live"
