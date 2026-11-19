@@ -2740,8 +2740,8 @@
   "status": "live",
   "score": "W 68-68",
   "live_feed": "fiba:2856151",
-  "clock": "Q3 00:03",
-  "live_updated": "2026-11-19T21:33:32+01:00"
+  "clock": "End of Q3",
+  "live_updated": "2026-11-19T21:34:24+01:00"
  },
  {
   "game_id": "g20261119vir",
@@ -2758,8 +2758,8 @@
   "watch_url": "https://euroleague.tv/home",
   "watch_label": "EuroLeague TV",
   "live_feed": "euroleague:E2026:125",
-  "clock": "Q2 07:22",
-  "live_updated": "2026-11-19T21:33:33+01:00"
+  "clock": "Q2 06:50",
+  "live_updated": "2026-11-19T21:34:25+01:00"
  },
  {
   "game_id": "g20261120robe",
