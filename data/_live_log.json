@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:20:49+01:00",
+ "at": "2026-11-19T03:21:39+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -55,17 +55,17 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:22",
+   "clock": "03:02",
    "done": false,
    "teams": [
     [
      "Youngstown State Penguins",
-     47,
+     49,
      14
     ],
     [
      "Cincinnati Bearcats",
-     79,
+     80,
      16
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:49",
+   "clock": "15:13",
    "done": false,
    "teams": [
     [
