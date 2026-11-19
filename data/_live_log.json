@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:19:59+01:00",
+ "at": "2026-11-19T02:20:49+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "03:02",
+   "clock": "02:59",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     66,
+     67,
      15
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:58",
+   "clock": "16:43",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     44,
+     47,
      16
     ],
     [
      "St. John's Red Storm",
-     67,
+     70,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:28",
+   "clock": "16:07",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:37",
+   "clock": "16:15",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     58,
+     60,
      15
     ],
     [
      "Long Island University Sharks",
-     53,
+     55,
      14
     ]
    ]
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:23",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -124,7 +124,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:31",
+   "clock": "12:55",
    "done": false,
    "teams": [
     [

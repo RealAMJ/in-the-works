@@ -2630,11 +2630,11 @@
   "competition": "NBA",
   "note": "",
   "status": "live",
-  "score": "W 66-42",
+  "score": "W 67-42",
   "espn_id": "401910009",
   "box_url": "https://www.espn.com/nba/game/_/gameId/401910009",
-  "clock": "Q2 03:02",
-  "live_updated": "2026-11-19T02:19:58+01:00"
+  "clock": "Q2 02:59",
+  "live_updated": "2026-11-19T02:20:48+01:00"
  },
  {
   "game_id": "g20261119stjo",
@@ -2647,11 +2647,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 67-44",
+  "score": "W 70-47",
   "espn_id": "401920682",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920682",
-  "clock": "Q2 16:58",
-  "live_updated": "2026-11-19T02:19:58+01:00"
+  "clock": "Q2 16:43",
+  "live_updated": "2026-11-19T02:20:48+01:00"
  },
  {
   "game_id": "g20261119vmi",
@@ -2667,8 +2667,8 @@
   "score": "W 46-43",
   "espn_id": "401922047",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922047",
-  "clock": "Q2 16:28",
-  "live_updated": "2026-11-19T02:19:58+01:00"
+  "clock": "Q2 16:07",
+  "live_updated": "2026-11-19T02:20:49+01:00"
  },
  {
   "game_id": "g20261119uncw",
@@ -2681,11 +2681,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 58-53",
+  "score": "W 60-55",
   "espn_id": "401919808",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919808",
-  "clock": "Q2 16:37",
-  "live_updated": "2026-11-19T02:19:59+01:00"
+  "clock": "Q2 16:15",
+  "live_updated": "2026-11-19T02:20:49+01:00"
  },
  {
   "game_id": "g20261119youn",
@@ -2701,8 +2701,8 @@
   "score": "L 24-42",
   "espn_id": "401920751",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920751",
-  "clock": "Q1 00:23",
-  "live_updated": "2026-11-19T02:19:59+01:00"
+  "clock": "End of Q1",
+  "live_updated": "2026-11-19T02:20:49+01:00"
  },
  {
   "game_id": "g20261119wich",
@@ -2718,8 +2718,8 @@
   "score": "L 16-17",
   "espn_id": "401911232",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911232",
-  "clock": "Q1 13:31",
-  "live_updated": "2026-11-19T02:19:59+01:00"
+  "clock": "Q1 12:55",
+  "live_updated": "2026-11-19T02:20:49+01:00"
  },
  {
   "game_id": "g20261119krba",
