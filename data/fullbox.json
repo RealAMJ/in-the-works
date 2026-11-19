@@ -76509,7 +76509,7 @@
   "player": "Tj Shorts",
   "pos": "",
   "min": 1,
-  "pts": 1,
+  "pts": 2,
   "reb": 0,
   "ast": 0,
   "stl": 0,
@@ -76517,8 +76517,8 @@
   "tov": 0,
   "fg": "0/1",
   "three": "0/0",
-  "ft": "1/1",
-  "pm": 3,
+  "ft": "2/2",
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76539,7 +76539,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76560,7 +76560,7 @@
   "fg": "1/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76581,7 +76581,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76602,7 +76602,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76623,7 +76623,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76644,7 +76644,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76665,7 +76665,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76683,10 +76683,10 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/0",
+  "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
@@ -76707,7 +76707,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -3,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "EuroLeague live"
