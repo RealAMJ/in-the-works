@@ -2648,8 +2648,8 @@
   "score": "W 4-2",
   "espn_id": "401920682",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920682",
-  "clock": "Q1 17:53",
-  "live_updated": "2026-11-19T01:05:41+01:00"
+  "clock": "Q1 17:35",
+  "live_updated": "2026-11-19T01:06:35+01:00"
  },
  {
   "game_id": "g20261119vmi",
@@ -2662,11 +2662,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "L 0-5",
+  "score": "L 0-7",
   "espn_id": "401922047",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922047",
-  "clock": "Q1 18:21",
-  "live_updated": "2026-11-19T01:05:41+01:00"
+  "clock": "Q1 17:57",
+  "live_updated": "2026-11-19T01:06:35+01:00"
  },
  {
   "game_id": "g20261119uncw",
@@ -2678,10 +2678,12 @@
   "venue": "Away",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 2-0",
   "espn_id": "401919808",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919808"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919808",
+  "clock": "Q1 19:43",
+  "live_updated": "2026-11-19T01:06:35+01:00"
  },
  {
   "game_id": "g20261119youn",
