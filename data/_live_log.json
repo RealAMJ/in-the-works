@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:40:48+01:00",
+ "at": "2026-11-19T02:41:41+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -60,7 +60,7 @@
    "teams": [
     [
      "VMI Keydets",
-     54,
+     56,
      17
     ],
     [
@@ -124,12 +124,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:45",
+   "clock": "03:25",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     34,
+     36,
      17
     ],
     [
