@@ -7726,5 +7726,33 @@
   "note": "",
   "leaders": "Davis|26|3|6;Howard|25|8|3;Jones|20|1|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "miami-heat-2026-11-19",
+  "team": "Miami Heat",
+  "date": "2026-11-19",
+  "competition": "NBA",
+  "opponent": "Milwaukee Bucks",
+  "venue": "Home",
+  "score": "137-130",
+  "result": "W",
+  "top": "Antetokounmpo 27 pts, 13 reb",
+  "note": "",
+  "leaders": "Antetokounmpo|27|13|9;Adebayo|26|4|2;Mitchell|24|2|6",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "milwaukee-bucks-2026-11-19",
+  "team": "Milwaukee Bucks",
+  "date": "2026-11-19",
+  "competition": "NBA",
+  "opponent": "Miami Heat",
+  "venue": "Away",
+  "score": "130-137",
+  "result": "L",
+  "top": "Kuzma 26 pts, 5 reb",
+  "note": "",
+  "leaders": "Kuzma|26|5|1;Burries|20|7|1;Jakucionis|20|3|5",
+  "source": "ESPN"
  }
 ]
