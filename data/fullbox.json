@@ -76501,5 +76501,26 @@
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "g20261119vir-1-1",
+  "game_id": "g20261119vir",
+  "team": "Virtus Bologna",
+  "player": "Trent Frazier",
+  "pos": "",
+  "min": "",
+  "pts": 0,
+  "reb": 1,
+  "ast": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "fg": "0/0",
+  "three": "0/0",
+  "ft": "0/0",
+  "pm": 0,
+  "swede": false,
+  "state": "live",
+  "source": "EuroLeague live"
  }
 ]
