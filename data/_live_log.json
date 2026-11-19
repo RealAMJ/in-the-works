@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:14:33+01:00",
+ "at": "2026-11-19T01:15:23+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,17 +32,17 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:00",
+   "clock": "14:23",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     2,
+     5,
      16
     ],
     [
      "St. John's Red Storm",
-     16,
+     18,
      16
     ]
    ]
