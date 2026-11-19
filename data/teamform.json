@@ -7670,5 +7670,33 @@
   "note": "",
   "leaders": "Benard|26|4|0;Williams|16|7|4;Musungay|15|3|1;Robinson|15|4|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "youngstown-state-2026-11-19",
+  "team": "Youngstown State",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "Cincinnati",
+  "venue": "Away",
+  "score": "54-91",
+  "result": "L",
+  "top": "Haynes 13 pts, 6 reb",
+  "note": "",
+  "leaders": "Haynes|13|6|1;Tyler|8|0|1;Livingston|7|3|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "cincinnati-2026-11-19",
+  "team": "Cincinnati",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "Youngstown State",
+  "venue": "Home",
+  "score": "91-54",
+  "result": "W",
+  "top": "Tejada 21 pts, 5 reb",
+  "note": "",
+  "leaders": "Tejada|21|5|3;Riley|15|3|5;Collins|14|2|1",
+  "source": "ESPN"
  }
 ]
