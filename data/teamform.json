@@ -7642,5 +7642,33 @@
   "note": "",
   "leaders": "Ibukunoluwa|16|3|1;Edmond|14|7|0;Egbiremolen|12|8|2",
   "source": "ESPN"
+ },
+ {
+  "row_id": "vmi-2026-11-19",
+  "team": "VMI",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "Longwood",
+  "venue": "Away",
+  "score": "76-82",
+  "result": "L",
+  "top": "Bradley 18 pts, 7 reb",
+  "note": "",
+  "leaders": "Bradley|18|7|7;Johnson|16|1|1;Zilys|12|0|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "longwood-2026-11-19",
+  "team": "Longwood",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "opponent": "VMI",
+  "venue": "Home",
+  "score": "82-76",
+  "result": "W",
+  "top": "Benard 26 pts, 4 reb",
+  "note": "",
+  "leaders": "Benard|26|4|0;Williams|16|7|4;Musungay|15|3|1;Robinson|15|4|2",
+  "source": "ESPN"
  }
 ]

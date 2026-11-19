@@ -7402,5 +7402,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "vaamonde-2026-11-19",
+  "player": "Zion Vaamonde",
+  "date": "2026-11-19",
+  "competition": "NCAA",
+  "team": "VMI",
+  "opponent": "Longwood",
+  "venue": "Away",
+  "result": "L 76-82",
+  "min": 6,
+  "pts": 0,
+  "reb": 0,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "0/2",
+  "three": "0/2",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 0,
+  "stl": 0,
+  "blk": 0,
+  "tov": 0,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
