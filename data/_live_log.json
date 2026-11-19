@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:25:29+01:00",
+ "at": "2026-11-19T02:26:20+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:26",
+   "clock": "00:59",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:11",
+   "clock": "14:37",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     76,
+     78,
      16
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:43",
+   "clock": "14:58",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     47,
+     49,
      17
     ],
     [
@@ -78,12 +78,12 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:39",
+   "clock": "14:05",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     61,
+     64,
      15
     ],
     [
@@ -124,7 +124,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:41",
+   "clock": "11:15",
    "done": false,
    "teams": [
     [
