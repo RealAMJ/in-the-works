@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:26:13+01:00",
+ "at": "2026-11-19T01:27:04+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:25",
+   "clock": "09:40",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "St. John's Red Storm",
-     27,
+     29,
      16
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:16",
+   "clock": "09:48",
    "done": false,
    "teams": [
     [
@@ -78,17 +78,17 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:40",
+   "clock": "09:20",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     28,
+     31,
      15
     ],
     [
      "Long Island University Sharks",
-     19,
+     22,
      14
     ]
    ]
