@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T03:27:55+01:00",
+ "at": "2026-11-19T03:28:45+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 4,
-   "clock": "08:51",
+   "clock": "08:20",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     121,
+     124,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 4,
-   "clock": "04:56",
+   "clock": "04:39",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Long Island University Sharks",
-     105,
+     107,
      14
     ]
    ]
@@ -54,9 +54,9 @@
   {
    "game": "g20261119youn",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:08",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Youngstown State Penguins",
@@ -78,7 +78,7 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:21",
+   "clock": "11:53",
    "done": false,
    "teams": [
     [
