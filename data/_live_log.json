@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T01:10:41+01:00",
+ "at": "2026-11-19T01:11:31+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:42",
+   "clock": "15:43",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:13",
+   "clock": "15:36",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     7,
+     9,
      17
     ],
     [
      "Longwood Lancers",
-     10,
+     13,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 1,
-   "clock": "18:02",
+   "clock": "17:24",
    "done": false,
    "teams": [
     [
