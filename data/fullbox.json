@@ -76182,7 +76182,7 @@
   "fg": "3/8",
   "three": "0/0",
   "ft": "5/6",
-  "pm": 1,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76203,7 +76203,7 @@
   "fg": "0/2",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76266,7 +76266,7 @@
   "fg": "4/7",
   "three": "3/5",
   "ft": "5/6",
-  "pm": 2,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76287,7 +76287,7 @@
   "fg": "0/5",
   "three": "0/2",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76308,7 +76308,7 @@
   "fg": "3/7",
   "three": "0/3",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76350,7 +76350,7 @@
   "fg": "3/6",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 7,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76371,7 +76371,7 @@
   "fg": "6/15",
   "three": "3/6",
   "ft": "3/4",
-  "pm": 7,
+  "pm": 9,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76383,7 +76383,7 @@
   "player": "Þórir Guðmundur Þorbjarnarson",
   "pos": "",
   "min": 24,
-  "pts": 8,
+  "pts": 10,
   "reb": 6,
   "ast": 8,
   "stl": 2,
@@ -76391,8 +76391,8 @@
   "tov": 2,
   "fg": "3/5",
   "three": "2/2",
-  "ft": "0/1",
-  "pm": 9,
+  "ft": "2/3",
+  "pm": 11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76434,7 +76434,7 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "1/2",
-  "pm": 0,
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76455,7 +76455,7 @@
   "fg": "7/11",
   "three": "0/0",
   "ft": "0/2",
-  "pm": 13,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -76830,7 +76830,7 @@
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "1/7",
+  "fg": "1/6",
   "three": "0/3",
   "ft": "0/0",
   "pm": -5,
@@ -76872,7 +76872,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "2/2",
+  "fg": "2/3",
   "three": "1/1",
   "ft": "0/0",
   "pm": -4,
