@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:45:40+01:00",
+ "at": "2026-11-19T02:46:31+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 3,
-   "clock": "12:00",
+   "clock": "11:15",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:25",
+   "clock": "05:39",
    "done": false,
    "teams": [
     [
      "Siena Saints",
-     60,
+     62,
      16
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:42",
+   "clock": "07:24",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     62,
+     65,
      15
     ]
    ]
@@ -78,12 +78,12 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:09",
+   "clock": "05:44",
    "done": false,
    "teams": [
     [
      "UNC Wilmington Seahawks",
-     81,
+     82,
      15
     ],
     [
@@ -101,7 +101,7 @@
    "game": "g20261119youn",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:36",
+   "clock": "14:07",
    "done": false,
    "teams": [
     [
@@ -124,12 +124,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:03",
+   "clock": "01:20",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     39,
+     41,
      17
     ],
     [
