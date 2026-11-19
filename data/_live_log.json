@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:41:41+01:00",
+ "at": "2026-11-19T02:42:34+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -55,17 +55,17 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "09:36",
+   "clock": "09:12",
    "done": false,
    "teams": [
     [
      "VMI Keydets",
-     56,
+     57,
      17
     ],
     [
      "Longwood Lancers",
-     58,
+     60,
      15
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:35",
+   "clock": "06:47",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Long Island University Sharks",
-     71,
+     74,
      14
     ]
    ]
@@ -124,12 +124,12 @@
    "game": "g20261119wich",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:25",
+   "clock": "02:26",
    "done": false,
    "teams": [
     [
      "Wichita State Shockers",
-     36,
+     39,
      17
     ],
     [
