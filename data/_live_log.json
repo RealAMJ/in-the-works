@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:23:46+01:00",
+ "at": "2026-11-19T02:24:37+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -9,7 +9,7 @@
    "game": "g20261119miam",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:49",
+   "clock": "01:26",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Miami Heat",
-     70,
+     71,
      15
     ]
    ]
@@ -60,7 +60,7 @@
    "teams": [
     [
      "VMI Keydets",
-     46,
+     47,
      17
     ],
     [
@@ -78,7 +78,7 @@
    "game": "g20261119uncw",
    "src": "ESPN",
    "period": 2,
-   "clock": "15:54",
+   "clock": "15:22",
    "done": false,
    "teams": [
     [
