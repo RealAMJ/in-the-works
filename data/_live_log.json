@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T02:55:09+01:00",
+ "at": "2026-11-19T02:55:39+01:00",
  "log": [
   {
    "game": "g20261119miam",
@@ -32,7 +32,7 @@
    "game": "g20261119stjo",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:10",
+   "clock": "00:19",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261119vmi",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:30",
+   "clock": "04:29",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Longwood Lancers",
-     71,
+     72,
      15
     ]
    ]
