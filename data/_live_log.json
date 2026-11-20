@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T02:48:23+01:00",
+ "at": "2026-11-20T02:49:14+01:00",
  "log": [
   {
    "game": "g20261120robe",
@@ -9,7 +9,7 @@
    "game": "g20261120robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:55",
+   "clock": "00:53",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:52",
+   "clock": "01:33",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Quinnipiac Bobcats",
-     52,
+     53,
      15
     ]
    ]
