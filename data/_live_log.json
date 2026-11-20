@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T02:38:39+01:00",
+ "at": "2026-11-20T02:39:30+01:00",
  "log": [
   {
    "game": "g20261120robe",
@@ -9,12 +9,12 @@
    "game": "g20261120robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:05",
+   "clock": "03:22",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     56,
+     58,
      15
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "04:58",
+   "clock": "04:27",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     56,
+     58,
      15
     ],
     [
