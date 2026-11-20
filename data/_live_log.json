@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T19:59:49+01:00",
+ "at": "2026-11-20T20:00:51+01:00",
  "log": [
   {
    "game": "g20261120bask",
@@ -9,7 +9,7 @@
    "game": "g20261120bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "01:53",
+   "clock": "00:57",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "FC Bayern Basketball II",
-     53,
+     55,
      9
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "c20261120bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "01:53",
+   "clock": "00:38",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     75,
+     77,
      10
     ],
     [
      "FC Bayern Basketball II",
-     53,
+     55,
      9
     ]
    ]
