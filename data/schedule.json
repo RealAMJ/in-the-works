@@ -2830,7 +2830,9 @@
   "status": "final",
   "score": "W 104-75",
   "live_feed": "prob:2006196",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261120cult",
@@ -2843,10 +2845,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 25-34",
+  "score": "L 29-34",
   "live_feed": "prob:2006199",
-  "clock": "Q2 06:24",
-  "live_updated": "2026-11-20T20:38:58+01:00"
+  "clock": "Q2 04:40",
+  "live_updated": "2026-11-20T20:39:26+01:00"
  },
  {
   "game_id": "g20261120idah",

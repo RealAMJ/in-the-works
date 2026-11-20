@@ -7922,5 +7922,33 @@
   "note": "",
   "leaders": "Hughes|20|3|1;Ciani|14|8|0;Madi|11|2|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "basketball-lowen-erfurt-2026-11-20",
+  "team": "Basketball Löwen Erfurt",
+  "date": "2026-11-20",
+  "competition": "ProB (Germany)",
+  "opponent": "FC Bayern Basketball II",
+  "venue": "Home",
+  "score": "104-75",
+  "result": "W",
+  "top": "Watkins 25 pts, 1 reb",
+  "note": "",
+  "leaders": "Watkins|25|1|3;Amin|20|2|3;Förster|10|3|1;Hadi|10|2|2;Nellessen|10|3|0",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "fc-bayern-basketball-ii-2026-11-20",
+  "team": "FC Bayern Basketball II",
+  "date": "2026-11-20",
+  "competition": "ProB (Germany)",
+  "opponent": "Basketball Löwen Erfurt",
+  "venue": "Away",
+  "score": "75-104",
+  "result": "L",
+  "top": "Jerkic 16 pts, 3 reb",
+  "note": "",
+  "leaders": "Jerkic|16|3|5;Nurkic|15|2|2;Pecanac|10|1|0",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]

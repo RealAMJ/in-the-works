@@ -7610,5 +7610,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "hadi-2026-11-20",
+  "player": "Jacob Hadi",
+  "date": "2026-11-20",
+  "competition": "ProB (Germany)",
+  "team": "Basketball Löwen Erfurt",
+  "opponent": "FC Bayern Basketball II",
+  "venue": "Home",
+  "result": "W 104-75",
+  "min": 22,
+  "pts": 10,
+  "reb": 2,
+  "ast": 2,
+  "source": "2. Basketball-Bundesliga live ticker",
+  "fg": "2/7",
+  "three": "2/5",
+  "ft": "4/6",
+  "oreb": 0,
+  "dreb": 2,
+  "stl": 5,
+  "blk": 0,
+  "tov": 2,
+  "pf": 2,
+  "pm": "",
+  "eff": ""
  }
 ]
