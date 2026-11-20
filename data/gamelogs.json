@@ -7558,5 +7558,31 @@
   "pf": 3,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "adsten-2026-11-20",
+  "player": "Villiam Garcia Adsten",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "team": "Maine",
+  "opponent": "Quinnipiac",
+  "venue": "Away",
+  "result": "W 69-67",
+  "min": 22,
+  "pts": 4,
+  "reb": 6,
+  "ast": 0,
+  "source": "ESPN",
+  "fg": "2/3",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 0,
+  "dreb": 6,
+  "stl": 1,
+  "blk": 0,
+  "tov": 1,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]

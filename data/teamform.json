@@ -7866,5 +7866,33 @@
   "note": "",
   "leaders": "Strong|20|2|2;Montas|17|3|3;Ouwinga|15|7|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "maine-2026-11-20",
+  "team": "Maine",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "Quinnipiac",
+  "venue": "Away",
+  "score": "69-67",
+  "result": "W",
+  "top": "Franz 22 pts, 2 reb",
+  "note": "",
+  "leaders": "Franz|22|2|3;Lopes|10|2|3;Williams|8|3|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "quinnipiac-2026-11-20",
+  "team": "Quinnipiac",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "Maine",
+  "venue": "Home",
+  "score": "67-69",
+  "result": "L",
+  "top": "McKnight 18 pts, 8 reb",
+  "note": "",
+  "leaders": "McKnight|18|8|3;Sekasi|17|6|4;Hart|11|17|1",
+  "source": "ESPN"
  }
 ]
