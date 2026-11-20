@@ -1551,5 +1551,20 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261120stan",
+  "date": "2026-11-20",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Sacramento State Hornets vs. Stanford Cardinal: Game Highlights",
+    "secs": 84,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/0eccb003-4cdf-48a6-9552-128c76a76def/0eccb003-4cdf-48a6-9552-128c76a76def.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50538297/game-highlights",
+    "full": true,
+    "swedes": []
+   }
+  ]
  }
 ]
