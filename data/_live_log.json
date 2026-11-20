@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T21:46:13+01:00",
+ "at": "2026-11-20T21:47:10+01:00",
  "log": [
   {
    "game": "g20261120cult",
@@ -9,7 +9,7 @@
    "game": "g20261120cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "02:09",
+   "clock": "01:43",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Ahorn Camp Baskets",
-     75,
+     77,
      11
     ]
    ]
