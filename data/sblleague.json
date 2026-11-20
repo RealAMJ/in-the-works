@@ -773,11 +773,13 @@
   "time": "19:04",
   "home": "Jämtland Basket",
   "away": "Norrköping Dolphins",
-  "hs": null,
-  "as_": null,
-  "status": "upcoming",
+  "hs": 4,
+  "as_": 2,
+  "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851801/summary",
-  "box": false
+  "box": false,
+  "clock": "09:08",
+  "period": 1
  },
  {
   "game_id": "sbl-2851800",
