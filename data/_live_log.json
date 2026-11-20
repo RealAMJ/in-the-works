@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T02:03:18+01:00",
+ "at": "2026-11-20T02:04:10+01:00",
  "log": [
   {
    "game": "g20261120robe",
@@ -19,7 +19,7 @@
     ],
     [
      "Toledo Rockets",
-     40,
+     42,
      13
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:03",
+   "clock": "15:06",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     40,
+     42,
      15
     ],
     [
      "Quinnipiac Bobcats",
-     26,
+     29,
      15
     ]
    ]
