@@ -7950,5 +7950,33 @@
   "note": "",
   "leaders": "Jerkic|16|3|5;Nurkic|15|2|2;Pecanac|10|1|0",
   "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "culture-city-weimar-2026-11-20",
+  "team": "Culture City Weimar",
+  "date": "2026-11-20",
+  "competition": "ProB (Germany)",
+  "opponent": "Ahorn Camp Baskets",
+  "venue": "Home",
+  "score": "75-80",
+  "result": "L",
+  "top": "Beier-Christiansen 25 pts, 14 reb",
+  "note": "",
+  "leaders": "Beier-Christiansen|25|14|1;Biel|13|3|4;Sabaliauskas|11|2|1",
+  "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "ahorn-camp-baskets-2026-11-20",
+  "team": "Ahorn Camp Baskets",
+  "date": "2026-11-20",
+  "competition": "ProB (Germany)",
+  "opponent": "Culture City Weimar",
+  "venue": "Away",
+  "score": "80-75",
+  "result": "W",
+  "top": "Woodmore 15 pts, 2 reb",
+  "note": "",
+  "leaders": "Woodmore|15|2|5;Aichele|15|5|0;Ade-Eri|11|4|0",
+  "source": "2. Basketball-Bundesliga live ticker"
  }
 ]

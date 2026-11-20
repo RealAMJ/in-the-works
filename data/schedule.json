@@ -2847,7 +2847,9 @@
   "status": "final",
   "score": "L 75-80",
   "live_feed": "prob:2006199",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261120idah",
@@ -2859,10 +2861,12 @@
   "venue": "Home",
   "competition": "NCAA",
   "note": "",
-  "status": "upcoming",
-  "score": "",
+  "status": "live",
+  "score": "W 8-4",
   "espn_id": "401922022",
-  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922022"
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922022",
+  "clock": "Q1 18:13",
+  "live_updated": "2026-11-20T22:06:20+01:00"
  },
  {
   "game_id": "g20261121dela",
