@@ -77423,7 +77423,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77444,7 +77444,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77465,7 +77465,7 @@
   "ft": "4/10",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77486,7 +77486,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77507,7 +77507,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77528,11 +77528,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-0-10",
+  "row_id": "g20261120main-0-6",
   "game_id": "g20261120main",
   "team": "Maine",
   "player": "Yanis Bamba",
@@ -77549,11 +77549,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-0-11",
+  "row_id": "g20261120main-0-7",
   "game_id": "g20261120main",
   "team": "Maine",
   "player": "Ayden Evans",
@@ -77570,11 +77570,11 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-0-13",
+  "row_id": "g20261120main-0-8",
   "game_id": "g20261120main",
   "team": "Maine",
   "player": "Caleb Crawford",
@@ -77591,11 +77591,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-0-14",
+  "row_id": "g20261120main-0-9",
   "game_id": "g20261120main",
   "team": "Maine",
   "player": "DeAndre Williams",
@@ -77612,7 +77612,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77633,7 +77633,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77654,7 +77654,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77675,7 +77675,7 @@
   "ft": "6/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77696,7 +77696,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77717,7 +77717,7 @@
   "ft": "5/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -77738,11 +77738,11 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-1-10",
+  "row_id": "g20261120main-1-6",
   "game_id": "g20261120main",
   "team": "Quinnipiac",
   "player": "Braylan Ritvo",
@@ -77759,11 +77759,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-1-12",
+  "row_id": "g20261120main-1-7",
   "game_id": "g20261120main",
   "team": "Quinnipiac",
   "player": "Tai Turnage",
@@ -77780,11 +77780,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261120main-1-14",
+  "row_id": "g20261120main-1-8",
   "game_id": "g20261120main",
   "team": "Quinnipiac",
   "player": "Mike Parrotta",
@@ -77801,7 +77801,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]
