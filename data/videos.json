@@ -1513,5 +1513,20 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261120robe",
+  "date": "2026-11-20",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "Austin Parks gets the and-1 to fall",
+    "secs": 19,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/359269de-c163-46ab-8109-215a07fc8efe/359269de-c163-46ab-8109-215a07fc8efe.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50535624/austin-parks-gets-1-fall",
+    "full": false,
+    "swedes": []
+   }
+  ]
  }
 ]
