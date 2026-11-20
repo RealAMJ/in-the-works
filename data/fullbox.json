@@ -78242,7 +78242,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78263,7 +78263,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78284,7 +78284,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78305,7 +78305,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78326,7 +78326,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78347,7 +78347,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78368,7 +78368,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78389,7 +78389,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78410,7 +78410,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78431,7 +78431,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78452,7 +78452,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78473,7 +78473,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78494,7 +78494,7 @@
   "ft": "8/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78515,7 +78515,7 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78536,7 +78536,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78557,7 +78557,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78578,7 +78578,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78599,7 +78599,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78620,7 +78620,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -78692,7 +78692,7 @@
   "team": "Culture City Weimar",
   "player": "Carlo Meyer",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 0,
   "reb": 1,
   "ast": 0,
@@ -78755,14 +78755,14 @@
   "team": "Culture City Weimar",
   "player": "Maxim Bader",
   "pos": "",
-  "min": 6,
+  "min": 7,
   "pts": 0,
   "reb": 0,
   "ast": 5,
   "stl": 1,
   "blk": 0,
   "tov": 2,
-  "fg": "0/1",
+  "fg": "0/2",
   "three": "0/0",
   "ft": "0/0",
   "pm": "",
@@ -78776,7 +78776,7 @@
   "team": "Culture City Weimar",
   "player": "Johann Grau",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 0,
   "reb": 2,
   "ast": 0,
@@ -78797,14 +78797,14 @@
   "team": "Culture City Weimar",
   "player": "Peter Beier-Christiansen",
   "pos": "",
-  "min": 7,
+  "min": 8,
   "pts": 8,
-  "reb": 1,
+  "reb": 2,
   "ast": 1,
   "stl": 1,
   "blk": 0,
   "tov": 1,
-  "fg": "3/4",
+  "fg": "3/5",
   "three": "0/0",
   "ft": "2/3",
   "pm": "",
@@ -78839,7 +78839,7 @@
   "team": "Culture City Weimar",
   "player": "Daniel Biel",
   "pos": "",
-  "min": 9,
+  "min": 10,
   "pts": 6,
   "reb": 1,
   "ast": 1,
@@ -78903,7 +78903,7 @@
   "player": "Lukas Roth",
   "pos": "",
   "min": 5,
-  "pts": 0,
+  "pts": 1,
   "reb": 1,
   "ast": 0,
   "stl": 0,
@@ -78911,7 +78911,7 @@
   "tov": 0,
   "fg": "0/1",
   "three": "0/0",
-  "ft": "0/0",
+  "ft": "1/1",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -78923,7 +78923,7 @@
   "team": "Ahorn Camp Baskets",
   "player": "Austin Fadal",
   "pos": "",
-  "min": 5,
+  "min": 6,
   "pts": 3,
   "reb": 1,
   "ast": 2,
@@ -78988,7 +78988,7 @@
   "pos": "",
   "min": 9,
   "pts": 6,
-  "reb": 0,
+  "reb": 1,
   "ast": 0,
   "stl": 0,
   "blk": 0,
@@ -79082,7 +79082,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79103,7 +79103,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79124,7 +79124,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79145,7 +79145,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79166,7 +79166,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79187,7 +79187,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79208,7 +79208,7 @@
   "ft": "4/6",
   "pm": "",
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79229,7 +79229,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79250,7 +79250,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79271,7 +79271,7 @@
   "ft": "2/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79292,7 +79292,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79313,7 +79313,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79334,7 +79334,7 @@
   "ft": "8/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79355,7 +79355,7 @@
   "ft": "1/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79376,7 +79376,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79397,7 +79397,7 @@
   "ft": "3/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79418,7 +79418,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79439,7 +79439,7 @@
   "ft": "0/1",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  },
  {
@@ -79460,7 +79460,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "2. Basketball-Bundesliga live ticker"
  }
 ]
