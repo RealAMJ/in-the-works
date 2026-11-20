@@ -1,33 +1,5 @@
 [
  {
-  "game_id": "sbl-2851801",
-  "date": "2026-11-20",
-  "time": "19:04",
-  "team": "Jämtland Basket",
-  "opponent": "Norrköping Dolphins",
-  "venue": "Home",
-  "competition": "Basketligan",
-  "players": "Gustav Hansson",
-  "status": "upcoming",
-  "score": "",
-  "sbl": true,
-  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851801/summary"
- },
- {
-  "game_id": "sbl-2851801",
-  "date": "2026-11-20",
-  "time": "19:04",
-  "team": "Norrköping Dolphins",
-  "opponent": "Jämtland Basket",
-  "venue": "Away",
-  "competition": "Basketligan",
-  "players": "Michael Odinks",
-  "status": "upcoming",
-  "score": "",
-  "sbl": true,
-  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851801/summary"
- },
- {
   "game_id": "sbl-2851798",
   "date": "2026-11-22",
   "time": "18:04",
@@ -124,5 +96,33 @@
   "score": "",
   "sbl": true,
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851715/summary"
+ },
+ {
+  "game_id": "sbl-2851809",
+  "date": "2026-12-15",
+  "time": "19:04",
+  "team": "Norrköping Dolphins",
+  "opponent": "Södertälje BBK",
+  "venue": "Away",
+  "competition": "Basketligan",
+  "players": "Michael Odinks",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851809/summary"
+ },
+ {
+  "game_id": "sbl-2851811",
+  "date": "2026-12-15",
+  "time": "19:04",
+  "team": "Jämtland Basket",
+  "opponent": "Uppsala Basket",
+  "venue": "Home",
+  "competition": "Basketligan",
+  "players": "Gustav Hansson",
+  "status": "upcoming",
+  "score": "",
+  "sbl": true,
+  "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851811/summary"
  }
 ]
