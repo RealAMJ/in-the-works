@@ -3816,14 +3816,14 @@
   "stl": 0,
   "blk": 1,
   "tov": 1,
-  "pf": 0,
+  "pf": 1,
   "eff": ""
  },
  {
   "line_id": "g20261120main-adsten",
   "game_id": "g20261120main",
   "player": "Villiam Garcia Adsten",
-  "min": 15,
+  "min": 16,
   "pts": 2,
   "reb": 5,
   "ast": 0,

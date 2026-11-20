@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T02:01:03+01:00",
+ "at": "2026-11-20T02:01:34+01:00",
  "log": [
   {
    "game": "g20261120robe",
@@ -9,7 +9,7 @@
    "game": "g20261120robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:57",
+   "clock": "18:53",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Toledo Rockets",
-     35,
+     37,
      13
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:48",
+   "clock": "17:10",
    "done": false,
    "teams": [
     [
