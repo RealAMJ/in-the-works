@@ -2845,10 +2845,10 @@
   "competition": "ProB (Germany)",
   "note": "",
   "status": "live",
-  "score": "L 67-71",
+  "score": "L 69-71",
   "live_feed": "prob:2006199",
-  "clock": "Q4 05:06",
-  "live_updated": "2026-11-20T21:39:42+01:00"
+  "clock": "Q4 04:39",
+  "live_updated": "2026-11-20T21:40:31+01:00"
  },
  {
   "game_id": "g20261120idah",
@@ -2861,7 +2861,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401922022",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922022"
  },
  {
   "game_id": "g20261121dela",
