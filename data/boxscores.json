@@ -3801,7 +3801,7 @@
   "line_id": "g20261120robe-obenjo",
   "game_id": "g20261120robe",
   "player": "Samuel Obenjo",
-  "min": 14,
+  "min": 15,
   "pts": 4,
   "reb": 3,
   "ast": 0,
@@ -3814,7 +3814,7 @@
   "oreb": 2,
   "dreb": 1,
   "stl": 0,
-  "blk": 1,
+  "blk": 2,
   "tov": 1,
   "pf": 2,
   "eff": ""
