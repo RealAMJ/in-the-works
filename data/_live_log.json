@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T02:53:07+01:00",
+ "at": "2026-11-20T02:53:59+01:00",
  "log": [
   {
    "game": "g20261120robe",
@@ -9,12 +9,12 @@
    "game": "g20261120robe",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:12",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Robert Morris Colonials",
-     73,
+     76,
      15
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "01:05",
+   "clock": "01:01",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Quinnipiac Bobcats",
-     53,
+     54,
      15
     ]
    ]
