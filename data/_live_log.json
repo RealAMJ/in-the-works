@@ -1,26 +1,26 @@
 {
- "at": "2026-11-20T03:24:21+01:00",
+ "at": "2026-11-20T03:43:14+01:00",
  "log": [
   {
-   "game": "g20261120main",
+   "game": "g20261120stan",
    "checking": "ESPN"
   },
   {
-   "game": "g20261120main",
+   "game": "g20261120stan",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "Maine Black Bears",
-     69,
-     15
+     "Stanford Cardinal",
+     0,
+     0
     ],
     [
-     "Quinnipiac Bobcats",
-     67,
-     15
+     "Sacramento State Hornets",
+     0,
+     0
     ]
    ]
   }
