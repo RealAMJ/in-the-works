@@ -556,24 +556,24 @@
   "player": "Gustav Hansson",
   "competition": "Basketligan",
   "season": "2026-27",
-  "gp": 12,
-  "min": 30.7,
-  "pts": 19.2,
+  "gp": 13,
+  "min": 31.1,
+  "pts": 19.5,
   "reb": 3.4,
-  "ast": 6.1,
-  "note": "Averages from game log (12 games, through 2026-11-17)"
+  "ast": 6.2,
+  "note": "Averages from game log (13 games, through 2026-11-20)"
  },
  {
   "row_id": "odinks-sbl",
   "player": "Michael Odinks",
   "competition": "Basketligan",
   "season": "2026-27",
-  "gp": 12,
-  "min": 24.7,
-  "pts": 11.2,
-  "reb": 3.0,
-  "ast": 1.2,
-  "note": "Averages from game log (12 games, through 2026-11-17)"
+  "gp": 13,
+  "min": 25.2,
+  "pts": 11.5,
+  "reb": 3.2,
+  "ast": 1.1,
+  "note": "Averages from game log (13 games, through 2026-11-20)"
  },
  {
   "row_id": "arvidsson-sbl",
