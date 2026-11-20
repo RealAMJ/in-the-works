@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T23:51:07+01:00",
+ "at": "2026-11-20T23:51:59+01:00",
  "log": [
   {
    "game": "g20261120idah",
@@ -9,17 +9,17 @@
    "game": "g20261120idah",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:37",
+   "clock": "05:27",
    "done": false,
    "teams": [
     [
      "South Dakota State Jackrabbits",
-     57,
+     59,
      15
     ],
     [
      "Idaho State Bengals",
-     70,
+     72,
      16
     ]
    ]
