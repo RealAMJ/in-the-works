@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T19:46:10+01:00",
+ "at": "2026-11-20T19:47:09+01:00",
  "log": [
   {
    "game": "g20261120bask",
@@ -9,7 +9,7 @@
    "game": "g20261120bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "10:00",
+   "clock": "06:06",
    "done": false,
    "teams": [
     [
