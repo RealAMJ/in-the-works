@@ -2948,7 +2948,8 @@
   "competition": "ABA League",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "live_feed": "aba:89/26/1"
  },
  {
   "game_id": "g20261121wich",
