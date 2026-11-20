@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T04:01:05+01:00",
+ "at": "2026-11-20T04:05:39+01:00",
  "log": [
   {
    "game": "g20261120stan",
@@ -8,19 +8,19 @@
   {
    "game": "g20261120stan",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "17:21",
    "done": false,
    "teams": [
     [
-     "Stanford Cardinal",
-     0,
-     0
+     "Sacramento State Hornets",
+     4,
+     16
     ],
     [
-     "Sacramento State Hornets",
-     0,
-     0
+     "Stanford Cardinal",
+     2,
+     16
     ]
    ]
   }
