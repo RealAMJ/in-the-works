@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T20:17:13+01:00",
+ "at": "2026-11-20T20:18:19+01:00",
  "log": [
   {
    "game": "g20261120bask",
@@ -9,17 +9,17 @@
    "game": "g20261120bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "04:53",
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     85,
+     87,
      10
     ],
     [
      "FC Bayern Basketball II",
-     67,
+     69,
      9
     ]
    ]
@@ -32,17 +32,17 @@
    "game": "g20261120cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 1,
-   "clock": "04:46",
+   "clock": "03:18",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     10,
+     13,
      12
     ],
     [
      "Ahorn Camp Baskets",
-     14,
+     16,
      11
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "c20261120bask",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 4,
-   "clock": "04:53",
+   "clock": "04:28",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Erfurt",
-     85,
+     87,
      10
     ],
     [
      "FC Bayern Basketball II",
-     67,
+     69,
      9
     ]
    ]
