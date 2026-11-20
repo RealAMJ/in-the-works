@@ -7894,5 +7894,33 @@
   "note": "",
   "leaders": "McKnight|18|8|3;Sekasi|17|6|4;Hart|11|17|1",
   "source": "ESPN"
+ },
+ {
+  "row_id": "stanford-2026-11-20",
+  "team": "Stanford",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "Sacramento State",
+  "venue": "Home",
+  "score": "78-65",
+  "result": "W",
+  "top": "Price 22 pts, 6 reb",
+  "note": "",
+  "leaders": "Price|22|6|1;Bliss|16|2|4;Townsend|11|7|4",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "sacramento-state-2026-11-20",
+  "team": "Sacramento State",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "Stanford",
+  "venue": "Away",
+  "score": "65-78",
+  "result": "L",
+  "top": "Hughes 20 pts, 3 reb",
+  "note": "",
+  "leaders": "Hughes|20|3|1;Ciani|14|8|0;Madi|11|2|1",
+  "source": "ESPN"
  }
 ]

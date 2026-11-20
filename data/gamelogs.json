@@ -7584,5 +7584,31 @@
   "pf": 1,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "price-2026-11-20",
+  "player": "Julius Price",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "team": "Stanford",
+  "opponent": "Sacramento State",
+  "venue": "Home",
+  "result": "W 78-65",
+  "min": 33,
+  "pts": 22,
+  "reb": 6,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "6/13",
+  "three": "0/4",
+  "ft": "10/12",
+  "oreb": 1,
+  "dreb": 5,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 1,
+  "pm": "",
+  "eff": ""
  }
 ]
