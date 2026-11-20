@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T21:28:09+01:00",
+ "at": "2026-11-20T21:29:09+01:00",
  "log": [
   {
    "game": "g20261120cult",
@@ -9,12 +9,12 @@
    "game": "g20261120cult",
    "src": "2. Basketball-Bundesliga live ticker",
    "period": 3,
-   "clock": "01:21",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Culture City Weimar",
-     57,
+     59,
      12
     ],
     [
