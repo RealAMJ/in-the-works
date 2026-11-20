@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T03:00:11+01:00",
+ "at": "2026-11-20T03:01:03+01:00",
  "log": [
   {
    "game": "g20261120main",
@@ -9,12 +9,12 @@
    "game": "g20261120main",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:19",
+   "clock": "00:15",
    "done": false,
    "teams": [
     [
      "Maine Black Bears",
-     67,
+     68,
      15
     ],
     [
