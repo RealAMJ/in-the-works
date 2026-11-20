@@ -7532,5 +7532,31 @@
   "pf": 1,
   "pm": 3,
   "eff": ""
+ },
+ {
+  "row_id": "obenjo-2026-11-20",
+  "player": "Samuel Obenjo",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "team": "Robert Morris",
+  "opponent": "Toledo",
+  "venue": "Away",
+  "result": "L 76-83",
+  "min": 28,
+  "pts": 14,
+  "reb": 6,
+  "ast": 1,
+  "source": "ESPN",
+  "fg": "7/9",
+  "three": "0/0",
+  "ft": "0/0",
+  "oreb": 4,
+  "dreb": 2,
+  "stl": 0,
+  "blk": 2,
+  "tov": 1,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]
