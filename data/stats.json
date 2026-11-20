@@ -400,12 +400,12 @@
   "player": "Nathan Amoran",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 4,
-  "min": 20.8,
-  "pts": 5.8,
+  "gp": 5,
+  "min": 22.4,
+  "pts": 6.2,
   "reb": 3.8,
-  "ast": 0.2,
-  "note": "Averages from game log (4 games, through 2026-11-15)"
+  "ast": 0.6,
+  "note": "Averages from game log (5 games, through 2026-11-20)"
  },
  {
   "row_id": "fall-ncaa",

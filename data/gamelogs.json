@@ -7688,5 +7688,31 @@
   "pf": 4,
   "pm": 2,
   "eff": ""
+ },
+ {
+  "row_id": "amoran-2026-11-20",
+  "player": "Nathan Amoran",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "team": "Idaho State",
+  "opponent": "South Dakota State",
+  "venue": "Home",
+  "result": "W 86-71",
+  "min": 29,
+  "pts": 8,
+  "reb": 4,
+  "ast": 2,
+  "source": "ESPN",
+  "fg": "3/7",
+  "three": "0/2",
+  "ft": "2/2",
+  "oreb": 2,
+  "dreb": 2,
+  "stl": 2,
+  "blk": 0,
+  "tov": 1,
+  "pf": 3,
+  "pm": "",
+  "eff": ""
  }
 ]

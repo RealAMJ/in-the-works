@@ -7978,5 +7978,33 @@
   "note": "",
   "leaders": "Woodmore|15|2|5;Aichele|15|5|0;Ade-Eri|11|4|0",
   "source": "2. Basketball-Bundesliga live ticker"
+ },
+ {
+  "row_id": "idaho-state-2026-11-20",
+  "team": "Idaho State",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "South Dakota State",
+  "venue": "Home",
+  "score": "86-71",
+  "result": "W",
+  "top": "Johnson 39 pts, 13 reb",
+  "note": "",
+  "leaders": "Johnson|39|13|1;Morris|16|2|6;DeMuynck|14|2|0",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "south-dakota-state-2026-11-20",
+  "team": "South Dakota State",
+  "date": "2026-11-20",
+  "competition": "NCAA",
+  "opponent": "Idaho State",
+  "venue": "Away",
+  "score": "71-86",
+  "result": "L",
+  "top": "Sayler 25 pts, 2 reb",
+  "note": "",
+  "leaders": "Sayler|25|2|3;Mekonnen|14|5|1;Kern|10|8|0",
+  "source": "ESPN"
  }
 ]
