@@ -1,26 +1,49 @@
 {
- "at": "2026-11-21T00:09:19+01:00",
+ "at": "2026-11-21T00:40:08+01:00",
  "log": [
   {
-   "game": "g20261120idah",
+   "game": "g20261121dela",
    "checking": "ESPN"
   },
   {
-   "game": "g20261120idah",
+   "game": "g20261121dela",
    "src": "ESPN",
    "period": 0,
    "clock": "00:00",
-   "done": true,
+   "done": false,
    "teams": [
     [
-     "South Dakota State Jackrabbits",
-     71,
-     15
+     "Delaware State Hornets",
+     0,
+     0
     ],
     [
-     "Idaho State Bengals",
-     86,
-     16
+     "Niagara Purple Eagles",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261121iona",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261121iona",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Iona Gaels",
+     0,
+     0
+    ],
+    [
+     "Kansas City Roos",
+     0,
+     0
     ]
    ]
   }
