@@ -1,29 +1,6 @@
 {
- "at": "2026-11-20T20:37:15+01:00",
+ "at": "2026-11-20T20:38:03+01:00",
  "log": [
-  {
-   "game": "g20261120bask",
-   "checking": "2. Basketball-Bundesliga live ticker"
-  },
-  {
-   "game": "g20261120bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     104,
-     10
-    ],
-    [
-     "FC Bayern Basketball II",
-     75,
-     9
-    ]
-   ]
-  },
   {
    "game": "g20261120cult",
    "checking": "2. Basketball-Bundesliga live ticker"
@@ -44,29 +21,6 @@
      "Ahorn Camp Baskets",
      34,
      11
-    ]
-   ]
-  },
-  {
-   "game": "c20261120bask",
-   "checking": "2. Basketball-Bundesliga live ticker"
-  },
-  {
-   "game": "c20261120bask",
-   "src": "2. Basketball-Bundesliga live ticker",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Basketball L\u00f6wen Erfurt",
-     104,
-     10
-    ],
-    [
-     "FC Bayern Basketball II",
-     75,
-     9
     ]
    ]
   }
