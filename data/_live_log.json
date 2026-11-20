@@ -1,26 +1,49 @@
 {
- "at": "2026-11-20T06:09:07+01:00",
+ "at": "2026-11-20T18:13:47+01:00",
  "log": [
   {
-   "game": "g20261120stan",
-   "checking": "ESPN"
+   "game": "g20261120bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
   },
   {
-   "game": "g20261120stan",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
+   "game": "g20261120bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "Sacramento State Hornets",
-     65,
+     "Basketball L\u00f6wen Erfurt",
+     0,
      16
     ],
     [
-     "Stanford Cardinal",
-     78,
+     "FC Bayern Basketball II",
+     0,
+     14
+    ]
+   ]
+  },
+  {
+   "game": "c20261120bask",
+   "checking": "2. Basketball-Bundesliga live ticker"
+  },
+  {
+   "game": "c20261120bask",
+   "src": "2. Basketball-Bundesliga live ticker",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Erfurt",
+     0,
      16
+    ],
+    [
+     "FC Bayern Basketball II",
+     0,
+     14
     ]
    ]
   }
