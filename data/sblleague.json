@@ -775,11 +775,9 @@
   "away": "Norrköping Dolphins",
   "hs": 87,
   "as_": 88,
-  "status": "live",
+  "status": "final",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851801/summary",
-  "box": false,
-  "clock": "00:13",
-  "period": 4
+  "box": true
  },
  {
   "game_id": "sbl-2851800",
