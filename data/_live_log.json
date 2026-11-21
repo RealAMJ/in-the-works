@@ -1,26 +1,26 @@
 {
- "at": "2026-11-21T14:14:43+01:00",
+ "at": "2026-11-21T16:44:08+01:00",
  "log": [
   {
-   "game": "g20261121toru",
-   "checking": "FIBA LiveStats"
+   "game": "c20261121csmo",
+   "checking": "Romanian federation (frbaschet.ro)"
   },
   {
-   "game": "g20261121toru",
-   "src": "FIBA LiveStats",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
+   "game": "c20261121csmo",
+   "src": "Romanian federation (frbaschet.ro)",
+   "period": 1,
+   "clock": "",
+   "done": false,
    "teams": [
     [
-     "PGE Start Lublin",
-     94,
-     11
+     "CSO Voluntari",
+     0,
+     0
     ],
     [
-     "Arriva Lotto Twarde Pierniki Toru\u0144",
-     101,
-     11
+     "CSM Oradea",
+     0,
+     0
     ]
    ]
   }
