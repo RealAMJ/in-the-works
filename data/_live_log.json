@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:08:40+01:00",
+ "at": "2026-11-21T19:09:19+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "04:53",
+   "clock": "04:23",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "03:07",
+   "clock": "02:51",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     40,
+     42,
      12
     ],
     [
      "BMA365 Bamberg Baskets",
-     24,
+     25,
      12
     ]
    ]
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:14",
+   "clock": "15:55",
    "done": false,
    "teams": [
     [
@@ -100,7 +100,7 @@
     ],
     [
      "Eastern Michigan Eagles",
-     2,
+     4,
      14
     ]
    ]
@@ -171,17 +171,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "04:39",
+   "clock": "04:11",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     73,
+     75,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     82,
+     87,
      10
     ]
    ]
