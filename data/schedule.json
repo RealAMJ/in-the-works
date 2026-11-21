@@ -3176,10 +3176,10 @@
   "competition": "Liga ACB",
   "note": "Round 9",
   "status": "live",
-  "score": "W 46-32",
+  "score": "W 50-32",
   "live_feed": "acb:105447",
-  "clock": "Q3 09:01",
-  "live_updated": "2026-11-21T19:00:49+01:00"
+  "clock": "Q3 07:59",
+  "live_updated": "2026-11-21T19:01:38+01:00"
  },
  {
   "game_id": "g20261121lowe",
@@ -3192,10 +3192,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "W 32-19",
+  "score": "W 32-21",
   "live_feed": "bbl:2006842",
-  "clock": "Q2 05:37",
-  "live_updated": "2026-11-21T19:00:51+01:00"
+  "clock": "Q2 04:58",
+  "live_updated": "2026-11-21T19:01:39+01:00"
  },
  {
   "game_id": "g20261121tizo",
