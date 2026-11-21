@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:30:32+01:00",
+ "at": "2026-11-21T19:31:27+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,17 +32,17 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "06:25",
+   "clock": "05:52",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     57,
+     60,
      12
     ],
     [
      "Unicaja",
-     75,
+     78,
      12
     ]
    ]
@@ -54,8 +54,8 @@
   {
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
-   "period": 2,
-   "clock": "10:00",
+   "period": 3,
+   "clock": "09:24",
    "done": false,
    "teams": [
     [
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:31",
+   "clock": "07:04",
    "done": false,
    "teams": [
     [
