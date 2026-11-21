@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:28:39+01:00",
+ "at": "2026-11-21T18:29:31+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 2,
-   "clock": "06:48",
+   "clock": "06:14",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Unicaja",
-     30,
+     31,
      12
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "00:00",
+   "clock": "09:13",
    "done": false,
    "teams": [
     [
@@ -112,8 +112,8 @@
   {
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "10:00",
    "done": false,
    "teams": [
     [
