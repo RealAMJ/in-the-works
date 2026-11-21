@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:40:39+01:00",
+ "at": "2026-11-21T19:41:37+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "01:39",
+   "clock": "00:36",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Unicaja",
-     90,
+     92,
      12
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "06:05",
+   "clock": "05:28",
    "done": false,
    "teams": [
     [
