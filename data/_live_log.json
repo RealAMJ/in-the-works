@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:48:21+01:00",
+ "at": "2026-11-21T19:49:18+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "03:16",
+   "clock": "02:30",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     53,
+     55,
      12
     ],
     [
@@ -67,7 +67,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:31",
+   "clock": "00:27",
    "done": false,
    "teams": [
     [
@@ -95,12 +95,12 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     36,
+     39,
      12
     ],
     [
      "",
-     28,
+     30,
      10
     ]
    ]
