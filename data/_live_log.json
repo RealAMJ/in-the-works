@@ -1,26 +1,26 @@
 {
- "at": "2026-11-21T08:59:07+01:00",
+ "at": "2026-11-21T12:12:11+01:00",
  "log": [
   {
-   "game": "c20261118ora",
+   "game": "g20261121toru",
    "checking": "FIBA LiveStats"
   },
   {
-   "game": "c20261118ora",
+   "game": "g20261121toru",
    "src": "FIBA LiveStats",
-   "period": 5,
-   "clock": "00:00",
-   "done": true,
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
    "teams": [
     [
-     "CSM CSU Raiffeisen Oradea",
-     104,
-     12
+     "PGE Start Lublin",
+     0,
+     11
     ],
     [
-     "Lokomotiv Plovdiv",
-     99,
-     12
+     "Arriva Lotto Twarde Pierniki Toru\u0144",
+     0,
+     11
     ]
    ]
   }
