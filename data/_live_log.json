@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:40:01+01:00",
+ "at": "2026-11-21T17:40:53+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -78,12 +78,12 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "04:15",
+   "clock": "03:50",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     8,
+     10,
      11
     ],
     [
