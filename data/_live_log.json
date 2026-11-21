@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:48:08+01:00",
+ "at": "2026-11-21T18:49:01+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -55,17 +55,17 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "01:36",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     18,
+     22,
      12
     ],
     [
      "BMA365 Bamberg Baskets",
-     14,
+     17,
      12
     ]
    ]
@@ -160,7 +160,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "02:04",
+   "clock": "01:44",
    "done": false,
    "teams": [
     [
