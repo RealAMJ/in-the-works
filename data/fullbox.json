@@ -87711,7 +87711,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "1/2",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87732,7 +87732,7 @@
   "fg": "2/3",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87795,7 +87795,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 0,
+  "pm": -1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87816,7 +87816,7 @@
   "fg": "1/1",
   "three": "1/1",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87837,7 +87837,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -2,
+  "pm": -3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87879,7 +87879,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -1,
+  "pm": 0,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87891,7 +87891,7 @@
   "player": "Isaiah Cousins",
   "pos": "",
   "min": 9,
-  "pts": 6,
+  "pts": 7,
   "reb": 3,
   "ast": 1,
   "stl": 0,
@@ -87899,8 +87899,8 @@
   "tov": 0,
   "fg": "3/5",
   "three": "0/2",
-  "ft": "0/0",
-  "pm": 1,
+  "ft": "1/2",
+  "pm": 2,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87942,7 +87942,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87984,7 +87984,7 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "0/0",
-  "pm": 1,
+  "pm": 2,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88005,7 +88005,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 2,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
