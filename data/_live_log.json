@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:07:12+01:00",
+ "at": "2026-11-21T17:11:44+01:00",
  "log": [
   {
    "game": "c20261121csmo",
@@ -21,6 +21,29 @@
      "CSM Oradea",
      0,
      0
+    ]
+   ]
+  },
+  {
+   "game": "c20261121anw",
+   "checking": "FIBA LiveStats"
+  },
+  {
+   "game": "c20261121anw",
+   "src": "FIBA LiveStats",
+   "period": 1,
+   "clock": "10:00",
+   "done": false,
+   "teams": [
+    [
+     "King Szczecin",
+     0,
+     11
+    ],
+    [
+     "Anwil W\u0142oc\u0142awek",
+     0,
+     10
     ]
    ]
   }
