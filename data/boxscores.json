@@ -3978,12 +3978,12 @@
   "game_id": "g20261121iona",
   "player": "Alliou Fall",
   "min": 8,
-  "pts": 0,
+  "pts": 1,
   "reb": 1,
   "ast": 2,
   "fg": "0/1",
   "three": "0/0",
-  "ft": "0/0",
+  "ft": "1/2",
   "pm": "",
   "source": "ESPN",
   "note": "live",
@@ -3992,7 +3992,7 @@
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "pf": 1,
+  "pf": 2,
   "eff": ""
  }
 ]
