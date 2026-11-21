@@ -8006,5 +8006,33 @@
   "note": "",
   "leaders": "Sayler|25|2|3;Mekonnen|14|5|1;Kern|10|8|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "iona-2026-11-21",
+  "team": "Iona",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Kansas City",
+  "venue": "Home",
+  "score": "62-61",
+  "result": "W",
+  "top": "Mitchell 13 pts, 8 reb",
+  "note": "",
+  "leaders": "Mitchell|13|8|2;Vanderhorst|13|5|5;Odutayo|12|5|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "kansas-city-2026-11-21",
+  "team": "Kansas City",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Iona",
+  "venue": "Away",
+  "score": "61-62",
+  "result": "L",
+  "top": "Goodwin 19 pts, 5 reb",
+  "note": "",
+  "leaders": "Goodwin|19|5|1;Diop|15|10|1;Daughtery|9|0|0",
+  "source": "ESPN"
  }
 ]
