@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T03:26:55+01:00",
+ "at": "2026-11-21T03:27:48+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 3,
-   "clock": "00:01",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:01",
+   "clock": "14:56",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     34,
+     36,
      16
     ],
     [
      "Alabama A&M Bulldogs",
-     55,
+     57,
      16
     ]
    ]
