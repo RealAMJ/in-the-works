@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:51:51+01:00",
+ "at": "2026-11-21T18:52:25+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -55,12 +55,12 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "09:24",
+   "clock": "08:54",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     22,
+     24,
      12
     ],
     [
@@ -160,7 +160,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "01:32",
+   "clock": "01:08",
    "done": false,
    "teams": [
     [
