@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:24:07+01:00",
+ "at": "2026-11-21T19:24:57+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "08:55",
+   "clock": "08:30",
    "done": false,
    "teams": [
     [
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "09:21",
+   "clock": "09:23",
    "done": false,
    "teams": [
     [
@@ -100,7 +100,7 @@
     ],
     [
      "Eastern Michigan Eagles",
-     9,
+     11,
      14
     ]
    ]
