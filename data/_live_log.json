@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T01:38:24+01:00",
+ "at": "2026-11-21T01:39:15+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:56",
+   "clock": "02:55",
    "done": false,
    "teams": [
     [
@@ -32,12 +32,12 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:07",
+   "clock": "01:03",
    "done": false,
    "teams": [
     [
      "Kansas City Roos",
-     27,
+     32,
      15
     ],
     [
