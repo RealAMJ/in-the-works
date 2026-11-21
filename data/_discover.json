@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T15:29:14+01:00",
+ "at": "2026-11-21T15:33:49+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 175,
+   "answered": 178,
    "sample": [
     [
      2957657,
@@ -86,10 +86,10 @@
      ]
     ],
     [
-     2957685,
+     2957684,
      [
-      "St. Edward's ",
-      "Schreiner "
+      "Sklep Polski MKK Gniezno ",
+      "Świecki Klub Koszykówki "
      ]
     ]
    ]
