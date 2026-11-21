@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:27:19+01:00",
+ "at": "2026-11-21T19:28:17+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -118,7 +118,7 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     18,
+     20,
      12
     ],
     [
@@ -147,18 +147,18 @@
   {
    "game": "c20261121csmo",
    "src": "Romanian federation (frbaschet.ro)",
-   "period": 1,
-   "clock": "",
-   "done": false,
+   "period": 4,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "CSO Voluntari",
-     0,
+     98,
      0
     ],
     [
      "CSM Oradea",
-     0,
+     91,
      0
     ]
    ]

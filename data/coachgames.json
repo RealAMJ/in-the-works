@@ -377,9 +377,10 @@
   "venue": "Away",
   "competition": "Liga Națională",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "bh:25493:21665:6189539"
+  "status": "final",
+  "score": "L 91-98",
+  "live_feed": "bh:25493:21665:6189539",
+  "live_done": true
  },
  {
   "game_id": "c20261121anw",
@@ -395,7 +396,7 @@
   "score": "W 95-80",
   "live_feed": "fiba:2957658",
   "clock": "Q4 00:18",
-  "live_updated": "2026-11-21T19:27:19+01:00"
+  "live_updated": "2026-11-21T19:28:17+01:00"
  },
  {
   "game_id": "c20261122san",
