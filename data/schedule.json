@@ -3161,7 +3161,9 @@
   "competition": "NCAA",
   "note": "",
   "status": "upcoming",
-  "score": ""
+  "score": "",
+  "espn_id": "401911394",
+  "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911394"
  },
  {
   "game_id": "g20261121unic",
@@ -3173,9 +3175,11 @@
   "venue": "Away",
   "competition": "Liga ACB",
   "note": "Round 9",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "acb:105447"
+  "status": "live",
+  "score": "W 0-0",
+  "live_feed": "acb:105447",
+  "clock": "End of Q1",
+  "live_updated": "2026-11-21T17:40:01+01:00"
  },
  {
   "game_id": "g20261121lowe",
