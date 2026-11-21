@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T03:14:02+01:00",
+ "at": "2026-11-21T03:14:54+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -8,8 +8,8 @@
   {
    "game": "g20261121dela",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:00",
+   "period": 3,
+   "clock": "04:41",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "06:41",
+   "clock": "06:07",
    "done": false,
    "teams": [
     [
      "Tulsa Golden Hurricane",
-     45,
+     47,
      15
     ],
     [
