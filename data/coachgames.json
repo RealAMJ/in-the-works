@@ -319,6 +319,22 @@
   "post_done": true
  },
  {
+  "game_id": "c20261118ora",
+  "date": "2026-11-18",
+  "time": "18:00",
+  "coach": "Mikko Riipinen",
+  "team": "CSM Oradea",
+  "opponent": "Lokomotiv Plovdiv",
+  "venue": "Home",
+  "competition": "FIBA Europe Cup",
+  "note": "",
+  "status": "final",
+  "score": "W 104-99",
+  "live_feed": "fiba:2888348",
+  "live_done": true,
+  "post_done": true
+ },
+ {
   "game_id": "c20261120bask",
   "date": "2026-11-20",
   "time": "18:30",
@@ -364,5 +380,32 @@
   "status": "upcoming",
   "score": "",
   "live_feed": "bh:25493:21665:6189539"
+ },
+ {
+  "game_id": "c20261121anw",
+  "date": "2026-11-21",
+  "time": "17:30",
+  "coach": "Vedran Bosnić",
+  "team": "Anwil Włocławek",
+  "opponent": "King Szczecin",
+  "venue": "Away",
+  "competition": "Orlen Basket Liga",
+  "note": "",
+  "status": "upcoming",
+  "score": ""
+ },
+ {
+  "game_id": "c20261122san",
+  "date": "2026-11-22",
+  "time": "18:30",
+  "coach": "Boris Balibrea",
+  "team": "Class Sant Antoni",
+  "opponent": "Logrobasket Logi7",
+  "venue": "Away",
+  "competition": "Segunda FEB",
+  "note": "",
+  "status": "upcoming",
+  "score": "",
+  "live_feed": "feb:2536346"
  }
 ]

@@ -1,7 +1,26 @@
 {
- "fixes": [],
+ "fixes": [
+  {
+   "at": "2026-11-21T08:59:12+01:00",
+   "what": "Added the missing game-log row for Nils Cooper, 2026-11-18 (NCAA)"
+  },
+  {
+   "at": "2026-11-21T08:59:12+01:00",
+   "what": "Recounted Denzel Andersson's Orlen Basket Liga averages from his game log (6 → 8 games)"
+  },
+  {
+   "at": "2026-11-21T08:59:12+01:00",
+   "what": "Recounted Luka Babic's Croatian Premier League averages from his game log (7 → 9 games)"
+  },
+  {
+   "at": "2026-11-21T08:59:12+01:00",
+   "what": "Recounted Nils Cooper's NCAA averages from his game log (3 → 4 games)"
+  }
+ ],
  "issues": [
   "Team notes for Juventus Utena are from 2026-11-08; they last played 2026-11-17",
-  "Team notes for Mississippi State are from 2026-11-14; they last played 2026-11-21"
+  "Team notes for Mississippi State are from 2026-11-14; they last played 2026-11-21",
+  "Team notes for Joventut Badalona are from 2026-11-14; they last played 2026-11-17",
+  "Team notes for Unicaja are from 2026-11-15; they last played 2026-11-18"
  ]
 }

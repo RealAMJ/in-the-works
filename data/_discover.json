@@ -1,95 +1,95 @@
 {
- "at": "2026-11-13T20:02:05+01:00",
- "found": 1,
+ "at": "2026-11-21T08:58:06+01:00",
+ "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
-   "seed": 2951826,
+   "seed": 2953994,
    "scanned": 799,
-   "answered": 394,
+   "answered": 367,
    "sample": [
     [
-     2951825,
+     2953993,
      [
-      "MKS Dąbrowa Górnicza ",
-      "Górnik Zamek Książ Wałbrzych "
+      "PGE Start Lublin ",
+      "Euvic GTK Gliwice "
      ]
     ],
     [
-     2951827,
+     2953995,
      [
-      "Decka Pelplin ",
-      "ŁKS Coolpack Łódź "
+      "Kujawsko-Pomorskie ",
+      "Świętokrzyskie "
      ]
     ],
     [
-     2951824,
+     2953996,
      [
-      "Dziki Warszawa ",
-      "Anwil Włocławek "
+      "Zachodniopomorskie ",
+      "Warmińsko-Mazurskie "
      ]
     ],
     [
-     2951828,
+     2953991,
      [
-      "Solvera Sokół Łańcut ",
-      "PGE Spójnia Stargard "
+      "Balti Vara ",
+      "Võro Basketball "
      ]
     ],
     [
-     2951823,
+     2953997,
      [
-      "Southern Nazarene ",
-      "Langston "
+      "Łódzkie ",
+      "Kujawsko-Pomorskie "
      ]
     ],
     [
-     2951836,
+     2953990,
      [
-      "Zdrovo Polonia 1912 Leszno ",
-      "Enea Basket Poznań "
+      "Kpuit/Antsla vald ",
+      "KK Valgamaa/Coop Põlva "
      ]
     ],
     [
-     2951837,
+     2953998,
      [
-      "RMKS Xbest Rybnik ",
-      "GMMInoxMergerLogisticsPanteryŁańcut "
+      "Świętokrzyskie ",
+      "Zachodniopomorskie "
      ]
     ],
     [
-     2951814,
+     2953989,
      [
-      "Hunter ",
-      "Saint Elizabeth "
+      "BC Karl Infra ",
+      "Nool Projekt/Viljandi vald "
      ]
     ],
     [
-     2951838,
+     2953999,
      [
-      "Nautiqus AZS Uniwersytet Gdański ",
-      "Brother MUKS Poznań "
+      "Warmińsko-Mazurskie ",
+      "Łódzkie "
      ]
     ],
     [
-     2951813,
+     2953988,
      [
-      "Dragūnai Dragūnai",
-      "Prodesus Prodesus"
+      "BC Tiksoja Puidugrupp ",
+      "Tartu vald/Rainter "
      ]
     ],
     [
-     2951839,
+     2954000,
      [
-      "Sparta Ziębice ",
-      "Basket 4Ever AZS UMed Ksawerów "
+      "Opolskie ",
+      "Lubelskie "
      ]
     ],
     [
-     2951840,
+     2953987,
      [
-      "BSA  AMW Arka Gdynia ",
-      "Tarnovia Tarnowo Podgórne "
+      "BC Küte/Casinobud ",
+      "Torma "
      ]
     ]
    ]

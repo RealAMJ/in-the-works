@@ -1,26 +1,26 @@
 {
- "at": "2026-11-21T04:21:39+01:00",
+ "at": "2026-11-21T08:59:07+01:00",
  "log": [
   {
-   "game": "g20261121lips",
-   "checking": "ESPN"
+   "game": "c20261118ora",
+   "checking": "FIBA LiveStats"
   },
   {
-   "game": "g20261121lips",
-   "src": "ESPN",
-   "period": 0,
+   "game": "c20261118ora",
+   "src": "FIBA LiveStats",
+   "period": 5,
    "clock": "00:00",
    "done": true,
    "teams": [
     [
-     "Lipscomb Bisons",
-     69,
-     16
+     "CSM CSU Raiffeisen Oradea",
+     104,
+     12
     ],
     [
-     "Alabama A&M Bulldogs",
-     85,
-     16
+     "Lokomotiv Plovdiv",
+     99,
+     12
     ]
    ]
   }

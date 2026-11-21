@@ -40,12 +40,12 @@
   "player": "Melwin Pantzar",
   "competition": "Liga ACB",
   "season": "2026-27",
-  "gp": 7,
-  "min": 18.4,
-  "pts": 7.3,
-  "reb": 3.1,
-  "ast": 2.3,
-  "note": "Averages from game log (7 games, through 2026-11-08)"
+  "gp": 8,
+  "min": 18.2,
+  "pts": 6.9,
+  "reb": 2.9,
+  "ast": 2.4,
+  "note": "Averages from game log (8 games, through 2026-11-15)"
  },
  {
   "row_id": "pantzar-bcl",
@@ -88,12 +88,12 @@
   "player": "Simon Birgander",
   "competition": "Liga ACB",
   "season": "2026-27",
-  "gp": 7,
-  "min": 19.9,
-  "pts": 7.0,
-  "reb": 5.1,
-  "ast": 1.9,
-  "note": "Averages from game log (7 games, through 2026-11-08)"
+  "gp": 8,
+  "min": 19.4,
+  "pts": 6.4,
+  "reb": 4.8,
+  "ast": 1.8,
+  "note": "Averages from game log (8 games, through 2026-11-14)"
  },
  {
   "row_id": "birgander-bcl",
@@ -112,12 +112,12 @@
   "player": "Wilhelm Falk",
   "competition": "Liga ACB",
   "season": "2026-27",
-  "gp": 7,
+  "gp": 8,
   "min": 12.9,
-  "pts": 2.9,
-  "reb": 3.4,
-  "ast": 0.6,
-  "note": "Averages from game log (7 games, through 2026-11-08)"
+  "pts": 2.8,
+  "reb": 3.6,
+  "ast": 0.5,
+  "note": "Averages from game log (8 games, through 2026-11-15)"
  },
  {
   "row_id": "falk-bcl",
@@ -136,12 +136,12 @@
   "player": "Kenny Pohto",
   "competition": "LKL",
   "season": "2026-27",
-  "gp": 9,
-  "min": 17.6,
-  "pts": 4.4,
-  "reb": 3.7,
-  "ast": 1.6,
-  "note": "Averages from game log (9 games, through 2026-11-08)"
+  "gp": 10,
+  "min": 17.3,
+  "pts": 4.8,
+  "reb": 3.3,
+  "ast": 1.5,
+  "note": "Averages from game log (10 games, through 2026-11-14)"
  },
  {
   "row_id": "pohto-bcl",
@@ -160,12 +160,12 @@
   "player": "Viktor Gaddefors",
   "competition": "Orlen Basket Liga",
   "season": "2026-27",
-  "gp": 6,
-  "min": 32.5,
-  "pts": 13.2,
-  "reb": 6.3,
-  "ast": 2.2,
-  "note": "Averages from game log (6 games, through 2026-11-07)"
+  "gp": 7,
+  "min": 31.3,
+  "pts": 12.7,
+  "reb": 6.4,
+  "ast": 2.9,
+  "note": "Averages from game log (7 games, through 2026-11-14)"
  },
  {
   "row_id": "bangala-bbl",
@@ -220,48 +220,48 @@
   "player": "Tobias Borg",
   "competition": "Primera FEB",
   "season": "2026-27",
-  "gp": 7,
-  "min": 19.4,
-  "pts": 8.3,
-  "reb": 3.0,
-  "ast": 3.0,
-  "note": "Averages from game log (7 games, through 2026-11-06)"
+  "gp": 8,
+  "min": 20.0,
+  "pts": 7.9,
+  "reb": 2.9,
+  "ast": 2.9,
+  "note": "Averages from game log (8 games, through 2026-11-14)"
  },
  {
   "row_id": "palmquist-feb",
   "player": "Oskar Palmquist",
   "competition": "Primera FEB",
   "season": "2026-27",
-  "gp": 7,
-  "min": 23.1,
-  "pts": 8.6,
-  "reb": 2.7,
+  "gp": 8,
+  "min": 22.5,
+  "pts": 7.8,
+  "reb": 2.6,
   "ast": 0.6,
-  "note": "Averages from game log (7 games, through 2026-11-08)"
+  "note": "Averages from game log (8 games, through 2026-11-14)"
  },
  {
   "row_id": "czerapowicz-feb",
   "player": "Chris Czerapowicz",
   "competition": "Primera FEB",
   "season": "2026-27",
-  "gp": 7,
+  "gp": 8,
   "min": 23.9,
-  "pts": 7.6,
-  "reb": 6.0,
-  "ast": 0.7,
-  "note": "Averages from game log (7 games, through 2026-11-08)"
+  "pts": 7.2,
+  "reb": 5.5,
+  "ast": 0.6,
+  "note": "Averages from game log (8 games, through 2026-11-13)"
  },
  {
   "row_id": "terins-feb",
   "player": "Felix Terins",
   "competition": "Primera FEB",
   "season": "2026-27",
-  "gp": 7,
-  "min": 16.3,
-  "pts": 7.1,
-  "reb": 2.4,
-  "ast": 1.9,
-  "note": "Averages from game log (7 games, through 2026-11-07)"
+  "gp": 8,
+  "min": 17.1,
+  "pts": 8.9,
+  "reb": 2.1,
+  "ast": 1.8,
+  "note": "Averages from game log (8 games, through 2026-11-14)"
  },
  {
   "row_id": "cadeau-ncaa",
@@ -316,24 +316,24 @@
   "player": "Denzel Andersson",
   "competition": "Orlen Basket Liga",
   "season": "2026-27",
-  "gp": 6,
-  "min": 29.7,
-  "pts": 8.5,
-  "reb": 5.0,
-  "ast": 2.0,
-  "note": "Averages from game log (6 games, through 2026-11-06)"
+  "gp": 8,
+  "min": 28.4,
+  "pts": 7.8,
+  "reb": 4.4,
+  "ast": 1.8,
+  "note": "Averages from game log (8 games, through 2026-11-20)"
  },
  {
   "row_id": "babic-croatianpr",
   "player": "Luka Babic",
   "competition": "Croatian Premier League",
   "season": "2026-27",
-  "gp": 7,
-  "min": 23.7,
-  "pts": 10.0,
-  "reb": 3.9,
-  "ast": 2.4,
-  "note": "Averages from game log (7 games, through 2026-11-07)"
+  "gp": 9,
+  "min": 22.0,
+  "pts": 9.3,
+  "reb": 4.0,
+  "ast": 2.1,
+  "note": "Averages from game log (9 games, through 2026-11-20)"
  },
  {
   "row_id": "hagberg-blnonorway",
@@ -532,12 +532,12 @@
   "player": "Nils Cooper",
   "competition": "NCAA",
   "season": "2026-27",
-  "gp": 3,
-  "min": 25.0,
-  "pts": 10.7,
-  "reb": 4.7,
-  "ast": 2.0,
-  "note": "Averages from game log (3 games, through 2026-11-12)"
+  "gp": 4,
+  "min": 26.5,
+  "pts": 10.5,
+  "reb": 4.5,
+  "ast": 1.5,
+  "note": "Averages from game log (4 games, through 2026-11-18)"
  },
  {
   "row_id": "berg-ncaa",
