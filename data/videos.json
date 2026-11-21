@@ -1566,5 +1566,20 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261120idah",
+  "date": "2026-11-20",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "South Dakota State Jackrabbits vs. Idaho State Bengals: Game Highlights",
+    "secs": 82,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1120/020a71d0-d99b-4088-819d-daa33d6f7092/020a71d0-d99b-4088-819d-daa33d6f7092.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50544392/game-highlights",
+    "full": true,
+    "swedes": []
+   }
+  ]
  }
 ]
