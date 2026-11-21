@@ -87732,7 +87732,7 @@
   "fg": "8/14",
   "three": "1/3",
   "ft": "2/2",
-  "pm": 6,
+  "pm": 4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87753,7 +87753,7 @@
   "fg": "2/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 3,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87795,7 +87795,7 @@
   "fg": "3/5",
   "three": "1/3",
   "ft": "1/1",
-  "pm": 9,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87837,7 +87837,7 @@
   "fg": "3/3",
   "three": "1/1",
   "ft": "2/2",
-  "pm": -6,
+  "pm": -8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87858,7 +87858,7 @@
   "fg": "1/2",
   "three": "0/0",
   "ft": "2/2",
-  "pm": -7,
+  "pm": -9,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87891,7 +87891,7 @@
   "player": "Bennett Vander Plas",
   "pos": "",
   "min": 19,
-  "pts": 9,
+  "pts": 11,
   "reb": 6,
   "ast": 2,
   "stl": 0,
@@ -87899,8 +87899,8 @@
   "tov": 1,
   "fg": "3/8",
   "three": "3/7",
-  "ft": "0/0",
-  "pm": 5,
+  "ft": "2/2",
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87921,7 +87921,7 @@
   "fg": "4/8",
   "three": "0/4",
   "ft": "1/2",
-  "pm": -13,
+  "pm": -11,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87963,7 +87963,7 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -6,
+  "pm": -4,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87984,7 +87984,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 3,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88026,7 +88026,7 @@
   "fg": "6/10",
   "three": "1/3",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -5,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
