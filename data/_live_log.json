@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:44:00+01:00",
+ "at": "2026-11-21T18:44:50+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "03:36",
+   "clock": "03:18",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     9,
+     10,
      12
     ]
    ]
@@ -160,17 +160,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "04:02",
+   "clock": "03:20",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     51,
+     54,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     72,
+     74,
      10
     ]
    ]
