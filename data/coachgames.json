@@ -380,7 +380,8 @@
   "status": "final",
   "score": "L 91-98",
   "live_feed": "bh:25493:21665:6189539",
-  "live_done": true
+  "live_done": true,
+  "post_done": true
  },
  {
   "game_id": "c20261121anw",
@@ -396,7 +397,7 @@
   "score": "W 95-80",
   "live_feed": "fiba:2957658",
   "clock": "Q4 00:18",
-  "live_updated": "2026-11-21T19:30:05+01:00"
+  "live_updated": "2026-11-21T19:30:32+01:00"
  },
  {
   "game_id": "c20261122san",

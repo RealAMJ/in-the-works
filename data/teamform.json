@@ -8538,5 +8538,33 @@
   "note": "",
   "leaders": "Starks|22|4|5;Williamson|18|2|2;Lottie|14|2|7",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "csm-oradea-2026-11-21",
+  "team": "CSM Oradea",
+  "date": "2026-11-21",
+  "competition": "Liga Națională",
+  "opponent": "CSO Voluntari",
+  "venue": "Away",
+  "score": "91-98",
+  "result": "L",
+  "top": "",
+  "note": "",
+  "leaders": "",
+  "source": "club site (final score only)"
+ },
+ {
+  "row_id": "cso-voluntari-2026-11-21",
+  "team": "CSO Voluntari",
+  "date": "2026-11-21",
+  "competition": "Liga Națională",
+  "opponent": "CSM Oradea",
+  "venue": "Home",
+  "score": "98-91",
+  "result": "W",
+  "top": "",
+  "note": "",
+  "leaders": "",
+  "source": "club site (final score only)"
  }
 ]
