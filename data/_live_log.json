@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:39:31+01:00",
+ "at": "2026-11-21T18:40:30+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 2,
-   "clock": "02:45",
+   "clock": "01:46",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Unicaja",
-     36,
+     41,
      12
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "05:42",
+   "clock": "04:56",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     8,
+     9,
      12
     ],
     [
@@ -76,6 +76,53 @@
   },
   {
    "game": "g20261121tizo",
+   "src": "FEB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": true,
+   "teams": []
+  },
+  {
+   "game": "g20261121denv",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261121denv",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Eastern Michigan Eagles",
+     0,
+     0
+    ],
+    [
+     "Denver Pioneers",
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "game": "g20261121bcvi",
+   "checking": "ABA League (aba-liga.com)"
+  },
+  {
+   "game": "g20261121bcvi",
+   "src": "ABA League (aba-liga.com)",
+   "period": 1,
+   "clock": "",
+   "done": false,
+   "teams": []
+  },
+  {
+   "game": "g20261121pale",
+   "checking": "FEB Live"
+  },
+  {
+   "game": "g20261121pale",
    "src": "FEB Live",
    "period": 1,
    "clock": "00:00",
@@ -113,12 +160,12 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "05:49",
+   "clock": "05:09",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     42,
+     44,
      11
     ],
     [
