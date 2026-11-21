@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:37:11+01:00",
+ "at": "2026-11-21T18:38:03+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     27,
+     28,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "07:09",
+   "clock": "06:32",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     5,
+     7,
      12
     ]
    ]
