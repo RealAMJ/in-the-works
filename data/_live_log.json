@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:03:27+01:00",
+ "at": "2026-11-21T19:04:14+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "07:16",
+   "clock": "07:04",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     35,
+     37,
      12
     ],
     [
@@ -89,19 +89,19 @@
   {
    "game": "g20261121denv",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:14",
    "done": false,
    "teams": [
     [
-     "Eastern Michigan Eagles",
-     0,
-     0
+     "Denver Pioneers",
+     2,
+     14
     ],
     [
-     "Denver Pioneers",
+     "Eastern Michigan Eagles",
      0,
-     0
+     14
     ]
    ]
   },
@@ -118,7 +118,7 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     0,
+     2,
      12
     ],
     [
