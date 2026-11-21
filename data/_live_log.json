@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:09:53+01:00",
+ "at": "2026-11-21T18:10:50+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 1,
-   "clock": "06:30",
+   "clock": "06:04",
    "done": false,
    "teams": [
     [
@@ -42,10 +42,45 @@
     ],
     [
      "Unicaja",
-     14,
+     17,
      12
     ]
    ]
+  },
+  {
+   "game": "g20261121lowe",
+   "checking": "easyCredit BBL"
+  },
+  {
+   "game": "g20261121lowe",
+   "src": "easyCredit BBL",
+   "period": 1,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Basketball L\u00f6wen Braunschweig",
+     0,
+     12
+    ],
+    [
+     "BMA365 Bamberg Baskets",
+     0,
+     12
+    ]
+   ]
+  },
+  {
+   "game": "g20261121tizo",
+   "checking": "FEB Live"
+  },
+  {
+   "game": "g20261121tizo",
+   "src": "FEB Live",
+   "period": 1,
+   "clock": "00:00",
+   "done": true,
+   "teams": []
   },
   {
    "game": "c20261121csmo",
@@ -78,17 +113,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "03:29",
+   "clock": "02:33",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     32,
+     34,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     47,
+     49,
      10
     ]
    ]
