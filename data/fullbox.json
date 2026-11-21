@@ -88131,7 +88131,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -15,
+  "pm": -16,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88152,7 +88152,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88173,7 +88173,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88236,7 +88236,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88278,7 +88278,7 @@
   "fg": "0/1",
   "three": "0/1",
   "ft": "0/0",
-  "pm": 15,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88290,7 +88290,7 @@
   "player": "A. Noua",
   "pos": "",
   "min": 4,
-  "pts": 4,
+  "pts": 5,
   "reb": 1,
   "ast": 1,
   "stl": 1,
@@ -88298,8 +88298,8 @@
   "tov": 0,
   "fg": "1/1",
   "three": "1/1",
-  "ft": "1/1",
-  "pm": 15,
+  "ft": "2/2",
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
@@ -88320,7 +88320,7 @@
   "fg": "0/0",
   "three": "0/0",
   "ft": "0/0",
-  "pm": 15,
+  "pm": 16,
   "swede": false,
   "state": "live",
   "source": "ACB Live"
