@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:04:01+01:00",
+ "at": "2026-11-21T14:04:51+01:00",
  "log": [
   {
    "game": "g20261121toru",
@@ -9,17 +9,17 @@
    "game": "g20261121toru",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "03:08",
+   "clock": "02:39",
    "done": false,
    "teams": [
     [
      "PGE Start Lublin",
-     88,
+     90,
      11
     ],
     [
      "Arriva Lotto Twarde Pierniki Toru\u0144",
-     84,
+     85,
      11
     ]
    ]
