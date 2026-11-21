@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:58:21+01:00",
+ "at": "2026-11-21T18:59:13+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "07:12",
+   "clock": "06:35",
    "done": false,
    "teams": [
     [
@@ -160,7 +160,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "10:00",
+   "clock": "09:24",
    "done": false,
    "teams": [
     [
