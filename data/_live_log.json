@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T01:09:59+01:00",
+ "at": "2026-11-21T01:10:58+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -32,18 +32,41 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "15:17",
+   "clock": "15:05",
    "done": false,
    "teams": [
     [
      "Kansas City Roos",
-     8,
+     10,
      15
     ],
     [
      "Iona Gaels",
      10,
      17
+    ]
+   ]
+  },
+  {
+   "game": "c20261121miss",
+   "checking": "ESPN"
+  },
+  {
+   "game": "c20261121miss",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Mississippi State Bulldogs",
+     0,
+     0
+    ],
+    [
+     "Tulsa Golden Hurricane",
+     0,
+     0
     ]
    ]
   }
