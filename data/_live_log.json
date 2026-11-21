@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:28:17+01:00",
+ "at": "2026-11-21T19:29:07+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "07:07",
+   "clock": "06:57",
    "done": false,
    "teams": [
     [
@@ -123,7 +123,7 @@
     ],
     [
      "",
-     20,
+     22,
      10
     ]
    ]
@@ -139,29 +139,6 @@
    "clock": "00:00",
    "done": true,
    "teams": []
-  },
-  {
-   "game": "c20261121csmo",
-   "checking": "Romanian federation (frbaschet.ro)"
-  },
-  {
-   "game": "c20261121csmo",
-   "src": "Romanian federation (frbaschet.ro)",
-   "period": 4,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "CSO Voluntari",
-     98,
-     0
-    ],
-    [
-     "CSM Oradea",
-     91,
-     0
-    ]
-   ]
   },
   {
    "game": "c20261121anw",
