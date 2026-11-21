@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:14:20+01:00",
+ "at": "2026-11-21T18:15:16+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 1,
-   "clock": "04:27",
+   "clock": "03:42",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     3,
+     5,
      12
     ],
     [
@@ -113,17 +113,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "01:56",
+   "clock": "00:56",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     34,
+     38,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     51,
+     55,
      10
     ]
    ]
