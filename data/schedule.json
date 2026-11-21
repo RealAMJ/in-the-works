@@ -3143,9 +3143,11 @@
   "venue": "Away",
   "competition": "Orlen Basket Liga",
   "note": "",
-  "status": "upcoming",
-  "score": "",
-  "live_feed": "fiba:2957659"
+  "status": "live",
+  "score": "W 7-6",
+  "live_feed": "fiba:2957659",
+  "clock": "Q1 06:33",
+  "live_updated": "2026-11-21T12:35:11+01:00"
  },
  {
   "game_id": "g20261121vmi",

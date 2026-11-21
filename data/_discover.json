@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T12:30:26+01:00",
+ "at": "2026-11-21T12:35:10+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 149,
+   "answered": 152,
    "sample": [
     [
      2957657,
@@ -72,6 +72,13 @@
      ]
     ],
     [
+     2957683,
+     [
+      "Akademia Gortata Gdańsk ",
+      "MKS Sokół Marbo Międzychód "
+     ]
+    ],
+    [
      2957685,
      [
       "St. Edward's ",
@@ -79,17 +86,10 @@
      ]
     ],
     [
-     2957612,
+     2957695,
      [
-      "Muks Basket Warszawa Muks Basket Warszawa",
-      "SKM Monstrai SKM Monstrai"
-     ]
-    ],
-    [
-     2957610,
-     [
-      "LSSS LSSS",
-      "BC Telavi BC Telavi"
+      "UJK Kielce ",
+      "MKKS Rybnik "
      ]
     ]
    ]
