@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:15:21+01:00",
+ "at": "2026-11-21T19:16:19+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "02:44",
+   "clock": "02:04",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "01:08",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     30,
+     35,
      12
     ]
    ]
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:11",
+   "clock": "12:21",
    "done": false,
    "teams": [
     [
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:07",
+   "clock": "02:00",
    "done": false,
    "teams": [
     [
