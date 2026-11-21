@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:04:30+01:00",
+ "at": "2026-11-21T02:05:20+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,12 +9,12 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:43",
+   "clock": "18:12",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     36,
+     39,
      14
     ],
     [
@@ -32,12 +32,12 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:15",
+   "clock": "17:38",
    "done": false,
    "teams": [
     [
      "Kansas City Roos",
-     36,
+     39,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "05:56",
+   "clock": "05:29",
    "done": false,
    "teams": [
     [
