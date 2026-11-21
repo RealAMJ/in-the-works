@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:41:30+01:00",
+ "at": "2026-11-21T18:42:30+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     31,
+     32,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "04:25",
+   "clock": "04:03",
    "done": false,
    "teams": [
     [
@@ -160,12 +160,12 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "04:54",
+   "clock": "04:39",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     45,
+     47,
      11
     ],
     [
