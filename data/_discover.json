@@ -1,95 +1,95 @@
 {
- "at": "2026-11-21T12:02:47+01:00",
- "found": 1,
+ "at": "2026-11-21T12:07:27+01:00",
+ "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
-   "seed": 2956666,
+   "seed": 2957659,
    "scanned": 799,
-   "answered": 220,
+   "answered": 148,
    "sample": [
     [
-     2956665,
+     2957657,
      [
-      "Austin Peay ",
-      "Life (GA) "
+      "Albertus Magnus ",
+      "Fisher "
      ]
     ],
     [
-     2956667,
+     2957654,
      [
-      "Górnik Zamek Książ Wałbrzych ",
-      "Euvic GTK Gliwice "
+      "Heliopolis Sporting Club Heliopolis Sporting Club",
+      "Olympic Sporting Club Olympic Sporting Club"
      ]
     ],
     [
-     2956668,
+     2957653,
      [
-      "KSK Qemetica Noteć Inowrocław ",
-      "PGE Spójnia Stargard "
+      "Canal Sporting Club Canal Sporting Club",
+      "Shooting Sporting Club Shooting Sporting Club"
      ]
     ],
     [
-     2956663,
+     2957650,
      [
-      "Agnes Scott ",
-      "Abraham Baldwin "
+      "Army Sporting Club Army Sporting Club",
+      "Horse Owners Sporting Club Horse Owners Sporting Club"
      ]
     ],
     [
-     2956669,
+     2957649,
      [
-      "Pomorskie ",
-      "Mazowieckie "
+      "Damanhour Sporting Club Damanhour Sporting Club",
+      "Zohour Sporting Club Zohour Sporting Club"
      ]
     ],
     [
-     2956670,
+     2957646,
      [
-      "Śląskie ",
-      "Małopolskie "
+      "WE Sporting Club WE Sporting Club",
+      "Zamalek Sporting Club Zamalek Sporting Club"
      ]
     ],
     [
-     2956671,
+     2957645,
      [
-      "Łódzkie ",
-      "Wielkopolskie "
+      "Petrojet Sporting Club Petrojet Sporting Club",
+      "Alexandria Sporting Club Alexandria Sporting Club"
      ]
     ],
     [
-     2956672,
+     2957644,
      [
-      "Małopolskie ",
-      "Mazowieckie "
+      "Saint Vincent ",
+      "Penn St.-Gr Allegheny "
      ]
     ],
     [
-     2956673,
+     2957643,
      [
-      "Śląskie ",
-      "Wielkopolskie "
+      "Akron ",
+      "West Va. Tech "
      ]
     ],
     [
-     2956675,
+     2957685,
      [
-      "Pomorskie ",
-      "Łódzkie "
+      "St. Edward's ",
+      "Schreiner "
      ]
     ],
     [
-     2956650,
+     2957612,
      [
-      "25 AGOSTO 25 AGOSTO",
-      "BOHEMIOS BOHEMIOS"
+      "Muks Basket Warszawa Muks Basket Warszawa",
+      "SKM Monstrai SKM Monstrai"
      ]
     ],
     [
-     2956649,
+     2957610,
      [
-      "AURIBLANCO AURIBLANCO",
-      "CAPITOL CAPITOL"
+      "LSSS LSSS",
+      "BC Telavi BC Telavi"
      ]
     ]
    ]
