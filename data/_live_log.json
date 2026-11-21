@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:34:47+01:00",
+ "at": "2026-11-21T18:35:27+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 2,
-   "clock": "03:43",
+   "clock": "03:35",
    "done": false,
    "teams": [
     [
@@ -55,12 +55,12 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "07:59",
+   "clock": "07:36",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     3,
+     5,
      12
     ],
     [
@@ -113,7 +113,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "08:17",
+   "clock": "07:17",
    "done": false,
    "teams": [
     [
@@ -123,7 +123,7 @@
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     61,
+     63,
      10
     ]
    ]
