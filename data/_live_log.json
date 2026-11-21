@@ -1,29 +1,6 @@
 {
- "at": "2026-11-21T03:47:05+01:00",
+ "at": "2026-11-21T03:47:57+01:00",
  "log": [
-  {
-   "game": "g20261121dela",
-   "checking": "ESPN"
-  },
-  {
-   "game": "g20261121dela",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Niagara Purple Eagles",
-     103,
-     14
-    ],
-    [
-     "Delaware State Hornets",
-     101,
-     15
-    ]
-   ]
-  },
   {
    "game": "g20261121lips",
    "checking": "ESPN"
@@ -32,12 +9,12 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:04",
+   "clock": "09:33",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     43,
+     45,
      16
     ],
     [
