@@ -80374,7 +80374,7 @@
   "pos": "",
   "min": 46,
   "pts": 28,
-  "reb": 4,
+  "reb": 5,
   "ast": 7,
   "stl": 5,
   "blk": 0,
@@ -80520,7 +80520,7 @@
   "player": "Joshua Obiora",
   "pos": "",
   "min": 39,
-  "pts": 25,
+  "pts": 26,
   "reb": 11,
   "ast": 2,
   "stl": 1,
@@ -80528,7 +80528,7 @@
   "tov": 1,
   "fg": "9/16",
   "three": "1/2",
-  "ft": "6/10",
+  "ft": "7/12",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -80687,7 +80687,7 @@
   "team": "Delaware State",
   "player": "Dean Shepherd",
   "pos": "",
-  "min": 11,
+  "min": 12,
   "pts": 0,
   "reb": 0,
   "ast": 2,
@@ -80773,7 +80773,7 @@
   "pos": "",
   "min": 19,
   "pts": 2,
-  "reb": 2,
+  "reb": 3,
   "ast": 1,
   "stl": 0,
   "blk": 0,
@@ -80794,7 +80794,7 @@
   "pos": "",
   "min": 25,
   "pts": 7,
-  "reb": 2,
+  "reb": 1,
   "ast": 3,
   "stl": 2,
   "blk": 0,
@@ -80982,7 +80982,7 @@
   "player": "Sami Pissis",
   "pos": "",
   "min": 24,
-  "pts": 10,
+  "pts": 11,
   "reb": 4,
   "ast": 3,
   "stl": 1,
@@ -80990,7 +80990,7 @@
   "tov": 2,
   "fg": "3/6",
   "three": "1/2",
-  "ft": "3/3",
+  "ft": "4/4",
   "pm": "",
   "swede": false,
   "state": "live",
@@ -81098,7 +81098,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81119,7 +81119,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81140,7 +81140,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81156,12 +81156,12 @@
   "stl": 3,
   "blk": 0,
   "tov": 3,
-  "fg": "4/10",
-  "three": "2/7",
+  "fg": "4/11",
+  "three": "2/8",
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81170,7 +81170,7 @@
   "team": "Tulsa",
   "player": "Myles Rigsby",
   "pos": "",
-  "min": 31,
+  "min": 32,
   "pts": 9,
   "reb": 7,
   "ast": 4,
@@ -81182,7 +81182,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81203,7 +81203,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81224,7 +81224,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81245,7 +81245,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81266,11 +81266,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-0-13",
+  "row_id": "c20261121miss-0-9",
   "game_id": "c20261121miss",
   "team": "Tulsa",
   "player": "Mike Williams III",
@@ -81287,11 +81287,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-0-14",
+  "row_id": "c20261121miss-0-10",
   "game_id": "c20261121miss",
   "team": "Tulsa",
   "player": "Jeremiah Johnson",
@@ -81308,7 +81308,7 @@
   "ft": "5/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81329,7 +81329,7 @@
   "ft": "4/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81350,7 +81350,7 @@
   "ft": "6/8",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81371,7 +81371,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81392,7 +81392,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81413,11 +81413,11 @@
   "ft": "4/6",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-1-6",
+  "row_id": "c20261121miss-1-5",
   "game_id": "c20261121miss",
   "team": "Mississippi State",
   "player": "Kendyl Sanders",
@@ -81434,11 +81434,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-1-7",
+  "row_id": "c20261121miss-1-6",
   "game_id": "c20261121miss",
   "team": "Mississippi State",
   "player": "Tristan Reed",
@@ -81455,11 +81455,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-1-10",
+  "row_id": "c20261121miss-1-7",
   "game_id": "c20261121miss",
   "team": "Mississippi State",
   "player": "Jalyn Collingwood",
@@ -81476,11 +81476,11 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-1-12",
+  "row_id": "c20261121miss-1-8",
   "game_id": "c20261121miss",
   "team": "Mississippi State",
   "player": "Tajuan Simpkins",
@@ -81497,11 +81497,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "c20261121miss-1-13",
+  "row_id": "c20261121miss-1-9",
   "game_id": "c20261121miss",
   "team": "Mississippi State",
   "player": "King Grace",
@@ -81518,7 +81518,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  }
 ]

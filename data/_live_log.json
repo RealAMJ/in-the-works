@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T03:35:42+01:00",
+ "at": "2026-11-21T03:36:34+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     96,
+     97,
      15
     ]
    ]
@@ -42,7 +42,7 @@
     ],
     [
      "Alabama A&M Bulldogs",
-     60,
+     61,
      16
     ]
    ]
@@ -54,9 +54,9 @@
   {
    "game": "c20261121miss",
    "src": "ESPN",
-   "period": 2,
-   "clock": "00:22",
-   "done": false,
+   "period": 0,
+   "clock": "00:00",
+   "done": true,
    "teams": [
     [
      "Tulsa Golden Hurricane",

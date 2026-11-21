@@ -344,12 +344,11 @@
   "venue": "Neutral",
   "competition": "NCAA",
   "note": "",
-  "status": "live",
+  "status": "final",
   "score": "W 72-61",
   "espn_id": "401925865",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401925865",
-  "clock": "Q2 00:22",
-  "live_updated": "2026-11-21T03:35:42+01:00"
+  "live_done": true
  },
  {
   "game_id": "c20261121csmo",
