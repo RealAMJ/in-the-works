@@ -1,5 +1,27 @@
 [
  {
+  "row_id": "nicholasspir-2026-11-21",
+  "date": "2026-11-21",
+  "player": "Nicholas Spires",
+  "team": "Södertälje BBK",
+  "opponent": "Umeå Basket",
+  "venue": "Home",
+  "result": "W 90-87",
+  "min": 37,
+  "pts": 19,
+  "reb": 12,
+  "ast": 4,
+  "stl": 1,
+  "blk": 2,
+  "fg": "6/12",
+  "three": "1/5",
+  "ft": "6/6",
+  "tags": "Double-double",
+  "headline": "19 points and 12 rebounds (6/12 FG)",
+  "headline_sv": "19 poäng och 12 returer (6/12 från fältet)",
+  "source": "FIBA LiveStats (Basketligan, game 2851800)"
+ },
+ {
   "row_id": "tomasatlibja-2026-11-17",
   "date": "2026-11-17",
   "player": "Tomas Atli Bjarkason",
