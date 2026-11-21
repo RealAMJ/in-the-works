@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:39:40+01:00",
+ "at": "2026-11-21T19:40:39+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "02:06",
+   "clock": "01:39",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     64,
+     66,
      12
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "06:17",
+   "clock": "06:05",
    "done": false,
    "teams": [
     [
@@ -118,12 +118,12 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     26,
+     28,
      12
     ],
     [
      "",
-     23,
+     25,
      10
     ]
    ]
@@ -139,6 +139,29 @@
    "clock": "00:00",
    "done": true,
    "teams": []
+  },
+  {
+   "game": "g20261121wich",
+   "checking": "ESPN"
+  },
+  {
+   "game": "g20261121wich",
+   "src": "ESPN",
+   "period": 0,
+   "clock": "00:00",
+   "done": false,
+   "teams": [
+    [
+     "Wichita State Shockers",
+     0,
+     0
+    ],
+    [
+     "New Mexico Lobos",
+     0,
+     0
+    ]
+   ]
   },
   {
    "game": "c20261121anw",
