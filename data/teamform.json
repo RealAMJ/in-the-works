@@ -8566,5 +8566,33 @@
   "note": "",
   "leaders": "",
   "source": "club site (final score only)"
+ },
+ {
+  "row_id": "unicaja-2026-11-21",
+  "team": "Unicaja",
+  "date": "2026-11-21",
+  "competition": "Liga ACB",
+  "opponent": "Recoletas Salud San Pablo Burgos",
+  "venue": "Away",
+  "score": "94-71",
+  "result": "W",
+  "top": "Noua 23 pts, 8 reb",
+  "note": "",
+  "leaders": "Noua|23|8|1;Perry|20|4|4;Kalinoski|12|1|1",
+  "source": "ACB Live"
+ },
+ {
+  "row_id": "recoletas-salud-san-pablo-burgos-2026-11-21",
+  "team": "Recoletas Salud San Pablo Burgos",
+  "date": "2026-11-21",
+  "competition": "Liga ACB",
+  "opponent": "Unicaja",
+  "venue": "Home",
+  "score": "71-94",
+  "result": "L",
+  "top": "Taboada 13 pts, 2 reb",
+  "note": "",
+  "leaders": "Taboada|13|2|2;D.Radosavljevic|11|4|0;Evans|10|3|1;Sengfelder|10|4|0",
+  "source": "ACB Live"
  }
 ]
