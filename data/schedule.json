@@ -3176,10 +3176,10 @@
   "competition": "Liga ACB",
   "note": "Round 9",
   "status": "live",
-  "score": "W 73-57",
+  "score": "W 75-57",
   "live_feed": "acb:105447",
-  "clock": "Q4 07:32",
-  "live_updated": "2026-11-21T19:26:16+01:00"
+  "clock": "Q4 07:07",
+  "live_updated": "2026-11-21T19:27:14+01:00"
  },
  {
   "game_id": "g20261121lowe",
@@ -3195,7 +3195,7 @@
   "score": "W 48-35",
   "live_feed": "bbl:2006842",
   "clock": "Halftime",
-  "live_updated": "2026-11-21T19:26:19+01:00"
+  "live_updated": "2026-11-21T19:27:15+01:00"
  },
  {
   "game_id": "g20261121tizo",
@@ -3222,11 +3222,11 @@
   "competition": "NCAA",
   "note": "",
   "status": "live",
-  "score": "W 18-11",
+  "score": "W 18-13",
   "espn_id": "401920948",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920948",
-  "clock": "Q1 08:12",
-  "live_updated": "2026-11-21T19:26:19+01:00"
+  "clock": "Q1 07:31",
+  "live_updated": "2026-11-21T19:27:16+01:00"
  },
  {
   "game_id": "g20261121bcvi",
@@ -3242,7 +3242,7 @@
   "score": "W 20-18",
   "live_feed": "aba:89/26/1",
   "clock": "Q2 ",
-  "live_updated": "2026-11-21T19:26:21+01:00"
+  "live_updated": "2026-11-21T19:27:18+01:00"
  },
  {
   "game_id": "g20261121pale",
