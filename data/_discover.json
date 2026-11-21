@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T15:24:46+01:00",
+ "at": "2026-11-21T15:29:14+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 174,
+   "answered": 175,
    "sample": [
     [
      2957657,
@@ -41,6 +41,13 @@
      [
       "Damanhour Sporting Club Damanhour Sporting Club",
       "Zohour Sporting Club Zohour Sporting Club"
+     ]
+    ],
+    [
+     2957647,
+     [
+      "Alexandria Sporting Club Alexandria Sporting Club",
+      "Petrojet Sporting Club Petrojet Sporting Club"
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "St. Edward's ",
       "Schreiner "
-     ]
-    ],
-    [
-     2957686,
-     [
-      "Energa Trefl II Sopot ",
-      "TKM Włocławek "
      ]
     ]
    ]
