@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:07:48+01:00",
+ "at": "2026-11-21T19:08:40+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "05:14",
+   "clock": "04:53",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "03:17",
+   "clock": "03:07",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     23,
+     24,
      12
     ]
    ]
@@ -90,12 +90,12 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "16:33",
+   "clock": "16:14",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     4,
+     7,
      14
     ],
     [
@@ -118,7 +118,7 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     2,
+     6,
      12
     ],
     [
@@ -171,12 +171,12 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "05:05",
+   "clock": "04:39",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     71,
+     73,
      11
     ],
     [
