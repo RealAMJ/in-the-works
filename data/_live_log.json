@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T03:01:23+01:00",
+ "at": "2026-11-21T03:02:14+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,12 +9,12 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "00:26",
+   "clock": "00:21",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     82,
+     84,
      14
     ],
     [
@@ -55,7 +55,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "10:16",
+   "clock": "09:55",
    "done": false,
    "teams": [
     [
