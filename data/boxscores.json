@@ -4001,7 +4001,7 @@
   "player": "Hugo Tidare",
   "min": 29,
   "pts": 2,
-  "reb": 5,
+  "reb": 6,
   "ast": 2,
   "fg": "1/9",
   "three": "0/6",
@@ -4010,11 +4010,11 @@
   "source": "ESPN",
   "note": "live",
   "oreb": 1,
-  "dreb": 4,
+  "dreb": 5,
   "stl": 0,
   "blk": 0,
   "tov": 3,
-  "pf": 2,
+  "pf": 3,
   "eff": ""
  }
 ]
