@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T12:46:25+01:00",
+ "at": "2026-11-21T12:47:17+01:00",
  "log": [
   {
    "game": "g20261121toru",
@@ -9,7 +9,7 @@
    "game": "g20261121toru",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "00:03",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
