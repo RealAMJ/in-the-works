@@ -786,11 +786,11 @@
   "home": "Södertälje BBK",
   "away": "Umeå Basket",
   "hs": 90,
-  "as_": 85,
+  "as_": 87,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851800/summary",
   "box": false,
-  "clock": "03:03",
+  "clock": "00:23",
   "period": 5
  },
  {
@@ -799,12 +799,12 @@
   "time": "18:04",
   "home": "Högsbo Lions",
   "away": "Sloga Uppsala",
-  "hs": 3,
-  "as_": 3,
+  "hs": 10,
+  "as_": 8,
   "status": "live",
   "url": "https://hosted.dcd.shared.geniussports.com/SBF/en/competition/48974/match/2851797/summary",
   "box": false,
-  "clock": "07:00",
+  "clock": "04:17",
   "period": 1
  },
  {
