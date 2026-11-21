@@ -87711,7 +87711,7 @@
   "fg": "5/10",
   "three": "2/4",
   "ft": "1/2",
-  "pm": -11,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87732,7 +87732,7 @@
   "fg": "9/18",
   "three": "1/5",
   "ft": "3/6",
-  "pm": 6,
+  "pm": 5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87753,7 +87753,7 @@
   "fg": "2/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87837,7 +87837,7 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "2/2",
-  "pm": -11,
+  "pm": -12,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87879,7 +87879,7 @@
   "fg": "7/8",
   "three": "4/5",
   "ft": "0/0",
-  "pm": -4,
+  "pm": -5,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87900,7 +87900,7 @@
   "fg": "4/11",
   "three": "4/9",
   "ft": "2/2",
-  "pm": 14,
+  "pm": 15,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87933,7 +87933,7 @@
   "player": "Luka Sakota",
   "pos": "",
   "min": 30,
-  "pts": 19,
+  "pts": 20,
   "reb": 1,
   "ast": 4,
   "stl": 0,
@@ -87941,8 +87941,8 @@
   "tov": 1,
   "fg": "6/13",
   "three": "5/7",
-  "ft": "2/2",
-  "pm": 13,
+  "ft": "3/3",
+  "pm": 14,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -87984,7 +87984,7 @@
   "fg": "2/4",
   "three": "0/2",
   "ft": "0/0",
-  "pm": 0,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88026,7 +88026,7 @@
   "fg": "8/14",
   "three": "1/5",
   "ft": "1/2",
-  "pm": -5,
+  "pm": -4,
   "swede": true,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88047,7 +88047,7 @@
   "fg": "7/9",
   "three": "4/5",
   "ft": "2/2",
-  "pm": 6,
+  "pm": 7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
