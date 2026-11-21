@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:20:45+01:00",
+ "at": "2026-11-21T19:21:44+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "11:43",
+   "clock": "11:19",
    "done": false,
    "teams": [
     [
@@ -100,7 +100,7 @@
     ],
     [
      "Eastern Michigan Eagles",
-     6,
+     8,
      14
     ]
    ]
@@ -112,7 +112,7 @@
   {
    "game": "g20261121bcvi",
    "src": "ABA League (aba-liga.com)",
-   "period": 1,
+   "period": 2,
    "clock": "",
    "done": false,
    "teams": [
@@ -123,7 +123,7 @@
     ],
     [
      "",
-     13,
+     16,
      10
     ]
    ]
@@ -176,7 +176,7 @@
    "teams": [
     [
      "King Szczecin",
-     79,
+     80,
      11
     ],
     [
