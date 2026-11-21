@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T12:35:10+01:00",
+ "at": "2026-11-21T12:39:00+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 152,
+   "answered": 154,
    "sample": [
     [
      2957657,
@@ -86,10 +86,10 @@
      ]
     ],
     [
-     2957695,
+     2957686,
      [
-      "UJK Kielce ",
-      "MKKS Rybnik "
+      "Energa Trefl II Sopot ",
+      "TKM Włocławek "
      ]
     ]
    ]
