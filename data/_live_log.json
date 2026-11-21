@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:18:53+01:00",
+ "at": "2026-11-21T19:19:51+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "00:19",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Unicaja",
-     65,
+     68,
      12
     ]
    ]
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "01:52",
+   "clock": "01:40",
    "done": false,
    "teams": [
     [
@@ -181,7 +181,7 @@
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     90,
+     93,
      10
     ]
    ]
