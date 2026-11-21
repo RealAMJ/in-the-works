@@ -3179,7 +3179,7 @@
   "score": "W 82-60",
   "live_feed": "acb:105447",
   "clock": "Q4 04:46",
-  "live_updated": "2026-11-21T19:33:08+01:00"
+  "live_updated": "2026-11-21T19:34:04+01:00"
  },
  {
   "game_id": "g20261121lowe",
@@ -3192,10 +3192,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "W 48-35",
+  "score": "W 48-40",
   "live_feed": "bbl:2006842",
-  "clock": "Q3 09:06",
-  "live_updated": "2026-11-21T19:33:09+01:00"
+  "clock": "Q3 08:05",
+  "live_updated": "2026-11-21T19:34:05+01:00"
  },
  {
   "game_id": "g20261121tizo",
@@ -3225,8 +3225,8 @@
   "score": "W 22-16",
   "espn_id": "401920948",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920948",
-  "clock": "Q1 06:09",
-  "live_updated": "2026-11-21T19:33:10+01:00"
+  "clock": "Q1 05:22",
+  "live_updated": "2026-11-21T19:34:06+01:00"
  },
  {
   "game_id": "g20261121bcvi",
@@ -3239,10 +3239,10 @@
   "competition": "ABA League",
   "note": "",
   "status": "live",
-  "score": "L 22-24",
+  "score": "L 22-26",
   "live_feed": "aba:89/26/1",
   "clock": "Q2 ",
-  "live_updated": "2026-11-21T19:33:12+01:00"
+  "live_updated": "2026-11-21T19:34:07+01:00"
  },
  {
   "game_id": "g20261121pale",
