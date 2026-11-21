@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T13:38:06+01:00",
+ "at": "2026-11-21T13:38:38+01:00",
  "log": [
   {
    "game": "g20261121toru",
@@ -9,7 +9,7 @@
    "game": "g20261121toru",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "02:42",
+   "clock": "02:24",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Arriva Lotto Twarde Pierniki Toru\u0144",
-     66,
+     68,
      11
     ]
    ]
