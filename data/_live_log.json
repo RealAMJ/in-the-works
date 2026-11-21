@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:15:26+01:00",
+ "at": "2026-11-21T02:16:18+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,12 +9,12 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:31",
+   "clock": "13:08",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     51,
+     52,
      14
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "13:15",
+   "clock": "12:22",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Iona Gaels",
-     40,
+     43,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:42",
+   "clock": "01:18",
    "done": false,
    "teams": [
     [
