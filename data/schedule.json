@@ -2883,7 +2883,9 @@
   "score": "L 101-103",
   "espn_id": "401924844",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924844",
-  "live_done": true
+  "live_done": true,
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261121iona",
@@ -2917,8 +2919,8 @@
   "score": "L 46-64",
   "espn_id": "401920707",
   "box_url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920707",
-  "clock": "Q2 09:22",
-  "live_updated": "2026-11-21T03:49:40+01:00"
+  "clock": "Q2 09:16",
+  "live_updated": "2026-11-21T03:50:13+01:00"
  },
  {
   "game_id": "g20261121vmi",

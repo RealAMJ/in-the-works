@@ -8062,5 +8062,33 @@
   "note": "",
   "leaders": "Johnson|21|3|1;Williams|13|5|1;Rigsby|9|7|4",
   "source": "ESPN"
+ },
+ {
+  "row_id": "delaware-state-2026-11-21",
+  "team": "Delaware State",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Niagara",
+  "venue": "Home",
+  "score": "101-103",
+  "result": "L",
+  "top": "Muhammad 30 pts, 1 reb",
+  "note": "",
+  "leaders": "Muhammad|30|1|6;Obiora|28|11|2;Sullivan|20|5|3",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "niagara-2026-11-21",
+  "team": "Niagara",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Delaware State",
+  "venue": "Away",
+  "score": "103-101",
+  "result": "W",
+  "top": "Woods 28 pts, 5 reb",
+  "note": "",
+  "leaders": "Woods|28|5|7;Farrell|24|4|2;Miccoli|19|0|6",
+  "source": "ESPN"
  }
 ]
