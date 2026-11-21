@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:13:32+01:00",
+ "at": "2026-11-21T19:14:24+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "14:37",
+   "clock": "13:50",
    "done": false,
    "teams": [
     [
@@ -118,12 +118,12 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     10,
+     13,
      12
     ],
     [
      "",
-     5,
+     7,
      10
     ]
    ]
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:30",
+   "clock": "02:15",
    "done": false,
    "teams": [
     [
