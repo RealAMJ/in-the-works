@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:55:54+01:00",
+ "at": "2026-11-21T02:56:42+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     70,
+     71,
      15
     ]
    ]
@@ -55,12 +55,12 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:29",
+   "clock": "01:20",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     21,
+     22,
      16
     ],
     [
