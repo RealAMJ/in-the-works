@@ -8090,5 +8090,33 @@
   "note": "",
   "leaders": "Woods|28|5|7;Farrell|24|4|2;Miccoli|19|0|6",
   "source": "ESPN"
+ },
+ {
+  "row_id": "lipscomb-2026-11-21",
+  "team": "Lipscomb",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Alabama A&M",
+  "venue": "Away",
+  "score": "69-85",
+  "result": "L",
+  "top": "Sargiunas 13 pts, 1 reb",
+  "note": "",
+  "leaders": "Sargiunas|13|1|2;Dotson|11|3|1;Esmeraldo|10|4|6;Scott|10|2|2",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "alabama-am-2026-11-21",
+  "team": "Alabama A&M",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Lipscomb",
+  "venue": "Home",
+  "score": "85-69",
+  "result": "W",
+  "top": "Graham 37 pts, 4 reb",
+  "note": "",
+  "leaders": "Graham|37|4|1;Cobbs|16|4|4;Pissis|13|4|6",
+  "source": "ESPN"
  }
 ]
