@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:40:28+01:00",
+ "at": "2026-11-21T02:40:58+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:21",
+   "clock": "04:58",
    "done": false,
    "teams": [
     [
@@ -37,7 +37,7 @@
    "teams": [
     [
      "Kansas City Roos",
-     58,
+     61,
      15
     ],
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "08:01",
+   "clock": "07:54",
    "done": false,
    "teams": [
     [
@@ -78,12 +78,12 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "16:03",
+   "clock": "16:01",
    "done": false,
    "teams": [
     [
      "Tulsa Golden Hurricane",
-     32,
+     33,
      15
     ],
     [
