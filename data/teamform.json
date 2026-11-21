@@ -8510,5 +8510,33 @@
   "note": "",
   "leaders": "Brown|38|4|1;Minkov|16|1|2;Ramsey|13|5|7",
   "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "twarde-pierniki-toru-2026-11-21",
+  "team": "Twarde Pierniki Toruń",
+  "date": "2026-11-21",
+  "competition": "Orlen Basket Liga",
+  "opponent": "PGE Start Lublin",
+  "venue": "Away",
+  "score": "101-94",
+  "result": "W",
+  "top": "Sakota 23 pts, 1 reb",
+  "note": "",
+  "leaders": "Sakota|23|1|4;Kilps|20|3|6;Gaddefors|18|5|4",
+  "source": "FIBA LiveStats"
+ },
+ {
+  "row_id": "pge-start-lublin-2026-11-21",
+  "team": "PGE Start Lublin",
+  "date": "2026-11-21",
+  "competition": "Orlen Basket Liga",
+  "opponent": "Twarde Pierniki Toruń",
+  "venue": "Home",
+  "score": "94-101",
+  "result": "L",
+  "top": "Starks 22 pts, 4 reb",
+  "note": "",
+  "leaders": "Starks|22|4|5;Williamson|18|2|2;Lottie|14|2|7",
+  "source": "FIBA LiveStats"
  }
 ]

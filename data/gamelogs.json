@@ -8130,5 +8130,31 @@
   "pf": 0,
   "pm": "",
   "eff": ""
+ },
+ {
+  "row_id": "gaddefors-2026-11-21",
+  "player": "Viktor Gaddefors",
+  "date": "2026-11-21",
+  "competition": "Orlen Basket Liga",
+  "team": "Twarde Pierniki Toruń",
+  "opponent": "PGE Start Lublin",
+  "venue": "Away",
+  "result": "W 101-94",
+  "min": 30,
+  "pts": 18,
+  "reb": 5,
+  "ast": 4,
+  "source": "FIBA LiveStats",
+  "fg": "8/14",
+  "three": "1/5",
+  "ft": "1/2",
+  "oreb": 2,
+  "dreb": 3,
+  "stl": 1,
+  "blk": 0,
+  "tov": 2,
+  "pf": 0,
+  "pm": -2,
+  "eff": ""
  }
 ]
