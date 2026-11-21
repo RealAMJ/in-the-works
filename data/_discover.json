@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T16:30:31+01:00",
+ "at": "2026-11-21T16:35:06+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 185,
+   "answered": 192,
    "sample": [
     [
      2957657,
@@ -37,6 +37,13 @@
      ]
     ],
     [
+     2957665,
+     [
+      "KS Basket Ostrovia Ostrów Wlkp. ",
+      "Akopol Korona 1919 AZS PK Kraków "
+     ]
+    ],
+    [
      2957666,
      [
       "Sparta Ziębice ",
@@ -58,6 +65,13 @@
      ]
     ],
     [
+     2957669,
+     [
+      "Energa Basketball Elbląg ",
+      "BSA  AMW Arka Gdynia "
+     ]
+    ],
+    [
      2957647,
      [
       "Alexandria Sporting Club Alexandria Sporting Club",
@@ -76,20 +90,6 @@
      [
       "Petrojet Sporting Club Petrojet Sporting Club",
       "Alexandria Sporting Club Alexandria Sporting Club"
-     ]
-    ],
-    [
-     2957644,
-     [
-      "Saint Vincent ",
-      "Penn St.-Gr Allegheny "
-     ]
-    ],
-    [
-     2957643,
-     [
-      "Akron ",
-      "West Va. Tech "
      ]
     ]
    ]
