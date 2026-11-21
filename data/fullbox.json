@@ -87711,9 +87711,9 @@
   "fg": "5/10",
   "three": "2/4",
   "ft": "2/4",
-  "pm": -12,
+  "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87729,12 +87729,12 @@
   "stl": 1,
   "blk": 0,
   "tov": 0,
-  "fg": "9/18",
-  "three": "1/5",
+  "fg": "9/19",
+  "three": "1/6",
   "ft": "3/6",
-  "pm": 5,
+  "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87753,9 +87753,9 @@
   "fg": "2/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 6,
+  "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87776,7 +87776,7 @@
   "ft": "0/0",
   "pm": -3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87797,7 +87797,7 @@
   "ft": "3/5",
   "pm": 3,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87818,7 +87818,7 @@
   "ft": "1/1",
   "pm": 4,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87827,7 +87827,7 @@
   "team": "PGE Start Lublin",
   "player": "Filip Put",
   "pos": "",
-  "min": 21,
+  "min": 22,
   "pts": 9,
   "reb": 7,
   "ast": 1,
@@ -87837,9 +87837,9 @@
   "fg": "3/4",
   "three": "1/2",
   "ft": "2/2",
-  "pm": -12,
+  "pm": -14,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87860,7 +87860,7 @@
   "ft": "3/3",
   "pm": -11,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87879,9 +87879,9 @@
   "fg": "7/8",
   "three": "4/5",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87902,7 +87902,7 @@
   "ft": "2/2",
   "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87921,9 +87921,9 @@
   "fg": "4/10",
   "three": "0/4",
   "ft": "1/2",
-  "pm": -10,
+  "pm": -8,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87933,7 +87933,7 @@
   "player": "Luka Sakota",
   "pos": "",
   "min": 30,
-  "pts": 21,
+  "pts": 23,
   "reb": 1,
   "ast": 4,
   "stl": 0,
@@ -87941,10 +87941,10 @@
   "tov": 1,
   "fg": "6/13",
   "three": "5/7",
-  "ft": "4/4",
-  "pm": 14,
+  "ft": "6/6",
+  "pm": 16,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87963,9 +87963,9 @@
   "fg": "0/1",
   "three": "0/0",
   "ft": "0/0",
-  "pm": -9,
+  "pm": -7,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -87986,7 +87986,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -88007,7 +88007,7 @@
   "ft": "0/0",
   "pm": 1,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -88016,9 +88016,9 @@
   "team": "Twarde Pierniki Toruń",
   "player": "Viktor Gaddefors",
   "pos": "",
-  "min": 29,
+  "min": 30,
   "pts": 18,
-  "reb": 4,
+  "reb": 5,
   "ast": 4,
   "stl": 1,
   "blk": 0,
@@ -88026,9 +88026,9 @@
   "fg": "8/14",
   "three": "1/5",
   "ft": "1/2",
-  "pm": -4,
+  "pm": -2,
   "swede": true,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -88037,7 +88037,7 @@
   "team": "Twarde Pierniki Toruń",
   "player": "Kristaps Kilps",
   "pos": "",
-  "min": 23,
+  "min": 24,
   "pts": 20,
   "reb": 3,
   "ast": 6,
@@ -88047,9 +88047,9 @@
   "fg": "7/9",
   "three": "4/5",
   "ft": "2/2",
-  "pm": 7,
+  "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  },
  {
@@ -88070,7 +88070,7 @@
   "ft": "2/3",
   "pm": 9,
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "FIBA LiveStats"
  }
 ]
