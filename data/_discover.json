@@ -1,18 +1,25 @@
 {
- "at": "2026-11-21T16:35:06+01:00",
+ "at": "2026-11-21T16:39:40+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 192,
+   "answered": 194,
    "sample": [
     [
      2957657,
      [
       "Albertus Magnus ",
       "Fisher "
+     ]
+    ],
+    [
+     2957661,
+     [
+      "PGE Wisła Kraków  ",
+      "Artego Bydgoszcz "
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "WE Sporting Club WE Sporting Club",
       "Zamalek Sporting Club Zamalek Sporting Club"
-     ]
-    ],
-    [
-     2957645,
-     [
-      "Petrojet Sporting Club Petrojet Sporting Club",
-      "Alexandria Sporting Club Alexandria Sporting Club"
      ]
     ]
    ]
