@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:12:42+01:00",
+ "at": "2026-11-21T18:13:38+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 1,
-   "clock": "05:12",
+   "clock": "04:43",
    "done": false,
    "teams": [
     [
@@ -113,7 +113,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "02:33",
+   "clock": "02:17",
    "done": false,
    "teams": [
     [
@@ -123,7 +123,7 @@
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     49,
+     51,
      10
     ]
    ]
