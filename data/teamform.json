@@ -8034,5 +8034,33 @@
   "note": "",
   "leaders": "Goodwin|19|5|1;Diop|15|10|1;Daughtery|9|0|0",
   "source": "ESPN"
+ },
+ {
+  "row_id": "mississippi-state-2026-11-21",
+  "team": "Mississippi State",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Tulsa",
+  "venue": "Neutral",
+  "score": "72-61",
+  "result": "W",
+  "top": "Hubbard 19 pts, 3 reb",
+  "note": "",
+  "leaders": "Hubbard|19|3|4;Johnson|14|5|0;Hamilton|11|10|1",
+  "source": "ESPN"
+ },
+ {
+  "row_id": "tulsa-2026-11-21",
+  "team": "Tulsa",
+  "date": "2026-11-21",
+  "competition": "NCAA",
+  "opponent": "Mississippi State",
+  "venue": "Neutral",
+  "score": "61-72",
+  "result": "L",
+  "top": "Johnson 21 pts, 3 reb",
+  "note": "",
+  "leaders": "Johnson|21|3|1;Williams|13|5|1;Rigsby|9|7|4",
+  "source": "ESPN"
  }
 ]
