@@ -88080,7 +88080,7 @@
   "player": "Zahir Porter",
   "pos": "",
   "min": 9,
-  "pts": 9,
+  "pts": 10,
   "reb": 3,
   "ast": 0,
   "stl": 0,
@@ -88088,8 +88088,8 @@
   "tov": 0,
   "fg": "4/5",
   "three": "1/2",
-  "ft": "0/0",
-  "pm": -7,
+  "ft": "1/1",
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88131,7 +88131,7 @@
   "fg": "0/2",
   "three": "0/1",
   "ft": "0/0",
-  "pm": -8,
+  "pm": -7,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88152,7 +88152,7 @@
   "fg": "1/4",
   "three": "0/0",
   "ft": "1/2",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88173,7 +88173,7 @@
   "fg": "2/3",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -7,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88194,7 +88194,7 @@
   "fg": "2/2",
   "three": "1/1",
   "ft": "0/0",
-  "pm": 5,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88278,7 +88278,7 @@
   "fg": "1/2",
   "three": "0/1",
   "ft": "1/2",
-  "pm": 2,
+  "pm": 1,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88320,7 +88320,7 @@
   "fg": "2/4",
   "three": "0/0",
   "ft": "2/2",
-  "pm": 7,
+  "pm": 6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88341,7 +88341,7 @@
   "fg": "2/5",
   "three": "1/2",
   "ft": "0/0",
-  "pm": -5,
+  "pm": -6,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
@@ -88404,7 +88404,7 @@
   "fg": "3/4",
   "three": "1/1",
   "ft": "2/2",
-  "pm": 9,
+  "pm": 8,
   "swede": false,
   "state": "live",
   "source": "FIBA LiveStats"
