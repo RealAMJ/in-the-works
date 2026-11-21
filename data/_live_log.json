@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:17:11+01:00",
+ "at": "2026-11-21T02:17:49+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     49,
+     50,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:21",
+   "clock": "12:05",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:16",
+   "clock": "18:58",
    "done": false,
    "teams": [
     [
@@ -78,7 +78,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "01:14",
+   "clock": "00:51",
    "done": false,
    "teams": [
     [
