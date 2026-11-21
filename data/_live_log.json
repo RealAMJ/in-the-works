@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:03:15+01:00",
+ "at": "2026-11-21T14:04:01+01:00",
  "log": [
   {
    "game": "g20261121toru",
@@ -9,12 +9,12 @@
    "game": "g20261121toru",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "03:28",
+   "clock": "03:08",
    "done": false,
    "teams": [
     [
      "PGE Start Lublin",
-     87,
+     88,
      11
     ],
     [
