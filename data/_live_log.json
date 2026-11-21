@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:13:00+01:00",
+ "at": "2026-11-21T02:13:39+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:42",
+   "clock": "14:40",
    "done": false,
    "teams": [
     [
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "14:22",
+   "clock": "13:32",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Iona Gaels",
-     36,
+     38,
      17
     ]
    ]
@@ -78,7 +78,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "02:29",
+   "clock": "02:22",
    "done": false,
    "teams": [
     [
