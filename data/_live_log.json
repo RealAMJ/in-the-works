@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:16:19+01:00",
+ "at": "2026-11-21T19:17:15+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "02:04",
+   "clock": "01:22",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     50,
+     52,
      12
     ],
     [
@@ -90,12 +90,12 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:21",
+   "clock": "12:15",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     13,
+     14,
      14
     ],
     [
@@ -123,7 +123,7 @@
     ],
     [
      "",
-     7,
+     10,
      10
     ]
    ]
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:00",
+   "clock": "01:52",
    "done": false,
    "teams": [
     [
