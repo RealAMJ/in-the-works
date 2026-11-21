@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:47:24+01:00",
+ "at": "2026-11-21T19:48:21+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "03:55",
+   "clock": "03:16",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     48,
+     49,
      12
     ]
    ]
@@ -72,7 +72,7 @@
    "teams": [
     [
      "Denver Pioneers",
-     31,
+     33,
      14
     ],
     [
