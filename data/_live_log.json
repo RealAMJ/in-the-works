@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:05:57+01:00",
+ "at": "2026-11-21T19:06:55+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "06:06",
+   "clock": "05:33",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     40,
+     42,
      12
     ],
     [
@@ -55,17 +55,17 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 2,
-   "clock": "04:21",
+   "clock": "03:13",
    "done": false,
    "teams": [
     [
      "Basketball L\u00f6wen Braunschweig",
-     35,
+     40,
      12
     ],
     [
      "BMA365 Bamberg Baskets",
-     21,
+     23,
      12
     ]
    ]
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "17:55",
+   "clock": "17:24",
    "done": false,
    "teams": [
     [
@@ -100,7 +100,7 @@
     ],
     [
      "Eastern Michigan Eagles",
-     0,
+     2,
      14
     ]
    ]
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "05:34",
+   "clock": "05:30",
    "done": false,
    "teams": [
     [
