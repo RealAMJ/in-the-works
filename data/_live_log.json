@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:27:46+01:00",
+ "at": "2026-11-21T18:28:39+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,17 +32,17 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 2,
-   "clock": "07:07",
+   "clock": "06:48",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     20,
+     21,
      12
     ],
     [
      "Unicaja",
-     28,
+     30,
      12
     ]
    ]
