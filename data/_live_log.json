@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:06:37+01:00",
+ "at": "2026-11-21T18:07:31+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,12 +32,12 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 1,
-   "clock": "07:16",
+   "clock": "07:02",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     2,
+     3,
      12
     ],
     [
@@ -78,7 +78,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "04:34",
+   "clock": "04:10",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     43,
+     45,
      10
     ]
    ]
