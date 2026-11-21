@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T01:02:31+01:00",
+ "at": "2026-11-21T01:03:24+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:58",
+   "clock": "19:31",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     0,
+     3,
      15
     ]
    ]
@@ -31,19 +31,19 @@
   {
    "game": "g20261121iona",
    "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
+   "period": 1,
+   "clock": "19:59",
    "done": false,
    "teams": [
     [
-     "Iona Gaels",
-     0,
-     0
-    ],
-    [
      "Kansas City Roos",
      0,
-     0
+     15
+    ],
+    [
+     "Iona Gaels",
+     0,
+     17
     ]
    ]
   }
