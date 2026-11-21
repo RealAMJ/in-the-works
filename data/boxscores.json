@@ -3986,7 +3986,7 @@
   "ft": "0/0",
   "pm": "",
   "source": "ESPN",
-  "note": "live",
+  "note": "DNP",
   "oreb": 0,
   "dreb": 0,
   "stl": 0,
@@ -4013,8 +4013,8 @@
   "dreb": 2,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
-  "pf": 1,
+  "tov": 2,
+  "pf": 2,
   "eff": ""
  }
 ]

@@ -80741,7 +80741,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80762,7 +80762,7 @@
   "ft": "6/9",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80773,7 +80773,7 @@
   "pos": "",
   "min": 30,
   "pts": 8,
-  "reb": 10,
+  "reb": 11,
   "ast": 1,
   "stl": 0,
   "blk": 0,
@@ -80783,7 +80783,7 @@
   "ft": "0/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80804,7 +80804,7 @@
   "ft": "1/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80825,7 +80825,7 @@
   "ft": "4/5",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80846,7 +80846,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80867,11 +80867,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-0-8",
+  "row_id": "g20261121dela-0-7",
   "game_id": "g20261121dela",
   "team": "Niagara",
   "player": "Vukasin Todorovic",
@@ -80888,11 +80888,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-0-10",
+  "row_id": "g20261121dela-0-8",
   "game_id": "g20261121dela",
   "team": "Niagara",
   "player": "Tae Blackshear",
@@ -80909,11 +80909,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-0-12",
+  "row_id": "g20261121dela-0-9",
   "game_id": "g20261121dela",
   "team": "Niagara",
   "player": "Trenton Walters",
@@ -80930,11 +80930,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-0-13",
+  "row_id": "g20261121dela-0-10",
   "game_id": "g20261121dela",
   "team": "Niagara",
   "player": "Cole Farrell",
@@ -80951,7 +80951,7 @@
   "ft": "2/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80972,7 +80972,7 @@
   "ft": "7/12",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -80993,7 +80993,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81002,7 +81002,7 @@
   "team": "Delaware State",
   "player": "Isaiah Sullivan",
   "pos": "",
-  "min": 49,
+  "min": 50,
   "pts": 20,
   "reb": 5,
   "ast": 3,
@@ -81014,7 +81014,7 @@
   "ft": "3/4",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81030,12 +81030,12 @@
   "stl": 1,
   "blk": 0,
   "tov": 3,
-  "fg": "10/18",
-  "three": "4/7",
+  "fg": "10/19",
+  "three": "4/8",
   "ft": "6/7",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81056,7 +81056,7 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81077,11 +81077,11 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-1-8",
+  "row_id": "g20261121dela-1-6",
   "game_id": "g20261121dela",
   "team": "Delaware State",
   "player": "Muazibini Adamu",
@@ -81098,11 +81098,11 @@
   "ft": "1/3",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-1-12",
+  "row_id": "g20261121dela-1-7",
   "game_id": "g20261121dela",
   "team": "Delaware State",
   "player": "Jalen St Clair",
@@ -81119,11 +81119,11 @@
   "ft": "2/2",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
-  "row_id": "g20261121dela-1-13",
+  "row_id": "g20261121dela-1-8",
   "game_id": "g20261121dela",
   "team": "Delaware State",
   "player": "Dean Shepherd",
@@ -81140,7 +81140,7 @@
   "ft": "0/0",
   "pm": "",
   "swede": false,
-  "state": "live",
+  "state": "final",
   "source": "ESPN"
  },
  {
@@ -81218,7 +81218,7 @@
   "ast": 1,
   "stl": 0,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "fg": "1/8",
   "three": "0/5",
   "ft": "0/0",
@@ -81297,13 +81297,13 @@
   "player": "Luke Jack",
   "pos": "",
   "min": 7,
-  "pts": 2,
+  "pts": 4,
   "reb": 2,
   "ast": 0,
   "stl": 0,
   "blk": 0,
   "tov": 0,
-  "fg": "0/1",
+  "fg": "1/2",
   "three": "0/0",
   "ft": "2/2",
   "pm": "",
@@ -81320,8 +81320,8 @@
   "min": 4,
   "pts": 0,
   "reb": 1,
-  "ast": 0,
-  "stl": 0,
+  "ast": 1,
+  "stl": 1,
   "blk": 0,
   "tov": 1,
   "fg": "0/1",
@@ -81407,7 +81407,7 @@
   "ast": 4,
   "stl": 1,
   "blk": 1,
-  "tov": 3,
+  "tov": 4,
   "fg": "4/9",
   "three": "2/5",
   "ft": "0/0",
