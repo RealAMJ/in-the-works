@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:05:20+01:00",
+ "at": "2026-11-21T02:05:50+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,12 +9,12 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:12",
+   "clock": "17:52",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     39,
+     41,
      14
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "17:38",
+   "clock": "17:30",
    "done": false,
    "teams": [
     [
@@ -83,7 +83,7 @@
    "teams": [
     [
      "Tulsa Golden Hurricane",
-     19,
+     20,
      15
     ],
     [
