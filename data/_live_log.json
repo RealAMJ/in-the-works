@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T03:36:34+01:00",
+ "at": "2026-11-21T03:37:19+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,12 +9,12 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 4,
-   "clock": "02:03",
+   "clock": "01:46",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     97,
+     98,
      14
     ],
     [
@@ -32,7 +32,7 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 2,
-   "clock": "12:49",
+   "clock": "12:17",
    "done": false,
    "teams": [
     [
@@ -43,29 +43,6 @@
     [
      "Alabama A&M Bulldogs",
      61,
-     16
-    ]
-   ]
-  },
-  {
-   "game": "c20261121miss",
-   "checking": "ESPN"
-  },
-  {
-   "game": "c20261121miss",
-   "src": "ESPN",
-   "period": 0,
-   "clock": "00:00",
-   "done": true,
-   "teams": [
-    [
-     "Tulsa Golden Hurricane",
-     61,
-     15
-    ],
-    [
-     "Mississippi State Bulldogs",
-     72,
      16
     ]
    ]
