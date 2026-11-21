@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:43:31+01:00",
+ "at": "2026-11-21T02:44:15+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "02:49",
+   "clock": "02:41",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:22",
+   "clock": "06:32",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "Alabama A&M Bulldogs",
-     29,
+     31,
      16
     ]
    ]
