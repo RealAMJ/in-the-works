@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:32:00+01:00",
+ "at": "2026-11-21T18:32:56+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 2,
-   "clock": "04:51",
+   "clock": "04:15",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "09:58",
+   "clock": "08:50",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     0,
+     3,
      12
     ]
    ]
