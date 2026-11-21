@@ -1,12 +1,12 @@
 {
- "at": "2026-11-21T15:33:49+01:00",
+ "at": "2026-11-21T15:38:38+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
    "seed": 2957659,
    "scanned": 799,
-   "answered": 178,
+   "answered": 180,
    "sample": [
     [
      2957657,
@@ -20,6 +20,13 @@
      [
       "Heliopolis Sporting Club Heliopolis Sporting Club",
       "Olympic Sporting Club Olympic Sporting Club"
+     ]
+    ],
+    [
+     2957664,
+     [
+      "Nautiqus AZS Uniwersytet Gdański ",
+      "GMMInoxMergerLogisticsPanteryŁańcut "
      ]
     ],
     [
@@ -83,13 +90,6 @@
      [
       "Akademia Gortata Gdańsk ",
       "MKS Sokół Marbo Międzychód "
-     ]
-    ],
-    [
-     2957684,
-     [
-      "Sklep Polski MKK Gniezno ",
-      "Świecki Klub Koszykówki "
      ]
     ]
    ]
