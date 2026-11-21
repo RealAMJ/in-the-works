@@ -1140,6 +1140,17 @@ DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
 CATEGORIES:ProB (Germany)
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261113tizo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261113T194500Z
+DTEND:20261113T214500Z
+SUMMARY:Czerapowicz: Grupo Ureta Tizona Burgos vs CajaSiete Gran Canaria (L
+  83-104)
+DESCRIPTION:Primera FEB. Players: Chris Czerapowicz. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261114iona@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261114T000000Z
@@ -1180,6 +1191,26 @@ DESCRIPTION:NCAA. Players: Isak Homelius. https://realamj.github.io/in-the-
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261114toru@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T140000Z
+DTEND:20261114T160000Z
+SUMMARY:Gaddefors: Twarde Pierniki Toruń vs Energa Trefl Sopot (W 106-76)
+DESCRIPTION:Orlen Basket Liga. Players: Viktor Gaddefors. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T171000Z
+DTEND:20261114T191000Z
+SUMMARY:Pohto: Juventus Utena at Nevėžis-Paskolų klubas (L 88-91)
+DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
+ ks/
+CATEGORIES:LKL
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261114main@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261114T180000Z
@@ -1200,6 +1231,36 @@ DESCRIPTION:NCAA. Players: Linus Holmström. https://realamj.github.io/in-t
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261114zabo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T180000Z
+DTEND:20261114T200000Z
+SUMMARY:Babic: KK Zabok vs KK Virtus Zagreb (L 71-81)
+DESCRIPTION:Croatian Premier League. Players: Luka Babic. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Croatian Premier League
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114ovie@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T183000Z
+DTEND:20261114T203000Z
+SUMMARY:Terins: Oviedo at Bàsquet Menorca (L 65-75)
+DESCRIPTION:Primera FEB. Players: Felix Terins. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114zamo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T183000Z
+DTEND:20261114T203000Z
+SUMMARY:Palmquist\, Borg: CB Zamora vs Palencia (L 77-86)
+DESCRIPTION:Primera FEB. Players: Oskar Palmquist\, Tobias Borg. https://re
+ alamj.github.io/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261114denv@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261114T200000Z
@@ -1208,6 +1269,17 @@ SUMMARY:Stumer: Denver vs Wyoming (L 53-76)
 DESCRIPTION:NCAA. Players: Oskar Stumer. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261114jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T200000Z
+DTEND:20261114T220000Z
+SUMMARY:Håkanson\, Birgander: Joventut Badalona vs Casademont Zaragoza (W 
+ 99-94)
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261114dela@swedes-abroad
@@ -1270,6 +1342,27 @@ DESCRIPTION:NCAA. Players: Tunde Fasasi. https://realamj.github.io/in-the-w
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T113000Z
+DTEND:20261115T133000Z
+SUMMARY:Pantzar: Unicaja vs FIATC Girona (W 82-70)
+DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115asto@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T113000Z
+DTEND:20261115T133000Z
+SUMMARY:Andersson: Astoria Bydgoszcz vs Górnik Zamek Książ Wałbrzych (W
+  91-87)
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261115bask@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261115T150000Z
@@ -1300,6 +1393,16 @@ DESCRIPTION:BLNO (Norway). Players: Kasper Hagberg. https://realamj.github.
 CATEGORIES:BLNO (Norway)
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115obra@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T160000Z
+DTEND:20261115T180000Z
+SUMMARY:Lundqvist: Monbus Obradoiro at Barça (L 83-108)
+DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261115lowe@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261115T170000Z
@@ -1308,6 +1411,16 @@ SUMMARY:Bangala: Löwen Braunschweig at NINERS Chemnitz (L 79-111)
 DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:BBL
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261115ucam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T170000Z
+DTEND:20261115T190000Z
+SUMMARY:Falk: UCAM Murcia at Surne Bilbao (W 84-76)
+DESCRIPTION:Liga ACB. Players: Wilhelm Falk. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261115virt@swedes-abroad
@@ -1475,9 +1588,9 @@ UID:g20261118stan@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261118T030000Z
 DTEND:20261118T050000Z
-SUMMARY:Price: Stanford vs UC Irvine (W 65-61)
-DESCRIPTION:NCAA. Players: Julius Price. https://realamj.github.io/in-the-w
- orks/
+SUMMARY:Price\, Cooper: Stanford vs UC Irvine (W 65-61)
+DESCRIPTION:NCAA. Players: Julius Price\, Nils Cooper. https://realamj.gith
+ ub.io/in-the-works/
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
@@ -1612,6 +1725,16 @@ DESCRIPTION:ProB (Germany). Players: Jacob Hadi. https://realamj.github.io/
 CATEGORIES:ProB (Germany)
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261120zabo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T180000Z
+DTEND:20261120T200000Z
+SUMMARY:Babic: KK Zabok vs KK Zadar (L 74-101)
+DESCRIPTION:Croatian Premier League. Players: Luka Babic. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Croatian Premier League
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261120cult@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261120T190000Z
@@ -1620,6 +1743,16 @@ SUMMARY:Klintman: Culture City Weimar vs Ahorn Camp Baskets (L 75-80)
 DESCRIPTION:ProB (Germany). Players: Mikai Klintman. https://realamj.github
  .io/in-the-works/
 CATEGORIES:ProB (Germany)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120asto@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T191500Z
+DTEND:20261120T211500Z
+SUMMARY:Andersson: Astoria Bydgoszcz vs Energa Czarni Słupsk (W 95-58)
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261120idah@swedes-abroad
@@ -1662,6 +1795,16 @@ DESCRIPTION:NCAA. Players: Hugo Tidare. https://realamj.github.io/in-the-wo
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261121toru@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T113000Z
+DTEND:20261121T133000Z
+SUMMARY:Gaddefors: Twarde Pierniki Toruń at PGE Start Lublin
+DESCRIPTION:Orlen Basket Liga. Players: Viktor Gaddefors. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261121vmi@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261121T170000Z
@@ -1672,6 +1815,16 @@ DESCRIPTION:NCAA. Players: Rodrigas Jucevicius\, Zion Vaamonde. https://rea
 CATEGORIES:NCAA
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261121unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T170000Z
+DTEND:20261121T190000Z
+SUMMARY:Pantzar: Unicaja at Recoletas Salud San Pablo Burgos
+DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261121lowe@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261121T173000Z
@@ -1680,6 +1833,16 @@ SUMMARY:Bangala: Löwen Braunschweig vs BMA365 Bamberg Baskets
 DESCRIPTION:BBL. Players: Zaba Bangala. https://realamj.github.io/in-the-wo
  rks/
 CATEGORIES:BBL
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121tizo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T173000Z
+DTEND:20261121T193000Z
+SUMMARY:Czerapowicz: Grupo Ureta Tizona Burgos at Partizán de Fuenlabrada
+DESCRIPTION:Primera FEB. Players: Chris Czerapowicz. https://realamj.github
+ .io/in-the-works/
+CATEGORIES:Primera FEB
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261121denv@swedes-abroad
@@ -1702,14 +1865,34 @@ DESCRIPTION:ABA League. Players: Barra Njie. https://realamj.github.io/in-t
 CATEGORIES:ABA League
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261121pale@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T200000Z
+SUMMARY:Borg: Palencia vs Palmer Basket Mallorca Palma
+DESCRIPTION:Primera FEB. Players: Tobias Borg. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261121wich@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261121T190000Z
 DTEND:20261121T210000Z
-SUMMARY:Berg: Wichita State vs New Mexico
-DESCRIPTION:NCAA. Players: William Berg. https://realamj.github.io/in-the-w
- orks/
+SUMMARY:Berg\, Fasasi: Wichita State vs New Mexico
+DESCRIPTION:NCAA. Players: William Berg\, Tunde Fasasi. https://realamj.git
+ hub.io/in-the-works/
 CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121ucam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T200000Z
+DTEND:20261121T220000Z
+SUMMARY:Falk: UCAM Murcia vs Casademont Zaragoza
+DESCRIPTION:Liga ACB. Players: Wilhelm Falk. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261121ucir@swedes-abroad
@@ -1750,6 +1933,66 @@ SUMMARY:Cadeau: Michigan at Villanova
 DESCRIPTION:NCAA. Players: Elliot Cadeau. https://realamj.github.io/in-the-
  works/
 CATEGORIES:NCAA
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122obra@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T110000Z
+DTEND:20261122T130000Z
+SUMMARY:Lundqvist: Monbus Obradoiro vs FIATC Girona
+DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122ovie@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T113000Z
+DTEND:20261122T133000Z
+SUMMARY:Terins: Oviedo vs HLA Alicante
+DESCRIPTION:Primera FEB. Players: Felix Terins. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122zamo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T113000Z
+DTEND:20261122T133000Z
+SUMMARY:Palmquist: CB Zamora at Insolac Caja 87
+DESCRIPTION:Primera FEB. Players: Oskar Palmquist. https://realamj.github.i
+ o/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T171000Z
+DTEND:20261122T191000Z
+SUMMARY:Pohto: Juventus Utena at Rytas Vilnius
+DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
+ ks/
+CATEGORIES:LKL
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122sant@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T173000Z
+DTEND:20261122T193000Z
+SUMMARY:Lindqvist: Class Sant Antoni at Logrobasket Logi7
+DESCRIPTION:Segunda FEB. Players: Anton Lindqvist. https://realamj.github.i
+ o/in-the-works/
+CATEGORIES:Segunda FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T180000Z
+DTEND:20261122T200000Z
+SUMMARY:Håkanson\, Birgander: Joventut Badalona at Real Madrid
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
 UID:g20261122youn@swedes-abroad

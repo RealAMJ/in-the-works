@@ -1,95 +1,95 @@
 {
- "at": "2026-11-21T08:58:06+01:00",
+ "at": "2026-11-21T09:05:50+01:00",
  "found": 0,
  "log": [
   {
    "competition": "Orlen Basket Liga",
-   "seed": 2953994,
+   "seed": 2956666,
    "scanned": 799,
-   "answered": 367,
+   "answered": 207,
    "sample": [
     [
-     2953993,
+     2956665,
      [
-      "PGE Start Lublin ",
+      "Austin Peay ",
+      "Life (GA) "
+     ]
+    ],
+    [
+     2956667,
+     [
+      "Górnik Zamek Książ Wałbrzych ",
       "Euvic GTK Gliwice "
      ]
     ],
     [
-     2953995,
+     2956668,
      [
-      "Kujawsko-Pomorskie ",
-      "Świętokrzyskie "
+      "KSK Qemetica Noteć Inowrocław ",
+      "PGE Spójnia Stargard "
      ]
     ],
     [
-     2953996,
+     2956663,
      [
-      "Zachodniopomorskie ",
-      "Warmińsko-Mazurskie "
+      "Agnes Scott ",
+      "Abraham Baldwin "
      ]
     ],
     [
-     2953991,
+     2956669,
      [
-      "Balti Vara ",
-      "Võro Basketball "
+      "Pomorskie ",
+      "Mazowieckie "
      ]
     ],
     [
-     2953997,
+     2956670,
+     [
+      "Śląskie ",
+      "Małopolskie "
+     ]
+    ],
+    [
+     2956671,
      [
       "Łódzkie ",
-      "Kujawsko-Pomorskie "
+      "Wielkopolskie "
      ]
     ],
     [
-     2953990,
+     2956672,
      [
-      "Kpuit/Antsla vald ",
-      "KK Valgamaa/Coop Põlva "
+      "Małopolskie ",
+      "Mazowieckie "
      ]
     ],
     [
-     2953998,
+     2956673,
      [
-      "Świętokrzyskie ",
-      "Zachodniopomorskie "
+      "Śląskie ",
+      "Wielkopolskie "
      ]
     ],
     [
-     2953989,
+     2956675,
      [
-      "BC Karl Infra ",
-      "Nool Projekt/Viljandi vald "
-     ]
-    ],
-    [
-     2953999,
-     [
-      "Warmińsko-Mazurskie ",
+      "Pomorskie ",
       "Łódzkie "
      ]
     ],
     [
-     2953988,
+     2956650,
      [
-      "BC Tiksoja Puidugrupp ",
-      "Tartu vald/Rainter "
+      "25 AGOSTO 25 AGOSTO",
+      "BOHEMIOS BOHEMIOS"
      ]
     ],
     [
-     2954000,
+     2956649,
      [
-      "Opolskie ",
-      "Lubelskie "
-     ]
-    ],
-    [
-     2953987,
-     [
-      "BC Küte/Casinobud ",
-      "Torma "
+      "AURIBLANCO AURIBLANCO",
+      "CAPITOL CAPITOL"
      ]
     ]
    ]

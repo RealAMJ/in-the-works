@@ -27,4 +27,25 @@ DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
  ithub.io/in-the-works/
 CATEGORIES:Orlen Basket Liga
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115asto@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T113000Z
+DTEND:20261115T133000Z
+SUMMARY:Andersson: Astoria Bydgoszcz vs Górnik Zamek Książ Wałbrzych (W
+  91-87)
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261120asto@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261120T191500Z
+DTEND:20261120T211500Z
+SUMMARY:Andersson: Astoria Bydgoszcz vs Energa Czarni Słupsk (W 95-58)
+DESCRIPTION:Orlen Basket Liga. Players: Denzel Andersson. https://realamj.g
+ ithub.io/in-the-works/
+CATEGORIES:Orlen Basket Liga
+END:VEVENT
 END:VCALENDAR

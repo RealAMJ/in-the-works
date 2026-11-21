@@ -27,4 +27,24 @@ DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
  -the-works/
 CATEGORIES:Liga ACB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115obra@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T160000Z
+DTEND:20261115T180000Z
+SUMMARY:Lundqvist: Monbus Obradoiro at Barça (L 83-108)
+DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122obra@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T110000Z
+DTEND:20261122T130000Z
+SUMMARY:Lundqvist: Monbus Obradoiro vs FIATC Girona
+DESCRIPTION:Liga ACB. Players: Olle Lundqvist. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
 END:VCALENDAR

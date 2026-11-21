@@ -37,4 +37,24 @@ DESCRIPTION:Champions League (BCL). Players: Wilhelm Falk. https://realamj.
  github.io/in-the-works/
 CATEGORIES:Champions League (BCL)
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261115ucam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T170000Z
+DTEND:20261115T190000Z
+SUMMARY:Falk: UCAM Murcia at Surne Bilbao (W 84-76)
+DESCRIPTION:Liga ACB. Players: Wilhelm Falk. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121ucam@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T200000Z
+DTEND:20261121T220000Z
+SUMMARY:Falk: UCAM Murcia vs Casademont Zaragoza
+DESCRIPTION:Liga ACB. Players: Wilhelm Falk. https://realamj.github.io/in-t
+ he-works/
+CATEGORIES:Liga ACB
+END:VEVENT
 END:VCALENDAR

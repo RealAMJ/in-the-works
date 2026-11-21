@@ -27,4 +27,24 @@ DESCRIPTION:Primera FEB. Players: Felix Terins. https://realamj.github.io/i
  n-the-works/
 CATEGORIES:Primera FEB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114ovie@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T183000Z
+DTEND:20261114T203000Z
+SUMMARY:Terins: Oviedo at Bàsquet Menorca (L 65-75)
+DESCRIPTION:Primera FEB. Players: Felix Terins. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122ovie@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T113000Z
+DTEND:20261122T133000Z
+SUMMARY:Terins: Oviedo vs HLA Alicante
+DESCRIPTION:Primera FEB. Players: Felix Terins. https://realamj.github.io/i
+ n-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
 END:VCALENDAR

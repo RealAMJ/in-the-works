@@ -3024,7 +3024,8 @@
   "score": "L 74-101",
   "live_feed": "fiba:2893814",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261120cult",
@@ -3057,7 +3058,8 @@
   "score": "W 95-58",
   "live_feed": "fiba:2956666",
   "live_done": true,
-  "post_done": true
+  "post_done": true,
+  "notified": true
  },
  {
   "game_id": "g20261120idah",

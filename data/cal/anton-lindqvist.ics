@@ -27,4 +27,14 @@ DESCRIPTION:Segunda FEB. Players: Anton Lindqvist. https://realamj.github.i
  o/in-the-works/
 CATEGORIES:Segunda FEB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261122sant@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T173000Z
+DTEND:20261122T193000Z
+SUMMARY:Lindqvist: Class Sant Antoni at Logrobasket Logi7
+DESCRIPTION:Segunda FEB. Players: Anton Lindqvist. https://realamj.github.i
+ o/in-the-works/
+CATEGORIES:Segunda FEB
+END:VEVENT
 END:VCALENDAR

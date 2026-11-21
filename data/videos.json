@@ -1381,6 +1381,16 @@
   "source": "ESPN",
   "clips": [
    {
+    "title": "Nils Cooper gets the and-1 to fall",
+    "secs": 16,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/b9e20975-bad7-4bdf-8f66-be154b7039d2/b9e20975-bad7-4bdf-8f66-be154b7039d2.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50517643/nils-cooper-gets-1-fall",
+    "full": false,
+    "swedes": [
+     "Nils Cooper"
+    ]
+   },
+   {
     "title": "Christian Bliss drains 3-pointer vs. UC Irvine Anteaters",
     "secs": 15,
     "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/a53365d2-71ae-4b3a-9d8f-10267ac9ad82/a53365d2-71ae-4b3a-9d8f-10267ac9ad82.jpg",
@@ -1393,14 +1403,6 @@
     "secs": 17,
     "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/a0b20265-4cb2-4540-80bf-3cbfa059e321/a0b20265-4cb2-4540-80bf-3cbfa059e321.jpg",
     "url": "https://www.espn.com/video/clip/_/id/50517519/jovan-jester-jr-rocks-rim-slam-dunk",
-    "full": false,
-    "swedes": []
-   },
-   {
-    "title": "Nils Cooper gets the and-1 to fall",
-    "secs": 16,
-    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1118/b9e20975-bad7-4bdf-8f66-be154b7039d2/b9e20975-bad7-4bdf-8f66-be154b7039d2.jpg",
-    "url": "https://www.espn.com/video/clip/_/id/50517643/nils-cooper-gets-1-fall",
     "full": false,
     "swedes": []
    }

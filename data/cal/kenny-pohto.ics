@@ -38,6 +38,16 @@ DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
 CATEGORIES:LKL
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261114juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T171000Z
+DTEND:20261114T191000Z
+SUMMARY:Pohto: Juventus Utena at Nevėžis-Paskolų klubas (L 88-91)
+DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
+ ks/
+CATEGORIES:LKL
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261117juve@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261117T180000Z
@@ -46,5 +56,15 @@ SUMMARY:Pohto: Juventus Utena vs Pallacanestro Reggiana (L 95-102)
 DESCRIPTION:Champions League (BCL). Players: Kenny Pohto. https://realamj.g
  ithub.io/in-the-works/
 CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122juve@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T171000Z
+DTEND:20261122T191000Z
+SUMMARY:Pohto: Juventus Utena at Rytas Vilnius
+DESCRIPTION:LKL. Players: Kenny Pohto. https://realamj.github.io/in-the-wor
+ ks/
+CATEGORIES:LKL
 END:VEVENT
 END:VCALENDAR

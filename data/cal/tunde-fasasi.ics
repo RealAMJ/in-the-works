@@ -47,4 +47,14 @@ DESCRIPTION:NCAA. Players: Tunde Fasasi. https://realamj.github.io/in-the-w
  orks/
 CATEGORIES:NCAA
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261121wich@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T190000Z
+DTEND:20261121T210000Z
+SUMMARY:Fasasi: Wichita State vs New Mexico
+DESCRIPTION:NCAA. Players: William Berg\, Tunde Fasasi. https://realamj.git
+ hub.io/in-the-works/
+CATEGORIES:NCAA
+END:VEVENT
 END:VCALENDAR

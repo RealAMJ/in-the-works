@@ -38,6 +38,16 @@ DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
 CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261115unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261115T113000Z
+DTEND:20261115T133000Z
+SUMMARY:Pantzar: Unicaja vs FIATC Girona (W 82-70)
+DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261118unic@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261118T193000Z
@@ -46,5 +56,15 @@ SUMMARY:Pantzar: Unicaja vs BK KVIS Pardubice (W 94-66)
 DESCRIPTION:Champions League (BCL). Players: Melwin Pantzar. https://realam
  j.github.io/in-the-works/
 CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121unic@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T170000Z
+DTEND:20261121T190000Z
+SUMMARY:Pantzar: Unicaja at Recoletas Salud San Pablo Burgos
+DESCRIPTION:Liga ACB. Players: Melwin Pantzar. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 END:VCALENDAR

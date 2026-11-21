@@ -27,4 +27,24 @@ DESCRIPTION:Primera FEB. Players: Tobias Borg. https://realamj.github.io/in
  -the-works/
 CATEGORIES:Primera FEB
 END:VEVENT
+BEGIN:VEVENT
+UID:g20261114zamo@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T183000Z
+DTEND:20261114T203000Z
+SUMMARY:Borg: CB Zamora vs Palencia (L 77-86)
+DESCRIPTION:Primera FEB. Players: Oskar Palmquist\, Tobias Borg. https://re
+ alamj.github.io/in-the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261121pale@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T200000Z
+SUMMARY:Borg: Palencia vs Palmer Basket Mallorca Palma
+DESCRIPTION:Primera FEB. Players: Tobias Borg. https://realamj.github.io/in
+ -the-works/
+CATEGORIES:Primera FEB
+END:VEVENT
 END:VCALENDAR

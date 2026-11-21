@@ -38,6 +38,16 @@ DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
 CATEGORIES:Liga ACB
 END:VEVENT
 BEGIN:VEVENT
+UID:g20261114jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261114T200000Z
+DTEND:20261114T220000Z
+SUMMARY:Birgander: Joventut Badalona vs Casademont Zaragoza (W 99-94)
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
+END:VEVENT
+BEGIN:VEVENT
 UID:g20261117jove@swedes-abroad
 DTSTAMP:20260101T000000Z
 DTSTART:20261117T193000Z
@@ -46,5 +56,15 @@ SUMMARY:Birgander: Joventut Badalona vs Futebol Clube do Porto (W 74-70)
 DESCRIPTION:Champions League (BCL). Players: Ludvig Håkanson\, Simon Birga
  nder. https://realamj.github.io/in-the-works/
 CATEGORIES:Champions League (BCL)
+END:VEVENT
+BEGIN:VEVENT
+UID:g20261122jove@swedes-abroad
+DTSTAMP:20260101T000000Z
+DTSTART:20261122T180000Z
+DTEND:20261122T200000Z
+SUMMARY:Birgander: Joventut Badalona at Real Madrid
+DESCRIPTION:Liga ACB. Players: Ludvig Håkanson\, Simon Birgander. https://
+ realamj.github.io/in-the-works/
+CATEGORIES:Liga ACB
 END:VEVENT
 END:VCALENDAR
