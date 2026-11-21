@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:34:40+01:00",
+ "at": "2026-11-21T17:35:30+01:00",
  "log": [
   {
    "game": "c20261121csmo",
@@ -32,17 +32,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 1,
-   "clock": "07:41",
+   "clock": "06:47",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     0,
+     5,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     7,
+     12,
      10
     ]
    ]
