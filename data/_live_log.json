@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:00:31+01:00",
+ "at": "2026-11-21T02:01:23+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -31,13 +31,13 @@
   {
    "game": "g20261121iona",
    "src": "ESPN",
-   "period": 1,
-   "clock": "00:00",
+   "period": 2,
+   "clock": "19:07",
    "done": false,
    "teams": [
     [
      "Kansas City Roos",
-     34,
+     36,
      15
     ],
     [
@@ -78,7 +78,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "07:06",
+   "clock": "05:56",
    "done": false,
    "teams": [
     [
@@ -88,7 +88,7 @@
     ],
     [
      "Mississippi State Bulldogs",
-     18,
+     20,
      16
     ]
    ]
