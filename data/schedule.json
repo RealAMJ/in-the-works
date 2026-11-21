@@ -3178,8 +3178,8 @@
   "status": "live",
   "score": "W 44-32",
   "live_feed": "acb:105447",
-  "clock": "End of Q1",
-  "live_updated": "2026-11-21T18:59:08+01:00"
+  "clock": "Q3 09:22",
+  "live_updated": "2026-11-21T19:00:06+01:00"
  },
  {
   "game_id": "g20261121lowe",
@@ -3192,10 +3192,10 @@
   "competition": "BBL",
   "note": "",
   "status": "live",
-  "score": "W 32-17",
+  "score": "W 32-19",
   "live_feed": "bbl:2006842",
-  "clock": "Q2 06:35",
-  "live_updated": "2026-11-21T18:59:10+01:00"
+  "clock": "Q2 05:52",
+  "live_updated": "2026-11-21T19:00:08+01:00"
  },
  {
   "game_id": "g20261121tizo",
