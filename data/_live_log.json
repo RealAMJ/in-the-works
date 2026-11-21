@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:14:24+01:00",
+ "at": "2026-11-21T19:15:21+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 3,
-   "clock": "02:56",
+   "clock": "02:44",
    "done": false,
    "teams": [
     [
@@ -42,7 +42,7 @@
     ],
     [
      "Unicaja",
-     58,
+     60,
      12
     ]
    ]
@@ -90,17 +90,17 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "13:50",
+   "clock": "13:11",
    "done": false,
    "teams": [
     [
      "Denver Pioneers",
-     10,
+     13,
      14
     ],
     [
      "Eastern Michigan Eagles",
-     4,
+     6,
      14
     ]
    ]
@@ -171,7 +171,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 4,
-   "clock": "02:15",
+   "clock": "02:07",
    "done": false,
    "teams": [
     [
@@ -181,7 +181,7 @@
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     89,
+     90,
      10
     ]
    ]
