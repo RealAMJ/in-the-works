@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:41:37+01:00",
+ "at": "2026-11-21T19:42:29+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,17 +32,17 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 4,
-   "clock": "00:36",
+   "clock": "00:26",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     66,
+     68,
      12
     ],
     [
      "Unicaja",
-     92,
+     94,
      12
     ]
    ]
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "05:28",
+   "clock": "05:05",
    "done": false,
    "teams": [
     [
@@ -65,7 +65,7 @@
     ],
     [
      "BMA365 Bamberg Baskets",
-     42,
+     44,
      12
     ]
    ]
@@ -90,7 +90,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:14",
+   "clock": "02:40",
    "done": false,
    "teams": [
     [
@@ -118,7 +118,7 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     28,
+     29,
      12
     ],
     [
