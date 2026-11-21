@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:36:20+01:00",
+ "at": "2026-11-21T18:37:11+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -55,7 +55,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 1,
-   "clock": "07:34",
+   "clock": "07:09",
    "done": false,
    "teams": [
     [
@@ -113,17 +113,17 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 3,
-   "clock": "07:05",
+   "clock": "06:08",
    "done": false,
    "teams": [
     [
      "King Szczecin",
-     40,
+     42,
      11
     ],
     [
      "Anwil W\u0142oc\u0142awek",
-     66,
+     70,
      10
     ]
    ]
