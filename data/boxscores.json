@@ -4417,7 +4417,7 @@
   "line_id": "g20261121lowe-bangala",
   "game_id": "g20261121lowe",
   "player": "Zaba Bangala",
-  "min": 9,
+  "min": 10,
   "pts": 0,
   "reb": 4,
   "ast": 0,
@@ -4439,7 +4439,7 @@
   "line_id": "g20261121denv-stumer",
   "game_id": "g20261121denv",
   "player": "Oskar Stumer",
-  "min": 16,
+  "min": 17,
   "pts": 5,
   "reb": 6,
   "ast": 0,
@@ -4453,7 +4453,7 @@
   "dreb": 2,
   "stl": 2,
   "blk": 0,
-  "tov": 1,
+  "tov": 2,
   "pf": 1,
   "eff": ""
  }
