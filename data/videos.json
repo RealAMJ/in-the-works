@@ -1581,5 +1581,20 @@
     "swedes": []
    }
   ]
+ },
+ {
+  "game_id": "g20261121iona",
+  "date": "2026-11-21",
+  "source": "ESPN",
+  "clips": [
+   {
+    "title": "UM Kansas City Roos vs. Iona Gaels: Game Highlights",
+    "secs": 83,
+    "thumb": "https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1121/6f88c863-22bd-4a62-ab23-942cc5b4945e/6f88c863-22bd-4a62-ab23-942cc5b4945e.jpg",
+    "url": "https://www.espn.com/video/clip/_/id/50545640/game-highlights",
+    "full": true,
+    "swedes": []
+   }
+  ]
  }
 ]
