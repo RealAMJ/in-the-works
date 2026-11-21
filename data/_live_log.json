@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T01:33:17+01:00",
+ "at": "2026-11-21T01:34:07+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,17 +9,17 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 1,
-   "clock": "04:48",
+   "clock": "04:24",
    "done": false,
    "teams": [
     [
      "Niagara Purple Eagles",
-     24,
+     27,
      14
     ],
     [
      "Delaware State Hornets",
-     28,
+     29,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 1,
-   "clock": "03:10",
+   "clock": "02:50",
    "done": false,
    "teams": [
     [
@@ -55,7 +55,7 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 1,
-   "clock": "19:24",
+   "clock": "18:48",
    "done": false,
    "teams": [
     [
