@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:32:01+01:00",
+ "at": "2026-11-21T02:32:55+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:55",
+   "clock": "07:37",
    "done": false,
    "teams": [
     [
@@ -32,17 +32,17 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "07:25",
+   "clock": "06:38",
    "done": false,
    "teams": [
     [
      "Kansas City Roos",
-     52,
+     54,
      15
     ],
     [
      "Iona Gaels",
-     51,
+     54,
      17
     ]
    ]
@@ -55,17 +55,17 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "12:37",
+   "clock": "11:30",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     5,
+     9,
      16
     ],
     [
      "Alabama A&M Bulldogs",
-     19,
+     22,
      16
     ]
    ]
