@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T02:36:58+01:00",
+ "at": "2026-11-21T02:37:50+01:00",
  "log": [
   {
    "game": "g20261121dela",
@@ -9,7 +9,7 @@
    "game": "g20261121dela",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:54",
+   "clock": "05:42",
    "done": false,
    "teams": [
     [
@@ -19,7 +19,7 @@
     ],
     [
      "Delaware State Hornets",
-     60,
+     61,
      15
     ]
    ]
@@ -32,7 +32,7 @@
    "game": "g20261121iona",
    "src": "ESPN",
    "period": 2,
-   "clock": "05:25",
+   "clock": "05:06",
    "done": false,
    "teams": [
     [
@@ -55,17 +55,17 @@
    "game": "g20261121lips",
    "src": "ESPN",
    "period": 1,
-   "clock": "10:14",
+   "clock": "09:41",
    "done": false,
    "teams": [
     [
      "Lipscomb Bisons",
-     9,
+     11,
      16
     ],
     [
      "Alabama A&M Bulldogs",
-     22,
+     24,
      16
     ]
    ]
@@ -78,17 +78,17 @@
    "game": "c20261121miss",
    "src": "ESPN",
    "period": 2,
-   "clock": "18:20",
+   "clock": "17:31",
    "done": false,
    "teams": [
     [
      "Tulsa Golden Hurricane",
-     30,
+     32,
      15
     ],
     [
      "Mississippi State Bulldogs",
-     31,
+     33,
      16
     ]
    ]
