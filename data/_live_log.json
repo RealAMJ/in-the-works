@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:49:18+01:00",
+ "at": "2026-11-21T19:50:16+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,7 +32,7 @@
    "game": "g20261121lowe",
    "src": "easyCredit BBL",
    "period": 3,
-   "clock": "02:30",
+   "clock": "02:04",
    "done": false,
    "teams": [
     [
@@ -67,7 +67,7 @@
    "game": "g20261121denv",
    "src": "ESPN",
    "period": 1,
-   "clock": "00:27",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
@@ -77,7 +77,7 @@
     ],
     [
      "Eastern Michigan Eagles",
-     20,
+     22,
      14
     ]
    ]
@@ -95,12 +95,12 @@
    "teams": [
     [
      "Spartak Office Shoes BC Vienna",
-     39,
+     42,
      12
     ],
     [
      "",
-     30,
+     32,
      10
     ]
    ]
