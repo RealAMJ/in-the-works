@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T18:17:07+01:00",
+ "at": "2026-11-21T18:18:03+01:00",
  "log": [
   {
    "game": "g20261121vmi",
@@ -32,17 +32,17 @@
    "game": "g20261121unic",
    "src": "ACB Live",
    "period": 1,
-   "clock": "02:43",
+   "clock": "02:15",
    "done": false,
    "teams": [
     [
      "Recoletas Salud San Pablo Burgos",
-     7,
+     9,
      12
     ],
     [
      "Unicaja",
-     23,
+     26,
      12
     ]
    ]
@@ -113,7 +113,7 @@
    "game": "c20261121anw",
    "src": "FIBA LiveStats",
    "period": 2,
-   "clock": "00:29",
+   "clock": "00:00",
    "done": false,
    "teams": [
     [
